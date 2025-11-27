@@ -1,9 +1,7 @@
-# services/anime_service.py (優化版)
-
 from typing import List, Dict, Tuple
 from bs4 import BeautifulSoup
-import requests, os, json, hashlib, time, random, re, threading, logging
-from flask_caching import Cache
+import requests, os, json, hashlib, time, random, re, logging
+from flask_caching import Cache # 雖然未用，但保留
 from config import Config
 import cloudinary, cloudinary.uploader, cloudinary.utils
 from dotenv import load_dotenv
@@ -33,8 +31,6 @@ adapter = HTTPAdapter(pool_connections=pool_size, pool_maxsize=pool_size,
 cloudinary_adapter = HTTPAdapter(pool_connections=4, pool_maxsize=4,
                                  max_retries=retry_strategy)
 
-# 移除 threading.Semaphore，改用進程鎖
-# cloudinary_lock = threading.Semaphore(1) 
 SEASON_TO_MONTH = Config.SEASON_TO_MONTH
 WEEKDAY_MAP = Config.WEEKDAY_MAP
 
@@ -43,8 +39,8 @@ WEEKDAY_MAP = Config.WEEKDAY_MAP
 # ------------------------------------------------------
 session_global = None 
 cloudinary_config_global = {} 
-manager_lock_global = None    # 新增：用於接收共享鎖
-manager_cache_global = None   # 新增：用於接收共享快取字典
+manager_lock_global = None     # 用於接收共享鎖
+manager_cache_global = None    # 用於接收共享快取字典
 
 def init_worker(shared_lock, shared_cache_dict):
     """每個進程啟動時初始化 session, Cloudinary, 共用鎖, 和共用快取。"""
@@ -63,7 +59,7 @@ def init_worker(shared_lock, shared_cache_dict):
     session_global.mount("https://", adapter)
     session_global.mount("https://api.cloudinary.com", cloudinary_adapter)
     
-    # 重新配置 Cloudinary 
+    # 重新配置 Cloudinary (優化點 2: 只在 worker 啟動時配置一次)
     cloudinary_config_global = {
         'cloud_name': os.getenv("CLOUDINARY_CLOUD_NAME"),
         'api_key': os.getenv("CLOUDINARY_API_KEY"),
@@ -71,6 +67,9 @@ def init_worker(shared_lock, shared_cache_dict):
         'long_url_signature': True,
         'secure': True
     }
+    cloudinary.config(**cloudinary_config_global)
+    # 配置 session 給 Cloudinary (確保使用進程內的連接池)
+    cloudinary.config(http_client=session_global)
     
     # 初始化 logger
     logging.basicConfig(level=logging.WARNING)
@@ -78,27 +77,17 @@ def init_worker(shared_lock, shared_cache_dict):
 
 
 # ------------------------------------------------------
-# 簡易快取（Render /tmp/ 目錄）- 讀寫功能主要用於初始化和最終儲存
+# 簡易快取（優化點 1: 移除檔案讀寫，因為 GitHub Actions 不持久化 /tmp）
 # ------------------------------------------------------
-CACHE_FILE = "/tmp/anime_cache.json"
+# CACHE_FILE = "/tmp/anime_cache.json" # 移除
 
 def load_local_cache() -> Dict:
-    """從檔案載入快取，用於初始化 Manager 快取字典。"""
-    if os.path.exists(CACHE_FILE):
-        try:
-            with open(CACHE_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            return {}
+    """從檔案載入快取，但現在只返回空字典，因為 /tmp 不持久化。"""
     return {}
 
 def save_local_cache(data: Dict):
-    """將 Manager 快取字典的最終結果儲存到檔案中。"""
-    try:
-        with open(CACHE_FILE, "w", encoding="utf-8") as f:
-            json.dump(data, f)
-    except Exception:
-        pass
+    """將 Manager 快取字典的最終結果儲存到檔案中 (現在不做任何事)。"""
+    pass
 
 # ------------------------------------------------------
 # 日期與時間排序解析 - 保持不變
@@ -148,13 +137,8 @@ def upload_to_cloudinary(image_url: str, cache: Cache = None) -> str:
         if cloudinary_key in local_cache:
             return local_cache[cloudinary_key]
 
-        # 3. 上傳圖片 (使用共享鎖，確保同一時間只有一個進程在執行上傳操作)
+        # 3. 上傳圖片 (優化點 2: 移除重複配置，只保留核心上傳邏輯)
         with manager_lock_global:
-            # 在 worker 內配置 cloudinary
-            cloudinary.config(**cloudinary_config_global)
-            # 配置 session 給 Cloudinary (確保使用進程內的連接池)
-            cloudinary.config(http_client=session) 
-            
             time.sleep(random.uniform(0.1, 0.25))
             upload_result = cloudinary.uploader.upload(
                 response.content,
@@ -163,13 +147,13 @@ def upload_to_cloudinary(image_url: str, cache: Cache = None) -> str:
             )
 
         # 4. 生成 URL 並寫入共享快取
+        # 注意：這裡使用 worker 內配置的 Cloudinary，無需傳遞 config
         url, _ = cloudinary.utils.cloudinary_url(
             upload_result["public_id"],
             fetch_format="jpg", quality=90, width=300, height=300, crop="limit"
         )
         local_cache[url_cache_key] = url
         local_cache[cloudinary_key] = url
-        # 注意：manager.dict() 會自動處理同步寫入，無需額外的 save_local_cache
         return url
 
     except Exception as e:
@@ -178,7 +162,7 @@ def upload_to_cloudinary(image_url: str, cache: Cache = None) -> str:
         return image_url
 
 # ------------------------------------------------------
-# 處理單一動畫項目 (Worker Function) - 保持不變，但內部使用共享資源
+# 處理單一動畫項目 (Worker Function) - 保持不變
 # ------------------------------------------------------
 def worker_process_anime(item_html_str: str) -> Dict | None:
     # ... (保持不變)
@@ -232,12 +216,9 @@ def fetch_anime_data(year: str, season: str, cache: Cache = None) -> List[Dict]:
     if season not in SEASON_TO_MONTH:
         return [{"error": "季節無效，請輸入有效季節（冬、春、夏、秋）"}]
 
-    # 1. 先檢查整季快取 (避免抓取 HTML)
-    local_cache_file = load_local_cache()
-    full_cache_key = f"anime_{year}_{season}"
-    if full_cache_key in local_cache_file:
-        logger.info(f"使用檔案快取資料: {year} {season}")
-        return local_cache_file[full_cache_key]
+    # 1. 移除整季快取檢查 (因為檔案快取已移除)
+    # full_cache_key = f"anime_{year}_{season}"
+    # if full_cache_key in local_cache_file: ...
 
     url = f"https://acgsecrets.hk/bangumi/{year}{SEASON_TO_MONTH[season]:02d}/"
     
@@ -269,8 +250,8 @@ def fetch_anime_data(year: str, season: str, cache: Cache = None) -> List[Dict]:
             
             # 創建共享鎖和共享快取字典
             shared_lock = manager.Lock()
-            # 用檔案快取初始化共享快取
-            shared_cache_dict = manager.dict(load_local_cache()) 
+            # 優化點 1: 共享快取字典從空字典開始，只用於本次運行避免重複上傳
+            shared_cache_dict = manager.dict() 
             
             # 3. 使用 multiprocessing.Pool 處理資料
             max_workers = os.cpu_count() or 1
@@ -290,12 +271,12 @@ def fetch_anime_data(year: str, season: str, cache: Cache = None) -> List[Dict]:
             # 4. 排序和快取
             sorted_list = sorted(anime_list, key=parse_date_time)
             
-            # 5. 主線程處理最終快取
-            if sorted_list:
-                # 從 Manager Dict 轉換為標準 Dict (包含所有更新過的圖片快取)
-                final_cache_data = dict(shared_cache_dict) 
-                final_cache_data[full_cache_key] = sorted_list # 加入整季數據
-                save_local_cache(final_cache_data)
+            # 5. 移除主線程處理最終快取 (優化點 1)
+            # 因為所有的圖片 URL 都已經包含在 sorted_list 中，無需額外儲存圖片快取
+            # if sorted_list:
+            #     final_cache_data = dict(shared_cache_dict) 
+            #     final_cache_data[full_cache_key] = sorted_list
+            #     save_local_cache(final_cache_data)
             
             logger.info(f"成功爬取並處理 {year} {season} 共 {len(sorted_list)} 筆資料")
             return sorted_list

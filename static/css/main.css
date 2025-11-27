@@ -109,6 +109,10 @@ header {
     -webkit-box-orient: vertical;
     overflow: hidden;
     color: #6c757d;
+    user-select: none;          /* 標準屬性 */
+    -webkit-user-select: none;  /* Chrome, Safari, Opera */
+    -moz-user-select: none;     /* Firefox */
+    cursor: pointer;            /* 提示使用者可以點擊/長按 */
 }
 
 .story-summary:hover {
@@ -241,8 +245,7 @@ header {
     
     .anime-title {
         font-size: 1.5rem;  /* 調大手機標題到 1.5rem */
-        -webkit-line-clamp: 1;  /* 手機單行標題 */
-        min-height: 3rem;  /* 調整一致高度 */
+        min-height: 5rem;  /* 調整一致高度 */
         margin-bottom: 0.5rem;
     }
     
