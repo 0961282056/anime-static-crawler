@@ -1,0 +1,415 @@
+{
+    "anime_list": [
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "多羅羅",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/3347e3850088ca67a43d2a525afe4efc",
+            "premiere_date": "一",
+            "premiere_time": "22:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "路人超能100 II",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/7dfefe62d9fbf3c2d765e1ef9e89a484",
+            "premiere_date": "一",
+            "premiere_time": "23:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "關於我轉生變成史萊姆這檔事",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/3bdc440304b41ccebb4e4abe5aeecae9",
+            "premiere_date": "一",
+            "premiere_time": "24:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "粉彩回憶",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/434c201412323e66e1bd787d0c416bde",
+            "premiere_date": "一",
+            "premiere_time": "24:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "動物朋友2",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/20b767d9eaa481b2b38d377911cf6197",
+            "premiere_date": "一",
+            "premiere_time": "26:05",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "天使降臨到我身邊！",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/6beb5e5dc596a82e53d694207f4ec1f8",
+            "premiere_date": "二",
+            "premiere_time": "22:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Circlet Princess",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/3b05b343d20aa951ba734fc6d31bf53e",
+            "premiere_date": "二",
+            "premiere_time": "23:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "臨死！！江古田",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/ae38d30366bc6e282d86f2dddfd07203",
+            "premiere_date": "二",
+            "premiere_time": "25:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "強風吹拂",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/85be7f0c7a8299721585d4bd2ab37870",
+            "premiere_date": "二",
+            "premiere_time": "25:29",
+            "story": "走曾是田徑界備受期待的天才跑者，有一次他因為偷竊而遭追趕時，恰巧受到寬政大學學生灰二的幫助。隨後被帶往破舊公寓．竹青莊的走，莫名其妙地被迫必須與田徑門外漢的其他房客一起努力參加箱根驛傳…。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "雨色可可 sideG",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/27da396a036e21844f2435108023c9be",
+            "premiere_date": "二",
+            "premiere_time": "25:35",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "三次元女友 第二期",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/29fefa5b7b0a43165d57d2d8d513552c",
+            "premiere_date": "二",
+            "premiere_time": "25:59",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "狂賭之淵××",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/728e30751483a93a957c52321def5c40",
+            "premiere_date": "二",
+            "premiere_time": "26:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "正中間的理久",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/470ceb79747f70efbb6f49f2188c63bf",
+            "premiere_date": "三",
+            "premiere_time": "07:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "盾之勇者成名錄",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/9d8690fb2237cd2e02b93db6d17e2b31",
+            "premiere_date": "三",
+            "premiere_time": "22:00",
+            "story": "作為盾之勇者被召喚至異世界的岩谷尚文。誰知展開冒險才到第三天就被戰友背叛，一口氣失去了身為勇者的名聲及所有盤纏。……為什麼只有我碰上這種倒楣事啊！？不信任、疑念、猜忌，世界上的所有人事物都是仇敵！尚文陷入再也無法相信他人的狀態，此時卻見一名少女出現在他面前……！？在苦惱的盡頭，他所得到的究竟是什麼東西呢！？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "煙草",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/066a67306f40579c372857eabfc45ae1",
+            "premiere_date": "三",
+            "premiere_time": "22:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "同居人是貓",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/8ee80be068a1b7456149582c3d44090d",
+            "premiere_date": "三",
+            "premiere_time": "23:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "明治東京戀伽",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/9ad87be4ab553c3a770b5cfe7e4fedad",
+            "premiere_date": "三",
+            "premiere_time": "23:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "虛擬小姐在看着你",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/0c0a9a75ee60621c71df41880a519b60",
+            "premiere_date": "三",
+            "premiere_time": "24:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "revisions",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/cbeca5a4d3c9a14ce16a6655e6932953",
+            "premiere_date": "三",
+            "premiere_time": "24:55",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Dimension High School",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/445c4058ea4e579b668433babb4244dc",
+            "premiere_date": "四",
+            "premiere_time": "22:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "魔偶馬戲團",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/86b42c3861975a85629bdbf9c6f6618d",
+            "premiere_date": "四",
+            "premiere_time": "22:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "飛翔吧！戰機少女",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/f3cef9724ef35b5c5bb2410c2d35ed35",
+            "premiere_date": "四",
+            "premiere_time": "23:00",
+            "story": "突然出現在人類面前的神祕飛翔體「災」。意味著災厄的此一存在憑藉異樣的戰鬥力凌駕於所有的航空戰力之上。為對抗他們而開發的，便是對現有機體進行特別調整以實現超水準高機動力，被稱為「子體」的兵器。負責操控的則是名為「阿尼瑪」的操縱機構。它──竟擁有少女的外表。因「災」的緣故而失去駕駛員母親的少年「鳴谷慧」，他遇見了閃耀鮮紅光輝的瑞典製戰鬥機以及駕駛它的阿尼瑪「格里芬」。身為人類最終兵器卻動作不穩定的格里芬，還有一心嚮往天空的少年，兩人漫長且炙熱的故事就此展開。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "BanG Dream! 2nd Season",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/acb19a6f49a4898e32b18edda66642a5",
+            "premiere_date": "四",
+            "premiere_time": "23:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "約定的夢幻島",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/dfe2bc2ea279abb15b1395570e910fb6",
+            "premiere_date": "四",
+            "premiere_time": "24:55",
+            "story": "被我當成媽媽敬愛的她，並不是親生母親。跟我一起生活的他們，也不是兄弟姊妹。艾瑪、諾曼、雷三個人住在小小的孤兒院裡，每天都過得很幸福。但是，他們的平凡生活突然在某一天宣告結束。知道真相之後，等著他們的命運將會是…？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "五等分的新娘",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/f2e4ee870b42e02267a4ae56e03d7a14",
+            "premiere_date": "四",
+            "premiere_time": "25:28",
+            "story": "一直過著貧窮生活的資優生上杉風太郎，有一天居然得到了一個從天而降的大好打工機會，那就是當有錢人家女兒的家教。可是對象居然是自己曾經得罪過的女同學！不只如此，風太郎還發現了一個驚人的事實，他的學生不是一個人，而是如假包換的五胞胎！面對超有個性、瀕臨留級卻抗拒唸書的五胞胎，風太郎有辦法完成任務，讓她們五人順利畢業嗎？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "格林筆記 The Animation",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/e7717959fbb6b1f83f6864b69454b229",
+            "premiere_date": "四",
+            "premiere_time": "25:58",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Hulaing Babies",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/31cd352f45d5fb86dd2c551ace082b5c",
+            "premiere_date": "四",
+            "premiere_time": "27:05",
+            "story": "いわきの温泉街の中学に通う１年生のすずとクラスメイトのふみは、思いつきでフラ部を結成するが、すぐに勢いが失せ、毎日ゆるーく過ごしていた。そんな彼女たちは、フィンランドからの転校生モナが入ったのをきっかけに仲間を集め、コンテストへ出るためフラダンスに青春をかける。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "幻影死神",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/21bebb06d1cb401bc65665396824914f",
+            "premiere_date": "五",
+            "premiere_time": "21:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "笑容的代價",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/9a351571001ddcaa531a5bf319c694ae",
+            "premiere_date": "五",
+            "premiere_time": "21:30",
+            "story": "在地球遙遠彼方的星球上，滿載笑容的王國。十二歲的王女優希(ユウキ)正要進入多愁善感的年紀。每天哭泣、大笑，偶爾心動…？如此於王宮中度日。忠實的家臣們，為每天添加色彩：負責教育的蕾拉(レイラ)、政治的補佐伊薩那(イザナ)、騎士團總長哈羅德(ハロルド)，還有……自幼相識的親信，約書亞(ヨシュア)。「優希，只要有氣勢和毅力，就甚麼都能辦到！」「……真是的，又在說這些？約書亞啊，你要更有貴族的樣子啊！」十七歲的史黛拉(ステラ)，是個出色而冷靜的軍人。但是，她永遠維持着微笑……因為微笑，是生存必不可少的。這是在遙遠的星球上出生的，兩名少女的故事。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "約會大作戰III",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/c060aaebe3eb091809c09a9426287440",
+            "premiere_date": "五",
+            "premiere_time": "21:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "魔法禁書目錄III",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/f2a37773d8f5009fe34f4619d9b031ef",
+            "premiere_date": "五",
+            "premiere_time": "22:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "火之丸相撲",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/fe5aa874ff61cd5105698e9bbec4fcfc",
+            "premiere_date": "五",
+            "premiere_time": "22:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "B-PROJECT～絕頂*Emotion～",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/b88b2e4e5355a3786a82db13b4c6f88a",
+            "premiere_date": "五",
+            "premiere_time": "24:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "JoJo的奇妙冒險 黃金之風",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/a0b0f3489148989f2a6ef2e087e1cb3d",
+            "premiere_date": "五",
+            "premiere_time": "25:05",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "歡迎光臨，千歲醬",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/de0aaccb2b6905ea36bc8979847cb3b6",
+            "premiere_date": "五",
+            "premiere_time": "25:35",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "家有女友",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/83caa54c2f55c8ec4c4f166a246bfe8c",
+            "premiere_date": "五",
+            "premiere_time": "25:55",
+            "story": "主角‧夏生因為經常在頂樓遇上來此散心的女老師，不知不覺已經喜歡上對方，為了拋開對她的愛慕，決定跟參加聯誼的女孩‧瑠衣上床。後來父親告訴他即將再婚，沒想到對方一起帶來的女兒竟然就是學校的老師以及之前跟她上床的女孩。於是乎這段錯綜複雜的三角關係就這麼開始了。再加上老師的外遇對象，這四個人的感情糾葛將會如何演變呢？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "魔法少女特殊戰明日香",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/585ec492242f051094cfa261954cd2ce",
+            "premiere_date": "五",
+            "premiere_time": "26:25",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Radiant",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/5f79b189e25b5c208e323415882426a2",
+            "premiere_date": "六",
+            "premiere_time": "17:35",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "不愉快的妖怪庵 續",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/e90f7cd66f877d7d121f2a453816b41a",
+            "premiere_date": "六",
+            "premiere_time": "21:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "百慕達△～繽紛田園曲～",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/f0a17c5254f582c00a7e1baa6082f0a9",
+            "premiere_date": "六",
+            "premiere_time": "22:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "輝夜姬想讓人告白",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/7bcf3b146fc8e827aed9dafc89b6a726",
+            "premiere_date": "六",
+            "premiere_time": "23:30",
+            "story": "「先告白的人在戀愛當中是輸家！」家庭背景與人品都很棒！！一大群有前途的秀才所聚集的秀知院學園！！在那裡的學生會相遇的副會長．四宮輝夜與會長．白銀御行原本應該是彼此受到了對方吸引…但想不到都過半年了卻仍然什麼事情也沒發生！！最麻煩的是這兩個自尊心超強、無法坦率的傢伙，居然開始想著要“設法讓對方向自己告白”！？直到戀情有下落之前會很歡樂的故事！！感覺很新鮮的“鬥智”愛情喜劇、就此開戰！！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "刀劍神域 Alicization",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/53c28b90a44bfbe9701d313b794d02d1",
+            "premiere_date": "六",
+            "premiere_time": "24:00",
+            "story": "「這……這裡是什麼地方……？」桐人一醒過來，馬上發現自己掉進了到處都是參天巨樹的森林──奇幻的「假想世界」當中。為了尋求線索而在附近亂逛的他遇見了一名少年。「我的名字叫尤吉歐。請多指教，桐人。」這名假想世界裡的居民──也就是「ＮＰＣ」的少年竟然擁有足以媲美人類的豐富感情表現。隨著與尤吉歐的友情越來越深厚，桐人腦袋裡也出現了過去的某段回憶。桐人的回憶裡，還是小孩子的自己曾經和尤吉歐在深山裡到處亂逛。而且除了尤吉歐之外，還有另一名有著金黃色頭髮的少女。少女的名字是愛莉絲。那是一個絕對不能忘記的重要姓名。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Endro～！",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/8a7d59785e428b835367c46674f5aadb",
+            "premiere_date": "六",
+            "premiere_time": "25:00",
+            "story": "——尤莉亞・夏露戴特，是無職♪人與怪物共同生活的劍與魔法的大陸「納拉魯島」，這兒曾經有可怕的「魔王」存在。在很久很久以前，把在納拉魯島現身的魔王打倒的初代勇者——之後在不同時代魔王曾經數度蘇醒，同時能與之抵抗的勇者也再度出現……。少女們為了打倒不知何時會再次現身的魔王而在冒險者學校就讀。有點脫線但是是勇者體質的，尤夏。一本正經於是沒輕鬆過的精靈的聖者，塞拉。最愛吃東西的開朗戰士，法伊。沉靜的宅女魔法使，梅。目標為組成勇者隊伍的四人的，看起來多久也不能打倒魔王的悠閒奇幻生活開始了。（編者注：考慮到這愛稱ユーシャ的日文發音其實很像「勇者」，其實本來想激進點把女主的名字翻作「容利亞・謝露特」諧掉這個音的……不過還是算了。）"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "W'z",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/ff197a2b3301f8d0a1826b15269945f5",
+            "premiere_date": "六",
+            "premiere_time": "25:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "迷你刀使",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/ddffd25af17bc4cca6acbf6c052e9382",
+            "premiere_date": "六",
+            "premiere_time": "25:55",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Star☆Twinkle 光之美少女",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/22719595229d5ab1b12011114f744a81",
+            "premiere_date": "日",
+            "premiere_time": "08:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "荒野的壽飛行隊",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/df4191725912b843d36534996fa88073",
+            "premiere_date": "日",
+            "premiere_time": "22:30",
+            "story": "在世界的這片荒野，突然從天上降下了各種東西，嚴重改變的人們的生活。其中又以飛機受到的影響最大，自始，世界的潮流就轉移往了空中。時光流逝，被人僱傭保鏢「壽飛行隊」今天也與其同伴——嚴格而美麗的社長、不可靠的現場指揮官、工匠氣質的整備班長，等等等等——一起，為了守護客人的重要貨品，與隼一起在天空中翱翔。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "琴絃森林 第二季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/5a296fa9ab632a52e97e0ae277d9af67",
+            "premiere_date": "日",
+            "premiere_time": "24:10",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "笨拙之極的上野",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/d7a0aae7dac0fcf8b757a4be0eda5b14",
+            "premiere_date": "日",
+            "premiere_time": "24:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "巴哈姆特之怒 Mysteria Friends",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/d169157bf314e4a630c36e9345160658",
+            "premiere_date": "日",
+            "premiere_time": "24:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "就算是爸爸，也想那個嘛",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/6d276de7da4d96481771bbaaf8311a40",
+            "premiere_date": "日",
+            "premiere_time": "25:00",
+            "story": "無故事大綱"
+        }
+    ],
+    "target_year": "2019",
+    "target_season": "冬",
+    "update_time": "2025-11-27 13:24:34"
+}

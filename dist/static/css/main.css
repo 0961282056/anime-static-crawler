@@ -1,0 +1,367 @@
+/* main.css */
+
+/* 全域樣式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    font-size: 1.575rem;  /* 整體字體大幅調大到 1.575rem（約 25px），影響所有相對單位 */
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 表單樣式 */
+.form-label {
+    font-weight: 600;
+    color: #495057;
+    font-size: 1.575rem;  /* 調大表單標籤字體 */
+}
+
+.form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* 卡片樣式 */
+.anime-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;  /* 確保卡片高度一致 */
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;  /* 卡片最大寬度配合圖片 */
+    margin: 0 auto;  /* 置中卡片 */
+}
+
+.anime-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.anime-card img {
+    width: 300px;  /* 固定寬度 300px */
+    height: 300px;  /* 固定高度 300px */
+    object-fit: contain;  /* 完整顯示圖片，保持原比例 */
+    background-color: #f8f9fa;
+    margin: 0 auto;  /* 置中圖片 */
+    flex-shrink: 0;  /* 圖片不縮放 */
+}
+
+.anime-card .card-body {
+    padding: 1.25rem;  /* 增加 padding，配合更大字體 */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 240px;  /* 大幅增加最小高度，容納更大文字 */
+}
+
+.anime-title {
+    font-size: 1.75rem;  /* 調大標題字體到 1.75rem（約 28px） */
+    font-weight: 600;
+    margin-bottom: 0.75rem;  /* 增加間距 */
+    color: #212529;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+    min-height: 3.75rem;  /* 增加一致高度 */
+}
+
+.anime-title:hover {
+    color: #007bff;
+}
+
+.anime-title.long-pressed {
+    background-color: #e3f2fd;
+    padding: 0.25rem;
+    border-radius: 4px;
+}
+
+/* 新增：資訊區塊樣式 */
+.info-section {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 0.75rem;  /* 增加間距 */
+    margin-bottom: 0.75rem;
+}
+
+.info-section small {
+    font-size: 1.25rem;  /* 調大 small 字體到 1.25rem */
+    line-height: 1.4;
+}
+
+/* 新增：故事大綱區塊樣式 */
+.story-section {
+    flex-grow: 1;  /* 讓故事區擴展，填滿剩餘空間 */
+    min-height: 100px;  /* 大幅增加最小高度 */
+}
+
+.story-summary {
+    font-size: 1.25rem;  /* 調大故事摘要字體到 1.25rem */
+    line-height: 1.5;  /* 進一步增加行高，提高可讀性 */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;  /* 限制 3 行，防止過長 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #6c757d;
+}
+
+.story-summary:hover {
+    color: #495057;  /* hover 變深色，提高可讀性 */
+}
+
+/* 新增：長按視覺反饋 */
+.story-summary.long-pressed {
+    background-color: #e3f2fd;
+    padding: 0.25rem;
+    border-radius: 4px;
+}
+
+/* 按鈕樣式 */
+.add-to-sharelist {
+    font-size: 1.375rem;  /* 調大按鈕字體到 1.375rem */
+    padding: 0.75rem;  /* 增加 padding */
+    margin-top: auto;  /* 固定在底部 */
+}
+
+/* 分享清單樣式 */
+#shareListContainer {
+    min-height: 100px;
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    padding: 2.5rem;  /* 增加 padding */
+    background-color: #f8f9fa;
+    margin-bottom: 1rem;
+}
+
+#shareList .share-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;  /* 增加 padding */
+    margin-bottom: 1rem;
+    transition: box-shadow 0.2s;
+    display: flex;  /* 水平排列圖片與文字 */
+    gap: 1rem;
+}
+
+#shareList .share-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#shareList .share-card img {
+    width: 300px;  /* 分享清單固定 300px 寬 */
+    height: 300px;  /* 固定 300px 高 */
+    object-fit: contain;  /* 完整顯示圖片，保持原比例 */
+    border-radius: 6px;
+    flex-shrink: 0;  /* 圖片不縮放 */
+    background-color: #f8f9fa;
+}
+
+#shareList .share-card .share-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#shareList .share-card h6 {
+    margin-bottom: 0.75rem;  /* 增加間距 */
+    font-size: 1.75rem;  /* 調大分享標題字體到 1.75rem */
+}
+
+#shareList .share-card .share-info {
+    font-size: 1.25rem;  /* 調大分享資訊字體到 1.25rem */
+    color: #6c757d;
+    margin-bottom: 0.5rem;  /* 增加間距 */
+}
+
+#shareList .share-card .share-story {
+    font-size: 1.25rem;  /* 調大分享故事字體到 1.25rem */
+    color: #6c757d;
+    line-height: 1.5;  /* 增加行高 */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  /* 分享清單限制 2 行 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* 複製按鈕樣式 */
+#copyButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+    width: 60px;  /* 略微放大按鈕 */
+    height: 60px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;  /* 調大按鈕圖示字體到 1.75rem */
+}
+
+#copyButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+}
+
+/* RWD 媒體查詢 */
+@media (max-width: 576px) {  /* 手機 */
+    header h1 {
+        font-size: 2.625rem;  /* 進一步調大手機標題到 2.625rem */
+    }
+    
+    .anime-card {
+        max-width: 100%;  /* 手機全寬 */
+    }
+    
+    .anime-card img,
+    #shareList .share-card img {
+        width: 100%;  /* 手機全寬，但 max-width: 300px */
+        max-width: 300px;
+        height: 200px;  /* 手機調整高度 */
+    }
+    
+    .anime-card .card-body {
+        min-height: 220px;  /* 手機增加最小高度 */
+        padding: 1rem;  /* 調整 padding */
+    }
+    
+    .anime-title {
+        font-size: 1.5rem;  /* 調大手機標題到 1.5rem */
+        -webkit-line-clamp: 1;  /* 手機單行標題 */
+        min-height: 3rem;  /* 調整一致高度 */
+        margin-bottom: 0.5rem;
+    }
+    
+    .story-summary {
+        -webkit-line-clamp: 2;  /* 手機限制 2 行故事 */
+        font-size: 1.3125rem;  /* 調大手機故事字體到 1.3125rem */
+        line-height: 1.5;  /* 增加行高 */
+    }
+    
+    #copyButton {
+        bottom: 10px;
+        right: 10px;
+        width: 52px;  /* 手機略微放大 */
+        height: 52px;
+        font-size: 1.625rem;  /* 調大手機按鈕到 1.625rem */
+    }
+    
+    #shareListContainer {
+        padding: 1.5rem;  /* 增加手機 padding */
+    }
+    
+    #shareList .share-card {
+        flex-direction: column;  /* 手機垂直排列 */
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    #shareList .share-card img {
+        width: 100%;
+        max-width: 200px;  /* 手機分享清單縮小 */
+        height: 200px;
+    }
+    
+    #shareList .share-card .share-story {
+        -webkit-line-clamp: 1;  /* 手機分享清單 1 行 */
+        font-size: 1.3125rem;  /* 調大分享故事字體 */
+    }
+    
+    #shareList .share-card h6 {
+        font-size: 1.5rem;  /* 調大分享標題 */
+        margin-bottom: 0.5rem;
+    }
+    
+    #shareList .share-card .share-info {
+        font-size: 1.3125rem;  /* 調大分享資訊字體 */
+        margin-bottom: 0.375rem;
+    }
+    
+    .info-section small {
+        font-size: 1.3125rem;  /* 調大手機 small 字體 */
+    }
+    
+    .add-to-sharelist {
+        font-size: 1.375rem;  /* 調大手機按鈕字體 */
+        padding: 0.625rem;
+    }
+    
+    .form-label {
+        font-size: 1.375rem;  /* 手機表單標籤略調小，避免過大 */
+    }
+    
+    /* 手機整體字體基底大幅調大 */
+    body {
+        font-size: 1.575rem;  /* 手機基底與桌面一致，確保清晰 */
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {  /* 平板小 */
+    .row-cols-md-3 {
+        row-cols: 2;  /* 平板 2 列 */
+    }
+    
+    header p {
+        display: none;  /* 隱藏副標題 */
+    }
+    
+    .anime-card img,
+    #shareList .share-card img {
+        width: 280px;  /* 平板略縮 */
+        height: 280px;
+    }
+    
+    .story-summary {
+        -webkit-line-clamp: 3;  /* 平板 3 行 */
+    }
+}
+
+@media (min-width: 769px) {  /* 平板大及桌面 */
+    .anime-card img,
+    #shareList .share-card img {
+        width: 300px;  /* 桌面固定 300px */
+        height: 300px;
+    }
+    
+    .story-summary {
+        -webkit-line-clamp: 4;  /* 桌面 4 行 */
+    }
+}
+
+/* 動畫效果 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.anime-card {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Select2 RWD 優化 */
+.select2-container--default .select2-selection--single {
+    height: 52px;  /* 增加高度，匹配更大字體 */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 50px;
+    font-size: 1.575rem;  /* 調大 Select2 文字 */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 48px;
+}

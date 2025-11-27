@@ -57,46 +57,11 @@
     {% endif %}
 
     <!-- 查詢結果 -->
-    {% if sorted_anime_list %}
     <section class="mb-5">
-        <h2 class="h4 text-center mb-4">查詢結果（{{ sorted_anime_list|length }} 筆）</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-            {% for anime in sorted_anime_list %}
-            <div class="col">
-                <div class="card h-100 anime-card">
-                    <img src="{{ anime.anime_image_url }}" 
-                         class="card-img-top" 
-                         alt="{{ anime.anime_name }}" 
-                         loading="lazy">
-                    <div class="card-body d-flex flex-column">
-                        <h3 class="card-title anime-title" data-anime-name="{{ anime.anime_name }}">{{ anime.anime_name }}</h3>
-                        <div class="card-text d-flex flex-column flex-grow-1">
-                            <div class="info-section mb-2">
-                                <small class="text-muted d-block">
-                                    <i class="fas fa-calendar-alt me-1"></i>首播日期：{{ anime.premiere_date }}
-                                </small>
-                                <small class="text-muted d-block">
-                                    <i class="fas fa-clock me-1"></i>首播時間：{{ anime.premiere_time }}
-                                </small>
-                            </div>
-                            <div class="story-section">
-                                <small class="text-muted story-summary">
-                                    <i class="fas fa-book me-1"></i>{{ anime.story }}
-                                </small>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-success btn-sm mt-auto add-to-sharelist w-100">加入分享清單</button>
-                    </div>
-                </div>
+        <h2 class="h4 text-center mb-4">查詢結果 (<span id="result-count">0</span> 筆)</h2>
+        <div id="anime-results-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
             </div>
-            {% endfor %}
-        </div>
     </section>
-    {% else %}
-    <div class="alert alert-info text-center" role="alert">
-        請選擇條件並查詢資料。
-    </div>
-    {% endif %}
 
     <!-- 分享清單區 -->
     <section>

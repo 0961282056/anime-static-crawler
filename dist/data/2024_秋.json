@@ -1,0 +1,583 @@
+{
+    "anime_list": [
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "轉生成貓咪的大叔",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/27665f35c34b9a5cb49d276633120882",
+            "premiere_date": "一",
+            "premiere_time": "13:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "尋神的旅途",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/2c780e9b2981af9647f8b86c0635abd6",
+            "premiere_date": "一",
+            "premiere_time": "22:00",
+            "story": "從前，這國家存在著四匹的凶神、以及八百萬的諸神。可是，自從凶神弄垮了兩座山，逃到了其他國家之後，八百萬的神明也消失離開，世界也就失去了神。在這個沒有神話的國家之中，為了將消失無蹤的神明帶回，人們將命運寄託在歌士官身上——。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "鴨乃橋論的禁忌推理 第二季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/d90e92cc02fb7ed3a8fa91a298c84c7d",
+            "premiere_date": "一",
+            "premiere_time": "22:30",
+            "story": "把一生奉獻給解謎的…被禁止辦案的「名偵探」將持續為各位獻上華麗又精彩的正宗推理故事！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "平凡職業造就世界最強 第三季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/eb68f6b4288e1145325d3f6f35ecd7ad",
+            "premiere_date": "一",
+            "premiere_time": "23:00",
+            "story": "結束神山之戰後，始一行人伴隨莉莉安娜等人，搭乘飛空艇『佛爾尼爾』前往帝都。這時，同行的光輝心中有個煩惱──為什麼始那麼強，卻不『正確地』使用力量？半途，始遇見與帝國兵戰鬥的郝里亞族，得知費雅貝魯根正遭受魔人族與帝國兵侵略。前往荷魯夏帝國的始將得知『他們』的計畫……！？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "唯願來世不相識",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/6c38b739716a6a669b6126fd3ea13ffc",
+            "premiere_date": "一",
+            "premiere_time": "23:00",
+            "story": "高中女生染井吉乃出生成長於極道之家。雖然家庭環境特殊，卻也一直循規蹈矩過著平穩的日子。然而，就在吉乃與未婚夫深山霧島宿命地相遇之後，原本平靜的生活為之一變！外表看似眉清目秀且溫文儒雅的霧島，其實是個比黑道流氓還要可怕的男子－－！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "最狂輔助職業【話術士】世界最強戰團聽我號令",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/721900ae44be2009e0619b553dbc0e55",
+            "premiere_date": "一",
+            "premiere_time": "23:30",
+            "story": "少年‧諾艾爾因為自幼仰慕生前為一名英雄的祖父，於是立志成為最強的探索者。探索者是以討伐強大惡魔為工作的職業，偏偏諾艾爾的是【話術士】──此乃不擅長戰鬥的輔助職能。不過他繼承祖父的遺志，並培養出無雙的智謀，終於讓他找出成為世界最強的方法。具體而言就是打造出無敵的，而他則成為該組織的團長──諾艾爾運用他的才智，成功拉攏傳說級暗殺者的後繼者、流浪刀劍士等多名豪傑，就此成立最強組織！而且他還展現出異想天開的過人口才，將敵人玩弄於股掌間，率領組織登峰造極──最終，少年將站上世界最強的頂點！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "夏目友人帳 漆",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/3585218034fb492fc7fc6b8998170d87",
+            "premiere_date": "一",
+            "premiere_time": "24:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "精靈幻想記 第二季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/aa85a5d28a1b9da7cb41e014d78a612f",
+            "premiere_date": "一",
+            "premiere_time": "25:30",
+            "story": "利歐成功救出瑟莉亞，使她不必被迫與大貴族政治聯姻後，為了補足物資及達成最初目的──蒐集關於【勇者召喚】的情報，一行人造訪大城市阿曼多。旅途中，由於瑟莉亞想要向父親報平安，為了替她實現心願，利歐嘗試潛入庫列爾伯爵家宅邸！另一方面，貴族大小姐莉賽蘿黛前往出席瑟莉亞的婚禮，卻在返回阿曼多的歸途中，與貝爾托姆王國勇者‧坂田、公主芙蘿菈一起被捲入一場意外的糾紛!?"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "放學後少年花子君 續篇",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/93c3808ff4e53fff5866914e7fabc41f",
+            "premiere_date": "一",
+            "premiere_time": "25:35",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "妖怪學校的菜鳥老師！",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/38692fc60ee08a0f5302e545d8d92e1d",
+            "premiere_date": "二",
+            "premiere_time": "23:00",
+            "story": "安倍晴明是一個性格軟弱的菜鳥老師。好不容易成為憧憬以久的老師，但卻也高興不了多久！因為他原本就已經很膽小了，這次前去赴任的居然還是一所滿是妖怪的學校…"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "嘆氣的亡靈想隱退",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/6b6b6ca4b769b09f9fb014c7a8d30acc",
+            "premiere_date": "二",
+            "premiere_time": "23:30",
+            "story": "現在正值寶藏獵人的黃金時期，為了尋求財富、名譽以及力量，獵人們不顧自身危險想飛黃騰達，前往世界各地的寶藏殿展開探索。讓我們一起成為寶藏獵人吧──克萊‧安東黎西與兒時玩伴們的這段誓言，理應無法順利實現才對。原因是，克萊完全沒有成為寶藏獵人的才能……但不知為何，周遭人對克萊的期待與日俱增，導致他送命的風險不斷攀升。每當實力異於常人的兒時玩伴們大顯身手，克萊向人磕頭道歉的技能就跟著提升……！這是一部關於一名青年想開心退休養老的故事。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "結緣甘神神社",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/a353380ec31092a0ab93f1ca53844127",
+            "premiere_date": "二",
+            "premiere_time": "24:00",
+            "story": "在兒童養護設施長大，以考上京都大學醫學系為目標的高中生：上終瓜生被甘神神社的宮司收留，來到神社借住。本來只是想要一個能唸書的環境，沒想到借住的條件竟然是「入贅繼承神社」！而結婚的候補對象就是宮司的孫女，神社的美女巫女三姊妹！早熟的朝姬、態度尖銳的夕奈、冒失單純的夜重，與個性迥異的三姊妹相處，讓瓜生的生活變得波瀾萬丈…"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "成為名留歷史的壞女人吧",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/b03c8cd62512d70da8387531cb0e2bf1",
+            "premiere_date": "二",
+            "premiere_time": "24:30",
+            "story": "「我討厭只說漂亮話的世界！我要成為名留歷史的壞女人!!」最討厭女主角常見的「好孩子」發言設定的我，轉生到最喜歡的女性向戀愛遊戲中，成了裡頭的反派千金！既然如願以償地轉生，就得成為能夠名留歷史、世上最出色的壞女人！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "多數欠",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/3435f70ef76d17f0133dd99a6de52918",
+            "premiere_date": "二",
+            "premiere_time": "25:59",
+            "story": "高中生主角與夥伴集體參與了唯一規則是「成為多數就會死」的生存遊戲，發誓要推翻主導一切的「皇帝」。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "小哥斯拉的逆襲 第二季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/298b335f7c18105ab0de68e3ebca72a9",
+            "premiere_date": "三",
+            "premiere_time": "07:05",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "樂天胖達！",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/693b6593cb87734b1be40c4892f1f3f7",
+            "premiere_date": "三",
+            "premiere_time": "21:54",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Acro Trip 頂尖惡路",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/c1ccd3caba8d7543ddd403b1139e1c28",
+            "premiere_date": "三",
+            "premiere_time": "22:00",
+            "story": "來探訪祖父的「地図子」遇到了守護城市的魔法少女・ベリーブロッサム，然後立刻迷上了她。但是，敵方的邪惡組織「フォッサマグナ」的首領・クロマ的攻擊實在是太單調，兩人間的戰鬥毫無看頭。地図子希望看到更多ベリー的活躍，心中的不滿越來越多⋯⋯。「我希望魔法少女能更加閃耀……讓她受壓，讓她苦戰！」這種欲望（？）將內向的少女引向了邪惡的道路——"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "重啟人生的千金小姐正在攻略龍帝陛下",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/c5bd6c226b036aa2c56b69fbc3b2fb86",
+            "premiere_date": "三",
+            "premiere_time": "22:00",
+            "story": "身為千金小姐的吉兒，遭到未婚夫王太子下令處決。在她即將死亡的瞬間，時間卻回到六年前訂下婚約的那場派對中。為了避開毀滅性發展的路線，她臨時起意向身後的人求婚，沒想到那人居然是最大的敵人──哈迪斯皇帝！知道他未來會墮落至暗黑之路……吉兒慌張地撤回婚約，即使如此，哈迪斯還是喜孜孜地將她帶回城中，並為她做飯。胃袋被緊緊抓住的吉兒下定決心，「我一定會讓您重新做人──不，會讓您幸福！」於是，人生重啟！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Re:從零開始的異世界生活 第三季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/06a4a4ed17cd7768391f65d47200fcad",
+            "premiere_date": "三",
+            "premiere_time": "22:30",
+            "story": "「吾主安娜塔西亞大人有話要傳達給愛蜜莉雅大人。」自「聖域」一役已過了一年，愛蜜莉雅陣營亦團結一致，菜月．昴每天都過得充實無比。而這段平穩的時光，因使者送來的一張書信而告終。是招待一行人前往水門都市樸利斯提拉的邀請函──是王選候補人選安娜塔西亞寄給愛蜜莉雅的邀請信。接受邀請，一路前往樸利斯提拉的一行人，在水之都與以安娜塔西亞為首的熟面孔重逢。大家重溫彼此奇妙的情誼，度過平穩的時間。──絲毫不察私底下有惡意正在蠢蠢欲動。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "新網球王子 U-17世界盃 SEMIFINAL",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/34ad2e25cd195e29464ab31e2e87b70e",
+            "premiere_date": "三",
+            "premiere_time": "24:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "戰國妖狐 千魔混沌篇",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/41e4215b15511c43c49f75ccc4235018",
+            "premiere_date": "三",
+            "premiere_time": "24:00",
+            "story": "迅火化為千尾妖狐後失蹤，小玉為尋找他而踏上旅程。至於真介，則與千夜掉落到一處村落，而且千夜竟然喪失記憶。真介覺得這剛好是個轉機，希望千夜能當個普通小孩子生活下去，但卻事與願違……。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Delicoʼs Nursery",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/7f38e5cad5d428a4e39c4e959a2afae1",
+            "premiere_date": "三",
+            "premiere_time": "24:30",
+            "story": "旋渦中的陰謀與育兒──高貴的貴族吸血種在奮鬥自己孩子的《育兒》之際，背後卻纏繞著與傳說中的吸血種《TRUMP》相關的可疑陰謀。被認為是名門中的名門的特級貴族家系，デリコ家。圍繞著家族當主ダリ・デリコ的因緣故事──。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "GOD.app 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/53d98440925c92901b92348d0b38e0c6",
+            "premiere_date": "三",
+            "premiere_time": "24:55",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Murder Mystery of the Dead",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/14d7a33f8b7a55039a2e053e96f154c3",
+            "premiere_date": "三",
+            "premiere_time": "25:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "莫名成為邪龍的五千歲草食龍 第二季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/5a0419e7edcb380f55a5ab643549b489",
+            "premiere_date": "三",
+            "premiere_time": "25:05",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "菇狗",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/7bc3a165bb716208cda3c41b67455205",
+            "premiere_date": "四",
+            "premiere_time": "21:00",
+            "story": "繪本作家．夕闇螢因為愛犬．花子過世而難過得把自己封閉起來，但是某一天，當他眺望庭院裡的粉紅色蘑菇時，蘑菇居然從土裡冒出來，變成了一隻狗！「菇狗」的出現雖然很莫名其妙，卻讓阿螢慢慢走出悲傷，重新振作起來，而阿螢的責編．駒子，還有忠實書迷兼蘑菇研究所員．矢良的幫助，更讓阿螢開始與外面的世界有了更多接觸。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "殿下與狗",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/c3b24eaf27731c3fb7d9e4ef1737a0e4",
+            "premiere_date": "四",
+            "premiere_time": "21:54",
+            "story": "曾經在戰國時代如鬼神般活躍的【殿】，但那也已是過去的事。現在他已經完全衰落，過著貧窮的長屋生活。這時他遇到的，是一隻【犬】。看著犬短小的手腳和奇特的外貌，殿出於憐憫伸出援手，但他卻被這新家臣的調皮捉弄，…!?「這是什麼!? 犬能做這種事情!??」"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Negative Positive Angler",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/4acfd843d6c9b17642170ca0142921f8",
+            "premiere_date": "四",
+            "premiere_time": "22:00",
+            "story": "背負著巨額債務，還被醫生宣告只剩下兩年壽命的大學生，佐々木常宏。過著壓抑的日子的常宏，有天被債主追趕而墮海後，被喜歡釣魚的少女ハナ和她的釣魚夥伴貴明等人救起。在ハナ的建議下，常宏體驗了人生中的第一次釣魚，並與那些釣魚夥伴們結成朋友。他也開始在ハナ和貴明工作的便利店打工。雖然對於複雜的釣魚術語和生餌的味道感到困擾，但他逐漸對釣魚產生了興趣。手中傳來的感覺，是生活的真實感──。常宏一直往下沉、只能仰望世界的人生，並不會那麼輕易改變。但是他通過釣魚，找到的東西是……？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "星辰墜落之國的妮娜",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/f842cdf676205720d0269b531accfe1d",
+            "premiere_date": "四",
+            "premiere_time": "22:00",
+            "story": "原本是在社會底層生活的妮娜，但卻因為自己的藍眼睛，而被第二王子阿茲爾要求假扮成公主，並要嫁給大國的第一王子，面對人生突然劇變，她的未來又將會如何呢？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "聽說你們要結婚！？",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/04806c004d7b039861bb2aa8a0ecf47b",
+            "premiere_date": "四",
+            "premiere_time": "23:30",
+            "story": "大原拓也與本城寺莉香是住在首都圈內的上班族。雖然他們都不擅長與人交往，不過收留了一隻流浪貓的拓也跟喜歡研究地圖的莉香，都過著屬於自己的幸福生活……因應嚴峻的疫情，兩人工作的旅行社決定到西伯利亞駐點，而公司上層決定外派的人選會優先從單身者之中選出。為了不要被流放到寒冷遙遠的西伯利亞，為了守護最心愛的單身日常生活，兩人決定要假裝結婚。然而結婚的消息傳到同事耳中之後，大家的祝福與發問反而成了巨大的壓力以及破綻。所以莉香再次提議要與拓也一起編造愛情經歷，假造兩人真的是情侶的證據。於是他們開始像一般情侶一樣約會、半同居。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "青春盒子",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/b45556133dbe0b725fd480c4b23acd14",
+            "premiere_date": "四",
+            "premiere_time": "23:56",
+            "story": "隷屬羽毛球部的豬股大喜，喜歡上女子籃球部的前輩鹿野千夏——。他被她認真自行練習的身影吸引，後來還發現了意想不到的事實⋯!?"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "孤單一人的異世界攻略",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/c5f00fd57ef9b527ff49a759bc6bcf62",
+            "premiere_date": "四",
+            "premiere_time": "24:00",
+            "story": "高中生活總是「一個人」度過的遙，某天突然與同班同學一起被召喚到異世界。遙回過神來，神明就在面前，還要他在列著各種外掛能力的技能清單中選擇喜歡的技能，以便在異世界生存──沒想到竟然是先選先贏，外掛技能已經被同班同學拿光了!?遙只拿到了賣剩的微妙技能，還因為『邊緣人』這項技能的效果而無法組隊，連在異世界也只能孤獨地冒險。此時，他得知同班同學陷入危機，悄悄決定要救出他們，並朝著不靠外掛卻又超越外掛的異端最強之路邁進──"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "DAN DA DAN",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/8045ce666a2dc75c8e6e16e8285a58d0",
+            "premiere_date": "四",
+            "premiere_time": "24:26",
+            "story": "不相信幽靈的少年與不相信外星人的少女相遇，超越常理的故事立即展開⋯高速婆婆跑得快，一定有古怪！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "機械手臂",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/e6c0f4f4cd3c3a8af6a7250356df0412",
+            "premiere_date": "四",
+            "premiere_time": "24:30",
+            "story": "生活在キタカガミ市的初中生アマツガ・ヒカル某一天，遇見了神秘的\"手臂\"型機械生命體アルマ。アルマ嘗試與ヒカル的身體結合以獲取能量但失敗了，反而與光所穿的連帽衫結合在一起。另一邊箱，正在嘗試奪去機械手臂們的自我而將它們變成兵器的大企業\"カガミグループ\"正在追尋著アルマ的下落。而試圖拯救並釋放機械手臂們的組織\"ARMS\"也在尋找アルマ。ヒカル無法捨棄因為失去了記憶而困擾的アルマ，穿上了與アルマ融合在一起的連帽衫，並漸漸被捲入機械手臂使們引發的大事件中……"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "浪客劍心 京都動亂篇",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/79711d6ebcc51ceeac3122ab1b904f0e",
+            "premiere_date": "四",
+            "premiere_time": "24:55",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "常軌脫離Creative",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/a56b311bf0b85a8f9988a0bd2b405b76",
+            "premiere_date": "四",
+            "premiere_time": "25:00",
+            "story": "公認的自閉男：和泉智宏本以為今天能如往常一樣蜷縮在角落度過安穩的一日，然而事與願違。校方突發奇想，搞起了抽籤，抓到鬩的人就要當選學生會長。而那個抽中上籤的天選之子，便是智宏！抽中籤的智宏在顧問的要求下，踏上了尋找夥伴的旅程。然而顧問的名單中，赫然寫著的名字：同班同學華乃，後輩明日海，就連妹妹妃愛，都是不上學的問題兒童？ ！混亂之中，就連一直毫無音信的前學生會長詩櫻都突然現身？ ！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "再見龍生，你好人生",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/1b79837cb8f4c52b65c014efd0c02294",
+            "premiere_date": "四",
+            "premiere_time": "25:28",
+            "story": "曾經度過悠久歲月的最強最古的龍，自願地被勇者擊敗，卻驚覺自己已經轉世成為邊境的村民ドラン。他全心投入農業，為了獲得食物去狩獵動物——在過著簡樸但溫馨的邊境生活中，ドラン的心充滿了在龍生中無法體驗的喜悅。就在某一天，當他在調查村子附近的森林時，強大的魔界軍隊出現在他面前。為了防止他們襲擊自己的村莊，ドラン與半人半蛇的美少女ラミア、以及傾城的美人劍士共同戰鬥，然後釋放出他隱藏的龍種魔力！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Trillion Game",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/f0160d0ff84598e6c847899536465516",
+            "premiere_date": "四",
+            "premiere_time": "25:58",
+            "story": "世界第一任性的男人——陽及認真的男人——學，兩人從零開始創業並賺到 1 兆美元，現準備買下全世界所有東西 !?"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "百姓貴族 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/ff86411a8dcad1bf52784692ce702e0f",
+            "premiere_date": "五",
+            "premiere_time": "21:54",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "2.5次元的誘惑",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/93bb249824ea77f39d3664ce1e3add34",
+            "premiere_date": "五",
+            "premiere_time": "22:30",
+            "story": "現實中的女人我才沒興趣！深愛著２次元角色．莉莉艾露的漫畫研究社社長．奧村，今年他的社團來了一位，自稱「我想變成莉莉艾露」的３次元女同學．天乃理理沙。奧村受到理理沙的請求，決定協助她拍攝角色扮演的活動，而此時在奧村眼前竟然出現了活生生的莉莉艾露本人！？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "魔法光源股份有限公司",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/07c7b01687f92b77d9f80554cc5419c3",
+            "premiere_date": "五",
+            "premiere_time": "23:00",
+            "story": "〝魔法少女〞──這是個任誰都會憧憬的「職業」。在求職活動中辛苦奮戰的女大學生・櫻木花奈，在面試地點被捲入怪異事件。花奈幫助了前來剷除怪異的魔法少女・越谷，並以此為契機，作為魔法少女進入招募應屆生的新創企業『魔法光源股份有限公司』…！？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "龍珠大魔",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/f7889a602e83a9ba3c106a9d8c86e32d",
+            "premiere_date": "五",
+            "premiere_time": "23:40",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "刀劍神域外傳 Gun Gale Online 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/6abfbf210e157ca78a189193be6dc3e2",
+            "premiere_date": "五",
+            "premiere_time": "24:00",
+            "story": "賭上Pitohui現實世界生死的第二屆Squad Jam之後又過了大約三個月。蓮、Pitohui、不可次郎、Ｍ組成的最強隊伍「LPFM」挑戰突然決定舉行的第三屆大會！被認為是最有機會獲得優勝的他們，即將面臨「隨著時間經過沉入海裡的戰場」、「潛伏在地圖中央的『UNKNOWN』區域」、「無名小隊聯手」這種嚴酷的狀況！──而到了大會中段，突然對所有參賽者宣布的特別規則是？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "在地下城尋求邂逅是否搞錯了什麼 第五季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/e56f0673ad91fe62011764ff5acc445d",
+            "premiere_date": "五",
+            "premiere_time": "24:30",
+            "story": "『致貝爾先生，請在這次的女神祭和我約會。』「「「「情、情書────！！」」」」「咦、咦咦咦咦咦咦咦咦咦咦咦咦咦咦咦咦咦！？」城市姑娘的一封信引發了軒然大波！隨著事態的發展，貝爾將在與輓歌祭（Elegia）統稱為「兩大祭」的「女神祭」裡跟希兒約會！想當然耳，這場約會不可能會安然落幕！最終演變成把「豐饒的女主人」的店員們、劍姬以及【芙蕾雅眷族】全數捲入的空前騷動！「一切都是為了女神──受死吧，女孩（小丫頭）。」另外還出現了不祥的預兆。以一名少女為中心，整座都市暗潮洶湧。這是由少女踏出軌跡、女神所紀錄下來的──【眷族神話（Familiar Myth）】──"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "去參加聯誼，卻發現完全沒有女生在場",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/9f115f909d3105e2b379f5582b4f99d4",
+            "premiere_date": "五",
+            "premiere_time": "25:30",
+            "story": "大學生常盤受修同一門課的蘇芳同學邀約，邀請他找兩個好友一起進行三對三聯誼。三個男生滿懷期待地到了居酒屋，結果看到座位上只有三個帥哥在等著…"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "當不成魔法師的女孩",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/9409673ebccaaf128919f639b1bc2988",
+            "premiere_date": "五",
+            "premiere_time": "25:53",
+            "story": "「魔法師呀，我，沒有遵守承諾……」對魔法師充滿嚮往的天然少女クルミ＝ミライ，與家族內魔法師輩出的名門千金ユズ＝エーデル。升讀レットラン魔法學校＜國家魔法師培養專門學科（通稱：魔組）＞是成為魔法師的必要條件。然而，竟然考試失敗⋯⋯正當這樣想的時候？！外觀像孩子般的國家魔法師ミナミ＝スズキ現身並成為班主任，校園生活急速變化！背後有古怪的同學、可疑的社團⋯⋯這所學校隱藏的秘密是什麼？！魔法師呀，我在＜普通科一組＞裡面，能成為魔法師，嗎⋯⋯？夢想破滅的兩個性格截然不同的少女的青春＊魔法學園奇幻故事！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "凍牌",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/811c994a2ef2d9f58dce101590f7d41c",
+            "premiere_date": "五",
+            "premiere_time": "26:23",
+            "story": "錢、女人、器官。縱橫充滿欲望的黑市麻將館的高中生少年・ケイ，他冷酷的思考，冷豔的打牌方式，使他在黑市中被稱為“冰之K”。而且，傳言他還在家中飼養著一個少女。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "SHIBUYA♡HACHI 第二季度",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/7d74b55d0f7e53a6015cd34b2ea5c8bd",
+            "premiere_date": "六",
+            "premiere_time": "07:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "蜻蛉高球 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/1c9accf735fb244fe68b0fcaa6b8ce82",
+            "premiere_date": "六",
+            "premiere_time": "10:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "青之壬生浪",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/fcdb6274abdd11a586d5efef85dfdfc6",
+            "premiere_date": "六",
+            "premiere_time": "17:30",
+            "story": "幕府末年，在因為黑船來航而爆發動亂的京都，善良的少年「にお」遇見了“壬生浪”的土方歲三和沖田總司。後來成為「新選組」的壬生浪士組的隊士們。在金錢、土地甚至生命都會被無情地奪走的時代，他們帶著自己的正義，保護著京都的街道。「我也想變強。我想改變這個世界。」以與他們的相遇為契機，這位13歲孩童的命運，開始大幅度改變！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "科學×冒險生存！",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/973036a0e92ea583c803be32e89482cc",
+            "premiere_date": "六",
+            "premiere_time": "18:25",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "魔王陛下 RETRY！R",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/c7859dbc96e87e5f7330af2fea6449c1",
+            "premiere_date": "六",
+            "premiere_time": "22:30",
+            "story": "大野晶在已經登入自己運營的「GAME」中最終王「魔王・九内伯斗」的情況下被拋到異世界。雖然與在那兒遇上，其中一邊腳有點不自由的少女開始旅行，但是其他人不能放著釋放壓倒力量的「魔王」的存在不管。被打算討伐魔王的國家、聖女盯上，一行人在路途前方將會捲起種種騷動……！！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "BLEACH 千年血戰篇 相剋譚",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/7c500a9df212c557347e006e3a4b25f4",
+            "premiere_date": "六",
+            "premiere_time": "23:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "藍色監獄 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/81c76c736f4d14909cb1031adcda4825",
+            "premiere_date": "六",
+            "premiere_time": "23:30",
+            "story": "主張自己的足球！在戰場（球場）上，你究竟能做些什麼？成功第二次選拔過關斬將的攻擊手，共有35名！眾人即將以「藍色監獄（BLUE LOCK）」的存續為賭注，傾全力挑戰與U-20日本代表隊的決戰！為了選出「藍色監獄（BLUE LOCK）」先發陣容11人，「適性測驗（TRYOUT）」正式開幕！潔能否超越前6名的FW（前鋒），成功主張自己的存在？進入選拔的關鍵是「共存」與「主張」！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "地。-關於地球的運動-",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/9f5eef5d3e921f1d9d11c2a4862c3005",
+            "premiere_date": "六",
+            "premiere_time": "23:45",
+            "story": "「到底要付出什麼，才能瞭解這世上的一切——？」15世紀前期的Ｐ王國，拉斐爾是百年難的一見的神童，預計在大學主修神學。因緣際會下，遇見了因從事「禁止研究」而被折磨拷問的異教徒赫伯特。他的工作與宗教正式認可的「地心說」背道而馳，因此，赫伯特被認為是應該懺悔的異端者。拉斐爾起初否定了赫伯特的理論，但他理性的性格以及對天文學的好奇，逐漸被「日心說」的理性之美所吸引……"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "魔王2099",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/657facbe7e9c17f6b97fc852ff3cbc42",
+            "premiere_date": "六",
+            "premiere_time": "24:00",
+            "story": "統合曆2099年——新宿市。在這個發展到了極致的未來都市中，傳說中的魔王・ベルトール再度降臨。巨大都市國家的燦爛繁榮以及……其背後隱藏的慘烈的“闇”。為了支配新的世界，魔王將會躍動未來！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "青之祓魔師 第4季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/d0e12e9bc9ec80fb7450c0e34008f6ed",
+            "premiere_date": "六",
+            "premiere_time": "24:30",
+            "story": "雪男因被路西法指出眼睛的事而深感不安，雖然阿燐多次追問，但他也沒有說出來。為驗證眼睛的秘密，雪男獨自去到廢棄大樓進行危險的實驗!?另一方面，祓魔師評估考試提前舉行，拉托寧古以講師的身份來到日本支部，究竟他有甚麼目的？勝呂被拉托寧古那不按常理的召喚方法吸引，希望能跟隨他學習，藉此改變自己的思考方式，遂向拉托寧古拜師，但拉托寧古竟要他以降魔劍作交換!?"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "亂馬½",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/30ea59330abce8c71174c5b2b6f5176e",
+            "premiere_date": "六",
+            "premiere_time": "24:55",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "暗殺女僕冥土小姐",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/efaedce80348057ef1a3d12e210dda81",
+            "premiere_date": "六",
+            "premiere_time": "25:30",
+            "story": "高中生・横谷人好的家裡突然出現了一位訪客。她是一位黑髮清秀，言詞謹慎的女僕。她的第一句話就是「希望你能雇用我」。她的前職是「殺手」，特技是「暗殺」，對於家務完全是個新手，是個「笨手笨腳的女孩」。從這場命運的相遇開始，與女僕在同一屋簷下的共同生活就此開始…！？漸漸地，不懂感情的她的內心開始搖曳──。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "被隊伍驅逐的治癒師，其實是最強的",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/107b25faf50c4dceb845b0eae007c2ef",
+            "premiere_date": "六",
+            "premiere_time": "26:00",
+            "story": "在過去，世界曾經差點被稱為\"邪龍\"的邪惡存在毀滅。但是一位勇者擊敗了邪龍，拯救了世界。然後，200多年過去了——。マータット是眾多的迷宮都市之一。在那裡有一個被稱為\"無能\"的男人，他的名字是ラウスト，職業是治癒師。他因為他自己的無能，一直渡過著被其他冒險者們蔑視、利用和拋棄的日子。有一天，一位職業是武鬥家、名為ナルセーナ的少女出現在ラウスト的面前。ナルセーナ對剛被逐出某個隊伍的ラウスト問道：「小哥，要跟我組個隊嗎？」於是，ラウスト和ナルセーナ，兩人的冒險就此開始——。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "軟軟噗尼寵物小精靈 2",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/cc5190926321668ba26b6ea0db439b07",
+            "premiere_date": "日",
+            "premiere_time": "09:15",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "七大罪 啟示錄四騎士 第二季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/3dea4aba54cb3b763b34715af32b24df",
+            "premiere_date": "日",
+            "premiere_time": "16:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "香格里拉·開拓異境 第二季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/d5c2e5011f30be36dcee9be342ef84c2",
+            "premiere_date": "日",
+            "premiere_time": "17:00",
+            "story": "以修復「守墓的衛札艾蒙」之遺產為目標的桑樂為了將比菈可培育成「古匠」而前往新的地下城！這次還跟追加鰹魚及潘希魯貢再次組隊，一同探究『香開』世界的深處！另一方面，頂尖玩家們則為了尋求與討伐獨特怪物相關的情報而聚集到了桑樂的所在之處！在滿是老奸的戰隊會談見識「旅狼」的真正價值吧！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Love Live! Superstar!! 第3季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/86525bd3ed16b4f052bbea05b0c67744",
+            "premiere_date": "日",
+            "premiere_time": "17:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "FAIRY TAIL魔導少年 百年任務",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/0925d8682764fca936057d1e6bb595cd",
+            "premiere_date": "日",
+            "premiere_time": "17:30",
+            "story": "妖精尾巴一如往常的熱鬧，納茲卻不在公會裡，因為他跟格雷、露西、艾爾莎以及兩隻貓一起出發去挑戰當初吉爾達茲沒有成功的「百年任務」了！為了這個任務，納茲一行人來到北方的基爾帝那大陸，拜訪最古老的魔導士公會「魔陣之龍」。令他們更驚訝的則是任務內容，竟是封住一個實力都跟亞克諾羅基亞差不多的五神龍！在魔導少年結束後一年多，納茲等人的後續冒險終於要開始了──！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "妻子變成小學生。",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/b651b260b7584bb11fb0fc4c471c1616",
+            "premiere_date": "日",
+            "premiere_time": "22:00",
+            "story": "１０年前，新島圭介痛失愛妻而一蹶不振。某天，一名自稱是新島妻子的小學生來到他面前。其言行舉止令新島相信她就是自己死去的妻子。曾經一度失去動力的人生，因為她的出現而再次轉動。深愛妻子的新島巴不得將她的事昭告天下，但是做為常識人的妻子怎麼可能讓他這麼做……。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "神之塔 -Tower of God- 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/43ac391f6210f9e6fefb28f5eb06ab08",
+            "premiere_date": "日",
+            "premiere_time": "23:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "轉生貴族憑鑑定技能扭轉人生 第二季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/eab27cea412cedfc32b13d9be8c6c4f6",
+            "premiere_date": "日",
+            "premiere_time": "23:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "村井之戀",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/43a55359516b12214cacd0fa4e7a00b1",
+            "premiere_date": "日",
+            "premiere_time": "23:30",
+            "story": "行為怪異的男高中生村井，對他的班主任田中老師有著戀愛的感情。然而，田中老師最愛的卻是她在最推的乙女遊戲的角色「春夏秋冬(ヒトトセ)」。對此一無所知的村井向田中告白，被田中以「黑長髮不在戀愛對象之列」為理由一口回絕——然而第二天，換了新髮型的村井，竟然像極了田中推角的模樣。田中大為動搖，而村井則是猛烈地持續追求，這段奇特的戀情將會如何發展呢...！？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "噗妮露是可愛史萊姆",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/5c2365eb8a1df3875e0e42b54550f725",
+            "premiere_date": "日",
+            "premiere_time": "23:45",
+            "story": "主角小太郎自製的史萊姆，變身成超可愛美少女！史萊姆噗妮露的自由奔放言行，讓少年小太郎被搞得團團轉…"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "MF GHOST 燃油車鬥魂 第二季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/eacc27edc8a8004a6673884098cfe7df",
+            "premiere_date": "日",
+            "premiere_time": "24:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "大正偽新娘～替身新娘與軍人的猛烈熱愛",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/0c08c584a7a208cad4caa78295c93d2f",
+            "premiere_date": "日",
+            "premiere_time": "25:00",
+            "story": "無故事大綱"
+        }
+    ],
+    "target_year": "2024",
+    "target_season": "秋",
+    "update_time": "2025-11-27 13:16:27"
+}
