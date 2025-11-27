@@ -150,6 +150,35 @@ $(document).ready(function () {
         loadAndFilterAnime(); 
     }
 
+    // --- 【新增：返回頂部按鈕邏輯】 ---
+    const backToTopBtn = $('#backToTopBtn');
+    const scrollThreshold = 300; // 滾動超過 300px 時顯示按鈕
+
+    // 監聽頁面滾動事件
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > scrollThreshold) {
+            // 確保按鈕以 flex 方式顯示，以讓內容置中
+            backToTopBtn.css('display', 'flex').css('opacity', '1');
+        } else {
+            backToTopBtn.css('opacity', '0');
+            // 在動畫結束後再完全隱藏
+            setTimeout(() => {
+                if ($(window).scrollTop() <= scrollThreshold) {
+                    backToTopBtn.hide();
+                }
+            }, 300);
+        }
+    });
+
+    // 點擊按鈕，平滑滾動到頁面頂部
+    backToTopBtn.on('click', function() {
+        $('html, body').animate({
+            scrollTop: 0 // 滾動到頂部 (0 像素)
+        }, 600); // 滾動動畫持續 600 毫秒 (平滑效果)
+        return false; // 阻止默認行為
+    });
+    // --- 【結束：返回頂部按鈕邏輯】 ---
+
     // --- 【原始功能區：分享清單與複製邏輯】 (保持不變) ---
 
     // 初始化 Select2

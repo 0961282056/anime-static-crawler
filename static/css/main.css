@@ -109,7 +109,7 @@ header {
     -webkit-box-orient: vertical;
     overflow: hidden;
     color: #6c757d;
-    user-select: none;          /* 標準屬性 */
+    user-select: none;          /* 標準屬性 (禁止長按選取) */
     -webkit-user-select: none;  /* Chrome, Safari, Opera */
     -moz-user-select: none;     /* Firefox */
     cursor: pointer;            /* 提示使用者可以點擊/長按 */
@@ -221,6 +221,32 @@ header {
     box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
 }
 
+/* === 新增：返回頂部按鈕樣式 (Back to Top Button) === */
+#backToTopBtn {
+    position: fixed;
+    bottom: 90px; /* 在 #copyButton (20px) 之上，留出空間 */
+    right: 20px;
+    z-index: 1049; /* 略低於 #copyButton (1050) */
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明深色背景 */
+    color: white;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: none; /* 預設隱藏，由 JS 控制顯示 */
+    transition: background-color 0.3s, opacity 0.3s;
+    font-size: 1.25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#backToTopBtn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* === 結束：返回頂部按鈕樣式 (Back to Top Button) === */
+
 /* RWD 媒體查詢 */
 @media (max-width: 576px) {  /* 手機 */
     header h1 {
@@ -260,9 +286,17 @@ header {
         right: 10px;
         width: 52px;  /* 手機略微放大 */
         height: 52px;
-        font-size: 1.625rem;  /* 調大手機按鈕到 1.625rem */
+        font-size: 1.625rem;  /* 調大手機按鈕圖示到 1.625rem */
     }
     
+    /* 手機 RWD 調整 backToTopBtn */
+    #backToTopBtn {
+        bottom: 70px; /* 手機上移一些 */
+        right: 10px;
+        width: 45px; 
+        height: 45px;
+    }
+
     #shareListContainer {
         padding: 1.5rem;  /* 增加手機 padding */
     }
