@@ -16,13 +16,11 @@ jobs:
     runs-on: ubuntu-latest
     
     # 環境變數：讓您的 build.sh 和 Python 腳本可以讀取
-    # 這裡將 .env 中的機密資訊以 Secrets 方式傳遞，非常重要！
     env:
-      # 從您的 .env 檔案中取得需要的機密變數，並映射到 Actions Secrets
       CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
       CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
       CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
-      # 如果您的爬蟲需要登入，請將 USERNAME/PASSWORD 也加入
+      # 其他爬蟲登入變數...
       # USERNAME_1: ${{ secrets.USERNAME_1 }}
       # PASSWORD_1: ${{ secrets.PASSWORD_1 }}
 
@@ -31,26 +29,45 @@ jobs:
     # 步驟 1: 檢出程式碼
     - name: ⬇️ Checkout Repository
       uses: actions/checkout@v4
+      # 確保 actions/checkout 具有推送 (push) 權限
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     # 步驟 2: 設置 Python 環境
-    # 根據您的 runtime.txt (python-3.9.18) 設定版本
     - name: 🐍 Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.9' # 使用 3.9 系列版本，與 runtime.txt 一致
+        python-version: '3.9'
 
-    # 步驟 3: 安裝依賴並執行建構
-    # 這裡直接運行您的 build.sh 腳本，它會處理 pip 升級和安裝 requirements.txt 依賴
+    # 步驟 3: 安裝依賴並執行建構 (生成最新的 JSON 和 HTML 檔案)
     - name: ⚙️ Install dependencies and Run Static Build
       run: bash build.sh
       
-    # 步驟 4: 部署到 Cloudflare Pages
-    # 這是將 'dist' 資料夾內容上傳到 Cloudflare 的關鍵步驟
+    # 🌟 新增步驟：資料持久化 🌟
+    # 將新生成的 dist/data/* 和 index.html 提交回 GitHub
+    - name: 💾 Commit and Push new data to Repository
+      run: |
+        # 設定 Git 使用者
+        git config user.name github-actions
+        git config user.email github-actions@users.noreply.github.com
+        
+        # 檢查 dist/data/ 和 dist/index.html 是否有變動 (這是關鍵)
+        if git diff --exit-code dist/data/ dist/index.html; then
+          echo "No changes found in dist/data or index.html. Skipping commit."
+        else
+          # 提交變動
+          git add dist/data/ dist/index.html
+          # [skip ci] 確保這次提交不會再次觸發 Actions，造成無限循環
+          git commit -m "chore(data): Update anime data via scheduled action [skip ci]"
+          git push
+        fi
+        
+    # 步驟 4: 部署到 Cloudflare Pages (網站更新)
     - name: 🚀 Deploy to Cloudflare Pages
       uses: cloudflare/pages-action@v1
       with:
         # 必須從您的 GitHub 專案 Secrets 傳遞這三個參數
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        projectName: 'anime-static-crawler' # 您的 Cloudflare Pages 專案名稱
-        directory: 'dist' # 建構輸出目錄
+        projectName: 'anime-static-crawler'
+        directory: 'dist'
