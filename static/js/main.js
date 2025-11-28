@@ -2,40 +2,20 @@
 // 依賴：jQuery, Select2, SweetAlert2, html2canvas
 
 $(document).ready(function () {
-    // --- 【變數定義】 ---
+    // --- 【新架構：資料處理和篩選核心】 ---
+
     let currentAnimeList = []; // 儲存當前季度載入的所有動畫資料
     const animeContainer = $('#anime-results-container');
     const resultCountSpan = $('#result-count');
-    const searchForm = $('#search-form'); // ⭐️ 優化：使用 ID 選擇器
-    const shareListContainer = $('#shareList');
-    const clearShareListBtn = $('#clearShareListBtn');
-    const exportImageBtn = $('#exportImageBtn');
-    const backToTopBtn = $('#backToTopBtn');
-    let shareList = loadShareList(); // 載入本地儲存的分享清單
-
-    // --- 【核心功能函數】 ---
-
-    /**
-     * 顯示 SweetAlert2 提示
-     */
-    function showAlert(title, text, icon, timer = 1500) {
-        Swal.fire({
-            title: title,
-            text: text,
-            icon: icon,
-            timer: timer,
-            showConfirmButton: false
-        });
-    }
+    const searchForm = $('form'); // 選擇查詢表單
 
     /**
      * 格式化單個動畫資料並生成 HTML 卡片
+     * @param {object} anime - 單個動畫的資料物件
+     * @returns {string} - 包含動畫卡片的 HTML 字串
      */
     function createAnimeCard(anime) {
-        const isAdded = shareList.some(item => item.anime_name === anime.anime_name);
-        const btnClass = isAdded ? 'btn-danger remove-btn' : 'btn-primary add-btn';
-        const btnText = isAdded ? '<i class="fas fa-minus-circle"></i> 移除清單' : '<i class="fas fa-plus-circle"></i> 加入清單';
-
+        // 確保使用 data-anime-name 屬性，以支援您的複製邏輯
         return `
             <div class="col">
                 <div class="card h-100 anime-card">
@@ -46,22 +26,21 @@ $(document).ready(function () {
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title anime-title" data-anime-name="${anime.anime_name}">${anime.anime_name}</h3>
                         <div class="card-text d-flex flex-column flex-grow-1">
-                            <div class="info-item">
-                                <i class="fas fa-calendar-alt"></i> <strong>首播：</strong> ${anime.premiere_date} ${anime.premiere_time}
+                            <div class="info-section mb-2">
+                                <small class="text-muted d-block">
+                                    <i class="fas fa-calendar-alt me-1"></i>首播日期：${anime.premiere_date || '未知'}
+                                </small>
+                                <small class="text-muted d-block">
+                                    <i class="fas fa-clock me-1"></i>首播時間：${anime.premiere_time || '未知'}
+                                </small>
                             </div>
-                            <div class="info-item">
-                                <i class="fas fa-tag"></i> <strong>分類：</strong> ${anime.genre || '未分類'}
+                            <div class="story-section">
+                                <small class="text-muted story-summary">
+                                    <i class="fas fa-book me-1"></i>${anime.story || '暫無劇情簡介'}
+                                </small>
                             </div>
-                            <p class="story-summary mt-2 flex-grow-1" title="${anime.story}">
-                                <strong>故事概要：</strong> ${anime.story}
-                            </p>
                         </div>
-                        <div class="mt-3 text-center">
-                            <button class="btn ${btnClass} w-100" 
-                                    data-anime-name="${anime.anime_name}">
-                                ${btnText}
-                            </button>
-                        </div>
+                        <button type="button" class="btn btn-success btn-sm mt-auto add-to-sharelist w-100">加入分享清單</button>
                     </div>
                 </div>
             </div>
@@ -69,321 +48,424 @@ $(document).ready(function () {
     }
 
     /**
-     * 渲染動畫列表到頁面
+     * 渲染結果到頁面，只處理 "星期幾" 篩選和渲染。
+     * 這是原 filterAndRenderAnime 函式的簡化版。
+     * @param {Array} data - 當前季度完整的動畫資料列表 (currentAnimeList)
      */
-    function renderAnimeList(list) {
+    function filterAndRenderResults(data) {
+        const selectedPremiereDate = $('#premiere_date').val();
+        let filteredList = data;
+        
+        // 只進行星期幾篩選 (不再需要年/季檢查，因為資料已經匹配年/季)
+        if (selectedPremiereDate && selectedPremiereDate !== '全部') {
+            filteredList = filteredList.filter(anime => 
+                anime.premiere_date === selectedPremiereDate
+            );
+        }
+        
+        // 渲染邏輯
         animeContainer.empty();
-        resultCountSpan.text(list.length);
-        if (list.length === 0) {
-            animeContainer.html('<div class="col-12 text-center text-muted">本季或篩選條件下沒有找到動畫資料。</div>');
-            return;
+        
+        if (filteredList.length === 0) {
+            animeContainer.append('<div class="col-12"><div class="alert alert-warning text-center" role="alert">找不到符合條件的動畫資料。</div></div>');
+        } else {
+            const html = filteredList.map(createAnimeCard).join('');
+            animeContainer.append(html);
         }
 
-        const html = list.map(createAnimeCard).join('');
-        animeContainer.html(html);
+        // 更新計數
+        resultCountSpan.text(filteredList.length);
     }
 
     /**
-     * 載入指定年/季的 JSON 資料
+     * 根據下拉選單的年/季值，動態載入對應的 JSON 檔案。
+     * 載入成功後，執行星期幾篩選和渲染。
+     * @param {Event} e - 事件物件 (可選)
      */
-    async function loadData(year, season) {
-        const jsonUrl = `static/data/${year}_${season}.json`;
+    async function loadAndFilterAnime(e) {
+        if (e) e.preventDefault(); 
+        
+        const selectedYear = $('#year').val();
+        const selectedSeason = $('#season').val(); 
+        
+        if (!selectedYear || !selectedSeason) {
+            console.warn("年份或季節未選擇，跳過載入。");
+            return;
+        }
 
+        // 1. 構建 JSON 檔案路徑: 假設您的 generate_static.py 將檔案放在 /dist/data/
+        // 且檔名為 {year}_{season}.json (例如: /data/2025_秋.json)
+        const jsonUrl = `./data/${selectedYear}_${selectedSeason}.json`; 
+        
+        // 顯示載入狀態
+        animeContainer.empty().append('<div class="col-12 text-center"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p class="mt-2">正在載入資料...</p></div>');
+        resultCountSpan.text(0);
+        
         try {
+            console.log(`嘗試載入資料: ${jsonUrl}`);
             const response = await fetch(jsonUrl);
+
             if (!response.ok) {
-                if (response.status === 404) {
-                    throw new Error('404: 找不到該季度的資料檔案。');
-                }
-                throw new Error(`載入失敗，狀態碼: ${response.status}`);
+                // 如果找不到檔案 (HTTP 404/403 等)
+                throw new Error(`該季度資料不存在 (狀態: ${response.status})`);
             }
-            const data = await response.json();
-            currentAnimeList = data.anime_list || [];
-            console.log(`成功載入 ${year} 年 ${season} 季共 ${currentAnimeList.length} 筆資料。`);
-            return currentAnimeList;
+            
+            const fullData = await response.json();
+            
+            // 假設您的 JSON 結構是 { "anime_list": [...] }
+            currentAnimeList = fullData.anime_list || []; 
+            
+            if (currentAnimeList.length === 0) {
+                animeContainer.html('<div class="col-12"><div class="alert alert-warning text-center" role="alert">該季度資料為空。</div></div>');
+            } else {
+                // 載入成功後，執行星期幾篩選並渲染
+                filterAndRenderResults(currentAnimeList);
+            }
 
         } catch (error) {
-            console.error('載入資料發生錯誤:', error);
-            currentAnimeList = [];
-            showAlert('載入失敗', '找不到該季度的資料檔案，請重新選擇。', 'error');
-            return [];
+            console.error("載入或處理動畫資料時發生錯誤:", error);
+            // 顯示資料不存在或載入失敗的訊息
+            animeContainer.html(`<div class="col-12"><div class="alert alert-danger text-center" role="alert">載入 ${selectedYear} 年 ${selectedSeason} 季資料失敗。<br>請確認 JSON 檔案是否存在: <code>${jsonUrl}</code></div></div>`);
+            currentAnimeList = []; // 清空資料
         }
     }
-
+    
     /**
-     * 根據下拉選單值篩選動畫列表
+     * 載入 JSON 資料並初始化網站 (主要是事件綁定和首次載入)
      */
-    function filterAnime() {
-        if (currentAnimeList.length === 0) {
-            renderAnimeList([]);
-            return;
-        }
-
-        const year = $('#year').val();
-        const season = $('#season').val();
-        const weekday = $('#weekday').val();
-
-        let filteredList = currentAnimeList.filter(anime => {
-            let match = true;
-
-            // 檢查年份和季度 (主要在 loadData 時已經處理，此處用於二次確認或未來擴展)
-            // if (anime.year !== year || anime.season !== season) {
-            //     return false; 
-            // }
-
-            // 篩選星期幾 (如果不是 '全部')
-            if (weekday !== '全部') {
-                const animeWeekday = anime.premiere_date.split('（')[1].replace('）', '');
-                match = match && (animeWeekday === weekday);
-            }
-
-            return match;
+    function initializeWebsite() {
+        // 綁定 Select 變更事件：
+        // 1. 年份/季節變更 -> 觸發資料載入 (loadAndFilterAnime)
+        $('#year, #season').on('change', loadAndFilterAnime);
+        
+        // 2. 首播日期 (星期幾) 變更 -> 只觸發前端篩選 (filterAndRenderResults)
+        $('#premiere_date').on('change', function() {
+            filterAndRenderResults(currentAnimeList);
         });
 
-        renderAnimeList(filteredList);
+        // 綁定查詢按鈕的 submit 事件
+        searchForm.on('submit', loadAndFilterAnime);
+        
+        // 頁面載入時，根據預設選單值載入資料
+        loadAndFilterAnime(); 
     }
 
-    // --- 【分享清單邏輯】 ---
+    // --- 【新增：返回頂部按鈕邏輯】 ---
+    const backToTopBtn = $('#backToTopBtn');
+    const scrollThreshold = 300; // 滾動超過 300px 時顯示按鈕
 
-    /**
-     * 載入本地儲存的分享清單
-     */
-    function loadShareList() {
-        try {
-            const list = localStorage.getItem('animeShareList');
-            return list ? JSON.parse(list) : [];
-        } catch (e) {
-            console.error('載入本地清單失敗:', e);
-            return [];
+    // 監聽頁面滾動事件
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > scrollThreshold) {
+            // 確保按鈕以 flex 方式顯示，以讓內容置中
+            backToTopBtn.css('display', 'flex').css('opacity', '1');
+        } else {
+            backToTopBtn.css('opacity', '0');
+            // 在動畫結束後再完全隱藏
+            setTimeout(() => {
+                if ($(window).scrollTop() <= scrollThreshold) {
+                    backToTopBtn.hide();
+                }
+            }, 300);
         }
-    }
+    });
 
-    /**
-     * 儲存分享清單到本地
-     */
-    function saveShareList() {
-        localStorage.setItem('animeShareList', JSON.stringify(shareList));
-        renderShareList();
-    }
+    // 點擊按鈕，平滑滾動到頁面頂部
+    backToTopBtn.on('click', function() {
+        $('html, body').animate({
+            scrollTop: 0 // 滾動到頂部 (0 像素)
+        }, 600); // 滾動動畫持續 600 毫秒 (平滑效果)
+        return false; // 阻止默認行為
+    });
+    // --- 【結束：返回頂部按鈕邏輯】 ---
 
-    /**
-     * 渲染分享清單
-     */
-    function renderShareList() {
-        shareListContainer.empty();
-        if (shareList.length === 0) {
-            shareListContainer.html('<div class="text-center text-muted p-4">您的分享清單是空的。<br>點擊查詢結果中的「加入清單」來新增動畫。</div>');
-            clearShareListBtn.hide();
-            exportImageBtn.hide();
-            return;
-        }
+    // --- 【原始功能區：分享清單與複製邏輯】 (保持不變) ---
 
-        const html = shareList.map(anime => `
-            <div class="d-flex align-items-center mb-2 share-card" data-anime-name="${anime.anime_name}">
-                <img src="${anime.anime_image_url || 'placeholder.jpg'}" 
-                     alt="${anime.anime_name}" 
-                     class="img-thumbnail me-3" 
-                     style="width: 50px; height: 50px; object-fit: cover;">
-                <div class="flex-grow-1">
-                    <strong style="font-size: 1.1rem;">${anime.anime_name}</strong>
-                    <div class="text-muted small">${anime.premiere_date} ${anime.premiere_time}</div>
-                </div>
-                <button class="btn btn-sm btn-danger remove-from-share" data-anime-name="${anime.anime_name}">
-                    <i class="fas fa-trash-alt"></i>
-                </button>
-            </div>
-        `).join('');
+    // 初始化 Select2
+    $("select").select2({
+        width: '100%',
+        placeholder: "選擇...",
+        allowClear: true
+    });
 
-        shareListContainer.html(html);
-        clearShareListBtn.show();
-        exportImageBtn.show();
-    }
+    let shareList = [];
+    let pressTimer;
 
-    /**
-     * 複製文字到剪貼簿
-     */
+    // 通用複製文字函數
     async function copyToClipboard(text) {
         try {
-            await navigator.clipboard.writeText(text);
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(text);
+            } else {
+                // Fallback for older browsers
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                textarea.style.position = 'fixed';
+                textarea.style.opacity = '0';
+                document.body.appendChild(textarea);
+                textarea.focus();
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+            }
             return true;
         } catch (err) {
-            console.error('複製到剪貼簿失敗:', err);
+            console.error('複製失敗：', err);
             return false;
         }
     }
 
-    // --- 【事件處理器】 ---
-
-    // 1. 表單提交事件 (解決 405 錯誤的關鍵)
-    searchForm.on('submit', async function (e) {
-        e.preventDefault(); // ⭐️ 阻止瀏覽器發送傳統的 HTTP 請求 ⭐️
-        
-        const year = $('#year').val();
-        const season = $('#season').val();
-
-        // 顯示載入動畫，然後開始載入數據
-        const loadingHtml = '<div class="col-12 text-center text-muted"><i class="fas fa-spinner fa-spin me-2"></i>資料載入中，請稍候...</div>';
-        animeContainer.html(loadingHtml);
-        resultCountSpan.text('...');
-        
-        // 載入資料並篩選
-        await loadData(year, season);
-        filterAnime();
-    });
-
-    // 2. 篩選條件變動事件 (Select2)
-    $('#year, #season, #weekday').on('change', function () {
-        // 如果是年份或季度變動，需要重新載入數據
-        if ($(this).attr('id') === 'year' || $(this).attr('id') === 'season') {
-            searchForm.trigger('submit'); // 觸發表單提交來重新載入數據
-        } else {
-            filterAnime(); // 僅在當前數據上進行篩選
+    // 顯示 SweetAlert 訊息
+    function showAlert(title, text, icon = 'info', timer = null, showConfirm = true) {
+        const config = {
+            title: title,
+            text: text,
+            icon: icon,
+            confirmButtonText: '確定'
+        };
+        if (timer) {
+            config.timer = timer;
+            config.showConfirmButton = false;
         }
-    });
-    
-    // 3. 動畫卡片點擊事件 (加入/移除清單)
-    animeContainer.on('click', '.add-btn, .remove-btn', function() {
-        const btn = $(this);
-        const name = btn.data('anime-name');
+        if (!showConfirm) {
+            config.showConfirmButton = false;
+        }
+        Swal.fire(config);
+    }
+
+    // 長按故事大綱顯示完整內容彈跳視窗
+    $(document).on('touchstart mousedown', '.anime-card .story-summary', function (e) {
+        e.preventDefault();
+        const $this = $(this);
+        const fullText = $this.text().trim();
+        const animeName = $this.closest('.anime-card').find('.anime-title').data('anime-name') || $this.closest('.anime-card').find('.anime-title').text().trim();
         
-        if (btn.hasClass('add-btn')) {
-            // 加入清單
-            const anime = currentAnimeList.find(a => a.anime_name === name);
-            if (anime && !shareList.some(item => item.anime_name === name)) {
-                shareList.push(anime);
-                btn.removeClass('btn-primary add-btn').addClass('btn-danger remove-btn').html('<i class="fas fa-minus-circle"></i> 移除清單');
-                showAlert('加入成功', `${name} 已加入分享清單！`, 'success');
+        pressTimer = setTimeout(() => {
+            $this.addClass('long-pressed');
+            
+            Swal.fire({
+                title: `${animeName} - 故事大綱`,
+                html: `<div style="text-align: left; white-space: pre-wrap; font-size: 1.3rem; line-height: 1.4;">${fullText}</div>`,
+                icon: 'info',
+                width: '500px',
+                padding: '2rem',
+                showConfirmButton: true,
+                confirmButtonText: '關閉',
+                confirmButtonColor: '#007bff',
+                allowOutsideClick: true,
+                allowEscapeKey: true
+            }).then(() => {
+                $this.removeClass('long-pressed');
+            });
+        }, 800); // 長按延遲 800ms
+    }).on('touchend touchcancel mouseup mouseleave', '.anime-card .story-summary', function () {
+        clearTimeout(pressTimer);
+        $(this).removeClass('long-pressed');
+    });
+
+    // 長按/滑鼠按下複製動畫名稱
+    $(document).on('touchstart mousedown', '.anime-card .anime-title', function (e) {
+        e.preventDefault();
+        const $this = $(this);
+        const animeName = $this.data('anime-name') || $this.text().trim();
+        
+        pressTimer = setTimeout(async () => {
+            $this.addClass('long-pressed');
+            const success = await copyToClipboard(animeName);
+            if (success) {
+                showAlert('已複製', `${animeName} 已複製到剪貼簿！`, 'success', 1500);
+            } else {
+                showAlert('失敗', '複製失敗，請稍後再試！', 'error');
             }
-        } else {
-            // 移除清單
-            shareList = shareList.filter(item => item.anime_name !== name);
-            btn.removeClass('btn-danger remove-btn').addClass('btn-primary add-btn').html('<i class="fas fa-plus-circle"></i> 加入清單');
-            showAlert('已移除', `${name} 已從分享清單移除。`, 'warning');
-        }
-        
-        saveShareList();
+            $this.removeClass('long-pressed');
+        }, 800); // 長按延遲 800ms
+    }).on('touchend touchcancel mouseup mouseleave', '.anime-card .anime-title', function () {
+        clearTimeout(pressTimer);
+        $(this).removeClass('long-pressed');
     });
 
-    // 4. 分享清單中的移除按鈕
-    shareListContainer.on('click', '.remove-from-share', function() {
-        const name = $(this).data('anime-name');
-        shareList = shareList.filter(item => item.anime_name !== name);
-        saveShareList();
+    // 點擊動畫標題彈窗複製
+    $(document).on('click', '.anime-card .anime-title', function (e) {
+        e.stopPropagation(); // 避免長按觸發
+        const $this = $(this);
+        const animeName = $this.data('anime-name') || $this.text().trim();
         
-        // 更新主列表的按鈕狀態
-        const mainListBtn = animeContainer.find(`.anime-card button[data-anime-name="${name}"]`);
-        if (mainListBtn.length) {
-             mainListBtn.removeClass('btn-danger remove-btn').addClass('btn-primary add-btn').html('<i class="fas fa-plus-circle"></i> 加入清單');
-        }
-        showAlert('已移除', `${name} 已從分享清單移除。`, 'warning');
-    });
-
-    // 5. 清空清單按鈕
-    clearShareListBtn.on('click', function() {
         Swal.fire({
-            title: '確認清空？',
-            text: "確定要清空所有分享清單中的動畫嗎？",
-            icon: 'warning',
+            title: '複製動畫名稱',
+            text: `複製 "${animeName}"？`,
+            icon: 'question',
             showCancelButton: true,
-            confirmButtonText: '確定清空',
-            cancelButtonText: '取消'
-        }).then((result) => {
+            confirmButtonText: '複製',
+            cancelButtonText: '取消',
+            confirmButtonColor: '#28a745'
+        }).then(async (result) => {
             if (result.isConfirmed) {
-                shareList = [];
-                saveShareList();
-                // 重設主列表所有按鈕狀態
-                animeContainer.find('.remove-btn').each(function() {
-                    $(this).removeClass('btn-danger remove-btn').addClass('btn-primary add-btn').html('<i class="fas fa-plus-circle"></i> 加入清單');
-                });
-                showAlert('已清空', '分享清單已清空。', 'success');
+                const success = await copyToClipboard(animeName);
+                if (success) {
+                    showAlert('已複製', `${animeName} 已複製到剪貼簿！`, 'success', 1500);
+                } else {
+                    showAlert('失敗', '複製失敗，請稍後再試！', 'error');
+                }
             }
         });
     });
 
-    // 6. 匯出圖片按鈕
-    exportImageBtn.on('click', async function() {
+    // 加入分享清單
+    $(document).on('click', '.anime-card .add-to-sharelist', function (e) {
+        e.preventDefault();
+        const $card = $(this).closest('.anime-card');
+        const anime = {
+            name: $card.find('.anime-title').text().trim(),
+            image: $card.find('img').attr('src'),
+            premiere_date: $card.find('.info-section small').first().text().replace('首播日期：', '').trim(),
+            premiere_time: $card.find('.info-section small').eq(1).text().replace('首播時間：', '').trim(),
+            story: $card.find('.story-summary').text().trim()
+        };
+
+        // 避免重複加入
+        if (!shareList.some(item => item.name === anime.name)) {
+            shareList.push(anime);
+            updateShareList();
+            showAlert('成功', `${anime.name} 已加入分享清單！`, 'success', 1200);
+        } else {
+            showAlert('已存在', '此動畫已在清單中！', 'info', 1500);
+        }
+    });
+
+    // 更新分享清單 UI
+    function updateShareList() {
+        const $container = $('#shareList').empty();
+        if (shareList.length > 0) {
+            shareList.forEach((anime, index) => {
+                const $shareCard = $(`
+                    <div class="share-card row g-3 mb-3">
+                        <div class="col-md-4">
+                            <img src="${anime.image}" class="img-fluid rounded share-img" alt="${anime.name}" style="width: 300px; height: 300px; object-fit: contain;" loading="lazy">
+                        </div>
+                        <div class="col-md-8 share-content">
+                            <h6 class="anime-name">${anime.name}</h6>
+                            <div class="share-info">
+                                <small class="text-muted d-block">首播日期：${anime.premiere_date}</small>
+                                <small class="text-muted d-block">首播時間：${anime.premiere_time}</small>
+                            </div>
+                            <div class="share-story mt-2">
+                                <small class="text-muted">${anime.story.substring(0, 100)}${anime.story.length > 100 ? '...' : ''}</small>
+                            </div>
+                            <button class="btn btn-outline-danger btn-sm remove-from-list mt-2" data-index="${index}">移除</button>
+                        </div>
+                    </div>
+                `);
+                $container.append($shareCard);
+            });
+            $('#copyButton').fadeIn(300).prop('disabled', false).text('📋');
+        } else {
+            $container.html('<p class="text-muted text-center py-4">分享清單為空，點擊「加入分享清單」添加動畫。</p>');
+            $('#copyButton').fadeOut(300).prop('disabled', true);
+        }
+    }
+
+    // 移除分享項目
+    $(document).on('click', '.remove-from-list', function () {
+        const index = parseInt($(this).data('index'));
+        shareList.splice(index, 1);
+        updateShareList();
+        showAlert('已移除', '動畫已從清單移除！', 'info', 1200);
+    });
+
+    // 複製分享清單為圖片（核心功能：轉圖片 + 複製）
+    $('#copyButton').click(async function () {
         if (shareList.length === 0) {
-            showAlert('清單為空', '請先加入動畫到分享清單。', 'info');
-            return;
+            return showAlert('無內容', '分享清單為空，請先添加動畫！', 'warning');
         }
 
-        showAlert('生成中', '正在生成圖片，請稍候...', 'info', 10000);
-        
-        // 為了匯出美觀，暫時在清單上方加入標題
-        const originalHtml = shareListContainer.html();
-        const tempTitle = `<h4 class="text-center mb-3 fw-bold text-dark p-2" style="border-bottom: 2px solid #007bff;">我的動畫追番清單</h4>`;
-        shareListContainer.prepend(tempTitle);
-
+        const $button = $(this).prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span>生成中...');
         try {
-            const canvas = await html2canvas(shareListContainer[0], {
-                scale: 2, // 提高解析度
-                useCORS: true, // 處理跨域圖片 (Cloudinary 圖片應該沒問題)
-                backgroundColor: '#ffffff' // 確保背景是白色
+            // 步驟 1: 等待所有圖片載入
+            console.log('開始等待圖片載入...');
+            const imagePromises = shareList.map((anime, index) => {
+                return new Promise((resolve, reject) => {
+                    if (anime.image && anime.image !== '無圖片' && anime.image.startsWith('http')) {
+                        const img = new Image();
+                        img.crossOrigin = 'anonymous'; // 嘗試跨域
+                        img.onload = () => {
+                            console.log(`圖片 ${index + 1}/${shareList.length} 載入成功: ${anime.name}`);
+                            resolve();
+                        };
+                        img.onerror = (err) => {
+                            console.warn(`圖片 ${index + 1}/${shareList.length} 載入失敗: ${anime.name}`, err);
+                            // 即使失敗也 resolve，避免卡住
+                            resolve();
+                        };
+                        img.src = anime.image;
+                    } else {
+                        console.log(`跳過無效圖片 ${index + 1}/${shareList.length}: ${anime.name}`);
+                        resolve();
+                    }
+                });
             });
+            await Promise.all(imagePromises);
+            console.log('所有圖片載入完成');
 
-            // 1. 嘗試複製圖片到剪貼簿 (Web API)
-            try {
-                const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
-                const item = new ClipboardItem({ "image/png": blob });
-                await navigator.clipboard.write([item]);
-                showAlert('複製成功', '圖片已成功複製到剪貼簿！', 'success', 3000);
-            } catch (err) {
-                console.warn('圖片複製到剪貼簿失敗，將嘗試下載。', err);
+            // 步驟 2: 生成 canvas
+            console.log('開始生成 canvas...');
+            const canvas = await html2canvas(document.getElementById('shareList'), {
+                scale: window.devicePixelRatio > 1 ? 2 : 1, // 自適應高 DPI 螢幕
+                useCORS: true,  // 允許跨域資源
+                allowTaint: true,  // 允許 tainted canvas
+                backgroundColor: '#ffffff',  // 白色背景，避免透明
+                width: document.getElementById('shareListContainer').scrollWidth, // 使用外層容器來確保寬度
+                height: document.getElementById('shareListContainer').scrollHeight, // 使用外層容器來確保高度
+                logging: true  // 開啟 log 除錯
+            });
+            console.log('Canvas 生成完成，尺寸:', canvas.width, 'x', canvas.height);
 
-                // 2. Fallback 1: 觸發下載 (適用於圖片複製失敗的瀏覽器)
-                const link = document.createElement('a');
-                link.download = `anime-share-list-${Date.now()}.png`;
-                link.href = canvas.toDataURL('image/png');
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-                showAlert('已下載', '圖片已下載到裝置（複製失敗時的備份）！', 'info', 2000);
+            // 步驟 3: 轉 Blob 並複製到剪貼簿
+            canvas.toBlob(async (blob) => {
+                if (!blob) {
+                    throw new Error('Blob 生成失敗');
+                }
+                console.log('Blob 生成完成，大小:', blob.size, 'bytes');
 
-                // 3. Fallback 2: 同時複製文字清單
-                const textList = shareList.map(anime => `• ${anime.anime_name}\n  首播：${anime.premiere_date} ${anime.premiere_time}\n  故事：${anime.story}`).join('\n\n');
-                await copyToClipboard(textList);
-                console.log('文字清單已備份複製');
-            }
+                try {
+                    // 現代瀏覽器：直接寫入剪貼簿
+                    await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
+                    console.log('圖片成功複製到剪貼簿');
+                    showAlert('已複製', `分享清單（${shareList.length} 項）已作為圖片複製！可直接貼上。`, 'success', 2000);
+                    shareList = [];  // 清空清單
+                    updateShareList();
+                } catch (clipboardErr) {
+                    console.warn('剪貼簿 API 失敗:', clipboardErr);
+                    // Fallback 1: 下載 PNG
+                    const link = document.createElement('a');
+                    link.download = `anime-share-list-${Date.now()}.png`;
+                    link.href = canvas.toDataURL('image/png');
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    showAlert('已下載', '圖片已下載到裝置（複製失敗時的備份）！', 'info', 2000);
+
+                    // Fallback 2: 同時複製文字清單
+                    const textList = shareList.map(anime => `${anime.name}\n首播：${anime.premiere_date} ${anime.premiere_time}\n故事：${anime.story}`).join('\n\n');
+                    await copyToClipboard(textList);
+                    console.log('文字清單已備份複製');
+                }
+            }, 'image/png', 0.95); // 高品質 PNG
+
         } catch (err) {
             console.error('html2canvas 生成錯誤：', err);
-            showAlert('生成失敗', '無法生成圖片，請檢查圖片來源或瀏覽器設定。', 'error');
+            showAlert('生成失敗', '無法生成圖片，請檢查圖片來源或瀏覽器設定（試試 Chrome）。', 'error');
 
             // 最終 Fallback: 複製純文字清單
-            const textList = shareList.map(anime => `• ${anime.anime_name}\n  首播：${anime.premiere_date} ${anime.premiere_time}\n  故事：${anime.story}`).join('\n\n');
+            const textList = shareList.map(anime => `• ${anime.name}\n  首播：${anime.premiere_date} ${anime.premiere_time}\n  故事：${anime.story}`).join('\n\n');
             const success = await copyToClipboard(textList);
             if (success) {
-                showAlert('已複製', '圖片生成失敗，但已將清單文字複製到剪貼簿。', 'info');
+                showAlert('文字備份', `已複製文字清單（${shareList.length} 項）到剪貼簿！`, 'info', 2000);
             }
         } finally {
-            // 無論成功與否，都將暫時加入的標題移除
-            shareListContainer.html(originalHtml);
-        }
-    });
-    
-    // 7. 滾動到頂部按鈕
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            backToTopBtn.fadeIn();
-        } else {
-            backToTopBtn.fadeOut();
+            $button.prop('disabled', false).html('📋');
         }
     });
 
-    backToTopBtn.click(function() {
-        $('html, body').animate({scrollTop : 0}, 600);
-        return false;
-    });
-
-    // --- 【初始化】 ---
-    
-    // 初始化 Select2
-    $('.form-select').select2({
-        minimumResultsForSearch: Infinity // 隱藏搜尋框
-    });
-    
-    // 載入分享清單並渲染
-    renderShareList();
-
-    // 頁面載入後，自動載入當前年/季的資料並篩選
-    searchForm.trigger('submit');
+    // --- 網頁載入後執行初始化 ---
+    initializeWebsite();
 });
