@@ -7,13 +7,14 @@ from datetime import datetime
 # 導入 Config 以使用 SEASON_TO_MONTH 進行月份比較
 from config import Config 
 from services.anime_service import fetch_anime_data, get_current_season 
-from cloudinary_cleaner import cleanup_cloudinary_resources # <--- 【新增】導入清理服務
+from cloudinary_cleaner import cleanup_cloudinary_resources # 【保留】導入清理服務
 
 from jinja2 import Environment, FileSystemLoader
 
 # --- 設定 ---
 OUTPUT_DIR = 'dist'
 JSON_DIR = os.path.join(OUTPUT_DIR, 'data')
+START_YEAR_ON_EMPTY = 2018 # 【新增】設定資料不足時的起始年份
 
 def generate_quarterly_data(year, season):
     """爬取單一季度資料，生成 JSON 檔案"""
@@ -48,23 +49,32 @@ def generate_static_files():
     """主函式：執行清理、爬取所有需要的季度資料並生成靜態檔案"""
     
     # =======================================================
-    # 【新增步驟 A】: 執行 Cloudinary 圖片清理
+    # 【步驟 A】: 執行 Cloudinary 圖片清理
     # =======================================================
     print("--- 執行 Cloudinary 舊圖片清理（保留約 15 年內資料） ---")
-    # 呼叫清理函數，設定 years_to_keep=15
-    # 注意：如果您的 Cloudinary API 金鑰在 .env 中未正確設置，此處會跳過清理。
     cleanup_cloudinary_resources(years_to_keep=15) 
     print("--- Cloudinary 清理完成 ---")
     
     # =======================================================
-    # 爬蟲邏輯：決定要爬取的年/季 (保留近兩年)
+    # 【步驟 B】: 爬蟲邏輯：決定要爬取的年/季 (新增資料完整性檢查)
     # =======================================================
     
     now = datetime.now()
     current_year = now.year
     
-    # 計算需要爬取的年範圍 (保留 current_year 往前推 2 年的資料)
-    years_to_crawl = list(range(current_year - 2, current_year + 2))
+    # --- 新增的檢查邏輯 ---
+    json_files_exist = os.path.exists(JSON_DIR) and any(f.endswith('.json') for f in os.listdir(JSON_DIR))
+
+    if not json_files_exist:
+        # 偵測到資料目錄為空，從 2018 年開始爬取
+        print(f"⚠️ 偵測到資料目錄為空或無 JSON 檔案。將從 {START_YEAR_ON_EMPTY} 年開始爬取資料。")
+        # 從 2018 年到 (當前年份 + 1) 年
+        years_to_crawl = list(range(START_YEAR_ON_EMPTY, current_year + 2))
+    else:
+        # 正常執行：只爬取最近 4 年的增量數據 (當前年-2 到 當前年+1)
+        print("✅ 偵測到現有資料。將執行增量爬取 (最近 4 年，包含未來一季)。")
+        years_to_crawl = list(range(current_year - 2, current_year + 2))
+    # ----------------------
     
     # 確保輸出目錄存在
     os.makedirs(JSON_DIR, exist_ok=True)

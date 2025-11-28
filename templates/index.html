@@ -1,11 +1,9 @@
-<!-- index.html -->
 {% extends "base.html" %}
 
 {% block title %}動畫資料爬蟲{% endblock %}
 
 {% block head %}
 <meta name="description" content="快速查詢動畫資料，依年份、季節、首播日期篩選">
-<!-- Open Graph Meta Tags -->
 <meta property="og:title" content="動畫資料爬蟲">
 <meta property="og:description" content="快速查詢動畫資料">
 <meta property="og:image" content="data:image/png;base64,iVBORw0KGgo...">
@@ -14,7 +12,6 @@
 {% endblock %}
 
 {% block body %}
-<!-- Header -->
 <header class="bg-primary text-white py-3">
     <div class="container">
         <h1 class="text-center mb-0">動畫資料爬蟲</h1>
@@ -23,23 +20,28 @@
 </header>
 
 <div class="container my-4">
-    <!-- 查詢表單 -->
     <section class="mb-5">
         <h2 class="h4 text-center mb-4">查詢條件</h2>
-        <form method="POST" class="row g-3 justify-content-center">
+        <form id="search-form" class="row g-3 justify-content-center">
             {% for label, id, value, options in [
                 ("選擇年份：", "year", selected_year, years),
-                ("選擇季節：", "season", selected_season, ["冬", "春", "夏", "秋"]),
-                ("選擇首播日期：", "premiere_date", premiere_date, ["全部", "一", "二", "三", "四", "五", "六", "日"])
+                ("選擇季度：", "season", selected_season, seasons),
+                ("星期幾首播：", "weekday", None, Config.WEEKDAY_MAP.keys()),
+                ("關鍵字：", "keyword", None, [])
             ] %}
-            <div class="col-12 col-md-4">
-                <label for="{{ id }}" class="form-label fw-bold">{{ label }}</label>
-                <select name="{{ id }}" id="{{ id }}" class="form-select" required>
+            <div class="col-md-6 col-lg-3">
+                <label for="{{ id }}" class="form-label">{{ label }}</label>
+                <select id="{{ id }}" class="form-select" {% if id != 'keyword' %}required{% endif %}>
                     {% for opt in options %}
                     <option value="{{ opt }}" {% if opt == value %}selected{% endif %}>
                         {% if id == 'season' %}{{ opt }}（{{ loop.index * 3 - 2 }}月）{% else %}{{ opt }}{% endif %}
                     </option>
                     {% endfor %}
+                    {% if id == 'weekday' %}
+                    <option value="" selected>全部</option>
+                    {% elif id == 'keyword' %}
+                    <option value="" selected>請輸入關鍵字</option>
+                    {% endif %}
                 </select>
             </div>
             {% endfor %}
@@ -49,31 +51,37 @@
         </form>
     </section>
 
-    <!-- 錯誤訊息 -->
     {% if error_message %}
     <div class="alert alert-danger text-center" role="alert">
         {{ error_message }}
     </div>
     {% endif %}
 
-    <!-- 查詢結果 -->
     <section class="mb-5">
         <h2 class="h4 text-center mb-4">查詢結果 (<span id="result-count">0</span> 筆)</h2>
         <div id="anime-results-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
             </div>
     </section>
 
-    <!-- 分享清單區 -->
     <section>
         <h2 class="h4 text-center mb-4">分享清單</h2>
         <div id="shareListContainer" class="row justify-content-center">
-            <div id="shareList" class="col-12 col-lg-8"></div>
-        </div>
-        <div class="text-center mt-3">
-            <button id="copyButton" class="btn btn-primary" title="複製分享清單為圖片">
-                📋
-            </button>
+            <div class="col-12 col-md-10 col-lg-8">
+                <div id="shareList" class="p-3 border rounded mb-3 bg-white" style="min-height: 100px;">
+                    </div>
+                <div class="d-flex justify-content-center gap-2">
+                    <button id="clearShareListBtn" class="btn btn-danger" style="display:none;">清空清單</button>
+                    <button id="exportImageBtn" class="btn btn-success" style="display:none;">匯出圖片</button>
+                    <button id="copyTextBtn" class="btn btn-secondary" style="display:none;">複製純文字</button>
+                </div>
+            </div>
         </div>
     </section>
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // 這裡通常會是額外的 JS 變數或腳本
+</script>
 {% endblock %}
