@@ -69,18 +69,21 @@ def generate_static_files():
         # 偵測到資料目錄為空，從 2018 年開始爬取
         print(f"⚠️ 偵測到資料目錄為空或無 JSON 檔案。將從 {START_YEAR_ON_EMPTY} 年開始爬取資料。")
         # 從 2018 年到 (當前年份 + 1) 年
-        years_to_crawl = list(range(START_YEAR_ON_EMPTY, current_year + 2))
+        years_range = list(range(START_YEAR_ON_EMPTY, current_year + 2))
     else:
         # 正常執行：只爬取最近 4 年的增量數據 (當前年-2 到 當前年+1)
         print("✅ 偵測到現有資料。將執行增量爬取 (最近 4 年，包含未來一季)。")
-        years_to_crawl = list(range(current_year - 2, current_year + 2))
+        years_range = list(range(current_year - 2, current_year + 2))
     # ----------------------
     
     # 確保輸出目錄存在
     os.makedirs(JSON_DIR, exist_ok=True)
     
+    # 收集所有目標年/季，用於後續判斷預設值
+    years_to_crawl = [] 
+    
     # 遍歷所有目標年/季
-    for year in years_to_crawl:
+    for year in years_range:
         year_str = str(year)
         
         # Season mapping: 1-3月=冬, 4-6月=春, 7-9月=夏, 10-12月=秋
@@ -96,6 +99,10 @@ def generate_static_files():
                 JSON_DIR, 
                 f'{year_str}_{season}.json'
             )
+            
+            # 將所有計劃爬取或已存在 JSON 檔案的季度加入列表
+            if is_historical_quarter or year > current_year or (year == current_year and now.month >= start_month_val):
+                years_to_crawl.append((year_str, season))
             
             # 2. 條件式跳過：如果是歷史季度且 JSON 文件已存在，則跳過爬蟲
             if is_historical_quarter and os.path.exists(json_output_path):
@@ -115,11 +122,29 @@ def generate_static_files():
     template = env.get_template('index.html') 
     
     # 準備下拉選單的選項
-    years_for_dropdown = sorted(years_to_crawl, key=int, reverse=True)
+    # 由於 years_to_crawl 是 (year_str, season) 組成的列表，我們只需要唯一的年份
+    unique_years = sorted(list(set(y[0] for y in years_to_crawl)), key=int, reverse=True)
+    years_for_dropdown = unique_years
     
-    # 取得當前年/季作為預設選單值
-    selected_year = str(now.year)
-    selected_season = get_current_season(now.month)
+    # 【⬇️ 修改開始：根據爬取的資料決定預設值 ⬇️】
+    if years_to_crawl:
+        # 找出 years_to_crawl 中最新的 (year, season) 組合
+        # 為了比較，將季節轉換為數字（例如：冬=1, 春=4, 夏=7, 秋=10）
+        def get_season_value(item):
+            year_str, season = item
+            season_month = Config.SEASON_TO_MONTH.get(season, 1)
+            # 組合年份和月份進行排序 (例如 2024年春季 -> 202404)
+            return int(year_str) * 100 + season_month 
+            
+        # 找到最新的年份和季度
+        latest_year_season = max(years_to_crawl, key=get_season_value)
+        selected_year = latest_year_season[0]
+        selected_season = latest_year_season[1]
+    else:
+        # 如果 years_to_crawl 為空 (理論上不該發生)，則使用當前日期作為備份
+        selected_year = str(now.year)
+        selected_season = get_current_season(now.month)
+    # 【⬆️ 修改結束 ⬆️】
     
     # 渲染 HTML
     output_html = template.render(
