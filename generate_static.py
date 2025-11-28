@@ -50,10 +50,10 @@ def generate_static_files():
     # =======================================================
     # 【新增步驟 A】: 執行 Cloudinary 圖片清理
     # =======================================================
-    print("--- 執行 Cloudinary 舊圖片清理（保留約 2 年內資料） ---")
-    # 呼叫清理函數，設定 years_to_keep=2
+    print("--- 執行 Cloudinary 舊圖片清理（保留約 15 年內資料） ---")
+    # 呼叫清理函數，設定 years_to_keep=15
     # 注意：如果您的 Cloudinary API 金鑰在 .env 中未正確設置，此處會跳過清理。
-    cleanup_cloudinary_resources(years_to_keep=2) 
+    cleanup_cloudinary_resources(years_to_keep=15) 
     print("--- Cloudinary 清理完成 ---")
     
     # =======================================================
