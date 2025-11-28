@@ -1,73 +1,75 @@
 name: Scheduled Cloudflare Pages Deployment
 
 on:
-  # 1. 定時觸發 (Cron Job)
-  # 每天 UTC 17:00 執行，即台灣時間 (UTC+8) 凌晨 01:00。
-  schedule:
-    - cron: '0 17 * * *'
-    
-  # 2. 手動觸發
-  # 允許您隨時在 GitHub Actions 頁面上點擊按鈕手動運行
-  workflow_dispatch:
+  # 1. 定時觸發 (Cron Job)
+  # 每天 UTC 17:00 執行，即台灣時間 (UTC+8) 凌晨 01:00。
+  schedule:
+    - cron: '0 17 * * *'
+    
+  # 2. 手動觸發
+  # 允許您隨時在 GitHub Actions 頁面上點擊按鈕手動運行
+  workflow_dispatch:
 
 jobs:
-  build_and_deploy:
-    # 使用 Cloudflare Pages 推薦的執行環境
-    runs-on: ubuntu-latest
-    
-    # 環境變數：讓您的 build.sh 和 Python 腳本可以讀取
-    env:
-      CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
-      CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
-      CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
-      # 其他爬蟲登入變數...
-      # USERNAME_1: ${{ secrets.USERNAME_1 }}
-      # PASSWORD_1: ${{ secrets.PASSWORD_1 }}
+  build_and_deploy:
+    # 使用 Cloudflare Pages 推薦的執行環境
+    runs-on: ubuntu-latest
+    
+    # 環境變數：讓您的 build.sh 和 Python 腳本可以讀取
+    env:
+      CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+      CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+      CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+      # 其他爬蟲登入變數...
+      # USERNAME_1: ${{ secrets.USERNAME_1 }}
+      # PASSWORD_1: ${{ secrets.PASSWORD_1 }}
 
 
-    steps:
-    # 步驟 1: 檢出程式碼
-    - name: ⬇️ Checkout Repository
-      uses: actions/checkout@v4
-      # 確保 actions/checkout 具有推送 (push) 權限
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    # 步驟 1: 檢出程式碼
+    - name: ⬇️ Checkout Repository
+      uses: actions/checkout@v4
+      # 確保 actions/checkout 具有推送 (push) 權限
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
-    # 步驟 2: 設置 Python 環境
-    - name: 🐍 Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.9'
+    # 步驟 2: 設置 Python 環境
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
 
-    # 步驟 3: 安裝依賴並執行建構 (生成最新的 JSON 和 HTML 檔案)
-    - name: ⚙️ Install dependencies and Run Static Build
-      run: bash build.sh
-      
-    # 🌟 新增步驟：資料持久化 🌟
-    # 將新生成的 dist/data/* 和 index.html 提交回 GitHub
-    - name: 💾 Commit and Push new data to Repository
-      run: |
-        # 設定 Git 使用者
-        git config user.name github-actions
-        git config user.email github-actions@users.noreply.github.com
-        
-        # 檢查 dist/data/ 和 dist/index.html 是否有變動 (這是關鍵)
-        if git diff --exit-code dist/data/ dist/index.html; then
-          echo "No changes found in dist/data or index.html. Skipping commit."
-        else
-          # 提交變動
-          git add dist/data/ dist/index.html
-          # [skip ci] 確保這次提交不會再次觸發 Actions，造成無限循環
-          git commit -m "chore(data): Update anime data via scheduled action [skip ci]"
-          git push
-        fi
-        
-    # 步驟 4: 部署到 Cloudflare Pages (網站更新)
-    - name: 🚀 Deploy to Cloudflare Pages
-      uses: cloudflare/pages-action@v1
-      with:
-        # 必須從您的 GitHub 專案 Secrets 傳遞這三個參數
-        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        projectName: 'anime-static-crawler'
-        directory: 'dist'
+    # 步驟 3: 安裝依賴並執行建構 (生成最新的 JSON 和 HTML 檔案)
+    - name: ⚙️ Install dependencies and Run Static Build
+      run: bash build.sh
+      
+    # 🌟 修正後的步驟：資料與快取持久化 🌟
+    # 將新生成的 dist/data/*、index.html 和 Cloudinary 快取提交回 GitHub
+    - name: 💾 Commit and Push new data and Cache to Repository
+      run: |
+        # 設定 Git 使用者
+        git config user.name github-actions
+        git config user.email github-actions@users.noreply.github.com
+        
+        # *** 關鍵修正：檢查是否包含 cloudinary_cache.json 的變動 ***
+        if git diff --exit-code dist/data/ dist/index.html cloudinary_cache.json; then
+          echo "No changes found in data or cache. Skipping commit."
+        else
+          # *** 關鍵修正：將 cloudinary_cache.json 加入提交 ***
+          git add dist/data/ dist/index.html cloudinary_cache.json
+          
+          # [skip ci] 確保這次提交不會再次觸發 Actions
+          git commit -m "chore(data): Update anime data and Cloudinary cache [skip ci]"
+          git push
+          echo "Successfully pushed data and cache changes."
+        fi
+        
+    # 步驟 4: 部署到 Cloudflare Pages (網站更新)
+    - name: 🚀 Deploy to Cloudflare Pages
+      uses: cloudflare/pages-action@v1
+      with:
+        # 必須從您的 GitHub 專案 Secrets 傳遞這三個參數
+        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        projectName: 'anime-static-crawler'
+        directory: 'dist'
