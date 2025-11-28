@@ -7,6 +7,7 @@ from datetime import datetime
 # 導入 Config 以使用 SEASON_TO_MONTH 進行月份比較
 from config import Config 
 from services.anime_service import fetch_anime_data, get_current_season 
+from cloudinary_cleaner import cleanup_cloudinary_resources # <--- 【新增】導入清理服務
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -19,8 +20,10 @@ def generate_quarterly_data(year, season):
     
     print(f"--- 開始爬取 {year} 年 {season} 季資料 ---")
 
+    # 假設 fetch_anime_data 已經包含多進程和 Cloudinary 上傳/快取處理
     anime_list = fetch_anime_data(year, season, None) 
 
+    # 檢查爬蟲結果是否有效
     if not anime_list or ('error' in anime_list[0] if anime_list and isinstance(anime_list[0], dict) else False):
         error_msg = anime_list[0].get('error', '未知錯誤') if anime_list and isinstance(anime_list[0], dict) else '無有效資料'
         print(f"爬蟲失敗或無資料: {error_msg}")
@@ -31,64 +34,69 @@ def generate_quarterly_data(year, season):
     
     data_to_save = {
         'anime_list': anime_list,
-        'target_year': year, 
-        'target_season': season,
-        'update_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        'generated_at': datetime.now().isoformat()
     }
     
+    # 寫入 JSON 檔案
     with open(json_output_path, 'w', encoding='utf-8') as f:
         json.dump(data_to_save, f, ensure_ascii=False, indent=4)
-    print(f"成功生成 JSON 資料: {json_output_path} ({len(anime_list)} 筆)")
+        
+    print(f"✅ 成功生成 JSON 檔案：{json_output_path}")
+
 
 def generate_static_files():
-    """執行爬蟲並生成靜態 HTML 和多季度 JSON 檔案，跳過已存在的歷史數據。"""
+    """主函式：執行清理、爬取所有需要的季度資料並生成靜態檔案"""
+    
+    # =======================================================
+    # 【新增步驟 A】: 執行 Cloudinary 圖片清理
+    # =======================================================
+    print("--- 執行 Cloudinary 舊圖片清理（保留約 2 年內資料） ---")
+    # 呼叫清理函數，設定 years_to_keep=2
+    # 注意：如果您的 Cloudinary API 金鑰在 .env 中未正確設置，此處會跳過清理。
+    cleanup_cloudinary_resources(years_to_keep=2) 
+    print("--- Cloudinary 清理完成 ---")
+    
+    # =======================================================
+    # 爬蟲邏輯：決定要爬取的年/季 (保留近兩年)
+    # =======================================================
+    
     now = datetime.now()
-    os.makedirs(JSON_DIR, exist_ok=True)
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-
-    # 決定要爬取的範圍 (從 2018 年冬季開始到明年)
     current_year = now.year
-    current_month = now.month
     
-    start_year = 2018 
-    end_year = current_year + 1 
+    # 計算需要爬取的年範圍 (保留 current_year 往前推 2 年的資料)
+    years_to_crawl = list(range(current_year - 2, current_year + 2))
     
-    years_to_crawl = [str(y) for y in range(start_year, end_year + 1)]
-    seasons = ["冬", "春", "夏", "秋"]
+    # 確保輸出目錄存在
+    os.makedirs(JSON_DIR, exist_ok=True)
     
-    # 獲取當前季節對應的數字月份，用於比較（例如：秋季對應 10 月）
-    current_season = get_current_season(current_month)
-    current_season_month_val = Config.SEASON_TO_MONTH.get(current_season)
-    
-    # 執行多季度爬蟲
-    for year_str in years_to_crawl:
-        year = int(year_str)
+    # 遍歷所有目標年/季
+    for year in years_to_crawl:
+        year_str = str(year)
         
-        for season in seasons:
-            season_month_val = Config.SEASON_TO_MONTH[season]
-            json_filename = f'{year_str}_{season}.json'
-            json_output_path = os.path.join(JSON_DIR, json_filename)
+        # Season mapping: 1-3月=冬, 4-6月=春, 7-9月=夏, 10-12月=秋
+        for season, start_month_val in Config.SEASON_TO_MONTH.items():
             
-            # 1. 檢查是否為未來季度 (明年除了冬季外通常不會有資料，所以跳過)
-            if year == current_year + 1 and season != "冬":
-                continue 
-            
-            # 2. 判斷是否為「舊的歷史季度」
-            is_historical_quarter = (
-                year < current_year or
-                (year == current_year and season_month_val < current_season_month_val)
+            # 1. 判斷是否為歷史季度
+            is_historical_quarter = not (
+                year > current_year or
+                (year == current_year and now.month < start_month_val)
             )
             
-            # 3. 條件式跳過：如果是歷史季度且 JSON 文件已存在，則跳過爬蟲
+            json_output_path = os.path.join(
+                JSON_DIR, 
+                f'{year_str}_{season}.json'
+            )
+            
+            # 2. 條件式跳過：如果是歷史季度且 JSON 文件已存在，則跳過爬蟲
             if is_historical_quarter and os.path.exists(json_output_path):
                 print(f"✅ 跳過爬取歷史資料：{year_str} 年 {season} 季 JSON 檔案已存在。")
                 continue
                 
-            # 4. 執行爬蟲：包含所有缺失的歷史數據、當前季度、以及所有未來季度
+            # 3. 執行爬蟲：包含所有缺失的歷史數據、當前季度、以及所有未來季度
             generate_quarterly_data(year_str, season) 
 
     # ------------------------------------
-    # HTML 渲染：生成 index.html (保持不變)
+    # HTML 渲染：生成 index.html 
     # ------------------------------------
     
     file_loader = FileSystemLoader('templates') 
@@ -109,16 +117,16 @@ def generate_static_files():
         error_message=None,
         selected_year=selected_year,
         selected_season=selected_season,
-        premiere_date='全部',
         years=years_for_dropdown,
-        seasons=seasons,
-        premiere_dates=['全部', '日', '一', '二', '三', '四', '五', '六']
+        seasons=Config.SEASON_TO_MONTH.keys()
     )
-
-    html_output_path = os.path.join(OUTPUT_DIR, 'index.html')
-    with open(html_output_path, 'w', encoding='utf-8') as f:
+    
+    # 寫入最終的 index.html
+    with open(os.path.join(OUTPUT_DIR, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(output_html)
-    print(f"成功生成靜態 HTML 檔案: {html_output_path}")
+    
+    print("✅ 成功生成 index.html 靜態檔案。")
+
 
 if __name__ == '__main__':
     generate_static_files()
