@@ -1,7 +1,7 @@
 import os
 import logging
 import json
-import re  # <-- 確保導入，用於解析 Cloudinary URL
+import re  # 確保導入，用於解析 Cloudinary URL
 from datetime import datetime, timedelta
 import cloudinary.api
 from dotenv import load_dotenv
@@ -128,11 +128,8 @@ def cleanup_cloudinary_resources(years_to_keep: int = 15, folder_prefix: str = "
                         url = anime.get('anime_image_url')
                         if url and 'cloudinary.com' in url:
                             # 從 Cloudinary URL 中解析出 Public ID
-                            # 尋找 <folder_prefix>/<hash> 的部分
-                            # folder_prefix.strip('/') 確保移除前後斜線，例如 "anime_covers"
                             match = re.search(r'v\d+/({})/([\w]+)'.format(folder_prefix.strip('/')), url)
                             if match:
-                                # match.group(1) 是資料夾名稱，match.group(2) 是 hash
                                 public_id = f"{match.group(1)}/{match.group(2)}"
                                 public_ids_to_keep.add(public_id)
                             
@@ -177,6 +174,7 @@ def cleanup_cloudinary_resources(years_to_keep: int = 15, folder_prefix: str = "
 
             if current_batch_to_delete:
                 public_ids_to_delete_all.extend(current_batch_to_delete)
+                # 注意：這裡的日誌是累計的，所以看起來數量會越來越多
                 logger.info(f"發現 {len(current_batch_to_delete)} 筆不在白名單中的資源待刪除。")
 
             next_cursor = resources_result.get('next_cursor')
@@ -201,7 +199,10 @@ def cleanup_cloudinary_resources(years_to_keep: int = 15, folder_prefix: str = "
                     resource_type="image", 
                     type="upload"
                 )
-                deleted_count = len(delete_result.get('deleted', {}).get('resource', []))
+                
+                # *** 關鍵修正處：直接計算 'deleted' 字典中的鍵數量 ***
+                deleted_count = len(delete_result.get('deleted', {})) 
+                
                 total_deleted_cloud += deleted_count
                 logger.info(f"成功刪除一批 {deleted_count} 筆雲端資源。")
             except Exception as e:
@@ -238,5 +239,4 @@ def cleanup_cloudinary_resources(years_to_keep: int = 15, folder_prefix: str = "
     return total_deleted_cloud
 
 if __name__ == '__main__':
-    # *** 已修正：明確呼叫時保留 15 年的季度資料 ***
     cleanup_cloudinary_resources(years_to_keep=15)
