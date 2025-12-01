@@ -9,6 +9,11 @@ $(document).ready(function () {
     const resultCountSpan = $('#result-count');
     const searchForm = $('form'); // 選擇查詢表單
 
+    // --- 【滾動位置記憶體變數】 ---
+    let saveScrollTimeout;
+    const scrollPositionKey = 'scrollPosition';
+    const scrollThresholdPx = 50; // 恢復滾動的門檻 (例如：超過 50px 才恢復)
+
     /**
      * 格式化單個動畫資料並生成 HTML 卡片
      * @param {object} anime - 單個動畫的資料物件
@@ -20,9 +25,9 @@ $(document).ready(function () {
             <div class="col">
                 <div class="card h-100 anime-card">
                     <img src="${anime.anime_image_url || 'placeholder.jpg'}" 
-                         class="card-img-top" 
-                         alt="${anime.anime_name}" 
-                         loading="lazy">
+                            class="card-img-top" 
+                            alt="${anime.anime_name}" 
+                            loading="lazy">
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title anime-title" data-anime-name="${anime.anime_name}">${anime.anime_name}</h3>
                         <div class="card-text d-flex flex-column flex-grow-1">
@@ -49,7 +54,6 @@ $(document).ready(function () {
 
     /**
      * 渲染結果到頁面，只處理 "星期幾" 篩選和渲染。
-     * 這是原 filterAndRenderAnime 函式的簡化版。
      * @param {Array} data - 當前季度完整的動畫資料列表 (currentAnimeList)
      */
     function filterAndRenderResults(data) {
@@ -75,6 +79,9 @@ $(document).ready(function () {
 
         // 更新計數
         resultCountSpan.text(filteredList.length);
+        
+        // ⭐ 資料渲染完成後，嘗試恢復滾動位置
+        restoreScrollPosition(); 
     }
 
     /**
@@ -93,8 +100,6 @@ $(document).ready(function () {
             return;
         }
 
-        // 1. 構建 JSON 檔案路徑: 假設您的 generate_static.py 將檔案放在 /dist/data/
-        // 且檔名為 {year}_{season}.json (例如: /data/2025_秋.json)
         const jsonUrl = `./data/${selectedYear}_${selectedSeason}.json`; 
         
         // 顯示載入狀態
@@ -106,7 +111,6 @@ $(document).ready(function () {
             const response = await fetch(jsonUrl);
 
             if (!response.ok) {
-                // 如果找不到檔案 (HTTP 404/403 等)
                 throw new Error(`該季度資料不存在 (狀態: ${response.status})`);
             }
             
@@ -150,6 +154,40 @@ $(document).ready(function () {
         loadAndFilterAnime(); 
     }
 
+    // --- 【新增：滾動位置記憶體邏輯】 ---
+
+    // 儲存滾動位置
+    function saveScrollPosition() {
+        sessionStorage.setItem(scrollPositionKey, $(window).scrollTop());
+    }
+
+    // 恢復滾動位置
+    function restoreScrollPosition() {
+        const scrollPos = sessionStorage.getItem(scrollPositionKey);
+        // 確認滾動位置存在且大於門檻
+        if (scrollPos && parseInt(scrollPos) > scrollThresholdPx) {
+            console.log(`恢復滾動位置到: ${scrollPos}px`);
+            // 使用動畫平滑滾動到記憶體中的位置
+            $('html, body').animate({ scrollTop: scrollPos }, 300, 'swing');
+            // 一旦恢復，就清除記憶體，避免下次全新載入時也跳轉
+            sessionStorage.removeItem(scrollPositionKey);
+        } else if (scrollPos && parseInt(scrollPos) <= scrollThresholdPx) {
+            // 如果位置太靠近頂部，也清除，避免誤觸
+            sessionStorage.removeItem(scrollPositionKey);
+        }
+    }
+
+    // 監聽滾動事件 (使用節流)
+    $(window).on('scroll', function() {
+        if (saveScrollTimeout) {
+            clearTimeout(saveScrollTimeout);
+        }
+        // 每 200 毫秒才儲存一次位置
+        saveScrollTimeout = setTimeout(saveScrollPosition, 200);
+    });
+
+    // --- 【結束：滾動位置記憶體邏輯】 ---
+    
     // --- 【新增：返回頂部按鈕邏輯】 ---
     const backToTopBtn = $('#backToTopBtn');
     const scrollThreshold = 300; // 滾動超過 300px 時顯示按鈕
