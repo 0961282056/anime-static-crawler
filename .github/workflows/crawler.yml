@@ -51,7 +51,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "🤖 Auto-update anime data & cache [skip ci]"
+            git commit -m "🤖 Auto-update anime data & cache"
             git push
             echo "✅ Data pushed to GitHub. Cloudflare Pages should trigger build now."
           fi
