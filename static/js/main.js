@@ -15,6 +15,10 @@ $(document).ready(function () {
     let currentAnimeList = [];
     let shareList = [];
 
+    // --- 【新增】捲動記憶相關變數 ---
+    const SCROLL_KEY = 'anime_scroll_position'; // 儲存的 Key
+    let isFirstLoad = true; // 標記是否為網頁剛打開的第一次載入
+
     // --- 1. 初始化 Select2 ---
     $("select").select2({
         width: '100%',
@@ -159,7 +163,45 @@ $(document).ready(function () {
         }).join('');
 
         animeContainer.html(html);
+
+        // --- 【新增】渲染完成後，執行捲動恢復 ---
+        if (isFirstLoad) {
+            restoreScrollPosition();
+            isFirstLoad = false; // 只有第一次載入需要恢復，之後的切換不需要
+        }
     }
+
+    // --- 【新增】捲動位置管理函式 ---
+    
+    // 1. 恢復位置
+    function restoreScrollPosition() {
+        const savedPos = localStorage.getItem(SCROLL_KEY);
+        // 如果有儲存的位置，且位置大於 0
+        if (savedPos && parseInt(savedPos) > 0) {
+            // 使用 setTimeout 確保 DOM 已經完全長出來後再捲動
+            setTimeout(() => {
+                window.scrollTo({
+                    top: parseInt(savedPos),
+                    behavior: 'auto' // 使用 auto 瞬間跳轉，避免 smooth 滾動的視覺干擾
+                });
+                console.log('已恢復上次瀏覽位置:', savedPos);
+            }, 100); // 100ms 延遲確保圖片佔位符已渲染
+        }
+    }
+
+    // 2. 儲存位置 (使用 Debounce 防抖動，避免滑動時頻繁寫入)
+    let scrollTimeout;
+    $(window).on('scroll', function() {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            const currentPos = $(window).scrollTop();
+            localStorage.setItem(SCROLL_KEY, currentPos);
+        }, 200); // 停止滑動 200ms 後才儲存
+        
+        // 原有的回到頂部按鈕邏輯
+        if ($(this).scrollTop() > 300) $('#backToTopBtn').addClass('show');
+        else $('#backToTopBtn').removeClass('show');
+    });
 
     // --- 事件綁定 ---
     
@@ -211,7 +253,7 @@ $(document).ready(function () {
         Swal.fire({toast: true, position: 'top', icon: 'success', title: '已加入', timer: 1000, showConfirmButton: false, background: '#2b2b2b', color:'#fff'});
     });
 
-    // 渲染分享清單 (包含空狀態處理 + 自動捲動)
+    // 渲染分享清單
     function renderShareList() {
         const $con = $('#shareList').empty();
         
@@ -237,7 +279,6 @@ $(document).ready(function () {
             `);
         });
         
-        // 自動捲動到底部
         const container = document.getElementById('shareListContainer');
         container.scrollTop = container.scrollHeight;
     }
@@ -249,7 +290,7 @@ $(document).ready(function () {
         renderShareList();
     });
 
-    // 生成圖片 (修復版：成功後清空清單)
+    // 生成圖片
     $('#copyButton').click(async function() {
         const btn = $(this);
         btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> 處理中...');
@@ -273,8 +314,6 @@ $(document).ready(function () {
                 navigator.clipboard.write([new ClipboardItem({'image/png': blob})])
                     .then(() => {
                         Swal.fire({icon: 'success', title: '圖片已複製！', background: '#1e1e1e', color:'#fff'});
-                        
-                        // 【關鍵修正】清空清單並更新介面
                         shareList = [];
                         renderShareList();
                     })
@@ -288,14 +327,8 @@ $(document).ready(function () {
         }
     });
 
-    // 回到頂部 (修復版：使用原生 scrollTo)
-    const $backToTop = $('#backToTopBtn');
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 300) $backToTop.addClass('show');
-        else $backToTop.removeClass('show');
-    });
-    
-    $backToTop.click(function() {
+    // 回到頂部按鈕點擊
+    $('#backToTopBtn').click(function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
