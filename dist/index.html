@@ -1,159 +1,97 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>動畫資料爬蟲</title>
+    <title>動畫新番資訊站</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40N8S8S5d0yvX5C6V6qJz/6+3f5E5o2Wz6oOQn1E5jJ5e1r1q1z1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="static/css/main.css">
     
-<meta name="description" content="快速查詢動畫資料，依年份、季節、首播日期篩選">
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="動畫資料爬蟲">
-<meta property="og:description" content="快速查詢動畫資料">
-<meta property="og:image" content="data:image/png;base64,iVBORw0KGgo...">
-<meta property="og:url" content="https://lee-github-io.onrender.com/">
-<meta property="og:type" content="website">
+<meta name="description" content="快速查詢動畫資料">
+<script>
+    window.DEFAULT_YEAR = "2025";
+    window.DEFAULT_SEASON = "秋";
+    window.AVAILABLE_DATA = JSON.parse('{"2018": ["冬", "春", "夏", "秋"], "2019": ["冬", "春", "夏", "秋"], "2020": ["冬", "春", "夏", "秋"], "2021": ["冬", "春", "夏", "秋"], "2022": ["冬", "春", "夏", "秋"], "2023": ["冬", "春", "夏", "秋"], "2024": ["冬", "春", "夏", "秋"], "2025": ["冬", "春", "夏", "秋"], "2026": ["冬", "春"]}');
+</script>
 
 </head>
-<body class="bg-light">
+<body>
     
-<!-- Header -->
-<header class="bg-primary text-white py-3">
-    <div class="container">
-        <h1 class="text-center mb-0">動畫資料爬蟲</h1>
-        <p class="text-center mb-0 opacity-75">快速查詢最新動畫資訊</p>
+<header class="site-header">
+    <div class="container header-container">
+        <div class="logo-area">
+            <h1 class="logo">📺 動畫新番資訊站</h1>
+            <p class="subtitle">自動化爬蟲資料庫</p>
+        </div>
     </div>
 </header>
 
-<div class="container my-4">
-    <!-- 查詢表單 -->
-    <section class="mb-5">
-        <h2 class="h4 text-center mb-4">查詢條件</h2>
-        <form method="POST" class="row g-3 justify-content-center">
+<div class="container main-layout">
+    <aside class="control-panel">
+        <div class="panel-inner">
+            <h3 class="panel-title"><i class="fas fa-filter"></i> 篩選條件</h3>
             
-            <div class="col-12 col-md-4">
-                <label for="year" class="form-label fw-bold">選擇年份：</label>
-                <select name="year" id="year" class="form-select" required>
-                    
-                    <option value="2026" >
-                        2026
-                    </option>
-                    
-                    <option value="2025" selected>
-                        2025
-                    </option>
-                    
-                    <option value="2024" >
-                        2024
-                    </option>
-                    
-                    <option value="2023" >
-                        2023
-                    </option>
-                    
+            <div class="form-group">
+                <label for="searchInput">關鍵字搜尋</label>
+                <div class="input-icon-wrapper">
+                    <i class="fas fa-search input-icon"></i>
+                    <input type="text" id="searchInput" placeholder="輸入動畫名稱...">
+                </div>
+            </div>
+
+            <div class="form-group-row">
+                <div class="form-group half">
+                    <label for="year">年份</label>
+                    <select id="year"></select>
+                </div>
+                <div class="form-group half">
+                    <label for="season">季節</label>
+                    <select id="season"></select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="premiere_date">每週放送</label>
+                <select id="premiere_date">
+                    <option value="全部" selected>全部顯示</option>
+                    <option value="一">週一</option>
+                    <option value="二">週二</option>
+                    <option value="三">週三</option>
+                    <option value="四">週四</option>
+                    <option value="五">週五</option>
+                    <option value="六">週六</option>
+                    <option value="日">週日</option>
                 </select>
             </div>
-            
-            <div class="col-12 col-md-4">
-                <label for="season" class="form-label fw-bold">選擇季節：</label>
-                <select name="season" id="season" class="form-select" required>
-                    
-                    <option value="冬" >
-                        冬（1月）
-                    </option>
-                    
-                    <option value="春" >
-                        春（4月）
-                    </option>
-                    
-                    <option value="夏" >
-                        夏（7月）
-                    </option>
-                    
-                    <option value="秋" selected>
-                        秋（10月）
-                    </option>
-                    
-                </select>
-            </div>
-            
-            <div class="col-12 col-md-4">
-                <label for="premiere_date" class="form-label fw-bold">選擇首播日期：</label>
-                <select name="premiere_date" id="premiere_date" class="form-select" required>
-                    
-                    <option value="全部" >
-                        全部
-                    </option>
-                    
-                    <option value="一" >
-                        一
-                    </option>
-                    
-                    <option value="二" >
-                        二
-                    </option>
-                    
-                    <option value="三" >
-                        三
-                    </option>
-                    
-                    <option value="四" >
-                        四
-                    </option>
-                    
-                    <option value="五" >
-                        五
-                    </option>
-                    
-                    <option value="六" >
-                        六
-                    </option>
-                    
-                    <option value="日" >
-                        日
-                    </option>
-                    
-                </select>
-            </div>
-            
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary w-100 w-md-auto">查詢動畫</button>
-            </div>
-        </form>
-    </section>
 
-    <!-- 錯誤訊息 -->
-    
-
-    <!-- 查詢結果 -->
-    <section class="mb-5">
-        <h2 class="h4 text-center mb-4">查詢結果 (<span id="result-count">0</span> 筆)</h2>
-        <div id="anime-results-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="share-widget">
+                <h3 class="panel-title small"><i class="fas fa-list"></i> 分享清單</h3>
+                <div id="shareListContainer">
+                    <div id="shareList" class="empty-state">尚無內容</div>
+                </div>
+                <button id="copyButton" class="action-btn" disabled>
+                    <i class="fas fa-image"></i> 生成圖片
+                </button>
             </div>
-    </section>
-
-    <!-- 分享清單區 -->
-    <section>
-        <h2 class="h4 text-center mb-4">分享清單</h2>
-        <div id="shareListContainer" class="row justify-content-center">
-            <div id="shareList" class="col-12 col-lg-8"></div>
         </div>
-        <div class="text-center mt-3">
-            <button id="copyButton" class="btn btn-primary" title="複製分享清單為圖片">
-                📋
-            </button>
+    </aside>
+
+    <main class="content-area">
+        <div class="content-header">
+            <h2 class="section-title">查詢結果 <span class="badge" id="result-count">0</span></h2>
+            <span id="updateTime" class="update-time"></span>
         </div>
-    </section>
+
+        <div id="status-message" class="status-box d-none"></div>
+
+        <div id="anime-results-container" class="anime-grid"></div>
+    </main>
 </div>
 
-    
-    <button id="backToTopBtn" title="返回頂部">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+<button id="backToTopBtn" title="回到頂部"><i class="fas fa-arrow-up"></i></button>
+
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,407 +1,570 @@
-/* main.css */
+:root {
+    /* --- 核心配色變數 --- */
+    --bg-body: #121212;
+    --bg-panel: #1e1e1e;
+    --bg-card: #252525;
+    --bg-input: #2a2a2a;
+    
+    --text-main: #e0e0e0;
+    --text-muted: #a0a0a0;
+    
+    --accent: #bb86fc;
+    --accent-hover: #9965f4;
+    
+    --border: #333333;
+    --radius: 12px;
+    --shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
 
-/* 全域樣式 */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* --- 全局設定 --- */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* 強制覆蓋 Bootstrap .bg-light */
+    background-color: var(--bg-body) !important; 
+    color: var(--text-main) !important;
+    font-family: 'Noto Sans TC', sans-serif;
     line-height: 1.6;
-    font-size: 1.575rem;  /* 整體字體大幅調大到 1.575rem（約 25px），影響所有相對單位 */
+    scroll-behavior: smooth;
 }
 
-header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* 表單樣式 */
-.form-label {
-    font-weight: 600;
-    color: #495057;
-    font-size: 1.575rem;  /* 調大表單標籤字體 */
+/* --- Header --- */
+.site-header {
+    background-color: var(--bg-panel);
+    border-bottom: 1px solid var(--border);
+    padding: 15px 0; /* 縮減 Header 高度 */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.form-select:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+.logo-text {
+    font-size: 1.5rem; /* 稍微縮小 Logo */
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0;
+    text-align: center;
 }
 
-/* 卡片樣式 */
-.anime-card {
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    border: none;
-    border-radius: 12px;
+/* --- 主佈局 --- */
+.main-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px; /* 縮減欄間距 */
+    align-items: start;
+}
+
+/* =========================================
+   側邊控制面板 (Compact Mode)
+   目標：壓縮上方空間，最大化分享清單高度
+   ========================================= */
+.control-panel {
+    background-color: var(--bg-panel);
+    border-radius: var(--radius);
+    padding: 15px; /* 縮減內距 (原本 20px) */
+    
+    position: sticky;
+    top: 15px;
+    /* 高度設為視窗高度 - 上下間距，確保 Sticky 生效且內部可捲動 */
+    height: calc(100vh - 30px);
+    
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    height: 100%;  /* 確保卡片高度一致 */
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;  /* 卡片最大寬度配合圖片 */
-    margin: 0 auto;  /* 置中卡片 */
 }
 
-.anime-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-}
-
-.anime-card img {
-    width: 300px;  /* 固定寬度 300px */
-    height: 300px;  /* 固定高度 300px */
-    object-fit: contain;  /* 完整顯示圖片，保持原比例 */
-    background-color: #f8f9fa;
-    margin: 0 auto;  /* 置中圖片 */
-    flex-shrink: 0;  /* 圖片不縮放 */
-}
-
-.anime-card .card-body {
-    padding: 1.25rem;  /* 增加 padding，配合更大字體 */
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    min-height: 240px;  /* 大幅增加最小高度，容納更大文字 */
-}
-
-.anime-title {
-    font-size: 1.75rem;  /* 調大標題字體到 1.75rem（約 28px） */
+/* 標題縮小間距 */
+.panel-title {
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 0.75rem;  /* 增加間距 */
-    color: #212529;
+    margin-bottom: 12px; /* 縮減 (原本 20px) */
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+/* 表單群組緊湊化 */
+.form-group {
+    margin-bottom: 12px; /* 縮減 (原本 20px) */
+    flex-shrink: 0;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 4px; /* 縮減標籤與輸入框距離 */
+    font-weight: 500;
+}
+
+/* 輸入框與選單 */
+.form-control, .form-select {
+    width: 100%;
+    background-color: var(--bg-input);
+    border: 1px solid var(--border);
+    color: var(--text-main);
+    padding: 8px 12px; /* 稍微縮減高度 */
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.2);
+}
+
+/* Select2 高度壓縮 */
+.select2-container--default .select2-selection--single {
+    background-color: var(--bg-input) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    height: 38px !important; /* 縮減高度 (原本 42px) */
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: var(--text-main) !important;
+    line-height: 36px !important;
+    padding-left: 12px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 36px !important;
+}
+.select2-dropdown {
+    background-color: var(--bg-panel) !important;
+    border: 1px solid var(--accent) !important;
+    color: var(--text-main) !important;
+    z-index: 9999 !important;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: var(--accent) !important;
+    color: #000 !important;
+}
+.select2-container--default .select2-results__option[aria-selected="true"] {
+    background-color: var(--bg-card) !important;
+    color: var(--accent) !important;
+    font-weight: bold;
+}
+.select2-search--dropdown .select2-search__field {
+    background-color: var(--bg-input) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border) !important;
+}
+
+/* 搜尋框優化 */
+.input-icon-wrapper {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+#searchInput {
+    width: 100% !important;
+    box-sizing: border-box;
+    background-color: #222;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    color: #fff;
+    padding: 8px 20px; /* 縮減高度 */
+    padding-right: 45px;
+    font-size: 0.95rem;
+    
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%236c757d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 18px;
+    
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+
+#searchInput:focus {
+    background-color: #2a2a2a;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(187, 134, 252, 0.15);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bb86fc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
+}
+
+/* =========================================
+   分享 Widget (Flex 填充剩餘空間)
+   ========================================= */
+.share-widget {
+    margin-top: 10px; /* 縮減間距 (原本 30px) */
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    
+    /* 關鍵：自動佔滿剩下的高度 */
+    flex: 1; 
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 0; /* 允許 Flex 子項目小於內容高度 (啟用捲動的關鍵) */
+}
+
+.share-widget .panel-title {
+    margin-bottom: 8px;
+    flex-shrink: 0;
+}
+
+#shareListContainer {
+    background-color: #fff;
+    color: #000;
+    
+    /* 高度由 Flex 父層控制，不再設定 max-height */
+    flex: 1; 
+    overflow-y: auto; /* 內容超出時顯示卷軸 */
+    
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+#shareListContainer::-webkit-scrollbar { width: 5px; }
+#shareListContainer::-webkit-scrollbar-track { background: transparent; }
+#shareListContainer::-webkit-scrollbar-thumb { background-color: #ccc; border-radius: 10px; }
+
+.share-item {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    margin-bottom: 6px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    align-items: center;
+    position: relative;
+    transition: background 0.2s;
+}
+
+.share-item:last-child { margin-bottom: 0; }
+.share-item:hover { background-color: #f1f3f5; }
+
+.share-item img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.share-item-info {
+    flex: 1;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    overflow: hidden;
+}
+
+.share-item-title {
+    font-weight: bold;
+    margin-bottom: 2px;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    cursor: pointer;
-    min-height: 3.75rem;  /* 增加一致高度 */
 }
 
-.anime-title:hover {
-    color: #007bff;
-}
-
-.anime-title.long-pressed {
-    background-color: #e3f2fd;
-    padding: 0.25rem;
-    border-radius: 4px;
-}
-
-/* 新增：資訊區塊樣式 */
-.info-section {
-    border-bottom: 1px solid #e9ecef;
-    padding-bottom: 0.75rem;  /* 增加間距 */
-    margin-bottom: 0.75rem;
-}
-
-.info-section small {
-    font-size: 1.25rem;  /* 調大 small 字體到 1.25rem */
-    line-height: 1.4;
-}
-
-/* 新增：故事大綱區塊樣式 */
-.story-section {
-    flex-grow: 1;  /* 讓故事區擴展，填滿剩餘空間 */
-    min-height: 100px;  /* 大幅增加最小高度 */
-}
-
-.story-summary {
-    font-size: 1.25rem;  /* 調大故事摘要字體到 1.25rem */
-    line-height: 1.5;  /* 進一步增加行高，提高可讀性 */
-    display: -webkit-box;
-    -webkit-line-clamp: 3;  /* 限制 3 行，防止過長 */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    color: #6c757d;
-    user-select: none;          /* 標準屬性 (禁止長按選取) */
-    -webkit-user-select: none;  /* Chrome, Safari, Opera */
-    -moz-user-select: none;     /* Firefox */
-    cursor: pointer;            /* 提示使用者可以點擊/長按 */
-}
-
-.story-summary:hover {
-    color: #495057;  /* hover 變深色，提高可讀性 */
-}
-
-/* 新增：長按視覺反饋 */
-.story-summary.long-pressed {
-    background-color: #e3f2fd;
-    padding: 0.25rem;
-    border-radius: 4px;
-}
-
-/* 按鈕樣式 */
-.add-to-sharelist {
-    font-size: 1.375rem;  /* 調大按鈕字體到 1.375rem */
-    padding: 0.75rem;  /* 增加 padding */
-    margin-top: auto;  /* 固定在底部 */
-}
-
-/* 分享清單樣式 */
-#shareListContainer {
-    min-height: 100px;
-    border: 2px dashed #dee2e6;
-    border-radius: 8px;
-    padding: 2.5rem;  /* 增加 padding */
-    background-color: #f8f9fa;
-    margin-bottom: 1rem;
-}
-
-#shareList .share-card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1.25rem;  /* 增加 padding */
-    margin-bottom: 1rem;
-    transition: box-shadow 0.2s;
-    display: flex;  /* 水平排列圖片與文字 */
-    gap: 1rem;
-}
-
-#shareList .share-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-#shareList .share-card img {
-    width: 300px;  /* 分享清單固定 300px 寬 */
-    height: 300px;  /* 固定 300px 高 */
-    object-fit: contain;  /* 完整顯示圖片，保持原比例 */
-    border-radius: 6px;
-    flex-shrink: 0;  /* 圖片不縮放 */
-    background-color: #f8f9fa;
-}
-
-#shareList .share-card .share-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#shareList .share-card h6 {
-    margin-bottom: 0.75rem;  /* 增加間距 */
-    font-size: 1.75rem;  /* 調大分享標題字體到 1.75rem */
-}
-
-#shareList .share-card .share-info {
-    font-size: 1.25rem;  /* 調大分享資訊字體到 1.25rem */
-    color: #6c757d;
-    margin-bottom: 0.5rem;  /* 增加間距 */
-}
-
-#shareList .share-card .share-story {
-    font-size: 1.25rem;  /* 調大分享故事字體到 1.25rem */
-    color: #6c757d;
-    line-height: 1.5;  /* 增加行高 */
-    display: -webkit-box;
-    -webkit-line-clamp: 2;  /* 分享清單限制 2 行 */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-/* 複製按鈕樣式 */
-#copyButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1050;
-    width: 60px;  /* 略微放大按鈕 */
-    height: 60px;
+/* 移除按鈕：預設顯眼樣式 */
+.share-remove {
+    width: 28px;
+    height: 28px;
+    background-color: #fff5f5; /* 淺紅背景 */
+    border: 1px solid #ffc9c9; /* 紅色邊框 */
+    color: #dc3545;            /* 紅色圖示 */
     border-radius: 50%;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
-    transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.75rem;  /* 調大按鈕圖示字體到 1.75rem */
-}
-
-#copyButton:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
-}
-
-/* === 新增：返回頂部按鈕樣式 (Back to Top Button) === */
-#backToTopBtn {
-    /* 確保按鈕懸浮在頁面最上層 */
-    position: fixed; 
-    bottom: 25px; /* 距離底部 */
-    right: 25px; /* 距離右側 */
-    z-index: 99; /* 確保它在其他元素之上 */
-    
-    /* 初始狀態隱藏 */
-    display: none; 
-    
-    /* 樣式美化 */
-    width: 60px; /* 寬度 */
-    height: 60px; /* 高度 */
-    border-radius: 50%; /* 圓形 */
-    background-color: #007bff; /* 主色 */
-    color: white; /* 箭頭顏色 */
-    border: none;
     cursor: pointer;
-    font-size: 1.575rem; /* 確保箭頭圖案足夠大 */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s; /* 平滑過渡 */
+    font-size: 0.9rem;
+    margin-left: auto;
+    transition: all 0.2s;
 }
 
-#backToTopBtn:hover {
-    background-color: #0056b3;
-}
-/* === 結束：返回頂部按鈕樣式 (Back to Top Button) === */
-
-/* RWD 媒體查詢 */
-@media (max-width: 576px) {  /* 手機 */
-    header h1 {
-        font-size: 2.625rem;  /* 進一步調大手機標題到 2.625rem */
-    }
-    
-    .anime-card {
-        max-width: 100%;  /* 手機全寬 */
-    }
-    
-    .anime-card img,
-    #shareList .share-card img {
-        width: 100%;  /* 手機全寬，但 max-width: 300px */
-        max-width: 300px;
-        height: 200px;  /* 手機調整高度 */
-    }
-    
-    .anime-card .card-body {
-        min-height: 220px;  /* 手機增加最小高度 */
-        padding: 1rem;  /* 調整 padding */
-    }
-    
-    .anime-title {
-        font-size: 1.5rem;  /* 調大手機標題到 1.5rem */
-        min-height: 5rem;  /* 調整一致高度 */
-        margin-bottom: 0.5rem;
-    }
-    
-    .story-summary {
-        -webkit-line-clamp: 2;  /* 手機限制 2 行故事 */
-        font-size: 1.3125rem;  /* 調大手機故事字體到 1.3125rem */
-        line-height: 1.5;  /* 增加行高 */
-    }
-    
-    #copyButton {
-        bottom: 10px;
-        right: 10px;
-        width: 52px;  /* 手機略微放大 */
-        height: 52px;
-        font-size: 1.625rem;  /* 調大手機按鈕圖示到 1.625rem */
-    }
-    
-    /* 手機 RWD 調整 backToTopBtn */
-    #backToTopBtn {
-        bottom: 70px; /* 手機上移一些 */
-        right: 10px;
-        width: 45px; 
-        height: 45px;
-    }
-
-    #shareListContainer {
-        padding: 1.5rem;  /* 增加手機 padding */
-    }
-    
-    #shareList .share-card {
-        flex-direction: column;  /* 手機垂直排列 */
-        text-align: center;
-        padding: 1rem;
-    }
-    
-    #shareList .share-card img {
-        width: 100%;
-        max-width: 200px;  /* 手機分享清單縮小 */
-        height: 200px;
-    }
-    
-    #shareList .share-card .share-story {
-        -webkit-line-clamp: 1;  /* 手機分享清單 1 行 */
-        font-size: 1.3125rem;  /* 調大分享故事字體 */
-    }
-    
-    #shareList .share-card h6 {
-        font-size: 1.5rem;  /* 調大分享標題 */
-        margin-bottom: 0.5rem;
-    }
-    
-    #shareList .share-card .share-info {
-        font-size: 1.3125rem;  /* 調大分享資訊字體 */
-        margin-bottom: 0.375rem;
-    }
-    
-    .info-section small {
-        font-size: 1.3125rem;  /* 調大手機 small 字體 */
-    }
-    
-    .add-to-sharelist {
-        font-size: 1.375rem;  /* 調大手機按鈕字體 */
-        padding: 0.625rem;
-    }
-    
-    .form-label {
-        font-size: 1.375rem;  /* 手機表單標籤略調小，避免過大 */
-    }
-    
-    /* 手機整體字體基底大幅調大 */
-    body {
-        font-size: 1.575rem;  /* 手機基底與桌面一致，確保清晰 */
-    }
+.share-remove:hover {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(220, 53, 69, 0.4);
 }
 
-@media (min-width: 577px) and (max-width: 768px) {  /* 平板小 */
-    .row-cols-md-3 {
-        row-cols: 2;  /* 平板 2 列 */
-    }
-    
-    header p {
-        display: none;  /* 隱藏副標題 */
-    }
-    
-    .anime-card img,
-    #shareList .share-card img {
-        width: 280px;  /* 平板略縮 */
-        height: 280px;
-    }
-    
-    .story-summary {
-        -webkit-line-clamp: 3;  /* 平板 3 行 */
-    }
+.action-btn {
+    flex-shrink: 0;
+    width: 100%;
+    background-color: var(--accent);
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
-@media (min-width: 769px) {  /* 平板大及桌面 */
-    .anime-card img,
-    #shareList .share-card img {
-        width: 300px;  /* 桌面固定 300px */
-        height: 300px;
-    }
-    
-    .story-summary {
-        -webkit-line-clamp: 4;  /* 桌面 4 行 */
-    }
+.action-btn:hover:not(:disabled) { background-color: var(--accent-hover); }
+.action-btn:disabled { background-color: #444; color: #888; cursor: not-allowed; }
+
+/* --- 內容區 --- */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: var(--bg-panel);
+    padding: 15px 20px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* 動畫效果 */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+.section-title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+}
+
+.badge {
+    background-color: var(--accent);
+    color: #000;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.update-time { font-size: 0.85rem; color: var(--text-muted); }
+
+/* --- 卡片網格 --- */
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
 }
 
 .anime-card {
-    animation: fadeIn 0.3s ease-out;
+    background-color: var(--bg-panel);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
 }
 
-/* Select2 RWD 優化 */
-.select2-container--default .select2-selection--single {
-    height: 52px;  /* 增加高度，匹配更大字體 */
+.anime-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    border-color: var(--accent);
 }
 
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-    line-height: 50px;
-    font-size: 1.575rem;  /* 調大 Select2 文字 */
+.card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 48px;
+.card-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.anime-card:hover .card-img { transform: scale(1.05); }
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.anime-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 10px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.anime-title:hover { text-decoration: underline; }
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.story-box {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    cursor: help;
+    margin-bottom: 15px;
+    flex: 1;
+    transition: background-color 0.2s;
+}
+
+.story-box:hover { background-color: #333; color: #fff; }
+
+.btn-add {
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 8px;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn-add:hover { background-color: var(--accent); color: #000; }
+
+.status-box {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--bg-panel);
+    border-radius: var(--radius);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    margin-bottom: 20px;
+}
+
+.d-none { display: none !important; }
+
+/* --- 回到頂部按鈕 --- */
+#backToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+    /* 深色半透明背景，區隔功能 */
+    background-color: rgba(50, 50, 50, 0.9); 
+    color: #fff;
+    border: 1px solid #555;
+    
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#backToTopBtn::after {
+    content: "TOP";
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+#backToTopBtn i { font-size: 1rem; margin-bottom: 2px; }
+#backToTopBtn.show { opacity: 1; visibility: visible; }
+#backToTopBtn:hover { background-color: #000; border-color: var(--accent); color: var(--accent); }
+
+/* --- 響應式調整 (手機版) --- */
+@media (max-width: 900px) {
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .control-panel {
+        position: static;
+        height: auto;
+        max-height: none;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    
+    .panel-inner {
+        height: auto;
+        overflow: visible;
+    }
+    
+    /* 手機版：取消 Flex 填充，改回固定高度限制 */
+    .share-widget {
+        flex: none;
+        height: auto;
+        margin-top: 20px;
+    }
+    
+    #shareListContainer {
+        flex: none;
+        height: auto;
+        max-height: 300px; /* 手機限制 300px，避免滑不到底 */
+    }
+    
+    .form-group-row {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    #searchInput { font-size: 16px; }
 }
