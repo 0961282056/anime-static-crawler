@@ -1,0 +1,56 @@
+name: Scheduled Anime Crawler
+
+on:
+  schedule:
+    # 每天 UTC 17:00 (台灣時間 01:00)
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+
+jobs:
+  crawl-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: ⬇️ Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # 修正 1: 移除 working-directory，直接在根目錄執行
+      - name: ⚙️ Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      # 修正 2: 移除 working-directory
+      - name: 🕷️ Run Crawler
+        env:
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          BUILD_ONLY: false
+        run: |
+          python generate_static.py
+
+      # 修正 3: 修改 git add 路徑 (移除 '動畫資訊爬蟲/' 前綴)
+      - name: 💾 Commit and Push new data
+        run: |
+          git config --global user.name 'GitHub Action Crawler'
+          git config --global user.email 'action@github.com'
+          
+          # 注意：這裡的路徑改成 dist/... 因為你的檔案就在根目錄
+          git add dist/data/*.json
+          git add cloudinary_cache.json
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "🤖 Auto-update anime data & cache [skip ci]"
+            git push
+            echo "✅ Data pushed to GitHub. Cloudflare Pages should trigger build now."
+          fi
