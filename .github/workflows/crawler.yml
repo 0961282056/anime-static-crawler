@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: Scheduled Anime Crawler
 
 on:
@@ -54,3 +55,77 @@ jobs:
             git push
             echo "✅ Data pushed to GitHub. Cloudflare Pages should trigger build now."
           fi
+||||||| 4b6c1ef
+=======
+name: Scheduled Anime Crawler
+
+on:
+  # 1. 定時觸發 (Cron Job)
+  # 每天 UTC 17:00 執行，即台灣時間 (UTC+8) 凌晨 01:00
+  schedule:
+    - cron: '0 17 * * *'
+    
+  # 2. 手動觸發
+  # 允許在 GitHub Actions 頁面手動點擊按鈕執行
+  workflow_dispatch:
+
+jobs:
+  crawl-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 重要：允許 Action 推送代碼回倉庫
+
+    steps:
+      # 步驟 1: 檢出程式碼
+      - name: ⬇️ Checkout Repository
+        uses: actions/checkout@v4
+
+      # 步驟 2: 設置 Python 環境
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip' # 開啟 pip 快取以加快安裝速度
+
+      # 步驟 3: 安裝依賴
+      - name: ⚙️ Install dependencies
+        working-directory: ./動畫資訊爬蟲
+        run: |
+          pip install -r requirements.txt
+
+      # 步驟 4: 執行爬蟲 (只爬取資料，不生成 HTML)
+      # 注意：這裡不設定 BUILD_ONLY，所以會執行爬蟲
+      - name: 🕷️ Run Crawler
+        working-directory: ./動畫資訊爬蟲
+        env:
+          # 引用 GitHub Secrets 中的變數
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          # 確保 BUILD_ONLY 為 false，這樣才會執行爬蟲
+          BUILD_ONLY: false
+        run: |
+          python generate_static.py
+
+      # 步驟 5: 提交並推送新資料
+      # 將新生成的 JSON 和 Cloudinary 快取提交回 GitHub
+      # Cloudflare Pages 會偵測到這次 Push 並自動開始構建網站
+      - name: 💾 Commit and Push new data
+        run: |
+          git config --global user.name 'GitHub Action Crawler'
+          git config --global user.email 'action@github.com'
+          
+          # 加入 JSON 資料檔與快取檔
+          # 注意：路徑要對應你的專案結構
+          git add 動畫資訊爬蟲/dist/data/*.json
+          git add 動畫資訊爬蟲/cloudinary_cache.json
+          
+          # 檢查是否有變更，有變更才 Commit
+          # [skip ci] 可以避免這次 commit 再次觸發不必要的檢查，但 Cloudflare 仍會偵測到
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "🤖 Auto-update anime data & cache [skip ci]"
+            git push
+            echo "✅ Data pushed to GitHub. Cloudflare Pages should trigger build now."
+>>>>>>> 427b34f6f99c4ba040860b60b210c127eb969db5
