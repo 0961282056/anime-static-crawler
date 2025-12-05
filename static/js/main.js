@@ -1,7 +1,6 @@
 $(document).ready(function () {
     // --- 變數初始化 ---
     const availableData = window.AVAILABLE_DATA || {};
-    // 後端傳來的預設值 (作為備案)
     const serverDefaultYear = window.DEFAULT_YEAR;
     const serverDefaultSeason = window.DEFAULT_SEASON;
     
@@ -11,22 +10,22 @@ $(document).ready(function () {
     const updateTime = $('#updateTime');
     const $yearSelect = $('#year');
     const $seasonSelect = $('#season');
-    const $premiereSelect = $('#premiere_date'); // 星期篩選
+    const $premiereSelect = $('#premiere_date');
     const $searchInput = $('#searchInput');
     
     const dataCache = {};
     let currentAnimeList = [];
     let shareList = [];
 
-    // 【關鍵修正】定義所有需要記憶的 Key
+    // --- 【狀態記憶 Key】 ---
     const STORAGE_KEYS = {
         YEAR: 'anime_user_year',
         SEASON: 'anime_user_season',
-        FILTER_DAY: 'anime_user_filter_day', // 星期幾
+        FILTER_DAY: 'anime_user_filter_day',
         SCROLL: 'anime_user_scroll_pos'
     };
 
-    let isFirstLoad = true; // 標記是否為首次載入，用於判斷是否恢復捲動
+    let isFirstLoad = true; // 用於判斷是否需要恢復捲動
 
     // --- 1. 初始化 Select2 ---
     $("select").select2({
@@ -34,40 +33,37 @@ $(document).ready(function () {
         minimumResultsForSearch: Infinity
     });
 
-    // --- 2. 核心邏輯：初始化與狀態恢復 (取代原本的 initSelectors) ---
+    // --- 2. 核心邏輯：初始化與狀態恢復 ---
     function initApp() {
-        // A. 嘗試從 localStorage 讀取上次的狀態，若無則使用後端預設值
+        // A. 讀取 LocalStorage
         let targetYear = localStorage.getItem(STORAGE_KEYS.YEAR) || serverDefaultYear;
         let targetSeason = localStorage.getItem(STORAGE_KEYS.SEASON) || serverDefaultSeason;
         let targetDay = localStorage.getItem(STORAGE_KEYS.FILTER_DAY) || '全部';
 
-        // 防呆檢查：如果記憶的年份在現有資料中不存在 (例如資料庫更新了)，則回退到預設值
+        // 防呆
         if (!availableData[targetYear]) {
             targetYear = serverDefaultYear;
             targetSeason = serverDefaultSeason;
         }
 
-        // B. 建構年份選單
+        // B. 建構年份
         $yearSelect.empty();
         const years = Object.keys(availableData).sort((a, b) => b - a);
         years.forEach(y => {
             $yearSelect.append(new Option(`${y} 年`, y));
         });
-        
-        // 設定選中年份 (觸發 Select2 更新)
         $yearSelect.val(targetYear).trigger('change.select2');
 
-        // C. 建構季節選單 (傳入目標季節，確保選單內容正確)
+        // C. 建構季節
         updateSeasonOptions(targetYear, targetSeason);
 
-        // D. 恢復「星期篩選」的狀態
+        // D. 恢復篩選
         $premiereSelect.val(targetDay).trigger('change.select2');
 
-        // E. 開始載入資料 (這會觸發 renderAnime，進而觸發捲動恢復)
+        // E. 載入資料
         loadData(targetYear, targetSeason);
     }
 
-    // 更新季節選單
     function updateSeasonOptions(year, targetSeason) {
         const seasons = availableData[year] || [];
         $seasonSelect.empty();
@@ -79,7 +75,6 @@ $(document).ready(function () {
                 $seasonSelect.append(new Option(`${s} 番`, s));
             });
 
-            // 嘗試選中目標季節，若無則選第一個
             if (targetSeason && seasons.includes(targetSeason)) {
                 $seasonSelect.val(targetSeason);
             } else {
@@ -89,31 +84,27 @@ $(document).ready(function () {
         $seasonSelect.trigger('change.select2');
     }
 
-    // --- 3. 載入資料 (AJAX + Cache + 狀態寫入) ---
+    // --- 3. 載入資料 ---
     async function loadData(year, season) {
-        // 如果沒傳參數，就抓當前 UI 的值
         year = year || $yearSelect.val();
         season = season || $seasonSelect.val();
 
         if (!year || !season) return;
 
-        // 【狀態記憶】每次載入新資料時，立即更新 localStorage
+        // 更新記憶
         localStorage.setItem(STORAGE_KEYS.YEAR, year);
         localStorage.setItem(STORAGE_KEYS.SEASON, season);
 
         const cacheKey = `${year}_${season}`;
         
-        // UI 狀態
         animeContainer.empty();
         statusMessage.removeClass('d-none').html('<i class="fas fa-spinner fa-spin"></i> 資料讀取中...');
         resultCountSpan.text('0');
 
         try {
             if (dataCache[cacheKey]) {
-                console.log(`[Cache Hit] ${cacheKey}`);
                 currentAnimeList = dataCache[cacheKey];
             } else {
-                console.log(`[Fetch] ${cacheKey}`);
                 const response = await fetch(`data/${cacheKey}.json?t=${new Date().getTime()}`);
                 if (!response.ok) throw new Error('資料載入失敗');
                 const data = await response.json();
@@ -127,14 +118,13 @@ $(document).ready(function () {
                 }
             }
             
-            // 資料載入完成，進行渲染
             renderAnime(currentAnimeList);
             statusMessage.addClass('d-none');
 
-            // 【捲動恢復關鍵】只有在網頁「首次載入」且資料渲染完畢後，才執行捲動恢復
+            // 【關鍵】首次載入執行恢復
             if (isFirstLoad) {
                 restoreScrollPosition();
-                isFirstLoad = false; // 標記已完成，之後的使用者切換不需要恢復捲動
+                isFirstLoad = false;
             }
 
         } catch (error) {
@@ -145,17 +135,15 @@ $(document).ready(function () {
 
     // --- 4. 渲染邏輯 ---
     function renderAnime(list) {
-        const day = $premiereSelect.val(); // 讀取當前選中的星期
+        const day = $premiereSelect.val();
         const keyword = $searchInput.val().toLowerCase().trim();
 
         let filtered = list;
 
-        // 篩選：星期
         if (day !== '全部') {
             filtered = list.filter(item => item.premiere_date === day);
         }
 
-        // 篩選：關鍵字
         if (keyword) {
             filtered = filtered.filter(item => 
                 (item.anime_name && item.anime_name.toLowerCase().includes(keyword)) ||
@@ -204,63 +192,78 @@ $(document).ready(function () {
         animeContainer.html(html);
     }
 
-    // --- 捲動位置管理 ---
+    // --- 【優化】捲動位置管理 ---
     function restoreScrollPosition() {
         const savedPos = localStorage.getItem(STORAGE_KEYS.SCROLL);
         if (savedPos && parseInt(savedPos) > 0) {
-            // 延遲執行確保 DOM 已經長好
+            const pos = parseInt(savedPos);
+            console.log("嘗試恢復位置:", pos);
+
+            // 1. 立即跳轉 (Instant)
+            window.scrollTo({ top: pos, behavior: 'instant' });
+
+            // 2. 延遲校正 (等待圖片區塊佔位完成)
             setTimeout(() => {
-                window.scrollTo({
-                    top: parseInt(savedPos),
-                    behavior: 'auto' // 使用 auto 瞬間跳轉，避免 smooth 滾動的暈眩感
-                });
-                console.log("已恢復上次瀏覽位置");
-            }, 150); 
+                // 檢查是否偏離，如果偏離則修正 (例如圖片載入後高度變了)
+                if (Math.abs(window.scrollY - pos) > 10) {
+                    window.scrollTo({ top: pos, behavior: 'auto' });
+                }
+            }, 150);
+
+            // 3. 二次校正 (針對較慢的手機或瀏覽器)
+            setTimeout(() => {
+                if (Math.abs(window.scrollY - pos) > 10) {
+                    window.scrollTo({ top: pos, behavior: 'auto' });
+                }
+            }, 400);
         }
     }
 
+    // 捲動監聽
     let scrollTimeout;
     $(window).on('scroll', function() {
-        // 顯示回到頂部按鈕
+        // 回到頂部按鈕顯示
         if ($(this).scrollTop() > 300) $('#backToTopBtn').addClass('show');
         else $('#backToTopBtn').removeClass('show');
 
-        // 儲存捲動位置 (使用 Debounce 避免頻繁寫入)
+        // 平常滑動時 Debounce 存檔 (降低效能消耗)
         clearTimeout(scrollTimeout);
         scrollTimeout = setTimeout(() => {
-            const currentPos = $(window).scrollTop();
-            localStorage.setItem(STORAGE_KEYS.SCROLL, currentPos);
+            localStorage.setItem(STORAGE_KEYS.SCROLL, $(window).scrollTop());
         }, 200);
+    });
+
+    // 【關鍵優化】當切換 App / 關閉分頁 / 鎖定螢幕時，立刻強制存檔 (無延遲)
+    // 這能解決「砍後台」時來不及存檔導致位置偏上的問題
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+            localStorage.setItem(STORAGE_KEYS.SCROLL, $(window).scrollTop());
+        }
     });
 
     // --- 事件綁定 ---
     
-    // 年份變更 -> 更新季節選單 (傳入 null 讓其選第一個) -> 載入
     $yearSelect.on('change', function() { 
         const year = $(this).val();
         updateSeasonOptions(year, null); 
         loadData();
     });
 
-    // 季節變更 -> 載入
     $seasonSelect.on('change', function() { loadData(); });
 
-    // 星期變更 -> 【狀態記憶】寫入 Storage -> 重新渲染
     $premiereSelect.on('change', function() {
         localStorage.setItem(STORAGE_KEYS.FILTER_DAY, $(this).val());
         renderAnime(currentAnimeList);
     });
     
-    // 搜尋 -> 重新渲染
     let searchTimer;
     $searchInput.on('input', () => {
         clearTimeout(searchTimer);
         searchTimer = setTimeout(() => renderAnime(currentAnimeList), 300);
     });
 
-    // --- 互動功能 (複製、分享、長按) ---
+    // --- 互動功能 ---
 
-    // 複製片名
     $(document).on('click', '.anime-title', function() {
         const text = $(this).text().trim();
         navigator.clipboard.writeText(text).then(() => {
@@ -272,7 +275,6 @@ $(document).ready(function () {
         });
     });
 
-    // 簡介詳情
     $(document).on('click', '.story-box', function() {
         const text = $(this).text().trim();
         const title = $(this).siblings('.anime-title').text().trim();
@@ -284,7 +286,6 @@ $(document).ready(function () {
         });
     });
 
-    // 加入清單
     $(document).on('click', '.add-share', function() {
         const data = $(this).data();
         if (shareList.some(i => i.name === data.name)) {
@@ -301,7 +302,6 @@ $(document).ready(function () {
         if (shareList.length === 0) {
             $con.html('<div class="empty-state" style="color:#888; text-align:center; padding:20px;">尚無內容</div>');
             $('#copyButton').prop('disabled', true);
-            // 讓容器變回原始高度
             $('#shareListContainer').scrollTop(0);
             return;
         }
@@ -331,7 +331,6 @@ $(document).ready(function () {
         renderShareList();
     });
 
-    // 生成圖片
     $('#copyButton').click(async function() {
         const btn = $(this);
         btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> 處理中...');
@@ -368,13 +367,11 @@ $(document).ready(function () {
         }
     });
 
-    // 回到頂部按鈕 (點擊時會清除記憶的位置，讓下次進來從頭開始)
+    // 回到頂部按鈕
     $('#backToTopBtn').click(function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        // 選項：若想回到頂部後清除捲動記憶，可取消註解下行
-        localStorage.removeItem(STORAGE_KEYS.SCROLL);
     });
 
-    // --- 🚀 啟動應用程式 (使用新的 initApp) ---
+    // 啟動
     initApp();
 });
