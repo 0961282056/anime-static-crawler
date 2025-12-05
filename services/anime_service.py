@@ -1,7 +1,8 @@
-from typing import List, Dict, Tuple
+from typing import List, Dict, Tuple, Optional
 from bs4 import BeautifulSoup
 import requests, os, json, hashlib, time, random, re, logging
-from flask_caching import Cache # 雖然未用，但保留
+# 移除 flask_caching 引用，避免 Build Only 模式或 GitHub Actions 報錯
+# from flask_caching import Cache 
 from config import Config
 import cloudinary, cloudinary.uploader, cloudinary.utils
 from dotenv import load_dotenv
@@ -13,7 +14,6 @@ import multiprocessing
 # 初始化與設定
 # ------------------------------------------------------
 load_dotenv()
-# 調整 Log Level 到 INFO，以便顯示所有詳細的時間和進程訊息
 logging.basicConfig(level=logging.INFO) 
 logger = logging.getLogger(__name__)
 logging.getLogger("urllib3.connectionpool").setLevel(logging.ERROR)
@@ -23,7 +23,7 @@ CACHE_FILE = os.path.join(os.getcwd(), 'cloudinary_cache.json')
 # -------------------------
 
 # ------------------------------------------------------
-# requests Session & Pool 設定 (保持不變)
+# requests Session & Pool 設定
 # ------------------------------------------------------
 pool_size = 5
 retry_strategy = Retry(
@@ -64,7 +64,7 @@ def init_worker(shared_lock, shared_cache_dict):
     session_global.mount("https://", adapter)
     session_global.mount("https://api.cloudinary.com", cloudinary_adapter)
     
-    # 重新配置 Cloudinary (優化點 2: 只在 worker 啟動時配置一次)
+    # 重新配置 Cloudinary
     cloudinary_config_global = {
         'cloud_name': os.getenv("CLOUDINARY_CLOUD_NAME"),
         'api_key': os.getenv("CLOUDINARY_API_KEY"),
@@ -73,7 +73,6 @@ def init_worker(shared_lock, shared_cache_dict):
         'secure': True
     }
     cloudinary.config(**cloudinary_config_global)
-    # 配置 session 給 Cloudinary (確保使用進程內的連接池)
     cloudinary.config(http_client=session_global)
     
     # 初始化 logger
@@ -84,7 +83,7 @@ def init_worker(shared_lock, shared_cache_dict):
 
 
 # ------------------------------------------------------
-# 簡易快取（持久性 JSON 檔案讀寫 - 核心修正）
+# 簡易快取（持久性 JSON 檔案讀寫）
 # ------------------------------------------------------
 def load_local_cache() -> Dict:
     """從 JSON 檔案載入 Cloudinary 內容快取。"""
@@ -106,14 +105,13 @@ def save_local_cache(data: Dict):
         filtered_data = {k: v for k, v in data.items() if k.startswith('cloudinary_')}
         
         with open(CACHE_FILE, 'w', encoding='utf-8') as f:
-            # 使用 indent=4 讓 JSON 檔案可讀性更好
             json.dump(filtered_data, f, ensure_ascii=False, indent=4) 
         logger.info(f"成功儲存 {len(filtered_data)} 筆 Cloudinary 內容快取至 {CACHE_FILE}")
     except Exception as e:
         logger.error(f"儲存快取檔案失敗: {e}")
 
 # ------------------------------------------------------
-# 日期與時間排序解析 (保持不變)
+# 日期與時間排序解析
 # ------------------------------------------------------
 def parse_date_time(anime: Dict) -> Tuple[int, float]:
     try:
@@ -132,9 +130,10 @@ def parse_date_time(anime: Dict) -> Tuple[int, float]:
 
 
 # ------------------------------------------------------
-# 上傳圖片至 Cloudinary（使用共享鎖和 Manager 快取 - 核心修正）
+# 上傳圖片至 Cloudinary
 # ------------------------------------------------------
-def upload_to_cloudinary(image_url: str, anime_name: str, cache: Cache = None) -> str:
+# 修正：移除了 cache 參數的型別提示 (Cache)
+def upload_to_cloudinary(image_url: str, anime_name: str) -> str:
     """處理圖片上傳或快取命中，返回最終 URL。"""
     
     if image_url == "無圖片":
@@ -143,32 +142,25 @@ def upload_to_cloudinary(image_url: str, anime_name: str, cache: Cache = None) -
     session = session_global
     local_cache = manager_cache_global 
     
-    # 由於我們只持久化 Content Hash，不再進行 URL Hash 檢查
-    # 因為如果 URL 改變，但內容不變，Content Hash 快取仍會命中。
-
     try:
-        # 1. 下載圖片 (無法跳過，需要內容來計算 Hash)
+        # 1. 下載圖片
         start_download_time = time.time()
         response = session.get(image_url, timeout=6)
         response.raise_for_status()
-        logger.info(f"[DOWNLOAD] {anime_name} - 原始圖片下載耗時: {time.time() - start_download_time:.2f} 秒。")
         
         content_hash = hashlib.md5(response.content).hexdigest()
         public_id = f"anime_covers/{content_hash}"
         
-        # 2. 檢查 Cloudinary 內容快取 (使用共享快取)
+        # 2. 檢查 Cloudinary 內容快取
         cloudinary_key = f"cloudinary_{content_hash}"
         
-        # *** 鎖定區塊 1: 檢查共享快取，防止競爭條件導致重複上傳/覆蓋 ***
+        # *** 鎖定區塊 1: 檢查共享快取 ***
         with manager_lock_global:
             if cloudinary_key in local_cache:
-                # 內容快取命中，直接返回 URL，跳過上傳 (這就是您要的跳過機制)
-                logger.warning(f"[CACHE HIT/SKIP] {anime_name} - 圖片內容已存在於快取，跳過 Cloudinary 上傳。") 
+                logger.info(f"[CACHE HIT/SKIP] {anime_name} - 圖片內容已存在於快取，跳過 Cloudinary 上傳。") 
                 return local_cache[cloudinary_key]
         
-        # *** 解鎖區塊：如果沒有命中快取，才會執行到這裡並開始上傳 ***
-        
-        # 3. 上傳圖片 (只有未命中快取時才會執行)
+        # 3. 上傳圖片
         start_upload_time = time.time() 
         
         upload_result = cloudinary.uploader.upload(
@@ -176,7 +168,6 @@ def upload_to_cloudinary(image_url: str, anime_name: str, cache: Cache = None) -
             public_id=public_id, overwrite=True, invalidate=True,
             transformation=[{"width": 300, "height": 300, "crop": "limit", "quality": 90}]
         )
-        # 如果上傳成功，會在這裡返回
         logger.info(f"[UPLOAD OK] {anime_name} - Cloudinary 上傳/覆蓋 ({public_id}) 耗時: {time.time() - start_upload_time:.2f} 秒")
             
         # 4. 生成 URL
@@ -187,7 +178,6 @@ def upload_to_cloudinary(image_url: str, anime_name: str, cache: Cache = None) -
         
         # *** 鎖定區塊 2: 寫入共享快取 ***
         with manager_lock_global:
-            # 只寫入 Content Hash 快取
             local_cache[cloudinary_key] = url
         
         logger.info(f"[UPLOAD SUCCESS] {anime_name} - 圖片已上傳並寫入快取。")
@@ -195,22 +185,19 @@ def upload_to_cloudinary(image_url: str, anime_name: str, cache: Cache = None) -
 
     except Exception as e:
         logger.error(f"[ERROR] {anime_name} - 上傳失敗: {image_url[:50]}..., 錯誤: {e}")
-        # 如果上傳失敗，返回原始 URL 作為備用
         return image_url
 
 # ------------------------------------------------------
-# 處理單一動畫項目 (Worker Function) (保持不變)
+# 處理單一動畫項目 (Worker Function)
 # ------------------------------------------------------
-def worker_process_anime(item_html_str: str) -> Dict | None:
+def worker_process_anime(item_html_str: str) -> Optional[Dict]:
     """由 Pool Worker 執行，處理單一動畫項目的解析和圖片上傳。"""
     
     start_worker_item_time = time.time() 
     anime_name = "未知動畫"
     try:
-        # 使用 lxml 解析，加快速度
         item = BeautifulSoup(item_html_str, "lxml").find("div", class_="CV-search")
         if not item:
-            logger.warning(f"單一動畫項目 HTML 片段解析失敗。")
             return None
         
         # 提取名稱
@@ -219,7 +206,7 @@ def worker_process_anime(item_html_str: str) -> Dict | None:
         
         logger.info(f"[WORKER START] 進程 {multiprocessing.current_process().name} 開始處理: {anime_name}")
 
-        # 提取日期/時間 (邏輯保持不變)
+        # 提取日期/時間
         premiere_date_elem = item.find("div", {"class": "time_today main_time"})
         premiere_date, premiere_time = "無首播日期", "無首播時間"
         if premiere_date_elem:
@@ -232,13 +219,13 @@ def worker_process_anime(item_html_str: str) -> Dict | None:
             if week_day:
                 premiere_date = week_day
 
-        # 處理圖片上傳 (這裡會使用到共享鎖和共享快取)
+        # 處理圖片上傳
         image_tag = item.find("div", {"class": "overflow-hidden anime_cover_image"})
         image_url = image_tag.img["src"] if image_tag and image_tag.img else "無圖片"
-        # 傳遞動畫名稱用於 Log
+        # 呼叫上傳 (不再傳遞 cache 參數)
         anime_image_url = upload_to_cloudinary(image_url, anime_name) 
 
-        # 提取故事 (邏輯保持不變)
+        # 提取故事
         story_elem = item.find("div", {"class": "anime_story"})
         story = story_elem.get_text(strip=True) if story_elem else "無故事大綱"
         
@@ -257,9 +244,10 @@ def worker_process_anime(item_html_str: str) -> Dict | None:
         return None
 
 # ------------------------------------------------------
-# 抓取整季動畫資料（增加快取載入與儲存 - 核心修正）
+# 抓取整季動畫資料
 # ------------------------------------------------------
-def fetch_anime_data(year: str, season: str, cache: Cache = None) -> List[Dict]:
+# 修正：移除了 cache 參數的型別提示
+def fetch_anime_data(year: str, season: str, cache=None) -> List[Dict]:
     """主函式，協調 HTML 抓取、多進程處理和結果排序。"""
     
     if season not in SEASON_TO_MONTH:
@@ -267,7 +255,6 @@ def fetch_anime_data(year: str, season: str, cache: Cache = None) -> List[Dict]:
 
     url = f"https://acgsecrets.hk/bangumi/{year}{SEASON_TO_MONTH[season]:02d}/"
     
-    # 使用 Manager 來創建可被多進程共享的對象 (鎖和圖片快取)
     with multiprocessing.Manager() as manager:
         start_total_time = time.time() 
         try:
@@ -296,7 +283,6 @@ def fetch_anime_data(year: str, season: str, cache: Cache = None) -> List[Dict]:
                 logger.warning(f"{year} {season} 頁面結構異常或無資料")
                 return []
 
-            # 將每個動畫項目的 HTML 轉換為字串，以便在進程間傳遞
             item_html_strings = [str(item) for item in anime_items]
             
             logger.info(f"[TIME] 步驟 2 (HTML 解析及字串轉換, {len(item_html_strings)} 筆) 耗時: {time.time() - start_parse_time:.2f} 秒")
@@ -305,7 +291,7 @@ def fetch_anime_data(year: str, season: str, cache: Cache = None) -> List[Dict]:
             shared_lock = manager.Lock()
             shared_cache_dict = manager.dict() 
             
-            # **【關鍵步驟】**：在多進程啟動前，載入持久性快取到共享字典
+            # 載入持久性快取
             initial_cache = load_local_cache()
             shared_cache_dict.update(initial_cache)
             logger.info(f"載入持久性快取完成，共 {len(shared_cache_dict)} 筆 Cloudinary 內容快取可供跳過。")
@@ -315,7 +301,6 @@ def fetch_anime_data(year: str, season: str, cache: Cache = None) -> List[Dict]:
             max_workers = os.cpu_count() or 1
             logger.info(f"啟動 {max_workers} 個進程處理 {len(item_html_strings)} 筆動畫資料")
 
-            # 透過 initargs 將共享對象傳遞給每個 worker
             with multiprocessing.Pool(
                 processes=max_workers, 
                 initializer=init_worker,
@@ -325,7 +310,6 @@ def fetch_anime_data(year: str, season: str, cache: Cache = None) -> List[Dict]:
                 
             logger.info(f"[TIME] 步驟 3 (多進程處理/圖片上傳) 耗時: {time.time() - start_pool_time:.2f} 秒") 
 
-            # 過濾掉處理失敗的 None 結果
             anime_list = [res for res in results if res is not None]
 
             # 4. 排序、快取儲存
@@ -333,7 +317,7 @@ def fetch_anime_data(year: str, season: str, cache: Cache = None) -> List[Dict]:
             sorted_list = sorted(anime_list, key=parse_date_time)
             logger.info(f"[TIME] 步驟 4 (結果排序) 耗時: {time.time() - start_sort_time:.2f} 秒")
             
-            # **【關鍵步驟】**：將共享字典的最終結果儲存回持久性檔案
+            # 儲存快取
             final_cache_data = dict(shared_cache_dict)
             save_local_cache(final_cache_data)
             
@@ -347,7 +331,7 @@ def fetch_anime_data(year: str, season: str, cache: Cache = None) -> List[Dict]:
 
 
 # ------------------------------------------------------
-# 依月份判斷季節 (保持不變)
+# 依月份判斷季節
 # ------------------------------------------------------
 def get_current_season(month: int) -> str:
     if 1 <= month <= 3:
