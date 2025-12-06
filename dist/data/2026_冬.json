@@ -118,7 +118,7 @@
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/a9b4bc33db51e442bd8c7561af905cc0",
             "premiere_date": "五",
             "premiere_time": "23:00",
-            "story": "無故事大綱"
+            "story": "與勇者們的過去帶往未來的魔法使‧芙莉蓮。通過魔法使測驗之後，踏上前往靈魂長眠之地〈AUREOLE〉的旅程。歷經邂逅與別離，回想起勇者們說過的話──透過故事可以窺見魔王死後的世界。闡述英雄們「內心」的後日譚奇幻故事！"
         },
         {
             "bangumi_id": "未知ID",
@@ -170,6 +170,30 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "TRIGUN STARGAZE",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/b1e31dd01a415d37f706591ae569d499",
+            "premiere_date": "六",
+            "premiere_time": "23:00",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "Fate/strange Fake",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/807fd53a21c5c78852f9ff3a2b51cca2",
+            "premiere_date": "六",
+            "premiere_time": "23:30",
+            "story": "無故事大綱"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "勇者人渣",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/b8550679d00b160422038509da95752d",
+            "premiere_date": "六",
+            "premiere_time": "24:55",
+            "story": "「所謂勇者，不過是最下賤的人渣才會做的行當。」21世紀中葉，東京的黑社會被那些透過以太（魔力）強化手術化身為《魔王》的黑幫所支配。負責打倒這些魔王的賞金獵人——那正是《勇者》！勇者以名為《Ｅ３》（イースリー）的藥劑強化以太能力，對抗魔王。這類殺傷行為被合法化，勇者可說成了名副其實的「殺人」職業。此時，一名自稱「弟子」的少女強行找上了自由身勇者《死神》矢代。她是勇者見習生的女高中生・城ヶ峰。ヤシロ無奈收下她，卻一步步被捲入一樁又一樁的爛事！人渣「師父」與自稱「弟子」——超重量級現代異能動作劇，就此揭開序幕！"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "現在的是哪一個多聞！？",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/db49f03c04fa62a00f13115941182e44",
             "premiere_date": "六",
@@ -183,6 +207,14 @@
             "premiere_date": "日",
             "premiere_time": "09:30",
             "story": "由男女混合、以隊長 YOSUKE 為中心所結成的音樂組合 SI-VIS憑藉壓倒性的歌唱力與舞台表現，席捲國內外樂壇。然而他們真正的身分，是對抗足以毀滅世界的神祕災厄的英雄。透過現場表演，讓人們為之狂熱，並匯聚那股力量戰鬥。但由於表面上看起來只是場演出，他們是英雄這件事並不為人所知。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "皎潔深宵之月",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/4ff4ed3093a1c82c915c4bd1cb1d1384",
+            "premiere_date": "日",
+            "premiere_time": "16:30",
+            "story": "瀧口宵雖然是個女生，但是她長相俊美，舉止也很瀟灑帥氣，所以被同學們稱為「王子」。雖然宵也想像漫畫裡的女主角談場戀愛，但是男生們都因為宵長得太帥氣，所以沒把她當成女生，所以宵很早就放棄談戀愛了。可是有一天，宵認識了一個帥氣的男生市村琥珀，琥珀是大了宵一歲的學長，他因為家裡有錢，而且長得很帥，所以也被大家稱為「王子」。琥珀第一眼見到宵就被她吸引，後來也常常找機會接近宵。宵一開始很討厭這個舉止輕浮的學長，但是後來漸漸發現琥珀的優點…"
         },
         {
             "bangumi_id": "未知ID",
@@ -290,22 +322,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "勇者人渣",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/9f135d477c920fb1898bcabaa5894c00",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "「所謂勇者，不過是最下賤的人渣才會做的行當。」21世紀中葉，東京的黑社會被那些透過以太（魔力）強化手術化身為《魔王》的黑幫所支配。負責打倒這些魔王的賞金獵人——那正是《勇者》！勇者以名為《Ｅ３》（イースリー）的藥劑強化以太能力，對抗魔王。這類殺傷行為被合法化，勇者可說成了名副其實的「殺人」職業。此時，一名自稱「弟子」的少女強行找上了自由身勇者《死神》矢代。她是勇者見習生的女高中生・城ヶ峰。ヤシロ無奈收下她，卻一步步被捲入一樁又一樁的爛事！人渣「師父」與自稱「弟子」——超重量級現代異能動作劇，就此揭開序幕！"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "Fate/strange Fake",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/6dcc5854d836e8e3b64722661001f5fa",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "無故事大綱"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "金牌得主 第2季",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/550126b366cfc84ddfd1789a8b7003d4",
             "premiere_date": "無首播日期",
@@ -324,14 +340,6 @@
             "bangumi_id": "未知ID",
             "anime_name": "我的英雄學院-ILLEGALS Vigilante- 第2季",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/5687d446004e370a56c5138dd550329e",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "無故事大綱"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "TRIGUN STARGAZE",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/b1e31dd01a415d37f706591ae569d499",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "無故事大綱"
@@ -402,14 +410,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "皎潔深宵之月",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/4ff4ed3093a1c82c915c4bd1cb1d1384",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "瀧口宵雖然是個女生，但是她長相俊美，舉止也很瀟灑帥氣，所以被同學們稱為「王子」。雖然宵也想像漫畫裡的女主角談場戀愛，但是男生們都因為宵長得太帥氣，所以沒把她當成女生，所以宵很早就放棄談戀愛了。可是有一天，宵認識了一個帥氣的男生市村琥珀，琥珀是大了宵一歲的學長，他因為家裡有錢，而且長得很帥，所以也被大家稱為「王子」。琥珀第一眼見到宵就被她吸引，後來也常常找機會接近宵。宵一開始很討厭這個舉止輕浮的學長，但是後來漸漸發現琥珀的優點…"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "29歲單身中堅冒險家的日常",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/c_limit,f_jpg,h_300,q_90,w_300/v1/anime_covers/8b0d999167691b4225ca35b45957b91a",
             "premiere_date": "無首播日期",
@@ -433,5 +433,5 @@
             "story": "無故事大綱"
         }
     ],
-    "generated_at": "2025-12-05T17:25:30.069646"
+    "generated_at": "2025-12-06T17:23:08.136829"
 }
