@@ -6,3 +6,5 @@ cloudinary==1.44.1
 Pillow==10.0.1
 urllib3==1.26.18
 Jinja2
+pydantic==2.5.3
+sentry-sdk==1.39.1
