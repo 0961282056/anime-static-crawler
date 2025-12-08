@@ -16,20 +16,18 @@ jobs:
       - name: ⬇️ Checkout Repository
         uses: actions/checkout@v4
 
-      # 【優化 1】開啟 pip 快取，大幅加快安裝速度
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip' # 自動快取 pip 依賴
 
-      # 這裡會優先從快取還原，若 requirements.txt 沒變，幾秒鐘就跑完
       - name: ⚙️ Install dependencies
         run: |
           pip install -r requirements.txt
 
-      # 【優化 2】明確指定 BUILD_ONLY 為 false，確保執行爬蟲
       - name: 🕷️ Run Crawler
+        id: run_crawler
         env:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
@@ -37,6 +35,15 @@ jobs:
           BUILD_ONLY: false 
         run: |
           python generate_static.py
+
+      # --- 【維運監控】新增：失敗時通知 Discord ---
+      # 請先在 GitHub Repo > Settings > Secrets 加入 DISCORD_WEBHOOK_URL
+      - name: 🔔 Notify Discord on Failure
+        if: failure() # 只有在前面步驟失敗時才執行
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d "{\"content\": \"🚨 **動畫爬蟲失敗警告** 🚨\nGitHub Action 在執行爬蟲時發生錯誤，請檢查 Logs！\nRepository: $GITHUB_REPOSITORY\nWorkflow: $GITHUB_WORKFLOW\"}" \
+          ${{ secrets.DISCORD_WEBHOOK_URL }}
 
       - name: 💾 Commit and Push new data
         run: |

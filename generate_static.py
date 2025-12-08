@@ -3,17 +3,24 @@ import os
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 from config import Config 
+import sentry_sdk # 【新增】引用 Sentry
+
+# --- 【新增】初始化 Sentry ---
+# 請在 GitHub Secrets 和 Cloudflare 後台設定 SENTRY_DSN 環境變數
+if os.getenv("SENTRY_DSN"):
+    sentry_sdk.init(
+        dsn=os.getenv("SENTRY_DSN"),
+        traces_sample_rate=1.0,
+        profiles_sample_rate=1.0,
+    )
+# ---------------------------
 
 # --- 設定 ---
 OUTPUT_DIR = 'dist'
 JSON_DIR = os.path.join(OUTPUT_DIR, 'data')
 START_YEAR_ON_EMPTY = 2018 
 
-# 【優化】將依賴 heavy libraries 的 import 移出全域範圍
-# from services.anime_service import fetch_anime_data, get_current_season (移除這行)
-
 def get_current_season(month: int) -> str:
-    """從 anime_service 搬過來的簡單邏輯，避免依賴"""
     if 1 <= month <= 3: return "冬"
     if 4 <= month <= 6: return "春"
     if 7 <= month <= 9: return "夏"
@@ -31,19 +38,18 @@ def generate_quarterly_data(year, season, is_build_only=False):
         else:
             print(f"⚠️ [Build Only] 缺少資料且跳過爬蟲：{year} {season}")
         return
-    # ----------------------
 
     print(f"--- 開始爬取 {year} 年 {season} 季資料 ---")
 
-    # 【關鍵優化】只有在真正要爬蟲時，才匯入 heavy libraries
-    # 這樣 Cloudflare (Build Only 模式) 就不會因為沒安裝 requests/lxml 而報錯
+    # 延遲匯入，避免 Build Only 模式缺套件報錯
     from services.anime_service import fetch_anime_data 
 
     anime_list = fetch_anime_data(year, season, None) 
 
-    if not anime_list or ('error' in anime_list[0] if anime_list and isinstance(anime_list[0], dict) else False):
-        print(f"爬蟲無有效資料，跳過存檔：{year} {season}")
-        return
+    # 檢查是否為空列表 (若是空列表則 fetch_anime_data 內部已經發過 Discord 警告了)
+    if not anime_list:
+        print(f"⚠️ 爬蟲回傳空資料：{year} {season}")
+        # 如果您希望空資料不要覆蓋舊檔案，可以在這裡 return
     
     data_to_save = {
         'anime_list': anime_list,
@@ -91,20 +97,14 @@ def generate_static_files():
             
             json_output_path = os.path.join(JSON_DIR, f'{year_str}_{season}.json')
             
-            # 判斷是否跳過
             if is_historical_quarter and os.path.exists(json_output_path) and not is_build_only:
-                # print(f"✅ 跳過爬取歷史資料：{year_str} 年 {season} 季...")
                 continue
             
-            # 符合條件才執行 (傳遞 is_build_only)
             if is_historical_quarter or year > current_year or (year == current_year and now.month >= start_month_val):
                 generate_quarterly_data(year_str, season, is_build_only=is_build_only) 
 
-    # =======================================================
-    # HTML 生成邏輯 (這部分依賴 Jinja2，Cloudflare 必須執行)
-    # =======================================================
+    # 生成 HTML
     available_data = {} 
-    
     if os.path.exists(JSON_DIR):
         for filename in os.listdir(JSON_DIR):
             if filename.endswith(".json") and "_" in filename:
