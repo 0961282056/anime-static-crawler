@@ -2,15 +2,15 @@ name: Scheduled Anime Crawler
 
 on:
   schedule:
-    # 每天 UTC 17:00 執行 (台灣時間 01:00)
+    # 每天 UTC 17:00 執行 (等於台灣時間 01:00)
     - cron: '0 17 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # 允許手動觸發
 
 jobs:
   crawl-and-update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # 必須有寫入權限才能 Push 資料回去
 
     steps:
       - name: ⬇️ Checkout Repository
@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip' # 自動快取 pip 依賴
+          cache: 'pip'
 
       - name: ⚙️ Install dependencies
         run: |
@@ -29,21 +29,25 @@ jobs:
       - name: 🕷️ Run Crawler
         id: run_crawler
         env:
+          # --- Cloudinary 設定 ---
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          
+          # --- 爬蟲設定 ---
           BUILD_ONLY: false 
+          
+          # 🔥【關鍵修正】這行必須存在，Python 腳本才能抓到 Discord 網址
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
           python generate_static.py
 
-      # --- 【維運監控】新增：失敗時通知 Discord ---
-      # 請先在 GitHub Repo > Settings > Secrets 加入 DISCORD_WEBHOOK_URL
+      # --- 【雙重保險】Python 腳本崩潰時的額外通知 ---
       - name: 🔔 Notify Discord on Failure
-        if: failure() # 只有在前面步驟失敗時才執行
+        if: failure() # 只有上面的步驟失敗 (exit code != 0) 時才會執行
         run: |
           curl -H "Content-Type: application/json" \
-          -d "{\"content\": \"🚨 **動畫爬蟲失敗警告** 🚨\nGitHub Action 在執行爬蟲時發生錯誤，請檢查 Logs！\nRepository: $GITHUB_REPOSITORY\nWorkflow: $GITHUB_WORKFLOW\"}" \
+          -d "{\"content\": \"🚨 **動畫爬蟲嚴重失敗** 🚨\nGitHub Action 執行過程中發生系統性崩潰（如環境安裝失敗），請檢查 Logs！\nRepository: $GITHUB_REPOSITORY\nWorkflow: $GITHUB_WORKFLOW\"}" \
           ${{ secrets.DISCORD_WEBHOOK_URL }}
 
       - name: 💾 Commit and Push new data
@@ -51,7 +55,7 @@ jobs:
           git config --global user.name 'GitHub Action Crawler'
           git config --global user.email 'action@github.com'
           
-          # 加入 dist 資料夾與快取檔
+          # 加入生成的 JSON 資料與快取檔
           git add dist/data/*.json
           git add cloudinary_cache.json
           

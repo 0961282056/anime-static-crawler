@@ -35,9 +35,11 @@ def load_local_cache() -> dict:
     if os.path.exists(CACHE_FILE):
         try:
             with open(CACHE_FILE, 'r', encoding='utf-8') as f:
-                return json.load(f)
+                content = json.load(f)
+                # 確保回傳的是字典，如果檔案是空的或是空列表，回傳空字典
+                return content if isinstance(content, dict) else {}
         except json.JSONDecodeError:
-            logger.error(f"無法解析快取檔案: {CACHE_FILE}，將使用空字典。")
+            logger.warning(f"快取檔案 {CACHE_FILE} 格式錯誤或為空，視為空快取。")
             return {}
     return {}
 
@@ -94,12 +96,11 @@ def get_quarters_to_keep(years_to_keep: int) -> set:
     return quarters_to_keep
 
 
-# 將預設保留年限改為 15 年
 def cleanup_cloudinary_resources(years_to_keep: int = 15, folder_prefix: str = "anime_covers/") -> int:
     """
-    1. 讀取最近 n 年季度 JSON 檔案，建立 Public ID 白名單。
-    2. 遍歷 Cloudinary 上的資源，刪除不在白名單中的資源。
-    3. 同步清理本地快取 (cloudinary_cache.json)。
+    1. 檢查本地快取，若為空則進入「全面重置模式」。
+    2. 若不為空，則建立白名單，僅保留最近 n 年的圖片。
+    3. 遍歷 Cloudinary 刪除不需要的圖片。
     """
     
     if not os.getenv("CLOUDINARY_API_KEY"):
@@ -107,36 +108,46 @@ def cleanup_cloudinary_resources(years_to_keep: int = 15, folder_prefix: str = "
         return 0
 
     # ------------------------------------------------------
-    # 步驟 1: 建立 Public ID 白名單 (要保留的圖片)
+    # 步驟 0: 檢查快取狀態 (決定是否全數刪除)
     # ------------------------------------------------------
-    logger.info(f"--- 步驟 1: 建立 Cloudinary 圖片白名單 (保留最近 {years_to_keep} 年的季度資料) ---")
-    
-    quarters_to_keep = get_quarters_to_keep(years_to_keep)
-    
-    # 儲存所有需要保留的 Public ID 集合
+    local_cache = load_local_cache()
     public_ids_to_keep = set()
     
-    for year, season in quarters_to_keep:
-        json_filename = f'{year}_{season}.json'
-        json_path = os.path.join(JSON_DIR, json_filename)
+    # 如果快取為空，觸發全面清理
+    if not local_cache:
+        logger.warning(f"⚠️ 檢測到本地快取 ({CACHE_FILE}) 為空或不存在。")
+        logger.warning(f"🚨 將執行「全面重置」模式：刪除 Cloudinary 上所有 '{folder_prefix}' 下的資源！")
+        # public_ids_to_keep 保持為空 set()，這會導致後續步驟刪除所有找到的資源
         
-        if os.path.exists(json_path):
-            try:
-                with open(json_path, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    for anime in data.get('anime_list', []):
-                        url = anime.get('anime_image_url')
-                        if url and 'cloudinary.com' in url:
-                            # 從 Cloudinary URL 中解析出 Public ID
-                            match = re.search(r'v\d+/({})/([\w]+)'.format(folder_prefix.strip('/')), url)
-                            if match:
-                                public_id = f"{match.group(1)}/{match.group(2)}"
-                                public_ids_to_keep.add(public_id)
-                            
-            except Exception as e:
-                logger.error(f"讀取或解析 JSON 檔案失敗: {json_path}. 錯誤: {e}")
+    else:
+        # ------------------------------------------------------
+        # 步驟 1: 建立 Public ID 白名單 (正常模式)
+        # ------------------------------------------------------
+        logger.info(f"--- 步驟 1: 建立 Cloudinary 圖片白名單 (保留最近 {years_to_keep} 年的季度資料) ---")
+        
+        quarters_to_keep = get_quarters_to_keep(years_to_keep)
+        
+        for year, season in quarters_to_keep:
+            json_filename = f'{year}_{season}.json'
+            json_path = os.path.join(JSON_DIR, json_filename)
+            
+            if os.path.exists(json_path):
+                try:
+                    with open(json_path, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        for anime in data.get('anime_list', []):
+                            url = anime.get('anime_image_url')
+                            if url and 'cloudinary.com' in url:
+                                # 從 Cloudinary URL 中解析出 Public ID
+                                match = re.search(r'v\d+/({})/([\w]+)'.format(folder_prefix.strip('/')), url)
+                                if match:
+                                    public_id = f"{match.group(1)}/{match.group(2)}"
+                                    public_ids_to_keep.add(public_id)
+                                
+                except Exception as e:
+                    logger.error(f"讀取或解析 JSON 檔案失敗: {json_path}. 錯誤: {e}")
 
-    logger.info(f"白名單建立完成。共 {len(public_ids_to_keep)} 筆圖片 (來自 {len(quarters_to_keep)} 個季度) 將被保留。")
+        logger.info(f"白名單建立完成。共 {len(public_ids_to_keep)} 筆圖片 (來自 {len(quarters_to_keep)} 個季度) 將被保留。")
 
 
     # ------------------------------------------------------
@@ -168,14 +179,13 @@ def cleanup_cloudinary_resources(years_to_keep: int = 15, folder_prefix: str = "
             for res in resources_list:
                 public_id = res.get('public_id')
                 
-                # 如果 Public ID 不在保留列表中，則標記刪除
+                # 如果 Public ID 不在保留列表中 (或是白名單為空)，則標記刪除
                 if public_id and public_id not in public_ids_to_keep:
                     current_batch_to_delete.append(public_id)
 
             if current_batch_to_delete:
                 public_ids_to_delete_all.extend(current_batch_to_delete)
-                # 注意：這裡的日誌是累計的，所以看起來數量會越來越多
-                logger.info(f"發現 {len(current_batch_to_delete)} 筆不在白名單中的資源待刪除。")
+                logger.info(f"發現 {len(current_batch_to_delete)} 筆待刪除資源...")
 
             next_cursor = resources_result.get('next_cursor')
             if not next_cursor:
@@ -200,7 +210,6 @@ def cleanup_cloudinary_resources(years_to_keep: int = 15, folder_prefix: str = "
                     type="upload"
                 )
                 
-                # *** 關鍵修正處：直接計算 'deleted' 字典中的鍵數量 ***
                 deleted_count = len(delete_result.get('deleted', {})) 
                 
                 total_deleted_cloud += deleted_count
@@ -214,29 +223,32 @@ def cleanup_cloudinary_resources(years_to_keep: int = 15, folder_prefix: str = "
     # 步驟 3: 同步清理本地快取 (刪除已刪除 Public ID 的快取記錄)
     # ------------------------------------------------------
     
-    # 將 Public ID (anime_covers/hash) 轉換為快取 Key (cloudinary_hash)
-    deleted_public_ids_for_cache = set(f"cloudinary_{pid.split('/')[-1]}" for pid in public_ids_to_delete_all)
-    total_deleted_cache = 0
-    
-    if deleted_public_ids_for_cache:
+    # 如果是全面重置模式 (local_cache 為空)，這一步其實沒什麼好刪的，但邏輯通用
+    if public_ids_to_delete_all:
+        deleted_public_ids_for_cache = set(f"cloudinary_{pid.split('/')[-1]}" for pid in public_ids_to_delete_all)
+        total_deleted_cache = 0
+        
+        # 重新讀取一次快取 (防止在執行過程中快取被其他進程修改，雖然此腳本通常單獨執行)
         local_cache = load_local_cache()
         original_cache_size = len(local_cache)
         
-        # 找出快取中需要刪除的鍵
-        keys_to_delete = set(local_cache.keys()) & deleted_public_ids_for_cache
-        
-        for key in keys_to_delete:
-            del local_cache[key]
-            total_deleted_cache += 1
+        if local_cache:
+            # 找出快取中需要刪除的鍵
+            keys_to_delete = set(local_cache.keys()) & deleted_public_ids_for_cache
             
-        if total_deleted_cache > 0:
-            save_local_cache(local_cache)
-            logger.info(f"成功同步快取。從 {original_cache_size} 筆記錄中移除 {total_deleted_cache} 筆已刪除的圖片快取。")
-        else:
-            logger.info("本地快取中沒有找到需要移除的舊記錄。")
+            for key in keys_to_delete:
+                del local_cache[key]
+                total_deleted_cache += 1
+                
+            if total_deleted_cache > 0:
+                save_local_cache(local_cache)
+                logger.info(f"成功同步快取。從 {original_cache_size} 筆記錄中移除 {total_deleted_cache} 筆已刪除的圖片快取。")
+            else:
+                logger.info("本地快取中沒有找到需要移除的舊記錄。")
             
     logger.info(f"--- Cloudinary 圖片清理與快取同步作業全部完成。---")
     return total_deleted_cloud
 
 if __name__ == '__main__':
+    # 執行清理，預設保留 15 年
     cleanup_cloudinary_resources(years_to_keep=15)
