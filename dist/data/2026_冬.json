@@ -354,6 +354,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "「憑妳也想討伐魔王？」被勇者小隊逐出隊伍，只好在王都自在過活",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ecc9ba067745eb4a3ea7e5b25e346745",
+            "premiere_date": "無首播日期",
+            "premiere_time": "無首播時間",
+            "story": "「……原來我，可以活著呀。」明明能力值為零，卻被選進勇者小隊的芙蘭姆。唯一擁有的是種名為「翻轉」的莫名能力。果不其然，雖在戰鬥中完全派不上用場，仍不氣餒努力為小隊奉獻。然而隊中一位赫赫有名的天才賢者吉恩卻看她不順眼，不只動不動就找碴，最後甚至硬是把她賣給了奴隸商人。在奴隸商會內受盡折磨的芙蘭姆，某天為了娛樂目的，即將淪為怪物的大餐。沒想到，當她舉起號稱一拿到手就會將身體融化的「詛咒大劍」瞬間——她的人生急遽翻轉。"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "優雅貴族的休假指南",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1fe6f2262151617319183541a625aca2",
             "premiere_date": "無首播日期",
@@ -433,5 +441,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2025-12-08T17:26:44.108288"
+    "generated_at": "2025-12-09T17:27:13.802950"
 }
