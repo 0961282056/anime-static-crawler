@@ -2,6 +2,14 @@
     "anime_list": [
         {
             "bangumi_id": "未知ID",
+            "anime_name": "我的英雄學院-ILLEGALS Vigilante- 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5687d446004e370a56c5138dd550329e",
+            "premiere_date": "一",
+            "premiere_time": "22:00",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "能幫我弄乾淨嗎？",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/28732f446a926eeafa8e15268c6c4969",
             "premiere_date": "一",
@@ -23,6 +31,14 @@
             "premiere_date": "一",
             "premiere_time": "23:30",
             "story": "成為魔王軍階下囚的國王軍第三騎士團——「騎士團長」公主要承受溫柔又凶狠的各種拷問。公主殿下與小魔魔用跳箱進行對決！小魔魔努力的模樣讓那個人都忍不住屈服!?此外，魔王軍人事異動，朵伽將要調離公主殿下的負責拷問官!?"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "青梅竹馬的戀愛喜劇無法成立",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a505d8e1df78f168b3c35968250fe2d6",
+            "premiere_date": "一",
+            "premiere_time": "24:00",
+            "story": "高中男生˙英雄的煩惱。那就是兩個青梅竹馬「汐」與「灯」太可愛了！對方並沒有那個意思，但如果只有我用色色的眼光看她們這件事穿幫了…那就太丟臉了！另一方面，其實她們也對英雄…？令人看不下去！令人感到糾纏不清！但是青梅竹馬超棒的！"
         },
         {
             "bangumi_id": "未知ID",
@@ -63,6 +79,22 @@
             "premiere_date": "二",
             "premiere_time": "25:29",
             "story": "操縱異能力量的吸血鬼偵探阿爾涅·尼塔特熱愛吸血鬼的名門貴族千金琳‧萊茵維斯在絕對不會交集的兩個世界中生存的二人，為了解開被血染的謎題而聯手。被黑夜籠罩的窮途末路之際，琳迷失在妖魔棲息的謎之城鎮－魯根堡。在那裡與被稱作「最兇惡」吸血鬼阿爾涅的相遇，少女所生活的世界發生了翻天覆地的變化-----今晚，發生了新的「謀殺案」。在人類與奇異事物相交的世界中發生的怪異事件背後的真相是什麼？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "29歲單身中堅冒險家的日常",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/2ded3e2707270a820dd5b51c00f94f20",
+            "premiere_date": "三",
+            "premiere_time": "21:30",
+            "story": "因為工作需要而潛入魔宮的冒險家‧阿始，遇見了肚子餓的少女‧莉露。不忍心丟下遭到父母親拋棄，無依無靠的她──…「如果妳想當我的同伴，那就別再哭了！」於是他們兩人開始一起生活。但是莉露她並不是「單純的」少女……？"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "魔王的女兒太溫柔了!!",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ccb44ac1bd8164ecaa03d4c27ee90263",
+            "premiere_date": "三",
+            "premiere_time": "22:00",
+            "story": "統治著全世界的最強魔王「阿里曼」。可是最近，他卻停下了侵略的魔手……讓人跌破眼鏡的理由究竟是…？"
         },
         {
             "bangumi_id": "未知ID",
@@ -110,6 +142,14 @@
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b95893876355b4b9a8c418bf94fa6a4b",
             "premiere_date": "四",
             "premiere_time": "24:26",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "終究，與你相戀 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0546d26d3a5b4bffd5b784f6f9c498a9",
+            "premiere_date": "四",
+            "premiere_time": "25:28",
             "story": "暫無簡介"
         },
         {
@@ -202,6 +242,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "金牌得主 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4a885a8722bfaebf510742ea5d8fa14b",
+            "premiere_date": "六",
+            "premiere_time": "25:30",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "SI-VIS：英雄之聲",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d80d03577792e3f2114c615e1e660778",
             "premiere_date": "日",
@@ -255,6 +303,14 @@
             "premiere_date": "日",
             "premiere_time": "22:00",
             "story": "雙眼失明的少年庫諾的目標，就是用水系魔術做出新的雙眼。學習魔法僅僅五個月，就超越教師實力的庫諾，在這前所未有的挑戰中，更加綻放了才能！用魔力感知周遭的色彩、透過水系魔術的應用，製作出懷爐與敷布，甚至只用初級魔術就重現了一隻貓──其技術與構思，連宮廷魔術師都瞠目結舌，實力受到賞識的庫諾，就此成為擁有極致手藝的魔技師的弟子!?"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "泛而不精的我被逐出了勇者隊伍",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3d21d5cebca8594086e774a1e5e27b0e",
+            "premiere_date": "日",
+            "premiere_time": "22:30",
+            "story": "我不會再讓任何人說我是『泛而不精』！總有一天，我要成為被稱為『萬能者』的探索者！某一天……隸屬於「勇者隊伍」的オルン・ドゥーラ，被身為隊長且是青梅竹馬的オリヴァー以實力不足為由，宣告將其逐出隊伍。オルン為了隊伍從【劍士】轉職為【賦予術師】，並運用獨自開發的魔術支援著夥伴，這對他來說完全是無法接受的結果。然而，就連本應同甘共苦的夥伴們也嘲笑他是『泛而不精』，甚至連後繼人選都已經決定好了。在失意之中告別「勇者小隊」的オルン重新下定決心，以探索者的身分開始了單獨行動，然而……。遺失的記憶……對抗不講理的力量……以及各種嶄新的邂逅，將大幅改變奧爾恩的命運。為了守護重要的夥伴，究極的『泛而不精』將以成為最強的『萬能者』為目標勇往直前。"
         },
         {
             "bangumi_id": "未知ID",
@@ -322,35 +378,11 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "金牌得主 第2季",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/550126b366cfc84ddfd1789a8b7003d4",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "暫無簡介"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "達爾文事變",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6059d8abd9906a355ef0e3c61ff37c73",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "為什麼只有人類是特別的？生活在美國密蘇里州偏遠鄉間的少年查理，同時擁有超越人類的智能與超越猩猩的體能，是個半人半猩猩的「猩猩人」。查理15歲時在人類養父母的建議下首次進入學校就讀。在那裡他遇見了聰慧卻不擅長溝通的露西。平靜的校園生活維持不了多久，查理就因為他特殊的血統而被主張要「解放動物」的恐怖組織「ALA」盯上！查理為了要守護家人和露西，選擇走上與ALA正面對決的道路。「恐怖主義」、「歧視」、「人權」、「網路撻伐」…「非人類」查理將和露西共同起身對抗人類的這些問題。人類與非人類的故事就此展開！"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "我的英雄學院-ILLEGALS Vigilante- 第2季",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5687d446004e370a56c5138dd550329e",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "暫無簡介"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "泛而不精的我被逐出了勇者隊伍",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3d21d5cebca8594086e774a1e5e27b0e",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "我不會再讓任何人說我是『泛而不精』！總有一天，我要成為被稱為『萬能者』的探索者！某一天……隸屬於「勇者隊伍」的オルン・ドゥーラ，被身為隊長且是青梅竹馬的オリヴァー以實力不足為由，宣告將其逐出隊伍。オルン為了隊伍從【劍士】轉職為【賦予術師】，並運用獨自開發的魔術支援著夥伴，這對他來說完全是無法接受的結果。然而，就連本應同甘共苦的夥伴們也嘲笑他是『泛而不精』，甚至連後繼人選都已經決定好了。在失意之中告別「勇者小隊」的オルン重新下定決心，以探索者的身分開始了單獨行動，然而……。遺失的記憶……對抗不講理的力量……以及各種嶄新的邂逅，將大幅改變奧爾恩的命運。為了守護重要的夥伴，究極的『泛而不精』將以成為最強的『萬能者』為目標勇往直前。"
         },
         {
             "bangumi_id": "未知ID",
@@ -386,14 +418,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "青梅竹馬的戀愛喜劇無法成立",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a505d8e1df78f168b3c35968250fe2d6",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "高中男生˙英雄的煩惱。那就是兩個青梅竹馬「汐」與「灯」太可愛了！對方並沒有那個意思，但如果只有我用色色的眼光看她們這件事穿幫了…那就太丟臉了！另一方面，其實她們也對英雄…？令人看不下去！令人感到糾纏不清！但是青梅竹馬超棒的！"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "蘑菇魔女",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a19e6a49d7b75a23667987f7d42a8415",
             "premiere_date": "無首播日期",
@@ -415,31 +439,7 @@
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "世界最強的六歲小孩．諾亞，生來便是人生勝利組的皇帝第十三子，加上與生俱來就擁有等級無上限，還能將追隨者的能力加到自身能力之上的作弊級技能。因為王位繼承順位排得相當後面，諾亞向來也是在自己的領地悠哉生活。然而他為人公正又具備聰明才智，年僅六歲便幫助了差點被賣掉的女僕、受到脅迫的歌手，更成功收服了水之魔劍利維坦。在每天自由自在的生活中，將最強的力量、最強的部下收於麾下。而就在此時，王位的繼承人選卻改為無關原先繼承順位與排名，由皇子彼此公平競爭。身懷最強力量，足智多謀又有夥伴的諾亞，能否勝過其他皇子，最終坐上擁有世上至高權力的皇帝寶座——！？"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "29歲單身中堅冒險家的日常",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8b0d999167691b4225ca35b45957b91a",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "因為工作需要而潛入魔宮的冒險家‧阿始，遇見了肚子餓的少女‧莉露。不忍心丟下遭到父母親拋棄，無依無靠的她──…「如果妳想當我的同伴，那就別再哭了！」於是他們兩人開始一起生活。但是莉露她並不是「單純的」少女……？"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "魔王的女兒太溫柔了!!",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4c18e01773ab6899b559c333099b4c66",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "統治著全世界的最強魔王「阿里曼」。可是最近，他卻停下了侵略的魔手……讓人跌破眼鏡的理由究竟是…？"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "終究，與你相戀 第2季",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0546d26d3a5b4bffd5b784f6f9c498a9",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "暫無簡介"
         }
     ],
-    "generated_at": "2025-12-09T17:27:13.802950"
+    "generated_at": "2025-12-10T17:29:33.092121"
 }
