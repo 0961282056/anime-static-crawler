@@ -2,11 +2,27 @@
     "anime_list": [
         {
             "bangumi_id": "未知ID",
+            "anime_name": "元祖！BanG Dream醬",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bb1e9b309f3030f7f04c329a07a829fa",
+            "premiere_date": "四",
+            "premiere_time": "23:25",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "勇者人渣",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b8550679d00b160422038509da95752d",
             "premiere_date": "六",
             "premiere_time": "24:55",
             "story": "「所謂勇者，不過是最下賤的人渣才會做的行當。」21世紀中葉，東京的黑社會被那些透過以太（魔力）強化手術化身為《魔王》的黑幫所支配。負責打倒這些魔王的賞金獵人——那正是《勇者》！勇者以名為《Ｅ３》（イースリー）的藥劑強化以太能力，對抗魔王。這類殺傷行為被合法化，勇者可說成了名副其實的「殺人」職業。此時，一名自稱「弟子」的少女強行找上了自由身勇者《死神》矢代。她是勇者見習生的女高中生・城ヶ峰。ヤシロ無奈收下她，卻一步步被捲入一樁又一樁的爛事！人渣「師父」與自稱「弟子」——超重量級現代異能動作劇，就此揭開序幕！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "DIGIMON BEATBREAK",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/db891002084198372d661a0430a29884",
+            "premiere_date": "日",
+            "premiere_time": "09:00",
+            "story": "由人類的思考與情感所產生的「e-パルス」，被用作AI輔助裝置「サポタマ」的能量來源。在其飛躍發展的背後，可怕的怪物現身——吞噬「e-パルス」而進化的生命體「DIGIMON」。天馬トモロウ因與自「サポタマ」中突然現身的「ゲッコーモン」相遇，而被捲入非日常的世界。在與以賞金獵人為業的團隊「ゴールデンドーン」的沢城キョウ等人共同生活的日子裡，トモロウ重新立下了決心。人類與DIGIMON所描繪的嶄新未來，究竟會是——"
         },
         {
             "bangumi_id": "未知ID",
@@ -17,5 +33,5 @@
             "story": "時值辰曆１３４２年，西方的伊魯德連王國持續７年的第十七次東征再次宣告失敗。第一騎士團團長”水晶盔”賽拉為了在友軍撤退時斷後而與體型巨大的敵方將領單挑落敗，醒來後發現自己變成了被枷鎖銬住的俘虜。但接下來等待她的並不是敵人的拷問或凌辱，而是求婚……"
         }
     ],
-    "generated_at": "2025-12-21T17:23:03.548161"
+    "generated_at": "2025-12-22T17:25:30.096013"
 }
