@@ -44,7 +44,28 @@ def generate_quarterly_data(year, season, is_build_only=False):
     # 延遲匯入，避免 Build Only 模式缺套件報錯
     from services.anime_service import fetch_anime_data 
 
-    anime_list = fetch_anime_data(year, season, None) 
+    # 🔥🔥🔥 【關鍵修改區段 Start】 🔥🔥🔥
+    try:
+        anime_list = fetch_anime_data(year, season, None)
+    
+    except Exception as e:
+        # 判斷是否為「未來年份」的「連線/超時錯誤」
+        # 邏輯：如果是今年以後的年份 (如 2027)，且發生 504 或連線失敗，我們視為「正常現象」並跳過
+        current_year = datetime.now().year
+        error_msg = str(e)
+        
+        is_future = int(year) > current_year
+        is_network_error = "504" in error_msg or "Max retries exceeded" in error_msg or "404" in error_msg
+        
+        if is_future and is_network_error:
+            print(f"⚠️ [容錯跳過] 未來季度 {year} {season} 網站尚未準備好或回應超時。")
+            print(f"   錯誤訊息: {error_msg[:100]}...") # 只印出前 100 字避免洗版
+            return # 直接結束此函式，不存檔，也不報錯，讓迴圈繼續跑下一個
+        else:
+            # 如果是「現在」或「過去」的季度失敗，或者不是網路問題，則必須報錯
+            print(f"❌ [嚴重錯誤] 爬取 {year} {season} 失敗！")
+            raise e # 重新拋出異常，讓 GitHub Action 標記為失敗並通知 Sentry
+    # 🔥🔥🔥 【關鍵修改區段 End】 🔥🔥🔥
 
     # 檢查是否為空列表 (若是空列表則 fetch_anime_data 內部已經發過 Discord 警告了)
     if not anime_list:
