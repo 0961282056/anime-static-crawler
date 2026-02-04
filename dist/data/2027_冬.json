@@ -4,5 +4,5 @@
             "error": "系統錯誤: HTTPSConnectionPool(host='acgsecrets.hk', port=443): Max retries exceeded with url: /bangumi/202701/ (Caused by ResponseError('too many 504 error responses'))"
         }
     ],
-    "generated_at": "2026-02-03T17:56:08.686948"
+    "generated_at": "2026-02-04T17:51:53.680404"
 }
