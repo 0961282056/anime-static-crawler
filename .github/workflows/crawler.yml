@@ -9,6 +9,7 @@ on:
     # 只要修改 templates 底下的檔案，就自動觸發重新生成 (視圖層即時更新)
     paths:
       - 'templates/**'
+      - 'static/**'
 
 # 【防撞鎖定機制】確保同一個時間點，只會有一個爬蟲實例在運行
 concurrency:
