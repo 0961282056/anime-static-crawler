@@ -266,7 +266,7 @@ function animeApp() {
             const btn = document.getElementById('copyButton');
             const originalText = btn.innerHTML;
             btn.disabled = true;
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 載入最高畫質圖...'; 
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 處理最高畫質圖片...'; 
 
             // 1. 建立隱藏容器
             const exportContainer = document.createElement('div');
@@ -279,65 +279,39 @@ function animeApp() {
                 font-family: 'Noto Sans TC', sans-serif;
             `;
 
-            // 【安全性：輕量級 HTML 跳脫函式，防止 XSS 注入風險】
+            // 【安全性：輕量級 HTML 跳脫，防禦 XSS 注入】
             const escapeHTML = (str) => {
                 return str.replace(/[&<>'"]/g, 
                     tag => ({
-                        '&': '&amp;',
-                        '<': '&lt;',
-                        '>': '&gt;',
-                        "'": '&#39;',
-                        '"': '&quot;'
+                        '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
                     }[tag] || tag)
                 );
             };
 
-            // 2. 填入資料
+            // 2. 填入資料與高畫質 URL 轉換
             this.shareList.forEach(item => {
-                
-                // 【效能與品質：請求最高畫質的 Cloudinary 圖片】
                 let highResImgUrl = item.img;
                 if (highResImgUrl.includes('cloudinary.com') && highResImgUrl.includes('/upload/')) {
-                    highResImgUrl = highResImgUrl.replace(
-                        /\/upload\/[^/]+\/v1\//, 
-                        '/upload/q_auto:best,f_auto/v1/'
-                    );
-                    console.log(`[HD URL] ${highResImgUrl}`);
+                    highResImgUrl = highResImgUrl.replace(/\/upload\/[^/]+\/v1\//, '/upload/q_auto:best,f_auto/v1/');
                 }
 
                 const cardHtml = `
                     <div style="
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        background-color: #2b2b2b;
-                        border-radius: 24px;
-                        overflow: hidden;
-                        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+                        width: 100%; display: flex; flex-direction: column;
+                        background-color: #2b2b2b; border-radius: 24px;
+                        overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5);
                     ">
                         <div style="width: 100%; line-height: 0;">
-                            <img src="${highResImgUrl}" style="
-                                width: 100%;
-                                height: auto;
-                                display: block;
-                            " crossorigin="anonymous">
+                            <img src="${highResImgUrl}" style="width: 100%; height: auto; display: block;" crossorigin="anonymous">
                         </div>
-
                         <div style="
-                            padding: 30px 35px;
-                            background-color: #252525;
-                            border-top: 1px solid #333;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center; 
+                            padding: 30px 35px; background-color: #252525;
+                            border-top: 1px solid #333; display: flex;
+                            flex-direction: column; justify-content: center; 
                         ">
                             <h2 style="
-                                margin: 0;
-                                font-size: 42px;
-                                font-weight: 700;
-                                color: #ffffff;
-                                line-height: 1.4;
-                                min-height: 1.4em; 
+                                margin: 0; font-size: 42px; font-weight: 700;
+                                color: #ffffff; line-height: 1.4; min-height: 1.4em; 
                             ">${escapeHTML(item.name)}</h2>
                         </div>
                     </div>
@@ -347,55 +321,80 @@ function animeApp() {
 
             document.body.appendChild(exportContainer);
 
+            // 【架構防禦：備用的自動下載機制】
+            const triggerFallbackDownload = (blob) => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = url;
+                a.download = `anime_list_${new Date().getTime()}.png`;
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+                document.body.removeChild(a);
+                
+                Swal.fire({
+                    icon: 'success', 
+                    title: '圖片已下載！', 
+                    text: '因瀏覽器限制剪貼簿，已自動為您下載圖片', 
+                    background: '#1e1e1e', color: '#fff',
+                    timer: 3000, showConfirmButton: false
+                });
+            };
+
             try {
-                // 3. 等待圖片載入
+                // 3. 等待所有圖片與字體載入 (解決 Race Condition)
                 const images = Array.from(exportContainer.querySelectorAll('img'));
                 await Promise.all(images.map(img => {
                     if (img.complete) return Promise.resolve();
-                    return new Promise(resolve => {
-                        img.onload = resolve;
-                        img.onerror = resolve; 
-                    });
+                    return new Promise(resolve => { img.onload = resolve; img.onerror = resolve; });
                 }));
-
-                // 【相容性：強制等待網頁字體渲染完畢，避免破版或變回系統預設字體】
                 await document.fonts.ready;
 
-                // 4. 截圖 (維持 scale: 3 以獲得最佳字體清晰度)
+                // 4. 執行 html2canvas 截圖
                 const canvas = await html2canvas(exportContainer, {
-                    scale: 3, 
-                    useCORS: true, 
-                    allowTaint: true,
-                    backgroundColor: '#1a1a1a', 
-                    logging: false,
-                    letterRendering: 1, 
+                    scale: 3, useCORS: true, allowTaint: true,
+                    backgroundColor: '#1a1a1a', logging: false, letterRendering: 1
                 });
 
-                // 5. 輸出與清空
-                canvas.toBlob(blob => {
-                    if (!blob) throw new Error('Canvas is empty');
-                    navigator.clipboard.write([new ClipboardItem({'image/png': blob})])
-                        .then(() => {
-                            Swal.fire({
-                                icon: 'success', 
-                                title: '圖片已複製！', 
-                                text: '清單已自動清空', 
-                                background: '#1e1e1e', color: '#fff',
-                                timer: 2000, showConfirmButton: false
-                            });
-                            this.shareList = []; 
-                        })
-                        .catch(err => {
-                            console.error('Clipboard Error:', err);
-                            Swal.fire({icon: 'error', title: '複製失敗', text: '請手動下載或確認瀏覽器權限', background: '#1e1e1e', color: '#fff'});
-                        });
+                // 5. 【核心修復：強制等待的 Promise 封裝與智慧降級機制】
+                await new Promise((resolve, reject) => {
+                    canvas.toBlob(blob => {
+                        if (!blob) return reject(new Error('Canvas is empty'));
+                        
+                        // 判斷瀏覽器是否支援剪貼簿 API
+                        if (navigator.clipboard && window.ClipboardItem) {
+                            navigator.clipboard.write([new ClipboardItem({'image/png': blob})])
+                                .then(() => {
+                                    Swal.fire({
+                                        icon: 'success', title: '圖片已複製！', 
+                                        text: '可直接貼上至 LINE 或社群，清單已清空', 
+                                        background: '#1e1e1e', color: '#fff',
+                                        timer: 2000, showConfirmButton: false
+                                    });
+                                    this.shareList = []; 
+                                    resolve(); // 任務成功，放行
+                                })
+                                .catch(err => {
+                                    console.warn('[Clipboard] 寫入被拒絕，啟動下載備案', err);
+                                    triggerFallbackDownload(blob);
+                                    this.shareList = [];
+                                    resolve(); // 備案執行成功，放行
+                                });
+                        } else {
+                            console.warn('[Clipboard] API 不支援，啟動下載備案');
+                            triggerFallbackDownload(blob);
+                            this.shareList = [];
+                            resolve(); // 備案執行成功，放行
+                        }
+                    }, 'image/png');
                 });
 
             } catch (e) {
-                console.error(e);
-                Swal.fire({icon: 'error', title: '生成失敗', background: '#1e1e1e', color: '#fff'});
+                console.error('[ShareImage Error]', e);
+                Swal.fire({icon: 'error', title: '生成失敗', text: '處理圖片時發生異常', background: '#1e1e1e', color: '#fff'});
             } finally {
-                // 清理 DOM，避免記憶體洩漏 (Memory Leak)
+                // 6. 資源釋放與 UI 狀態還原
                 if (document.body.contains(exportContainer)) {
                     document.body.removeChild(exportContainer);
                 }

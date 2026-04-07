@@ -117,6 +117,7 @@ def cleanup_cloudinary_resources(years_to_keep: int = 15, folder_prefix: str = "
     if not local_cache:
         logger.warning(f"⚠️ 檢測到本地快取 ({CACHE_FILE}) 為空或不存在。")
         logger.warning(f"🚨 將執行「全面重置」模式：刪除 Cloudinary 上所有 '{folder_prefix}' 下的資源！")
+        return 0
         # public_ids_to_keep 保持為空 set()，這會導致後續步驟刪除所有找到的資源
         
     else:
