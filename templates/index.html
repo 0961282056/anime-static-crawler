@@ -39,7 +39,7 @@
 
                 <div class="form-group">
                     <label class="form-label">年份</label>
-                    <select class="form-select" x-model="year" @change="updateSeasonOptions()">
+                    <select class="form-select" x-model="year" @change="updateSeasonOptions(); loadData()">
                         <template x-for="y in years" :key="y">
                             <option :value="y" x-text="y + ' 年'"></option>
                         </template>
