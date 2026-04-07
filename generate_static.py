@@ -66,6 +66,19 @@ def generate_quarterly_data(year, season, is_build_only=False):
     if not anime_list:
         print(f"⚠️ 爬蟲回傳空資料：{year} {season}")
     
+        # 🟢 【防禦機制：防止靜默覆寫災難】
+        current_year = datetime.now().year
+        now = datetime.now()
+        start_month_val = Config.SEASON_TO_MONTH[season]
+        
+        is_future = int(year) > current_year or (int(year) == current_year and now.month < start_month_val)
+        
+        # 若不是未來季度，卻抓到 0 筆資料，100% 是來源網站結構改變導致解析失敗
+        if not is_future:
+            error_msg = f"❌ [嚴重防護] {year} {season} 已經開播，但爬蟲卻抓到 0 筆資料！來源網站 DOM 可能已改版，為保護現有資料，拒絕覆寫。"
+            print(error_msg)
+            raise ValueError(error_msg) # 強制引爆錯誤，讓 Action 亮紅燈並觸發 Discord 失敗警報
+        
     data_to_save = {
         'anime_list': anime_list,
         'generated_at': datetime.now().isoformat()
