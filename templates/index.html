@@ -50,7 +50,7 @@
                     <label class="form-label">季節</label>
                     <select class="form-select" x-model="season" @change="loadData()">
                         <template x-for="s in seasons" :key="s">
-                            <option :value="s" x-text="s + ' 番'"></option>
+                            <option :value="s" x-text="s + '(' + {'冬': 1, '春': 4, '夏': 7, '秋': 10}[s] + '月)'"></option>
                         </template>
                     </select>
                 </div>

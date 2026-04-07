@@ -40,12 +40,14 @@ def generate_quarterly_data(year, season, is_build_only=False):
 
     print(f"--- 開始爬取 {year} 年 {season} 季資料 ---")
 
+    # 延遲匯入，避免 Build Only 模式缺套件報錯
     from services.anime_service import fetch_anime_data 
 
     try:
         anime_list = fetch_anime_data(year, season, None)
     
     except Exception as e:
+        # 未來年份的網路容錯邏輯
         current_year = datetime.now().year
         error_msg = str(e)
         
@@ -95,15 +97,17 @@ def generate_static_files():
     absolute_current_q = current_year * 4 + current_season_idx
 
     targets = [] # 存放要爬取的 (year_str, season) 列表
+    is_full_crawl = False # 全量/增量模式標記
 
     if not json_files_exist and not is_build_only:
         print(f"⚠️ 資料目錄為空。將從 {START_YEAR_ON_EMPTY} 年開始全量爬取。")
+        is_full_crawl = True
         # 全量模式：從初始年份的第一季，一直抓到未來 1 季
         start_q = START_YEAR_ON_EMPTY * 4 
         end_q = absolute_current_q + 1
     else:
         if not is_build_only:
-             print("✅ 執行精準增量爬取 (過去 1 年至未來 1 季)。")
+             print("✅ 執行精準增量爬取 (強制檢查過去 1 年至未來 1 季)。")
         # 增量模式：過去 4 個季度 (1 年) 到未來 1 個季度
         start_q = absolute_current_q - 4 
         end_q = absolute_current_q + 1   
@@ -119,7 +123,7 @@ def generate_static_files():
         start_month_val = Config.SEASON_TO_MONTH[season]
         year_int = int(year_str)
         
-        # 判斷是否為歷史季度 (當下時間已超過該季度的起始月份)
+        # 判斷是否為已開播的歷史季度
         is_historical_quarter = not (
             year_int > current_year or
             (year_int == current_year and now.month < start_month_val)
@@ -127,8 +131,11 @@ def generate_static_files():
         
         json_output_path = os.path.join(JSON_DIR, f'{year_str}_{season}.json')
         
-        # 效能優化：若是已結束的歷史季度，且檔案已存在，則不發起網路請求
-        if is_historical_quarter and os.path.exists(json_output_path) and not is_build_only:
+        # 【核心分流防禦邏輯】
+        # 若為「全量重建 (is_full_crawl)」，遇到已存在的歷史檔案直接跳過，防範瞬間大量請求導致 IP 被 Ban。
+        # 若為「每日排程 (非 is_full_crawl)」，則無條件放行，確保過去 1 年的資料能覆寫更新（如補充新視覺圖）。
+        if is_full_crawl and is_historical_quarter and os.path.exists(json_output_path) and not is_build_only:
+            print(f"⏭️ [全量防護] 歷史資料已存在，跳過網路請求：{year_str} {season}")
             continue
             
         generate_quarterly_data(year_str, season, is_build_only=is_build_only) 
