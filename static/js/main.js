@@ -148,7 +148,7 @@ function animeApp() {
                 while (retries > 0) {
                     try {
                         // 加上 cache buster 確保不讀到錯誤的快取
-                        res = await fetch(`data/${cacheKey}.json?t=${new Date().getTime()}`);
+                        res = await fetch(`data/${cacheKey}.json?v=${window.SERVER_DATA.buildVersion}`);
                         if (res.ok) break; // 成功取得資料，跳出迴圈
                     } catch (e) {
                         fetchError = e;
@@ -261,7 +261,7 @@ function animeApp() {
             this.shareList.splice(index, 1);
         },
 
-       // --- 修改後的 generateShareImage (自動切換最高畫質片源) ---
+        // --- 🟢 完整版的 generateShareImage ---
         async generateShareImage() {
             const btn = document.getElementById('copyButton');
             const originalText = btn.innerHTML;
@@ -279,24 +279,29 @@ function animeApp() {
                 font-family: 'Noto Sans TC', sans-serif;
             `;
 
+            // 【安全性：輕量級 HTML 跳脫函式，防止 XSS 注入風險】
+            const escapeHTML = (str) => {
+                return str.replace(/[&<>'"]/g, 
+                    tag => ({
+                        '&': '&amp;',
+                        '<': '&lt;',
+                        '>': '&gt;',
+                        "'": '&#39;',
+                        '"': '&quot;'
+                    }[tag] || tag)
+                );
+            };
+
             // 2. 填入資料
             this.shareList.forEach(item => {
                 
-                // 🔥【關鍵修改】處理圖片網址，請求最高畫質版本
+                // 【效能與品質：請求最高畫質的 Cloudinary 圖片】
                 let highResImgUrl = item.img;
-                
-                // 檢查是否為 Cloudinary 的圖片，並且 URL 結構包含轉換參數
                 if (highResImgUrl.includes('cloudinary.com') && highResImgUrl.includes('/upload/')) {
-                    // 正則表達式: 尋找 /upload/ 和 /v1/ 之間的轉換參數
-                    // 並將其替換為 q_auto:best (最高品質) 和 f_auto (最佳格式)
-                    // 這樣 Cloudinary 會根據原圖輸出清晰度最佳的版本
                     highResImgUrl = highResImgUrl.replace(
-                        // 尋找 /upload/ 後面一串非 / 的字符 (即轉換參數) 直到 /v1/
                         /\/upload\/[^/]+\/v1\//, 
-                        // 替換為要求最高品質的轉換參數
                         '/upload/q_auto:best,f_auto/v1/'
                     );
-                    
                     console.log(`[HD URL] ${highResImgUrl}`);
                 }
 
@@ -333,7 +338,7 @@ function animeApp() {
                                 color: #ffffff;
                                 line-height: 1.4;
                                 min-height: 1.4em; 
-                            ">${item.name}</h2>
+                            ">${escapeHTML(item.name)}</h2>
                         </div>
                     </div>
                 `;
@@ -352,6 +357,9 @@ function animeApp() {
                         img.onerror = resolve; 
                     });
                 }));
+
+                // 【相容性：強制等待網頁字體渲染完畢，避免破版或變回系統預設字體】
+                await document.fonts.ready;
 
                 // 4. 截圖 (維持 scale: 3 以獲得最佳字體清晰度)
                 const canvas = await html2canvas(exportContainer, {
@@ -379,7 +387,7 @@ function animeApp() {
                         })
                         .catch(err => {
                             console.error('Clipboard Error:', err);
-                            Swal.fire({icon: 'error', title: '複製失敗', text: '請手動下載', background: '#1e1e1e', color: '#fff'});
+                            Swal.fire({icon: 'error', title: '複製失敗', text: '請手動下載或確認瀏覽器權限', background: '#1e1e1e', color: '#fff'});
                         });
                 });
 
@@ -387,6 +395,7 @@ function animeApp() {
                 console.error(e);
                 Swal.fire({icon: 'error', title: '生成失敗', background: '#1e1e1e', color: '#fff'});
             } finally {
+                // 清理 DOM，避免記憶體洩漏 (Memory Leak)
                 if (document.body.contains(exportContainer)) {
                     document.body.removeChild(exportContainer);
                 }

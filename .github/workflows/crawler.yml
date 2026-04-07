@@ -2,64 +2,66 @@ name: Scheduled Anime Crawler
 
 on:
   schedule:
-    # 每天 UTC 17:00 執行 (等於台灣時間 01:00)
+    # 每天 UTC 17:00 (台灣時間凌晨 01:00) 自動執行
     - cron: '0 17 * * *'
-  workflow_dispatch: # 允許手動觸發
+  workflow_dispatch:
+  push:
+    # 只要修改 templates 底下的檔案，就自動觸發重新生成 (視圖層即時更新)
+    paths:
+      - 'templates/**'
+
+# 【防撞鎖定機制】確保同一個時間點，只會有一個爬蟲實例在運行
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  # 設定為 false：若已有排程在執行，新的觸發會進入「等待 (Pending)」，避免強制中斷正在上傳圖片的進程
+  cancel-in-progress: false
 
 jobs:
   crawl-and-update:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write # 必須有寫入權限才能 Push 資料回去
+    runs-on: ubuntu-24.04
+
+    # 全域環境變數設定
+    env:
+      # 【時區校正】強制容器使用台灣時間，確保 python 的 datetime.now() 邊界判斷正確
+      TZ: Asia/Taipei
+      CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+      CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+      CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      BUILD_ONLY: false
 
     steps:
-      - name: ⬇️ Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # 確保拉取完整的 commit 歷史，避免靜態生成時發生基準點偏移
+          fetch-depth: 1 
 
-      - name: 🐍 Set up Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      - name: ⚙️ Install dependencies
+      - name: Install dependencies
         run: |
           pip install -r requirements.txt
 
-      - name: 🕷️ Run Crawler
-        id: run_crawler
-        env:
-          # --- Cloudinary 設定 ---
-          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
-          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
-          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
-          
-          # --- 爬蟲設定 ---
-          BUILD_ONLY: false 
-          
-          # 🔥【關鍵修正】這行必須存在，Python 腳本才能抓到 Discord 網址
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      - name: Run Crawler & Generate Static Files
         run: |
           python generate_static.py
 
-      # --- 【雙重保險】Python 腳本崩潰時的額外通知 ---
-      - name: 🔔 Notify Discord on Failure
-        if: failure() # 只有上面的步驟失敗 (exit code != 0) 時才會執行
-        run: |
-          curl -H "Content-Type: application/json" \
-          -d "{\"content\": \"🚨 **動畫爬蟲嚴重失敗** 🚨\nGitHub Action 執行過程中發生系統性崩潰（如環境安裝失敗），請檢查 Logs！\nRepository: $GITHUB_REPOSITORY\nWorkflow: $GITHUB_WORKFLOW\"}" \
-          ${{ secrets.DISCORD_WEBHOOK_URL }}
-
-      - name: 💾 Commit and Push new data
+      - name: Commit and Push Changes
         run: |
           git config --global user.name 'GitHub Action Crawler'
           git config --global user.email 'action@github.com'
-          
-          # 加入生成的 JSON 資料與快取檔
-          git add dist/data/*.json
+
+          # 【殭屍檔案修復】使用 --all 強制 Git 追蹤檔案的「刪除 (Deleted)」狀態
+          git add --all dist/data/
           git add cloudinary_cache.json
-          
-          # 檢查是否有變更，有變更才 Commit
+
+          # 檢查暫存區是否有實質變更
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else

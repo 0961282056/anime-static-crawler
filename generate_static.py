@@ -4,6 +4,7 @@ from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 from config import Config 
 import sentry_sdk 
+import time
 
 # --- 初始化 Sentry ---
 if os.getenv("SENTRY_DSN"):
@@ -176,7 +177,8 @@ def generate_static_files():
         selected_season=default_season,
         years=sorted_years,
         available_data_json=json.dumps(available_data, ensure_ascii=False),
-        available_data=available_data 
+        available_data=available_data ,
+        build_version=str(int(time.time()))
     )
     
     with open(os.path.join(OUTPUT_DIR, 'index.html'), 'w', encoding='utf-8') as f:
