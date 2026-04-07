@@ -140,22 +140,42 @@ function animeApp() {
             this.rawAnimeList = []; 
 
             try {
-                if (this.dataCache[cacheKey]) {
-                    this.rawAnimeList = this.dataCache[cacheKey];
-                    console.log(`[Cache Hit] ${cacheKey}`);
-                } else {
-                    console.log(`[Fetch] ${cacheKey}`);
-                    const res = await fetch(`data/${cacheKey}.json?t=${new Date().getTime()}`);
-                    if (!res.ok) throw new Error('Data load failed');
-                    const data = await res.json();
-                    
-                    this.rawAnimeList = data.anime_list || [];
-                    this.dataCache[cacheKey] = this.rawAnimeList;
+                // --- 🟢 核心修正：加入網路喚醒重試機制 ---
+                let res;
+                let retries = 3; // 設定最多重試 3 次
+                let fetchError = null;
 
-                    if (data.generated_at) {
-                        const d = new Date(data.generated_at);
-                        this.lastUpdateTime = `更新於 ${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${d.getMinutes()}`;
+                while (retries > 0) {
+                    try {
+                        // 加上 cache buster 確保不讀到錯誤的快取
+                        res = await fetch(`data/${cacheKey}.json?t=${new Date().getTime()}`);
+                        if (res.ok) break; // 成功取得資料，跳出迴圈
+                    } catch (e) {
+                        fetchError = e;
+                        console.warn(`[Network] 連線失敗，等待手機網路恢復... 剩餘重試次數: ${retries - 1}`);
                     }
+                    
+                    retries--;
+                    if (retries > 0) {
+                        // 暫停 1 秒鐘，等待作業系統重新連上網路
+                        await new Promise(resolve => setTimeout(resolve, 1000));
+                    }
+                }
+
+                // 如果重試 3 次都失敗，才拋出最終錯誤
+                if (!res || !res.ok) {
+                    throw new Error('網路連線異常，請確認手機網路狀態。');
+                }
+                // ----------------------------------------
+
+                const data = await res.json();
+                
+                this.rawAnimeList = data.anime_list || [];
+                this.dataCache[cacheKey] = this.rawAnimeList;
+
+                if (data.generated_at) {
+                    const d = new Date(data.generated_at);
+                    this.lastUpdateTime = `更新於 ${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${d.getMinutes()}`;
                 }
             } catch (err) {
                 console.error(err);
