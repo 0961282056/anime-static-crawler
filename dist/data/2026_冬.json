@@ -82,6 +82,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "草莓哀歌～缺根筋的活潑妹妹與無法釋懷的哥哥～",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/196444b46b2c4a337f75c8155a9e37f2",
+            "premiere_date": "二",
+            "premiere_time": "25:00",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "阿爾涅事件簿",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a1d257b2e7d9db04ab57acfddfc64da9",
             "premiere_date": "二",
@@ -331,7 +339,7 @@
         {
             "bangumi_id": "未知ID",
             "anime_name": "非人學生與厭世教師",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ac84365e27b3dda5be77d7f730741323",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/806022fcfe408e15bf8035f14b671cef",
             "premiere_date": "六",
             "premiere_time": "24:00",
             "story": "我是年近三十的人間零，因人際關係受到創傷而成為尼特。後來終於鼓起勇氣，打算轉任到大自然圍繞的山中學校，用悠哉的教師生活復健──結果那裡竟然是教育非人類種族成為人類的女校？人魚族水月鏡花、狼人尾尾守一咲、兔子右左美彗、鳥族羽根田帷……我與這幾位奇異學生們的生活就這樣開始了。為何想成為人類，成為人類以後想做些什麼──藉由這些問題，我也重新學習何謂「人類」。這不是異世界奇幻篇章，也不是重啟人生的轉生冒險，就只是平凡教師在有點奇特的學校，與幾個目標成為人類的非人少女們相處的故事。"
@@ -354,7 +362,7 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "勇者人渣",
+            "anime_name": "勇者之渣",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b8550679d00b160422038509da95752d",
             "premiere_date": "六",
             "premiere_time": "24:55",
@@ -378,6 +386,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "名偵探光之美少女！",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/979d6faec871e7f023d2c1f410580b6b",
+            "premiere_date": "日",
+            "premiere_time": "08:30",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "DIGIMON BEATBREAK",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/db891002084198372d661a0430a29884",
             "premiere_date": "日",
@@ -395,7 +411,7 @@
         {
             "bangumi_id": "未知ID",
             "anime_name": "皎潔深宵之月",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4ff4ed3093a1c82c915c4bd1cb1d1384",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8abedecec6a946eb4ca442975ea36043",
             "premiere_date": "日",
             "premiere_time": "16:30",
             "story": "瀧口宵雖然是個女生，但是她長相俊美，舉止也很瀟灑帥氣，所以被同學們稱為「王子」。雖然宵也想像漫畫裡的女主角談場戀愛，但是男生們都因為宵長得太帥氣，所以沒把她當成女生，所以宵很早就放棄談戀愛了。可是有一天，宵認識了一個帥氣的男生市村琥珀，琥珀是大了宵一歲的學長，他因為家裡有錢，而且長得很帥，所以也被大家稱為「王子」。琥珀第一眼見到宵就被她吸引，後來也常常找機會接近宵。宵一開始很討厭這個舉止輕浮的學長，但是後來漸漸發現琥珀的優點…"
@@ -474,7 +490,7 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "火喰鳥 羽州破鳶組",
+            "anime_name": "大江戶烈火殺手 - 鳳凰傳說",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3e5934784abd43f6787e10cd96b85a40",
             "premiere_date": "日",
             "premiere_time": "23:30",
@@ -505,5 +521,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2025-12-31T17:25:07.561822"
+    "generated_at": "2026-04-07T06:27:49.351342"
 }

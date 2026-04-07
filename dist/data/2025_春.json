@@ -386,6 +386,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "我與尼特女忍者的莫名同居生活",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4544e870c9d268b86115561865b11e2b",
+            "premiere_date": "六",
+            "premiere_time": "25:30",
+            "story": "平凡的上班族──政被妖魔襲擊時，天才女忍者──白津莉一身颯爽英姿出現拯救了他。可是白津莉放鬆時就會變成個尼特阿宅……政今天也用他的主夫技能，寵溺白津莉──！"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "我是星際國家的惡德領主！",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/acbb03dbf6faaa48ec195de11cc5070f",
             "premiere_date": "六",
@@ -513,5 +521,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2025-12-08T13:34:20.218078"
+    "generated_at": "2026-04-07T06:27:28.151559"
 }
