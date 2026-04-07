@@ -3,10 +3,9 @@ import os
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 from config import Config 
-import sentry_sdk # 【新增】引用 Sentry
+import sentry_sdk 
 
-# --- 【新增】初始化 Sentry ---
-# 請在 GitHub Secrets 和 Cloudflare 後台設定 SENTRY_DSN 環境變數
+# --- 初始化 Sentry ---
 if os.getenv("SENTRY_DSN"):
     sentry_sdk.init(
         dsn=os.getenv("SENTRY_DSN"),
@@ -41,16 +40,12 @@ def generate_quarterly_data(year, season, is_build_only=False):
 
     print(f"--- 開始爬取 {year} 年 {season} 季資料 ---")
 
-    # 延遲匯入，避免 Build Only 模式缺套件報錯
     from services.anime_service import fetch_anime_data 
 
-    # 🔥🔥🔥 【關鍵修改區段 Start】 🔥🔥🔥
     try:
         anime_list = fetch_anime_data(year, season, None)
     
     except Exception as e:
-        # 判斷是否為「未來年份」的「連線/超時錯誤」
-        # 邏輯：如果是今年以後的年份 (如 2027)，且發生 504 或連線失敗，我們視為「正常現象」並跳過
         current_year = datetime.now().year
         error_msg = str(e)
         
@@ -59,18 +54,14 @@ def generate_quarterly_data(year, season, is_build_only=False):
         
         if is_future and is_network_error:
             print(f"⚠️ [容錯跳過] 未來季度 {year} {season} 網站尚未準備好或回應超時。")
-            print(f"   錯誤訊息: {error_msg[:100]}...") # 只印出前 100 字避免洗版
-            return # 直接結束此函式，不存檔，也不報錯，讓迴圈繼續跑下一個
+            print(f"   錯誤訊息: {error_msg[:100]}...") 
+            return 
         else:
-            # 如果是「現在」或「過去」的季度失敗，或者不是網路問題，則必須報錯
             print(f"❌ [嚴重錯誤] 爬取 {year} {season} 失敗！")
-            raise e # 重新拋出異常，讓 GitHub Action 標記為失敗並通知 Sentry
-    # 🔥🔥🔥 【關鍵修改區段 End】 🔥🔥🔥
+            raise e 
 
-    # 檢查是否為空列表 (若是空列表則 fetch_anime_data 內部已經發過 Discord 警告了)
     if not anime_list:
         print(f"⚠️ 爬蟲回傳空資料：{year} {season}")
-        # 如果您希望空資料不要覆蓋舊檔案，可以在這裡 return
     
     data_to_save = {
         'anime_list': anime_list,
@@ -98,33 +89,51 @@ def generate_static_files():
     # 決定爬取範圍
     json_files_exist = os.path.exists(JSON_DIR) and any(f.endswith('.json') for f in os.listdir(JSON_DIR))
 
+    # 定義季度陣列與計算當前絕對季度
+    seasons_order = ['冬', '春', '夏', '秋']
+    current_season_idx = (now.month - 1) // 3 # 0:冬, 1:春, 2:夏, 3:秋
+    absolute_current_q = current_year * 4 + current_season_idx
+
+    targets = [] # 存放要爬取的 (year_str, season) 列表
+
     if not json_files_exist and not is_build_only:
-        print(f"⚠️ 資料目錄為空。將從 {START_YEAR_ON_EMPTY} 年開始爬取資料。")
-        years_range = list(range(START_YEAR_ON_EMPTY, current_year + 2))
+        print(f"⚠️ 資料目錄為空。將從 {START_YEAR_ON_EMPTY} 年開始全量爬取。")
+        # 全量模式：從初始年份的第一季，一直抓到未來 1 季
+        start_q = START_YEAR_ON_EMPTY * 4 
+        end_q = absolute_current_q + 1
     else:
         if not is_build_only:
-             print("✅ 執行增量爬取 (最近 4 年)。")
-        years_range = list(range(current_year - 2, current_year + 2))
+             print("✅ 執行精準增量爬取 (過去 1 年至未來 1 季)。")
+        # 增量模式：過去 4 個季度 (1 年) 到未來 1 個季度
+        start_q = absolute_current_q - 4 
+        end_q = absolute_current_q + 1   
+
+    # 將連續整數還原為年份與季節
+    for q in range(start_q, end_q + 1):
+        target_year = str(q // 4)
+        target_season = seasons_order[q % 4]
+        targets.append((target_year, target_season))
 
     # 執行爬蟲迴圈
-    for year in years_range:
-        year_str = str(year)
-        for season, start_month_val in Config.SEASON_TO_MONTH.items():
+    for year_str, season in targets:
+        start_month_val = Config.SEASON_TO_MONTH[season]
+        year_int = int(year_str)
+        
+        # 判斷是否為歷史季度 (當下時間已超過該季度的起始月份)
+        is_historical_quarter = not (
+            year_int > current_year or
+            (year_int == current_year and now.month < start_month_val)
+        )
+        
+        json_output_path = os.path.join(JSON_DIR, f'{year_str}_{season}.json')
+        
+        # 效能優化：若是已結束的歷史季度，且檔案已存在，則不發起網路請求
+        if is_historical_quarter and os.path.exists(json_output_path) and not is_build_only:
+            continue
             
-            is_historical_quarter = not (
-                year > current_year or
-                (year == current_year and now.month < start_month_val)
-            )
-            
-            json_output_path = os.path.join(JSON_DIR, f'{year_str}_{season}.json')
-            
-            if is_historical_quarter and os.path.exists(json_output_path) and not is_build_only:
-                continue
-            
-            if is_historical_quarter or year > current_year or (year == current_year and now.month >= start_month_val):
-                generate_quarterly_data(year_str, season, is_build_only=is_build_only) 
+        generate_quarterly_data(year_str, season, is_build_only=is_build_only) 
 
-    # 生成 HTML
+    # 生成 HTML 索引
     available_data = {} 
     if os.path.exists(JSON_DIR):
         for filename in os.listdir(JSON_DIR):
@@ -137,9 +146,9 @@ def generate_static_files():
                 except ValueError: continue
 
     sorted_years = sorted(available_data.keys(), key=int, reverse=True)
-    season_order = {'冬': 1, '春': 2, '夏': 3, '秋': 4}
+    season_order_map = {'冬': 1, '春': 2, '夏': 3, '秋': 4}
     for year in available_data:
-        available_data[year].sort(key=lambda s: season_order.get(s, 99))
+        available_data[year].sort(key=lambda s: season_order_map.get(s, 99))
 
     default_year = str(now.year)
     default_season = get_current_season(now.month)
