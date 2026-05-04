@@ -34,6 +34,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "BanG Dream! YUME∞MITA",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/85849098a50b25c1d7b840b6c690e869",
+            "premiere_date": "四",
+            "premiere_time": "23:00",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "遭到流放的轉生重騎士憑藉遊戲知識大開無雙",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c0a3f53f694343004d6a47ba103f389d",
             "premiere_date": "四",
@@ -226,14 +234,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "BanG Dream! YUME∞MITA",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/85849098a50b25c1d7b840b6c690e869",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "暫無簡介"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "相反的你和我 第2季",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5b5629111b9987aa9e5750c42d3733bd",
             "premiere_date": "無首播日期",
@@ -355,7 +355,7 @@
         {
             "bangumi_id": "未知ID",
             "anime_name": "暴怒千金發誓復仇。 ～憑藉魔導書之力打垮祖國～",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bde654cc3953060988d0732345fcd474",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/130c9fabb51b214ed3369917ad9a3b61",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "公爵千金‧伊莉莎白，被移情別戀愛上其他千金的王太子在派對宣告取消婚約。她就這麼遭受不當懲處，被幽禁在牢房，得知就連至今奉獻一切的國家都背叛了自己……終於到達忍耐極限的伊莉莎白，帶著隱藏強大力量的魔導書，決心亡命！她借助鄰國子爵‧路卡斯之手，在新天地展開新生活＆新生意。暗自胸懷著對祖國的猛烈復仇心──壯大的大逆轉復仇活該劇，開幕！"
@@ -569,5 +569,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-05-04T01:53:04.125941"
+    "generated_at": "2026-05-05T02:22:47.199570"
 }
