@@ -386,7 +386,7 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "Clevatess II -魔獸之王與虛假的勇者傳說-",
+            "anime_name": "Clevatess II -魔獸之王與虛假的勇者傳承-",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8545ae0dafb49287ee0e0a580a482819",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
@@ -418,7 +418,7 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "被拋棄聖女的美食異世界之旅 用隱藏技能召喚了露營車",
+            "anime_name": "被拋棄聖女的異世界美食之旅",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5799885809adc12d4aaabfb4eb934e63",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
@@ -569,5 +569,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-05-10T01:55:44.471032"
+    "generated_at": "2026-05-11T01:58:11.237997"
 }
