@@ -18,6 +18,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "攻殼機動隊THE GHOST IN THE SHELL",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/001ab19615cc1bb35ffb2c12fcb268cc",
+            "premiere_date": "二",
+            "premiere_time": "11:00",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "Re:從零開始的異世界生活 第4季",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/54b02584a96016dfba815ee2bb10ca72",
             "premiere_date": "三",
@@ -115,7 +123,7 @@
         {
             "bangumi_id": "未知ID",
             "anime_name": "魔法少女奈葉 EXCEEDS Gun Blaze Vengeance",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b123aeb7214fd590d3c9a748e6a6bdd8",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6923fb6b394870d3757129850038b193",
             "premiere_date": "六",
             "premiere_time": "25:00",
             "story": "30年前出現的未知「侵略性外來生物」，曾讓世界一度瀕臨滅亡。人類與該生物「侵略種」互相爭奪生存圈，儘管目前勉強確保了人類的安全，但世界隨時走向毀滅也不足為奇。人們在恐懼死亡與毀滅的同時，又當作看不見危險與災難般過著日常生活。在這樣的世界中，聯合國危險生物調查機構「EXCEEDS」為了擊退侵略種所帶來的危機與災害，開始展開行動。故事的開端，發生在極東的島國「瑞穂」。住在離島上、以驅除侵略種為業的獵人少女・久瀬シイナ。只希望能與唯一的家人――妹妹セツナ――平靜生活的シイナ，將會遭遇什麼事件——？"
@@ -215,14 +223,6 @@
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "作為名家庶子的美冶，因母親去世被本家．鴻藏家收留。在那裡等待她的本該是可怕的繼母以及繼姐，但──！？"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "攻殼機動隊THE GHOST IN THE SHELL",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4491c292031d87788991fc6e5ab2f969",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "暫無簡介"
         },
         {
             "bangumi_id": "未知ID",
@@ -569,5 +569,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-05-14T03:01:35.847476"
+    "generated_at": "2026-05-15T02:59:22.070720"
 }
