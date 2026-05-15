@@ -138,6 +138,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "相反的你和我 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5b5629111b9987aa9e5750c42d3733bd",
+            "premiere_date": "日",
+            "premiere_time": "17:00",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "超超超超超喜歡你的100個女朋友 第3季",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/fbd36d705c6d5865116cf864ba5b1f49",
             "premiere_date": "日",
@@ -218,6 +226,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "MEBIUS DUST",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7310e7964c2976e8f4254dc5fe9ed772",
+            "premiere_date": "無首播日期",
+            "premiere_time": "無首播時間",
+            "story": "這就是我們的〈日常〉。住在老街區的高中生アラキ、ステラ、オルガ。打打遊戲、去個澡堂、然後回家。屬於他們這般〈日常〉的故事……？"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "不虐待我的繼母與繼姐",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/38ea16e91aa9f2a512b9e4491563a490",
             "premiere_date": "無首播日期",
@@ -236,14 +252,6 @@
             "bangumi_id": "未知ID",
             "anime_name": "BLEACH 千年血戰篇-禍進譚-",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4096253e43a5fb7892dcbafe0412fd0b",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "暫無簡介"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "相反的你和我 第2季",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5b5629111b9987aa9e5750c42d3733bd",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "暫無簡介"
@@ -569,5 +577,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-05-15T02:59:22.070720"
+    "generated_at": "2026-05-16T02:26:06.566153"
 }
