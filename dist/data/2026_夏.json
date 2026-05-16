@@ -146,6 +146,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "世界最強後衛～迷宮國的新人探索者～",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a93f69e1860068b834b9abd6c8eaead5",
+            "premiere_date": "日",
+            "premiere_time": "22:00",
+            "story": "身為前社畜的有人轉生後擔任起來路不明的職業『後衛』，但這原來是個能支援攻擊與防禦，還能補血的萬能職業！在有人的身邊也陸續聚集了轉生前的美女上司（比他年紀還小）、充滿謎團的亞人傭兵少女、身懷隱情的高等美少女劍士及個性鮮明的女性成員。不僅如此，『後衛』更擁有只要待在對方身後，就能讓好感度直線上升的能力――!?"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "超超超超超喜歡你的100個女朋友 第3季",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/fbd36d705c6d5865116cf864ba5b1f49",
             "premiere_date": "日",
@@ -175,6 +183,14 @@
             "premiere_date": "日",
             "premiere_time": "24:00",
             "story": "迎接第二名妻子和女兒後，魯迪烏斯展開新生活。希露菲和洛琪希這兩名妻子彼此的感情很和睦，對雙方都很重視的魯迪烏斯過著幸福的日子。他們會三人一起去購物、學習魔術，還參加了友人的婚禮，每一天的現實生活都非常充實。在這種狀況下，魯迪烏斯和兩名妻子一起承接工作。結果同行者中，卻出現過去和他難堪分手的少女，莎拉。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "再見菈菈",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9c88c3743bee6cb02874f914264e3c46",
+            "premiere_date": "日",
+            "premiere_time": "24:30",
+            "story": "很久很久以前，在某個地方，有一位名叫ララ的人魚公主。她在身為海之王的父親與姊姊們的疼愛下，健康茁壯地長大。某天，ララ愛上了生活在陸地上的人類王子。這在人魚的世界裡，是不被允許的禁忌之戀。儘管如此，ララ依然啟程前往陸地。她喝下了魔女グレイス給她的藥，化為了人類的模樣。然而，那是一種若找不到「真愛」，就會化為泡沫消失的禁忌之藥。身為人魚公主，卻渴望著與人類相愛的ララ。然而——她的願望終究未能實現，她化作泡沫，消散於大海之中。自那之後過了200年。經歷漫長歲月後，人魚公主ララ在琵琶湖甦醒。為了這一次一定要找到「真愛」——"
         },
         {
             "bangumi_id": "未知ID",
@@ -226,14 +242,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "MEBIUS DUST",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7310e7964c2976e8f4254dc5fe9ed772",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "這就是我們的〈日常〉。住在老街區的高中生アラキ、ステラ、オルガ。打打遊戲、去個澡堂、然後回家。屬於他們這般〈日常〉的故事……？"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "不虐待我的繼母與繼姐",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/38ea16e91aa9f2a512b9e4491563a490",
             "premiere_date": "無首播日期",
@@ -247,6 +255,14 @@
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "男高中生友成伊月因為捲入綁架案，最後竟成為日本最大財閥的千金‧此花雛子的侍從。表面上才貌雙全的雛子，真面目是完全沒有生活能力的懶散女。但因為家庭因素，她不得不在學院扮演「完美千金」。想要守護她的伊月將她照顧得無微不至，而她也開始盡全力撒嬌──「我現在……不能沒有伊月在我身邊了。」這是與有著可愛反差感的千金小姐跨越主僕界線的愛情故事。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "MEBIUS DUST",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7310e7964c2976e8f4254dc5fe9ed772",
+            "premiere_date": "無首播日期",
+            "premiere_time": "無首播時間",
+            "story": "這就是我們的〈日常〉。住在老街區的高中生アラキ、ステラ、オルガ。打打遊戲、去個澡堂、然後回家。屬於他們這般〈日常〉的故事……？"
         },
         {
             "bangumi_id": "未知ID",
@@ -274,6 +290,22 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "躲在超市後門抽菸的兩人",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0dd85e380118174891c72ffa967ac4e5",
+            "premiere_date": "無首播日期",
+            "premiere_time": "無首播時間",
+            "story": "每天過著辛苦社畜生活的上班族－佐佐木，少數的療癒就是他常去的超市的收銀員－山田。上班上得很累的某一天，他再次前往超市尋找他的療癒，但山田剛好不在，於是他就想透過抽根菸來獲得療癒。沒想到這時候居然找不到吸菸區，想抽菸的他還被路人白眼。就在這時候，有個姓田山、穿著非常奇特的女性，把她找去那家超市的後面一起抽菸，從此之後，他就常常跑來跟這位田山一起抽菸、聊天。但其實這位姓田山的女性，居然就是…"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "尼古喵喵",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0cf15c8c9a353d91d0fce1ec7dd9793c",
+            "premiere_date": "無首播日期",
+            "premiere_time": "無首播時間",
+            "story": "尼古喵喵是隻超愛抽菸的廢物獸人！因為缺乏倫理與衛生觀念，不是把菸頭往窗外亂丟，就是對人亂吐口水，偶爾還會做出一些違法亂紀的事。幸好她身邊有貼心的管家婆妹妹貓以及好友嗑藥貓作伴，讓她依舊能每天吞雲吐霧、得過且過的生活著。"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "GRANDBLUE 碧藍之海3",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b993099f9fa93f9db18863d17fdc92c9",
             "premiere_date": "無首播日期",
@@ -290,27 +322,11 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "再見菈菈",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9c88c3743bee6cb02874f914264e3c46",
+            "anime_name": "鐵鍋料理王",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/286ec290b6d796ebde1b9c8da9353860",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
-            "story": "很久很久以前，在某個地方，有一位名叫ララ的人魚公主。她在身為海之王的父親與姊姊們的疼愛下，健康茁壯地長大。某天，ララ愛上了生活在陸地上的人類王子。這在人魚的世界裡，是不被允許的禁忌之戀。儘管如此，ララ依然啟程前往陸地。她喝下了魔女グレイス給她的藥，化為了人類的模樣。然而，那是一種若找不到「真愛」，就會化為泡沫消失的禁忌之藥。身為人魚公主，卻渴望著與人類相愛的ララ。然而——她的願望終究未能實現，她化作泡沫，消散於大海之中。自那之後過了200年。經歷漫長歲月後，人魚公主ララ在琵琶湖甦醒。為了這一次一定要找到「真愛」——"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "尼古喵喵",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0cf15c8c9a353d91d0fce1ec7dd9793c",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "尼古喵喵是隻超愛抽菸的廢物獸人！因為缺乏倫理與衛生觀念，不是把菸頭往窗外亂丟，就是對人亂吐口水，偶爾還會做出一些違法亂紀的事。幸好她身邊有貼心的管家婆妹妹貓以及好友嗑藥貓作伴，讓她依舊能每天吞雲吐霧、得過且過的生活著。"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "躲在超市後門抽菸的兩人",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0dd85e380118174891c72ffa967ac4e5",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "每天過著辛苦社畜生活的上班族－佐佐木，少數的療癒就是他常去的超市的收銀員－山田。上班上得很累的某一天，他再次前往超市尋找他的療癒，但山田剛好不在，於是他就想透過抽根菸來獲得療癒。沒想到這時候居然找不到吸菸區，想抽菸的他還被路人白眼。就在這時候，有個姓田山、穿著非常奇特的女性，把她找去那家超市的後面一起抽菸，從此之後，他就常常跑來跟這位田山一起抽菸、聊天。但其實這位姓田山的女性，居然就是…"
+            "story": "暫無簡介"
         },
         {
             "bangumi_id": "未知ID",
@@ -322,11 +338,11 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "LV999的村民",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d0910da0746ae8988fc271bb67b1b408",
+            "anime_name": "從0位居民開始的邊境領主大人",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/725dc73a74201fc2ae0398eb6983f460",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
-            "story": "勇者、賢者、戰士……在這個出生就決定好職業的世界中，只能受人保護、為促進城市繁榮而生的最弱職業──村民。然而在命運如此的村民當中，卻有一個男人，達到LV999封頂的境界──與魔族少女相遇，挺身對抗世界的「村民」奮鬥史，就此展開!!"
+            "story": "因長期在戰爭中活躍，而被稱為〝救國英雄〞的男人——迪亞斯。他所收到的唯一獎勵就只有——廣闊的領地。與生活在當地的鬼人族少女‧阿爾娜相遇後，開始了他作為領主的第二人生。"
         },
         {
             "bangumi_id": "未知ID",
@@ -338,11 +354,11 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "從0位居民開始的邊境領主大人",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/725dc73a74201fc2ae0398eb6983f460",
+            "anime_name": "LV999的村民",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d0910da0746ae8988fc271bb67b1b408",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
-            "story": "因長期在戰爭中活躍，而被稱為〝救國英雄〞的男人——迪亞斯。他所收到的唯一獎勵就只有——廣闊的領地。與生活在當地的鬼人族少女‧阿爾娜相遇後，開始了他作為領主的第二人生。"
+            "story": "勇者、賢者、戰士……在這個出生就決定好職業的世界中，只能受人保護、為促進城市繁榮而生的最弱職業──村民。然而在命運如此的村民當中，卻有一個男人，達到LV999封頂的境界──與魔族少女相遇，挺身對抗世界的「村民」奮鬥史，就此展開!!"
         },
         {
             "bangumi_id": "未知ID",
@@ -427,7 +443,7 @@
         {
             "bangumi_id": "未知ID",
             "anime_name": "被拋棄聖女的異世界美食之旅",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5799885809adc12d4aaabfb4eb934e63",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c77ff94e1925ccfc84e8c12b33e53251",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "大家好，我是二十多歲、即將奔三的上班族，小鳥遊倫。我的現況，就讓我長話短說一下吧。《和美少女JK一起被召喚到異世界》《技能被判定為垃圾＆本人被當成廢物》《被放逐！》←當前在此！召喚方只留下了美少女JK妹妹，而我則獨自被丟包在異世界。一想到接下來該怎麼辦就茫然失措——其實並沒有。因為我的技能【野營車輛（露營車）】——也就是露醬，還有【生存戰略（求生）】先生，其實都是不得了的神級技能。事已至此，我那單人露營和做料理的興趣，要在異世界也大展身手嗎？就這麼做吧！正當我這～麼想的時候，超棒的夥伴們陸續登場♪ 好──的，那就大家一起來一場異世界美食之旅吧！來吧，請上車！為了盡情享受異世界，露醬，出發前進！"
@@ -458,16 +474,8 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "世界最強後衛～迷宮國的新人探索者～",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f76ac12a3734a9c4c3349782b1eebea8",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "身為前社畜的有人轉生後擔任起來路不明的職業『後衛』，但這原來是個能支援攻擊與防禦，還能補血的萬能職業！在有人的身邊也陸續聚集了轉生前的美女上司（比他年紀還小）、充滿謎團的亞人傭兵少女、身懷隱情的高等美少女劍士及個性鮮明的女性成員。不僅如此，『後衛』更擁有只要待在對方身後，就能讓好感度直線上升的能力――!?"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "雷霆3人組",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5c9b0868a39f0c5064bffa292a20bae5",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/22976226753758fa106602571fd8c65b",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "中學生邊太郎有一個很祟拜他的妹妹‧二葉。邊太郎和其他兩個朋友被戲稱為”ＳＭＡＬＬ３”，有一天他們決定觀看老師給他的一個奇怪的光碟。男孩們並不知道這個光碟與另一個宇宙有關...而在他們不注意的時候，二葉進入了另一個世界！邊太郎和他的朋友們能找到二葉嗎？而他們所發現的這個另一個世界是什麼呢？"
@@ -577,5 +585,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-05-16T02:26:06.566153"
+    "generated_at": "2026-05-17T01:59:45.653010"
 }
