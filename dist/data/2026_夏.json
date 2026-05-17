@@ -386,7 +386,7 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "少女怪獸焦糖味",
+            "anime_name": "少女怪獸焦糖戀心",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/58cce69cdcfab2d1c5a0ed103a9a6d8c",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
@@ -442,7 +442,7 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "被拋棄聖女的異世界美食之旅",
+            "anime_name": "無用聖女的異世界美食之旅：憑藉隱藏技能召喚露營車",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c77ff94e1925ccfc84e8c12b33e53251",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
@@ -585,5 +585,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-05-17T01:59:45.653010"
+    "generated_at": "2026-05-18T02:02:40.751343"
 }
