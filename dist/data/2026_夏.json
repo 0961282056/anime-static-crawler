@@ -130,6 +130,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "才女的侍從 在滿是高嶺之花的貴族學校暗中照顧（毫無生活自理能力的）學院第一大小姐",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4d36852d7b21d3da370240cc52f31f62",
+            "premiere_date": "六",
+            "premiere_time": "26:38",
+            "story": "男高中生友成伊月因為捲入綁架案，最後竟成為日本最大財閥的千金‧此花雛子的侍從。表面上才貌雙全的雛子，真面目是完全沒有生活能力的懶散女。但因為家庭因素，她不得不在學院扮演「完美千金」。想要守護她的伊月將她照顧得無微不至，而她也開始盡全力撒嬌──「我現在……不能沒有伊月在我身邊了。」這是與有著可愛反差感的千金小姐跨越主僕界線的愛情故事。"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "Let's Go 怪奇組",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7c6529cb4cf2c2086138c1e48922476f",
             "premiere_date": "日",
@@ -250,14 +258,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "才女的侍從 在滿是高嶺之花的貴族學校暗中照顧（毫無生活自理能力的）學院第一大小姐",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4d36852d7b21d3da370240cc52f31f62",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "男高中生友成伊月因為捲入綁架案，最後竟成為日本最大財閥的千金‧此花雛子的侍從。表面上才貌雙全的雛子，真面目是完全沒有生活能力的懶散女。但因為家庭因素，她不得不在學院扮演「完美千金」。想要守護她的伊月將她照顧得無微不至，而她也開始盡全力撒嬌──「我現在……不能沒有伊月在我身邊了。」這是與有著可愛反差感的千金小姐跨越主僕界線的愛情故事。"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "MEBIUS DUST",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7310e7964c2976e8f4254dc5fe9ed772",
             "premiere_date": "無首播日期",
@@ -307,7 +307,7 @@
         {
             "bangumi_id": "未知ID",
             "anime_name": "GRANDBLUE 碧藍之海3",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b993099f9fa93f9db18863d17fdc92c9",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e70dc9e9b2ec2ed98946de7d2f4d85d1",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "暫無簡介"
@@ -585,5 +585,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-05-24T02:05:37.015940"
+    "generated_at": "2026-05-25T02:04:16.322850"
 }
