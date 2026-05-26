@@ -186,6 +186,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "我是不才惡女~雛宮蝶鼠互換傳~",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0b7ae98a143619670b5e4742aeef768a",
+            "premiere_date": "日",
+            "premiere_time": "23:45",
+            "story": "天生體弱多病的後宮雛女黃玲琳，由於遭到同為雛女的朱慧月忌妒，而當眾遭到襲擊，卻也使雙方身體互換，導致她必須為傷害自己的罪負責，而面臨死刑…！？因為體弱多病而練就鋼鐵精神的黃玲琳又會如何化險為夷？"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "無職轉生III～到了異世界就拿出真本事～",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/2c64c3ed86b8c586ccc75694689b874b",
             "premiere_date": "日",
@@ -199,14 +207,6 @@
             "premiere_date": "日",
             "premiere_time": "24:30",
             "story": "很久很久以前，在某個地方，有一位名叫ララ的人魚公主。她在身為海之王的父親與姊姊們的疼愛下，健康茁壯地長大。某天，ララ愛上了生活在陸地上的人類王子。這在人魚的世界裡，是不被允許的禁忌之戀。儘管如此，ララ依然啟程前往陸地。她喝下了魔女グレイス給她的藥，化為了人類的模樣。然而，那是一種若找不到「真愛」，就會化為泡沫消失的禁忌之藥。身為人魚公主，卻渴望著與人類相愛的ララ。然而——她的願望終究未能實現，她化作泡沫，消散於大海之中。自那之後過了200年。經歷漫長歲月後，人魚公主ララ在琵琶湖甦醒。為了這一次一定要找到「真愛」——"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "我是不才惡女~雛宮蝶鼠互換傳~",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/77026e7796da7b2a90aa11694a3cb56c",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "天生體弱多病的後宮雛女黃玲琳，由於遭到同為雛女的朱慧月忌妒，而當眾遭到襲擊，卻也使雙方身體互換，導致她必須為傷害自己的罪負責，而面臨死刑…！？因為體弱多病而練就鋼鐵精神的黃玲琳又會如何化險為夷？"
         },
         {
             "bangumi_id": "未知ID",
@@ -585,5 +585,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-05-26T02:49:08.600626"
+    "generated_at": "2026-05-27T03:23:48.392939"
 }
