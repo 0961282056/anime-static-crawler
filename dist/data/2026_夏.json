@@ -122,6 +122,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "魔法光源股份有限公司 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a1d03596f4529c4aa407b882369685e6",
+            "premiere_date": "六",
+            "premiere_time": "24:55",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "魔法少女奈葉 EXCEEDS Gun Blaze Vengeance",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6923fb6b394870d3757129850038b193",
             "premiere_date": "六",
@@ -434,14 +442,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "魔法光源股份有限公司 第2季",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a1d03596f4529c4aa407b882369685e6",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "暫無簡介"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "無用聖女的異世界美食之旅：憑藉隱藏技能召喚露營車",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c77ff94e1925ccfc84e8c12b33e53251",
             "premiere_date": "無首播日期",
@@ -585,5 +585,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-05-27T03:23:48.392939"
+    "generated_at": "2026-05-28T03:30:07.675965"
 }
