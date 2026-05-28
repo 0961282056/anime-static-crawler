@@ -106,6 +106,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "穹廬下的魔女",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/81b44943172f335e79dd893a039ccda7",
+            "premiere_date": "六",
+            "premiere_time": "23:30",
+            "story": "3世紀，孤苦伶仃的奴隸少女希塔拉來到了位於伊朗東部的城市圖斯。少女之後將成為玩弄強大帝國的魔女，她在這座城市裡，遇到了能夠在世界上存活下來的「武器」。以「知識」為唯一力量奮鬥的少女人生傳記，即將拉開序幕！"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "黃泉雙使",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/fe032e1abc0738ae295bb6b7ea9504a9",
             "premiere_date": "六",
@@ -506,14 +514,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "穹廬下的魔女",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9511477483dda3e08ed8776ddb367a74",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "3世紀，孤苦伶仃的奴隸少女希塔拉來到了位於伊朗東部的城市圖斯。少女之後將成為玩弄強大帝國的魔女，她在這座城市裡，遇到了能夠在世界上存活下來的「武器」。以「知識」為唯一力量奮鬥的少女人生傳記，即將拉開序幕！"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "從後面來的神威先生",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9d7e78b0c235464df6032ccb94099b36",
             "premiere_date": "無首播日期",
@@ -585,5 +585,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-05-28T03:30:07.675965"
+    "generated_at": "2026-05-29T03:40:50.721746"
 }
