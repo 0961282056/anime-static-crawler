@@ -98,6 +98,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "小書痴的下剋上 領主的養女",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e6bb27cd110f9ee3ed1f44e89c96aa51",
+            "premiere_date": "六",
+            "premiere_time": "17:30",
+            "story": "為了保護心愛的家人和朋友，梅茵離開平民區，以領主養女「羅潔梅茵」的新身分展開貴族的生活。然而，她的行程表被必須學習的新事物塞滿，連一點看書的時間都沒有，更要壓抑對家人的思念，讓她感到滿腹挫折。即使如此，梅茵還是不停地創造奇蹟，她先是端出了令上級貴族也折服的全新餐點，緊接著又為了建造新的孤兒院兼印刷工坊，開始籌辦艾倫菲斯特史無前例的慈善音樂會！但頻頻昏倒卻替梅茵帶來諸多不便，神官長說梅茵的狀況其實有藥可解，不過她必須親自到藥材產地用自己的魔力採集製作藥水的材料，而首先她得要學會用魔石製作出屬於自己的騎獸……"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "入間同學入魔了！第四季",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ba915fb94c7534d72d95b8db978291d3",
             "premiere_date": "六",
@@ -585,5 +593,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-05-31T02:07:46.945565"
+    "generated_at": "2026-06-01T02:09:33.934895"
 }
