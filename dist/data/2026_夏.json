@@ -42,7 +42,15 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "World is Dancing",
+            "anime_name": "盗掘王",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3609dc1c6d96960136312dc7531c65b8",
+            "premiere_date": "三",
+            "premiere_time": "25:15",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "The World is Dancing 世界在起舞",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7e314e8cb474282a5a1d63aa5e4cad4b",
             "premiere_date": "四",
             "premiere_time": "22:00",
@@ -111,6 +119,14 @@
             "premiere_date": "六",
             "premiere_time": "18:25",
             "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "岩元前輩的推薦",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/21e09d2abdcf9c03ed2faceb0a88f404",
+            "premiere_date": "六",
+            "premiere_time": "22:30",
+            "story": "在一個傳聞會下「黑雪」的村莊，岩元遇到了一位擁有特殊能力的少年……少年認為自己的能力是一種疾病，但岩元不僅教會了他如何運用這些能力，還告訴他兩人有著某種共同之處，並為他寫了一封推薦信。在執行任務的過程中，岩元每到一處都會遇到各種不同的謎團。一段充滿浪漫色彩的時代故事，就此展開！"
         },
         {
             "bangumi_id": "未知ID",
@@ -506,14 +522,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "岩元前輩的推薦",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/21e09d2abdcf9c03ed2faceb0a88f404",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "在一個傳聞會下「黑雪」的村莊，岩元遇到了一位擁有特殊能力的少年……少年認為自己的能力是一種疾病，但岩元不僅教會了他如何運用這些能力，還告訴他兩人有著某種共同之處，並為他寫了一封推薦信。在執行任務的過程中，岩元每到一處都會遇到各種不同的謎團。一段充滿浪漫色彩的時代故事，就此展開！"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "令和妖神斑小姐",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4a7cee8fd3d762c99a66248b09bf1804",
             "premiere_date": "無首播日期",
@@ -535,14 +543,6 @@
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "正沉浸在考上高中和開始談戀愛的喜悅裡的夕梨，其人生卻在某個冬天發生驟變。突然伸出的「手」將她帶到了紀元前14世紀古代東方的西臺帝國。在恐懼與混亂中，莫名地被士兵追捕的夕梨，幸好在走投無路時被俊美又強悍的凱爾皇子所救…。跨越了數千年的時間，等待著出現在東方世界的少女的是，受到詛咒的陷阱與命中注定的戀情。"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "盗掘王",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3609dc1c6d96960136312dc7531c65b8",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "暫無簡介"
         },
         {
             "bangumi_id": "未知ID",
@@ -593,5 +593,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-06-01T02:09:33.934895"
+    "generated_at": "2026-06-02T05:07:48.244017"
 }
