@@ -251,7 +251,7 @@
         {
             "bangumi_id": "未知ID",
             "anime_name": "Dr.STONE 新石紀 SCIENCE FUTURE 第2季度",
-            "anime_image_url": "https://static.acgsecrets.hk/img/bd/bd3d8102316033e8dbf4ebe743995f48/f9b5e28b2e53e372db718527b9f14b06b1e1c29b1b52a0aadcd01530b952b837.jpg",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/adbe17bb242ef9cafa989cd0832a00a8",
             "premiere_date": "四",
             "premiere_time": "22:00",
             "story": "暫無簡介"
@@ -593,5 +593,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-06-09T03:26:42.981347"
+    "generated_at": "2026-06-10T03:22:25.780210"
 }
