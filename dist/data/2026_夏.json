@@ -42,6 +42,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "花樣少年少女 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c47c2262d32c4fc7eab7c3962b0029a6",
+            "premiere_date": "三",
+            "premiere_time": "24:30",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "盗掘王",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3609dc1c6d96960136312dc7531c65b8",
             "premiere_date": "三",
@@ -63,6 +71,14 @@
             "premiere_date": "四",
             "premiere_time": "23:00",
             "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "躲在超市後門抽菸的兩人",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0dd85e380118174891c72ffa967ac4e5",
+            "premiere_date": "四",
+            "premiere_time": "23:56",
+            "story": "每天過著辛苦社畜生活的上班族－佐佐木，少數的療癒就是他常去的超市的收銀員－山田。上班上得很累的某一天，他再次前往超市尋找他的療癒，但山田剛好不在，於是他就想透過抽根菸來獲得療癒。沒想到這時候居然找不到吸菸區，想抽菸的他還被路人白眼。就在這時候，有個姓田山、穿著非常奇特的女性，把她找去那家超市的後面一起抽菸，從此之後，他就常常跑來跟這位田山一起抽菸、聊天。但其實這位姓田山的女性，居然就是…"
         },
         {
             "bangumi_id": "未知ID",
@@ -330,14 +346,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "躲在超市後門抽菸的兩人",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0dd85e380118174891c72ffa967ac4e5",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "每天過著辛苦社畜生活的上班族－佐佐木，少數的療癒就是他常去的超市的收銀員－山田。上班上得很累的某一天，他再次前往超市尋找他的療癒，但山田剛好不在，於是他就想透過抽根菸來獲得療癒。沒想到這時候居然找不到吸菸區，想抽菸的他還被路人白眼。就在這時候，有個姓田山、穿著非常奇特的女性，把她找去那家超市的後面一起抽菸，從此之後，他就常常跑來跟這位田山一起抽菸、聊天。但其實這位姓田山的女性，居然就是…"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "尼古喵喵",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0cf15c8c9a353d91d0fce1ec7dd9793c",
             "premiere_date": "無首播日期",
@@ -593,5 +601,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-06-13T03:13:30.397099"
+    "generated_at": "2026-06-14T02:16:36.542870"
 }
