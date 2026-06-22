@@ -26,6 +26,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "暴怒千金發誓復仇。 ～憑藉魔導書之力打垮祖國～",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/130c9fabb51b214ed3369917ad9a3b61",
+            "premiere_date": "一",
+            "premiere_time": "22:30",
+            "story": "公爵千金‧伊莉莎白，被移情別戀愛上其他千金的王太子在派對宣告取消婚約。她就這麼遭受不當懲處，被幽禁在牢房，得知就連至今奉獻一切的國家都背叛了自己……終於到達忍耐極限的伊莉莎白，帶著隱藏強大力量的魔導書，決心亡命！她借助鄰國子爵‧路卡斯之手，在新天地展開新生活＆新生意。暗自胸懷著對祖國的猛烈復仇心──壯大的大逆轉復仇活該劇，開幕！"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "鬥球女彈子",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/771edffd6191fc3797384548b1753c28",
             "premiere_date": "一",
@@ -47,6 +55,14 @@
             "premiere_date": "二",
             "premiere_time": "21:30",
             "story": "孤兒院兼國家戰用魔術武器育成機關收容無依的小孩，培養成戰爭用的魔術武器，死亡對在這裡生活的孩子們來說稀鬆平常，無法盡情地表達悲傷。１４歲少女席娜某天早上得知室友在戰爭中喪生，她壓抑心中的悲傷，無法完全接納自己的境遇。晚上她遇到一個滿身血跡的少女，第二天，名叫美美的少女轉進席娜的班上。有傳聞說美美是學校的秘密武器，兩人的邂逅，令席娜的心慢慢產生變化。"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "無自覺聖女今天也無意識地釋放力量",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9b2b8a26cc77ef2c4f298149694fcf07",
+            "premiere_date": "二",
+            "premiere_time": "22:00",
+            "story": "優秀的桑切斯公爵家中有兩位姊妹。姐姐芙蘿拉是才色兼備的聖女候補，而妹妹卡洛琳娜是個既平凡又毫無才能的失敗者……因此，為了調整與鄰國的關係，卡洛琳娜被安排了與第二皇子的婚事。然而，皇子在傳聞中，是一位既野蠻又殘酷無比的人物。想著「如果我能派上用場的話」而接受了政治聯姻的卡洛琳娜，在出嫁後徹底改變了人生。收到與傳聞相反的紳士皇子、皇帝及皇后的正面評價的她，終於能得到認可！？"
         },
         {
             "bangumi_id": "未知ID",
@@ -78,6 +94,14 @@
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8545ae0dafb49287ee0e0a580a482819",
             "premiere_date": "三",
             "premiere_time": "21:00",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "幼女戰記 第2季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1b0c6e423c3b6a88d55894556ce056a2",
+            "premiere_date": "三",
+            "premiere_time": "21:30",
             "story": "暫無簡介"
         },
         {
@@ -231,6 +255,14 @@
             "premiere_date": "六",
             "premiere_time": "18:25",
             "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "BLACK TORCH闇黑燈火",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5b13779c31d26f20ea7304c5e947643e",
+            "premiere_date": "六",
+            "premiere_time": "22:00",
+            "story": "「物怪」乃活於悠久之時的妖物。作為忍者後裔，由祖父扶養長大的少年・弍郎，其擁有與動物交談的能力。某天，他在森林裡遇見了一隻受傷的黑貓，這隻自稱為「物怪」的貓，名為「羅睺」。為了保護遭受追捕的羅睺，弍郎竟被敵人貫穿了胸口!!"
         },
         {
             "bangumi_id": "未知ID",
@@ -426,14 +458,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "幼女戰記 第2季",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6be9dd1a14c75c12fdd508dd986346a3",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "暫無簡介"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "尼古喵喵",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0cf15c8c9a353d91d0fce1ec7dd9793c",
             "premiere_date": "無首播日期",
@@ -482,27 +506,11 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "無自覺聖女今天也無意識地釋放力量",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8b2e335e2e032d722558cd11c34b49a8",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "優秀的桑切斯公爵家中有兩位姊妹。姐姐芙蘿拉是才色兼備的聖女候補，而妹妹卡洛琳娜是個既平凡又毫無才能的失敗者……因此，為了調整與鄰國的關係，卡洛琳娜被安排了與第二皇子的婚事。然而，皇子在傳聞中，是一位既野蠻又殘酷無比的人物。想著「如果我能派上用場的話」而接受了政治聯姻的卡洛琳娜，在出嫁後徹底改變了人生。收到與傳聞相反的紳士皇子、皇帝及皇后的正面評價的她，終於能得到認可！？"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "奇招百出的維多利亞",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/eb316738fb1911fd97d62565f09f4158",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "在各國的諜報戰暗潮洶湧的這個時代，哈格爾王國的諜報員克蘿伊憑藉自己出類拔萃的喬裝術和體術，每天完成一項又一項的任務，再艱難的任務都難不倒她。然而受到上司背叛之後，她突然從組織中銷聲匿跡。其實克蘿伊一直在籌劃自己的第二人生，她想以鄰國艾許伯里王國一般市民的身分，用維多利亞這個名字展開自己夢寐以求的「普通（幸福）」人生。維多利亞在第二人生的第一天就保護了一名少女，有了意想不到的幸福開端，並與愈來愈多人交際往來。在這個新天地，她既是歷史學家助手兼外語老師，又協助凶嫌逃獄，將諜報員時代累積的經驗與長才發揮得淋漓盡致！然而與此同時，不但二王子對強悍的維多利亞很感興趣，組織的追兵更緊追在後，身懷絕技的她其實危機四伏──？時而有驚心動魄的武打，時而又讓人暖心療癒，維多利亞的人生修復故事，就此拉開序幕！"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "暴怒千金發誓復仇。 ～憑藉魔導書之力打垮祖國～",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/130c9fabb51b214ed3369917ad9a3b61",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "公爵千金‧伊莉莎白，被移情別戀愛上其他千金的王太子在派對宣告取消婚約。她就這麼遭受不當懲處，被幽禁在牢房，得知就連至今奉獻一切的國家都背叛了自己……終於到達忍耐極限的伊莉莎白，帶著隱藏強大力量的魔導書，決心亡命！她借助鄰國子爵‧路卡斯之手，在新天地展開新生活＆新生意。暗自胸懷著對祖國的猛烈復仇心──壯大的大逆轉復仇活該劇，開幕！"
         },
         {
             "bangumi_id": "未知ID",
@@ -527,14 +535,6 @@
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "「我們永遠都是好朋友喔！」孩提時代的某個夏日尾聲，隼人跟最麻吉的哥兒們立下這個約定。當他七年後轉學到都市的高中，兩人再次相遇時……兒時玩伴居然變成清純可愛的美少女！人稱「高嶺之花」的春希和隼人獨處時，就會以孩子王的臉露出天真無邪的笑容。但只要把春希當成女孩子逗她幾句，她就會滿臉通紅，這種可愛之處讓人猝不及防。鄉下和都市、少年和少女、成長後的心靈和身體。有些事在分開的這些日子裡悄悄改變，不變的卻是心意與那份約定……"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "BLACK TORCH闇黑燈火",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d2757912117a60f499a3cec7c275c313",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "「物怪」乃活於悠久之時的妖物。作為忍者後裔，由祖父扶養長大的少年・弍郎，其擁有與動物交談的能力。某天，他在森林裡遇見了一隻受傷的黑貓，這隻自稱為「物怪」的貓，名為「羅睺」。為了保護遭受追捕的羅睺，弍郎竟被敵人貫穿了胸口!!"
         },
         {
             "bangumi_id": "未知ID",
@@ -601,5 +601,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-06-22T02:24:12.483490"
+    "generated_at": "2026-06-23T04:11:27.421180"
 }
