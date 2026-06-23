@@ -138,6 +138,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "LV999的村民",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f011e15ff64b77569267f8014bf10f45",
+            "premiere_date": "三",
+            "premiere_time": "24:00",
+            "story": "勇者、賢者、戰士……在這個出生就決定好職業的世界中，只能受人保護、為促進城市繁榮而生的最弱職業──村民。然而在命運如此的村民當中，卻有一個男人，達到LV999封頂的境界──與魔族少女相遇，挺身對抗世界的「村民」奮鬥史，就此展開!!"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "落第賢者的學院無雙",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/911a7cd8542663a3b0e436b0c2814b39",
             "premiere_date": "三",
@@ -498,14 +506,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "LV999的村民",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d0910da0746ae8988fc271bb67b1b408",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "勇者、賢者、戰士……在這個出生就決定好職業的世界中，只能受人保護、為促進城市繁榮而生的最弱職業──村民。然而在命運如此的村民當中，卻有一個男人，達到LV999封頂的境界──與魔族少女相遇，挺身對抗世界的「村民」奮鬥史，就此展開!!"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "奇招百出的維多利亞",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/eb316738fb1911fd97d62565f09f4158",
             "premiere_date": "無首播日期",
@@ -601,5 +601,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-06-23T04:11:27.421180"
+    "generated_at": "2026-06-24T03:12:03.885389"
 }
