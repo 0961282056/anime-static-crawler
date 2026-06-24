@@ -42,6 +42,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "GRANDBLUE 碧藍之海3",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e70dc9e9b2ec2ed98946de7d2f4d85d1",
+            "premiere_date": "一",
+            "premiere_time": "24:00",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "LIAR GAME",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e4dfc6ba0c07698a622c2b6963b8286d",
             "premiere_date": "一",
@@ -122,6 +130,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "不虐待我的繼母與繼姐",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/38ea16e91aa9f2a512b9e4491563a490",
+            "premiere_date": "三",
+            "premiere_time": "23:30",
+            "story": "作為名家庶子的美冶，因母親去世被本家．鴻藏家收留。在那裡等待她的本該是可怕的繼母以及繼姐，但──！？"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "女性向遊戲世界對路人角色很不友好2",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7c0c60ac64ceac0937f72076befede21",
             "premiere_date": "三",
@@ -170,6 +186,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "令和妖神斑小姐",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4a7cee8fd3d762c99a66248b09bf1804",
+            "premiere_date": "四",
+            "premiere_time": "21:30",
+            "story": "在深山的聚落裡，有一處嚴禁進入的「忌地」。那個地方佇立著一座模樣詭異的祠堂，據說一旦踏入便會遭受詛咒，甚至可能因此喪命。日向與薫，出生於世代掌管那座山的三十木谷家。某個風雨交加的夜晚，踏入禁忌之地的兩人，竟遭遇了擁有巨大蛇身的祟神・屋跨斑———。……然而，兩人不但沒有害怕怪異，反而親暱地叫他「ダラさん」，一下子就黏上了他！「老夫好歹也是祟神啊！？」被天不怕地不怕的日向與薫耍得團團轉，不知不覺間，怪異竟成了吐槽擔當！？背負著悲傷過去的ダラさん，與自由奔放過頭的這對姊弟，共同交織出吵鬧卻又溫馨的每一天——。令和時代誕生的新感覺靈異喜劇，就此開幕！"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "The World is Dancing 世界在起舞",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7e314e8cb474282a5a1d63aa5e4cad4b",
             "premiere_date": "四",
@@ -207,6 +231,14 @@
             "premiere_date": "四",
             "premiere_time": "24:26",
             "story": "有著劍聖血統的埃爾瑪，在十五歲時的〈祝福儀式〉中，顯現出最典型的垃圾職業重騎士，因而遭剝奪走繼承權，並且趕出家門。重騎士的能力值非常偏重一方，技能沒有半個堪用。更甚至，還被所有人公認為是膽小怠惰的人才會得到的職業。但埃爾瑪知道，這個世界是他曾經玩到透徹的遊戲世界──而重騎士，才是真正最強的職業！埃爾瑪於是全力動用上輩子的知識，開始有效率地攻略這個世界！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "少女怪獸焦糖戀心",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/58cce69cdcfab2d1c5a0ed103a9a6d8c",
+            "premiere_date": "四",
+            "premiere_time": "25:28",
+            "story": "因不明原因的疾病而飽受折磨的女高中生・赤石黒絵（クロエ）。  生性笨拙、一直以來都逃避與人交流的她，因為某次相遇，對班上的受歡迎男生・南新汰產生了愛慕之情。當少女察覺到這份戀慕之心時，沉睡的力量隨之解放……。"
         },
         {
             "bangumi_id": "未知ID",
@@ -275,7 +307,7 @@
         {
             "bangumi_id": "未知ID",
             "anime_name": "岩元前輩的推薦",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/21e09d2abdcf9c03ed2faceb0a88f404",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bef5f9e41afbc3a80a02af1429d5ff79",
             "premiere_date": "六",
             "premiere_time": "22:30",
             "story": "在一個傳聞會下「黑雪」的村莊，岩元遇到了一位擁有特殊能力的少年……少年認為自己的能力是一種疾病，但岩元不僅教會了他如何運用這些能力，還告訴他兩人有著某種共同之處，並為他寫了一封推薦信。在執行任務的過程中，岩元每到一處都會遇到各種不同的謎團。一段充滿浪漫色彩的時代故事，就此展開！"
@@ -335,6 +367,14 @@
             "premiere_date": "六",
             "premiere_time": "25:30",
             "story": "尊度MAX！從契約結婚開始的暖心「又彆扭又心動」戀愛喜劇！"
+        },
+        {
+            "bangumi_id": "未知ID",
+            "anime_name": "花織同學轉生後還是想幹架",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6112c8a0ee18f74ad58930ca77267f1c",
+            "premiere_date": "六",
+            "premiere_time": "26:00",
+            "story": "鳴神流星，職業是尼特族。他過著宅在家中、整天沉迷遊戲的日子，但其實在另一個世界裡，他曾經是個魔王！就在這時，曾經打倒流星的勇者——如今是女高中生的花織ミーティア硬是找上門來……。經歷了與ミーティア的重逢，流星從尼特族搖身一變，成為御剣女子高等学校的高中教師，成功回歸社會。然而，那裡竟然就是ミーティア就讀的學校！轉生到和平的世界，再次相遇的兩人，他們的戀情就此展開！？"
         },
         {
             "bangumi_id": "未知ID",
@@ -450,35 +490,11 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "花織同學轉生後還是想幹架",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6112c8a0ee18f74ad58930ca77267f1c",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "鳴神流星，職業是尼特族。他過著宅在家中、整天沉迷遊戲的日子，但其實在另一個世界裡，他曾經是個魔王！就在這時，曾經打倒流星的勇者——如今是女高中生的花織ミーティア硬是找上門來……。經歷了與ミーティア的重逢，流星從尼特族搖身一變，成為御剣女子高等学校的高中教師，成功回歸社會。然而，那裡竟然就是ミーティア就讀的學校！轉生到和平的世界，再次相遇的兩人，他們的戀情就此展開！？"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "不虐待我的繼母與繼姐",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/38ea16e91aa9f2a512b9e4491563a490",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "作為名家庶子的美冶，因母親去世被本家．鴻藏家收留。在那裡等待她的本該是可怕的繼母以及繼姐，但──！？"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "尼古喵喵",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0cf15c8c9a353d91d0fce1ec7dd9793c",
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "尼古喵喵是隻超愛抽菸的廢物獸人！因為缺乏倫理與衛生觀念，不是把菸頭往窗外亂丟，就是對人亂吐口水，偶爾還會做出一些違法亂紀的事。幸好她身邊有貼心的管家婆妹妹貓以及好友嗑藥貓作伴，讓她依舊能每天吞雲吐霧、得過且過的生活著。"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "GRANDBLUE 碧藍之海3",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e70dc9e9b2ec2ed98946de7d2f4d85d1",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "暫無簡介"
         },
         {
             "bangumi_id": "未知ID",
@@ -511,14 +527,6 @@
             "premiere_date": "無首播日期",
             "premiere_time": "無首播時間",
             "story": "在各國的諜報戰暗潮洶湧的這個時代，哈格爾王國的諜報員克蘿伊憑藉自己出類拔萃的喬裝術和體術，每天完成一項又一項的任務，再艱難的任務都難不倒她。然而受到上司背叛之後，她突然從組織中銷聲匿跡。其實克蘿伊一直在籌劃自己的第二人生，她想以鄰國艾許伯里王國一般市民的身分，用維多利亞這個名字展開自己夢寐以求的「普通（幸福）」人生。維多利亞在第二人生的第一天就保護了一名少女，有了意想不到的幸福開端，並與愈來愈多人交際往來。在這個新天地，她既是歷史學家助手兼外語老師，又協助凶嫌逃獄，將諜報員時代累積的經驗與長才發揮得淋漓盡致！然而與此同時，不但二王子對強悍的維多利亞很感興趣，組織的追兵更緊追在後，身懷絕技的她其實危機四伏──？時而有驚心動魄的武打，時而又讓人暖心療癒，維多利亞的人生修復故事，就此拉開序幕！"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "少女怪獸焦糖戀心",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/58cce69cdcfab2d1c5a0ed103a9a6d8c",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "因不明原因的疾病而飽受折磨的女高中生・赤石黒絵（クロエ）。  生性笨拙、一直以來都逃避與人交流的她，因為某次相遇，對班上的受歡迎男生・南新汰產生了愛慕之情。當少女察覺到這份戀慕之心時，沉睡的力量隨之解放……。"
         },
         {
             "bangumi_id": "未知ID",
@@ -570,14 +578,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "令和妖神斑小姐",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4a7cee8fd3d762c99a66248b09bf1804",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "在深山的聚落裡，有一處嚴禁進入的「忌地」。那個地方佇立著一座模樣詭異的祠堂，據說一旦踏入便會遭受詛咒，甚至可能因此喪命。日向與薫，出生於世代掌管那座山的三十木谷家。某個風雨交加的夜晚，踏入禁忌之地的兩人，竟遭遇了擁有巨大蛇身的祟神・屋跨斑———。……然而，兩人不但沒有害怕怪異，反而親暱地叫他「ダラさん」，一下子就黏上了他！「老夫好歹也是祟神啊！？」被天不怕地不怕的日向與薫耍得團團轉，不知不覺間，怪異竟成了吐槽擔當！？背負著悲傷過去的ダラさん，與自由奔放過頭的這對姊弟，共同交織出吵鬧卻又溫馨的每一天——。令和時代誕生的新感覺靈異喜劇，就此開幕！"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "碧藍航線 微速前進！2！！",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/760de5e50a7667dd8bc19592000ae666",
             "premiere_date": "無首播日期",
@@ -601,5 +601,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-06-24T03:12:03.885389"
+    "generated_at": "2026-06-25T02:55:26.385333"
 }
