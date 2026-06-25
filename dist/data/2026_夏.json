@@ -58,6 +58,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "感謝對戰。 ～大小姐才不玩格鬥遊戲～",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e5bcc8bd9274621ed528dd6438bc417d",
+            "premiere_date": "二",
+            "premiere_time": "20:30",
+            "story": "進入大小姐學校就讀的綾是喜歡袋裝拉麵的平民。這樣的她憧憬著校內第一的大小姐「白百合大人」。某天，她目擊到「白百合大人」正熱情投入在對戰格鬥遊戲當中。「白百合大人」要綾幫忙保密在校內玩格鬥遊戲一事，可是綾因為玩格鬥遊戲才會有的繭而被發現自己曾經玩過，「白百合大人」因此希望與她對戰。大小姐們的熱情格鬥遊戲在此開幕！"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "與妳相戀到生命盡頭",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9e81b72bf537445fe951500417f358df",
             "premiere_date": "二",
@@ -466,14 +474,6 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "感謝對戰。 ～大小姐才不玩格鬥遊戲～",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e5bcc8bd9274621ed528dd6438bc417d",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "進入大小姐學校就讀的綾是喜歡袋裝拉麵的平民。這樣的她憧憬著校內第一的大小姐「白百合大人」。某天，她目擊到「白百合大人」正熱情投入在對戰格鬥遊戲當中。「白百合大人」要綾幫忙保密在校內玩格鬥遊戲一事，可是綾因為玩格鬥遊戲才會有的繭而被發現自己曾經玩過，「白百合大人」因此希望與她對戰。大小姐們的熱情格鬥遊戲在此開幕！"
-        },
-        {
-            "bangumi_id": "未知ID",
             "anime_name": "Grow Up Show ～向日葵馬戲團～",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3b1b8eba3b63374d8c07353c61c836ef",
             "premiere_date": "無首播日期",
@@ -601,5 +601,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-06-25T02:55:26.385333"
+    "generated_at": "2026-06-26T03:09:14.701679"
 }
