@@ -226,7 +226,7 @@
         },
         {
             "bangumi_id": "未知ID",
-            "anime_name": "盗掘王",
+            "anime_name": "盜墓王",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3609dc1c6d96960136312dc7531c65b8",
             "premiere_date": "三",
             "premiere_time": "25:15",
@@ -601,5 +601,5 @@
             "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-06-27T02:57:37.062106"
+    "generated_at": "2026-06-28T02:11:59.586803"
 }
