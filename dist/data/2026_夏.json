@@ -322,6 +322,14 @@
         },
         {
             "bangumi_id": "未知ID",
+            "anime_name": "擅長逃跑的殿下 第二季",
+            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/870000c1f8d86abd2005334221f21b42",
+            "premiere_date": "五",
+            "premiere_time": "23:30",
+            "story": "暫無簡介"
+        },
+        {
+            "bangumi_id": "未知ID",
             "anime_name": "畫完這個再去死",
             "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0dc7e86bb5fc3c90142709e45f6f31b3",
             "premiere_date": "五",
@@ -591,15 +599,7 @@
             "premiere_date": "日",
             "premiere_time": "25:00",
             "story": "暫無簡介"
-        },
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "擅長逃跑的殿下 第二季",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/870000c1f8d86abd2005334221f21b42",
-            "premiere_date": "無首播日期",
-            "premiere_time": "無首播時間",
-            "story": "暫無簡介"
         }
     ],
-    "generated_at": "2026-07-03T02:41:03.421802"
+    "generated_at": "2026-07-04T02:17:43.418107"
 }
