@@ -9,6 +9,9 @@ import services.cache_repository as cache_repository_module
 from services.cache_repository import CacheRepository
 from services.errors import DataContractError
 
+SHARED_PUBLIC_ID = f"anime_covers/{'a' * 64}"
+OTHER_PUBLIC_ID = f"anime_covers/{'b' * 64}"
+
 
 @pytest.mark.parametrize(
     "content",
@@ -76,19 +79,69 @@ def test_cache_removes_only_urls_matching_confirmed_public_ids(
     tmp_path: Path,
 ) -> None:
     cache = CacheRepository(tmp_path / "cache.json")
-    shared = "https://res.cloudinary.com/demo/image/upload/v1/anime_covers/shared.webp"
+    shared = f"https://res.cloudinary.com/demo/image/upload/v1/{SHARED_PUBLIC_ID}.webp"
     cache.set("source-a", shared)
     cache.set("content-a", shared)
     cache.set(
         "other",
-        "https://res.cloudinary.com/demo/image/upload/v1/anime_covers/other.webp",
+        f"https://res.cloudinary.com/demo/image/upload/v1/{OTHER_PUBLIC_ID}.webp",
     )
 
-    removed = cache.remove_urls_with_public_ids({"anime_covers/shared"})
+    removed = cache.remove_urls_with_public_ids({SHARED_PUBLIC_ID})
 
     assert removed == 2
     assert cache.snapshot() == {
         "other": (
-            "https://res.cloudinary.com/demo/image/upload/v1/anime_covers/other.webp"
+            f"https://res.cloudinary.com/demo/image/upload/v1/{OTHER_PUBLIC_ID}.webp"
         )
     }
+
+
+def test_cache_reports_candidate_urls_without_mutating_data(tmp_path: Path) -> None:
+    cache = CacheRepository(tmp_path / "cache.json")
+    shared = f"https://res.cloudinary.com/demo/image/upload/v1/{SHARED_PUBLIC_ID}.webp"
+    other = f"https://res.cloudinary.com/demo/image/upload/v1/{OTHER_PUBLIC_ID}.webp"
+    cache.set("source-a", shared)
+    cache.set("content-a", shared)
+    cache.set("other", other)
+
+    matches = cache.urls_with_public_ids({SHARED_PUBLIC_ID})
+
+    assert matches == {shared}
+    assert cache.snapshot() == {
+        "source-a": shared,
+        "content-a": shared,
+        "other": other,
+    }
+
+
+def test_cache_does_not_treat_nested_or_path_collision_urls_as_managed(
+    tmp_path: Path,
+) -> None:
+    cache = CacheRepository(tmp_path / "cache.json")
+    valid = f"https://res.cloudinary.com/demo/image/upload/v1/{SHARED_PUBLIC_ID}.webp"
+    nested = (
+        "https://res.cloudinary.com/demo/image/upload/v1/anime_covers/series/"
+        f"{'a' * 64}.webp"
+    )
+    collision = (
+        "https://res.cloudinary.com/anime_covers/image/upload/v1/unmanaged/"
+        f"{'a' * 64}.webp"
+    )
+    cache.set("valid", valid)
+    cache.set("nested", nested)
+    cache.set("collision", collision)
+
+    removed = cache.remove_urls_with_public_ids({SHARED_PUBLIC_ID})
+
+    assert removed == 1
+    assert cache.snapshot() == {"nested": nested, "collision": collision}
+
+
+def test_cache_rejects_public_ids_outside_exact_uploader_contract(
+    tmp_path: Path,
+) -> None:
+    cache = CacheRepository(tmp_path / "cache.json")
+
+    with pytest.raises(DataContractError, match="exact managed Cloudinary public IDs"):
+        cache.urls_with_public_ids({"anime_covers/nested/asset"})

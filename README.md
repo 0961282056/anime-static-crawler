@@ -12,7 +12,10 @@ GitHub Actions 定時爬蟲
       ├── 驗證資料契約與品質
       ├── 封面上傳到 Cloudinary
       ├── 原子寫入 dist/data/*.json
-      └── 只有資料改變時才提交 Git
+      └── 只有資料改變時才建立 automation Pull Request
+                    │
+                    ▼
+Quality Gate 全綠後由 GitHub App auto-merge 到 main
                     │
                     ▼
 Cloudflare Pages 執行 bash build.sh
@@ -24,11 +27,14 @@ Cloudflare Pages 執行 bash build.sh
 重要安全原則：
 
 - 爬蟲不會為了 Cloudinary 額度自動刪除季度 JSON 或圖片。
-- Cloudinary 清理預設只產生 dry-run manifest；程式硬性要求圖片至少 30 天、manifest 再等待至少 30 天，且單次最多 50 張／總資產 2%。正式刪除只能由 fresh main、required reviewer 與 crawler 共用鎖保護的 GitHub workflow 執行。
+- Cloudinary 清理預設只產生 dry-run manifest；程式硬性要求圖片至少 30 天、manifest 再等待至少 30 天，且單次最多 50 張／總資產 2%。資產 ID 只接受專案既有的 32 位 MD5 與新版 64 位 SHA-256 小寫十六進位格式，不接受任意名稱或子目錄。正式流程先讓 cache-only PR 通過 Quality Gate 並合併，確認 `main` 已不再快取候選 URL，才由 required reviewer 與 crawler 共用鎖保護的 job 執行刪除。
 - `.env`、密碼、API secret、Webhook 不可提交到 Git。
+- crawler 與 retention 都不得直接推送 `main`。不持有正式服務憑證的 publisher 只能透過 `automation-publisher` environment 取得限本儲存庫使用的 GitHub App token，建立 Pull Request；`Quality Gate / quality` 成功後才由 GitHub auto-merge，GitHub Actions 與該 App 都不可加入 ruleset bypass。
+- 正式 GitHub crawler（每日排程與人工 Run workflow）必須在 `crawler-production` 設定可用的 `DISCORD_WEBHOOK_URL`；本機執行可不設定 Discord。
 - 初次部署或輪替期間，`CRAWLER_SCHEDULE_ENABLED` 保持 `false`；手動驗證成功後才開啟每日排程。這個開關只有新版 crawler workflow 合併到 `main` 後才有效。
+- 執行 Cloudinary retention 前必須先把 `CRAWLER_SCHEDULE_ENABLED` 設為 `false`，並確認沒有 crawler 或任何以 `main` 為目標的 Pull Request；cache safety PR 必須在刪圖前先合併，整個 workflow 成功後才能恢復排程。
 - `static/` 是前端資源的唯一來源；`dist/static/` 由建置自動產生。
-- 任一系統錯誤、資料契約錯誤或品質 gate 失敗，都應讓工作流程失敗並保留上一版資料。
+- 發佈前的爬蟲錯誤、資料契約錯誤或品質 gate 失敗，都會讓工作流程失敗並保留 `main` 上一版資料。資料 PR 已通過 gate 並合併後，後續 Discord 傳送失敗仍會讓 workflow 紅燈，但不會回滾已合併資料。
 
 ## 從舊版升級前先停排程
 
@@ -84,7 +90,7 @@ python manage.py validate-all
 Remove-Item Env:BUILD_ONLY
 ```
 
-成功時，網站輸出會在 `dist/`。這個模式不需要 `.env`。
+成功時，網站輸出會在 `dist/`。這個模式不需要 `.env`；本機需要執行完整爬蟲時，Discord webhook 仍是選用設定。
 
 若 PowerShell 阻擋虛擬環境啟用，不必改全機安全政策，可以直接執行：
 
@@ -115,7 +121,7 @@ python cloudinary_cleaner.py ... Cloudinary retention；預設 dry-run
 
 - GitHub Action 變紅：先不要重新執行很多次，確認錯誤是來源網站、資料品質、Cloudinary 還是設定問題。
 - 網站新版壞掉：先在 Cloudflare Pages 回滾到上一個成功部署，再修 Git。
-- JSON 異常：停用排程，使用 `git revert` 回復最近的自動資料提交。
+- JSON 異常：停用排程，從最新 `main` 建復原分支，以 `git revert` 回復最近的自動資料提交，再經 Pull Request 與 required check 合併。
 - 懷疑秘密外洩：先在原服務撤銷／輪替，再更新 GitHub；刪除 Git 檔案本身不能讓舊秘密失效。
 - 誤刪 Cloudinary 圖片：立即停用爬蟲與清理，從 Cloudinary Backup／Deleted assets 復原。
 

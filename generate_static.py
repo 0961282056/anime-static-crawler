@@ -9,6 +9,7 @@ import os
 import shutil
 import tempfile
 import uuid
+from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
@@ -26,12 +27,19 @@ from models import TAIPEI_TZ
 from services.atomic_io import atomic_write_text
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.errors import SourceNotFoundError
-from services.notifier import DiscordNotifier, Notification
 from services.settings import CrawlerSettings, ProjectPaths
 
 logger = logging.getLogger(__name__)
 START_YEAR_ON_EMPTY = 2018
 SEASONS = ("冬", "春", "夏", "秋")
+
+
+@dataclass(frozen=True)
+class CrawlSummary:
+    processed_quarters: int
+    changed_quarters: int
+    total_records: int
+    parse_failures: int
 
 
 def configure_runtime() -> None:
@@ -189,11 +197,10 @@ def crawl_quarters(
     paths: ProjectPaths,
     repository: DataRepository,
     now: datetime,
-) -> None:
+) -> CrawlSummary:
     from services.anime_service import AnimeCrawlerService
 
     crawler = AnimeCrawlerService.from_environment()
-    notifier = DiscordNotifier(os.getenv("DISCORD_WEBHOOK_URL"))
     has_existing_data = any(paths.data_dir.glob("*.json"))
     full_crawl = not has_existing_data
     processed_quarters = 0
@@ -235,41 +242,32 @@ def crawl_quarters(
             if is_future_quarter(year_number, season, now):
                 logger.info("Future quarter not published yet: %s", exc)
                 continue
-            notifier.send(
-                Notification(
-                    status="FAILURE",
-                    year=year,
-                    season=season,
-                    message=str(exc),
-                )
-            )
             raise
         except Exception as exc:
             sentry_sdk.capture_exception(exc)
-            notifier.send(
-                Notification(
-                    status="FAILURE",
-                    year=year,
-                    season=season,
-                    message=str(exc),
-                )
-            )
             raise
 
-    notifier.send(
-        Notification(
-            status="SUCCESS",
-            year=str(now.year),
-            season="每日批次",
-            count=total_records,
-            changed=changed_quarters > 0,
-            parse_failures=total_parse_failures,
-            message=(
-                f"處理 {processed_quarters} 個季度；"
-                f"{changed_quarters} 個季度有語意資料變更。"
-            ),
-        )
+    return CrawlSummary(
+        processed_quarters=processed_quarters,
+        changed_quarters=changed_quarters,
+        total_records=total_records,
+        parse_failures=total_parse_failures,
     )
+
+
+def write_crawl_summary_outputs(summary: CrawlSummary) -> None:
+    output_path = os.getenv("GITHUB_OUTPUT", "").strip()
+    if not output_path:
+        return
+    values = {
+        "processed_quarters": summary.processed_quarters,
+        "changed_quarters": summary.changed_quarters,
+        "record_count": summary.total_records,
+        "parse_failures": summary.parse_failures,
+    }
+    with Path(output_path).open("a", encoding="utf-8", newline="\n") as output:
+        for name, value in values.items():
+            output.write(f"{name}={value}\n")
 
 
 def generate_static_files() -> None:
@@ -290,17 +288,20 @@ def generate_static_files() -> None:
     repository = DataRepository(paths.data_dir, policy)
     paths.data_dir.mkdir(parents=True, exist_ok=True)
     now = datetime.now(TAIPEI_TZ)
+    crawl_summary: CrawlSummary | None = None
 
     if build_only:
         logger.info("BUILD_ONLY enabled: validating data and building static output")
     else:
-        crawl_quarters(paths, repository, now)
+        crawl_summary = crawl_quarters(paths, repository, now)
 
     validated_paths = repository.validate_all()
     logger.info("Validated %s quarterly JSON files", len(validated_paths))
     sync_static_assets(paths)
     output_path = render_index(paths, repository, now)
     logger.info("Static site generated: %s", output_path)
+    if crawl_summary is not None:
+        write_crawl_summary_outputs(crawl_summary)
 
 
 if __name__ == "__main__":

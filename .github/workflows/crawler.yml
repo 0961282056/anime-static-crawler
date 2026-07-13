@@ -23,9 +23,12 @@ jobs:
     environment: crawler-production
     permissions:
       contents: read
+      pull-requests: read
     outputs:
       data_changed: ${{ steps.data-changes.outputs.changed }}
       prepared_sha: ${{ steps.base-sha.outputs.sha }}
+      record_count: ${{ steps.crawl.outputs.record_count }}
+      parse_failures: ${{ steps.crawl.outputs.parse_failures }}
     env:
       TZ: Asia/Taipei
       BUILD_ONLY: "false"
@@ -37,13 +40,38 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
-          ref: main
+          ref: ${{ github.sha }}
           fetch-depth: 1
           persist-credentials: false
 
       - name: Record prepared main SHA
         id: base-sha
         run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Validate required production notification secret
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [[ -z "${DISCORD_WEBHOOK_URL:-}" ]]; then
+            echo "crawler-production is missing DISCORD_WEBHOOK_URL."
+            exit 1
+          fi
+
+      - name: Refuse overlapping automation pull requests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open_automation_prs="$(gh pr list \
+            --base main \
+            --state open \
+            --limit 100 \
+            --json headRefName,url \
+            --jq '.[] | select(.headRefName | startswith("automation/")) | "\(.headRefName) \(.url)"')"
+          if [[ -n "$open_automation_prs" ]]; then
+            echo "Resolve the existing automation pull request before crawling:"
+            printf '%s\n' "$open_automation_prs"
+            exit 1
+          fi
 
       - name: Set up Python
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
@@ -64,11 +92,11 @@ jobs:
           python manage.py validate-all
 
       - name: Crawl, validate, and build
+        id: crawl
         env:
           CLOUDINARY_CLOUD_NAME: ${{ vars.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
           SENTRY_BROWSER_DSN: ${{ vars.SENTRY_BROWSER_DSN }}
           CRAWLER_USER_AGENT: ${{ vars.CRAWLER_USER_AGENT }}
@@ -104,20 +132,24 @@ jobs:
             dist/data
             cloudinary_cache.json
           if-no-files-found: error
-          retention-days: 1
+          retention-days: 7
+          overwrite: true
 
-  commit-data:
+  publish-data-pr:
     needs: crawl-and-prepare
     if: needs.crawl-and-prepare.outputs.data_changed == 'true'
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 45
+    environment: automation-publisher
     permissions:
-      contents: write
+      contents: read
+    outputs:
+      pr_url: ${{ steps.publish.outputs.pr_url }}
     steps:
-      - name: Checkout main without persisted credentials
+      - name: Checkout exact prepared revision without persisted credentials
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
-          ref: main
+          ref: ${{ needs.crawl-and-prepare.outputs.prepared_sha }}
           fetch-depth: 1
           persist-credentials: false
 
@@ -130,11 +162,27 @@ jobs:
       - name: Verify main did not change between jobs
         env:
           PREPARED_SHA: ${{ needs.crawl-and-prepare.outputs.prepared_sha }}
-        run: test "$(git rev-parse HEAD)" = "$PREPARED_SHA"
+        run: |
+          if [[ "$(git rev-parse HEAD)" != "$PREPARED_SHA" ]]; then
+            echo "main changed after the crawler prepared its artifact; refusing stale data."
+            exit 1
+          fi
 
-      - name: Commit meaningful data changes only
+      - name: Create short-lived automation token
+        id: app-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        with:
+          client-id: ${{ vars.AUTOMATION_APP_CLIENT_ID }}
+          private-key: ${{ secrets.AUTOMATION_APP_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
+
+      - name: Publish validated data pull request
+        id: publish
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
+          PREPARED_SHA: ${{ needs.crawl-and-prepare.outputs.prepared_sha }}
         run: |
           if [[ -n "$(git diff --name-only --diff-filter=D -- dist/data)" ]]; then
             echo "Automatic quarterly JSON deletion is forbidden."
@@ -142,13 +190,154 @@ jobs:
             exit 1
           fi
           if [[ -z "$(git status --porcelain -- dist/data)" ]]; then
-            echo "No quarterly data change remains after artifact download."
-            exit 0
+            echo "Expected a quarterly data change, but the prepared artifact has none."
+            exit 1
           fi
-          git config user.name "GitHub Action Crawler"
-          git config user.email "action@github.com"
+
+          bot_login="${APP_SLUG}[bot]"
+          existing_pr="$(gh pr list \
+            --base main \
+            --state open \
+            --author "$bot_login" \
+            --json url \
+            --jq '.[0].url // empty')"
+          if [[ -n "$existing_pr" ]]; then
+            echo "An automation pull request is already open: $existing_pr"
+            exit 1
+          fi
+
+          gh auth setup-git
+          git fetch origin main --depth=1
+          if [[ "$(git rev-parse origin/main)" != "$PREPARED_SHA" ]]; then
+            echo "main changed before the data branch was published."
+            exit 1
+          fi
+
+          branch="automation/anime-data-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git switch -c "$branch"
+          bot_id="$(gh api "/users/$bot_login" --jq .id)"
+          git config user.name "$bot_login"
+          git config user.email "${bot_id}+${bot_login}@users.noreply.github.com"
           git add -A -- dist/data cloudinary_cache.json
+
+          deleted_paths="$(git diff --cached --name-only --diff-filter=D)"
+          if [[ -n "$deleted_paths" ]]; then
+            echo "Automation is not allowed to delete persisted data or cache files."
+            printf '%s\n' "$deleted_paths"
+            exit 1
+          fi
+          while IFS= read -r -d '' path; do
+            valid_path=false
+            if [[ "$path" == "cloudinary_cache.json" ]]; then
+              valid_path=true
+            elif [[ "$path" == dist/data/*.json ]]; then
+              relative_path="${path#dist/data/}"
+              if [[ "$relative_path" != */* ]]; then
+                valid_path=true
+              fi
+            fi
+            if [[ "$valid_path" != "true" ]]; then
+              echo "Unexpected staged path: $path"
+              exit 1
+            fi
+          done < <(git diff --cached --name-only -z)
+
           git diff --cached --check
           git commit -m "chore(data): update anime data"
-          gh auth setup-git
-          git push origin HEAD:main
+
+          remote_branch_pushed=false
+          pr_created=false
+          cleanup_unpublished_branch() {
+            if [[ "$remote_branch_pushed" == "true" && "$pr_created" != "true" ]]; then
+              git push origin --delete "$branch" || true
+            fi
+          }
+          trap cleanup_unpublished_branch EXIT
+          git push --set-upstream origin "$branch"
+          remote_branch_pushed=true
+
+          pr_url="$(gh pr create \
+            --base main \
+            --head "$branch" \
+            --title "chore(data): update anime data" \
+            --body "Automated validated anime data update from workflow run ${GITHUB_RUN_ID}. Quality Gate must pass before auto-merge.")"
+          pr_created=true
+          merged=false
+          cleanup_unmerged_pr() {
+            if [[ "$merged" != "true" ]]; then
+              gh pr merge "$pr_url" --disable-auto || true
+              gh pr close "$pr_url" --delete-branch || true
+            fi
+          }
+          trap cleanup_unmerged_pr EXIT
+
+          echo "pr_url=$pr_url" >> "$GITHUB_OUTPUT"
+          echo "Data pull request: $pr_url" >> "$GITHUB_STEP_SUMMARY"
+          head_sha="$(git rev-parse HEAD)"
+          gh pr merge "$pr_url" \
+            --auto \
+            --squash \
+            --delete-branch \
+            --match-head-commit "$head_sha"
+
+          for attempt in {1..120}; do
+            pr_state="$(gh pr view "$pr_url" --json state --jq .state)"
+            if [[ "$pr_state" == "MERGED" ]]; then
+              merged=true
+              break
+            fi
+            if [[ "$pr_state" == "CLOSED" ]]; then
+              echo "The data pull request closed without merging."
+              exit 1
+            fi
+            sleep 15
+          done
+          if [[ "$merged" != "true" ]]; then
+            echo "The data pull request did not merge before the safety timeout."
+            exit 1
+          fi
+          echo "Data pull request passed Quality Gate and merged." >> "$GITHUB_STEP_SUMMARY"
+          trap - EXIT
+
+  notify:
+    needs: [crawl-and-prepare, publish-data-pr]
+    if: >-
+      always() &&
+      github.ref == 'refs/heads/main' &&
+      needs.crawl-and-prepare.result != 'skipped'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    environment: crawler-production
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout notification code
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install locked runtime dependencies
+        run: python -m pip install --require-hashes -r requirements.txt
+
+      - name: Send final Discord summary
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          CRAWL_RESULT: ${{ needs.crawl-and-prepare.result }}
+          PUBLISH_RESULT: ${{ needs.publish-data-pr.result }}
+          DATA_CHANGED: ${{ needs.crawl-and-prepare.outputs.data_changed }}
+          RECORD_COUNT: ${{ needs.crawl-and-prepare.outputs.record_count }}
+          PARSE_FAILURES: ${{ needs.crawl-and-prepare.outputs.parse_failures }}
+          PR_URL: ${{ needs.publish-data-pr.outputs.pr_url }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          EVENT_NAME: ${{ github.event_name }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: python manage.py notify-workflow

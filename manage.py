@@ -4,10 +4,16 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import os
 import sys
 from pathlib import Path
 
 from services.data_repository import DataQualityPolicy, DataRepository
+from services.notifier import (
+    DiscordNotifier,
+    build_workflow_notification,
+    workflow_outcome_from_environment,
+)
 from services.settings import ProjectPaths
 
 
@@ -93,17 +99,47 @@ def quality_report(paths: ProjectPaths) -> None:
         print(f"| {quarter} | {count} | {unknown} | {stories} | {dates} | {updated} |")
 
 
+def notify_workflow() -> None:
+    outcome = workflow_outcome_from_environment(os.environ)
+    notification = build_workflow_notification(outcome)
+    DiscordNotifier(
+        os.getenv("DISCORD_WEBHOOK_URL"),
+        required=True,
+    ).send(notification)
+
+    summary_path = os.getenv("GITHUB_STEP_SUMMARY", "").strip()
+    if summary_path:
+        with Path(summary_path).open("a", encoding="utf-8", newline="\n") as summary:
+            summary.write("## Discord workflow notification\n\n")
+            summary.write(f"- Status: `{notification.status}`\n")
+            summary.write(f"- Data changed: `{str(notification.changed).lower()}`\n")
+            summary.write(f"- Records: `{notification.count}`\n")
+            summary.write(f"- Parse failures: `{notification.parse_failures}`\n")
+            summary.write(f"- Detail: {notification.message}\n")
+    print(f"Discord workflow notification sent: {notification.status}")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Project validation commands")
     parser.add_argument(
         "command",
-        choices=("validate-data", "verify-dist", "validate-all", "quality-report"),
+        choices=(
+            "validate-data",
+            "verify-dist",
+            "validate-all",
+            "quality-report",
+            "notify-workflow",
+        ),
     )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
+    if args.command == "notify-workflow":
+        notify_workflow()
+        return 0
+
     paths = ProjectPaths.from_environment()
     if args.command in {"validate-data", "validate-all"}:
         validate_data(paths)

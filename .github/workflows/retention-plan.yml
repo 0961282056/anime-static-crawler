@@ -10,6 +10,7 @@ on:
         type: number
 
 permissions:
+  actions: read
   contents: read
 
 concurrency:
@@ -23,10 +24,25 @@ jobs:
     timeout-minutes: 20
     environment: cloudinary-retention-plan
     steps:
+      - name: Require a fresh dry-run dispatch
+        id: provenance
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          run_created_at="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" --jq .created_at)"
+          run_created_epoch="$(date -u -d "$run_created_at" +%s)"
+          now_epoch="$(date -u +%s)"
+          age_seconds=$((now_epoch - run_created_epoch))
+          if (( age_seconds < 0 || age_seconds > 1200 )); then
+            echo "This dry-run waited too long before starting. Dispatch a fresh workflow run."
+            exit 1
+          fi
+          echo "created_at=$run_created_at" >> "$GITHUB_OUTPUT"
+
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
-          ref: main
+          ref: ${{ github.sha }}
           persist-credentials: false
 
       - name: Set up Python
@@ -51,6 +67,19 @@ jobs:
         run: |
           python cloudinary_cleaner.py --minimum-age-days "$MINIMUM_AGE_DAYS" --manifest-output retention-plan.json
 
+      - name: Bind manifest time to this workflow run
+        env:
+          RUN_CREATED_AT: ${{ steps.provenance.outputs.created_at }}
+        run: |
+          manifest_created_at="$(jq -r .created_at retention-plan.json)"
+          run_created_epoch="$(date -u -d "$RUN_CREATED_AT" +%s)"
+          manifest_created_epoch="$(date -u -d "$manifest_created_at" +%s)"
+          manifest_delay=$((manifest_created_epoch - run_created_epoch))
+          if (( manifest_delay < 0 || manifest_delay > 1800 )); then
+            echo "Manifest creation fell outside the trusted 30-minute window."
+            exit 1
+          fi
+
       - name: Upload manifest for human review
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
@@ -58,3 +87,4 @@ jobs:
           path: retention-plan.json
           if-no-files-found: error
           retention-days: 90
+          overwrite: true
