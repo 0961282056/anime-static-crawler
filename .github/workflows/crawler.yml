@@ -2,71 +2,153 @@ name: Scheduled Anime Crawler
 
 on:
   schedule:
-    # 每天 UTC 17:00 (台灣時間凌晨 01:00) 自動執行
-    - cron: '0 17 * * *'
+    - cron: "0 17 * * *"
   workflow_dispatch:
-  push:
-    # 只要修改 templates 底下的檔案，就自動觸發重新生成 (視圖層即時更新)
-    paths:
-      - 'templates/**'
-      - 'static/**'
 
-# 【防撞鎖定機制】確保同一個時間點，只會有一個爬蟲實例在運行
+permissions:
+  contents: read
+
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  # 設定為 false：若已有排程在執行，新的觸發會進入「等待 (Pending)」，避免強制中斷正在上傳圖片的進程
+  group: anime-cloudinary-mutations
   cancel-in-progress: false
 
 jobs:
-  crawl-and-update:
+  crawl-and-prepare:
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'workflow_dispatch' ||
+       vars.CRAWLER_SCHEDULE_ENABLED == 'true')
     runs-on: ubuntu-24.04
-
-    # 全域環境變數設定
+    timeout-minutes: 60
+    environment: crawler-production
+    permissions:
+      contents: read
+    outputs:
+      data_changed: ${{ steps.data-changes.outputs.changed }}
+      prepared_sha: ${{ steps.base-sha.outputs.sha }}
     env:
-      # 【時區校正】強制容器使用台灣時間，確保 python 的 datetime.now() 邊界判斷正確
       TZ: Asia/Taipei
-      CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
-      CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
-      CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
-      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-      BUILD_ONLY: false
+      BUILD_ONLY: "false"
+      APP_ENVIRONMENT: "production"
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout main
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # 確保拉取完整的 commit 歷史，避免靜態生成時發生基準點偏移
-          fetch-depth: 1 
+          ref: main
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Record prepared main SHA
+        id: base-sha
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
-          python-version: '3.11'
-          cache: 'pip'
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
 
-      - name: Install dependencies
+      - name: Install locked dependencies
+        run: python -m pip install --require-hashes -r requirements-dev.txt
+
+      - name: Run pre-crawl quality gate
         run: |
-          pip install -r requirements.txt
+          python -m pip check
+          python -m ruff check .
+          python -m pytest
+          BUILD_ONLY=true BUILD_VERSION=preflight python generate_static.py
+          python manage.py validate-all
 
-      - name: Run Crawler & Generate Static Files
+      - name: Crawl, validate, and build
+        env:
+          CLOUDINARY_CLOUD_NAME: ${{ vars.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          SENTRY_BROWSER_DSN: ${{ vars.SENTRY_BROWSER_DSN }}
+          CRAWLER_USER_AGENT: ${{ vars.CRAWLER_USER_AGENT }}
+        run: python generate_static.py
+
+      - name: Validate generated output before commit
         run: |
-          python generate_static.py
+          python manage.py validate-all
+          python manage.py quality-report >> "$GITHUB_STEP_SUMMARY"
+          git diff --check
 
-      - name: Commit and Push Changes
+      - name: Detect meaningful data changes
+        id: data-changes
         run: |
-          git config --global user.name 'GitHub Action Crawler'
-          git config --global user.email 'action@github.com'
-
-          # 【殭屍檔案修復】使用 --all 強制 Git 追蹤檔案的「刪除 (Deleted)」狀態
-          git add --all dist/data/
-          git add cloudinary_cache.json
-
-          # 檢查暫存區是否有實質變更
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "🤖 Auto-update anime data & cache"
-            git push
-            echo "✅ Data pushed to GitHub. Cloudflare Pages should trigger build now."
+          if [[ -n "$(git diff --name-only --diff-filter=D -- dist/data)" ]]; then
+            echo "Automatic quarterly JSON deletion is forbidden."
+            git diff --name-status --diff-filter=D -- dist/data
+            exit 1
           fi
+          if [[ -z "$(git status --porcelain -- dist/data)" ]]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No semantic quarterly data changes. Cache-only changes are not committed."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Upload validated crawler output
+        if: steps.data-changes.outputs.changed == 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: anime-data-${{ github.run_id }}
+          path: |
+            dist/data
+            cloudinary_cache.json
+          if-no-files-found: error
+          retention-days: 1
+
+  commit-data:
+    needs: crawl-and-prepare
+    if: needs.crawl-and-prepare.outputs.data_changed == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout main without persisted credentials
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: main
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Download validated crawler output
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: anime-data-${{ github.run_id }}
+          path: .
+
+      - name: Verify main did not change between jobs
+        env:
+          PREPARED_SHA: ${{ needs.crawl-and-prepare.outputs.prepared_sha }}
+        run: test "$(git rev-parse HEAD)" = "$PREPARED_SHA"
+
+      - name: Commit meaningful data changes only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [[ -n "$(git diff --name-only --diff-filter=D -- dist/data)" ]]; then
+            echo "Automatic quarterly JSON deletion is forbidden."
+            git diff --name-status --diff-filter=D -- dist/data
+            exit 1
+          fi
+          if [[ -z "$(git status --porcelain -- dist/data)" ]]; then
+            echo "No quarterly data change remains after artifact download."
+            exit 0
+          fi
+          git config user.name "GitHub Action Crawler"
+          git config user.email "action@github.com"
+          git add -A -- dist/data cloudinary_cache.json
+          git diff --cached --check
+          git commit -m "chore(data): update anime data"
+          gh auth setup-git
+          git push origin HEAD:main

@@ -1,0 +1,153 @@
+name: Cloudinary Retention Execute
+
+on:
+  workflow_dispatch:
+    inputs:
+      plan_run_id:
+        description: "Successful Retention Dry Run workflow run ID (at least 30 days old)"
+        required: true
+        type: number
+      confirmation:
+        description: "Type DELETE_UNREFERENCED exactly"
+        required: true
+        type: string
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: anime-cloudinary-mutations
+  cancel-in-progress: false
+
+jobs:
+  execute:
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      inputs.confirmation == 'DELETE_UNREFERENCED'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    environment: cloudinary-retention-execute
+    steps:
+      - name: Checkout fresh main without persisted credentials
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: main
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install locked dependencies
+        run: python -m pip install --require-hashes -r requirements.txt
+
+      - name: Validate fresh canonical data
+        run: python manage.py validate-data
+
+      - name: Verify dry-run provenance and download manifest
+        id: provenance
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PLAN_RUN_ID: ${{ inputs.plan_run_id }}
+        run: |
+          if [[ ! "$PLAN_RUN_ID" =~ ^[0-9]+$ ]]; then
+            echo "plan_run_id must be an integer"
+            exit 1
+          fi
+          run_json="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$PLAN_RUN_ID")"
+          workflow_path="$(jq -r .path <<< "$run_json")"
+          case "$workflow_path" in
+            .github/workflows/retention-plan.yml|.github/workflows/retention-plan.yml@main|.github/workflows/retention-plan.yml@refs/heads/main) ;;
+            *) echo "Unexpected retention plan workflow path: $workflow_path"; exit 1 ;;
+          esac
+          test "$(jq -r .head_branch <<< "$run_json")" = "main"
+          test "$(jq -r .conclusion <<< "$run_json")" = "success"
+          test "$(jq -r .event <<< "$run_json")" = "workflow_dispatch"
+          run_created_at="$(jq -r .created_at <<< "$run_json")"
+          test -n "$run_created_at"
+          test "$run_created_at" != "null"
+          echo "created_at=$run_created_at" >> "$GITHUB_OUTPUT"
+          mkdir retention-download
+          gh run download "$PLAN_RUN_ID" \
+            --name "cloudinary-retention-plan-$PLAN_RUN_ID" \
+            --dir retention-download
+          test -f retention-download/retention-plan.json
+
+      - name: Execute reviewed retention manifest
+        env:
+          CLOUDINARY_CLOUD_NAME: ${{ vars.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          CONFIRMATION: ${{ inputs.confirmation }}
+          GH_TOKEN: ${{ github.token }}
+          RETENTION_EXECUTION_CONTEXT: protected-github-environment
+          RETENTION_TRUSTED_CREATED_AT: ${{ steps.provenance.outputs.created_at }}
+        run: |
+          python cloudinary_cleaner.py \
+            --execute \
+            --manifest-input retention-download/retention-plan.json \
+            --confirm "$CONFIRMATION"
+
+      - name: Revalidate data after retention
+        run: python manage.py validate-data
+
+      - name: Preserve invalidated cache for the no-secret commit job
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: retention-cache-${{ github.run_id }}
+          path: cloudinary_cache.json
+          if-no-files-found: error
+          retention-days: 1
+
+  persist-cache:
+    needs: execute
+    if: always() && needs.execute.result != 'skipped'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - name: Checkout current main without persisted credentials
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: main
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Download invalidated cache
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: retention-cache-${{ github.run_id }}
+          path: .retention-cache
+
+      - name: Refuse to overwrite cache from a newer main
+        run: test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+
+      - name: Validate and apply cache artifact
+        run: |
+          test -f .retention-cache/cloudinary_cache.json
+          jq -e 'type == "object" and all(.[]; type == "string")' .retention-cache/cloudinary_cache.json > /dev/null
+          cp .retention-cache/cloudinary_cache.json cloudinary_cache.json
+
+      - name: Commit cache invalidation if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- cloudinary_cache.json; then
+            echo "Retention did not change the cache."
+            exit 0
+          fi
+          git config user.name "GitHub Action Retention"
+          git config user.email "action@github.com"
+          git add -- cloudinary_cache.json
+          git diff --cached --check
+          git commit -m "chore(cache): invalidate retained Cloudinary URLs"
+          gh auth setup-git
+          git push origin HEAD:main

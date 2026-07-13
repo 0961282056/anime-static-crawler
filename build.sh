@@ -1,17 +1,13 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-# Cloudflare Pages Build Script
-# 目的：在 Cloudflare 部署環境中，只安裝生成 HTML 所需的最小依賴，跳過爬蟲重型套件。
+echo "Installing locked build dependencies..."
+python -m pip install --require-hashes -r requirements-build.txt
 
-echo "🚀 [Fast Build] 偵測到 Cloudflare 部署模式..."
-
-# 設定環境變數，告訴 Python 腳本現在是 Build Only 模式
+echo "Validating tracked data and generating Cloudflare Pages output..."
 export BUILD_ONLY=true
-
-# 1. 安裝輕量依賴 (加入 sentry-sdk)
-echo "📦 安裝 HTML 生成所需套件 (Jinja2, Sentry)..."
-pip install jinja2 sentry-sdk
-
-# 2. 執行靜態生成
-echo "🔨 開始生成靜態 HTML..."
+export PYTHONDONTWRITEBYTECODE=1
 python generate_static.py
+python manage.py validate-all
+
+echo "Static build completed successfully."

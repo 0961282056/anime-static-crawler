@@ -1,0 +1,8 @@
+# Full crawler runtime. The build layer is shared with Cloudflare Pages.
+-r requirements-build.in
+
+beautifulsoup4>=4.15,<5
+cloudinary>=1.45,<2
+lxml>=6.1.1,<7
+Pillow>=12.3,<13
+urllib3>=2.7,<3

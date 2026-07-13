@@ -1,0 +1,82 @@
+name: Quality Gate
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Verify isolated Cloudflare build
+        env:
+          BUILD_VERSION: "ci-build-lock"
+          APP_ENVIRONMENT: "test"
+        run: |
+          python -m venv "$RUNNER_TEMP/cloudflare-build-venv"
+          source "$RUNNER_TEMP/cloudflare-build-venv/bin/activate"
+          bash build.sh
+
+      - name: Install locked dependencies
+        run: python -m pip install --require-hashes -r requirements-dev.txt
+
+      - name: Verify dependency graph
+        run: python -m pip check
+
+      - name: Verify lock files are current
+        run: |
+          python -m piptools compile --resolver=backtracking --strip-extras --allow-unsafe --generate-hashes --newline=LF -o requirements-build.txt requirements-build.in
+          python -m piptools compile --resolver=backtracking --strip-extras --allow-unsafe --generate-hashes --newline=LF -o requirements.txt requirements.in
+          python -m piptools compile --resolver=backtracking --strip-extras --allow-unsafe --generate-hashes --no-annotate --newline=LF -o requirements-dev.txt requirements-dev.in
+          git diff --exit-code -- requirements-build.txt requirements.txt requirements-dev.txt
+          if [[ -n "$(git status --porcelain --untracked-files=all -- requirements-build.txt requirements.txt requirements-dev.txt)" ]]; then
+            git status --short --untracked-files=all -- requirements-build.txt requirements.txt requirements-dev.txt
+            exit 1
+          fi
+
+      - name: Lint and format
+        run: |
+          python -m ruff check .
+          python -m ruff format --check .
+
+      - name: Run tests
+        run: python -m pytest
+
+      - name: Audit Python dependencies
+        run: python -m pip_audit --require-hashes -r requirements.txt
+
+      - name: Build deterministic static output
+        env:
+          BUILD_ONLY: "true"
+          BUILD_VERSION: "ci"
+          APP_ENVIRONMENT: "test"
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          python generate_static.py
+          python manage.py validate-all
+          python manage.py quality-report >> "$GITHUB_STEP_SUMMARY"
+          node --check static/js/main.js
+          node --check static/js/monitoring.js

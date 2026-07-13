@@ -1,7 +1,24 @@
+function readAppConfig() {
+    const element = document.getElementById('app-config');
+    if (!element) {
+        throw new Error('Missing #app-config build metadata');
+    }
+    return {
+        defaultYear: element.dataset.defaultYear,
+        defaultSeason: element.dataset.defaultSeason,
+        buildVersion: element.dataset.buildVersion,
+        availableData: JSON.parse(element.dataset.availableData)
+    };
+}
+
 function animeApp() {
+    const appConfig = readAppConfig();
     return {
         // --- 1. 資料狀態 ---
-        availableData: window.SERVER_DATA.availableData,
+        availableData: appConfig.availableData,
+        defaultYear: appConfig.defaultYear,
+        defaultSeason: appConfig.defaultSeason,
+        buildVersion: appConfig.buildVersion,
         years: [],
         seasons: [],
         
@@ -51,8 +68,8 @@ function animeApp() {
                 else currentSeason = '秋';
 
                 // 3. 決策變數
-                let targetYear = window.SERVER_DATA.defaultYear;
-                let targetSeason = window.SERVER_DATA.defaultSeason;
+                let targetYear = this.defaultYear;
+                let targetSeason = this.defaultSeason;
                 let shouldRestoreScroll = false; // 預設不恢復捲動位置
 
                 // --- 決策邏輯 ---
@@ -148,7 +165,7 @@ function animeApp() {
                 while (retries > 0) {
                     try {
                         // 加上 cache buster 確保不讀到錯誤的快取
-                        res = await fetch(`data/${cacheKey}.json?v=${window.SERVER_DATA.buildVersion}`);
+                        res = await fetch(`data/${cacheKey}.json?v=${this.buildVersion}`);
                         if (res.ok) break; // 成功取得資料，跳出迴圈
                     } catch (e) {
                         fetchError = e;
@@ -279,44 +296,53 @@ function animeApp() {
                 font-family: 'Noto Sans TC', sans-serif;
             `;
 
-            // 【安全性：輕量級 HTML 跳脫，防禦 XSS 注入】
-            const escapeHTML = (str) => {
-                return str.replace(/[&<>'"]/g, 
-                    tag => ({
-                        '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
-                    }[tag] || tag)
-                );
-            };
-
-            // 2. 填入資料與高畫質 URL 轉換
+            // 2. 使用 DOM API 建卡片，避免把外部資料拼成 HTML
             this.shareList.forEach(item => {
-                let highResImgUrl = item.img;
-                if (highResImgUrl.includes('cloudinary.com') && highResImgUrl.includes('/upload/')) {
-                    highResImgUrl = highResImgUrl.replace(/\/upload\/[^/]+\/v1\//, '/upload/q_auto:best,f_auto/v1/');
+                const imageUrl = new URL(item.img, window.location.origin);
+                if (
+                    imageUrl.protocol !== 'https:' ||
+                    imageUrl.hostname !== 'res.cloudinary.com' ||
+                    !imageUrl.pathname.includes('/image/upload/')
+                ) {
+                    throw new Error('分享圖片來源不是允許的 Cloudinary URL');
                 }
 
-                const cardHtml = `
-                    <div style="
-                        width: 100%; display: flex; flex-direction: column;
-                        background-color: #2b2b2b; border-radius: 24px;
-                        overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-                    ">
-                        <div style="width: 100%; line-height: 0;">
-                            <img src="${highResImgUrl}" style="width: 100%; height: auto; display: block;" crossorigin="anonymous">
-                        </div>
-                        <div style="
-                            padding: 30px 35px; background-color: #252525;
-                            border-top: 1px solid #333; display: flex;
-                            flex-direction: column; justify-content: center; 
-                        ">
-                            <h2 style="
-                                margin: 0; font-size: 42px; font-weight: 700;
-                                color: #ffffff; line-height: 1.4; min-height: 1.4em; 
-                            ">${escapeHTML(item.name)}</h2>
-                        </div>
-                    </div>
+                imageUrl.pathname = imageUrl.pathname.replace(
+                    /\/image\/upload\/(?:[^/]+\/)?/,
+                    '/image/upload/q_auto:best,f_auto/'
+                );
+
+                const card = document.createElement('div');
+                card.style.cssText = `
+                    width: 100%; display: flex; flex-direction: column;
+                    background-color: #2b2b2b; border-radius: 24px;
+                    overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5);
                 `;
-                exportContainer.insertAdjacentHTML('beforeend', cardHtml);
+
+                const imageWrapper = document.createElement('div');
+                imageWrapper.style.cssText = 'width: 100%; line-height: 0;';
+                const image = document.createElement('img');
+                image.src = imageUrl.toString();
+                image.crossOrigin = 'anonymous';
+                image.alt = '';
+                image.style.cssText = 'width: 100%; height: auto; display: block;';
+                imageWrapper.appendChild(image);
+
+                const titleWrapper = document.createElement('div');
+                titleWrapper.style.cssText = `
+                    padding: 30px 35px; background-color: #252525;
+                    border-top: 1px solid #333; display: flex;
+                    flex-direction: column; justify-content: center;
+                `;
+                const title = document.createElement('h2');
+                title.textContent = String(item.name || '');
+                title.style.cssText = `
+                    margin: 0; font-size: 42px; font-weight: 700;
+                    color: #ffffff; line-height: 1.4; min-height: 1.4em;
+                `;
+                titleWrapper.appendChild(title);
+                card.append(imageWrapper, titleWrapper);
+                exportContainer.appendChild(card);
             });
 
             document.body.appendChild(exportContainer);

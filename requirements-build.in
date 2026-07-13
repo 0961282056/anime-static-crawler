@@ -1,0 +1,7 @@
+# Minimal dependencies required to validate data and build the static site.
+Jinja2>=3.1.6,<4
+pydantic>=2.13.4,<3
+python-dotenv>=1.2.2,<2
+requests>=2.34.2,<3
+sentry-sdk>=2.64,<3
+tzdata>=2026.2,<2027
