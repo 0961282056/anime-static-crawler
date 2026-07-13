@@ -1,255 +1,326 @@
-import os
-import logging
+"""Manual, reference-aware Cloudinary retention CLI.
+
+Examples:
+  python cloudinary_cleaner.py --manifest-output retention-plan.json
+  # Wait for the configured grace period, review the manifest, then:
+  python cloudinary_cleaner.py --execute --manifest-input retention-plan.json \
+      --confirm DELETE_UNREFERENCED
+
+This tool never deletes quarterly JSON files.
+"""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import hmac
 import json
-import re  # 確保導入，用於解析 Cloudinary URL
-from datetime import datetime, timedelta
-import cloudinary.api
+import logging
+import os
+import subprocess
+from datetime import UTC, datetime, timedelta
+from pathlib import Path
+
 from dotenv import load_dotenv
-from config import Config  # 導入 Config 以使用季度月份對應
 
-# ------------------------------------------------------
-# 初始化與設定
-# ------------------------------------------------------
-load_dotenv()
-logging.basicConfig(level=logging.INFO)
+from services.atomic_io import atomic_write_json
+from services.cache_repository import CacheRepository
+from services.errors import DataContractError, RetentionError
+from services.retention import (
+    CONFIRMATION_PHRASE,
+    MAXIMUM_DELETE_COUNT,
+    MAXIMUM_DELETE_FRACTION,
+    MINIMUM_MANIFEST_GRACE_DAYS,
+    MINIMUM_RESOURCE_AGE_DAYS,
+    CloudinaryRetentionService,
+    RetentionPlan,
+)
+from services.settings import ProjectPaths
+
 logger = logging.getLogger(__name__)
+PROTECTED_EXECUTION_CONTEXT = "protected-github-environment"
 
-# 設定快取檔案路徑和資料目錄
-CACHE_FILE = os.path.join(os.getcwd(), 'cloudinary_cache.json')
-JSON_DIR = os.path.join(os.getcwd(), 'dist', 'data')
 
-# 設置 Cloudinary 連線
-try:
-    cloudinary.config(
-        cloud_name=os.getenv("CLOUDINARY_CLOUD_NAME"),
-        api_key=os.getenv("CLOUDINARY_API_KEY"),
-        api_secret=os.getenv("CLOUDINARY_API_SECRET"),
-        secure=True
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Plan or execute deletion of Cloudinary images that no current "
+            "quarterly JSON references. The default is dry-run."
+        )
     )
-except Exception as e:
-    logger.error(f"Cloudinary 配置失敗: {e}. 請檢查 CLOUDINARY_* 變數。")
-    pass 
+    parser.add_argument(
+        "--minimum-age-days",
+        type=int,
+        default=30,
+        help="Only plan resources older than this many days (default: 30)",
+    )
+    parser.add_argument(
+        "--manifest-output",
+        type=Path,
+        help="Write the dry-run plan to this JSON file",
+    )
+    parser.add_argument(
+        "--execute",
+        action="store_true",
+        help="Execute a previously reviewed and aged manifest",
+    )
+    parser.add_argument(
+        "--manifest-input",
+        type=Path,
+        help="Manifest created by an earlier dry-run",
+    )
+    parser.add_argument(
+        "--confirm",
+        default="",
+        help=f"Execution requires the exact phrase {CONFIRMATION_PHRASE}",
+    )
+    parser.add_argument(
+        "--grace-days",
+        type=int,
+        default=30,
+        help="Manifest review period before execution (default: 30)",
+    )
+    parser.add_argument(
+        "--max-delete",
+        type=int,
+        default=50,
+        help="Absolute per-run deletion cap (default: 50)",
+    )
+    parser.add_argument(
+        "--max-fraction",
+        type=float,
+        default=0.02,
+        help="Maximum inventory fraction per run (default: 0.02)",
+    )
+    return parser.parse_args()
 
-def load_local_cache() -> dict:
-    """載入本地的 Cloudinary 快取檔案。"""
-    if os.path.exists(CACHE_FILE):
-        try:
-            with open(CACHE_FILE, 'r', encoding='utf-8') as f:
-                content = json.load(f)
-                # 確保回傳的是字典，如果檔案是空的或是空列表，回傳空字典
-                return content if isinstance(content, dict) else {}
-        except json.JSONDecodeError:
-            logger.warning(f"快取檔案 {CACHE_FILE} 格式錯誤或為空，視為空快取。")
-            return {}
-    return {}
 
-def save_local_cache(cache_data: dict):
-    """儲存本地的 Cloudinary 快取檔案。"""
+def manifest_payload(plan: RetentionPlan) -> dict:
+    payload = {
+        "schema_version": 2,
+        "created_at": plan.created_at.isoformat(),
+        "minimum_age_days": plan.minimum_age_days,
+        "inventory_count": len(plan.cloud_resources),
+        "referenced_count": len(plan.referenced),
+        "delete_candidates": list(plan.delete_candidates),
+    }
+    payload["manifest_sha256"] = manifest_digest(payload)
+    return payload
+
+
+def manifest_digest(payload: dict) -> str:
+    unsigned = {
+        key: value for key, value in payload.items() if key != "manifest_sha256"
+    }
+    canonical = json.dumps(
+        unsigned,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    return hashlib.sha256(canonical).hexdigest()
+
+
+def load_manifest(path: Path) -> tuple[datetime, int, set[str]]:
     try:
-        with open(CACHE_FILE, 'w', encoding='utf-8') as f:
-            json.dump(cache_data, f, ensure_ascii=False, indent=4)
-    except Exception as e:
-        logger.error(f"無法儲存快取檔案: {CACHE_FILE}。錯誤: {e}")
-
-def get_quarters_to_keep(years_to_keep: int) -> set:
-    """計算出最近 n 年內 (包含當前) 需要保留的季度 (Year, Season) 集合。"""
-    now = datetime.now()
-    quarters_to_keep = set()
-    
-    # 遍歷從 n 年前到現在的所有月份
-    start_date = now - timedelta(days=365 * years_to_keep)
-    
-    current_year = start_date.year
-    current_month = start_date.month
-
-    while current_year <= now.year or (current_year == now.year and current_month <= now.month):
-        # 確保 season_month 是 1, 4, 7, 10
-        season_month = (current_month - 1) // 3 * 3 + 1
-        
-        # 根據月份計算季度名稱
-        season_name = next((k for k, v in Config.SEASON_TO_MONTH.items() if v == season_month), '未知')
-        
-        if season_name != '未知':
-            quarters_to_keep.add((str(current_year), season_name))
-
-        # 進到下一個季度
-        current_month += 3
-        if current_month > 12:
-            current_month -= 12
-            current_year += 1
-            
-    # 將未來一季也納入保留範圍
-    current_quarter_start_month = (now.month - 1) // 3 * 3 + 1
-    next_month = current_quarter_start_month + 3
-        
-    if next_month > 12:
-        next_year = now.year + 1
-        next_month -= 12
-    else:
-        next_year = now.year
-        
-    next_season_name = next((k for k, v in Config.SEASON_TO_MONTH.items() if v == next_month), None)
-
-    if next_season_name:
-         quarters_to_keep.add((str(next_year), next_season_name))
-
-    return quarters_to_keep
-
-
-def cleanup_cloudinary_resources(years_to_keep: int = 15, folder_prefix: str = "anime_covers/") -> int:
-    """
-    1. 檢查本地快取，若為空則進入「全面重置模式」。
-    2. 若不為空，則建立白名單，僅保留最近 n 年的圖片。
-    3. 遍歷 Cloudinary 刪除不需要的圖片。
-    """
-    
-    if not os.getenv("CLOUDINARY_API_KEY"):
-        logger.warning("Cloudinary API 憑證缺失，跳過圖片清理與快取同步。")
-        return 0
-
-    # ------------------------------------------------------
-    # 步驟 0: 檢查快取狀態 (決定是否全數刪除)
-    # ------------------------------------------------------
-    local_cache = load_local_cache()
-    public_ids_to_keep = set()
-    
-    # 如果快取為空，觸發全面清理
-    if not local_cache:
-        logger.warning(f"⚠️ 檢測到本地快取 ({CACHE_FILE}) 為空或不存在。")
-        logger.warning(f"🚨 將執行「全面重置」模式：刪除 Cloudinary 上所有 '{folder_prefix}' 下的資源！")
-        return 0
-        # public_ids_to_keep 保持為空 set()，這會導致後續步驟刪除所有找到的資源
-        
-    else:
-        # ------------------------------------------------------
-        # 步驟 1: 建立 Public ID 白名單 (正常模式)
-        # ------------------------------------------------------
-        logger.info(f"--- 步驟 1: 建立 Cloudinary 圖片白名單 (保留最近 {years_to_keep} 年的季度資料) ---")
-        
-        quarters_to_keep = get_quarters_to_keep(years_to_keep)
-        
-        for year, season in quarters_to_keep:
-            json_filename = f'{year}_{season}.json'
-            json_path = os.path.join(JSON_DIR, json_filename)
-            
-            if os.path.exists(json_path):
-                try:
-                    with open(json_path, 'r', encoding='utf-8') as f:
-                        data = json.load(f)
-                        for anime in data.get('anime_list', []):
-                            url = anime.get('anime_image_url')
-                            if url and 'cloudinary.com' in url:
-                                # 從 Cloudinary URL 中解析出 Public ID
-                                match = re.search(r'v\d+/({})/([\w]+)'.format(folder_prefix.strip('/')), url)
-                                if match:
-                                    public_id = f"{match.group(1)}/{match.group(2)}"
-                                    public_ids_to_keep.add(public_id)
-                                
-                except Exception as e:
-                    logger.error(f"讀取或解析 JSON 檔案失敗: {json_path}. 錯誤: {e}")
-
-        logger.info(f"白名單建立完成。共 {len(public_ids_to_keep)} 筆圖片 (來自 {len(quarters_to_keep)} 個季度) 將被保留。")
-
-
-    # ------------------------------------------------------
-    # 步驟 2: 遍歷 Cloudinary 資源並刪除不在白名單的
-    # ------------------------------------------------------
-    total_deleted_cloud = 0
-    
-    logger.info("--- 步驟 2: 遍歷雲端資源並刪除白名單以外的圖片 ---")
-
-    public_ids_to_delete_all = [] 
-    next_cursor = None
-    
-    while True:
-        try:
-            # 使用 resources() 遍歷所有資源
-            resources_result = cloudinary.api.resources(
-                type='upload', 
-                prefix=folder_prefix, 
-                max_results=500,
-                next_cursor=next_cursor,
+        raw = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(raw, dict) or raw.get("schema_version") != 2:
+            raise ValueError("unsupported manifest schema_version")
+        supplied_digest = raw.get("manifest_sha256")
+        if not isinstance(supplied_digest, str) or not hmac.compare_digest(
+            supplied_digest,
+            manifest_digest(raw),
+        ):
+            raise ValueError("manifest_sha256 does not match the manifest contents")
+        created_at = datetime.fromisoformat(raw["created_at"])
+        if created_at.tzinfo is None:
+            raise ValueError("manifest created_at must include a timezone")
+        minimum_age_days = int(raw["minimum_age_days"])
+        if minimum_age_days < MINIMUM_RESOURCE_AGE_DAYS:
+            raise ValueError(
+                f"minimum_age_days must be at least {MINIMUM_RESOURCE_AGE_DAYS}"
             )
-            
-            resources_list = resources_result.get('resources', [])
-            
-            if not resources_list:
-                break
+        inventory_count = int(raw["inventory_count"])
+        referenced_count = int(raw["referenced_count"])
+        candidate_list = raw["delete_candidates"]
+        if not isinstance(candidate_list, list) or not all(
+            isinstance(candidate, str) and candidate.startswith("anime_covers/")
+            for candidate in candidate_list
+        ):
+            raise ValueError("delete_candidates must contain strings")
+        candidates = set(candidate_list)
+        if len(candidates) != len(candidate_list):
+            raise ValueError("delete_candidates may not contain duplicates")
+        if inventory_count < 0 or referenced_count < 0:
+            raise ValueError("manifest counts may not be negative")
+        if referenced_count > inventory_count or len(candidates) > inventory_count:
+            raise ValueError("manifest counts are inconsistent")
+        return created_at, minimum_age_days, candidates
+    except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
+        raise RetentionError(f"Invalid retention manifest {path}: {exc}") from exc
 
-            current_batch_to_delete = []
-            for res in resources_list:
-                public_id = res.get('public_id')
-                
-                # 如果 Public ID 不在保留列表中 (或是白名單為空)，則標記刪除
-                if public_id and public_id not in public_ids_to_keep:
-                    current_batch_to_delete.append(public_id)
 
-            if current_batch_to_delete:
-                public_ids_to_delete_all.extend(current_batch_to_delete)
-                logger.info(f"發現 {len(current_batch_to_delete)} 筆待刪除資源...")
+def require_protected_execution_context() -> None:
+    expected = {
+        "GITHUB_ACTIONS": "true",
+        "GITHUB_REF": "refs/heads/main",
+        "RETENTION_EXECUTION_CONTEXT": PROTECTED_EXECUTION_CONTEXT,
+    }
+    mismatches = [
+        name for name, value in expected.items() if os.getenv(name, "") != value
+    ]
+    expected_sha = os.getenv("GITHUB_SHA", "").strip()
+    if mismatches or not expected_sha:
+        raise RetentionError(
+            "Destructive retention is restricted to the protected main-branch "
+            "GitHub Actions environment"
+        )
+    try:
+        current_sha = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+        data_status = subprocess.run(
+            ["git", "status", "--porcelain", "--", "dist/data"],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+    except (OSError, subprocess.CalledProcessError) as exc:
+        raise RetentionError(
+            f"Unable to verify the protected Git state: {exc}"
+        ) from exc
+    if current_sha != expected_sha or data_status:
+        raise RetentionError(
+            "Retention execution requires an unchanged dist/data tree at GITHUB_SHA"
+        )
 
-            next_cursor = resources_result.get('next_cursor')
-            if not next_cursor:
-                break
-            
-        except Exception as e:
-            logger.error(f"Cloudinary 遍歷過程中發生錯誤: {e}")
-            break
-            
-    # 執行批量刪除
-    if public_ids_to_delete_all:
-        logger.info(f"--- 步驟 2B: 準備刪除總共 {len(public_ids_to_delete_all)} 筆雲端資源 ---")
-        
-        batch_size = 100
-        for i in range(0, len(public_ids_to_delete_all), batch_size):
-            batch = public_ids_to_delete_all[i:i + batch_size]
-            try:
-                # 批量刪除
-                delete_result = cloudinary.api.delete_resources(
-                    batch, 
-                    resource_type="image", 
-                    type="upload"
-                )
-                
-                deleted_count = len(delete_result.get('deleted', {})) 
-                
-                total_deleted_cloud += deleted_count
-                logger.info(f"成功刪除一批 {deleted_count} 筆雲端資源。")
-            except Exception as e:
-                logger.error(f"批量刪除時發生錯誤 (批次 {i//batch_size + 1}): {e}")
-                
-    logger.info(f"--- 雲端清理完成。總共刪除 {total_deleted_cloud} 筆雲端資源。---")
 
-    # ------------------------------------------------------
-    # 步驟 3: 同步清理本地快取 (刪除已刪除 Public ID 的快取記錄)
-    # ------------------------------------------------------
-    
-    # 如果是全面重置模式 (local_cache 為空)，這一步其實沒什麼好刪的，但邏輯通用
-    if public_ids_to_delete_all:
-        deleted_public_ids_for_cache = set(f"cloudinary_{pid.split('/')[-1]}" for pid in public_ids_to_delete_all)
-        total_deleted_cache = 0
-        
-        # 重新讀取一次快取 (防止在執行過程中快取被其他進程修改，雖然此腳本通常單獨執行)
-        local_cache = load_local_cache()
-        original_cache_size = len(local_cache)
-        
-        if local_cache:
-            # 找出快取中需要刪除的鍵
-            keys_to_delete = set(local_cache.keys()) & deleted_public_ids_for_cache
-            
-            for key in keys_to_delete:
-                del local_cache[key]
-                total_deleted_cache += 1
-                
-            if total_deleted_cache > 0:
-                save_local_cache(local_cache)
-                logger.info(f"成功同步快取。從 {original_cache_size} 筆記錄中移除 {total_deleted_cache} 筆已刪除的圖片快取。")
-            else:
-                logger.info("本地快取中沒有找到需要移除的舊記錄。")
-            
-    logger.info(f"--- Cloudinary 圖片清理與快取同步作業全部完成。---")
-    return total_deleted_cloud
+def validate_trusted_manifest_time(manifest_created_at: datetime) -> None:
+    raw = os.getenv("RETENTION_TRUSTED_CREATED_AT", "").strip()
+    try:
+        trusted_created_at = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+    except ValueError as exc:
+        raise RetentionError(
+            "RETENTION_TRUSTED_CREATED_AT must be a timezone-aware GitHub run time"
+        ) from exc
+    if trusted_created_at.tzinfo is None:
+        raise RetentionError("RETENTION_TRUSTED_CREATED_AT must include a timezone")
+    trusted_created_at = trusted_created_at.astimezone(UTC)
+    manifest_created_at = manifest_created_at.astimezone(UTC)
+    now = datetime.now(UTC)
+    if now - trusted_created_at < timedelta(days=MINIMUM_MANIFEST_GRACE_DAYS):
+        raise RetentionError(
+            "The trusted GitHub dry-run is younger than the required 30 days"
+        )
+    manifest_delay = manifest_created_at - trusted_created_at
+    if not timedelta(0) <= manifest_delay <= timedelta(minutes=30):
+        raise RetentionError(
+            "Manifest created_at is not consistent with its trusted GitHub run"
+        )
 
-if __name__ == '__main__':
-    # 執行清理，預設保留 15 年
-    cleanup_cloudinary_resources(years_to_keep=15)
+
+def verify_remote_main_unchanged() -> None:
+    repository = os.getenv("GITHUB_REPOSITORY", "").strip()
+    expected_sha = os.getenv("GITHUB_SHA", "").strip()
+    if not repository or not expected_sha or not os.getenv("GH_TOKEN", "").strip():
+        raise RetentionError(
+            "Remote main verification requires GitHub repository, SHA, and token"
+        )
+    try:
+        remote_sha = subprocess.run(
+            [
+                "gh",
+                "api",
+                f"repos/{repository}/commits/main",
+                "--jq",
+                ".sha",
+            ],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+    except (OSError, subprocess.CalledProcessError) as exc:
+        raise RetentionError(f"Unable to verify current remote main: {exc}") from exc
+    if remote_sha != expected_sha:
+        raise RetentionError(
+            "Remote main changed after approval; re-run retention from fresh main"
+        )
+
+
+def main() -> int:
+    load_dotenv()
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s %(levelname)s %(name)s %(message)s",
+    )
+    args = parse_args()
+    if args.execute:
+        require_protected_execution_context()
+    paths = ProjectPaths.from_environment()
+    cache = CacheRepository(paths.cache_file)
+    service = CloudinaryRetentionService(paths.data_dir, cache)
+
+    if args.minimum_age_days < MINIMUM_RESOURCE_AGE_DAYS:
+        raise RetentionError(
+            f"--minimum-age-days must be at least {MINIMUM_RESOURCE_AGE_DAYS}"
+        )
+    if args.grace_days < MINIMUM_MANIFEST_GRACE_DAYS:
+        raise RetentionError(
+            f"--grace-days must be at least {MINIMUM_MANIFEST_GRACE_DAYS}"
+        )
+    if not 1 <= args.max_delete <= MAXIMUM_DELETE_COUNT:
+        raise RetentionError(
+            f"--max-delete must be between 1 and {MAXIMUM_DELETE_COUNT}"
+        )
+    if not 0 < args.max_fraction <= MAXIMUM_DELETE_FRACTION:
+        raise RetentionError(
+            "--max-fraction must be greater than 0 and at most "
+            f"{MAXIMUM_DELETE_FRACTION}"
+        )
+
+    if not args.execute:
+        plan = service.plan(minimum_age_days=args.minimum_age_days)
+        payload = manifest_payload(plan)
+        logger.info(
+            "DRY RUN: inventory=%s referenced=%s candidates=%s",
+            payload["inventory_count"],
+            payload["referenced_count"],
+            len(payload["delete_candidates"]),
+        )
+        if args.manifest_output:
+            atomic_write_json(args.manifest_output.resolve(), payload)
+            logger.info("Retention manifest written to %s", args.manifest_output)
+        else:
+            print(json.dumps(payload, ensure_ascii=False, indent=2))
+        return 0
+
+    if not args.manifest_input:
+        raise RetentionError("--execute requires --manifest-input")
+    manifest_created_at, minimum_age_days, manifest_candidates = load_manifest(
+        args.manifest_input.resolve()
+    )
+    validate_trusted_manifest_time(manifest_created_at)
+    current_plan = service.plan(minimum_age_days=minimum_age_days)
+    removed = service.execute(
+        current_plan,
+        confirmation=args.confirm,
+        manifest_candidates=manifest_candidates,
+        manifest_created_at=manifest_created_at,
+        grace_days=args.grace_days,
+        max_delete=args.max_delete,
+        max_fraction=args.max_fraction,
+        pre_delete_check=verify_remote_main_unchanged,
+    )
+    logger.info("Confirmed removal of %s unreferenced resources", len(removed))
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except (DataContractError, RetentionError) as exc:
+        logger.error("%s", exc)
+        raise SystemExit(1) from exc

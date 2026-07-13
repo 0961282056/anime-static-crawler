@@ -64,9 +64,14 @@ body {
 /* --- 主佈局 --- */
 .main-layout {
     display: grid;
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: minmax(280px, 320px) minmax(0, 1fr);
     gap: 30px;
     align-items: start;
+}
+
+.control-panel,
+.content-area {
+    min-width: 0;
 }
 
 /* =========================================
@@ -559,15 +564,18 @@ body {
 /* --- 響應式 (Mobile RWD) --- */
 @media (max-width: 900px) {
     .main-layout {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
     }
     
     .control-panel {
         position: static;
+        width: 100%;
         height: auto;
         max-height: none;
         margin-bottom: 20px;
         padding: 20px;
+        box-sizing: border-box;
     }
     
     .panel-inner {
@@ -583,8 +591,14 @@ body {
     
     #shareListContainer {
         flex: none;
+        min-width: 0;
         height: auto;
         max-height: 300px;
+    }
+
+    .share-item-info,
+    .share-item-title {
+        min-width: 0;
     }
     
     .form-group-row {

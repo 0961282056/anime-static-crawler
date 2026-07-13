@@ -4,18 +4,17 @@
 
 {% block head %}
 <meta name="description" content="快速查詢動畫資料">
-<script>
-    // 將後端變數注入到全域，供 Alpine.js 讀取
-    window.SERVER_DATA = {
-        defaultYear: "{{ selected_year }}",
-        defaultSeason: "{{ selected_season }}",
-        availableData: JSON.parse('{{ available_data_json | safe }}'),
-        buildVersion: "{{ build_version }}"
-    };
-</script>
 {% endblock %}
 
 {% block body %}
+<div id="app-config"
+     hidden
+     data-default-year="{{ selected_year }}"
+     data-default-season="{{ selected_season }}"
+     data-available-data="{{ available_data_json }}"
+     data-build-version="{{ build_version }}"
+     data-sentry-dsn="{{ sentry_browser_dsn }}"
+     data-environment="{{ app_environment }}"></div>
 <div x-data="animeApp()" x-init="initApp()" class="app-wrapper">
 
     <header class="site-header">
@@ -131,7 +130,8 @@
                                     <i class="fas fa-plus"></i> 加入清單
                                 </button>
                                 <a :href="'https://ani.gamer.com.tw/search.php?keyword=' + encodeURIComponent(anime.anime_name)" 
-                                   target="_blank" class="btn-add" style="border-color: #00cec9; color: #00cec9;">
+                                   target="_blank" rel="noopener noreferrer"
+                                   class="btn-add" style="border-color: #00cec9; color: #00cec9;">
                                     📺 動畫瘋搜尋
                                 </a>
                             </div>

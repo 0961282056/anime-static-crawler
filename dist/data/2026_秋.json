@@ -1,13 +1,24 @@
 {
-    "anime_list": [
-        {
-            "bangumi_id": "未知ID",
-            "anime_name": "遭到流放的轉生重騎士憑藉遊戲知識大開無雙",
-            "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c0a3f53f694343004d6a47ba103f389d",
-            "premiere_date": "四",
-            "premiere_time": "24:26",
-            "story": "有著劍聖血統的埃爾瑪，在十五歲時的〈祝福儀式〉中，顯現出最典型的垃圾職業重騎士，因而遭剝奪走繼承權，並且趕出家門。重騎士的能力值非常偏重一方，技能沒有半個堪用。更甚至，還被所有人公認為是膽小怠惰的人才會得到的職業。但埃爾瑪知道，這個世界是他曾經玩到透徹的遊戲世界──而重騎士，才是真正最強的職業！埃爾瑪於是全力動用上輩子的知識，開始有效率地攻略這個世界！"
-        }
-    ],
-    "generated_at": "2026-07-13T02:04:14.077090"
+  "schema_version": 1,
+  "anime_list": [
+    {
+      "bangumi_id": "anime-2229",
+      "anime_name": "遭到流放的轉生重騎士憑藉遊戲知識大開無雙",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c0a3f53f694343004d6a47ba103f389d",
+      "premiere_date": "四",
+      "premiere_time": "24:26",
+      "story": "有著劍聖血統的埃爾瑪，在十五歲時的〈祝福儀式〉中，顯現出最典型的垃圾職業重騎士，因而遭剝奪走繼承權，並且趕出家門。重騎士的能力值非常偏重一方，技能沒有半個堪用。更甚至，還被所有人公認為是膽小怠惰的人才會得到的職業。但埃爾瑪知道，這個世界是他曾經玩到透徹的遊戲世界──而重騎士，才是真正最強的職業！埃爾瑪於是全力動用上輩子的知識，開始有效率地攻略這個世界！"
+    }
+  ],
+  "generated_at": "2026-07-13T08:58:28.770298+08:00",
+  "source_url": "https://acgsecrets.hk/bangumi/202610/",
+  "quality": {
+    "source_count": 1,
+    "record_count": 1,
+    "parse_failure_count": 0,
+    "fallback_id_count": 0,
+    "missing_story_count": 0,
+    "missing_date_count": 0,
+    "missing_time_count": 0
+  }
 }
