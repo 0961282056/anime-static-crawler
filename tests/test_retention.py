@@ -11,10 +11,20 @@ from services.errors import DataContractError, RetentionError
 from services.retention import (
     CONFIRMATION_PHRASE,
     CloudinaryRetentionService,
+    PreparedDeletion,
     RetentionPlan,
     RetentionPlanner,
+    cloudinary_public_id_from_url,
+    is_managed_public_id,
     referenced_public_ids,
 )
+
+SHARED_DIGEST = "a" * 64
+SHARED_PUBLIC_ID = f"anime_covers/{SHARED_DIGEST}"
+LEGACY_DIGEST = "b" * 32
+LEGACY_PUBLIC_ID = f"anime_covers/{LEGACY_DIGEST}"
+INVENTORY_ONE = f"anime_covers/{'1' * 64}"
+INVENTORY_TWO = f"anime_covers/{'2' * 32}"
 
 
 def _write_references(path: Path, *image_urls: str) -> None:
@@ -56,16 +66,66 @@ def test_shared_image_reference_is_deduplicated_across_quarters(
     data_dir = tmp_path / "data"
     data_dir.mkdir()
     shared_webp = (
-        "https://res.cloudinary.com/demo/image/upload/v1/anime_covers/shared-cover.webp"
+        f"https://res.cloudinary.com/demo/image/upload/v1/{SHARED_PUBLIC_ID}.webp"
     )
     shared_jpg = (
         "https://res.cloudinary.com/demo/image/upload/f_auto,q_auto/"
-        "v2/anime_covers/shared-cover.jpg"
+        f"v2/{SHARED_PUBLIC_ID}.jpg"
     )
     _write_references(data_dir / "2026_春.json", shared_webp)
     _write_references(data_dir / "2026_夏.json", shared_jpg)
 
-    assert referenced_public_ids(data_dir) == {"anime_covers/shared-cover"}
+    assert referenced_public_ids(data_dir) == {SHARED_PUBLIC_ID}
+
+
+@pytest.mark.parametrize("public_id", [SHARED_PUBLIC_ID, LEGACY_PUBLIC_ID])
+def test_public_id_parser_accepts_exact_uploader_contract_after_upload_marker(
+    public_id: str,
+) -> None:
+    url = (
+        "https://res.cloudinary.com/anime_covers/image/upload/"
+        f"f_auto,q_auto/v42/{public_id}.webp?cache-bust=1#cover"
+    )
+
+    assert cloudinary_public_id_from_url(url) == public_id
+
+
+@pytest.mark.parametrize("public_id", [SHARED_PUBLIC_ID, LEGACY_PUBLIC_ID])
+def test_managed_public_id_accepts_current_and_legacy_digests(public_id: str) -> None:
+    assert is_managed_public_id(public_id) is True
+
+
+@pytest.mark.parametrize(
+    "url",
+    [
+        (
+            "https://res.cloudinary.com/demo/image/upload/v1/"
+            f"anime_covers/series/{SHARED_DIGEST}.webp"
+        ),
+        (
+            "https://res.cloudinary.com/anime_covers/image/upload/v1/"
+            f"unmanaged/{SHARED_DIGEST}.webp"
+        ),
+        (
+            "https://res.cloudinary.com/demo/image/upload/anime_covers/v1/"
+            f"unmanaged/{SHARED_DIGEST}.webp"
+        ),
+        (
+            "https://res.cloudinary.com.evil.example/demo/image/upload/v1/"
+            f"{SHARED_PUBLIC_ID}.webp"
+        ),
+        (
+            "https://res.cloudinary.com/demo/image/upload/v1/anime_covers/"
+            f"{'a' * 31}.webp"
+        ),
+        (
+            "https://res.cloudinary.com/demo/image/upload/v1/anime_covers/"
+            f"{'A' * 32}.webp"
+        ),
+    ],
+)
+def test_public_id_parser_rejects_nested_and_path_collision_urls(url: str) -> None:
+    assert cloudinary_public_id_from_url(url) is None
 
 
 def test_retention_plan_never_deletes_referenced_or_too_recent_resources(
@@ -74,7 +134,7 @@ def test_retention_plan_never_deletes_referenced_or_too_recent_resources(
     data_dir = tmp_path / "data"
     data_dir.mkdir()
     shared_url = (
-        "https://res.cloudinary.com/demo/image/upload/v1/anime_covers/shared-cover.webp"
+        f"https://res.cloudinary.com/demo/image/upload/v1/{SHARED_PUBLIC_ID}.webp"
     )
     _write_references(data_dir / "2026_夏.json", shared_url)
     referenced = referenced_public_ids(data_dir)
@@ -83,7 +143,7 @@ def test_retention_plan_never_deletes_referenced_or_too_recent_resources(
     plan = RetentionPlanner().build(
         referenced=referenced,
         cloud_resources={
-            "anime_covers/shared-cover": now - timedelta(days=365),
+            SHARED_PUBLIC_ID: now - timedelta(days=365),
             "anime_covers/old-unreferenced": now - timedelta(days=31),
             "anime_covers/at-cutoff": now - timedelta(days=30),
             "anime_covers/recent-unreferenced": now - timedelta(days=29),
@@ -96,18 +156,30 @@ def test_retention_plan_never_deletes_referenced_or_too_recent_resources(
         "anime_covers/at-cutoff",
         "anime_covers/old-unreferenced",
     )
-    assert "anime_covers/shared-cover" not in plan.delete_candidates
+    assert SHARED_PUBLIC_ID not in plan.delete_candidates
     assert "anime_covers/recent-unreferenced" not in plan.delete_candidates
 
 
 class _CacheSpy:
-    def __init__(self) -> None:
+    def __init__(self, *cached_public_ids: str) -> None:
         self.removed: set[str] | None = None
         self.saved = False
+        self.cached_public_ids = set(cached_public_ids)
 
-    def remove_urls_with_public_ids(self, public_ids: set[str]) -> int:
+    def urls_with_public_ids(self, public_ids: set[str] | tuple[str, ...]) -> set[str]:
+        matches = self.cached_public_ids & set(public_ids)
+        return {
+            f"https://res.cloudinary.com/demo/image/upload/v1/{public_id}.webp"
+            for public_id in matches
+        }
+
+    def remove_urls_with_public_ids(
+        self, public_ids: set[str] | tuple[str, ...]
+    ) -> int:
         self.removed = set(public_ids)
-        return len(public_ids)
+        matches = self.cached_public_ids & set(public_ids)
+        self.cached_public_ids -= matches
+        return len(matches)
 
     def save_if_changed(self) -> bool:
         self.saved = True
@@ -182,7 +254,7 @@ def test_retention_collects_normal_paginated_inventory(
             {
                 "resources": [
                     {
-                        "public_id": "anime_covers/one",
+                        "public_id": INVENTORY_ONE,
                         "created_at": "2026-01-01T00:00:00Z",
                     }
                 ],
@@ -191,7 +263,7 @@ def test_retention_collects_normal_paginated_inventory(
             {
                 "resources": [
                     {
-                        "public_id": "anime_covers/two",
+                        "public_id": INVENTORY_TWO,
                         "created_at": "2026-01-02T00:00:00Z",
                     }
                 ]
@@ -207,7 +279,7 @@ def test_retention_collects_normal_paginated_inventory(
 
     inventory = service.list_cloud_resources()
 
-    assert set(inventory) == {"anime_covers/one", "anime_covers/two"}
+    assert set(inventory) == {INVENTORY_ONE, INVENTORY_TWO}
     assert cursors == [None, "page-two"]
 
 
@@ -221,7 +293,7 @@ def test_retention_rejects_repeated_continuation_cursor(
         lambda **kwargs: {
             "resources": [
                 {
-                    "public_id": "anime_covers/one",
+                    "public_id": INVENTORY_ONE,
                     "created_at": "2026-01-01T00:00:00Z",
                 }
             ],
@@ -269,13 +341,34 @@ def test_retention_rejects_resource_outside_requested_prefix(
         service.list_cloud_resources()
 
 
-def test_retention_execute_requires_confirmation_and_aged_manifest() -> None:
+def test_retention_rejects_nested_resource_inside_managed_prefix(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    service = _service(_CacheSpy())
+    monkeypatch.setattr(
+        retention_module.cloudinary.api,
+        "resources",
+        lambda **kwargs: {
+            "resources": [
+                {
+                    "public_id": f"anime_covers/series/{SHARED_DIGEST}",
+                    "created_at": "2026-01-01T00:00:00Z",
+                }
+            ]
+        },
+    )
+
+    with pytest.raises(RetentionError, match="exact managed public ID contract"):
+        service.list_cloud_resources()
+
+
+def test_retention_prepare_requires_confirmation_and_aged_manifest() -> None:
     service = _service(_CacheSpy())
     plan = _plan("anime_covers/old")
     aged = datetime.now(UTC) - timedelta(days=31)
 
     with pytest.raises(RetentionError, match="requires --confirm"):
-        service.execute(
+        service.prepare_deletion(
             plan,
             confirmation="wrong",
             manifest_candidates={"anime_covers/old"},
@@ -283,7 +376,7 @@ def test_retention_execute_requires_confirmation_and_aged_manifest() -> None:
         )
 
     with pytest.raises(RetentionError, match="must include a timezone"):
-        service.execute(
+        service.prepare_deletion(
             plan,
             confirmation=CONFIRMATION_PHRASE,
             manifest_candidates={"anime_covers/old"},
@@ -291,7 +384,7 @@ def test_retention_execute_requires_confirmation_and_aged_manifest() -> None:
         )
 
     with pytest.raises(RetentionError, match="must age"):
-        service.execute(
+        service.prepare_deletion(
             plan,
             confirmation=CONFIRMATION_PHRASE,
             manifest_candidates={"anime_covers/old"},
@@ -299,7 +392,7 @@ def test_retention_execute_requires_confirmation_and_aged_manifest() -> None:
         )
 
 
-def test_retention_execute_enforces_absolute_cap_before_deletion(
+def test_retention_prepare_enforces_absolute_cap_without_deletion(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     cache = _CacheSpy()
@@ -312,7 +405,7 @@ def test_retention_execute_enforces_absolute_cap_before_deletion(
     )
 
     with pytest.raises(RetentionError, match="safety cap is 1"):
-        service.execute(
+        service.prepare_deletion(
             plan,
             confirmation=CONFIRMATION_PHRASE,
             manifest_candidates=set(plan.delete_candidates),
@@ -325,34 +418,40 @@ def test_retention_execute_enforces_absolute_cap_before_deletion(
     assert cache.saved is False
 
 
-def test_retention_partial_delete_invalidates_candidate_cache_first(
+def test_retention_prepare_never_deletes_and_invalidates_cache_separately(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    cache = _CacheSpy()
+    cache = _CacheSpy("anime_covers/old")
     service = _service(cache)
     plan = _plan("anime_covers/old")
     monkeypatch.setattr(
         retention_module.cloudinary.api,
         "delete_resources",
-        lambda *args, **kwargs: {"deleted": {"anime_covers/old": "error"}},
+        lambda *args, **kwargs: pytest.fail("prepare must never delete"),
     )
 
-    with pytest.raises(RetentionError, match="did not confirm every deletion"):
-        service.execute(
-            plan,
-            confirmation=CONFIRMATION_PHRASE,
-            manifest_candidates={"anime_covers/old"},
-            manifest_created_at=datetime.now(UTC) - timedelta(days=31),
-        )
+    prepared = service.prepare_deletion(
+        plan,
+        confirmation=CONFIRMATION_PHRASE,
+        manifest_candidates={"anime_covers/old"},
+        manifest_created_at=datetime.now(UTC) - timedelta(days=31),
+    )
 
+    assert prepared.delete_candidates == ("anime_covers/old",)
+    assert cache.removed is None
+    assert cache.saved is False
+
+    removed_entries = service.invalidate_prepared_cache(prepared)
+
+    assert removed_entries == 1
     assert cache.removed == {"anime_covers/old"}
     assert cache.saved is True
 
 
-def test_retention_invalidates_cache_and_returns_confirmed_delete(
+def test_retention_execute_prepared_returns_confirmed_delete(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    cache = _CacheSpy()
+    cache = _CacheSpy("anime_covers/one", "anime_covers/two")
     service = _service(cache)
     plan = _plan("anime_covers/one", "anime_covers/two")
 
@@ -374,8 +473,16 @@ def test_retention_invalidates_cache_and_returns_confirmed_delete(
         delete_resources,
     )
 
-    removed = service.execute(
+    prepared = service.prepare_deletion(
         plan,
+        confirmation=CONFIRMATION_PHRASE,
+        manifest_candidates=set(plan.delete_candidates),
+        manifest_created_at=datetime.now(UTC) - timedelta(days=31),
+    )
+    assert service.invalidate_prepared_cache(prepared) == 2
+    removed = service.execute_prepared(
+        plan,
+        prepared,
         confirmation=CONFIRMATION_PHRASE,
         manifest_candidates=set(plan.delete_candidates),
         manifest_created_at=datetime.now(UTC) - timedelta(days=31),
@@ -386,7 +493,7 @@ def test_retention_invalidates_cache_and_returns_confirmed_delete(
     assert cache.saved is True
 
 
-def test_retention_hard_limits_cannot_be_relaxed(
+def test_retention_prepare_hard_limits_cannot_be_relaxed(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     service = _service(_CacheSpy())
@@ -399,7 +506,7 @@ def test_retention_hard_limits_cannot_be_relaxed(
     )
 
     with pytest.raises(RetentionError, match="grace period"):
-        service.execute(
+        service.prepare_deletion(
             plan,
             confirmation=CONFIRMATION_PHRASE,
             manifest_candidates={"anime_covers/old"},
@@ -407,7 +514,7 @@ def test_retention_hard_limits_cannot_be_relaxed(
             grace_days=29,
         )
     with pytest.raises(RetentionError, match="between 1 and 50"):
-        service.execute(
+        service.prepare_deletion(
             plan,
             confirmation=CONFIRMATION_PHRASE,
             manifest_candidates={"anime_covers/old"},
@@ -415,7 +522,7 @@ def test_retention_hard_limits_cannot_be_relaxed(
             max_delete=51,
         )
     with pytest.raises(RetentionError, match="at most 0.02"):
-        service.execute(
+        service.prepare_deletion(
             plan,
             confirmation=CONFIRMATION_PHRASE,
             manifest_candidates={"anime_covers/old"},
@@ -424,7 +531,7 @@ def test_retention_hard_limits_cannot_be_relaxed(
         )
 
 
-def test_retention_two_percent_cap_may_allow_zero_deletions(
+def test_retention_prepare_two_percent_cap_may_allow_zero_deletions(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     service = _service(_CacheSpy())
@@ -436,7 +543,7 @@ def test_retention_two_percent_cap_may_allow_zero_deletions(
     )
 
     with pytest.raises(RetentionError, match="safety cap is 0"):
-        service.execute(
+        service.prepare_deletion(
             plan,
             confirmation=CONFIRMATION_PHRASE,
             manifest_candidates={"anime_covers/old"},
@@ -456,7 +563,7 @@ def test_retention_rejects_invalid_quarter_schema(tmp_path: Path) -> None:
         referenced_public_ids(data_dir)
 
 
-def test_retention_rejects_unexpected_cloudinary_delete_keys(
+def test_retention_execute_prepared_rejects_unexpected_delete_keys(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     cache = _CacheSpy()
@@ -474,18 +581,40 @@ def test_retention_rejects_unexpected_cloudinary_delete_keys(
     )
 
     with pytest.raises(RetentionError, match="unexpected"):
-        service.execute(
+        service.execute_prepared(
             plan,
+            PreparedDeletion(30, 100, ("anime_covers/old",)),
             confirmation=CONFIRMATION_PHRASE,
             manifest_candidates={"anime_covers/old"},
             manifest_created_at=datetime.now(UTC) - timedelta(days=31),
         )
 
-    assert cache.removed == {"anime_covers/old"}
-    assert cache.saved is True
+    assert cache.removed is None
+    assert cache.saved is False
 
 
-def test_retention_executes_only_manifest_and_current_plan_intersection(
+def test_retention_execute_prepared_rejects_invalid_delete_response(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    service = _service(_CacheSpy())
+    plan = _plan("anime_covers/old")
+    monkeypatch.setattr(
+        retention_module.cloudinary.api,
+        "delete_resources",
+        lambda *args, **kwargs: {"deleted": []},
+    )
+
+    with pytest.raises(RetentionError, match="valid deleted map"):
+        service.execute_prepared(
+            plan,
+            PreparedDeletion(30, 100, ("anime_covers/old",)),
+            confirmation=CONFIRMATION_PHRASE,
+            manifest_candidates={"anime_covers/old"},
+            manifest_created_at=datetime.now(UTC) - timedelta(days=31),
+        )
+
+
+def test_retention_prepares_only_manifest_and_current_plan_intersection(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     cache = _CacheSpy()
@@ -506,18 +635,27 @@ def test_retention_executes_only_manifest_and_current_plan_intersection(
         delete_resources,
     )
 
-    removed = service.execute(
+    prepared = service.prepare_deletion(
         plan,
         confirmation=CONFIRMATION_PHRASE,
         manifest_candidates={"anime_covers/still-old", "anime_covers/no-longer-old"},
         manifest_created_at=datetime.now(UTC) - timedelta(days=31),
     )
+    service.invalidate_prepared_cache(prepared)
+    removed = service.execute_prepared(
+        plan,
+        prepared,
+        confirmation=CONFIRMATION_PHRASE,
+        manifest_candidates={"anime_covers/still-old", "anime_covers/no-longer-old"},
+        manifest_created_at=datetime.now(UTC) - timedelta(days=31),
+    )
 
+    assert prepared.delete_candidates == ("anime_covers/still-old",)
     assert removed == {"anime_covers/still-old"}
     assert deleted_batches == [["anime_covers/still-old"]]
 
 
-def test_retention_pre_delete_check_stops_before_cache_or_api(
+def test_retention_pre_delete_check_stops_before_api(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     cache = _CacheSpy()
@@ -533,8 +671,9 @@ def test_retention_pre_delete_check_stops_before_cache_or_api(
         raise RetentionError("remote main changed")
 
     with pytest.raises(RetentionError, match="remote main changed"):
-        service.execute(
+        service.execute_prepared(
             plan,
+            PreparedDeletion(30, 100, ("anime_covers/old",)),
             confirmation=CONFIRMATION_PHRASE,
             manifest_candidates={"anime_covers/old"},
             manifest_created_at=datetime.now(UTC) - timedelta(days=31),
@@ -543,3 +682,58 @@ def test_retention_pre_delete_check_stops_before_cache_or_api(
 
     assert cache.removed is None
     assert cache.saved is False
+
+
+def test_retention_execute_prepared_rejects_remaining_candidate_cache(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    cache = _CacheSpy("anime_covers/old")
+    service = _service(cache)
+    plan = _plan("anime_covers/old")
+    monkeypatch.setattr(
+        retention_module.cloudinary.api,
+        "delete_resources",
+        lambda *args, **kwargs: pytest.fail("delete must not run"),
+    )
+
+    with pytest.raises(RetentionError, match="cache invalidation is not present"):
+        service.execute_prepared(
+            plan,
+            PreparedDeletion(30, 100, ("anime_covers/old",)),
+            confirmation=CONFIRMATION_PHRASE,
+            manifest_candidates={"anime_covers/old"},
+            manifest_created_at=datetime.now(UTC) - timedelta(days=31),
+        )
+
+
+def test_retention_execute_prepared_rejects_candidate_no_longer_safe(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    service = _service(_CacheSpy())
+    current_plan = _plan("anime_covers/different")
+    monkeypatch.setattr(
+        retention_module.cloudinary.api,
+        "delete_resources",
+        lambda *args, **kwargs: pytest.fail("delete must not run"),
+    )
+
+    with pytest.raises(RetentionError, match="no longer present"):
+        service.execute_prepared(
+            current_plan,
+            PreparedDeletion(30, 100, ("anime_covers/old",)),
+            confirmation=CONFIRMATION_PHRASE,
+            manifest_candidates={"anime_covers/old"},
+            manifest_created_at=datetime.now(UTC) - timedelta(days=31),
+        )
+
+
+def test_legacy_one_step_execute_is_fail_closed() -> None:
+    service = _service(_CacheSpy())
+
+    with pytest.raises(RetentionError, match="One-step retention execution"):
+        service.execute(
+            _plan("anime_covers/old"),
+            confirmation=CONFIRMATION_PHRASE,
+            manifest_candidates={"anime_covers/old"},
+            manifest_created_at=datetime.now(UTC) - timedelta(days=31),
+        )

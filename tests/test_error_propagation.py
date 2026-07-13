@@ -11,8 +11,8 @@ from models import TAIPEI_TZ, Anime
 from services import anime_service as anime_service_module
 from services.anime_service import AnimeCrawlerService, parse_date_time
 from services.data_repository import DataQualityPolicy, DataRepository
-from services.errors import CrawlerError, NotificationError
-from services.notifier import DiscordNotifier, Notification
+from services.errors import CrawlerError
+from services.notifier import DiscordNotifier
 from services.settings import ProjectPaths
 
 
@@ -82,25 +82,23 @@ def test_static_crawl_orchestrator_re_raises_crawler_failure(
             raise failure
 
     notifications: list[object] = []
-
-    class NotifierSpy:
-        def __init__(self, webhook_url: str | None) -> None:
-            del webhook_url
-
-        def send(self, notification: object) -> bool:
-            notifications.append(notification)
-            return True
+    captured_exceptions: list[BaseException] = []
 
     monkeypatch.setattr(
         anime_service_module.AnimeCrawlerService,
         "from_environment",
         classmethod(lambda cls: FailingCrawler()),
     )
-    monkeypatch.setattr(generate_static, "DiscordNotifier", NotifierSpy)
+    monkeypatch.setattr(
+        DiscordNotifier,
+        "send",
+        lambda self, notification: notifications.append(notification) or True,
+    )
+    monkeypatch.setenv("DISCORD_WEBHOOK_URL", "https://discord.example/webhook")
     monkeypatch.setattr(
         generate_static.sentry_sdk,
         "capture_exception",
-        lambda exc: None,
+        captured_exceptions.append,
     )
     repository = DataRepository(
         project_paths.data_dir,
@@ -114,29 +112,80 @@ def test_static_crawl_orchestrator_re_raises_crawler_failure(
             datetime(2026, 7, 10, 12, 0, tzinfo=TAIPEI_TZ),
         )
 
-    assert notifications
-    assert notifications[-1].status == "FAILURE"
-    assert "simulated crawler failure" in notifications[-1].message
+    assert captured_exceptions == [failure]
+    assert notifications == []
 
 
-def test_configured_discord_failure_raises(
+def test_crawl_summary_is_published_only_after_the_full_build_succeeds(
+    project_paths: ProjectPaths,
+    tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    class FailingResponse:
-        def raise_for_status(self) -> None:
-            import requests
+    summary = generate_static.CrawlSummary(
+        processed_quarters=6,
+        changed_quarters=2,
+        total_records=321,
+        parse_failures=4,
+    )
+    repository = SimpleNamespace(validate_all=lambda: [])
+    github_output = tmp_path / "github-output.txt"
 
-            raise requests.HTTPError("simulated webhook failure")
+    monkeypatch.setenv("BUILD_ONLY", "false")
+    monkeypatch.setenv("GITHUB_OUTPUT", str(github_output))
+    monkeypatch.setattr(generate_static, "load_dotenv", lambda: None)
+    monkeypatch.setattr(generate_static, "configure_runtime", lambda: None)
+    monkeypatch.setattr(
+        generate_static.ProjectPaths,
+        "from_environment",
+        classmethod(lambda cls: project_paths),
+    )
+    monkeypatch.setattr(
+        generate_static.CrawlerSettings,
+        "from_environment",
+        classmethod(
+            lambda cls: SimpleNamespace(
+                minimum_count_ratio=0.5,
+                maximum_parse_failure_ratio=0.2,
+                maximum_fallback_id_ratio=0.1,
+            )
+        ),
+    )
+    monkeypatch.setattr(
+        generate_static,
+        "DataRepository",
+        lambda *args, **kwargs: repository,
+    )
+    monkeypatch.setattr(
+        generate_static,
+        "crawl_quarters",
+        lambda paths, data_repository, now: summary,
+    )
+    monkeypatch.setattr(generate_static, "sync_static_assets", lambda paths: None)
+
+    def fail_render(*args: object, **kwargs: object) -> Path:
+        raise RuntimeError("simulated final render failure")
+
+    monkeypatch.setattr(generate_static, "render_index", fail_render)
+
+    with pytest.raises(RuntimeError, match="simulated final render failure"):
+        generate_static.generate_static_files()
+
+    assert not github_output.exists()
 
     monkeypatch.setattr(
-        "services.notifier.requests.post",
-        lambda *args, **kwargs: FailingResponse(),
+        generate_static,
+        "render_index",
+        lambda paths, data_repository, now: project_paths.output_dir / "index.html",
     )
 
-    with pytest.raises(NotificationError, match="Discord notification failed"):
-        DiscordNotifier("https://discord.example/webhook").send(
-            Notification(status="SUCCESS", year="2026", season="夏")
-        )
+    generate_static.generate_static_files()
+
+    assert github_output.read_bytes() == (
+        b"processed_quarters=6\n"
+        b"changed_quarters=2\n"
+        b"record_count=321\n"
+        b"parse_failures=4\n"
+    )
 
 
 def test_same_times_have_a_stable_id_and_name_tie_breaker() -> None:

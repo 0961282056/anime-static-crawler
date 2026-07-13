@@ -46,10 +46,39 @@ class CacheRepository:
         with self._lock:
             return dict(self._data)
 
+    @staticmethod
+    def _validated_managed_public_ids(public_ids: Iterable[str]) -> set[str]:
+        from services.retention import is_managed_public_id
+
+        targets = set(public_ids)
+        invalid = sorted(
+            str(public_id)
+            for public_id in targets
+            if not is_managed_public_id(public_id)
+        )
+        if invalid:
+            raise DataContractError(
+                "Cache invalidation requires exact managed Cloudinary public IDs; "
+                f"invalid={invalid[:5]}"
+            )
+        return targets
+
+    def urls_with_public_ids(self, public_ids: Iterable[str]) -> set[str]:
+        """Return cached URLs that still reference any requested public ID."""
+        from services.retention import cloudinary_public_id_from_url
+
+        targets = self._validated_managed_public_ids(public_ids)
+        with self._lock:
+            return {
+                value
+                for value in self._data.values()
+                if cloudinary_public_id_from_url(value) in targets
+            }
+
     def remove_urls_with_public_ids(self, public_ids: Iterable[str]) -> int:
         from services.retention import cloudinary_public_id_from_url
 
-        targets = set(public_ids)
+        targets = self._validated_managed_public_ids(public_ids)
         with self._lock:
             keys = [
                 key
