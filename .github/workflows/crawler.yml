@@ -277,7 +277,7 @@ jobs:
             --delete-branch \
             --match-head-commit "$head_sha"
 
-          for attempt in {1..120}; do
+          for _ in {1..120}; do
             pr_state="$(gh pr view "$pr_url" --json state --jq .state)"
             if [[ "$pr_state" == "MERGED" ]]; then
               merged=true

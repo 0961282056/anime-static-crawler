@@ -169,11 +169,13 @@ jobs:
           fi
 
           git diff --check
-          echo "base_sha=$base_sha" >> "$GITHUB_OUTPUT"
-          echo "cache_changed=$cache_changed" >> "$GITHUB_OUTPUT"
-          echo "cache_sha256=$cache_sha256" >> "$GITHUB_OUTPUT"
-          echo "candidate_count=$candidate_count" >> "$GITHUB_OUTPUT"
-          echo "manifest_sha256=$manifest_sha256" >> "$GITHUB_OUTPUT"
+          {
+            echo "base_sha=$base_sha"
+            echo "cache_changed=$cache_changed"
+            echo "cache_sha256=$cache_sha256"
+            echo "candidate_count=$candidate_count"
+            echo "manifest_sha256=$manifest_sha256"
+          } >> "$GITHUB_OUTPUT"
           {
             echo "### Prepared retention"
             echo "- Candidates: $candidate_count"
@@ -348,7 +350,7 @@ jobs:
             --delete-branch \
             --match-head-commit "$head_sha"
 
-          for attempt in {1..120}; do
+          for _ in {1..120}; do
             pr_state="$(gh pr view "$pr_url" --json state --jq .state)"
             if [[ "$pr_state" == "MERGED" ]]; then
               merged=true
