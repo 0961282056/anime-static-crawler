@@ -29,7 +29,6 @@ branch = true
 source = ["."]
 omit = [
     "backfill_ids.py",
-    "cloudinary_cleaner.py",
     "dist/*",
     "tests/*",
 ]

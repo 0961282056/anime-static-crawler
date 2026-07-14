@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import json
 import subprocess
 import sys
@@ -8,6 +9,7 @@ from pathlib import Path
 
 import pytest
 
+import cloudinary_cleaner as cleaner
 from cloudinary_cleaner import (
     execution_receipt_payload,
     file_sha256,
@@ -27,6 +29,7 @@ from cloudinary_cleaner import (
 )
 from services.errors import RetentionError
 from services.retention import PreparedDeletion, RetentionPlan
+from services.settings import ProjectPaths
 
 CLOUD_NAME = "production-cloud"
 
@@ -39,6 +42,100 @@ def _plan() -> RetentionPlan:
         cloud_resources=frozenset({"anime_covers/referenced", "anime_covers/old"}),
         delete_candidates=("anime_covers/old",),
     )
+
+
+def _cli_args(**overrides: object) -> argparse.Namespace:
+    values: dict[str, object] = {
+        "minimum_age_days": 30,
+        "manifest_output": None,
+        "prepare_execution": False,
+        "execute_prepared": False,
+        "execute": False,
+        "manifest_input": None,
+        "execution_output": None,
+        "execution_input": None,
+        "confirm": "DELETE-REVIEWED-CLOUDINARY-CANDIDATES",
+        "grace_days": 30,
+        "max_delete": 50,
+        "max_fraction": 0.02,
+    }
+    values.update(overrides)
+    return argparse.Namespace(**values)
+
+
+def _project_paths(tmp_path: Path) -> ProjectPaths:
+    output_dir = tmp_path / "dist"
+    data_dir = output_dir / "data"
+    data_dir.mkdir(parents=True)
+    return ProjectPaths(
+        root=tmp_path,
+        output_dir=output_dir,
+        data_dir=data_dir,
+        templates_dir=tmp_path / "templates",
+        static_source_dir=tmp_path / "static",
+        static_output_dir=output_dir / "static",
+        cache_file=tmp_path / "cloudinary_cache.json",
+        cloudflare_headers_file=tmp_path / "_headers",
+    )
+
+
+class _RetentionServiceSpy:
+    def __init__(self) -> None:
+        self.plan_result = _plan()
+        self.prepared = PreparedDeletion(
+            minimum_age_days=30,
+            inventory_count=100,
+            delete_candidates=("anime_covers/old",),
+        )
+        self.plan_calls: list[int] = []
+        self.prepare_calls = 0
+        self.execute_calls = 0
+
+    def plan(self, *, minimum_age_days: int) -> RetentionPlan:
+        self.plan_calls.append(minimum_age_days)
+        return self.plan_result
+
+    def prepare_deletion(self, *args: object, **kwargs: object) -> PreparedDeletion:
+        self.prepare_calls += 1
+        assert kwargs["pre_prepare_check"] is cleaner.verify_remote_main_unchanged
+        return self.prepared
+
+    def invalidate_prepared_cache(self, prepared: PreparedDeletion) -> int:
+        assert prepared == self.prepared
+        return 1
+
+    def execute_prepared(self, *args: object, **kwargs: object) -> frozenset[str]:
+        self.execute_calls += 1
+        assert args[1] == self.prepared
+        assert kwargs["pre_delete_check"] is cleaner.verify_remote_main_unchanged
+        return frozenset(self.prepared.delete_candidates)
+
+
+def _patch_cli_dependencies(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+    args: argparse.Namespace,
+    service: _RetentionServiceSpy,
+) -> ProjectPaths:
+    paths = _project_paths(tmp_path)
+    monkeypatch.setattr(cleaner, "load_dotenv", lambda: None)
+    monkeypatch.setattr(cleaner, "parse_args", lambda: args)
+    monkeypatch.setattr(
+        cleaner.ProjectPaths,
+        "from_environment",
+        classmethod(lambda cls: paths),
+    )
+    monkeypatch.setattr(
+        cleaner,
+        "required_cloudinary_credentials",
+        lambda: {
+            "CLOUDINARY_CLOUD_NAME": CLOUD_NAME,
+            "CLOUDINARY_API_KEY": "masked",
+            "CLOUDINARY_API_SECRET": "masked",
+        },
+    )
+    monkeypatch.setattr(cleaner, "CloudinaryRetentionService", lambda *args: service)
+    return paths
 
 
 def test_manifest_round_trip_and_digest(tmp_path: Path) -> None:
@@ -336,3 +433,107 @@ def test_legacy_execute_cli_is_fail_closed(
 
     with pytest.raises(RetentionError, match="--execute is disabled"):
         main()
+
+
+def test_main_dry_run_writes_a_bound_manifest(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    manifest_output = tmp_path / "retention-plan.json"
+    service = _RetentionServiceSpy()
+    args = _cli_args(manifest_output=manifest_output)
+    _patch_cli_dependencies(monkeypatch, tmp_path, args, service)
+
+    assert main() == 0
+
+    payload = json.loads(manifest_output.read_text(encoding="utf-8"))
+    assert payload["cloud_name"] == CLOUD_NAME
+    assert payload["delete_candidates"] == ["anime_covers/old"]
+    assert payload["manifest_sha256"] == manifest_digest(payload)
+    assert service.plan_calls == [30]
+
+
+def test_main_prepare_writes_a_cache_bound_execution_receipt(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    manifest_input = tmp_path / "retention-plan.json"
+    execution_output = tmp_path / "retention-execution.json"
+    service = _RetentionServiceSpy()
+    args = _cli_args(
+        prepare_execution=True,
+        manifest_input=manifest_input,
+        execution_output=execution_output,
+    )
+    paths = _patch_cli_dependencies(monkeypatch, tmp_path, args, service)
+    reviewed = cleaner.ReviewedManifest(
+        created_at=datetime.now(UTC) - timedelta(days=31),
+        cloud_name=CLOUD_NAME,
+        minimum_age_days=30,
+        candidates=frozenset({"anime_covers/old"}),
+        sha256="b" * 64,
+    )
+    monkeypatch.setattr(cleaner, "read_manifest", lambda path: reviewed)
+    monkeypatch.setattr(cleaner, "validate_trusted_manifest_time", lambda value: None)
+    monkeypatch.setattr(
+        cleaner,
+        "require_protected_execution_context",
+        lambda: "a" * 40,
+    )
+
+    assert main() == 0
+
+    receipt = load_execution_receipt(execution_output)
+    assert receipt.base_sha == "a" * 40
+    assert receipt.manifest_sha256 == reviewed.sha256
+    assert receipt.cache_sha256 == file_sha256(paths.cache_file)
+    assert service.prepare_calls == 1
+    assert service.execute_calls == 0
+
+
+def test_main_execute_verifies_receipt_before_deletion(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    manifest_input = tmp_path / "retention-plan.json"
+    execution_input = tmp_path / "retention-execution.json"
+    service = _RetentionServiceSpy()
+    args = _cli_args(
+        execute_prepared=True,
+        manifest_input=manifest_input,
+        execution_input=execution_input,
+    )
+    paths = _patch_cli_dependencies(monkeypatch, tmp_path, args, service)
+    paths.cache_file.write_text("{}\n", encoding="utf-8")
+    reviewed = cleaner.ReviewedManifest(
+        created_at=datetime.now(UTC) - timedelta(days=31),
+        cloud_name=CLOUD_NAME,
+        minimum_age_days=30,
+        candidates=frozenset({"anime_covers/old"}),
+        sha256="b" * 64,
+    )
+    receipt = cleaner.ExecutionReceipt(
+        prepared_at=datetime.now(UTC) - timedelta(days=30),
+        base_sha="a" * 40,
+        cloud_name=CLOUD_NAME,
+        manifest_sha256=reviewed.sha256,
+        minimum_age_days=30,
+        inventory_count=100,
+        delete_candidates=("anime_covers/old",),
+        cache_sha256=file_sha256(paths.cache_file),
+        receipt_sha256="c" * 64,
+    )
+    monkeypatch.setattr(cleaner, "read_manifest", lambda path: reviewed)
+    monkeypatch.setattr(cleaner, "load_execution_receipt", lambda path: receipt)
+    monkeypatch.setattr(cleaner, "validate_trusted_manifest_time", lambda value: None)
+    monkeypatch.setattr(
+        cleaner,
+        "require_protected_execution_context",
+        lambda: "a" * 40,
+    )
+
+    assert main() == 0
+
+    assert service.plan_calls == [30]
+    assert service.prepare_calls == 0
+    assert service.execute_calls == 1
