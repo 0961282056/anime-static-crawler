@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 from config import Config
 from models import Anime
 from services.cache_repository import CacheRepository
-from services.errors import CrawlerError
+from services.errors import CrawlerError, ItemParseError
 from services.http_client import SourceClient
 from services.image_store import CloudinaryImageStore
 from services.parser import extract_item_html, parse_anime_item
@@ -132,7 +132,7 @@ class AnimeCrawlerService:
                     index = futures[future]
                     try:
                         records.append(future.result())
-                    except Exception as exc:
+                    except ItemParseError as exc:
                         failures.append(
                             ItemFailure(
                                 index=index,
@@ -140,12 +140,21 @@ class AnimeCrawlerService:
                                 message=str(exc)[:500],
                             )
                         )
+                        logger.warning(
+                            "Anime item %s could not be parsed for %s %s: %s",
+                            index,
+                            year,
+                            season,
+                            exc,
+                        )
+                    except Exception:
                         logger.exception(
-                            "Anime item %s failed for %s %s",
+                            "System failure while processing anime item %s for %s %s",
                             index,
                             year,
                             season,
                         )
+                        raise
         finally:
             self.cache.save_if_changed()
 

@@ -11,7 +11,7 @@ from models import TAIPEI_TZ, Anime
 from services import anime_service as anime_service_module
 from services.anime_service import AnimeCrawlerService, parse_date_time
 from services.data_repository import DataQualityPolicy, DataRepository
-from services.errors import CrawlerError
+from services.errors import CrawlerError, ImageStoreError, ItemParseError
 from services.settings import ProjectPaths
 
 
@@ -43,6 +43,20 @@ class _StaticSourceClient:
         return "https://acgsecrets.hk/bangumi/202607/", self.document
 
 
+def _valid_anime(bangumi_id: str = "anime-2200") -> Anime:
+    return Anime(
+        bangumi_id=bangumi_id,
+        anime_name=f"測試動畫 {bangumi_id}",
+        anime_image_url=(
+            "https://res.cloudinary.com/test/image/upload/"
+            f"anime_covers/{bangumi_id}.webp"
+        ),
+        premiere_date="一",
+        premiere_time="22:00",
+        story="測試",
+    )
+
+
 def test_all_item_failures_raise_instead_of_returning_an_error_list(
     fixture_dir: Path,
 ) -> None:
@@ -67,6 +81,68 @@ def test_all_item_failures_raise_instead_of_returning_an_error_list(
         crawler.fetch_quarter("2026", "夏")
 
     assert image_store.quota_checked is True
+    assert cache.save_count == 1
+
+
+def test_only_item_parse_errors_may_be_recorded_as_partial_failures(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    cache = _CacheSpy()
+    image_store = _ImageStoreSpy()
+    crawler = AnimeCrawlerService(
+        settings=SimpleNamespace(max_workers=1),
+        source_client=_StaticSourceClient("unused"),
+        image_store=image_store,
+        cache=cache,
+    )
+    monkeypatch.setattr(
+        anime_service_module,
+        "extract_item_html",
+        lambda document: ["bad-card", "good-card"],
+    )
+
+    def process(item_html: str) -> Anime:
+        if item_html == "bad-card":
+            raise ItemParseError("known card format problem")
+        return _valid_anime()
+
+    monkeypatch.setattr(crawler, "_process_item", process)
+
+    result = crawler.fetch_quarter("2026", "夏")
+
+    assert [record.bangumi_id for record in result.anime_list] == ["anime-2200"]
+    assert result.parse_failure_count == 1
+    assert result.failures[0].error_type == "ItemParseError"
+    assert cache.save_count == 1
+
+
+def test_system_errors_always_abort_the_crawl(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    cache = _CacheSpy()
+    image_store = _ImageStoreSpy()
+    crawler = AnimeCrawlerService(
+        settings=SimpleNamespace(max_workers=1),
+        source_client=_StaticSourceClient("unused"),
+        image_store=image_store,
+        cache=cache,
+    )
+    monkeypatch.setattr(
+        anime_service_module,
+        "extract_item_html",
+        lambda document: ["good-card", "image-store-error"],
+    )
+
+    def process(item_html: str) -> Anime:
+        if item_html == "image-store-error":
+            raise ImageStoreError("simulated system failure")
+        return _valid_anime()
+
+    monkeypatch.setattr(crawler, "_process_item", process)
+
+    with pytest.raises(ImageStoreError, match="simulated system failure"):
+        crawler.fetch_quarter("2026", "夏")
+
     assert cache.save_count == 1
 
 
