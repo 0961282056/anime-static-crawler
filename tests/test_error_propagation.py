@@ -12,7 +12,6 @@ from services import anime_service as anime_service_module
 from services.anime_service import AnimeCrawlerService, parse_date_time
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.errors import CrawlerError
-from services.notifier import DiscordNotifier
 from services.settings import ProjectPaths
 
 
@@ -81,24 +80,10 @@ def test_static_crawl_orchestrator_re_raises_crawler_failure(
         def fetch_quarter(self, year: str, season: str) -> None:
             raise failure
 
-    notifications: list[object] = []
-    captured_exceptions: list[BaseException] = []
-
     monkeypatch.setattr(
         anime_service_module.AnimeCrawlerService,
         "from_environment",
         classmethod(lambda cls: FailingCrawler()),
-    )
-    monkeypatch.setattr(
-        DiscordNotifier,
-        "send",
-        lambda self, notification: notifications.append(notification) or True,
-    )
-    monkeypatch.setenv("DISCORD_WEBHOOK_URL", "https://discord.example/webhook")
-    monkeypatch.setattr(
-        generate_static.sentry_sdk,
-        "capture_exception",
-        captured_exceptions.append,
     )
     repository = DataRepository(
         project_paths.data_dir,
@@ -111,9 +96,6 @@ def test_static_crawl_orchestrator_re_raises_crawler_failure(
             repository,
             datetime(2026, 7, 10, 12, 0, tzinfo=TAIPEI_TZ),
         )
-
-    assert captured_exceptions == [failure]
-    assert notifications == []
 
 
 def test_crawl_summary_is_published_only_after_the_full_build_succeeds(

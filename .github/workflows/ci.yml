@@ -34,7 +34,6 @@ jobs:
       - name: Verify isolated Cloudflare build
         env:
           BUILD_VERSION: "ci-build-lock"
-          APP_ENVIRONMENT: "test"
         run: |
           python -m venv "$RUNNER_TEMP/cloudflare-build-venv"
           source "$RUNNER_TEMP/cloudflare-build-venv/bin/activate"
@@ -72,11 +71,9 @@ jobs:
         env:
           BUILD_ONLY: "true"
           BUILD_VERSION: "ci"
-          APP_ENVIRONMENT: "test"
           PYTHONDONTWRITEBYTECODE: "1"
         run: |
           python generate_static.py
           python manage.py validate-all
           python manage.py quality-report >> "$GITHUB_STEP_SUMMARY"
           node --check static/js/main.js
-          node --check static/js/monitoring.js
