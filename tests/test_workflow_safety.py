@@ -62,6 +62,24 @@ def _assert_only_allowlisted_paths_are_staged(
     assert staged_paths == expected_paths
 
 
+def test_quality_gate_pins_and_verifies_workflow_linters() -> None:
+    quality = _workflow("ci.yml")
+
+    assert 'ACTIONLINT_VERSION: "1.7.12"' in quality
+    assert (
+        'ACTIONLINT_SHA256: "8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8"'
+        in quality
+    )
+    assert 'SHELLCHECK_VERSION: "0.11.0"' in quality
+    assert (
+        'SHELLCHECK_SHA256: "8c3be12b05d5c177a04c29e3c78ce89ac86f1595681cab149b65b97c4e227198"'
+        in quality
+    )
+    assert quality.count("sha256sum --check --strict") == 2
+    assert '"$actionlint" -shellcheck "$shellcheck"' in quality
+    assert '"$shellcheck" --severity=warning build.sh' in quality
+
+
 @pytest.mark.parametrize(
     ("workflow_name", "allowed_paths"),
     [
@@ -195,5 +213,5 @@ def test_pull_request_publishers_have_cleanup_time_after_merge_polling() -> None
 
     for publisher in (crawler_publisher, retention_publisher):
         assert "timeout-minutes: 45" in publisher
-        assert "for attempt in {1..120}" in publisher
+        assert "for _ in {1..120}" in publisher
         assert "sleep 15" in publisher
