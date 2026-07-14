@@ -31,6 +31,7 @@ Cloudflare Pages 執行 bash build.sh
 - `.env`、密碼、API secret、Webhook 不可提交到 Git。
 - crawler 與 retention 都不得直接推送 `main`。不持有正式服務憑證的 publisher 只能透過 `automation-publisher` environment 取得限本儲存庫使用的 GitHub App token，建立 Pull Request；`Quality Gate / quality` 成功後才由 GitHub auto-merge，GitHub Actions 與該 App 都不可加入 ruleset bypass。
 - 正式 GitHub crawler（每日排程與人工 Run workflow）必須在 `crawler-production` 設定可用的 `DISCORD_WEBHOOK_URL`；本機執行可不設定 Discord。
+- 每日台灣時間 09:15 另有唯讀 selector canary：只抓取當季來源 HTML、驗證所有卡片可解析且 ID 不重複，不寫 JSON／cache、不呼叫 Cloudinary；只有失敗才使用 `crawler-production` 的 Discord webhook 告警。
 - 初次部署或輪替期間，`CRAWLER_SCHEDULE_ENABLED` 保持 `false`；手動驗證成功後才開啟每日排程。這個開關只有新版 crawler workflow 合併到 `main` 後才有效。
 - 執行 Cloudinary retention 前必須先把 `CRAWLER_SCHEDULE_ENABLED` 設為 `false`，並確認沒有 crawler 或任何以 `main` 為目標的 Pull Request；cache safety PR 必須在刪圖前先合併，整個 workflow 成功後才能恢復排程。
 - `static/` 是前端資源的唯一來源；`dist/static/` 由建置自動產生。
@@ -54,8 +55,9 @@ Cloudflare Pages 執行 bash build.sh
 | 路徑 | 用途 |
 |---|---|
 | `generate_static.py` | 執行爬蟲、驗證資料並建置靜態網站 |
-| `manage.py` | `validate-data`、`verify-dist`、`validate-all` 驗證命令 |
+| `manage.py` | 資料／靜態輸出驗證、selector canary 與安全通知命令 |
 | `services/parser.py` | 解析來源網站 HTML |
+| `services/selector_canary.py` | 每日唯讀來源 selector／parser 契約檢查 |
 | `services/data_repository.py` | JSON schema、品質 gate 與原子寫入 |
 | `services/image_store.py` | 安全下載圖片並上傳 Cloudinary |
 | `services/retention.py` | 只刪除全站未引用圖片的保留政策 |
@@ -66,6 +68,7 @@ Cloudflare Pages 執行 bash build.sh
 | `dist/data/` | Git 追蹤的季度資料 |
 | `build.sh` | Cloudflare Pages 唯一正式建置入口 |
 | `_headers` | Cloudflare Pages 安全標頭與快取規則 |
+| `.github/workflows/selector-canary.yml` | 每日唯讀來源檢查；只有失敗才通知 Discord |
 | `.env.example` | 可公開的環境變數範本，不含任何真實值 |
 
 ## 五分鐘本機檢查

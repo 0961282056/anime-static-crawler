@@ -116,6 +116,28 @@ def test_crawler_has_an_always_running_final_notification_job() -> None:
     assert "SENTRY_" not in crawler
 
 
+def test_selector_canary_is_read_only_and_alerts_only_on_failure() -> None:
+    workflow = _workflow("selector-canary.yml")
+    canary_job = _job_section(workflow, "selector-canary")
+    notify_job = _job_section(workflow, "notify-failure")
+
+    assert 'cron: "15 9 * * *"' in workflow
+    assert 'timezone: "Asia/Taipei"' in workflow
+    assert "workflow_dispatch:" in workflow
+    assert "permissions:\n  contents: read" in workflow
+    assert "python manage.py selector-canary" in canary_job
+    assert "environment: crawler-production" not in canary_job
+    assert "DISCORD_WEBHOOK_URL" not in canary_job
+    assert "always()" in notify_job
+    assert "needs.selector-canary.result != 'success'" in notify_job
+    assert "environment: crawler-production" in notify_job
+    assert "DISCORD_WEBHOOK_URL" in notify_job
+    assert "notify-selector-canary-failure" in notify_job
+    assert "CLOUDINARY_" not in workflow
+    assert "git add" not in workflow
+    assert "git push" not in workflow
+
+
 def test_crawler_path_allowlist_handles_unicode_json_names_safely() -> None:
     crawler = _workflow("crawler.yml")
 
