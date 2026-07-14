@@ -98,10 +98,13 @@ Remove-Item Env:BUILD_ONLY
 .\.venv\Scripts\python.exe -m pytest
 ```
 
-## 第一次部署要讀什麼
+## 文件索引
 
-1. [部署與平台設定手冊](docs/部署與平台設定.md)：本機安裝、GitHub Environment／Secrets、Cloudflare Pages、Sentry、Discord，以及逐步上線驗收。
-2. [安全維運與災難復原手冊](docs/安全維運與災難復原.md)：Cloudinary 無停機輪替、歷史帳密與 LINE token、30 天 retention、回復流程及 Git 歷史清理。
+1. [目前架構與平台設定現況報告](docs/專案架構與平台設定現況報告-2026-07-14.md)：先用這份了解現在的架構、平台狀態、已知風險與優先順序。
+2. [部署與平台設定手冊](docs/部署與平台設定.md)：本機安裝、GitHub Environment／Secrets、Cloudflare Pages、Sentry、Discord，以及逐步上線驗收。
+3. [安全維運與災難復原手冊](docs/安全維運與災難復原.md)：Cloudinary 無停機輪替、歷史帳密與 LINE token、30 天 retention、復原流程及 Git 歷史清理。
+
+已過時的重構前分析報告不再保留在工作樹；需要追查當時的問題基準時，使用 Git history 即可。
 
 不要直接從 retention 或 Git 歷史重寫開始。正確順序是：先讓舊秘密失效、完成一般部署並確認穩定，再另外安排高風險維護窗口。
 
