@@ -13,7 +13,7 @@
      data-default-season="{{ selected_season }}"
      data-available-data="{{ available_data_json }}"
      data-build-version="{{ build_version }}"></div>
-<div x-data="animeApp()" x-init="initApp()" class="app-wrapper">
+<div x-data="animeApp" x-init="initApp" class="app-wrapper">
 
     <header class="site-header">
         <div class="container header-container">
@@ -37,7 +37,7 @@
 
                 <div class="form-group">
                     <label for="yearSelect" class="form-label">年份</label>
-                    <select id="yearSelect" class="form-select" x-model="year" @change="updateSeasonOptions(); loadData()">
+                    <select id="yearSelect" class="form-select" x-model="year" @change="changeYear">
                         <template x-for="y in years" :key="y">
                             <option :value="y" x-text="y + ' 年'"></option>
                         </template>
@@ -48,7 +48,7 @@
                     <label for="seasonSelect" class="form-label">季節</label>
                     <select id="seasonSelect" class="form-select" x-model="season" @change="loadData()">
                         <template x-for="s in seasons" :key="s">
-                            <option :value="s" x-text="s + '(' + {'冬': 1, '春': 4, '夏': 7, '秋': 10}[s] + '月)'"></option>
+                            <option :value="s" x-text="seasonLabel(s)"></option>
                         </template>
                     </select>
                 </div>
@@ -127,7 +127,7 @@
                                 <button class="btn-add mb-2" @click="addToShare(anime)">
                                     <i class="fas fa-plus"></i> 加入清單
                                 </button>
-                                <a :href="'https://ani.gamer.com.tw/search.php?keyword=' + encodeURIComponent(anime.anime_name)" 
+                                <a :href="animeSearchUrl(anime.anime_name)"
                                    target="_blank" rel="noopener noreferrer"
                                    class="btn-add" style="border-color: #00cec9; color: #00cec9;">
                                     📺 動畫瘋搜尋

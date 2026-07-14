@@ -144,6 +144,20 @@ function animeApp() {
             }
         },
 
+        changeYear() {
+            this.updateSeasonOptions();
+            return this.loadData();
+        },
+
+        seasonLabel(season) {
+            const monthBySeason = {'冬': 1, '春': 4, '夏': 7, '秋': 10};
+            return `${season}(${monthBySeason[season]}月)`;
+        },
+
+        animeSearchUrl(name) {
+            return `https://ani.gamer.com.tw/search.php?keyword=${encodeURIComponent(name)}`;
+        },
+
         // 🟢 修改：增加 shouldRestoreScroll 參數
         async loadData(shouldRestoreScroll = false) {
             if (!this.year || !this.season) return;
@@ -434,3 +448,7 @@ function animeApp() {
         }
     };
 }
+
+document.addEventListener('alpine:init', () => {
+    Alpine.data('animeApp', animeApp);
+});
