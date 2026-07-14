@@ -26,7 +26,7 @@ def anime_record_factory() -> Callable[..., dict[str, str]]:
             "anime_name": name or f"測試動畫 {index}",
             "anime_image_url": (
                 "https://res.cloudinary.com/test-cloud/image/upload/"
-                f"v1/anime_covers/anime-{index:04d}.webp"
+                f"v1/anime_covers/{index:064x}.webp"
             ),
             "premiere_date": "一",
             "premiere_time": "12:00",

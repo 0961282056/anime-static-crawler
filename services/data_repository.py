@@ -166,12 +166,17 @@ class DataRepository:
                 current_count=len(current_records),
             )
 
-        dataset = QuarterDataset(
-            anime_list=validated_records,
-            generated_at=generated_at or datetime.now(TAIPEI_TZ),
-            source_url=source_url,
-            quality=quality,
-        )
+        try:
+            dataset = QuarterDataset(
+                anime_list=validated_records,
+                generated_at=generated_at or datetime.now(TAIPEI_TZ),
+                source_url=source_url,
+                quality=quality,
+            )
+        except ValidationError as exc:
+            raise DataContractError(
+                f"Quarter dataset does not satisfy the data contract: {exc}"
+            ) from exc
         atomic_write_json(path, dataset.model_dump(mode="json"))
         return WriteResult(
             path=path,
