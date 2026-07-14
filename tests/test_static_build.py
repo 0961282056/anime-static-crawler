@@ -128,6 +128,71 @@ def test_static_swap_rolls_back_existing_output_when_rename_fails(
     assert not list(project_paths.output_dir.glob(".static.backup-*"))
 
 
+def test_static_swap_retries_transient_permission_errors(
+    project_paths: ProjectPaths,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    project_paths.output_dir.mkdir(parents=True)
+    source = project_paths.output_dir / ".static-build-test" / "static"
+    source.mkdir(parents=True)
+    (source / "new.js").write_text("new\n", encoding="utf-8")
+    destination = project_paths.static_output_dir
+    destination.mkdir()
+    (destination / "existing.js").write_text("existing\n", encoding="utf-8")
+    real_rename = Path.rename
+    destination_attempts = 0
+    delays: list[float] = []
+
+    def transient_destination_lock(path: Path, target: Path) -> Path:
+        nonlocal destination_attempts
+        if path == destination and destination_attempts < 2:
+            destination_attempts += 1
+            raise PermissionError(5, "simulated Windows directory lock")
+        return real_rename(path, target)
+
+    monkeypatch.setattr(Path, "rename", transient_destination_lock)
+    monkeypatch.setattr(generate_static.time, "sleep", delays.append)
+
+    _safe_replace_directory(source, destination, project_paths.output_dir)
+
+    assert destination_attempts == 2
+    assert delays == [0.1, 0.2]
+    assert (destination / "new.js").read_text(encoding="utf-8") == "new\n"
+    assert not list(project_paths.output_dir.glob(".static.backup-*"))
+
+
+def test_static_swap_fails_closed_after_permission_retries_are_exhausted(
+    project_paths: ProjectPaths,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    project_paths.output_dir.mkdir(parents=True)
+    source = project_paths.output_dir / ".static-build-test" / "static"
+    source.mkdir(parents=True)
+    (source / "new.js").write_text("new\n", encoding="utf-8")
+    destination = project_paths.static_output_dir
+    destination.mkdir()
+    existing = destination / "existing.js"
+    existing.write_text("existing\n", encoding="utf-8")
+    real_rename = Path.rename
+    delays: list[float] = []
+
+    def persistent_destination_lock(path: Path, target: Path) -> Path:
+        if path == destination:
+            raise PermissionError(5, "simulated persistent Windows directory lock")
+        return real_rename(path, target)
+
+    monkeypatch.setattr(Path, "rename", persistent_destination_lock)
+    monkeypatch.setattr(generate_static.time, "sleep", delays.append)
+
+    with pytest.raises(PermissionError, match="persistent Windows directory lock"):
+        _safe_replace_directory(source, destination, project_paths.output_dir)
+
+    assert delays == [0.1, 0.2, 0.4, 0.8]
+    assert existing.read_text(encoding="utf-8") == "existing\n"
+    assert (source / "new.js").read_text(encoding="utf-8") == "new\n"
+    assert not list(project_paths.output_dir.glob(".static.backup-*"))
+
+
 def test_verify_dist_rejects_missing_index_and_header_drift(
     project_paths: ProjectPaths,
 ) -> None:
