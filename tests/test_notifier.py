@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import traceback
 from datetime import datetime
 
 import pytest
@@ -152,9 +153,19 @@ def test_required_webhook_must_be_configured() -> None:
 def test_discord_http_error_raises_notification_error(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
+    webhook_url = "https://discord.example/api/webhooks/123456/secret-token"
+
     class FailingResponse:
+        status_code = 500
+
         def raise_for_status(self) -> None:
-            raise requests.HTTPError("simulated webhook failure")
+            response = requests.Response()
+            response.status_code = self.status_code
+            response.url = webhook_url
+            raise requests.HTTPError(
+                f"500 Server Error for url: {webhook_url}",
+                response=response,
+            )
 
     def post(
         url: str,
@@ -162,14 +173,43 @@ def test_discord_http_error_raises_notification_error(
         json: dict[str, object],
         timeout: int,
     ) -> FailingResponse:
-        assert url == "https://discord.example/webhook"
+        assert url == webhook_url
         assert json["username"] == "Anime Crawler Bot"
         assert timeout == 10
         return FailingResponse()
 
     monkeypatch.setattr("services.notifier.requests.post", post)
 
-    with pytest.raises(NotificationError, match="Discord notification failed"):
-        DiscordNotifier("https://discord.example/webhook", required=True).send(
+    with pytest.raises(
+        NotificationError,
+        match=r"^Discord notification failed \(HTTP 500\)$",
+    ) as error:
+        DiscordNotifier(webhook_url, required=True).send(
             Notification(status="FAILURE", year="2026", season="自動排程")
         )
+
+    rendered_traceback = "".join(traceback.format_exception(error.value))
+    assert webhook_url not in str(error.value)
+    assert webhook_url not in rendered_traceback
+    assert error.value.__suppress_context__ is True
+
+
+def test_discord_network_error_does_not_expose_request_details(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    webhook_url = "https://discord.example/api/webhooks/123456/secret-token"
+
+    def post(*args: object, **kwargs: object) -> None:
+        raise requests.ConnectionError(f"connection failed for {webhook_url}")
+
+    monkeypatch.setattr("services.notifier.requests.post", post)
+
+    with pytest.raises(
+        NotificationError,
+        match="^Discord notification failed$",
+    ) as error:
+        DiscordNotifier(webhook_url, required=True).send(
+            Notification(status="FAILURE", year="2026", season="自動排程")
+        )
+
+    assert webhook_url not in "".join(traceback.format_exception(error.value))

@@ -32,7 +32,6 @@ jobs:
     env:
       TZ: Asia/Taipei
       BUILD_ONLY: "false"
-      APP_ENVIRONMENT: "production"
       PYTHONUNBUFFERED: "1"
       PYTHONDONTWRITEBYTECODE: "1"
 
@@ -97,8 +96,6 @@ jobs:
           CLOUDINARY_CLOUD_NAME: ${{ vars.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
-          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
-          SENTRY_BROWSER_DSN: ${{ vars.SENTRY_BROWSER_DSN }}
           CRAWLER_USER_AGENT: ${{ vars.CRAWLER_USER_AGENT }}
         run: python generate_static.py
 

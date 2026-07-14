@@ -29,14 +29,6 @@
             integrity="sha384-ZZ1pncU3bQe8y31yfZdMFdSpttDoPmOZg2wguVK9almUodir1PghgT0eY7Mrty8H"
             crossorigin="anonymous"></script>
 
-    {% if sentry_browser_dsn %}
-    <script defer
-            src="https://browser.sentry-cdn.com/7.114.0/bundle.tracing.min.js"
-            integrity="sha384-VGOED8oYoKLeSbW9BVK2QFx5AQXeuWMsJkBEvgezuHu0VArI9gbvCuJYSpm6RcXT"
-            crossorigin="anonymous"></script>
-    <script defer src="static/js/monitoring.js?v={{ build_version }}"></script>
-    {% endif %}
-
     {% block head %}{% endblock %}
 </head>
 <body>

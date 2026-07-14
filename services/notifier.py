@@ -157,4 +157,9 @@ class DiscordNotifier:
             response.raise_for_status()
             return True
         except requests.RequestException as exc:
-            raise NotificationError(f"Discord notification failed: {exc}") from exc
+            response = getattr(exc, "response", None)
+            status_code = getattr(response, "status_code", None)
+            message = "Discord notification failed"
+            if isinstance(status_code, int):
+                message += f" (HTTP {status_code})"
+            raise NotificationError(message) from None

@@ -13,7 +13,6 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
-import sentry_sdk
 from dotenv import load_dotenv
 from jinja2 import (
     Environment,
@@ -47,15 +46,6 @@ def configure_runtime() -> None:
         level=os.getenv("LOG_LEVEL", "INFO").upper(),
         format="%(asctime)s %(levelname)s %(name)s %(message)s",
     )
-    dsn = os.getenv("SENTRY_DSN", "").strip()
-    if dsn:
-        sentry_sdk.init(
-            dsn=dsn,
-            traces_sample_rate=float(os.getenv("SENTRY_TRACES_SAMPLE_RATE", "0.1")),
-            profiles_sample_rate=float(os.getenv("SENTRY_PROFILES_SAMPLE_RATE", "0")),
-            environment=os.getenv("APP_ENVIRONMENT", "production"),
-            release=os.getenv("BUILD_VERSION") or os.getenv("GITHUB_SHA"),
-        )
 
 
 def get_current_season(month: int) -> str:
@@ -185,8 +175,6 @@ def render_index(
         available_data=available_data,
         available_data_json=json.dumps(available_data, ensure_ascii=False),
         build_version=compute_build_version(paths),
-        sentry_browser_dsn=os.getenv("SENTRY_BROWSER_DSN", "").strip(),
-        app_environment=os.getenv("APP_ENVIRONMENT", "production"),
     )
     output_path = paths.output_dir / "index.html"
     atomic_write_text(output_path, content)
@@ -242,9 +230,6 @@ def crawl_quarters(
             if is_future_quarter(year_number, season, now):
                 logger.info("Future quarter not published yet: %s", exc)
                 continue
-            raise
-        except Exception as exc:
-            sentry_sdk.capture_exception(exc)
             raise
 
     return CrawlSummary(

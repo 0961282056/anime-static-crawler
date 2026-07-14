@@ -95,6 +95,7 @@ def test_crawler_has_an_always_running_final_notification_job() -> None:
     assert "crawl-and-prepare" in notify_job
     assert "publish-data-pr" in notify_job
     assert "DISCORD_WEBHOOK_URL" in notify_job
+    assert "SENTRY_" not in crawler
 
 
 def test_crawler_path_allowlist_handles_unicode_json_names_safely() -> None:
