@@ -71,6 +71,7 @@ class CrawlerSettings:
     request_timeout_seconds: int
     image_timeout_seconds: int
     image_max_bytes: int
+    image_max_pixels: int
     image_allowed_hosts: tuple[str, ...]
     minimum_count_ratio: float
     maximum_parse_failure_ratio: float
@@ -99,6 +100,7 @@ class CrawlerSettings:
             request_timeout_seconds=_env_int("REQUEST_TIMEOUT_SECONDS", 15),
             image_timeout_seconds=_env_int("IMAGE_TIMEOUT_SECONDS", 15),
             image_max_bytes=_env_int("IMAGE_MAX_BYTES", 10 * 1024 * 1024),
+            image_max_pixels=_env_int("IMAGE_MAX_PIXELS", 40_000_000),
             image_allowed_hosts=allowed_hosts,
             minimum_count_ratio=_env_float("QUALITY_MIN_COUNT_RATIO", 0.70),
             maximum_parse_failure_ratio=_env_float(
@@ -125,6 +127,8 @@ class CrawlerSettings:
             )
         if not settings.image_allowed_hosts:
             raise ConfigurationError("IMAGE_ALLOWED_HOSTS may not be empty")
+        if not 1 <= settings.image_max_pixels <= 100_000_000:
+            raise ConfigurationError("IMAGE_MAX_PIXELS must be between 1 and 100000000")
         return settings
 
 
