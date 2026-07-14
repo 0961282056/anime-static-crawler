@@ -15,20 +15,23 @@ from services.image_store import CloudinaryImageStore
 from services.settings import CrawlerSettings
 
 
-def _settings() -> CrawlerSettings:
-    return CrawlerSettings(
-        source_base_url="https://acgsecrets.hk/bangumi",
-        source_user_agent="crawler-tests/1.0",
-        max_workers=1,
-        request_timeout_seconds=3,
-        image_timeout_seconds=3,
-        image_max_bytes=1024 * 1024,
-        image_allowed_hosts=("static.acgsecrets.hk",),
-        minimum_count_ratio=0.7,
-        maximum_parse_failure_ratio=0.0,
-        maximum_fallback_id_ratio=0.0,
-        cloudinary_quota_limit_percent=90.0,
-    )
+def _settings(**overrides: object) -> CrawlerSettings:
+    values: dict[str, object] = {
+        "source_base_url": "https://acgsecrets.hk/bangumi",
+        "source_user_agent": "crawler-tests/1.0",
+        "max_workers": 1,
+        "request_timeout_seconds": 3,
+        "image_timeout_seconds": 3,
+        "image_max_bytes": 1024 * 1024,
+        "image_max_pixels": 1_000_000,
+        "image_allowed_hosts": ("static.acgsecrets.hk",),
+        "minimum_count_ratio": 0.7,
+        "maximum_parse_failure_ratio": 0.0,
+        "maximum_fallback_id_ratio": 0.0,
+        "cloudinary_quota_limit_percent": 90.0,
+    }
+    values.update(overrides)
+    return CrawlerSettings(**values)  # type: ignore[arg-type]
 
 
 def _png_bytes() -> bytes:
@@ -56,13 +59,14 @@ def _store(
     monkeypatch: pytest.MonkeyPatch,
     *,
     downloader: _Downloader | None = None,
+    settings: CrawlerSettings | None = None,
 ) -> CloudinaryImageStore:
     monkeypatch.setenv("CLOUDINARY_CLOUD_NAME", "test-cloud")
     monkeypatch.setenv("CLOUDINARY_API_KEY", "test-key")
     monkeypatch.setenv("CLOUDINARY_API_SECRET", "test-secret")
     monkeypatch.setattr(image_store_module.cloudinary, "config", lambda **kwargs: None)
     return CloudinaryImageStore(
-        _settings(),
+        settings or _settings(),
         CacheRepository(tmp_path / "cache.json"),
         downloader=downloader or _Downloader(_png_bytes()),
     )
@@ -222,3 +226,25 @@ def test_invalid_downloaded_image_never_reaches_upload(
 
     with pytest.raises(ImageStoreError, match="not a valid image"):
         store.store("https://static.acgsecrets.hk/a.png", "Invalid")
+
+
+def test_oversized_pixel_dimensions_never_reach_upload(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    buffer = io.BytesIO()
+    Image.new("RGB", (11, 10), (255, 0, 0)).save(buffer, format="PNG")
+    store = _store(
+        tmp_path,
+        monkeypatch,
+        downloader=_Downloader(buffer.getvalue()),
+        settings=_settings(image_max_pixels=100),
+    )
+    monkeypatch.setattr(
+        image_store_module.cloudinary.uploader,
+        "upload",
+        lambda *args, **kwargs: pytest.fail("upload must not run"),
+    )
+
+    with pytest.raises(ImageStoreError, match="110 pixels.*100 pixel safety limit"):
+        store.store("https://static.acgsecrets.hk/oversized.png", "Oversized")

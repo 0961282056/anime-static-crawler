@@ -19,6 +19,7 @@ ENV_NAMES = (
     "REQUEST_TIMEOUT_SECONDS",
     "IMAGE_TIMEOUT_SECONDS",
     "IMAGE_MAX_BYTES",
+    "IMAGE_MAX_PIXELS",
     "IMAGE_ALLOWED_HOSTS",
     "QUALITY_MIN_COUNT_RATIO",
     "QUALITY_MAX_PARSE_FAILURE_RATIO",
@@ -41,6 +42,7 @@ def test_crawler_settings_defaults_are_safe(
 
     assert settings.max_workers == 4
     assert settings.image_allowed_hosts == ("static.acgsecrets.hk",)
+    assert settings.image_max_pixels == 40_000_000
     assert settings.maximum_parse_failure_ratio == 0
     assert settings.maximum_fallback_id_ratio == 0
     assert settings.cloudinary_quota_limit_percent == 90
@@ -55,6 +57,8 @@ def test_crawler_settings_defaults_are_safe(
         ("QUALITY_MIN_COUNT_RATIO", "0", "greater than 0"),
         ("QUALITY_MAX_PARSE_FAILURE_RATIO", "1", "below 1"),
         ("QUALITY_MAX_FALLBACK_ID_RATIO", "-0.1", "at least 0"),
+        ("IMAGE_MAX_PIXELS", "0", "between 1 and 100000000"),
+        ("IMAGE_MAX_PIXELS", "100000001", "between 1 and 100000000"),
         ("IMAGE_ALLOWED_HOSTS", " , ", "may not be empty"),
     ],
 )

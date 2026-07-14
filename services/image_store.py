@@ -59,12 +59,21 @@ class CloudinaryImageStore:
                 "Run the manual retention dry-run after reviewing references."
             )
 
-    @staticmethod
-    def _verify_image(content: bytes) -> None:
+    def _verify_image(self, content: bytes) -> None:
         try:
             with Image.open(io.BytesIO(content)) as image:
+                width, height = image.size
+                pixel_count = width * height
+                if pixel_count > self.settings.image_max_pixels:
+                    raise ImageStoreError(
+                        "Downloaded image dimensions "
+                        f"{width}x{height} ({pixel_count} pixels) exceed the "
+                        f"{self.settings.image_max_pixels} pixel safety limit"
+                    )
                 image.verify()
-        except (UnidentifiedImageError, OSError) as exc:
+        except ImageStoreError:
+            raise
+        except (Image.DecompressionBombError, UnidentifiedImageError, OSError) as exc:
             raise ImageStoreError("Downloaded content is not a valid image") from exc
 
     def _lock_for(self, key: str) -> threading.Lock:

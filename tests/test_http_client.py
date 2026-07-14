@@ -19,6 +19,7 @@ def _settings(**overrides: object) -> CrawlerSettings:
         "request_timeout_seconds": 3,
         "image_timeout_seconds": 3,
         "image_max_bytes": 10,
+        "image_max_pixels": 1_000_000,
         "image_allowed_hosts": ("static.acgsecrets.hk",),
         "minimum_count_ratio": 0.7,
         "maximum_parse_failure_ratio": 0.0,
