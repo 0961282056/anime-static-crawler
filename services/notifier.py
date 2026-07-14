@@ -115,6 +115,31 @@ def build_workflow_notification(
     )
 
 
+def build_selector_canary_failure_notification(
+    *,
+    run_url: str,
+    event_name: str,
+    run_attempt: str,
+    now: datetime | None = None,
+) -> Notification:
+    """Build a failure-only alert without copying exception text into Discord."""
+
+    timestamp = now or datetime.now(TAIPEI_TZ)
+    detail = "來源網站 selector canary 失敗；未寫入 JSON、cache，也未呼叫 Cloudinary。"
+    if run_url:
+        detail += f" 請檢查：{run_url}"
+    detail += (
+        f" 觸發={event_name.strip() or 'unknown'}；"
+        f"執行嘗試={run_attempt.strip() or '1'}"
+    )
+    return Notification(
+        status="FAILURE",
+        year=str(timestamp.astimezone(TAIPEI_TZ).year),
+        season="來源 Selector Canary",
+        message=detail,
+    )
+
+
 class DiscordNotifier:
     def __init__(self, webhook_url: str | None, *, required: bool = False) -> None:
         self.webhook_url = (webhook_url or "").strip()

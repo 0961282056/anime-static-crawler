@@ -11,6 +11,7 @@ from pathlib import Path
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.notifier import (
     DiscordNotifier,
+    build_selector_canary_failure_notification,
     build_workflow_notification,
     workflow_outcome_from_environment,
 )
@@ -119,6 +120,38 @@ def notify_workflow() -> None:
     print(f"Discord workflow notification sent: {notification.status}")
 
 
+def selector_canary() -> None:
+    from services.selector_canary import run_selector_canary
+
+    result = run_selector_canary()
+    message = (
+        f"Selector canary passed: {result.year} {result.season}, "
+        f"{result.card_count} cards, {result.source_url}"
+    )
+    print(message)
+    summary_path = os.getenv("GITHUB_STEP_SUMMARY", "").strip()
+    if summary_path:
+        with Path(summary_path).open("a", encoding="utf-8", newline="\n") as summary:
+            summary.write("## Source selector canary\n\n")
+            summary.write(f"- Quarter: `{result.year} {result.season}`\n")
+            summary.write(f"- Parsed cards: `{result.card_count}`\n")
+            summary.write(f"- Source: {result.source_url}\n")
+            summary.write("- Side effects: `none`\n")
+
+
+def notify_selector_canary_failure() -> None:
+    notification = build_selector_canary_failure_notification(
+        run_url=os.getenv("RUN_URL", "").strip(),
+        event_name=os.getenv("EVENT_NAME", "").strip(),
+        run_attempt=os.getenv("RUN_ATTEMPT", "1").strip() or "1",
+    )
+    DiscordNotifier(
+        os.getenv("DISCORD_WEBHOOK_URL"),
+        required=True,
+    ).send(notification)
+    print("Discord selector canary failure notification sent")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Project validation commands")
     parser.add_argument(
@@ -129,6 +162,8 @@ def parse_args() -> argparse.Namespace:
             "validate-all",
             "quality-report",
             "notify-workflow",
+            "selector-canary",
+            "notify-selector-canary-failure",
         ),
     )
     return parser.parse_args()
@@ -138,6 +173,12 @@ def main() -> int:
     args = parse_args()
     if args.command == "notify-workflow":
         notify_workflow()
+        return 0
+    if args.command == "selector-canary":
+        selector_canary()
+        return 0
+    if args.command == "notify-selector-canary-failure":
+        notify_selector_canary_failure()
         return 0
 
     paths = ProjectPaths.from_environment()

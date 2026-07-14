@@ -12,11 +12,31 @@ from services.notifier import (
     DiscordNotifier,
     Notification,
     WorkflowOutcome,
+    build_selector_canary_failure_notification,
     build_workflow_notification,
     workflow_outcome_from_environment,
 )
 
 FIXED_NOW = datetime(2026, 7, 13, 12, 0, tzinfo=TAIPEI_TZ)
+
+
+def test_selector_canary_alert_is_failure_only_and_has_no_exception_text() -> None:
+    run_url = "https://github.com/example/repo/actions/runs/99"
+    notification = build_selector_canary_failure_notification(
+        run_url=run_url,
+        event_name="schedule",
+        run_attempt="2",
+        now=FIXED_NOW,
+    )
+
+    assert notification.status == "FAILURE"
+    assert notification.season == "來源 Selector Canary"
+    assert notification.count == 0
+    assert notification.changed is False
+    assert run_url in notification.message
+    assert "未寫入 JSON、cache" in notification.message
+    assert "schedule" in notification.message
+    assert "執行嘗試=2" in notification.message
 
 
 def test_no_change_workflow_is_successful() -> None:

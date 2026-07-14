@@ -21,6 +21,10 @@ class ItemParseError(CrawlerError):
     """One source card could not be parsed."""
 
 
+class SelectorCanaryError(CrawlerError):
+    """The live source page no longer matches the parser contract."""
+
+
 class ImageStoreError(CrawlerError):
     """An image could not be downloaded or stored safely."""
 
