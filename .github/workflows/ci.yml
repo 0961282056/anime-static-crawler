@@ -77,3 +77,27 @@ jobs:
           python manage.py validate-all
           python manage.py quality-report >> "$GITHUB_STEP_SUMMARY"
           node --check static/js/main.js
+
+      - name: Install browser smoke-test dependencies
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Run browser smoke test
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 --directory dist > "$RUNNER_TEMP/static-server.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          server_ready=false
+          for _ in {1..20}; do
+            if curl --fail --silent --show-error http://127.0.0.1:4173/ > /dev/null; then
+              server_ready=true
+              break
+            fi
+            sleep 0.5
+          done
+          if [[ "$server_ready" != "true" ]]; then
+            cat "$RUNNER_TEMP/static-server.log"
+            exit 1
+          fi
+          npm run test:e2e

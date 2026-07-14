@@ -1,0 +1,15 @@
+{
+  "name": "anime-static-crawler-browser-tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Browser smoke tests for the generated static anime site.",
+  "scripts": {
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -36,8 +36,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label">年份</label>
-                    <select class="form-select" x-model="year" @change="updateSeasonOptions(); loadData()">
+                    <label for="yearSelect" class="form-label">年份</label>
+                    <select id="yearSelect" class="form-select" x-model="year" @change="updateSeasonOptions(); loadData()">
                         <template x-for="y in years" :key="y">
                             <option :value="y" x-text="y + ' 年'"></option>
                         </template>
@@ -45,8 +45,8 @@
                 </div>
                 
                 <div class="form-group">
-                    <label class="form-label">季節</label>
-                    <select class="form-select" x-model="season" @change="loadData()">
+                    <label for="seasonSelect" class="form-label">季節</label>
+                    <select id="seasonSelect" class="form-select" x-model="season" @change="loadData()">
                         <template x-for="s in seasons" :key="s">
                             <option :value="s" x-text="s + '(' + {'冬': 1, '春': 4, '夏': 7, '秋': 10}[s] + '月)'"></option>
                         </template>
@@ -54,8 +54,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label">每週放送</label>
-                    <select class="form-select" x-model="filterDay">
+                    <label for="weekdaySelect" class="form-label">每週放送</label>
+                    <select id="weekdaySelect" class="form-select" x-model="filterDay">
                         <option value="全部">全部顯示</option>
                         <option value="一">週一</option>
                         <option value="二">週二</option>
@@ -96,7 +96,7 @@
 
         <main class="content-area">
             <div class="content-header">
-                <h2 class="section-title">查詢結果 <span class="badge" x-text="filteredAnime.length"></span></h2>
+                <h2 class="section-title">查詢結果 <span id="resultCount" class="badge" x-text="filteredAnime.length"></span></h2>
                 <span class="update-time" x-text="lastUpdateTime"></span>
             </div>
 

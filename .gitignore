@@ -21,6 +21,9 @@ venv/
 .pytest-*/
 .ruff_cache/
 htmlcov/
+playwright-report/
+test-results/
+node_modules/
 
 # Static build output: data JSON is the only tracked dist content
 dist/*
