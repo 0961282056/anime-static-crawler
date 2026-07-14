@@ -8,6 +8,7 @@ import logging
 import os
 import shutil
 import tempfile
+import time
 import uuid
 from dataclasses import dataclass
 from datetime import datetime
@@ -31,6 +32,8 @@ from services.settings import CrawlerSettings, ProjectPaths
 logger = logging.getLogger(__name__)
 START_YEAR_ON_EMPTY = 2018
 SEASONS = ("冬", "春", "夏", "秋")
+DIRECTORY_SWAP_ATTEMPTS = 5
+DIRECTORY_SWAP_INITIAL_DELAY_SECONDS = 0.1
 
 
 @dataclass(frozen=True)
@@ -74,6 +77,27 @@ def target_quarters(now: datetime, *, full_crawl: bool) -> list[tuple[str, str]]
     ]
 
 
+def _rename_directory_with_retry(source: Path, destination: Path) -> Path:
+    """Retry transient Windows access-denied errors with bounded backoff."""
+
+    for attempt in range(DIRECTORY_SWAP_ATTEMPTS):
+        try:
+            return source.rename(destination)
+        except PermissionError:
+            if attempt == DIRECTORY_SWAP_ATTEMPTS - 1:
+                raise
+            delay = DIRECTORY_SWAP_INITIAL_DELAY_SECONDS * (2**attempt)
+            logger.warning(
+                "Directory swap was temporarily denied; retrying in %.1f seconds "
+                "(%s/%s)",
+                delay,
+                attempt + 1,
+                DIRECTORY_SWAP_ATTEMPTS,
+            )
+            time.sleep(delay)
+    raise AssertionError("unreachable directory rename retry state")
+
+
 def _safe_replace_directory(source: Path, destination: Path, output_dir: Path) -> None:
     resolved_destination = destination.resolve()
     resolved_output = output_dir.resolve()
@@ -90,12 +114,12 @@ def _safe_replace_directory(source: Path, destination: Path, output_dir: Path) -
 
     had_destination = destination.exists()
     if had_destination:
-        destination.rename(backup)
+        _rename_directory_with_retry(destination, backup)
     try:
-        source.rename(destination)
+        _rename_directory_with_retry(source, destination)
     except Exception:
         if had_destination and backup.exists() and not destination.exists():
-            backup.rename(destination)
+            _rename_directory_with_retry(backup, destination)
         raise
     else:
         if backup.exists():
