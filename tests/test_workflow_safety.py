@@ -126,6 +126,8 @@ def test_selector_canary_is_read_only_and_alerts_only_on_failure() -> None:
     assert "workflow_dispatch:" in workflow
     assert "permissions:\n  contents: read" in workflow
     assert "python manage.py selector-canary" in canary_job
+    assert "requirements-canary.txt" in canary_job
+    assert "requirements-build.txt" not in canary_job
     assert "environment: crawler-production" not in canary_job
     assert "DISCORD_WEBHOOK_URL" not in canary_job
     assert "always()" in notify_job

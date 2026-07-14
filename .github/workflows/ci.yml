@@ -77,11 +77,12 @@ jobs:
       - name: Verify lock files are current
         run: |
           python -m piptools compile --resolver=backtracking --strip-extras --allow-unsafe --generate-hashes --newline=LF -o requirements-build.txt requirements-build.in
+          python -m piptools compile --resolver=backtracking --strip-extras --allow-unsafe --generate-hashes --newline=LF -o requirements-canary.txt requirements-canary.in
           python -m piptools compile --resolver=backtracking --strip-extras --allow-unsafe --generate-hashes --newline=LF -o requirements.txt requirements.in
           python -m piptools compile --resolver=backtracking --strip-extras --allow-unsafe --generate-hashes --no-annotate --newline=LF -o requirements-dev.txt requirements-dev.in
-          git diff --exit-code -- requirements-build.txt requirements.txt requirements-dev.txt
-          if [[ -n "$(git status --porcelain --untracked-files=all -- requirements-build.txt requirements.txt requirements-dev.txt)" ]]; then
-            git status --short --untracked-files=all -- requirements-build.txt requirements.txt requirements-dev.txt
+          git diff --exit-code -- requirements-build.txt requirements-canary.txt requirements.txt requirements-dev.txt
+          if [[ -n "$(git status --porcelain --untracked-files=all -- requirements-build.txt requirements-canary.txt requirements.txt requirements-dev.txt)" ]]; then
+            git status --short --untracked-files=all -- requirements-build.txt requirements-canary.txt requirements.txt requirements-dev.txt
             exit 1
           fi
 
