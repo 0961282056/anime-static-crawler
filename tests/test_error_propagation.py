@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 from datetime import datetime
 from pathlib import Path
 from types import SimpleNamespace
@@ -43,14 +44,16 @@ class _StaticSourceClient:
         return "https://acgsecrets.hk/bangumi/202607/", self.document
 
 
+def _managed_image_url(seed: str) -> str:
+    public_id = hashlib.sha256(seed.encode("utf-8")).hexdigest()
+    return f"https://res.cloudinary.com/test/image/upload/anime_covers/{public_id}.webp"
+
+
 def _valid_anime(bangumi_id: str = "anime-2200") -> Anime:
     return Anime(
         bangumi_id=bangumi_id,
         anime_name=f"測試動畫 {bangumi_id}",
-        anime_image_url=(
-            "https://res.cloudinary.com/test/image/upload/"
-            f"anime_covers/{bangumi_id}.webp"
-        ),
+        anime_image_url=_managed_image_url(bangumi_id),
         premiere_date="一",
         premiere_time="22:00",
         story="測試",
@@ -251,10 +254,7 @@ def test_same_times_have_a_stable_id_and_name_tie_breaker() -> None:
         return Anime(
             bangumi_id=bangumi_id,
             anime_name=name,
-            anime_image_url=(
-                "https://res.cloudinary.com/test/image/upload/"
-                f"anime_covers/{bangumi_id}.webp"
-            ),
+            anime_image_url=_managed_image_url(bangumi_id),
             premiere_date="一",
             premiere_time="22:00",
             story="測試",

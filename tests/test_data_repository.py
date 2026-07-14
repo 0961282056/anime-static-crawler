@@ -157,6 +157,26 @@ def test_parse_failure_count_fails_the_default_quality_gate(
     assert not repository.quarter_path("2026", "夏").exists()
 
 
+def test_invalid_quarter_source_url_is_rejected_before_write(
+    tmp_path: Path,
+    anime_record_factory: Callable[..., dict[str, str]],
+) -> None:
+    repository = _repository(tmp_path)
+
+    with pytest.raises(DataContractError, match="Quarter dataset"):
+        repository.write_quarter(
+            year="2026",
+            season="夏",
+            records=[anime_record_factory(1)],
+            source_url="https://evil.example/bangumi/202607/",
+            source_count=1,
+            parse_failure_count=0,
+            generated_at=INITIAL_TIME,
+        )
+
+    assert not repository.quarter_path("2026", "夏").exists()
+
+
 def test_strict_validation_rejects_legacy_unknown_ids(
     tmp_path: Path,
     anime_record_factory: Callable[..., dict[str, str]],

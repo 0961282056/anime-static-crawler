@@ -2,13 +2,53 @@
 
 from __future__ import annotations
 
+import re
 from datetime import datetime
 from typing import Literal
+from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 TAIPEI_TZ = ZoneInfo("Asia/Taipei")
+BANGUMI_ID_PATTERN = re.compile(r"(?:anime-[0-9]+|fallback-[0-9a-f]{64})\Z")
+BROADCAST_TIME_PATTERN = re.compile(r"(?:[0-2][0-9]:[0-5][0-9]|無首播時間)\Z")
+SOURCE_QUARTER_URL_PATTERN = re.compile(
+    r"https://acgsecrets\.hk/bangumi/[0-9]{4}(?:01|04|07|10)/\Z"
+)
+CLOUDINARY_DELIVERY_PATH_PATTERN = re.compile(
+    r"/[a-z0-9_-]+/image/upload/(?:[^/]+/)*"
+    r"anime_covers/[0-9a-f]{32}(?:[0-9a-f]{32})?"
+    r"(?:\.[A-Za-z0-9]+)?\Z"
+)
+BroadcastDay = Literal["一", "二", "三", "四", "五", "六", "日", "無首播日期"]
+
+
+def _validated_bangumi_id(value: object, *, allow_legacy: bool) -> str:
+    text = str(value or "").strip()
+    if allow_legacy and text == "未知ID":
+        return text
+    if not BANGUMI_ID_PATTERN.fullmatch(text):
+        raise ValueError(
+            "bangumi_id must be anime-<digits> or fallback-<64 lowercase hex>"
+        )
+    return text
+
+
+def _validated_broadcast_day(value: object) -> str:
+    text = str(value or "").strip()
+    if text == "天":
+        return "日"
+    return text or "無首播日期"
+
+
+def _validated_broadcast_time(value: object) -> str:
+    text = str(value or "").strip() or "無首播時間"
+    if not BROADCAST_TIME_PATTERN.fullmatch(text):
+        raise ValueError(
+            "premiere_time must use HH:MM with hour 00-29 and minute 00-59"
+        )
+    return text
 
 
 class Anime(BaseModel):
@@ -19,15 +59,14 @@ class Anime(BaseModel):
     bangumi_id: str
     anime_name: str = Field(min_length=1)
     anime_image_url: str = Field(min_length=1)
-    premiere_date: str = "無首播日期"
+    premiere_date: BroadcastDay = "無首播日期"
     premiere_time: str = "無首播時間"
     story: str = "暫無簡介"
 
     @field_validator("bangumi_id", mode="before")
     @classmethod
     def validate_bangumi_id(cls, value: object) -> str:
-        text = str(value or "").strip()
-        return text or "未知ID"
+        return _validated_bangumi_id(value, allow_legacy=True)
 
     @field_validator("anime_name", mode="before")
     @classmethod
@@ -41,8 +80,21 @@ class Anime(BaseModel):
     @classmethod
     def validate_image_url(cls, value: object) -> str:
         text = str(value or "").strip()
-        if not text.startswith("https://res.cloudinary.com/"):
-            raise ValueError("anime_image_url must be an HTTPS Cloudinary URL")
+        try:
+            parsed = urlsplit(text)
+        except ValueError as exc:
+            raise ValueError("anime_image_url must be a valid URL") from exc
+        if (
+            parsed.scheme != "https"
+            or parsed.netloc != "res.cloudinary.com"
+            or parsed.query
+            or parsed.fragment
+            or not CLOUDINARY_DELIVERY_PATH_PATTERN.fullmatch(parsed.path)
+        ):
+            raise ValueError(
+                "anime_image_url must be an HTTPS Cloudinary image URL under "
+                "anime_covers/<32 or 64 lowercase hex>"
+            )
         return text
 
     @field_validator("story", mode="before")
@@ -53,15 +105,12 @@ class Anime(BaseModel):
     @field_validator("premiere_date", mode="before")
     @classmethod
     def normalize_date(cls, value: object) -> str:
-        text = str(value or "").strip()
-        if text == "天":
-            return "日"
-        return text or "無首播日期"
+        return _validated_broadcast_day(value)
 
     @field_validator("premiere_time", mode="before")
     @classmethod
     def normalize_time(cls, value: object) -> str:
-        return str(value).strip() if value else "無首播時間"
+        return _validated_broadcast_time(value)
 
 
 class AnimeCandidate(BaseModel):
@@ -72,9 +121,24 @@ class AnimeCandidate(BaseModel):
     bangumi_id: str
     anime_name: str = Field(min_length=1)
     source_image_url: str = Field(min_length=1)
-    premiere_date: str = "無首播日期"
+    premiere_date: BroadcastDay = "無首播日期"
     premiere_time: str = "無首播時間"
     story: str = "暫無簡介"
+
+    @field_validator("bangumi_id", mode="before")
+    @classmethod
+    def validate_bangumi_id(cls, value: object) -> str:
+        return _validated_bangumi_id(value, allow_legacy=False)
+
+    @field_validator("premiere_date", mode="before")
+    @classmethod
+    def normalize_date(cls, value: object) -> str:
+        return _validated_broadcast_day(value)
+
+    @field_validator("premiere_time", mode="before")
+    @classmethod
+    def normalize_time(cls, value: object) -> str:
+        return _validated_broadcast_time(value)
 
 
 class DataQuality(BaseModel):
@@ -136,3 +200,12 @@ class QuarterDataset(BaseModel):
         if value.tzinfo is None:
             return value.replace(tzinfo=TAIPEI_TZ)
         return value.astimezone(TAIPEI_TZ)
+
+    @field_validator("source_url")
+    @classmethod
+    def validate_source_url(cls, value: str | None) -> str | None:
+        if value is None:
+            return None
+        if not SOURCE_QUARTER_URL_PATTERN.fullmatch(value):
+            raise ValueError("source_url must be an HTTPS acgsecrets.hk quarterly URL")
+        return value
