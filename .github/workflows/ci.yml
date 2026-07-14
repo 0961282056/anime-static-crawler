@@ -64,6 +64,9 @@ jobs:
       - name: Run tests
         run: python -m pytest
 
+      - name: Enforce retention CLI coverage
+        run: python -m coverage report --include=cloudinary_cleaner.py --fail-under=70
+
       - name: Audit Python dependencies
         run: python -m pip_audit --require-hashes -r requirements.txt
 
