@@ -36,6 +36,7 @@ Cloudflare Pages 執行 bash build.sh
 - 執行 Cloudinary retention 前必須先把 `CRAWLER_SCHEDULE_ENABLED` 設為 `false`，並確認沒有 crawler 或任何以 `main` 為目標的 Pull Request；cache safety PR 必須在刪圖前先合併，整個 workflow 成功後才能恢復排程。
 - `static/` 是前端資源的唯一來源；`dist/static/` 由建置自動產生。
 - Windows 若暫時鎖住 `dist/static`，建置會以有限次 exponential backoff 重試；重試耗盡仍會保留原輸出並安全失敗，不會無限等待或略過錯誤。
+- Alpine 使用本站託管、固定雜湊的 CSP build；正式 CSP 不允許 `unsafe-eval`。目前仍因分享圖片的動態樣式保留 `style-src 'unsafe-inline'`，移除前必須先完成該功能的樣式重構與瀏覽器回歸。
 - 發佈前的爬蟲錯誤、資料契約錯誤或品質 gate 失敗，都會讓工作流程失敗並保留 `main` 上一版資料。資料 PR 已通過 gate 並合併後，後續 Discord 傳送失敗仍會讓 workflow 紅燈，但不會回滾已合併資料。
 - JSON schema 會驗證 `bangumi_id`、星期、`HH:MM`（允許動畫排程使用 24–29 時）、來源季度 URL，以及 Cloudinary `anime_covers/<32 或 64 位雜湊>` 路徑；格式不符時在原子寫入前停止。
 
