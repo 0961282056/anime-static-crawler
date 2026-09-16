@@ -2,23 +2,519 @@
   "schema_version": 1,
   "anime_list": [
     {
+      "bangumi_id": "anime-2319",
+      "anime_name": "轉生哥布林有什麼問題嗎？",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0706cae7c8f07d4b83204cada3fa887d5795da47199828646dc8b4836259f765",
+      "premiere_date": "一",
+      "premiere_time": "22:00",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2304",
+      "anime_name": "魔法少女育成計畫 restart",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b0e82b3023407f9b1bbe18daa29e87669760187e10775963bf91d8e3e4bbec0c",
+      "premiere_date": "一",
+      "premiere_time": "26:00",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2302",
+      "anime_name": "亂世千金倪亞．利斯頓 轉生為嬌弱千金的弒神武人華麗無雙錄",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3e9f9d8385cd11853c49d0921c72d19cf1c57121943f4b925ae54c32c7ba0caa",
+      "premiere_date": "二",
+      "premiere_time": "21:25",
+      "story": "過去曾有個達成弒神偉業的大英雄。強大過頭的她在臨死之際，仍夢想著能遇見殺得了自己的強大對手──想不到在死亡的另一端等待著她的，竟是轉生成為嬌弱貴族千金的嶄新人生！？ 她在未來的世界成為有著美麗容貌，身體卻過於孱弱的千金小姐倪亞‧利斯頓，獲得第二人生後，仍追求與強者的邂逅，愉悅地投身於接連不斷的戰場之中！ 「──啊哈哈！還愣什麼呢！再不快點擺好架式，可就只能任我蹂躪了唷！」 由美如天使的亂世千金主演的最強無雙傳說，在此揭開序幕！！"
+    },
+    {
+      "bangumi_id": "anime-2334",
+      "anime_name": "Battle Spirits [Re] 絕界之空",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0c2681b24608cf5309d20df7377ed7f86f1ca59fcab6fee9f028e05f0a4b1a5a",
+      "premiere_date": "二",
+      "premiere_time": "23:00",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2286",
+      "anime_name": "偵探已經，死了。第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5ba6ababea1ff4932f91eb107fa98fe6c69251f390069566bcfcdd249fdb3c4a",
+      "premiere_date": "三",
+      "premiere_time": "21:30",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2312",
+      "anime_name": "世界最強的魔女，就此開始",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a23083de6f9bbbcd5bf3ce8f7c962d71fbfcd984364f90a864c9257ed3c4196a",
+      "premiere_date": "三",
+      "premiere_time": "22:00",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2314",
+      "anime_name": "魔法騎士",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/876237c358baba90d1c4ad4055ad62d0a91ded6dfd83a35000919e51c66e33d1",
+      "premiere_date": "三",
+      "premiere_time": "23:45",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2287",
+      "anime_name": "轉生就是劍 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c3e1306f2a0029695e3d26800b88e1877b8f139455361572cd22684b8e30cc48",
+      "premiere_date": "三",
+      "premiere_time": "24:00",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2333",
+      "anime_name": "新網球王子 U-17 WORLD CUP 世界盃決賽成員決定戰",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/370bd7c3b2fc844ed7ab1a6f19aae74655553110e3e69a20ccc0e52a66acf48f",
+      "premiere_date": "三",
+      "premiere_time": "24:00",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2322",
+      "anime_name": "獸王武神丹帝拜恩",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/58c1beb38e00d75a94dfc405308583327405c8fc32f0ae77334313c5a0d121e0",
+      "premiere_date": "三",
+      "premiere_time": "24:30",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2300",
+      "anime_name": "FX 戰士久留美",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a073db3abb17a004b764d0f512004f5be69cf7374d2e9bee8e41381cc04ddb70",
+      "premiere_date": "四",
+      "premiere_time": "21:30",
+      "story": "女大學生久留美為了拯救在雷曼兄弟事件中將家中2000萬圓賠光的媽媽，發誓要藉由FX發大財──！ 這是一段描述踏入FX深坑的女大學生們，有點危險（!?）的賺錢故事！"
+    },
+    {
       "bangumi_id": "anime-2229",
       "anime_name": "遭到流放的轉生重騎士憑藉遊戲知識大開無雙",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c0a3f53f694343004d6a47ba103f389d",
       "premiere_date": "四",
       "premiere_time": "24:26",
       "story": "有著劍聖血統的埃爾瑪，在十五歲時的〈祝福儀式〉中，顯現出最典型的垃圾職業重騎士，因而遭剝奪走繼承權，並且趕出家門。 重騎士的能力值非常偏重一方，技能沒有半個堪用。更甚至，還被所有人公認為是膽小怠惰的人才會得到的職業。 但埃爾瑪知道，這個世界是他曾經玩到透徹的遊戲世界──而重騎士，才是真正最強的職業！ 埃爾瑪於是全力動用上輩子的知識，開始有效率地攻略這個世界！"
+    },
+    {
+      "bangumi_id": "anime-2293",
+      "anime_name": "冰劍的魔術師將要統一世界 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/589b4cbd1f19e71ff76578656fb8b99ebc341f4e1a2aeb1536118fa32b1aa1f0",
+      "premiere_date": "四",
+      "premiere_time": "25:28",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2279",
+      "anime_name": "藥師少女的獨語 第三季 前半",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b9c49b34bd81c576fcb3d55f804d8208b62fd25d7f82f8ca8a10aa8391793606",
+      "premiere_date": "五",
+      "premiere_time": "23:00",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2283",
+      "anime_name": "裝備仔",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/91521f4e2cbf24ad0804f97e7f6c3884a7229fad2e5e3d18fb17b7f3b741c884",
+      "premiere_date": "五",
+      "premiere_time": "23:30",
+      "story": "現實生活中的超級魯蛇申英宇，意外發現遊戲中的傳說物品──「傳說級匠人的奇書」！ 誤打誤撞地轉職成20億玩家中，僅有一人的傳奇職業！他將擺脫不幸與負債，最強玩家就此誕生⋯⋯ ？"
+    },
+    {
+      "bangumi_id": "anime-2299",
+      "anime_name": "螢火蟲的出嫁",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/245fd0999016207a6c5f0f2c4b7b52abd3b9836ce4931e86d2a73fd6ea59e0c9",
+      "premiere_date": "五",
+      "premiere_time": "23:30",
+      "story": "在明治時代，儘管受惠於天賜的美貌及家名，仍被宣告命不久矣的伯爵千金桐谷紗都子的心中只有一個夢想，那就是希望可以結一場能帶給家族利益的婚姻。 突然被神祕殺手盯上性命的紗都子為了活命，便對殺手後藤進平提議：「請你和我結婚吧。只要和我結婚，你便能獲得一切。」 原本只是撐場面的謊言，卻因為進平是位愛情相當沉重的男人…讓她無法從這樁婚約中脫身──！？"
+    },
+    {
+      "bangumi_id": "anime-2281",
+      "anime_name": "暗部共生少女",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6fe9d901a5ede746e341282b512741d9da0a72b9a144891180972ea6b2e3786c",
+      "premiere_date": "五",
+      "premiere_time": "24:30",
+      "story": "「超能力」被當成「普通科學」的「學園都市」。其和平的背後存在「暗部」組織，承包不能浮上檯面的任務。 「道具」──由四名少女組成的精銳部隊。能夠讀取能力者身上微弱力量加以追蹤的瀧壺理后、擅長以爆裂物和陷阱戰鬥的芙蘭達．塞維倫、能隨心所欲操縱氮氣負責防禦的絹旗最愛，以及學園都市引以為傲的七名超能力者之一的麥野沈利。自由地活在學園都市黑暗之中的她們，靜靜鎖定目標──！ 「老、娘、今、天、一、定、要、宰、了、妳。」 這是描述最後發展為「悽慘事件」的少女們其相遇、友情，以及黑暗的故事。"
+    },
+    {
+      "bangumi_id": "anime-2291",
+      "anime_name": "東京復仇者 三天戰爭篇",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/22db4000e60a7283cc35740a2b01049296f6365d9e15f41a9486e4c2735893c3",
+      "premiere_date": "五",
+      "premiere_time": "25:23",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2323",
+      "anime_name": "Keroro軍曹☆",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e74e5eb024e31b2f4672aa5b4e4cf2ba27004aa81a1d8e62d72ebfc69a7abafe",
+      "premiere_date": "六",
+      "premiere_time": "09:30",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2321",
+      "anime_name": "Vertex Force",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1a3ebaa323984eb0559fb9b1e3a620649bcb39185d2ba8fa74b21f13e745b14b",
+      "premiere_date": "六",
+      "premiere_time": "23:30",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2215",
+      "anime_name": "魔法★探險家",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/492ff03234855e50e046d4187857e673c2fc183804df8aa9cbf52e6db7c6ebf6",
+      "premiere_date": "六",
+      "premiere_time": "24:00",
+      "story": "「傳說的美少女遊戲」《魔法★探險家》。我轉生為這遊戲中身懷作弊技能又走桃花運的主角！──旁邊那位臉上掛著輕浮笑容又不走運的朋友角色。 但是我擁有當初鑽研這款遊戲的知識，只要選擇最佳的行動，肯定也能把女角們對我的好感度提升到MAX！而且這個角色還有著「魔力量世界第一」的隱藏作弊性能與獨一無二的特殊能力── 「既然這樣，我乾脆不當主角的朋友，自由自在地過活吧！」"
+    },
+    {
+      "bangumi_id": "anime-2280",
+      "anime_name": "學生會也有洞！",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bd21a44b1c77f215b70854b017ae71d267c6f8372f544d04f8c4f0b725436585",
+      "premiere_date": "六",
+      "premiere_time": "24:30",
+      "story": "這裡是城鎮近郊的升學型學校。 文藝青年‧水之江梅，為了避免留級， 加入學生會成為幹部！ 可是，學生會成員們 不是笨蛋，就是悶騷鬼， 根本都是一群怪咖！ 跟學生會這群充滿個性的同伴一起 編織的不可思議、和樂融融校園生活，即將開始♪"
+    },
+    {
+      "bangumi_id": "anime-2311",
+      "anime_name": "亂馬½ 第三季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6535a64c58f05ef9da2fc326c4ace69dd957f90e33c4f669baa78fe0ebb81a02",
+      "premiere_date": "六",
+      "premiere_time": "24:55",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2306",
+      "anime_name": "用【循環利息】強制收回借出的魔力",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/047af61087d9b7bc6b92b527387dd3cb65cc2ca3142672ec6e628fbb43711c1a",
+      "premiere_date": "六",
+      "premiere_time": "25:30",
+      "story": "連特隸屬於冒險者隊伍「斷空之劍」，為了支持隊友，一直以來都將魔力「借出」給他們，卻慘遭隊友們無情驅逐。 不過被拋棄的怒火促使連特的天賦成功進化，還召喚出新的搭檔──支援妖精艾姆菲。 她告訴連特討回借出魔力的方法──就用「循環利息」的方式強制收回。 以前所未有的視角描繪──資產管理型的奇幻冒險故事!!"
+    },
+    {
+      "bangumi_id": "anime-2339",
+      "anime_name": "Dreamland",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3e9f2682888f94bea2a643da7856318563ee63e9b957bb4cb310ac23d98493cb",
+      "premiere_date": "六",
+      "premiere_time": "26:00",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2290",
+      "anime_name": "青春盒子 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/29d6fda1ec89f976c5179478751c5d9179f84e6b3aca6d978a65bc8adca5d123",
+      "premiere_date": "日",
+      "premiere_time": "16:30",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2303",
+      "anime_name": "夜櫻家大作戰 第二季 第二部分",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1155bc2be2dedd3e322e35276db44a49c135cf3177ff9774625bd14eda590856",
+      "premiere_date": "日",
+      "premiere_time": "17:00",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2329",
+      "anime_name": "鑽石王牌 actⅡ第2季 2nd cour",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/de7a801535615321148297c06b5bfa6de523d25f265ceb33b3002cbb0d0bd5fc",
+      "premiere_date": "日",
+      "premiere_time": "17:30",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2331",
+      "anime_name": "大叔喜歡可愛小玩意",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5844a7d910999ee2ecf89a599ba7b5b20b87adb879d71302e2fd6fe62390cd98",
+      "premiere_date": "日",
+      "premiere_time": "22:00",
+      "story": "長相帥氣、精明能幹的帥大叔小路先生，其實有著不可告人的興趣，那就是對可愛的東西毫無抵抗力！每天都要抱著他最愛的巴哥太郎娃娃睡覺！但自從外甥搬過來住後，為了不被發現只好將寶貝們都藏進櫥櫃。而在公司裡也只能看著女同事的可愛文具好生羨慕，還莫名被愛貓成痴的同事當眼中釘。小路先生該如何解決重重危機，投入心愛娃娃的懷抱呢？"
+    },
+    {
+      "bangumi_id": "anime-2327",
+      "anime_name": "魔法姊妹露露特莉莉 2nd cour",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/826c35184a3c3864cdcac478f2831a912bce4fdb39017861baf4a1371dd634e9",
+      "premiere_date": "日",
+      "premiere_time": "22:30",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2320",
+      "anime_name": "戰車椅子-TANK CHAIR-",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/74a39623ec0666220248d5237ecfb6eb6b6f7ff282b5bf5df10c104baa7a6244",
+      "premiere_date": "日",
+      "premiere_time": "23:00",
+      "story": "最強殺手．平良凪為了保護妹妹．靜被子彈打中，因此腦部受到重創，失去意識。 然而他的身體變得在感受到「殺意」時，會短暫恢復意識。 為了幫助哥哥完全恢復意識，靜不停找尋能夠引起殺意的強敵，凪的「復健」之旅就此展開！"
+    },
+    {
+      "bangumi_id": "anime-2307",
+      "anime_name": "龍珠超 比路斯",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8d73ab1fb14cd8576760ab118f81d950f918f8e69122cce3d818f9fe4a42faf9",
+      "premiere_date": "日",
+      "premiere_time": "23:15",
+      "story": "悟空與比路斯令人捏把冷汗的超絕戰鬥！ 在最後，還有等待著復活時機的菲利的身影——"
+    },
+    {
+      "bangumi_id": "anime-2309",
+      "anime_name": "和沒有信徒的女神大人一起攻略異世界",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c00105e4b097dacae8c1d4fd122b1b08f870c9e6c8d81799d830f9d4be5d1910",
+      "premiere_date": "日",
+      "premiere_time": "23:30",
+      "story": "遊戲成癮的高中生‧高月誠人於校外教學回程中遭遇意外事故，與全班同學一同轉移到了異世界。異世界的神明們紛紛賜予全班同學逆天能力――然而，只有誠人是比普通人還遜的『魔法師學徒』!? 此時，在全班最弱的誠人夢中，出現一位毫無信徒的無名女神‧諾雅。見她拚死拚活地懇求自己信仰她，誠人便決定成為她的第一號信徒。之後，女神旋即下達一道神諭――到人跡未至的迷宮中拯救諾雅!?誠人身為遊戲成癮者的鬥志，因為這項超高難度的神諭而熊熊燃燒。得到諾雅的庇護與神器後，他便以突破常識的方法踏上成為最強角色的道路――"
+    },
+    {
+      "bangumi_id": "anime-2315",
+      "anime_name": "極致軟弱千金小姐，不小心答應了精明未婚夫的賭局",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5a114c9236e96ec3f0bfc75402d3605c72393cd7bf788c079709fbb4abb91de3",
+      "premiere_date": "日",
+      "premiere_time": "23:30",
+      "story": "我轉生為女性向遊戲裡的反派伯爵千金──琵雅。 面對未來遭到驅逐出境的命運，我的內心變得軟弱不堪，於是我向宰相之子路法斯少爺提出解除婚約並成為策展人的請求，沒想到他卻似乎反而被激起鬥志？ 在我埋首於化石研究的日子裡，路法斯少爺一直守護在我身邊，並接連消除了可能讓我慘遭流放的危機──"
+    },
+    {
+      "bangumi_id": "anime-2328",
+      "anime_name": "殺手旅店 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e49234307fc15a78ab449c9a21b2a203910b9ed23616d160a11e90aab18aafc7",
+      "premiere_date": "日",
+      "premiere_time": "23:45",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2324",
+      "anime_name": "異境奇緣",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f2b12c718ebbeb9607467ea7cc89049af259bbe29779ba2e26f0af909303d674",
+      "premiere_date": "日",
+      "premiere_time": "24:00",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2335",
+      "anime_name": "女友的朋友",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/07a54243ab09a6087434d26c4c32a81609dbe2b69674e8968df735fd36639325",
+      "premiere_date": "日",
+      "premiere_time": "25:05",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2336",
+      "anime_name": "與暗黑召喚師秘密戀愛中",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/51179ca42ac93a18f25872a5da250db7e83a23663ae1dd38d9e013b6410f01b2",
+      "premiere_date": "日",
+      "premiere_time": "25:20",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2282",
+      "anime_name": "DARK MACHINE THE ANIMATION",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5c301433f4a4bdc01f48aa6b1976c13665afc4d7b4cc2e5d2c1078055cf302de",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2284",
+      "anime_name": "彈珠汽水瓶裏的千歲同學 第二季度",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f28218a86991f9c8f33dd27159bed3f7eaffe650b46a79b30f236a79779ec394",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2285",
+      "anime_name": "轉生貴族憑鑑定技能扭轉人生 第三季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/69a6d94cdb1dc3aba210934d92fe343a6936ddd91ea84c085c4f23324f2bae8e",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2288",
+      "anime_name": "黑色五葉草 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/2776c789c5ecf903feecd0a0257073eef35e84d83fb62534ec38edf496a46262",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2289",
+      "anime_name": "重生者的魔法一定要特別",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1c5674b7119d80b430a1e82c589ba76df81086e22db688146a03762273ae32c1",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2292",
+      "anime_name": "野生的大魔王出現了！第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f2194f54edfe11c3d6ec93479a98f848",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2294",
+      "anime_name": "一覺醒來就有了最強裝備跟太空船 決定以自家獨棟建築為目標當傭兵自由過活",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/098a9c93a0aefab2777312a2a8fa4c5793c3daa6507909db94924e5e7533b3cd",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "從公司回家的佐藤孝弘，今天也像往常一樣玩著自己喜歡的遊戲（玩到上榜的程度），便上床睡覺了。結果睜開眼睛時眼前一片黑暗……應該說是在太空船內!?簡直像是約定成那樣，遭到了宙賊的襲擊，即使如此，我駕駛著和在遊戲中強化過的愛機一模一樣的太空船將對方瞬間解決掉！ 不管怎麼說，我好像在像遊戲的時空裡。如果這樣的話，靠著做傭兵賺錢的話，應該不會為錢所困，還能買間房子悠閒地過日子吧……結果，卻撿到了身無分文的美少女……？"
+    },
+    {
+      "bangumi_id": "anime-2295",
+      "anime_name": "佐佐木與文鳥小嗶 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ba9aeb02ae6305c77fa55665d3b73e90981732420c96c838984263cecf99dbfe",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2296",
+      "anime_name": "桃源暗鬼 ～日光・華嚴之瀧篇～",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a016df8ac6583c9584010a987923c251c005810830d4676ecf6b0b2f278ddcf6",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2297",
+      "anime_name": "轉生後的大聖女，極力隱瞞聖女的身分",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/93e3763a8fbca4a8f334ea7f7cb8b51250930efb3642f7f7d35321628dabf4ae",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "菲亞是出生於騎士家族的女孩。她原本一心想成為騎士，卻在瀕死之際想起自己前世是「稀世大聖女」，記憶與力量在此刻一起回到了菲亞的身上—— 「咦，這些難道是早已成為傳說的失落的魔法！」 可是前世的我疑似被魔王左右手威脅過—— 「若是轉生成聖女就殺了妳。」 那我若是用了這種力量，才用一次就會被人發現自己是聖女，還會被魔族殺掉吧？既然如此，那我就要隱藏真實身分，貫徹初衷，成為一名騎士！ 萬萬沒想到，在「成年禮」中意外收獲了SS級魔物「黑龍」作為從魔！我的聖女身分究竟能不能成功被隱藏啊？"
+    },
+    {
+      "bangumi_id": "anime-2298",
+      "anime_name": "青之蘆葦 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/fb040364bc770959f908531802838a095d2236465aa62db6c4a84301fdf2fb1f",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2301",
+      "anime_name": "冷淡的佐藤同學只對我撒嬌",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b59443652ceea9252fdae0197c08741f1587c6d229b7a9980953df8a6b4be251",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "「佐藤同學是高嶺之花，對任何人都很冷淡。不過，只有我知道她其實處處破綻。好比說她拍照技術超爛，卻容易露出沾沾自喜的表情。而且萌萌地微笑的時候超級可愛的。」 「押尾同學對任何人都很溫柔。不過，只有我知道他其實也有調皮的一面。他熟悉社群網路、在時髦的咖啡廳工作。而且他露出淘氣笑容時我都會臉紅心跳。」 ──不可以告訴別人喔，我（人家）就是喜歡這樣的她（他）。"
+    },
+    {
+      "bangumi_id": "anime-2305",
+      "anime_name": "你好，身為魔女的我，被心上人委託製作迷情藥",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/42457d5fd990bc4b22600a7d2eaee4b3b111087fa41d205aafc37d1e4d064b80",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "「我希望妳調製迷情藥。」 當湖畔的善良魔女暗戀的騎士說出這句話，她的戀情從此宣告結束。 既然如此，至少在藥水完成之前──為了盡量拉長相處的時間，魔女請騎士收集各式各樣的材料。 然而騎士有一天，卻開始拿跟材料無關的食物過來……"
+    },
+    {
+      "bangumi_id": "anime-2308",
+      "anime_name": "冰之城牆 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7c1c0e49edf674bd04815133880a7c753161f9dedb2ab89ab0d9a7913e186e34",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2310",
+      "anime_name": "被放逐的作弊賦予魔術師享受隨心所欲的第二人生。",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/aec538b6d9bb69a644c79bd20ab33a9a387d222dc42f00b011816f4d9e6591e2",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2313",
+      "anime_name": "PSYREN－末日遊戲－",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a44675814a3eaf4b211ca113a333d8b66a3b4db06bd1a0f5c18b35a829439b2a",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2316",
+      "anime_name": "羅梅莉亞戰記",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e765cb215201c8d74f05aaaf7557fa35069a6dd0b3e4a42df60a892f25a2e7aa",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2317",
+      "anime_name": "朱色的面具",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/979dddf5d2615fdd533f066dca2ecf08b138b0856c115395a300369bd5ba5c12",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2318",
+      "anime_name": "幻想水滸傳 The Anime",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8c8b1fbe2a6dc7869846211dd968be0b78e48d09ef5b1bcd499e45a9085aecdc",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2325",
+      "anime_name": "#尋找殭屍中",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bbd2f45515861157cd180998d6be8396519570ddb88b7270c80941dadd20bd3c",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "自從九成人類感染神祕傳染病而死亡的「赤紅之日」至今，已經過了十三年。對於毀滅前的世界一無所知的秋為了尋找父親，而與好友晴春、夏希一起離開村莊。 可是外面的世界無論怎麼看，四面八方都是殭屍、殭屍、殭屍!!加上在半路上幫助的柚與櫻，五人一起逃進了家居用品量販店。 重整態勢……好，開始反擊──!!"
+    },
+    {
+      "bangumi_id": "anime-2326",
+      "anime_name": "超巡！超條前輩",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/96763c0569a7c686f63d88c2f320292cf0c1157b245c845ed4ff8551ad66dcbb",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "「超能力搜查官」是運用讀心術、千里眼、心靈感應等各種超能力進行犯罪偵查的專家。 然而，即便擁有如此能力，卻有一個在偏僻派出所工作的街頭麻煩人物！ 他的名字叫超條巡，人們稱他為「超能力巡查長」！！"
+    },
+    {
+      "bangumi_id": "anime-2330",
+      "anime_name": "鐵道行！meet with 鐵道娘",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0f186edec2463e853f47b4959618e7f073abd3ef95f3e4b11fae067c104c46bf",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2332",
+      "anime_name": "七葉樹王國的七名騎士",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e8d61b320d0c5a1e59b9715dc9a432625cca2b95511c4f0c6d7a8e9caec0e220",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2337",
+      "anime_name": "恐怖收集者",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4770fab61d42491e654f27041ed7893c54d9cf2111c9c9e2540d9a4433be9d46",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2338",
+      "anime_name": "Welsh & Shedar",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a7ed9c5e10df220fc9f626adaeebe3ecadab96f5d0d4648ffe04c0fb2e8023bf",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介"
     }
   ],
-  "generated_at": "2026-07-13T16:38:37.655767+08:00",
+  "generated_at": "2026-09-17T03:58:34.702183+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202610/",
   "quality": {
-    "source_count": 1,
-    "record_count": 1,
+    "source_count": 63,
+    "record_count": 63,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 0,
-    "missing_date_count": 0,
-    "missing_time_count": 0
+    "missing_story_count": 43,
+    "missing_date_count": 25,
+    "missing_time_count": 25
   }
 }
