@@ -2,6 +2,14 @@
   "schema_version": 1,
   "anime_list": [
     {
+      "bangumi_id": "anime-2305",
+      "anime_name": "你好，身為魔女的我，被心上人委託製作迷情藥",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5071f1d6abd81d0fce5c27df9deccf59e3cc9da9b9a1898627dba67a1bf51be2",
+      "premiere_date": "一",
+      "premiere_time": "21:30",
+      "story": "「我希望妳調製迷情藥。」 當湖畔的善良魔女暗戀的騎士說出這句話，她的戀情從此宣告結束。 既然如此，至少在藥水完成之前──為了盡量拉長相處的時間，魔女請騎士收集各式各樣的材料。 然而騎士有一天，卻開始拿跟材料無關的食物過來……"
+    },
+    {
       "bangumi_id": "anime-2319",
       "anime_name": "轉生哥布林有什麼問題嗎？",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0706cae7c8f07d4b83204cada3fa887d5795da47199828646dc8b4836259f765",
@@ -20,7 +28,7 @@
     {
       "bangumi_id": "anime-2304",
       "anime_name": "魔法少女育成計畫 restart",
-      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b0e82b3023407f9b1bbe18daa29e87669760187e10775963bf91d8e3e4bbec0c",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bf1f1117f526d961a8b2a9630dfb33c6621f4619c1e888fcc26f01c7f10a1fa6",
       "premiere_date": "一",
       "premiere_time": "26:00",
       "story": "暫無簡介"
@@ -55,6 +63,14 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5ba6ababea1ff4932f91eb107fa98fe6c69251f390069566bcfcdd249fdb3c4a",
       "premiere_date": "三",
       "premiere_time": "21:30",
+      "story": "暫無簡介"
+    },
+    {
+      "bangumi_id": "anime-2295",
+      "anime_name": "佐佐木與文鳥小嗶 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ba9aeb02ae6305c77fa55665d3b73e90981732420c96c838984263cecf99dbfe",
+      "premiere_date": "三",
+      "premiere_time": "22:00",
       "story": "暫無簡介"
     },
     {
@@ -140,7 +156,7 @@
     {
       "bangumi_id": "anime-2299",
       "anime_name": "螢火蟲的出嫁",
-      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/245fd0999016207a6c5f0f2c4b7b52abd3b9836ce4931e86d2a73fd6ea59e0c9",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a5075071ed811b2a197030be318697314c6fa575ed7744adf09cb6139959ad8d",
       "premiere_date": "五",
       "premiere_time": "23:30",
       "story": "在明治時代，儘管受惠於天賜的美貌及家名，仍被宣告命不久矣的伯爵千金桐谷紗都子的心中只有一個夢想，那就是希望可以結一場能帶給家族利益的婚姻。 突然被神祕殺手盯上性命的紗都子為了活命，便對殺手後藤進平提議：「請你和我結婚吧。只要和我結婚，你便能獲得一切。」 原本只是撐場面的謊言，卻因為進平是位愛情相當沉重的男人…讓她無法從這樁婚約中脫身──！？"
@@ -148,7 +164,7 @@
     {
       "bangumi_id": "anime-2281",
       "anime_name": "暗部共生少女",
-      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6fe9d901a5ede746e341282b512741d9da0a72b9a144891180972ea6b2e3786c",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/96f3c5b63e7dc688825fcbd407f6c04b0d001f2efb6ba85b0e06bb175ccb37f8",
       "premiere_date": "五",
       "premiere_time": "24:30",
       "story": "「超能力」被當成「普通科學」的「學園都市」。其和平的背後存在「暗部」組織，承包不能浮上檯面的任務。 「道具」──由四名少女組成的精銳部隊。能夠讀取能力者身上微弱力量加以追蹤的瀧壺理后、擅長以爆裂物和陷阱戰鬥的芙蘭達．塞維倫、能隨心所欲操縱氮氣負責防禦的絹旗最愛，以及學園都市引以為傲的七名超能力者之一的麥野沈利。自由地活在學園都市黑暗之中的她們，靜靜鎖定目標──！ 「老、娘、今、天、一、定、要、宰、了、妳。」 這是描述最後發展為「悽慘事件」的少女們其相遇、友情，以及黑暗的故事。"
@@ -170,12 +186,44 @@
       "story": "暫無簡介"
     },
     {
+      "bangumi_id": "anime-2317",
+      "anime_name": "朱色的面具",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/979dddf5d2615fdd533f066dca2ecf08b138b0856c115395a300369bd5ba5c12",
+      "premiere_date": "六",
+      "premiere_time": "17:30",
+      "story": "武神的面具、蜘蛛的面具、炎龍的面具、勇氣的面具、洗腦的面具、煙霧的面具、 朱色的面具——。 「面具」會賦予佩戴者力量。時而將可能性無限拓展，時而招致難以想像的災厄——。傳說的面具工匠ガストン・ルー的弟子ペル，偶然拿起「武神面具」卻反遭其操縱，在失去理智的暴走之下，無意間殺害了同伴，以及自己的師父。 儘管深陷絕望，ペル仍決心要將師父所製作、散落於世界各地的面具全數摧毀。他直面自身所犯下的滔天大罪，就此踏上旅途。「說是『贖罪』聽起來或許很帥氣，但這並不是什麼多了不起的理由。」與摯友的相遇，以及與強敵的對峙——。"
+    },
+    {
+      "bangumi_id": "anime-2297",
+      "anime_name": "轉生後的大聖女，極力隱瞞聖女的身分",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/93e3763a8fbca4a8f334ea7f7cb8b51250930efb3642f7f7d35321628dabf4ae",
+      "premiere_date": "六",
+      "premiere_time": "22:00",
+      "story": "菲亞是出生於騎士家族的女孩。她原本一心想成為騎士，卻在瀕死之際想起自己前世是「稀世大聖女」，記憶與力量在此刻一起回到了菲亞的身上—— 「咦，這些難道是早已成為傳說的失落的魔法！」 可是前世的我疑似被魔王左右手威脅過—— 「若是轉生成聖女就殺了妳。」 那我若是用了這種力量，才用一次就會被人發現自己是聖女，還會被魔族殺掉吧？既然如此，那我就要隱藏真實身分，貫徹初衷，成為一名騎士！ 萬萬沒想到，在「成年禮」中意外收獲了SS級魔物「黑龍」作為從魔！我的聖女身分究竟能不能成功被隱藏啊？"
+    },
+    {
       "bangumi_id": "anime-2321",
       "anime_name": "Vertex Force",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1a3ebaa323984eb0559fb9b1e3a620649bcb39185d2ba8fa74b21f13e745b14b",
       "premiere_date": "六",
       "premiere_time": "23:30",
       "story": "住在沖繩北部的初中生・東道明，與姊姊晴香、經營咖啡廳的母親，三人過著平穩的日常生活。 然而，這家人藏著一個秘密。晴香從父親那裡繼承了被稱為「引擎」的力量，一直向他人隱瞞著這股力量過活。另一方面，明並沒有繼承父親的力量，因此對自己的弱小懷有自卑感。 這時，發生了全世界網路癱瘓、被稱為「Power Down」的現象。明等人儘管感到諸多不便，依然照常過著日子，但晴香的額頭卻突然泛起紅光。 那正是過去EDVA逼近地球時，父親身上也曾出現過的相同現象——"
+    },
+    {
+      "bangumi_id": "anime-2325",
+      "anime_name": "#尋找殭屍中",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ff0773ad05a4cdccbaf24d02c00616aaca39abe2ee8ef12e7a2848c2e403cf69",
+      "premiere_date": "六",
+      "premiere_time": "23:30",
+      "story": "自從九成人類感染神祕傳染病而死亡的「赤紅之日」至今，已經過了十三年。對於毀滅前的世界一無所知的秋為了尋找父親，而與好友晴春、夏希一起離開村莊。 可是外面的世界無論怎麼看，四面八方都是殭屍、殭屍、殭屍!!加上在半路上幫助的柚與櫻，五人一起逃進了家居用品量販店。 重整態勢……好，開始反擊──!!"
+    },
+    {
+      "bangumi_id": "anime-2337",
+      "anime_name": "恐怖收集者",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1be92e41d68c43e2bd751d13e11962132df78079712d27aa2eee5a0468ecceb7",
+      "premiere_date": "六",
+      "premiere_time": "23:45",
+      "story": "暫無簡介"
     },
     {
       "bangumi_id": "anime-2215",
@@ -378,28 +426,12 @@
       "story": "從公司回家的佐藤孝弘，今天也像往常一樣玩著自己喜歡的遊戲（玩到上榜的程度），便上床睡覺了。結果睜開眼睛時眼前一片黑暗……應該說是在太空船內!?簡直像是約定成那樣，遭到了宙賊的襲擊，即使如此，我駕駛著和在遊戲中強化過的愛機一模一樣的太空船將對方瞬間解決掉！ 不管怎麼說，我好像在像遊戲的時空裡。如果這樣的話，靠著做傭兵賺錢的話，應該不會為錢所困，還能買間房子悠閒地過日子吧……結果，卻撿到了身無分文的美少女……？"
     },
     {
-      "bangumi_id": "anime-2295",
-      "anime_name": "佐佐木與文鳥小嗶 第二季",
-      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ba9aeb02ae6305c77fa55665d3b73e90981732420c96c838984263cecf99dbfe",
-      "premiere_date": "無首播日期",
-      "premiere_time": "無首播時間",
-      "story": "暫無簡介"
-    },
-    {
       "bangumi_id": "anime-2296",
       "anime_name": "桃源暗鬼 ～日光・華嚴之瀧篇～",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a016df8ac6583c9584010a987923c251c005810830d4676ecf6b0b2f278ddcf6",
       "premiere_date": "無首播日期",
       "premiere_time": "無首播時間",
       "story": "暫無簡介"
-    },
-    {
-      "bangumi_id": "anime-2297",
-      "anime_name": "轉生後的大聖女，極力隱瞞聖女的身分",
-      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/93e3763a8fbca4a8f334ea7f7cb8b51250930efb3642f7f7d35321628dabf4ae",
-      "premiere_date": "無首播日期",
-      "premiere_time": "無首播時間",
-      "story": "菲亞是出生於騎士家族的女孩。她原本一心想成為騎士，卻在瀕死之際想起自己前世是「稀世大聖女」，記憶與力量在此刻一起回到了菲亞的身上—— 「咦，這些難道是早已成為傳說的失落的魔法！」 可是前世的我疑似被魔王左右手威脅過—— 「若是轉生成聖女就殺了妳。」 那我若是用了這種力量，才用一次就會被人發現自己是聖女，還會被魔族殺掉吧？既然如此，那我就要隱藏真實身分，貫徹初衷，成為一名騎士！ 萬萬沒想到，在「成年禮」中意外收獲了SS級魔物「黑龍」作為從魔！我的聖女身分究竟能不能成功被隱藏啊？"
     },
     {
       "bangumi_id": "anime-2298",
@@ -418,14 +450,6 @@
       "story": "「佐藤同學是高嶺之花，對任何人都很冷淡。不過，只有我知道她其實處處破綻。好比說她拍照技術超爛，卻容易露出沾沾自喜的表情。而且萌萌地微笑的時候超級可愛的。」 「押尾同學對任何人都很溫柔。不過，只有我知道他其實也有調皮的一面。他熟悉社群網路、在時髦的咖啡廳工作。而且他露出淘氣笑容時我都會臉紅心跳。」 ──不可以告訴別人喔，我（人家）就是喜歡這樣的她（他）。"
     },
     {
-      "bangumi_id": "anime-2305",
-      "anime_name": "你好，身為魔女的我，被心上人委託製作迷情藥",
-      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/42457d5fd990bc4b22600a7d2eaee4b3b111087fa41d205aafc37d1e4d064b80",
-      "premiere_date": "無首播日期",
-      "premiere_time": "無首播時間",
-      "story": "「我希望妳調製迷情藥。」 當湖畔的善良魔女暗戀的騎士說出這句話，她的戀情從此宣告結束。 既然如此，至少在藥水完成之前──為了盡量拉長相處的時間，魔女請騎士收集各式各樣的材料。 然而騎士有一天，卻開始拿跟材料無關的食物過來……"
-    },
-    {
       "bangumi_id": "anime-2308",
       "anime_name": "冰之城牆 第二季",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7c1c0e49edf674bd04815133880a7c753161f9dedb2ab89ab0d9a7913e186e34",
@@ -442,28 +466,12 @@
       "story": "暫無簡介"
     },
     {
-      "bangumi_id": "anime-2317",
-      "anime_name": "朱色的面具",
-      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/979dddf5d2615fdd533f066dca2ecf08b138b0856c115395a300369bd5ba5c12",
-      "premiere_date": "無首播日期",
-      "premiere_time": "無首播時間",
-      "story": "武神的面具、蜘蛛的面具、炎龍的面具、勇氣的面具、洗腦的面具、煙霧的面具、 朱色的面具——。 「面具」會賦予佩戴者力量。時而將可能性無限拓展，時而招致難以想像的災厄——。傳說的面具工匠ガストン・ルー的弟子ペル，偶然拿起「武神面具」卻反遭其操縱，在失去理智的暴走之下，無意間殺害了同伴，以及自己的師父。 儘管深陷絕望，ペル仍決心要將師父所製作、散落於世界各地的面具全數摧毀。他直面自身所犯下的滔天大罪，就此踏上旅途。「說是『贖罪』聽起來或許很帥氣，但這並不是什麼多了不起的理由。」與摯友的相遇，以及與強敵的對峙——。"
-    },
-    {
       "bangumi_id": "anime-2318",
       "anime_name": "幻想水滸傳 The Anime",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8c8b1fbe2a6dc7869846211dd968be0b78e48d09ef5b1bcd499e45a9085aecdc",
       "premiere_date": "無首播日期",
       "premiere_time": "無首播時間",
       "story": "位於デュナン地方東北部，擁有強大軍事力量的ハイランド王國。隸屬於其少年兵部隊的兩名少年──主角リリュウ與他的摯友ジョウイ，兩人仰望著同一片星空，在同一個帳篷裡入睡，堅信著同一個未來。只要這場戰爭結束，只要黎明到來，往昔的日常便會再次回歸。 然而，他們的心願終究落空，兩人被戰火牽引，逐漸被吞噬進宿命的漩渦之中。無力的少年們獲得了強大無比的力量。在108顆星辰格外閃耀的夜空下，少年們將沒有答案的疑問懷抱於心，依循各自的信念，踏出了前行的腳步──"
-    },
-    {
-      "bangumi_id": "anime-2325",
-      "anime_name": "#尋找殭屍中",
-      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bbd2f45515861157cd180998d6be8396519570ddb88b7270c80941dadd20bd3c",
-      "premiere_date": "無首播日期",
-      "premiere_time": "無首播時間",
-      "story": "自從九成人類感染神祕傳染病而死亡的「赤紅之日」至今，已經過了十三年。對於毀滅前的世界一無所知的秋為了尋找父親，而與好友晴春、夏希一起離開村莊。 可是外面的世界無論怎麼看，四面八方都是殭屍、殭屍、殭屍!!加上在半路上幫助的柚與櫻，五人一起逃進了家居用品量販店。 重整態勢……好，開始反擊──!!"
     },
     {
       "bangumi_id": "anime-2326",
@@ -490,14 +498,6 @@
       "story": "暫無簡介"
     },
     {
-      "bangumi_id": "anime-2337",
-      "anime_name": "恐怖收集者",
-      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4770fab61d42491e654f27041ed7893c54d9cf2111c9c9e2540d9a4433be9d46",
-      "premiere_date": "無首播日期",
-      "premiere_time": "無首播時間",
-      "story": "暫無簡介"
-    },
-    {
       "bangumi_id": "anime-2338",
       "anime_name": "Welsh & Shedar",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a7ed9c5e10df220fc9f626adaeebe3ecadab96f5d0d4648ffe04c0fb2e8023bf",
@@ -506,7 +506,7 @@
       "story": "暫無簡介"
     }
   ],
-  "generated_at": "2026-09-18T04:09:15.390635+08:00",
+  "generated_at": "2026-09-19T03:30:26.737393+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202610/",
   "quality": {
     "source_count": 63,
@@ -514,7 +514,7 @@
     "parse_failure_count": 0,
     "fallback_id_count": 0,
     "missing_story_count": 34,
-    "missing_date_count": 23,
-    "missing_time_count": 23
+    "missing_date_count": 17,
+    "missing_time_count": 17
   }
 }
