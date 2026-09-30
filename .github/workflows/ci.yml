@@ -98,7 +98,9 @@ jobs:
         run: python -m coverage report --include=cloudinary_cleaner.py --fail-under=70
 
       - name: Audit Python dependencies
-        run: python -m pip_audit --require-hashes -r requirements.txt
+        run: |
+          python -m pip_audit --require-hashes -r requirements.txt
+          python -m pip_audit --require-hashes -r requirements-dev.txt
 
       - name: Build deterministic static output
         env:

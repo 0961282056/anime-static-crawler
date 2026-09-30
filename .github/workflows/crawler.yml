@@ -92,6 +92,7 @@ jobs:
         run: |
           python -m pip check
           python -m pip_audit --require-hashes -r requirements.txt
+          python -m pip_audit --require-hashes -r requirements-dev.txt
           python -m ruff check .
           python -m pytest
           BUILD_ONLY=true BUILD_VERSION=preflight python generate_static.py
