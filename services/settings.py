@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import math
 import os
 from dataclasses import dataclass
 from pathlib import Path
@@ -113,6 +114,20 @@ class CrawlerSettings:
         )
         if settings.max_workers < 1 or settings.max_workers > 8:
             raise ConfigurationError("CRAWLER_MAX_WORKERS must be between 1 and 8")
+        for name, value in (
+            ("REQUEST_TIMEOUT_SECONDS", settings.request_timeout_seconds),
+            ("IMAGE_TIMEOUT_SECONDS", settings.image_timeout_seconds),
+        ):
+            if not 1 <= value <= 120:
+                raise ConfigurationError(f"{name} must be between 1 and 120 seconds")
+        if not 1 <= settings.image_max_bytes <= 50 * 1024 * 1024:
+            raise ConfigurationError("IMAGE_MAX_BYTES must be between 1 and 52428800")
+        if not math.isfinite(settings.cloudinary_quota_limit_percent) or not (
+            0 < settings.cloudinary_quota_limit_percent <= 100
+        ):
+            raise ConfigurationError(
+                "CLOUDINARY_QUOTA_LIMIT_PERCENT must be greater than 0 and at most 100"
+            )
         if not 0 < settings.minimum_count_ratio <= 1:
             raise ConfigurationError(
                 "QUALITY_MIN_COUNT_RATIO must be greater than 0 and at most 1"

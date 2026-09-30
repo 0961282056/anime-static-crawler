@@ -1,6 +1,10 @@
 from __future__ import annotations
 
+import json
+import os
+import subprocess
 from pathlib import Path
+from types import SimpleNamespace
 
 import pytest
 
@@ -53,6 +57,86 @@ def test_static_sync_makes_dist_an_exact_copy_and_copies_headers(
     assert (project_paths.output_dir / "_headers").read_bytes() == (
         b"/*\n  X-Content-Type-Options: nosniff\n"
     )
+
+
+@pytest.mark.skipif(os.name != "nt", reason="Windows ACL inheritance integration")
+def test_windows_static_staging_and_repeat_build_inherit_output_acl(project_paths):
+    _write_source_assets(project_paths)
+    project_paths.output_dir.mkdir(parents=True)
+    user_sid = subprocess.check_output(
+        [
+            "powershell.exe",
+            "-NoProfile",
+            "-Command",
+            "[System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value",
+        ],
+        text=True,
+    ).strip()
+    # A pytest temp tree may itself be private. Give only this test's output
+    # root an inheritable current-user ACE, as a normal project dist has.
+    subprocess.run(
+        [
+            "icacls",
+            str(project_paths.output_dir),
+            "/inheritancelevel:e",
+            "/grant",
+            f"*{user_sid}:(OI)(CI)(F)",
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    script = """
+    $ErrorActionPreference = 'Stop'
+    $targetAcl = [System.IO.Directory]::GetAccessControl($env:STATIC_ACL_TEST_PATH)
+    $expectedSid = $env:STATIC_ACL_TEST_SID
+    $foundRule = @($targetAcl.GetAccessRules($true, $true, [System.Security.Principal.SecurityIdentifier]) |
+      Where-Object { $_.IdentityReference.Value -eq $expectedSid -and $_.IsInherited -and $_.AccessControlType -eq 'Allow' })
+    [pscustomobject]@{ protected = $targetAcl.AreAccessRulesProtected; inheritedUser = $foundRule.Count -gt 0 } | ConvertTo-Json -Compress
+    """
+    staging = generate_static._create_static_staging_root(project_paths.output_dir)
+    try:
+        for _ in range(2):
+            sync_static_assets(project_paths)
+            for directory in (
+                staging,
+                project_paths.static_output_dir,
+                project_paths.static_output_dir / "js",
+            ):
+                result = subprocess.check_output(
+                    ["powershell.exe", "-NoProfile", "-Command", script],
+                    env={
+                        **os.environ,
+                        "STATIC_ACL_TEST_PATH": str(directory),
+                        "STATIC_ACL_TEST_SID": user_sid,
+                    },
+                    text=True,
+                )
+                acl = json.loads(result)
+                assert acl["protected"] is False
+                assert acl["inheritedUser"] is True
+        assert _tree(project_paths.static_output_dir) == _tree(
+            project_paths.static_source_dir
+        )
+        assert not list(project_paths.output_dir.glob(".static.backup-*"))
+    finally:
+        staging.rmdir()
+
+
+@pytest.mark.skipif(os.name != "nt", reason="Windows staging branch")
+def test_windows_staging_retries_name_collision_without_reusing_directory(
+    tmp_path, monkeypatch
+):
+    existing = tmp_path / ".static-build-existing"
+    existing.mkdir()
+    (existing / "keep.txt").write_text("preserve", encoding="utf-8")
+    names = iter(["existing", "new"])
+    monkeypatch.setattr(
+        generate_static.uuid, "uuid4", lambda: SimpleNamespace(hex=next(names))
+    )
+    staging = generate_static._create_static_staging_root(tmp_path)
+    assert staging == tmp_path / ".static-build-new"
+    assert (existing / "keep.txt").read_text(encoding="utf-8") == "preserve"
 
 
 def test_verify_dist_rejects_asset_drift(

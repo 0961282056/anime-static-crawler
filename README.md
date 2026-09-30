@@ -37,6 +37,9 @@ Cloudflare Pages 執行 bash build.sh
 - `static/` 是前端資源的唯一來源；`dist/static/` 由建置自動產生。
 - Windows 若暫時鎖住 `dist/static`，建置會以有限次 exponential backoff 重試；重試耗盡仍會保留原輸出並安全失敗，不會無限等待或略過錯誤。
 - Alpine 使用本站託管、固定雜湊的 CSP build；正式 CSP 不允許 `unsafe-eval`。目前仍因分享圖片的動態樣式保留 `style-src 'unsafe-inline'`，移除前必須先完成該功能的樣式重構與瀏覽器回歸。
+- 季度切換只允許最新請求更新畫面；記憶體快取保留完整季度資料與更新時間，5 分鐘後重新驗證。瀏覽器儲存不可用時仍可查詢與篩選。
+- 封面列表使用 300／600／900 寬度的 Cloudinary 圖片變體，保留原始資產；分享圖片使用較高解析度，`html2canvas` 在第一次分享時才載入。
+- 爬蟲在正式抓取前執行依賴安全稽核。資料 PR 的 required check 若確定失敗／取消，publisher 會提早結束並列出檢查連結；尚未出現的檢查與暫時 API 錯誤仍有限等待，只有 PR 已合併才算發佈成功。
 - 發佈前的爬蟲錯誤、資料契約錯誤或品質 gate 失敗，都會讓工作流程失敗並保留 `main` 上一版資料。資料 PR 已通過 gate 並合併後，後續 Discord 傳送失敗仍會讓 workflow 紅燈，但不會回滾已合併資料。
 - JSON schema 會驗證 `bangumi_id`、星期、`HH:MM`（允許動畫排程使用 24–29 時）、來源季度 URL，以及 Cloudinary `anime_covers/<32 或 64 位雜湊>` 路徑；格式不符時在原子寫入前停止。
 
@@ -87,6 +90,20 @@ python -m ruff check .
 python -m ruff format --check .
 ```
 
+前端行為回歸與瀏覽器檢查（Node.js 20 以上）：
+
+```powershell
+npm ci
+npm run test:frontend
+npx playwright install chromium
+# 先在另一個終端機執行 BUILD_ONLY 建置，再啟動本機測試服務：
+python -m http.server 4173 --bind 127.0.0.1 --directory dist
+# 回到原終端機：
+npm run test:e2e
+```
+
+瀏覽器回歸涵蓋來源資料載入、篩選、封面，以及快速季度切換、快取與儲存失敗的處理。測試用服務只監聽本機，不執行爬蟲或 Cloudinary 上傳。
+
 只建置網站、不連線爬蟲或 Cloudinary：
 
 ```powershell
@@ -127,6 +144,10 @@ python cloudinary_cleaner.py ... Cloudinary retention；預設 dry-run
 ```
 
 ## 發生問題時
+
+爬蟲與驗證命令現在會輸出「錯誤代碼、執行階段、原因、位置、處理建議」，GitHub Actions 也會附上失敗摘要。已知錯誤預設不列出冗長 traceback；需要追查時可使用 `LOG_LEVEL=DEBUG`，未預期錯誤仍會提供經敏感值遮蔽的技術詳細資料。詳見[錯誤診斷與重試](docs/錯誤診斷與重試.md)。
+
+網頁載入失敗會顯示繁體中文說明與「重新載入」按鈕。同季度更新失敗會明確標示保留的舊資料；切換季度失敗不會顯示上一季度的資料。瀏覽器儲存偏好失敗不影響主要查詢功能。
 
 - GitHub Action 變紅：先不要重新執行很多次，確認錯誤是來源網站、資料品質、Cloudinary 還是設定問題。
 - 網站新版壞掉：先在 Cloudflare Pages 回滾到上一個成功部署，再修 Git。

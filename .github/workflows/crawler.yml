@@ -29,6 +29,8 @@ jobs:
       prepared_sha: ${{ steps.base-sha.outputs.sha }}
       record_count: ${{ steps.crawl.outputs.record_count }}
       parse_failures: ${{ steps.crawl.outputs.parse_failures }}
+      failure_code: ${{ steps.failure-summary.outputs.failure_code }}
+      failure_stage: ${{ steps.failure-summary.outputs.failure_stage }}
     env:
       TZ: Asia/Taipei
       BUILD_ONLY: "false"
@@ -48,6 +50,7 @@ jobs:
         run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Validate required production notification secret
+        id: notification-config
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
@@ -57,6 +60,7 @@ jobs:
           fi
 
       - name: Refuse overlapping automation pull requests
+        id: overlap
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -80,11 +84,14 @@ jobs:
           cache-dependency-path: requirements-dev.txt
 
       - name: Install locked dependencies
+        id: dependencies
         run: python -m pip install --require-hashes -r requirements-dev.txt
 
       - name: Run pre-crawl quality gate
+        id: preflight
         run: |
           python -m pip check
+          python -m pip_audit --require-hashes -r requirements.txt
           python -m ruff check .
           python -m pytest
           BUILD_ONLY=true BUILD_VERSION=preflight python generate_static.py
@@ -100,6 +107,7 @@ jobs:
         run: python generate_static.py
 
       - name: Validate generated output before commit
+        id: validate-output
         run: |
           python manage.py validate-all
           python manage.py quality-report >> "$GITHUB_STEP_SUMMARY"
@@ -121,6 +129,7 @@ jobs:
           fi
 
       - name: Upload validated crawler output
+        id: artifact
         if: steps.data-changes.outputs.changed == 'true'
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
@@ -132,6 +141,39 @@ jobs:
           retention-days: 7
           overwrite: true
 
+      - name: Summarize the first failed crawler stage
+        id: failure-summary
+        if: failure()
+        env:
+          CONFIG_RESULT: ${{ steps.notification-config.outcome }}
+          OVERLAP_RESULT: ${{ steps.overlap.outcome }}
+          DEPENDENCIES_RESULT: ${{ steps.dependencies.outcome }}
+          PREFLIGHT_RESULT: ${{ steps.preflight.outcome }}
+          CRAWL_RESULT: ${{ steps.crawl.outcome }}
+          VALIDATION_RESULT: ${{ steps.validate-output.outcome }}
+          CHANGES_RESULT: ${{ steps.data-changes.outcome }}
+          CRAWL_FAILURE_CODE: ${{ steps.crawl.outputs.failure_code }}
+          CRAWL_FAILURE_STAGE: ${{ steps.crawl.outputs.failure_stage }}
+        run: |
+          failure_code=PIPELINE
+          failure_stage=artifact
+          if [[ "$CONFIG_RESULT" == "failure" || "$OVERLAP_RESULT" == "failure" ]]; then
+            failure_stage=configuration
+          elif [[ "$DEPENDENCIES_RESULT" == "failure" ]]; then
+            failure_stage=dependencies
+          elif [[ "$PREFLIGHT_RESULT" == "failure" ]]; then
+            failure_stage=preflight
+          elif [[ "$CRAWL_RESULT" == "failure" ]]; then
+            failure_code="${CRAWL_FAILURE_CODE:-PIPELINE}"
+            failure_stage="${CRAWL_FAILURE_STAGE:-crawl}"
+          elif [[ "$VALIDATION_RESULT" == "failure" ]]; then
+            failure_stage=data-validation
+          elif [[ "$CHANGES_RESULT" == "failure" ]]; then
+            failure_stage=data-changes
+          fi
+          printf 'failure_code=%s\nfailure_stage=%s\n' "$failure_code" "$failure_stage" >> "$GITHUB_OUTPUT"
+          printf '## 爬蟲工作流程失敗\n\n- 階段：%s\n- 錯誤代碼：%s\n- 請查看該階段第一個錯誤；本次發布未確認完成。\n' "$failure_stage" "$failure_code" >> "$GITHUB_STEP_SUMMARY"
+
   publish-data-pr:
     needs: crawl-and-prepare
     if: needs.crawl-and-prepare.outputs.data_changed == 'true'
@@ -140,8 +182,13 @@ jobs:
     environment: automation-publisher
     permissions:
       contents: read
+      checks: read
+      statuses: read
+      pull-requests: read
     outputs:
       pr_url: ${{ steps.publish.outputs.pr_url }}
+      failure_code: ${{ steps.publish.outputs.failure_code }}
+      failure_stage: ${{ steps.publish.outputs.failure_stage }}
     steps:
       - name: Checkout exact prepared revision without persisted credentials
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
@@ -180,6 +227,7 @@ jobs:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
           APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
           PREPARED_SHA: ${{ needs.crawl-and-prepare.outputs.prepared_sha }}
+          CHECKS_TOKEN: ${{ github.token }}
         run: |
           if [[ -n "$(git diff --name-only --diff-filter=D -- dist/data)" ]]; then
             echo "Automatic quarterly JSON deletion is forbidden."
@@ -277,20 +325,24 @@ jobs:
             --delete-branch \
             --match-head-commit "$head_sha"
 
+          merge_deadline=$((SECONDS + 1800))
           for _ in {1..120}; do
-            pr_state="$(gh pr view "$pr_url" --json state --jq .state)"
-            if [[ "$pr_state" == "MERGED" ]]; then
-              merged=true
+            if [[ "$SECONDS" -ge "$merge_deadline" ]]; then
               break
             fi
-            if [[ "$pr_state" == "CLOSED" ]]; then
-              echo "The data pull request closed without merging."
-              exit 1
+            if GH_TOKEN="$CHECKS_TOKEN" python3 .github/scripts/check_pr_merge.py "$pr_url" "$head_sha"; then
+              merged=true
+              break
+            else
+              poll_status=$?
+              if [[ "$poll_status" -ne 2 ]]; then
+                exit 1
+              fi
             fi
             sleep 15
           done
           if [[ "$merged" != "true" ]]; then
-            echo "The data pull request did not merge before the safety timeout."
+            python3 .github/scripts/check_pr_merge.py "$pr_url" "$head_sha" --timeout
             exit 1
           fi
           echo "Data pull request passed Quality Gate and merged." >> "$GITHUB_STEP_SUMMARY"
@@ -333,6 +385,8 @@ jobs:
           DATA_CHANGED: ${{ needs.crawl-and-prepare.outputs.data_changed }}
           RECORD_COUNT: ${{ needs.crawl-and-prepare.outputs.record_count }}
           PARSE_FAILURES: ${{ needs.crawl-and-prepare.outputs.parse_failures }}
+          FAILURE_CODE: ${{ needs.crawl-and-prepare.outputs.failure_code || needs.publish-data-pr.outputs.failure_code }}
+          FAILURE_STAGE: ${{ needs.crawl-and-prepare.outputs.failure_stage || needs.publish-data-pr.outputs.failure_stage }}
           PR_URL: ${{ needs.publish-data-pr.outputs.pr_url }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           EVENT_NAME: ${{ github.event_name }}

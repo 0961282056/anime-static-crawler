@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import io
+import math
 import threading
 
 import cloudinary
@@ -41,21 +42,40 @@ class CloudinaryImageStore:
 
     def assert_quota_available(self) -> None:
         try:
-            usage_data = cloudinary.api.usage()
+            usage_data = cloudinary.api.usage(
+                timeout=self.settings.request_timeout_seconds
+            )
         except Exception as exc:
             raise ImageStoreError(
                 f"Unable to verify Cloudinary quota safely: {exc}"
             ) from exc
 
-        used_percent = usage_data.get("credits", {}).get("used_percent")
+        credits = usage_data.get("credits") if isinstance(usage_data, dict) else None
+        used_percent = (
+            credits.get("used_percent") if isinstance(credits, dict) else None
+        )
         if used_percent is None:
             raise ImageStoreError(
                 "Cloudinary usage response omitted credits.used_percent"
             )
-        if float(used_percent) >= self.settings.cloudinary_quota_limit_percent:
+        try:
+            quota_percent = float(used_percent)
+        except (TypeError, ValueError) as exc:
+            raise ImageStoreError(
+                "Cloudinary credits.used_percent is not numeric"
+            ) from exc
+        if (
+            isinstance(used_percent, bool)
+            or not math.isfinite(quota_percent)
+            or quota_percent < 0
+        ):
+            raise ImageStoreError(
+                "Cloudinary credits.used_percent must be finite and nonnegative"
+            )
+        if quota_percent >= self.settings.cloudinary_quota_limit_percent:
             raise QuotaExceededError(
                 "Cloudinary quota is at "
-                f"{float(used_percent):.2f}%; automatic deletion is disabled. "
+                f"{quota_percent:.2f}%; automatic deletion is disabled. "
                 "Run the manual retention dry-run after reviewing references."
             )
 
@@ -110,6 +130,7 @@ class CloudinaryImageStore:
                     overwrite=False,
                     resource_type="image",
                     type="upload",
+                    timeout=self.settings.image_timeout_seconds,
                 )
                 if not result.get("public_id"):
                     raise ImageStoreError(

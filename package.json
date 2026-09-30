@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Browser smoke tests for the generated static anime site.",
   "scripts": {
+    "test:frontend": "node --test tests/frontend/main.behavior.test.mjs",
     "test:e2e": "playwright test"
   },
   "devDependencies": {

@@ -80,14 +80,14 @@ def test_quota_check_allows_safe_usage_and_rejects_limit(
     monkeypatch.setattr(
         image_store_module.cloudinary.api,
         "usage",
-        lambda: {"credits": {"used_percent": 89.9}},
+        lambda **kwargs: {"credits": {"used_percent": 89.9}},
     )
     store.assert_quota_available()
 
     monkeypatch.setattr(
         image_store_module.cloudinary.api,
         "usage",
-        lambda: {"credits": {"used_percent": 90}},
+        lambda **kwargs: {"credits": {"used_percent": 90}},
     )
     with pytest.raises(QuotaExceededError, match="automatic deletion is disabled"):
         store.assert_quota_available()
@@ -101,12 +101,12 @@ def test_quota_check_fails_closed_on_api_or_schema_error(
     monkeypatch.setattr(
         image_store_module.cloudinary.api,
         "usage",
-        lambda: {},
+        lambda **kwargs: {},
     )
     with pytest.raises(ImageStoreError, match="omitted credits.used_percent"):
         store.assert_quota_available()
 
-    def fail_usage() -> dict[str, object]:
+    def fail_usage(**kwargs: object) -> dict[str, object]:
         raise RuntimeError("cloud unavailable")
 
     monkeypatch.setattr(image_store_module.cloudinary.api, "usage", fail_usage)
@@ -132,6 +132,19 @@ def test_source_url_cache_hit_skips_download_and_upload(
 
     assert store.store(source_url, "Cache Hit") == cached_url
     assert downloader.calls == []
+
+
+@pytest.mark.parametrize("used", ["NaN", "Infinity", -1, True, "not-a-number", {}])
+def test_invalid_quota_values_fail_closed(tmp_path, monkeypatch, used):
+    store = _store(tmp_path, monkeypatch)
+
+    def usage(**kwargs):
+        assert kwargs["timeout"] == store.settings.request_timeout_seconds
+        return {"credits": {"used_percent": used}}
+
+    monkeypatch.setattr(image_store_module.cloudinary.api, "usage", usage)
+    with pytest.raises(ImageStoreError):
+        store.assert_quota_available()
 
 
 def test_content_cache_hit_links_new_source_without_upload(
@@ -183,6 +196,7 @@ def test_upload_success_caches_content_and_source_keys(
     digest = hashlib.sha256(content).hexdigest()
     assert captured["public_id"] == f"anime_covers/{digest}"
     assert captured["overwrite"] is False
+    assert captured["timeout"] == store.settings.image_timeout_seconds
     assert store.cache.get(f"cloudinary_sha256_{digest}") == cloud_url
     source_key = "source_" + hashlib.sha256(source_url.encode()).hexdigest()
     assert store.cache.get(source_key) == cloud_url

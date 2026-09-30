@@ -5,10 +5,10 @@ from __future__ import annotations
 import argparse
 import hashlib
 import os
-import sys
 from pathlib import Path
 
 from services.data_repository import DataQualityPolicy, DataRepository
+from services.diagnostics import operation, run_command
 from services.notifier import (
     DiscordNotifier,
     build_selector_canary_failure_notification,
@@ -169,31 +169,31 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def execute_command(command: str) -> None:
+    if command == "notify-workflow":
+        notify_workflow()
+        return
+    if command == "selector-canary":
+        selector_canary()
+        return
+    if command == "notify-selector-canary-failure":
+        notify_selector_canary_failure()
+        return
+
+    with operation("configuration"):
+        paths = ProjectPaths.from_environment()
+    if command in {"validate-data", "validate-all"}:
+        validate_data(paths)
+    if command in {"verify-dist", "validate-all"}:
+        verify_dist(paths)
+    if command == "quality-report":
+        quality_report(paths)
+
+
 def main() -> int:
     args = parse_args()
-    if args.command == "notify-workflow":
-        notify_workflow()
-        return 0
-    if args.command == "selector-canary":
-        selector_canary()
-        return 0
-    if args.command == "notify-selector-canary-failure":
-        notify_selector_canary_failure()
-        return 0
-
-    paths = ProjectPaths.from_environment()
-    if args.command in {"validate-data", "validate-all"}:
-        validate_data(paths)
-    if args.command in {"verify-dist", "validate-all"}:
-        verify_dist(paths)
-    if args.command == "quality-report":
-        quality_report(paths)
-    return 0
+    return run_command(lambda: execute_command(args.command), args.command)
 
 
 if __name__ == "__main__":
-    try:
-        raise SystemExit(main())
-    except Exception as exc:
-        print(f"Validation failed: {exc}", file=sys.stderr)
-        raise SystemExit(1) from exc
+    raise SystemExit(main())

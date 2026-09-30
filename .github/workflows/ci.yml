@@ -110,6 +110,7 @@ jobs:
           python manage.py validate-all
           python manage.py quality-report >> "$GITHUB_STEP_SUMMARY"
           node --check static/js/main.js
+          npm run test:frontend
 
       - name: Install browser smoke-test dependencies
         run: |

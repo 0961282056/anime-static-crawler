@@ -55,7 +55,7 @@
 
                 <div class="form-group">
                     <label for="weekdaySelect" class="form-label">每週放送</label>
-                    <select id="weekdaySelect" class="form-select" x-model="filterDay">
+                    <select id="weekdaySelect" class="form-select" x-model="filterDay" @change="saveFilterDay">
                         <option value="全部">全部顯示</option>
                         <option value="一">週一</option>
                         <option value="二">週二</option>
@@ -67,6 +67,11 @@
                     </select>
                 </div>
 
+                <div x-show="storageWarning" class="status-box" role="status" aria-live="polite" style="padding: 12px; margin-bottom: 16px; font-size: 0.9rem; text-align: left;">
+                    <span x-text="storageWarning"></span>
+                    <button type="button" class="btn-add" style="margin-top: 10px; width: 100%;" @click="dismissStorageWarning()">知道了</button>
+                </div>
+
                 <div class="share-widget">
                     <h3 class="panel-title small"><i class="fas fa-list"></i> 分享清單</h3>
                     <div id="shareListContainer">
@@ -76,7 +81,7 @@
                         
                         <template x-for="(item, index) in shareList" :key="index">
                             <div class="share-item">
-                                <img :src="item.img" loading="lazy">
+                                <img :src="item.img" loading="lazy" decoding="async" alt="">
                                 <div class="share-item-info">
                                     <div class="share-item-title" x-text="item.name"></div>
                                     <div x-text="item.date + ' ' + item.time"></div>
@@ -100,19 +105,35 @@
                 <span class="update-time" x-text="lastUpdateTime"></span>
             </div>
 
-            <div x-show="loading" class="status-box">
+            <div x-show="loading" class="status-box" role="status" aria-live="polite">
                 <i class="fas fa-spinner fa-spin"></i> 資料讀取中...
             </div>
+
+            <div x-show="!loading && loadError" class="status-box" role="alert" aria-live="assertive" style="text-align: left;">
+                <strong x-text="loadError && loadError.title"></strong>
+                <div x-text="loadError && loadError.message" style="margin-top: 8px;"></div>
+                <small x-text="loadError ? '錯誤代碼：' + loadError.code : ''" style="display: block; margin-top: 8px; opacity: 0.8;"></small>
+                <div x-show="loadError && loadError.hasStaleData" style="margin-top: 8px;">目前保留上次成功的資料；重新載入成功後會自動更新。</div>
+                <button type="button" class="btn-add" style="margin-top: 14px;" @click="retryLoad()" :disabled="loading">
+                    <i class="fas fa-redo"></i> 重新載入
+                </button>
+            </div>
             
-            <div x-show="!loading && filteredAnime.length === 0" class="status-box" style="display: none;">
+            <div x-show="!loading && !loadError && filteredAnime.length === 0" class="status-box" style="display: none;">
                 沒有符合條件的動畫
             </div>
 
-            <div class="anime-grid" x-show="!loading">
+            <div class="anime-grid" x-show="!loading && (!loadError || (loadError && loadError.hasStaleData))">
                 <template x-for="anime in filteredAnime" :key="anime.anime_name">
                     <div class="anime-card">
                         <div class="card-img-wrapper">
-                            <img :src="anime.anime_image_url && anime.anime_image_url !== '無圖片' ? anime.anime_image_url : 'https://placehold.co/300x450/333/999?text=No+Image'" class="card-img" loading="lazy">
+                            <img :src="cardImageUrl(anime, 600)"
+                                 :srcset="cardImageSrcset(anime)"
+                                 sizes="(min-width: 1400px) 340px, (min-width: 1200px) calc((100vw - 410px) / 2), (min-width: 901px) calc(100vw - 390px), calc(100vw - 40px)"
+                                 class="card-img"
+                                 loading="lazy"
+                                 decoding="async"
+                                 :alt="anime.anime_name || '動畫封面'">
                         </div>
                         <div class="card-body">
                             <h3 class="anime-title" x-text="anime.anime_name" @click="copyText(anime.anime_name)"></h3>
