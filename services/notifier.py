@@ -10,6 +10,7 @@ from datetime import datetime
 import requests
 
 from models import TAIPEI_TZ
+from services.diagnostics import ERROR_GUIDANCE, STAGE_LABELS
 from services.errors import NotificationError
 
 logger = logging.getLogger(__name__)
@@ -37,6 +38,8 @@ class WorkflowOutcome:
     run_url: str = ""
     event_name: str = ""
     run_attempt: str = "1"
+    failure_code: str = ""
+    failure_stage: str = ""
 
 
 def workflow_outcome_from_environment(
@@ -68,6 +71,8 @@ def workflow_outcome_from_environment(
         run_url=environment.get("RUN_URL", "").strip(),
         event_name=environment.get("EVENT_NAME", "").strip(),
         run_attempt=environment.get("RUN_ATTEMPT", "1").strip() or "1",
+        failure_code=environment.get("FAILURE_CODE", "").strip(),
+        failure_stage=environment.get("FAILURE_STAGE", "").strip(),
     )
 
 
@@ -101,6 +106,14 @@ def build_workflow_notification(
         )
         if outcome.run_url:
             detail += f" 請檢查：{outcome.run_url}"
+        if outcome.failure_code in ERROR_GUIDANCE:
+            title, hint = ERROR_GUIDANCE[outcome.failure_code]
+            stage = STAGE_LABELS.get(outcome.failure_stage, "工作流程")
+            detail += f"\n失敗階段：{stage}；錯誤代碼：{outcome.failure_code}。\n原因：{title}。\n處理建議：{hint}"
+        elif outcome.crawl_result in {"failure", "cancelled"}:
+            detail += "\n處理建議：先查看 crawl-and-prepare 中第一個失敗步驟；本次資料發布未確認完成。"
+        else:
+            detail += "\n處理建議：查看 publish-data-pr 的 PR 與必要檢查；本次合併未確認完成。"
 
     metadata = f"觸發={outcome.event_name or 'unknown'}；執行嘗試={outcome.run_attempt}"
     timestamp = now or datetime.now(TAIPEI_TZ)
@@ -165,6 +178,7 @@ class DiscordNotifier:
 
         payload = {
             "username": "Anime Crawler Bot",
+            "allowed_mentions": {"parse": []},
             "embeds": [
                 {
                     "title": title,
@@ -179,8 +193,11 @@ class DiscordNotifier:
                 json=payload,
                 timeout=10,
             )
-            response.raise_for_status()
-            return True
+            try:
+                response.raise_for_status()
+                return True
+            finally:
+                response.close()
         except requests.RequestException as exc:
             response = getattr(exc, "response", None)
             status_code = getattr(response, "status_code", None)

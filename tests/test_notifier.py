@@ -170,6 +170,37 @@ def test_required_webhook_must_be_configured() -> None:
     assert DiscordNotifier(None).send(notification) is False
 
 
+def test_workflow_failure_notification_has_stage_and_guidance_without_raw_exception():
+    outcome = workflow_outcome_from_environment(
+        {
+            "CRAWL_RESULT": "failure",
+            "PUBLISH_RESULT": "skipped",
+            "FAILURE_CODE": "FILE_PERMISSION",
+            "FAILURE_STAGE": "static-assets",
+        }
+    )
+    notification = build_workflow_notification(outcome, now=FIXED_NOW)
+    assert notification.status == "FAILURE"
+    assert "更新網站靜態檔案" in notification.message
+    assert "FILE_PERMISSION" in notification.message
+    assert "寫入權限" in notification.message
+
+
+def test_notification_does_not_forward_unknown_failure_payload():
+    notification = build_workflow_notification(
+        WorkflowOutcome(
+            "failure",
+            "skipped",
+            False,
+            failure_code="secret-token-12345",
+            failure_stage="secret-path",
+        ),
+        now=FIXED_NOW,
+    )
+    assert "secret-token" not in notification.message
+    assert "secret-path" not in notification.message
+
+
 def test_discord_http_error_raises_notification_error(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
@@ -177,6 +208,9 @@ def test_discord_http_error_raises_notification_error(
 
     class FailingResponse:
         status_code = 500
+
+        def close(self) -> None:
+            pass
 
         def raise_for_status(self) -> None:
             response = requests.Response()

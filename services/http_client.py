@@ -33,6 +33,8 @@ def create_retry_session(settings: CrawlerSettings) -> requests.Session:
         read=3,
         status=3,
         backoff_factor=0.75,
+        backoff_max=10,
+        retry_after_max=30,
         status_forcelist=RETRY_STATUSES,
         allowed_methods=frozenset({"GET", "HEAD"}),
         respect_retry_after_header=True,
@@ -84,17 +86,20 @@ class SourceClient:
         except requests.RequestException as exc:
             raise SourceFetchError(f"Unable to fetch {url}: {exc}") from exc
 
-        if response.status_code == 404:
-            raise SourceNotFoundError(f"Source season does not exist yet: {url}")
-        if not response.ok:
-            raise SourceFetchError(
-                f"Source returned HTTP {response.status_code}: {url}"
-            )
+        try:
+            if response.status_code == 404:
+                raise SourceNotFoundError(f"Source season does not exist yet: {url}")
+            if not response.ok:
+                raise SourceFetchError(
+                    f"Source returned HTTP {response.status_code}: {url}"
+                )
 
-        response.encoding = "utf-8"
-        if not response.text.strip():
-            raise SourceFetchError(f"Source returned an empty document: {url}")
-        return url, response.text
+            response.encoding = "utf-8"
+            if not response.text.strip():
+                raise SourceFetchError(f"Source returned an empty document: {url}")
+            return url, response.text
+        finally:
+            response.close()
 
 
 @dataclass(frozen=True)

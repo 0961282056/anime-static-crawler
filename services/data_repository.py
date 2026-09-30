@@ -13,9 +13,21 @@ from pydantic import ValidationError
 
 from models import TAIPEI_TZ, Anime, DataQuality, QuarterDataset
 from services.atomic_io import atomic_write_json
+from services.diagnostics import operation
 from services.errors import DataContractError
 
 QUARTER_FILE_PATTERN = re.compile(r"^(\d{4})_(冬|春|夏|秋)\.json$")
+
+
+def _validation_detail(error: ValidationError) -> str:
+    issues = error.errors(include_input=False, include_url=False)
+    details = [
+        f"{'.'.join(str(part) for part in issue['loc']) or '<root>'}: {issue['msg']} ({issue['type']})"
+        for issue in issues[:20]
+    ]
+    if len(issues) > 20:
+        details.append(f"... {len(issues) - 20} additional field errors")
+    return f"{len(issues)} field error(s): " + "; ".join(details)
 
 
 @dataclass(frozen=True)
@@ -113,7 +125,11 @@ class DataRepository:
         try:
             raw = json.loads(path.read_text(encoding="utf-8"))
             return QuarterDataset.model_validate(raw)
-        except (OSError, json.JSONDecodeError, ValidationError) as exc:
+        except ValidationError as exc:
+            raise DataContractError(
+                f"Invalid quarterly data {path}: {_validation_detail(exc)}"
+            ) from exc
+        except (OSError, json.JSONDecodeError) as exc:
             raise DataContractError(f"Invalid quarterly data {path}: {exc}") from exc
 
     def load_quarter(self, year: str, season: str) -> QuarterDataset | None:
@@ -132,15 +148,18 @@ class DataRepository:
         generated_at: datetime | None = None,
     ) -> WriteResult:
         path = self.quarter_path(year, season)
-        try:
-            validated_records = [
-                record if isinstance(record, Anime) else Anime.model_validate(record)
-                for record in records
-            ]
-        except ValidationError as exc:
-            raise DataContractError(
-                f"Record does not satisfy the Anime contract: {exc}"
-            ) from exc
+        validated_records = []
+        for index, record in enumerate(records, start=1):
+            try:
+                validated_records.append(
+                    record
+                    if isinstance(record, Anime)
+                    else Anime.model_validate(record)
+                )
+            except ValidationError as exc:
+                raise DataContractError(
+                    f"Record {index} does not satisfy the Anime contract ({path.name}): {_validation_detail(exc)}"
+                ) from exc
 
         quality = DataQuality.from_records(
             validated_records,
@@ -175,7 +194,7 @@ class DataRepository:
             )
         except ValidationError as exc:
             raise DataContractError(
-                f"Quarter dataset does not satisfy the data contract: {exc}"
+                f"Quarter dataset does not satisfy the data contract ({path.name}): {_validation_detail(exc)}"
             ) from exc
         atomic_write_json(path, dataset.model_dump(mode="json"))
         return WriteResult(
@@ -210,20 +229,21 @@ class DataRepository:
             return paths
         for path in sorted(self.data_dir.glob("*.json")):
             if QUARTER_FILE_PATTERN.fullmatch(path.name):
-                dataset = self.load_path(path)
-                if not allow_legacy:
-                    if not dataset.source_url:
-                        raise DataContractError(
-                            f"Quarterly data is missing source_url: {path}"
+                with operation("data-validation", log_success=False, path=path):
+                    dataset = self.load_path(path)
+                    if not allow_legacy:
+                        if not dataset.source_url:
+                            raise DataContractError(
+                                f"Quarterly data is missing source_url: {path}"
+                            )
+                        if dataset.quality is None:
+                            raise DataContractError(
+                                f"Quarterly data is missing quality summary: {path}"
+                            )
+                        self.policy.validate(
+                            dataset.anime_list,
+                            dataset.quality,
+                            previous=None,
                         )
-                    if dataset.quality is None:
-                        raise DataContractError(
-                            f"Quarterly data is missing quality summary: {path}"
-                        )
-                    self.policy.validate(
-                        dataset.anime_list,
-                        dataset.quality,
-                        previous=None,
-                    )
                 paths.append(path)
         return paths

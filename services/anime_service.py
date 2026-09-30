@@ -17,6 +17,7 @@ from dotenv import load_dotenv
 from config import Config
 from models import Anime
 from services.cache_repository import CacheRepository
+from services.diagnostics import operation
 from services.errors import CrawlerError, ItemParseError
 from services.http_client import SourceClient
 from services.image_store import CloudinaryImageStore
@@ -98,11 +99,13 @@ class AnimeCrawlerService:
         )
 
     def _process_item(self, item_html: str) -> Anime:
-        candidate = parse_anime_item(item_html)
-        image_url = self.image_store.store(
-            candidate.source_image_url,
-            candidate.anime_name,
-        )
+        with operation("parse", log_success=False):
+            candidate = parse_anime_item(item_html)
+        with operation("images", log_success=False, anime=candidate.anime_name):
+            image_url = self.image_store.store(
+                candidate.source_image_url,
+                candidate.anime_name,
+            )
         return Anime(
             bangumi_id=candidate.bangumi_id,
             anime_name=candidate.anime_name,
@@ -113,12 +116,18 @@ class AnimeCrawlerService:
         )
 
     def fetch_quarter(self, year: str, season: str) -> CrawlResult:
-        self.image_store.assert_quota_available()
-        source_url, document_html = self.source_client.fetch_quarter_html(year, season)
-        item_html_list = extract_item_html(document_html)
+        with operation("images", year=year, season=season):
+            self.image_store.assert_quota_available()
+        with operation("source", year=year, season=season):
+            source_url, document_html = self.source_client.fetch_quarter_html(
+                year, season
+            )
+        with operation("parse", year=year, season=season, source=source_url):
+            item_html_list = extract_item_html(document_html)
         records: list[Anime] = []
         failures: list[ItemFailure] = []
 
+        primary_error: BaseException | None = None
         try:
             with ThreadPoolExecutor(
                 max_workers=self.settings.max_workers,
@@ -147,16 +156,41 @@ class AnimeCrawlerService:
                             season,
                             exc,
                         )
-                    except Exception:
-                        logger.exception(
+                    except Exception as exc:
+                        for pending in futures:
+                            pending.cancel()
+                        if not hasattr(exc, "operation_stage"):
+                            exc.operation_stage = "crawl"
+                        context = getattr(exc, "operation_context", {})
+                        exc.operation_context = {
+                            **context,
+                            "year": year,
+                            "season": season,
+                            "item_index": index,
+                        }
+                        logger.error(
                             "System failure while processing anime item %s for %s %s",
                             index,
                             year,
                             season,
                         )
                         raise
+        except BaseException as exc:
+            primary_error = exc
+            raise
         finally:
-            self.cache.save_if_changed()
+            try:
+                with operation("cache-save", year=year, season=season):
+                    self.cache.save_if_changed()
+            except Exception as cache_error:
+                if primary_error is None:
+                    raise
+                primary_error.add_note(f"Cache persistence also failed: {cache_error}")
+                logger.error(
+                    "Cache persistence also failed for %s %s; preserving the original failure",
+                    year,
+                    season,
+                )
 
         if not records:
             summary = failures[0].message if failures else "no cards were parsed"

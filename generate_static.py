@@ -26,7 +26,8 @@ from config import Config
 from models import TAIPEI_TZ
 from services.atomic_io import atomic_write_text
 from services.data_repository import DataQualityPolicy, DataRepository
-from services.errors import SourceNotFoundError
+from services.diagnostics import RedactingFormatter, operation, run_command
+from services.errors import ConfigurationError, SourceNotFoundError
 from services.settings import CrawlerSettings, ProjectPaths
 
 logger = logging.getLogger(__name__)
@@ -45,10 +46,19 @@ class CrawlSummary:
 
 
 def configure_runtime() -> None:
+    level = os.getenv("LOG_LEVEL", "INFO").upper()
+    if level not in {"DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"}:
+        raise ConfigurationError(
+            "LOG_LEVEL must be DEBUG, INFO, WARNING, ERROR, or CRITICAL"
+        )
     logging.basicConfig(
-        level=os.getenv("LOG_LEVEL", "INFO").upper(),
+        level=level,
         format="%(asctime)s %(levelname)s %(name)s %(message)s",
     )
+    for handler in logging.getLogger().handlers:
+        handler.setFormatter(
+            RedactingFormatter("%(asctime)s %(levelname)s %(name)s %(message)s")
+        )
 
 
 def get_current_season(month: int) -> str:
@@ -83,8 +93,11 @@ def _rename_directory_with_retry(source: Path, destination: Path) -> Path:
     for attempt in range(DIRECTORY_SWAP_ATTEMPTS):
         try:
             return source.rename(destination)
-        except PermissionError:
+        except PermissionError as exc:
             if attempt == DIRECTORY_SWAP_ATTEMPTS - 1:
+                exc.add_note(
+                    f"Directory rename failed after {DIRECTORY_SWAP_ATTEMPTS} attempts: {source} -> {destination}"
+                )
                 raise
             delay = DIRECTORY_SWAP_INITIAL_DELAY_SECONDS * (2**attempt)
             logger.warning(
@@ -117,13 +130,39 @@ def _safe_replace_directory(source: Path, destination: Path, output_dir: Path) -
         _rename_directory_with_retry(destination, backup)
     try:
         _rename_directory_with_retry(source, destination)
-    except Exception:
+    except Exception as primary_error:
         if had_destination and backup.exists() and not destination.exists():
-            _rename_directory_with_retry(backup, destination)
+            try:
+                _rename_directory_with_retry(backup, destination)
+            except OSError as rollback_error:
+                primary_error.add_note(
+                    f"Rollback also failed; retain backup for recovery: {backup}; {rollback_error}"
+                )
+                logger.error(
+                    "Static rollback failed; original output remains in backup: %s",
+                    backup,
+                )
         raise
     else:
         if backup.exists():
             shutil.rmtree(backup)
+
+
+def _create_static_staging_root(output_dir: Path) -> Path:
+    if os.name != "nt":
+        return Path(tempfile.mkdtemp(prefix=".static-build-", dir=output_dir))
+
+    # Recent Python versions give Windows mkdtemp directories owner-only ACLs.
+    # Rename preserves those ACLs and can block builds under another account.
+    # Public static assets should inherit the output root's existing permissions.
+    for _ in range(10):
+        staging = output_dir / f".static-build-{uuid.uuid4().hex}"
+        try:
+            staging.mkdir(mode=0o777)
+        except FileExistsError:
+            continue
+        return staging
+    raise FileExistsError("Unable to reserve a unique static staging directory")
 
 
 def sync_static_assets(paths: ProjectPaths) -> None:
@@ -132,9 +171,8 @@ def sync_static_assets(paths: ProjectPaths) -> None:
             f"Static source directory does not exist: {paths.static_source_dir}"
         )
     paths.output_dir.mkdir(parents=True, exist_ok=True)
-    temporary_root = Path(
-        tempfile.mkdtemp(prefix=".static-build-", dir=paths.output_dir)
-    )
+    temporary_root = _create_static_staging_root(paths.output_dir)
+    primary_error: BaseException | None = None
     try:
         temporary_static = temporary_root / "static"
         shutil.copytree(paths.static_source_dir, temporary_static)
@@ -143,9 +181,20 @@ def sync_static_assets(paths: ProjectPaths) -> None:
             paths.static_output_dir,
             paths.output_dir,
         )
+    except BaseException as exc:
+        primary_error = exc
+        raise
     finally:
-        if temporary_root.exists():
-            shutil.rmtree(temporary_root)
+        try:
+            if temporary_root.exists():
+                shutil.rmtree(temporary_root)
+        except OSError as cleanup_error:
+            if primary_error is None:
+                raise
+            primary_error.add_note(
+                f"Temporary build cleanup also failed: {temporary_root}; {cleanup_error}"
+            )
+            logger.warning("Temporary build cleanup also failed: %s", temporary_root)
 
     if paths.cloudflare_headers_file.exists():
         atomic_write_text(
@@ -212,7 +261,8 @@ def crawl_quarters(
 ) -> CrawlSummary:
     from services.anime_service import AnimeCrawlerService
 
-    crawler = AnimeCrawlerService.from_environment()
+    with operation("configuration"):
+        crawler = AnimeCrawlerService.from_environment()
     has_existing_data = any(paths.data_dir.glob("*.json"))
     full_crawl = not has_existing_data
     processed_quarters = 0
@@ -229,15 +279,17 @@ def crawl_quarters(
             continue
 
         try:
-            result = crawler.fetch_quarter(year, season)
-            write_result = repository.write_quarter(
-                year=year,
-                season=season,
-                records=result.anime_list,
-                source_url=result.source_url,
-                source_count=result.source_count,
-                parse_failure_count=result.parse_failure_count,
-            )
+            with operation("crawl", year=year, season=season):
+                result = crawler.fetch_quarter(year, season)
+            with operation("data-write", year=year, season=season, path=output_path):
+                write_result = repository.write_quarter(
+                    year=year,
+                    season=season,
+                    records=result.anime_list,
+                    source_url=result.source_url,
+                    source_count=result.source_count,
+                    parse_failure_count=result.parse_failure_count,
+                )
             logger.info(
                 "%s %s validated: %s records, %s parse failures, changed=%s",
                 year,
@@ -280,11 +332,12 @@ def write_crawl_summary_outputs(summary: CrawlSummary) -> None:
 
 
 def generate_static_files() -> None:
-    load_dotenv()
-    configure_runtime()
-    paths = ProjectPaths.from_environment()
-    build_only = os.getenv("BUILD_ONLY", "false").lower() == "true"
-    settings = CrawlerSettings.from_environment() if not build_only else None
+    with operation("configuration"):
+        load_dotenv()
+        configure_runtime()
+        paths = ProjectPaths.from_environment()
+        build_only = os.getenv("BUILD_ONLY", "false").lower() == "true"
+        settings = CrawlerSettings.from_environment() if not build_only else None
     policy = (
         DataQualityPolicy(
             minimum_count_ratio=settings.minimum_count_ratio,
@@ -295,7 +348,8 @@ def generate_static_files() -> None:
         else DataQualityPolicy()
     )
     repository = DataRepository(paths.data_dir, policy)
-    paths.data_dir.mkdir(parents=True, exist_ok=True)
+    with operation("data-write", path=paths.data_dir):
+        paths.data_dir.mkdir(parents=True, exist_ok=True)
     now = datetime.now(TAIPEI_TZ)
     crawl_summary: CrawlSummary | None = None
 
@@ -304,14 +358,18 @@ def generate_static_files() -> None:
     else:
         crawl_summary = crawl_quarters(paths, repository, now)
 
-    validated_paths = repository.validate_all()
+    with operation("data-validation", path=paths.data_dir):
+        validated_paths = repository.validate_all()
     logger.info("Validated %s quarterly JSON files", len(validated_paths))
-    sync_static_assets(paths)
-    output_path = render_index(paths, repository, now)
+    with operation("static-assets", path=paths.static_output_dir):
+        sync_static_assets(paths)
+    with operation("render", path=paths.output_dir / "index.html"):
+        output_path = render_index(paths, repository, now)
     logger.info("Static site generated: %s", output_path)
     if crawl_summary is not None:
-        write_crawl_summary_outputs(crawl_summary)
+        with operation("summary"):
+            write_crawl_summary_outputs(crawl_summary)
 
 
 if __name__ == "__main__":
-    generate_static_files()
+    raise SystemExit(run_command(generate_static_files, "build"))

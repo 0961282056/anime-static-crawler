@@ -60,6 +60,15 @@ def test_crawler_settings_defaults_are_safe(
         ("IMAGE_MAX_PIXELS", "0", "between 1 and 100000000"),
         ("IMAGE_MAX_PIXELS", "100000001", "between 1 and 100000000"),
         ("IMAGE_ALLOWED_HOSTS", " , ", "may not be empty"),
+        ("REQUEST_TIMEOUT_SECONDS", "0", "between 1 and 120"),
+        ("REQUEST_TIMEOUT_SECONDS", "121", "between 1 and 120"),
+        ("IMAGE_TIMEOUT_SECONDS", "-1", "between 1 and 120"),
+        ("IMAGE_MAX_BYTES", "0", "between 1 and 52428800"),
+        ("IMAGE_MAX_BYTES", "52428801", "between 1 and 52428800"),
+        ("CLOUDINARY_QUOTA_LIMIT_PERCENT", "0", "greater than 0"),
+        ("CLOUDINARY_QUOTA_LIMIT_PERCENT", "101", "at most 100"),
+        ("CLOUDINARY_QUOTA_LIMIT_PERCENT", "nan", "at most 100"),
+        ("CLOUDINARY_QUOTA_LIMIT_PERCENT", "inf", "at most 100"),
     ],
 )
 def test_crawler_settings_reject_invalid_values(

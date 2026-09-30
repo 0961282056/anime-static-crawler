@@ -266,3 +266,15 @@ def test_source_client_returns_nonempty_utf8_document() -> None:
     assert url.endswith("/202607/")
     assert document == "<html>ok</html>"
     assert response.encoding == "utf-8"
+    assert response.closed
+
+
+def test_retry_after_wait_is_bounded_and_preserved_across_retries():
+    from urllib3.response import HTTPResponse
+
+    session = http_client_module.create_retry_session(_settings())
+    retry = session.get_adapter("https://").max_retries
+    assert retry.total == 3
+    assert retry.get_retry_after(HTTPResponse(headers={"Retry-After": "86400"})) == 30
+    assert retry.new().retry_after_max == 30
+    assert retry.backoff_max == 10

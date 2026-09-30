@@ -54,6 +54,30 @@ def test_error_dictionary_is_rejected_and_existing_json_is_preserved(
     assert result.path.read_bytes() == original
 
 
+def test_invalid_record_reports_quarter_index_and_fields_without_payload(tmp_path):
+    repository = _repository(tmp_path)
+    payload = {"story": "large private input that must not enter the summary"}
+    with pytest.raises(DataContractError) as caught:
+        _write(repository, [payload])
+    message = str(caught.value)
+    assert "Record 1" in message
+    assert "2026_夏.json" in message
+    assert "anime_name" in message and "bangumi_id" in message
+    assert payload["story"] not in message
+
+
+def test_quality_failure_reports_the_exact_quarter_path(tmp_path, anime_record_factory):
+    repository = _repository(tmp_path)
+    result = _write(repository, [anime_record_factory(1)])
+    payload = json.loads(result.path.read_text(encoding="utf-8"))
+    payload["quality"]["missing_story_count"] = 1
+    result.path.write_text(json.dumps(payload), encoding="utf-8")
+    with pytest.raises(DataContractError) as caught:
+        repository.validate_all()
+    assert caught.value.operation_context["path"] == result.path
+    assert caught.value.operation_stage == "data-validation"
+
+
 def test_atomic_replace_failure_preserves_previous_dataset_and_cleans_temp_file(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
