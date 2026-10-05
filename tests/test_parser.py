@@ -10,6 +10,10 @@ from services.parser import extract_item_html, parse_anime_item
 SOURCE_ID = 'acgs-bangumi-anime-id="anime-2200"'
 NORMAL_TIME = '<div class="time_today main_time">7月5日起／每週日／23時0分</div>'
 STORY = '<div class="anime_story">第一段<br>第二段</div>'
+PICTURE_COVER_URL = (
+    "https://static.acgsecrets.hk/img/af/af4edb783166c7ce696d987c718a56f9/"
+    "f85c1898534579aba21d79c67497d4c15a189bc6125d00ec0b936ad59735b84d.jpg"
+)
 
 
 def _document(fixture_dir: Path) -> str:
@@ -50,6 +54,63 @@ def test_parser_preserves_japanese_deep_night_hour(fixture_dir: Path) -> None:
 
     assert candidate.premiere_date == "六"
     assert candidate.premiere_time == "26:38"
+
+
+def test_parser_reads_picture_cover_contract(fixture_dir: Path) -> None:
+    document = (fixture_dir / "acgsecrets_202610_picture_minimal.html").read_text(
+        encoding="utf-8"
+    )
+
+    candidate = parse_anime_item(_single_item(document))
+
+    assert candidate.bangumi_id == "anime-2279"
+    assert candidate.anime_name == "藥師少女的獨語 第三季 前半"
+    assert candidate.source_image_url == PICTURE_COVER_URL
+    assert candidate.premiere_date == "五"
+    assert candidate.premiere_time == "23:00"
+
+
+def test_parser_prefers_picture_original_url_over_thumbnail(fixture_dir: Path) -> None:
+    document = (fixture_dir / "acgsecrets_202610_picture_minimal.html").read_text(
+        encoding="utf-8"
+    )
+    document = _replace_once(
+        document,
+        f'src="{PICTURE_COVER_URL}"',
+        'src="https://static.acgsecrets.hk/img/test/thumbnail.jpg"',
+    )
+
+    candidate = parse_anime_item(_single_item(document))
+
+    assert candidate.source_image_url == PICTURE_COVER_URL
+
+
+@pytest.mark.parametrize("attribute", ["src", "data-src", "acgs-img-data-url"])
+def test_parser_falls_back_to_picture_image_url(
+    fixture_dir: Path, attribute: str
+) -> None:
+    document = (fixture_dir / "acgsecrets_202610_picture_minimal.html").read_text(
+        encoding="utf-8"
+    )
+    document = _replace_once(document, f'acgs-img-data-url="{PICTURE_COVER_URL}"', "")
+    document = _replace_once(
+        document, f'src="{PICTURE_COVER_URL}"', f'{attribute}="{PICTURE_COVER_URL}"'
+    )
+
+    candidate = parse_anime_item(_single_item(document))
+
+    assert candidate.source_image_url == PICTURE_COVER_URL
+
+
+def test_parser_rejects_picture_without_cover_url(fixture_dir: Path) -> None:
+    document = (fixture_dir / "acgsecrets_202610_picture_minimal.html").read_text(
+        encoding="utf-8"
+    )
+    document = _replace_once(document, f'acgs-img-data-url="{PICTURE_COVER_URL}"', "")
+    document = _replace_once(document, f'src="{PICTURE_COVER_URL}"', "")
+
+    with pytest.raises(ItemParseError, match="missing its cover URL"):
+        parse_anime_item(_single_item(document))
 
 
 def test_parser_allows_missing_story(fixture_dir: Path) -> None:

@@ -78,9 +78,14 @@ def parse_anime_item(item_html: str) -> AnimeCandidate:
     if not anime_name:
         raise ItemParseError("Anime card is missing its localized name")
 
-    image_element = item.select_one("div.anime_cover_image img")
-    raw_image_url = ""
-    if image_element:
+    cover_element = item.select_one(".anime_cover_image")
+    image_element = cover_element.select_one("img") if cover_element else None
+    raw_image_url = (
+        str(cover_element.get("acgs-img-data-url") or "").strip()
+        if cover_element
+        else ""
+    )
+    if not raw_image_url and image_element:
         raw_image_url = str(
             image_element.get("acgs-img-data-url")
             or image_element.get("src")

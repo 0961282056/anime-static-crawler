@@ -5,6 +5,7 @@ from pathlib import Path
 
 import pytest
 
+from config import Config
 from models import TAIPEI_TZ
 from services.errors import SelectorCanaryError
 from services.parser import extract_item_html
@@ -19,7 +20,8 @@ class FakeSourceClient:
 
     def fetch_quarter_html(self, year: str, season: str) -> tuple[str, str]:
         self.calls.append((year, season))
-        return f"https://acgsecrets.hk/bangumi/{year}07/", self.document_html
+        month = Config.SEASON_TO_MONTH[season]
+        return f"https://acgsecrets.hk/bangumi/{year}{month:02d}/", self.document_html
 
 
 def _settings() -> CrawlerSettings:
@@ -70,6 +72,25 @@ def test_canary_fails_when_the_card_selector_matches_nothing() -> None:
             settings=_settings(),
             source_client=source_client,
         )
+
+
+def test_canary_parses_autumn_picture_cover_contract(fixture_dir: Path) -> None:
+    document = (fixture_dir / "acgsecrets_202610_picture_minimal.html").read_text(
+        encoding="utf-8"
+    )
+    source_client = FakeSourceClient(document)
+
+    result = run_selector_canary(
+        now=datetime(2026, 10, 5, 9, 15, tzinfo=TAIPEI_TZ),
+        settings=_settings(),
+        source_client=source_client,
+    )
+
+    assert result.year == "2026"
+    assert result.season == "秋"
+    assert result.card_count == 1
+    assert result.source_url == "https://acgsecrets.hk/bangumi/202610/"
+    assert source_client.calls == [("2026", "秋")]
 
 
 def test_canary_fails_when_any_live_card_breaks_the_parser_contract(
