@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "anime_list": [
+    {
+      "bangumi_id": "anime-2316",
+      "anime_name": "羅梅莉亞戰記",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e765cb215201c8d74f05aaaf7557fa35069a6dd0b3e4a42df60a892f25a2e7aa",
+      "premiere_date": "一",
+      "premiere_time": "23:30",
+      "story": "歷經漫長旅途，ロメリア與未婚夫アンリ王子成功討伐了魔王ゼルギス。然而，アンリ王子卻無情地向ロメリア宣告：「我要解除婚約。」 ロメリア冷眼旁觀沉醉於勝利喜悅中的アンリ等人，踏上了下一段旅程。 因戰亂而滿目瘡痍的祖國，以及被魔族奪走的百姓生活。眼前堆積如山的問題，並不是打倒魔王便會迎刃而解。所以，我要用自己的方式，讓人們重新過上幸福的生活。 組建軍隊、推動經濟，即使時而捲入陰謀之中，她也從未停下前進的腳步。然而，這個選擇卻為ロメリア帶來了更多的戰禍。 這是一部描繪討伐魔王『之後』，「一名少女」與「支持她的騎士們」重新崛起的故事。"
+    },
+    {
+      "bangumi_id": "anime-2302",
+      "anime_name": "亂世千金倪亞．利斯頓 轉生為嬌弱千金的弒神武人華麗無雙錄",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3e9f9d8385cd11853c49d0921c72d19cf1c57121943f4b925ae54c32c7ba0caa",
+      "premiere_date": "二",
+      "premiere_time": "21:25",
+      "story": "過去曾有個達成弒神偉業的大英雄。強大過頭的她在臨死之際，仍夢想著能遇見殺得了自己的強大對手──想不到在死亡的另一端等待著她的，竟是轉生成為嬌弱貴族千金的嶄新人生！？ 她在未來的世界成為有著美麗容貌，身體卻過於孱弱的千金小姐倪亞‧利斯頓，獲得第二人生後，仍追求與強者的邂逅，愉悅地投身於接連不斷的戰場之中！ 「──啊哈哈！還愣什麼呢！再不快點擺好架式，可就只能任我蹂躪了唷！」 由美如天使的亂世千金主演的最強無雙傳說，在此揭開序幕！！"
+    },
+    {
+      "bangumi_id": "anime-2318",
+      "anime_name": "幻想水滸傳 The Anime",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8c8b1fbe2a6dc7869846211dd968be0b78e48d09ef5b1bcd499e45a9085aecdc",
+      "premiere_date": "二",
+      "premiere_time": "23:30",
+      "story": "位於デュナン地方東北部，擁有強大軍事力量的ハイランド王國。隸屬於其少年兵部隊的兩名少年──主角リリュウ與他的摯友ジョウイ，兩人仰望著同一片星空，在同一個帳篷裡入睡，堅信著同一個未來。只要這場戰爭結束，只要黎明到來，往昔的日常便會再次回歸。 然而，他們的心願終究落空，兩人被戰火牽引，逐漸被吞噬進宿命的漩渦之中。無力的少年們獲得了強大無比的力量。在108顆星辰格外閃耀的夜空下，少年們將沒有答案的疑問懷抱於心，依循各自的信念，踏出了前行的腳步──"
+    },
+    {
+      "bangumi_id": "anime-2314",
+      "anime_name": "魔法騎士",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/876237c358baba90d1c4ad4055ad62d0a91ded6dfd83a35000919e51c66e33d1",
+      "premiere_date": "三",
+      "premiere_time": "23:45",
+      "story": "暫無簡介"
+    }
+  ],
+  "generated_at": "2026-10-06T08:09:40.919414+08:00",
+  "source_url": "https://acgsecrets.hk/bangumi/202701/",
+  "quality": {
+    "source_count": 4,
+    "record_count": 4,
+    "parse_failure_count": 0,
+    "fallback_id_count": 0,
+    "missing_story_count": 1,
+    "missing_date_count": 0,
+    "missing_time_count": 0
+  }
+}
