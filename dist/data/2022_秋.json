@@ -224,16 +224,19 @@
         "anilist": 130298
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
-        "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "total_episodes": 20,
+        "aired_episodes": 20,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/329114",
+          "https://bgm.tv/subject/329114/ep"
+        ],
+        "checked_at": "2026-10-13T21:14:27.772080+08:00",
+        "attempted_at": "2026-10-13T21:14:27.772080+08:00",
+        "end_date": "2023-02-15",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -797,7 +800,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T20:21:15.474975+08:00",
+  "generated_at": "2026-10-13T21:25:27.947767+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202210/",
   "quality": {
     "source_count": 56,

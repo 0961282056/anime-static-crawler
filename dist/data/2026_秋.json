@@ -382,12 +382,15 @@
         "aired_episodes": null,
         "airing_status": "unknown",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/701779",
+          "https://bgm.tv/subject/701779/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -438,7 +441,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:57:03.048975+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -603,7 +606,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:57:03.048975+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -810,7 +813,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:57:03.048975+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -919,7 +922,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:57:03.048975+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -1171,9 +1174,9 @@
           "https://bgm.tv/subject/584847/ep"
         ],
         "checked_at": "2026-10-13T20:21:15.474975+08:00",
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:57:03.048975+08:00",
         "end_date": null,
-        "note": "Bangumi 頁面備援（bangumi.tv）；來源話數、正篇集目或結束日期不一致，總集數待確認。"
+        "note": "Bangumi 頁面備援（bangumi.tv）；來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
       }
     },
     {
@@ -1484,15 +1487,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
+        "aired_episodes": 2,
+        "airing_status": "airing",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/646586",
+          "https://bgm.tv/subject/646586/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1508,16 +1514,19 @@
         "anilist": 189123
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/548156",
+          "https://bgm.tv/subject/548156/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1534,15 +1543,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
+        "aired_episodes": 2,
+        "airing_status": "airing",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/555605",
+          "https://bgm.tv/subject/555605/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1559,15 +1571,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
+        "aired_episodes": 1,
+        "airing_status": "airing",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/664389",
+          "https://bgm.tv/subject/664389/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1583,16 +1598,19 @@
         "anilist": 213658
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/664395",
+          "https://bgm.tv/subject/664395/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1608,16 +1626,19 @@
         "anilist": 206163
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/536270",
+          "https://bgm.tv/subject/536270/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1634,15 +1655,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
+        "aired_episodes": 2,
+        "airing_status": "airing",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/605533",
+          "https://bgm.tv/subject/605533/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1658,16 +1682,19 @@
         "anilist": 209032
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/634210",
+          "https://bgm.tv/subject/634210/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1684,15 +1711,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
+        "aired_episodes": 2,
+        "airing_status": "airing",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/636023",
+          "https://bgm.tv/subject/636023/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1709,15 +1739,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
+        "aired_episodes": 1,
+        "airing_status": "airing",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/623249",
+          "https://bgm.tv/subject/623249/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1734,15 +1767,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
+        "aired_episodes": 1,
+        "airing_status": "airing",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/621073",
+          "https://bgm.tv/subject/621073/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1758,16 +1794,19 @@
         "anilist": 200455
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/596771",
+          "https://bgm.tv/subject/596771/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1783,16 +1822,19 @@
         "anilist": 199426
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/589775",
+          "https://bgm.tv/subject/589775/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1809,15 +1851,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
+        "aired_episodes": 3,
+        "airing_status": "airing",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/530104",
+          "https://bgm.tv/subject/530104/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1834,15 +1879,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
+        "aired_episodes": 2,
+        "airing_status": "airing",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/636058",
+          "https://bgm.tv/subject/636058/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1859,15 +1907,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
+        "aired_episodes": 2,
+        "airing_status": "airing",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/698032",
+          "https://bgm.tv/subject/698032/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1883,16 +1934,19 @@
         "anilist": 211877
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/647220",
+          "https://bgm.tv/subject/647220/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1909,15 +1963,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
+        "aired_episodes": 2,
+        "airing_status": "airing",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/656083",
+          "https://bgm.tv/subject/656083/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1933,20 +1990,23 @@
         "anilist": 208025
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/630160",
+          "https://bgm.tv/subject/630160/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     }
   ],
-  "generated_at": "2026-10-13T20:21:15.474975+08:00",
+  "generated_at": "2026-10-13T21:25:28.071039+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202610/",
   "quality": {
     "source_count": 73,
