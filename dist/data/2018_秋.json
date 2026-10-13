@@ -7,7 +7,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d64bf28482c64625a9bf7227fac4e3ba",
       "premiere_date": "一",
       "premiere_time": "19:30",
-      "story": "2018年，10月。在某個地方城市居住的少女們，進行了某個儀式。她們是「礦石收音機研究會」。這是性格開朗的女孩子，土宮明日架，與她就讀在同一間高中的朋友們建立的社團。這個儀式只是個類似都市傳說的東西。——但是，幾個條件偶然疊在一起，就讓這玩樂變成不能鬧著玩的事態——。"
+      "story": "2018年，10月。在某個地方城市居住的少女們，進行了某個儀式。她們是「礦石收音機研究會」。這是性格開朗的女孩子，土宮明日架，與她就讀在同一間高中的朋友們建立的社團。這個儀式只是個類似都市傳說的東西。——但是，幾個條件偶然疊在一起，就讓這玩樂變成不能鬧著玩的事態——。",
+      "original_name": "あかねさす少女",
+      "external_ids": {
+        "bangumi": 241033,
+        "anilist": 101360
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-390",
@@ -15,7 +32,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d7e881ae63a55ccda3032197be5b9f4d",
       "premiere_date": "一",
       "premiere_time": "23:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ゴールデンカムイ 第二期",
+      "external_ids": {
+        "bangumi": 251547,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-369",
@@ -23,7 +57,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3bdc440304b41ccebb4e4abe5aeecae9",
       "premiere_date": "一",
       "premiere_time": "24:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "転生したらスライムだった件",
+      "external_ids": {
+        "bangumi": 239816,
+        "anilist": 101280
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-405",
@@ -31,7 +82,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b0809e64b259bea1290fb1fd1101b922",
       "premiere_date": "一",
       "premiere_time": "24:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "蒼天の拳 REGENESIS 第2期",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-411",
@@ -39,7 +96,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ebf6209b85123f57b6bc41f3dfeef4d4",
       "premiere_date": "一",
       "premiere_time": "25:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "宇宙戦艦ティラミスⅡ",
+      "external_ids": {
+        "bangumi": 251666,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-415",
@@ -47,7 +121,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d401e0b575fab45ff7bda5f313233f44",
       "premiere_date": "一",
       "premiere_time": "25:25",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "おとなの防具屋さん",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-509",
@@ -55,7 +135,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/45d0612f7a86e1ad5769b1ff83e87d0b",
       "premiere_date": "一",
       "premiere_time": "25:35",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "キャプテン翼",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-391",
@@ -63,7 +149,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6dd469f6450f64716b1d72d18c70bb01",
       "premiere_date": "一",
       "premiere_time": "26:05",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "軒轅剣・蒼き曜",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-400",
@@ -71,7 +163,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3cf0237ac587ca1762d0c64c08e06c0d",
       "premiere_date": "一",
       "premiere_time": "26:40",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "走り続けてよかったって。",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-416",
@@ -79,7 +177,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/929c179bf8cce21d055ac0942b9cab37",
       "premiere_date": "二",
       "premiere_time": "17:55",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "爆釣バーハンター",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-417",
@@ -87,7 +191,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b33a28cfe64e0b5bf92e6c920987283a",
       "premiere_date": "二",
       "premiere_time": "21:54",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "アイドルマスター SideM　理由あってMini!",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-401",
@@ -95,7 +205,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6cd6a35af49ee7d6c7c0ad9b6b602713",
       "premiere_date": "二",
       "premiere_time": "23:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "東京喰種：re 第2期",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-407",
@@ -103,7 +219,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/20d1e1fad438ca3d9e604ce0fe9ca631",
       "premiere_date": "二",
       "premiere_time": "25:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "人外さんの嫁",
+      "external_ids": {
+        "bangumi": 250802,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-376",
@@ -111,7 +244,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/85be7f0c7a8299721585d4bd2ab37870",
       "premiere_date": "二",
       "premiere_time": "25:29",
-      "story": "走曾是田徑界備受期待的天才跑者，有一次他因為偷竊而遭追趕時，恰巧受到寬政大學學生灰二的幫助。隨後被帶往破舊公寓．竹青莊的走，莫名其妙地被迫必須與田徑門外漢的其他房客一起努力參加箱根驛傳…。"
+      "story": "走曾是田徑界備受期待的天才跑者，有一次他因為偷竊而遭追趕時，恰巧受到寬政大學學生灰二的幫助。隨後被帶往破舊公寓．竹青莊的走，莫名其妙地被迫必須與田徑門外漢的其他房客一起努力參加箱根驛傳…。",
+      "original_name": "風が強く吹いている",
+      "external_ids": {
+        "bangumi": 248154,
+        "anilist": 101903
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-392",
@@ -119,7 +269,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f3c75968abe56cc59fea89083da4258f",
       "premiere_date": "二",
       "premiere_time": "25:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "CONCEPTION 俺の子供を産んでくれ！",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-418",
@@ -127,7 +283,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/791699a913b82f7f7df0fd22b348565e",
       "premiere_date": "二",
       "premiere_time": "25:59",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "1日外出録ハンチョウ",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-458",
@@ -135,7 +297,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1b2642a119e4f77734d9187965e05a1a",
       "premiere_date": "二",
       "premiere_time": "25:59",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "中間管理録トネガワ",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-385",
@@ -143,7 +311,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ae4d77c24fd1fab3dd0d37b59c66af4a",
       "premiere_date": "三",
       "premiere_time": "22:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "俺が好きなのは妹だけど妹じゃない",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-424",
@@ -151,7 +325,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/99067032edeb22cbc9b5e6fb4ee74c2c",
       "premiere_date": "三",
       "premiere_time": "22:24",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ほら、耳がみえてるよ！-喂，看见耳朵啦-",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-380",
@@ -159,7 +339,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/fd2c62ff864ff3713bd4ae787d3aa82c",
       "premiere_date": "三",
       "premiere_time": "24:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ソラとウミのアイダ",
+      "external_ids": {
+        "bangumi": 220658,
+        "anilist": 99639
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-397",
@@ -167,7 +364,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9713626a23942481794cc529aa2ee7e8",
       "premiere_date": "三",
       "premiere_time": "24:55",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "イングレス THE ANIMATION",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-396",
@@ -175,7 +378,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/753e4f95334ff451a8e217ed861bbc87",
       "premiere_date": "三",
       "premiere_time": "25:05",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "RErideD-刻越えのデリダ-",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-368",
@@ -183,7 +392,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/dedfdad3aff9ac114a3a21c278ada9d4",
       "premiere_date": "三",
       "premiere_time": "26:15",
-      "story": "圖書館沒有兔女郎棲息。梓川咲太顛覆這個常識，遇見了野生的兔女郎。而且她不是普通的兔女郎，是咲太就讀高中的高年級生，目前停止演藝活動的當紅藝人櫻島麻衣學姊。幾天前，她身邊的人們開始看不見她，她似乎正在圖書館驗證這個現象。這難道和網路上流傳的神祕現象「思春期症候群」有關？咲太以查明原因為名目接近麻衣試著解謎，事態卻朝著意外的方向演變──？在天空與大海圍繞的這座城鎮，我與她的戀愛故事開始了。"
+      "story": "圖書館沒有兔女郎棲息。梓川咲太顛覆這個常識，遇見了野生的兔女郎。而且她不是普通的兔女郎，是咲太就讀高中的高年級生，目前停止演藝活動的當紅藝人櫻島麻衣學姊。幾天前，她身邊的人們開始看不見她，她似乎正在圖書館驗證這個現象。這難道和網路上流傳的神祕現象「思春期症候群」有關？咲太以查明原因為名目接近麻衣試著解謎，事態卻朝著意外的方向演變──？在天空與大海圍繞的這座城鎮，我與她的戀愛故事開始了。",
+      "original_name": "青春ブタ野郎はバニーガール先輩の夢を見ない",
+      "external_ids": {
+        "bangumi": 240038,
+        "anilist": 101291
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-384",
@@ -191,7 +417,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/672e232aa18041554bed8512f5b34c07",
       "premiere_date": "三",
       "premiere_time": "26:50",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ベルゼブブ嬢のお気に召すまま。",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-406",
@@ -199,7 +431,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/08ffecb74080be087416f5423bb82ac1",
       "premiere_date": "四",
       "premiere_time": "22:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "叛逆性ミリオンアーサー",
+      "external_ids": {
+        "bangumi": 240974,
+        "anilist": 101359
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-375",
@@ -207,7 +456,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/86b42c3861975a85629bdbf9c6f6618d",
       "premiere_date": "四",
       "premiere_time": "22:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "からくりサーカス",
+      "external_ids": {
+        "bangumi": 239974,
+        "anilist": 101336
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-393",
@@ -215,7 +481,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d97258a3b4255c0607f6e917aa910632",
       "premiere_date": "四",
       "premiere_time": "22:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "メルクストーリア -無気力少年と瓶の中の少女-",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-410",
@@ -223,7 +495,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9cdb8a1227c04e2f251619f608dde4a5",
       "premiere_date": "四",
       "premiere_time": "23:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ゾンビランドサガ",
+      "external_ids": {
+        "bangumi": 252655,
+        "anilist": 103871
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-435",
@@ -231,7 +520,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/53f7f66b8280e10be0b9e90330db94a2",
       "premiere_date": "四",
       "premiere_time": "24:55",
-      "story": "1973年，越南的一名美國士兵突然瘋性大發，射殺同僚後成為廢人，嘴裡隻反覆喃喃說著「BANANA FISH」這個詞。之後在1985年，隻手支配紐約著名的暗黑街道上的不良少年的，是一位具有IQ200的少年亞修。他和一個來自日本的男孩奧村英二相遇，就在這時，與BANANA FISH有關的黑勢力也悄然而至……"
+      "story": "1973年，越南的一名美國士兵突然瘋性大發，射殺同僚後成為廢人，嘴裡隻反覆喃喃說著「BANANA FISH」這個詞。之後在1985年，隻手支配紐約著名的暗黑街道上的不良少年的，是一位具有IQ200的少年亞修。他和一個來自日本的男孩奧村英二相遇，就在這時，與BANANA FISH有關的黑勢力也悄然而至……",
+      "original_name": "BANANA FISH",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-395",
@@ -239,7 +534,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/72083f8acff10035fd0bdfc0810cbe81",
       "premiere_date": "四",
       "premiere_time": "25:05",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "でびどる！",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-402",
@@ -247,7 +548,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/09d85eafd0cbbea412305451382686d8",
       "premiere_date": "四",
       "premiere_time": "25:28",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "学園BASARA",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-403",
@@ -255,7 +562,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5a7ba1821237d2610e8d97ae7005cd8d",
       "premiere_date": "四",
       "premiere_time": "25:58",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "BAKUMATSU",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-422",
@@ -263,7 +576,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/feee604dfe57eecf638efebb58728593",
       "premiere_date": "五",
       "premiere_time": "17:55",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "イナズマイレブン オリオンの刻印",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-389",
@@ -271,7 +590,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f77862088da14609e662297f4af4519d",
       "premiere_date": "五",
       "premiere_time": "21:00",
-      "story": "喜歡人偶的女高中生天野灯被一名女吸血鬼所救，並且被她酷似人偶的容貌所吸引。於是，小灯就擅自搬進吸血鬼的家，開始與她的同居生活。人類與吸血鬼的詭異同居生活就此揭開序幕～～！"
+      "story": "喜歡人偶的女高中生天野灯被一名女吸血鬼所救，並且被她酷似人偶的容貌所吸引。於是，小灯就擅自搬進吸血鬼的家，開始與她的同居生活。人類與吸血鬼的詭異同居生活就此揭開序幕～～！",
+      "original_name": "となりの吸血鬼さん",
+      "external_ids": {
+        "bangumi": 241158,
+        "anilist": 101371
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-377",
@@ -279,7 +615,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3e57306f9e52d1202607b8bbbc235b31",
       "premiere_date": "五",
       "premiere_time": "21:30",
-      "story": "一年級新生小糸侑的煩惱是不明白何謂喜歡一個人的心情。正好又撞見學生會學姊七海燈子被人告白的一幕。燈子坦言不管是誰來告白都無法讓她心跳加快。對此深有同感的侑卻在之後從燈子口中聽到意想不到的話。「我好像會喜歡上妳。」"
+      "story": "一年級新生小糸侑的煩惱是不明白何謂喜歡一個人的心情。正好又撞見學生會學姊七海燈子被人告白的一幕。燈子坦言不管是誰來告白都無法讓她心跳加快。對此深有同感的侑卻在之後從燈子口中聽到意想不到的話。「我好像會喜歡上妳。」",
+      "original_name": "やがて君になる",
+      "external_ids": {
+        "bangumi": 243981,
+        "anilist": 101573
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-371",
@@ -287,7 +640,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f2a37773d8f5009fe34f4619d9b031ef",
       "premiere_date": "五",
       "premiere_time": "22:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "とある魔術の禁書目録III",
+      "external_ids": {
+        "bangumi": 22654,
+        "anilist": 100185
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-398",
@@ -295,7 +665,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/fe5aa874ff61cd5105698e9bbec4fcfc",
       "premiere_date": "五",
       "premiere_time": "22:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "火ノ丸相撲",
+      "external_ids": {
+        "bangumi": 234059,
+        "anilist": 100990
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-374",
@@ -303,7 +690,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/68e5e1304640248f92d28b5ddaaa0c9d",
       "premiere_date": "五",
       "premiere_time": "22:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "グラゼニ シーズン2",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-423",
@@ -311,7 +704,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8c63a9f5a036930cd40e262663f50af9",
       "premiere_date": "五",
       "premiere_time": "22:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "狐狸之声",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-382",
@@ -319,7 +718,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4b5946136f67296b2c9fd2507557e29b",
       "premiere_date": "五",
       "premiere_time": "23:00",
-      "story": "前任自衛官與白人小蘿莉的奇妙組合，溫馨、感人、笑鬧的生活篇章，即將正式展開！！"
+      "story": "前任自衛官與白人小蘿莉的奇妙組合，溫馨、感人、笑鬧的生活篇章，即將正式展開！！",
+      "original_name": "うちのメイドがウザすぎる！",
+      "external_ids": {
+        "bangumi": 242670,
+        "anilist": 101506
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-399",
@@ -327,7 +743,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/696b3b6731b4aac6b44cd367f7c1a030",
       "premiere_date": "五",
       "premiere_time": "24:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "閃乱カグラ SHINOVI MASTER -東京妖魔篇-",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-408",
@@ -335,7 +757,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f8d756532acff1779497c85d70e17077",
       "premiere_date": "五",
       "premiere_time": "24:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "抱かれたい男1位に脅されています。",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-378",
@@ -343,7 +771,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a0b0f3489148989f2a6ef2e087e1cb3d",
       "premiere_date": "五",
       "premiere_time": "25:05",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ジョジョの奇妙な冒険 黄金の風",
+      "external_ids": {
+        "bangumi": 235128,
+        "anilist": 102883
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-383",
@@ -351,7 +796,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ad6f79d25c0c5c226a41bb5c48e02b1f",
       "premiere_date": "五",
       "premiere_time": "25:25",
-      "story": "寄宿學校．達利亞學園。在這兩國對立的學生聚集的學校中，有一位為無法被饒恕的戀情而煩惱的一年級生，他就是東和國寮的領袖” 犬塚露壬雄”。暗戀的對象是威斯特公國寮的領袖，“茱麗葉．佩西亞”。一切故事將在犬塚的告白後開始！絕對不能被發現的戀愛故事開幕！"
+      "story": "寄宿學校．達利亞學園。在這兩國對立的學生聚集的學校中，有一位為無法被饒恕的戀情而煩惱的一年級生，他就是東和國寮的領袖” 犬塚露壬雄”。暗戀的對象是威斯特公國寮的領袖，“茱麗葉．佩西亞”。一切故事將在犬塚的告白後開始！絕對不能被發現的戀愛故事開幕！",
+      "original_name": "寄宿学校のジュリエット",
+      "external_ids": {
+        "bangumi": 240346,
+        "anilist": 101310
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-419",
@@ -359,7 +821,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/de0aaccb2b6905ea36bc8979847cb3b6",
       "premiere_date": "五",
       "premiere_time": "25:35",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "おこしやす、ちとせちゃん",
+      "external_ids": {
+        "bangumi": 255550,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-379",
@@ -367,7 +846,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c46e5742a7c026b8660e6e99fbefc782",
       "premiere_date": "五",
       "premiere_time": "26:25",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "色づく世界の明日から",
+      "external_ids": {
+        "bangumi": 240562,
+        "anilist": 101316
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-421",
@@ -375,7 +871,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d45e9746f5e4d31dffbe254d9f317fa6",
       "premiere_date": "六",
       "premiere_time": "07:55",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ほしの島のにゃんこ",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-465",
@@ -383,7 +885,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3ae3dd7c82b99b8b27cc2def237fa399",
       "premiere_date": "六",
       "premiere_time": "08:15",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "おしえて魔法のペンデュラム〜リルリルフェアリル〜",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-413",
@@ -391,7 +899,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/83cb1f016ee23f30dc4167ca909fb0fb",
       "premiere_date": "六",
       "premiere_time": "17:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "逆転裁判 Season2",
+      "external_ids": {
+        "bangumi": 240499,
+        "anilist": 101313
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-412",
@@ -399,7 +924,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5f79b189e25b5c208e323415882426a2",
       "premiere_date": "六",
       "premiere_time": "17:35",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ラディアン",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-366",
@@ -407,7 +938,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/53c28b90a44bfbe9701d313b794d02d1",
       "premiere_date": "六",
       "premiere_time": "24:00",
-      "story": "「這……這裡是什麼地方……？」桐人一醒過來，馬上發現自己掉進了到處都是參天巨樹的森林──奇幻的「假想世界」當中。為了尋求線索而在附近亂逛的他遇見了一名少年。「我的名字叫尤吉歐。請多指教，桐人。」這名假想世界裡的居民──也就是「ＮＰＣ」的少年竟然擁有足以媲美人類的豐富感情表現。隨著與尤吉歐的友情越來越深厚，桐人腦袋裡也出現了過去的某段回憶。桐人的回憶裡，還是小孩子的自己曾經和尤吉歐在深山裡到處亂逛。而且除了尤吉歐之外，還有另一名有著金黃色頭髮的少女。少女的名字是愛莉絲。那是一個絕對不能忘記的重要姓名。"
+      "story": "「這……這裡是什麼地方……？」桐人一醒過來，馬上發現自己掉進了到處都是參天巨樹的森林──奇幻的「假想世界」當中。為了尋求線索而在附近亂逛的他遇見了一名少年。「我的名字叫尤吉歐。請多指教，桐人。」這名假想世界裡的居民──也就是「ＮＰＣ」的少年竟然擁有足以媲美人類的豐富感情表現。隨著與尤吉歐的友情越來越深厚，桐人腦袋裡也出現了過去的某段回憶。桐人的回憶裡，還是小孩子的自己曾經和尤吉歐在深山裡到處亂逛。而且除了尤吉歐之外，還有另一名有著金黃色頭髮的少女。少女的名字是愛莉絲。那是一個絕對不能忘記的重要姓名。",
+      "original_name": "ソードアート・オンライン アリシゼーション",
+      "external_ids": {
+        "bangumi": 225604,
+        "anilist": 100182
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-372",
@@ -415,7 +963,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/fd9e9674848422e38034a0eca5ac5af5",
       "premiere_date": "六",
       "premiere_time": "24:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "SSSS.GRIDMAN",
+      "external_ids": {
+        "bangumi": 218712,
+        "anilist": 99424
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-367",
@@ -423,7 +988,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/02fbb0711b2552ec24b0214acd6c425b",
       "premiere_date": "六",
       "premiere_time": "24:30",
-      "story": "「我不拯救世界，只管殺哥布林。」據說這間邊境公會裡，有個只靠討伐哥布林就升上銀等（位列第三階）的罕見案例……一名女神官成為冒險者後，首次加入團隊，就在冒險中陷入了危機。而拯救了她的，正是這名人稱「哥布林殺手」的男子。他不擇手段，不辭勞苦，潛心掃蕩哥布林。女神官被這樣的他牽著走，公會的櫃臺小姐感謝他，兒時玩伴的牧牛妹等候他。一名森人（Elf）少女聽聞他的事蹟，也現身委託任務……"
+      "story": "「我不拯救世界，只管殺哥布林。」據說這間邊境公會裡，有個只靠討伐哥布林就升上銀等（位列第三階）的罕見案例……一名女神官成為冒險者後，首次加入團隊，就在冒險中陷入了危機。而拯救了她的，正是這名人稱「哥布林殺手」的男子。他不擇手段，不辭勞苦，潛心掃蕩哥布林。女神官被這樣的他牽著走，公會的櫃臺小姐感謝他，兒時玩伴的牧牛妹等候他。一名森人（Elf）少女聽聞他的事蹟，也現身委託任務……",
+      "original_name": "ゴブリンスレイヤー",
+      "external_ids": {
+        "bangumi": 238006,
+        "anilist": 101165
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-414",
@@ -431,7 +1013,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d36b4ee1fb4c5d34a28b11be79cea6fa",
       "premiere_date": "六",
       "premiere_time": "24:35",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "その時、カノジョは。",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-373",
@@ -439,7 +1027,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/798af118e100a335a45a0958becbde3a",
       "premiere_date": "六",
       "premiere_time": "26:38",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "RELEASE THE SPYCE",
+      "external_ids": {
+        "bangumi": 236510,
+        "anilist": 101014
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-420",
@@ -447,7 +1052,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/37f103530f6bcdf555a62bc579a1274b",
       "premiere_date": "日",
       "premiere_time": "06:54",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "愛玩怪獣",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-409",
@@ -455,7 +1066,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/363b6f333a1dce188d223be65d953af0",
       "premiere_date": "日",
       "premiere_time": "07:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "FAIRY TAIL ファイナルシリーズ",
+      "external_ids": {
+        "bangumi": 174186,
+        "anilist": 99749
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-388",
@@ -463,7 +1091,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b8d4b9dedfacb357c5333a406b95bd17",
       "premiere_date": "日",
       "premiere_time": "22:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ユリシーズ ジャンヌ・ダルクと錬金の騎士",
+      "external_ids": {
+        "bangumi": 227098,
+        "anilist": 100432
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-404",
@@ -471,7 +1116,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c3d2ddbaa81cd97f6d44b6c6d60e8e88",
       "premiere_date": "日",
       "premiere_time": "22:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "DOUBLE DECKER! ダグ＆キリル",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-387",
@@ -479,7 +1130,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6677144ea820bd93dd8ea3a2caa9c93b",
       "premiere_date": "日",
       "premiere_time": "23:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "アニマエール！",
+      "external_ids": {
+        "bangumi": 236196,
+        "anilist": 101013
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-381",
@@ -487,7 +1155,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/2a78d36921e1b2d1b7c7bac237b1b18c",
       "premiere_date": "日",
       "premiere_time": "24:10",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ツルネ -風舞高校弓道部-",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-386",
@@ -495,7 +1169,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e830fa01a27cfa5472a8b1589e133de8",
       "premiere_date": "日",
       "premiere_time": "24:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ガイコツ書店員 本田さん",
+      "external_ids": {
+        "bangumi": 225850,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-439",
@@ -503,7 +1194,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d7a6897e77ab5348c84be26f5c6c263d",
       "premiere_date": "日",
       "premiere_time": "24:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "バキ",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-430",
@@ -511,7 +1208,13 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/2d654424de8898842e8fdc368380449b",
       "premiere_date": "日",
       "premiere_time": "24:35",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "進撃の巨人 Season3",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     },
     {
       "bangumi_id": "anime-394",
@@ -519,7 +1222,24 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7d8145b18d81eba7615b7dbc730c64b2",
       "premiere_date": "日",
       "premiere_time": "24:45",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ひもてはうす",
+      "external_ids": {
+        "bangumi": 228898,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-425",
@@ -527,10 +1247,16 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/37c94d2a9453932741923275b1967364",
       "premiere_date": "日",
       "premiere_time": "25:00",
-      "story": "……（嘆氣）"
+      "story": "……（嘆氣）",
+      "original_name": "終電後､カプセルホテルで､上司に微熱伝わる夜｡",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     }
   ],
-  "generated_at": "2026-07-13T08:58:28.433709+08:00",
+  "generated_at": "2026-10-13T20:21:15.474975+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201810/",
   "quality": {
     "source_count": 66,

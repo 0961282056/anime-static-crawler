@@ -13,7 +13,21 @@
         "bangumi": 624923,
         "anilist": 207191
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/624923",
+          "https://bgm.tv/subject/624923/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2319",
@@ -27,7 +41,21 @@
         "bangumi": 634587,
         "anilist": 209219
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/634587",
+          "https://bgm.tv/subject/634587/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2313",
@@ -41,7 +69,21 @@
         "bangumi": 614640,
         "anilist": 204011
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/614640",
+          "https://bgm.tv/subject/614640/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2316",
@@ -55,7 +97,21 @@
         "bangumi": 511936,
         "anilist": 180894
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511936",
+          "https://bgm.tv/subject/511936/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2304",
@@ -69,7 +125,21 @@
         "bangumi": 418229,
         "anilist": 160803
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/418229",
+          "https://bgm.tv/subject/418229/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2301",
@@ -83,7 +153,21 @@
         "bangumi": 634708,
         "anilist": 209502
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/634708",
+          "https://bgm.tv/subject/634708/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2302",
@@ -97,7 +181,21 @@
         "bangumi": 624085,
         "anilist": 206949
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/624085",
+          "https://bgm.tv/subject/624085/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2334",
@@ -111,7 +209,21 @@
         "bangumi": 544378,
         "anilist": 187990
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/544378",
+          "https://bgm.tv/subject/544378/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2326",
@@ -125,7 +237,21 @@
         "bangumi": 593565,
         "anilist": 200294
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/593565",
+          "https://bgm.tv/subject/593565/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2318",
@@ -139,7 +265,21 @@
         "bangumi": 541538,
         "anilist": 187316
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 23,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/541538",
+          "https://bgm.tv/subject/541538/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2310",
@@ -153,7 +293,21 @@
         "bangumi": 625799,
         "anilist": 207329
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/625799",
+          "https://bgm.tv/subject/625799/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2282",
@@ -167,7 +321,21 @@
         "bangumi": 505550,
         "anilist": 179876
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 0,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/505550",
+          "https://bgm.tv/subject/505550/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2251",
@@ -181,7 +349,21 @@
         "bangumi": 627648,
         "anilist": 207809
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 14,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/627648",
+          "https://bgm.tv/subject/627648/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2347",
@@ -195,7 +377,18 @@
         "bangumi": 701779,
         "anilist": 217577
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2286",
@@ -209,7 +402,21 @@
         "bangumi": 393010,
         "anilist": 152677
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/393010",
+          "https://bgm.tv/subject/393010/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2295",
@@ -223,7 +430,18 @@
         "bangumi": 486456,
         "anilist": 176314
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2312",
@@ -237,7 +455,21 @@
         "bangumi": 646154,
         "anilist": 211778
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/646154",
+          "https://bgm.tv/subject/646154/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2314",
@@ -251,7 +483,21 @@
         "bangumi": 502123,
         "anilist": 178868
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/502123",
+          "https://bgm.tv/subject/502123/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2287",
@@ -265,7 +511,21 @@
         "bangumi": 412008,
         "anilist": 159042
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/412008",
+          "https://bgm.tv/subject/412008/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2333",
@@ -279,7 +539,21 @@
         "bangumi": 586941,
         "anilist": 199068
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/586941",
+          "https://bgm.tv/subject/586941/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2322",
@@ -293,7 +567,21 @@
         "bangumi": 657778,
         "anilist": 213068
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/657778",
+          "https://bgm.tv/subject/657778/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2289",
@@ -307,7 +595,18 @@
         "bangumi": 471844,
         "anilist": 172192
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2300",
@@ -321,7 +620,21 @@
         "bangumi": 622288,
         "anilist": 206401
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/622288",
+          "https://bgm.tv/subject/622288/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2308",
@@ -335,7 +648,21 @@
         "bangumi": 665390,
         "anilist": 213805
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/665390",
+          "https://bgm.tv/subject/665390/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2330",
@@ -349,7 +676,21 @@
         "bangumi": 590553,
         "anilist": 199594
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/590553",
+          "https://bgm.tv/subject/590553/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2229",
@@ -363,7 +704,21 @@
         "bangumi": 511177,
         "anilist": 180136
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 26,
+        "aired_episodes": 15,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511177",
+          "https://bgm.tv/subject/511177/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2293",
@@ -377,7 +732,21 @@
         "bangumi": 654294,
         "anilist": 212503
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/654294",
+          "https://bgm.tv/subject/654294/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2344",
@@ -405,7 +774,21 @@
         "bangumi": 701782,
         "anilist": 216895
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/701782",
+          "https://bgm.tv/subject/701782/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2279",
@@ -419,7 +802,18 @@
         "bangumi": 568244,
         "anilist": 195516
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2283",
@@ -433,7 +827,21 @@
         "bangumi": 657656,
         "anilist": 212888
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/657656",
+          "https://bgm.tv/subject/657656/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2299",
@@ -447,7 +855,21 @@
         "bangumi": 621108,
         "anilist": 205909
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/621108",
+          "https://bgm.tv/subject/621108/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2263",
@@ -461,7 +883,21 @@
         "bangumi": 613438,
         "anilist": 203490
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 14,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/613438",
+          "https://bgm.tv/subject/613438/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2281",
@@ -475,7 +911,18 @@
         "bangumi": 537738,
         "anilist": 186742
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2296",
@@ -489,7 +936,21 @@
         "bangumi": 617948,
         "anilist": 204650
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/617948",
+          "https://bgm.tv/subject/617948/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2291",
@@ -503,7 +964,21 @@
         "bangumi": 499474,
         "anilist": 178083
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/499474",
+          "https://bgm.tv/subject/499474/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2323",
@@ -517,7 +992,21 @@
         "bangumi": 617273,
         "anilist": 216557
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/617273",
+          "https://bgm.tv/subject/617273/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2343",
@@ -531,7 +1020,21 @@
         "bangumi": 694622,
         "anilist": 214968
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/694622",
+          "https://bgm.tv/subject/694622/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2317",
@@ -545,7 +1048,21 @@
         "bangumi": 568525,
         "anilist": 195571
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/568525",
+          "https://bgm.tv/subject/568525/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2332",
@@ -559,7 +1076,21 @@
         "bangumi": 657084,
         "anilist": 212799
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/657084",
+          "https://bgm.tv/subject/657084/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2297",
@@ -573,7 +1104,21 @@
         "bangumi": 542007,
         "anilist": 187402
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/542007",
+          "https://bgm.tv/subject/542007/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2292",
@@ -587,7 +1132,21 @@
         "bangumi": 616808,
         "anilist": 204389
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/616808",
+          "https://bgm.tv/subject/616808/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2284",
@@ -601,7 +1160,21 @@
         "bangumi": 584847,
         "anilist": 198727
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 0,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "conflict",
+        "source_urls": [
+          "https://bgm.tv/subject/584847",
+          "https://bgm.tv/subject/584847/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；來源話數、正篇集目或結束日期不一致，總集數待確認。"
+      }
     },
     {
       "bangumi_id": "anime-2288",
@@ -615,7 +1188,21 @@
         "bangumi": 567896,
         "anilist": 195604
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/567896",
+          "https://bgm.tv/subject/567896/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2346",
@@ -629,7 +1216,21 @@
         "bangumi": 701565,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/701565",
+          "https://bgm.tv/subject/701565/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2321",
@@ -643,7 +1244,21 @@
         "bangumi": 636512,
         "anilist": 209562
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/636512",
+          "https://bgm.tv/subject/636512/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2325",
@@ -657,7 +1272,21 @@
         "bangumi": 586255,
         "anilist": 199007
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/586255",
+          "https://bgm.tv/subject/586255/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2337",
@@ -671,7 +1300,21 @@
         "bangumi": 613256,
         "anilist": 203473
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/613256",
+          "https://bgm.tv/subject/613256/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2215",
@@ -685,7 +1328,21 @@
         "bangumi": 456078,
         "anilist": 169581
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/456078",
+          "https://bgm.tv/subject/456078/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2280",
@@ -699,7 +1356,21 @@
         "bangumi": 554779,
         "anilist": 191656
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/554779",
+          "https://bgm.tv/subject/554779/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2311",
@@ -713,7 +1384,21 @@
         "bangumi": 637802,
         "anilist": 209872
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/637802",
+          "https://bgm.tv/subject/637802/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2306",
@@ -727,7 +1412,21 @@
         "bangumi": 606716,
         "anilist": 202250
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/606716",
+          "https://bgm.tv/subject/606716/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2339",
@@ -755,7 +1454,21 @@
         "bangumi": 638081,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/638081",
+          "https://bgm.tv/subject/638081/ep"
+        ],
+        "checked_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2342",
@@ -769,7 +1482,18 @@
         "bangumi": 646586,
         "anilist": 216860
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2290",
@@ -783,7 +1507,18 @@
         "bangumi": 548156,
         "anilist": 189123
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2298",
@@ -797,7 +1532,18 @@
         "bangumi": 555605,
         "anilist": 191788
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2303",
@@ -811,7 +1557,18 @@
         "bangumi": 664389,
         "anilist": 213657
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2329",
@@ -825,7 +1582,18 @@
         "bangumi": 664395,
         "anilist": 213658
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2294",
@@ -839,7 +1607,18 @@
         "bangumi": 536270,
         "anilist": 206163
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2331",
@@ -853,7 +1632,18 @@
         "bangumi": 605533,
         "anilist": 202079
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2327",
@@ -867,7 +1657,18 @@
         "bangumi": 634210,
         "anilist": 209032
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2320",
@@ -881,7 +1682,18 @@
         "bangumi": 636023,
         "anilist": 209499
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2307",
@@ -895,7 +1707,18 @@
         "bangumi": 623249,
         "anilist": 206814
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2309",
@@ -909,7 +1732,18 @@
         "bangumi": 621073,
         "anilist": 205896
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2315",
@@ -923,7 +1757,18 @@
         "bangumi": 596771,
         "anilist": 200455
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2328",
@@ -937,7 +1782,18 @@
         "bangumi": 589775,
         "anilist": 199426
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2285",
@@ -951,7 +1807,18 @@
         "bangumi": 530104,
         "anilist": 185756
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2324",
@@ -965,7 +1832,18 @@
         "bangumi": 636058,
         "anilist": 209463
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2340",
@@ -979,7 +1857,18 @@
         "bangumi": 698032,
         "anilist": 206774
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2335",
@@ -993,7 +1882,18 @@
         "bangumi": 647220,
         "anilist": 211877
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2341",
@@ -1007,7 +1907,18 @@
         "bangumi": 656083,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     },
     {
       "bangumi_id": "anime-2336",
@@ -1021,10 +1932,21 @@
         "bangumi": 630160,
         "anilist": 208025
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
     }
   ],
-  "generated_at": "2026-10-13T19:15:30.530943+08:00",
+  "generated_at": "2026-10-13T20:21:15.474975+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202610/",
   "quality": {
     "source_count": 73,
