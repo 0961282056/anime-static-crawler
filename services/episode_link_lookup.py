@@ -31,6 +31,60 @@ def quarter_bounds(year: str, season: str) -> tuple[date, date]:
     return start, end
 
 
+def fetch_quarter_catalog(
+    client: BangumiClient, *, year: str, season: str
+) -> list[dict[str, Any]]:
+    """Retrieve complete monthly pages before choosing any exact identity."""
+    start, _ = quarter_bounds(year, season)
+    catalog: dict[int, dict[str, Any]] = {}
+    for month in range(start.month, start.month + 3):
+        entries: list[dict[str, Any]] = []
+        expected = None
+        for _ in range(10):
+            page = client._get(
+                "/subjects",
+                type=2,
+                year=int(year),
+                month=month,
+                sort="date",
+                limit=50,
+                offset=len(entries),
+            )
+            total, items = page.get("total"), page.get("data")
+            if type(total) is not int or total < 0 or not isinstance(items, list):
+                raise MetadataUnavailable("Monthly anime catalog is invalid")
+            if expected is not None and total != expected:
+                raise MetadataUnavailable(
+                    "Monthly anime catalog changed during pagination"
+                )
+            expected = total
+            if not items and len(entries) < total:
+                raise MetadataUnavailable("Monthly anime catalog ended early")
+            entries.extend(items)
+            if len(entries) > total:
+                raise MetadataUnavailable("Monthly anime catalog exceeded its count")
+            if len(entries) == total:
+                break
+        else:
+            raise MetadataUnavailable(
+                "Monthly anime catalog exceeds the safe page limit"
+            )
+        for item in entries:
+            if (
+                not isinstance(item, dict)
+                or type(item.get("id")) is not int
+                or item["id"] <= 0
+            ):
+                raise MetadataUnavailable("Monthly anime catalog identity is invalid")
+            identity = item["id"]
+            if identity in catalog and catalog[identity] != item:
+                raise MetadataUnavailable(
+                    "Catalog duplicate identity has conflicting data"
+                )
+            catalog[identity] = item
+    return list(catalog.values())
+
+
 def exact_subject_id(
     anime: Anime, page: dict[str, Any], start: date, end: date
 ) -> int | None:
@@ -66,7 +120,13 @@ def exact_subject_id(
 
 
 def resolve_missing_links(
-    repository: Any, client: BangumiClient, now: datetime, *, year: str, season: str
+    repository: Any,
+    client: BangumiClient,
+    now: datetime,
+    *,
+    year: str,
+    season: str,
+    catalog: list[dict[str, Any]] | None = None,
 ) -> list[dict[str, Any]]:
     start, end = quarter_bounds(year, season)
     dataset = repository.load_quarter(year, season)
@@ -78,19 +138,23 @@ def resolve_missing_links(
     for anime in dataset.anime_list:
         if not stopped and anime.external_ids.bangumi is None and anime.original_name:
             try:
-                page = client._request(
-                    API_ORIGIN + "/search/subjects",
-                    params={"limit": 25, "offset": 0},
-                    payload={
-                        "keyword": anime.original_name,
-                        "filter": {
-                            "type": [2],
-                            "air_date": [
-                                f">={start.isoformat()}",
-                                f"<{end.isoformat()}",
-                            ],
+                page = (
+                    {"data": catalog, "total": len(catalog)}
+                    if catalog is not None
+                    else client._request(
+                        API_ORIGIN + "/search/subjects",
+                        params={"limit": 25, "offset": 0},
+                        payload={
+                            "keyword": anime.original_name,
+                            "filter": {
+                                "type": [2],
+                                "air_date": [
+                                    f">={start.isoformat()}",
+                                    f"<{end.isoformat()}",
+                                ],
+                            },
                         },
-                    },
+                    )
                 )
                 sid = exact_subject_id(anime, page, start, end)
                 if sid is not None:

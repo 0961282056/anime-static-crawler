@@ -7,6 +7,7 @@ import pytest
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.episode_link_lookup import (
     exact_subject_id,
+    fetch_quarter_catalog,
     quarter_bounds,
     resolve_missing_links,
 )
@@ -161,3 +162,62 @@ def test_search_post_uses_the_same_bounded_transport():
     assert client.remaining == 0
     with pytest.raises(RequestBudgetExceeded):
         client._request(API_ORIGIN + "/search/subjects", payload={"keyword": "next"})
+
+
+def test_complete_monthly_catalog_uses_documented_fifty_row_pages():
+    second = {**subject(), "id": 123}
+    responses = iter(
+        [
+            {"data": [subject()], "total": 2},
+            {"data": [second], "total": 2},
+            {"data": [], "total": 0},
+            {"data": [], "total": 0},
+        ]
+    )
+    calls = []
+
+    def get(path, **params):
+        calls.append(params)
+        return next(responses)
+
+    catalog = fetch_quarter_catalog(SimpleNamespace(_get=get), year="2026", season="春")
+    assert {item["id"] for item in catalog} == {580133, 123}
+    assert [call["month"] for call in calls] == [4, 4, 5, 6]
+    assert calls[1]["offset"] == 1
+    assert all(call["limit"] == 50 and call["type"] == 2 for call in calls)
+
+
+@pytest.mark.parametrize(
+    "pages",
+    [
+        [{"data": [], "total": 1}],
+        [{"data": [subject()], "total": 2}, {"data": [], "total": 3}],
+        [{"data": [subject()], "total": 0}],
+        [
+            {"data": [subject()], "total": 1},
+            {"data": [{**subject(), "name": "conflict"}], "total": 1},
+        ],
+    ],
+)
+def test_incomplete_catalog_is_never_used_for_identity_matching(pages):
+    responses = iter(pages)
+    with pytest.raises(MetadataUnavailable):
+        fetch_quarter_catalog(
+            SimpleNamespace(_get=lambda *a, **kw: next(responses)),
+            year="2026",
+            season="春",
+        )
+
+
+def test_catalog_lookup_avoids_one_search_request_per_anime(
+    tmp_path, anime_record_factory
+):
+    repository = setup_repository(tmp_path, anime_record_factory)
+    client = SimpleNamespace(_get=lambda path: subject(), unavailable=False)
+    assert resolve_missing_links(
+        repository, client, NOW, year="2026", season="春", catalog=[subject()]
+    )
+    assert (
+        repository.load_quarter("2026", "春").anime_list[0].external_ids.bangumi
+        == 580133
+    )

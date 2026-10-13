@@ -62,8 +62,8 @@ jobs:
           from pathlib import Path
           from models import TAIPEI_TZ, ExternalIds
           from services.data_repository import DataRepository, DataQualityPolicy
-          from services.episode_metadata import BangumiClient, EpisodeEnricher, refresh_repository_episodes, _name
-          from services.episode_link_lookup import resolve_missing_links
+          from services.episode_metadata import BangumiClient, EpisodeEnricher, refresh_repository_episodes, _name, MetadataUnavailable, RequestBudgetExceeded
+          from services.episode_link_lookup import fetch_quarter_catalog, resolve_missing_links
 
           repo = DataRepository(Path("dist/data"), DataQualityPolicy())
           prior = DataRepository(Path("prior-backfill/dist/data"), DataQualityPolicy())
@@ -119,7 +119,13 @@ jobs:
           for path in sorted(repo.validate_all(), reverse=True):
               year, season = path.stem.split("_")
               client = BangumiClient(request_budget=500)
-              matches = resolve_missing_links(repo, client, datetime.now(TAIPEI_TZ), year=year, season=season)
+              catalog = None
+              if any(a.external_ids.bangumi is None and a.original_name for a in repo.load_path(path).anime_list):
+                  try:
+                      catalog = fetch_quarter_catalog(client, year=year, season=season)
+                  except (MetadataUnavailable, RequestBudgetExceeded) as exc:
+                      print("Catalog unavailable:", path.name, str(exc), flush=True)
+              matches = resolve_missing_links(repo, client, datetime.now(TAIPEI_TZ), year=year, season=season, catalog=catalog)
               verified.extend(matches)
               Path("backfill-evidence/verified-links.json").write_text(json.dumps(verified, ensure_ascii=False, indent=2), encoding="utf-8")
               dataset = repo.load_path(path)
