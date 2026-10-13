@@ -21,7 +21,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "attempted_at": "2026-10-13T21:02:31.677269+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -1566,7 +1566,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-13T20:21:15.474975+08:00",
+  "generated_at": "2026-10-13T21:02:42.194967+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202510/",
   "quality": {
     "source_count": 63,

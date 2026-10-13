@@ -372,9 +372,9 @@
       "premiere_date": "四",
       "premiere_time": "23:25",
       "story": "暫無簡介",
-      "original_name": null,
+      "original_name": "元祖！バンドリちゃん",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 540449,
         "anilist": null
       },
       "episodes": null
@@ -834,9 +834,9 @@
       "premiere_date": "日",
       "premiere_time": "09:00",
       "story": "由人類的思考與情感所產生的「e-パルス」，被用作AI輔助裝置「サポタマ」的能量來源。在其飛躍發展的背後，可怕的怪物現身——吞噬「e-パルス」而進化的生命體「DIGIMON」。 天馬トモロウ因與自「サポタマ」中突然現身的「ゲッコーモン」相遇，而被捲入非日常的世界。 在與以賞金獵人為業的團隊「ゴールデンドーン」的沢城キョウ等人共同生活的日子裡，トモロウ重新立下了決心。 人類與DIGIMON所描繪的嶄新未來，究竟會是——",
-      "original_name": null,
+      "original_name": "DIGIMON BEATBREAK",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 545499,
         "anilist": null
       },
       "episodes": null
@@ -1010,7 +1010,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T19:07:23.731639+08:00",
+  "generated_at": "2026-10-13T21:00:36.384474+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202604/",
   "quality": {
     "source_count": 71,
