@@ -93,6 +93,20 @@ def quality_report(paths: ProjectPaths) -> None:
     print(f"- Legacy unknown IDs: {sum(row[2] for row in rows)}")
     print(f"- Missing stories: {sum(row[3] for row in rows)}")
     print(f"- Missing broadcast dates: {sum(row[4] for row in rows)}")
+    all_records = [
+        record
+        for path in repository.validate_all(allow_legacy=True)
+        for record in repository.load_path(path).anime_list
+    ]
+    print(
+        f"- Episode records: {sum(record.episodes is not None for record in all_records)}"
+    )
+    print(
+        f"- Episode updates stale: {sum(record.episodes is not None and record.episodes.fetch_state == 'stale' for record in all_records)}"
+    )
+    print(
+        f"- Episode conflicts: {sum(record.episodes is not None and record.episodes.fetch_state == 'conflict' for record in all_records)}"
+    )
     print()
     print("| Quarter | Records | Unknown ID | Missing story | Missing date | Updated |")
     print("|---|---:|---:|---:|---:|---|")

@@ -149,7 +149,14 @@ def test_image_download_follows_one_approved_redirect(
     ]
 
 
-def test_image_download_revalidates_redirect_destination() -> None:
+def test_image_download_revalidates_redirect_destination(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setattr(
+        http_client_module.socket,
+        "getaddrinfo",
+        lambda *args, **kwargs: [(2, 1, 6, "", ("93.184.216.34", 443))],
+    )
     redirect = _Response(
         status_code=302,
         headers={"Location": "https://evil.invalid/stolen.jpg"},

@@ -609,3 +609,30 @@ body {
 @media (max-width: 768px) {
     #searchInput { font-size: 16px; }
 }
+:root {
+    --episode-status-bg: rgba(0, 206, 201, 0.12);
+}
+
+.episode-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 16px;
+    overflow-wrap: anywhere;
+}
+.episode-count { font-weight: 600; }
+.airing-status {
+    border-radius: 6px;
+    padding: 3px 8px;
+    background: var(--episode-status-bg);
+    font-size: 0.85rem;
+}
+.episode-warning, .episode-details {
+    flex-basis: 100%;
+    font-size: 0.85rem;
+}
+.episode-warning { color: var(--text-muted); }
+.episode-details summary { cursor: pointer; }
+.episode-details p { margin: 8px 0; }
+.episode-details a { color: inherit; text-decoration: underline; }

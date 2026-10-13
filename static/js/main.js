@@ -4,6 +4,10 @@ const MAX_FETCH_RETRIES = 2;
 const RETRY_DELAYS_MS = [300, 700];
 const HTML2CANVAS_TIMEOUT_MS = 15 * 1000;
 const SHARE_IMAGE_TIMEOUT_MS = 15 * 1000;
+const AIRING_STATUS_LABELS = {
+    unknown: '狀態待確認', not_yet_aired: '尚未播出', airing: '播出中',
+    finished: '本季已播畢', paused: '暫停播出', cancelled: '取消播出'
+};
 const HTML2CANVAS_URL = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
 const HTML2CANVAS_INTEGRITY = 'sha384-ZZ1pncU3bQe8y31yfZdMFdSpttDoPmOZg2wguVK9almUodir1PghgT0eY7Mrty8H';
 let html2canvasLoadPromise = null;
@@ -100,6 +104,19 @@ function validateDataset(payload) {
                 throw createDataError('DATA_SCHEMA', `第 ${index + 1} 筆動畫資料的欄位格式錯誤，無法安全顯示。`, {retryable: false});
             }
         });
+        if (item.episodes !== undefined && item.episodes !== null) {
+            const info = item.episodes;
+            const validCount = (value, minimum) => value === null || value === undefined || (Number.isInteger(value) && value >= minimum);
+            if (typeof info !== 'object' || Array.isArray(info) ||
+                !validCount(info.total_episodes, 1) || !validCount(info.aired_episodes, 0) ||
+                !Object.hasOwn(AIRING_STATUS_LABELS, info.airing_status) ||
+                !['unknown', 'planned', 'confirmed'].includes(info.episode_count_status) ||
+                !['ok', 'unmatched', 'stale', 'conflict'].includes(info.fetch_state) ||
+                (Number.isInteger(info.total_episodes) && Number.isInteger(info.aired_episodes) && info.aired_episodes > info.total_episodes) ||
+                (info.airing_status === 'finished' && (!Number.isInteger(info.total_episodes) || info.aired_episodes !== info.total_episodes || info.episode_count_status !== 'confirmed'))) {
+                throw createDataError('DATA_SCHEMA', `第 ${index + 1} 筆動畫的集數資料格式錯誤，無法安全顯示。`, {retryable: false});
+            }
+        }
     });
 
     return payload;
@@ -376,6 +393,7 @@ function animeApp() {
         year: '',
         season: '',
         filterDay: '全部',
+        filterStatus: '全部',
         searchKeyword: '',
         
         // --- 3. 應用狀態 ---
@@ -788,6 +806,9 @@ function animeApp() {
             if (this.filterDay !== '全部') {
                 list = list.filter(item => item.premiere_date === this.filterDay);
             }
+            if (this.filterStatus !== '全部') {
+                list = list.filter(item => (item.episodes?.airing_status || 'unknown') === this.filterStatus);
+            }
 
             if (this.searchKeyword) {
                 const k = this.searchKeyword.toLowerCase().trim();
@@ -797,6 +818,49 @@ function animeApp() {
                 );
             }
             return list;
+        },
+
+        episodeCountLabel(anime) {
+            const info = anime.episodes;
+            if (!info) return '集數待確認';
+            const aired = Number.isInteger(info.aired_episodes) ? info.aired_episodes : null;
+            const total = Number.isInteger(info.total_episodes) ? info.total_episodes : null;
+            if (info.fetch_state === 'conflict') {
+                return aired === null ? '集數待確認' : `已播 ${aired} 集／總集數待確認`;
+            }
+            if (info.airing_status === 'finished' && total !== null) return `全 ${total} 集`;
+            if (total !== null && aired !== null) {
+                return info.episode_count_status === 'planned'
+                    ? `已播 ${aired} 集／預定 ${total} 集`
+                    : `已播 ${aired}／${total} 集`;
+            }
+            if (aired !== null) return `已播 ${aired} 集／總集數未定`;
+            if (total !== null) return `${info.episode_count_status === 'planned' ? '預定' : '共'} ${total} 集／進度待確認`;
+            return '集數待確認';
+        },
+
+        airingStatusLabel(anime) {
+            return AIRING_STATUS_LABELS[anime.episodes?.airing_status || 'unknown'];
+        },
+
+        episodeMetadataDetail(anime) {
+            const info = anime.episodes;
+            if (!info) return '尚未取得可靠的集數資料。';
+            const checked = info.checked_at ? new Date(info.checked_at) : null;
+            const stamp = checked && !Number.isNaN(checked.getTime())
+                ? `最後確認：${checked.toLocaleString('zh-TW', {timeZone: 'Asia/Taipei'})}` : '尚未確認';
+            return `${stamp}。${info.note || '集數以對應動畫條目的正篇為範圍。'}`;
+        },
+
+        episodeSourceUrl(anime) {
+            const id = anime.external_ids?.bangumi;
+            return Number.isInteger(id) && id > 0 ? `https://bgm.tv/subject/${id}/ep` : null;
+        },
+
+        episodeUpdateWarning(anime) {
+            if (anime.episodes?.fetch_state === 'stale') return anime.episodes.checked_at ? '更新未成功，資料可能落後' : '暫時無法取得集數';
+            if (anime.episodes?.fetch_state === 'conflict') return '來源資料待核對';
+            return '';
         },
 
         // --- 8. 互動功能 (不變) ---

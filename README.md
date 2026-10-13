@@ -126,6 +126,7 @@ Remove-Item Env:BUILD_ONLY
 1. [目前架構與平台設定現況報告](docs/專案架構與平台設定現況報告-2026-07-14.md)：先用這份了解現在的架構、平台狀態、已知風險與優先順序。
 2. [部署與平台設定手冊](docs/部署與平台設定.md)：本機安裝、GitHub Environment／Secrets、Cloudflare Pages、Discord，以及逐步上線驗收。
 3. [安全維運與災難復原手冊](docs/安全維運與災難復原.md)：Cloudinary 無停機輪替、歷史帳密與 LINE token、30 天 retention、RTO／RPO、異地備份、復原演練及 Git 歷史清理。
+4. [集數與播出狀態](docs/集數與播出狀態.md)：已播／總集數、播畢判斷、來源與快取、歷史資料回填，以及查詢失敗時保留資料。
 
 已過時的重構前分析報告不再保留在工作樹；需要追查當時的問題基準時，使用 Git history 即可。
 

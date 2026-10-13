@@ -113,6 +113,8 @@ class AnimeCrawlerService:
             premiere_date=candidate.premiere_date,
             premiere_time=candidate.premiere_time,
             story=candidate.story,
+            original_name=candidate.original_name,
+            external_ids=candidate.external_ids,
         )
 
     def fetch_quarter(self, year: str, season: str) -> CrawlResult:
