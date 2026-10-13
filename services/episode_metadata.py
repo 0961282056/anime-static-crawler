@@ -241,7 +241,12 @@ class BangumiClient:
         return self._request(PAGE_ORIGIN + path, html=True)
 
     def _request(
-        self, url: str, *, html: bool = False, params: dict[str, object] | None = None
+        self,
+        url: str,
+        *,
+        html: bool = False,
+        params: dict[str, object] | None = None,
+        payload: dict[str, Any] | None = None,
     ) -> Any:
         circuit = "pages_unavailable" if html else "unavailable"
         if getattr(self, circuit):
@@ -259,7 +264,8 @@ class BangumiClient:
         self.remaining -= 1
         response = None
         try:
-            response = self.session.get(
+            request = self.session.get if payload is None else self.session.post
+            response = request(
                 url,
                 params=params,
                 timeout=(
@@ -268,6 +274,7 @@ class BangumiClient:
                 ),
                 allow_redirects=False,
                 headers={"Accept": "text/html"} if html else {},
+                **({"json": payload} if payload is not None else {}),
             )
             if response.status_code == 429 or response.status_code >= 500:
                 setattr(self, circuit, True)

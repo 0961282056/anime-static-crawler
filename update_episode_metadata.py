@@ -16,6 +16,7 @@ from pathlib import Path
 from models import TAIPEI_TZ, ExternalIds
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.diagnostics import operation, run_command
+from services.episode_link_lookup import resolve_missing_links
 from services.episode_metadata import (
     BangumiClient,
     EpisodeEnricher,
@@ -103,6 +104,11 @@ def main() -> None:
         help="Retry failed/conflicting snapshots immediately; successful cache stays valid",
     )
     parser.add_argument(
+        "--resolve-missing-links",
+        action="store_true",
+        help="Manually verify unlinked original titles by exact anime title and first-air quarter",
+    )
+    parser.add_argument(
         "--max-requests", type=int, default=240, help="Bangumi request budget (1–1000)"
     )
     args = parser.parse_args()
@@ -110,6 +116,8 @@ def main() -> None:
         parser.error("--year must use YYYY")
     if args.season and not args.year:
         parser.error("--season requires --year")
+    if args.resolve_missing_links and args.anime_id:
+        parser.error("--resolve-missing-links does not support --anime-id")
     if not 1 <= args.max_requests <= 1000:
         parser.error("--max-requests must be between 1 and 1000")
     paths = ProjectPaths.from_environment()
@@ -138,8 +146,25 @@ def main() -> None:
                 for anime in repository.load_path(path).anime_list
                 if not args.anime_id or anime.bangumi_id == args.anime_id
             }
+            client = BangumiClient(request_budget=args.max_requests)
+            if args.resolve_missing_links:
+                for path in repository.validate_all():
+                    year, season = path.stem.split("_")
+                    if (args.year and year != args.year) or (
+                        args.season and season != args.season
+                    ):
+                        continue
+                    evidence = resolve_missing_links(
+                        repository,
+                        client,
+                        datetime.now(TAIPEI_TZ),
+                        year=year,
+                        season=season,
+                    )
+                    for match in evidence:
+                        print("Verified source link:", match)
             enricher = EpisodeEnricher(
-                BangumiClient(request_budget=args.max_requests),
+                client,
                 retry_failed=args.retry_failed,
             )
             changed = refresh_repository_episodes(
