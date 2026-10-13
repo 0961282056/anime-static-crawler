@@ -1,0 +1,106 @@
+name: Episode Data Backfill Once
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - .github/workflows/episode-backfill-once.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: episode-backfill-once-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    if: >-
+      github.event.pull_request.number == 38 &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      TZ: Asia/Taipei
+      REQUEST_TIMEOUT_SECONDS: "8"
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Checkout feature snapshot
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Install locked dependencies
+        run: python -m pip install --require-hashes -r requirements-dev.txt
+
+      - name: Backfill source links and retry episode gaps
+        run: |
+          mkdir -p backfill-evidence
+          python -u update_episode_metadata.py --all --write --retry-failed --max-requests 1000
+          python - <<'PY'
+          import json
+          from datetime import datetime
+          from pathlib import Path
+          from models import TAIPEI_TZ
+          from services.data_repository import DataRepository, DataQualityPolicy
+          from services.episode_metadata import BangumiClient, EpisodeEnricher, refresh_repository_episodes
+          from services.http_client import SourceClient
+          from services.settings import CrawlerSettings
+
+          repo = DataRepository(Path("dist/data"), DataQualityPolicy())
+          source = SourceClient(CrawlerSettings.from_environment())
+          for path in sorted(repo.validate_all(), reverse=True):
+              dataset = repo.load_path(path)
+              selected = {a.bangumi_id for a in dataset.anime_list if a.external_ids.bangumi and (a.episodes is None or a.episodes.fetch_state != "ok")}
+              if selected:
+                  client = BangumiClient(request_budget=500)
+                  changed = refresh_repository_episodes(repo, datetime.now(TAIPEI_TZ), EpisodeEnricher(client, retry_failed=True), selected_ids=selected)
+                  print(path.name, "retried", len(selected), "changed", sorted(changed), flush=True)
+          # Capture public source structure for investigating quarters without links.
+          for year, season in [("2018", "冬"), ("2021", "冬"), ("2026", "春")]:
+              try:
+                  url, html = source.fetch_quarter_html(year, season)
+                  Path(f"backfill-evidence/{year}_{season}.html").write_text(html, encoding="utf-8")
+                  print("Source snapshot:", url, flush=True)
+              except Exception as exc:
+                  print("Source snapshot unavailable:", year, season, str(exc), flush=True)
+          counts = {"records": 0, "linked": 0, "ok": 0, "stale": 0, "conflict": 0}
+          for path in repo.validate_all():
+              for anime in repo.load_path(path).anime_list:
+                  counts["records"] += 1
+                  counts["linked"] += anime.external_ids.bangumi is not None
+                  if anime.episodes:
+                      state = anime.episodes.fetch_state
+                      counts[state] = counts.get(state, 0) + 1
+          Path("backfill-evidence/summary.json").write_text(json.dumps(counts, indent=2), encoding="utf-8")
+          print(counts, flush=True)
+          PY
+
+      - name: Validate updated data
+        env:
+          BUILD_ONLY: "true"
+          BUILD_VERSION: episode-backfill-review
+        run: |
+          python generate_static.py
+          python manage.py validate-all
+          git diff --check
+
+      - name: Upload reviewable data and public source evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: episode-backfill-${{ github.run_id }}
+          path: |
+            dist/data
+            backfill-evidence
+          if-no-files-found: error
+          retention-days: 7

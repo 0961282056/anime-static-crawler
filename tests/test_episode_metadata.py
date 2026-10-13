@@ -490,3 +490,30 @@ def test_backfill_missing_links_keeps_known_identity_and_metadata(
     assert updated.external_ids == record.external_ids
     assert updated.original_name == record.original_name
     assert updated.episodes == record.episodes
+
+
+def test_manual_retry_failed_does_not_refresh_successful_cache(anime_record_factory):
+    record = anime(
+        anime_record_factory,
+        episodes={
+            "total_episodes": 12,
+            "aired_episodes": 8,
+            "fetch_state": "stale",
+            "attempted_at": NOW,
+            "checked_at": NOW,
+        },
+    )
+    calls = []
+
+    def fetch(record, now):
+        calls.append(record.bangumi_id)
+        return record.episodes.model_copy(update={"fetch_state": "ok"})
+
+    client = SimpleNamespace(fetch=fetch)
+    assert EpisodeEnricher(client).enrich(record, NOW).episodes.fetch_state == "stale"
+    assert not calls
+    updated = EpisodeEnricher(client, retry_failed=True).enrich(record, NOW)
+    assert updated.episodes.fetch_state == "ok"
+    assert calls == [record.bangumi_id]
+    EpisodeEnricher(client, retry_failed=True).enrich(updated, NOW)
+    assert len(calls) == 1

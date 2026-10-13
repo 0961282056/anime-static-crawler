@@ -359,8 +359,11 @@ class BangumiClient:
 
 
 class EpisodeEnricher:
-    def __init__(self, client: BangumiClient | None = None) -> None:
+    def __init__(
+        self, client: BangumiClient | None = None, *, retry_failed: bool = False
+    ) -> None:
         self.client = client or BangumiClient()
+        self.retry_failed = retry_failed
         self.snapshots: dict[int, EpisodeMetadata] = {}
 
     @staticmethod
@@ -387,7 +390,13 @@ class EpisodeEnricher:
         subject_id = anime.external_ids.bangumi
         if subject_id in self.snapshots:
             return anime.model_copy(update={"episodes": self.snapshots[subject_id]})
-        if not self.due(anime, now):
+        retry = (
+            self.retry_failed
+            and anime.episodes is not None
+            and anime.episodes.fetch_state != "ok"
+            and subject_id is not None
+        )
+        if not retry and not self.due(anime, now):
             if subject_id is not None and anime.episodes is not None:
                 self.snapshots[subject_id] = anime.episodes
             return anime

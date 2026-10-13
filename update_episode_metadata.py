@@ -98,6 +98,11 @@ def main() -> None:
         "--write", action="store_true", help="Write updates; otherwise dry run"
     )
     parser.add_argument(
+        "--retry-failed",
+        action="store_true",
+        help="Retry failed/conflicting snapshots immediately; successful cache stays valid",
+    )
+    parser.add_argument(
         "--max-requests", type=int, default=240, help="Bangumi request budget (1–1000)"
     )
     args = parser.parse_args()
@@ -133,7 +138,10 @@ def main() -> None:
                 for anime in repository.load_path(path).anime_list
                 if not args.anime_id or anime.bangumi_id == args.anime_id
             }
-            enricher = EpisodeEnricher(BangumiClient(request_budget=args.max_requests))
+            enricher = EpisodeEnricher(
+                BangumiClient(request_budget=args.max_requests),
+                retry_failed=args.retry_failed,
+            )
             changed = refresh_repository_episodes(
                 repository,
                 datetime.now(TAIPEI_TZ),
