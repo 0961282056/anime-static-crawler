@@ -276,7 +276,7 @@ def test_budget_and_broken_pagination_are_bounded(anime_record_factory):
     )
     client = BangumiClient(session=session, interval_seconds=0)
     with pytest.raises(MetadataUnavailable, match="ended early"):
-        client.fetch(anime(anime_record_factory), NOW)
+        client._fetch_api(anime(anime_record_factory), NOW)
     with pytest.raises(RequestBudgetExceeded):
         BangumiClient(request_budget=0)._get("/subjects/1")
 
@@ -466,3 +466,27 @@ def test_backfill_links_preserves_existing_records_and_images(
     assert [record.anime_image_url for record in updated] == [
         record.anime_image_url for record in records
     ]
+
+
+def test_backfill_missing_links_keeps_known_identity_and_metadata(
+    tmp_path, anime_record_factory, fixture_dir
+):
+    repository = DataRepository(tmp_path, DataQualityPolicy())
+    record = anime(
+        anime_record_factory, episodes={"total_episodes": 12, "aired_episodes": 8}
+    ).model_copy(update={"bangumi_id": "anime-2200"})
+    repository.write_quarter(
+        year="2026",
+        season="夏",
+        records=[record],
+        source_url="https://acgsecrets.hk/bangumi/202607/",
+        source_count=1,
+        parse_failure_count=0,
+    )
+    html = (fixture_dir / "acgsecrets_202607_minimal.html").read_text()
+    source = SimpleNamespace(fetch_quarter_html=lambda *args: ("url", html))
+    backfill_source_links(repository, source, year="2026")
+    updated = repository.load_quarter("2026", "夏").anime_list[0]
+    assert updated.external_ids == record.external_ids
+    assert updated.original_name == record.original_name
+    assert updated.episodes == record.episodes

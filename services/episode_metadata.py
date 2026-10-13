@@ -22,6 +22,7 @@ from models import Anime, EpisodeMetadata
 logger = logging.getLogger(__name__)
 TOKYO_TZ = ZoneInfo("Asia/Tokyo")
 API_ORIGIN = "https://api.bgm.tv/v0"
+PAGE_ORIGIN = "https://bangumi.tv"
 
 
 class MetadataUnavailable(Exception):
@@ -230,39 +231,61 @@ class BangumiClient:
         self.interval_seconds = interval_seconds
         self.next_request = 0.0
         self.unavailable = False
+        self.pages_unavailable = False
         self.deadline = time.monotonic() + 300
 
     def _get(self, path: str, **params: object) -> dict[str, Any]:
-        if self.unavailable:
+        return self._request(API_ORIGIN + path, params=params)
+
+    def _get_page(self, path: str) -> str:
+        return self._request(PAGE_ORIGIN + path, html=True)
+
+    def _request(
+        self, url: str, *, html: bool = False, params: dict[str, object] | None = None
+    ) -> Any:
+        circuit = "pages_unavailable" if html else "unavailable"
+        if getattr(self, circuit):
             raise MetadataUnavailable("Provider unavailable for this run")
         if self.remaining <= 0 or time.monotonic() >= self.deadline:
             raise RequestBudgetExceeded
         delay = max(0.0, self.next_request - time.monotonic())
+        if time.monotonic() + delay >= self.deadline:
+            raise RequestBudgetExceeded
         if delay:
             time.sleep(delay)
+        available_seconds = self.deadline - time.monotonic()
+        if available_seconds <= 0:
+            raise RequestBudgetExceeded
         self.remaining -= 1
         response = None
         try:
             response = self.session.get(
-                API_ORIGIN + path,
+                url,
                 params=params,
-                timeout=(5, 15),
+                timeout=(
+                    min(5, available_seconds / 2),
+                    min(15, available_seconds / 2),
+                ),
                 allow_redirects=False,
+                headers={"Accept": "text/html"} if html else {},
             )
             if response.status_code == 429 or response.status_code >= 500:
-                self.unavailable = True
+                setattr(self, circuit, True)
             if response.status_code != 200:
                 raise MetadataUnavailable(
                     f"Bangumi returned HTTP {response.status_code}"
                 )
             if len(response.content) > 2 * 1024 * 1024:
                 raise MetadataUnavailable("Bangumi response exceeds size limit")
+            if html:
+                response.encoding = "utf-8"
+                return response.text
             data = response.json()
             if not isinstance(data, dict):
                 raise MetadataUnavailable("Bangumi response is not an object")
             return data
         except requests.RequestException as exc:
-            self.unavailable = True
+            setattr(self, circuit, True)
             raise MetadataUnavailable("Bangumi network request failed") from exc
         except ValueError as exc:
             raise MetadataUnavailable("Bangumi response is not valid JSON") from exc
@@ -272,6 +295,34 @@ class BangumiClient:
                 response.close()
 
     def fetch(self, anime: Anime, now: datetime) -> EpisodeMetadata:
+        try:
+            return self._fetch_api(anime, now)
+        except MetadataUnavailable:
+            return self._fetch_pages(anime, now)
+
+    def _fetch_pages(self, anime: Anime, now: datetime) -> EpisodeMetadata:
+        # Import only when crawling: BUILD_ONLY uses the minimal dependency set.
+        from services.bangumi_pages import parse_episode_page, parse_subject_page
+
+        subject_id = anime.external_ids.bangumi
+        if subject_id is None:
+            raise MetadataUnavailable("Anime has no linked Bangumi subject")
+        try:
+            subject = parse_subject_page(
+                self._get_page(f"/subject/{subject_id}"), subject_id
+            )
+            parse_episode_metadata(anime, subject, [], now)
+            entries = parse_episode_page(
+                self._get_page(f"/subject/{subject_id}/ep"), subject_id
+            )
+        except ValueError as exc:
+            raise MetadataUnavailable("Bangumi page structure is invalid") from exc
+        info = parse_episode_metadata(anime, subject, entries, now)
+        return info.model_copy(
+            update={"note": "Bangumi 頁面備援（bangumi.tv）；" + info.note}
+        )
+
+    def _fetch_api(self, anime: Anime, now: datetime) -> EpisodeMetadata:
         subject_id = anime.external_ids.bangumi
         subject = self._get(f"/subjects/{subject_id}")
         # Reject a wrong or malformed linked subject before fetching pages.
@@ -359,6 +410,16 @@ class EpisodeEnricher:
                 }
             )
         previous = anime.episodes
+        if previous and info.fetch_state == "conflict":
+            info = EpisodeMetadata.model_validate(
+                {
+                    **previous.model_dump(),
+                    "fetch_state": "conflict",
+                    "airing_status": "unknown",
+                    "attempted_at": now,
+                    "note": info.note + "保留上次確認資料。",
+                }
+            )
         if previous and info.fetch_state == "ok":
             missing_known_value = (
                 info.total_episodes is None and previous.total_episodes is not None

@@ -13,7 +13,7 @@ import tempfile
 from datetime import datetime
 from pathlib import Path
 
-from models import TAIPEI_TZ
+from models import TAIPEI_TZ, ExternalIds
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.diagnostics import operation, run_command
 from services.episode_metadata import (
@@ -54,7 +54,13 @@ def backfill_source_links(
         for anime in dataset.anime_list:
             candidate = by_id.get(anime.bangumi_id)
             if candidate is not None and (not anime_id or anime.bangumi_id == anime_id):
-                ids = candidate.external_ids
+                # A temporarily missing source link is not a new identity.
+                ids = ExternalIds(
+                    bangumi=candidate.external_ids.bangumi
+                    or anime.external_ids.bangumi,
+                    anilist=candidate.external_ids.anilist
+                    or anime.external_ids.anilist,
+                )
                 changed_identity = (
                     ids.bangumi is not None
                     and ids.bangumi != anime.external_ids.bangumi
@@ -62,7 +68,7 @@ def backfill_source_links(
                 anime = anime.model_copy(
                     update={
                         "external_ids": ids,
-                        "original_name": candidate.original_name,
+                        "original_name": candidate.original_name or anime.original_name,
                         "episodes": None if changed_identity else anime.episodes,
                     }
                 )
