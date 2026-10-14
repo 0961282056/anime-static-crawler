@@ -836,10 +836,24 @@
       "story": "暫無簡介",
       "original_name": "CUE!",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 318227,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/318227",
+          "https://bgm.tv/subject/318227/ep"
+        ],
+        "checked_at": "2026-10-13T21:52:58.999353+08:00",
+        "attempted_at": "2026-10-13T21:52:58.999353+08:00",
+        "end_date": "2022-06-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1056",
@@ -1340,10 +1354,24 @@
       "story": "十五世紀赫赫有名的兩大家族──紅薔薇蘭開斯特與白薔薇約克所掀起的薔薇戰爭。約克王朝的最後一任國王「理查三世」，因為一個不為人知的天大秘密，一出生就被母親視為惡魔之子。無法受到母親關愛的理查，便將協助自己的父親登上王位視為活下去的最大動力。在一次偶然的機會下，理查遇到了一位自稱牧羊人的神秘男子，他的人生也開始有了轉變。",
       "original_name": "薔薇王の葬列",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 315060,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/315060",
+          "https://bgm.tv/subject/315060/ep"
+        ],
+        "checked_at": "2026-10-13T21:52:58.999353+08:00",
+        "attempted_at": "2026-10-13T21:52:58.999353+08:00",
+        "end_date": "2022-06-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1062",
@@ -1416,7 +1444,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-13T21:47:11.920375+08:00",
+  "generated_at": "2026-10-14T15:03:24.603389+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202204/",
   "quality": {
     "source_count": 54,

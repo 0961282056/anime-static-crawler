@@ -368,10 +368,24 @@
       "story": "高中生主角與夥伴集體參與了唯一規則是「成為多數就會死」的生存遊戲，發誓要推翻主導一切的「皇帝」。",
       "original_name": "多数欠",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 477204,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/477204",
+          "https://bgm.tv/subject/477204/ep"
+        ],
+        "checked_at": "2026-10-13T21:37:49.906766+08:00",
+        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "end_date": "2024-12-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1578",
@@ -1694,10 +1708,24 @@
       "story": "妖精尾巴一如往常的熱鬧，納茲卻不在公會裡，因為他跟格雷、露西、艾爾莎以及兩隻貓一起出發去挑戰當初吉爾達茲沒有成功的「百年任務」了！為了這個任務，納茲一行人來到北方的基爾帝那大陸，拜訪最古老的魔導士公會「魔陣之龍」。令他們更驚訝的則是任務內容，竟是封住一個實力都跟亞克諾羅基亞差不多的五神龍！在魔導少年結束後一年多，納茲等人的後續冒險終於要開始了──！",
       "original_name": "FAIRY TAIL 100年クエスト",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 349093,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/349093",
+          "https://bgm.tv/subject/349093/ep"
+        ],
+        "checked_at": "2026-10-13T21:37:49.906766+08:00",
+        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "end_date": "2025-01-05",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1683",
@@ -1882,7 +1910,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T21:37:49.906766+08:00",
+  "generated_at": "2026-10-14T15:03:24.618718+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202410/",
   "quality": {
     "source_count": 72,

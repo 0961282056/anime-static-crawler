@@ -175,10 +175,24 @@
       "story": "暫無簡介",
       "original_name": "キャプテン翼",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 232072,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 52,
+        "aired_episodes": 52,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/232072",
+          "https://bgm.tv/subject/232072/ep"
+        ],
+        "checked_at": "2026-10-13T22:15:29.543284+08:00",
+        "attempted_at": "2026-10-13T22:15:29.543284+08:00",
+        "end_date": "2019-04-01",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-391",
@@ -399,10 +413,24 @@
       "story": "暫無簡介",
       "original_name": "中間管理録トネガワ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 237834,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/237834",
+          "https://bgm.tv/subject/237834/ep"
+        ],
+        "checked_at": "2026-10-13T22:17:43.824667+08:00",
+        "attempted_at": "2026-10-13T22:17:43.824667+08:00",
+        "end_date": "2018-12-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-385",
@@ -693,10 +721,24 @@
       "story": "1973年，越南的一名美國士兵突然瘋性大發，射殺同僚後成為廢人，嘴裡隻反覆喃喃說著「BANANA FISH」這個詞。之後在1985年，隻手支配紐約著名的暗黑街道上的不良少年的，是一位具有IQ200的少年亞修。他和一個來自日本的男孩奧村英二相遇，就在這時，與BANANA FISH有關的黑勢力也悄然而至……",
       "original_name": "BANANA FISH",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 228350,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/228350",
+          "https://bgm.tv/subject/228350/ep"
+        ],
+        "checked_at": "2026-10-13T22:17:43.824667+08:00",
+        "attempted_at": "2026-10-13T22:17:43.824667+08:00",
+        "end_date": "2018-12-20",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-395",
@@ -1208,10 +1250,24 @@
       "story": "暫無簡介",
       "original_name": "おしえて魔法のペンデュラム〜リルリルフェアリル〜",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 237762,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/237762",
+          "https://bgm.tv/subject/237762/ep"
+        ],
+        "checked_at": "2026-10-13T22:17:43.824667+08:00",
+        "attempted_at": "2026-10-13T22:17:43.824667+08:00",
+        "end_date": "2019-01-05",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-413",
@@ -1597,10 +1653,24 @@
       "story": "暫無簡介",
       "original_name": "バキ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 199373,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/199373",
+          "https://bgm.tv/subject/199373/ep"
+        ],
+        "checked_at": "2026-10-13T22:17:43.824667+08:00",
+        "attempted_at": "2026-10-13T22:17:43.824667+08:00",
+        "end_date": "2018-12-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-430",
@@ -1611,10 +1681,24 @@
       "story": "暫無簡介",
       "original_name": "進撃の巨人 Season3",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 217300,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/217300",
+          "https://bgm.tv/subject/217300/ep"
+        ],
+        "checked_at": "2026-10-13T22:17:43.824667+08:00",
+        "attempted_at": "2026-10-13T22:17:43.824667+08:00",
+        "end_date": "2018-10-14",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-394",
@@ -1659,7 +1743,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T22:13:50.721068+08:00",
+  "generated_at": "2026-10-14T15:03:24.564895+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201810/",
   "quality": {
     "source_count": 66,

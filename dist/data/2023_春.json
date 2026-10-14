@@ -178,10 +178,24 @@
       "story": "暫無簡介",
       "original_name": "ヴィンランド・サガ SEASON2",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 296739,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/296739",
+          "https://bgm.tv/subject/296739/ep"
+        ],
+        "checked_at": "2026-10-13T21:42:57.584750+08:00",
+        "attempted_at": "2026-10-13T21:42:57.584750+08:00",
+        "end_date": "2023-06-19",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1287",
@@ -332,10 +346,24 @@
       "story": "戰鬥因為歐菲的義姐阿莎莉的犧牲而結束了。為了找尋失去蹤跡的阿莎莉，歐菲再次展開了旅途。路途中，歐菲一行人和謎之女劍士洛蒂莎相遇，被捲入了她身邊的騷動。與來自龍族《聖域》的暗殺者之間的衝突。和以前師兄的再會。隨後洛蒂莎的真面目及目的逐漸被揭開。歐菲的一場新的戰鬥開始了。",
       "original_name": "魔術士オーフェンはぐれ旅 アーバンラマ編",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 401786,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/401786",
+          "https://bgm.tv/subject/401786/ep"
+        ],
+        "checked_at": "2026-10-13T21:42:57.584750+08:00",
+        "attempted_at": "2026-10-13T21:42:57.584750+08:00",
+        "end_date": "2023-04-05",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1254",
@@ -1469,7 +1497,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-13T21:40:36.201567+08:00",
+  "generated_at": "2026-10-14T15:03:24.614199+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202304/",
   "quality": {
     "source_count": 54,

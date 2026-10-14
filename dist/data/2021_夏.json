@@ -10,10 +10,24 @@
       "story": "某人把「球」放進這片土地。具備收集情報的機能，還可以變換各種外貌，那個球體甚至連死亡都能超越。某天，它遇見了少年，之後又分開。光線、味道、聲音、溫度、痛苦、喜悅、哀傷……在這個充滿刺激的世界裡徘徊，展開一段永恆之旅。",
       "original_name": "不滅のあなたへ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 297954,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 20,
+        "aired_episodes": 20,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/297954",
+          "https://bgm.tv/subject/297954/ep"
+        ],
+        "checked_at": "2026-10-13T21:57:54.309746+08:00",
+        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "end_date": "2021-08-30",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-965",
@@ -570,10 +584,24 @@
       "story": "暫無簡介",
       "original_name": "BLUE REFLECTION RAY/澪",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 328032,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/328032",
+          "https://bgm.tv/subject/328032/ep"
+        ],
+        "checked_at": "2026-10-13T21:57:54.309746+08:00",
+        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "end_date": "2021-09-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-799",
@@ -626,10 +654,24 @@
       "story": "暫無簡介",
       "original_name": "魔入りました！入間くん 第2シリーズ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 301740,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 21,
+        "aired_episodes": 21,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/301740",
+          "https://bgm.tv/subject/301740/ep"
+        ],
+        "checked_at": "2026-10-13T21:57:54.309746+08:00",
+        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "end_date": "2021-09-11",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-710",
@@ -766,10 +808,24 @@
       "story": "在100年沒有訪客的夢幻王國主題樂園‧格蘭貝爾，跟著眾多機械一起生活的少年四季，是他稱為爺爺的「魔王」機械人一手帶大的。某天，職業是B‧CUBER的少女冒險者蕾貝卡與藍貓哈比來到這裡。在新朋友的刺激，與故鄉的機械朋友們的推波助瀾下，四季決定出外冒險！在行星布魯加甸登記成為冒險者的他，展開的第一場冒險將是……？",
       "original_name": "EDENS ZERO",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 308588,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/308588",
+          "https://bgm.tv/subject/308588/ep"
+        ],
+        "checked_at": "2026-10-13T21:57:54.309746+08:00",
+        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "end_date": "2021-10-02",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-757",
@@ -780,10 +836,24 @@
       "story": "暫無簡介",
       "original_name": "ダイナ荘びより",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 330889,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/330889",
+          "https://bgm.tv/subject/330889/ep"
+        ],
+        "checked_at": "2026-10-13T21:57:54.309746+08:00",
+        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "end_date": "2021-09-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-144",
@@ -878,10 +948,24 @@
       "story": "暫無簡介",
       "original_name": "トロピカル～ジュ！プリキュア",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 320857,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 46,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/320857",
+          "https://bgm.tv/subject/320857/ep"
+        ],
+        "checked_at": "2026-10-13T22:01:46.774789+08:00",
+        "attempted_at": "2026-10-13T22:01:46.774789+08:00",
+        "end_date": "2022-01-30",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-784",
@@ -1052,7 +1136,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T21:59:59.187792+08:00",
+  "generated_at": "2026-10-14T15:03:24.587493+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202107/",
   "quality": {
     "source_count": 45,

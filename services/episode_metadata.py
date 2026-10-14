@@ -66,15 +66,8 @@ def _infobox(subject: dict[str, Any], keys: set[str]) -> list[str]:
     ]
 
 
-def parse_episode_metadata(
-    anime: Anime,
-    subject: dict[str, Any],
-    entries: list[dict[str, Any]],
-    now: datetime,
-) -> EpisodeMetadata:
-    subject_id = anime.external_ids.bangumi
-    if subject.get("id") != subject_id or subject.get("type") != 2:
-        raise MetadataUnavailable("Linked subject is not the expected anime")
+def subject_names(subject: dict[str, Any]) -> set[str]:
+    """Canonical names and explicit provider aliases, normalized identically."""
     if not isinstance(subject.get("infobox", []), list):
         raise MetadataUnavailable("Anime infobox is invalid")
     names = [subject.get("name", ""), subject.get("name_cn", "")]
@@ -87,9 +80,20 @@ def parse_episode_metadata(
                 names.extend(
                     alias.get("v", "") for alias in value if isinstance(alias, dict)
                 )
-    if anime.original_name and _name(anime.original_name) not in {
-        _name(name) for name in names if isinstance(name, str)
-    }:
+    return {_name(name) for name in names if isinstance(name, str) and _name(name)}
+
+
+def parse_episode_metadata(
+    anime: Anime,
+    subject: dict[str, Any],
+    entries: list[dict[str, Any]],
+    now: datetime,
+) -> EpisodeMetadata:
+    subject_id = anime.external_ids.bangumi
+    if subject.get("id") != subject_id or subject.get("type") != 2:
+        raise MetadataUnavailable("Linked subject is not the expected anime")
+    names = subject_names(subject)
+    if anime.original_name and _name(anime.original_name) not in names:
         raise MetadataUnavailable(
             "Linked anime title differs from the source original title"
         )

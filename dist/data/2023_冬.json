@@ -150,10 +150,24 @@
       "story": "四個風格截然不同的男孩，一倉颯、二見瞬、三間貴之和四季蒼真，他們卻有個共同的特點——呆萌。每一個男孩都有自己的呆萌小故事，身邊的人都因為他們而帶著暖暖笑意。當他們相遇時，呆萌度加乘的威力帶來了更多笑容。",
       "original_name": "クールドジ男子",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 378860,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/378860",
+          "https://bgm.tv/subject/378860/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-27",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1240",
@@ -220,10 +234,24 @@
       "story": "暫無簡介",
       "original_name": "永久少年 Eternal Boys",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 374563,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/374563",
+          "https://bgm.tv/subject/374563/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-27",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1206",
@@ -696,10 +724,24 @@
       "story": "暫無簡介",
       "original_name": "うる星やつら",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 364468,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 23,
+        "aired_episodes": 23,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/364468",
+          "https://bgm.tv/subject/364468/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1223",
@@ -1032,10 +1074,24 @@
       "story": "暫無簡介",
       "original_name": "魔入りました！入間くん 第3シリーズ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 348699,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 21,
+        "aired_episodes": 21,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/348699",
+          "https://bgm.tv/subject/348699/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-04",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1225",
@@ -1284,10 +1340,24 @@
       "story": "2018年日本在世界盃又敗在16強賽，為了培養出能打破這個僵局的「攻擊手」，日本足球聯盟決定採用一個大膽的計畫：召集300名高中生FW（前鋒），放在名叫「藍色監獄（BLUE LOCK）」的宿舍內練蠱！即使會因此犧牲掉299個人的前途，也要讓獨一無二的世界級前鋒誕生！無名的高中生前鋒‧潔世一，也毅然決定參加這場擠掉所有競爭對手的生存戰！",
       "original_name": "ブルーロック",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 341163,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/341163",
+          "https://bgm.tv/subject/341163/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1208",
@@ -1584,7 +1654,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T21:42:57.584750+08:00",
+  "generated_at": "2026-10-14T15:03:24.610325+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202301/",
   "quality": {
     "source_count": 62,

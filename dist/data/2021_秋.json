@@ -416,10 +416,24 @@
       "story": "暫無簡介",
       "original_name": "白い砂のアクアトープ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 325281,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/325281",
+          "https://bgm.tv/subject/325281/ep"
+        ],
+        "checked_at": "2026-10-13T21:59:59.187792+08:00",
+        "attempted_at": "2026-10-13T21:59:59.187792+08:00",
+        "end_date": "2021-12-16",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-807",
@@ -836,10 +850,24 @@
       "story": "暫無簡介",
       "original_name": "魔入りました！入間くん 第2シリーズ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 301740,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 21,
+        "aired_episodes": 21,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/301740",
+          "https://bgm.tv/subject/301740/ep"
+        ],
+        "checked_at": "2026-10-13T21:57:54.309746+08:00",
+        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "end_date": "2021-09-11",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-873",
@@ -1060,10 +1088,24 @@
       "story": "在魔界地位僅次於魔王，號稱「魔界Ｎｏ．２」的賈希大人，因為一場導致魔界毀滅的奇襲，不幸落入人間⋯⋯！在魔界作福作威慣了的她，只能成為居酒屋的打工小妹、租破舊公寓、過上家徒四壁，三餐只能吃豆芽菜的悲慘生活！即便如此仍一意想重振魔界的她，每日都努力不懈地奮發尋找一同落入人間的關鍵「魔石」，然而這條路似乎也會相當多災多難⋯⋯？",
       "original_name": "ジャヒー様はくじけない！",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 333349,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 20,
+        "aired_episodes": 20,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/333349",
+          "https://bgm.tv/subject/333349/ep"
+        ],
+        "checked_at": "2026-10-13T21:59:59.187792+08:00",
+        "attempted_at": "2026-10-13T21:59:59.187792+08:00",
+        "end_date": "2021-12-18",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1008",
@@ -1346,7 +1388,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T21:55:07.073791+08:00",
+  "generated_at": "2026-10-14T15:03:24.594538+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202110/",
   "quality": {
     "source_count": 52,

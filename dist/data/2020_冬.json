@@ -66,10 +66,24 @@
       "story": "暫無簡介",
       "original_name": "ファンタシースターオンライン2 エピソード・オラクル",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 277217,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/277217",
+          "https://bgm.tv/subject/277217/ep"
+        ],
+        "checked_at": "2026-10-13T22:10:20.716020+08:00",
+        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "end_date": "2020-03-30",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-51",
@@ -304,10 +318,24 @@
       "story": "暫無簡介",
       "original_name": "ラディアン 第2シリーズ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 276051,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 21,
+        "aired_episodes": 21,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/276051",
+          "https://bgm.tv/subject/276051/ep"
+        ],
+        "checked_at": "2026-10-13T22:10:20.716020+08:00",
+        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "end_date": "2020-02-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-26",
@@ -430,10 +458,24 @@
       "story": "暫無簡介",
       "original_name": "GO！GO！アトム",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 302137,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 52,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/302137",
+          "https://bgm.tv/subject/302137/ep"
+        ],
+        "checked_at": "2026-10-13T22:10:20.716020+08:00",
+        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "end_date": "2020-10-01",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-32",
@@ -892,10 +934,24 @@
       "story": "暫無簡介",
       "original_name": "歌舞伎町シャーロック",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 256649,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/256649",
+          "https://bgm.tv/subject/256649/ep"
+        ],
+        "checked_at": "2026-10-13T22:10:20.716020+08:00",
+        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "end_date": "2020-03-27",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-45",
@@ -934,10 +990,24 @@
       "story": "暫無簡介",
       "original_name": "魔入りました！入間くん",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 273844,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 23,
+        "aired_episodes": 23,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/273844",
+          "https://bgm.tv/subject/273844/ep"
+        ],
+        "checked_at": "2026-10-13T22:10:20.716020+08:00",
+        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "end_date": "2020-03-07",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-46",
@@ -1032,10 +1102,24 @@
       "story": "本次聖杯探索的舞台為神代，世界最古老的都市文明，魔獸棲宿的烏魯克之地。第七特異點位於西元前2655年，人類和神明決裂的最初時代。「三女神同盟」相互勾結要將人類引向滅亡。吞噬烏魯克的毀滅預言。直面絕對的終焉，最慘烈的戰鬥已經揭開序幕！",
       "original_name": "Fate/Grand Order -絶対魔獣戦線バビロニア-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 255526,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 21,
+        "aired_episodes": 21,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/255526",
+          "https://bgm.tv/subject/255526/ep"
+        ],
+        "checked_at": "2026-10-13T22:10:20.716020+08:00",
+        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "end_date": "2020-03-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-15",
@@ -1074,10 +1158,24 @@
       "story": "「桐人，告訴我……我到底……該怎麼辦才好？」打倒最高司祭亞多米尼史特蕾達的代價，是尤吉歐的死亡與桐人的心神喪失。激鬥的半年後。愛麗絲帶著沒有意志，只以空虛表情坐在輪椅上的桐人寄居在「盧利特村」當中。把整合騎士「守護人界」的職責託付給貝爾庫利的愛麗絲選擇跟桐人一起度過安靜的生活。而賢者卡迪娜爾預言的「最終負荷實驗」也一刻一刻地逼近「地底世界」……來自「黑暗領域」的邪惡氣息開始流入「人界」。恐怖的黑暗軍隊終於開始有所行動。",
       "original_name": "ソードアート・オンライン アリシゼーション War of Underworld",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 279457,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/279457",
+          "https://bgm.tv/subject/279457/ep"
+        ],
+        "checked_at": "2026-10-13T22:10:20.716020+08:00",
+        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "end_date": "2019-12-28",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-49",
@@ -1290,7 +1388,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T22:08:17.834833+08:00",
+  "generated_at": "2026-10-14T15:03:24.571534+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202001/",
   "quality": {
     "source_count": 51,

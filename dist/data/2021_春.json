@@ -304,10 +304,24 @@
       "story": "暫無簡介",
       "original_name": "七つの大罪 憤怒の審判",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 302639,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/302639",
+          "https://bgm.tv/subject/302639/ep"
+        ],
+        "checked_at": "2026-10-13T22:01:46.774789+08:00",
+        "attempted_at": "2026-10-13T22:01:46.774789+08:00",
+        "end_date": "2021-06-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-761",
@@ -780,10 +794,24 @@
       "story": "本該是高中女生的「我」居然在不知不覺間來到未知之地，還轉生成「蜘蛛」怪物了！？雖然我成功逃離喜歡同類相食的蜘蛛父母，卻不小心闖進怪物們的巢穴。在這個毒蛙、大蛇、巨猿還有龍四處橫行的可怕迷宮裡，只是一隻小蜘蛛的「我」有辦法存活嗎……真是……開玩笑也該有個限度吧！造成這種狀況的元凶快給我出來──！",
       "original_name": "蜘蛛ですが、なにか？",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 252782,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/252782",
+          "https://bgm.tv/subject/252782/ep"
+        ],
+        "checked_at": "2026-10-13T22:01:46.774789+08:00",
+        "attempted_at": "2026-10-13T22:01:46.774789+08:00",
+        "end_date": "2021-07-03",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-728",
@@ -822,10 +850,24 @@
       "story": "林迦陵鐸。此地為巨壁環繞的世界。巨壁包覆、保護、孕育、培養這片大地。壁即是神，是這片大地——林迦陵鐸的根基。某天，林迦陵鐸邊境的「葉賈村」，出現一名神祕男性「巴克．阿洛」。雖然阿洛失去記憶，但他說只記得自己來自「壁外」。阿洛想前往壁外取回記憶，卻逐漸被身邊的紛爭捲入——",
       "original_name": "バック・アロウ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 297396,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/297396",
+          "https://bgm.tv/subject/297396/ep"
+        ],
+        "checked_at": "2026-10-13T22:01:46.774789+08:00",
+        "attempted_at": "2026-10-13T22:01:46.774789+08:00",
+        "end_date": "2021-06-18",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-749",
@@ -1074,10 +1116,24 @@
       "story": "暫無簡介",
       "original_name": "ドラゴンクエスト ダイの大冒険",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 296980,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 100,
+        "aired_episodes": 100,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/296980",
+          "https://bgm.tv/subject/296980/ep"
+        ],
+        "checked_at": "2026-10-13T22:03:38.359126+08:00",
+        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "end_date": "2022-10-22",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-725",
@@ -1452,10 +1508,24 @@
       "story": "暫無簡介",
       "original_name": "トロピカル～ジュ！プリキュア",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 320857,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 46,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/320857",
+          "https://bgm.tv/subject/320857/ep"
+        ],
+        "checked_at": "2026-10-13T22:01:46.774789+08:00",
+        "attempted_at": "2026-10-13T22:01:46.774789+08:00",
+        "end_date": "2022-01-30",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-778",
@@ -1494,9 +1564,9 @@
           "https://bgm.tv/subject/321387/ep"
         ],
         "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "attempted_at": "2026-10-14T15:04:35.340567+08:00",
         "end_date": null,
-        "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。"
+        "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
       }
     },
     {
@@ -1682,7 +1752,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T21:57:54.309746+08:00",
+  "generated_at": "2026-10-14T15:05:29.451468+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202104/",
   "quality": {
     "source_count": 66,

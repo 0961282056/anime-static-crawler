@@ -221,3 +221,112 @@ def test_catalog_lookup_avoids_one_search_request_per_anime(
         repository.load_quarter("2026", "春").anime_list[0].external_ids.bangumi
         == 580133
     )
+
+
+@pytest.mark.parametrize("value", ["LIAR GAME", [{"v": "LIAR GAME"}, {"v": 1}]])
+def test_exact_explicit_alias_is_allowed_but_ambiguity_is_rejected(
+    anime_record_factory, value
+):
+    record = anime(anime_record_factory)
+    candidate = {
+        **subject(),
+        "name": "別の正式名",
+        "name_cn": "",
+        "infobox": [{"key": "别名", "value": value}],
+    }
+    bounds = quarter_bounds("2026", "春")
+    assert (
+        exact_subject_id(record, {"data": [candidate], "total": 1}, *bounds) == 580133
+    )
+    assert (
+        exact_subject_id(
+            record, {"data": [candidate, {**candidate, "id": 999}], "total": 2}, *bounds
+        )
+        is None
+    )
+    assert (
+        exact_subject_id(
+            record, {"data": [{**candidate, "date": "2026-07-01"}], "total": 1}, *bounds
+        )
+        is None
+    )
+    assert (
+        exact_subject_id(
+            record.model_copy(update={"original_name": "LIAR GAME 第2期"}),
+            {"data": [candidate], "total": 1},
+            *bounds,
+        )
+        is None
+    )
+
+
+def test_shared_link_requires_same_card_both_titles_unique_id_and_scope(
+    tmp_path, anime_record_factory
+):
+    from services.episode_link_lookup import propagate_verified_links
+    from services.episode_metadata import parse_episode_metadata
+
+    repo = DataRepository(tmp_path, DataQualityPolicy())
+    linked = anime(anime_record_factory)
+    linked = linked.model_copy(
+        update={"episodes": parse_episode_metadata(linked, subject(), [], NOW)}
+    )
+    missing = linked.model_copy(
+        update={
+            "external_ids": linked.external_ids.model_copy(
+                update={"bangumi": None, "anilist": 123}
+            ),
+            "episodes": None,
+        }
+    )
+    records = [
+        missing,
+        missing.model_copy(update={"bangumi_id": "anime-901"}),
+        missing.model_copy(
+            update={"bangumi_id": "anime-902", "anime_name": "different"}
+        ),
+        missing.model_copy(
+            update={"bangumi_id": "anime-903", "original_name": "LIAR GAME 第2期"}
+        ),
+        missing.model_copy(update={"bangumi_id": "anime-904"}),
+    ]
+    sources = [
+        linked,
+        linked.model_copy(update={"bangumi_id": "anime-902"}),
+        linked.model_copy(update={"bangumi_id": "anime-903"}),
+        linked.model_copy(update={"bangumi_id": "anime-904"}),
+        linked.model_copy(
+            update={
+                "bangumi_id": "anime-904",
+                "external_ids": linked.external_ids.model_copy(update={"bangumi": 999}),
+            }
+        ),
+    ]
+    sources = [
+        item.model_copy(update={"anime_name": f"title-{item.bangumi_id}"})
+        for item in sources
+    ]
+    records = [
+        item.model_copy(update={"anime_name": f"title-{item.bangumi_id}"})
+        for item in records
+    ]
+    records[2] = records[2].model_copy(update={"anime_name": "different"})
+    linked = sources[0]
+    for season, items in [("春", sources[:-1]), ("夏", records), ("秋", sources[-1:])]:
+        repo.write_quarter(
+            year="2026",
+            season=season,
+            records=items,
+            source_url="https://acgsecrets.hk/bangumi/202604/",
+            source_count=len(items),
+            parse_failure_count=0,
+        )
+    assert not propagate_verified_links(repo, selected_ids={"not-selected"})
+    evidence = propagate_verified_links(repo)
+    updated = repo.load_quarter("2026", "夏").anime_list
+    assert len(evidence) == 1 and evidence[0]["source_quarter"] == "2026_春"
+    assert updated[0].external_ids.bangumi == linked.external_ids.bangumi
+    assert updated[0].external_ids.anilist == 123
+    assert updated[0].episodes == linked.episodes
+    assert updated[1:] == records[1:]
+    assert not propagate_verified_links(repo)

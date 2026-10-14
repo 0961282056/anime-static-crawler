@@ -959,7 +959,7 @@
         "fetch_state": "conflict",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:39:36.088580+08:00",
+        "attempted_at": "2026-10-14T15:04:35.340567+08:00",
         "end_date": null,
         "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
       }
@@ -1950,7 +1950,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-13T21:39:36.088580+08:00",
+  "generated_at": "2026-10-14T15:05:24.867511+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202310/",
   "quality": {
     "source_count": 73,

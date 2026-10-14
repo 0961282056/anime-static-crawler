@@ -444,10 +444,24 @@
       "story": "國王排名──以麾下有名騎士的數量、國民人口、城鎮發展，以及國王本人是否像勇者一樣強大，綜合以上條件來評價各國國王的排行榜。「你想要成為全世界最棒的國王？」伯斯王國的大王子波吉，天生就聽不見、話也說不好、身體孱弱得舉不起劍，即使如此，他仍然想完成與母親的約定。這樣的堅強與執著也感動了影子一族的卡克，他決定支持波吉，並成為波吉第一個朋友！但波吉隔天卻怎麼找也找不到卡克──",
       "original_name": "王様ランキング",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 296109,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 23,
+        "aired_episodes": 23,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/296109",
+          "https://bgm.tv/subject/296109/ep"
+        ],
+        "checked_at": "2026-10-13T21:55:07.073791+08:00",
+        "attempted_at": "2026-10-13T21:55:07.073791+08:00",
+        "end_date": "2022-03-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1037",
@@ -486,10 +500,24 @@
       "story": "「我會給你『活下去的希望』。」架橋明日的家人在意外中身亡，靠親戚收養生活，過着艱苦的日子。這位對一切絕望的少年，就在初中畢業的那一天，從大廈天台投身躍下。然而，少年在這時候遇到一位天使——!?",
       "original_name": "プラチナエンド",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 322955,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/322955",
+          "https://bgm.tv/subject/322955/ep"
+        ],
+        "checked_at": "2026-10-13T21:55:07.073791+08:00",
+        "attempted_at": "2026-10-13T21:55:07.073791+08:00",
+        "end_date": "2022-03-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1043",
@@ -1004,10 +1032,24 @@
       "story": "暫無簡介",
       "original_name": "鬼滅の刃 遊郭編",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 328195,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 11,
+        "aired_episodes": 11,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/328195",
+          "https://bgm.tv/subject/328195/ep"
+        ],
+        "checked_at": "2026-10-13T21:55:07.073791+08:00",
+        "attempted_at": "2026-10-13T21:55:07.073791+08:00",
+        "end_date": "2022-02-13",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1010",
@@ -1122,7 +1164,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T21:52:58.999353+08:00",
+  "generated_at": "2026-10-14T15:03:24.597298+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202201/",
   "quality": {
     "source_count": 43,

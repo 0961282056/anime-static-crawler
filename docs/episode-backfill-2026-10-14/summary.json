@@ -1,7 +1,13 @@
 {
   "records": 2143,
-  "linked": 1859,
-  "ok": 1782,
+  "linked": 1951,
+  "ok": 1874,
+  "total_known": 1827,
+  "finished": 1568,
+  "unmatched": 192,
+  "unknown": 229,
   "stale": 73,
-  "conflict": 4
+  "conflict": 4,
+  "airing": 76,
+  "not_yet_aired": 1
 }

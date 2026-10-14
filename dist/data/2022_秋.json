@@ -598,10 +598,24 @@
       "story": "外甥貴文前去探望從十七年間的昏睡狀態中甦醒的舅舅時，親眼目睹他施放出驚奇的魔法！──沒錯，舅舅是從異世界歸來的生還者！精靈的言語利刃直刺而來、與封閉心靈的少女錯身而過──在劍與魔法的世界生活，充滿了血與淚……由舅舅口述的異世界嚴酷回憶，與不受限制又令人懷念的遊戲體驗談交織而成，全新感覺的異世界＆異文化喜劇！",
       "original_name": "異世界おじさん",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 339326,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/339326",
+          "https://bgm.tv/subject/339326/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2023-03-08",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1152",
@@ -808,10 +822,24 @@
       "story": "雨宮夕日是一位平凡的大學生，有一天一隻蜥蜴克雷塞多突然出現要他去拯救這個世界 !?正當夕日對此半信半疑的同時，敵人突然來襲，就在千鈞一髮之際解救他的人是居然是克雷塞多口中所說的公主…… !?",
       "original_name": "惑星のさみだれ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 366522,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/366522",
+          "https://bgm.tv/subject/366522/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1146",
@@ -1088,10 +1116,24 @@
       "story": "暫無簡介",
       "original_name": "うたわれるもの 二人の白皇",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 293008,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 28,
+        "aired_episodes": 28,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/293008",
+          "https://bgm.tv/subject/293008/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-12-24",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1047",
@@ -1388,7 +1430,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-13T21:45:12.448734+08:00",
+  "generated_at": "2026-10-14T15:03:24.606724+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202210/",
   "quality": {
     "source_count": 56,

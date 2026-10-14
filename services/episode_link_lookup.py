@@ -7,6 +7,7 @@ match is accepted, then its full subject is checked again before storing a link.
 from __future__ import annotations
 
 import logging
+from collections import defaultdict
 from datetime import date, datetime
 from typing import Any
 
@@ -19,6 +20,7 @@ from services.episode_metadata import (
     _date,
     _name,
     parse_episode_metadata,
+    subject_names,
 )
 
 logger = logging.getLogger(__name__)
@@ -104,9 +106,7 @@ def exact_subject_id(
             raise MetadataUnavailable("Search subject is invalid")
         sid = item.get("id")
         aired = _date(item.get("date"))
-        names = {
-            _name(item[k]) for k in ("name", "name_cn") if isinstance(item.get(k), str)
-        }
+        names = subject_names(item)
         if (
             type(sid) is int
             and sid > 0
@@ -117,6 +117,79 @@ def exact_subject_id(
         ):
             matches.add(sid)
     return next(iter(matches)) if len(matches) == 1 else None
+
+
+def propagate_verified_links(
+    repository: Any, *, selected_ids: set[str] | None = None
+) -> list[dict[str, Any]]:
+    """Share verified identity only for an identical source card and both titles."""
+    datasets = [
+        (path, repository.load_path(path)) for path in repository.validate_all()
+    ]
+    identities: dict[tuple[str, str, str], list[tuple[str, Anime]]] = defaultdict(list)
+    for path, dataset in datasets:
+        for anime in dataset.anime_list:
+            if anime.external_ids.bangumi and anime.original_name:
+                identities[
+                    (anime.bangumi_id, anime.anime_name, anime.original_name)
+                ].append((path.stem, anime))
+    evidence = []
+    for path, dataset in datasets:
+        records = []
+        changed = False
+        for anime in dataset.anime_list:
+            candidates = identities.get(
+                (anime.bangumi_id, anime.anime_name, anime.original_name or ""), []
+            )
+            ids = {item.external_ids.bangumi for _, item in candidates}
+            if (
+                anime.external_ids.bangumi is None
+                and len(ids) == 1
+                and (selected_ids is None or anime.bangumi_id in selected_ids)
+            ):
+                successful = [
+                    pair
+                    for pair in candidates
+                    if pair[1].episodes
+                    and pair[1].episodes.fetch_state == "ok"
+                    and pair[1].episodes.checked_at
+                ]
+                source_quarter, source = (
+                    max(successful, key=lambda pair: pair[1].episodes.checked_at)
+                    if successful
+                    else candidates[0]
+                )
+                updates = {
+                    "external_ids": ExternalIds(
+                        bangumi=source.external_ids.bangumi,
+                        anilist=anime.external_ids.anilist,
+                    ),
+                    "episodes": source.episodes if successful else None,
+                }
+                anime = anime.model_copy(update=updates)
+                evidence.append(
+                    {
+                        "quarter": path.stem,
+                        "source_quarter": source_quarter,
+                        "card_id": anime.bangumi_id,
+                        "original_name": anime.original_name,
+                        "subject_id": anime.external_ids.bangumi,
+                        "method": "identical-source-card+localized-title+original-title+unique-id",
+                    }
+                )
+                changed = True
+            records.append(anime)
+        if changed:
+            year, season = path.stem.split("_")
+            repository.write_quarter(
+                year=year,
+                season=season,
+                records=records,
+                source_url=dataset.source_url,
+                source_count=dataset.quality.source_count,
+                parse_failure_count=dataset.quality.parse_failure_count,
+            )
+    return evidence
 
 
 def resolve_missing_links(

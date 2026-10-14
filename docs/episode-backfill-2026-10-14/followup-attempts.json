@@ -1,0 +1,377 @@
+{
+  "attempted_at": "2026-10-14T15:04:35.340567+08:00",
+  "new_exact_links": 0,
+  "new_shared_links": 0,
+  "deferred": [
+    {
+      "quarter": "2025_秋",
+      "error": "MetadataUnavailable",
+      "detail": "Bangumi network request failed"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2295",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2289",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2279",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2281",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2129",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2108",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2107",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2106",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2112",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2109",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2205",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2235",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2107",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2112",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_冬",
+      "card_id": "anime-2103",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_冬",
+      "card_id": "anime-2000",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_冬",
+      "card_id": "anime-1991",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2026_冬",
+      "card_id": "anime-2101",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_秋",
+      "card_id": "anime-1907",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_秋",
+      "card_id": "anime-1928",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_秋",
+      "card_id": "anime-1879",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_春",
+      "card_id": "anime-1792",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_春",
+      "card_id": "anime-1808",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_春",
+      "card_id": "anime-1756",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_春",
+      "card_id": "anime-1787",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_春",
+      "card_id": "anime-1767",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_夏",
+      "card_id": "anime-1824",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_夏",
+      "card_id": "anime-1878",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_夏",
+      "card_id": "anime-1851",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_冬",
+      "card_id": "anime-1632",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_冬",
+      "card_id": "anime-1631",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_冬",
+      "card_id": "anime-1646",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_冬",
+      "card_id": "anime-1635",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_冬",
+      "card_id": "anime-1749",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2025_冬",
+      "card_id": "anime-1750",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1632",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1652",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1578",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1631",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1669",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1671",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1646",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1635",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_春",
+      "card_id": "anime-1578",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_春",
+      "card_id": "anime-1576",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_春",
+      "card_id": "anime-1574",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_夏",
+      "card_id": "anime-1578",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_夏",
+      "card_id": "anime-1614",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_冬",
+      "card_id": "anime-1435",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_冬",
+      "card_id": "anime-1457",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_冬",
+      "card_id": "anime-1431",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2024_冬",
+      "card_id": "anime-1364",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1354",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1364",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1412",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2023_春",
+      "card_id": "anime-1252",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2023_夏",
+      "card_id": "anime-1305",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2023_夏",
+      "card_id": "anime-1344",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2023_夏",
+      "card_id": "anime-1341",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2019_春",
+      "card_id": "anime-295",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2019_春",
+      "card_id": "anime-303",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2019_春",
+      "card_id": "anime-279",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2019_夏",
+      "card_id": "anime-241",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2019_夏",
+      "card_id": "anime-295",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2019_冬",
+      "card_id": "anime-348",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2019_冬",
+      "card_id": "anime-349",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2019_冬",
+      "card_id": "anime-359",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2019_冬",
+      "card_id": "anime-371",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2019_冬",
+      "card_id": "anime-346",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2019_冬",
+      "card_id": "anime-363",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-390",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-371",
+      "result": "retry-unavailable"
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-413",
+      "result": "retry-unavailable"
+    }
+  ]
+}

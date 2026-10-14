@@ -52,10 +52,24 @@
       "story": "暫無簡介",
       "original_name": "ぽっこりーず",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 303433,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 50,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/303433",
+          "https://bgm.tv/subject/303433/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2021-03-15",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-179",
@@ -948,10 +962,24 @@
       "story": "以一個因扭曲而產生的不能進行卡片戰鬥的if世界為舞台，並講述了被傳送到這個世界的伊吹浩二與魔法少女和卡片妖精等人相遇，為回到真正的歷史而奮鬥的故事。",
       "original_name": "カードファイト!! ヴァンガード外伝 イフ-if-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 304431,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/304431",
+          "https://bgm.tv/subject/304431/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2020-11-28",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-170",
@@ -1298,10 +1326,24 @@
       "story": "暫無簡介",
       "original_name": "アイドリッシュセブン Second BEAT!",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 253042,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 15,
+        "aired_episodes": 15,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/253042",
+          "https://bgm.tv/subject/253042/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2020-12-27",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-143",
@@ -1458,7 +1500,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T22:03:38.359126+08:00",
+  "generated_at": "2026-10-14T15:03:24.580521+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202010/",
   "quality": {
     "source_count": 58,

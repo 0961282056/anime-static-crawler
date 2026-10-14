@@ -16,7 +16,7 @@ from pathlib import Path
 from models import TAIPEI_TZ, ExternalIds
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.diagnostics import operation, run_command
-from services.episode_link_lookup import resolve_missing_links
+from services.episode_link_lookup import propagate_verified_links, resolve_missing_links
 from services.episode_metadata import (
     BangumiClient,
     EpisodeEnricher,
@@ -148,6 +148,10 @@ def main() -> None:
             }
             client = BangumiClient(request_budget=args.max_requests)
             if args.resolve_missing_links:
+                for match in propagate_verified_links(
+                    repository, selected_ids=selected_ids
+                ):
+                    print("Verified shared source link:", match)
                 for path in repository.validate_all():
                     year, season = path.stem.split("_")
                     if (args.year and year != args.year) or (
@@ -163,6 +167,10 @@ def main() -> None:
                     )
                     for match in evidence:
                         print("Verified source link:", match)
+                for match in propagate_verified_links(
+                    repository, selected_ids=selected_ids
+                ):
+                    print("Verified shared source link:", match)
             enricher = EpisodeEnricher(
                 client,
                 retry_failed=args.retry_failed,

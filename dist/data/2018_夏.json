@@ -38,10 +38,24 @@
       "story": "老字號旅館「天神屋」，座落於妖魔鬼怪所棲息的世界──隱世。看得見妖怪的善良女大學生葵，不知不覺中養成做料理餵食妖怪的習慣。某天，葵在餵食妖怪時，突然被天神屋的「大老闆」鬼神給抓走了。根據大老闆所言，葵成了祖父欠下巨債的「擔保品」，必須嫁入他們家。不願從命的葵想出一計，她發下豪語──要在天神屋工作還債，沒想到卻引起妖怪們群情激憤……面對暴躁的土蜘蛛、冷冰冰的雪女、不知是敵是友的無臉女、狸貓、天狗，還有忽冷忽熱的大老闆鬼神，葵只能以美味料理與不認輸的骨氣收服他們！",
       "original_name": "かくりよの宿飯",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 229393,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/229393",
+          "https://bgm.tv/subject/229393/ep"
+        ],
+        "checked_at": "2026-10-13T22:15:29.543284+08:00",
+        "attempted_at": "2026-10-13T22:15:29.543284+08:00",
+        "end_date": "2018-09-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-436",
@@ -150,10 +164,24 @@
       "story": "暫無簡介",
       "original_name": "キャプテン翼",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 232072,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 52,
+        "aired_episodes": 52,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/232072",
+          "https://bgm.tv/subject/232072/ep"
+        ],
+        "checked_at": "2026-10-13T22:15:29.543284+08:00",
+        "attempted_at": "2026-10-13T22:15:29.543284+08:00",
+        "end_date": "2019-04-01",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-459",
@@ -430,10 +458,24 @@
       "story": "暫無簡介",
       "original_name": "シュタインズ・ゲート ゼロ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 129807,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 23,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/129807",
+          "https://bgm.tv/subject/129807/ep"
+        ],
+        "checked_at": "2026-10-13T22:15:29.543284+08:00",
+        "attempted_at": "2026-10-13T22:15:29.543284+08:00",
+        "end_date": "2018-09-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-476",
@@ -836,10 +878,24 @@
       "story": "莊敦大是一位十七歲高中生，他有一位交往四年的女朋友片桐音，平時總是對小音口出惡言，滿嘴「煩人」、「噁心」，這樣的阿敦，他的真實面貌其實是個超愛女朋友的傲嬌跟蹤狂，竊聽、偷拍、尾隨、錄音無所不來，對男友的行徑截然不知的小音，即使面對男友的惡言，卻依然能感到阿敦對她的愛，以這對趣味情侶為中心的單頁短篇漫畫！",
       "original_name": "あっくんとカノジョ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 230940,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/230940",
+          "https://bgm.tv/subject/230940/ep"
+        ],
+        "checked_at": "2026-10-13T22:15:29.543284+08:00",
+        "attempted_at": "2026-10-13T22:15:29.543284+08:00",
+        "end_date": "2018-09-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-447",
@@ -1074,10 +1130,24 @@
       "story": "暫無簡介",
       "original_name": "僕のヒーローアカデミア 第3期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 226677,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/226677",
+          "https://bgm.tv/subject/226677/ep"
+        ],
+        "checked_at": "2026-10-13T22:15:29.543284+08:00",
+        "attempted_at": "2026-10-13T22:15:29.543284+08:00",
+        "end_date": "2018-09-29",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-442",
@@ -1416,7 +1486,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T22:17:43.824667+08:00",
+  "generated_at": "2026-10-14T15:03:24.555292+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201807/",
   "quality": {
     "source_count": 58,

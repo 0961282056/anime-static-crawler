@@ -136,10 +136,24 @@
       "story": "暫無簡介",
       "original_name": "おそ松さん 第3期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 309910,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/309910",
+          "https://bgm.tv/subject/309910/ep"
+        ],
+        "checked_at": "2026-10-13T22:03:38.359126+08:00",
+        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "end_date": "2021-03-29",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-719",
@@ -724,10 +738,24 @@
       "story": "在窮村 - 雛見澤快樂地過活的少年 - 前原圭一，得悉這條平靜的村莊曾發生肢解謀殺案。然後那次事件，與被稱為「御社神大人的作祟」的連環離奇死亡事件有著千絲萬縷的關係……。",
       "original_name": "ひぐらしのなく頃に 業",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 297969,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/297969",
+          "https://bgm.tv/subject/297969/ep"
+        ],
+        "checked_at": "2026-10-13T22:03:38.359126+08:00",
+        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "end_date": "2021-03-18",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-696",
@@ -976,10 +1004,24 @@
       "story": "暫無簡介",
       "original_name": "キングスレイド 意志を継ぐものたち",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 305621,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/305621",
+          "https://bgm.tv/subject/305621/ep"
+        ],
+        "checked_at": "2026-10-13T22:03:38.359126+08:00",
+        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "end_date": "2021-03-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-168",
@@ -990,10 +1032,24 @@
       "story": "具有稀奇身體能力的高中生・虎杖悠仁，每天都會探望臥病在床的祖父。但在某一天，沉睡於學校內的「咒物」封印受到解除，鬼怪因而出現。為救留下來的前輩，虎杖衝入校舍，然而！？",
       "original_name": "呪術廻戦",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 294993,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/294993",
+          "https://bgm.tv/subject/294993/ep"
+        ],
+        "checked_at": "2026-10-13T22:03:38.359126+08:00",
+        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "end_date": "2021-03-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-177",
@@ -1004,10 +1060,24 @@
       "story": "暫無簡介",
       "original_name": "犬と猫どっちも飼ってると毎日たのしい",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 296078,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/296078",
+          "https://bgm.tv/subject/296078/ep"
+        ],
+        "checked_at": "2026-10-13T22:03:38.359126+08:00",
+        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "end_date": "2021-03-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-673",
@@ -1074,10 +1144,24 @@
       "story": "暫無簡介",
       "original_name": "ドラゴンクエスト ダイの大冒険",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 296980,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 100,
+        "aired_episodes": 100,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/296980",
+          "https://bgm.tv/subject/296980/ep"
+        ],
+        "checked_at": "2026-10-13T22:03:38.359126+08:00",
+        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "end_date": "2022-10-22",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-176",
@@ -1088,10 +1172,24 @@
       "story": "暫無簡介",
       "original_name": "半妖の夜叉姫",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 306193,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/306193",
+          "https://bgm.tv/subject/306193/ep"
+        ],
+        "checked_at": "2026-10-13T22:03:38.359126+08:00",
+        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "end_date": "2021-03-20",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-141",
@@ -1424,10 +1522,24 @@
       "story": "暫無簡介",
       "original_name": "進撃の巨人 The Final Season",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 285666,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 16,
+        "aired_episodes": 16,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/285666",
+          "https://bgm.tv/subject/285666/ep"
+        ],
+        "checked_at": "2026-10-13T22:03:38.359126+08:00",
+        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "end_date": "2021-03-28",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-702",
@@ -1528,7 +1640,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-13T22:01:46.774789+08:00",
+  "generated_at": "2026-10-14T15:03:24.584183+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202101/",
   "quality": {
     "source_count": 62,

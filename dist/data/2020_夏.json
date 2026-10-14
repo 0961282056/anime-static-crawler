@@ -10,10 +10,24 @@
       "story": "古代希臘的青年季米特里奧斯，只是一個很平凡的壺繪師學徒，而且是「草食系阿宅」。他不喜歡運動或鬥技之類具有競爭性的活動，但他天生體能優異，身材也很好。某天他被捲入村子之間的爭執，在他陷入煩惱的時候，莫名其妙地突然到了1964年的東京，甚至闖入正在舉辦奧運的競技會場？羅馬浴場作者跨越時空的奇蹟喜劇，在此開幕─！",
       "original_name": "別冊 オリンピア・キュクロス",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 304183,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/304183",
+          "https://bgm.tv/subject/304183/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2020-11-02",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-154",
@@ -52,10 +66,24 @@
       "story": "暫無簡介",
       "original_name": "ぽっこりーず",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 303433,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 50,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/303433",
+          "https://bgm.tv/subject/303433/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2021-03-15",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-153",
@@ -122,10 +150,24 @@
       "story": "海野高中一年級的鶴木陽渚是害怕生物的室內派。在堤防散步時，與黑岩學姐的相遇作為契機，竟然被強迫加入謎一般的「堤防社」開始釣起了魚！被個性豐富的社員們所圍繞，陽渚的高中生活會怎麼樣呢!?",
       "original_name": "放課後ていぼう日誌",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 280678,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/280678",
+          "https://bgm.tv/subject/280678/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2020-09-22",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-135",
@@ -290,10 +332,24 @@
       "story": "神戶大助是日本最富有的刑警，出入以凱迪拉克進口轎車代步、一身英國進口手工高級西服、隨時都有抽不完的哈瓦那頂極雪茄……，一切榮華富貴皆來自於他父親神戶喜久右衛門年輕時所賺的不法之財，父親在晚年為此愧疚不已，於是傾全力資助兒子辦案，藉以贖罪。",
       "original_name": "富豪刑事 Balance:UNLIMITED",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 298718,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 11,
+        "aired_episodes": 11,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/298718",
+          "https://bgm.tv/subject/298718/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2020-09-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-97",
@@ -332,10 +388,24 @@
       "story": "19世紀即將宣告結束，20世紀將拉開序幕的時代…。天才工程師但卻無社交能力的「空乃天晴」，和身手敏捷卻膽小的武士「一色小雨」，因某事故而從日本流落到美國的他們，身無分文卻想回去日本而想出的方法，就是去參加「橫斷美國大陸的賽車競賽」。起點由西海岸洛杉磯，到終點紐約。靠自己研發製作的蒸氣汽車狂奔荒野，還要面對瘋狂的競爭對手、犯罪者，並要從大自然中來保護自己…到底這麼激烈的競賽，兩人能不能獲得勝利拿到獎金回到故鄉呢！？",
       "original_name": "天晴爛漫！",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 292542,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/292542",
+          "https://bgm.tv/subject/292542/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2020-09-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-99",
@@ -360,10 +430,24 @@
       "story": "學園都市的一大活動大霸星祭進入了第一天，代替美琴參加比賽的御坂10032號卻下落不明。美琴雖然前往搜尋，但在她面前有食蜂操祈派系與新的暗部阻擋。而常盤台的另一個「等級5超能力者」食蜂操祈，她的能力將使美琴陷入困境！",
       "original_name": "とある科学の超電磁砲T",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 262940,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/262940",
+          "https://bgm.tv/subject/262940/ep"
+        ],
+        "checked_at": "2026-10-13T22:08:17.834833+08:00",
+        "attempted_at": "2026-10-13T22:08:17.834833+08:00",
+        "end_date": "2020-09-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-131",
@@ -388,10 +472,24 @@
       "story": "暫無簡介",
       "original_name": "食戟のソーマ 豪ノ皿",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 296820,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/296820",
+          "https://bgm.tv/subject/296820/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2020-09-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-101",
@@ -402,10 +500,24 @@
       "story": "暫無簡介",
       "original_name": "文豪とアルケミスト 〜審判ノ歯車〜",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 297208,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/297208",
+          "https://bgm.tv/subject/297208/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2020-08-07",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-112",
@@ -472,10 +584,24 @@
       "story": "以一個因扭曲而產生的不能進行卡片戰鬥的if世界為舞台，並講述了被傳送到這個世界的伊吹浩二與魔法少女和卡片妖精等人相遇，為回到真正的歷史而奮鬥的故事。",
       "original_name": "カードファイト!! ヴァンガード外伝 イフ-if-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 304431,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/304431",
+          "https://bgm.tv/subject/304431/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2020-11-28",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-83",
@@ -486,10 +612,24 @@
       "story": "經過連場激戰，靜止衛星發出的一道光芒，顯示出悠人他們一直以來戰鬥的「艾多拉惑星」可能並非存在於網絡遊戲GBN的世界裡，而是存在於現實世界之中。這個狀況一度令Build Divers隊卻步。然而，在共同對抗獨眼族的過程中，與費迪及艾多拉子民之間建立的友誼，令悠人、風見、美兒、帕路維爾茲再次集結。他們想要找出意識仍被困在艾多拉的潛行者志堂真輝的下落、並查清率領獨眼族的阿魯斯真正身分，還有更重要的是要拯救無可取代的重要同伴──費迪他們所有人…沒錯，在艾多拉還有他們必須要完成的「任務」。帶著重新製作的高達模型，Build Divers隊的另一場真正的戰爭，由此展開。",
       "original_name": "ガンダムビルドダイバーズRe:RISE 2nd Season",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 297261,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/297261",
+          "https://bgm.tv/subject/297261/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2020-08-27",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-155",
@@ -542,10 +682,24 @@
       "story": "暫無簡介",
       "original_name": "ヒーリングっど♥プリキュア",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 297094,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 45,
+        "aired_episodes": 45,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/297094",
+          "https://bgm.tv/subject/297094/ep"
+        ],
+        "checked_at": "2026-10-13T22:08:17.834833+08:00",
+        "attempted_at": "2026-10-13T22:08:17.834833+08:00",
+        "end_date": "2021-02-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-16",
@@ -584,10 +738,24 @@
       "story": "暫無簡介",
       "original_name": "アイドリッシュセブン Second BEAT!",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 253042,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 15,
+        "aired_episodes": 15,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/253042",
+          "https://bgm.tv/subject/253042/ep"
+        ],
+        "checked_at": "2026-10-13T22:05:42.968973+08:00",
+        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "end_date": "2020-12-27",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-157",
@@ -632,7 +800,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T22:07:17.344783+08:00",
+  "generated_at": "2026-10-14T15:03:24.573814+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202007/",
   "quality": {
     "source_count": 38,
