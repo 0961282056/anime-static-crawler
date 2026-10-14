@@ -727,5 +727,21 @@
       "https://bgm.tv/subject/226540"
     ],
     "scope_note": "第三季正篇；錯誤小說連結更正。"
+  },
+  {
+    "card_id": "anime-1750",
+    "anime_name": "闇芝居 第14季",
+    "source_original_name": "闇芝居 十四期",
+    "source_subject_id": 486347,
+    "subject_id": 526223,
+    "subject_name": "闇芝居 十四期",
+    "first_air_date": "2025-01-05",
+    "reviewed_on": "2026-10-14",
+    "basis": "Old link points to a different anime. Exact original title and first-air quarter verified by complete monthly catalog, full subject and episodes.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202501/",
+      "https://bgm.tv/subject/526223"
+    ],
+    "scope_note": "第十四期正篇，不合併其他期。"
   }
 ]

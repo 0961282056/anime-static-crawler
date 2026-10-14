@@ -1,5 +1,5 @@
 name: Retry 73 Episode Failures Once
-# Verify the last incorrect link and the explicitly redirected subject.
+# Verify redirected subject using the same crawler transport headers.
 on:
   push:
     branches: [codex/episode-progress]

@@ -36,7 +36,7 @@ def main():
         client = BangumiClient(request_budget=24)
         try:
             if proposed is None:
-                response = requests.get(
+                response = client.session.get(
                     f"https://api.bgm.tv/v0/subjects/{old}",
                     timeout=(5, 15),
                     allow_redirects=False,
