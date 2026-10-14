@@ -743,5 +743,22 @@
       "https://bgm.tv/subject/526223"
     ],
     "scope_note": "第十四期正篇，不合併其他期。"
+  },
+  {
+    "card_id": "anime-359",
+    "anime_name": "Hulaing Babies",
+    "source_original_name": "フライングベイビーズ",
+    "source_subject_id": 197168,
+    "subject_id": 197162,
+    "subject_name": "フライングベイビーズ",
+    "first_air_date": "2019-01-10",
+    "reviewed_on": "2026-10-14",
+    "basis": "Provider API explicitly redirects old subject to new ID; anime type, exact original title, full subject and 12 episodes verified.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/201901/",
+      "https://api.bgm.tv/v0/subjects/197168",
+      "https://bgm.tv/subject/197162"
+    ],
+    "scope_note": "第一季正篇。"
   }
 ]

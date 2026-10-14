@@ -19,5 +19,12 @@
     "old_subject_id": 486347,
     "subject_id": 526223,
     "reason": "Wrong anime link corrected; exact original title and 13 main episodes verified."
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-359",
+    "old_subject_id": 197168,
+    "subject_id": 197162,
+    "reason": "Explicit provider migration, exact anime title and 12 main episodes verified."
   }
 ]

@@ -1281,9 +1281,9 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:35:55.138901+08:00",
+        "attempted_at": "2026-10-14T16:26:38.942545+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "來源季別／分篇名稱與資料庫涵蓋範圍尚未一致核對，暫不套用該條目的集數。"
       }
     },
     {

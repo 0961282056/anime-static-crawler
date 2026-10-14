@@ -1,0 +1,21 @@
+{
+  "target_records": 73,
+  "restored": 59,
+  "remaining": 14,
+  "remaining_404": 8,
+  "remaining_scope": 6,
+  "all_data": {
+    "records": 2143,
+    "linked": 1951,
+    "ok": 1933,
+    "total_known": 1884,
+    "aired_known": 1882,
+    "finished": 1618,
+    "unknown": 235,
+    "unmatched": 192,
+    "conflict": 4,
+    "stale": 14,
+    "airing": 79,
+    "not_yet_aired": 1
+  }
+}

@@ -1922,9 +1922,9 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:39:36.088580+08:00",
+        "attempted_at": "2026-10-14T16:25:51.508868+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
       }
     },
     {
