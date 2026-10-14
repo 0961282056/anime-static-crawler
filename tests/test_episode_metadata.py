@@ -517,3 +517,78 @@ def test_manual_retry_failed_does_not_refresh_successful_cache(anime_record_fact
     assert calls == [record.bangumi_id]
     EpisodeEnricher(client, retry_failed=True).enrich(updated, NOW)
     assert len(calls) == 1
+
+
+def test_reviewed_identity_accepts_only_the_exact_card_title_id_name_and_date(
+    anime_record_factory,
+):
+    from services.episode_metadata import subject_identity_matches
+
+    record = anime(
+        anime_record_factory,
+        bangumi_id="anime-295",
+        anime_name="生肖奇緣",
+        original_name="フルーツバスケット",
+        external_ids={"bangumi": 266455},
+    )
+    provider = {
+        **subject(),
+        "id": 266455,
+        "name": "フルーツバスケット 1st season",
+        "name_cn": "",
+        "date": "2019-04-05",
+    }
+    assert subject_identity_matches(record, provider)
+    assert parse_episode_metadata(record, provider, [], NOW).fetch_state == "ok"
+    for update in [
+        {"bangumi_id": "anime-999"},
+        {"anime_name": "生肖奇緣 第二季"},
+        {"original_name": "フルーツバスケット 第2期"},
+    ]:
+        assert not subject_identity_matches(record.model_copy(update=update), provider)
+    for update in [
+        {"id": 999},
+        {"type": 1},
+        {"name": "フルーツバスケット 2nd season"},
+        {"date": "2020-04-05"},
+    ]:
+        assert not subject_identity_matches(record, {**provider, **update})
+
+
+def test_reviewed_identity_does_not_approve_different_anime_or_ambiguous_part(
+    anime_record_factory,
+):
+    from services.episode_metadata import subject_identity_matches
+
+    wrong = anime(
+        anime_record_factory,
+        bangumi_id="anime-1750",
+        anime_name="暗芝居 第14季",
+        original_name="闇芝居 十四期",
+        external_ids={"bangumi": 486347},
+    )
+    assert not subject_identity_matches(
+        wrong,
+        {
+            **subject(),
+            "id": 486347,
+            "name": "薬屋のひとりごと 第2期",
+            "date": "2025-01-10",
+        },
+    )
+    broad = anime(
+        anime_record_factory,
+        bangumi_id="anime-1631",
+        anime_name="Re:從零開始的異世界生活 第3季",
+        original_name="Re：ゼロから始める異世界生活 3rd Season",
+        external_ids={"bangumi": 425998},
+    )
+    assert not subject_identity_matches(
+        broad,
+        {
+            **subject(),
+            "id": 425998,
+            "name": "Re:ゼロから始める異世界生活 3rd season 襲擊編",
+            "date": "2024-10-02",
+        },
+    )

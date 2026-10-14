@@ -7,11 +7,14 @@ Finished additionally requires an explicit past end date and a complete list.
 
 from __future__ import annotations
 
+import json
 import logging
 import re
 import time
 import unicodedata
 from datetime import date, datetime, timedelta
+from functools import cache
+from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
@@ -83,6 +86,33 @@ def subject_names(subject: dict[str, Any]) -> set[str]:
     return {_name(name) for name in names if isinstance(name, str) and _name(name)}
 
 
+@cache
+def reviewed_identities() -> list[dict[str, Any]]:
+    return json.loads(
+        Path(__file__)
+        .with_name("reviewed_episode_identities.json")
+        .read_text(encoding="utf-8")
+    )
+
+
+def subject_identity_matches(anime: Anime, subject: dict[str, Any]) -> bool:
+    """Exact provider names, or a manually reviewed card/title/ID/date tuple."""
+    if subject.get("id") != anime.external_ids.bangumi or subject.get("type") != 2:
+        return False
+    names = subject_names(subject)
+    if not anime.original_name or _name(anime.original_name) in names:
+        return True
+    return any(
+        review["card_id"] == anime.bangumi_id
+        and review["anime_name"] == anime.anime_name
+        and review["source_original_name"] == anime.original_name
+        and review["subject_id"] == anime.external_ids.bangumi
+        and review["subject_name"] == subject.get("name")
+        and _date(review["first_air_date"]) == _date(subject.get("date"))
+        for review in reviewed_identities()
+    )
+
+
 def parse_episode_metadata(
     anime: Anime,
     subject: dict[str, Any],
@@ -92,8 +122,7 @@ def parse_episode_metadata(
     subject_id = anime.external_ids.bangumi
     if subject.get("id") != subject_id or subject.get("type") != 2:
         raise MetadataUnavailable("Linked subject is not the expected anime")
-    names = subject_names(subject)
-    if anime.original_name and _name(anime.original_name) not in names:
+    if not subject_identity_matches(anime, subject):
         raise MetadataUnavailable(
             "Linked anime title differs from the source original title"
         )

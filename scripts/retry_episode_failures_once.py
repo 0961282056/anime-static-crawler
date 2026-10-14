@@ -11,12 +11,14 @@ from pathlib import Path
 from models import TAIPEI_TZ
 from services.bangumi_pages import parse_subject_page
 from services.data_repository import DataQualityPolicy, DataRepository
+from services.episode_link_lookup import fetch_quarter_catalog, quarter_bounds
 from services.episode_metadata import (
     BangumiClient,
     MetadataUnavailable,
     RequestBudgetExceeded,
+    _date,
     _name,
-    subject_names,
+    subject_identity_matches,
 )
 
 
@@ -69,7 +71,7 @@ def main():
                 break
             except (MetadataUnavailable, RequestBudgetExceeded) as exc:
                 errors[label] = type(exc).__name__ + ": " + str(exc)
-        names = set()
+        observed_subjects = []
         observed = None
         for response in client.responses:
             value = response.get("response")
@@ -85,12 +87,12 @@ def main():
                 else:
                     continue
                 if observed.get("id") == sid and observed.get("type") == 2:
-                    names |= subject_names(observed)
+                    observed_subjects.append(observed)
             except (ValueError, MetadataUnavailable):
                 continue
         for path, index, anime in group:
-            identity_ok = bool(
-                anime.original_name and _name(anime.original_name) in names
+            identity_ok = any(
+                subject_identity_matches(anime, s) for s in observed_subjects
             )
             updated = info is not None and identity_ok
             if updated:
@@ -146,6 +148,60 @@ def main():
                 source_count=dataset.quality.source_count,
                 parse_failure_count=dataset.quality.parse_failure_count,
             )
+    # Collect exact replacement evidence for two source links proved wrong.
+    repairs = []
+    for card, old_id, year, season, expected_name in [
+        ("anime-371", 22654, "2018", "秋", "とある魔術の禁書目録Ⅲ"),
+        ("anime-1750", 486347, "2025", "冬", "闇芝居 第14期"),
+    ]:
+        client = EvidenceClient(old_id)
+        try:
+            catalog = fetch_quarter_catalog(client, year=year, season=season)
+            start, end = quarter_bounds(year, season)
+            candidates = [
+                item
+                for item in catalog
+                if item.get("type") == 2
+                and _name(item.get("name", "")) == _name(expected_name)
+                and _date(item.get("date")) is not None
+                and start <= _date(item["date"]) < end
+            ]
+            assert len(candidates) == 1, "Replacement identity is not unique"
+            candidate = candidates[0]
+            target = next(
+                anime
+                for group in targets.values()
+                for _, _, anime in group
+                if anime.bangumi_id == card
+            )
+            linked = target.model_copy(
+                update={
+                    "original_name": candidate["name"],
+                    "external_ids": target.external_ids.model_copy(
+                        update={"bangumi": candidate["id"]}
+                    ),
+                }
+            )
+            info = client._fetch_api(linked, datetime.now(TAIPEI_TZ))
+            repairs.append(
+                {
+                    "card_id": card,
+                    "old_subject_id": old_id,
+                    "subject": candidate,
+                    "episodes": info.model_dump(mode="json"),
+                    "method": "unique-exact-anime-title+first-air-quarter+full-subject-and-episodes",
+                }
+            )
+        except (MetadataUnavailable, RequestBudgetExceeded, AssertionError) as exc:
+            repairs.append(
+                {"card_id": card, "old_subject_id": old_id, "error": str(exc)}
+            )
+        (evidence_dir / (card + "-replacement.json")).write_text(
+            json.dumps(client.responses, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+    (evidence_dir / "repair-candidates.json").write_text(
+        json.dumps(repairs, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     print("reviewable outcomes", len(report), "updated", len(replacements), flush=True)
 
 
