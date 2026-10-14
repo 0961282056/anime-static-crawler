@@ -95,6 +95,22 @@ def reviewed_identities() -> list[dict[str, Any]]:
     )
 
 
+def reviewed_source_subject_id(
+    card_id: str, anime_name: str, original_name: str | None, source_id: int | None
+) -> int | None:
+    """Correct only a reviewed, exact source-card tuple containing a wrong ID."""
+    for review in reviewed_identities():
+        if (
+            review.get("source_subject_id") == source_id
+            and source_id is not None
+            and review["card_id"] == card_id
+            and review["anime_name"] == anime_name
+            and review["source_original_name"] == original_name
+        ):
+            return review["subject_id"]
+    return source_id
+
+
 def subject_identity_matches(anime: Anime, subject: dict[str, Any]) -> bool:
     """Exact provider names, or a manually reviewed card/title/ID/date tuple."""
     if subject.get("id") != anime.external_ids.bangumi or subject.get("type") != 2:

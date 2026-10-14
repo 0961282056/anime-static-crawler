@@ -152,3 +152,23 @@ def test_parser_uses_explicit_missing_time_values(fixture_dir: Path) -> None:
 def test_extract_items_rejects_changed_card_structure() -> None:
     with pytest.raises(ItemParseError, match="No anime cards matched"):
         extract_item_html('<div id="acgs-anime-list"></div>')
+
+
+def test_reviewed_wrong_source_link_is_corrected_during_normal_parsing(fixture_dir):
+    document = (
+        _document(fixture_dir)
+        .replace("anime-2200", "anime-371")
+        .replace("測試動畫", "魔法禁書目錄III")
+    )
+    document = document.replace(
+        STORY,
+        '<div class="entity_original_name">とある魔術の禁書目録III</div><div class="anime_link_group"><a href="https://bgm.tv/subject/22654">Bangumi</a></div>'
+        + STORY,
+    )
+    candidate = parse_anime_item(_single_item(document))
+    assert candidate.external_ids.bangumi == 226540
+    assert candidate.original_name == "とある魔術の禁書目録III"
+    assert candidate.anime_name == "魔法禁書目錄III"
+    assert candidate.story == "第一段 第二段"
+    changed = document.replace("とある魔術の禁書目録III", "とある魔術の禁書目録 第2期")
+    assert parse_anime_item(_single_item(changed)).external_ids.bangumi == 22654

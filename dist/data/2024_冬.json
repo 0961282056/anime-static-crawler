@@ -210,16 +210,19 @@
         "anilist": 163076
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T21:38:41.229219+08:00",
-        "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/425910",
+          "https://bgm.tv/subject/425910/ep"
+        ],
+        "checked_at": "2026-10-14T16:25:37.694004+08:00",
+        "attempted_at": "2026-10-14T16:25:37.694004+08:00",
+        "end_date": "2024-03-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -431,16 +434,19 @@
         "anilist": 168194
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T21:38:41.229219+08:00",
-        "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/449725",
+          "https://bgm.tv/subject/449725/ep"
+        ],
+        "checked_at": "2026-10-14T16:25:50.120494+08:00",
+        "attempted_at": "2026-10-14T16:25:50.120494+08:00",
+        "end_date": "2024-04-03",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -848,16 +854,19 @@
         "anilist": 137908
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T21:38:41.229219+08:00",
-        "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/346426",
+          "https://bgm.tv/subject/346426/ep"
+        ],
+        "checked_at": "2026-10-14T16:25:24.464658+08:00",
+        "attempted_at": "2026-10-14T16:25:24.464658+08:00",
+        "end_date": "2024-03-29",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1293,16 +1302,19 @@
         "anilist": 151970
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T21:39:36.088580+08:00",
-        "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/390980",
+          "https://bgm.tv/subject/390980/ep"
+        ],
+        "checked_at": "2026-10-14T16:25:28.638741+08:00",
+        "attempted_at": "2026-10-14T16:25:28.638741+08:00",
+        "end_date": "2024-03-31",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1530,7 +1542,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T21:39:36.088580+08:00",
+  "generated_at": "2026-10-14T16:26:49.630893+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202401/",
   "quality": {
     "source_count": 57,

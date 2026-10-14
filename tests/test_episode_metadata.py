@@ -592,3 +592,20 @@ def test_reviewed_identity_does_not_approve_different_anime_or_ambiguous_part(
             "date": "2024-10-02",
         },
     )
+
+
+def test_reviewed_source_id_correction_is_exact_and_does_not_overwrite_new_links():
+    from services.episode_metadata import reviewed_source_subject_id
+
+    args = ("anime-371", "魔法禁書目錄III", "とある魔術の禁書目録III")
+    assert reviewed_source_subject_id(*args, 22654) == 226540
+    assert reviewed_source_subject_id(*args, 226540) == 226540
+    assert reviewed_source_subject_id(*args, 999) == 999
+    assert reviewed_source_subject_id("anime-999", *args[1:], 22654) == 22654
+    assert reviewed_source_subject_id(args[0], "別的作品", args[2], 22654) == 22654
+    assert (
+        reviewed_source_subject_id(
+            args[0], args[1], "とある魔術の禁書目録 第2期", 22654
+        )
+        == 22654
+    )

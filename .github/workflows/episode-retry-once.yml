@@ -1,5 +1,5 @@
 name: Retry 73 Episode Failures Once
-# Review verified title differences and diagnose incorrect source IDs.
+# Verify the last incorrect link and the explicitly redirected subject.
 on:
   push:
     branches: [codex/episode-progress]
@@ -25,7 +25,7 @@ jobs:
       - name: Install locked dependencies
         run: python -m pip install --require-hashes -r requirements.txt
       - name: Retry only stale records and capture public diagnostics
-        run: PYTHONPATH=. python scripts/retry_episode_failures_once.py
+        run: PYTHONPATH=. python scripts/episode_retry_followup_once.py
       - name: Validate reviewable data
         env:
           BUILD_ONLY: 'true'
@@ -40,6 +40,6 @@ jobs:
           name: episode-retry-${{ github.run_id }}
           path: |
             dist/data
-            retry-evidence
+            retry-followup-evidence
           if-no-files-found: error
           retention-days: 7

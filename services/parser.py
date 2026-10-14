@@ -122,13 +122,23 @@ def parse_anime_item(item_html: str) -> AnimeCandidate:
                 )
             ids[provider] = value
 
+    # The reviewed correction is tied to the unchanged source card and names.
+    from services.episode_metadata import reviewed_source_subject_id
+
+    card_id = _stable_id(item, anime_name)
+    original_name = original.get_text(" ", strip=True) if original else None
+    bangumi = reviewed_source_subject_id(
+        card_id, anime_name, original_name, ids.get("bangumi")
+    )
+    if bangumi is not None:
+        ids["bangumi"] = bangumi
     return AnimeCandidate(
-        bangumi_id=_stable_id(item, anime_name),
+        bangumi_id=card_id,
         anime_name=anime_name,
         source_image_url=source_image_url,
         premiere_date=premiere_date,
         premiere_time=premiere_time,
         story=story or "暫無簡介",
-        original_name=original.get_text(" ", strip=True) if original else None,
+        original_name=original_name,
         external_ids=ExternalIds(**ids),
     )

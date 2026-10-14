@@ -711,5 +711,21 @@
       "https://bgm.tv/subject/567234"
     ],
     "scope_note": "僅計算所連結資料庫條目的正篇；同系列其他季／篇不合併。"
+  },
+  {
+    "card_id": "anime-371",
+    "anime_name": "魔法禁書目錄III",
+    "source_original_name": "とある魔術の禁書目録III",
+    "source_subject_id": 22654,
+    "subject_id": 226540,
+    "subject_name": "とある魔術の禁書目録Ⅲ",
+    "first_air_date": "2018-10-05",
+    "reviewed_on": "2026-10-14",
+    "basis": "Old source link is a book; unique exact anime title and first-air-quarter, full subject and 26 main episodes verified.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/201901/",
+      "https://bgm.tv/subject/226540"
+    ],
+    "scope_note": "第三季正篇；錯誤小說連結更正。"
   }
 ]
