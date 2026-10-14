@@ -959,7 +959,7 @@
         "fetch_state": "conflict",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:11:11.477336+08:00",
+        "attempted_at": "2026-10-13T21:39:36.088580+08:00",
         "end_date": null,
         "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
       }
@@ -1208,7 +1208,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:11:11.477336+08:00",
+        "attempted_at": "2026-10-13T21:39:36.088580+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -1572,10 +1572,24 @@
       "story": "在分崩離析的堤亞穆帝國，被貶低為任性公主的皇女米雅遭到處刑。──本來該是如此，醒來的她卻變回12歲？？為了在第二次的人生躲過斷頭台，她手持前世的日記決心重新整頓帝國的施政。首先拉攏忠心耿耿的底層女僕，和遭到左遷實際卻很優秀的文官，扭轉失敗過去的日子就此展開。但是，米雅的真心話為「自身安全為第一優先」。遠離仇敵，努力經營人脈的過程中，不知為何在周圍的揣摩上意之下接連實現奇蹟！結果，本來是自私的行動竟然大幅地改變了大陸全土的未來……「這、這點小事交給我來根本輕而易舉！」明哲保身！自我中心最強！膽小鬼的前（？）廢柴公主以前世的記憶為武器抵抗命運，一生中最精彩的改變歷史奇幻故事！",
       "original_name": "ティアムーン帝国物語～断頭台から始まる、姫の転生逆転ストーリー～",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 400114,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/400114",
+          "https://bgm.tv/subject/400114/ep"
+        ],
+        "checked_at": "2026-10-13T21:39:36.088580+08:00",
+        "attempted_at": "2026-10-13T21:39:36.088580+08:00",
+        "end_date": "2023-12-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1391",
@@ -1723,7 +1737,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:11:11.477336+08:00",
+        "attempted_at": "2026-10-13T21:39:36.088580+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -1902,7 +1916,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:11:11.477336+08:00",
+        "attempted_at": "2026-10-13T21:39:36.088580+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -1936,7 +1950,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-13T21:25:27.987017+08:00",
+  "generated_at": "2026-10-13T21:39:36.088580+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202310/",
   "quality": {
     "source_count": 73,

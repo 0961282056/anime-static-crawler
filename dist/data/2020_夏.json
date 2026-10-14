@@ -24,10 +24,24 @@
       "story": "暫無簡介",
       "original_name": "超普通都市カシワ伝説R",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 310150,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 10,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/310150",
+          "https://bgm.tv/subject/310150/ep"
+        ],
+        "checked_at": "2026-10-13T22:07:17.344783+08:00",
+        "attempted_at": "2026-10-13T22:07:17.344783+08:00",
+        "end_date": "2020-09-28",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-105",
@@ -52,10 +66,24 @@
       "story": "從爺爺那裡得到新式跆拳道真傳的陳毛利，在受到一個叫做‘高校之神’並且來路不明的格鬥大會的邀請之後，應招參賽，並在選手當中脫穎而出，順利進入全國爭霸賽。但是大會卻遭到一個叫做‘諾克斯軍團’的謎樣集團襲擊並且一發不可收拾。自此，陳毛利和朋友們一起組成了反侵略組織與之奮起對抗。",
       "original_name": "THE GOD OF HIGH SCHOOL ゴッド・オブ・ハイスクール",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 305511,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/305511",
+          "https://bgm.tv/subject/305511/ep"
+        ],
+        "checked_at": "2026-10-13T22:07:17.344783+08:00",
+        "attempted_at": "2026-10-13T22:07:17.344783+08:00",
+        "end_date": "2020-09-28",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-152",
@@ -66,10 +94,24 @@
       "story": "暫無簡介",
       "original_name": "うまよん",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 269389,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/269389",
+          "https://bgm.tv/subject/269389/ep"
+        ],
+        "checked_at": "2026-10-13T22:07:17.344783+08:00",
+        "attempted_at": "2026-10-13T22:07:17.344783+08:00",
+        "end_date": "2020-09-22",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-71",
@@ -94,10 +136,24 @@
       "story": "天才魔法律家．六氷透（六氷）和他的助手．草野次郎（郎次）回來啦～～！出現在名拍檔．六氷與郎次眼前的大人物，正是於全國內坐擁９９間分部的魔法律事務所．五嶺集團的總帥．五嶺陀羅尼丸及五嶺的助手．惠比壽花夫。兩邊陣營賭上身為魔法律專家的自尊進行較量，分出勝負之時，六氷與郎次之間竟產生了不可磨滅的分歧！兩人各自面對阻擋在自己眼前的試煉，為了再度成為最強拍檔而努力！",
       "original_name": "ムヒョとロージーの魔法律相談事務所 第2期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 284838,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/284838",
+          "https://bgm.tv/subject/284838/ep"
+        ],
+        "checked_at": "2026-10-13T22:07:17.344783+08:00",
+        "attempted_at": "2026-10-13T22:07:17.344783+08:00",
+        "end_date": "2020-09-22",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-121",
@@ -108,10 +164,24 @@
       "story": "暫無簡介",
       "original_name": "おばけずかん",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 301477,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 39,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/301477",
+          "https://bgm.tv/subject/301477/ep"
+        ],
+        "checked_at": "2026-10-13T22:07:17.344783+08:00",
+        "attempted_at": "2026-10-13T22:07:17.344783+08:00",
+        "end_date": "2021-03-31",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-150",
@@ -136,10 +206,24 @@
       "story": "跨越「試煉」，整理好對留在原本世界的雙親的心情後，菜月‧昴要支持愛蜜莉雅，救醒雷姆──就在為這新的決心做好四處奔走的覺悟時，昴又再度於熟悉的痛苦中殞命，然後「死亡回歸」。與「掏腸者」艾爾莎──在異世界中第一個殺死昴的殺手再會。與強敵再戰而感到戰慄的昴，利用「死亡回歸」摸索最佳策略。可是，第二次的「聖域」輪迴卻走上跟昴的記憶完全不同的發展──「本大爺啊──不准公主殿下以外的人挑戰『試煉』。就只有你，絕對不准。」──螺旋的齒輪開始錯位。",
       "original_name": "Re:ゼロから始める異世界生活 2nd season",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 278826,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/278826",
+          "https://bgm.tv/subject/278826/ep"
+        ],
+        "checked_at": "2026-10-13T22:07:17.344783+08:00",
+        "attempted_at": "2026-10-13T22:07:17.344783+08:00",
+        "end_date": "2020-09-30",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-149",
@@ -150,10 +234,24 @@
       "story": "自從未知的生命體「葛多爾」突然出現，使得人類陷入了滅亡的危機後又經過了漫長的歲月。如今倖存下來的人們為了保護自己不受「葛多爾」威脅，建造了全高三千公尺的巨大移動要塞「DECA-DENCE」，並且在上面生活。居住在「DECA-DENCE」上的分別是日夜與「葛多爾」戰鬥的戰士們「齒輪」，以及沒有戰鬥能力的「油輪」。夏芽是嚮往成為與葛多爾戰鬥的戰士「齒輪」、夢想有朝一日自己也能成為「齒輪」的「油輪」少女。夏芽在某天與態度冷淡的DECA-DENCE裝甲修理人．鏑木相遇了。個性樂觀向前、不放棄夢想的少女與秉持現實主義、放棄夢想了男人。乍看之下恰恰相反的兩人的相遇，很快地將會使得這世界的未來產生巨大的動盪。",
       "original_name": "デカダンス",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 285879,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/285879",
+          "https://bgm.tv/subject/285879/ep"
+        ],
+        "checked_at": "2026-10-13T22:07:17.344783+08:00",
+        "attempted_at": "2026-10-13T22:07:17.344783+08:00",
+        "end_date": "2020-09-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-163",
@@ -534,7 +632,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T20:15:03.018593+08:00",
+  "generated_at": "2026-10-13T22:07:17.344783+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202007/",
   "quality": {
     "source_count": 38,

@@ -10,10 +10,24 @@
       "story": "暫無簡介",
       "original_name": "まめきちまめこ ニートの日常",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 400914,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 48,
+        "aired_episodes": 48,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/400914",
+          "https://bgm.tv/subject/400914/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-04-03",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1169",
@@ -24,10 +38,24 @@
       "story": "對一個孤苦無依的孤兒來說，取得鍊金術師的國家資格幾乎是唯一可以出人頭地的途徑！從只講求學生能力的王立鍊金術師培育學校畢業的少女珊樂莎，收到了來自師父的一份禮物──也就是一間店。珊樂莎在慷慨的師父目送之下踏上旅程，夢想迎接優雅的鍊金術師生活，卻一抵達目的地就發現眼前景象比預料的還要更加鄉下，不禁大為錯愕。不過，她仍必須在這樣的地方做生意，才能維持生計──一名少女將在可愛的工讀生與和善村民們陪伴下，努力成為能夠獨當一面的國家級鍊金術師！悠閒的工作生活就此開張！",
       "original_name": "新米錬金術師の店舗経営",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 349317,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/349317",
+          "https://bgm.tv/subject/349317/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-19",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1160",
@@ -66,10 +94,24 @@
       "story": "犯罪都市・米花鎮——有著世界第一的犯罪數量，在這個城鎮出現了一個漆黑的人影…為了接近目標而來到了這個城鎮，被謎團包圍的人。那個人物就是…犯澤先生(假名)！",
       "original_name": "名探偵コナン 犯人の犯沢さん",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 351712,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/351712",
+          "https://bgm.tv/subject/351712/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-19",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1175",
@@ -80,10 +122,24 @@
       "story": "四個風格截然不同的男孩，一倉颯、二見瞬、三間貴之和四季蒼真，他們卻有個共同的特點——呆萌。每一個男孩都有自己的呆萌小故事，身邊的人都因為他們而帶著暖暖笑意。當他們相遇時，呆萌度加乘的威力帶來了更多笑容。",
       "original_name": "クールドジ男子",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 378860,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/378860",
+          "https://bgm.tv/subject/378860/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-27",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1179",
@@ -94,10 +150,24 @@
       "story": "暫無簡介",
       "original_name": "永久少年 Eternal Boys",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 374563,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/374563",
+          "https://bgm.tv/subject/374563/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-27",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1186",
@@ -122,10 +192,24 @@
       "story": "做《II世事件簿》的動畫製作公司TROYCA與DMM pictures合作的原創電視動畫。編劇是寫日劇《真犯人旗標(真凶標籤)》的高野水登。",
       "original_name": "忍の一時",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 368829,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/368829",
+          "https://bgm.tv/subject/368829/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-20",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1142",
@@ -136,10 +220,24 @@
       "story": "淀治是個背負了父親遺留下的龐大債務，因此過著極端負窮生活的少年，他救了惡魔波奇塔，並與牠一起以惡魔獵人的身分斬殺低階惡魔來換取酬勞。有一天，流氓騙了淀治，讓他成為一堆惡魔的祭品，淀治在臨死之際，波奇塔犧牲自己，把心臟給了他，讓他復活並擁有了惡魔的力量，只要一拉位在心臟那邊的鏈子就能發動。之後淀治被公安人員看上，因此成為公安的惡魔獵人…",
       "original_name": "チェンソーマン",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 321885,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/321885",
+          "https://bgm.tv/subject/321885/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-27",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1149",
@@ -150,10 +248,24 @@
       "story": "暫無簡介",
       "original_name": "ヤマノススメ Next Summit",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 290980,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/290980",
+          "https://bgm.tv/subject/290980/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-20",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1188",
@@ -164,10 +276,24 @@
       "story": "暫無簡介",
       "original_name": "おばけずかん！",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 395810,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 11,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/395810",
+          "https://bgm.tv/subject/395810/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1180",
@@ -178,10 +304,24 @@
       "story": "暫無簡介",
       "original_name": "ある朝、ダミーヘッドマイクになっていた俺クンの人生",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 391672,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/391672",
+          "https://bgm.tv/subject/391672/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-28",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1172",
@@ -192,10 +332,24 @@
       "story": "暫無簡介",
       "original_name": "恋愛フロップス",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 375735,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/375735",
+          "https://bgm.tv/subject/375735/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-28",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1190",
@@ -206,10 +360,24 @@
       "story": "暫無簡介",
       "original_name": "ヒューマンバグ大学 -不死学部不幸学科-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 386469,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/386469",
+          "https://bgm.tv/subject/386469/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1141",
@@ -248,10 +416,24 @@
       "story": "暫無簡介",
       "original_name": "VAZZROCK THE ANIMATION",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 318869,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/318869",
+          "https://bgm.tv/subject/318869/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-28",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1148",
@@ -262,10 +444,24 @@
       "story": "一回神，我發現自己已經轉生至異世界了。不是作為普通人類，而是一把劍。再往周圍環顧，原來這裡是個魔物猖獗，險象環生的草原地帶。覺得性命受到威脅的主角，運用讓自己身體飄浮的能力，逐步獵殺魔物。就在這時，主角為了休息而插進地面的瞬間，能力居然破功，動彈不得。然而就無計可施的主角面前，突如其來出現一名奴隸打扮的貓耳少女……",
       "original_name": "転生したら剣でした",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 350224,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/350224",
+          "https://bgm.tv/subject/350224/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1174",
@@ -276,10 +472,24 @@
       "story": "暫無簡介",
       "original_name": "不徳のギルド",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 373712,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/373712",
+          "https://bgm.tv/subject/373712/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1147",
@@ -290,10 +500,24 @@
       "story": "暫無簡介",
       "original_name": "モブサイコ100 III",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 353605,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/353605",
+          "https://bgm.tv/subject/353605/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1163",
@@ -318,10 +542,24 @@
       "story": "暫無簡介",
       "original_name": "Do It Yourself!! -どぅー・いっと・ゆあせるふ-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 331445,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/331445",
+          "https://bgm.tv/subject/331445/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1176",
@@ -332,10 +570,24 @@
       "story": "喜歡看書的侯爵千金依莉亞娜與王太子克里斯朵夫殿下之間為了各自的需求而訂了婚，兩人之間的婚約關係雖然有名無實，依莉亞娜仍然對這樣的生活心滿意足。某一天，依莉亞娜得知王太子跟某位千金非常要好，她認為殿下終於找到了真正心愛的女人，而做好了婚約遭取消的心理準備。然而…愛書成癡的貴族千金之誤會連連戀愛幻想奇譚，拉起了序幕！",
       "original_name": "虫かぶり姫",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 366695,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/366695",
+          "https://bgm.tv/subject/366695/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1110",
@@ -360,10 +612,24 @@
       "story": "暫無簡介",
       "original_name": "アキバ冥途戦争",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 389450,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/389450",
+          "https://bgm.tv/subject/389450/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-22",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1156",
@@ -374,10 +640,24 @@
       "story": "暫無簡介",
       "original_name": "「艦これ」いつかあの海で",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 270739,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/270739",
+          "https://bgm.tv/subject/270739/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1164",
@@ -388,10 +668,24 @@
       "story": "暫無簡介",
       "original_name": "うる星やつら",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 364468,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 23,
+        "aired_episodes": 23,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/364468",
+          "https://bgm.tv/subject/364468/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1185",
@@ -402,10 +696,24 @@
       "story": "暫無簡介",
       "original_name": "メガトン級ムサシ シーズン2",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 361290,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 15,
+        "aired_episodes": 15,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/361290",
+          "https://bgm.tv/subject/361290/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-17",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1177",
@@ -430,10 +738,24 @@
       "story": "暫無簡介",
       "original_name": "令和のデ・ジ・キャラット",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 338802,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 16,
+        "aired_episodes": 16,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/338802",
+          "https://bgm.tv/subject/338802/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1192",
@@ -458,10 +780,24 @@
       "story": "暫無簡介",
       "original_name": "聖剣伝説 Legend of Mana -The Teardrop Crystal-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 340188,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/340188",
+          "https://bgm.tv/subject/340188/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1114",
@@ -486,10 +822,24 @@
       "story": "暫無簡介",
       "original_name": "PUI PUI モルカー DRIVING SCHOOL",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 385541,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/385541",
+          "https://bgm.tv/subject/385541/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1145",
@@ -500,10 +850,24 @@
       "story": "暫無簡介",
       "original_name": "僕のヒーローアカデミア 第6期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 236657,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/236657",
+          "https://bgm.tv/subject/236657/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1154",
@@ -514,10 +878,24 @@
       "story": "暫無簡介",
       "original_name": "魔入りました！入間くん 第3シリーズ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 348699,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 21,
+        "aired_episodes": 21,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/348699",
+          "https://bgm.tv/subject/348699/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-04",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1159",
@@ -528,10 +906,24 @@
       "story": "暫無簡介",
       "original_name": "宇崎ちゃんは遊びたい！ω",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 315744,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/315744",
+          "https://bgm.tv/subject/315744/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1162",
@@ -542,10 +934,24 @@
       "story": "阿爾・韋恩是個生無大志，只想終生務農的農民，為了成為頂尖一流的農民，他不斷從事農業工作，並鑽研所有與農民相關的技能。然而就在他將農民相關技能全部練滿的時候，他的生活卻開始急轉直下，偏往與農民截然不同的方向。不但能力變得亂強一把，就連王都的公主也一直想網羅他——。",
       "original_name": "農民関連のスキルばっか上げてたら何故か強くなった。",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 371842,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/371842",
+          "https://bgm.tv/subject/371842/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-17",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1166",
@@ -556,10 +962,24 @@
       "story": "暫無簡介",
       "original_name": "悪役令嬢なのでラスボスを飼ってみました",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 351375,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/351375",
+          "https://bgm.tv/subject/351375/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-17",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1143",
@@ -584,10 +1004,24 @@
       "story": "暫無簡介",
       "original_name": "後宮の烏",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 362479,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/362479",
+          "https://bgm.tv/subject/362479/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1150",
@@ -598,10 +1032,24 @@
       "story": "極度怕生、交不到朋友的主角後藤一里，在初中時因為憧憬着學好吉他、組樂隊後能發光發亮而開始學吉他。儘管她練得一手好吉他，化名在網上上傳的吉他彈奏影片也有不錯迴響，但是回過頭來，她在現實中還是一個朋友都沒交到，甚至就這樣成為了高中生……！正當她準備放棄的時候，她被「結束樂團」的鼓手伊地知虹夏叫住，自此她過去這種日常生活就開始漸漸地改變——",
       "original_name": "ぼっち・ざ・ろっく！",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 328609,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/328609",
+          "https://bgm.tv/subject/328609/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1178",
@@ -612,10 +1060,24 @@
       "story": "暫無簡介",
       "original_name": "弱虫ペダル LIMIT BREAK",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 361110,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/361110",
+          "https://bgm.tv/subject/361110/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1111",
@@ -654,10 +1116,24 @@
       "story": "2018年日本在世界盃又敗在16強賽，為了培養出能打破這個僵局的「攻擊手」，日本足球聯盟決定採用一個大膽的計畫：召集300名高中生FW（前鋒），放在名叫「藍色監獄（BLUE LOCK）」的宿舍內練蠱！即使會因此犧牲掉299個人的前途，也要讓獨一無二的世界級前鋒誕生！無名的高中生前鋒‧潔世一，也毅然決定參加這場擠掉所有競爭對手的生存戰！",
       "original_name": "ブルーロック",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 341163,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/341163",
+          "https://bgm.tv/subject/341163/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1168",
@@ -668,10 +1144,24 @@
       "story": "暫無簡介",
       "original_name": "4人はそれぞれウソをつく",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 376565,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 11,
+        "aired_episodes": 11,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/376565",
+          "https://bgm.tv/subject/376565/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1189",
@@ -696,10 +1186,24 @@
       "story": "暫無簡介",
       "original_name": "ぷにるんず",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 398762,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/398762",
+          "https://bgm.tv/subject/398762/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1151",
@@ -710,10 +1214,24 @@
       "story": "星元122年――大量企業擴展到宇宙，形成龐大經濟圈的時代。一名少女從邊境地區・水星轉校到MS產業中最大的企業「貝納里特集團」旗下營運的「阿斯提卡西亞高等專門學園」。她的名叫做蘇萊塔・墨丘利。純真的內心燃點著鮮紅的亮光，少女一步步地踏進新的世界。",
       "original_name": "機動戦士ガンダム 水星の魔女",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 349441,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/349441",
+          "https://bgm.tv/subject/349441/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-01-08",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1158",
@@ -724,10 +1242,24 @@
       "story": "暫無簡介",
       "original_name": "不滅のあなたへ Season2",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 348128,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 20,
+        "aired_episodes": 20,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/348128",
+          "https://bgm.tv/subject/348128/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-03-12",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1173",
@@ -738,10 +1270,24 @@
       "story": "暫無簡介",
       "original_name": "夫婦以上、恋人未満。",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 359177,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/359177",
+          "https://bgm.tv/subject/359177/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1171",
@@ -752,10 +1298,24 @@
       "story": "暫無簡介",
       "original_name": "勇者パーティーを追放されたビーストテイマー、最強種の猫耳少女と出会う",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 383631,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/383631",
+          "https://bgm.tv/subject/383631/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1157",
@@ -766,10 +1326,24 @@
       "story": "暫無簡介",
       "original_name": "アイドリッシュセブン Third BEAT! 第２クール",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 331751,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 17,
+        "aired_episodes": 17,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/331751",
+          "https://bgm.tv/subject/331751/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2023-02-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1183",
@@ -794,13 +1368,27 @@
       "story": "在武鬥祭勝出、得到了「地上最強」稱號的彼得·格里爾，還想著這樣就能跟戀人露薇莉亞結婚，就不間斷地被追求他種子的各種異種族女孩子誘惑。彼得雖然武力是最強，但是在意志堅定性上卻是最弱，下半身無數次屈服於誘惑，一次又一次變得無力。然後，正當彼得收到可怕的哥布林之禍發生的消息，趕赴鎮壓之際，卻在戰場上遇上意外的人。哥布林之巢、精靈之里、矮人之里……就算舞台變改，誘惑還是止不住。地上最強的賢者時間，再次襲來！",
       "original_name": "ピーター・グリルと賢者の時間 Super Extra",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 356793,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/356793",
+          "https://bgm.tv/subject/356793/ep"
+        ],
+        "checked_at": "2026-10-13T21:45:12.448734+08:00",
+        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "end_date": "2022-12-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-13T21:25:27.947767+08:00",
+  "generated_at": "2026-10-13T21:45:12.448734+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202210/",
   "quality": {
     "source_count": 56,

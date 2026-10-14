@@ -21,7 +21,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T20:57:46.514573+08:00",
+        "attempted_at": "2026-10-13T21:34:01.525146+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -550,7 +550,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T20:57:46.514573+08:00",
+        "attempted_at": "2026-10-13T21:34:01.525146+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -732,10 +732,24 @@
       "story": "暫無簡介",
       "original_name": "花ざかりの君たちへ 第2期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 637124,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/637124",
+          "https://bgm.tv/subject/637124/ep"
+        ],
+        "checked_at": "2026-10-13T21:34:01.525146+08:00",
+        "attempted_at": "2026-10-13T21:34:01.525146+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2272",
@@ -1289,7 +1303,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T20:57:46.514573+08:00",
+        "attempted_at": "2026-10-13T21:34:01.525146+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -2079,7 +2093,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-13T21:25:28.054286+08:00",
+  "generated_at": "2026-10-13T21:34:01.525146+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202607/",
   "quality": {
     "source_count": 75,

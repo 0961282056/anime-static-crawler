@@ -178,10 +178,24 @@
       "story": "暫無簡介",
       "original_name": "われしょ！我ら小動物愛護委員会",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 285670,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 5,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/285670",
+          "https://bgm.tv/subject/285670/ep"
+        ],
+        "checked_at": "2026-10-13T22:12:29.148814+08:00",
+        "attempted_at": "2026-10-13T22:12:29.148814+08:00",
+        "end_date": "2019-07-29",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-308",
@@ -679,7 +693,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:15:37.170263+08:00",
+        "attempted_at": "2026-10-13T22:12:29.148814+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -704,7 +718,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:15:37.170263+08:00",
+        "attempted_at": "2026-10-13T22:12:29.148814+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -900,10 +914,24 @@
       "story": "暫無簡介",
       "original_name": "博多明太！ぴりからこちゃん",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 285513,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/285513",
+          "https://bgm.tv/subject/285513/ep"
+        ],
+        "checked_at": "2026-10-13T22:12:29.148814+08:00",
+        "attempted_at": "2026-10-13T22:12:29.148814+08:00",
+        "end_date": "2019-09-22",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-365",
@@ -1054,10 +1082,24 @@
       "story": "暫無簡介",
       "original_name": "ビジネスフィッシュ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 285517,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/285517",
+          "https://bgm.tv/subject/285517/ep"
+        ],
+        "checked_at": "2026-10-13T22:12:29.148814+08:00",
+        "attempted_at": "2026-10-13T22:12:29.148814+08:00",
+        "end_date": "2019-09-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-256",
@@ -1144,7 +1186,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T21:25:27.895244+08:00",
+  "generated_at": "2026-10-13T22:12:29.148814+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201907/",
   "quality": {
     "source_count": 44,

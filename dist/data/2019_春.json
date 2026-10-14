@@ -38,10 +38,24 @@
       "story": "暫無簡介",
       "original_name": "デュエル・マスターズ!!",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 279474,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 51,
+        "aired_episodes": 51,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/279474",
+          "https://bgm.tv/subject/279474/ep"
+        ],
+        "checked_at": "2026-10-13T22:11:46.788880+08:00",
+        "attempted_at": "2026-10-13T22:11:46.788880+08:00",
+        "end_date": "2020-03-29",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-313",
@@ -234,10 +248,24 @@
       "story": "暫無簡介",
       "original_name": "少年アシベ　GO!GO!ゴマちゃん 第4シリーズ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 279470,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/279470",
+          "https://bgm.tv/subject/279470/ep"
+        ],
+        "checked_at": "2026-10-13T22:11:46.788880+08:00",
+        "attempted_at": "2026-10-13T22:11:46.788880+08:00",
+        "end_date": "2019-12-17",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-309",
@@ -486,10 +514,24 @@
       "story": "暫無簡介",
       "original_name": "Bラッパーズ ストリート",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 306161,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 50,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/306161",
+          "https://bgm.tv/subject/306161/ep"
+        ],
+        "checked_at": "2026-10-13T22:11:46.788880+08:00",
+        "attempted_at": "2026-10-13T22:11:46.788880+08:00",
+        "end_date": "2020-03-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-304",
@@ -528,10 +570,24 @@
       "story": "暫無簡介",
       "original_name": "テレビ野郎 ナナーナ わくわく洞窟ランド",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 279475,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 12,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/279475",
+          "https://bgm.tv/subject/279475/ep"
+        ],
+        "checked_at": "2026-10-13T22:11:46.788880+08:00",
+        "attempted_at": "2026-10-13T22:11:46.788880+08:00",
+        "end_date": "2019-09-19",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-310",
@@ -654,10 +710,24 @@
       "story": "暫無簡介",
       "original_name": "妖怪ウォッチ！",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 279472,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 36,
+        "aired_episodes": 36,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/279472",
+          "https://bgm.tv/subject/279472/ep"
+        ],
+        "checked_at": "2026-10-13T22:11:46.788880+08:00",
+        "attempted_at": "2026-10-13T22:11:46.788880+08:00",
+        "end_date": "2019-12-20",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-305",
@@ -735,7 +805,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:15:37.170263+08:00",
+        "attempted_at": "2026-10-13T22:12:29.148814+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -833,10 +903,24 @@
       "story": "暫無簡介",
       "original_name": "カードファイト!! ヴァンガード 続・高校生編",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 285664,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 14,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/285664",
+          "https://bgm.tv/subject/285664/ep"
+        ],
+        "checked_at": "2026-10-13T22:11:46.788880+08:00",
+        "attempted_at": "2026-10-13T22:11:46.788880+08:00",
+        "end_date": "2019-08-10",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-322",
@@ -886,7 +970,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:14:40.916731+08:00",
+        "attempted_at": "2026-10-13T22:11:46.788880+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -1191,7 +1275,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:14:40.916731+08:00",
+        "attempted_at": "2026-10-13T22:11:46.788880+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -1295,7 +1379,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-13T21:25:27.900757+08:00",
+  "generated_at": "2026-10-13T22:12:29.148814+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201904/",
   "quality": {
     "source_count": 51,

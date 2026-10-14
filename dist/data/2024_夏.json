@@ -122,10 +122,24 @@
       "story": "在某片海洋上漂浮著一座名為「EGU島」的島嶼。島上唯一的娛樂就是傾聽歌姬「世界末日」的歌聲。村民們日復日地陶醉在她的歌聲之中。然而，這悠閒的時光卻轉瞬即逝。自從歌姬失蹤事件發生後，島上充斥著「憤怒」、「懷疑」與「不安」，各式各樣的念頭便開始蠢蠢欲動…圍繞「世界末日」的舔舔大戰即將展開！掌握其命運的就是傳說中的遺產「EGUMI遺產」。",
       "original_name": "エグミレガシー",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 490824,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/490824",
+          "https://bgm.tv/subject/490824/ep"
+        ],
+        "checked_at": "2026-10-13T21:37:49.906766+08:00",
+        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1606",
@@ -220,10 +234,24 @@
       "story": "高中生主角與夥伴集體參與了唯一規則是「成為多數就會死」的生存遊戲，發誓要推翻主導一切的「皇帝」。",
       "original_name": "多数欠",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 477204,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/477204",
+          "https://bgm.tv/subject/477204/ep"
+        ],
+        "checked_at": "2026-10-13T21:37:49.906766+08:00",
+        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "end_date": "2024-12-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1578",
@@ -245,7 +273,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:09:10.216438+08:00",
+        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -287,10 +315,24 @@
       "story": "伊思卡成為了希絲蓓爾的護衛，要將她護送至涅比利斯王宮。而為了搶在其他勢力之前護住妹妹的人身安全，愛麗絲莉潔展開搜索，卻目擊到伊思卡和妹妹挽手漫步的場景……「這正是星之命運。我和你肯定能締結良好的主僕關係！」「伊思卡不會向皇廳投誠。這一點本小姐比任何人都還清楚。」就算用上各種手段，也要將伊思卡納入掌中，成為自己唯一夥伴的希絲蓓爾；不願受到使命、責任和義務束縛，只想憑藉自身的意志視伊思卡為唯一勁敵的愛麗絲。在姊妹錯綜複雜的思緒糾葛中，伊思卡和企圖狙殺希絲蓓爾的皇廳怪物展開對峙。那是沒有高潔意志、捨棄了人類自尊的敵人——面對首次交手的「真正魔女」，劍士憤怒地拔劍出鞘！",
       "original_name": "キミと僕の最後の戦場、あるいは世界が始まる聖戦 season II",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 351349,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/351349",
+          "https://bgm.tv/subject/351349/ep"
+        ],
+        "checked_at": "2026-10-13T21:37:49.906766+08:00",
+        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1583",
@@ -553,10 +595,24 @@
       "story": "「咖啡廳FAMILIA」附近的競爭對手店鋪開業了！而且員工還是五個可愛的女孩子…!? 在隼的最大危機中，五位女神挺身而出！因為在「戀愛」，因為是「家族」。我們一定要保護我們的店鋪！",
       "original_name": "女神のカフェテラス 第2期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 442673,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/442673",
+          "https://bgm.tv/subject/442673/ep"
+        ],
+        "checked_at": "2026-10-13T21:37:49.906766+08:00",
+        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "end_date": "2024-09-19",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1597",
@@ -707,10 +763,24 @@
       "story": "暫無簡介",
       "original_name": "NieR:Automata Ver1.1a 第2クール",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 446618,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/446618",
+          "https://bgm.tv/subject/446618/ep"
+        ],
+        "checked_at": "2026-10-13T21:37:49.906766+08:00",
+        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "end_date": "2024-09-27",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1613",
@@ -861,10 +931,24 @@
       "story": "暫無簡介",
       "original_name": "JOCHUM",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 490781,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/490781",
+          "https://bgm.tv/subject/490781/ep"
+        ],
+        "checked_at": "2026-10-13T21:37:49.906766+08:00",
+        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "end_date": "2024-12-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1627",
@@ -914,7 +998,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:09:10.216438+08:00",
+        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -1292,10 +1376,24 @@
       "story": "妖精尾巴一如往常的熱鬧，納茲卻不在公會裡，因為他跟格雷、露西、艾爾莎以及兩隻貓一起出發去挑戰當初吉爾達茲沒有成功的「百年任務」了！為了這個任務，納茲一行人來到北方的基爾帝那大陸，拜訪最古老的魔導士公會「魔陣之龍」。令他們更驚訝的則是任務內容，竟是封住一個實力都跟亞克諾羅基亞差不多的五神龍！在魔導少年結束後一年多，納茲等人的後續冒險終於要開始了──！",
       "original_name": "FAIRY TAIL 100年クエスト",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 349093,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/349093",
+          "https://bgm.tv/subject/349093/ep"
+        ],
+        "checked_at": "2026-10-13T21:37:49.906766+08:00",
+        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "end_date": "2025-01-05",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1589",
@@ -1488,13 +1586,27 @@
       "story": "暫無簡介",
       "original_name": "闇芝居 十三期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 498178,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/498178",
+          "https://bgm.tv/subject/498178/ep"
+        ],
+        "checked_at": "2026-10-13T21:37:49.906766+08:00",
+        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "end_date": "2024-10-06",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-13T21:25:28.001235+08:00",
+  "generated_at": "2026-10-13T21:37:49.906766+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202407/",
   "quality": {
     "source_count": 58,

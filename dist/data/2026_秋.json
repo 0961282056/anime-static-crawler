@@ -441,7 +441,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T20:57:03.048975+08:00",
+        "attempted_at": "2026-10-13T21:32:55.569554+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -606,7 +606,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T20:57:03.048975+08:00",
+        "attempted_at": "2026-10-13T21:32:55.569554+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -760,10 +760,24 @@
       "story": "暫無簡介",
       "original_name": "パンどろぼう",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 563508,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/563508",
+          "https://bgm.tv/subject/563508/ep"
+        ],
+        "checked_at": "2026-10-13T21:32:55.569554+08:00",
+        "attempted_at": "2026-10-13T21:32:55.569554+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2338",
@@ -813,7 +827,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T20:57:03.048975+08:00",
+        "attempted_at": "2026-10-13T21:32:55.569554+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -922,7 +936,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T20:57:03.048975+08:00",
+        "attempted_at": "2026-10-13T21:32:55.569554+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -1174,9 +1188,9 @@
           "https://bgm.tv/subject/584847/ep"
         ],
         "checked_at": "2026-10-13T20:21:15.474975+08:00",
-        "attempted_at": "2026-10-13T20:57:03.048975+08:00",
+        "attempted_at": "2026-10-13T21:32:55.569554+08:00",
         "end_date": null,
-        "note": "Bangumi 頁面備援（bangumi.tv）；來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
+        "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
       }
     },
     {
@@ -1440,10 +1454,24 @@
       "story": "暫無簡介",
       "original_name": "dreamland",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 559080,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 10,
+        "aired_episodes": 0,
+        "airing_status": "not_yet_aired",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/559080",
+          "https://bgm.tv/subject/559080/ep"
+        ],
+        "checked_at": "2026-10-13T21:32:55.569554+08:00",
+        "attempted_at": "2026-10-13T21:32:55.569554+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-2345",
@@ -2006,7 +2034,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-13T21:25:28.071039+08:00",
+  "generated_at": "2026-10-13T21:32:55.569554+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202610/",
   "quality": {
     "source_count": 73,

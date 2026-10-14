@@ -10,10 +10,24 @@
       "story": "三麗鷗Bosanimal系列的動畫版。",
       "original_name": "ぼさにまる",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 426154,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 96,
+        "aired_episodes": 96,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/426154",
+          "https://bgm.tv/subject/426154/ep"
+        ],
+        "checked_at": "2026-10-13T21:40:36.201567+08:00",
+        "attempted_at": "2026-10-13T21:40:36.201567+08:00",
+        "end_date": "2023-09-14",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1279",
@@ -234,10 +248,24 @@
       "story": "從一個小鎮的初中畢業後，岩倉美津未以第一名的成績進入了東京的高偏差值高中。懷著完美的人生規劃，這位來自鄉下的神童獨自前往東京，雖然學習能力很強，但與人相處的距離感有些奇特。因此，雖然有時會失敗，但她的自然風格感染了班上的同學，每個人的個性漸漸地交織在一起。他們相互認識，相互了解，最終彼此理解。每個人都會經歷心中的迷茫和焦躁，但是能夠給予理解的是那些珍貴的朋友。有時會有些不協調，但不知不覺中就會變成快樂的校園生活喜劇！",
       "original_name": "スキップとローファー",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 357961,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/357961",
+          "https://bgm.tv/subject/357961/ep"
+        ],
+        "checked_at": "2026-10-13T21:40:36.201567+08:00",
+        "attempted_at": "2026-10-13T21:40:36.201567+08:00",
+        "end_date": "2023-06-20",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1281",
@@ -280,16 +308,19 @@
         "anilist": 156854
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
-        "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/357961",
+          "https://bgm.tv/subject/357961/ep"
+        ],
+        "checked_at": "2026-10-13T21:40:36.201567+08:00",
+        "attempted_at": "2026-10-13T21:40:36.201567+08:00",
+        "end_date": "2023-06-20",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -718,7 +749,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
+        "attempted_at": "2026-10-13T21:40:36.201567+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -900,10 +931,24 @@
       "story": "暫無簡介",
       "original_name": "ぐんまちゃん シーズン2",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 418484,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/418484",
+          "https://bgm.tv/subject/418484/ep"
+        ],
+        "checked_at": "2026-10-13T21:40:36.201567+08:00",
+        "attempted_at": "2026-10-13T21:40:36.201567+08:00",
+        "end_date": "2023-07-01",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1282",
@@ -1424,7 +1469,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-13T21:25:27.978757+08:00",
+  "generated_at": "2026-10-13T21:40:36.201567+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202304/",
   "quality": {
     "source_count": 54,

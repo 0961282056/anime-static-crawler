@@ -217,7 +217,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:10:04.688842+08:00",
+        "attempted_at": "2026-10-13T21:38:41.229219+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -438,7 +438,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:10:04.688842+08:00",
+        "attempted_at": "2026-10-13T21:38:41.229219+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -855,7 +855,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:10:04.688842+08:00",
+        "attempted_at": "2026-10-13T21:38:41.229219+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -1300,7 +1300,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:11:11.477336+08:00",
+        "attempted_at": "2026-10-13T21:39:36.088580+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -1530,7 +1530,7 @@
       "episodes": null
     }
   ],
-  "generated_at": "2026-10-13T21:25:27.994558+08:00",
+  "generated_at": "2026-10-13T21:39:36.088580+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202401/",
   "quality": {
     "source_count": 57,

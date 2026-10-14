@@ -518,16 +518,19 @@
         "anilist": null
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
+        "total_episodes": 16,
+        "aired_episodes": 16,
         "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-13T21:00:04.871630+08:00",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/434807",
+          "https://bgm.tv/subject/434807/ep"
+        ],
+        "checked_at": "2026-10-13T21:35:02.070303+08:00",
+        "attempted_at": "2026-10-13T21:35:02.070303+08:00",
         "end_date": null,
-        "note": "尚未取得可靠集數，之後重新查詢。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -718,7 +721,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:00:04.871630+08:00",
+        "attempted_at": "2026-10-13T21:35:02.070303+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -771,7 +774,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:00:04.871630+08:00",
+        "attempted_at": "2026-10-13T21:35:02.070303+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -992,9 +995,9 @@
         "fetch_state": "conflict",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:00:04.871630+08:00",
+        "attempted_at": "2026-10-13T21:35:02.070303+08:00",
         "end_date": null,
-        "note": "Bangumi 頁面備援（bangumi.tv）；來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
+        "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
       }
     },
     {
@@ -1689,7 +1692,7 @@
         "fetch_state": "stale",
         "source_urls": [],
         "checked_at": null,
-        "attempted_at": "2026-10-13T21:00:04.871630+08:00",
+        "attempted_at": "2026-10-13T21:35:02.070303+08:00",
         "end_date": null,
         "note": "尚未取得可靠集數，之後重新查詢。"
       }
@@ -1737,7 +1740,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-13T21:25:28.040927+08:00",
+  "generated_at": "2026-10-13T21:35:02.070303+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202510/",
   "quality": {
     "source_count": 63,
