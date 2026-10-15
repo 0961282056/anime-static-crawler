@@ -41,6 +41,7 @@ def fetch_quarter_catalog(
     catalog: dict[int, dict[str, Any]] = {}
     for month in range(start.month, start.month + 3):
         entries: list[dict[str, Any]] = []
+        monthly_identities: set[int] = set()
         expected = None
         for _ in range(10):
             page = client._get(
@@ -62,6 +63,17 @@ def fetch_quarter_catalog(
             expected = total
             if not items and len(entries) < total:
                 raise MetadataUnavailable("Monthly anime catalog ended early")
+            for item in items:
+                identity = item.get("id") if isinstance(item, dict) else None
+                if type(identity) is not int or identity <= 0:
+                    raise MetadataUnavailable(
+                        "Monthly anime catalog identity is invalid"
+                    )
+                if identity in monthly_identities:
+                    raise MetadataUnavailable(
+                        "Monthly anime catalog repeated an identity"
+                    )
+                monthly_identities.add(identity)
             entries.extend(items)
             if len(entries) > total:
                 raise MetadataUnavailable("Monthly anime catalog exceeded its count")

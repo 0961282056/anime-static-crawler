@@ -193,6 +193,11 @@ def test_complete_monthly_catalog_uses_documented_fifty_row_pages():
         [{"data": [], "total": 1}],
         [{"data": [subject()], "total": 2}, {"data": [], "total": 3}],
         [{"data": [subject()], "total": 0}],
+        [{"data": [subject(), subject()], "total": 2}],
+        [
+            {"data": [subject()], "total": 2},
+            {"data": [subject()], "total": 2},
+        ],
         [
             {"data": [subject()], "total": 1},
             {"data": [{**subject(), "name": "conflict"}], "total": 1},

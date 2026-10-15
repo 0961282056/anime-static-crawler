@@ -178,8 +178,16 @@ class DataRepository:
             old = previous_by_id.get(record.bangumi_id)
             if old and record.episodes is None:
                 changed_identity = (
-                    record.external_ids.bangumi is not None
-                    and record.external_ids.bangumi != old.external_ids.bangumi
+                    (
+                        record.external_ids.bangumi is not None
+                        and record.external_ids.bangumi != old.external_ids.bangumi
+                    )
+                    or record.anime_name != old.anime_name
+                    or (
+                        record.original_name is not None
+                        and old.original_name is not None
+                        and record.original_name != old.original_name
+                    )
                 )
                 if not changed_identity:
                     validated_records[index] = record.model_copy(

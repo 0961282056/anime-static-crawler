@@ -1994,12 +1994,12 @@
     "subject_name": "中間管理録トネガワ",
     "first_air_date": "2018-07-03",
     "reviewed_on": "2026-10-15",
-    "basis": "官方VAP班長專頁屬《利根川》合輯；已逐筆核對24個官方集目，只計14、15、18、23四個班長主線節目。此ID明確連到合輯母條目，並非宣稱有獨立班長資料庫條目。",
+    "basis": "官方VAP班長專頁屬《利根川》合輯；此ID僅定位母作品，不宣稱存在獨立班長資料庫條目。四筆主線故事摘要不足以確定全部短篇範圍，已撤回4/4及完結判定。",
     "source_urls": [
       "https://www.vap.co.jp/tonegawa-anime/index_hancho.html",
       "https://www.vap.co.jp/tonegawa-anime/story/",
       "https://bgm.tv/subject/237834"
     ],
-    "scope_note": "精確卡片使用官方四節目快照；不採合輯24話或其他來源季別的快取。"
+    "scope_note": "精確卡片維持官方範圍待確認快照；不採合輯24話或母作品的跨季度快取。"
   }
 ]

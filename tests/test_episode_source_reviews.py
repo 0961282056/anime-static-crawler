@@ -143,7 +143,7 @@ def test_official_tv_counts_survive_unavailable_anonymous_provider(
     client.fetch.assert_not_called()
 
 
-def test_hanchou_uses_four_official_programmes_without_reusing_parent_twenty_four(
+def test_hanchou_synopsis_subset_cannot_confirm_a_total_or_reuse_parent_twenty_four(
     anime_record_factory,
 ):
     review = next(r for r in source_reviews() if r["card_id"] == "anime-418")
@@ -172,7 +172,11 @@ def test_hanchou_uses_four_official_programmes_without_reusing_parent_twenty_fou
     enricher = EpisodeEnricher(client)
     assert enricher.enrich(parent, NOW).episodes.total_episodes == 24
     result = enricher.enrich(hanchou, NOW)
-    assert result.episodes.aired_episodes == result.episodes.total_episodes == 4
+    assert result.episodes.aired_episodes is None
+    assert result.episodes.total_episodes is None
+    assert result.episodes.airing_status == "unknown"
+    assert result.episodes.episode_count_status == "unknown"
+    assert "不能據此排除" in result.episodes.note
     assert result.external_ids.bangumi == parent.external_ids.bangumi == 237834
     assert enricher.enrich(parent, NOW).episodes.total_episodes == 24
     assert client.fetch.call_count == 1

@@ -1,0 +1,646 @@
+{
+  "compared_at": "2026-10-15T22:16:54.157326+08:00",
+  "story_difference_count": 548,
+  "story_whitespace_only_count": 548,
+  "known_anilist_id_conflicts": [],
+  "missing_anilist_ids": [
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-374",
+      "saved": null,
+      "source": 102974
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-393",
+      "saved": null,
+      "source": 101125
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-392",
+      "saved": null,
+      "source": 101609
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-404",
+      "saved": null,
+      "source": 101318
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-385",
+      "saved": null,
+      "source": 100382
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-384",
+      "saved": null,
+      "source": 101505
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-402",
+      "saved": null,
+      "source": 101470
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-423",
+      "saved": null,
+      "source": 102385
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-399",
+      "saved": null,
+      "source": 102822
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-381",
+      "saved": null,
+      "source": 100402
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-403",
+      "saved": null,
+      "source": 101373
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-412",
+      "saved": null,
+      "source": 101024
+    },
+    {
+      "quarter": "2019_冬",
+      "card_id": "anime-412",
+      "saved": null,
+      "source": 101024
+    },
+    {
+      "quarter": "2019_夏",
+      "card_id": "anime-277",
+      "saved": null,
+      "source": 110201
+    },
+    {
+      "quarter": "2019_夏",
+      "card_id": "anime-275",
+      "saved": null,
+      "source": 110124
+    },
+    {
+      "quarter": "2019_夏",
+      "card_id": "anime-274",
+      "saved": null,
+      "source": 109603
+    },
+    {
+      "quarter": "2019_夏",
+      "card_id": "anime-272",
+      "saved": null,
+      "source": 109929
+    },
+    {
+      "quarter": "2019_春",
+      "card_id": "anime-296",
+      "saved": null,
+      "source": 105928
+    },
+    {
+      "quarter": "2022_秋",
+      "card_id": "anime-1153",
+      "saved": null,
+      "source": 137822
+    },
+    {
+      "quarter": "2022_秋",
+      "card_id": "anime-1164",
+      "saved": null,
+      "source": 143277
+    },
+    {
+      "quarter": "2022_秋",
+      "card_id": "anime-1154",
+      "saved": null,
+      "source": 139092
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1206",
+      "saved": null,
+      "source": 145969
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1198",
+      "saved": null,
+      "source": 145665
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1203",
+      "saved": null,
+      "source": 142193
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1213",
+      "saved": null,
+      "source": 144092
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1238",
+      "saved": null,
+      "source": 126529
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1234",
+      "saved": null,
+      "source": 154969
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1241",
+      "saved": null,
+      "source": 155068
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1231",
+      "saved": null,
+      "source": 136435
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1194",
+      "saved": null,
+      "source": 143338
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1228",
+      "saved": null,
+      "source": 125869
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1233",
+      "saved": null,
+      "source": 141062
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1217",
+      "saved": null,
+      "source": 141249
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1225",
+      "saved": null,
+      "source": 152523
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1209",
+      "saved": null,
+      "source": 143064
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1201",
+      "saved": null,
+      "source": 142849
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1224",
+      "saved": null,
+      "source": 139821
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1215",
+      "saved": null,
+      "source": 144144
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1210",
+      "saved": null,
+      "source": 151040
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1207",
+      "saved": null,
+      "source": 156067
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1219",
+      "saved": null,
+      "source": 142914
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1236",
+      "saved": null,
+      "source": 135102
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1221",
+      "saved": null,
+      "source": 153841
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1208",
+      "saved": null,
+      "source": 152765
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1240",
+      "saved": null,
+      "source": 155997
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1196",
+      "saved": null,
+      "source": 130588
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1223",
+      "saved": null,
+      "source": 148116
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1237",
+      "saved": null,
+      "source": 136430
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1235",
+      "saved": null,
+      "source": 147216
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1195",
+      "saved": null,
+      "source": 155907
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1214",
+      "saved": null,
+      "source": 144553
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1227",
+      "saved": null,
+      "source": 135778
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1239",
+      "saved": null,
+      "source": 146954
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1205",
+      "saved": null,
+      "source": 142853
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1229",
+      "saved": null,
+      "source": 155089
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1197",
+      "saved": null,
+      "source": 147864
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1246",
+      "saved": null,
+      "source": 150117
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1244",
+      "saved": null,
+      "source": 155291
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1153",
+      "saved": null,
+      "source": 137822
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1218",
+      "saved": null,
+      "source": 140596
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1211",
+      "saved": null,
+      "source": 151679
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1202",
+      "saved": null,
+      "source": 151806
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1226",
+      "saved": null,
+      "source": 141785
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-798",
+      "saved": null,
+      "source": 116867
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1199",
+      "saved": null,
+      "source": 155211
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1216",
+      "saved": null,
+      "source": 151252
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1247",
+      "saved": null,
+      "source": 139213
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1164",
+      "saved": null,
+      "source": 143277
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1222",
+      "saved": null,
+      "source": 155202
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1204",
+      "saved": null,
+      "source": 146346
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1154",
+      "saved": null,
+      "source": 139092
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1230",
+      "saved": null,
+      "source": 154785
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1243",
+      "saved": null,
+      "source": 157883
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1232",
+      "saved": null,
+      "source": 130696
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1193",
+      "saved": null,
+      "source": 146323
+    },
+    {
+      "quarter": "2023_夏",
+      "card_id": "anime-1319",
+      "saved": null,
+      "source": 150972
+    },
+    {
+      "quarter": "2023_夏",
+      "card_id": "anime-1337",
+      "saved": null,
+      "source": 163571
+    },
+    {
+      "quarter": "2023_春",
+      "card_id": "anime-1241",
+      "saved": null,
+      "source": 155068
+    },
+    {
+      "quarter": "2023_春",
+      "card_id": "anime-1284",
+      "saved": null,
+      "source": 141911
+    },
+    {
+      "quarter": "2023_春",
+      "card_id": "anime-1237",
+      "saved": null,
+      "source": 136430
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1385",
+      "saved": null,
+      "source": 143327
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1362",
+      "saved": null,
+      "source": 156184
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1376",
+      "saved": null,
+      "source": 155527
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1387",
+      "saved": null,
+      "source": 158791
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1359",
+      "saved": null,
+      "source": 146493
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1363",
+      "saved": null,
+      "source": 154384
+    },
+    {
+      "quarter": "2024_冬",
+      "card_id": "anime-1387",
+      "saved": null,
+      "source": 158791
+    },
+    {
+      "quarter": "2024_冬",
+      "card_id": "anime-1359",
+      "saved": null,
+      "source": 146493
+    },
+    {
+      "quarter": "2024_春",
+      "card_id": "anime-1530",
+      "saved": null,
+      "source": 163139
+    },
+    {
+      "quarter": "2024_春",
+      "card_id": "anime-1527",
+      "saved": null,
+      "source": 166240
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1696",
+      "saved": null,
+      "source": 177603
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2344",
+      "saved": null,
+      "source": 194207
+    }
+  ],
+  "missing_quarter_records": [
+    {
+      "quarter": "2023_夏",
+      "card_id": "anime-1278",
+      "name": "EDENS ZERO 伊甸星原 第2季",
+      "original": "EDENS ZERO 第2期",
+      "source_ids": {
+        "bangumi": 368289,
+        "anilist": 144932
+      },
+      "elsewhere": true,
+      "image": "https://static.acgsecrets.hk/img/a1/a1baba7dae9e1175e942a20169800a60/8f91b164c818b0945b8f4a58fccca88de0d91821b77dd3f28e636a48b55feb3d.jpg"
+    },
+    {
+      "quarter": "2023_夏",
+      "card_id": "anime-1282",
+      "name": "MIX 2ND SEASON",
+      "original": "MIX MEISEI STORY 2ND SEASON ～二度目の夏、空の向こうへ～",
+      "source_ids": {
+        "bangumi": 394784,
+        "anilist": 157765
+      },
+      "elsewhere": true,
+      "image": "https://static.acgsecrets.hk/img/8b/8b5e76cdaf61c395c7b50a56ba498a51/f62f4e0aa0713567d8c5584697d9f57afcefff961cf72ffc5d4e78c979d96afc.jpg"
+    },
+    {
+      "quarter": "2023_夏",
+      "card_id": "anime-1294",
+      "name": "全員逃走中 -終極任務-",
+      "original": "逃走中 グレートミッション",
+      "source_ids": {
+        "bangumi": 413786,
+        "anilist": 159560
+      },
+      "elsewhere": true,
+      "image": "https://static.acgsecrets.hk/img/05/05c494ee874f0fac10371d9ff93f2329/fad8e2c57a38ccdcc9f9d27f35786a88bd0a93f720b382627ae2b93f6c15f955.jpg"
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1294",
+      "name": "全員逃走中 -終極任務-",
+      "original": "逃走中 グレートミッション",
+      "source_ids": {
+        "bangumi": 413786,
+        "anilist": 159560
+      },
+      "elsewhere": true,
+      "image": "https://static.acgsecrets.hk/img/05/05c494ee874f0fac10371d9ff93f2329/fad8e2c57a38ccdcc9f9d27f35786a88bd0a93f720b382627ae2b93f6c15f955.jpg"
+    },
+    {
+      "quarter": "2024_夏",
+      "card_id": "anime-1577",
+      "name": "新幹線戰士：Change the World",
+      "original": "シンカリオン チェンジ ザ ワールド",
+      "source_ids": {
+        "bangumi": 472386,
+        "anilist": null
+      },
+      "elsewhere": true,
+      "image": "https://static.acgsecrets.hk/img/8e/8ef64ba265cc2b51f28781055cf33e07/d58d9c044b513d794faf8b4745ba010faac1c07800ac62f4c332593a19ffb3b1.jpg"
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1577",
+      "name": "新幹線戰士：Change the World",
+      "original": "シンカリオン チェンジ ザ ワールド",
+      "source_ids": {
+        "bangumi": 472386,
+        "anilist": null
+      },
+      "elsewhere": true,
+      "image": "https://static.acgsecrets.hk/img/8e/8ef64ba265cc2b51f28781055cf33e07/d58d9c044b513d794faf8b4745ba010faac1c07800ac62f4c332593a19ffb3b1.jpg"
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-2210",
+      "name": "Kumarba 第2季",
+      "original": "クマーバ シーズン2",
+      "source_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "elsewhere": false,
+      "image": "https://static.acgsecrets.hk/img/0b/0b672ce427b85efa7fa349839e160257/dba0999410dfc3126e6e2d4252d4472893a21d33d6612286de1c157892a45dda.jpg"
+    }
+  ]
+}

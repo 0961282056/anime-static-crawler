@@ -1,0 +1,1286 @@
+{
+  "assumptions": [
+    "Capacity simulation only, not production measurements.",
+    "90 successful daily runs at 01:00 Asia/Taipei; fixed current work/status snapshot.",
+    "API request cost = one subject plus complete type-0 episode pagination, limit 200; no failures, retries, HTML fallback, network latency or time-budget loss.",
+    "240 requests per run; manual frozen snapshots excluded. Real freshness can be worse."
+  ],
+  "results": {
+    "fixed_newest_quarter_first": {
+      "unique_identities": 1904,
+      "never_refreshed_after_90_runs": 1712,
+      "never_refreshed_airing": 6,
+      "first_run_all_identities_have_refreshed": null,
+      "daily": [
+        {
+          "day": 1,
+          "updated": 1,
+          "requests": 2,
+          "overdue": 0,
+          "never_refreshed": 1903
+        },
+        {
+          "day": 2,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 3,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 4,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 5,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 6,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 7,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 8,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 9,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 10,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 11,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 12,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 13,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 14,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 15,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 16,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 17,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 18,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 19,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 20,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 21,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 22,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 23,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 24,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 25,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 26,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 27,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 28,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1784
+        },
+        {
+          "day": 29,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1593,
+          "never_refreshed": 1759
+        },
+        {
+          "day": 30,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1610,
+          "never_refreshed": 1748
+        },
+        {
+          "day": 31,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1748,
+          "never_refreshed": 1739
+        },
+        {
+          "day": 32,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1739,
+          "never_refreshed": 1731
+        },
+        {
+          "day": 33,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1731,
+          "never_refreshed": 1725
+        },
+        {
+          "day": 34,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1725,
+          "never_refreshed": 1719
+        },
+        {
+          "day": 35,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1719,
+          "never_refreshed": 1716
+        },
+        {
+          "day": 36,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1716,
+          "never_refreshed": 1715
+        },
+        {
+          "day": 37,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1715,
+          "never_refreshed": 1714
+        },
+        {
+          "day": 38,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1714,
+          "never_refreshed": 1713
+        },
+        {
+          "day": 39,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1713,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 40,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 41,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 42,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 43,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 44,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 45,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 46,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 47,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 48,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 49,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 50,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 51,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 52,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 53,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 54,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 55,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 56,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 57,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 58,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 59,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1737,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 60,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1723,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 61,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1721,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 62,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1720,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 63,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1718,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 64,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1718,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 65,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1715,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 66,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1713,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 67,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1713,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 68,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1713,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 69,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1713,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 70,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 71,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 72,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 73,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 74,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 75,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 76,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 77,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 78,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 79,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 80,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 81,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 82,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 83,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 84,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 85,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 86,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 87,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 88,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1712,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 89,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1737,
+          "never_refreshed": 1712
+        },
+        {
+          "day": 90,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1723,
+          "never_refreshed": 1712
+        }
+      ]
+    },
+    "oldest_due_time_first": {
+      "unique_identities": 1904,
+      "never_refreshed_after_90_runs": 0,
+      "never_refreshed_airing": 0,
+      "first_run_all_identities_have_refreshed": 45,
+      "daily": [
+        {
+          "day": 1,
+          "updated": 1,
+          "requests": 2,
+          "overdue": 0,
+          "never_refreshed": 1903
+        },
+        {
+          "day": 2,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1783
+        },
+        {
+          "day": 3,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1663
+        },
+        {
+          "day": 4,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 5,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 6,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 7,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 8,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 9,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 10,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 11,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 12,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 13,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 14,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 15,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 16,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 17,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 18,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 19,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 20,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 21,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 22,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 23,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 24,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 25,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 26,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 27,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 28,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 29,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1593,
+          "never_refreshed": 1596
+        },
+        {
+          "day": 30,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1635,
+          "never_refreshed": 1545
+        },
+        {
+          "day": 31,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1733,
+          "never_refreshed": 1425
+        },
+        {
+          "day": 32,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1613,
+          "never_refreshed": 1305
+        },
+        {
+          "day": 33,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1493,
+          "never_refreshed": 1185
+        },
+        {
+          "day": 34,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1373,
+          "never_refreshed": 1065
+        },
+        {
+          "day": 35,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1253,
+          "never_refreshed": 945
+        },
+        {
+          "day": 36,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1133,
+          "never_refreshed": 825
+        },
+        {
+          "day": 37,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 1013,
+          "never_refreshed": 705
+        },
+        {
+          "day": 38,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 893,
+          "never_refreshed": 585
+        },
+        {
+          "day": 39,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 773,
+          "never_refreshed": 465
+        },
+        {
+          "day": 40,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 653,
+          "never_refreshed": 345
+        },
+        {
+          "day": 41,
+          "updated": 119,
+          "requests": 240,
+          "overdue": 534,
+          "never_refreshed": 226
+        },
+        {
+          "day": 42,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 414,
+          "never_refreshed": 191
+        },
+        {
+          "day": 43,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 380,
+          "never_refreshed": 149
+        },
+        {
+          "day": 44,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 337,
+          "never_refreshed": 106
+        },
+        {
+          "day": 45,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 294,
+          "never_refreshed": 0
+        },
+        {
+          "day": 46,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 47,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 0
+        },
+        {
+          "day": 48,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 49,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 50,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 0
+        },
+        {
+          "day": 51,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 52,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 53,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 0
+        },
+        {
+          "day": 54,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 55,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 56,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 0
+        },
+        {
+          "day": 57,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 58,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 59,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 0
+        },
+        {
+          "day": 60,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 239,
+          "never_refreshed": 0
+        },
+        {
+          "day": 61,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 359,
+          "never_refreshed": 0
+        },
+        {
+          "day": 62,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 466,
+          "never_refreshed": 0
+        },
+        {
+          "day": 63,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 548,
+          "never_refreshed": 0
+        },
+        {
+          "day": 64,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 613,
+          "never_refreshed": 0
+        },
+        {
+          "day": 65,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 668,
+          "never_refreshed": 0
+        },
+        {
+          "day": 66,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 739,
+          "never_refreshed": 0
+        },
+        {
+          "day": 67,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 788,
+          "never_refreshed": 0
+        },
+        {
+          "day": 68,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 792,
+          "never_refreshed": 0
+        },
+        {
+          "day": 69,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 908,
+          "never_refreshed": 0
+        },
+        {
+          "day": 70,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 922,
+          "never_refreshed": 0
+        },
+        {
+          "day": 71,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 939,
+          "never_refreshed": 0
+        },
+        {
+          "day": 72,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 942,
+          "never_refreshed": 0
+        },
+        {
+          "day": 73,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 884,
+          "never_refreshed": 0
+        },
+        {
+          "day": 74,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 854,
+          "never_refreshed": 0
+        },
+        {
+          "day": 75,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 845,
+          "never_refreshed": 0
+        },
+        {
+          "day": 76,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 774,
+          "never_refreshed": 0
+        },
+        {
+          "day": 77,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 710,
+          "never_refreshed": 0
+        },
+        {
+          "day": 78,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 616,
+          "never_refreshed": 0
+        },
+        {
+          "day": 79,
+          "updated": 119,
+          "requests": 240,
+          "overdue": 515,
+          "never_refreshed": 0
+        },
+        {
+          "day": 80,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 414,
+          "never_refreshed": 0
+        },
+        {
+          "day": 81,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 372,
+          "never_refreshed": 0
+        },
+        {
+          "day": 82,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 310,
+          "never_refreshed": 0
+        },
+        {
+          "day": 83,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 196,
+          "never_refreshed": 0
+        },
+        {
+          "day": 84,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 85,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 86,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 0
+        },
+        {
+          "day": 87,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 88,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        },
+        {
+          "day": 89,
+          "updated": 119,
+          "requests": 239,
+          "overdue": 189,
+          "never_refreshed": 0
+        },
+        {
+          "day": 90,
+          "updated": 120,
+          "requests": 240,
+          "overdue": 188,
+          "never_refreshed": 0
+        }
+      ]
+    }
+  }
+}

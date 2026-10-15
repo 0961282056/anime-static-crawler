@@ -53,7 +53,7 @@ test('reviewed historical scopes render real data and official sources on mobile
   await expect(page.locator('.anime-card').first()).toBeVisible();
   const input = page.getByLabel('關鍵字搜尋');
   const cases = [
-    ['1日外出錄班長', '全 4 集', 'www.vap.co.jp'],
+    ['1日外出錄班長', '集數待確認', 'www.vap.co.jp'],
     ['末班電車後、膠囊旅館、給上司微熱的夜晚。', '全 12 集', 'shucap.cf-anime.com'],
     ['正中間的理久', '全 12 集', 'www.tv-tokyo.co.jp'],
     ['奇喵的畫家', '全 25 集', 'www.tv-tokyo.co.jp'],

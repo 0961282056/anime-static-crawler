@@ -116,6 +116,20 @@ def test_finished_requires_explicit_past_end_and_complete_dates(anime_record_fac
     assert missing.aired_episodes is None
 
 
+def test_end_before_premiere_is_not_published_as_a_valid_date(anime_record_factory):
+    info = parse_episode_metadata(
+        anime(anime_record_factory),
+        subject(1, "2025-10-01"),
+        [episode(1)],
+        NOW,
+    )
+    assert info.end_date is None
+    assert info.aired_episodes == info.total_episodes == 1
+    assert info.airing_status == "unknown"
+    assert info.episode_count_status == "planned"
+    assert "早於首播" in info.note
+
+
 @pytest.mark.parametrize("marks", ["\u200b", "\ufeff", " \u200b \ufeff\n"])
 def test_invisible_boundary_marks_do_not_hide_a_valid_final_episode(
     anime_record_factory, marks
@@ -295,6 +309,20 @@ def test_budget_and_broken_pagination_are_bounded(anime_record_factory):
         client._fetch_api(anime(anime_record_factory), NOW)
     with pytest.raises(RequestBudgetExceeded):
         BangumiClient(request_budget=0)._get("/subjects/1")
+
+
+def test_repeated_episode_page_is_incomplete_evidence(anime_record_factory):
+    session = FakeSession(
+        [
+            FakeResponse(subject()),
+            FakeResponse({"data": [episode(1)], "total": 2}),
+            FakeResponse({"data": [episode(1)], "total": 2}),
+        ]
+    )
+    with pytest.raises(MetadataUnavailable, match="repeated"):
+        BangumiClient(session=session, interval_seconds=0)._fetch_api(
+            anime(anime_record_factory), NOW
+        )
 
 
 def test_failure_retains_last_valid_values_and_timestamp(anime_record_factory):
@@ -505,6 +533,93 @@ def test_old_linked_anime_outside_crawl_window_refreshes_once(
     assert (
         repository.load_quarter("2018", "春").anime_list[0].episodes.aired_episodes == 8
     )
+
+
+def test_exhausted_budget_resumes_overdue_history_before_repeating_new_quarter(
+    tmp_path, anime_record_factory, caplog
+):
+    repository = DataRepository(tmp_path, DataQualityPolicy())
+    for year, card, delay in [(2018, 1, 4), (2026, 2, 2), (2025, 3, 3)]:
+        repository.write_quarter(
+            year=str(year),
+            season="春",
+            records=[
+                anime(
+                    anime_record_factory,
+                    bangumi_id=f"anime-{card}",
+                    episodes=EpisodeMetadata(
+                        total_episodes=12,
+                        aired_episodes=1,
+                        attempted_at=NOW - timedelta(days=delay),
+                        checked_at=NOW - timedelta(days=delay),
+                    ),
+                )
+            ],
+            source_url=f"https://acgsecrets.hk/bangumi/{year}04/",
+            source_count=1,
+            parse_failure_count=0,
+        )
+    observed = []
+    for day in range(3):
+        calls = []
+
+        def fetch(record, now, calls=calls):
+            if calls:
+                raise RequestBudgetExceeded
+            calls.append(record.bangumi_id)
+            return EpisodeMetadata(
+                total_episodes=12,
+                aired_episodes=2,
+                attempted_at=now,
+                checked_at=now,
+            )
+
+        refresh_repository_episodes(
+            repository,
+            NOW + timedelta(days=day),
+            EpisodeEnricher(SimpleNamespace(fetch=fetch)),
+        )
+        observed.extend(calls)
+    assert observed == ["anime-1", "anime-3", "anime-2"]
+    assert "identities deferred" in caplog.text
+    for year in (2018, 2025, 2026):
+        assert (
+            repository.load_quarter(str(year), "春")
+            .anime_list[0]
+            .episodes.aired_episodes
+            == 2
+        )
+
+
+@pytest.mark.parametrize(
+    "updates",
+    [
+        {"anime_name": "另一部作品"},
+        {"original_name": "ANOTHER ANIME"},
+        {"anime_name": "另一部作品", "external_ids": {}},
+    ],
+)
+def test_recrawl_cannot_transfer_old_metadata_to_changed_card_titles(
+    tmp_path, anime_record_factory, updates
+):
+    repository = DataRepository(tmp_path, DataQualityPolicy())
+    old = anime(
+        anime_record_factory,
+        episodes=EpisodeMetadata(total_episodes=12, aired_episodes=8),
+    )
+    for record in [old, anime(anime_record_factory, **updates)]:
+        repository.write_quarter(
+            year="2026",
+            season="春",
+            records=[record],
+            source_url="https://acgsecrets.hk/bangumi/202604/",
+            source_count=1,
+            parse_failure_count=0,
+        )
+    result = repository.load_quarter("2026", "春").anime_list[0]
+    assert result.episodes is None
+    if "external_ids" in updates:
+        assert result.external_ids.bangumi is None
 
 
 def test_backfill_links_preserves_existing_records_and_images(

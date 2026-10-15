@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import os
+from datetime import datetime
 from pathlib import Path
 
 from services.data_repository import DataQualityPolicy, DataRepository
@@ -71,6 +72,9 @@ def verify_dist(paths: ProjectPaths) -> None:
 
 
 def quality_report(paths: ProjectPaths) -> None:
+    from services.episode_metadata import EpisodeEnricher
+    from services.episode_source_reviews import reviewed_source
+
     repository = DataRepository(paths.data_dir, DataQualityPolicy())
     rows: list[tuple[str, int, int, int, int, str]] = []
     for path in repository.validate_all(allow_legacy=True):
@@ -102,10 +106,44 @@ def quality_report(paths: ProjectPaths) -> None:
         f"- Episode records: {sum(record.episodes is not None for record in all_records)}"
     )
     print(
+        f"- Unlinked Bangumi subjects: {sum(record.external_ids.bangumi is None for record in all_records)}"
+    )
+    print(
         f"- Episode updates stale: {sum(record.episodes is not None and record.episodes.fetch_state == 'stale' for record in all_records)}"
     )
     print(
         f"- Episode conflicts: {sum(record.episodes is not None and record.episodes.fetch_state == 'conflict' for record in all_records)}"
+    )
+    episode_records = [record for record in all_records if record.episodes is not None]
+    snapshots = [
+        record
+        for record in episode_records
+        if (review := reviewed_source(record)) and review["mode"] == "snapshot"
+    ]
+    now = datetime.now().astimezone()
+    overdue = {
+        (
+            record.bangumi_id,
+            record.anime_name,
+            record.original_name,
+            record.external_ids.bangumi,
+        )
+        for record in all_records
+        if EpisodeEnricher.due(record, now)
+    }
+    print(
+        f"- Episode airing status unknown: {sum(record.episodes.airing_status == 'unknown' for record in episode_records)}"
+    )
+    print(
+        f"- Episode total unknown: {sum(record.episodes.total_episodes is None for record in episode_records)}"
+    )
+    print(
+        f"- Episode progress unknown: {sum(record.episodes.aired_episodes is None for record in episode_records)}"
+    )
+    print(f"- Episode refresh overdue (unique identities): {len(overdue)}")
+    print(f"- Manual episode snapshot records (not auto-refreshed): {len(snapshots)}")
+    print(
+        f"- Unfinished manual snapshots needing manual review: {sum(record.episodes.airing_status != 'finished' for record in snapshots)}"
     )
     print()
     print("| Quarter | Records | Unknown ID | Missing story | Missing date | Updated |")

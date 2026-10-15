@@ -1,0 +1,115 @@
+[
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-624",
+    "name": "Classica Loid 第二期",
+    "before": {
+      "total_episodes": 25,
+      "aired_episodes": 25,
+      "airing_status": "unknown",
+      "episode_count_status": "planned",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://bgm.tv/subject/212315",
+        "https://bgm.tv/subject/212315/ep"
+      ],
+      "checked_at": "2026-10-15T13:33:02.752968+08:00",
+      "attempted_at": "2026-10-15T13:33:02.752968+08:00",
+      "end_date": "2017-03-24",
+      "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+    },
+    "after": {
+      "total_episodes": 25,
+      "aired_episodes": 25,
+      "airing_status": "unknown",
+      "episode_count_status": "planned",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://bgm.tv/subject/212315",
+        "https://bgm.tv/subject/212315/ep"
+      ],
+      "checked_at": "2026-10-15T22:07:12.650858+08:00",
+      "attempted_at": "2026-10-15T22:07:12.650858+08:00",
+      "end_date": null,
+      "note": "來源結束日期早於首播，未採用；播出狀態待確認。"
+    }
+  },
+  {
+    "quarter": "2024_冬",
+    "card_id": "anime-1438",
+    "name": "為了在異世界也能撫摸毛茸茸而努力。",
+    "before": {
+      "total_episodes": 12,
+      "aired_episodes": 12,
+      "airing_status": "unknown",
+      "episode_count_status": "planned",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://bgm.tv/subject/391117",
+        "https://bgm.tv/subject/391117/ep"
+      ],
+      "checked_at": "2026-10-15T13:35:32.868856+08:00",
+      "attempted_at": "2026-10-15T13:35:32.868856+08:00",
+      "end_date": "2023-03-24",
+      "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+    },
+    "after": {
+      "total_episodes": 12,
+      "aired_episodes": 12,
+      "airing_status": "unknown",
+      "episode_count_status": "planned",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://bgm.tv/subject/391117",
+        "https://bgm.tv/subject/391117/ep"
+      ],
+      "checked_at": "2026-10-15T22:07:12.650858+08:00",
+      "attempted_at": "2026-10-15T22:07:12.650858+08:00",
+      "end_date": null,
+      "note": "來源結束日期早於首播，未採用；播出狀態待確認。"
+    }
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-418",
+    "name": "1日外出錄班長",
+    "before": {
+      "total_episodes": 4,
+      "aired_episodes": 4,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://www.vap.co.jp/tonegawa-anime/index_hancho.html",
+        "https://www.vap.co.jp/tonegawa-anime/story/14.html",
+        "https://www.vap.co.jp/tonegawa-anime/story/15.html",
+        "https://www.vap.co.jp/tonegawa-anime/story/18.html",
+        "https://www.vap.co.jp/tonegawa-anime/story/23.html",
+        "https://www.vap.co.jp/tonegawa-anime/story/24.html"
+      ],
+      "checked_at": "2026-10-15T14:48:45.301931+08:00",
+      "attempted_at": "2026-10-15T14:54:38.280312+08:00",
+      "end_date": null,
+      "note": "本卡只計合輯Agenda14、15、18、23，共4個含班長主線的節目；Bangumi連結為《利根川》合輯母條目，不套用其24話全集。"
+    },
+    "after": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://www.vap.co.jp/tonegawa-anime/index_hancho.html",
+        "https://www.vap.co.jp/tonegawa-anime/story/14.html",
+        "https://www.vap.co.jp/tonegawa-anime/story/15.html",
+        "https://www.vap.co.jp/tonegawa-anime/story/18.html",
+        "https://www.vap.co.jp/tonegawa-anime/story/23.html",
+        "https://www.vap.co.jp/tonegawa-anime/story/24.html"
+      ],
+      "checked_at": "2026-10-15T22:13:11.372465+08:00",
+      "attempted_at": "2026-10-15T22:13:11.372465+08:00",
+      "end_date": null,
+      "note": "官方摘要可確認合輯Agenda14、15、18、23以班長為主線，但不能據此排除其他合輯集內的短篇；獨立總數與完整已播進度待確認。Bangumi為《利根川》母條目，不採用其24話。"
+    }
+  }
+]

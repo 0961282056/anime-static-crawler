@@ -434,10 +434,10 @@
         "anilist": null
       },
       "episodes": {
-        "total_episodes": 4,
-        "aired_episodes": 4,
-        "airing_status": "finished",
-        "episode_count_status": "confirmed",
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
         "fetch_state": "ok",
         "source_urls": [
           "https://www.vap.co.jp/tonegawa-anime/index_hancho.html",
@@ -447,10 +447,10 @@
           "https://www.vap.co.jp/tonegawa-anime/story/23.html",
           "https://www.vap.co.jp/tonegawa-anime/story/24.html"
         ],
-        "checked_at": "2026-10-15T14:48:45.301931+08:00",
-        "attempted_at": "2026-10-15T14:54:38.280312+08:00",
+        "checked_at": "2026-10-15T22:13:11.372465+08:00",
+        "attempted_at": "2026-10-15T22:13:11.372465+08:00",
         "end_date": null,
-        "note": "本卡只計合輯Agenda14、15、18、23，共4個含班長主線的節目；Bangumi連結為《利根川》合輯母條目，不套用其24話全集。"
+        "note": "官方摘要可確認合輯Agenda14、15、18、23以班長為主線，但不能據此排除其他合輯集內的短篇；獨立總數與完整已播進度待確認。Bangumi為《利根川》母條目，不採用其24話。"
       }
     },
     {
@@ -1854,7 +1854,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-15T14:54:39.133030+08:00",
+  "generated_at": "2026-10-15T22:13:11.372465+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201810/",
   "quality": {
     "source_count": 66,

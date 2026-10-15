@@ -250,6 +250,7 @@ def parse_episode_metadata(
         for value in _infobox(subject, {"话数", "話數"})
         if re.fullmatch(r"[1-9][0-9]*", value.strip())
     }
+    invalid_end = bool(start and any(value < start for value in ends))
     if any(value < today for value in ends):
         # A past end date with incomplete evidence is not a current airing
         # signal. It remains unknown unless the complete checks below pass.
@@ -306,9 +307,11 @@ def parse_episode_metadata(
         ],
         checked_at=now,
         attempted_at=now,
-        end_date=next(iter(ends)) if len(ends) == 1 else None,
+        end_date=next(iter(ends)) if len(ends) == 1 and not invalid_end else None,
         note=("依已核對官方範圍自動更新；" + review["scope_note"])
         if scoped
+        else "來源結束日期早於首播，未採用；播出狀態待確認。"
+        if invalid_end
         else "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
     )
 
@@ -438,6 +441,7 @@ class BangumiClient:
         # Reject a wrong or malformed linked subject before fetching pages.
         parse_episode_metadata(anime, subject, [], now)
         entries: list[dict[str, Any]] = []
+        identities: set[int] = set()
         expected_total: int | None = None
         for _ in range(20):
             page = self._get(
@@ -458,6 +462,13 @@ class BangumiClient:
             expected_total = total
             if not items and len(entries) < total:
                 raise MetadataUnavailable("Episode pagination ended early")
+            for item in items:
+                identity = item.get("id") if isinstance(item, dict) else None
+                if type(identity) is not int or identity <= 0:
+                    raise MetadataUnavailable("Episode identity is invalid")
+                if identity in identities:
+                    raise MetadataUnavailable("Episode pagination repeated an identity")
+                identities.add(identity)
             entries.extend(items)
             if len(entries) > total:
                 raise MetadataUnavailable(
@@ -474,17 +485,16 @@ class EpisodeEnricher:
     ) -> None:
         self.client = client or BangumiClient()
         self.retry_failed = retry_failed
+        self.deferred: set[tuple[str, str, str | None, int | None]] = set()
         self.snapshots: dict[
             tuple[str, str, str | None, int | None], EpisodeMetadata | None
         ] = {}
 
     @staticmethod
-    def due(anime: Anime, now: datetime) -> bool:
+    def next_refresh_at(anime: Anime, now: datetime) -> datetime | None:
         info = anime.episodes
-        if anime.external_ids.bangumi is None:
-            return False
         if info is None or info.attempted_at is None:
-            return True
+            return None
         days = (
             30 if info.airing_status == "finished" and info.fetch_state == "ok" else 1
         )
@@ -496,7 +506,17 @@ class EpisodeEnricher:
             days = 1
         if info.airing_status == "not_yet_aired":
             days = 1
-        return now - info.attempted_at >= timedelta(days=days)
+        return info.attempted_at + timedelta(days=days)
+
+    @staticmethod
+    def due(anime: Anime, now: datetime) -> bool:
+        review = reviewed_source(anime)
+        if anime.external_ids.bangumi is None or (
+            review and review["mode"] == "snapshot"
+        ):
+            return False
+        next_refresh = EpisodeEnricher.next_refresh_at(anime, now)
+        return next_refresh is None or now >= next_refresh
 
     def enrich(self, anime: Anime, now: datetime) -> Anime:
         review = reviewed_source(anime)
@@ -521,6 +541,7 @@ class EpisodeEnricher:
             try:
                 self.snapshots[key] = self.client.fetch(anime, now)
             except RequestBudgetExceeded:
+                self.deferred.add(key)
                 return anime
             except MetadataUnavailable as exc:
                 logger.warning(
@@ -583,13 +604,15 @@ def refresh_repository_episodes(
     *,
     selected_ids: set[str] | None = None,
 ) -> set[str]:
-    """Refresh mapped entries across all quarters, prioritizing newest first.
+    """Refresh mapped entries across all quarters, oldest due time first.
 
     Metadata itself is the persistent cache. No image requests or uploads occur.
     Previously linked long-running anime remain eligible outside crawl windows.
     """
     enricher = enricher or EpisodeEnricher()
     changed: set[str] = set()
+    datasets = []
+    pending = []
     for path in sorted(
         repository.data_dir.glob("*.json"),
         key=lambda path: (
@@ -601,12 +624,26 @@ def refresh_repository_episodes(
         if not re.fullmatch(r"\d{4}_(冬|春|夏|秋)\.json", path.name):
             continue
         dataset = repository.load_path(path)
-        records = [
-            enricher.enrich(anime, now)
-            if selected_ids is None or anime.bangumi_id in selected_ids
-            else anime
-            for anime in dataset.anime_list
-        ]
+        records = list(dataset.anime_list)
+        datasets.append((path, dataset, records))
+        for index, anime in enumerate(records):
+            if selected_ids is not None and anime.bangumi_id not in selected_ids:
+                continue
+            next_refresh = enricher.next_refresh_at(anime, now)
+            priority = next_refresh.timestamp() if next_refresh else float("-inf")
+            pending.append((priority, records, index, anime))
+    # Fixed quarter order can starve older records when the budget runs out
+    # daily. Successful attempts move behind records still waiting; preserve
+    # card order and each record's own fallback when writing the quarters.
+    for _, records, index, anime in sorted(pending, key=lambda item: item[0]):
+        records[index] = enricher.enrich(anime, now)
+    if enricher.deferred:
+        logger.warning(
+            "Episode request/time budget exhausted: %s identities deferred; "
+            "their values and verification times were retained",
+            len(enricher.deferred),
+        )
+    for path, dataset, records in datasets:
         if records == dataset.anime_list:
             continue
         year, season = path.stem.split("_")

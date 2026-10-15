@@ -1,0 +1,39 @@
+{
+  "reviewed_at": "2026-10-15T22:13:11.372465+08:00",
+  "card_id": "anime-418",
+  "parent_subject_id": 237834,
+  "previous_evidence": "../remaining-nine-2026-10-15/verified-hanchou-scope.json",
+  "official_pages_supporting_presence": [
+    14,
+    15,
+    18,
+    23
+  ],
+  "unsupported_claims_withdrawn": {
+    "total_episodes": 4,
+    "aired_episodes": 4,
+    "airing_status": "finished",
+    "episode_count_status": "confirmed"
+  },
+  "reason": "Presence of the Hanchou main story in four official programme synopses does not prove absence of smaller Hanchou segments in the other programmes, or the count of an independent anime. No official independent four-episode total was established.",
+  "result": {
+    "total_episodes": null,
+    "aired_episodes": null,
+    "airing_status": "unknown",
+    "episode_count_status": "unknown",
+    "fetch_state": "ok",
+    "source_urls": [
+      "https://www.vap.co.jp/tonegawa-anime/index_hancho.html",
+      "https://www.vap.co.jp/tonegawa-anime/story/14.html",
+      "https://www.vap.co.jp/tonegawa-anime/story/15.html",
+      "https://www.vap.co.jp/tonegawa-anime/story/18.html",
+      "https://www.vap.co.jp/tonegawa-anime/story/23.html",
+      "https://www.vap.co.jp/tonegawa-anime/story/24.html"
+    ],
+    "checked_at": "2026-10-15T22:13:11.372465+08:00",
+    "attempted_at": "2026-10-15T22:13:11.372465+08:00",
+    "end_date": null,
+    "note": "官方摘要可確認合輯Agenda14、15、18、23以班長為主線，但不能據此排除其他合輯集內的短篇；獨立總數與完整已播進度待確認。Bangumi為《利根川》母條目，不採用其24話。"
+  },
+  "verification_scope": "Reviewed the existing complete 24 official synopses and DVD episode range (Agenda13-24), rechecked the official component page live. No full video or official segment-by-segment catalogue audit was performed."
+}
