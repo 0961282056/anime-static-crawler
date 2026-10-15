@@ -53,9 +53,12 @@ test('homepage loads data, filters records, and renders healthy images', async (
   const alternateYear = yearValues.find((value) => value !== currentYear);
   expect(alternateYear).toBeTruthy();
 
-  const alternateDataResponse = page.waitForResponse(isQuarterDataResponse);
   await yearSelect.selectOption(alternateYear);
-  expect((await alternateDataResponse).ok()).toBe(true);
+  // Global search may already have cached this quarter.
+  await expect.poll(() => page.evaluate(() => {
+    const data = window.Alpine.$data(document.querySelector('[x-data]'));
+    return !data.loading && data._activeCacheKey === `${data.year}_${data.season}`;
+  })).toBe(true);
   await expect(yearSelect).toHaveValue(alternateYear);
   await expect.poll(async () => Number(await resultCount.textContent())).toBeGreaterThan(0);
 

@@ -641,3 +641,89 @@ test('share URL and renderer failures show safe advice and always restore the bu
   assert.match(networkAlerts[0].text, /SHARE_RENDERER_NETWORK/);
   assert.equal(rendererNetwork.button.disabled, false);
 });
+
+test('keyword search covers every quarter, merges shared cards and clearing restores selection', async () => {
+  const recent = dataset('shared');
+  const old = dataset('old');
+  old.anime_list.push({...recent.anime_list[0]});
+  old.anime_list[0].original_name = 'ＡＮＣＩＥＮＴ';
+  const calls = [];
+  const {app} = createContext({fetchImpl: async url => {
+    calls.push(url);
+    return responseFor(url.includes('2026_') ? recent : old);
+  }});
+  app.year = '2026'; app.season = '秋';
+  await app.loadData();
+  app.searchKeyword = 'ancient';
+  await app.loadData();
+  assert.equal(app.filteredAnime.length, 1);
+  assert.equal(app.filteredAnime[0].anime_name, 'old');
+  assert.equal(app.sourceQuarterLabel(app.filteredAnime[0]), '2025年夏季');
+  app.searchKeyword = 'shared';
+  await app.loadData();
+  assert.equal(app.filteredAnime.length, 1);
+  assert.equal(app.sourceQuarterLabel(app.filteredAnime[0]), '2026年秋季、2025年夏季');
+  assert.equal(recent.anime_list[0].source_quarters, undefined);
+  app.searchKeyword = '';
+  await app.loadData();
+  assert.equal(app.rawAnimeList.length, 1);
+  assert.equal(app.rawAnimeList[0].anime_name, 'shared');
+  assert.equal(app.sourceQuarterLabel(app.rawAnimeList[0]), '');
+  assert.equal(calls.length, 2);
+});
+
+test('a failed quarter cannot appear as complete global search and retry recovers', async () => {
+  let failing = true;
+  const {app} = createContext({fetchImpl: async url => {
+    if (url.includes('2025_') && failing) return errorResponse(503);
+    return responseFor(dataset(url.includes('2025_') ? 'old' : 'recent'));
+  }});
+  app.MAX_FETCH_RETRIES = 0;
+  app.year = '2026'; app.season = '秋';
+  await app.loadData();
+  app.searchKeyword = 'story';
+  await app.loadData();
+  assert.ok(app.loadError);
+  assert.equal(app.rawAnimeList.length, 0);
+  assert.equal(app.loadError.hasStaleData, false);
+  failing = false;
+  await app.retryLoad();
+  assert.equal(app.loadError, null);
+  assert.equal(app.filteredAnime.length, 2);
+});
+
+test('clearing a keyword wins over an older pending global search', async () => {
+  let resolveOld;
+  const {app} = createContext({fetchImpl: async url => {
+    if (url.includes('2025_')) return new Promise(resolve => { resolveOld = resolve; });
+    return responseFor(dataset('recent'));
+  }});
+  app.year = '2026'; app.season = '秋';
+  await app.loadData();
+  app.searchKeyword = 'old';
+  const search = app.loadData();
+  while (!resolveOld) await nextTick();
+  app.searchKeyword = '';
+  await app.loadData();
+  resolveOld(responseFor(dataset('old')));
+  await search;
+  assert.equal(app.rawAnimeList[0].anime_name, 'recent');
+  assert.equal(app.loading, false);
+  assert.equal(app.loadError, null);
+});
+
+test('global search bounds simultaneous quarter loads', async () => {
+  let active = 0; let maximum = 0; let calls = 0;
+  const {app} = createContext({fetchImpl: async () => {
+    active++; calls++; maximum = Math.max(maximum, active);
+    await nextTick(); active--;
+    return responseFor(dataset('shared'));
+  }});
+  app.availableData = {2024: ['冬', '春', '夏', '秋'], 2025: ['冬', '春', '夏', '秋'], 2026: ['秋']};
+  app.year = '2026'; app.season = '秋'; app.searchKeyword = 'shared';
+  await app.loadData();
+  assert.equal(calls, 9);
+  assert.ok(maximum <= 4);
+  assert.equal(app.filteredAnime.length, 1);
+  assert.equal(app.filteredAnime[0].source_quarters.length, 9);
+});

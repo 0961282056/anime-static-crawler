@@ -636,3 +636,14 @@ body {
 .episode-details summary { cursor: pointer; }
 .episode-details p { margin: 8px 0; }
 .episode-details a { color: inherit; text-decoration: underline; }
+
+.search-scope, .source-quarters {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    margin-top: 6px;
+}
+.source-quarters { margin-bottom: 8px; }
+.form-select:disabled { opacity: 0.6; cursor: not-allowed; }

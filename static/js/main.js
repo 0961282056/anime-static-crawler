@@ -682,6 +682,54 @@ function animeApp() {
             return raceWithAbort(pending.promise, signal);
         },
 
+        async getAllQuarterData(signal) {
+            const seasonOrder = ['秋', '夏', '春', '冬'];
+            const quarters = Object.keys(this.availableData).sort((a, b) => b - a)
+                .flatMap(year => seasonOrder.filter(season => this.availableData[year].includes(season))
+                    .map(season => ({key: `${year}_${season}`, label: `${year}年${season}季`})));
+            const datasets = new Array(quarters.length);
+            let next = 0;
+            let stopped = false;
+            const worker = async () => {
+                while (!stopped && next < quarters.length) {
+                    if (signal.aborted) throw createAbortError();
+                    const index = next++;
+                    try {
+                        datasets[index] = await this.getDataset(quarters[index].key, signal);
+                    } catch (error) {
+                        stopped = true;
+                        throw error;
+                    }
+                }
+            };
+            await Promise.all(Array.from({length: Math.min(4, quarters.length)}, worker));
+            if (signal.aborted) throw createAbortError();
+            const works = new Map();
+            let latest = null;
+            datasets.forEach((dataset, index) => {
+                if (dataset.generated_at && (!latest || Date.parse(dataset.generated_at) > Date.parse(latest))) latest = dataset.generated_at;
+                dataset.anime_list.forEach(anime => {
+                    const identity = JSON.stringify([anime.bangumi_id || anime.anime_name, anime.anime_name,
+                        anime.original_name || '', anime.external_ids?.bangumi || null]);
+                    const existing = works.get(identity);
+                    if (existing) {
+                        existing.source_quarters.push(quarters[index].label);
+                    } else {
+                        works.set(identity, {...anime, result_key: identity, source_quarters: [quarters[index].label]});
+                    }
+                });
+            });
+            return {anime_list: Array.from(works.values()), generated_at: latest};
+        },
+
+        animeResultKey(anime) {
+            return anime.result_key || anime.bangumi_id || anime.anime_name;
+        },
+
+        sourceQuarterLabel(anime) {
+            return (anime.source_quarters || []).join('、');
+        },
+
         setLastUpdateTime(generatedAt) {
             if (!generatedAt) {
                 this.lastUpdateTime = '';
@@ -730,7 +778,8 @@ function animeApp() {
             const abortLoad = () => controller.abort();
             this._activeLoadAbort = abortLoad;
 
-            const cacheKey = `${this.year}_${this.season}`;
+            const searchingAll = this.searchKeyword.trim().length > 0;
+            const cacheKey = searchingAll ? '__all_quarters__' : `${this.year}_${this.season}`;
             const previousCacheKey = this._activeCacheKey;
             const keepPreviousData = previousCacheKey === cacheKey && this.rawAnimeList.length > 0;
             if (this._activeCacheKey && this._activeCacheKey !== cacheKey) {
@@ -752,7 +801,9 @@ function animeApp() {
             }
 
             try {
-                const dataset = await this.getDataset(cacheKey, controller.signal);
+                const dataset = searchingAll
+                    ? await this.getAllQuarterData(controller.signal)
+                    : await this.getDataset(cacheKey, controller.signal);
                 if (!this.isCurrentLoad(requestId)) return;
                 this.rawAnimeList = dataset.anime_list;
                 this.setLastUpdateTime(dataset.generated_at);
@@ -810,11 +861,10 @@ function animeApp() {
                 list = list.filter(item => (item.episodes?.airing_status || 'unknown') === this.filterStatus);
             }
 
-            if (this.searchKeyword) {
-                const k = this.searchKeyword.toLowerCase().trim();
-                list = list.filter(item => 
-                    (item.anime_name && item.anime_name.toLowerCase().includes(k)) ||
-                    (item.story && item.story.toLowerCase().includes(k))
+            if (this.searchKeyword.trim()) {
+                const k = this.searchKeyword.normalize('NFKC').toLowerCase().trim();
+                list = list.filter(item => [item.anime_name, item.original_name, item.story]
+                    .some(value => typeof value === 'string' && value.normalize('NFKC').toLowerCase().includes(k))
                 );
             }
             return list;
