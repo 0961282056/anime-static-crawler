@@ -1,0 +1,73 @@
+{
+  "baseline_commit": "d4fff28fe965f1129fb65d58ac4cd2dd55efc1ba",
+  "checked_at": "2026-10-16T07:26:45.582074+08:00",
+  "source_coverage_complete": true,
+  "quarters": 37,
+  "records": 2150,
+  "source_records": 2150,
+  "added_records": 7,
+  "existing_records_with_metadata_refreshed": 31,
+  "existing_basic_fields_and_relative_order_preserved": true,
+  "airing_status": {
+    "finished": 1805,
+    "unknown": 260,
+    "airing": 84,
+    "not_yet_aired": 1
+  },
+  "episode_count_status": {
+    "confirmed": 1805,
+    "planned": 291,
+    "unknown": 54
+  },
+  "fetch_state": {
+    "ok": 2150
+  },
+  "missing_total": 54,
+  "missing_progress": 62,
+  "missing_stories": 985,
+  "health": {
+    "automatic_identities": 1905,
+    "priority_identities": 80,
+    "priority_overdue": 0,
+    "background_overdue": 0,
+    "priority_unverified": 0,
+    "priority_older_than_48h": 0,
+    "oldest_checked_at": "2026-10-13T20:52:04.176625+08:00",
+    "priority_oldest_checked_at": "2026-10-15T13:39:15.691272+08:00"
+  },
+  "cadence": {
+    "priority_days": 1,
+    "historical_unknown_days": 30,
+    "historical_finished_days": 90,
+    "historical_failed_retry_days": 7,
+    "staggering": "stable calendar phase across the full initial cycle",
+    "request_budget": 240,
+    "time_budget_seconds": 600,
+    "background_reserved_requests_max": 64,
+    "background_reserved_time_fraction": 0.25,
+    "priority_age_warning_hours": 48
+  },
+  "cover_preparation": {
+    "pr": 39,
+    "merge_sha": "c3d4fa31086a934208afcdb0a3d76b17cd4559ae",
+    "workflow_run": 38822196706,
+    "status": "success",
+    "original_sha256_verified": true,
+    "temporary_workflow_removed_in_final_change": true
+  },
+  "verification": {
+    "python_passed": 390,
+    "windows_only_skipped": 2,
+    "coverage_percent": 82.12,
+    "frontend_passed": 24,
+    "source_quarters_checked_live": 37,
+    "source_card_differences": 0,
+    "browser_passed": 13
+  },
+  "remaining_limits": [
+    "Manual official snapshots remain manual, including unresolved Hanchou and Zenitendo scopes.",
+    "Existing optional AniList gaps and missing source stories remain outside the authorized first two release items.",
+    "Capacity simulation freezes current facts and cannot guarantee future provider uptime, growth or latency. The live report keeps verification age separate from latest attempt time.",
+    "Production deployment will be verified after final merge; this evidence bundle is the pre-release acceptance snapshot."
+  ]
+}

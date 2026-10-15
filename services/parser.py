@@ -3,11 +3,11 @@
 from __future__ import annotations
 
 import re
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 
 from bs4 import BeautifulSoup, Tag
 
-from models import AnimeCandidate
+from models import AnimeCandidate, ExternalIds
 from services.errors import ItemParseError
 
 SOURCE_ORIGIN = "https://acgsecrets.hk"
@@ -99,12 +99,46 @@ def parse_anime_item(item_html: str) -> AnimeCandidate:
     story_element = item.select_one("div.anime_story")
     story = story_element.get_text(" ", strip=True) if story_element else "暫無簡介"
     premiere_date, premiere_time = _broadcast_details(item)
+    original = item.select_one(".entity_original_name")
+    ids: dict[str, int] = {}
+    for link in item.select(".anime_link_group a[href]"):
+        parsed = urlsplit(str(link.get("href", "")))
+        if parsed.scheme != "https" or parsed.query or parsed.fragment:
+            continue
+        provider = None
+        if parsed.netloc in {"bgm.tv", "bangumi.tv", "chii.in"}:
+            match = re.fullmatch(r"/subject/([1-9][0-9]*)/?", parsed.path)
+            provider = "bangumi"
+        elif parsed.netloc == "anilist.co":
+            match = re.fullmatch(r"/anime/([1-9][0-9]*)/?", parsed.path)
+            provider = "anilist"
+        else:
+            continue
+        if match and provider:
+            value = int(match.group(1))
+            if provider in ids and ids[provider] != value:
+                raise ItemParseError(
+                    f"{anime_name}: conflicting {provider} source links"
+                )
+            ids[provider] = value
 
+    # The reviewed correction is tied to the unchanged source card and names.
+    from services.episode_metadata import reviewed_source_subject_id
+
+    card_id = _stable_id(item, anime_name)
+    original_name = original.get_text(" ", strip=True) if original else None
+    bangumi = reviewed_source_subject_id(
+        card_id, anime_name, original_name, ids.get("bangumi")
+    )
+    if bangumi is not None:
+        ids["bangumi"] = bangumi
     return AnimeCandidate(
-        bangumi_id=_stable_id(item, anime_name),
+        bangumi_id=card_id,
         anime_name=anime_name,
         source_image_url=source_image_url,
         premiere_date=premiere_date,
         premiere_time=premiere_time,
         story=story or "暫無簡介",
+        original_name=original_name,
+        external_ids=ExternalIds(**ids),
     )

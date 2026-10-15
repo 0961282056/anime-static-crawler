@@ -1,0 +1,69 @@
+{
+  "baseline_commit": "4e292af4a2cdb355c634abf1df4f8d37724dfea0",
+  "reviewed_at": "2026-10-15T14:14:09.421332+08:00",
+  "quarters": 37,
+  "records": 2143,
+  "linked": 2141,
+  "fetch_ok": 2134,
+  "status_finished": 1794,
+  "count_confirmed": 1794,
+  "status_unknown": 262,
+  "count_planned": 293,
+  "unmapped": 2,
+  "fetch_stale": 4,
+  "fetch_conflict": 3,
+  "count_unknown": 54,
+  "total_not_announced": 53,
+  "status_airing": 84,
+  "status_not_yet_aired": 1,
+  "changed_records": 87,
+  "progress_increased_records": 14,
+  "progress_increased_subjects": 11,
+  "changed_quarters": 11,
+  "pending_records": 306,
+  "confirmed_wrong_id_corrections": [
+    {
+      "card_id": "anime-1292",
+      "from": 357961,
+      "to": 407659
+    }
+  ],
+  "pending_broadcast_scope_cards": [
+    "anime-362"
+  ],
+  "active_live_review": {
+    "selected_cards": 78,
+    "distinct_subjects": 78,
+    "provider_fetches": 78,
+    "changed_quarters": [
+      "2022_冬.json",
+      "2022_夏.json",
+      "2023_秋.json",
+      "2025_夏.json",
+      "2026_冬.json",
+      "2026_夏.json",
+      "2026_春.json",
+      "2026_秋.json",
+      "2027_冬.json"
+    ],
+    "outcomes": {
+      "parsed": 78
+    },
+    "states": {
+      "ok": 78
+    }
+  },
+  "preserved_record_fields": [
+    "bangumi_id",
+    "anime_name",
+    "original_name",
+    "anime_image_url",
+    "premiere_date",
+    "premiere_time",
+    "story",
+    "external_ids.anilist"
+  ],
+  "known_aired_counts_not_reduced": true,
+  "verification_times_not_reduced": true,
+  "cross_quarter_snapshots_consistent": true
+}

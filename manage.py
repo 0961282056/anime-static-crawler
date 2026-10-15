@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import os
+from datetime import datetime
 from pathlib import Path
 
 from services.data_repository import DataQualityPolicy, DataRepository
@@ -71,6 +72,9 @@ def verify_dist(paths: ProjectPaths) -> None:
 
 
 def quality_report(paths: ProjectPaths) -> None:
+    from services.episode_refresh import refresh_statistics
+    from services.episode_source_reviews import reviewed_source
+
     repository = DataRepository(paths.data_dir, DataQualityPolicy())
     rows: list[tuple[str, int, int, int, int, str]] = []
     for path in repository.validate_all(allow_legacy=True):
@@ -93,6 +97,67 @@ def quality_report(paths: ProjectPaths) -> None:
     print(f"- Legacy unknown IDs: {sum(row[2] for row in rows)}")
     print(f"- Missing stories: {sum(row[3] for row in rows)}")
     print(f"- Missing broadcast dates: {sum(row[4] for row in rows)}")
+    all_records = [
+        record
+        for path in repository.validate_all(allow_legacy=True)
+        for record in repository.load_path(path).anime_list
+    ]
+    print(
+        f"- Episode records: {sum(record.episodes is not None for record in all_records)}"
+    )
+    print(
+        f"- Unlinked Bangumi subjects: {sum(record.external_ids.bangumi is None for record in all_records)}"
+    )
+    print(
+        f"- Episode updates stale: {sum(record.episodes is not None and record.episodes.fetch_state == 'stale' for record in all_records)}"
+    )
+    print(
+        f"- Episode conflicts: {sum(record.episodes is not None and record.episodes.fetch_state == 'conflict' for record in all_records)}"
+    )
+    episode_records = [record for record in all_records if record.episodes is not None]
+    snapshots = [
+        record
+        for record in episode_records
+        if (review := reviewed_source(record)) and review["mode"] == "snapshot"
+    ]
+    now = datetime.now().astimezone()
+    health = refresh_statistics(
+        [
+            (path.stem, record)
+            for path in repository.validate_all(allow_legacy=True)
+            for record in repository.load_path(path).anime_list
+        ],
+        now,
+    )
+    print(
+        f"- Episode airing status unknown: {sum(record.episodes.airing_status == 'unknown' for record in episode_records)}"
+    )
+    print(
+        f"- Episode total unknown: {sum(record.episodes.total_episodes is None for record in episode_records)}"
+    )
+    print(
+        f"- Episode progress unknown: {sum(record.episodes.aired_episodes is None for record in episode_records)}"
+    )
+    print(
+        f"- Episode refresh overdue (unique identities): {health['priority_overdue'] + health['background_overdue']}"
+    )
+    print(f"- Priority episode identities: {health['priority_identities']}")
+    print(f"- Priority refresh overdue: {health['priority_overdue']}")
+    print(f"- Background refresh overdue: {health['background_overdue']}")
+    print(
+        f"- Priority verification older than 48h: {health['priority_older_than_48h']}"
+    )
+    print(f"- Priority verification missing: {health['priority_unverified']}")
+    print(
+        f"- Oldest priority verification: {health['priority_oldest_checked_at'] or 'none'}"
+    )
+    print(
+        f"- Oldest automatic-source verification: {health['oldest_checked_at'] or 'none'}"
+    )
+    print(f"- Manual episode snapshot records (not auto-refreshed): {len(snapshots)}")
+    print(
+        f"- Unfinished manual snapshots needing manual review: {sum(record.episodes.airing_status != 'finished' for record in snapshots)}"
+    )
     print()
     print("| Quarter | Records | Unknown ID | Missing story | Missing date | Updated |")
     print("|---|---:|---:|---:|---:|---|")

@@ -260,13 +260,14 @@ def crawl_quarters(
     now: datetime,
 ) -> CrawlSummary:
     from services.anime_service import AnimeCrawlerService
+    from services.episode_metadata import refresh_repository_episodes
 
     with operation("configuration"):
         crawler = AnimeCrawlerService.from_environment()
     has_existing_data = any(paths.data_dir.glob("*.json"))
     full_crawl = not has_existing_data
     processed_quarters = 0
-    changed_quarters = 0
+    changed_files: set[str] = set()
     total_records = 0
     total_parse_failures = 0
 
@@ -299,7 +300,8 @@ def crawl_quarters(
                 write_result.changed,
             )
             processed_quarters += 1
-            changed_quarters += int(write_result.changed)
+            if write_result.changed:
+                changed_files.add(output_path.name)
             total_records += len(result.anime_list)
             total_parse_failures += result.parse_failure_count
         except SourceNotFoundError as exc:
@@ -308,9 +310,13 @@ def crawl_quarters(
                 continue
             raise
 
+    # Supplementary metadata has its own cache and failures do not erase base
+    # records. Refresh all linked entries, including old long-running anime.
+    changed_files.update(refresh_repository_episodes(repository, now))
+
     return CrawlSummary(
         processed_quarters=processed_quarters,
-        changed_quarters=changed_quarters,
+        changed_quarters=len(changed_files),
         total_records=total_records,
         parse_failures=total_parse_failures,
     )

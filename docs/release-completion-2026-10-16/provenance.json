@@ -1,0 +1,38 @@
+{
+  "baseline_commit": "d4fff28fe965f1129fb65d58ac4cd2dd55efc1ba",
+  "previous_manifests_verified": [
+    {
+      "path": "../remaining-nine-2026-10-15/provenance.json",
+      "sha256": "603eb5e6212b128f8318d319b2fd30cd99cdb5f73f65f65fbd053241ebcb5986",
+      "verified_files": 12
+    },
+    {
+      "path": "../release-audit-2026-10-15/provenance.json",
+      "sha256": "45bdba872ad86a9be0d4db120577f12a18a95a5ece5dddb226e670beae323e04",
+      "verified_files": 11
+    },
+    {
+      "path": "../episode-recheck-2026-10-15/provenance.json",
+      "sha256": "fee3b96a616491aabda64d3544b409ac5804af90b00bbbb343c44cf93c4b5a0a",
+      "verified_files": 12
+    },
+    {
+      "path": "../episode-followup-2026-10-15/provenance.json",
+      "sha256": "ddce8a607fd22ab1b88df32055aa60005636ee9a37126d5a905725bf59f7ad0d",
+      "verified_files": 10
+    }
+  ],
+  "public_metadata_only": true,
+  "no_full_plots_or_credentials_committed": true,
+  "evidence_sha256": {
+    "added-records.json": "d59a62041e2473b494d673269cc1cb21f1ed4c85046d35479cd385fe68df9a62",
+    "bounded-live-refresh.json": "42bc14091156a1d94e9938cfea22b12d96917894082a2264b9e9eb4111349362",
+    "existing-record-changes.json": "52b7abb99773f28afbb16c6ba4aed0bcac54541fdf893736e07b23d43754b1c0",
+    "provider-evidence.json": "bfa8c67149c4d004a3fd4fefb9d53c1b046ff1a7a47cee46e1f45d4827b0c5ae",
+    "quality-report.md": "f756710424fb471aa4338cb876d37fca9f205c23df5438ca30b94482f3b4591a",
+    "scheduler-capacity-verification.json": "ccd2aa0bedf907fb1095924571559aa4a7c9610a95ecf9783add7b92d68cff39",
+    "source-coverage-after.json": "c27f0fb143329071f8ad3b7a805fa6ac2bb94b584026a828666dd61046416c0c",
+    "summary.json": "2e3cd9ed5f78ffad24e2bdac5d75be33bd4910295e6db630cca17105fb3ff30b",
+    "verified-cover.json": "b91689e79e5688817c33d6d3f70a0b80854814a5e036ad069a8521d1a3fd5f42"
+  }
+}

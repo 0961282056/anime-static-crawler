@@ -1,0 +1,109 @@
+{
+  "official_catalogue_entries": 148,
+  "official_pages": 15,
+  "first_air_date": "2020-09-08",
+  "latest_first_air_date": "2025-03-14",
+  "source_missing_numbers_filled_from_official_dates": [
+    {
+      "title": "ほしいイモ",
+      "first_air_date": "2022-01-18",
+      "source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/ep/8XXM6Q3W4Z",
+      "list_source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=11",
+      "ordinal_in_official_first_air_dates": 46
+    },
+    {
+      "title": "おっかさん仮面",
+      "first_air_date": "2022-01-25",
+      "source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/ep/8V9927R1PP",
+      "list_source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=11",
+      "ordinal_in_official_first_air_dates": 47
+    },
+    {
+      "title": "泣かんパイ",
+      "first_air_date": "2022-02-01",
+      "source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/ep/YN76YX915W",
+      "list_source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=11",
+      "ordinal_in_official_first_air_dates": 48
+    },
+    {
+      "title": "マスク・メロンパン",
+      "first_air_date": "2022-02-15",
+      "source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/ep/Z187LLP4L1",
+      "list_source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=10",
+      "ordinal_in_official_first_air_dates": 49
+    },
+    {
+      "title": "バイリンガール",
+      "first_air_date": "2022-02-22",
+      "source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/ep/GVGP14P6L6",
+      "list_source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=10",
+      "ordinal_in_official_first_air_dates": 50
+    },
+    {
+      "title": "スリスリリンゴ",
+      "first_air_date": "2022-03-08",
+      "source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/ep/NWJ4Y3Q4JJ",
+      "list_source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=10",
+      "ordinal_in_official_first_air_dates": 51
+    },
+    {
+      "title": "祝福の招き猫",
+      "first_air_date": "2022-03-15",
+      "source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/ep/JRW7QR8JVK",
+      "list_source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=10",
+      "ordinal_in_official_first_air_dates": 52
+    },
+    {
+      "title": "紅子、旅に出る",
+      "first_air_date": "2022-04-08",
+      "source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/ep/8R88QY43L3",
+      "list_source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=10",
+      "ordinal_in_official_first_air_dates": 53
+    },
+    {
+      "title": "酔わんようかん",
+      "first_air_date": "2022-04-15",
+      "source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/ep/BZGG841X8Q",
+      "list_source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=10",
+      "ordinal_in_official_first_air_dates": 54
+    },
+    {
+      "title": "肩こり地蔵まんじゅう 前編",
+      "first_air_date": "2022-04-22",
+      "source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/ep/NZKN7VVL7X",
+      "list_source_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=10",
+      "ordinal_in_official_first_air_dates": 55
+    }
+  ],
+  "source_invalid_placeholders_excluded": [
+    {
+      "id": 1461074,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 149,
+      "name": "",
+      "name_cn": "",
+      "airdate": "2099"
+    },
+    {
+      "id": 1461075,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 150,
+      "name": "",
+      "name_cn": "",
+      "airdate": "2099"
+    }
+  ],
+  "other_observed_title_issues": [
+    {
+      "number": 6,
+      "note": "NHK listing repeats the Music Snack title on Oct 20 and Oct 27 with different official episode URLs; count the two dated programmes, not distinct title strings."
+    },
+    {
+      "number": 63,
+      "note": "Provider repeats 写らんシール, while the official July 8 programme is 天晴れレモン; the first-air date still aligns."
+    }
+  ],
+  "completion_policy": "148 is the verified aired catalogue count, not an announced final series total. Keep total and finished status unknown; do not infer completion from the absence of upcoming broadcasts."
+}

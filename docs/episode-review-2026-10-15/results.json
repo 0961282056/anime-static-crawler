@@ -1,0 +1,590 @@
+[
+  {
+    "quarter": "2024_春",
+    "card_id": "anime-1574",
+    "anime_name": "明明只是個煙霧彈配角，卻得到完美王子的寵愛。",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:25:42.801888+08:00",
+      "end_date": null,
+      "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
+    },
+    "after": {
+      "total_episodes": 8,
+      "aired_episodes": 8,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://atekuse.af-original.com/goods/bddvd/312/",
+        "https://atekuse.af-original.com/news/508/"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "TV版全8話；官方已公告最終回後的後日談。"
+    }
+  },
+  {
+    "quarter": "2026_春",
+    "card_id": "anime-2107",
+    "anime_name": "Re:從零開始的異世界生活 第4季",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:26:33.156317+08:00",
+      "end_date": null,
+      "note": "來源季別／分篇名稱與資料庫涵蓋範圍尚未一致核對，暫不套用該條目的集數。"
+    },
+    "after": {
+      "total_episodes": 19,
+      "aired_episodes": 19,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://re-zero-anime.jp/tv/story/",
+        "https://re-zero-anime.jp/tv/"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "本卡為整季：喪失編11＋奪還編8，共19話（通算67～85）；原Bangumi ID僅涵蓋喪失編。官方已公告最終回。"
+    }
+  },
+  {
+    "quarter": "2026_春",
+    "card_id": "anime-2205",
+    "anime_name": "這樣高大的女孩子你喜歡嗎？",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:26:47.662195+08:00",
+      "end_date": null,
+      "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
+    },
+    "after": {
+      "total_episodes": 12,
+      "aired_episodes": 12,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://ookii-onnanoko.af-original.com/disc/509/",
+        "https://ookii-onnanoko.af-original.com/news/"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "TV版全12話；官方2026-06-21公告最終回放送。"
+    }
+  },
+  {
+    "quarter": "2026_冬",
+    "card_id": "anime-2103",
+    "anime_name": "草莓哀歌～缺根筋的活潑妹妹與無法釋懷的哥哥～",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:26:44.682805+08:00",
+      "end_date": null,
+      "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
+    },
+    "after": {
+      "total_episodes": 12,
+      "aired_episodes": 12,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://ichigo-aika.af-original.com/news/"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "官方公告最終回第12話；不以預告或光碟發售日當作播出日期。"
+    }
+  },
+  {
+    "quarter": "2026_冬",
+    "card_id": "anime-2101",
+    "anime_name": "有栖川煉其實是個女生吧。",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:26:35.457209+08:00",
+      "end_date": null,
+      "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
+    },
+    "after": {
+      "total_episodes": 8,
+      "aired_episodes": 8,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://arisugawa-ren.af-original.com/goods/bddvd/973/",
+        "https://arisugawa-ren.af-original.com/story/",
+        "https://arisugawa-ren.af-original.com/"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "TV版全8話；官方最終回公告與集目一致。"
+    }
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-363",
+    "anime_name": "就算是爸爸，也想那個嘛",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:25:20.954123+08:00",
+      "end_date": null,
+      "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
+    },
+    "after": {
+      "total_episodes": 8,
+      "aired_episodes": 8,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://papashita.cf-anime.com/onair/"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "通常TV版全8話，官方列為全8話配信中。"
+    }
+  },
+  {
+    "quarter": "2026_夏",
+    "card_id": "anime-2107",
+    "anime_name": "Re:從零開始的異世界生活 第4季",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:26:33.156317+08:00",
+      "end_date": null,
+      "note": "來源季別／分篇名稱與資料庫涵蓋範圍尚未一致核對，暫不套用該條目的集數。"
+    },
+    "after": {
+      "total_episodes": 19,
+      "aired_episodes": 19,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://re-zero-anime.jp/tv/story/",
+        "https://re-zero-anime.jp/tv/"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "本卡為整季：喪失編11＋奪還編8，共19話（通算67～85）；原Bangumi ID僅涵蓋喪失編。官方已公告最終回。"
+    }
+  },
+  {
+    "quarter": "2025_冬",
+    "card_id": "anime-1631",
+    "anime_name": "Re:從零開始的異世界生活 第三季",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:25:39.097092+08:00",
+      "end_date": null,
+      "note": "來源季別／分篇名稱與資料庫涵蓋範圍尚未一致核對，暫不套用該條目的集數。"
+    },
+    "after": {
+      "total_episodes": 16,
+      "aired_episodes": 16,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://re-zero-anime.jp/tv/onair/tv3.html",
+        "https://re-zero-anime.jp/tv/story/tv3.html"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "本卡為整季：襲擊篇8＋反擊篇8，共16話（通算51～66）；原Bangumi ID僅涵蓋襲擊篇，不採其8話為整季。"
+    }
+  },
+  {
+    "quarter": "2025_冬",
+    "card_id": "anime-1749",
+    "anime_name": "「只讓你摸1分鐘哦…」分租雅房不能說的祕密規定。",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:26:25.187412+08:00",
+      "end_date": null,
+      "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
+    },
+    "after": {
+      "total_episodes": 8,
+      "aired_episodes": 8,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://ipufure.af-original.com/goods/bddvd/380/",
+        "https://ipufure.af-original.com/"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "TV版全8話；官方公告最終回第8話。"
+    }
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1631",
+    "anime_name": "Re:從零開始的異世界生活 第三季",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:25:39.097092+08:00",
+      "end_date": null,
+      "note": "來源季別／分篇名稱與資料庫涵蓋範圍尚未一致核對，暫不套用該條目的集數。"
+    },
+    "after": {
+      "total_episodes": 16,
+      "aired_episodes": 16,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://re-zero-anime.jp/tv/onair/tv3.html",
+        "https://re-zero-anime.jp/tv/story/tv3.html"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "本卡為整季：襲擊篇8＋反擊篇8，共16話（通算51～66）；原Bangumi ID僅涵蓋襲擊篇，不採其8話為整季。"
+    }
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-776",
+    "anime_name": "夢夢貓 Mix!",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "conflict",
+      "source_urls": [
+        "https://bgm.tv/subject/321387",
+        "https://bgm.tv/subject/321387/ep"
+      ],
+      "checked_at": "2026-10-13T21:57:54.309746+08:00",
+      "attempted_at": "2026-10-14T15:04:35.340567+08:00",
+      "end_date": null,
+      "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
+    },
+    "after": {
+      "total_episodes": 37,
+      "aired_episodes": 37,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+        "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+        "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+        "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+        "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
+        "https://bgm.tv/subject/321387/ep"
+      ],
+      "checked_at": "2026-10-15T08:25:47+08:00",
+      "attempted_at": "2026-10-15T08:25:47+08:00",
+      "end_date": "2022-03-27",
+      "note": "全季電視節目共50次：動畫本篇37集（依Bangumi本篇分類，含第50話回顧最終回）＋いちなる主持人特別節目13次。卡片計入本篇37集；官方50個編號及日期已逐筆對上，不將節目總數當作動畫本篇數。"
+    }
+  },
+  {
+    "quarter": "2023_秋",
+    "card_id": "anime-1406",
+    "anime_name": "爆旋陀螺 X",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "conflict",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T15:04:35.340567+08:00",
+      "end_date": null,
+      "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
+    },
+    "after": {
+      "total_episodes": null,
+      "aired_episodes": 135,
+      "airing_status": "airing",
+      "episode_count_status": "unknown",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://beyblade.takaratomy.co.jp/anime/movie/",
+        "https://beyblade.takaratomy.co.jp/anime/newsList/newsA260925.html"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "已播135話；資料庫總話數134已落後，不當作完結總數，最終總集數保持未知。"
+    }
+  },
+  {
+    "quarter": "2023_秋",
+    "card_id": "anime-1412",
+    "anime_name": "秘密任務～潛入搜查官絕對不會輸！",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:25:51.508868+08:00",
+      "end_date": null,
+      "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
+    },
+    "after": {
+      "total_episodes": 8,
+      "aired_episodes": 8,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://secretmission.af-original.jp/goods/bddvd/197/",
+        "https://www.value-press.com/pressrelease/328675"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "TV版全8話；官方光碟收錄與最終第8話公告一致。"
+    }
+  },
+  {
+    "quarter": "2025_秋",
+    "card_id": "anime-1934",
+    "anime_name": "SHIBUYA♡HACHI 第四季度",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "conflict",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T15:04:35.340567+08:00",
+      "end_date": null,
+      "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
+    },
+    "after": {
+      "total_episodes": 12,
+      "aired_episodes": 12,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/episodes/",
+        "https://bgm.tv/subject/582915/ep"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "第四季度為通算39～50，共12話；排除資料庫多出的空白sort=11集目。"
+    }
+  },
+  {
+    "quarter": "2026_秋",
+    "card_id": "anime-2279",
+    "anime_name": "藥師少女的獨語 第三季 前半",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:26:42.351082+08:00",
+      "end_date": null,
+      "note": "來源季別／分篇名稱與資料庫涵蓋範圍尚未一致核對，暫不套用該條目的集數。"
+    },
+    "after": {
+      "total_episodes": 12,
+      "aired_episodes": 2,
+      "airing_status": "airing",
+      "episode_count_status": "planned",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://kusuriyanohitorigoto.jp/season3/bd/vol1.php",
+        "https://kusuriyanohitorigoto.jp/season3/bd/vol2.php",
+        "https://kusuriyanohitorigoto.jp/season3/episodes/"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "第三季前半：通算49～60，共12話；已播49、50。後半不計入，當日與未來集目不計已播。"
+    }
+  },
+  {
+    "quarter": "2026_秋",
+    "card_id": "anime-2284",
+    "anime_name": "彈珠汽水瓶裏的千歲同學 第二季度",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": 0,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "conflict",
+      "source_urls": [
+        "https://bgm.tv/subject/584847",
+        "https://bgm.tv/subject/584847/ep"
+      ],
+      "checked_at": "2026-10-13T20:21:15.474975+08:00",
+      "attempted_at": "2026-10-14T15:04:35.340567+08:00",
+      "end_date": null,
+      "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
+    },
+    "after": {
+      "total_episodes": 11,
+      "aired_episodes": 1,
+      "airing_status": "airing",
+      "episode_count_status": "planned",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://chiramune.com/bd/04.html",
+        "https://chiramune.com/bd/05.html",
+        "https://chiramune.com/bd/06.html",
+        "https://chiramune.com/onair/"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "第二季度正篇14～24，共11話；13.5為總集篇，資料庫多出的25不計。已播14；當日與未來集目不計已播。"
+    }
+  },
+  {
+    "quarter": "2023_夏",
+    "card_id": "anime-1344",
+    "anime_name": "夫婦交歡～回不去的夜晚～",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:25:34.268970+08:00",
+      "end_date": null,
+      "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
+    },
+    "after": {
+      "total_episodes": 8,
+      "aired_episodes": 8,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://fufukokan.af-original.com/goods/bddvd/135/",
+        "https://fufukokan.af-original.com/story/"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "TV版全8話，已發售完整收錄；官方故事集目1～8。"
+    }
+  },
+  {
+    "quarter": "2025_夏",
+    "card_id": "anime-1878",
+    "anime_name": "學校沒教的重要事情",
+    "before": {
+      "total_episodes": null,
+      "aired_episodes": null,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "stale",
+      "source_urls": [],
+      "checked_at": null,
+      "attempted_at": "2026-10-14T16:26:38.942545+08:00",
+      "end_date": null,
+      "note": "來源季別／分篇名稱與資料庫涵蓋範圍尚未一致核對，暫不套用該條目的集數。"
+    },
+    "after": {
+      "total_episodes": 9,
+      "aired_episodes": 9,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://gakkodeha-anime.com/%E3%80%8E%E6%95%B4%E7%90%86%E6%95%B4%E9%A0%93-%E6%9B%B8%E7%B1%8D%EF%BC%8B%E3%82%A2%E3%83%8B%E3%83%A1dvd%E7%89%B9%E5%88%A5%E3%82%BB%E3%83%83%E3%83%88%E3%80%8F%E3%80%8E%E6%99%82%E9%96%93%E3%81%AE/",
+        "https://bgm.tv/subject/559674/ep"
+      ],
+      "checked_at": "2026-10-15T08:14:24+08:00",
+      "attempted_at": "2026-10-15T08:14:24+08:00",
+      "end_date": null,
+      "note": "範圍限定2025年整理整頓編9話，不代表後續所有主題篇總和。"
+    }
+  }
+]

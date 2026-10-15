@@ -1,0 +1,96 @@
+{
+  "baseline_commit": "9d8deb8a79e3eea609f1509bd510d88b95b84c5b",
+  "audited_at": "2026-10-15T22:16:54.157326+08:00",
+  "release_recommendation": "hold_for_source_coverage_and_refresh_capacity",
+  "counts": {
+    "quarters": 37,
+    "records": 2143,
+    "unique_identities": 1927,
+    "fetch_state": {
+      "ok": 2143
+    },
+    "airing_status": {
+      "finished": 1799,
+      "unknown": 259,
+      "airing": 84,
+      "not_yet_aired": 1
+    },
+    "episode_count_status": {
+      "confirmed": 1799,
+      "planned": 290,
+      "unknown": 54
+    },
+    "missing_bangumi_ids": 1,
+    "missing_total": 54,
+    "missing_progress": 62,
+    "missing_stories": 978,
+    "missing_weekdays": 5,
+    "missing_times": 5,
+    "manual_snapshot_identities": 23,
+    "manual_snapshot_records": 26,
+    "live_review_identities": 4
+  },
+  "unchanged_basic_fields_and_record_order": true,
+  "episode_changes": [
+    "anime-624",
+    "anime-418",
+    "anime-1438"
+  ],
+  "unchanged_records": 2140,
+  "cross_quarter_metadata_disagreements": 0,
+  "snapshot_mismatches": 0,
+  "duplicate_review_bindings": 0,
+  "source_coverage": {
+    "source_pages": 37,
+    "source_records": 2150,
+    "missing_records": 7,
+    "unique_missing_cards": 5,
+    "missing_anilist_ids": 92,
+    "known_anilist_conflicts": 0,
+    "story_whitespace_only_differences": 548
+  },
+  "due_queue_days_from_audit": {
+    "0": {
+      "due_unique_identities": 1,
+      "minimum_api_requests": 2,
+      "statuses": {
+        "not_yet_aired": 1
+      }
+    },
+    "1": {
+      "due_unique_identities": 308,
+      "minimum_api_requests": 616,
+      "statuses": {
+        "unknown": 230,
+        "airing": 77,
+        "not_yet_aired": 1
+      }
+    },
+    "30": {
+      "due_unique_identities": 1904,
+      "minimum_api_requests": 3808,
+      "statuses": {
+        "finished": 1596,
+        "unknown": 230,
+        "airing": 77,
+        "not_yet_aired": 1
+      }
+    }
+  },
+  "validation": {
+    "python_passed": 382,
+    "windows_only_skipped": 2,
+    "coverage_percent": 81.76,
+    "frontend_passed": 24,
+    "chromium_passed": 13,
+    "static_assets_verified": 5
+  },
+  "limitations": [
+    "The 7 missing quarter records and 92 missing optional AniList IDs were identified, not backfilled in this release audit.",
+    "14 Bangumi identities were rechecked live; archive-wide identity evidence and previous manifests were rechecked separately.",
+    "Only 9 of 27 first official-source URLs were fetched live; 18 were blocked by the current cloud proxy allowlist, not proven to be origin failures.",
+    "All 2143 fetch_state=ok values do not imply complete or fresh facts.",
+    "Manual unresolved snapshots: Hanchou plus the two Zenitendo quarter records; no automatic official-site refresh.",
+    "No production workflow dispatch, merge, Cloudinary mutation, or external notification was performed."
+  ]
+}

@@ -167,6 +167,38 @@ class DataRepository:
             parse_failure_count=parse_failure_count,
         )
         previous = self.load_path(path) if path.exists() else None
+        # Base source refreshes do not carry episode enrichment. Preserve it by
+        # stable card ID only while the linked anime identity is unchanged.
+        previous_by_id = (
+            {record.bangumi_id: record for record in previous.anime_list}
+            if previous
+            else {}
+        )
+        for index, record in enumerate(validated_records):
+            old = previous_by_id.get(record.bangumi_id)
+            if old and record.episodes is None:
+                changed_identity = (
+                    (
+                        record.external_ids.bangumi is not None
+                        and record.external_ids.bangumi != old.external_ids.bangumi
+                    )
+                    or record.anime_name != old.anime_name
+                    or (
+                        record.original_name is not None
+                        and old.original_name is not None
+                        and record.original_name != old.original_name
+                    )
+                )
+                if not changed_identity:
+                    validated_records[index] = record.model_copy(
+                        update={
+                            "episodes": old.episodes,
+                            "external_ids": record.external_ids
+                            if record.external_ids.bangumi is not None
+                            else old.external_ids,
+                            "original_name": record.original_name or old.original_name,
+                        }
+                    )
         self.policy.validate(validated_records, quality, previous)
 
         previous_records = (

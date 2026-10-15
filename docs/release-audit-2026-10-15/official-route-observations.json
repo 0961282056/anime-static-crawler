@@ -1,0 +1,164 @@
+[
+  {
+    "url": "https://arisugawa-ren.af-original.com/goods/bddvd/973/",
+    "error": "HTTPSConnectionPool(host='arisugawa-ren.af-original.com', port=443): Max retries exceeded with url: /goods/bddvd/973/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.039378+08:00"
+  },
+  {
+    "url": "https://atekuse.af-original.com/goods/bddvd/312/",
+    "error": "HTTPSConnectionPool(host='atekuse.af-original.com', port=443): Max retries exceeded with url: /goods/bddvd/312/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.044865+08:00"
+  },
+  {
+    "url": "https://beyblade.takaratomy.co.jp/anime/movie/",
+    "error": "HTTPSConnectionPool(host='beyblade.takaratomy.co.jp', port=443): Max retries exceeded with url: /anime/movie/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.042004+08:00"
+  },
+  {
+    "url": "https://chibigodzilla.jp/",
+    "error": "HTTPSConnectionPool(host='chibigodzilla.jp', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.047858+08:00"
+  },
+  {
+    "url": "https://chiramune.com/bd/04.html",
+    "error": "HTTPSConnectionPool(host='chiramune.com', port=443): Max retries exceeded with url: /bd/04.html (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.052411+08:00"
+  },
+  {
+    "url": "https://fufukokan.af-original.com/goods/bddvd/135/",
+    "error": "HTTPSConnectionPool(host='fufukokan.af-original.com', port=443): Max retries exceeded with url: /goods/bddvd/135/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.054410+08:00"
+  },
+  {
+    "url": "https://gakkodeha-anime.com/%E3%80%8E%E6%95%B4%E7%90%86%E6%95%B4%E9%A0%93-%E6%9B%B8%E7%B1%8D%EF%BC%8B%E3%82%A2%E3%83%8B%E3%83%A1dvd%E7%89%B9%E5%88%A5%E3%82%BB%E3%83%83%E3%83%88%E3%80%8F%E3%80%8E%E6%99%82%E9%96%93%E3%81%AE/",
+    "error": "HTTPSConnectionPool(host='gakkodeha-anime.com', port=443): Max retries exceeded with url: /%E3%80%8E%E6%95%B4%E7%90%86%E6%95%B4%E9%A0%93-%E6%9B%B8%E7%B1%8D%EF%BC%8B%E3%82%A2%E3%83%8B%E3%83%A1dvd%E7%89%B9%E5%88%A5%E3%82%BB%E3%83%83%E3%83%88%E3%80%8F%E3%80%8E%E6%99%82%E9%96%93%E3%81%AE/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.059024+08:00"
+  },
+  {
+    "url": "https://guiltyhole.af-original.com/",
+    "error": "HTTPSConnectionPool(host='guiltyhole.af-original.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.062234+08:00"
+  },
+  {
+    "url": "https://gunpuku-mouai.af-original.com/goods/bddvd/329/",
+    "final_url": "https://gunpuku-mouai.af-original.com/goods/bddvd/329/",
+    "status": 200,
+    "sha256": "2981ab3d5c55484dca0d7e2248f39b07e12b84f2247cd4cc268ec5186013773a",
+    "retrieved_at": "2026-10-15T22:07:51.861499+08:00",
+    "seconds": 1.81
+  },
+  {
+    "url": "https://harecam.af-original.com/goods/bddvd/123/",
+    "final_url": "https://harecam.af-original.com/goods/bddvd/123/",
+    "status": 200,
+    "sha256": "ab552cc6046ac6340c86e6c53be99aa8b80ae116c7d2a733c3bbe61c60a56656",
+    "retrieved_at": "2026-10-15T22:07:51.168363+08:00",
+    "seconds": 1.11
+  },
+  {
+    "url": "https://ichigo-aika.af-original.com/news/",
+    "error": "HTTPSConnectionPool(host='ichigo-aika.af-original.com', port=443): Max retries exceeded with url: /news/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.068723+08:00"
+  },
+  {
+    "url": "https://ipufure.af-original.com/goods/bddvd/380/",
+    "error": "HTTPSConnectionPool(host='ipufure.af-original.com', port=443): Max retries exceeded with url: /goods/bddvd/380/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.072834+08:00"
+  },
+  {
+    "url": "https://karaoke-muchusa.com/muchusa/",
+    "error": "HTTPSConnectionPool(host='karaoke-muchusa.com', port=443): Max retries exceeded with url: /muchusa/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.081959+08:00"
+  },
+  {
+    "url": "https://kusuriyanohitorigoto.jp/season3/bd/vol1.php",
+    "error": "HTTPSConnectionPool(host='kusuriyanohitorigoto.jp', port=443): Max retries exceeded with url: /season3/bd/vol1.php (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.087235+08:00"
+  },
+  {
+    "url": "https://ookii-onnanoko.af-original.com/disc/509/",
+    "error": "HTTPSConnectionPool(host='ookii-onnanoko.af-original.com', port=443): Max retries exceeded with url: /disc/509/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.092021+08:00"
+  },
+  {
+    "url": "https://papashita.cf-anime.com/onair/",
+    "error": "HTTPSConnectionPool(host='papashita.cf-anime.com', port=443): Max retries exceeded with url: /onair/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.096339+08:00"
+  },
+  {
+    "url": "https://re-zero-anime.jp/tv/onair/tv3.html",
+    "error": "HTTPSConnectionPool(host='re-zero-anime.jp', port=443): Max retries exceeded with url: /tv/onair/tv3.html (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.100547+08:00"
+  },
+  {
+    "url": "https://re-zero-anime.jp/tv/story/",
+    "error": "HTTPSConnectionPool(host='re-zero-anime.jp', port=443): Max retries exceeded with url: /tv/story/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.104285+08:00"
+  },
+  {
+    "url": "https://secretmission.af-original.jp/goods/bddvd/197/",
+    "error": "HTTPSConnectionPool(host='secretmission.af-original.jp', port=443): Max retries exceeded with url: /goods/bddvd/197/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:50.108774+08:00"
+  },
+  {
+    "url": "https://shucap.cf-anime.com/goods/",
+    "final_url": "https://shucap.cf-anime.com/goods/",
+    "status": 200,
+    "sha256": "2f9f664981e1bed892c4a5d230cc865035c2da6d97af33d9df091df7f303e6cd",
+    "retrieved_at": "2026-10-15T22:07:51.739307+08:00",
+    "seconds": 1.63
+  },
+  {
+    "url": "https://www.guiltygear.com/ggstdr/jp/",
+    "error": "HTTPSConnectionPool(host='www.guiltygear.com', port=443): Max retries exceeded with url: /ggstdr/jp/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+    "retrieved_at": "2026-10-15T22:07:51.175175+08:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_13.html",
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_13.html",
+    "status": 200,
+    "sha256": "e0ac56fc8205c5c017bd173753788cf6cd76cacecb6d68eca5b784bc1262afb5",
+    "retrieved_at": "2026-10-15T22:07:52.428191+08:00",
+    "seconds": 1.25
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+    "status": 200,
+    "sha256": "1ecbccf6db71e7ec3172e8c1fe8ba181362e4a691abf6be16eaa86844c182f1e",
+    "retrieved_at": "2026-10-15T22:07:52.762955+08:00",
+    "seconds": 1.02
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+    "final_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+    "status": 200,
+    "sha256": "5d95347d7334b400d1902feff1a194cb01ad85376c19202455ce51c2ce478475",
+    "retrieved_at": "2026-10-15T22:07:52.927269+08:00",
+    "seconds": 1.06
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/episodes/",
+    "final_url": "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/episodes/",
+    "status": 200,
+    "sha256": "2bd5071f33349576d335c36108fe39bb19146b41d5e899e0121677ce4ac2ca1a",
+    "retrieved_at": "2026-10-15T22:07:53.638489+08:00",
+    "seconds": 1.21
+  },
+  {
+    "url": "https://www.vap.co.jp/tonegawa-anime/index_hancho.html",
+    "final_url": "https://www.vap.co.jp/tonegawa-anime/index_hancho.html",
+    "status": 200,
+    "sha256": "38f9c3956dbdf3f70b4b4a88e00bf33eaca89b88e4ce6c6d13556c85f656a011",
+    "retrieved_at": "2026-10-15T22:07:54.558757+08:00",
+    "seconds": 1.79
+  },
+  {
+    "url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list",
+    "final_url": "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list",
+    "status": 200,
+    "sha256": "e6fa07ed762f7ddb6949b15f5afd64b6691bdf46cd1672b26a490870e3ba6ceb",
+    "retrieved_at": "2026-10-15T22:07:55.015698+08:00",
+    "seconds": 2.09
+  }
+]

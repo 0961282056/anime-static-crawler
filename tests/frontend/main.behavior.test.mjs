@@ -130,6 +130,65 @@ function nextTick() {
   return new Promise(resolve => setTimeout(resolve, 0));
 }
 
+test('episode labels distinguish planned, confirmed, finished and missing progress', () => {
+  const {app} = createContext();
+  const base = {total_episodes: 12, aired_episodes: 8, airing_status: 'airing', episode_count_status: 'confirmed', fetch_state: 'ok'};
+  assert.equal(app.episodeCountLabel({episodes: base}), '已播 8／12 集');
+  assert.equal(app.episodeCountLabel({episodes: {...base, episode_count_status: 'planned'}}), '已播 8 集／預定 12 集');
+  assert.equal(app.episodeCountLabel({episodes: {...base, total_episodes: null}}), '已播 8 集／總集數未定');
+  assert.equal(app.episodeCountLabel({episodes: {...base, aired_episodes: null}}), '共 12 集／進度待確認');
+  assert.equal(app.episodeCountLabel({episodes: {...base, aired_episodes: 12, airing_status: 'finished'}}), '全 12 集');
+  assert.equal(app.airingStatusLabel({episodes: {...base, airing_status: 'finished'}}), '本季已播畢');
+  assert.equal(app.episodeCountLabel({}), '集數待確認');
+  assert.equal(app.episodeCountLabel({episodes: {...base, fetch_state: 'conflict'}}), '已播 8 集／總集數待確認');
+  assert.match(app.episodeUpdateWarning({episodes: {...base, checked_at: '2026-10-13T18:00:00+08:00', fetch_state: 'stale'}}), /資料可能落後/);
+  assert.equal(app.episodeSourceUrl({external_ids: {bangumi: 580133}}), 'https://bgm.tv/subject/580133/ep');
+  assert.equal(app.episodeSourceUrl({external_ids: {bangumi: 'javascript:alert(1)'}}), null);
+});
+
+test('official evidence links take priority and unsafe schemes cannot become links', () => {
+  const {app} = createContext();
+  const anime = {external_ids: {bangumi: 580133}, episodes: {source_urls: ['https://chiramune.com/bd/06.html']}};
+  assert.equal(app.episodeSourceUrl(anime), 'https://chiramune.com/bd/06.html');
+  for (const source of ['javascript:alert(1)', 'http://evil.example/', 'https://user:pass@evil.example/', 'invalid']) {
+    assert.equal(app.episodeSourceUrl({...anime, episodes: {source_urls: [source]}}), 'https://bgm.tv/subject/580133/ep');
+  }
+});
+
+test('airing filter combines with weekday and keyword while supporting legacy records', () => {
+  const {app} = createContext();
+  app.rawAnimeList = [
+    {anime_name: 'first', premiere_date: '一', episodes: {airing_status: 'airing'}},
+    {anime_name: 'second', premiere_date: '一', episodes: {airing_status: 'finished'}},
+    {anime_name: 'legacy', premiere_date: '二'},
+  ];
+  app.filterStatus = 'airing';
+  app.filterDay = '一';
+  app.searchKeyword = 'first';
+  assert.equal(app.filteredAnime.length, 1);
+  assert.equal(app.filteredAnime[0].anime_name, 'first');
+  app.filterStatus = 'unknown';
+  app.filterDay = '全部';
+  app.searchKeyword = '';
+  assert.equal(app.filteredAnime[0].anime_name, 'legacy');
+});
+
+test('bad episode counts and impossible finished status fail validation', async () => {
+  for (const episodes of [
+    {total_episodes: 12, aired_episodes: 13, airing_status: 'airing', episode_count_status: 'confirmed', fetch_state: 'ok'},
+    {total_episodes: 12, aired_episodes: 8, airing_status: 'finished', episode_count_status: 'confirmed', fetch_state: 'ok'},
+    {total_episodes: '12', aired_episodes: 8, airing_status: 'airing', episode_count_status: 'planned', fetch_state: 'ok'},
+  ]) {
+    const payload = dataset('bad-count');
+    payload.anime_list[0].episodes = episodes;
+    const {app} = createContext({fetchImpl: async () => responseFor(payload)});
+    app.year = '2026'; app.season = '秋';
+    await app.loadData();
+    assert.equal(app.loadError.code, 'DATA_SCHEMA');
+    assert.equal(app.rawAnimeList.length, 0);
+  }
+});
+
 test('latest quarter request wins when an older response arrives later', async () => {
   const requests = [];
   const { app } = createContext({
@@ -581,4 +640,90 @@ test('share URL and renderer failures show safe advice and always restore the bu
   assert.match(networkAlerts[0].text, /網路/);
   assert.match(networkAlerts[0].text, /SHARE_RENDERER_NETWORK/);
   assert.equal(rendererNetwork.button.disabled, false);
+});
+
+test('keyword search covers every quarter, merges shared cards and clearing restores selection', async () => {
+  const recent = dataset('shared');
+  const old = dataset('old');
+  old.anime_list.push({...recent.anime_list[0]});
+  old.anime_list[0].original_name = 'ＡＮＣＩＥＮＴ';
+  const calls = [];
+  const {app} = createContext({fetchImpl: async url => {
+    calls.push(url);
+    return responseFor(url.includes('2026_') ? recent : old);
+  }});
+  app.year = '2026'; app.season = '秋';
+  await app.loadData();
+  app.searchKeyword = 'ancient';
+  await app.loadData();
+  assert.equal(app.filteredAnime.length, 1);
+  assert.equal(app.filteredAnime[0].anime_name, 'old');
+  assert.equal(app.sourceQuarterLabel(app.filteredAnime[0]), '2025年夏季');
+  app.searchKeyword = 'shared';
+  await app.loadData();
+  assert.equal(app.filteredAnime.length, 1);
+  assert.equal(app.sourceQuarterLabel(app.filteredAnime[0]), '2026年秋季、2025年夏季');
+  assert.equal(recent.anime_list[0].source_quarters, undefined);
+  app.searchKeyword = '';
+  await app.loadData();
+  assert.equal(app.rawAnimeList.length, 1);
+  assert.equal(app.rawAnimeList[0].anime_name, 'shared');
+  assert.equal(app.sourceQuarterLabel(app.rawAnimeList[0]), '');
+  assert.equal(calls.length, 2);
+});
+
+test('a failed quarter cannot appear as complete global search and retry recovers', async () => {
+  let failing = true;
+  const {app} = createContext({fetchImpl: async url => {
+    if (url.includes('2025_') && failing) return errorResponse(503);
+    return responseFor(dataset(url.includes('2025_') ? 'old' : 'recent'));
+  }});
+  app.MAX_FETCH_RETRIES = 0;
+  app.year = '2026'; app.season = '秋';
+  await app.loadData();
+  app.searchKeyword = 'story';
+  await app.loadData();
+  assert.ok(app.loadError);
+  assert.equal(app.rawAnimeList.length, 0);
+  assert.equal(app.loadError.hasStaleData, false);
+  failing = false;
+  await app.retryLoad();
+  assert.equal(app.loadError, null);
+  assert.equal(app.filteredAnime.length, 2);
+});
+
+test('clearing a keyword wins over an older pending global search', async () => {
+  let resolveOld;
+  const {app} = createContext({fetchImpl: async url => {
+    if (url.includes('2025_')) return new Promise(resolve => { resolveOld = resolve; });
+    return responseFor(dataset('recent'));
+  }});
+  app.year = '2026'; app.season = '秋';
+  await app.loadData();
+  app.searchKeyword = 'old';
+  const search = app.loadData();
+  while (!resolveOld) await nextTick();
+  app.searchKeyword = '';
+  await app.loadData();
+  resolveOld(responseFor(dataset('old')));
+  await search;
+  assert.equal(app.rawAnimeList[0].anime_name, 'recent');
+  assert.equal(app.loading, false);
+  assert.equal(app.loadError, null);
+});
+
+test('global search bounds simultaneous quarter loads', async () => {
+  let active = 0; let maximum = 0; let calls = 0;
+  const {app} = createContext({fetchImpl: async () => {
+    active++; calls++; maximum = Math.max(maximum, active);
+    await nextTick(); active--;
+    return responseFor(dataset('shared'));
+  }});
+  app.availableData = {2024: ['冬', '春', '夏', '秋'], 2025: ['冬', '春', '夏', '秋'], 2026: ['秋']};
+  app.year = '2026'; app.season = '秋'; app.searchKeyword = 'shared';
+  await app.loadData();
+  assert.equal(calls, 9);
+  assert.ok(maximum <= 4);
+  assert.equal(app.filteredAnime.length, 1);
+  assert.equal(app.filteredAnime[0].source_quarters.length, 9);
 });

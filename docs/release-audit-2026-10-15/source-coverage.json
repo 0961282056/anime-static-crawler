@@ -1,0 +1,1277 @@
+[
+  {
+    "quarter": "2018_冬",
+    "url": "https://acgsecrets.hk/bangumi/201801/",
+    "final_url": "https://acgsecrets.hk/bangumi/201801/",
+    "status": 200,
+    "sha256": "ad010d4a609bd00d3d43a38be9c5d04b9a8bca9ec028a9bbb41c0147eac67004",
+    "retrieved_at": "2026-10-15T22:06:25.914441+08:00",
+    "seconds": 2.97,
+    "saved_count": 59,
+    "source_count": 59,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 16
+  },
+  {
+    "quarter": "2018_夏",
+    "url": "https://acgsecrets.hk/bangumi/201807/",
+    "final_url": "https://acgsecrets.hk/bangumi/201807/",
+    "status": 200,
+    "sha256": "e6a9d11d068da34495cbf1f0d395bb4a893455a21def7cb3cc11cfb981e7f917",
+    "retrieved_at": "2026-10-15T22:06:25.942768+08:00",
+    "seconds": 2.99,
+    "saved_count": 58,
+    "source_count": 58,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 5
+  },
+  {
+    "quarter": "2018_春",
+    "url": "https://acgsecrets.hk/bangumi/201804/",
+    "final_url": "https://acgsecrets.hk/bangumi/201804/",
+    "status": 200,
+    "sha256": "da36ce04f854d6ba2972d611c3e4bde575b4d65df7a707d8a3a88b8569100031",
+    "retrieved_at": "2026-10-15T22:06:27.599857+08:00",
+    "seconds": 4.65,
+    "saved_count": 83,
+    "source_count": 83,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 15
+  },
+  {
+    "quarter": "2018_秋",
+    "url": "https://acgsecrets.hk/bangumi/201810/",
+    "final_url": "https://acgsecrets.hk/bangumi/201810/",
+    "status": 200,
+    "sha256": "0f7b383f99cf1778a2161811db4c96c859fed757cbb6ff63960c219db1da443d",
+    "retrieved_at": "2026-10-15T22:06:31.663282+08:00",
+    "seconds": 3.27,
+    "saved_count": 66,
+    "source_count": 66,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [
+      {
+        "card_id": "anime-374",
+        "name": "錢進球場 Season 2",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-393",
+        "name": "梅露可物語 -無氣力少年與瓶中少女-",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-392",
+        "name": "CONCEPTION 為我而生",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-404",
+        "name": "DOUBLE DECKER！道格＆西里爾",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-385",
+        "name": "我喜歡的妹妹不是妹妹",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-384",
+        "name": "只要別西卜大小姐喜歡就好",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-402",
+        "name": "學園BASARA",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-423",
+        "name": "狐狸之聲",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-399",
+        "name": "閃亂神樂 SHINOVI MASTER -東京妖魔篇-",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-381",
+        "name": "弦音－風舞高中弓道部－",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-403",
+        "name": "BAKUMATSU",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-412",
+        "name": "Radiant",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 5
+  },
+  {
+    "quarter": "2019_冬",
+    "url": "https://acgsecrets.hk/bangumi/201901/",
+    "final_url": "https://acgsecrets.hk/bangumi/201901/",
+    "status": 200,
+    "sha256": "c0df52d8b1b55b0cc8b611a44ee8c29ba35b235e1f9fcda1a6c77032de215b18",
+    "retrieved_at": "2026-10-15T22:06:32.322483+08:00",
+    "seconds": 3.27,
+    "saved_count": 51,
+    "source_count": 51,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [
+      {
+        "card_id": "anime-412",
+        "name": "Radiant",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 7
+  },
+  {
+    "quarter": "2019_夏",
+    "url": "https://acgsecrets.hk/bangumi/201907/",
+    "final_url": "https://acgsecrets.hk/bangumi/201907/",
+    "status": 200,
+    "sha256": "4c0545f18f37ae9b1c0475e33fba526d168f73ad75ce09d0769f6153825da6d9",
+    "retrieved_at": "2026-10-15T22:06:32.487702+08:00",
+    "seconds": 2.49,
+    "saved_count": 44,
+    "source_count": 44,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [
+      {
+        "card_id": "anime-277",
+        "name": "我們是愛護小動物委員會",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-275",
+        "name": "上班族魚先生",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-274",
+        "name": "暗芝居 7期",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-272",
+        "name": "博多明太!麻辣子醬",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 11
+  },
+  {
+    "quarter": "2019_春",
+    "url": "https://acgsecrets.hk/bangumi/201904/",
+    "final_url": "https://acgsecrets.hk/bangumi/201904/",
+    "status": 200,
+    "sha256": "07fd6ea93a3155f2b651871f6432223af21ec5b612897de74a5ec87eda04968f",
+    "retrieved_at": "2026-10-15T22:06:36.798789+08:00",
+    "seconds": 3.15,
+    "saved_count": 51,
+    "source_count": 51,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [
+      {
+        "card_id": "anime-296",
+        "name": "RobiHachi",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 8
+  },
+  {
+    "quarter": "2019_秋",
+    "url": "https://acgsecrets.hk/bangumi/201910/",
+    "final_url": "https://acgsecrets.hk/bangumi/201910/",
+    "status": 200,
+    "sha256": "88346b810621bb5da7a78b01c093e683edfa924c38220f4d00eec4f773dc44d1",
+    "retrieved_at": "2026-10-15T22:06:37.775794+08:00",
+    "seconds": 2.63,
+    "saved_count": 56,
+    "source_count": 56,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 9
+  },
+  {
+    "quarter": "2020_冬",
+    "url": "https://acgsecrets.hk/bangumi/202001/",
+    "final_url": "https://acgsecrets.hk/bangumi/202001/",
+    "status": 200,
+    "sha256": "6ea45861f0a11deea21fc8d2bff3d81a10baa6e68df5f2061686a823f58cf5e7",
+    "retrieved_at": "2026-10-15T22:06:38.478747+08:00",
+    "seconds": 3.31,
+    "saved_count": 51,
+    "source_count": 51,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 14
+  },
+  {
+    "quarter": "2020_夏",
+    "url": "https://acgsecrets.hk/bangumi/202007/",
+    "final_url": "https://acgsecrets.hk/bangumi/202007/",
+    "status": 200,
+    "sha256": "efa37f1ad76722ad3be1483e834e43536b58e5cab7683f54ae7bfa7af6f18ec8",
+    "retrieved_at": "2026-10-15T22:06:40.724792+08:00",
+    "seconds": 3.01,
+    "saved_count": 38,
+    "source_count": 38,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 15
+  },
+  {
+    "quarter": "2020_春",
+    "url": "https://acgsecrets.hk/bangumi/202004/",
+    "final_url": "https://acgsecrets.hk/bangumi/202004/",
+    "status": 200,
+    "sha256": "352b307f736eaef6cb4a20a069afc2347ecb36f012d9fc8ce97db8f674d9f39e",
+    "retrieved_at": "2026-10-15T22:06:43.284375+08:00",
+    "seconds": 4.08,
+    "saved_count": 59,
+    "source_count": 59,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 12
+  },
+  {
+    "quarter": "2020_秋",
+    "url": "https://acgsecrets.hk/bangumi/202010/",
+    "final_url": "https://acgsecrets.hk/bangumi/202010/",
+    "status": 200,
+    "sha256": "aa19f0b19a82ef54dd58b011b46295284b3ff3253a6a7c17f33b76747681c05c",
+    "retrieved_at": "2026-10-15T22:06:44.246128+08:00",
+    "seconds": 4.43,
+    "saved_count": 58,
+    "source_count": 58,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 16
+  },
+  {
+    "quarter": "2021_冬",
+    "url": "https://acgsecrets.hk/bangumi/202101/",
+    "final_url": "https://acgsecrets.hk/bangumi/202101/",
+    "status": 200,
+    "sha256": "b1edb6d5d065d51af45ed1b75208b1bc97d65381aceae64ee4d95223efdfe768",
+    "retrieved_at": "2026-10-15T22:06:46.137009+08:00",
+    "seconds": 4.85,
+    "saved_count": 62,
+    "source_count": 62,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 13
+  },
+  {
+    "quarter": "2021_夏",
+    "url": "https://acgsecrets.hk/bangumi/202107/",
+    "final_url": "https://acgsecrets.hk/bangumi/202107/",
+    "status": 200,
+    "sha256": "708bc73259da6358d5903dd370629944db3cb5e56c7dc80244cafd32a3f0e9f9",
+    "retrieved_at": "2026-10-15T22:06:48.931474+08:00",
+    "seconds": 4.72,
+    "saved_count": 45,
+    "source_count": 45,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 9
+  },
+  {
+    "quarter": "2021_春",
+    "url": "https://acgsecrets.hk/bangumi/202104/",
+    "final_url": "https://acgsecrets.hk/bangumi/202104/",
+    "status": 200,
+    "sha256": "e90dcfcbe82dc438e282085a4e7a7c34c579ebe31da7e6ba38edc496a9325520",
+    "retrieved_at": "2026-10-15T22:06:49.793578+08:00",
+    "seconds": 4.6,
+    "saved_count": 66,
+    "source_count": 66,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 13
+  },
+  {
+    "quarter": "2021_秋",
+    "url": "https://acgsecrets.hk/bangumi/202110/",
+    "final_url": "https://acgsecrets.hk/bangumi/202110/",
+    "status": 200,
+    "sha256": "e844d9b829654c4bd57875411d84abdcc3259790def24cfcc69a638e70ee8dd2",
+    "retrieved_at": "2026-10-15T22:06:50.872908+08:00",
+    "seconds": 3.64,
+    "saved_count": 52,
+    "source_count": 52,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 8
+  },
+  {
+    "quarter": "2022_冬",
+    "url": "https://acgsecrets.hk/bangumi/202201/",
+    "final_url": "https://acgsecrets.hk/bangumi/202201/",
+    "status": 200,
+    "sha256": "272fa03b8c4eed10ced62185b0c783f71c4d4bfde2a3bb2e2961dfc90d176c65",
+    "retrieved_at": "2026-10-15T22:06:53.285045+08:00",
+    "seconds": 3.09,
+    "saved_count": 43,
+    "source_count": 43,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 9
+  },
+  {
+    "quarter": "2022_夏",
+    "url": "https://acgsecrets.hk/bangumi/202207/",
+    "final_url": "https://acgsecrets.hk/bangumi/202207/",
+    "status": 200,
+    "sha256": "3616c32648706da477ef5bc234170662db9bbffbfe76551e2fbf0a709f02eb0f",
+    "retrieved_at": "2026-10-15T22:06:56.604574+08:00",
+    "seconds": 4.65,
+    "saved_count": 51,
+    "source_count": 51,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 9
+  },
+  {
+    "quarter": "2022_春",
+    "url": "https://acgsecrets.hk/bangumi/202204/",
+    "final_url": "https://acgsecrets.hk/bangumi/202204/",
+    "status": 200,
+    "sha256": "7ad2a82473189bda6271de25a8e61cf946654299c0212a35973d2cff3c100f9f",
+    "retrieved_at": "2026-10-15T22:06:57.358953+08:00",
+    "seconds": 4.75,
+    "saved_count": 54,
+    "source_count": 54,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 8
+  },
+  {
+    "quarter": "2022_秋",
+    "url": "https://acgsecrets.hk/bangumi/202210/",
+    "final_url": "https://acgsecrets.hk/bangumi/202210/",
+    "status": 200,
+    "sha256": "a2aa8626db6719fe8967671e3e080d551ed1c7f1aaa97bcf477ee2c141332289",
+    "retrieved_at": "2026-10-15T22:06:58.279669+08:00",
+    "seconds": 4.13,
+    "saved_count": 56,
+    "source_count": 56,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [
+      {
+        "card_id": "anime-1153",
+        "name": "BLUE LOCK 藍色監獄",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1164",
+        "name": "山T女福星",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1154",
+        "name": "入間同學入魔了！ 第3季",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 9
+  },
+  {
+    "quarter": "2023_冬",
+    "url": "https://acgsecrets.hk/bangumi/202301/",
+    "final_url": "https://acgsecrets.hk/bangumi/202301/",
+    "status": 200,
+    "sha256": "9063f033e934548300e50bc01dc35c9a139a03286ad920eb8d590394d1833c68",
+    "retrieved_at": "2026-10-15T22:07:03.424112+08:00",
+    "seconds": 5.22,
+    "saved_count": 62,
+    "source_count": 62,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [
+      {
+        "card_id": "anime-1206",
+        "name": "久保同學不放過我",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1198",
+        "name": "NieR:Automata Ver1.1a",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1203",
+        "name": "英雄王，為了窮盡武道而轉生 ～而後成為世界最強見習騎士♀～",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1213",
+        "name": "萬事屋齋藤先生轉生異世界",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1238",
+        "name": "虛構推理 Season2",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1234",
+        "name": "UniteUp! 眾星齊聚",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1241",
+        "name": "魔術士歐菲 流浪之旅 阿邦拉瑪篇",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1231",
+        "name": "再得一勝！",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1194",
+        "name": "關於我在無意間被隔壁的天使變成廢柴這件事",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1228",
+        "name": "狩火之王",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1233",
+        "name": "Technoroid Overmind",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1217",
+        "name": "文豪Stray Dogs 第四季",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1225",
+        "name": "被解僱的暗黑士兵（30多歲）慢生活的第二人生",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1209",
+        "name": "傲嬌反派千金莉潔洛特與實況主遠藤同學及解說員小林同學",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1201",
+        "name": "妖幻三重奏",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1224",
+        "name": "銀砂糖師與黑妖精～sugar apple fairy tale～",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1215",
+        "name": "大雪海的卡納",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1210",
+        "name": "TRIGUN STAMPEDE",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1207",
+        "name": "擁有超常技能的異世界流浪美食家",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1219",
+        "name": "吸血鬼馬上死2",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1236",
+        "name": "眾神眷顧的男人2",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1221",
+        "name": "弦音－相繫的一射－",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1208",
+        "name": "為了養老金去異界存八萬金",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1240",
+        "name": "「FLAGLIA」～夏天的故事～",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1196",
+        "name": "魔王學院的不適任者 第二季",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1223",
+        "name": "冰劍的魔術師將要統一世界",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1237",
+        "name": "海盜戰記 Season 2",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1235",
+        "name": "D4DJ All Mix",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1195",
+        "name": "Buddy Daddies",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1214",
+        "name": "最強陰陽師的異世界轉生記",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1227",
+        "name": "HIGH CARD 至高之牌",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1239",
+        "name": "真·進化果實～不知不覺踏上勝利的人生～",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1205",
+        "name": "東京復仇者 聖夜決戰篇",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1229",
+        "name": "阿魯斯的巨獸",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1197",
+        "name": "不當哥哥了！",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1246",
+        "name": "我與機器子",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1244",
+        "name": "KJ File 續篇",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1153",
+        "name": "BLUE LOCK 藍色監獄",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1218",
+        "name": "不要欺負我，長瀞同學 2nd Attack",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1211",
+        "name": "淪落者之夜",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1202",
+        "name": "小智是女孩啦！",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1226",
+        "name": "物之古物奇譚",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-798",
+        "name": "怕痛的我，把防禦力點滿就對了 第2季",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1199",
+        "name": "在地下城尋求邂逅是否搞錯了什麼IV 深章 災厄篇",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1216",
+        "name": "冰屬性男子與無表情女子",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1247",
+        "name": "卡片戰鬥!! 先導者 will+Dress Season2",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1164",
+        "name": "山T女福星",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1222",
+        "name": "REVENGER",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1204",
+        "name": "無意間變成狗，被喜歡的女生撿回家。",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1154",
+        "name": "入間同學入魔了！ 第3季",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1230",
+        "name": "Love Live！虹咲學園學園偶像同好會 短篇動畫",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1243",
+        "name": "伸向天空！光之美少女",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1232",
+        "name": "英雄傳說 閃之軌跡：北方戰役",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1193",
+        "name": "間諜教室",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 12
+  },
+  {
+    "quarter": "2023_夏",
+    "url": "https://acgsecrets.hk/bangumi/202307/",
+    "final_url": "https://acgsecrets.hk/bangumi/202307/",
+    "status": 200,
+    "sha256": "7e5fbf1e0d13059af5e495d9a3273a4f6a7dea0b1cce04de1bcb7f532bb99299",
+    "retrieved_at": "2026-10-15T22:07:05.126632+08:00",
+    "seconds": 4.76,
+    "saved_count": 48,
+    "source_count": 51,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [
+      "anime-1278",
+      "anime-1282",
+      "anime-1294"
+    ],
+    "differences": [
+      {
+        "card_id": "anime-1319",
+        "name": "白聖女與黑牧師",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1337",
+        "name": "BanG Dream! It's MyGO!!!!!",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 32
+  },
+  {
+    "quarter": "2023_春",
+    "url": "https://acgsecrets.hk/bangumi/202304/",
+    "final_url": "https://acgsecrets.hk/bangumi/202304/",
+    "status": 200,
+    "sha256": "445b1c122d2705988f03b52ae7428cb2d7e2acceb4e05d1844f55ebe0a5d3537",
+    "retrieved_at": "2026-10-15T22:07:06.078572+08:00",
+    "seconds": 4.74,
+    "saved_count": 54,
+    "source_count": 54,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [
+      {
+        "card_id": "anime-1241",
+        "name": "魔術士歐菲 流浪之旅 阿邦拉瑪篇",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1284",
+        "name": "躍動青春",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1237",
+        "name": "海盜戰記 Season 2",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 23
+  },
+  {
+    "quarter": "2023_秋",
+    "url": "https://acgsecrets.hk/bangumi/202310/",
+    "final_url": "https://acgsecrets.hk/bangumi/202310/",
+    "status": 200,
+    "sha256": "f7000eed0ac6a7e267bedd595e477ab631c517258cec43b42b4765a1f455c904",
+    "retrieved_at": "2026-10-15T22:07:10.209994+08:00",
+    "seconds": 5.57,
+    "saved_count": 73,
+    "source_count": 74,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [
+      "anime-1294"
+    ],
+    "differences": [
+      {
+        "card_id": "anime-1385",
+        "name": "MF GHOST 燃油車鬥魂",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1362",
+        "name": "想當冒險者前往都市的女兒成為S級",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1376",
+        "name": "大小姐和看門犬",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1387",
+        "name": "烈焰先鋒 救國的橘衣消防員",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1359",
+        "name": "狩龍人拉格納",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1363",
+        "name": "堤亞穆帝國物語",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 38
+  },
+  {
+    "quarter": "2024_冬",
+    "url": "https://acgsecrets.hk/bangumi/202401/",
+    "final_url": "https://acgsecrets.hk/bangumi/202401/",
+    "status": 200,
+    "sha256": "f6d347fe9a05acdfb43d3a8f07df41d062d59b120874297138a1d78d97326590",
+    "retrieved_at": "2026-10-15T22:07:12.625818+08:00",
+    "seconds": 5.58,
+    "saved_count": 57,
+    "source_count": 57,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [
+      {
+        "card_id": "anime-1387",
+        "name": "烈焰先鋒 救國的橘衣消防員",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1359",
+        "name": "狩龍人拉格納",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 30
+  },
+  {
+    "quarter": "2024_夏",
+    "url": "https://acgsecrets.hk/bangumi/202407/",
+    "final_url": "https://acgsecrets.hk/bangumi/202407/",
+    "status": 200,
+    "sha256": "963e0d069d28cbfd4860926edc075f1ff5f8a39a0ee440e395dea1e6e2b51c90",
+    "retrieved_at": "2026-10-15T22:07:13.057227+08:00",
+    "seconds": 4.93,
+    "saved_count": 58,
+    "source_count": 59,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [
+      "anime-1577"
+    ],
+    "differences": [],
+    "story_whitespace_differences": 41
+  },
+  {
+    "quarter": "2024_春",
+    "url": "https://acgsecrets.hk/bangumi/202404/",
+    "final_url": "https://acgsecrets.hk/bangumi/202404/",
+    "status": 200,
+    "sha256": "fcac7d3d15c5a38ab620a900896c1368b6dac29b4f5a924f6cee3de3385dfc0f",
+    "retrieved_at": "2026-10-15T22:07:16.467231+08:00",
+    "seconds": 4.82,
+    "saved_count": 61,
+    "source_count": 61,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [
+      {
+        "card_id": "anime-1530",
+        "name": "我的英雄學院 第七季",
+        "fields": [
+          "story",
+          "external_ids.anilist"
+        ]
+      },
+      {
+        "card_id": "anime-1527",
+        "name": "鬼滅之刃 柱訓練篇",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 35
+  },
+  {
+    "quarter": "2024_秋",
+    "url": "https://acgsecrets.hk/bangumi/202410/",
+    "final_url": "https://acgsecrets.hk/bangumi/202410/",
+    "status": 200,
+    "sha256": "fb765660f3d7c308b52e255eccdf35d241ca5ffad835945232923567fab4df1d",
+    "retrieved_at": "2026-10-15T22:07:23.435372+08:00",
+    "seconds": 6.76,
+    "saved_count": 72,
+    "source_count": 74,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [
+      "anime-1577",
+      "anime-2210"
+    ],
+    "differences": [
+      {
+        "card_id": "anime-1696",
+        "name": "樂天胖達！",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 39
+  },
+  {
+    "quarter": "2025_冬",
+    "url": "https://acgsecrets.hk/bangumi/202501/",
+    "final_url": "https://acgsecrets.hk/bangumi/202501/",
+    "status": 200,
+    "sha256": "8eb96bc0e691c1a1f6a909d7c8c28b4de6ee50426713179cdab7f18594140344",
+    "retrieved_at": "2026-10-15T22:07:22.288368+08:00",
+    "seconds": 4.84,
+    "saved_count": 65,
+    "source_count": 65,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 45
+  },
+  {
+    "quarter": "2025_夏",
+    "url": "https://acgsecrets.hk/bangumi/202507/",
+    "final_url": "https://acgsecrets.hk/bangumi/202507/",
+    "status": 200,
+    "sha256": "5c5f3d398080c180aea91308a534ac7a5257d0bbc608f2c290f5b93cffb0b525",
+    "retrieved_at": "2026-10-15T22:07:24.619559+08:00",
+    "seconds": 5.8,
+    "saved_count": 74,
+    "source_count": 74,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 0
+  },
+  {
+    "quarter": "2025_春",
+    "url": "https://acgsecrets.hk/bangumi/202504/",
+    "final_url": "https://acgsecrets.hk/bangumi/202504/",
+    "status": 200,
+    "sha256": "1ef1e3961e07e6e424aba908824ef5f1a482c8c3b2320162f89367ad48eb7d28",
+    "retrieved_at": "2026-10-15T22:07:30.598957+08:00",
+    "seconds": 5.42,
+    "saved_count": 65,
+    "source_count": 65,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 42
+  },
+  {
+    "quarter": "2025_秋",
+    "url": "https://acgsecrets.hk/bangumi/202510/",
+    "final_url": "https://acgsecrets.hk/bangumi/202510/",
+    "status": 200,
+    "sha256": "f7782226a23345bd24f3bf32042ef232e6e9a862719fa72f661c4d37be397f0e",
+    "retrieved_at": "2026-10-15T22:07:35.049482+08:00",
+    "seconds": 5.79,
+    "saved_count": 63,
+    "source_count": 63,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 0
+  },
+  {
+    "quarter": "2026_冬",
+    "url": "https://acgsecrets.hk/bangumi/202601/",
+    "final_url": "https://acgsecrets.hk/bangumi/202601/",
+    "status": 200,
+    "sha256": "3f766164f9e56514b993724636e0df46c61ab6c0810296a09394ecff09461e0d",
+    "retrieved_at": "2026-10-15T22:07:35.385027+08:00",
+    "seconds": 5.8,
+    "saved_count": 65,
+    "source_count": 65,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 0
+  },
+  {
+    "quarter": "2026_夏",
+    "url": "https://acgsecrets.hk/bangumi/202607/",
+    "final_url": "https://acgsecrets.hk/bangumi/202607/",
+    "status": 200,
+    "sha256": "d5570188707d16ed4352b672ff7538c97f200e2332b4f4ae20ca257649d0b82d",
+    "retrieved_at": "2026-10-15T22:07:37.765393+08:00",
+    "seconds": 5.97,
+    "saved_count": 75,
+    "source_count": 75,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 0
+  },
+  {
+    "quarter": "2026_春",
+    "url": "https://acgsecrets.hk/bangumi/202604/",
+    "final_url": "https://acgsecrets.hk/bangumi/202604/",
+    "status": 200,
+    "sha256": "21374d72d5386266739fb29dfe20d59daaa3d5e1dcc288ee0bcd21c3d7b63119",
+    "retrieved_at": "2026-10-15T22:07:48.191100+08:00",
+    "seconds": 7.12,
+    "saved_count": 71,
+    "source_count": 71,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 0
+  },
+  {
+    "quarter": "2026_秋",
+    "url": "https://acgsecrets.hk/bangumi/202610/",
+    "final_url": "https://acgsecrets.hk/bangumi/202610/",
+    "status": 200,
+    "sha256": "731dc28dcacb2443edfcd4a7c43e491252a0900f164dd58411fc5f26b1f69310",
+    "retrieved_at": "2026-10-15T22:07:43.318623+08:00",
+    "seconds": 1.63,
+    "saved_count": 73,
+    "source_count": 73,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [
+      {
+        "card_id": "anime-2344",
+        "name": "麵包小偷",
+        "fields": [
+          "external_ids.anilist"
+        ]
+      }
+    ],
+    "story_whitespace_differences": 0
+  },
+  {
+    "quarter": "2027_冬",
+    "url": "https://acgsecrets.hk/bangumi/202701/",
+    "final_url": "https://acgsecrets.hk/bangumi/202701/",
+    "status": 200,
+    "sha256": "ef6c513b0af6bab0a86abd54f675e964e7a128df3f6cb731f6e693110af763b2",
+    "retrieved_at": "2026-10-15T22:07:44.163791+08:00",
+    "seconds": 1.12,
+    "saved_count": 4,
+    "source_count": 4,
+    "parse_failures": [],
+    "missing_from_source": [],
+    "missing_from_saved": [],
+    "differences": [],
+    "story_whitespace_differences": 0
+  }
+]

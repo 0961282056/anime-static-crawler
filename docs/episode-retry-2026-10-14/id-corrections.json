@@ -1,0 +1,30 @@
+[
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-371",
+    "old_subject_id": 22654,
+    "subject_id": 226540,
+    "reason": "Old source link is a book; unique exact anime title and first-air-quarter, full subject and 26 main episodes verified."
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-371",
+    "old_subject_id": 22654,
+    "subject_id": 226540,
+    "reason": "Old source link is a book; unique exact anime title and first-air-quarter, full subject and 26 main episodes verified."
+  },
+  {
+    "quarter": "2025_冬",
+    "card_id": "anime-1750",
+    "old_subject_id": 486347,
+    "subject_id": 526223,
+    "reason": "Wrong anime link corrected; exact original title and 13 main episodes verified."
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-359",
+    "old_subject_id": 197168,
+    "subject_id": 197162,
+    "reason": "Explicit provider migration, exact anime title and 12 main episodes verified."
+  }
+]

@@ -1,0 +1,263 @@
+{
+  "baseline": "4e292af",
+  "archive_as_of": "2026-10-14T05:03:54+08:00",
+  "counts": {
+    "same_count_and_status_as_archive": 2103,
+    "subject_not_in_archive": 1,
+    "unmapped": 2,
+    "different_from_archive": 18,
+    "exact_official_snapshot": 18,
+    "identity_rejected": 1
+  },
+  "differences": [
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-425",
+      "anime_name": "末班電車後、膠囊旅館、給上司微熱的夜晚。",
+      "subject_id": 258081,
+      "saved_checked_at": "2026-10-14T05:03:54+08:00",
+      "differences": {
+        "fetch_state": {
+          "saved": "stale",
+          "archive": "ok"
+        }
+      }
+    },
+    {
+      "quarter": "2022_夏",
+      "card_id": "anime-1100",
+      "anime_name": "異世界迷宮裡的後宮生活",
+      "subject_id": 322130,
+      "saved_checked_at": "2026-10-13T21:49:37.616008+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 12,
+          "archive": null
+        },
+        "airing_status": {
+          "saved": "finished",
+          "archive": "unknown"
+        },
+        "episode_count_status": {
+          "saved": "confirmed",
+          "archive": "planned"
+        }
+      }
+    },
+    {
+      "quarter": "2022_秋",
+      "card_id": "anime-1183",
+      "anime_name": "後宮露營！",
+      "subject_id": 395537,
+      "saved_checked_at": "2026-10-14T05:03:54+08:00",
+      "differences": {
+        "fetch_state": {
+          "saved": "stale",
+          "archive": "ok"
+        }
+      }
+    },
+    {
+      "quarter": "2023_春",
+      "card_id": "anime-1292",
+      "anime_name": "The Marginal Service",
+      "subject_id": 357961,
+      "issue": "Linked anime title differs from the source original title"
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1698",
+      "anime_name": "大正偽新娘～替身新娘與軍人的猛烈熱愛",
+      "subject_id": 509169,
+      "saved_checked_at": "2026-10-14T05:03:54+08:00",
+      "differences": {
+        "fetch_state": {
+          "saved": "stale",
+          "archive": "ok"
+        }
+      }
+    },
+    {
+      "quarter": "2025_夏",
+      "card_id": "anime-1876",
+      "anime_name": "小哥斯拉的逆襲",
+      "subject_id": 561787,
+      "saved_checked_at": "2026-10-15T13:36:20.641846+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 54,
+          "archive": 53
+        }
+      }
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2251",
+      "anime_name": "赤河戀影",
+      "subject_id": 627648,
+      "saved_checked_at": "2026-10-13T20:21:15.474975+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 14,
+          "archive": 15
+        }
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2301",
+      "anime_name": "冷淡的佐藤同學只對我撒嬌",
+      "subject_id": 634708,
+      "saved_checked_at": "2026-10-13T20:21:15.474975+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 1,
+          "archive": 2
+        }
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2302",
+      "anime_name": "亂世千金倪亞．利斯頓 轉生為嬌弱千金的弒神武人華麗無雙錄",
+      "subject_id": 624085,
+      "saved_checked_at": "2026-10-13T20:21:15.474975+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 1,
+          "archive": 2
+        }
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2326",
+      "anime_name": "超巡！超條前輩",
+      "subject_id": 593565,
+      "saved_checked_at": "2026-10-13T20:21:15.474975+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 1,
+          "archive": 2
+        }
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2318",
+      "anime_name": "幻想水滸傳 The Anime",
+      "subject_id": 541538,
+      "saved_checked_at": "2026-10-13T20:21:15.474975+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 1,
+          "archive": 2
+        }
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2310",
+      "anime_name": "被放逐的作弊賦予魔術師享受隨心所欲的第二人生。",
+      "subject_id": 625799,
+      "saved_checked_at": "2026-10-13T20:21:15.474975+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 1,
+          "archive": 2
+        }
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2251",
+      "anime_name": "赤河戀影",
+      "subject_id": 627648,
+      "saved_checked_at": "2026-10-13T20:21:15.474975+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 14,
+          "archive": 15
+        }
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2314",
+      "anime_name": "魔法騎士",
+      "subject_id": 502123,
+      "saved_checked_at": "2026-10-15T13:39:16.931909+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 2,
+          "archive": 1
+        }
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2322",
+      "anime_name": "獸王武神丹帝拜恩",
+      "subject_id": 657778,
+      "saved_checked_at": "2026-10-15T13:39:18.228318+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 2,
+          "archive": 1
+        }
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2289",
+      "anime_name": "重生者的魔法一定要特別 第二季",
+      "subject_id": 471844,
+      "saved_checked_at": "2026-10-15T13:39:19.495621+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 2,
+          "archive": 1
+        }
+      }
+    },
+    {
+      "quarter": "2027_冬",
+      "card_id": "anime-2302",
+      "anime_name": "亂世千金倪亞．利斯頓 轉生為嬌弱千金的弒神武人華麗無雙錄",
+      "subject_id": 624085,
+      "saved_checked_at": "2026-10-13T20:21:15.474975+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 1,
+          "archive": 2
+        }
+      }
+    },
+    {
+      "quarter": "2027_冬",
+      "card_id": "anime-2318",
+      "anime_name": "幻想水滸傳 The Anime",
+      "subject_id": 541538,
+      "saved_checked_at": "2026-10-13T20:21:15.474975+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 1,
+          "archive": 2
+        }
+      }
+    },
+    {
+      "quarter": "2027_冬",
+      "card_id": "anime-2314",
+      "anime_name": "魔法騎士",
+      "subject_id": 502123,
+      "saved_checked_at": "2026-10-15T13:39:16.931909+08:00",
+      "differences": {
+        "aired_episodes": {
+          "saved": 2,
+          "archive": 1
+        }
+      }
+    }
+  ]
+}

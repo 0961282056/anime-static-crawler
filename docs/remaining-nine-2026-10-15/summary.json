@@ -1,0 +1,67 @@
+{
+  "baseline_commit": "b049b3211d3ee0d941b3ea63e8ea552fab07a6d6",
+  "reviewed_at": "2026-10-15T14:59:24.477181+08:00",
+  "scope": "Only the previously reported 2 unmapped, 3 conflict and 4 stale quarterly records.",
+  "target_quarter_records": 9,
+  "target_distinct_source_cards": 8,
+  "changed_records": 9,
+  "changed_quarters": 8,
+  "target_fetch_ok": 9,
+  "target_conflict": 0,
+  "target_stale": 0,
+  "target_without_episode_metadata": 0,
+  "remaining_unmapped_bangumi_ids": [
+    {
+      "card_id": "anime-318",
+      "reason": "No reliable standalone Bangumi anime subject was found; 25 TV episodes and source links are independently verified from official broadcaster data."
+    }
+  ],
+  "parent_subject_link": {
+    "card_id": "anime-418",
+    "subject_id": 237834,
+    "scope": [
+      14,
+      15,
+      18,
+      23
+    ],
+    "note": "Explicit link to compilation parent, not a claim of an independent Hanchou subject."
+  },
+  "final_series_total_not_announced_for_targets": [
+    "2020_秋/anime-663",
+    "2021_冬/anime-663"
+  ],
+  "manual_official_snapshot_limit": "The official counts retain their real verification times. NHK is a manually reviewed snapshot, not an implemented daily NHK fetcher; new official episodes require another review.",
+  "justified_count_corrections": [
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-425",
+      "from": 13,
+      "to": 12,
+      "basis": "Explicitly verified official TV scope replaces the previously mis-scoped count."
+    },
+    {
+      "quarter": "2019_冬",
+      "card_id": "anime-362",
+      "from": 16,
+      "to": 12,
+      "basis": "Explicitly verified official TV scope replaces the previously mis-scoped count."
+    }
+  ],
+  "all_other_records_unchanged": 2134,
+  "all_record_basic_fields_order_and_quality_preserved": true,
+  "current_dataset_counts": {
+    "records": 2143,
+    "linked_bangumi": 2142,
+    "fetch_ok": 2143,
+    "status_finished": 1800,
+    "count_confirmed": 1800,
+    "status_unknown": 258,
+    "count_planned": 290,
+    "without_bangumi_id": 1,
+    "count_unknown": 53,
+    "total_not_announced": 53,
+    "status_airing": 84,
+    "status_not_yet_aired": 1
+  }
+}

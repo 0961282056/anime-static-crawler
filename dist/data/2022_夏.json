@@ -7,7 +7,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c51470b6f200308876bfa9e37717c08a",
       "premiere_date": "一",
       "premiere_time": "20:00",
-      "story": "在黑心企業工作的社畜佐野裕司，一如往常把工作帶回家加班。工作途中，電腦螢幕上突然跳出陌生的視窗。──您被召喚到異世界了！然後，裕司醒來看見的是，存在著狀態數值與技能的異世界。他在異世界取得了要當冒險者都成問題的爛職業『魔獸使』。……但是，他除了擁有魔獸使的力量外，還具備超世絕倫的魔法師才能。裕司和他收服為同伴的史萊姆，一個晚上就把世上無人能讀懂的魔導書全都融會貫通。他就這樣在不知不覺中，成為世界最強的魔法師，並且獲得了『賢者』這個第二職業。"
+      "story": "在黑心企業工作的社畜佐野裕司，一如往常把工作帶回家加班。工作途中，電腦螢幕上突然跳出陌生的視窗。──您被召喚到異世界了！然後，裕司醒來看見的是，存在著狀態數值與技能的異世界。他在異世界取得了要當冒險者都成問題的爛職業『魔獸使』。……但是，他除了擁有魔獸使的力量外，還具備超世絕倫的魔法師才能。裕司和他收服為同伴的史萊姆，一個晚上就把世上無人能讀懂的魔導書全都融會貫通。他就這樣在不知不覺中，成為世界最強的魔法師，並且獲得了『賢者』這個第二職業。",
+      "original_name": "転生賢者の異世界ライフ",
+      "external_ids": {
+        "bangumi": 326869,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/326869",
+          "https://bgm.tv/subject/326869/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-09-12",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1098",
@@ -15,7 +35,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8a2b89b7aedcabcc0f92e6a18d333c54",
       "premiere_date": "一",
       "premiere_time": "21:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ようこそ実力至上主義の教室へ 2nd Season",
+      "external_ids": {
+        "bangumi": 371546,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/371546",
+          "https://bgm.tv/subject/371546/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-26",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1128",
@@ -23,7 +63,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6e3588f1eaed79ad1c49aec824b5a42b",
       "premiere_date": "一",
       "premiere_time": "22:00",
-      "story": "不管是小小的幸福，抑或巨大的不幸，時刻也會吹着風的城市．風都。左翔太郎和菲利普是這風都裡之鳴海偵探事務所的私家偵探。他們在「不會饒恕令這城市悲傷的壞人」這共同理念上，今日也帶來了種種超常的事件⋯！"
+      "story": "不管是小小的幸福，抑或巨大的不幸，時刻也會吹着風的城市．風都。左翔太郎和菲利普是這風都裡之鳴海偵探事務所的私家偵探。他們在「不會饒恕令這城市悲傷的壞人」這共同理念上，今日也帶來了種種超常的事件⋯！",
+      "original_name": "風都探偵",
+      "external_ids": {
+        "bangumi": 332133,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/332133",
+          "https://bgm.tv/subject/332133/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-10-24",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1134",
@@ -31,7 +91,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9e233ca94e948be298ddbaf26c04e3a3",
       "premiere_date": "一",
       "premiere_time": "24:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "カードファイト!! ヴァンガード will+Dress",
+      "external_ids": {
+        "bangumi": 349388,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/349388",
+          "https://bgm.tv/subject/349388/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-26",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1124",
@@ -39,7 +119,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d10ceadc5faf0d05187431886b40c4f7",
       "premiere_date": "一",
       "premiere_time": "25:30",
-      "story": "武藏一行人在播磨遇見了由上杉龍臣統領的「上杉武士團」，還有武田尚虎率領的「武田武士團」。武藏他們決定加入滅鬼的戰鬥，目標是淡路島的巨大鬼神「炮戰龍八岐大蛇」！武藏和同伴們將要面對的，是一場前所未有的激戰。"
+      "story": "武藏一行人在播磨遇見了由上杉龍臣統領的「上杉武士團」，還有武田尚虎率領的「武田武士團」。武藏他們決定加入滅鬼的戰鬥，目標是淡路島的巨大鬼神「炮戰龍八岐大蛇」！武藏和同伴們將要面對的，是一場前所未有的激戰。",
+      "original_name": "オリエント 淡路島激闘編",
+      "external_ids": {
+        "bangumi": 375511,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/375511",
+          "https://bgm.tv/subject/375511/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-09-26",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1060",
@@ -47,7 +147,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ccac93007a89e828bd489ec1a69690fe",
       "premiere_date": "二",
       "premiere_time": "22:00",
-      "story": "安茲身為安茲．烏爾．恭魔導國的國王，一直在煩惱該怎麼帶領這個國家。他決心打造一個能接納人類、亞人、異形等所有種族成為國民的理想國度，並需要與各國建立友好關係。他的第一個目的地，是與他們有著友好關係的巴哈斯帝。到底安茲能否阻止各國的陰謀詭計，創造自己的理想國度呢？"
+      "story": "安茲身為安茲．烏爾．恭魔導國的國王，一直在煩惱該怎麼帶領這個國家。他決心打造一個能接納人類、亞人、異形等所有種族成為國民的理想國度，並需要與各國建立友好關係。他的第一個目的地，是與他們有著友好關係的巴哈斯帝。到底安茲能否阻止各國的陰謀詭計，創造自己的理想國度呢？",
+      "original_name": "オーバーロードⅣ",
+      "external_ids": {
+        "bangumi": 335389,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/335389",
+          "https://bgm.tv/subject/335389/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-27",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1116",
@@ -55,7 +175,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d03c29efb147ef69d9ae07b86255b0a3",
       "premiere_date": "二",
       "premiere_time": "22:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "金装のヴェルメイユ",
+      "external_ids": {
+        "bangumi": 373710,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/373710",
+          "https://bgm.tv/subject/373710/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-09-20",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1117",
@@ -63,7 +203,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/da8d324a4fa5024493260f2aece5e61b",
       "premiere_date": "二",
       "premiere_time": "24:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "東京ミュウミュウ にゅ～♥",
+      "external_ids": {
+        "bangumi": 303195,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/303195",
+          "https://bgm.tv/subject/303195/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-20",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1123",
@@ -71,7 +231,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9de5d2d76a12b8cf7026b5844bc326ad",
       "premiere_date": "二",
       "premiere_time": "25:29",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "シャインポスト",
+      "external_ids": {
+        "bangumi": 354414,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/354414",
+          "https://bgm.tv/subject/354414/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-10-18",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1122",
@@ -79,7 +259,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/288944ac36f1bd3699421b4af66c8439",
       "premiere_date": "二",
       "premiere_time": "26:05",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "邪神ちゃんドロップキックX",
+      "external_ids": {
+        "bangumi": 316131,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/316131",
+          "https://bgm.tv/subject/316131/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-20",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1101",
@@ -87,7 +287,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/691987e15badd98ea76301f86e02c7dd",
       "premiere_date": "三",
       "premiere_time": "21:00",
-      "story": "一對男女在某一所國中成為男女朋友，耍一陣子甜蜜，為了一點小事互相誤會，生氣煩躁變得多過怦然心動……後來趁著畢業的機會分手了。然而即將升上高中的兩人──伊理戶水斗與綾井結女，竟以意想不到的形式重逢。「當然是我當哥哥了。」「我才是姊姊，這還用說嗎？」爸媽再婚對象的拖油瓶，居然是才剛分手的前任！前情侶顧慮到爸媽的心情，說好了必須遵守「誰把對方看成異性就算輸」的「兄弟姊妹規定」，然而──又是洗澡出來不期而遇，又是兩人獨處的上學放學……「當時」的回憶加上同住一個屋簷下的狀況，害得兩人無法不注意對方的一舉一動!?"
+      "story": "一對男女在某一所國中成為男女朋友，耍一陣子甜蜜，為了一點小事互相誤會，生氣煩躁變得多過怦然心動……後來趁著畢業的機會分手了。然而即將升上高中的兩人──伊理戶水斗與綾井結女，竟以意想不到的形式重逢。「當然是我當哥哥了。」「我才是姊姊，這還用說嗎？」爸媽再婚對象的拖油瓶，居然是才剛分手的前任！前情侶顧慮到爸媽的心情，說好了必須遵守「誰把對方看成異性就算輸」的「兄弟姊妹規定」，然而──又是洗澡出來不期而遇，又是兩人獨處的上學放學……「當時」的回憶加上同住一個屋簷下的狀況，害得兩人無法不注意對方的一舉一動!?",
+      "original_name": "継母の連れ子が元カノだった",
+      "external_ids": {
+        "bangumi": 343106,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/343106",
+          "https://bgm.tv/subject/343106/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-21",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1110",
@@ -95,7 +315,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/cf93a99cce549bfa964af9f07e38de87",
       "premiere_date": "三",
       "premiere_time": "22:00",
-      "story": "外甥貴文前去探望從十七年間的昏睡狀態中甦醒的舅舅時，親眼目睹他施放出驚奇的魔法！──沒錯，舅舅是從異世界歸來的生還者！精靈的言語利刃直刺而來、與封閉心靈的少女錯身而過──在劍與魔法的世界生活，充滿了血與淚……由舅舅口述的異世界嚴酷回憶，與不受限制又令人懷念的遊戲體驗談交織而成，全新感覺的異世界＆異文化喜劇！"
+      "story": "外甥貴文前去探望從十七年間的昏睡狀態中甦醒的舅舅時，親眼目睹他施放出驚奇的魔法！──沒錯，舅舅是從異世界歸來的生還者！精靈的言語利刃直刺而來、與封閉心靈的少女錯身而過──在劍與魔法的世界生活，充滿了血與淚……由舅舅口述的異世界嚴酷回憶，與不受限制又令人懷念的遊戲體驗談交織而成，全新感覺的異世界＆異文化喜劇！",
+      "original_name": "異世界おじさん",
+      "external_ids": {
+        "bangumi": 339326,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/339326",
+          "https://bgm.tv/subject/339326/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2023-03-08",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1099",
@@ -103,7 +343,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e916e45056fa12b8d62b67fd7d524598",
       "premiere_date": "三",
       "premiere_time": "22:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "メイドインアビス 烈日の黄金郷",
+      "external_ids": {
+        "bangumi": 298477,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/298477",
+          "https://bgm.tv/subject/298477/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-28",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1127",
@@ -111,7 +371,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8de1cf178751eb62ff7590785aa71320",
       "premiere_date": "三",
       "premiere_time": "23:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "咲うアルスノトリア すんっ！",
+      "external_ids": {
+        "bangumi": 384635,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/384635",
+          "https://bgm.tv/subject/384635/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-21",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1100",
@@ -119,7 +399,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c9bdec2bf035536a6733ed4f1a4c7fd1",
       "premiere_date": "三",
       "premiere_time": "23:30",
-      "story": "我要得到這個女孩!!!!!!少年穿越到達的地方是什麼事情都可能發生的異世界!?在詭異的網站設定遊戲角色的道夫，再回神時就莫名其妙穿越來到了異世界。然而在明白這個世界的「奴隸」制度後，他決心使用設定遊戲時所獲得的技能，為夢幻的後宮生活展開冒險！"
+      "story": "我要得到這個女孩!!!!!!少年穿越到達的地方是什麼事情都可能發生的異世界!?在詭異的網站設定遊戲角色的道夫，再回神時就莫名其妙穿越來到了異世界。然而在明白這個世界的「奴隸」制度後，他決心使用設定遊戲時所獲得的技能，為夢幻的後宮生活展開冒險！",
+      "original_name": "異世界迷宮でハーレムを",
+      "external_ids": {
+        "bangumi": 322130,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/322130",
+          "https://bgm.tv/subject/322130/ep"
+        ],
+        "checked_at": "2026-10-15T14:41:39.601393+08:00",
+        "attempted_at": "2026-10-15T14:41:39.601393+08:00",
+        "end_date": "2022-09-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1126",
@@ -127,7 +427,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/824ce022d38a509482fd9d8fc0c6ef12",
       "premiere_date": "三",
       "premiere_time": "24:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "新テニスの王子様 U-17 WORLD CUP",
+      "external_ids": {
+        "bangumi": 352336,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/352336",
+          "https://bgm.tv/subject/352336/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-28",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1140",
@@ -135,7 +455,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/cff541d12838164dbd56cb149aad2bc8",
       "premiere_date": "三",
       "premiere_time": "25:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "夜は猫といっしょ",
+      "external_ids": {
+        "bangumi": 379456,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 30,
+        "aired_episodes": 30,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/379456",
+          "https://bgm.tv/subject/379456/ep"
+        ],
+        "checked_at": "2026-10-15T13:34:46.904875+08:00",
+        "attempted_at": "2026-10-15T13:34:46.904875+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1119",
@@ -143,7 +483,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/143f631211e3198761963a29a0bbac76",
       "premiere_date": "四",
       "premiere_time": "22:30",
-      "story": "霧島透，28歲。櫻樹組的若頭──身為黑道就恣意妄為，也因此被眾人稱為「櫻樹組的惡魔」，人人聞之色變。不過在某一天，組長卻命令他擔任其獨生女的保姆！？"
+      "story": "霧島透，28歲。櫻樹組的若頭──身為黑道就恣意妄為，也因此被眾人稱為「櫻樹組的惡魔」，人人聞之色變。不過在某一天，組長卻命令他擔任其獨生女的保姆！？",
+      "original_name": "組長娘と世話係",
+      "external_ids": {
+        "bangumi": 348538,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/348538",
+          "https://bgm.tv/subject/348538/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-22",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1105",
@@ -151,7 +511,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/173dae54f2d3971b6818cb2a06c3d27d",
       "premiere_date": "四",
       "premiere_time": "23:30",
-      "story": "魔王城（屋齡六十年的三坪大房間）的庭院裡出現了一扇通往異世界的「門」。而從門內出現的嬌小女孩，居然稱魔王與勇者為「爸爸」跟「媽媽」！想不到兩人過去居然是那種關係……這件事實讓蘆屋與千穗震驚不已。然而感到最混亂的人，卻是魔王與勇者本人。最後魔王城收養了女孩，魔王也在真正的意義上成為了一家之主，開始挑戰育兒！除此之外，親子（？）三人更挑戰了一起出門，戀愛中的高中女生千穗，果然也因此而感到焦慮不安──？"
+      "story": "魔王城（屋齡六十年的三坪大房間）的庭院裡出現了一扇通往異世界的「門」。而從門內出現的嬌小女孩，居然稱魔王與勇者為「爸爸」跟「媽媽」！想不到兩人過去居然是那種關係……這件事實讓蘆屋與千穗震驚不已。然而感到最混亂的人，卻是魔王與勇者本人。最後魔王城收養了女孩，魔王也在真正的意義上成為了一家之主，開始挑戰育兒！除此之外，親子（？）三人更挑戰了一起出門，戀愛中的高中女生千穗，果然也因此而感到焦慮不安──？",
+      "original_name": "はたらく魔王さま！！",
+      "external_ids": {
+        "bangumi": 330057,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/330057",
+          "https://bgm.tv/subject/330057/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-29",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1057",
@@ -159,7 +539,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5ddba0df359f99bdab9beea25f35317e",
       "premiere_date": "四",
       "premiere_time": "24:00",
-      "story": "10年前慎平的父母親過世之後，就被小舟家收養，因此跟潮與澪這對姊妹成了一家人。國中畢業之後就到東京就學，2年後他為了參加潮的葬禮再度回到故鄉。然而他在渡輪上就做了一個奇怪的夢，兒時玩伴‧窓在葬禮上又向他透漏了一件不尋常的事，讓他開始懷疑潮的死因並不單純。後來慎平得知當地曾經流傳「影子病」，看到自己影子的人都會死…。"
+      "story": "10年前慎平的父母親過世之後，就被小舟家收養，因此跟潮與澪這對姊妹成了一家人。國中畢業之後就到東京就學，2年後他為了參加潮的葬禮再度回到故鄉。然而他在渡輪上就做了一個奇怪的夢，兒時玩伴‧窓在葬禮上又向他透漏了一件不尋常的事，讓他開始懷疑潮的死因並不單純。後來慎平得知當地曾經流傳「影子病」，看到自己影子的人都會死…。",
+      "original_name": "サマータイムレンダ",
+      "external_ids": {
+        "bangumi": 326895,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/326895",
+          "https://bgm.tv/subject/326895/ep"
+        ],
+        "checked_at": "2026-10-13T21:47:11.920375+08:00",
+        "attempted_at": "2026-10-13T21:47:11.920375+08:00",
+        "end_date": "2022-09-29",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1112",
@@ -167,7 +567,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c0054cabe10ac549c17d4f7ff799abf0",
       "premiere_date": "四",
       "premiere_time": "24:55",
-      "story": "自從拒絕上學後，中２少年夜守更就陷入失眠的狀態。因此他開始試著半夜跑出家門獨自在街上遊蕩。想不到在獨自出門的夜裡，他認識了美貌的吸血鬼‧七草薺。在七草的帶領下，夜守體驗到夜遊的美好滋味，也因此讓他動了「想變成吸血鬼」的念頭。然而想要變成吸血鬼，單純被吸血是不行的。就這樣，中２少年與吸血鬼的熬夜愛情故事正式展開──"
+      "story": "自從拒絕上學後，中２少年夜守更就陷入失眠的狀態。因此他開始試著半夜跑出家門獨自在街上遊蕩。想不到在獨自出門的夜裡，他認識了美貌的吸血鬼‧七草薺。在七草的帶領下，夜守體驗到夜遊的美好滋味，也因此讓他動了「想變成吸血鬼」的念頭。然而想要變成吸血鬼，單純被吸血是不行的。就這樣，中２少年與吸血鬼的熬夜愛情故事正式展開──",
+      "original_name": "よふかしのうた",
+      "external_ids": {
+        "bangumi": 356774,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/356774",
+          "https://bgm.tv/subject/356774/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-29",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1109",
@@ -175,7 +595,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7c937a426491b1a71af4baf714ccccbe",
       "premiere_date": "四",
       "premiere_time": "25:28",
-      "story": "初學將棋的撲克臉高一生：田中步，喜歡著棋藝高超又容易害羞的學姊八乙女漆。雖然經常直率地說出怦然心動的台詞，卻暗自發誓，要用將棋贏過學姊才能告白。在這宛如棋局般一攻一防的戀愛對弈中，步一次又一次地戰敗，他究竟能不能順利贏過漆，並成功告白？在步步進攻的局勢下，究竟哪一方才能穩住內心不受動搖，贏得最終勝利？"
+      "story": "初學將棋的撲克臉高一生：田中步，喜歡著棋藝高超又容易害羞的學姊八乙女漆。雖然經常直率地說出怦然心動的台詞，卻暗自發誓，要用將棋贏過學姊才能告白。在這宛如棋局般一攻一防的戀愛對弈中，步一次又一次地戰敗，他究竟能不能順利贏過漆，並成功告白？在步步進攻的局勢下，究竟哪一方才能穩住內心不受動搖，贏得最終勝利？",
+      "original_name": "それでも歩は寄せてくる",
+      "external_ids": {
+        "bangumi": 324728,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/324728",
+          "https://bgm.tv/subject/324728/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-22",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1137",
@@ -183,7 +623,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/2ee7f2b401ba220c69f9cba7cd2cc70a",
       "premiere_date": "四",
       "premiere_time": "25:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ちみも",
+      "external_ids": {
+        "bangumi": 375977,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/375977",
+          "https://bgm.tv/subject/375977/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-29",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1131",
@@ -191,7 +651,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4d4eb01fbe1a3ade99229dc177a437ac",
       "premiere_date": "五",
       "premiere_time": "22:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ブッチギレ！",
+      "external_ids": {
+        "bangumi": 375571,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/375571",
+          "https://bgm.tv/subject/375571/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-23",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1113",
@@ -199,7 +679,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/77cf213415395aad9a4e3af0d2a60b62",
       "premiere_date": "五",
       "premiere_time": "24:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "シャドーハウス 2nd Season",
+      "external_ids": {
+        "bangumi": 349084,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/349084",
+          "https://bgm.tv/subject/349084/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-23",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1107",
@@ -207,7 +707,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6a6354890788978fd6982e6a3bc44898",
       "premiere_date": "五",
       "premiere_time": "24:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "プリマドール",
+      "external_ids": {
+        "bangumi": 366793,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/366793",
+          "https://bgm.tv/subject/366793/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-23",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1096",
@@ -215,7 +735,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ef86e0e5f6505486408030eb551d3d15",
       "premiere_date": "五",
       "premiere_time": "25:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ダンジョンに出会いを求めるのは間違っているだろうかIV 新章 迷宮篇",
+      "external_ids": {
+        "bangumi": 326874,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 11,
+        "aired_episodes": 11,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/326874",
+          "https://bgm.tv/subject/326874/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-30",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1106",
@@ -223,7 +763,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/27086c570394a8015d29e21b2292dc58",
       "premiere_date": "五",
       "premiere_time": "25:25",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "彼女、お借りします 第2期",
+      "external_ids": {
+        "bangumi": 315745,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/315745",
+          "https://bgm.tv/subject/315745/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-16",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1121",
@@ -231,7 +791,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8d557acf17d56f21c2dfd4a4e49ff50d",
       "premiere_date": "五",
       "premiere_time": "25:53",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "神クズ☆アイドル",
+      "external_ids": {
+        "bangumi": 359985,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 10,
+        "aired_episodes": 10,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/359985",
+          "https://bgm.tv/subject/359985/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-02",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1114",
@@ -239,7 +819,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e7ddb307e8586265c79ee07a9225aa99",
       "premiere_date": "五",
       "premiere_time": "25:55",
-      "story": "雨宮夕日是一位平凡的大學生，有一天一隻蜥蜴克雷塞多突然出現要他去拯救這個世界 !?正當夕日對此半信半疑的同時，敵人突然來襲，就在千鈞一髮之際解救他的人是居然是克雷塞多口中所說的公主…… !?"
+      "story": "雨宮夕日是一位平凡的大學生，有一天一隻蜥蜴克雷塞多突然出現要他去拯救這個世界 !?正當夕日對此半信半疑的同時，敵人突然來襲，就在千鈞一髮之際解救他的人是居然是克雷塞多口中所說的公主…… !?",
+      "original_name": "惑星のさみだれ",
+      "external_ids": {
+        "bangumi": 366522,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/366522",
+          "https://bgm.tv/subject/366522/ep"
+        ],
+        "checked_at": "2026-10-15T13:34:48.164365+08:00",
+        "attempted_at": "2026-10-15T13:34:48.164365+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1135",
@@ -247,7 +847,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4938409324463a64772bef478c546d8d",
       "premiere_date": "六",
       "premiere_time": "07:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "iiiあいすくりん2",
+      "external_ids": {
+        "bangumi": 381157,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/381157",
+          "https://bgm.tv/subject/381157/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-17",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1079",
@@ -255,7 +875,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/aa71e7ceb436ed2dfe3c99941080812f",
       "premiere_date": "六",
       "premiere_time": "17:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ラブオールプレー",
+      "external_ids": {
+        "bangumi": 345705,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/345705",
+          "https://bgm.tv/subject/345705/ep"
+        ],
+        "checked_at": "2026-10-13T21:47:11.920375+08:00",
+        "attempted_at": "2026-10-13T21:47:11.920375+08:00",
+        "end_date": "2022-09-24",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1120",
@@ -263,7 +903,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4339a43beeab367fd1e9a424b0393c2a",
       "premiere_date": "六",
       "premiere_time": "22:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "黒の召喚士",
+      "external_ids": {
+        "bangumi": 368617,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/368617",
+          "https://bgm.tv/subject/368617/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-24",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1129",
@@ -271,7 +931,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d413d32a2007e14534dff31771f10744",
       "premiere_date": "六",
       "premiere_time": "22:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "てっぺんっ!!!!!!!!!!!!!!!",
+      "external_ids": {
+        "bangumi": 364845,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/364845",
+          "https://bgm.tv/subject/364845/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-24",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1104",
@@ -279,7 +959,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/40c1b4cef156b893a418554a0b1ee6ab",
       "premiere_date": "六",
       "premiere_time": "23:30",
-      "story": "《刀劍神域》本傳人設足立慎吾首次擔任導演的A-1 Pictures原創動畫。故事原案是《便·當》的原作者朝浦。"
+      "story": "《刀劍神域》本傳人設足立慎吾首次擔任導演的A-1 Pictures原創動畫。故事原案是《便·當》的原作者朝浦。",
+      "original_name": "リコリス・リコイル",
+      "external_ids": {
+        "bangumi": 364450,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/364450",
+          "https://bgm.tv/subject/364450/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-24",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1130",
@@ -287,7 +987,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f11175de32ec50431592e5c9ce9b2bbd",
       "premiere_date": "六",
       "premiere_time": "23:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "シュート！Goal to the Future",
+      "external_ids": {
+        "bangumi": 357754,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/357754",
+          "https://bgm.tv/subject/357754/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-24",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1125",
@@ -295,7 +1015,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b00940fce2df3ba112fe94a9cf977c31",
       "premiere_date": "六",
       "premiere_time": "23:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "むさしの！",
+      "external_ids": {
+        "bangumi": 192976,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/192976",
+          "https://bgm.tv/subject/192976/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-17",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1061",
@@ -303,7 +1043,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7ced83b9b4d79b04bbfd8a4c53746ea1",
       "premiere_date": "六",
       "premiere_time": "24:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "キングダム 第4シリーズ",
+      "external_ids": {
+        "bangumi": 353266,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/353266",
+          "https://bgm.tv/subject/353266/ep"
+        ],
+        "checked_at": "2026-10-13T21:47:11.920375+08:00",
+        "attempted_at": "2026-10-13T21:47:11.920375+08:00",
+        "end_date": "2022-10-01",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1108",
@@ -311,7 +1071,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/92fae520bc50c2798da4c6dd5a0afd82",
       "premiere_date": "六",
       "premiere_time": "24:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "Engage Kiss",
+      "external_ids": {
+        "bangumi": 375817,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/375817",
+          "https://bgm.tv/subject/375817/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-09-24",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1111",
@@ -319,7 +1099,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b40135ef76e671cf142df4a4986e4fb6",
       "premiere_date": "六",
       "premiere_time": "25:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "うたわれるもの 二人の白皇",
+      "external_ids": {
+        "bangumi": 293008,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 28,
+        "aired_episodes": 28,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/293008",
+          "https://bgm.tv/subject/293008/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-12-24",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1132",
@@ -327,7 +1127,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d0eeb489481d4086cc8448428d077bb5",
       "premiere_date": "六",
       "premiere_time": "25:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "エクストリームハーツ",
+      "external_ids": {
+        "bangumi": 368816,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/368816",
+          "https://bgm.tv/subject/368816/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-09-24",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1052",
@@ -335,7 +1155,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7577074a133a10c19867328c2f31bfca",
       "premiere_date": "六",
       "premiere_time": "25:30",
-      "story": "因為剛出生時雙方父母抱錯嬰兒，讓高中生海野凪和天野繪里香的命運大不相同。一個是小餐館老闆的兒子，一個變成飯店總裁的千金小姐。但在知道彼此身分後，讓他們震驚的事還不只如此，父母之間為了讓彼此都能保有這兩個孩子，為他們兩人訂下婚約，還強迫他們要單獨同居兩個星期！凪根本沒有時間花心力在這上面，因為他得努力念書拿到第一名，才能去和喜歡的女生告白！"
+      "story": "因為剛出生時雙方父母抱錯嬰兒，讓高中生海野凪和天野繪里香的命運大不相同。一個是小餐館老闆的兒子，一個變成飯店總裁的千金小姐。但在知道彼此身分後，讓他們震驚的事還不只如此，父母之間為了讓彼此都能保有這兩個孩子，為他們兩人訂下婚約，還強迫他們要單獨同居兩個星期！凪根本沒有時間花心力在這上面，因為他得努力念書拿到第一名，才能去和喜歡的女生告白！",
+      "original_name": "カッコウの許嫁",
+      "external_ids": {
+        "bangumi": 327606,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/327606",
+          "https://bgm.tv/subject/327606/ep"
+        ],
+        "checked_at": "2026-10-13T21:47:11.920375+08:00",
+        "attempted_at": "2026-10-13T21:47:11.920375+08:00",
+        "end_date": "2022-10-01",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1102",
@@ -343,7 +1183,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5ba526c74aeaa9890839b21128dd4e86",
       "premiere_date": "六",
       "premiere_time": "26:00",
-      "story": "悠利在父母親過世之後辭去家裡的傭人，後來突然一位女孩自願不領薪水擔任女傭服侍他。儘管認為她的動機跟行為舉止都很可疑，但是她不但做事勤快而且井井有條，更重要的是她做的料理都非常美味，讓悠利感到困惑不已。於是他決定揭穿女僕的真面目，然而原本應該佔優勢的主人卻總是遭到對方的捉弄，立場被逆轉的他要如何扭轉劣勢呢？充滿謎團的女傭與孤獨善良又好奇的小主人，構成了一個奇妙的主僕關係，另類的女傭有著一雙刻意營造其神秘感的紫色眼眸，讓人對這對主僕未來的發展充滿了遐想。"
+      "story": "悠利在父母親過世之後辭去家裡的傭人，後來突然一位女孩自願不領薪水擔任女傭服侍他。儘管認為她的動機跟行為舉止都很可疑，但是她不但做事勤快而且井井有條，更重要的是她做的料理都非常美味，讓悠利感到困惑不已。於是他決定揭穿女僕的真面目，然而原本應該佔優勢的主人卻總是遭到對方的捉弄，立場被逆轉的他要如何扭轉劣勢呢？充滿謎團的女傭與孤獨善良又好奇的小主人，構成了一個奇妙的主僕關係，另類的女傭有著一雙刻意營造其神秘感的紫色眼眸，讓人對這對主僕未來的發展充滿了遐想。",
+      "original_name": "最近雇ったメイドが怪しい",
+      "external_ids": {
+        "bangumi": 382852,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 11,
+        "aired_episodes": 11,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/382852",
+          "https://bgm.tv/subject/382852/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-10-08",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1097",
@@ -351,7 +1211,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b5f8ad489dda3c81ff169e22caeb819d",
       "premiere_date": "日",
       "premiere_time": "19:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ラブライブ！スーパースター!! 2期",
+      "external_ids": {
+        "bangumi": 354146,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/354146",
+          "https://bgm.tv/subject/354146/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "end_date": "2022-10-09",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-124",
@@ -359,7 +1239,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c0e6346e3879589defb46b7090d9004a",
       "premiere_date": "日",
       "premiere_time": "21:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "連盟空軍航空魔法音楽隊ルミナスウィッチーズ",
+      "external_ids": {
+        "bangumi": 253047,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/253047",
+          "https://bgm.tv/subject/253047/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-09-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1118",
@@ -367,7 +1267,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/90350481606b4a1b0e975a060a560526",
       "premiere_date": "日",
       "premiere_time": "21:30",
-      "story": "一名年輕的藥學學者，因為過於熱衷研究，導致他還壯志未酬就過勞死。而他張開眼睛之後，竟發現自己轉世成了專為王公貴族診療的宮廷藥師名門德‧麥第奇家之子――法馬。然而，法馬對這個充斥錯誤的療法、調劑法，甚至還橫行著稱不上醫療行為的咒法和巫術的世界絕望至極。「不想想辦法不行啊……至少要為這個世界的人們著想――」他擁有前世所累積的現代藥學知識，搭配上在異世界得到的作弊能力「物質創造＆物質消除」。法馬運用這些知識和能力，面對媽媽的腰痛到女王的絕症等等……各種疑難雜症。接著，他與「認為應將真正有效的藥品提供給每一個人」的奴婢少女珞緹、以及美女家教艾倫等人，開設了「異世界藥局」。而法馬訂下的目標則是──"
+      "story": "一名年輕的藥學學者，因為過於熱衷研究，導致他還壯志未酬就過勞死。而他張開眼睛之後，竟發現自己轉世成了專為王公貴族診療的宮廷藥師名門德‧麥第奇家之子――法馬。然而，法馬對這個充斥錯誤的療法、調劑法，甚至還橫行著稱不上醫療行為的咒法和巫術的世界絕望至極。「不想想辦法不行啊……至少要為這個世界的人們著想――」他擁有前世所累積的現代藥學知識，搭配上在異世界得到的作弊能力「物質創造＆物質消除」。法馬運用這些知識和能力，面對媽媽的腰痛到女王的絕症等等……各種疑難雜症。接著，他與「認為應將真正有效的藥品提供給每一個人」的奴婢少女珞緹、以及美女家教艾倫等人，開設了「異世界藥局」。而法馬訂下的目標則是──",
+      "original_name": "異世界薬局",
+      "external_ids": {
+        "bangumi": 342200,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/342200",
+          "https://bgm.tv/subject/342200/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-09-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1138",
@@ -375,7 +1295,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5963cd41cf0d8d948e7d1d704b43214d",
       "premiere_date": "日",
       "premiere_time": "21:55",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ハナビちゃんは遅れがち",
+      "external_ids": {
+        "bangumi": 345649,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/345649",
+          "https://bgm.tv/subject/345649/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-09-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1115",
@@ -383,7 +1323,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/431979b92e3d66f26b35dd48eca68cad",
       "premiere_date": "日",
       "premiere_time": "22:30",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "RWBY 氷雪帝国",
+      "external_ids": {
+        "bangumi": 375531,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/375531",
+          "https://bgm.tv/subject/375531/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-09-18",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1133",
@@ -391,7 +1351,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bb26e430f3aa35b7bcd7ff9881d8864d",
       "premiere_date": "日",
       "premiere_time": "23:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "ユーレイデコ",
+      "external_ids": {
+        "bangumi": 371396,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/371396",
+          "https://bgm.tv/subject/371396/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-09-18",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1136",
@@ -399,7 +1379,27 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ba4c59256603f5a4e28c42b80c6b4673",
       "premiere_date": "日",
       "premiere_time": "25:00",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "森のくまさん、冬眠中。",
+      "external_ids": {
+        "bangumi": 342673,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 9,
+        "aired_episodes": 9,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/342673",
+          "https://bgm.tv/subject/342673/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-09-11",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1139",
@@ -407,10 +1407,30 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d68b33daabc1dd9e47d6723fd6f38be8",
       "premiere_date": "無首播日期",
       "premiere_time": "無首播時間",
-      "story": "暫無簡介"
+      "story": "暫無簡介",
+      "original_name": "KJファイル",
+      "external_ids": {
+        "bangumi": 381384,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/381384",
+          "https://bgm.tv/subject/381384/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-10-02",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-07-13T08:58:28.600049+08:00",
+  "generated_at": "2026-10-15T14:41:40.424528+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202207/",
   "quality": {
     "source_count": 51,

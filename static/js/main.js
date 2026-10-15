@@ -4,6 +4,10 @@ const MAX_FETCH_RETRIES = 2;
 const RETRY_DELAYS_MS = [300, 700];
 const HTML2CANVAS_TIMEOUT_MS = 15 * 1000;
 const SHARE_IMAGE_TIMEOUT_MS = 15 * 1000;
+const AIRING_STATUS_LABELS = {
+    unknown: '狀態待確認', not_yet_aired: '尚未播出', airing: '播出中',
+    finished: '本季已播畢', paused: '暫停播出', cancelled: '取消播出'
+};
 const HTML2CANVAS_URL = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
 const HTML2CANVAS_INTEGRITY = 'sha384-ZZ1pncU3bQe8y31yfZdMFdSpttDoPmOZg2wguVK9almUodir1PghgT0eY7Mrty8H';
 let html2canvasLoadPromise = null;
@@ -100,6 +104,19 @@ function validateDataset(payload) {
                 throw createDataError('DATA_SCHEMA', `第 ${index + 1} 筆動畫資料的欄位格式錯誤，無法安全顯示。`, {retryable: false});
             }
         });
+        if (item.episodes !== undefined && item.episodes !== null) {
+            const info = item.episodes;
+            const validCount = (value, minimum) => value === null || value === undefined || (Number.isInteger(value) && value >= minimum);
+            if (typeof info !== 'object' || Array.isArray(info) ||
+                !validCount(info.total_episodes, 1) || !validCount(info.aired_episodes, 0) ||
+                !Object.hasOwn(AIRING_STATUS_LABELS, info.airing_status) ||
+                !['unknown', 'planned', 'confirmed'].includes(info.episode_count_status) ||
+                !['ok', 'unmatched', 'stale', 'conflict'].includes(info.fetch_state) ||
+                (Number.isInteger(info.total_episodes) && Number.isInteger(info.aired_episodes) && info.aired_episodes > info.total_episodes) ||
+                (info.airing_status === 'finished' && (!Number.isInteger(info.total_episodes) || info.aired_episodes !== info.total_episodes || info.episode_count_status !== 'confirmed'))) {
+                throw createDataError('DATA_SCHEMA', `第 ${index + 1} 筆動畫的集數資料格式錯誤，無法安全顯示。`, {retryable: false});
+            }
+        }
     });
 
     return payload;
@@ -376,6 +393,7 @@ function animeApp() {
         year: '',
         season: '',
         filterDay: '全部',
+        filterStatus: '全部',
         searchKeyword: '',
         
         // --- 3. 應用狀態 ---
@@ -664,6 +682,54 @@ function animeApp() {
             return raceWithAbort(pending.promise, signal);
         },
 
+        async getAllQuarterData(signal) {
+            const seasonOrder = ['秋', '夏', '春', '冬'];
+            const quarters = Object.keys(this.availableData).sort((a, b) => b - a)
+                .flatMap(year => seasonOrder.filter(season => this.availableData[year].includes(season))
+                    .map(season => ({key: `${year}_${season}`, label: `${year}年${season}季`})));
+            const datasets = new Array(quarters.length);
+            let next = 0;
+            let stopped = false;
+            const worker = async () => {
+                while (!stopped && next < quarters.length) {
+                    if (signal.aborted) throw createAbortError();
+                    const index = next++;
+                    try {
+                        datasets[index] = await this.getDataset(quarters[index].key, signal);
+                    } catch (error) {
+                        stopped = true;
+                        throw error;
+                    }
+                }
+            };
+            await Promise.all(Array.from({length: Math.min(4, quarters.length)}, worker));
+            if (signal.aborted) throw createAbortError();
+            const works = new Map();
+            let latest = null;
+            datasets.forEach((dataset, index) => {
+                if (dataset.generated_at && (!latest || Date.parse(dataset.generated_at) > Date.parse(latest))) latest = dataset.generated_at;
+                dataset.anime_list.forEach(anime => {
+                    const identity = JSON.stringify([anime.bangumi_id || anime.anime_name, anime.anime_name,
+                        anime.original_name || '', anime.external_ids?.bangumi || null]);
+                    const existing = works.get(identity);
+                    if (existing) {
+                        existing.source_quarters.push(quarters[index].label);
+                    } else {
+                        works.set(identity, {...anime, result_key: identity, source_quarters: [quarters[index].label]});
+                    }
+                });
+            });
+            return {anime_list: Array.from(works.values()), generated_at: latest};
+        },
+
+        animeResultKey(anime) {
+            return anime.result_key || anime.bangumi_id || anime.anime_name;
+        },
+
+        sourceQuarterLabel(anime) {
+            return (anime.source_quarters || []).join('、');
+        },
+
         setLastUpdateTime(generatedAt) {
             if (!generatedAt) {
                 this.lastUpdateTime = '';
@@ -712,7 +778,8 @@ function animeApp() {
             const abortLoad = () => controller.abort();
             this._activeLoadAbort = abortLoad;
 
-            const cacheKey = `${this.year}_${this.season}`;
+            const searchingAll = this.searchKeyword.trim().length > 0;
+            const cacheKey = searchingAll ? '__all_quarters__' : `${this.year}_${this.season}`;
             const previousCacheKey = this._activeCacheKey;
             const keepPreviousData = previousCacheKey === cacheKey && this.rawAnimeList.length > 0;
             if (this._activeCacheKey && this._activeCacheKey !== cacheKey) {
@@ -734,7 +801,9 @@ function animeApp() {
             }
 
             try {
-                const dataset = await this.getDataset(cacheKey, controller.signal);
+                const dataset = searchingAll
+                    ? await this.getAllQuarterData(controller.signal)
+                    : await this.getDataset(cacheKey, controller.signal);
                 if (!this.isCurrentLoad(requestId)) return;
                 this.rawAnimeList = dataset.anime_list;
                 this.setLastUpdateTime(dataset.generated_at);
@@ -788,15 +857,66 @@ function animeApp() {
             if (this.filterDay !== '全部') {
                 list = list.filter(item => item.premiere_date === this.filterDay);
             }
+            if (this.filterStatus !== '全部') {
+                list = list.filter(item => (item.episodes?.airing_status || 'unknown') === this.filterStatus);
+            }
 
-            if (this.searchKeyword) {
-                const k = this.searchKeyword.toLowerCase().trim();
-                list = list.filter(item => 
-                    (item.anime_name && item.anime_name.toLowerCase().includes(k)) ||
-                    (item.story && item.story.toLowerCase().includes(k))
+            if (this.searchKeyword.trim()) {
+                const k = this.searchKeyword.normalize('NFKC').toLowerCase().trim();
+                list = list.filter(item => [item.anime_name, item.original_name, item.story]
+                    .some(value => typeof value === 'string' && value.normalize('NFKC').toLowerCase().includes(k))
                 );
             }
             return list;
+        },
+
+        episodeCountLabel(anime) {
+            const info = anime.episodes;
+            if (!info) return '集數待確認';
+            const aired = Number.isInteger(info.aired_episodes) ? info.aired_episodes : null;
+            const total = Number.isInteger(info.total_episodes) ? info.total_episodes : null;
+            if (info.fetch_state === 'conflict') {
+                return aired === null ? '集數待確認' : `已播 ${aired} 集／總集數待確認`;
+            }
+            if (info.airing_status === 'finished' && total !== null) return `全 ${total} 集`;
+            if (total !== null && aired !== null) {
+                return info.episode_count_status === 'planned'
+                    ? `已播 ${aired} 集／預定 ${total} 集`
+                    : `已播 ${aired}／${total} 集`;
+            }
+            if (aired !== null) return `已播 ${aired} 集／總集數未定`;
+            if (total !== null) return `${info.episode_count_status === 'planned' ? '預定' : '共'} ${total} 集／進度待確認`;
+            return '集數待確認';
+        },
+
+        airingStatusLabel(anime) {
+            return AIRING_STATUS_LABELS[anime.episodes?.airing_status || 'unknown'];
+        },
+
+        episodeMetadataDetail(anime) {
+            const info = anime.episodes;
+            if (!info) return '尚未取得可靠的集數資料。';
+            const checked = info.checked_at ? new Date(info.checked_at) : null;
+            const stamp = checked && !Number.isNaN(checked.getTime())
+                ? `最後確認：${checked.toLocaleString('zh-TW', {timeZone: 'Asia/Taipei'})}` : '尚未確認';
+            return `${stamp}。${info.note || '集數以對應動畫條目的正篇為範圍。'}`;
+        },
+
+        episodeSourceUrl(anime) {
+            for (const source of anime.episodes?.source_urls || []) {
+                try {
+                    const url = new URL(source);
+                    if (url.protocol === 'https:' && !url.username && !url.password && !url.hash) return url.href;
+                } catch { /* Invalid source: fall back to the canonical provider link. */ }
+            }
+            const id = anime.external_ids?.bangumi;
+            return Number.isInteger(id) && id > 0 ? `https://bgm.tv/subject/${id}/ep` : null;
+        },
+
+        episodeUpdateWarning(anime) {
+            if (anime.episodes?.fetch_state === 'stale') return anime.episodes.checked_at ? '更新未成功，資料可能落後' : '暫時無法取得集數';
+            if (anime.episodes?.fetch_state === 'conflict') return '來源資料待核對';
+            return '';
         },
 
         // --- 8. 互動功能 (不變) ---

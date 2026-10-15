@@ -1,0 +1,738 @@
+[
+  {
+    "quarter": "2018_夏",
+    "source_quarter": "2018_春",
+    "card_id": "anime-489",
+    "original_name": "かくりよの宿飯",
+    "subject_id": 229393,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_夏",
+    "source_quarter": "2018_春",
+    "card_id": "anime-509",
+    "original_name": "キャプテン翼",
+    "subject_id": 232072,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_夏",
+    "source_quarter": "2018_春",
+    "card_id": "anime-485",
+    "original_name": "シュタインズ・ゲート ゼロ",
+    "subject_id": 129807,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_夏",
+    "source_quarter": "2018_春",
+    "card_id": "anime-498",
+    "original_name": "あっくんとカノジョ",
+    "subject_id": 230940,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_夏",
+    "source_quarter": "2018_春",
+    "card_id": "anime-506",
+    "original_name": "僕のヒーローアカデミア 第3期",
+    "subject_id": 226677,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_春",
+    "source_quarter": "2018_冬",
+    "card_id": "anime-569",
+    "original_name": "弱虫ペダル GLORY LINE",
+    "subject_id": 217629,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_春",
+    "source_quarter": "2018_冬",
+    "card_id": "anime-574",
+    "original_name": "斉木楠雄のΨ難 第2期",
+    "subject_id": 204027,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_春",
+    "source_quarter": "2018_冬",
+    "card_id": "anime-562",
+    "original_name": "刀使ノ巫女",
+    "subject_id": 215158,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_春",
+    "source_quarter": "2018_冬",
+    "card_id": "anime-580",
+    "original_name": "覇穹 封神演義",
+    "subject_id": 221126,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_春",
+    "source_quarter": "2018_冬",
+    "card_id": "anime-566",
+    "original_name": "グランクレスト戦記",
+    "subject_id": 195843,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_春",
+    "source_quarter": "2018_冬",
+    "card_id": "anime-552",
+    "original_name": "BEATLESS",
+    "subject_id": 227102,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_春",
+    "source_quarter": "2018_冬",
+    "card_id": "anime-573",
+    "original_name": "七つの大罪 戒めの復活",
+    "subject_id": 192978,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_春",
+    "source_quarter": "2018_冬",
+    "card_id": "anime-548",
+    "original_name": "ダーリン・イン・ザ・フランキス",
+    "subject_id": 218711,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_春",
+    "source_quarter": "2018_冬",
+    "card_id": "anime-567",
+    "original_name": "カードキャプターさくら クリアカード編",
+    "subject_id": 183891,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_春",
+    "source_quarter": "2018_冬",
+    "card_id": "anime-555",
+    "original_name": "アイドリッシュセブン",
+    "subject_id": 190441,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_秋",
+    "source_quarter": "2018_春",
+    "card_id": "anime-509",
+    "original_name": "キャプテン翼",
+    "subject_id": 232072,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_秋",
+    "source_quarter": "2018_夏",
+    "card_id": "anime-458",
+    "original_name": "中間管理録トネガワ",
+    "subject_id": 237834,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_秋",
+    "source_quarter": "2018_夏",
+    "card_id": "anime-435",
+    "original_name": "BANANA FISH",
+    "subject_id": 228350,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_秋",
+    "source_quarter": "2018_夏",
+    "card_id": "anime-465",
+    "original_name": "おしえて魔法のペンデュラム〜リルリルフェアリル〜",
+    "subject_id": 237762,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_秋",
+    "source_quarter": "2018_夏",
+    "card_id": "anime-439",
+    "original_name": "バキ",
+    "subject_id": 199373,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2018_秋",
+    "source_quarter": "2018_夏",
+    "card_id": "anime-430",
+    "original_name": "進撃の巨人 Season3",
+    "subject_id": 217300,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2019_冬",
+    "source_quarter": "2018_秋",
+    "card_id": "anime-412",
+    "original_name": "ラディアン",
+    "subject_id": 236597,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_冬",
+    "source_quarter": "2019_秋",
+    "card_id": "anime-223",
+    "original_name": "ファンタシースターオンライン2 エピソード・オラクル",
+    "subject_id": 277217,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_冬",
+    "source_quarter": "2019_秋",
+    "card_id": "anime-218",
+    "original_name": "ラディアン 第2シリーズ",
+    "subject_id": 276051,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_冬",
+    "source_quarter": "2019_秋",
+    "card_id": "anime-235",
+    "original_name": "GO！GO！アトム",
+    "subject_id": 302137,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_冬",
+    "source_quarter": "2019_秋",
+    "card_id": "anime-209",
+    "original_name": "歌舞伎町シャーロック",
+    "subject_id": 256649,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_冬",
+    "source_quarter": "2019_秋",
+    "card_id": "anime-199",
+    "original_name": "魔入りました！入間くん",
+    "subject_id": 273844,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_冬",
+    "source_quarter": "2019_秋",
+    "card_id": "anime-190",
+    "original_name": "Fate/Grand Order -絶対魔獣戦線バビロニア-",
+    "subject_id": 255526,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_冬",
+    "source_quarter": "2019_秋",
+    "card_id": "anime-189",
+    "original_name": "ソードアート・オンライン アリシゼーション War of Underworld",
+    "subject_id": 279457,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_夏",
+    "source_quarter": "2020_春",
+    "card_id": "anime-107",
+    "original_name": "別冊 オリンピア・キュクロス",
+    "subject_id": 304183,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_夏",
+    "source_quarter": "2020_春",
+    "card_id": "anime-105",
+    "original_name": "ぽっこりーず",
+    "subject_id": 303433,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_夏",
+    "source_quarter": "2020_春",
+    "card_id": "anime-71",
+    "original_name": "放課後ていぼう日誌",
+    "subject_id": 280678,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_夏",
+    "source_quarter": "2020_春",
+    "card_id": "anime-94",
+    "original_name": "富豪刑事 Balance:UNLIMITED",
+    "subject_id": 298718,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_夏",
+    "source_quarter": "2020_春",
+    "card_id": "anime-74",
+    "original_name": "天晴爛漫！",
+    "subject_id": 292542,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_夏",
+    "source_quarter": "2020_冬",
+    "card_id": "anime-42",
+    "original_name": "とある科学の超電磁砲T",
+    "subject_id": 262940,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_夏",
+    "source_quarter": "2020_春",
+    "card_id": "anime-86",
+    "original_name": "食戟のソーマ 豪ノ皿",
+    "subject_id": 296820,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_夏",
+    "source_quarter": "2020_春",
+    "card_id": "anime-101",
+    "original_name": "文豪とアルケミスト 〜審判ノ歯車〜",
+    "subject_id": 297208,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_夏",
+    "source_quarter": "2020_春",
+    "card_id": "anime-116",
+    "original_name": "カードファイト!! ヴァンガード外伝 イフ-if-",
+    "subject_id": 304431,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_夏",
+    "source_quarter": "2020_春",
+    "card_id": "anime-83",
+    "original_name": "ガンダムビルドダイバーズRe:RISE 2nd Season",
+    "subject_id": 297261,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_夏",
+    "source_quarter": "2020_冬",
+    "card_id": "anime-55",
+    "original_name": "ヒーリングっど♥プリキュア",
+    "subject_id": 297094,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_夏",
+    "source_quarter": "2020_春",
+    "card_id": "anime-96",
+    "original_name": "アイドリッシュセブン Second BEAT!",
+    "subject_id": 253042,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_春",
+    "source_quarter": "2020_冬",
+    "card_id": "anime-52",
+    "original_name": "A3! SEASON SPRING & SUMMER",
+    "subject_id": 273551,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_春",
+    "source_quarter": "2020_冬",
+    "card_id": "anime-31",
+    "original_name": "プランダラ",
+    "subject_id": 237988,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_春",
+    "source_quarter": "2019_秋",
+    "card_id": "anime-235",
+    "original_name": "GO！GO！アトム",
+    "subject_id": 302137,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_春",
+    "source_quarter": "2020_冬",
+    "card_id": "anime-42",
+    "original_name": "とある科学の超電磁砲T",
+    "subject_id": 262940,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_春",
+    "source_quarter": "2020_冬",
+    "card_id": "anime-55",
+    "original_name": "ヒーリングっど♥プリキュア",
+    "subject_id": 297094,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_秋",
+    "source_quarter": "2020_春",
+    "card_id": "anime-105",
+    "original_name": "ぽっこりーず",
+    "subject_id": 303433,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_秋",
+    "source_quarter": "2020_春",
+    "card_id": "anime-116",
+    "original_name": "カードファイト!! ヴァンガード外伝 イフ-if-",
+    "subject_id": 304431,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2020_秋",
+    "source_quarter": "2020_春",
+    "card_id": "anime-96",
+    "original_name": "アイドリッシュセブン Second BEAT!",
+    "subject_id": 253042,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_冬",
+    "source_quarter": "2020_秋",
+    "card_id": "anime-185",
+    "original_name": "おそ松さん 第3期",
+    "subject_id": 309910,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_冬",
+    "source_quarter": "2020_秋",
+    "card_id": "anime-125",
+    "original_name": "ひぐらしのなく頃に 業",
+    "subject_id": 297969,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_冬",
+    "source_quarter": "2020_秋",
+    "card_id": "anime-178",
+    "original_name": "キングスレイド 意志を継ぐものたち",
+    "subject_id": 305621,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_冬",
+    "source_quarter": "2020_秋",
+    "card_id": "anime-168",
+    "original_name": "呪術廻戦",
+    "subject_id": 294993,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_冬",
+    "source_quarter": "2020_秋",
+    "card_id": "anime-177",
+    "original_name": "犬と猫どっちも飼ってると毎日たのしい",
+    "subject_id": 296078,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_冬",
+    "source_quarter": "2020_秋",
+    "card_id": "anime-170",
+    "original_name": "ドラゴンクエスト ダイの大冒険",
+    "subject_id": 296980,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_冬",
+    "source_quarter": "2020_秋",
+    "card_id": "anime-176",
+    "original_name": "半妖の夜叉姫",
+    "subject_id": 306193,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_冬",
+    "source_quarter": "2020_秋",
+    "card_id": "anime-669",
+    "original_name": "進撃の巨人 The Final Season",
+    "subject_id": 285666,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_夏",
+    "source_quarter": "2021_春",
+    "card_id": "anime-167",
+    "original_name": "不滅のあなたへ",
+    "subject_id": 297954,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_夏",
+    "source_quarter": "2021_春",
+    "card_id": "anime-770",
+    "original_name": "BLUE REFLECTION RAY/澪",
+    "subject_id": 328032,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_夏",
+    "source_quarter": "2021_春",
+    "card_id": "anime-729",
+    "original_name": "魔入りました！入間くん 第2シリーズ",
+    "subject_id": 301740,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_夏",
+    "source_quarter": "2021_春",
+    "card_id": "anime-733",
+    "original_name": "EDENS ZERO",
+    "subject_id": 308588,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_夏",
+    "source_quarter": "2021_春",
+    "card_id": "anime-757",
+    "original_name": "ダイナ荘びより",
+    "subject_id": 330889,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_夏",
+    "source_quarter": "2021_冬",
+    "card_id": "anime-716",
+    "original_name": "トロピカル～ジュ！プリキュア",
+    "subject_id": 320857,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_春",
+    "source_quarter": "2021_冬",
+    "card_id": "anime-672",
+    "original_name": "七つの大罪 憤怒の審判",
+    "subject_id": 302639,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_春",
+    "source_quarter": "2021_冬",
+    "card_id": "anime-677",
+    "original_name": "蜘蛛ですが、なにか？",
+    "subject_id": 252782,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_春",
+    "source_quarter": "2021_冬",
+    "card_id": "anime-708",
+    "original_name": "バック・アロウ",
+    "subject_id": 297396,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_春",
+    "source_quarter": "2020_秋",
+    "card_id": "anime-170",
+    "original_name": "ドラゴンクエスト ダイの大冒険",
+    "subject_id": 296980,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_春",
+    "source_quarter": "2021_冬",
+    "card_id": "anime-716",
+    "original_name": "トロピカル～ジュ！プリキュア",
+    "subject_id": 320857,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_秋",
+    "source_quarter": "2021_夏",
+    "card_id": "anime-772",
+    "original_name": "白い砂のアクアトープ",
+    "subject_id": 325281,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_秋",
+    "source_quarter": "2021_春",
+    "card_id": "anime-729",
+    "original_name": "魔入りました！入間くん 第2シリーズ",
+    "subject_id": 301740,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2021_秋",
+    "source_quarter": "2021_夏",
+    "card_id": "anime-868",
+    "original_name": "ジャヒー様はくじけない！",
+    "subject_id": 333349,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2022_冬",
+    "source_quarter": "2021_秋",
+    "card_id": "anime-807",
+    "original_name": "王様ランキング",
+    "subject_id": 296109,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2022_冬",
+    "source_quarter": "2021_秋",
+    "card_id": "anime-794",
+    "original_name": "プラチナエンド",
+    "subject_id": 322955,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2022_冬",
+    "source_quarter": "2021_秋",
+    "card_id": "anime-768",
+    "original_name": "鬼滅の刃 遊郭編",
+    "subject_id": 328195,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2022_夏",
+    "source_quarter": "2022_春",
+    "card_id": "anime-1057",
+    "original_name": "サマータイムレンダ",
+    "subject_id": 326895,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2022_夏",
+    "source_quarter": "2022_春",
+    "card_id": "anime-1079",
+    "original_name": "ラブオールプレー",
+    "subject_id": 345705,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2022_夏",
+    "source_quarter": "2022_春",
+    "card_id": "anime-1061",
+    "original_name": "キングダム 第4シリーズ",
+    "subject_id": 353266,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2022_夏",
+    "source_quarter": "2022_春",
+    "card_id": "anime-1052",
+    "original_name": "カッコウの許嫁",
+    "subject_id": 327606,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2022_春",
+    "source_quarter": "2022_冬",
+    "card_id": "anime-1016",
+    "original_name": "CUE!",
+    "subject_id": 318227,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2022_春",
+    "source_quarter": "2022_冬",
+    "card_id": "anime-1015",
+    "original_name": "薔薇王の葬列",
+    "subject_id": 315060,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2022_秋",
+    "source_quarter": "2022_夏",
+    "card_id": "anime-1110",
+    "original_name": "異世界おじさん",
+    "subject_id": 339326,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2022_秋",
+    "source_quarter": "2022_夏",
+    "card_id": "anime-1114",
+    "original_name": "惑星のさみだれ",
+    "subject_id": 366522,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2022_秋",
+    "source_quarter": "2022_夏",
+    "card_id": "anime-1111",
+    "original_name": "うたわれるもの 二人の白皇",
+    "subject_id": 293008,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2023_冬",
+    "source_quarter": "2022_秋",
+    "card_id": "anime-1175",
+    "original_name": "クールドジ男子",
+    "subject_id": 378860,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2023_冬",
+    "source_quarter": "2022_秋",
+    "card_id": "anime-1179",
+    "original_name": "永久少年 Eternal Boys",
+    "subject_id": 374563,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2023_冬",
+    "source_quarter": "2022_秋",
+    "card_id": "anime-1164",
+    "original_name": "うる星やつら",
+    "subject_id": 364468,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2023_冬",
+    "source_quarter": "2022_秋",
+    "card_id": "anime-1154",
+    "original_name": "魔入りました！入間くん 第3シリーズ",
+    "subject_id": 348699,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2023_冬",
+    "source_quarter": "2022_秋",
+    "card_id": "anime-1153",
+    "original_name": "ブルーロック",
+    "subject_id": 341163,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2023_春",
+    "source_quarter": "2023_冬",
+    "card_id": "anime-1237",
+    "original_name": "ヴィンランド・サガ SEASON2",
+    "subject_id": 296739,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2023_春",
+    "source_quarter": "2023_冬",
+    "card_id": "anime-1241",
+    "original_name": "魔術士オーフェンはぐれ旅 アーバンラマ編",
+    "subject_id": 401786,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2024_秋",
+    "source_quarter": "2024_夏",
+    "card_id": "anime-1678",
+    "original_name": "多数欠",
+    "subject_id": 477204,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  },
+  {
+    "quarter": "2024_秋",
+    "source_quarter": "2024_夏",
+    "card_id": "anime-1592",
+    "original_name": "FAIRY TAIL 100年クエスト",
+    "subject_id": 349093,
+    "method": "identical-source-card+localized-title+original-title+unique-id"
+  }
+]

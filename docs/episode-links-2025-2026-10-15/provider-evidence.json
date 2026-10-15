@@ -1,0 +1,1649 @@
+[
+  {
+    "subject_id": 526104,
+    "name": "キミとアイドルプリキュア♪",
+    "name_cn": "Idol光之美少女你与我♪",
+    "type": 2,
+    "date": "2025-02-02",
+    "eps": 49,
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "キミプリ"
+          },
+          {
+            "v": "You and Idol Precure"
+          },
+          {
+            "v": "你与偶像 光之美少女♪"
+          },
+          {
+            "v": "You and idol 光之美少女♪"
+          },
+          {
+            "v": "光之美少女偶像与你"
+          },
+          {
+            "v": "Idol光之美少女你与我"
+          },
+          {
+            "v": "偶Q"
+          }
+        ]
+      },
+      {
+        "key": "话数",
+        "value": "49"
+      },
+      {
+        "key": "放送开始",
+        "value": "2025年2月2日"
+      },
+      {
+        "key": "官方网站",
+        "value": "https://www.toei-anim.co.jp/tv/you-and-idol_precure/"
+      },
+      {
+        "key": "播放结束",
+        "value": "2026年1月25日"
+      }
+    ],
+    "main_page_totals": [
+      49
+    ],
+    "entries": [
+      {
+        "id": 1447040,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 1,
+        "airdate": "2025-02-02"
+      },
+      {
+        "id": 1447041,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 2,
+        "airdate": "2025-02-09"
+      },
+      {
+        "id": 1447042,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 3,
+        "airdate": "2025-02-16"
+      },
+      {
+        "id": 1447043,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 4,
+        "airdate": "2025-02-23"
+      },
+      {
+        "id": 1447044,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 5,
+        "airdate": "2025-03-02"
+      },
+      {
+        "id": 1447045,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 6,
+        "airdate": "2025-03-09"
+      },
+      {
+        "id": 1447046,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 7,
+        "airdate": "2025-03-23"
+      },
+      {
+        "id": 1447047,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 8,
+        "airdate": "2025-03-30"
+      },
+      {
+        "id": 1447048,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 9,
+        "airdate": "2025-04-06"
+      },
+      {
+        "id": 1447049,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 10,
+        "airdate": "2025-04-13"
+      },
+      {
+        "id": 1447050,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 11,
+        "airdate": "2025-04-20"
+      },
+      {
+        "id": 1447051,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 12,
+        "airdate": "2025-04-27"
+      },
+      {
+        "id": 1489640,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 13,
+        "airdate": "2025-05-04"
+      },
+      {
+        "id": 1489641,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 14,
+        "airdate": "2025-05-11"
+      },
+      {
+        "id": 1489642,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 15,
+        "airdate": "2025-05-18"
+      },
+      {
+        "id": 1489643,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 16,
+        "airdate": "2025-05-25"
+      },
+      {
+        "id": 1489644,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 17,
+        "airdate": "2025-06-01"
+      },
+      {
+        "id": 1489645,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 18,
+        "airdate": "2025-06-08"
+      },
+      {
+        "id": 1489646,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 19,
+        "airdate": "2025-06-15"
+      },
+      {
+        "id": 1489647,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 20,
+        "airdate": "2025-06-22"
+      },
+      {
+        "id": 1489648,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 21,
+        "airdate": "2025-06-29"
+      },
+      {
+        "id": 1489649,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 22,
+        "airdate": "2025-07-06"
+      },
+      {
+        "id": 1489650,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 23,
+        "airdate": "2025-07-13"
+      },
+      {
+        "id": 1489651,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 24,
+        "airdate": "2025-07-20"
+      },
+      {
+        "id": 1489652,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 25,
+        "airdate": "2025-07-27"
+      },
+      {
+        "id": 1489653,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 26,
+        "airdate": "2025-08-03"
+      },
+      {
+        "id": 1489654,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 27,
+        "airdate": "2025-08-10"
+      },
+      {
+        "id": 1489655,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 28,
+        "airdate": "2025-08-17"
+      },
+      {
+        "id": 1489656,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 29,
+        "airdate": "2025-08-24"
+      },
+      {
+        "id": 1489657,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 30,
+        "airdate": "2025-08-31"
+      },
+      {
+        "id": 1489658,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 31,
+        "airdate": "2025-09-07"
+      },
+      {
+        "id": 1489659,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 32,
+        "airdate": "2025-09-14"
+      },
+      {
+        "id": 1489660,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 33,
+        "airdate": "2025-09-21"
+      },
+      {
+        "id": 1489661,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 34,
+        "airdate": "2025-09-28"
+      },
+      {
+        "id": 1489662,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 35,
+        "airdate": "2025-10-05"
+      },
+      {
+        "id": 1489663,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 36,
+        "airdate": "2025-10-12"
+      },
+      {
+        "id": 1489664,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 37,
+        "airdate": "2025-10-19"
+      },
+      {
+        "id": 1489665,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 38,
+        "airdate": "2025-10-26"
+      },
+      {
+        "id": 1489666,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 39,
+        "airdate": "2025-11-09"
+      },
+      {
+        "id": 1489667,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 40,
+        "airdate": "2025-11-16"
+      },
+      {
+        "id": 1489668,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 41,
+        "airdate": "2025-11-23"
+      },
+      {
+        "id": 1489669,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 42,
+        "airdate": "2025-11-30"
+      },
+      {
+        "id": 1489670,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 43,
+        "airdate": "2025-12-07"
+      },
+      {
+        "id": 1489671,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 44,
+        "airdate": "2025-12-14"
+      },
+      {
+        "id": 1489672,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 45,
+        "airdate": "2025-12-21"
+      },
+      {
+        "id": 1489673,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 46,
+        "airdate": "2026-01-04"
+      },
+      {
+        "id": 1489674,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 47,
+        "airdate": "2026-01-11"
+      },
+      {
+        "id": 1489675,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 48,
+        "airdate": "2026-01-18"
+      },
+      {
+        "id": 1489676,
+        "subject_id": 526104,
+        "type": 0,
+        "sort": 49,
+        "airdate": "2026-01-25"
+      }
+    ],
+    "source_urls": [
+      "https://bgm.tv/subject/526104",
+      "https://bgm.tv/subject/526104/ep",
+      "https://www.toei-anim.co.jp/tv/you-and-idol_precure/episode/summary/49/"
+    ]
+  },
+  {
+    "subject_id": 531576,
+    "name": "忍ばない！クリプトニンジャ咲耶 参ノ巻",
+    "name_cn": "不忍！加密忍者咲耶 叁之卷",
+    "type": 2,
+    "date": "2025-07-07",
+    "eps": 13,
+    "infobox": [
+      {
+        "key": "话数",
+        "value": "13"
+      },
+      {
+        "key": "放送开始",
+        "value": "2025年7月7日"
+      },
+      {
+        "key": "官方网站",
+        "value": "https://cryptoninja-sakuya.xyz/"
+      },
+      {
+        "key": "播放结束",
+        "value": "2025年9月29日"
+      }
+    ],
+    "main_page_totals": [
+      13
+    ],
+    "entries": [
+      {
+        "id": 1535153,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 26,
+        "airdate": "2025-07-07"
+      },
+      {
+        "id": 1541442,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 27,
+        "airdate": "2025-07-14"
+      },
+      {
+        "id": 1541443,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 28,
+        "airdate": "2025-07-21"
+      },
+      {
+        "id": 1544308,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 29,
+        "airdate": "2025-07-28"
+      },
+      {
+        "id": 1548566,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 30,
+        "airdate": "2025-08-04"
+      },
+      {
+        "id": 1552829,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 31,
+        "airdate": "2025-08-11"
+      },
+      {
+        "id": 1556708,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 32,
+        "airdate": "2025-08-18"
+      },
+      {
+        "id": 1558687,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 33,
+        "airdate": "2025-08-25"
+      },
+      {
+        "id": 1561451,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 34,
+        "airdate": "2025-09-01"
+      },
+      {
+        "id": 1563969,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 35,
+        "airdate": "2025-09-08"
+      },
+      {
+        "id": 1566977,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 36,
+        "airdate": "2025-09-15"
+      },
+      {
+        "id": 1566978,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 37,
+        "airdate": "2025-09-22"
+      },
+      {
+        "id": 1569670,
+        "subject_id": 531576,
+        "type": 0,
+        "sort": 38,
+        "airdate": "2025-09-29"
+      }
+    ],
+    "source_urls": [
+      "https://bgm.tv/subject/531576",
+      "https://bgm.tv/subject/531576/ep",
+      "https://cryptoninja-sakuya.xyz/"
+    ]
+  },
+  {
+    "subject_id": 561787,
+    "name": "ちびゴジラの逆襲 シリーズ最新作",
+    "name_cn": "小哥斯拉的逆袭 系列最新作",
+    "type": 2,
+    "date": "2025-07-02",
+    "eps": 0,
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "宝宝哥斯拉的反击 系列最新作"
+          },
+          {
+            "v": "Chibi Godzilla no Gyakushuu 3rd Season"
+          }
+        ]
+      },
+      {
+        "key": "话数",
+        "value": "*"
+      },
+      {
+        "key": "放送开始",
+        "value": "2025年7月2日"
+      },
+      {
+        "key": "官方网站",
+        "value": "https://chibigodzilla.jp/"
+      }
+    ],
+    "main_page_totals": [
+      54
+    ],
+    "entries": [
+      {
+        "id": 1531364,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 66,
+        "airdate": "2025-07-02"
+      },
+      {
+        "id": 1531367,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 67,
+        "airdate": "2025-07-09"
+      },
+      {
+        "id": 1531368,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 68,
+        "airdate": "2025-07-16"
+      },
+      {
+        "id": 1531369,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 69,
+        "airdate": "2025-07-23"
+      },
+      {
+        "id": 1531370,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 70,
+        "airdate": "2025-07-30"
+      },
+      {
+        "id": 1546393,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 71,
+        "airdate": "2025-08-06"
+      },
+      {
+        "id": 1549773,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 72,
+        "airdate": "2025-08-13"
+      },
+      {
+        "id": 1553945,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 73,
+        "airdate": "2025-08-20"
+      },
+      {
+        "id": 1556916,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 74,
+        "airdate": "2025-08-27"
+      },
+      {
+        "id": 1558782,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 75,
+        "airdate": "2025-09-03"
+      },
+      {
+        "id": 1561452,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 76,
+        "airdate": "2025-09-10"
+      },
+      {
+        "id": 1563852,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 77,
+        "airdate": "2025-09-17"
+      },
+      {
+        "id": 1566753,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 78,
+        "airdate": "2025-09-24"
+      },
+      {
+        "id": 1570193,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 79,
+        "airdate": "2025-10-01"
+      },
+      {
+        "id": 1571873,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 80,
+        "airdate": "2025-10-08"
+      },
+      {
+        "id": 1575679,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 81,
+        "airdate": "2025-10-15"
+      },
+      {
+        "id": 1579481,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 82,
+        "airdate": "2025-10-22"
+      },
+      {
+        "id": 1583086,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 83,
+        "airdate": "2025-10-29"
+      },
+      {
+        "id": 1586003,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 84,
+        "airdate": "2025-11-05"
+      },
+      {
+        "id": 1588970,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 85,
+        "airdate": "2025-11-12"
+      },
+      {
+        "id": 1591181,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 86,
+        "airdate": "2025-11-19"
+      },
+      {
+        "id": 1594620,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 87,
+        "airdate": "2025-11-26"
+      },
+      {
+        "id": 1597783,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 88,
+        "airdate": "2025-12-03"
+      },
+      {
+        "id": 1600105,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 89,
+        "airdate": "2025-12-10"
+      },
+      {
+        "id": 1602681,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 90,
+        "airdate": "2025-12-17"
+      },
+      {
+        "id": 1605616,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 91,
+        "airdate": "2025-12-24"
+      },
+      {
+        "id": 1608254,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 92,
+        "airdate": "2025-12-24"
+      },
+      {
+        "id": 1608255,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 93,
+        "airdate": "2026-01-07"
+      },
+      {
+        "id": 1618025,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 94,
+        "airdate": "2026-01-14"
+      },
+      {
+        "id": 1623768,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 95,
+        "airdate": "2026-01-21"
+      },
+      {
+        "id": 1626391,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 96,
+        "airdate": "2026-01-28"
+      },
+      {
+        "id": 1630284,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 97,
+        "airdate": "2026-02-04"
+      },
+      {
+        "id": 1633322,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 98,
+        "airdate": "2026-02-11"
+      },
+      {
+        "id": 1637145,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 99,
+        "airdate": "2026-02-18"
+      },
+      {
+        "id": 1645863,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 100,
+        "airdate": "2026-02-25"
+      },
+      {
+        "id": 1652062,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 101,
+        "airdate": "2026-03-04"
+      },
+      {
+        "id": 1655254,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 102,
+        "airdate": "2026-03-11"
+      },
+      {
+        "id": 1662244,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 103,
+        "airdate": "2026-03-18"
+      },
+      {
+        "id": 1662730,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 104,
+        "airdate": "2026-03-25"
+      },
+      {
+        "id": 1665306,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 105,
+        "airdate": "2026-04-01"
+      },
+      {
+        "id": 1665307,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 106,
+        "airdate": "2026-04-08"
+      },
+      {
+        "id": 1665308,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 107,
+        "airdate": "2026-04-29"
+      },
+      {
+        "id": 1665309,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 108,
+        "airdate": "2025-05-13"
+      },
+      {
+        "id": 1665310,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 109,
+        "airdate": "2026-05-27"
+      },
+      {
+        "id": 1665311,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 110,
+        "airdate": "2026-06-10"
+      },
+      {
+        "id": 1665312,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 111,
+        "airdate": "2026-06-24"
+      },
+      {
+        "id": 1665313,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 112,
+        "airdate": "2026-07-08"
+      },
+      {
+        "id": 1665314,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 113,
+        "airdate": "2026-07-22"
+      },
+      {
+        "id": 1665315,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 114,
+        "airdate": "2026-08-05"
+      },
+      {
+        "id": 1665316,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 115,
+        "airdate": "2026-08-19"
+      },
+      {
+        "id": 1665317,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 116,
+        "airdate": "2026-09-02"
+      },
+      {
+        "id": 1745710,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 117,
+        "airdate": "2026-09-16"
+      },
+      {
+        "id": 1750696,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 118,
+        "airdate": "2026-09-30"
+      },
+      {
+        "id": 1758613,
+        "subject_id": 561787,
+        "type": 0,
+        "sort": 119,
+        "airdate": "2026-10-14"
+      }
+    ],
+    "source_urls": [
+      "https://bgm.tv/subject/561787",
+      "https://bgm.tv/subject/561787/ep",
+      "https://chibigodzilla.jp/",
+      "https://chibigodzilla.jp/news/『ちびゴジラの逆襲』シリーズ最新作放送決定/"
+    ],
+    "date_quality_note": "第108話API日期為2025-05-13，早於本作TV首播，疑似年份誤植；未修改原始證據。當前54話進度以官方已公開至119與完整66～119集目交叉確認，非用這筆日期回推開播。"
+  },
+  {
+    "subject_id": 519958,
+    "name": "夢中さ、きみに。",
+    "name_cn": "为你着迷",
+    "type": 2,
+    "date": "2025-08-21",
+    "eps": 5,
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "Muchuu sa, Kimi ni."
+          },
+          {
+            "v": "Captivated, by You"
+          }
+        ]
+      },
+      {
+        "key": "话数",
+        "value": "5"
+      },
+      {
+        "key": "放送开始",
+        "value": "2025年8月21日"
+      },
+      {
+        "key": "官方网站",
+        "value": "https://karaoke-muchusa.com/muchusa/"
+      }
+    ],
+    "main_page_totals": [
+      5
+    ],
+    "entries": [
+      {
+        "id": 1525271,
+        "subject_id": 519958,
+        "type": 0,
+        "sort": 1,
+        "airdate": "2025-08-21"
+      },
+      {
+        "id": 1528910,
+        "subject_id": 519958,
+        "type": 0,
+        "sort": 2,
+        "airdate": "2025-08-28"
+      },
+      {
+        "id": 1528911,
+        "subject_id": 519958,
+        "type": 0,
+        "sort": 3,
+        "airdate": "2025-09-04"
+      },
+      {
+        "id": 1528912,
+        "subject_id": 519958,
+        "type": 0,
+        "sort": 4,
+        "airdate": "2025-09-11"
+      },
+      {
+        "id": 1528913,
+        "subject_id": 519958,
+        "type": 0,
+        "sort": 5,
+        "airdate": "2025-09-18"
+      }
+    ],
+    "source_urls": [
+      "https://bgm.tv/subject/519958",
+      "https://bgm.tv/subject/519958/ep",
+      "https://karaoke-muchusa.com/muchusa/",
+      "https://s.mxtv.jp/anime/karaoke-muchusa/episode.html?ep_id=6bnbqxtagzoshqm3"
+    ]
+  },
+  {
+    "subject_id": 529078,
+    "name": "えぶりでいホスト",
+    "name_cn": "EVERYDAY HOST CLUB 男公关俱乐部的欢乐日常",
+    "type": 2,
+    "date": "2025-04-04",
+    "eps": 24,
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "Everyday Host"
+          },
+          {
+            "v": "每日男公关"
+          }
+        ]
+      },
+      {
+        "key": "话数",
+        "value": "24"
+      },
+      {
+        "key": "放送开始",
+        "value": "2025年4月4日"
+      },
+      {
+        "key": "官方网站",
+        "value": "https://www.tv-tokyo.co.jp/anime/everydayhost/"
+      },
+      {
+        "key": "播放结束",
+        "value": "2025年9月26日"
+      }
+    ],
+    "main_page_totals": [
+      24
+    ],
+    "entries": [
+      {
+        "id": 1484988,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 1,
+        "airdate": "2025-04-04"
+      },
+      {
+        "id": 1486094,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 2,
+        "airdate": "2025-04-11"
+      },
+      {
+        "id": 1486095,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 3,
+        "airdate": "2025-04-18"
+      },
+      {
+        "id": 1486096,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 4,
+        "airdate": "2025-04-25"
+      },
+      {
+        "id": 1486097,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 5,
+        "airdate": "2025-05-02"
+      },
+      {
+        "id": 1486098,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 6,
+        "airdate": "2025-05-09"
+      },
+      {
+        "id": 1486099,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 7,
+        "airdate": "2025-05-16"
+      },
+      {
+        "id": 1486100,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 8,
+        "airdate": "2025-05-23"
+      },
+      {
+        "id": 1486101,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 9,
+        "airdate": "2025-05-30"
+      },
+      {
+        "id": 1486102,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 10,
+        "airdate": "2025-06-06"
+      },
+      {
+        "id": 1486103,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 11,
+        "airdate": "2025-06-13"
+      },
+      {
+        "id": 1486104,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 12,
+        "airdate": "2025-06-20"
+      },
+      {
+        "id": 1525744,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 13,
+        "airdate": "2025-06-27"
+      },
+      {
+        "id": 1529411,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 14,
+        "airdate": "2025-07-04"
+      },
+      {
+        "id": 1532305,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 15,
+        "airdate": "2025-07-11"
+      },
+      {
+        "id": 1534878,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 16,
+        "airdate": "2025-07-18"
+      },
+      {
+        "id": 1534879,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 17,
+        "airdate": "2025-07-25"
+      },
+      {
+        "id": 1534880,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 18,
+        "airdate": "2025-08-08"
+      },
+      {
+        "id": 1552018,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 19,
+        "airdate": "2025-08-15"
+      },
+      {
+        "id": 1554951,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 20,
+        "airdate": "2025-08-22"
+      },
+      {
+        "id": 1557467,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 21,
+        "airdate": "2025-08-29"
+      },
+      {
+        "id": 1559714,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 22,
+        "airdate": "2025-09-05"
+      },
+      {
+        "id": 1562417,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 23,
+        "airdate": "2025-09-12"
+      },
+      {
+        "id": 1564486,
+        "subject_id": 529078,
+        "type": 0,
+        "sort": 24,
+        "airdate": "2025-09-26"
+      }
+    ],
+    "source_urls": [
+      "https://bgm.tv/subject/529078",
+      "https://bgm.tv/subject/529078/ep",
+      "https://www.tv-tokyo.co.jp/anime/everydayhost/episodes/"
+    ]
+  },
+  {
+    "subject_id": 364844,
+    "name": "スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～",
+    "name_cn": "打了300年的史莱姆，不知不觉就练到了满级 第二季",
+    "type": 2,
+    "date": "2025-04-05",
+    "eps": 12,
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "スライム倒して300年、知らないうちにレベルMAXになってました 第2期"
+          },
+          {
+            "v": "打了300年的史莱姆，不知不觉就练到了满级 ～其二～"
+          },
+          {
+            "v": "打了三百年的史莱姆，不知不觉就练到了满等 第二季"
+          },
+          {
+            "v": "持续狩猎史莱姆三百年，不知不觉就练到LV MAX 第二季"
+          },
+          {
+            "v": "Slime Taoshite 300-nen, Shiranai Uchi ni Level Max ni Nattemashita 2nd Season"
+          },
+          {
+            "v": "I`ve Been Killing Slimes for 300 Years and Maxed Out My Level 2nd Season"
+          }
+        ]
+      },
+      {
+        "key": "话数",
+        "value": "12"
+      },
+      {
+        "key": "放送开始",
+        "value": "2025年4月5日"
+      },
+      {
+        "key": "官方网站",
+        "value": "https://slime300-anime.com/"
+      },
+      {
+        "key": "播放结束",
+        "value": "2025年6月21日"
+      }
+    ],
+    "main_page_totals": [
+      12
+    ],
+    "entries": [
+      {
+        "id": 1446512,
+        "subject_id": 364844,
+        "type": 0,
+        "sort": 1,
+        "airdate": "2025-04-05"
+      },
+      {
+        "id": 1446513,
+        "subject_id": 364844,
+        "type": 0,
+        "sort": 2,
+        "airdate": "2025-04-12"
+      },
+      {
+        "id": 1446514,
+        "subject_id": 364844,
+        "type": 0,
+        "sort": 3,
+        "airdate": "2025-04-19"
+      },
+      {
+        "id": 1446515,
+        "subject_id": 364844,
+        "type": 0,
+        "sort": 4,
+        "airdate": "2025-04-26"
+      },
+      {
+        "id": 1446516,
+        "subject_id": 364844,
+        "type": 0,
+        "sort": 5,
+        "airdate": "2025-05-03"
+      },
+      {
+        "id": 1446517,
+        "subject_id": 364844,
+        "type": 0,
+        "sort": 6,
+        "airdate": "2025-05-10"
+      },
+      {
+        "id": 1446518,
+        "subject_id": 364844,
+        "type": 0,
+        "sort": 7,
+        "airdate": "2025-05-17"
+      },
+      {
+        "id": 1446519,
+        "subject_id": 364844,
+        "type": 0,
+        "sort": 8,
+        "airdate": "2025-05-24"
+      },
+      {
+        "id": 1446520,
+        "subject_id": 364844,
+        "type": 0,
+        "sort": 9,
+        "airdate": "2025-05-31"
+      },
+      {
+        "id": 1446521,
+        "subject_id": 364844,
+        "type": 0,
+        "sort": 10,
+        "airdate": "2025-06-07"
+      },
+      {
+        "id": 1446522,
+        "subject_id": 364844,
+        "type": 0,
+        "sort": 11,
+        "airdate": "2025-06-14"
+      },
+      {
+        "id": 1446523,
+        "subject_id": 364844,
+        "type": 0,
+        "sort": 12,
+        "airdate": "2025-06-21"
+      }
+    ],
+    "source_urls": [
+      "https://bgm.tv/subject/364844",
+      "https://bgm.tv/subject/364844/ep",
+      "https://slime300-anime.com/"
+    ]
+  },
+  {
+    "subject_id": 499140,
+    "name": "GUILTY GEAR STRIVE: DUAL RULERS",
+    "name_cn": "罪恶装备 奋战: 两位裁决者",
+    "type": 2,
+    "date": "2025-04-05",
+    "eps": 8,
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "罪恶装备 奋战: DUAL RULERS"
+          },
+          {
+            "v": "ギルティギア ストライヴ"
+          }
+        ]
+      },
+      {
+        "key": "话数",
+        "value": "8"
+      },
+      {
+        "key": "放送开始",
+        "value": "2025年4月5日"
+      },
+      {
+        "key": "官方网站",
+        "value": "https://www.guiltygear.com/ggstdr/jp/"
+      }
+    ],
+    "main_page_totals": [
+      8
+    ],
+    "entries": [
+      {
+        "id": 1452250,
+        "subject_id": 499140,
+        "type": 0,
+        "sort": 1,
+        "airdate": "2025-04-05"
+      },
+      {
+        "id": 1452251,
+        "subject_id": 499140,
+        "type": 0,
+        "sort": 2,
+        "airdate": "2025-04-12"
+      },
+      {
+        "id": 1452252,
+        "subject_id": 499140,
+        "type": 0,
+        "sort": 3,
+        "airdate": "2025-04-19"
+      },
+      {
+        "id": 1452253,
+        "subject_id": 499140,
+        "type": 0,
+        "sort": 4,
+        "airdate": "2025-04-26"
+      },
+      {
+        "id": 1452254,
+        "subject_id": 499140,
+        "type": 0,
+        "sort": 5,
+        "airdate": "2025-05-03"
+      },
+      {
+        "id": 1452255,
+        "subject_id": 499140,
+        "type": 0,
+        "sort": 6,
+        "airdate": "2025-05-10"
+      },
+      {
+        "id": 1452256,
+        "subject_id": 499140,
+        "type": 0,
+        "sort": 7,
+        "airdate": "2025-05-17"
+      },
+      {
+        "id": 1452257,
+        "subject_id": 499140,
+        "type": 0,
+        "sort": 8,
+        "airdate": "2025-05-24"
+      }
+    ],
+    "source_urls": [
+      "https://bgm.tv/subject/499140",
+      "https://bgm.tv/subject/499140/ep",
+      "https://www.guiltygear.com/ggstdr/jp/",
+      "https://www.guiltygear.com/ggstdr/jp/blu-ray.html",
+      "https://www.guiltygear.com/ggstdr/jp/news-30/"
+    ]
+  },
+  {
+    "subject_id": 446296,
+    "name": "LAZARUS",
+    "name_cn": "拉撒路",
+    "type": 2,
+    "date": "2025-04-06",
+    "eps": 13,
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "ラザロ"
+          },
+          {
+            "v": "LAZARUS 拉撒路"
+          }
+        ]
+      },
+      {
+        "key": "话数",
+        "value": "13"
+      },
+      {
+        "key": "放送开始",
+        "value": "2025年4月6日"
+      },
+      {
+        "key": "官方网站",
+        "value": "https://lazarus.aniplex.co.jp/"
+      },
+      {
+        "key": "播放结束",
+        "value": "2025年6月29日"
+      }
+    ],
+    "main_page_totals": [
+      13
+    ],
+    "entries": [
+      {
+        "id": 1235386,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 1,
+        "airdate": "2025-04-06"
+      },
+      {
+        "id": 1235387,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 2,
+        "airdate": "2025-04-13"
+      },
+      {
+        "id": 1235388,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 3,
+        "airdate": "2025-04-20"
+      },
+      {
+        "id": 1235389,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 4,
+        "airdate": "2025-04-27"
+      },
+      {
+        "id": 1235390,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 5,
+        "airdate": "2025-05-04"
+      },
+      {
+        "id": 1235391,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 6,
+        "airdate": "2025-05-11"
+      },
+      {
+        "id": 1235392,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 7,
+        "airdate": "2025-05-18"
+      },
+      {
+        "id": 1235393,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 8,
+        "airdate": "2025-05-25"
+      },
+      {
+        "id": 1235394,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 9,
+        "airdate": "2025-06-01"
+      },
+      {
+        "id": 1235395,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 10,
+        "airdate": "2025-06-08"
+      },
+      {
+        "id": 1235396,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 11,
+        "airdate": "2025-06-15"
+      },
+      {
+        "id": 1235397,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 12,
+        "airdate": "2025-06-22"
+      },
+      {
+        "id": 1235398,
+        "subject_id": 446296,
+        "type": 0,
+        "sort": 13,
+        "airdate": "2025-06-29"
+      }
+    ],
+    "source_urls": [
+      "https://bgm.tv/subject/446296",
+      "https://bgm.tv/subject/446296/ep",
+      "https://lazarus.aniplex.co.jp/",
+      "https://lazarus.aniplex.co.jp/story/"
+    ]
+  },
+  {
+    "subject_id": 516604,
+    "name": "ギルティホール",
+    "date": "2025-10-05",
+    "catalog_episode_count": 8,
+    "catalog_source_url": "https://bangumi.tv/anime/browser/airtime/2025?page=12&sort=rank",
+    "explicit_catalog_link": "https://bangumi.tv/subject/516604",
+    "api_status": 403,
+    "source_urls": [
+      "https://guiltyhole.af-original.com/",
+      "https://s.mxtv.jp/anime/guiltyhole/episode.html",
+      "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28264"
+    ],
+    "method": "Public anime catalog exact title+explicit link+air date, independently checked official on-air final episode and complete streaming count; not an API identity verification."
+  }
+]

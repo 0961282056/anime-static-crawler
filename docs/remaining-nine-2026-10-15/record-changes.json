@@ -1,0 +1,414 @@
+[
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-418",
+    "anime_name": "1日外出錄班長",
+    "original_name": "1日外出録ハンチョウ",
+    "before": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 237834,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 4,
+        "aired_episodes": 4,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://www.vap.co.jp/tonegawa-anime/index_hancho.html",
+          "https://www.vap.co.jp/tonegawa-anime/story/14.html",
+          "https://www.vap.co.jp/tonegawa-anime/story/15.html",
+          "https://www.vap.co.jp/tonegawa-anime/story/18.html",
+          "https://www.vap.co.jp/tonegawa-anime/story/23.html",
+          "https://www.vap.co.jp/tonegawa-anime/story/24.html"
+        ],
+        "checked_at": "2026-10-15T14:48:45.301931+08:00",
+        "attempted_at": "2026-10-15T14:54:38.280312+08:00",
+        "end_date": null,
+        "note": "本卡只計合輯Agenda14、15、18、23，共4個含班長主線的節目；Bangumi連結為《利根川》合輯母條目，不套用其24話全集。"
+      }
+    }
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-425",
+    "anime_name": "末班電車後、膠囊旅館、給上司微熱的夜晚。",
+    "original_name": "終電後､カプセルホテルで､上司に微熱伝わる夜｡",
+    "before": {
+      "external_ids": {
+        "bangumi": 258081,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "stale",
+        "source_urls": [
+          "https://bgm.tv/subject/258081",
+          "https://bgm.tv/subject/258081/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:33:32.156665+08:00",
+        "end_date": "2018-12-23",
+        "note": "即時來源未能取得可用頁面，保留上次確認的官方資料快照與確認時間。"
+      }
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 258081,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://shucap.cf-anime.com/goods/",
+          "https://shucap.cf-anime.com/story/"
+        ],
+        "checked_at": "2026-10-15T14:30:20.978892+08:00",
+        "attempted_at": "2026-10-15T14:40:59.030367+08:00",
+        "end_date": "2018-12-23",
+        "note": "TV版全12話，官方OA版收錄第1～12話；排除資料庫誤列本篇的第13筆節目。"
+      }
+    }
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-362",
+    "anime_name": "正中間的理久",
+    "original_name": "まんなかのりっくん",
+    "before": {
+      "external_ids": {
+        "bangumi": 241044,
+        "anilist": 101579
+      },
+      "episodes": {
+        "total_episodes": 16,
+        "aired_episodes": 16,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "conflict",
+        "source_urls": [
+          "https://bgm.tv/subject/241044",
+          "https://bgm.tv/subject/241044/ep"
+        ],
+        "checked_at": "2026-10-13T21:16:16.084860+08:00",
+        "attempted_at": "2026-10-15T14:11:43.344081+08:00",
+        "end_date": "2019-08-10",
+        "note": "本卡為2019-01-09電視版；資料庫記為2019-04-27網路版，計數範圍尚未證實一致。保留原條目16話快照，非已確認的電視版全集；等待官方節目單核對。"
+      }
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 241044,
+        "anilist": 101579
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+          "https://www.tv-tokyo.co.jp/anime/kinder/story/index_17.html"
+        ],
+        "checked_at": "2026-10-15T14:32:04.042733+08:00",
+        "attempted_at": "2026-10-15T14:40:59.030367+08:00",
+        "end_date": "2019-03-27",
+        "note": "電視版全12話（2019-01-09～03-27），已逐話核對TV Tokyo節目表；Bangumi為4月起網路重編16話，不採其計數與日期。"
+      }
+    }
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-318",
+    "anime_name": "奇喵的畫家",
+    "original_name": "猫のニャッホ",
+    "before": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://www.tv-tokyo.co.jp/anime/kinder/story/index_13.html",
+          "https://www.tv-tokyo.co.jp/anime/kinder/story/index_14.html",
+          "https://www.tv-tokyo.co.jp/anime/kinder/story/index_15.html",
+          "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+          "https://niagho.com/info/tvanime.html"
+        ],
+        "checked_at": "2026-10-15T14:33:19.860195+08:00",
+        "attempted_at": "2026-10-15T14:40:59.030367+08:00",
+        "end_date": "2019-09-18",
+        "note": "2019年首輪TV版全25話，已逐話核對TV Tokyo 1～25話及播出日；排除アンコール再放送。尚無可靠Bangumi ID，以官方來源提供集數。"
+      }
+    }
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-663",
+    "anime_name": "神奇柑仔店 錢天堂",
+    "original_name": "ふしぎ駄菓子屋 銭天堂",
+    "before": {
+      "external_ids": {
+        "bangumi": 315772,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "conflict",
+        "source_urls": [
+          "https://bgm.tv/subject/315772",
+          "https://bgm.tv/subject/315772/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:17.006982+08:00",
+        "end_date": null,
+        "note": "正篇集目缺少46–55話，另有無效日期2099；總集數未公告，已播進度待核對。"
+      }
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 315772,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 148,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list",
+          "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=15"
+        ],
+        "checked_at": "2026-10-15T14:48:39.790217+08:00",
+        "attempted_at": "2026-10-15T14:54:38.280312+08:00",
+        "end_date": null,
+        "note": "截至2026-10-15逐一核對NHK全部15頁、148個已播節目；補齊資料庫缺46～55話的依據，排除空白149／150與2099日期。總數及終了尚無明確公告，不推測完結；此為官方人工核對快照。"
+      }
+    }
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-663",
+    "anime_name": "神奇柑仔店 錢天堂",
+    "original_name": "ふしぎ駄菓子屋 銭天堂",
+    "before": {
+      "external_ids": {
+        "bangumi": 315772,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "conflict",
+        "source_urls": [
+          "https://bgm.tv/subject/315772",
+          "https://bgm.tv/subject/315772/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:17.006982+08:00",
+        "end_date": null,
+        "note": "正篇集目缺少46–55話，另有無效日期2099；總集數未公告，已播進度待核對。"
+      }
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 315772,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 148,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list",
+          "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=15"
+        ],
+        "checked_at": "2026-10-15T14:48:39.790217+08:00",
+        "attempted_at": "2026-10-15T14:54:38.280312+08:00",
+        "end_date": null,
+        "note": "截至2026-10-15逐一核對NHK全部15頁、148個已播節目；補齊資料庫缺46～55話的依據，排除空白149／150與2099日期。總數及終了尚無明確公告，不推測完結；此為官方人工核對快照。"
+      }
+    }
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1100",
+    "anime_name": "異世界迷宮裡的後宮生活",
+    "original_name": "異世界迷宮でハーレムを",
+    "before": {
+      "external_ids": {
+        "bangumi": 322130,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "stale",
+        "source_urls": [
+          "https://bgm.tv/subject/322130",
+          "https://bgm.tv/subject/322130/ep"
+        ],
+        "checked_at": "2026-10-13T21:49:37.616008+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": "2022-09-21",
+        "note": "來源資料不完整，保留上次確認資料。"
+      }
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 322130,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/322130",
+          "https://bgm.tv/subject/322130/ep"
+        ],
+        "checked_at": "2026-10-15T14:41:39.601393+08:00",
+        "attempted_at": "2026-10-15T14:41:39.601393+08:00",
+        "end_date": "2022-09-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    }
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1183",
+    "anime_name": "後宮露營！",
+    "original_name": "ハーレムきゃんぷっ！",
+    "before": {
+      "external_ids": {
+        "bangumi": 395537,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "stale",
+        "source_urls": [
+          "https://bgm.tv/subject/395537",
+          "https://bgm.tv/subject/395537/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:58.247425+08:00",
+        "end_date": null,
+        "note": "即時來源未能取得可用頁面，保留上次確認的官方資料快照與確認時間。"
+      }
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 395537,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://harecam.af-original.com/goods/bddvd/123/",
+          "https://harecam.af-original.com/story/"
+        ],
+        "checked_at": "2026-10-15T14:37:16.903352+08:00",
+        "attempted_at": "2026-10-15T14:40:59.030367+08:00",
+        "end_date": null,
+        "note": "TV版全8話，官方完整TV版DVD及故事1～8話一致；排除3.5與6.5特別節目。"
+      }
+    }
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1698",
+    "anime_name": "大正偽新娘～替身新娘與軍人的猛烈熱愛",
+    "original_name": "大正偽りブラヰダル～身代わり花嫁と軍服の猛愛",
+    "before": {
+      "external_ids": {
+        "bangumi": 509169,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "stale",
+        "source_urls": [
+          "https://bgm.tv/subject/509169",
+          "https://bgm.tv/subject/509169/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:36:01.445096+08:00",
+        "end_date": null,
+        "note": "即時來源未能取得可用頁面，保留上次確認的官方資料快照與確認時間。"
+      }
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 509169,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://gunpuku-mouai.af-original.com/goods/bddvd/329/",
+          "https://gunpuku-mouai.af-original.com/news/538/",
+          "https://gunpuku-mouai.af-original.com/story/"
+        ],
+        "checked_at": "2026-10-15T14:32:06.164863+08:00",
+        "attempted_at": "2026-10-15T14:40:59.030367+08:00",
+        "end_date": null,
+        "note": "TV版全8話，官方DVD明列全8話、官方公告最終回第8話；不沿用資料庫未經核對的結束日期。"
+      }
+    }
+  }
+]

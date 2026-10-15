@@ -1,0 +1,10 @@
+quarter,card_id,anime_name,prior_issue,bangumi_subject_id,aired_episodes,total_episodes,airing_status,fetch_state,primary_source_url,checked_at,note
+2018_秋,anime-418,1日外出錄班長,unmapped,237834,4,4,finished,ok,https://www.vap.co.jp/tonegawa-anime/index_hancho.html,2026-10-15T14:48:45.301931+08:00,本卡只計合輯Agenda14、15、18、23，共4個含班長主線的節目；Bangumi連結為《利根川》合輯母條目，不套用其24話全集。
+2018_秋,anime-425,末班電車後、膠囊旅館、給上司微熱的夜晚。,stale,258081,12,12,finished,ok,https://shucap.cf-anime.com/goods/,2026-10-15T14:30:20.978892+08:00,TV版全12話，官方OA版收錄第1～12話；排除資料庫誤列本篇的第13筆節目。
+2019_冬,anime-362,正中間的理久,conflict,241044,12,12,finished,ok,https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html,2026-10-15T14:32:04.042733+08:00,電視版全12話（2019-01-09～03-27），已逐話核對TV Tokyo節目表；Bangumi為4月起網路重編16話，不採其計數與日期。
+2019_春,anime-318,奇喵的畫家,unmapped,,25,25,finished,ok,https://www.tv-tokyo.co.jp/anime/kinder/story/index_13.html,2026-10-15T14:33:19.860195+08:00,2019年首輪TV版全25話，已逐話核對TV Tokyo 1～25話及播出日；排除アンコール再放送。尚無可靠Bangumi ID，以官方來源提供集數。
+2020_秋,anime-663,神奇柑仔店 錢天堂,conflict,315772,148,,unknown,ok,https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list,2026-10-15T14:48:39.790217+08:00,截至2026-10-15逐一核對NHK全部15頁、148個已播節目；補齊資料庫缺46～55話的依據，排除空白149／150與2099日期。總數及終了尚無明確公告，不推測完結；此為官方人工核對快照。
+2021_冬,anime-663,神奇柑仔店 錢天堂,conflict,315772,148,,unknown,ok,https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list,2026-10-15T14:48:39.790217+08:00,截至2026-10-15逐一核對NHK全部15頁、148個已播節目；補齊資料庫缺46～55話的依據，排除空白149／150與2099日期。總數及終了尚無明確公告，不推測完結；此為官方人工核對快照。
+2022_夏,anime-1100,異世界迷宮裡的後宮生活,stale,322130,12,12,finished,ok,https://bgm.tv/subject/322130,2026-10-15T14:41:39.601393+08:00,依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。
+2022_秋,anime-1183,後宮露營！,stale,395537,8,8,finished,ok,https://harecam.af-original.com/goods/bddvd/123/,2026-10-15T14:37:16.903352+08:00,TV版全8話，官方完整TV版DVD及故事1～8話一致；排除3.5與6.5特別節目。
+2024_秋,anime-1698,大正偽新娘～替身新娘與軍人的猛烈熱愛,stale,509169,8,8,finished,ok,https://gunpuku-mouai.af-original.com/goods/bddvd/329/,2026-10-15T14:32:06.164863+08:00,TV版全8話，官方DVD明列全8話、官方公告最終回第8話；不沿用資料庫未經核對的結束日期。

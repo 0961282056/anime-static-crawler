@@ -1,0 +1,44 @@
+{
+  "baseline_commit": "4772131260e4a5f8305a374d359f237c329fc8f2",
+  "reviewed_at": "2026-10-15T13:45:33.683085+08:00",
+  "quarters": 37,
+  "records": 2143,
+  "linked": 2141,
+  "fetch_ok": 2136,
+  "status_finished": 1796,
+  "count_confirmed": 1796,
+  "status_unknown": 260,
+  "count_planned": 292,
+  "unmatched": 2,
+  "fetch_stale": 3,
+  "fetch_conflict": 2,
+  "count_unknown": 53,
+  "status_airing": 84,
+  "status_not_yet_aired": 1,
+  "new_linked_records": 180,
+  "changed_records": 455,
+  "changed_quarter_files": 37,
+  "live_audited_subjects": 272,
+  "live_outcomes": {
+    "parsed": 269,
+    "unavailable": 3
+  },
+  "live_metadata_states": {
+    "ok": 268,
+    "unavailable": 3,
+    "conflict": 1
+  },
+  "pending_reason_counts_nonexclusive": {
+    "缺少明確結束日期": 155,
+    "已播數缺少完整依據": 64,
+    "正篇日期缺漏或無效": 60,
+    "正篇日期晚於來源結束日": 11,
+    "來源結束日早於首播日": 2,
+    "尚無可靠資料庫對應": 2,
+    "即時來源未取得可用資料，保留最後快照": 3,
+    "來源計數衝突": 2,
+    "來源總集數未定": 53,
+    "正篇編號不連續": 2,
+    "正篇集目尚未齊全": 51
+  }
+}

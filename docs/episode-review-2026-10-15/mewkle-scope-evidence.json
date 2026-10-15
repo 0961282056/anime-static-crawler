@@ -1,0 +1,500 @@
+{
+  "subject_id": 321387,
+  "card_id": "anime-776",
+  "reviewed_at": "2026-10-15T08:25:47+08:00",
+  "scope": "Bangumi main episode classification, excluding the 13 hosted specials; includes the numbered retrospective finale 50.",
+  "official_programme_count": 50,
+  "main_count": 37,
+  "hosted_special_count": 13,
+  "main_numbers": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    17,
+    19,
+    21,
+    22,
+    23,
+    24,
+    26,
+    27,
+    28,
+    29,
+    31,
+    32,
+    33,
+    35,
+    36,
+    37,
+    39,
+    41,
+    43,
+    44,
+    45,
+    47,
+    48,
+    49,
+    50
+  ],
+  "excluded_special_numbers": [
+    4,
+    8,
+    12,
+    16,
+    18,
+    20,
+    25,
+    30,
+    34,
+    38,
+    40,
+    42,
+    46
+  ],
+  "retrospective_finale_number": 50,
+  "first_air_date": "2021-04-11",
+  "end_date": "2022-03-27",
+  "official_status": "Broadcast ended; TV Tokyo official episode archive.",
+  "source_urls": [
+    "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+    "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+    "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+    "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+    "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
+    "https://bgm.tv/subject/321387/ep"
+  ],
+  "source_response_sha256": {
+    "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/": "5d95347d7334b400d1902feff1a194cb01ad85376c19202455ce51c2ce478475",
+    "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html": "bdcbb5965f49a02785366cb4beba494936b104a661d4bb8cf36a31dbf51e2902",
+    "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html": "e8a71e1129943a38785606bd69088946cb456c4ae31ca51d4fb8205b0eb93e7f",
+    "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html": "c07bc846bace5d636c18bab9f4823c06cb48373bd3b89ecd30a52204a338b7af",
+    "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html": "2d29c5f503bff79ad2aae45c655a34457163edc013d939aa29f5d1f28842a732",
+    "https://api.bgm.tv/v0/subjects/321387": "84b6c15d3113c0a9f6e8d0db97f3b275ed9a902af0edd8c14f3f11b81cfd703e",
+    "https://api.bgm.tv/v0/episodes?subject_id=321387&limit=100&offset=0": "7c80866b859268359932aac4ae68533cf5e1104845f792f1fc0a922ec62608db"
+  },
+  "episodes": [
+    {
+      "number": 1,
+      "airdate": "2021-04-11",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
+      "provider_episode_id": 1019750,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 2,
+      "airdate": "2021-04-18",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
+      "provider_episode_id": 1019751,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 3,
+      "airdate": "2021-04-25",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
+      "provider_episode_id": 1019752,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 4,
+      "airdate": "2021-05-02",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
+      "provider_episode_id": 1019753,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第4話『いっちー&なるがやってきた！』"
+    },
+    {
+      "number": 5,
+      "airdate": "2021-05-09",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
+      "provider_episode_id": 1019754,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 6,
+      "airdate": "2021-05-16",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
+      "provider_episode_id": 1019755,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 7,
+      "airdate": "2021-05-23",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
+      "provider_episode_id": 1019756,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 8,
+      "airdate": "2021-05-30",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
+      "provider_episode_id": 1019757,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第8話 『いちなると切り絵に挑戦！』"
+    },
+    {
+      "number": 9,
+      "airdate": "2021-06-06",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
+      "provider_episode_id": 1019758,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 10,
+      "airdate": "2021-06-13",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
+      "provider_episode_id": 1019759,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 11,
+      "airdate": "2021-06-20",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+      "provider_episode_id": 1019760,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 12,
+      "airdate": "2021-06-27",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+      "provider_episode_id": 1019761,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第12話 『いちなるとお絵描きに挑戦！』"
+    },
+    {
+      "number": 13,
+      "airdate": "2021-07-04",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+      "provider_episode_id": 1035556,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 14,
+      "airdate": "2021-07-11",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+      "provider_episode_id": 1035557,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 15,
+      "airdate": "2021-07-18",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+      "provider_episode_id": 1035558,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 16,
+      "airdate": "2021-07-25",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+      "provider_episode_id": 1035559,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第16話 『いちなるとチアふるに挑戦！』"
+    },
+    {
+      "number": 17,
+      "airdate": "2021-08-01",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+      "provider_episode_id": 1035560,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 18,
+      "airdate": "2021-08-08",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+      "provider_episode_id": 1035561,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第18話 『いちなるとミュークルドリーミー みっくす！』"
+    },
+    {
+      "number": 19,
+      "airdate": "2021-08-15",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+      "provider_episode_id": 1035562,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 20,
+      "airdate": "2021-08-22",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+      "provider_episode_id": 1035563,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第20話 『いちなると粘土細工に挑戦！』"
+    },
+    {
+      "number": 21,
+      "airdate": "2021-08-29",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+      "provider_episode_id": 1035564,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 22,
+      "airdate": "2021-09-05",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+      "provider_episode_id": 1035565,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 23,
+      "airdate": "2021-09-12",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+      "provider_episode_id": 1035566,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 24,
+      "airdate": "2021-09-19",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+      "provider_episode_id": 1035567,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 25,
+      "airdate": "2021-09-26",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+      "provider_episode_id": 1053523,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第25話 『いちなるとAIロボに挑戦！』"
+    },
+    {
+      "number": 26,
+      "airdate": "2021-10-03",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+      "provider_episode_id": 1053524,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 27,
+      "airdate": "2021-10-10",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+      "provider_episode_id": 1055049,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 28,
+      "airdate": "2021-10-17",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+      "provider_episode_id": 1055050,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 29,
+      "airdate": "2021-10-24",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+      "provider_episode_id": 1055051,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 30,
+      "airdate": "2021-10-31",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+      "provider_episode_id": 1055052,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第30話 『いちなるとバナナに挑戦！』"
+    },
+    {
+      "number": 31,
+      "airdate": "2021-11-07",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+      "provider_episode_id": 1055053,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 32,
+      "airdate": "2021-11-14",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+      "provider_episode_id": 1055054,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 33,
+      "airdate": "2021-11-21",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+      "provider_episode_id": 1055055,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 34,
+      "airdate": "2021-11-28",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+      "provider_episode_id": 1055056,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第34話 『いちなると川柳に挑戦！』"
+    },
+    {
+      "number": 35,
+      "airdate": "2021-12-05",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+      "provider_episode_id": 1055057,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 36,
+      "airdate": "2021-12-12",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+      "provider_episode_id": 1055058,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 37,
+      "airdate": "2021-12-19",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+      "provider_episode_id": 1055059,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 38,
+      "airdate": "2021-12-26",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+      "provider_episode_id": 1055060,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第38話 『いちなると「かるた」作りに挑戦！』"
+    },
+    {
+      "number": 39,
+      "airdate": "2022-01-09",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+      "provider_episode_id": 1055061,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 40,
+      "airdate": "2022-01-16",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+      "provider_episode_id": 1055062,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第40話 『いちなると「ミラクル」に挑戦！』"
+    },
+    {
+      "number": 41,
+      "airdate": "2022-01-23",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+      "provider_episode_id": 1055063,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 42,
+      "airdate": "2022-01-30",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+      "provider_episode_id": 1055064,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第42話 『いちなると「コトコト」に挑戦！』"
+    },
+    {
+      "number": 43,
+      "airdate": "2022-02-06",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+      "provider_episode_id": 1055065,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 44,
+      "airdate": "2022-02-13",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+      "provider_episode_id": 1055066,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 45,
+      "airdate": "2022-02-20",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+      "provider_episode_id": 1055067,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 46,
+      "airdate": "2022-02-27",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+      "provider_episode_id": 1055068,
+      "provider_type": 1,
+      "counted_as_main": false,
+      "hosted_special_title": "第46話 『いちなるが「みゅーちゃん」と挑戦？』"
+    },
+    {
+      "number": 47,
+      "airdate": "2022-03-06",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+      "provider_episode_id": 1083409,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 48,
+      "airdate": "2022-03-13",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+      "provider_episode_id": 1088020,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 49,
+      "airdate": "2022-03-20",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+      "provider_episode_id": 1088832,
+      "provider_type": 0,
+      "counted_as_main": true
+    },
+    {
+      "number": 50,
+      "airdate": "2022-03-27",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+      "provider_episode_id": 1088833,
+      "provider_type": 0,
+      "counted_as_main": true,
+      "note": "Numbered retrospective finale; included in provider main classification, not a hosted special."
+    }
+  ]
+}

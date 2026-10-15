@@ -1,0 +1,37 @@
+[
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-425",
+    "subject_id": 258081,
+    "fetch_state": "stale",
+    "note": "即時來源未能取得可用頁面，保留上次確認的官方資料快照與確認時間。"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-663",
+    "subject_id": 315772,
+    "fetch_state": "conflict",
+    "note": "正篇集目缺少46–55話，另有無效日期2099；總集數未公告，已播進度待核對。"
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-663",
+    "subject_id": 315772,
+    "fetch_state": "conflict",
+    "note": "正篇集目缺少46–55話，另有無效日期2099；總集數未公告，已播進度待核對。"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1183",
+    "subject_id": 395537,
+    "fetch_state": "stale",
+    "note": "即時來源未能取得可用頁面，保留上次確認的官方資料快照與確認時間。"
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1698",
+    "subject_id": 509169,
+    "fetch_state": "stale",
+    "note": "即時來源未能取得可用頁面，保留上次確認的官方資料快照與確認時間。"
+  }
+]

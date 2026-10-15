@@ -31,13 +31,14 @@
                 <div class="form-group">
                     <label for="searchInput" class="form-label">關鍵字搜尋</label>
                     <div class="input-icon-wrapper">
-                        <input type="text" id="searchInput" class="form-control" x-model="searchKeyword" placeholder="輸入動畫名稱...">
+                        <input type="text" id="searchInput" class="form-control" x-model="searchKeyword" @input="loadData()" placeholder="搜尋全部季度的名稱、原名或簡介" aria-describedby="searchScope">
                     </div>
+                    <small id="searchScope" class="search-scope">關鍵字會搜尋全部年份與季度；清空後回到所選季度。可搭配放送日及播出狀態篩選。</small>
                 </div>
 
                 <div class="form-group">
                     <label for="yearSelect" class="form-label">年份</label>
-                    <select id="yearSelect" class="form-select" x-model="year" @change="changeYear">
+                    <select id="yearSelect" class="form-select" x-model="year" @change="changeYear" :disabled="searchKeyword.trim().length > 0">
                         <template x-for="y in years" :key="y">
                             <option :value="y" x-text="y + ' 年'"></option>
                         </template>
@@ -46,7 +47,7 @@
                 
                 <div class="form-group">
                     <label for="seasonSelect" class="form-label">季節</label>
-                    <select id="seasonSelect" class="form-select" x-model="season" @change="loadData()">
+                    <select id="seasonSelect" class="form-select" x-model="season" @change="loadData()" :disabled="searchKeyword.trim().length > 0">
                         <template x-for="s in seasons" :key="s">
                             <option :value="s" x-text="seasonLabel(s)"></option>
                         </template>
@@ -64,6 +65,19 @@
                         <option value="五">週五</option>
                         <option value="六">週六</option>
                         <option value="日">週日</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="airingStatusSelect" class="form-label">播出狀態</label>
+                    <select id="airingStatusSelect" class="form-select" x-model="filterStatus">
+                        <option value="全部">全部顯示</option>
+                        <option value="airing">播出中</option>
+                        <option value="finished">本季已播畢</option>
+                        <option value="not_yet_aired">尚未播出</option>
+                        <option value="unknown">狀態待確認</option>
+                        <option value="paused">暫停播出</option>
+                        <option value="cancelled">取消播出</option>
                     </select>
                 </div>
 
@@ -124,7 +138,7 @@
             </div>
 
             <div class="anime-grid" x-show="!loading && (!loadError || (loadError && loadError.hasStaleData))">
-                <template x-for="anime in filteredAnime" :key="anime.anime_name">
+                <template x-for="anime in filteredAnime" :key="animeResultKey(anime)">
                     <div class="anime-card">
                         <div class="card-img-wrapper">
                             <img :src="cardImageUrl(anime, 600)"
@@ -137,11 +151,23 @@
                         </div>
                         <div class="card-body">
                             <h3 class="anime-title" x-text="anime.anime_name" @click="copyText(anime.anime_name)"></h3>
+                            <div class="source-quarters" x-show="sourceQuarterLabel(anime)" x-text="sourceQuarterLabel(anime)"></div>
                             <div class="info-row">
                                 <span><i class="fas fa-calendar-alt"></i> <span x-text="anime.premiere_date || '?'"></span></span>
                                 <span><i class="fas fa-clock"></i> <span x-text="anime.premiere_time || '?'"></span></span>
                             </div>
                             
+                            <div class="episode-info">
+                                <span class="episode-count" x-text="episodeCountLabel(anime)"></span>
+                                <span class="airing-status" x-text="airingStatusLabel(anime)"></span>
+                                <span class="episode-warning" x-show="episodeUpdateWarning(anime)" x-text="episodeUpdateWarning(anime)"></span>
+                                <details class="episode-details">
+                                    <summary>集數來源與確認時間</summary>
+                                    <p x-text="episodeMetadataDetail(anime)"></p>
+                                    <a x-show="episodeSourceUrl(anime)" :href="episodeSourceUrl(anime)" target="_blank" rel="noopener noreferrer">查看集數來源</a>
+                                </details>
+                            </div>
+
                             <div class="story-box" :title="anime.story" @click="showStory(anime.anime_name, anime.story)" x-text="anime.story || '暫無簡介'"></div>
                             
                             <div style="margin-top: auto;">

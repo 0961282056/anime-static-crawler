@@ -1,0 +1,87 @@
+{
+  "archive": {
+    "browser_download_url": "https://github.com/bangumi/Archive/releases/download/archive/dump-2026-10-13.210353Z.zip",
+    "content_type": "application/zip",
+    "created_at": "2026-10-13T21:03:54Z",
+    "digest": "sha256:19d12d42502fefeb4a2b14561cc978986a554320b06ca4bbf454d1830b101f90",
+    "id": 638250755,
+    "label": "",
+    "name": "dump-2026-10-13.210353Z.zip",
+    "node_id": "RA_kwDOGogJqs4mCu8D",
+    "size": 445853444,
+    "updated_at": "2026-10-13T21:04:15Z",
+    "url": "https://api.github.com/repos/bangumi/Archive/releases/assets/638250755"
+  },
+  "actual_archive_sha256": "19d12d42502fefeb4a2b14561cc978986a554320b06ca4bbf454d1830b101f90",
+  "archive_readme": "https://github.com/bangumi/Archive/blob/master/README.md",
+  "archive_as_of": "2026-10-14T05:03:54+08:00",
+  "wiki_parser": {
+    "package": "bgm-tv-wiki",
+    "version": "0.2.5",
+    "upstream": "https://github.com/bangumi/wiki-parser-py"
+  },
+  "complete_anime_subjects": 31174,
+  "parsed_anime_subjects": 31172,
+  "rejected_malformed_infobox_subjects": [
+    {
+      "subject_id": 2174,
+      "error": "ExpectingNewFieldError"
+    },
+    {
+      "subject_id": 294880,
+      "error": "ExpectingNewFieldError"
+    }
+  ],
+  "record_invariants": {
+    "records": 2143,
+    "preserved_fields": [
+      "bangumi_id",
+      "anime_name",
+      "original_name",
+      "anime_image_url",
+      "premiere_date",
+      "premiere_time",
+      "story",
+      "external_ids.anilist"
+    ],
+    "preserved_order": true,
+    "existing_bangumi_ids_preserved": true,
+    "known_aired_counts_not_reduced": true,
+    "verification_times_not_reduced": true
+  },
+  "niagho_official_schedule": {
+    "url": "https://niagho.com/info/tvanime.html",
+    "image_url": "https://niagho.com/img/ja/info/tvanime.png",
+    "image_sha256": "f7fa21b7b4428d97745b874199295aa1fa0e98eb85d15976f1a3875ddba12a10",
+    "observed": "2019-04-03 Wednesday 07:30, TV Tokyo Kinder TV; no verified total or end date"
+  },
+  "evidence_sha256": {
+    "archive-provider-evidence.jsonl": "bed645b0b25101d8d7bb5b0d09de337791a6d0e3c5a036da1ef787921f4dd0f0",
+    "identity-matches.json": "830ee4b6a00787aaf18524f387a82543b6c52e34dbbb964a0c4efdb282223ee9",
+    "live-provider-audit.jsonl": "0d80e338ff31e447b5d9aa9698f9284086088ea58313982c14dfbe1819e5c95b",
+    "pending.csv": "8261591fd1bca5a62614cf029bfe163e44ad8d92d19e36624b369c4dcac76ebb",
+    "primary-source-evidence.json": "7ae7aabc73a55da8373b8a0842784121b6500b41a1f0fc864cec6e4af5f3cc35",
+    "record-changes.jsonl": "30fedb2d20004e207c4e80096c65688f22985e04ca9e1480a8e6d8ca5734e2f9",
+    "remaining-live-search.json": "887f1f560c7cf4cd79ec35926caaaa1895d3f01e20d470f1a00a411dcb7a2d8b",
+    "retained-source-issues.json": "d6d0c7eb2b3b4087ae0d2844f9b0f419e458032c2769ca0cdcce44c4e7c9d2cd",
+    "summary.json": "f6a72c987c088b74372b74884c6f04f7a19a863f3d76e198390264b635a7fe02",
+    "verified-links.csv": "f6fe161204359ca088f9ccc219553a88e094fd4f68d7b7a6223b7fe2ff2b7d25"
+  },
+  "rejected_infoboxes_do_not_contain_newly_linked_original_titles": true,
+  "unadopted_official_link_observations": [
+    {
+      "requested_url": "https://www.tonegawa-anime.com/story/",
+      "final_url": "https://www.tonegawa-anime.com/",
+      "http_status": 200,
+      "title": "トネガワ - 中間管理職ブルース — 事実、歴史、そしてその全貌",
+      "body_sha256": "a979c5aab8f776464bcbf6c9ad21e826a33f6857427577bfac219afeab8679c1",
+      "retrieved_at": "2026-10-15T13:35:25.646102+08:00",
+      "reason": "Returned general introduction rather than the original programme/episode list; not used as episode evidence"
+    },
+    {
+      "url": "https://www.toei-anim.co.jp/tv/zenitendo/",
+      "http_status": 403,
+      "reason": "No official programme list obtained; no claim of official episode-count verification"
+    }
+  ]
+}

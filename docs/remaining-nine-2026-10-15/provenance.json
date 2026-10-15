@@ -1,0 +1,34 @@
+{
+  "baseline_commit": "b049b3211d3ee0d941b3ea63e8ea552fab07a6d6",
+  "official_sources_only_for_manual_count_overrides": true,
+  "public_episode_metadata_only": "Only episode identities, titles, dates, programme scope and short count quotes retained. No full story text, media or whole website copies committed.",
+  "previous_evidence_manifests_verified": [
+    "../episode-followup-2026-10-15/provenance.json",
+    "../episode-recheck-2026-10-15/provenance.json"
+  ],
+  "archive_reference": "../episode-followup-2026-10-15/provenance.json",
+  "basic_record_fields_preserved": [
+    "bangumi_id",
+    "anime_name",
+    "original_name",
+    "anime_image_url",
+    "premiere_date",
+    "premiere_time",
+    "story",
+    "external_ids.anilist"
+  ],
+  "evidence_sha256": {
+    "date-boundary-live-evidence.json": "97acbb51545a65ae35ae8f9d22058e7ff2923417782f4fdfba9b9005727f868b",
+    "nhk-complete-episode-catalogue.json": "fa2217cf2c4641f24dc74f77ec0cf500193f185a138cdd5f16cae4c90e7cd727",
+    "primary-page-observations.json": "cfaefc2c0438e011dbd80a8da5786fb5b07a92425d893d3a6c468487e84e41df",
+    "prior-source-exceptions.json": "c805b5a92158e27adece06f14389d85a15ff118e8f3ffead70e21e4ebc6b34ae",
+    "record-changes.json": "7491d8304c75643338fddada487f19073471f4e37a6ec5378687bb8924646363",
+    "reviewed-results.csv": "761bf075bd3cc456043345135e4cffcd435a61f287b18c91208986a5e390b4ab",
+    "summary.json": "cfe0e04deee85c4980050bb00fdecb8294ef8dfe2c7708078ede845476042dd7",
+    "verified-hanchou-scope.json": "d20c5784154f5eae566bddf8572bf23c52731ea8c6bfacce6ab74ce6031d0c72",
+    "verified-kinder-scopes.json": "45d1dff1acbe12d9e26b7635d90b15ce4442b5fbece4d4754302c3bc21f3aceb",
+    "verified-official-counts.json": "f0d2ab9e112d0b2841d76bce28186140cd59c3d9b938dc2cfdae197927d552e2",
+    "verified-zenitendo-scope.json": "e5fe8face1ea267db8c0b6cac92f4aa8f0dbf9b4872aca3f35ec8902c7a1cc52",
+    "zenitendo-current-provider.json": "171c725f0e432015d29bf0fc725185b2c632e41364acee7a6be53d7053c1d9ef"
+  }
+}

@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 import re
-from datetime import datetime
+from datetime import date, datetime
 from typing import Literal
 from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 TAIPEI_TZ = ZoneInfo("Asia/Taipei")
 BANGUMI_ID_PATTERN = re.compile(r"(?:anime-[0-9]+|fallback-[0-9a-f]{64})\Z")
@@ -22,6 +22,84 @@ CLOUDINARY_DELIVERY_PATH_PATTERN = re.compile(
     r"(?:\.[A-Za-z0-9]+)?\Z"
 )
 BroadcastDay = Literal["一", "二", "三", "四", "五", "六", "日", "無首播日期"]
+
+
+class ExternalIds(BaseModel):
+    """Database IDs from explicit source links; never the acgsecrets card ID."""
+
+    model_config = ConfigDict(extra="forbid")
+    bangumi: int | None = Field(default=None, gt=0, strict=True)
+    anilist: int | None = Field(default=None, gt=0, strict=True)
+
+
+class EpisodeMetadata(BaseModel):
+    """Main episodes of one linked anime entry, not an entire franchise."""
+
+    model_config = ConfigDict(extra="forbid")
+    total_episodes: int | None = Field(default=None, gt=0, strict=True)
+    aired_episodes: int | None = Field(default=None, ge=0, strict=True)
+    airing_status: Literal[
+        "unknown", "not_yet_aired", "airing", "finished", "paused", "cancelled"
+    ] = "unknown"
+    episode_count_status: Literal["unknown", "planned", "confirmed"] = "unknown"
+    fetch_state: Literal["ok", "unmatched", "stale", "conflict"] = "unmatched"
+    source_urls: list[str] = Field(default_factory=list)
+    checked_at: datetime | None = None
+    attempted_at: datetime | None = None
+    end_date: date | None = None
+    note: str = ""
+
+    @field_validator("checked_at", "attempted_at")
+    @classmethod
+    def aware_timestamp(cls, value: datetime | None) -> datetime | None:
+        if value is not None and value.tzinfo is None:
+            raise ValueError("episode timestamps must include a timezone")
+        return value.astimezone(TAIPEI_TZ) if value else None
+
+    @field_validator("source_urls")
+    @classmethod
+    def safe_sources(cls, values: list[str]) -> list[str]:
+        for value in values:
+            parsed = urlsplit(value)
+            if not (
+                parsed.scheme == "https"
+                and parsed.netloc == "bgm.tv"
+                and re.fullmatch(r"/subject/[1-9][0-9]*(?:/ep)?", parsed.path)
+                and not parsed.query
+                and not parsed.fragment
+            ):
+                from services.episode_source_reviews import reviewed_source_url
+
+                if not reviewed_source_url(value):
+                    raise ValueError(
+                        "episode sources must be canonical Bangumi or reviewed official URLs"
+                    )
+        return values
+
+    @model_validator(mode="after")
+    def consistent_counts(self) -> EpisodeMetadata:
+        if (
+            self.total_episodes is not None
+            and self.aired_episodes is not None
+            and self.aired_episodes > self.total_episodes
+        ):
+            raise ValueError("aired episodes may not exceed total episodes")
+        if self.episode_count_status != "unknown" and self.total_episodes is None:
+            raise ValueError("a known episode count status requires a total")
+        if self.airing_status == "finished" and (
+            self.total_episodes is None
+            or self.aired_episodes != self.total_episodes
+            or self.episode_count_status != "confirmed"
+        ):
+            raise ValueError(
+                "finished requires a confirmed, complete main episode count"
+            )
+        if self.airing_status == "not_yet_aired" and self.aired_episodes not in (
+            None,
+            0,
+        ):
+            raise ValueError("not_yet_aired may not have aired episodes")
+        return self
 
 
 def _validated_bangumi_id(value: object, *, allow_legacy: bool) -> str:
@@ -62,6 +140,9 @@ class Anime(BaseModel):
     premiere_date: BroadcastDay = "無首播日期"
     premiere_time: str = "無首播時間"
     story: str = "暫無簡介"
+    original_name: str | None = None
+    external_ids: ExternalIds = Field(default_factory=ExternalIds)
+    episodes: EpisodeMetadata | None = None
 
     @field_validator("bangumi_id", mode="before")
     @classmethod
@@ -124,6 +205,8 @@ class AnimeCandidate(BaseModel):
     premiere_date: BroadcastDay = "無首播日期"
     premiere_time: str = "無首播時間"
     story: str = "暫無簡介"
+    original_name: str | None = None
+    external_ids: ExternalIds = Field(default_factory=ExternalIds)
 
     @field_validator("bangumi_id", mode="before")
     @classmethod

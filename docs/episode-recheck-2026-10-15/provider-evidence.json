@@ -1,0 +1,369 @@
+[
+  {
+    "url": "https://api.bgm.tv/v0/subjects/407659",
+    "http_status": 200,
+    "retrieved_at": "2026-10-15T14:04:45.336420+08:00",
+    "sha256": "41df1780ed02ee878d0ce03ade0397954a2b829802c01bd72875c94b423de5fe",
+    "response": {
+      "id": 407659,
+      "type": 2,
+      "platform": "TV",
+      "name": "THE MARGINAL SERVICE",
+      "name_cn": "边缘服务",
+      "date": "2023-04-11",
+      "eps": 12,
+      "infobox": [
+        {
+          "key": "别名",
+          "value": [
+            {
+              "v": "境界服務"
+            },
+            {
+              "v": "ザ・マージナルサービス"
+            },
+            {
+              "v": "境界敢死队"
+            }
+          ]
+        },
+        {
+          "key": "话数",
+          "value": "12"
+        },
+        {
+          "key": "放送开始",
+          "value": "2023年4月11日"
+        },
+        {
+          "key": "放送星期",
+          "value": "星期二"
+        },
+        {
+          "key": "官方网站",
+          "value": "https://marginalservice.com"
+        },
+        {
+          "key": "导演",
+          "value": "迫井政行"
+        },
+        {
+          "key": "人物设定",
+          "value": "小堺能夫"
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/episodes?subject_id=407659&type=0&limit=200",
+    "http_status": 200,
+    "retrieved_at": "2026-10-15T14:04:45.316536+08:00",
+    "sha256": "930739579e07040f606587651d8c21d4ecded8ab9f35d4c49d169714d43e95b6",
+    "response": {
+      "total": 12,
+      "limit": 200,
+      "offset": 0,
+      "data": [
+        {
+          "id": 1183623,
+          "subject_id": 407659,
+          "type": 0,
+          "sort": 1,
+          "airdate": "2023-04-11"
+        },
+        {
+          "id": 1183624,
+          "subject_id": 407659,
+          "type": 0,
+          "sort": 2,
+          "airdate": "2023-04-18"
+        },
+        {
+          "id": 1183625,
+          "subject_id": 407659,
+          "type": 0,
+          "sort": 3,
+          "airdate": "2023-04-25"
+        },
+        {
+          "id": 1183626,
+          "subject_id": 407659,
+          "type": 0,
+          "sort": 4,
+          "airdate": "2023-05-02"
+        },
+        {
+          "id": 1183627,
+          "subject_id": 407659,
+          "type": 0,
+          "sort": 5,
+          "airdate": "2023-05-09"
+        },
+        {
+          "id": 1183628,
+          "subject_id": 407659,
+          "type": 0,
+          "sort": 6,
+          "airdate": "2023-05-16"
+        },
+        {
+          "id": 1183629,
+          "subject_id": 407659,
+          "type": 0,
+          "sort": 7,
+          "airdate": "2023-05-23"
+        },
+        {
+          "id": 1183630,
+          "subject_id": 407659,
+          "type": 0,
+          "sort": 8,
+          "airdate": "2023-05-30"
+        },
+        {
+          "id": 1183631,
+          "subject_id": 407659,
+          "type": 0,
+          "sort": 9,
+          "airdate": "2023-06-06"
+        },
+        {
+          "id": 1183632,
+          "subject_id": 407659,
+          "type": 0,
+          "sort": 10,
+          "airdate": "2023-06-13"
+        },
+        {
+          "id": 1183633,
+          "subject_id": 407659,
+          "type": 0,
+          "sort": 11,
+          "airdate": "2023-06-20"
+        },
+        {
+          "id": 1183634,
+          "subject_id": 407659,
+          "type": 0,
+          "sort": 12,
+          "airdate": "2023-06-27"
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/217239",
+    "http_status": 200,
+    "retrieved_at": "2026-10-15T14:04:45.311940+08:00",
+    "sha256": "8544ed96a51b12a1c926804386599ef34530dba2da5f3f3ddb619fc65d39382e",
+    "response": {
+      "id": 217239,
+      "type": 2,
+      "platform": "TV",
+      "name": "銀の墓守りII",
+      "name_cn": "银之守墓人 第二季",
+      "date": "2018-01-13",
+      "eps": 6,
+      "infobox": [
+        {
+          "key": "别名",
+          "value": [
+            {
+              "v": "銀の墓守りⅡ"
+            }
+          ]
+        },
+        {
+          "key": "话数",
+          "value": "6"
+        },
+        {
+          "key": "放送开始",
+          "value": "2018年1月13日"
+        },
+        {
+          "key": "放送星期",
+          "value": "星期六"
+        },
+        {
+          "key": "官方网站",
+          "value": "http://ginno-guardian.jp/"
+        },
+        {
+          "key": "播放结束",
+          "value": "2018年2月17日"
+        },
+        {
+          "key": "原作",
+          "value": "零盟工作室（灰仔、闵寻）「レイメイスタジオ(ハイクン、ミンシン)」"
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/episodes?subject_id=217239&type=0&limit=200",
+    "http_status": 200,
+    "retrieved_at": "2026-10-15T14:04:45.559900+08:00",
+    "sha256": "bd16a10d0f47902404399a86f3175093dc3e1181b47851219396f1ee3cb24d77",
+    "response": {
+      "total": 6,
+      "limit": 200,
+      "offset": 0,
+      "data": [
+        {
+          "id": 770695,
+          "subject_id": 217239,
+          "type": 0,
+          "sort": 13,
+          "airdate": "2018-01-13"
+        },
+        {
+          "id": 770707,
+          "subject_id": 217239,
+          "type": 0,
+          "sort": 14,
+          "airdate": "2018-01-20"
+        },
+        {
+          "id": 770708,
+          "subject_id": 217239,
+          "type": 0,
+          "sort": 15,
+          "airdate": "2018-01-27"
+        },
+        {
+          "id": 770709,
+          "subject_id": 217239,
+          "type": 0,
+          "sort": 16,
+          "airdate": "2018-02-03"
+        },
+        {
+          "id": 770710,
+          "subject_id": 217239,
+          "type": 0,
+          "sort": 17,
+          "airdate": "2018-02-10"
+        },
+        {
+          "id": 770711,
+          "subject_id": 217239,
+          "type": 0,
+          "sort": 18,
+          "airdate": "2018-02-17"
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/357961",
+    "http_status": 200,
+    "retrieved_at": "2026-10-15T14:04:45.557309+08:00",
+    "sha256": "6a3647975a16b65ad5dcf79f6df458b9e804cf7165542471e4f9f2f09585a238",
+    "response": {
+      "id": 357961,
+      "type": 2,
+      "platform": "TV",
+      "name": "スキップとローファー",
+      "name_cn": "跃动青春",
+      "date": "2023-04-04",
+      "eps": 12,
+      "infobox": [
+        {
+          "key": "别名",
+          "value": [
+            {
+              "v": "躍動青春"
+            },
+            {
+              "v": "跳跃与乐福鞋"
+            },
+            {
+              "v": "Skip to Loafer"
+            },
+            {
+              "v": "Skip and Loafer"
+            }
+          ]
+        },
+        {
+          "key": "话数",
+          "value": "12"
+        },
+        {
+          "key": "放送开始",
+          "value": "2023年4月4日"
+        },
+        {
+          "key": "放送星期",
+          "value": "星期二"
+        },
+        {
+          "key": "官方网站",
+          "value": "https://skip-and-loafer.com/"
+        },
+        {
+          "key": "播放结束",
+          "value": "2023年6月20日"
+        },
+        {
+          "key": "导演",
+          "value": "出合小都美"
+        },
+        {
+          "key": "原作",
+          "value": "高松美咲（講談社「月刊アフタヌーン」連載）"
+        },
+        {
+          "key": "人物设定",
+          "value": "梅下麻奈未"
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/258081",
+    "http_status": 404,
+    "retrieved_at": "2026-10-15T14:04:45.565703+08:00",
+    "sha256": "b035d3b43f0f0f1458ee85fdac06cc8a187de623f71702cfbd9a88d8f716a2bd",
+    "response": {
+      "title": "Not Found",
+      "details": {
+        "path": "/v0/subjects/258081",
+        "method": "GET"
+      },
+      "request_id": "a4aca0cfdaea61be-LHR",
+      "description": "resource can't be found in the database or has been removed"
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/395537",
+    "http_status": 404,
+    "retrieved_at": "2026-10-15T14:04:45.769859+08:00",
+    "sha256": "d8e746a952e989943db59d973f48c640ad1d149bec885ad2c292d6843c6fc95e",
+    "response": {
+      "title": "Not Found",
+      "details": {
+        "path": "/v0/subjects/395537",
+        "method": "GET"
+      },
+      "request_id": "a4aca0d13bd461be-LHR",
+      "description": "resource can't be found in the database or has been removed"
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/509169",
+    "http_status": 404,
+    "retrieved_at": "2026-10-15T14:04:45.789812+08:00",
+    "sha256": "e23426528117a7633d477e20837349baeb61a4a63cdcb11bf7dc5c2ee38c6c72",
+    "response": {
+      "title": "Not Found",
+      "details": {
+        "path": "/v0/subjects/509169",
+        "method": "GET"
+      },
+      "request_id": "a4aca0d17b405d07-LHR",
+      "description": "resource can't be found in the database or has been removed"
+    }
+  }
+]
