@@ -1,0 +1,1295 @@
+{
+  "retrieved_at": "2026-10-15T06:51:05.061131+00:00",
+  "subject": {
+    "id": 315772,
+    "type": 2,
+    "name": "ふしぎ駄菓子屋 銭天堂",
+    "name_cn": "不可思议的粗点心店钱天堂",
+    "date": "2020-09-08",
+    "eps": 0,
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "神奇柑仔店"
+          },
+          {
+            "v": "Fushigi Dagashiya: Zenitendou"
+          }
+        ]
+      },
+      {
+        "key": "话数",
+        "value": "*"
+      },
+      {
+        "key": "放送开始",
+        "value": "2020年9月8日"
+      }
+    ]
+  },
+  "total": 140,
+  "entries": [
+    {
+      "id": 986920,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 1,
+      "name": "型ぬき人魚グミ",
+      "name_cn": "",
+      "airdate": "2020-09-08"
+    },
+    {
+      "id": 1107314,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 2,
+      "name": "猛獣ビスケット",
+      "name_cn": "",
+      "airdate": "2020-09-15"
+    },
+    {
+      "id": 1107315,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 3,
+      "name": "ホーンテッドアイス",
+      "name_cn": "",
+      "airdate": "2020-09-22"
+    },
+    {
+      "id": 1107316,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 4,
+      "name": "カリスマボンボン",
+      "name_cn": "",
+      "airdate": "2020-10-06"
+    },
+    {
+      "id": 1107317,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 5,
+      "name": "クッキングツリー",
+      "name_cn": "",
+      "airdate": "2020-10-13"
+    },
+    {
+      "id": 1172648,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 6,
+      "name": "怪盗ロールパン",
+      "name_cn": "",
+      "airdate": "2020-10-20"
+    },
+    {
+      "id": 1172649,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 7,
+      "name": "ミュージックスナック",
+      "name_cn": "",
+      "airdate": "2020-10-27"
+    },
+    {
+      "id": 1172650,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 8,
+      "name": "ドクターラムネキット 前編",
+      "name_cn": "",
+      "airdate": "2020-11-10"
+    },
+    {
+      "id": 1172651,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 9,
+      "name": "ドクターラムネキット 後編",
+      "name_cn": "",
+      "airdate": "2020-11-17"
+    },
+    {
+      "id": 1172652,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 10,
+      "name": "おもてなしティー",
+      "name_cn": "",
+      "airdate": "2020-11-24"
+    },
+    {
+      "id": 1172653,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 11,
+      "name": "獏ばくもなか 前編",
+      "name_cn": "",
+      "airdate": "2020-12-08"
+    },
+    {
+      "id": 1172654,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 12,
+      "name": "獏ばくもなか 後編",
+      "name_cn": "",
+      "airdate": "2020-12-15"
+    },
+    {
+      "id": 1172655,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 13,
+      "name": "絵馬せんべい",
+      "name_cn": "",
+      "airdate": "2020-12-22"
+    },
+    {
+      "id": 1172656,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 14,
+      "name": "ミイラムネ",
+      "name_cn": "",
+      "airdate": "2021-01-05"
+    },
+    {
+      "id": 1172657,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 15,
+      "name": "ヤマ缶詰とずるずるあげもち",
+      "name_cn": "",
+      "airdate": "2021-01-12"
+    },
+    {
+      "id": 1172658,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 16,
+      "name": "ウルフまんじゅう",
+      "name_cn": "",
+      "airdate": "2021-01-26"
+    },
+    {
+      "id": 1172659,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 17,
+      "name": "ゴブリンチョコエッグ",
+      "name_cn": "",
+      "airdate": "2021-02-02"
+    },
+    {
+      "id": 1172660,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 18,
+      "name": "虫歯あられ",
+      "name_cn": "",
+      "airdate": "2021-02-16"
+    },
+    {
+      "id": 1172661,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 19,
+      "name": "虹色水あめ 前編",
+      "name_cn": "",
+      "airdate": "2021-02-23"
+    },
+    {
+      "id": 1172662,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 20,
+      "name": "虹色水あめ 後編",
+      "name_cn": "",
+      "airdate": "2021-03-02"
+    },
+    {
+      "id": 1172663,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 21,
+      "name": "お稲荷せんべい",
+      "name_cn": "",
+      "airdate": "2021-04-06"
+    },
+    {
+      "id": 1172664,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 22,
+      "name": "しわとり梅干し",
+      "name_cn": "",
+      "airdate": "2021-04-13"
+    },
+    {
+      "id": 1172665,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 23,
+      "name": "しっぺがえしメンコ",
+      "name_cn": "",
+      "airdate": "2021-04-20"
+    },
+    {
+      "id": 1172666,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 24,
+      "name": "銭天堂と金色の招き猫",
+      "name_cn": "",
+      "airdate": "2021-04-27"
+    },
+    {
+      "id": 1172667,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 25,
+      "name": "新品ピン",
+      "name_cn": "",
+      "airdate": "2021-05-11"
+    },
+    {
+      "id": 1172668,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 26,
+      "name": "おじょうさまココア",
+      "name_cn": "",
+      "airdate": "2021-05-18"
+    },
+    {
+      "id": 1172669,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 27,
+      "name": "イケ面",
+      "name_cn": "",
+      "airdate": "2021-05-25"
+    },
+    {
+      "id": 1172670,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 28,
+      "name": "スピーチジュース 前編",
+      "name_cn": "",
+      "airdate": "2021-06-08"
+    },
+    {
+      "id": 1172671,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 29,
+      "name": "スピーチジュース 後編",
+      "name_cn": "",
+      "airdate": "2021-06-15"
+    },
+    {
+      "id": 1172672,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 30,
+      "name": "銭天堂, 危機一髪",
+      "name_cn": "",
+      "airdate": "2021-06-22"
+    },
+    {
+      "id": 1172673,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 31,
+      "name": "ビッグリもなか",
+      "name_cn": "",
+      "airdate": "2021-07-06"
+    },
+    {
+      "id": 1172674,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 32,
+      "name": "バランスラスク",
+      "name_cn": "",
+      "airdate": "2021-07-13"
+    },
+    {
+      "id": 1172675,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 33,
+      "name": "がまんエンピツ",
+      "name_cn": "",
+      "airdate": "2021-09-07"
+    },
+    {
+      "id": 1172676,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 34,
+      "name": "ラプンツェル・プレッツェル 前編",
+      "name_cn": "",
+      "airdate": "2021-09-14"
+    },
+    {
+      "id": 1172677,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 35,
+      "name": "ラプンツェル・プレッツェル 後編",
+      "name_cn": "",
+      "airdate": "2021-09-21"
+    },
+    {
+      "id": 1172678,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 36,
+      "name": "チャーミングミ",
+      "name_cn": "",
+      "airdate": "2021-09-28"
+    },
+    {
+      "id": 1172679,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 37,
+      "name": "子守コウモリ",
+      "name_cn": "",
+      "airdate": "2021-10-05"
+    },
+    {
+      "id": 1172680,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 38,
+      "name": "怪童, 現る",
+      "name_cn": "",
+      "airdate": "2021-10-19"
+    },
+    {
+      "id": 1172681,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 39,
+      "name": "ドリームドーム",
+      "name_cn": "",
+      "airdate": "2021-10-26"
+    },
+    {
+      "id": 1172682,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 40,
+      "name": "最後にわら麩と負け知らずアンズ",
+      "name_cn": "",
+      "airdate": "2021-11-02"
+    },
+    {
+      "id": 1172642,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 41,
+      "name": "ハンターバターサンド",
+      "name_cn": "",
+      "airdate": "2021-11-09"
+    },
+    {
+      "id": 1172643,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 42,
+      "name": "シェフ・ショコラ",
+      "name_cn": "",
+      "airdate": "2021-11-23"
+    },
+    {
+      "id": 1172644,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 43,
+      "name": "おもてナシ",
+      "name_cn": "",
+      "airdate": "2021-11-30"
+    },
+    {
+      "id": 1172645,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 44,
+      "name": "餓鬼ニッキ",
+      "name_cn": "",
+      "airdate": "2021-12-07"
+    },
+    {
+      "id": 1172646,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 45,
+      "name": "因縁のはじまり",
+      "name_cn": "",
+      "airdate": "2021-12-14"
+    },
+    {
+      "id": 1172647,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 56,
+      "name": "肩こり地蔵まんじゅう 後編 (肩こり地蔵まんじゅう 後編)",
+      "name_cn": "",
+      "airdate": "2022-04-29"
+    },
+    {
+      "id": 1172683,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 57,
+      "name": "写らんシール",
+      "name_cn": "",
+      "airdate": "2022-05-13"
+    },
+    {
+      "id": 1172684,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 58,
+      "name": "底なしイ～カ",
+      "name_cn": "",
+      "airdate": "2022-05-20"
+    },
+    {
+      "id": 1172685,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 59,
+      "name": "カモメアメ",
+      "name_cn": "",
+      "airdate": "2022-05-27"
+    },
+    {
+      "id": 1172686,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 60,
+      "name": "アイディアあんこ 前編",
+      "name_cn": "",
+      "airdate": "2022-06-10"
+    },
+    {
+      "id": 1172687,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 61,
+      "name": "アイディアあんこ 後編",
+      "name_cn": "",
+      "airdate": "2022-06-17"
+    },
+    {
+      "id": 1172688,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 62,
+      "name": "ふしぎなお客様",
+      "name_cn": "",
+      "airdate": "2022-06-24"
+    },
+    {
+      "id": 1172689,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 63,
+      "name": "写らんシール",
+      "name_cn": "",
+      "airdate": "2022-07-08"
+    },
+    {
+      "id": 1172690,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 64,
+      "name": "聞き耳グミ",
+      "name_cn": "",
+      "airdate": "2022-07-15"
+    },
+    {
+      "id": 1172691,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 65,
+      "name": "家カエル 前編",
+      "name_cn": "",
+      "airdate": "2022-07-22"
+    },
+    {
+      "id": 1172692,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 66,
+      "name": "家カエル 後編",
+      "name_cn": "",
+      "airdate": "2022-07-29"
+    },
+    {
+      "id": 1172693,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 67,
+      "name": "コントロールケーキ",
+      "name_cn": "",
+      "airdate": "2022-09-02"
+    },
+    {
+      "id": 1172694,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 68,
+      "name": "健太の秘密",
+      "name_cn": "",
+      "airdate": "2022-09-09"
+    },
+    {
+      "id": 1172695,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 69,
+      "name": "アドベン茶～",
+      "name_cn": "",
+      "airdate": "2022-09-16"
+    },
+    {
+      "id": 1172696,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 70,
+      "name": "本当の望み",
+      "name_cn": "",
+      "airdate": "2022-09-23"
+    },
+    {
+      "id": 1172697,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 71,
+      "name": "やりなおしおこし",
+      "name_cn": "",
+      "airdate": "2022-09-30"
+    },
+    {
+      "id": 1172698,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 72,
+      "name": "消えたよどみ",
+      "name_cn": "",
+      "airdate": "2022-10-14"
+    },
+    {
+      "id": 1172699,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 73,
+      "name": "ダイナソーダと遺跡おかき 前編",
+      "name_cn": "",
+      "airdate": "2022-10-21"
+    },
+    {
+      "id": 1172700,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 74,
+      "name": "ダイナソーダと遺跡おかき 後編",
+      "name_cn": "",
+      "airdate": "2022-10-28"
+    },
+    {
+      "id": 1172701,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 75,
+      "name": "虫よけ香水",
+      "name_cn": "",
+      "airdate": "2022-11-11"
+    },
+    {
+      "id": 1172702,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 76,
+      "name": "チュチュットチューインガムとつまみぐいサブレ",
+      "name_cn": "",
+      "airdate": "2022-11-18"
+    },
+    {
+      "id": 1172703,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 77,
+      "name": "盗まれた商品",
+      "name_cn": "",
+      "airdate": "2022-11-25"
+    },
+    {
+      "id": 1172704,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 78,
+      "name": "バーチャルバッジ 前編",
+      "name_cn": "",
+      "airdate": "2022-12-09"
+    },
+    {
+      "id": 1172705,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 79,
+      "name": "バーチャルバッジ 後編",
+      "name_cn": "",
+      "airdate": "2022-12-16"
+    },
+    {
+      "id": 1172706,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 80,
+      "name": "いそげもちとのんびりりんご",
+      "name_cn": "",
+      "airdate": "2022-12-23"
+    },
+    {
+      "id": 1172707,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 81,
+      "name": "すいすいソーダ水と先頭糖",
+      "name_cn": "",
+      "airdate": "2023-01-20"
+    },
+    {
+      "id": 1172708,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 82,
+      "name": "眠り貯金箱と眠れませんべい",
+      "name_cn": "",
+      "airdate": "2023-01-27"
+    },
+    {
+      "id": 1308495,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 83,
+      "name": "引きさきイカ 前編",
+      "name_cn": "",
+      "airdate": "2023-02-10"
+    },
+    {
+      "id": 1308496,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 84,
+      "name": "引きさきイカ 後編",
+      "name_cn": "",
+      "airdate": "2023-02-17"
+    },
+    {
+      "id": 1308497,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 85,
+      "name": "兵糧キャラメル",
+      "name_cn": "",
+      "airdate": "2023-04-07"
+    },
+    {
+      "id": 1308498,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 86,
+      "name": "お仲間まんじゅう",
+      "name_cn": "",
+      "airdate": "2023-04-14"
+    },
+    {
+      "id": 1308499,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 87,
+      "name": "田舎もなか",
+      "name_cn": "",
+      "airdate": "2023-04-21"
+    },
+    {
+      "id": 1308500,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 88,
+      "name": "みせびら菓子",
+      "name_cn": "",
+      "airdate": "2023-04-28"
+    },
+    {
+      "id": 1308501,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 89,
+      "name": "インココイン",
+      "name_cn": "",
+      "airdate": "2023-05-12"
+    },
+    {
+      "id": 1308502,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 90,
+      "name": "熱帯焼き",
+      "name_cn": "",
+      "airdate": "2023-05-19"
+    },
+    {
+      "id": 1308503,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 91,
+      "name": "見定メーター",
+      "name_cn": "",
+      "airdate": "2023-05-26"
+    },
+    {
+      "id": 1308504,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 92,
+      "name": "六条教授のたくらみ",
+      "name_cn": "",
+      "airdate": "2023-06-09"
+    },
+    {
+      "id": 1308505,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 93,
+      "name": "もうひとりの紅子",
+      "name_cn": "",
+      "airdate": "2023-06-16"
+    },
+    {
+      "id": 1308506,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 94,
+      "name": "いいものナゲット",
+      "name_cn": "",
+      "airdate": "2023-06-23"
+    },
+    {
+      "id": 1308507,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 95,
+      "name": "忍者ジンジャー",
+      "name_cn": "",
+      "airdate": "2023-06-30"
+    },
+    {
+      "id": 1308508,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 96,
+      "name": "元研究員の悩み",
+      "name_cn": "",
+      "airdate": "2023-07-14"
+    },
+    {
+      "id": 1308509,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 97,
+      "name": "デジタルト",
+      "name_cn": "",
+      "airdate": "2023-07-21"
+    },
+    {
+      "id": 1308510,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 98,
+      "name": "ふしぎ駄菓子のできるまで",
+      "name_cn": "",
+      "airdate": "2023-07-28"
+    },
+    {
+      "id": 1308511,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 99,
+      "name": "猛獣ビスケット、ふたたび",
+      "name_cn": "",
+      "airdate": "2023-09-01"
+    },
+    {
+      "id": 1308512,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 100,
+      "name": "その名は「銭天堂」",
+      "name_cn": "",
+      "airdate": "2023-09-08"
+    },
+    {
+      "id": 1308513,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 101,
+      "name": "とりあげもち",
+      "name_cn": "",
+      "airdate": "2023-09-15"
+    },
+    {
+      "id": 1308514,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 102,
+      "name": "兄弟だんご",
+      "name_cn": "",
+      "airdate": "2023-09-22"
+    },
+    {
+      "id": 1308515,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 103,
+      "name": "留守電でんシール",
+      "name_cn": "",
+      "airdate": "2023-10-06"
+    },
+    {
+      "id": 1308516,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 104,
+      "name": "分身風船ガム",
+      "name_cn": "",
+      "airdate": "2023-10-13"
+    },
+    {
+      "id": 1308517,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 105,
+      "name": "リプレイプリン",
+      "name_cn": "",
+      "airdate": "2023-10-20"
+    },
+    {
+      "id": 1308518,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 106,
+      "name": "シークレットタブレット",
+      "name_cn": "",
+      "airdate": "2023-10-27"
+    },
+    {
+      "id": 1308519,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 107,
+      "name": "サイン・コイン",
+      "name_cn": "",
+      "airdate": "2023-11-10"
+    },
+    {
+      "id": 1308520,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 108,
+      "name": "軽々カルメ焼き",
+      "name_cn": "",
+      "airdate": "2023-11-17"
+    },
+    {
+      "id": 1308521,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 109,
+      "name": "歌う銭天堂",
+      "name_cn": "",
+      "airdate": "2023-11-24"
+    },
+    {
+      "id": 1308522,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 110,
+      "name": "スクープクレープ",
+      "name_cn": "",
+      "airdate": "2023-12-08"
+    },
+    {
+      "id": 1308523,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 111,
+      "name": "プレゼント扇子",
+      "name_cn": "",
+      "airdate": "2023-12-15"
+    },
+    {
+      "id": 1308524,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 112,
+      "name": "ごまかしボーロ",
+      "name_cn": "",
+      "airdate": "2024-01-19"
+    },
+    {
+      "id": 1308525,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 113,
+      "name": "迷宮メロンパン",
+      "name_cn": "",
+      "airdate": "2024-01-26"
+    },
+    {
+      "id": 1308526,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 114,
+      "name": "チリチリチェリー",
+      "name_cn": "",
+      "airdate": "2024-02-02"
+    },
+    {
+      "id": 1308527,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 115,
+      "name": "悪魔あめ",
+      "name_cn": "",
+      "airdate": "2024-02-23"
+    },
+    {
+      "id": 1308528,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 116,
+      "name": "おおらか落花生",
+      "name_cn": "",
+      "airdate": "2024-03-01"
+    },
+    {
+      "id": 1308529,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 117,
+      "name": "ごめんラーメン",
+      "name_cn": "",
+      "airdate": "2024-04-05"
+    },
+    {
+      "id": 1308530,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 118,
+      "name": "舌鼓",
+      "name_cn": "",
+      "airdate": "2024-04-12"
+    },
+    {
+      "id": 1308531,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 119,
+      "name": "タイムライム",
+      "name_cn": "",
+      "airdate": "2024-04-19"
+    },
+    {
+      "id": 1308532,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 120,
+      "name": "もてもてもち",
+      "name_cn": "",
+      "airdate": "2024-04-26"
+    },
+    {
+      "id": 1324793,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 121,
+      "name": "妖刀糖",
+      "name_cn": "",
+      "airdate": "2024-05-10"
+    },
+    {
+      "id": 1324794,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 122,
+      "name": "ライバルバルーン",
+      "name_cn": "",
+      "airdate": "2024-05-17"
+    },
+    {
+      "id": 1324795,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 123,
+      "name": "あまえん棒",
+      "name_cn": "",
+      "airdate": "2024-05-24"
+    },
+    {
+      "id": 1347868,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 124,
+      "name": "夢あめ",
+      "name_cn": "",
+      "airdate": "2024-06-07"
+    },
+    {
+      "id": 1347869,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 125,
+      "name": "六条教授、ふたたび",
+      "name_cn": "",
+      "airdate": "2024-06-14"
+    },
+    {
+      "id": 1347870,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 126,
+      "name": "断捨離だんご",
+      "name_cn": "",
+      "airdate": "2024-06-21"
+    },
+    {
+      "id": 1347871,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 127,
+      "name": "いた板チョコ",
+      "name_cn": "",
+      "airdate": "2024-07-05"
+    },
+    {
+      "id": 1347872,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 128,
+      "name": "貧乏神ガム",
+      "name_cn": "",
+      "airdate": "2024-07-12"
+    },
+    {
+      "id": 1347873,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 129,
+      "name": "迫りくる危機",
+      "name_cn": "",
+      "airdate": "2024-07-19"
+    },
+    {
+      "id": 1347874,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 130,
+      "name": "めぐり会う悪意",
+      "name_cn": "",
+      "airdate": "2024-07-26"
+    },
+    {
+      "id": 1391624,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 131,
+      "name": "離れん花火",
+      "name_cn": "",
+      "airdate": "2024-09-06"
+    },
+    {
+      "id": 1391625,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 132,
+      "name": "写し柿",
+      "name_cn": "",
+      "airdate": "2024-09-13"
+    },
+    {
+      "id": 1391626,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 133,
+      "name": "スカウトまんじゅう",
+      "name_cn": "",
+      "airdate": "2024-09-20"
+    },
+    {
+      "id": 1391627,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 134,
+      "name": "くるくるなつかしシェーク",
+      "name_cn": "",
+      "airdate": "2024-10-04"
+    },
+    {
+      "id": 1391628,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 135,
+      "name": "景気ケーキ",
+      "name_cn": "",
+      "airdate": "2024-10-11"
+    },
+    {
+      "id": 1391629,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 136,
+      "name": "ゴーストロベリー",
+      "name_cn": "",
+      "airdate": "2024-10-18"
+    },
+    {
+      "id": 1391630,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 137,
+      "name": "論破パン",
+      "name_cn": "",
+      "airdate": "2024-11-01"
+    },
+    {
+      "id": 1391631,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 138,
+      "name": "育て手",
+      "name_cn": "",
+      "airdate": "2024-11-08"
+    },
+    {
+      "id": 1391632,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 139,
+      "name": "相談だんご",
+      "name_cn": "",
+      "airdate": "2024-11-15"
+    },
+    {
+      "id": 1391633,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 140,
+      "name": "ドラマチックどら焼き",
+      "name_cn": "",
+      "airdate": "2024-12-06"
+    },
+    {
+      "id": 1449728,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 141,
+      "name": "六条教授の新発明",
+      "name_cn": "",
+      "airdate": "2024-12-13"
+    },
+    {
+      "id": 1461067,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 142,
+      "name": "どっちウォッチ",
+      "name_cn": "",
+      "airdate": "2025-01-17"
+    },
+    {
+      "id": 1461068,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 143,
+      "name": "優秀シュークリーム",
+      "name_cn": "",
+      "airdate": "2025-01-24"
+    },
+    {
+      "id": 1461069,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 144,
+      "name": "リメンバーチョコバー",
+      "name_cn": "",
+      "airdate": "2025-01-31"
+    },
+    {
+      "id": 1461070,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 145,
+      "name": "もとどおりんごあめ",
+      "name_cn": "",
+      "airdate": "2025-02-21"
+    },
+    {
+      "id": 1461071,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 146,
+      "name": "立体焼き",
+      "name_cn": "",
+      "airdate": "2025-02-28"
+    },
+    {
+      "id": 1461072,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 147,
+      "name": "つぐみ、銭天堂へ",
+      "name_cn": "",
+      "airdate": "2025-03-07"
+    },
+    {
+      "id": 1461073,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 148,
+      "name": "つぐみの願い",
+      "name_cn": "",
+      "airdate": "2025-03-14"
+    },
+    {
+      "id": 1461074,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 149,
+      "name": "",
+      "name_cn": "",
+      "airdate": "2099"
+    },
+    {
+      "id": 1461075,
+      "subject_id": 315772,
+      "type": 0,
+      "sort": 150,
+      "name": "",
+      "name_cn": "",
+      "airdate": "2099"
+    }
+  ]
+}

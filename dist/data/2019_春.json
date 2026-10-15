@@ -405,7 +405,24 @@
         "bangumi": null,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://www.tv-tokyo.co.jp/anime/kinder/story/index_13.html",
+          "https://www.tv-tokyo.co.jp/anime/kinder/story/index_14.html",
+          "https://www.tv-tokyo.co.jp/anime/kinder/story/index_15.html",
+          "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+          "https://niagho.com/info/tvanime.html"
+        ],
+        "checked_at": "2026-10-15T14:33:19.860195+08:00",
+        "attempted_at": "2026-10-15T14:40:59.030367+08:00",
+        "end_date": "2019-09-18",
+        "note": "2019年首輪TV版全25話，已逐話核對TV Tokyo 1～25話及播出日；排除アンコール再放送。尚無可靠Bangumi ID，以官方來源提供集數。"
+      }
     },
     {
       "bangumi_id": "anime-324",
@@ -1416,7 +1433,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-15T13:42:21.071467+08:00",
+  "generated_at": "2026-10-15T14:40:59.126047+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201904/",
   "quality": {
     "source_count": 51,

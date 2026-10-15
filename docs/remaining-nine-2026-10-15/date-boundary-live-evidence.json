@@ -1,0 +1,172 @@
+{
+  "card_id": "anime-1100",
+  "retrieved_at": "2026-10-15T14:41:39.601393+08:00",
+  "before": {
+    "total_episodes": 12,
+    "aired_episodes": 12,
+    "airing_status": "finished",
+    "episode_count_status": "confirmed",
+    "fetch_state": "stale",
+    "source_urls": [
+      "https://bgm.tv/subject/322130",
+      "https://bgm.tv/subject/322130/ep"
+    ],
+    "checked_at": "2026-10-13T21:49:37.616008+08:00",
+    "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+    "end_date": "2022-09-21",
+    "note": "來源資料不完整，保留上次確認資料。"
+  },
+  "after": {
+    "total_episodes": 12,
+    "aired_episodes": 12,
+    "airing_status": "finished",
+    "episode_count_status": "confirmed",
+    "fetch_state": "ok",
+    "source_urls": [
+      "https://bgm.tv/subject/322130",
+      "https://bgm.tv/subject/322130/ep"
+    ],
+    "checked_at": "2026-10-15T14:41:39.601393+08:00",
+    "attempted_at": "2026-10-15T14:41:39.601393+08:00",
+    "end_date": "2022-09-21",
+    "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+  },
+  "provider_evidence": [
+    {
+      "url": "https://api.bgm.tv/v0/subjects/322130",
+      "subject": {
+        "id": 322130,
+        "name": "異世界迷宮でハーレムを",
+        "name_cn": "异世界迷宫里的后宫生活",
+        "type": 2,
+        "date": "2022-07-06",
+        "eps": 12,
+        "infobox": [
+          {
+            "key": "别名",
+            "value": [
+              {
+                "k": "非官方",
+                "v": "在异世界迷宫开后宫"
+              },
+              {
+                "v": "Harem in the Labyrinth of Another World"
+              },
+              {
+                "v": "Isekai Meikyuu de Harem wo"
+              }
+            ]
+          },
+          {
+            "key": "话数",
+            "value": "12"
+          },
+          {
+            "key": "放送开始",
+            "value": "2022年7月6日"
+          },
+          {
+            "key": "播放结束",
+            "value": "2022年9月21日"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "total": 12,
+      "params": {
+        "subject_id": 322130,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "entries": [
+        {
+          "id": 1111475,
+          "subject_id": 322130,
+          "type": 0,
+          "sort": 1,
+          "airdate": "2022-07-06"
+        },
+        {
+          "id": 1111476,
+          "subject_id": 322130,
+          "type": 0,
+          "sort": 2,
+          "airdate": "2022-07-13"
+        },
+        {
+          "id": 1111477,
+          "subject_id": 322130,
+          "type": 0,
+          "sort": 3,
+          "airdate": "2022-07-20"
+        },
+        {
+          "id": 1111478,
+          "subject_id": 322130,
+          "type": 0,
+          "sort": 4,
+          "airdate": "2022-07-27"
+        },
+        {
+          "id": 1111479,
+          "subject_id": 322130,
+          "type": 0,
+          "sort": 5,
+          "airdate": "2022-08-03"
+        },
+        {
+          "id": 1111480,
+          "subject_id": 322130,
+          "type": 0,
+          "sort": 6,
+          "airdate": "2022-08-10"
+        },
+        {
+          "id": 1111481,
+          "subject_id": 322130,
+          "type": 0,
+          "sort": 7,
+          "airdate": "2022-08-17"
+        },
+        {
+          "id": 1111482,
+          "subject_id": 322130,
+          "type": 0,
+          "sort": 8,
+          "airdate": "2022-08-24"
+        },
+        {
+          "id": 1111483,
+          "subject_id": 322130,
+          "type": 0,
+          "sort": 9,
+          "airdate": "2022-08-31"
+        },
+        {
+          "id": 1111484,
+          "subject_id": 322130,
+          "type": 0,
+          "sort": 10,
+          "airdate": "2022-09-07"
+        },
+        {
+          "id": 1111485,
+          "subject_id": 322130,
+          "type": 0,
+          "sort": 11,
+          "airdate": "2022-09-14"
+        },
+        {
+          "id": 1111486,
+          "subject_id": 322130,
+          "type": 0,
+          "sort": 12,
+          "airdate": "2022-09-21​"
+        }
+      ]
+    }
+  ]
+}

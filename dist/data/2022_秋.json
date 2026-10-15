@@ -1527,18 +1527,18 @@
       },
       "episodes": {
         "total_episodes": 8,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "planned",
-        "fetch_state": "stale",
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
         "source_urls": [
-          "https://bgm.tv/subject/395537",
-          "https://bgm.tv/subject/395537/ep"
+          "https://harecam.af-original.com/goods/bddvd/123/",
+          "https://harecam.af-original.com/story/"
         ],
-        "checked_at": "2026-10-14T05:03:54+08:00",
-        "attempted_at": "2026-10-15T13:34:58.247425+08:00",
+        "checked_at": "2026-10-15T14:37:16.903352+08:00",
+        "attempted_at": "2026-10-15T14:40:59.030367+08:00",
         "end_date": null,
-        "note": "即時來源未能取得可用頁面，保留上次確認的官方資料快照與確認時間。"
+        "note": "TV版全8話，官方完整TV版DVD及故事1～8話一致；排除3.5與6.5特別節目。"
       }
     },
     {
@@ -1570,7 +1570,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-15T13:42:21.160463+08:00",
+  "generated_at": "2026-10-15T14:40:59.151085+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202210/",
   "quality": {
     "source_count": 56,

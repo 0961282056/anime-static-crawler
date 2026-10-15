@@ -116,6 +116,22 @@ def test_finished_requires_explicit_past_end_and_complete_dates(anime_record_fac
     assert missing.aired_episodes is None
 
 
+@pytest.mark.parametrize("marks", ["\u200b", "\ufeff", " \u200b \ufeff\n"])
+def test_invisible_boundary_marks_do_not_hide_a_valid_final_episode(
+    anime_record_factory, marks
+):
+    record = anime(anime_record_factory)
+    entries = [episode(1, marks + "2026-10-01" + marks)]
+    result = parse_episode_metadata(record, subject(1, "2026-10-01"), entries, NOW)
+    assert result.aired_episodes == result.total_episodes == 1
+    assert result.airing_status == "finished"
+    # A valid-looking prefix does not make an annotated date unambiguous.
+    entries[0]["airdate"] = "2026-10-01（先行配信）" + marks
+    result = parse_episode_metadata(record, subject(1, "2026-10-01"), entries, NOW)
+    assert result.aired_episodes is None
+    assert result.airing_status == "unknown"
+
+
 @pytest.mark.parametrize(
     "mutation",
     [

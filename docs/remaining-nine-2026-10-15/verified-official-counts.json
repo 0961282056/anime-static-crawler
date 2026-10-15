@@ -1,0 +1,69 @@
+[
+  {
+    "source_url": "https://shucap.cf-anime.com/story/",
+    "retrieved_at": "2026-10-15T14:30:20.978892+08:00",
+    "response_sha256": "4f5c106c2f0a3e068b9e0ad33f1075e5c1e1360aad4b893015f6816b385ae64d",
+    "main_episode_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  {
+    "source_url": "https://harecam.af-original.com/story/",
+    "retrieved_at": "2026-10-15T14:30:22.109803+08:00",
+    "response_sha256": "07a8ab07cb4da2d5752957da4669341712e5146c3a7f96a1d030c887d63fceb0",
+    "main_episode_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "source_url": "https://gunpuku-mouai.af-original.com/story/",
+    "retrieved_at": "2026-10-15T14:30:23.435589+08:00",
+    "response_sha256": "f9b479cc5b9c0a2af0483c3b4552e93b5c3e33ad84e26544c56f6f420515cba6",
+    "main_episode_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "source_url": "https://shucap.cf-anime.com/goods/",
+    "retrieved_at": "2026-10-15T14:30:20.912448+08:00",
+    "response_sha256": "2f9f664981e1bed892c4a5d230cc865035c2da6d97af33d9df091df7f303e6cd",
+    "count_quote": "OA版 第1話～第12話"
+  },
+  {
+    "source_url": "https://harecam.af-original.com/goods/bddvd/123/",
+    "retrieved_at": "2026-10-15T14:37:16.903352+08:00",
+    "response_sha256": "f13a6cd70613ec9908d0368b9385f9286fecf2597a94a422742a26812550ff44",
+    "count_quote": "TV放送版　全8話"
+  },
+  {
+    "source_url": "https://gunpuku-mouai.af-original.com/goods/bddvd/329/",
+    "retrieved_at": "2026-10-15T14:32:06.154784+08:00",
+    "response_sha256": "2981ab3d5c55484dca0d7e2248f39b07e12b84f2247cd4cc268ec5186013773a",
+    "count_quote": "TV放送版　全8話"
+  }
+]

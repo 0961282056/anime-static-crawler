@@ -1985,5 +1985,21 @@
       "https://bgm.tv/subject/357961"
     ],
     "scope_note": "只修正此卡片及兩種名稱原先357961的連結，不覆寫其他來源ID；清除誤連條目的集數快照後重新取得正確條目資料。"
+  },
+  {
+    "card_id": "anime-418",
+    "anime_name": "1日外出錄班長",
+    "source_original_name": "1日外出録ハンチョウ",
+    "subject_id": 237834,
+    "subject_name": "中間管理録トネガワ",
+    "first_air_date": "2018-07-03",
+    "reviewed_on": "2026-10-15",
+    "basis": "官方VAP班長專頁屬《利根川》合輯；已逐筆核對24個官方集目，只計14、15、18、23四個班長主線節目。此ID明確連到合輯母條目，並非宣稱有獨立班長資料庫條目。",
+    "source_urls": [
+      "https://www.vap.co.jp/tonegawa-anime/index_hancho.html",
+      "https://www.vap.co.jp/tonegawa-anime/story/",
+      "https://bgm.tv/subject/237834"
+    ],
+    "scope_note": "精確卡片使用官方四節目快照；不採合輯24話或其他來源季別的快取。"
   }
 ]

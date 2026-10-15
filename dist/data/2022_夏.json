@@ -410,15 +410,15 @@
         "aired_episodes": 12,
         "airing_status": "finished",
         "episode_count_status": "confirmed",
-        "fetch_state": "stale",
+        "fetch_state": "ok",
         "source_urls": [
           "https://bgm.tv/subject/322130",
           "https://bgm.tv/subject/322130/ep"
         ],
-        "checked_at": "2026-10-13T21:49:37.616008+08:00",
-        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "checked_at": "2026-10-15T14:41:39.601393+08:00",
+        "attempted_at": "2026-10-15T14:41:39.601393+08:00",
         "end_date": "2022-09-21",
-        "note": "來源資料不完整，保留上次確認資料。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1430,7 +1430,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-15T14:10:14.348937+08:00",
+  "generated_at": "2026-10-15T14:41:40.424528+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202207/",
   "quality": {
     "source_count": 51,

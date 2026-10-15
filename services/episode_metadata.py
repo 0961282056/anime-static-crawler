@@ -40,7 +40,9 @@ class RequestBudgetExceeded(Exception):
 def _date(value: object) -> date | None:
     if not isinstance(value, str):
         return None
-    value = value.strip()
+    # Providers sometimes append invisible copy/paste marks to valid dates.
+    # Trim boundary marks only; annotations and malformed dates still fail.
+    value = re.sub(r"^[\s\u200b\ufeff]+|[\s\u200b\ufeff]+$", "", value)
     try:
         if re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
             return date.fromisoformat(value)

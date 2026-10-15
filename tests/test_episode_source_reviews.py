@@ -90,7 +90,7 @@ def test_snapshot_is_exactly_bound_and_not_rechecked(anime_record_factory):
     )
 
 
-def test_unresolved_tv_web_scope_cannot_automatically_become_finished(
+def test_verified_rikkun_tv_scope_does_not_revert_to_web_sixteen_episodes(
     anime_record_factory,
 ):
     review = next(r for r in source_reviews() if r["subject_id"] == 241044)
@@ -99,14 +99,109 @@ def test_unresolved_tv_web_scope_cannot_automatically_become_finished(
     result = EpisodeEnricher(client, retry_failed=True).enrich(
         anime, NOW + timedelta(days=40)
     )
-    assert result.episodes.fetch_state == "conflict"
-    assert result.episodes.airing_status == "unknown"
-    assert result.episodes.episode_count_status == "unknown"
-    assert result.episodes.aired_episodes == result.episodes.total_episodes == 16
+    assert result.episodes.fetch_state == "ok"
+    assert result.episodes.airing_status == "finished"
+    assert result.episodes.episode_count_status == "confirmed"
+    assert result.episodes.aired_episodes == result.episodes.total_episodes == 12
     assert result.episodes.checked_at == anime.episodes.checked_at
-    assert "非已確認的電視版全集" in result.episodes.note
+    assert "網路重編16話" in result.episodes.note
     client.fetch.assert_not_called()
     assert reviewed_source(anime.model_copy(update={"bangumi_id": "anime-999"})) is None
+
+
+def test_verified_official_episodes_work_without_a_bangumi_subject_id(
+    anime_record_factory,
+):
+    review = next(r for r in source_reviews() if r["card_id"] == "anime-318")
+    anime = reviewed_anime(review, anime_record_factory)
+    assert anime.external_ids.bangumi is None
+    client = Mock()
+    enricher = EpisodeEnricher(client)
+    result = enricher.enrich(anime.model_copy(update={"episodes": None}), NOW)
+    assert result.episodes.aired_episodes == result.episodes.total_episodes == 25
+    assert result.episodes.airing_status == "finished"
+    assert result.episodes.source_urls[0].startswith("https://www.tv-tokyo.co.jp/")
+    other = anime.model_copy(update={"bangumi_id": "anime-999", "episodes": None})
+    assert enricher.enrich(other, NOW).episodes is None
+    client.fetch.assert_not_called()
+
+
+@pytest.mark.parametrize(("sid", "total"), [(258081, 12), (395537, 8), (509169, 8)])
+def test_official_tv_counts_survive_unavailable_anonymous_provider(
+    anime_record_factory, sid, total
+):
+    review = next(r for r in source_reviews() if r["subject_id"] == sid)
+    anime = reviewed_anime(review, anime_record_factory)
+    client = Mock()
+    result = EpisodeEnricher(client, retry_failed=True).enrich(
+        anime, NOW + timedelta(days=40)
+    )
+    assert result.episodes.fetch_state == "ok"
+    assert result.episodes.airing_status == "finished"
+    assert result.episodes.aired_episodes == result.episodes.total_episodes == total
+    assert result.episodes.checked_at == anime.episodes.checked_at
+    client.fetch.assert_not_called()
+
+
+def test_hanchou_uses_four_official_programmes_without_reusing_parent_twenty_four(
+    anime_record_factory,
+):
+    review = next(r for r in source_reviews() if r["card_id"] == "anime-418")
+    hanchou = reviewed_anime(review, anime_record_factory)
+    scope = json.loads(
+        Path("docs/remaining-nine-2026-10-15/verified-hanchou-scope.json").read_text()
+    )
+    assert scope["selected_parent_episodes"] == [14, 15, 18, 23]
+    assert len(scope["all_parent_episode_checks"]) == 24
+    parent = hanchou.model_copy(
+        update={
+            "bangumi_id": "anime-458",
+            "anime_name": "中間管理錄利根川",
+            "original_name": "中間管理録トネガワ",
+            "episodes": None,
+        }
+    )
+    client = Mock()
+    client.fetch.return_value = EpisodeMetadata(
+        total_episodes=24,
+        aired_episodes=24,
+        airing_status="finished",
+        episode_count_status="confirmed",
+        fetch_state="ok",
+    )
+    enricher = EpisodeEnricher(client)
+    assert enricher.enrich(parent, NOW).episodes.total_episodes == 24
+    result = enricher.enrich(hanchou, NOW)
+    assert result.episodes.aired_episodes == result.episodes.total_episodes == 4
+    assert result.external_ids.bangumi == parent.external_ids.bangumi == 237834
+    assert enricher.enrich(parent, NOW).episodes.total_episodes == 24
+    assert client.fetch.call_count == 1
+
+
+def test_zenitendo_counts_distinct_official_programmes_without_inventing_a_final_total(
+    anime_record_factory,
+):
+    catalogue = json.loads(
+        Path(
+            "docs/remaining-nine-2026-10-15/nhk-complete-episode-catalogue.json"
+        ).read_text()
+    )
+    rows = catalogue["episodes"]
+    assert len(rows) == len({r["source_url"] for r in rows}) == 148
+    assert len({r["title"] for r in rows}) == 147
+    assert len(catalogue["pages"]) == 15
+    assert sorted(p["episode_cards"] for p in catalogue["pages"]) == [8] + [10] * 14
+    review = next(r for r in source_reviews() if r["subject_id"] == 315772)
+    client = Mock()
+    result = EpisodeEnricher(client, retry_failed=True).enrich(
+        reviewed_anime(review, anime_record_factory), NOW + timedelta(days=40)
+    )
+    assert result.episodes.aired_episodes == 148
+    assert result.episodes.total_episodes is None
+    assert result.episodes.airing_status == "unknown"
+    assert result.episodes.episode_count_status == "unknown"
+    assert result.episodes.fetch_state == "ok"
+    client.fetch.assert_not_called()
 
 
 @pytest.mark.parametrize(

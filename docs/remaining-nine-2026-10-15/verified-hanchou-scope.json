@@ -1,0 +1,241 @@
+{
+  "parent_bangumi_id": 237834,
+  "official_hanchou_page": "https://www.vap.co.jp/tonegawa-anime/index_hancho.html",
+  "official_hanchou_page_sha256": "38f9c3956dbdf3f70b4b4a88e00bf33eaca89b88e4ce6c6d13556c85f656a011",
+  "official_first_broadcast_label": "2018年10月9日(火) 25:59〜",
+  "counting_unit": "The four complete programme episodes containing the Hanchou main story within the 24-episode Tonegawa compilation, not manga chapters or every Tonegawa episode.",
+  "selected_parent_episodes": [
+    14,
+    15,
+    18,
+    23
+  ],
+  "all_parent_episode_checks": [
+    {
+      "parent_episode": 1,
+      "title": "始動",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/01.html",
+      "retrieved_at": "2026-10-15T14:48:40.388487+08:00",
+      "response_sha256": "f0fc688851f12cf84427ecc45b65c6e9168caf21d9766fed29d79d26606a2912"
+    },
+    {
+      "parent_episode": 2,
+      "title": "忖度",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/02.html",
+      "retrieved_at": "2026-10-15T14:48:40.486856+08:00",
+      "response_sha256": "787b7d2cfcc06c90af518b128c4f9f281ce93d5efc2be1f087335ad460a331ce"
+    },
+    {
+      "parent_episode": 3,
+      "title": "鉄板",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/03.html",
+      "retrieved_at": "2026-10-15T14:48:41.008485+08:00",
+      "response_sha256": "5d663a21fd8d3a8dbf25a411f3c2f9e99cba7d1cbc592afd8752830a24b754b8"
+    },
+    {
+      "parent_episode": 4,
+      "title": "大人",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/04.html",
+      "retrieved_at": "2026-10-15T14:48:41.017433+08:00",
+      "response_sha256": "d2deb5cd400b1db8e6851af71532c5035a942991b8a1d39d8d1163deac683ee4"
+    },
+    {
+      "parent_episode": 5,
+      "title": "猛省",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/05.html",
+      "retrieved_at": "2026-10-15T14:48:41.230490+08:00",
+      "response_sha256": "6ca71a04e81b1f9398581fc47936d3ef79d6103038cd64682b311f4065986057"
+    },
+    {
+      "parent_episode": 6,
+      "title": "自爆",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/06.html",
+      "retrieved_at": "2026-10-15T14:48:41.629996+08:00",
+      "response_sha256": "8dab160e738310086d35ab80a0fa3fb129ac0ad4ab747f35063c0a5d317a14ca"
+    },
+    {
+      "parent_episode": 7,
+      "title": "蔓延",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/07.html",
+      "retrieved_at": "2026-10-15T14:48:42.165959+08:00",
+      "response_sha256": "b99d7364915e2fb0c02562b5e0a44b4a557046f6120c4f0920883ee79f17a940"
+    },
+    {
+      "parent_episode": 8,
+      "title": "海老",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/08.html",
+      "retrieved_at": "2026-10-15T14:48:42.317542+08:00",
+      "response_sha256": "d8b3815971130b53ef59a5b61e323efa181a1935b178426d47744d244fc57d3b"
+    },
+    {
+      "parent_episode": 9,
+      "title": "カツ",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/09.html",
+      "retrieved_at": "2026-10-15T14:48:42.288385+08:00",
+      "response_sha256": "fcf2a4a36bf0dc2d0f59f089b7bc878240be11ed61731b59adb4937ce8cd14d7"
+    },
+    {
+      "parent_episode": 10,
+      "title": "リハ",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/10.html",
+      "retrieved_at": "2026-10-15T14:48:42.774180+08:00",
+      "response_sha256": "76599dc314e74f1cf8e9bb9a8682954c8974e0f0820be93c79ea0d53f9bab52c"
+    },
+    {
+      "parent_episode": 11,
+      "title": "出張",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/11.html",
+      "retrieved_at": "2026-10-15T14:48:42.918269+08:00",
+      "response_sha256": "e2552918da4264b803d7db38bc84d093d39a74762cd182835b77bf1664391cba"
+    },
+    {
+      "parent_episode": 12,
+      "title": "似非",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/12.html",
+      "retrieved_at": "2026-10-15T14:48:42.889734+08:00",
+      "response_sha256": "85ae0b607480f66389851604e156dfc9f2cf96a4bee5f64ecc3b45730cff301b"
+    },
+    {
+      "parent_episode": 13,
+      "title": "出航",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/13.html",
+      "retrieved_at": "2026-10-15T14:48:43.345614+08:00",
+      "response_sha256": "1dd04be9fa4c78413f5ba7452b6a791b7468908c04ac69d8a5f98d6f88a8fc75"
+    },
+    {
+      "parent_episode": 14,
+      "title": "外出",
+      "contains_hanchou_story": true,
+      "identity_keywords": [
+        "大槻"
+      ],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/14.html",
+      "retrieved_at": "2026-10-15T14:48:43.503413+08:00",
+      "response_sha256": "2d623524b6576e44d6c784e138ab58653c66ea46be4abf4e8ae4003d6ccde6ca"
+    },
+    {
+      "parent_episode": 15,
+      "title": "豪遊",
+      "contains_hanchou_story": true,
+      "identity_keywords": [
+        "大槻",
+        "宮本"
+      ],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/15.html",
+      "retrieved_at": "2026-10-15T14:48:43.508894+08:00",
+      "response_sha256": "f113783046313205273d21cf3523b20182e410f59a65fefeabfce8ce9107b7b5"
+    },
+    {
+      "parent_episode": 16,
+      "title": "天敵",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/16.html",
+      "retrieved_at": "2026-10-15T14:48:43.901662+08:00",
+      "response_sha256": "57293ea4a4b31517e5023576f98b8e3207ead4b78b7f55e6d7238c6eadc57e35"
+    },
+    {
+      "parent_episode": 17,
+      "title": "内示",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/17.html",
+      "retrieved_at": "2026-10-15T14:48:44.102755+08:00",
+      "response_sha256": "c0483a4c496686279c17aee35bf812b911747632b8921cdafd70eace0b6960f3"
+    },
+    {
+      "parent_episode": 18,
+      "title": "同調",
+      "contains_hanchou_story": true,
+      "identity_keywords": [
+        "大槻"
+      ],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/18.html",
+      "retrieved_at": "2026-10-15T14:48:44.113601+08:00",
+      "response_sha256": "b6ab53aef354709b484143379b392a27c7ea42d76dc153fdcaf5b8bf1a35ac55"
+    },
+    {
+      "parent_episode": 19,
+      "title": "新人",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/19.html",
+      "retrieved_at": "2026-10-15T14:48:44.514658+08:00",
+      "response_sha256": "df282546538ef5e575d06e6acdc96ee1b55fb94d345df7a0cd86b721aba7260f"
+    },
+    {
+      "parent_episode": 20,
+      "title": "接待",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/20.html",
+      "retrieved_at": "2026-10-15T14:48:44.719182+08:00",
+      "response_sha256": "d2fb37b4c04998cb7d5654c8ee9f52eb842d18aa765c39e3a9bb42addd4c5427"
+    },
+    {
+      "parent_episode": 21,
+      "title": "中傷",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/21.html",
+      "retrieved_at": "2026-10-15T14:48:44.714619+08:00",
+      "response_sha256": "ebca76ce6f87fac315b343440306dc8e2208786e56013e67f782e0104721a679"
+    },
+    {
+      "parent_episode": 22,
+      "title": "後編",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/22.html",
+      "retrieved_at": "2026-10-15T14:48:45.070668+08:00",
+      "response_sha256": "8e11e426e040eae8ed26c2bcc06a12c1fd17ee5968ab79ed03e4c9a519ec5064"
+    },
+    {
+      "parent_episode": 23,
+      "title": "予感",
+      "contains_hanchou_story": true,
+      "identity_keywords": [
+        "大槻",
+        "沼川"
+      ],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/23.html",
+      "retrieved_at": "2026-10-15T14:48:45.290029+08:00",
+      "response_sha256": "c3c439e3075cea66150eb4339293543c01e318c679be0e6448e6291e81191537"
+    },
+    {
+      "parent_episode": 24,
+      "title": "終着",
+      "contains_hanchou_story": false,
+      "identity_keywords": [],
+      "source_url": "https://www.vap.co.jp/tonegawa-anime/story/24.html",
+      "retrieved_at": "2026-10-15T14:48:45.301931+08:00",
+      "response_sha256": "885ae8ef0caad60883f3675c98587ee902983217f6450003ffe3a7b600504eef"
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "りっくん": [
+    {
+      "programme": "まんなかのりっくん＠きんてれ",
+      "episode": 1,
+      "title": "第1話『はじめましてとこんにちは』",
+      "source_date": "◆1月9日（水）放送 きんだーてれび 第369回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_17.html",
+      "airdate": "2019-01-09"
+    },
+    {
+      "programme": "まんなかのりっくん＠きんてれ",
+      "episode": 2,
+      "title": "第2話『りっくん と お母さん』",
+      "source_date": "◆1月16日（水）放送 きんだーてれび 第374回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_17.html",
+      "airdate": "2019-01-16"
+    },
+    {
+      "programme": "まんなかのりっくん＠きんてれ",
+      "episode": 3,
+      "title": "第3話『くう と うな』",
+      "source_date": "◆1月23日（水）放送 きんだーてれび 第379回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_17.html",
+      "airdate": "2019-01-23"
+    },
+    {
+      "programme": "まんなかのりっくん＠きんてれ",
+      "episode": 4,
+      "title": "第4話『あに と いもうと』",
+      "source_date": "◆1月30日（水）放送 きんだーてれび 第384回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_17.html",
+      "airdate": "2019-01-30"
+    },
+    {
+      "programme": "まんなかのりっくん＠きんてれ",
+      "episode": 5,
+      "title": "第5話『りっくん と きのこの神』",
+      "source_date": "◆2月6日（水）放送 きんだーてれび 第389回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_17.html",
+      "airdate": "2019-02-06"
+    },
+    {
+      "programme": "まんなかのりっくん＠きんてれ",
+      "episode": 6,
+      "title": "第6話『お父さん と きのこの伝説』",
+      "source_date": "◆2月13日（水）放送 きんだーてれび 第394回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_17.html",
+      "airdate": "2019-02-13"
+    },
+    {
+      "programme": "まんなかのりっくん＠きんてれ",
+      "episode": 7,
+      "title": "第7話『りっくん と だいこうぶつ』",
+      "source_date": "◆2月20日（水）放送 きんだーてれび 第399回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+      "airdate": "2019-02-20"
+    },
+    {
+      "programme": "まんなかのりっくん＠きんてれ",
+      "episode": 8,
+      "title": "第8話『りっくん と こやま商店 前編』",
+      "source_date": "◆2月27日（水）放送 きんだーてれび 第404回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+      "airdate": "2019-02-27"
+    },
+    {
+      "programme": "まんなかのりっくん＠きんてれ",
+      "episode": 9,
+      "title": "第9話『りっくん と こやま商店 後編』",
+      "source_date": "◆3月6日（水）放送 きんだーてれび 第409回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+      "airdate": "2019-03-06"
+    },
+    {
+      "programme": "まんなかのりっくん＠きんてれ",
+      "episode": 10,
+      "title": "第10話『りっくん と 神の力』",
+      "source_date": "◆3月13日（水）放送 きんだーてれび 第414回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+      "airdate": "2019-03-13"
+    },
+    {
+      "programme": "まんなかのりっくん＠きんてれ",
+      "episode": 11,
+      "title": "第11話『りっくん と 神々のたたかい』",
+      "source_date": "◆3月20日（水）放送 きんだーてれび 第419回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+      "airdate": "2019-03-20"
+    },
+    {
+      "programme": "まんなかのりっくん＠きんてれ",
+      "episode": 12,
+      "title": "第12話『りっくん と りっくんの町』",
+      "source_date": "◆3月27日（水）放送 きんだーてれび 第424回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+      "airdate": "2019-03-27"
+    }
+  ],
+  "ニャッホ": [
+    {
+      "programme": "猫のニャッホ",
+      "episode": 1,
+      "title": "第1話『ニャッホのぐうたらな一日』",
+      "source_date": "◆4月3日（水）放送 きんだーてれび 第429回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+      "airdate": "2019-04-03"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 2,
+      "title": "第2話『はたらき者のテオ』",
+      "source_date": "◆4月10日（水）放送 きんだーてれび 第434回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+      "airdate": "2019-04-10"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 3,
+      "title": "第3話『カフェ・モンパルナスのキキ』",
+      "source_date": "◆4月17日（水）放送 きんだーてれび 第439回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+      "airdate": "2019-04-17"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 4,
+      "title": "第4話『おんぼろアパートの住人たち』",
+      "source_date": "◆4月24日（水）放送 きんだーてれび 第444回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+      "airdate": "2019-04-24"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 5,
+      "title": "第5話『ピカソのモデル探し』",
+      "source_date": "◆5月1日（水）放送 きんだーてれび 第449回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_15.html",
+      "airdate": "2019-05-01"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 6,
+      "title": "第6話『ゴーギャンのヒミツ』",
+      "source_date": "◆5月8日（水）放送 きんだーてれび 第454回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_15.html",
+      "airdate": "2019-05-08"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 7,
+      "title": "第7話『くいしん坊のモネ』",
+      "source_date": "◆5月15日（水）放送 きんだーてれび 第459回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_15.html",
+      "airdate": "2019-05-15"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 8,
+      "title": "第8話『画廊探しはつらいよ』",
+      "source_date": "◆5月22日（水）放送 きんだーてれび 第463回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_15.html",
+      "airdate": "2019-05-22"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 9,
+      "title": "第9話『知られざるニャッホの一面』",
+      "source_date": "◆5月29日（水）放送 きんだーてれび 第468回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_15.html",
+      "airdate": "2019-05-29"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 10,
+      "title": "第10話『イヤ〜な予感』",
+      "source_date": "◆6月5日（水）放送 きんだーてれび 第471回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_15.html",
+      "airdate": "2019-06-05"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 11,
+      "title": "第11話『ドキドキのオークション』",
+      "source_date": "◆6月12日（水）放送 きんだーてれび 第476回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_15.html",
+      "airdate": "2019-06-12"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 12,
+      "title": "第12話『怪盗ルパン参上！』",
+      "source_date": "◆6月19日（水）放送 きんだーてれび 第481回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_15.html",
+      "airdate": "2019-06-19"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 13,
+      "title": "第13話『テオ、危機一髪！』",
+      "source_date": "◆6月26日（水）放送 きんだーてれび 第486回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_15.html",
+      "airdate": "2019-06-26"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 14,
+      "title": "第14話『みんなで展覧会』",
+      "source_date": "◆7月3日（水）放送 きんだーてれび 第491回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_15.html",
+      "airdate": "2019-07-03"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 15,
+      "title": "第15話『ニャッホ、ジャポンと出会う』",
+      "source_date": "◆7月10日（水）放送 きんだーてれび 第496回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_14.html",
+      "airdate": "2019-07-10"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 16,
+      "title": "第16話『レオナール・フジタ』",
+      "source_date": "◆7月17日（水）放送 きんだーてれび 第501回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_14.html",
+      "airdate": "2019-07-17"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 17,
+      "title": "第17話『名探偵ホームズ 登場！』",
+      "source_date": "◆7月24日（水）放送 きんだーてれび 第506回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_14.html",
+      "airdate": "2019-07-24"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 18,
+      "title": "第18話『名探偵ホームズ～推理編～』",
+      "source_date": "◆7月31日（水）放送 きんだーてれび 第511回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_14.html",
+      "airdate": "2019-07-31"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 19,
+      "title": "第19話『名探偵ホームズ～解決編～』",
+      "source_date": "◆8月7日（水）放送 きんだーてれび 第516回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_14.html",
+      "airdate": "2019-08-07"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 20,
+      "title": "第20話『恋どろぼう♡ニャッホ』",
+      "source_date": "◆8月14日（水）放送 きんだーてれび 第521回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_14.html",
+      "airdate": "2019-08-14"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 21,
+      "title": "第21話『テオの家出』",
+      "source_date": "◆8月21日（水）放送 きんだーてれび 第526回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_14.html",
+      "airdate": "2019-08-21"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 22,
+      "title": "第22話『誰が為の展覧会』",
+      "source_date": "◆8月28日（水）放送 きんだーてれび 第531回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_14.html",
+      "airdate": "2019-08-28"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 23,
+      "title": "第23話『誰が為の芸術家』",
+      "source_date": "◆9月4日（水）放送 きんだーてれび 第536回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_14.html",
+      "airdate": "2019-09-04"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 24,
+      "title": "第24話『画家猫たちの祝杯』",
+      "source_date": "◆9月11日（水）放送 きんだーてれび 第541回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_14.html",
+      "airdate": "2019-09-11"
+    },
+    {
+      "programme": "猫のニャッホ",
+      "episode": 25,
+      "title": "第25話『ひまわり』",
+      "source_date": "◆9月18日（水）放送 きんだーてれび 第546回",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/story/index_13.html",
+      "airdate": "2019-09-18"
+    }
+  ]
+}

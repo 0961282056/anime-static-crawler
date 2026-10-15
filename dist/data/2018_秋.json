@@ -430,10 +430,28 @@
       "story": "暫無簡介",
       "original_name": "1日外出録ハンチョウ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 237834,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 4,
+        "aired_episodes": 4,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://www.vap.co.jp/tonegawa-anime/index_hancho.html",
+          "https://www.vap.co.jp/tonegawa-anime/story/14.html",
+          "https://www.vap.co.jp/tonegawa-anime/story/15.html",
+          "https://www.vap.co.jp/tonegawa-anime/story/18.html",
+          "https://www.vap.co.jp/tonegawa-anime/story/23.html",
+          "https://www.vap.co.jp/tonegawa-anime/story/24.html"
+        ],
+        "checked_at": "2026-10-15T14:48:45.301931+08:00",
+        "attempted_at": "2026-10-15T14:54:38.280312+08:00",
+        "end_date": null,
+        "note": "本卡只計合輯Agenda14、15、18、23，共4個含班長主線的節目；Bangumi連結為《利根川》合輯母條目，不套用其24話全集。"
+      }
     },
     {
       "bangumi_id": "anime-458",
@@ -1820,23 +1838,23 @@
         "anilist": null
       },
       "episodes": {
-        "total_episodes": 13,
-        "aired_episodes": 13,
-        "airing_status": "unknown",
-        "episode_count_status": "planned",
-        "fetch_state": "stale",
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
         "source_urls": [
-          "https://bgm.tv/subject/258081",
-          "https://bgm.tv/subject/258081/ep"
+          "https://shucap.cf-anime.com/goods/",
+          "https://shucap.cf-anime.com/story/"
         ],
-        "checked_at": "2026-10-14T05:03:54+08:00",
-        "attempted_at": "2026-10-15T13:33:32.156665+08:00",
+        "checked_at": "2026-10-15T14:30:20.978892+08:00",
+        "attempted_at": "2026-10-15T14:40:59.030367+08:00",
         "end_date": "2018-12-23",
-        "note": "即時來源未能取得可用頁面，保留上次確認的官方資料快照與確認時間。"
+        "note": "TV版全12話，官方OA版收錄第1～12話；排除資料庫誤列本篇的第13筆節目。"
       }
     }
   ],
-  "generated_at": "2026-10-15T13:42:21.053401+08:00",
+  "generated_at": "2026-10-15T14:54:39.133030+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201810/",
   "quality": {
     "source_count": 66,

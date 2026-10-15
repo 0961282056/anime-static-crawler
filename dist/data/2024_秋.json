@@ -2004,21 +2004,22 @@
       "episodes": {
         "total_episodes": 8,
         "aired_episodes": 8,
-        "airing_status": "unknown",
-        "episode_count_status": "planned",
-        "fetch_state": "stale",
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
         "source_urls": [
-          "https://bgm.tv/subject/509169",
-          "https://bgm.tv/subject/509169/ep"
+          "https://gunpuku-mouai.af-original.com/goods/bddvd/329/",
+          "https://gunpuku-mouai.af-original.com/news/538/",
+          "https://gunpuku-mouai.af-original.com/story/"
         ],
-        "checked_at": "2026-10-14T05:03:54+08:00",
-        "attempted_at": "2026-10-15T13:36:01.445096+08:00",
+        "checked_at": "2026-10-15T14:32:06.164863+08:00",
+        "attempted_at": "2026-10-15T14:40:59.030367+08:00",
         "end_date": null,
-        "note": "即時來源未能取得可用頁面，保留上次確認的官方資料快照與確認時間。"
+        "note": "TV版全8話，官方DVD明列全8話、官方公告最終回第8話；不沿用資料庫未經核對的結束日期。"
       }
     }
   ],
-  "generated_at": "2026-10-15T13:42:21.216571+08:00",
+  "generated_at": "2026-10-15T14:40:59.172095+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202410/",
   "quality": {
     "source_count": 72,

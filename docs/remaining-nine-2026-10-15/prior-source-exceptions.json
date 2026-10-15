@@ -1,0 +1,28 @@
+{
+  "excluded_shucap_extra_entry": {
+    "id": 850624,
+    "subject_id": 258081,
+    "type": 0,
+    "sort": 13,
+    "name": "終電後、TERA劇場で、色欲のゆく年くる年。",
+    "name_cn": "",
+    "airdate": "2018-12-30"
+  },
+  "rikkun_web_episode_count": 16,
+  "verified_tv_scope_corrections": [
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-425",
+      "from": 13,
+      "to": 12,
+      "basis": "Explicitly verified official TV scope replaces the previously mis-scoped count."
+    },
+    {
+      "quarter": "2019_冬",
+      "card_id": "anime-362",
+      "from": 16,
+      "to": 12,
+      "basis": "Explicitly verified official TV scope replaces the previously mis-scoped count."
+    }
+  ]
+}

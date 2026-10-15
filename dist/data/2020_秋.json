@@ -239,18 +239,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
+        "aired_episodes": 148,
         "airing_status": "unknown",
         "episode_count_status": "unknown",
-        "fetch_state": "conflict",
+        "fetch_state": "ok",
         "source_urls": [
-          "https://bgm.tv/subject/315772",
-          "https://bgm.tv/subject/315772/ep"
+          "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list",
+          "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=15"
         ],
-        "checked_at": "2026-10-14T05:03:54+08:00",
-        "attempted_at": "2026-10-15T13:34:17.006982+08:00",
+        "checked_at": "2026-10-15T14:48:39.790217+08:00",
+        "attempted_at": "2026-10-15T14:54:38.280312+08:00",
         "end_date": null,
-        "note": "正篇集目缺少46–55話，另有無效日期2099；總集數未公告，已播進度待核對。"
+        "note": "截至2026-10-15逐一核對NHK全部15頁、148個已播節目；補齊資料庫缺46～55話的依據，排除空白149／150與2099日期。總數及終了尚無明確公告，不推測完結；此為官方人工核對快照。"
       }
     },
     {
@@ -1626,7 +1626,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-15T13:42:21.116085+08:00",
+  "generated_at": "2026-10-15T14:54:39.149545+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202010/",
   "quality": {
     "source_count": 58,

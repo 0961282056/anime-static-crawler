@@ -350,19 +350,19 @@
         "anilist": 101579
       },
       "episodes": {
-        "total_episodes": 16,
-        "aired_episodes": 16,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "conflict",
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
         "source_urls": [
-          "https://bgm.tv/subject/241044",
-          "https://bgm.tv/subject/241044/ep"
+          "https://www.tv-tokyo.co.jp/anime/kinder/story/index_16.html",
+          "https://www.tv-tokyo.co.jp/anime/kinder/story/index_17.html"
         ],
-        "checked_at": "2026-10-13T21:16:16.084860+08:00",
-        "attempted_at": "2026-10-15T14:11:43.344081+08:00",
-        "end_date": "2019-08-10",
-        "note": "本卡為2019-01-09電視版；資料庫記為2019-04-27網路版，計數範圍尚未證實一致。保留原條目16話快照，非已確認的電視版全集；等待官方節目單核對。"
+        "checked_at": "2026-10-15T14:32:04.042733+08:00",
+        "attempted_at": "2026-10-15T14:40:59.030367+08:00",
+        "end_date": "2019-03-27",
+        "note": "電視版全12話（2019-01-09～03-27），已逐話核對TV Tokyo節目表；Bangumi為4月起網路重編16話，不採其計數與日期。"
       }
     },
     {
@@ -1429,7 +1429,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-15T14:11:43.347188+08:00",
+  "generated_at": "2026-10-15T14:40:59.118652+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201901/",
   "quality": {
     "source_count": 51,
