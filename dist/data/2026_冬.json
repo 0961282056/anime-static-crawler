@@ -294,16 +294,18 @@
         "anilist": null
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-14T16:26:44.682805+08:00",
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://ichigo-aika.af-original.com/news/"
+        ],
+        "checked_at": "2026-10-15T08:14:24+08:00",
+        "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
+        "note": "官方公告最終回第12話；不以預告或光碟發售日當作播出日期。"
       }
     },
     {
@@ -1803,16 +1805,20 @@
         "anilist": null
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-14T16:26:35.457209+08:00",
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://arisugawa-ren.af-original.com/goods/bddvd/973/",
+          "https://arisugawa-ren.af-original.com/story/",
+          "https://arisugawa-ren.af-original.com/"
+        ],
+        "checked_at": "2026-10-15T08:14:24+08:00",
+        "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
+        "note": "TV版全8話；官方最終回公告與集目一致。"
       }
     }
   ],

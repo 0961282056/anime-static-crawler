@@ -853,6 +853,12 @@ function animeApp() {
         },
 
         episodeSourceUrl(anime) {
+            for (const source of anime.episodes?.source_urls || []) {
+                try {
+                    const url = new URL(source);
+                    if (url.protocol === 'https:' && !url.username && !url.password && !url.hash) return url.href;
+                } catch { /* Invalid source: fall back to the canonical provider link. */ }
+            }
             const id = anime.external_ids?.bangumi;
             return Number.isInteger(id) && id > 0 ? `https://bgm.tv/subject/${id}/ep` : null;
         },

@@ -1260,16 +1260,19 @@
         "anilist": null
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-14T16:25:34.268970+08:00",
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://fufukokan.af-original.com/goods/bddvd/135/",
+          "https://fufukokan.af-original.com/story/"
+        ],
+        "checked_at": "2026-10-15T08:14:24+08:00",
+        "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
+        "note": "TV版全8話，已發售完整收錄；官方故事集目1～8。"
       }
     },
     {

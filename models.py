@@ -68,9 +68,12 @@ class EpisodeMetadata(BaseModel):
                 and not parsed.query
                 and not parsed.fragment
             ):
-                raise ValueError(
-                    "episode sources must be canonical Bangumi subject URLs"
-                )
+                from services.episode_source_reviews import reviewed_source_url
+
+                if not reviewed_source_url(value):
+                    raise ValueError(
+                        "episode sources must be canonical Bangumi or reviewed official URLs"
+                    )
         return values
 
     @model_validator(mode="after")

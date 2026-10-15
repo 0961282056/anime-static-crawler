@@ -1274,16 +1274,19 @@
         "anilist": null
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-14T16:26:38.942545+08:00",
+        "total_episodes": 9,
+        "aired_episodes": 9,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://gakkodeha-anime.com/%E3%80%8E%E6%95%B4%E7%90%86%E6%95%B4%E9%A0%93-%E6%9B%B8%E7%B1%8D%EF%BC%8B%E3%82%A2%E3%83%8B%E3%83%A1dvd%E7%89%B9%E5%88%A5%E3%82%BB%E3%83%83%E3%83%88%E3%80%8F%E3%80%8E%E6%99%82%E9%96%93%E3%81%AE/",
+          "https://bgm.tv/subject/559674/ep"
+        ],
+        "checked_at": "2026-10-15T08:14:24+08:00",
+        "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "來源季別／分篇名稱與資料庫涵蓋範圍尚未一致核對，暫不套用該條目的集數。"
+        "note": "範圍限定2025年整理整頓編9話，不代表後續所有主題篇總和。"
       }
     },
     {

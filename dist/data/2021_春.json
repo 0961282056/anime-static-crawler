@@ -1560,13 +1560,13 @@
         "episode_count_status": "unknown",
         "fetch_state": "conflict",
         "source_urls": [
-          "https://bgm.tv/subject/321387",
+          "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
           "https://bgm.tv/subject/321387/ep"
         ],
-        "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-14T15:04:35.340567+08:00",
+        "checked_at": "2026-10-15T08:14:24+08:00",
+        "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
+        "note": "尚待核對：官方節目編號至50並已播畢，但Bangumi僅37筆正篇且號碼有缺口；包含いちなる企劃節目，尚不能把50次節目或37筆直接當動畫正篇總數。"
       }
     },
     {

@@ -21,6 +21,7 @@ from zoneinfo import ZoneInfo
 import requests
 
 from models import Anime, EpisodeMetadata
+from services.episode_source_reviews import reviewed_source
 
 logger = logging.getLogger(__name__)
 TOKYO_TZ = ZoneInfo("Asia/Tokyo")
@@ -138,11 +139,47 @@ def parse_episode_metadata(
     subject_id = anime.external_ids.bangumi
     if subject.get("id") != subject_id or subject.get("type") != 2:
         raise MetadataUnavailable("Linked subject is not the expected anime")
-    if not subject_identity_matches(anime, subject):
+    review = reviewed_source(anime)
+    scoped = bool(
+        review
+        and review["mode"] == "live"
+        and review["subject_name"] == subject.get("name")
+        and review["first_air_date"] == subject.get("date")
+    )
+    if not scoped and not subject_identity_matches(anime, subject):
         raise MetadataUnavailable(
             "Linked anime title differs from the source original title"
         )
 
+    if review and review["mode"] == "live" and not scoped:
+        raise MetadataUnavailable("Reviewed provider identity changed; recheck scope")
+    if scoped:
+        if any(
+            not isinstance(entry, dict) or entry.get("subject_id") != subject_id
+            for entry in entries
+        ):
+            raise MetadataUnavailable("Episode belongs to a different subject")
+        # The official range overrides only this exact reviewed card/provider tuple.
+        subject = {
+            **subject,
+            "eps": review["total_override"],
+            "infobox": [
+                item
+                for item in subject.get("infobox", [])
+                if item.get("key") not in {"话数", "話數"}
+            ],
+        }
+        bounds = review["main_range"]
+        if bounds:
+            entries = [
+                entry
+                for entry in entries
+                if (
+                    entry.get("type") != 0
+                    or type(entry.get("sort")) in (int, float)
+                    and bounds[0] <= entry["sort"] <= bounds[1]
+                )
+            ]
     today = now.astimezone(TOKYO_TZ).date()
     raw_total = subject.get("eps")
     total = raw_total if type(raw_total) is int and raw_total > 0 else None
@@ -191,7 +228,15 @@ def parse_episode_metadata(
             for value in dated
         )
     )
-    if aired and (known_pending or recent_partial):
+    recent_open = (
+        scoped
+        and total is None
+        and any(
+            value is not None and today - timedelta(days=14) <= value < today
+            for value in dated
+        )
+    )
+    if aired and (known_pending or recent_partial or recent_open):
         status = "airing"
     ends = {
         parsed
@@ -248,14 +293,21 @@ def parse_episode_metadata(
         if total
         else "unknown",
         fetch_state="ok",
-        source_urls=[
+        source_urls=(
+            review["metadata"]["source_urls"]
+            + [f"https://bgm.tv/subject/{subject_id}/ep"]
+        )
+        if scoped
+        else [
             f"https://bgm.tv/subject/{subject_id}",
             f"https://bgm.tv/subject/{subject_id}/ep",
         ],
         checked_at=now,
         attempted_at=now,
         end_date=next(iter(ends)) if len(ends) == 1 else None,
-        note="依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        note=("依已核對官方範圍自動更新；" + review["scope_note"])
+        if scoped
+        else "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
     )
 
 
@@ -443,6 +495,12 @@ class EpisodeEnricher:
         return now - info.attempted_at >= timedelta(days=days)
 
     def enrich(self, anime: Anime, now: datetime) -> Anime:
+        review = reviewed_source(anime)
+        if review and review["mode"] == "snapshot":
+            # Stable reviewed facts retain the original verification timestamp.
+            return anime.model_copy(
+                update={"episodes": EpisodeMetadata.model_validate(review["metadata"])}
+            )
         subject_id = anime.external_ids.bangumi
         if subject_id in self.snapshots:
             return anime.model_copy(update={"episodes": self.snapshots[subject_id]})

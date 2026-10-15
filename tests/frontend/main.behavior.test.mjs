@@ -146,6 +146,15 @@ test('episode labels distinguish planned, confirmed, finished and missing progre
   assert.equal(app.episodeSourceUrl({external_ids: {bangumi: 'javascript:alert(1)'}}), null);
 });
 
+test('official evidence links take priority and unsafe schemes cannot become links', () => {
+  const {app} = createContext();
+  const anime = {external_ids: {bangumi: 580133}, episodes: {source_urls: ['https://chiramune.com/bd/06.html']}};
+  assert.equal(app.episodeSourceUrl(anime), 'https://chiramune.com/bd/06.html');
+  for (const source of ['javascript:alert(1)', 'http://evil.example/', 'https://user:pass@evil.example/', 'invalid']) {
+    assert.equal(app.episodeSourceUrl({...anime, episodes: {source_urls: [source]}}), 'https://bgm.tv/subject/580133/ep');
+  }
+});
+
 test('airing filter combines with weekday and keyword while supporting legacy records', () => {
   const {app} = createContext();
   app.rawAnimeList = [

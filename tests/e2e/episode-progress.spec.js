@@ -14,6 +14,7 @@ test('episode progress, status filter and source details work with real Alpine o
   const info = {
     total_episodes: 12, aired_episodes: 8, airing_status: 'airing',
     episode_count_status: 'confirmed', fetch_state: 'ok',
+    source_urls: ['https://chiramune.com/bd/06.html'],
     checked_at: '2026-10-13T18:00:00+08:00', note: '依首播日期核對正篇。',
   };
   await page.route('**/data/*.json*', route => route.fulfill({
@@ -34,7 +35,7 @@ test('episode progress, status filter and source details work with real Alpine o
   await expect(page.locator('.airing-status')).toHaveText('本季已播畢');
   await page.getByText('集數來源與確認時間', {exact: true}).click();
   await expect(page.locator('.episode-details')).toContainText('最後確認：');
-  await expect(page.getByRole('link', {name: '查看正篇集目'})).toHaveAttribute('href', 'https://bgm.tv/subject/580133/ep');
+  await expect(page.getByRole('link', {name: '查看集數來源'})).toHaveAttribute('href', 'https://chiramune.com/bd/06.html');
   await page.getByLabel('播出狀態').selectOption('unknown');
   await expect(page.locator('.anime-title')).toHaveText('舊資料範例');
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);

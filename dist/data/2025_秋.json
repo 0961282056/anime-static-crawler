@@ -994,16 +994,19 @@
         "anilist": null
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "conflict",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-14T15:04:35.340567+08:00",
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/episodes/",
+          "https://bgm.tv/subject/582915/ep"
+        ],
+        "checked_at": "2026-10-15T08:14:24+08:00",
+        "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
+        "note": "第四季度為通算39～50，共12話；排除資料庫多出的空白sort=11集目。"
       }
     },
     {

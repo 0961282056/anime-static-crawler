@@ -546,16 +546,19 @@
         "anilist": 189046
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-14T16:26:33.156317+08:00",
+        "total_episodes": 19,
+        "aired_episodes": 19,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://re-zero-anime.jp/tv/story/",
+          "https://re-zero-anime.jp/tv/"
+        ],
+        "checked_at": "2026-10-15T08:14:24+08:00",
+        "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "來源季別／分篇名稱與資料庫涵蓋範圍尚未一致核對，暫不套用該條目的集數。"
+        "note": "本卡為整季：喪失編11＋奪還編8，共19話（通算67～85）；原Bangumi ID僅涵蓋喪失編。官方已公告最終回。"
       }
     },
     {

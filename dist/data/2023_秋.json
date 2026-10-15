@@ -953,15 +953,18 @@
       },
       "episodes": {
         "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
+        "aired_episodes": 135,
+        "airing_status": "airing",
         "episode_count_status": "unknown",
-        "fetch_state": "conflict",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-14T15:04:35.340567+08:00",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://beyblade.takaratomy.co.jp/anime/movie/",
+          "https://beyblade.takaratomy.co.jp/anime/newsList/newsA260925.html"
+        ],
+        "checked_at": "2026-10-15T08:14:24+08:00",
+        "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
+        "note": "已播135話；資料庫總話數134已落後，不當作完結總數，最終總集數保持未知。"
       }
     },
     {
@@ -1915,16 +1918,19 @@
         "anilist": null
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-14T16:25:51.508868+08:00",
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://secretmission.af-original.jp/goods/bddvd/197/",
+          "https://www.value-press.com/pressrelease/328675"
+        ],
+        "checked_at": "2026-10-15T08:14:24+08:00",
+        "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "Bangumi API 回傳 404，公開頁面未提供該條目；尚未取得可靠集數。"
+        "note": "TV版全8話；官方光碟收錄與最終第8話公告一致。"
       }
     },
     {

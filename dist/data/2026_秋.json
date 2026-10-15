@@ -826,16 +826,20 @@
         "anilist": 195516
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": null,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "stale",
-        "source_urls": [],
-        "checked_at": null,
-        "attempted_at": "2026-10-14T16:26:42.351082+08:00",
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://kusuriyanohitorigoto.jp/season3/bd/vol1.php",
+          "https://kusuriyanohitorigoto.jp/season3/bd/vol2.php",
+          "https://kusuriyanohitorigoto.jp/season3/episodes/"
+        ],
+        "checked_at": "2026-10-15T08:14:24+08:00",
+        "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "來源季別／分篇名稱與資料庫涵蓋範圍尚未一致核對，暫不套用該條目的集數。"
+        "note": "第三季前半：通算49～60，共12話；已播49、50。後半不計入，當日與未來集目不計已播。"
       }
     },
     {
@@ -1187,19 +1191,21 @@
         "anilist": 198727
       },
       "episodes": {
-        "total_episodes": null,
-        "aired_episodes": 0,
-        "airing_status": "unknown",
-        "episode_count_status": "unknown",
-        "fetch_state": "conflict",
+        "total_episodes": 11,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
         "source_urls": [
-          "https://bgm.tv/subject/584847",
-          "https://bgm.tv/subject/584847/ep"
+          "https://chiramune.com/bd/04.html",
+          "https://chiramune.com/bd/05.html",
+          "https://chiramune.com/bd/06.html",
+          "https://chiramune.com/onair/"
         ],
-        "checked_at": "2026-10-13T20:21:15.474975+08:00",
-        "attempted_at": "2026-10-14T15:04:35.340567+08:00",
+        "checked_at": "2026-10-15T08:14:24+08:00",
+        "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
+        "note": "第二季度正篇14～24，共11話；13.5為總集篇，資料庫多出的25不計。已播14；當日與未來集目不計已播。"
       }
     },
     {
