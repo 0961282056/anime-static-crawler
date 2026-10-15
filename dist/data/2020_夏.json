@@ -51,8 +51,8 @@
           "https://bgm.tv/subject/310150",
           "https://bgm.tv/subject/310150/ep"
         ],
-        "checked_at": "2026-10-13T22:07:17.344783+08:00",
-        "attempted_at": "2026-10-13T22:07:17.344783+08:00",
+        "checked_at": "2026-10-15T13:33:59.229155+08:00",
+        "attempted_at": "2026-10-15T13:33:59.229155+08:00",
         "end_date": "2020-09-28",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -79,8 +79,8 @@
           "https://bgm.tv/subject/303433",
           "https://bgm.tv/subject/303433/ep"
         ],
-        "checked_at": "2026-10-13T22:05:42.968973+08:00",
-        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "checked_at": "2026-10-15T13:34:00.491925+08:00",
+        "attempted_at": "2026-10-15T13:34:00.491925+08:00",
         "end_date": "2021-03-15",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -219,8 +219,8 @@
           "https://bgm.tv/subject/301477",
           "https://bgm.tv/subject/301477/ep"
         ],
-        "checked_at": "2026-10-13T22:07:17.344783+08:00",
-        "attempted_at": "2026-10-13T22:07:17.344783+08:00",
+        "checked_at": "2026-10-15T13:34:01.742858+08:00",
+        "attempted_at": "2026-10-15T13:34:01.742858+08:00",
         "end_date": "2021-03-31",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -234,10 +234,24 @@
       "story": "故事發生在2030年的日本。一種病毒正在全世界範圍內蔓延。病毒感染者會突變成怪物，而且根據年齡、性別、種族的不同，會變化出不同形態。因為變化形態的多種多樣，這種病毒被稱為‘Gibia’（像野生鳥獸富有多樣性）。然而，在日本這片廢土之上，一對武士與忍者突然出現了。他們二人從江戶時代的早期穿越而來，在研究病毒治療方法的博士的幫助下，共同展開行動。面對著接踵襲來的Gibia，搶奪路人食糧的亡命之徒，以及各種敵人的圍攻之下，殺機重重、生死攸關的冒險之旅開始了。",
       "original_name": "ジビエート",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 286109,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/286109",
+          "https://bgm.tv/subject/286109/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-30",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-64",
@@ -304,10 +318,24 @@
       "story": "世界是殘酷的角斗場，要麼進化，要麼淘汰。人類跋涉300萬年，終於等到了你的覺醒。以QUEEN為名的基因流淌在你的血液裡。這是變革的希望，也吸引欲望和野心。你將如何選擇：創生，還是毀滅？經歷時空以外的相遇，踏入危險誘人的陷阱，擁抱超越現實的愛戀。羈絆從預知夢境醒來，腦海中浮現的是誰的眼睛？",
       "original_name": "恋とプロデューサー～EVOL×LOVE～",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 260736,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/260736",
+          "https://bgm.tv/subject/260736/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-30",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-88",
@@ -318,10 +346,24 @@
       "story": "枝村真人以為自己是最厲害的騙子，沒想到卻意外惹到了黑幫老大。",
       "original_name": "GREAT PRETENDER",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 285813,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 23,
+        "aired_episodes": 23,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/285813",
+          "https://bgm.tv/subject/285813/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-12-16",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-94",
@@ -360,10 +402,24 @@
       "story": "暫無簡介",
       "original_name": "ノー・ガンズ・ライフ 第2期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 291479,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/291479",
+          "https://bgm.tv/subject/291479/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-24",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-56",
@@ -374,10 +430,24 @@
       "story": "季節更迭，白雪消融。錯誤的青春又將展開新頁──經過情人節活動、在水族館度過的下雪天，八幡他們決定了自己該踏出的那一步。就在這時，侍奉社接獲重要的委託。面對那件委託，雪乃下定決心給出的答案是……──即使那選擇將招致後悔──也許時間的流逝會在不知不覺間讓自己成為大人，也許人們會在不斷的邂逅與離別中獲得成長。然而，無論何時，存在於眼前的都只有「現在」──八幡、結衣、雪乃懷著各自的想法，所選擇的「答案」是？",
       "original_name": "やはり俺の青春ラブコメはまちがっている。完",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 277954,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/277954",
+          "https://bgm.tv/subject/277954/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-24",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-74",
@@ -416,10 +486,24 @@
       "story": "性格有些孤僻喜愛安靜的大學３年級生，櫻井真一。總是被小一屆，同高中畢業的學妹宇崎花，以各種照顧愛耍孤僻的學長的名義為由，進行各種無厘頭的糾纏搞笑。雖然一開始覺得有點困擾，但卻逐漸的習慣…。",
       "original_name": "宇崎ちゃんは遊びたい！",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 299498,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/299498",
+          "https://bgm.tv/subject/299498/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-42",
@@ -458,10 +542,24 @@
       "story": "有人曾經說過│ＨＥＲＯ是由※Ｈ與ＥＲＯ所拼成的。奪取並規制色情，企圖使人類緩慢滅絕的侵略種族‧規制蟲。炎城烈人因為青梅竹馬‧星乃雲母受到規制蟲影響而變了一個人，從此決定要作為ＨＥＲＯ與規制蟲戰鬥。而與之對抗的手段正是Ｈ跟ＥＲＯ的力量，因此包含烈人在內的“最色的？＂５個高中生組成了Ｈ×ＥＲＯＳ要來對抗規制蟲。",
       "original_name": "ド級編隊エグゼロス",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 293648,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/293648",
+          "https://bgm.tv/subject/293648/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-86",
@@ -528,10 +626,24 @@
       "story": "木之下和也是住在都內，不愛用功的大學生，因為被交往一個月的女友甩了，賭氣登入「出租女友」，與水原千鶴約會。約會到一半接到祖母病倒的通知而趕往醫院的和也，為了實現祖母希望和也找到好對象的願望，謊稱千鶴是女友…就在和也下定決定揮別情傷，坦然面對大學生活時，卻發現千鶴是同校大一的學生！兩人的租賃關係似乎不只一次？",
       "original_name": "彼女、お借りします",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 296076,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/296076",
+          "https://bgm.tv/subject/296076/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-133",
@@ -542,10 +654,24 @@
       "story": "這兒是，劍與魔法的世界——戰士公會所屬的彼得·格里爾，在武鬥祭中精彩地勝出，入手了地上最強男人的稱號！這樣就，可以跟戀人露薇莉亞結婚了吧。但是，能力越強，代價越大……食人魔。精靈。半獸人。盯上地上最強遺傳因子的各種異種族的女性們，渴求彼得的種子，現在正在蠢蠢欲動。為甚麼，人在完事後會這麼冷靜的呢。前無古人，地上最強的賢者時間襲來！",
       "original_name": "ピーター・グリルと賢者の時間",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 291195,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/291195",
+          "https://bgm.tv/subject/291195/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-160",
@@ -556,10 +682,24 @@
       "story": "暫無簡介",
       "original_name": "GET UP! GET LIVE!",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 303173,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 10,
+        "aired_episodes": 10,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/303173",
+          "https://bgm.tv/subject/303173/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-11",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-136",
@@ -570,10 +710,24 @@
       "story": "隨著「亞多拉連結」出現的神秘女性，讓森羅開始失控！為了讓森羅恢復神智，亞瑟與森羅展開了一場認真的戰鬥！此外，傳導者等人真正的目的也漸漸揭曉。他想要聚集擁有「亞多拉爆裂之火」的柱子，引發大災害！也就是說，新的「亞多拉爆裂之火」誕生，就代表消防隊x傳導者將會有新的一場戰鬥發生！",
       "original_name": "炎炎ノ消防隊 弐ノ章",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 297342,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/297342",
+          "https://bgm.tv/subject/297342/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-12-11",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-116",
@@ -640,10 +794,24 @@
       "story": "故事發生於普遍使用\"輝砂\"以及其結晶體\"輝石\"作為動力的城市．瑪姆蓋斯提爾。運用輝砂與輝石、以咒語或旋律來發動魔法的少女被稱為\"魔女\"，進行著歌唱活動以及驅除怪獸，被人們所敬仰著。曉之魔女所創設，齊聚了見習魔女們的學校．芙蘿拉女子學院。夢想成為出色魔女的少女．緹亞拉來到了這所學院的門前。「請務必讓我在這所學院就讀…咦？」﻿",
       "original_name": "Lapis Re:LiGHTs",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 241185,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/241185",
+          "https://bgm.tv/subject/241185/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-19",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-61",
@@ -654,10 +822,24 @@
       "story": "儘管具備能毀滅人類、精靈，甚至是眾神的力量，暴虐魔王阿諾斯卻厭倦了永無止盡的鬥爭，夢想著和平的世界進行轉生。然而在兩千年後，轉生後的他所迎來的，卻是適應和平生活而變得過於弱小的子孫們，以及各種衰退至極的魔法。阿諾斯雖然進入了把被認定是魔王轉生者的人召集起來「魔王學院」就讀，學院卻無法看出他的實力，使他被蓋上不適任者的烙印。在眾人都瞧不起他的環境裡，他將唯一親切對待自己的少女米夏納為部下，不適任者（魔王）在魔族的階級制度上邁向巔峰！",
       "original_name": "魔王学院の不適合者",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 292222,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/292222",
+          "https://bgm.tv/subject/292222/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-26",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-67",
@@ -668,10 +850,24 @@
       "story": "「──是桐人。我的桐人回來了……」地底世界「最終負荷實驗」第二天。打敗「人界軍」最強整合騎士貝爾庫利以及使用超級帳號──太陽神索魯斯的詩乃後，加百列便追趕逃走的愛麗絲。另一方面，被具壓倒性人數的「暗黑騎士」所包圍的「人界軍」誘餌部隊，亞絲娜在戰場上的奮鬥、莉茲貝特與西莉卡的助力全都落空，心神喪失狀態的桐人終於被微笑棺木的殘黨「PoH」抓住了。為了一吐長年的怨氣，PoH的毒牙朝著桐人迫近──瞬間。桐人的內心響起了聲音。那是和他一起生活、戰鬥、歡笑的好友傳出的聲音。也是獨一無二的最佳拍檔的聲音──這時候，為了拯救所有存活在Underworld的「一切」。桐人終於復活了。",
       "original_name": "ソードアート・オンライン アリシゼーション War of Underworld -THE LAST SEASON-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 292238,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 11,
+        "aired_episodes": 11,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/292238",
+          "https://bgm.tv/subject/292238/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-19",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-55",
@@ -710,10 +906,24 @@
       "story": "暫無簡介",
       "original_name": "Reバース",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 295615,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 51,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/295615",
+          "https://bgm.tv/subject/295615/ep"
+        ],
+        "checked_at": "2026-10-15T13:33:57.944086+08:00",
+        "attempted_at": "2026-10-15T13:33:57.944086+08:00",
+        "end_date": "2021-06-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-134",
@@ -724,10 +934,24 @@
       "story": "這兒是魔族跟人類共存的城鎮「林德·威爾姆」。新人醫師格倫醫生，今天也在挑戰極限地應診中——？！探查人魚的鰓部、縫合屍塊哥雷姆的大腿、協助哈比產卵、對龍鱗進行徹底的觸診……為了拯救外觀、構造、性質都截然不同的她們，明明只是在全力地應診，卻不知道為甚麼總變成危險♥的氣氛……？但是別擔心，因為這是100%醫療行為所以沒問題！雖然有時候會被拉米亞族助手・莎菲的尾巴纏住纏得快不能呼吸，不過診所今天也在正常開業！",
       "original_name": "モンスター娘のお医者さん",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 294654,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/294654",
+          "https://bgm.tv/subject/294654/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-27",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-96",
@@ -766,10 +990,24 @@
       "story": "暫無簡介",
       "original_name": "巨人族の花嫁",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 306993,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 9,
+        "aired_episodes": 9,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/306993",
+          "https://bgm.tv/subject/306993/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-08-30",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-165",
@@ -780,10 +1018,24 @@
       "story": "暫無簡介",
       "original_name": "忍者コレクション",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 308997,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/308997",
+          "https://bgm.tv/subject/308997/ep"
+        ],
+        "checked_at": "2026-10-15T13:34:03.006159+08:00",
+        "attempted_at": "2026-10-15T13:34:03.006159+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-159",
@@ -794,13 +1046,27 @@
       "story": "暫無簡介",
       "original_name": "耐え子の日常 新シリーズ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 316108,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 132,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/316108",
+          "https://bgm.tv/subject/316108/ep"
+        ],
+        "checked_at": "2026-10-15T13:34:04.277294+08:00",
+        "attempted_at": "2026-10-15T13:34:04.277294+08:00",
+        "end_date": "2020-12-31",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T15:03:24.573814+08:00",
+  "generated_at": "2026-10-15T13:42:21.102984+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202007/",
   "quality": {
     "source_count": 38,

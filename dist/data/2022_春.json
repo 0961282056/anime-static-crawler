@@ -23,8 +23,8 @@
           "https://bgm.tv/subject/371892",
           "https://bgm.tv/subject/371892/ep"
         ],
-        "checked_at": "2026-10-13T21:47:11.920375+08:00",
-        "attempted_at": "2026-10-13T21:47:11.920375+08:00",
+        "checked_at": "2026-10-15T13:34:49.415613+08:00",
+        "attempted_at": "2026-10-15T13:34:49.415613+08:00",
         "end_date": "2022-08-29",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -94,10 +94,24 @@
       "story": "暫無簡介",
       "original_name": "名探偵コナン ゼロの日常（ティータイム）",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 351714,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 6,
+        "aired_episodes": 6,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/351714",
+          "https://bgm.tv/subject/351714/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-05-09",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1053",
@@ -108,10 +122,24 @@
       "story": "為了讓更多人能以便宜的價格買到書，梅茵竭盡所能地提升印刷技術，終於完成了「金屬活字」。然而，梅茵擁有強大魔力的消息也在貴族之間迅速傳開，引起各方人馬在暗中覬覦。另一方面，因新的印刷技術問世而備感威脅的墨水協會，也開始探查梅茵的身分來歷。面對步步進逼的危險，神官長決定將梅茵藏在神殿裡，並請求騎士團長將她收為養女，以便獲得更嚴密的保護。於是梅茵就這樣和侍從們一起在神殿度過漫長的冬天，眼看和最珍愛的家人相處的日子開始倒數，梅茵又該如何迎接未知的挑戰？",
       "original_name": "本好きの下剋上 司書になるためには手段を選んでられません 第3期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 310263,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 10,
+        "aired_episodes": 10,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/310263",
+          "https://bgm.tv/subject/310263/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-06-13",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1094",
@@ -430,10 +458,24 @@
       "story": "暫無簡介",
       "original_name": "古見さんは、コミュ症です。 第2期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 363242,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/363242",
+          "https://bgm.tv/subject/363242/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-06-22",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1063",
@@ -905,8 +947,8 @@
           "https://bgm.tv/subject/351943",
           "https://bgm.tv/subject/351943/ep"
         ],
-        "checked_at": "2026-10-13T21:47:11.920375+08:00",
-        "attempted_at": "2026-10-13T21:47:11.920375+08:00",
+        "checked_at": "2026-10-15T13:34:50.694040+08:00",
+        "attempted_at": "2026-10-15T13:34:50.694040+08:00",
         "end_date": "2023-03-25",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1144,10 +1186,24 @@
       "story": "暫無簡介",
       "original_name": "ビルディバイド -#FFFFFF(コードホワイト)-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 333624,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/333624",
+          "https://bgm.tv/subject/333624/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-06-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1052",
@@ -1410,10 +1466,24 @@
       "story": "暫無簡介",
       "original_name": "3秒後、野獣。～合コンで隅にいた彼は肉食でした",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 354246,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/354246",
+          "https://bgm.tv/subject/354246/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-06-05",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1070",
@@ -1444,7 +1514,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-14T15:03:24.603389+08:00",
+  "generated_at": "2026-10-15T13:42:21.153465+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202204/",
   "quality": {
     "source_count": 54,

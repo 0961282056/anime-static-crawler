@@ -23,8 +23,8 @@
           "https://bgm.tv/subject/484624",
           "https://bgm.tv/subject/484624/ep"
         ],
-        "checked_at": "2026-10-13T21:06:31.074758+08:00",
-        "attempted_at": "2026-10-13T21:06:31.074758+08:00",
+        "checked_at": "2026-10-15T13:35:47.013690+08:00",
+        "attempted_at": "2026-10-15T13:35:47.013690+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -247,8 +247,8 @@
           "https://bgm.tv/subject/464594",
           "https://bgm.tv/subject/464594/ep"
         ],
-        "checked_at": "2026-10-13T21:06:31.074758+08:00",
-        "attempted_at": "2026-10-13T21:06:31.074758+08:00",
+        "checked_at": "2026-10-15T13:35:51.400916+08:00",
+        "attempted_at": "2026-10-15T13:35:51.400916+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -430,10 +430,24 @@
       "story": "暫無簡介",
       "original_name": "お買いものパンダ！",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 492951,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 20,
+        "aired_episodes": 20,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/492951",
+          "https://bgm.tv/subject/492951/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2025-03-26",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1665",
@@ -457,8 +471,8 @@
           "https://bgm.tv/subject/408896",
           "https://bgm.tv/subject/408896/ep"
         ],
-        "checked_at": "2026-10-13T21:06:31.074758+08:00",
-        "attempted_at": "2026-10-13T21:06:31.074758+08:00",
+        "checked_at": "2026-10-15T13:35:52.643966+08:00",
+        "attempted_at": "2026-10-15T13:35:52.643966+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -640,10 +654,24 @@
       "story": "暫無簡介",
       "original_name": "マーダーミステリー・オブ・ザ・デッド",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 513948,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 6,
+        "aired_episodes": 6,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/513948",
+          "https://bgm.tv/subject/513948/ep"
+        ],
+        "checked_at": "2026-10-15T13:35:53.905310+08:00",
+        "attempted_at": "2026-10-15T13:35:53.905310+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1697",
@@ -654,10 +682,24 @@
       "story": "暫無簡介",
       "original_name": "齢5000年の草食ドラゴン、いわれなき邪竜認定 season2",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 456164,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/456164",
+          "https://bgm.tv/subject/456164/ep"
+        ],
+        "checked_at": "2026-10-15T13:35:55.175133+08:00",
+        "attempted_at": "2026-10-15T13:35:55.175133+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1674",
@@ -681,8 +723,8 @@
           "https://bgm.tv/subject/494302",
           "https://bgm.tv/subject/494302/ep"
         ],
-        "checked_at": "2026-10-13T21:06:31.074758+08:00",
-        "attempted_at": "2026-10-13T21:06:31.074758+08:00",
+        "checked_at": "2026-10-15T13:35:56.425473+08:00",
+        "attempted_at": "2026-10-15T13:35:56.425473+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -709,8 +751,8 @@
           "https://bgm.tv/subject/476969",
           "https://bgm.tv/subject/476969/ep"
         ],
-        "checked_at": "2026-10-13T21:05:00.244697+08:00",
-        "attempted_at": "2026-10-13T21:05:00.244697+08:00",
+        "checked_at": "2026-10-15T13:35:57.684190+08:00",
+        "attempted_at": "2026-10-15T13:35:57.684190+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1045,8 +1087,8 @@
           "https://bgm.tv/subject/470777",
           "https://bgm.tv/subject/470777/ep"
         ],
-        "checked_at": "2026-10-14T16:26:01.819036+08:00",
-        "attempted_at": "2026-10-14T16:26:01.819036+08:00",
+        "checked_at": "2026-10-15T13:35:58.941024+08:00",
+        "attempted_at": "2026-10-15T13:35:58.941024+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1284,10 +1326,24 @@
       "story": "暫無簡介",
       "original_name": "SHIBUYA♡HACHI 第2クール",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 514693,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/514693",
+          "https://bgm.tv/subject/514693/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2024-12-21",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1688",
@@ -1479,8 +1535,8 @@
           "https://bgm.tv/subject/389156",
           "https://bgm.tv/subject/389156/ep"
         ],
-        "checked_at": "2026-10-13T21:05:00.244697+08:00",
-        "attempted_at": "2026-10-13T21:05:00.244697+08:00",
+        "checked_at": "2026-10-15T13:36:00.201057+08:00",
+        "attempted_at": "2026-10-15T13:36:00.201057+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1634,10 +1690,24 @@
       "story": "暫無簡介",
       "original_name": "ぷにるんず ぷに2",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 513375,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/513375",
+          "https://bgm.tv/subject/513375/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2025-03-30",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1656",
@@ -1928,13 +1998,27 @@
       "story": "暫無簡介",
       "original_name": "大正偽りブラヰダル～身代わり花嫁と軍服の猛愛",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 509169,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "stale",
+        "source_urls": [
+          "https://bgm.tv/subject/509169",
+          "https://bgm.tv/subject/509169/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:36:01.445096+08:00",
+        "end_date": null,
+        "note": "即時來源未能取得可用頁面，保留上次確認的官方資料快照與確認時間。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T16:26:49.648296+08:00",
+  "generated_at": "2026-10-15T13:42:21.216571+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202410/",
   "quality": {
     "source_count": 72,

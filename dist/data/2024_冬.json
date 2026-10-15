@@ -23,8 +23,8 @@
           "https://bgm.tv/subject/426156",
           "https://bgm.tv/subject/426156/ep"
         ],
-        "checked_at": "2026-10-13T21:10:04.688842+08:00",
-        "attempted_at": "2026-10-13T21:10:04.688842+08:00",
+        "checked_at": "2026-10-15T13:35:30.239421+08:00",
+        "attempted_at": "2026-10-15T13:35:30.239421+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -891,8 +891,8 @@
           "https://bgm.tv/subject/441084",
           "https://bgm.tv/subject/441084/ep"
         ],
-        "checked_at": "2026-10-13T21:10:04.688842+08:00",
-        "attempted_at": "2026-10-13T21:10:04.688842+08:00",
+        "checked_at": "2026-10-15T13:35:31.615308+08:00",
+        "attempted_at": "2026-10-15T13:35:31.615308+08:00",
         "end_date": "2024-04-05",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -990,10 +990,24 @@
       "story": "十朱大吾與斧田駿、中村雪以及其他伙伴通過了「特別技術研修」，正式成為救助隊成員，將前往火災現場拯救傷患與受困的民眾！前作的配角「甘粕士郎」也在本書中登場！暌違二十五年的系列新作，再次見到熟悉的角色，踏上「救助」的戰場———！",
       "original_name": "め組の大吾 救国のオレンジ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 411106,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 23,
+        "aired_episodes": 23,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/411106",
+          "https://bgm.tv/subject/411106/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2024-03-23",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1434",
@@ -1256,10 +1270,24 @@
       "story": "「獵龍人」──揮舞銀劍、狩獵龍族以換取報酬的職業。 技術拙劣的獵龍人少年・拉格納與龍族討伐數無人能及的天才少女・蕾歐妮卡搭檔，每天致力於狩獵龍族。 拉格納只有一個心願──「就算無法變強也無所謂，希望能永遠待在蕾歐身邊。」 然而他的想法，卻因為擁有前所未見之強大力量的「上位龍」的襲擊而化為泡影。 在大敵當前之際，拉格納的腦海中浮現起這幾天一直令他苦惱不已的惡夢──那是雖然獲得了最強大的力量，卻早已沒有任何必須守護的事物，活在充滿絕望與孤獨的未來中的自己的身影。 未來的自己交給他的東西是什麼……？現在的自己又該選擇什麼樣的道路……？ 然後，拉格納將與充滿謎團的新搭檔・緋紅一起為迴避絕望的未來踏出第一步。 他將挑戰的是，絕對性的強者。他將對抗的，是被強制的命運。朝向極限的彼方前進──。",
       "original_name": "ラグナクリムゾン",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 374648,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/374648",
+          "https://bgm.tv/subject/374648/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2024-03-30",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1456",
@@ -1367,8 +1395,8 @@
           "https://bgm.tv/subject/391117",
           "https://bgm.tv/subject/391117/ep"
         ],
-        "checked_at": "2026-10-13T21:10:04.688842+08:00",
-        "attempted_at": "2026-10-13T21:10:04.688842+08:00",
+        "checked_at": "2026-10-15T13:35:32.868856+08:00",
+        "attempted_at": "2026-10-15T13:35:32.868856+08:00",
         "end_date": "2023-03-24",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1494,10 +1522,24 @@
       "story": "暫無簡介",
       "original_name": "悶えてよ、アダムくん",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 469072,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/469072",
+          "https://bgm.tv/subject/469072/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2024-03-10",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1453",
@@ -1536,13 +1578,27 @@
       "story": "暫無簡介",
       "original_name": "闇芝居 十二期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 465694,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/465694",
+          "https://bgm.tv/subject/465694/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2024-04-07",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T16:26:49.630893+08:00",
+  "generated_at": "2026-10-15T13:42:21.194405+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202401/",
   "quality": {
     "source_count": 57,

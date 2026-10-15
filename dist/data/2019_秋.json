@@ -430,10 +430,24 @@
       "story": "從小就是個超級書痴的女大學生麗乃，愛書愛到希望在書堆裡死去。該說是「夢想成真」嗎？好不容易應徵上圖書館工作的她，沒想到卻在地震時被掉落的書給活埋……當她再度醒過來，發現自己竟然轉生到了陌生的異世界，變成名叫梅茵的五歲小女孩，不但生在貧窮的士兵家，而且還體弱多病，但最讓她難以接受的是，這個世界完全找不到任何書店或圖書館，就算想看書，也是一般平民根本買不起的天價！於是梅茵下定決心：「既然買不到書，那我就自己動手做！」憑藉著對書的滿腔熱情，目標是成為圖書管理員。為了在異世界也能過著被書環繞的美好生活，就從做書開始努力吧！",
       "original_name": "本好きの下剋上",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 276788,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 14,
+        "aired_episodes": 14,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/276788",
+          "https://bgm.tv/subject/276788/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-12-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-207",
@@ -569,8 +583,8 @@
           "https://bgm.tv/subject/302137",
           "https://bgm.tv/subject/302137/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-15T13:33:47.768137+08:00",
+        "attempted_at": "2026-10-15T13:33:47.768137+08:00",
         "end_date": "2020-10-01",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -612,10 +626,24 @@
       "story": "暫無簡介",
       "original_name": "アズールレーン",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 260677,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/260677",
+          "https://bgm.tv/subject/260677/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-03-20",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-195",
@@ -738,10 +766,24 @@
       "story": "暫無簡介",
       "original_name": "かいじゅうステップ ワンダバダ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 302157,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 26,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/302157",
+          "https://bgm.tv/subject/302157/ep"
+        ],
+        "checked_at": "2026-10-15T13:33:49.034364+08:00",
+        "attempted_at": "2026-10-15T13:33:49.034364+08:00",
+        "end_date": "2020-03-27",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-231",
@@ -765,8 +807,8 @@
           "https://bgm.tv/subject/285109",
           "https://bgm.tv/subject/285109/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-15T13:33:50.352552+08:00",
+        "attempted_at": "2026-10-15T13:33:50.352552+08:00",
         "end_date": "2020-10-16",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -821,8 +863,8 @@
           "https://bgm.tv/subject/278220",
           "https://bgm.tv/subject/278220/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-15T13:33:51.623772+08:00",
+        "attempted_at": "2026-10-15T13:33:51.623772+08:00",
         "end_date": "2019-12-13",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -849,8 +891,8 @@
           "https://bgm.tv/subject/289145",
           "https://bgm.tv/subject/289145/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-15T13:33:52.886023+08:00",
+        "attempted_at": "2026-10-15T13:33:52.886023+08:00",
         "end_date": "2019-12-20",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1228,10 +1270,24 @@
       "story": "暫無簡介",
       "original_name": "この音とまれ！2クール目",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 270060,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/270060",
+          "https://bgm.tv/subject/270060/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-12-28",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-237",
@@ -1255,8 +1311,8 @@
           "https://bgm.tv/subject/291842",
           "https://bgm.tv/subject/291842/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-15T13:33:54.143905+08:00",
+        "attempted_at": "2026-10-15T13:33:54.143905+08:00",
         "end_date": "2020-03-28",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1270,10 +1326,24 @@
       "story": "暫無簡介",
       "original_name": "トクナナ -警視庁 特務部 特殊凶悪犯対策室 第七課-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 278440,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/278440",
+          "https://bgm.tv/subject/278440/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-12-29",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-270",
@@ -1353,8 +1423,8 @@
           "https://bgm.tv/subject/266348",
           "https://bgm.tv/subject/266348/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-15T13:33:55.399061+08:00",
+        "attempted_at": "2026-10-15T13:33:55.399061+08:00",
         "end_date": "2019-12-22",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1368,10 +1438,24 @@
       "story": "暫無簡介",
       "original_name": "Fairy gone フェアリーゴーン 第2クール",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 283053,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/283053",
+          "https://bgm.tv/subject/283053/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-12-22",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-256",
@@ -1438,10 +1522,24 @@
       "story": "暫無簡介",
       "original_name": "XL上司。",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 288940,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/288940",
+          "https://bgm.tv/subject/288940/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-11-24",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-238",
@@ -1452,13 +1550,27 @@
       "story": "暫無簡介",
       "original_name": "フォーカード 新シリーズ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 291844,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/291844",
+          "https://bgm.tv/subject/291844/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-12-22",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-13T22:10:20.716020+08:00",
+  "generated_at": "2026-10-15T13:42:21.077878+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201910/",
   "quality": {
     "source_count": 56,

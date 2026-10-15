@@ -38,10 +38,24 @@
       "story": "暫無簡介",
       "original_name": "ゴールデンカムイ 第三期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 285901,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/285901",
+          "https://bgm.tv/subject/285901/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-12-21",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-105",
@@ -65,8 +79,8 @@
           "https://bgm.tv/subject/303433",
           "https://bgm.tv/subject/303433/ep"
         ],
-        "checked_at": "2026-10-13T22:05:42.968973+08:00",
-        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "checked_at": "2026-10-15T13:34:00.491925+08:00",
+        "attempted_at": "2026-10-15T13:34:00.491925+08:00",
         "end_date": "2021-03-15",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -205,8 +219,8 @@
           "https://bgm.tv/subject/315133",
           "https://bgm.tv/subject/315133/ep"
         ],
-        "checked_at": "2026-10-13T22:03:38.359126+08:00",
-        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "checked_at": "2026-10-15T13:34:15.721766+08:00",
+        "attempted_at": "2026-10-15T13:34:15.721766+08:00",
         "end_date": "2021-01-04",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -220,10 +234,24 @@
       "story": "每個零食能解決一個煩惱，你敢不敢走進這家柑仔店，吃一口，賭上你的未來？一間不起眼的柑仔店，一個笑容詭異的老闆娘，店裡有各種你從未見過的神奇零食，吃下去，就能解決所有人生的煩惱：模型美人魚軟糖、猛獸餅乾、發抖幽靈果凍……神奇柑仔店「錢天堂」滿足你所有的願望！",
       "original_name": "ふしぎ駄菓子屋 銭天堂",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 315772,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "conflict",
+        "source_urls": [
+          "https://bgm.tv/subject/315772",
+          "https://bgm.tv/subject/315772/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:17.006982+08:00",
+        "end_date": null,
+        "note": "正篇集目缺少46–55話，另有無效日期2099；總集數未公告，已播進度待核對。"
+      }
     },
     {
       "bangumi_id": "anime-138",
@@ -387,8 +415,8 @@
           "https://bgm.tv/subject/292273",
           "https://bgm.tv/subject/292273/ep"
         ],
-        "checked_at": "2026-10-13T22:03:38.359126+08:00",
-        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "checked_at": "2026-10-15T13:34:18.272898+08:00",
+        "attempted_at": "2026-10-15T13:34:18.272898+08:00",
         "end_date": "2020-12-22",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -430,10 +458,24 @@
       "story": "枝村真人以為自己是最厲害的騙子，沒想到卻意外惹到了黑幫老大。",
       "original_name": "GREAT PRETENDER",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 285813,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 23,
+        "aired_episodes": 23,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/285813",
+          "https://bgm.tv/subject/285813/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-12-16",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-123",
@@ -612,10 +654,24 @@
       "story": "暫無簡介",
       "original_name": "アニメ カピバラさん",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 316796,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/316796",
+          "https://bgm.tv/subject/316796/ep"
+        ],
+        "checked_at": "2026-10-15T13:34:19.522147+08:00",
+        "attempted_at": "2026-10-15T13:34:19.522147+08:00",
+        "end_date": "2021-03-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-665",
@@ -639,8 +695,8 @@
           "https://bgm.tv/subject/316107",
           "https://bgm.tv/subject/316107/ep"
         ],
-        "checked_at": "2026-10-13T22:03:38.359126+08:00",
-        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "checked_at": "2026-10-15T13:34:20.813776+08:00",
+        "attempted_at": "2026-10-15T13:34:20.813776+08:00",
         "end_date": "2021-04-09",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -934,10 +990,24 @@
       "story": "隨著「亞多拉連結」出現的神秘女性，讓森羅開始失控！為了讓森羅恢復神智，亞瑟與森羅展開了一場認真的戰鬥！此外，傳導者等人真正的目的也漸漸揭曉。他想要聚集擁有「亞多拉爆裂之火」的柱子，引發大災害！也就是說，新的「亞多拉爆裂之火」誕生，就代表消防隊x傳導者將會有新的一場戰鬥發生！",
       "original_name": "炎炎ノ消防隊 弐ノ章",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 297342,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/297342",
+          "https://bgm.tv/subject/297342/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-12-11",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-156",
@@ -948,10 +1018,24 @@
       "story": "暫無簡介",
       "original_name": "ハイキュー!! TO THE TOP 第2期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 295421,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/295421",
+          "https://bgm.tv/subject/295421/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-12-18",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-116",
@@ -1283,10 +1367,10 @@
           "https://bgm.tv/subject/315773",
           "https://bgm.tv/subject/315773/ep"
         ],
-        "checked_at": "2026-10-13T22:03:38.359126+08:00",
-        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "checked_at": "2026-10-15T13:34:22.090477+08:00",
+        "attempted_at": "2026-10-15T13:34:22.090477+08:00",
         "end_date": "2020-12-27",
-        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1451,10 +1535,10 @@
           "https://bgm.tv/subject/316103",
           "https://bgm.tv/subject/316103/ep"
         ],
-        "checked_at": "2026-10-13T22:03:38.359126+08:00",
-        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "checked_at": "2026-10-15T13:34:23.441777+08:00",
+        "attempted_at": "2026-10-15T13:34:23.441777+08:00",
         "end_date": "2020-12-20",
-        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1466,10 +1550,24 @@
       "story": "暫無簡介",
       "original_name": "オオカミさんは食べられたい",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 312982,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 3,
+        "aired_episodes": 3,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/312982",
+          "https://bgm.tv/subject/312982/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-09-20",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-661",
@@ -1480,10 +1578,24 @@
       "story": "暫無簡介",
       "original_name": "大人にゃ恋の仕方がわからねぇ！",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 314312,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/314312",
+          "https://bgm.tv/subject/314312/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-11-22",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-660",
@@ -1494,13 +1606,27 @@
       "story": "暫無簡介",
       "original_name": "エタニティ ～深夜の濡恋ちゃんねる♥～",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 316106,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/316106",
+          "https://bgm.tv/subject/316106/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-12-20",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T15:03:24.580521+08:00",
+  "generated_at": "2026-10-15T13:42:21.116085+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202010/",
   "quality": {
     "source_count": 58,

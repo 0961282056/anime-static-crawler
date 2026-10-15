@@ -135,8 +135,8 @@
           "https://bgm.tv/subject/490824",
           "https://bgm.tv/subject/490824/ep"
         ],
-        "checked_at": "2026-10-13T21:37:49.906766+08:00",
-        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "checked_at": "2026-10-15T13:35:34.116072+08:00",
+        "attempted_at": "2026-10-15T13:35:34.116072+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -331,8 +331,8 @@
           "https://bgm.tv/subject/351349",
           "https://bgm.tv/subject/351349/ep"
         ],
-        "checked_at": "2026-10-13T21:37:49.906766+08:00",
-        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "checked_at": "2026-10-15T13:35:35.374666+08:00",
+        "attempted_at": "2026-10-15T13:35:35.374666+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -947,8 +947,8 @@
           "https://bgm.tv/subject/490781",
           "https://bgm.tv/subject/490781/ep"
         ],
-        "checked_at": "2026-10-13T21:37:49.906766+08:00",
-        "attempted_at": "2026-10-13T21:37:49.906766+08:00",
+        "checked_at": "2026-10-15T13:35:36.618338+08:00",
+        "attempted_at": "2026-10-15T13:35:36.618338+08:00",
         "end_date": "2024-12-21",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1255,8 +1255,8 @@
           "https://bgm.tv/subject/485122",
           "https://bgm.tv/subject/485122/ep"
         ],
-        "checked_at": "2026-10-13T21:09:10.216438+08:00",
-        "attempted_at": "2026-10-13T21:09:10.216438+08:00",
+        "checked_at": "2026-10-15T13:35:37.902429+08:00",
+        "attempted_at": "2026-10-15T13:35:37.902429+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1311,8 +1311,8 @@
           "https://bgm.tv/subject/475367",
           "https://bgm.tv/subject/475367/ep"
         ],
-        "checked_at": "2026-10-13T21:09:10.216438+08:00",
-        "attempted_at": "2026-10-13T21:09:10.216438+08:00",
+        "checked_at": "2026-10-15T13:35:39.181602+08:00",
+        "attempted_at": "2026-10-15T13:35:39.181602+08:00",
         "end_date": "2024-09-21",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1507,8 +1507,8 @@
           "https://bgm.tv/subject/424853",
           "https://bgm.tv/subject/424853/ep"
         ],
-        "checked_at": "2026-10-13T21:09:10.216438+08:00",
-        "attempted_at": "2026-10-13T21:09:10.216438+08:00",
+        "checked_at": "2026-10-15T13:35:40.444047+08:00",
+        "attempted_at": "2026-10-15T13:35:40.444047+08:00",
         "end_date": "2024-09-22",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1550,10 +1550,24 @@
       "story": "暫無簡介",
       "original_name": "よあそびぐらしっ！",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 475555,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/475555",
+          "https://bgm.tv/subject/475555/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2024-09-08",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1599",
@@ -1612,7 +1626,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-14T16:26:49.636215+08:00",
+  "generated_at": "2026-10-15T13:42:21.201183+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202407/",
   "quality": {
     "source_count": 58,

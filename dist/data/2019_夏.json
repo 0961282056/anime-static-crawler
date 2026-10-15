@@ -191,8 +191,8 @@
           "https://bgm.tv/subject/285670",
           "https://bgm.tv/subject/285670/ep"
         ],
-        "checked_at": "2026-10-13T22:12:29.148814+08:00",
-        "attempted_at": "2026-10-13T22:12:29.148814+08:00",
+        "checked_at": "2026-10-15T13:33:37.684066+08:00",
+        "attempted_at": "2026-10-15T13:33:37.684066+08:00",
         "end_date": "2019-07-29",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -822,10 +822,24 @@
       "story": "暫無簡介",
       "original_name": "おしりたんてい",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 303878,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/303878",
+          "https://bgm.tv/subject/303878/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-09-28",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-280",
@@ -877,8 +891,8 @@
           "https://bgm.tv/subject/267732",
           "https://bgm.tv/subject/267732/ep"
         ],
-        "checked_at": "2026-10-13T21:15:37.170263+08:00",
-        "attempted_at": "2026-10-13T21:15:37.170263+08:00",
+        "checked_at": "2026-10-15T13:33:38.956087+08:00",
+        "attempted_at": "2026-10-15T13:33:38.956087+08:00",
         "end_date": "2019-09-28",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1144,10 +1158,24 @@
       "story": "暫無簡介",
       "original_name": "指先から本気の熱情-幼なじみは消防士-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 283272,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/283272",
+          "https://bgm.tv/subject/283272/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-09-01",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-267",
@@ -1186,13 +1214,27 @@
       "story": "暫無簡介",
       "original_name": "闇芝居 七期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 283480,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/283480",
+          "https://bgm.tv/subject/283480/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-09-29",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T16:26:49.604134+08:00",
+  "generated_at": "2026-10-15T13:42:21.065600+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201907/",
   "quality": {
     "source_count": 44,

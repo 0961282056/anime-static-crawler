@@ -107,8 +107,8 @@
           "https://bgm.tv/subject/324727",
           "https://bgm.tv/subject/324727/ep"
         ],
-        "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "checked_at": "2026-10-15T13:34:32.293571+08:00",
+        "attempted_at": "2026-10-15T13:34:32.293571+08:00",
         "end_date": "2021-06-28",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -234,10 +234,24 @@
       "story": "暫無簡介",
       "original_name": "転生したらスライムだった件 転スラ日記",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 299673,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/299673",
+          "https://bgm.tv/subject/299673/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-06-22",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-771",
@@ -345,8 +359,8 @@
           "https://bgm.tv/subject/316893",
           "https://bgm.tv/subject/316893/ep"
         ],
-        "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "checked_at": "2026-10-15T13:34:33.564292+08:00",
+        "attempted_at": "2026-10-15T13:34:33.564292+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -513,8 +527,8 @@
           "https://bgm.tv/subject/317615",
           "https://bgm.tv/subject/317615/ep"
         ],
-        "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "checked_at": "2026-10-15T13:34:34.831265+08:00",
+        "attempted_at": "2026-10-15T13:34:34.831265+08:00",
         "end_date": "2021-06-24",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -528,10 +542,24 @@
       "story": "暫無簡介",
       "original_name": "ゴジラ シンギュラポイント",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 316519,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/316519",
+          "https://bgm.tv/subject/316519/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-06-24",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-750",
@@ -667,8 +695,8 @@
           "https://bgm.tv/subject/309170",
           "https://bgm.tv/subject/309170/ep"
         ],
-        "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "checked_at": "2026-10-15T13:34:36.082803+08:00",
+        "attempted_at": "2026-10-15T13:34:36.082803+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -695,8 +723,8 @@
           "https://bgm.tv/subject/663691",
           "https://bgm.tv/subject/663691/ep"
         ],
-        "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "checked_at": "2026-10-15T13:34:37.375255+08:00",
+        "attempted_at": "2026-10-15T13:34:37.375255+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -751,8 +779,8 @@
           "https://bgm.tv/subject/336281",
           "https://bgm.tv/subject/336281/ep"
         ],
-        "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "checked_at": "2026-10-15T13:34:38.635821+08:00",
+        "attempted_at": "2026-10-15T13:34:38.635821+08:00",
         "end_date": "2021-10-22",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1059,8 +1087,8 @@
           "https://bgm.tv/subject/312227",
           "https://bgm.tv/subject/312227/ep"
         ],
-        "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "checked_at": "2026-10-15T13:34:39.909096+08:00",
+        "attempted_at": "2026-10-15T13:34:39.909096+08:00",
         "end_date": "2022-03-26",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1102,10 +1130,24 @@
       "story": "暫無簡介",
       "original_name": "おしりたんてい",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 529232,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/529232",
+          "https://bgm.tv/subject/529232/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-06-26",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-170",
@@ -1144,10 +1186,24 @@
       "story": "A班 vs B班的超激烈共同戰鬥訓練！B班的「個性」確實也有所發展，還有新的必殺技，超厲害的。好啊！我們也要慎重一點…唔，喂，爆豪！等等啊！啊──真是的！真拿他沒法！“Plus Ultra”!!",
       "original_name": "僕のヒーローアカデミア 第5期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 303399,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/303399",
+          "https://bgm.tv/subject/303399/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-09-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-729",
@@ -1199,8 +1255,8 @@
           "https://bgm.tv/subject/324786",
           "https://bgm.tv/subject/324786/ep"
         ],
-        "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "checked_at": "2026-10-15T13:34:41.175560+08:00",
+        "attempted_at": "2026-10-15T13:34:41.175560+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1395,8 +1451,8 @@
           "https://bgm.tv/subject/309753",
           "https://bgm.tv/subject/309753/ep"
         ],
-        "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "checked_at": "2026-10-15T13:34:42.441317+08:00",
+        "attempted_at": "2026-10-15T13:34:42.441317+08:00",
         "end_date": "2021-06-25",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1466,10 +1522,24 @@
       "story": "主角‧武道做什麼事情都不順，又住在破舊老公寓裡，從電視上得知國中時期的前女友‧日向無端捲入幫派火拼而身亡。某天他在月台等車，居然跌落鐵軌，正他以為自己死定了，回神之後卻發現自己回到12年前的國中時期。後來又遇上了日向的弟弟‧直人，告訴他12年後發生的事實，要求他要保護姐姐，雙方握手之後他又再次回到現代…。",
       "original_name": "東京卍リベンジャーズ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 308936,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/308936",
+          "https://bgm.tv/subject/308936/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-09-18",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-767",
@@ -1521,8 +1591,8 @@
           "https://bgm.tv/subject/320857",
           "https://bgm.tv/subject/320857/ep"
         ],
-        "checked_at": "2026-10-13T22:01:46.774789+08:00",
-        "attempted_at": "2026-10-13T22:01:46.774789+08:00",
+        "checked_at": "2026-10-15T13:34:29.773975+08:00",
+        "attempted_at": "2026-10-15T13:34:29.773975+08:00",
         "end_date": "2022-01-30",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1536,10 +1606,24 @@
       "story": "暫無簡介",
       "original_name": "Mazica Party",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 330652,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 51,
+        "aired_episodes": 51,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/330652",
+          "https://bgm.tv/subject/330652/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-03-27",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-776",
@@ -1750,13 +1834,27 @@
       "story": "「竟然可以和變成女人的你親熱，讓我超興奮的。」被死黨的愛撫弄得溼潤不已的那裡⋯這傢伙的技巧也太好了吧！ —— 我們兩人是把妹成功率Ｎｏ.１的黃金拍檔。然而今晚明明打算帶女生過夜的，卻突然被下了不明藥物，回過神來之後…發現自己變成女人了!?前來找人的死黨，沒發現是我就開始搭訕…他說著「連胸部都曬得這麼漂亮，真可愛啊」，還一邊揉我胸部一邊親我，再這樣下去，死黨的那裡就要插進來了…！",
       "original_name": "黒ギャルになったから親友としてみた。",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 327986,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/327986",
+          "https://bgm.tv/subject/327986/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-05-23",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T15:05:29.451468+08:00",
+  "generated_at": "2026-10-15T13:42:21.135010+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202104/",
   "quality": {
     "source_count": 66,

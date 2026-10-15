@@ -247,8 +247,8 @@
           "https://bgm.tv/subject/241112",
           "https://bgm.tv/subject/241112/ep"
         ],
-        "checked_at": "2026-10-13T22:08:17.834833+08:00",
-        "attempted_at": "2026-10-13T22:08:17.834833+08:00",
+        "checked_at": "2026-10-15T13:33:56.649149+08:00",
+        "attempted_at": "2026-10-15T13:33:56.649149+08:00",
         "end_date": "2020-03-31",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -471,8 +471,8 @@
           "https://bgm.tv/subject/302137",
           "https://bgm.tv/subject/302137/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-15T13:33:47.768137+08:00",
+        "attempted_at": "2026-10-15T13:33:47.768137+08:00",
         "end_date": "2020-10-01",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1242,10 +1242,24 @@
       "story": "暫無簡介",
       "original_name": "Reバース",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 295615,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 51,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/295615",
+          "https://bgm.tv/subject/295615/ep"
+        ],
+        "checked_at": "2026-10-15T13:33:57.944086+08:00",
+        "attempted_at": "2026-10-15T13:33:57.944086+08:00",
+        "end_date": "2021-06-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-18",
@@ -1312,10 +1326,24 @@
       "story": "暫無簡介",
       "original_name": "Fairy gone フェアリーゴーン 第2クール",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 283053,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/283053",
+          "https://bgm.tv/subject/283053/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-12-22",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-21",
@@ -1382,13 +1410,27 @@
       "story": "暫無簡介",
       "original_name": "おーばーふろぉ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 295001,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/295001",
+          "https://bgm.tv/subject/295001/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-02-23",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T15:03:24.571534+08:00",
+  "generated_at": "2026-10-15T13:42:21.097638+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202001/",
   "quality": {
     "source_count": 51,

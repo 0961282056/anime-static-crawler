@@ -66,10 +66,24 @@
       "story": "暫無簡介",
       "original_name": "ゴールデンカムイ 第四期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 361095,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/361095",
+          "https://bgm.tv/subject/361095/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2023-06-26",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1144",
@@ -80,10 +94,24 @@
       "story": "暫無簡介",
       "original_name": "BLEACH 千年血戰篇",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 302286,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/302286",
+          "https://bgm.tv/subject/302286/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-12-26",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1184",
@@ -178,10 +206,24 @@
       "story": "暫無簡介",
       "original_name": "チキップダンサーズ 2期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 396487,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/396487",
+          "https://bgm.tv/subject/396487/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2023-03-28",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1161",
@@ -289,8 +331,8 @@
           "https://bgm.tv/subject/395810",
           "https://bgm.tv/subject/395810/ep"
         ],
-        "checked_at": "2026-10-13T21:45:12.448734+08:00",
-        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "checked_at": "2026-10-15T13:34:51.944303+08:00",
+        "attempted_at": "2026-10-15T13:34:51.944303+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -528,10 +570,24 @@
       "story": "暫無簡介",
       "original_name": "マブラヴ オルタネイティヴ 第二期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 363263,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/363263",
+          "https://bgm.tv/subject/363263/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-12-21",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1167",
@@ -583,8 +639,8 @@
           "https://bgm.tv/subject/366695",
           "https://bgm.tv/subject/366695/ep"
         ],
-        "checked_at": "2026-10-13T21:45:12.448734+08:00",
-        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "checked_at": "2026-10-15T13:34:53.222645+08:00",
+        "attempted_at": "2026-10-15T13:34:53.222645+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -738,10 +794,24 @@
       "story": "暫無簡介",
       "original_name": "うちの師匠はしっぽがない",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 344874,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/344874",
+          "https://bgm.tv/subject/344874/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-12-23",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1181",
@@ -765,8 +835,8 @@
           "https://bgm.tv/subject/338802",
           "https://bgm.tv/subject/338802/ep"
         ],
-        "checked_at": "2026-10-13T21:45:12.448734+08:00",
-        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "checked_at": "2026-10-15T13:34:54.483185+08:00",
+        "attempted_at": "2026-10-15T13:34:54.483185+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -780,10 +850,24 @@
       "story": "暫無簡介",
       "original_name": "アークナイツ 黎明前奏",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 354190,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/354190",
+          "https://bgm.tv/subject/354190/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-12-16",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1170",
@@ -835,10 +919,10 @@
           "https://bgm.tv/subject/366522",
           "https://bgm.tv/subject/366522/ep"
         ],
-        "checked_at": "2026-10-13T21:49:37.616008+08:00",
-        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "checked_at": "2026-10-15T13:34:48.164365+08:00",
+        "attempted_at": "2026-10-15T13:34:48.164365+08:00",
         "end_date": null,
-        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -863,8 +947,8 @@
           "https://bgm.tv/subject/385541",
           "https://bgm.tv/subject/385541/ep"
         ],
-        "checked_at": "2026-10-13T21:45:12.448734+08:00",
-        "attempted_at": "2026-10-13T21:45:12.448734+08:00",
+        "checked_at": "2026-10-15T13:34:55.727610+08:00",
+        "attempted_at": "2026-10-15T13:34:55.727610+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1018,10 +1102,24 @@
       "story": "暫無簡介",
       "original_name": "SPY×FAMILY 2クール目",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 373267,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/373267",
+          "https://bgm.tv/subject/373267/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-12-24",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1155",
@@ -1144,10 +1242,24 @@
       "story": "唔能知！亦唔能想知！",
       "original_name": "ポプテピピック 第二シリーズ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 363600,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/363600",
+          "https://bgm.tv/subject/363600/ep"
+        ],
+        "checked_at": "2026-10-15T13:34:56.977836+08:00",
+        "attempted_at": "2026-10-15T13:34:56.977836+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1153",
@@ -1214,10 +1326,24 @@
       "story": "暫無簡介",
       "original_name": "デュエル・マスターズWIN",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 396443,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 29,
+        "aired_episodes": 29,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/396443",
+          "https://bgm.tv/subject/396443/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2023-03-26",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1187",
@@ -1396,10 +1522,24 @@
       "story": "暫無簡介",
       "original_name": "ハーレムきゃんぷっ！",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 395537,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "stale",
+        "source_urls": [
+          "https://bgm.tv/subject/395537",
+          "https://bgm.tv/subject/395537/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:58.247425+08:00",
+        "end_date": null,
+        "note": "即時來源未能取得可用頁面，保留上次確認的官方資料快照與確認時間。"
+      }
     },
     {
       "bangumi_id": "anime-1165",
@@ -1430,7 +1570,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-14T15:03:24.606724+08:00",
+  "generated_at": "2026-10-15T13:42:21.160463+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202210/",
   "quality": {
     "source_count": 56,

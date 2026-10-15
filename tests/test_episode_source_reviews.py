@@ -17,6 +17,41 @@ from services.episode_source_reviews import reviewed_source, source_reviews
 NOW = datetime.fromisoformat("2026-10-15T09:00:00+08:00")
 
 
+@pytest.mark.parametrize(
+    ("card_id", "subject_id", "other_card_id"),
+    [("anime-273", 303878, "anime-782"), ("anime-782", 529232, "anime-273")],
+)
+def test_same_source_title_keeps_oshiri_series_separate(
+    anime_record_factory, card_id, subject_id, other_card_id
+):
+    from services.episode_metadata import subject_identity_matches
+
+    evidence = [
+        json.loads(line)
+        for line in Path(
+            "docs/episode-followup-2026-10-15/archive-provider-evidence.jsonl"
+        )
+        .read_text()
+        .splitlines()
+    ]
+    subject = next(
+        row["subject"] for row in evidence if row["subject_id"] == subject_id
+    )
+    anime = Anime.model_validate(
+        {
+            **anime_record_factory(273, name="屁屁偵探"),
+            "bangumi_id": card_id,
+            "original_name": "おしりたんてい",
+            "external_ids": {"bangumi": subject_id},
+        }
+    )
+    assert subject_identity_matches(anime, subject)
+    assert not subject_identity_matches(
+        anime.model_copy(update={"bangumi_id": other_card_id}), subject
+    )
+    assert not subject_identity_matches(anime, {**subject, "date": "2018-05-03"})
+
+
 def reviewed_anime(review, factory):
     return Anime.model_validate(
         {

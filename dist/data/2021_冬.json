@@ -107,8 +107,8 @@
           "https://bgm.tv/subject/297168",
           "https://bgm.tv/subject/297168/ep"
         ],
-        "checked_at": "2026-10-13T22:01:46.774789+08:00",
-        "attempted_at": "2026-10-13T22:01:46.774789+08:00",
+        "checked_at": "2026-10-15T13:34:24.704051+08:00",
+        "attempted_at": "2026-10-15T13:34:24.704051+08:00",
         "end_date": "2021-03-29",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -122,10 +122,24 @@
       "story": "暫無簡介",
       "original_name": "真・中華一番！第二期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 297344,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/297344",
+          "https://bgm.tv/subject/297344/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-03-29",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-185",
@@ -192,10 +206,24 @@
       "story": "每個零食能解決一個煩惱，你敢不敢走進這家柑仔店，吃一口，賭上你的未來？一間不起眼的柑仔店，一個笑容詭異的老闆娘，店裡有各種你從未見過的神奇零食，吃下去，就能解決所有人生的煩惱：模型美人魚軟糖、猛獸餅乾、發抖幽靈果凍……神奇柑仔店「錢天堂」滿足你所有的願望！",
       "original_name": "ふしぎ駄菓子屋 銭天堂",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 315772,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "conflict",
+        "source_urls": [
+          "https://bgm.tv/subject/315772",
+          "https://bgm.tv/subject/315772/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:17.006982+08:00",
+        "end_date": null,
+        "note": "正篇集目缺少46–55話，另有無效日期2099；總集數未公告，已播進度待核對。"
+      }
     },
     {
       "bangumi_id": "anime-685",
@@ -234,10 +262,24 @@
       "story": "利姆路離開朱拉．坦派斯特聯邦國的這段期間，大夥兒打打鬧鬧度過和平的每一天。然而和平日子因某個奇妙的情報劃下休止符──全副武裝的人類集團正逼近魔國聯邦。無獨有偶，與之締結邦交的獸王國猶拉瑟尼亞傳來噩耗，說魔王蜜莉姆向他們正式宣戰。一陣混亂中，魔國聯邦跟國主利姆路頓失聯繫。魔國聯邦眾將士流離失所。然而，這只是開端，將喚來絕望與瘋狂。此外，新魔王即將誕生────",
       "original_name": "転生したらスライムだった件 第2期 第1部",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 278031,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/278031",
+          "https://bgm.tv/subject/278031/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-03-30",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-705",
@@ -485,8 +527,8 @@
           "https://bgm.tv/subject/295017",
           "https://bgm.tv/subject/295017/ep"
         ],
-        "checked_at": "2026-10-13T22:01:46.774789+08:00",
-        "attempted_at": "2026-10-13T22:01:46.774789+08:00",
+        "checked_at": "2026-10-15T13:34:25.982428+08:00",
+        "attempted_at": "2026-10-15T13:34:25.982428+08:00",
         "end_date": "2021-03-31",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -556,10 +598,24 @@
       "story": "暫無簡介",
       "original_name": "ビースターズ 2期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 297224,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/297224",
+          "https://bgm.tv/subject/297224/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-03-24",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-714",
@@ -583,8 +639,8 @@
           "https://bgm.tv/subject/328140",
           "https://bgm.tv/subject/328140/ep"
         ],
-        "checked_at": "2026-10-13T22:01:46.774789+08:00",
-        "attempted_at": "2026-10-13T22:01:46.774789+08:00",
+        "checked_at": "2026-10-15T13:34:27.231401+08:00",
+        "attempted_at": "2026-10-15T13:34:27.231401+08:00",
         "end_date": "2021-03-24",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -794,10 +850,24 @@
       "story": "暫無簡介",
       "original_name": "約束のネバーランド 2期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 279202,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 11,
+        "aired_episodes": 11,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/279202",
+          "https://bgm.tv/subject/279202/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-03-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-111",
@@ -849,8 +919,8 @@
           "https://bgm.tv/subject/366037",
           "https://bgm.tv/subject/366037/ep"
         ],
-        "checked_at": "2026-10-13T22:01:46.774789+08:00",
-        "attempted_at": "2026-10-13T22:01:46.774789+08:00",
+        "checked_at": "2026-10-15T13:34:28.504770+08:00",
+        "attempted_at": "2026-10-15T13:34:28.504770+08:00",
         "end_date": "2021-12-26",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1381,8 +1451,8 @@
           "https://bgm.tv/subject/320857",
           "https://bgm.tv/subject/320857/ep"
         ],
-        "checked_at": "2026-10-13T22:01:46.774789+08:00",
-        "attempted_at": "2026-10-13T22:01:46.774789+08:00",
+        "checked_at": "2026-10-15T13:34:29.773975+08:00",
+        "attempted_at": "2026-10-15T13:34:29.773975+08:00",
         "end_date": "2022-01-30",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1396,10 +1466,24 @@
       "story": "暫無簡介",
       "original_name": "八十亀ちゃんかんさつにっき 八十亀ちゃんかんさつにっき 3さつめ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 315804,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/315804",
+          "https://bgm.tv/subject/315804/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-03-28",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-704",
@@ -1550,10 +1634,24 @@
       "story": "暫無簡介",
       "original_name": "じみへんっ!!～地味子を変えちゃう純異性交遊～",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 319894,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/319894",
+          "https://bgm.tv/subject/319894/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-02-21",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-148",
@@ -1640,7 +1738,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-14T15:03:24.584183+08:00",
+  "generated_at": "2026-10-15T13:42:21.122804+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202101/",
   "quality": {
     "source_count": 62,

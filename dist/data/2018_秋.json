@@ -318,10 +318,24 @@
       "story": "暫無簡介",
       "original_name": "東京喰種：re 第2期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 244878,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/244878",
+          "https://bgm.tv/subject/244878/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2018-12-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-407",
@@ -388,10 +402,24 @@
       "story": "暫無簡介",
       "original_name": "CONCEPTION 俺の子供を産んでくれ！",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 245531,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/245531",
+          "https://bgm.tv/subject/245531/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2018-12-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-418",
@@ -429,8 +457,8 @@
           "https://bgm.tv/subject/237834",
           "https://bgm.tv/subject/237834/ep"
         ],
-        "checked_at": "2026-10-13T22:17:43.824667+08:00",
-        "attempted_at": "2026-10-13T22:17:43.824667+08:00",
+        "checked_at": "2026-10-15T13:33:11.739934+08:00",
+        "attempted_at": "2026-10-15T13:33:11.739934+08:00",
         "end_date": "2018-12-25",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -472,10 +500,24 @@
       "story": "暫無簡介",
       "original_name": "ほら、耳がみえてるよ！-喂，看见耳朵啦-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 249243,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/249243",
+          "https://bgm.tv/subject/249243/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2018-11-03",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-380",
@@ -514,10 +556,24 @@
       "story": "暫無簡介",
       "original_name": "イングレス THE ANIMATION",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 239910,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 11,
+        "aired_episodes": 11,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/239910",
+          "https://bgm.tv/subject/239910/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2018-12-26",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-396",
@@ -1073,8 +1129,8 @@
           "https://bgm.tv/subject/221190",
           "https://bgm.tv/subject/221190/ep"
         ],
-        "checked_at": "2026-10-13T22:13:50.721068+08:00",
-        "attempted_at": "2026-10-13T22:13:50.721068+08:00",
+        "checked_at": "2026-10-15T13:33:28.385829+08:00",
+        "attempted_at": "2026-10-15T13:33:28.385829+08:00",
         "end_date": "2018-12-28",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1241,8 +1297,8 @@
           "https://bgm.tv/subject/262384",
           "https://bgm.tv/subject/262384/ep"
         ],
-        "checked_at": "2026-10-13T22:13:50.721068+08:00",
-        "attempted_at": "2026-10-13T22:13:50.721068+08:00",
+        "checked_at": "2026-10-15T13:33:29.633697+08:00",
+        "attempted_at": "2026-10-15T13:33:29.633697+08:00",
         "end_date": "2019-03-30",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1564,10 +1620,24 @@
       "story": "暫無簡介",
       "original_name": "DOUBLE DECKER! ダグ＆キリル",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 234761,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/234761",
+          "https://bgm.tv/subject/234761/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2018-12-23",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-387",
@@ -1619,8 +1689,8 @@
           "https://bgm.tv/subject/228378",
           "https://bgm.tv/subject/228378/ep"
         ],
-        "checked_at": "2026-10-13T22:13:50.721068+08:00",
-        "attempted_at": "2026-10-13T22:13:50.721068+08:00",
+        "checked_at": "2026-10-15T13:33:30.896581+08:00",
+        "attempted_at": "2026-10-15T13:33:30.896581+08:00",
         "end_date": "2019-01-20",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1746,13 +1816,27 @@
       "story": "……（嘆氣）",
       "original_name": "終電後､カプセルホテルで､上司に微熱伝わる夜｡",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 258081,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "stale",
+        "source_urls": [
+          "https://bgm.tv/subject/258081",
+          "https://bgm.tv/subject/258081/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:33:32.156665+08:00",
+        "end_date": "2018-12-23",
+        "note": "即時來源未能取得可用頁面，保留上次確認的官方資料快照與確認時間。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T16:26:49.594337+08:00",
+  "generated_at": "2026-10-15T13:42:21.053401+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201810/",
   "quality": {
     "source_count": 66,

@@ -10,10 +10,24 @@
       "story": "暫無簡介",
       "original_name": "マーベル フューチャー・アベンジャーズ シーズン2",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 263756,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/263756",
+          "https://bgm.tv/subject/263756/ep"
+        ],
+        "checked_at": "2026-10-15T13:33:06.581409+08:00",
+        "attempted_at": "2026-10-15T13:33:06.581409+08:00",
+        "end_date": "2018-10-22",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-472",
@@ -24,10 +38,24 @@
       "story": "暫無簡介",
       "original_name": "兄に付ける薬はない！2-快把我哥帯走2-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 219143,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/219143",
+          "https://bgm.tv/subject/219143/ep"
+        ],
+        "checked_at": "2026-10-15T13:33:07.879088+08:00",
+        "attempted_at": "2026-10-15T13:33:07.879088+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-489",
@@ -79,8 +107,8 @@
           "https://bgm.tv/subject/231722",
           "https://bgm.tv/subject/231722/ep"
         ],
-        "checked_at": "2026-10-13T22:17:43.824667+08:00",
-        "attempted_at": "2026-10-13T22:17:43.824667+08:00",
+        "checked_at": "2026-10-15T13:33:09.195538+08:00",
+        "attempted_at": "2026-10-15T13:33:09.195538+08:00",
         "end_date": "2018-09-17",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -94,10 +122,24 @@
       "story": "暫無簡介",
       "original_name": "悪偶 -天才人形-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 242737,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/242737",
+          "https://bgm.tv/subject/242737/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2018-09-21",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-438",
@@ -149,8 +191,8 @@
           "https://bgm.tv/subject/226507",
           "https://bgm.tv/subject/226507/ep"
         ],
-        "checked_at": "2026-10-13T22:17:43.824667+08:00",
-        "attempted_at": "2026-10-13T22:17:43.824667+08:00",
+        "checked_at": "2026-10-15T13:33:10.471942+08:00",
+        "attempted_at": "2026-10-15T13:33:10.471942+08:00",
         "end_date": "2018-09-24",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -248,10 +290,24 @@
       "story": "暫無簡介",
       "original_name": "アイドルマスター シンデレラガールズ劇場 3rd SEASON",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 238087,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/238087",
+          "https://bgm.tv/subject/238087/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2018-09-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-429",
@@ -346,10 +402,24 @@
       "story": "山本健太郎、立花亮與杉原和哉這三個黑道組織的流氓，因為犯了錯，而被組織的老大下令轉性變成女性偶像歌手替老闆賺錢。原先三人想拒絕，但卻因為不想死而接受了這個條件。但沒想到他們成為偶像歌手之後，居然真的走紅，有了許多粉絲！可是心中還是鐵漢子的他們，每天都非常的苦惱…",
       "original_name": "Back Street Girls",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 231278,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 10,
+        "aired_episodes": 10,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/231278",
+          "https://bgm.tv/subject/231278/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2018-09-04",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-468",
@@ -401,8 +471,8 @@
           "https://bgm.tv/subject/237834",
           "https://bgm.tv/subject/237834/ep"
         ],
-        "checked_at": "2026-10-13T22:17:43.824667+08:00",
-        "attempted_at": "2026-10-13T22:17:43.824667+08:00",
+        "checked_at": "2026-10-15T13:33:11.739934+08:00",
+        "attempted_at": "2026-10-15T13:33:11.739934+08:00",
         "end_date": "2018-12-25",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -416,10 +486,24 @@
       "story": "2031年，<翔龍危機>發生當日，劉雷昂身處事故的中心地點。量子反應堆——為替代日漸枯竭的環境資源而研究開發的下一代能源裝置突然失控，在釋放了大量未知能量之下發生了大爆炸。世界環境為之激變。人類以外的生物、機械等出現了獨特的進化，誕生了特異進化生物“B.R.A.I”。就是它們，一步步將人類逼到了滅絕的邊緣。<翔龍危機>過後七年，雷昂住在絕對防衛都市新翔龍市外圍的荒野，在與定下<家族契約>的劉可依一起生活的同時，為了對抗BRAI而進行著獨立的研究。散漫的雷昂和愛操心的可依相依為命，平靜的日子時常讓人忘卻曾經的殘酷。然而，威脅正在切實地逼近……",
       "original_name": "重神機パンドーラ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 186180,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/186180",
+          "https://bgm.tv/subject/186180/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2018-09-19",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-444",
@@ -471,8 +555,8 @@
           "https://bgm.tv/subject/129807",
           "https://bgm.tv/subject/129807/ep"
         ],
-        "checked_at": "2026-10-13T22:15:29.543284+08:00",
-        "attempted_at": "2026-10-13T22:15:29.543284+08:00",
+        "checked_at": "2026-10-15T13:33:13.019857+08:00",
+        "attempted_at": "2026-10-15T13:33:13.019857+08:00",
         "end_date": "2018-09-26",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1046,10 +1130,24 @@
       "story": "暫無簡介",
       "original_name": "闇芝居 六期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 250117,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/250117",
+          "https://bgm.tv/subject/250117/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2018-09-28",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-462",
@@ -1073,8 +1171,8 @@
           "https://bgm.tv/subject/238988",
           "https://bgm.tv/subject/238988/ep"
         ],
-        "checked_at": "2026-10-13T22:17:43.824667+08:00",
-        "attempted_at": "2026-10-13T22:17:43.824667+08:00",
+        "checked_at": "2026-10-15T13:33:14.310836+08:00",
+        "attempted_at": "2026-10-15T13:33:14.310836+08:00",
         "end_date": "2019-06-29",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1088,10 +1186,24 @@
       "story": "暫無簡介",
       "original_name": "新幹線変形ロボ シンカリオン THE ANIMATION",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 227240,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 76,
+        "aired_episodes": 76,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/227240",
+          "https://bgm.tv/subject/227240/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-06-29",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-465",
@@ -1199,8 +1311,8 @@
           "https://bgm.tv/subject/235612",
           "https://bgm.tv/subject/235612/ep"
         ],
-        "checked_at": "2026-10-13T22:17:43.824667+08:00",
-        "attempted_at": "2026-10-13T22:17:43.824667+08:00",
+        "checked_at": "2026-10-15T13:33:15.618813+08:00",
+        "attempted_at": "2026-10-15T13:33:15.618813+08:00",
         "end_date": "2018-09-29",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1255,8 +1367,8 @@
           "https://bgm.tv/subject/258390",
           "https://bgm.tv/subject/258390/ep"
         ],
-        "checked_at": "2026-10-13T22:17:43.824667+08:00",
-        "attempted_at": "2026-10-13T22:17:43.824667+08:00",
+        "checked_at": "2026-10-15T13:33:16.920124+08:00",
+        "attempted_at": "2026-10-15T13:33:16.920124+08:00",
         "end_date": "2019-01-06",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1466,10 +1578,24 @@
       "story": "暫無簡介",
       "original_name": "じょしおちっ！",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 248206,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 9,
+        "aired_episodes": 9,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/248206",
+          "https://bgm.tv/subject/248206/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2018-08-26",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-461",
@@ -1480,13 +1606,27 @@
       "story": "暫無簡介",
       "original_name": "銀魂. 銀ノ魂篇 後半戦",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 240811,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 14,
+        "aired_episodes": 14,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/240811",
+          "https://bgm.tv/subject/240811/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2018-10-07",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T15:03:24.555292+08:00",
+  "generated_at": "2026-10-15T13:42:21.036970+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201807/",
   "quality": {
     "source_count": 58,

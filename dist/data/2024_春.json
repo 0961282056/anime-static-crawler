@@ -807,8 +807,8 @@
           "https://bgm.tv/subject/471926",
           "https://bgm.tv/subject/471926/ep"
         ],
-        "checked_at": "2026-10-13T21:07:53.088556+08:00",
-        "attempted_at": "2026-10-13T21:07:53.088556+08:00",
+        "checked_at": "2026-10-15T13:35:41.700852+08:00",
+        "attempted_at": "2026-10-15T13:35:41.700852+08:00",
         "end_date": "2024-06-21",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -990,10 +990,24 @@
       "story": "暫無簡介",
       "original_name": "SHIBUYA♡HACHI",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 480437,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/480437",
+          "https://bgm.tv/subject/480437/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2024-06-29",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1581",
@@ -1004,10 +1018,24 @@
       "story": "暫無簡介",
       "original_name": "クマーバ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 476412,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/476412",
+          "https://bgm.tv/subject/476412/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2024-06-22",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1573",
@@ -1046,10 +1074,24 @@
       "story": "時值笨久他們就讀雄英的第二年春天。英雄們對死柄木等一夥敵人發起掃蕩作戰，戰鬥之激烈，可謂是＂全面戰爭＂。這場雙方都付出極大代價的全面戰爭看似告一段落，但社會對於英雄的信賴卻產生動搖，漸行荒廢。身為ALL FOR ONE（人人為我）之目標的ONE FOR ALL繼承者的使命感，以及那不想讓周遭人士置於險境之中的想法，笨久決定離開雄英獨自戰鬥。對於因焦躁而疲憊不堪的他伸出援手的，是那些1年A班的同班同學們。自己並非獨自一人，雄英的英雄學生們下定決心一同去面對。而死柄木與ALL FOR ONE等敵人，為了殲滅英雄安排了下一項計畫。＂最終決戰＂的時刻將近。以及從美國飛來的另一位英雄…。究竟笨久一行人，有辦法奪回大家那充滿笑容的日常嗎…。",
       "original_name": "僕のヒーローアカデミア 第7期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 425587,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 21,
+        "aired_episodes": 21,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/425587",
+          "https://bgm.tv/subject/425587/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2024-10-12",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1556",
@@ -1353,8 +1395,8 @@
           "https://bgm.tv/subject/468758",
           "https://bgm.tv/subject/468758/ep"
         ],
-        "checked_at": "2026-10-13T21:07:53.088556+08:00",
-        "attempted_at": "2026-10-13T21:07:53.088556+08:00",
+        "checked_at": "2026-10-15T13:35:42.960911+08:00",
+        "attempted_at": "2026-10-15T13:35:42.960911+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1480,10 +1522,24 @@
       "story": "暫無簡介",
       "original_name": "鬼滅の刃 柱稽古編",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 441939,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/441939",
+          "https://bgm.tv/subject/441939/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2024-06-30",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1549",
@@ -1654,7 +1710,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-14T16:26:49.641657+08:00",
+  "generated_at": "2026-10-15T13:42:21.208520+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202404/",
   "quality": {
     "source_count": 61,

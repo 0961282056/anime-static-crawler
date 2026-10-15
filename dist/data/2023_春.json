@@ -695,8 +695,8 @@
           "https://bgm.tv/subject/379639",
           "https://bgm.tv/subject/379639/ep"
         ],
-        "checked_at": "2026-10-13T21:12:32.150582+08:00",
-        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
+        "checked_at": "2026-10-15T13:35:12.414432+08:00",
+        "attempted_at": "2026-10-15T13:35:12.414432+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -947,8 +947,8 @@
           "https://bgm.tv/subject/422505",
           "https://bgm.tv/subject/422505/ep"
         ],
-        "checked_at": "2026-10-13T21:12:32.150582+08:00",
-        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
+        "checked_at": "2026-10-15T13:35:13.669757+08:00",
+        "attempted_at": "2026-10-15T13:35:13.669757+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1143,8 +1143,8 @@
           "https://bgm.tv/subject/368289",
           "https://bgm.tv/subject/368289/ep"
         ],
-        "checked_at": "2026-10-13T21:12:32.150582+08:00",
-        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
+        "checked_at": "2026-10-15T13:35:14.930333+08:00",
+        "attempted_at": "2026-10-15T13:35:14.930333+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1270,10 +1270,24 @@
       "story": "玩具廠商TOMY的《冒險大陸 Ania王國》系列玩具的動畫?版。",
       "original_name": "アニアキングダム",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 426274,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 39,
+        "aired_episodes": 39,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/426274",
+          "https://bgm.tv/subject/426274/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2023-12-24",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1259",
@@ -1297,8 +1311,8 @@
           "https://bgm.tv/subject/403238",
           "https://bgm.tv/subject/403238/ep"
         ],
-        "checked_at": "2026-10-13T21:12:32.150582+08:00",
-        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
+        "checked_at": "2026-10-15T13:35:16.192290+08:00",
+        "attempted_at": "2026-10-15T13:35:16.192290+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1353,8 +1367,8 @@
           "https://bgm.tv/subject/408144",
           "https://bgm.tv/subject/408144/ep"
         ],
-        "checked_at": "2026-10-13T21:12:32.150582+08:00",
-        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
+        "checked_at": "2026-10-15T13:35:17.454481+08:00",
+        "attempted_at": "2026-10-15T13:35:17.454481+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1500,7 +1514,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-14T16:26:49.619355+08:00",
+  "generated_at": "2026-10-15T13:42:21.180111+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202304/",
   "quality": {
     "source_count": 54,

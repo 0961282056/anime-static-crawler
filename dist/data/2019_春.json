@@ -23,8 +23,8 @@
           "https://bgm.tv/subject/269906",
           "https://bgm.tv/subject/269906/ep"
         ],
-        "checked_at": "2026-10-13T21:14:40.916731+08:00",
-        "attempted_at": "2026-10-13T21:14:40.916731+08:00",
+        "checked_at": "2026-10-15T13:33:40.231135+08:00",
+        "attempted_at": "2026-10-15T13:33:40.231135+08:00",
         "end_date": "2020-03-23",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -150,10 +150,24 @@
       "story": "暫無簡介",
       "original_name": "ロビハチ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 267250,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/267250",
+          "https://bgm.tv/subject/267250/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-06-24",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-285",
@@ -527,8 +541,8 @@
           "https://bgm.tv/subject/306161",
           "https://bgm.tv/subject/306161/ep"
         ],
-        "checked_at": "2026-10-13T22:11:46.788880+08:00",
-        "attempted_at": "2026-10-13T22:11:46.788880+08:00",
+        "checked_at": "2026-10-15T13:33:41.485378+08:00",
+        "attempted_at": "2026-10-15T13:33:41.485378+08:00",
         "end_date": "2020-03-26",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -583,8 +597,8 @@
           "https://bgm.tv/subject/279475",
           "https://bgm.tv/subject/279475/ep"
         ],
-        "checked_at": "2026-10-13T22:11:46.788880+08:00",
-        "attempted_at": "2026-10-13T22:11:46.788880+08:00",
+        "checked_at": "2026-10-15T13:33:42.736808+08:00",
+        "attempted_at": "2026-10-15T13:33:42.736808+08:00",
         "end_date": "2019-09-19",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -919,8 +933,8 @@
           "https://bgm.tv/subject/285664",
           "https://bgm.tv/subject/285664/ep"
         ],
-        "checked_at": "2026-10-13T22:11:46.788880+08:00",
-        "attempted_at": "2026-10-13T22:11:46.788880+08:00",
+        "checked_at": "2026-10-15T13:33:43.986421+08:00",
+        "attempted_at": "2026-10-15T13:33:43.986421+08:00",
         "end_date": "2019-08-10",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -947,8 +961,8 @@
           "https://bgm.tv/subject/274549",
           "https://bgm.tv/subject/274549/ep"
         ],
-        "checked_at": "2026-10-13T21:14:40.916731+08:00",
-        "attempted_at": "2026-10-13T21:14:40.916731+08:00",
+        "checked_at": "2026-10-15T13:33:45.248924+08:00",
+        "attempted_at": "2026-10-15T13:33:45.248924+08:00",
         "end_date": "2020-03-28",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1326,10 +1340,24 @@
       "story": "暫無簡介",
       "original_name": "洗い屋さん！～俺とアイツが女湯で！？～",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 275610,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/275610",
+          "https://bgm.tv/subject/275610/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2019-05-26",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-293",
@@ -1353,8 +1381,8 @@
           "https://bgm.tv/subject/262111",
           "https://bgm.tv/subject/262111/ep"
         ],
-        "checked_at": "2026-10-13T21:14:40.916731+08:00",
-        "attempted_at": "2026-10-13T21:14:40.916731+08:00",
+        "checked_at": "2026-10-15T13:33:46.505392+08:00",
+        "attempted_at": "2026-10-15T13:33:46.505392+08:00",
         "end_date": "2019-06-23",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1388,7 +1416,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-14T16:26:49.608708+08:00",
+  "generated_at": "2026-10-15T13:42:21.071467+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201904/",
   "quality": {
     "source_count": 51,

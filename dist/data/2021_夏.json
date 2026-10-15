@@ -122,10 +122,24 @@
       "story": "暫無簡介",
       "original_name": "転生したらスライムだった件 第2期 第2部",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 302523,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/302523",
+          "https://bgm.tv/subject/302523/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-09-22",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-775",
@@ -261,8 +275,8 @@
           "https://bgm.tv/subject/274234",
           "https://bgm.tv/subject/274234/ep"
         ],
-        "checked_at": "2026-10-13T21:59:59.187792+08:00",
-        "attempted_at": "2026-10-13T21:59:59.187792+08:00",
+        "checked_at": "2026-10-15T13:34:31.050497+08:00",
+        "attempted_at": "2026-10-15T13:34:31.050497+08:00",
         "end_date": "2021-09-22",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -332,10 +346,24 @@
       "story": "新曆 2020 年，人類遭受自平流層降下的異形生命體「怪異」的威脅。為了討伐怪異，人類集結了擁有將腦內視覺影像實現「超腦力」的人選，組成「怪異討伐軍」。剛入隊的結人皇與重蘭德爾將面對不可違抗的命運，探索世界的真相。",
       "original_name": "スカーレットネクサス",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 331031,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/331031",
+          "https://bgm.tv/subject/331031/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-12-23",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-792",
@@ -570,10 +598,24 @@
       "story": "主角「對馬大哥」，本是一隻流浪貓，面對顛沛流離的生活，使得他很沒安全感，所以逮到機會能吃就會盡量吃飽，某天，忽然出現在爺爺家的院子，受到爺爺的照顧，也就因此留下來了。與原本就住在爺爺家「婧大姐」，以及陸續加入這個家庭行列的「茶茶」、「修」等貓，打打鬧鬧、相親相愛、互相爭寵的和平相處。",
       "original_name": "俺、つしま",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 329202,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/329202",
+          "https://bgm.tv/subject/329202/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-09-17",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-770",
@@ -640,10 +682,24 @@
       "story": "A班 vs B班的超激烈共同戰鬥訓練！B班的「個性」確實也有所發展，還有新的必殺技，超厲害的。好啊！我們也要慎重一點…唔，喂，爆豪！等等啊！啊──真是的！真拿他沒法！“Plus Ultra”!!",
       "original_name": "僕のヒーローアカデミア 第5期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 303399,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/303399",
+          "https://bgm.tv/subject/303399/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-09-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-729",
@@ -766,10 +822,24 @@
       "story": "暫無簡介",
       "original_name": "マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 302875,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/302875",
+          "https://bgm.tv/subject/302875/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-09-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-864",
@@ -892,10 +962,24 @@
       "story": "暫無簡介",
       "original_name": "リメイン",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 329909,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/329909",
+          "https://bgm.tv/subject/329909/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-10-02",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-868",
@@ -934,10 +1018,24 @@
       "story": "主角‧武道做什麼事情都不順，又住在破舊老公寓裡，從電視上得知國中時期的前女友‧日向無端捲入幫派火拼而身亡。某天他在月台等車，居然跌落鐵軌，正他以為自己死定了，回神之後卻發現自己回到12年前的國中時期。後來又遇上了日向的弟弟‧直人，告訴他12年後發生的事實，要求他要保護姐姐，雙方握手之後他又再次回到現代…。",
       "original_name": "東京卍リベンジャーズ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 308936,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/308936",
+          "https://bgm.tv/subject/308936/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-09-18",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-716",
@@ -961,8 +1059,8 @@
           "https://bgm.tv/subject/320857",
           "https://bgm.tv/subject/320857/ep"
         ],
-        "checked_at": "2026-10-13T22:01:46.774789+08:00",
-        "attempted_at": "2026-10-13T22:01:46.774789+08:00",
+        "checked_at": "2026-10-15T13:34:29.773975+08:00",
+        "attempted_at": "2026-10-15T13:34:29.773975+08:00",
         "end_date": "2022-01-30",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1116,10 +1214,24 @@
       "story": "暫無簡介",
       "original_name": "指先から本気の熱情2-恋人は消防士",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 332655,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/332655",
+          "https://bgm.tv/subject/332655/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-08-22",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-972",
@@ -1130,13 +1242,27 @@
       "story": "暫無簡介",
       "original_name": "闇芝居 九期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 338201,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/338201",
+          "https://bgm.tv/subject/338201/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-10-03",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T15:03:24.587493+08:00",
+  "generated_at": "2026-10-15T13:42:21.127936+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202107/",
   "quality": {
     "source_count": 45,

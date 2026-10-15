@@ -66,10 +66,24 @@
       "story": "暫無簡介",
       "original_name": "白猫プロジェクト ZERO CHRONICLE",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 269436,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/269436",
+          "https://bgm.tv/subject/269436/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-06-22",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-87",
@@ -93,8 +107,8 @@
           "https://bgm.tv/subject/272188",
           "https://bgm.tv/subject/272188/ep"
         ],
-        "checked_at": "2026-10-13T22:05:42.968973+08:00",
-        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "checked_at": "2026-10-15T13:34:05.584757+08:00",
+        "attempted_at": "2026-10-15T13:34:05.584757+08:00",
         "end_date": "2020-06-22",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -149,8 +163,8 @@
           "https://bgm.tv/subject/303433",
           "https://bgm.tv/subject/303433/ep"
         ],
-        "checked_at": "2026-10-13T22:05:42.968973+08:00",
-        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "checked_at": "2026-10-15T13:34:00.491925+08:00",
+        "attempted_at": "2026-10-15T13:34:00.491925+08:00",
         "end_date": "2021-03-15",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -220,10 +234,24 @@
       "story": "暫無簡介",
       "original_name": "あの世のすべては、おばけぐみ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 301809,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/301809",
+          "https://bgm.tv/subject/301809/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-07-27",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-73",
@@ -331,8 +359,8 @@
           "https://bgm.tv/subject/302365",
           "https://bgm.tv/subject/302365/ep"
         ],
-        "checked_at": "2026-10-13T22:05:42.968973+08:00",
-        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "checked_at": "2026-10-15T13:34:06.840428+08:00",
+        "attempted_at": "2026-10-15T13:34:06.840428+08:00",
         "end_date": "2020-09-09",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -387,8 +415,8 @@
           "https://bgm.tv/subject/295683",
           "https://bgm.tv/subject/295683/ep"
         ],
-        "checked_at": "2026-10-13T22:05:42.968973+08:00",
-        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "checked_at": "2026-10-15T13:34:08.119755+08:00",
+        "attempted_at": "2026-10-15T13:34:08.119755+08:00",
         "end_date": "2020-07-01",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -499,8 +527,8 @@
           "https://bgm.tv/subject/301479",
           "https://bgm.tv/subject/301479/ep"
         ],
-        "checked_at": "2026-10-13T22:05:42.968973+08:00",
-        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "checked_at": "2026-10-15T13:34:09.382818+08:00",
+        "attempted_at": "2026-10-15T13:34:09.382818+08:00",
         "end_date": "2022-03-24",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -527,8 +555,8 @@
           "https://bgm.tv/subject/302137",
           "https://bgm.tv/subject/302137/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-15T13:33:47.768137+08:00",
+        "attempted_at": "2026-10-15T13:33:47.768137+08:00",
         "end_date": "2020-10-01",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -555,8 +583,8 @@
           "https://bgm.tv/subject/307749",
           "https://bgm.tv/subject/307749/ep"
         ],
-        "checked_at": "2026-10-13T22:05:42.968973+08:00",
-        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "checked_at": "2026-10-15T13:34:10.673412+08:00",
+        "attempted_at": "2026-10-15T13:34:10.673412+08:00",
         "end_date": "2020-09-24",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -654,10 +682,24 @@
       "story": "暫無簡介",
       "original_name": "あはれ！名作くん シーズン5",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 301700,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 37,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/301700",
+          "https://bgm.tv/subject/301700/ep"
+        ],
+        "checked_at": "2026-10-15T13:34:11.924651+08:00",
+        "attempted_at": "2026-10-15T13:34:11.924651+08:00",
+        "end_date": "2021-03-05",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-74",
@@ -808,10 +850,24 @@
       "story": "暫無簡介",
       "original_name": "アルゴナビス from BanG Dream!",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 294202,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/294202",
+          "https://bgm.tv/subject/294202/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-07-03",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-77",
@@ -1158,10 +1214,24 @@
       "story": "梅茵終於成為神殿的「青衣見習巫女」，如同之前談好的條件，神殿破例為身為平民的她準備只有貴族才能穿的青衣，梅茵則提供魔力來維護魔導具，協助處理神殿事務，並被允許進入圖書室研讀聖典。然而，梅茵空有魔力和財力，卻沒有對等的身分，原本在神殿便備受歧視；加上她不熟悉貴族社會的潛規則，從遣詞用字到舉止禮儀都必須重新學起。此外，神殿指派給梅茵的三位侍從都不願聽命於她，讓梅茵一個頭兩個大。就在梅茵忙著適應新生活之際，她無意間目睹孤兒院的孩子餓得骨瘦如柴的慘況。身為青衣見習巫女，梅茵知道她不該插手干涉，和孤兒院扯上關係；但另一方面，她卻無法對那些孩子見死不救。陷入兩難的梅茵，到底該怎麼辦呢？",
       "original_name": "本好きの下剋上 第2部",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 295884,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/295884",
+          "https://bgm.tv/subject/295884/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-06-20",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-119",
@@ -1269,8 +1339,8 @@
           "https://bgm.tv/subject/303431",
           "https://bgm.tv/subject/303431/ep"
         ],
-        "checked_at": "2026-10-13T22:05:42.968973+08:00",
-        "attempted_at": "2026-10-13T22:05:42.968973+08:00",
+        "checked_at": "2026-10-15T13:34:13.177288+08:00",
+        "attempted_at": "2026-10-15T13:34:13.177288+08:00",
         "end_date": "2021-03-28",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1340,10 +1410,24 @@
       "story": "暫無簡介",
       "original_name": "まじめにふまじめ かいけつゾロリ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 285762,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/285762",
+          "https://bgm.tv/subject/285762/ep"
+        ],
+        "checked_at": "2026-10-15T13:34:14.443642+08:00",
+        "attempted_at": "2026-10-15T13:34:14.443642+08:00",
+        "end_date": "2020-11-08",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-84",
@@ -1382,10 +1466,24 @@
       "story": "暫無簡介",
       "original_name": "Reバース",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 295615,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 51,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/295615",
+          "https://bgm.tv/subject/295615/ep"
+        ],
+        "checked_at": "2026-10-15T13:33:57.944086+08:00",
+        "attempted_at": "2026-10-15T13:33:57.944086+08:00",
+        "end_date": "2021-06-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-96",
@@ -1508,10 +1606,24 @@
       "story": "暫無簡介",
       "original_name": "俺の指で乱れろ。～閉店後二人きりのサロンで…～",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 300865,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/300865",
+          "https://bgm.tv/subject/300865/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2020-05-24",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-127",
@@ -1522,13 +1634,27 @@
       "story": "暫無簡介",
       "original_name": "巨神と氷華の城",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 303553,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 4,
+        "aired_episodes": 4,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/303553",
+          "https://bgm.tv/subject/303553/ep"
+        ],
+        "checked_at": "2026-10-15T13:39:00.712399+08:00",
+        "attempted_at": "2026-10-15T13:39:00.712399+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T15:03:24.576884+08:00",
+  "generated_at": "2026-10-15T13:42:21.109580+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202004/",
   "quality": {
     "source_count": 59,

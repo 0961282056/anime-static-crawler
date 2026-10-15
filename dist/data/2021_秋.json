@@ -206,10 +206,24 @@
       "story": "暫無簡介",
       "original_name": "ディープインサニティ ザ・ロストチャイルド",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 339969,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/339969",
+          "https://bgm.tv/subject/339969/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-12-28",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-971",
@@ -640,10 +654,24 @@
       "story": "「不錯耶，讓我成為你的女人吧！」圖謀征服異世界，最強情侶檔登場!?",
       "original_name": "魔王イブロギアに身を捧げよ",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 328356,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 9,
+        "aired_episodes": 9,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/328356",
+          "https://bgm.tv/subject/328356/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-11-26",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-981",
@@ -934,10 +962,24 @@
       "story": "暫無簡介",
       "original_name": "ビルディバイド -#000000（コードブラック）-",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 333623,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/333623",
+          "https://bgm.tv/subject/333623/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-12-25",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-996",
@@ -1340,10 +1382,24 @@
       "story": "暫無簡介",
       "original_name": "しょうたいむ！～歌のお姉さんだってしたい",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 345771,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/345771",
+          "https://bgm.tv/subject/345771/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2021-11-21",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-780",
@@ -1382,13 +1438,27 @@
       "story": "暫無簡介",
       "original_name": "マギアレコード 魔法少女まどか☆マギカ外伝 Final SEASON‐浅き夢の暁‐",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 339998,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 4,
+        "aired_episodes": 4,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/339998",
+          "https://bgm.tv/subject/339998/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-04-03",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T15:03:24.594538+08:00",
+  "generated_at": "2026-10-15T13:34:12.981777+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202110/",
   "quality": {
     "source_count": 52,

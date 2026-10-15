@@ -1,0 +1,1448 @@
+[
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-589",
+    "subject_id": 229872,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "gdメン gdgd men’s party",
+    "first_air_date": "2018-01-08"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-605",
+    "subject_id": 212609,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "おそ松さん 第2期",
+    "first_air_date": "2017-10-02"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-622",
+    "subject_id": 202880,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "ブラッククローバー",
+    "first_air_date": "2017-10-03"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-592",
+    "subject_id": 223407,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "怪獣娘～ウルトラ怪獣擬人化計画～ 第2期",
+    "first_air_date": "2018-01-09"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-585",
+    "subject_id": 206925,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "一人之下 the outcast 2",
+    "first_air_date": "2017-10-27"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-645",
+    "subject_id": 222227,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "俺たちゃ妖怪人間",
+    "first_air_date": "2017-10-04"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-629",
+    "subject_id": 222425,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "牙狼〈GARO〉-VANISHING LINE-",
+    "first_air_date": "2017-10-06"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-591",
+    "subject_id": 227240,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "新幹線変形ロボ シンカリオン",
+    "first_air_date": "2018-01-06"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-642",
+    "subject_id": 212009,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "タイムボカン 逆襲の三悪人",
+    "first_air_date": "2017-10-07"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-624",
+    "subject_id": 212315,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "クラシカロイド 第2シリーズ",
+    "first_air_date": "2017-10-07"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-598",
+    "subject_id": 211567,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "3月のライオン 第2シリーズ",
+    "first_air_date": "2017-10-14"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-597",
+    "subject_id": 210864,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "魔法使いの嫁",
+    "first_air_date": "2017-10-07"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-646",
+    "subject_id": 221018,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "カードファイト!! ヴァンガードG Z",
+    "first_air_date": "2017-10-08"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-593",
+    "subject_id": 230517,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "25歳の女子高生",
+    "first_air_date": "2018-01-07"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-474",
+    "subject_id": 263756,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "マーベル フューチャー・アベンジャーズ2",
+    "first_air_date": "2018-07-30"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-472",
+    "subject_id": 219143,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "快把我哥带走2",
+    "first_air_date": "2018-07-02"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-473",
+    "subject_id": 242737,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "天才玩偶",
+    "first_air_date": "2018-07-06"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-466",
+    "subject_id": 238087,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "アイドルマスター シンデレラガールズ劇場 第3期",
+    "first_air_date": "2018-07-03"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-427",
+    "subject_id": 231278,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "Back Street Girls -ゴクドルズ-",
+    "first_air_date": "2018-07-03"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-519",
+    "subject_id": 186180,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "重神機パンドーラ",
+    "first_air_date": "2018-03-28"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-470",
+    "subject_id": 250117,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "闇芝居 第6期",
+    "first_air_date": "2018-07-06"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-591",
+    "subject_id": 227240,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "新幹線変形ロボ シンカリオン",
+    "first_air_date": "2018-01-06"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-475",
+    "subject_id": 248206,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "じょしおちっ！～2階から女の子が…降ってきた！？～",
+    "first_air_date": "2018-07-01"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-461",
+    "subject_id": 240811,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "銀魂. 銀ノ魂篇 第2クール",
+    "first_air_date": "2018-07-08"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-487",
+    "subject_id": 206700,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "實驗品家庭",
+    "first_air_date": "2018-04-09"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-622",
+    "subject_id": 202880,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "ブラッククローバー",
+    "first_air_date": "2017-10-03"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-516",
+    "subject_id": 143694,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "銀河英雄伝説 Die Neue These 邂逅",
+    "first_air_date": "2018-04-03"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-504",
+    "subject_id": 148481,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "東京喰種トーキョーグール：re",
+    "first_air_date": "2018-04-03"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-585",
+    "subject_id": 206925,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "一人之下 the outcast 2",
+    "first_air_date": "2017-10-27"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-519",
+    "subject_id": 186180,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "重神機パンドーラ",
+    "first_air_date": "2018-03-28"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-591",
+    "subject_id": 227240,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "新幹線変形ロボ シンカリオン",
+    "first_air_date": "2018-01-06"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-517",
+    "subject_id": 227739,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "メジャーセカンド",
+    "first_air_date": "2018-04-07"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-492",
+    "subject_id": 205310,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "LOST SONG",
+    "first_air_date": "2018-03-31"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-546",
+    "subject_id": 237602,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "甘い懲罰~私は看守専用ペット",
+    "first_air_date": "2018-04-01"
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-401",
+    "subject_id": 244878,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "東京喰種トーキョーグール：re 第2期",
+    "first_air_date": "2018-10-09"
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-392",
+    "subject_id": 245531,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "CONCEPTION",
+    "first_air_date": "2018-10-09"
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-424",
+    "subject_id": 249243,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "喂，看见耳朵啦",
+    "first_air_date": "2018-08-25"
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-397",
+    "subject_id": 239910,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "イングレス",
+    "first_air_date": "2018-10-17"
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-404",
+    "subject_id": 234761,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "DOUBLE DECKER! ダグ＆キリル",
+    "first_air_date": "2018-09-30"
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-425",
+    "subject_id": 258081,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "終電後、カプセルホテルで、上司に微熱伝わる夜。",
+    "first_air_date": "2018-10-07"
+  },
+  {
+    "quarter": "2019_夏",
+    "card_id": "anime-273",
+    "subject_id": 303878,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "おしりたんてい 第3シリーズ",
+    "first_air_date": "2019-07-06"
+  },
+  {
+    "quarter": "2019_夏",
+    "card_id": "anime-276",
+    "subject_id": 283272,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "指先から本気の熱情-幼なじみは消防士-",
+    "first_air_date": "2019-07-07"
+  },
+  {
+    "quarter": "2019_夏",
+    "card_id": "anime-274",
+    "subject_id": 283480,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "闇芝居 第7期",
+    "first_air_date": "2019-07-07"
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-296",
+    "subject_id": 267250,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "RobiHachi",
+    "first_air_date": "2019-04-08"
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-323",
+    "subject_id": 275610,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "洗い屋さん！～俺とアイツが女湯で!?～",
+    "first_air_date": "2019-04-07"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-194",
+    "subject_id": 276788,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "本好きの下剋上 〜司書になるためには手段を選んでいられません〜",
+    "first_air_date": "2019-10-02"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-198",
+    "subject_id": 260677,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "アズールレーン THE ANIMATION",
+    "first_air_date": "2019-10-03"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-236",
+    "subject_id": 302157,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "かいじゅうステップ ワンダバダ",
+    "first_air_date": "2019-09-27"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-214",
+    "subject_id": 270060,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "この音とまれ！第2クール",
+    "first_air_date": "2019-10-05"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-217",
+    "subject_id": 278440,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "警視庁 特務部 特殊凶悪犯対策室 第七課 -トクナナ-",
+    "first_air_date": "2019-10-06"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-227",
+    "subject_id": 283053,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "Fairy gone フェアリーゴーン2",
+    "first_air_date": "2019-10-06"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-239",
+    "subject_id": 288940,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "XL上司。",
+    "first_air_date": "2019-10-06"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-238",
+    "subject_id": 291844,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "Four of a kind 新シリーズ",
+    "first_air_date": "2019-10-06"
+  },
+  {
+    "quarter": "2020_冬",
+    "card_id": "anime-16",
+    "subject_id": 295615,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "りばあす",
+    "first_air_date": "2020-01-05"
+  },
+  {
+    "quarter": "2020_冬",
+    "card_id": "anime-20",
+    "subject_id": 295001,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "おーばーふろぉ",
+    "first_air_date": "2020-01-05"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-150",
+    "subject_id": 286109,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "GIBIATE the Animation",
+    "first_air_date": "2020-07-15"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-163",
+    "subject_id": 260736,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "恋とプロデューサー～EVOL×LOVE～",
+    "first_air_date": "2020-07-15"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-88",
+    "subject_id": 285813,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "GREAT PRETENDER",
+    "first_air_date": "2020-07-08"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-97",
+    "subject_id": 291479,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "ノー・ガンズ・ライフ 第2クール",
+    "first_air_date": "2020-07-09"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-56",
+    "subject_id": 277954,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "やはり俺の青春ラブコメはまちがっている。完",
+    "first_air_date": "2020-07-09"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-99",
+    "subject_id": 299498,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "宇崎ちゃんは遊びたい!",
+    "first_air_date": "2020-07-10"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-131",
+    "subject_id": 293648,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "ド級編隊エグゼロス",
+    "first_air_date": "2020-07-03"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-112",
+    "subject_id": 296076,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "彼女、お借りします",
+    "first_air_date": "2020-07-10"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-133",
+    "subject_id": 291195,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "ピーター・グリルと賢者の時間",
+    "first_air_date": "2020-07-10"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-160",
+    "subject_id": 303173,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "GETUP! GETLIVE! #げらげら",
+    "first_air_date": "2020-07-10"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-136",
+    "subject_id": 297342,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "炎炎ノ消防隊 弐ノ章",
+    "first_air_date": "2020-07-03"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-155",
+    "subject_id": 241185,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "Lapis Re:LiGHTs ラピスリライツ",
+    "first_air_date": "2020-07-04"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-61",
+    "subject_id": 292222,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "魔王学院の不適合者 ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～",
+    "first_air_date": "2020-07-04"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-67",
+    "subject_id": 292238,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "ソードアート・オンライン アリシゼーション War of Underworld -THE LAST SEASON-",
+    "first_air_date": "2020-07-11"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-16",
+    "subject_id": 295615,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "りばあす",
+    "first_air_date": "2020-01-05"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-134",
+    "subject_id": 294654,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "モンスター娘のお医者さん",
+    "first_air_date": "2020-07-12"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-157",
+    "subject_id": 306993,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "巨人族の花嫁",
+    "first_air_date": "2020-07-05"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-165",
+    "subject_id": 308997,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "忍者コレクション",
+    "first_air_date": "2020-07-12"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-159",
+    "subject_id": 316108,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "耐え子の日常 第二期",
+    "first_air_date": "2020-07-01"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-62",
+    "subject_id": 269436,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "白猫プロジェクト ゼロ・クロニクル",
+    "first_air_date": "2020-04-06"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-92",
+    "subject_id": 301809,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "あの世のすべては、おばけぐみっ！",
+    "first_air_date": "2020-04-06"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-118",
+    "subject_id": 301700,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "あはれ！名作くん 第5期",
+    "first_air_date": "2020-04-03"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-89",
+    "subject_id": 294202,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "アルゴナビス from BanG Dream! ANIMATION",
+    "first_air_date": "2020-04-10"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-69",
+    "subject_id": 295884,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "本好きの下剋上 〜司書になるためには手段を選んでいられません〜 第2期",
+    "first_air_date": "2020-04-04"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-100",
+    "subject_id": 285762,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "もっと！まじめにふまじめ かいけつゾロリ",
+    "first_air_date": "2020-04-05"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-16",
+    "subject_id": 295615,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "りばあす",
+    "first_air_date": "2020-01-05"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-114",
+    "subject_id": 300865,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "俺の指で乱れろ。〜閉店後二人きりのサロンで…〜",
+    "first_air_date": "2020-04-05"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-127",
+    "subject_id": 303553,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "巨神と氷華の城",
+    "first_air_date": "2020-08-08"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-187",
+    "subject_id": 285901,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "ゴールデンカムイ 第3期",
+    "first_air_date": "2020-10-05"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-663",
+    "subject_id": 315772,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "ふしぎ駄菓子屋 銭天堂",
+    "first_air_date": "2020-09-08"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-88",
+    "subject_id": 285813,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "GREAT PRETENDER",
+    "first_air_date": "2020-07-08"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-658",
+    "subject_id": 316796,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "カピバラさん",
+    "first_air_date": "2020-10-09"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-136",
+    "subject_id": 297342,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "炎炎ノ消防隊 弐ノ章",
+    "first_air_date": "2020-07-03"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-156",
+    "subject_id": 295421,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "ハイキュー!! TO THE TOP 第2クール",
+    "first_air_date": "2020-10-02"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-182",
+    "subject_id": 312982,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "オオカミさんは食べられたい",
+    "first_air_date": "2020-09-06"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-661",
+    "subject_id": 314312,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "大人にゃ恋の仕方がわからねぇ！",
+    "first_air_date": "2020-10-04"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-660",
+    "subject_id": 316106,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "エタニティ ～深夜の濡恋ちゃんねる♡～",
+    "first_air_date": "2020-10-04"
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-712",
+    "subject_id": 297344,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "真・中華一番！ 続編",
+    "first_air_date": "2021-01-11"
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-663",
+    "subject_id": 315772,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "ふしぎ駄菓子屋 銭天堂",
+    "first_air_date": "2020-09-08"
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-181",
+    "subject_id": 278031,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "転生したらスライムだった件 第2期",
+    "first_air_date": "2021-01-12"
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-693",
+    "subject_id": 297224,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "BEASTARS 2nd Season",
+    "first_air_date": "2021-01-06"
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-692",
+    "subject_id": 279202,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "約束のネバーランド Season 2",
+    "first_air_date": "2021-01-07"
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-706",
+    "subject_id": 315804,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "八十亀ちゃんかんさつにっき 3さつめ",
+    "first_air_date": "2021-01-10"
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-702",
+    "subject_id": 319894,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "じみへんっ!!～地味子を変えちゃう純異性交遊～",
+    "first_air_date": "2021-01-03"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-789",
+    "subject_id": 302523,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "転生したらスライムだった件 第2期 2",
+    "first_air_date": "2021-07-06"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-802",
+    "subject_id": 331031,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "SCARLET NEXUS",
+    "first_air_date": "2021-07-01"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-801",
+    "subject_id": 329202,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "俺、つしま",
+    "first_air_date": "2021-07-02"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-725",
+    "subject_id": 303399,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "僕のヒーローアカデミア 第5期",
+    "first_air_date": "2021-03-27"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-973",
+    "subject_id": 302875,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON -覚醒前夜-",
+    "first_air_date": "2021-07-31"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-966",
+    "subject_id": 329909,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "RE-MAIN",
+    "first_air_date": "2021-07-03"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-743",
+    "subject_id": 308936,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "東京リベンジャーズ",
+    "first_air_date": "2021-04-10"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-870",
+    "subject_id": 332655,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "指先から本気の熱情2-恋人は消防士-",
+    "first_air_date": "2021-07-04"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-972",
+    "subject_id": 338201,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "闇芝居 第9期",
+    "first_air_date": "2021-07-11"
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-724",
+    "subject_id": 299673,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "転スラ日記 転生したらスライムだった件",
+    "first_air_date": "2021-04-06"
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-738",
+    "subject_id": 316519,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "ゴジラS.P<シンギュラポイント>",
+    "first_air_date": "2021-04-01"
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-782",
+    "subject_id": 529232,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "おしりたんてい 第5シリーズ",
+    "first_air_date": "2021-04-03"
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-725",
+    "subject_id": 303399,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "僕のヒーローアカデミア 第5期",
+    "first_air_date": "2021-03-27"
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-743",
+    "subject_id": 308936,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "東京リベンジャーズ",
+    "first_air_date": "2021-04-10"
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-778",
+    "subject_id": 330652,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "マジカパーティ",
+    "first_air_date": "2021-04-04"
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-760",
+    "subject_id": 327986,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "黒ギャルになったから親友とヤってみた。",
+    "first_air_date": "2021-04-04"
+  },
+  {
+    "quarter": "2021_秋",
+    "card_id": "anime-982",
+    "subject_id": 339969,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "Deep Insanity THE LOST CHILD",
+    "first_air_date": "2021-10-12"
+  },
+  {
+    "quarter": "2021_秋",
+    "card_id": "anime-1004",
+    "subject_id": 328356,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "魔王イブロギアに身を捧げよ",
+    "first_air_date": "2021-10-01"
+  },
+  {
+    "quarter": "2021_秋",
+    "card_id": "anime-989",
+    "subject_id": 333623,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "ビルディバイド -#000000-",
+    "first_air_date": "2021-10-09"
+  },
+  {
+    "quarter": "2021_秋",
+    "card_id": "anime-1002",
+    "subject_id": 345771,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "しょうたいむ！～歌のお姉さんだってしたい",
+    "first_air_date": "2021-10-03"
+  },
+  {
+    "quarter": "2021_秋",
+    "card_id": "anime-998",
+    "subject_id": 339998,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "マギアレコード 魔法少女まどか☆マギカ外伝 Final SEASON ‐浅き夢の暁‐",
+    "first_air_date": "2022-04-03"
+  },
+  {
+    "quarter": "2022_冬",
+    "card_id": "anime-872",
+    "subject_id": 292316,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "ありふれた職業で世界最強 2nd season",
+    "first_air_date": "2022-01-13"
+  },
+  {
+    "quarter": "2022_冬",
+    "card_id": "anime-1035",
+    "subject_id": 339062,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "王子の本命は悪役令嬢",
+    "first_air_date": "2022-01-09"
+  },
+  {
+    "quarter": "2022_冬",
+    "card_id": "anime-1042",
+    "subject_id": 362733,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "闇芝居 第10期",
+    "first_air_date": "2022-01-09"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1103",
+    "subject_id": 326869,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "転生賢者の異世界ライフ～第二の職業を得て、世界最強になりました～",
+    "first_air_date": "2022-07-04"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1124",
+    "subject_id": 375511,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "オリエント 第2クール",
+    "first_air_date": "2022-07-11"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1116",
+    "subject_id": 373710,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "金装のヴェルメイユ～崖っぷち魔術師は最強の厄災と魔法世界を突き進む～",
+    "first_air_date": "2022-07-05"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1123",
+    "subject_id": 354414,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "SHINE POST",
+    "first_air_date": "2022-07-12"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1132",
+    "subject_id": 368816,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "Extreme Hearts",
+    "first_air_date": "2022-07-09"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-124",
+    "subject_id": 253047,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "連盟空軍航空魔法音楽隊 ルミナスウィッチーズ",
+    "first_air_date": "2022-07-03"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1118",
+    "subject_id": 342200,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "異世界薬局",
+    "first_air_date": "2022-07-10"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1138",
+    "subject_id": 345649,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "ハナビちゃんは遅れがち",
+    "first_air_date": "2022-07-10"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1115",
+    "subject_id": 375531,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "RWBY 氷雪帝国",
+    "first_air_date": "2022-07-03"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1133",
+    "subject_id": 371396,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "ユーレイデコ",
+    "first_air_date": "2022-07-03"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1136",
+    "subject_id": 342673,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "森のくまさん、冬眠中。",
+    "first_air_date": "2022-07-03"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1139",
+    "subject_id": 381384,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "KJファイル",
+    "first_air_date": "2022-07-10"
+  },
+  {
+    "quarter": "2022_春",
+    "card_id": "anime-1095",
+    "subject_id": 351714,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "名探偵コナン ゼロの日常",
+    "first_air_date": "2022-04-04"
+  },
+  {
+    "quarter": "2022_春",
+    "card_id": "anime-1053",
+    "subject_id": 310263,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "本好きの下剋上 〜司書になるためには手段を選んでいられません〜 第3期",
+    "first_air_date": "2022-04-11"
+  },
+  {
+    "quarter": "2022_春",
+    "card_id": "anime-1093",
+    "subject_id": 363242,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "古見さんは、コミュ症です。2期",
+    "first_air_date": "2022-04-06"
+  },
+  {
+    "quarter": "2022_春",
+    "card_id": "anime-1058",
+    "subject_id": 333624,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "ビルディバイド -#FFFFFF-",
+    "first_air_date": "2022-04-02"
+  },
+  {
+    "quarter": "2022_春",
+    "card_id": "anime-1087",
+    "subject_id": 354246,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "3秒後、野獣。～合コンで隅にいた彼は肉食でした",
+    "first_air_date": "2022-04-03"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1160",
+    "subject_id": 361095,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "ゴールデンカムイ 第4期",
+    "first_air_date": "2022-10-03"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1144",
+    "subject_id": 302286,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "BLEACH 千年血戦篇",
+    "first_air_date": "2022-10-10"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1186",
+    "subject_id": 396487,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "チキップダンサーズ 2期",
+    "first_air_date": "2022-09-27"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1163",
+    "subject_id": 363263,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "マブラヴ オルタネイティヴ 第2期",
+    "first_air_date": "2022-10-05"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1177",
+    "subject_id": 344874,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "うちの師匠はしっぽがない",
+    "first_air_date": "2022-09-30"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1192",
+    "subject_id": 354190,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "アークナイツ【黎明前奏/PRELUDE TO DAWN】",
+    "first_air_date": "2022-10-28"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1143",
+    "subject_id": 373267,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "SPY×FAMILY 第2クール",
+    "first_air_date": "2022-10-01"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1047",
+    "subject_id": 363600,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "ポプテピピック TVアニメーション作品第二シリーズ",
+    "first_air_date": "2022-10-01"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1189",
+    "subject_id": 396443,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "デュエル・マスターズWIN",
+    "first_air_date": "2022-09-04"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1183",
+    "subject_id": 395537,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "ハーレムきゃんぷっ！",
+    "first_air_date": "2022-10-02"
+  },
+  {
+    "quarter": "2023_冬",
+    "card_id": "anime-798",
+    "subject_id": 302766,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "痛いのは嫌なので防御力に極振りしたいと思います。2",
+    "first_air_date": "2023-01-11"
+  },
+  {
+    "quarter": "2023_冬",
+    "card_id": "anime-1199",
+    "subject_id": 402223,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "ダンジョンに出会いを求めるのは間違っているだろうかⅣ 深章 厄災編",
+    "first_air_date": "2023-01-06"
+  },
+  {
+    "quarter": "2023_冬",
+    "card_id": "anime-1196",
+    "subject_id": 330054,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "魔王学院の不適合者 ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～ Ⅱ",
+    "first_air_date": "2023-01-07"
+  },
+  {
+    "quarter": "2023_冬",
+    "card_id": "anime-1246",
+    "subject_id": 385411,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "僕とロボコ",
+    "first_air_date": "2022-12-04"
+  },
+  {
+    "quarter": "2023_冬",
+    "card_id": "anime-1242",
+    "subject_id": 359059,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "しょうたいむ！～歌のお姉さんだってしたい 第2期",
+    "first_air_date": "2023-01-08"
+  },
+  {
+    "quarter": "2023_冬",
+    "card_id": "anime-1244",
+    "subject_id": 403671,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "KJファイル 第2期",
+    "first_air_date": "2023-01-08"
+  },
+  {
+    "quarter": "2023_夏",
+    "card_id": "anime-1337",
+    "subject_id": 428735,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "BanG Dream! It's MyGO!!!!!",
+    "first_air_date": "2023-06-29"
+  },
+  {
+    "quarter": "2023_春",
+    "card_id": "anime-1299",
+    "subject_id": 426274,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "冒険大陸 アニアキングダム",
+    "first_air_date": "2023-04-02"
+  },
+  {
+    "quarter": "2023_秋",
+    "card_id": "anime-1409",
+    "subject_id": 451858,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "チキップダンサーズ 3期",
+    "first_air_date": "2023-09-25"
+  },
+  {
+    "quarter": "2023_秋",
+    "card_id": "anime-1362",
+    "subject_id": 406736,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "冒険者になりたいと都に出て行った娘がSランクになってた",
+    "first_air_date": "2023-09-28"
+  },
+  {
+    "quarter": "2023_秋",
+    "card_id": "anime-1376",
+    "subject_id": 403631,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "お嬢と番犬くん",
+    "first_air_date": "2023-09-28"
+  },
+  {
+    "quarter": "2023_秋",
+    "card_id": "anime-1387",
+    "subject_id": 411106,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "め組の大吾 救国のオレンジ",
+    "first_air_date": "2023-09-30"
+  },
+  {
+    "quarter": "2023_秋",
+    "card_id": "anime-1359",
+    "subject_id": 374648,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "ラグナクリムゾン",
+    "first_air_date": "2023-09-30"
+  },
+  {
+    "quarter": "2023_秋",
+    "card_id": "anime-1385",
+    "subject_id": 364252,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "MFゴースト",
+    "first_air_date": "2023-09-30"
+  },
+  {
+    "quarter": "2024_冬",
+    "card_id": "anime-1387",
+    "subject_id": 411106,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "め組の大吾 救国のオレンジ",
+    "first_air_date": "2023-09-30"
+  },
+  {
+    "quarter": "2024_冬",
+    "card_id": "anime-1359",
+    "subject_id": 374648,
+    "method": "unique-exact-original-or-provider-alias+verified-broadcast-period-overlaps-source-quarter",
+    "subject_name": "ラグナクリムゾン",
+    "first_air_date": "2023-09-30"
+  },
+  {
+    "quarter": "2024_冬",
+    "card_id": "anime-1523",
+    "subject_id": 469072,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "悶えてよ、アダムくん",
+    "first_air_date": "2024-01-07"
+  },
+  {
+    "quarter": "2024_冬",
+    "card_id": "anime-1521",
+    "subject_id": 465694,
+    "method": "explicit-reviewed-card+both-titles+subject-id+provider-title+first-air-date",
+    "subject_name": "闇芝居 第12期",
+    "first_air_date": "2024-01-14"
+  },
+  {
+    "quarter": "2024_夏",
+    "card_id": "anime-1675",
+    "subject_id": 475555,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "よあそびぐらしっ！",
+    "first_air_date": "2024-07-07"
+  },
+  {
+    "quarter": "2024_春",
+    "card_id": "anime-1582",
+    "subject_id": 480437,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "SHIBUYA♡HACHI",
+    "first_air_date": "2024-04-06"
+  },
+  {
+    "quarter": "2024_春",
+    "card_id": "anime-1581",
+    "subject_id": 476412,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "クマーバ",
+    "first_air_date": "2024-04-06"
+  },
+  {
+    "quarter": "2024_春",
+    "card_id": "anime-1530",
+    "subject_id": 425587,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "僕のヒーローアカデミア 第7期",
+    "first_air_date": "2024-05-04"
+  },
+  {
+    "quarter": "2024_春",
+    "card_id": "anime-1527",
+    "subject_id": 441939,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "鬼滅の刃 柱稽古編",
+    "first_air_date": "2024-05-12"
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1696",
+    "subject_id": 492951,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "お買いものパンダ！",
+    "first_air_date": "2024-11-06"
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1701",
+    "subject_id": 513948,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "マーダーミステリー・オブ・ザ・デッド",
+    "first_air_date": "2024-11-13"
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1697",
+    "subject_id": 456164,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "食草老龙被冠以恶龙之名 第二季",
+    "first_air_date": "2024-10-02"
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1695",
+    "subject_id": 514693,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "SHIBUYA♡HACHI 第2クール",
+    "first_air_date": "2024-10-05"
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1689",
+    "subject_id": 513375,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "ぷにるんず ぷに２",
+    "first_air_date": "2024-10-06"
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1698",
+    "subject_id": 509169,
+    "method": "unique-exact-original-or-provider-alias+anime-type+first-air-quarter",
+    "subject_name": "大正偽りブラヰダル～身代わり花嫁と軍服の猛愛",
+    "first_air_date": "2024-10-06"
+  },
+  {
+    "quarter": "2026_秋",
+    "card_id": "anime-2282",
+    "subject_id": 505550,
+    "method": "newer-official-archive+strict-parser+nonregressing-positive-evidence"
+  },
+  {
+    "quarter": "2020_冬",
+    "source_quarter": "2019_秋",
+    "card_id": "anime-227",
+    "original_name": "Fairy gone フェアリーゴーン 第2クール",
+    "subject_id": 283053,
+    "method": "identical-source-card+both-titles+unique-verified-id+archive-snapshot"
+  }
+]

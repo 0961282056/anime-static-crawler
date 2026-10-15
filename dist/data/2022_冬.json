@@ -430,10 +430,24 @@
       "story": "暫無簡介",
       "original_name": "ありふれた職業で世界最強 2ndシーズン",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 292316,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/292316",
+          "https://bgm.tv/subject/292316/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-03-31",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-807",
@@ -541,8 +555,8 @@
           "https://bgm.tv/subject/363809",
           "https://bgm.tv/subject/363809/ep"
         ],
-        "checked_at": "2026-10-13T21:52:58.999353+08:00",
-        "attempted_at": "2026-10-13T21:52:58.999353+08:00",
+        "checked_at": "2026-10-15T13:34:43.717004+08:00",
+        "attempted_at": "2026-10-15T13:34:43.717004+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -737,8 +751,8 @@
           "https://bgm.tv/subject/360611",
           "https://bgm.tv/subject/360611/ep"
         ],
-        "checked_at": "2026-10-13T21:52:58.999353+08:00",
-        "attempted_at": "2026-10-13T21:52:58.999353+08:00",
+        "checked_at": "2026-10-15T13:34:44.977525+08:00",
+        "attempted_at": "2026-10-15T13:34:44.977525+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1116,10 +1130,24 @@
       "story": "暫無簡介",
       "original_name": "王子の本命は悪役令嬢",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 339062,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/339062",
+          "https://bgm.tv/subject/339062/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-03-13",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1040",
@@ -1158,13 +1186,27 @@
       "story": "暫無簡介",
       "original_name": "闇芝居 十期",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 362733,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/362733",
+          "https://bgm.tv/subject/362733/ep"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "end_date": "2022-04-03",
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     }
   ],
-  "generated_at": "2026-10-14T15:03:24.597298+08:00",
+  "generated_at": "2026-10-15T13:42:21.141480+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202201/",
   "quality": {
     "source_count": 43,
