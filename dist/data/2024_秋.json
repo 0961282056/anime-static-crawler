@@ -779,8 +779,8 @@
           "https://bgm.tv/subject/505895",
           "https://bgm.tv/subject/505895/ep"
         ],
-        "checked_at": "2026-10-13T21:06:31.074758+08:00",
-        "attempted_at": "2026-10-13T21:06:31.074758+08:00",
+        "checked_at": "2026-10-16T07:16:40.437305+08:00",
+        "attempted_at": "2026-10-16T07:16:40.437305+08:00",
         "end_date": "2024-12-19",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1346,6 +1346,34 @@
       }
     },
     {
+      "bangumi_id": "anime-2210",
+      "anime_name": "Kumarba 第2季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/26996d05b15a40edcfb847a325cccb682f93a0742f4512c3ac8134565d6a1694",
+      "premiere_date": "六",
+      "premiere_time": "07:00",
+      "story": "暫無簡介",
+      "original_name": "クマーバ シーズン2",
+      "external_ids": {
+        "bangumi": 501203,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/501203",
+          "https://bgm.tv/subject/501203/ep"
+        ],
+        "checked_at": "2026-10-16T07:01:56.551251+08:00",
+        "attempted_at": "2026-10-16T07:01:56.551251+08:00",
+        "end_date": "2024-12-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    {
       "bangumi_id": "anime-1688",
       "anime_name": "蜻蛉高球 第2季",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1c9accf735fb244fe68b0fcaa6b8ce82",
@@ -1678,6 +1706,34 @@
         "checked_at": "2026-10-13T21:06:31.074758+08:00",
         "attempted_at": "2026-10-13T21:06:31.074758+08:00",
         "end_date": "2024-12-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    {
+      "bangumi_id": "anime-1577",
+      "anime_name": "新幹線戰士：Change the World",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3a330eb7d451a666a02bfb8e1c0bbb78",
+      "premiere_date": "日",
+      "premiere_time": "08:30",
+      "story": "暫無簡介",
+      "original_name": "シンカリオン チェンジ ザ ワールド",
+      "external_ids": {
+        "bangumi": 472386,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 39,
+        "aired_episodes": 39,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/472386",
+          "https://bgm.tv/subject/472386/ep"
+        ],
+        "checked_at": "2026-10-13T21:07:53.088556+08:00",
+        "attempted_at": "2026-10-13T21:07:53.088556+08:00",
+        "end_date": "2025-02-02",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
@@ -2019,14 +2075,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-15T14:40:59.172095+08:00",
+  "generated_at": "2026-10-16T07:16:40.437305+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202410/",
   "quality": {
-    "source_count": 72,
-    "record_count": 72,
+    "source_count": 74,
+    "record_count": 74,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 24,
+    "missing_story_count": 26,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

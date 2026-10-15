@@ -72,7 +72,7 @@ def verify_dist(paths: ProjectPaths) -> None:
 
 
 def quality_report(paths: ProjectPaths) -> None:
-    from services.episode_metadata import EpisodeEnricher
+    from services.episode_refresh import refresh_statistics
     from services.episode_source_reviews import reviewed_source
 
     repository = DataRepository(paths.data_dir, DataQualityPolicy())
@@ -121,16 +121,14 @@ def quality_report(paths: ProjectPaths) -> None:
         if (review := reviewed_source(record)) and review["mode"] == "snapshot"
     ]
     now = datetime.now().astimezone()
-    overdue = {
-        (
-            record.bangumi_id,
-            record.anime_name,
-            record.original_name,
-            record.external_ids.bangumi,
-        )
-        for record in all_records
-        if EpisodeEnricher.due(record, now)
-    }
+    health = refresh_statistics(
+        [
+            (path.stem, record)
+            for path in repository.validate_all(allow_legacy=True)
+            for record in repository.load_path(path).anime_list
+        ],
+        now,
+    )
     print(
         f"- Episode airing status unknown: {sum(record.episodes.airing_status == 'unknown' for record in episode_records)}"
     )
@@ -140,7 +138,22 @@ def quality_report(paths: ProjectPaths) -> None:
     print(
         f"- Episode progress unknown: {sum(record.episodes.aired_episodes is None for record in episode_records)}"
     )
-    print(f"- Episode refresh overdue (unique identities): {len(overdue)}")
+    print(
+        f"- Episode refresh overdue (unique identities): {health['priority_overdue'] + health['background_overdue']}"
+    )
+    print(f"- Priority episode identities: {health['priority_identities']}")
+    print(f"- Priority refresh overdue: {health['priority_overdue']}")
+    print(f"- Background refresh overdue: {health['background_overdue']}")
+    print(
+        f"- Priority verification older than 48h: {health['priority_older_than_48h']}"
+    )
+    print(f"- Priority verification missing: {health['priority_unverified']}")
+    print(
+        f"- Oldest priority verification: {health['priority_oldest_checked_at'] or 'none'}"
+    )
+    print(
+        f"- Oldest automatic-source verification: {health['oldest_checked_at'] or 'none'}"
+    )
     print(f"- Manual episode snapshot records (not auto-refreshed): {len(snapshots)}")
     print(
         f"- Unfinished manual snapshots needing manual review: {sum(record.episodes.airing_status != 'finished' for record in snapshots)}"

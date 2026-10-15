@@ -1,0 +1,13 @@
+{
+  "card_id": "anime-2210",
+  "original_name": "クマーバ シーズン2",
+  "source_url": "https://acgsecrets.hk/bangumi/202410/",
+  "source_image_url": "https://static.acgsecrets.hk/img/0b/0b672ce427b85efa7fa349839e160257/dba0999410dfc3126e6e2d4252d4472893a21d33d6612286de1c157892a45dda.jpg",
+  "sha256": "26996d05b15a40edcfb847a325cccb682f93a0742f4512c3ac8134565d6a1694",
+  "cloudinary_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/26996d05b15a40edcfb847a325cccb682f93a0742f4512c3ac8134565d6a1694",
+  "cache_entries": {
+    "cloudinary_sha256_26996d05b15a40edcfb847a325cccb682f93a0742f4512c3ac8134565d6a1694": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/26996d05b15a40edcfb847a325cccb682f93a0742f4512c3ac8134565d6a1694",
+    "source_f0cd9c9916afae3128300ba021af65569f15a4f76fab22b423f1e15ccece5e6b": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/26996d05b15a40edcfb847a325cccb682f93a0742f4512c3ac8134565d6a1694"
+  },
+  "verification": "Successful bounded preparation run 38822196706, plus SHA-256 byte equality of public original delivery; artifact download restricted by cloud network."
+}

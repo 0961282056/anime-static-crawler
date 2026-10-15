@@ -1,0 +1,531 @@
+{
+  "checked_at": "2026-10-16T07:16:40.437305+08:00",
+  "request_budget": 240,
+  "time_budget_seconds": 600,
+  "actual_requests": 56,
+  "elapsed_seconds": 36.555,
+  "changed_quarters": [
+    "2018_冬.json",
+    "2018_春.json",
+    "2018_秋.json",
+    "2019_冬.json",
+    "2019_夏.json",
+    "2019_春.json",
+    "2019_秋.json",
+    "2020_冬.json",
+    "2021_冬.json",
+    "2021_夏.json",
+    "2021_春.json",
+    "2021_秋.json",
+    "2022_秋.json",
+    "2023_冬.json",
+    "2023_春.json",
+    "2023_秋.json",
+    "2024_春.json",
+    "2024_秋.json",
+    "2025_冬.json",
+    "2025_春.json",
+    "2026_冬.json",
+    "2026_夏.json",
+    "2026_春.json"
+  ],
+  "deferred_identities": 0,
+  "before": {
+    "automatic_identities": 1905,
+    "priority_identities": 80,
+    "priority_overdue": 0,
+    "background_overdue": 28,
+    "priority_unverified": 0,
+    "priority_older_than_48h": 0,
+    "oldest_checked_at": "2026-10-13T20:52:04.176625+08:00",
+    "priority_oldest_checked_at": "2026-10-15T13:39:15.691272+08:00"
+  },
+  "after": {
+    "automatic_identities": 1905,
+    "priority_identities": 80,
+    "priority_overdue": 0,
+    "background_overdue": 0,
+    "priority_unverified": 0,
+    "priority_older_than_48h": 0,
+    "oldest_checked_at": "2026-10-13T20:52:04.176625+08:00",
+    "priority_oldest_checked_at": "2026-10-15T13:39:15.691272+08:00"
+  },
+  "requests": [
+    {
+      "url": "https://api.bgm.tv/v0/subjects/580133",
+      "params": {},
+      "seconds": 0.278,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 580133,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.717,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/505895",
+      "params": {},
+      "seconds": 0.665,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 505895,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.686,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/320456",
+      "params": {},
+      "seconds": 0.656,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 320456,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.677,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/390712",
+      "params": {},
+      "seconds": 0.677,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 390712,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.67,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/217660",
+      "params": {},
+      "seconds": 0.645,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 217660,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.66,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/269534",
+      "params": {},
+      "seconds": 0.635,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 269534,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.646,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/418484",
+      "params": {},
+      "seconds": 0.638,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 418484,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.642,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/371842",
+      "params": {},
+      "seconds": 0.618,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 371842,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.639,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/347804",
+      "params": {},
+      "seconds": 0.679,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 347804,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.742,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/312223",
+      "params": {},
+      "seconds": 0.619,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 312223,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.707,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/327055",
+      "params": {},
+      "seconds": 0.668,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 327055,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.682,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/284546",
+      "params": {},
+      "seconds": 0.633,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 284546,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.653,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/236074",
+      "params": {},
+      "seconds": 0.668,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 236074,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.642,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/522370",
+      "params": {},
+      "seconds": 0.655,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 522370,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.645,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/523141",
+      "params": {},
+      "seconds": 0.642,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 523141,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.667,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/512817",
+      "params": {},
+      "seconds": 0.633,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 512817,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.635,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/479788",
+      "params": {},
+      "seconds": 0.64,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 479788,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.641,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/464563",
+      "params": {},
+      "seconds": 0.672,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 464563,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.693,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/250724",
+      "params": {},
+      "seconds": 0.666,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 250724,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.646,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/271151",
+      "params": {},
+      "seconds": 0.643,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 271151,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.634,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/248175",
+      "params": {},
+      "seconds": 0.657,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 248175,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.642,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/403020",
+      "params": {},
+      "seconds": 0.635,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 403020,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.636,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/333442",
+      "params": {},
+      "seconds": 0.625,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 333442,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.653,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/325286",
+      "params": {},
+      "seconds": 0.627,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 325286,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.633,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/293193",
+      "params": {},
+      "seconds": 0.625,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 293193,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.641,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/270274",
+      "params": {},
+      "seconds": 0.697,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 270274,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.64,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/241181",
+      "params": {},
+      "seconds": 0.639,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 241181,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.648,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/208370",
+      "params": {},
+      "seconds": 0.659,
+      "success": true
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 208370,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "seconds": 0.652,
+      "success": true
+    }
+  ]
+}

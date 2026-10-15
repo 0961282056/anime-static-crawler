@@ -57,6 +57,7 @@ test('reviewed historical scopes render real data and official sources on mobile
     ['末班電車後、膠囊旅館、給上司微熱的夜晚。', '全 12 集', 'shucap.cf-anime.com'],
     ['正中間的理久', '全 12 集', 'www.tv-tokyo.co.jp'],
     ['奇喵的畫家', '全 25 集', 'www.tv-tokyo.co.jp'],
+    ['Kumarba 第2季', '全 12 集', 'bgm.tv'],
     ['神奇柑仔店 錢天堂', '已播 148 集／總集數未定', 'www.web.nhk'],
     ['異世界迷宮裡的後宮生活', '全 12 集', 'bgm.tv'],
     ['後宮露營！', '全 8 集', 'harecam.af-original.com'],

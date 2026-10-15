@@ -842,6 +842,34 @@
       }
     },
     {
+      "bangumi_id": "anime-1282",
+      "anime_name": "MIX 2ND SEASON",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/58ce1e0403e04820bfba4a829d90afc0",
+      "premiere_date": "六",
+      "premiere_time": "17:30",
+      "story": "暫無簡介",
+      "original_name": "MIX MEISEI STORY 2ND SEASON ～二度目の夏、空の向こうへ～",
+      "external_ids": {
+        "bangumi": 394784,
+        "anilist": 157765
+      },
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/394784",
+          "https://bgm.tv/subject/394784/ep"
+        ],
+        "checked_at": "2026-10-13T21:12:32.150582+08:00",
+        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
+        "end_date": "2023-09-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    {
       "bangumi_id": "anime-1314",
       "anime_name": "雖然等級只有1級但固有技能是最強的",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9cd59653a74804b89aff0669fdc4c045",
@@ -982,6 +1010,34 @@
       }
     },
     {
+      "bangumi_id": "anime-1278",
+      "anime_name": "EDENS ZERO 伊甸星原 第2季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5884b756d8049dcaa5a7bdffd6d3b2fa",
+      "premiere_date": "六",
+      "premiere_time": "24:55",
+      "story": "暫無簡介",
+      "original_name": "EDENS ZERO 第2期",
+      "external_ids": {
+        "bangumi": 368289,
+        "anilist": 144932
+      },
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/368289",
+          "https://bgm.tv/subject/368289/ep"
+        ],
+        "checked_at": "2026-10-15T13:35:14.930333+08:00",
+        "attempted_at": "2026-10-15T13:35:14.930333+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    {
       "bangumi_id": "anime-1333",
       "anime_name": "AYAKA",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ff5669d6e0997e3c4963966a65c31125",
@@ -1090,6 +1146,34 @@
         "checked_at": "2026-10-13T21:13:35.735298+08:00",
         "attempted_at": "2026-10-13T21:13:35.735298+08:00",
         "end_date": "2023-09-30",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    {
+      "bangumi_id": "anime-1294",
+      "anime_name": "全員逃走中 -終極任務-",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e245203ac717597d1095ff4ace5f26e9",
+      "premiere_date": "日",
+      "premiere_time": "09:00",
+      "story": "暫無簡介",
+      "original_name": "逃走中 グレートミッション",
+      "external_ids": {
+        "bangumi": 413786,
+        "anilist": 159560
+      },
+      "episodes": {
+        "total_episodes": 97,
+        "aired_episodes": 97,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/413786",
+          "https://bgm.tv/subject/413786/ep"
+        ],
+        "checked_at": "2026-10-13T21:12:32.150582+08:00",
+        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
+        "end_date": "2025-03-30",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
@@ -1346,14 +1430,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-15T13:42:21.173512+08:00",
+  "generated_at": "2026-10-16T07:15:37.721765+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202307/",
   "quality": {
-    "source_count": 48,
-    "record_count": 48,
+    "source_count": 51,
+    "record_count": 51,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 6,
+    "missing_story_count": 9,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

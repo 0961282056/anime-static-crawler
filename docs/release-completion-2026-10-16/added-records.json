@@ -1,0 +1,247 @@
+[
+  {
+    "quarter": "2023_夏",
+    "card_id": "anime-1278",
+    "record": {
+      "bangumi_id": "anime-1278",
+      "anime_name": "EDENS ZERO 伊甸星原 第2季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5884b756d8049dcaa5a7bdffd6d3b2fa",
+      "premiere_date": "六",
+      "premiere_time": "24:55",
+      "story": "暫無簡介",
+      "original_name": "EDENS ZERO 第2期",
+      "external_ids": {
+        "bangumi": 368289,
+        "anilist": 144932
+      },
+      "episodes": {
+        "total_episodes": 25,
+        "aired_episodes": 25,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/368289",
+          "https://bgm.tv/subject/368289/ep"
+        ],
+        "checked_at": "2026-10-15T13:35:14.930333+08:00",
+        "attempted_at": "2026-10-15T13:35:14.930333+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    "source_quarter_sha256": "7e5fbf1e0d13059af5e495d9a3273a4f6a7dea0b1cce04de1bcb7f532bb99299",
+    "identity_method": "exact original title + anime type + reviewed source card; Kumarba S2 date 2024-10-05, independent from S1/S3",
+    "cover_method": "same source card + localized/original titles + provider ID as existing quarter"
+  },
+  {
+    "quarter": "2023_夏",
+    "card_id": "anime-1294",
+    "record": {
+      "bangumi_id": "anime-1294",
+      "anime_name": "全員逃走中 -終極任務-",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e245203ac717597d1095ff4ace5f26e9",
+      "premiere_date": "日",
+      "premiere_time": "09:00",
+      "story": "暫無簡介",
+      "original_name": "逃走中 グレートミッション",
+      "external_ids": {
+        "bangumi": 413786,
+        "anilist": 159560
+      },
+      "episodes": {
+        "total_episodes": 97,
+        "aired_episodes": 97,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/413786",
+          "https://bgm.tv/subject/413786/ep"
+        ],
+        "checked_at": "2026-10-13T21:12:32.150582+08:00",
+        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
+        "end_date": "2025-03-30",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    "source_quarter_sha256": "7e5fbf1e0d13059af5e495d9a3273a4f6a7dea0b1cce04de1bcb7f532bb99299",
+    "identity_method": "exact original title + anime type + reviewed source card; Kumarba S2 date 2024-10-05, independent from S1/S3",
+    "cover_method": "same source card + localized/original titles + provider ID as existing quarter"
+  },
+  {
+    "quarter": "2023_夏",
+    "card_id": "anime-1282",
+    "record": {
+      "bangumi_id": "anime-1282",
+      "anime_name": "MIX 2ND SEASON",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/58ce1e0403e04820bfba4a829d90afc0",
+      "premiere_date": "六",
+      "premiere_time": "17:30",
+      "story": "暫無簡介",
+      "original_name": "MIX MEISEI STORY 2ND SEASON ～二度目の夏、空の向こうへ～",
+      "external_ids": {
+        "bangumi": 394784,
+        "anilist": 157765
+      },
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/394784",
+          "https://bgm.tv/subject/394784/ep"
+        ],
+        "checked_at": "2026-10-13T21:12:32.150582+08:00",
+        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
+        "end_date": "2023-09-23",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    "source_quarter_sha256": "7e5fbf1e0d13059af5e495d9a3273a4f6a7dea0b1cce04de1bcb7f532bb99299",
+    "identity_method": "exact original title + anime type + reviewed source card; Kumarba S2 date 2024-10-05, independent from S1/S3",
+    "cover_method": "same source card + localized/original titles + provider ID as existing quarter"
+  },
+  {
+    "quarter": "2023_秋",
+    "card_id": "anime-1294",
+    "record": {
+      "bangumi_id": "anime-1294",
+      "anime_name": "全員逃走中 -終極任務-",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e245203ac717597d1095ff4ace5f26e9",
+      "premiere_date": "日",
+      "premiere_time": "09:00",
+      "story": "暫無簡介",
+      "original_name": "逃走中 グレートミッション",
+      "external_ids": {
+        "bangumi": 413786,
+        "anilist": 159560
+      },
+      "episodes": {
+        "total_episodes": 97,
+        "aired_episodes": 97,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/413786",
+          "https://bgm.tv/subject/413786/ep"
+        ],
+        "checked_at": "2026-10-13T21:12:32.150582+08:00",
+        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
+        "end_date": "2025-03-30",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    "source_quarter_sha256": "f7000eed0ac6a7e267bedd595e477ab631c517258cec43b42b4765a1f455c904",
+    "identity_method": "exact original title + anime type + reviewed source card; Kumarba S2 date 2024-10-05, independent from S1/S3",
+    "cover_method": "same source card + localized/original titles + provider ID as existing quarter"
+  },
+  {
+    "quarter": "2024_夏",
+    "card_id": "anime-1577",
+    "record": {
+      "bangumi_id": "anime-1577",
+      "anime_name": "新幹線戰士：Change the World",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3a330eb7d451a666a02bfb8e1c0bbb78",
+      "premiere_date": "日",
+      "premiere_time": "08:30",
+      "story": "暫無簡介",
+      "original_name": "シンカリオン チェンジ ザ ワールド",
+      "external_ids": {
+        "bangumi": 472386,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 39,
+        "aired_episodes": 39,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/472386",
+          "https://bgm.tv/subject/472386/ep"
+        ],
+        "checked_at": "2026-10-13T21:07:53.088556+08:00",
+        "attempted_at": "2026-10-13T21:07:53.088556+08:00",
+        "end_date": "2025-02-02",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    "source_quarter_sha256": "963e0d069d28cbfd4860926edc075f1ff5f8a39a0ee440e395dea1e6e2b51c90",
+    "identity_method": "exact original title + anime type + reviewed source card; Kumarba S2 date 2024-10-05, independent from S1/S3",
+    "cover_method": "same source card + localized/original titles + provider ID as existing quarter"
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-2210",
+    "record": {
+      "bangumi_id": "anime-2210",
+      "anime_name": "Kumarba 第2季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/26996d05b15a40edcfb847a325cccb682f93a0742f4512c3ac8134565d6a1694",
+      "premiere_date": "六",
+      "premiere_time": "07:00",
+      "story": "暫無簡介",
+      "original_name": "クマーバ シーズン2",
+      "external_ids": {
+        "bangumi": 501203,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/501203",
+          "https://bgm.tv/subject/501203/ep"
+        ],
+        "checked_at": "2026-10-16T07:01:56.551251+08:00",
+        "attempted_at": "2026-10-16T07:01:56.551251+08:00",
+        "end_date": "2024-12-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    "source_quarter_sha256": "fb765660f3d7c308b52e255eccdf35d241ca5ffad835945232923567fab4df1d",
+    "identity_method": "exact original title + anime type + reviewed source card; Kumarba S2 date 2024-10-05, independent from S1/S3",
+    "cover_method": "verified content SHA-256 and bounded Cloudinary upload"
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1577",
+    "record": {
+      "bangumi_id": "anime-1577",
+      "anime_name": "新幹線戰士：Change the World",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3a330eb7d451a666a02bfb8e1c0bbb78",
+      "premiere_date": "日",
+      "premiere_time": "08:30",
+      "story": "暫無簡介",
+      "original_name": "シンカリオン チェンジ ザ ワールド",
+      "external_ids": {
+        "bangumi": 472386,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 39,
+        "aired_episodes": 39,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/472386",
+          "https://bgm.tv/subject/472386/ep"
+        ],
+        "checked_at": "2026-10-13T21:07:53.088556+08:00",
+        "attempted_at": "2026-10-13T21:07:53.088556+08:00",
+        "end_date": "2025-02-02",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    "source_quarter_sha256": "fb765660f3d7c308b52e255eccdf35d241ca5ffad835945232923567fab4df1d",
+    "identity_method": "exact original title + anime type + reviewed source card; Kumarba S2 date 2024-10-05, independent from S1/S3",
+    "cover_method": "same source card + localized/original titles + provider ID as existing quarter"
+  }
+]

@@ -221,8 +221,8 @@ def test_conflicting_page_count_keeps_last_valid_values(pages, anime_record_fact
         aired_episodes=26,
         airing_status="finished",
         episode_count_status="confirmed",
-        checked_at=NOW - timedelta(days=31),
-        attempted_at=NOW - timedelta(days=31),
+        checked_at=NOW - timedelta(days=91),
+        attempted_at=NOW - timedelta(days=91),
         fetch_state="ok",
     )
     response = HTMLResponse(pages[0].replace(">26</li>", ">12</li>"))

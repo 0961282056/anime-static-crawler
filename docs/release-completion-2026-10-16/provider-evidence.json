@@ -1,0 +1,2119 @@
+[
+  {
+    "subject_id": 368289,
+    "checked_at": "2026-10-16T07:01:56.551251+08:00",
+    "subject": {
+      "id": 368289,
+      "type": 2,
+      "name": "EDENS ZERO 第2期",
+      "name_cn": "伊甸星原 第二季",
+      "date": "2023-04-01",
+      "eps": 25,
+      "infobox": [
+        {
+          "key": "中文名",
+          "value": "伊甸星原 第二季"
+        },
+        {
+          "key": "别名",
+          "value": [
+            {
+              "v": "EDENS ZERO Season 2"
+            },
+            {
+              "v": "EDENS ZERO 2nd Season"
+            },
+            {
+              "v": "エデンズゼロ 第2期"
+            }
+          ]
+        },
+        {
+          "key": "话数",
+          "value": "25"
+        },
+        {
+          "key": "放送开始",
+          "value": "2023年4月1日"
+        },
+        {
+          "key": "放送星期",
+          "value": "星期六"
+        },
+        {
+          "key": "官方网站",
+          "value": "https://edens-zero.net/anime/"
+        },
+        {
+          "key": "播放电视台",
+          "value": "日本テレビ"
+        },
+        {
+          "key": "导演",
+          "value": "渡部穏寛"
+        },
+        {
+          "key": "Copyright",
+          "value": "©真島ヒロ／講談社・NTV"
+        },
+        {
+          "key": "原作",
+          "value": "真島ヒロ（講談社「週刊少年マガジン」連載）"
+        },
+        {
+          "key": "总导演",
+          "value": "石平信司"
+        },
+        {
+          "key": "系列构成",
+          "value": "広田光毅"
+        },
+        {
+          "key": "人物设定",
+          "value": "迫由里香"
+        },
+        {
+          "key": "动画制作",
+          "value": "J.C.STAFF"
+        },
+        {
+          "key": "美术监督",
+          "value": "魏斯曼（スタジオちゅーりっぷ）"
+        },
+        {
+          "key": "剪辑",
+          "value": "後藤正浩（REAL-T）"
+        },
+        {
+          "key": "製作",
+          "value": "講談社・日本テレビ放送網"
+        },
+        {
+          "key": "企画",
+          "value": "高見洋平、桑原佳子；企画协力：吉田和生、前田衛、武井博克"
+        },
+        {
+          "key": "总制片人",
+          "value": "古川慎、中谷敏夫；制作概括：松倉友二"
+        },
+        {
+          "key": "制片人",
+          "value": "塩谷佳之、稲毛弘之、伴在正行"
+        },
+        {
+          "key": "动画制片人",
+          "value": "鈴木薫"
+        },
+        {
+          "key": "助理制片人",
+          "value": "須貝夏貴、永井晶、高橋雄一、尾上太基、田村有里"
+        },
+        {
+          "key": "音乐制作人",
+          "value": "千石一成、植田みのり"
+        },
+        {
+          "key": "作画监督",
+          "value": "迫由里香、權容祥[권용상]、大木良一、佐野はるか、河野眞也、小渕陽介、谷口繁則、中川実、tofu、清水椋大、渡辺一平太、Suwarin Promjutikanon、Cerberus、Put、北原里美、小笠原憂、熊谷勝弘、趙親雲(赵清云)、陳潔琼(陈洁琼)、胡威、上田みねこ、中島駿、吉元美紀[吉元美妃]、冷水由紀絵、山内則康、長塚幸恵、木本茂樹"
+        },
+        {
+          "key": "作画监督助理",
+          "value": "菅谷朱理"
+        }
+      ],
+      "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/23/69/368289_NreZA.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/23/69/368289_NreZA.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/23/69/368289_NreZA.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/23/69/368289_NreZA.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/23/69/368289_NreZA.jpg"
+      }
+    },
+    "entries": [
+      {
+        "id": 1182675,
+        "subject_id": 368289,
+        "sort": 26,
+        "type": 0,
+        "airdate": "2023-04-01"
+      },
+      {
+        "id": 1182676,
+        "subject_id": 368289,
+        "sort": 27,
+        "type": 0,
+        "airdate": "2023-04-08"
+      },
+      {
+        "id": 1182677,
+        "subject_id": 368289,
+        "sort": 28,
+        "type": 0,
+        "airdate": "2023-04-15"
+      },
+      {
+        "id": 1182678,
+        "subject_id": 368289,
+        "sort": 29,
+        "type": 0,
+        "airdate": "2023-04-22"
+      },
+      {
+        "id": 1182679,
+        "subject_id": 368289,
+        "sort": 30,
+        "type": 0,
+        "airdate": "2023-04-29"
+      },
+      {
+        "id": 1182680,
+        "subject_id": 368289,
+        "sort": 31,
+        "type": 0,
+        "airdate": "2023-05-06"
+      },
+      {
+        "id": 1182681,
+        "subject_id": 368289,
+        "sort": 32,
+        "type": 0,
+        "airdate": "2023-05-13"
+      },
+      {
+        "id": 1182682,
+        "subject_id": 368289,
+        "sort": 33,
+        "type": 0,
+        "airdate": "2023-05-20"
+      },
+      {
+        "id": 1182683,
+        "subject_id": 368289,
+        "sort": 34,
+        "type": 0,
+        "airdate": "2023-05-27"
+      },
+      {
+        "id": 1182684,
+        "subject_id": 368289,
+        "sort": 35,
+        "type": 0,
+        "airdate": "2023-06-03"
+      },
+      {
+        "id": 1182685,
+        "subject_id": 368289,
+        "sort": 36,
+        "type": 0,
+        "airdate": "2023-06-10"
+      },
+      {
+        "id": 1182686,
+        "subject_id": 368289,
+        "sort": 37,
+        "type": 0,
+        "airdate": "2023-06-17"
+      },
+      {
+        "id": 1224282,
+        "subject_id": 368289,
+        "sort": 38,
+        "type": 0,
+        "airdate": "2023-06-24"
+      },
+      {
+        "id": 1225471,
+        "subject_id": 368289,
+        "sort": 39,
+        "type": 0,
+        "airdate": "2023-07-01"
+      },
+      {
+        "id": 1229314,
+        "subject_id": 368289,
+        "sort": 40,
+        "type": 0,
+        "airdate": "2023-07-08"
+      },
+      {
+        "id": 1233647,
+        "subject_id": 368289,
+        "sort": 41,
+        "type": 0,
+        "airdate": "2023-07-15"
+      },
+      {
+        "id": 1233648,
+        "subject_id": 368289,
+        "sort": 42,
+        "type": 0,
+        "airdate": "2023-07-22"
+      },
+      {
+        "id": 1233649,
+        "subject_id": 368289,
+        "sort": 43,
+        "type": 0,
+        "airdate": "2023-07-29"
+      },
+      {
+        "id": 1233650,
+        "subject_id": 368289,
+        "sort": 44,
+        "type": 0,
+        "airdate": "2023-08-05"
+      },
+      {
+        "id": 1233651,
+        "subject_id": 368289,
+        "sort": 45,
+        "type": 0,
+        "airdate": "2023-08-12"
+      },
+      {
+        "id": 1233652,
+        "subject_id": 368289,
+        "sort": 46,
+        "type": 0,
+        "airdate": "2023-08-19"
+      },
+      {
+        "id": 1233653,
+        "subject_id": 368289,
+        "sort": 47,
+        "type": 0,
+        "airdate": "2023-09-02"
+      },
+      {
+        "id": 1233654,
+        "subject_id": 368289,
+        "sort": 48,
+        "type": 0,
+        "airdate": "2023-09-09"
+      },
+      {
+        "id": 1241205,
+        "subject_id": 368289,
+        "sort": 49,
+        "type": 0,
+        "airdate": "2023-09-16"
+      },
+      {
+        "id": 1241206,
+        "subject_id": 368289,
+        "sort": 50,
+        "type": 0,
+        "airdate": "2023-09-30"
+      }
+    ]
+  },
+  {
+    "subject_id": 394784,
+    "checked_at": "2026-10-16T07:01:56.551251+08:00",
+    "subject": {
+      "id": 394784,
+      "type": 2,
+      "name": "MIX MEISEI STORY 2ND SEASON ～二度目の夏、空の向こうへ～",
+      "name_cn": "MIX：明青故事 第二季 ～第二个夏天，迈向晴空～",
+      "date": "2023-04-01",
+      "eps": 24,
+      "infobox": [
+        {
+          "key": "中文名",
+          "value": "MIX：明青故事 第二季 ～第二个夏天，迈向晴空～"
+        },
+        {
+          "key": "别名",
+          "value": [
+            {
+              "v": "MIX: MEISEI STORY 2ND SEASON - Nidome no Natsu, Sora no Mukou e"
+            },
+            {
+              "v": "MIX MEISEI STORY Season2"
+            },
+            {
+              "k": "萌百译名",
+              "v": "MIX 2ND SEASON ～第二次的夏天，向着天空～"
+            },
+            {
+              "k": "壁吧译名",
+              "v": "MIX：明青故事 第二季 ～第二次的夏天，向着天空的另一方～"
+            }
+          ]
+        },
+        {
+          "key": "话数",
+          "value": "24"
+        },
+        {
+          "key": "放送开始",
+          "value": "2023年4月1日"
+        },
+        {
+          "key": "放送星期",
+          "value": "星期六"
+        },
+        {
+          "key": "官方网站",
+          "value": "https://mix-anime.jp/"
+        },
+        {
+          "key": "播放电视台",
+          "value": "読売テレビ"
+        },
+        {
+          "key": "其他电视台",
+          "value": "日本テレビ"
+        },
+        {
+          "key": "播放结束",
+          "value": "2023年9月23日"
+        },
+        {
+          "key": "导演",
+          "value": "神谷智大"
+        },
+        {
+          "key": "Copyright",
+          "value": "©あだち充／MIX MEISEI STORY製作委員会 2023"
+        },
+        {
+          "key": "原作",
+          "value": "あだち充「MIX」（小学館「ゲッサン」連載中）"
+        },
+        {
+          "key": "人物设定",
+          "value": "牧孝雄"
+        },
+        {
+          "key": "OP・ED 分镜",
+          "value": "神谷智大（OP1）、向井雅浩（OP2）、ふくだるな（ED）"
+        },
+        {
+          "key": "製作",
+          "value": "MIX MEISEI STORY 製作委員会2023（読売テレビ、小学館、小学館集英社プロダクション、OLM；佐々木加奈、三澤幸三、長谷川友紀、間取美帆）；宮本典博、沢辺伸政、藤田亮、奥野敏聡"
+        },
+        {
+          "key": "主题歌编曲",
+          "value": "トオミヨウ ＆ sumika（OP1） / NAOKI-T（ED1）/ KOHD（ED2）"
+        },
+        {
+          "key": "主题歌作曲",
+          "value": "片岡健太（OP1） / miwa（ED1）/ 田邊駿一（OP2） / Raizo.W（ED2）"
+        },
+        {
+          "key": "主题歌作词",
+          "value": "片岡健太（OP1） / miwa（ED1）/ 田邊駿一（OP2） / コヤマヒデカズ（ED2）"
+        },
+        {
+          "key": "主题歌演出",
+          "value": "sumika（OP1） / miwa（ED1）/ BLUE ENCOUNT（OP2） / Little Glee Monster（ED2）"
+        },
+        {
+          "key": "动画制作",
+          "value": "OLM"
+        },
+        {
+          "key": "总制片人",
+          "value": "永井幸治、備前島幹人、高澤邦仁、釜秀樹"
+        },
+        {
+          "key": "制片人",
+          "value": "汐口武史、近藤秀峰、伊藤香織、森下勝司"
+        },
+        {
+          "key": "动画制片人",
+          "value": "増田克人"
+        },
+        {
+          "key": "助理制片人",
+          "value": "副制片人：吉田卓麻"
+        }
+      ],
+      "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/41/c3/394784_6Zqee.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/41/c3/394784_6Zqee.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/41/c3/394784_6Zqee.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/41/c3/394784_6Zqee.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/41/c3/394784_6Zqee.jpg"
+      }
+    },
+    "entries": [
+      {
+        "id": 1182687,
+        "subject_id": 394784,
+        "sort": 1,
+        "type": 0,
+        "airdate": "2023-04-01"
+      },
+      {
+        "id": 1182688,
+        "subject_id": 394784,
+        "sort": 2,
+        "type": 0,
+        "airdate": "2023-04-08"
+      },
+      {
+        "id": 1182689,
+        "subject_id": 394784,
+        "sort": 3,
+        "type": 0,
+        "airdate": "2023-04-15"
+      },
+      {
+        "id": 1182690,
+        "subject_id": 394784,
+        "sort": 4,
+        "type": 0,
+        "airdate": "2023-04-22"
+      },
+      {
+        "id": 1182691,
+        "subject_id": 394784,
+        "sort": 5,
+        "type": 0,
+        "airdate": "2023-04-29"
+      },
+      {
+        "id": 1182692,
+        "subject_id": 394784,
+        "sort": 6,
+        "type": 0,
+        "airdate": "2023-05-06"
+      },
+      {
+        "id": 1182693,
+        "subject_id": 394784,
+        "sort": 7,
+        "type": 0,
+        "airdate": "2023-05-13"
+      },
+      {
+        "id": 1182694,
+        "subject_id": 394784,
+        "sort": 8,
+        "type": 0,
+        "airdate": "2023-05-20"
+      },
+      {
+        "id": 1182695,
+        "subject_id": 394784,
+        "sort": 9,
+        "type": 0,
+        "airdate": "2023-05-27"
+      },
+      {
+        "id": 1182696,
+        "subject_id": 394784,
+        "sort": 10,
+        "type": 0,
+        "airdate": "2023-06-03"
+      },
+      {
+        "id": 1182697,
+        "subject_id": 394784,
+        "sort": 11,
+        "type": 0,
+        "airdate": "2023-06-10"
+      },
+      {
+        "id": 1182698,
+        "subject_id": 394784,
+        "sort": 12,
+        "type": 0,
+        "airdate": "2023-06-17"
+      },
+      {
+        "id": 1192381,
+        "subject_id": 394784,
+        "sort": 13,
+        "type": 0,
+        "airdate": "2023-06-24"
+      },
+      {
+        "id": 1192382,
+        "subject_id": 394784,
+        "sort": 14,
+        "type": 0,
+        "airdate": "2023-07-08"
+      },
+      {
+        "id": 1192383,
+        "subject_id": 394784,
+        "sort": 15,
+        "type": 0,
+        "airdate": "2023-07-15"
+      },
+      {
+        "id": 1192384,
+        "subject_id": 394784,
+        "sort": 16,
+        "type": 0,
+        "airdate": "2023-07-22"
+      },
+      {
+        "id": 1192385,
+        "subject_id": 394784,
+        "sort": 17,
+        "type": 0,
+        "airdate": "2023-07-29"
+      },
+      {
+        "id": 1192386,
+        "subject_id": 394784,
+        "sort": 18,
+        "type": 0,
+        "airdate": "2023-08-05"
+      },
+      {
+        "id": 1192387,
+        "subject_id": 394784,
+        "sort": 19,
+        "type": 0,
+        "airdate": "2023-08-12"
+      },
+      {
+        "id": 1192388,
+        "subject_id": 394784,
+        "sort": 20,
+        "type": 0,
+        "airdate": "2023-08-19"
+      },
+      {
+        "id": 1192389,
+        "subject_id": 394784,
+        "sort": 21,
+        "type": 0,
+        "airdate": "2023-09-02"
+      },
+      {
+        "id": 1192390,
+        "subject_id": 394784,
+        "sort": 22,
+        "type": 0,
+        "airdate": "2023-09-09"
+      },
+      {
+        "id": 1192391,
+        "subject_id": 394784,
+        "sort": 23,
+        "type": 0,
+        "airdate": "2023-09-16"
+      },
+      {
+        "id": 1192392,
+        "subject_id": 394784,
+        "sort": 24,
+        "type": 0,
+        "airdate": "2023-09-23"
+      }
+    ]
+  },
+  {
+    "subject_id": 413786,
+    "checked_at": "2026-10-16T07:01:56.551251+08:00",
+    "subject": {
+      "id": 413786,
+      "type": 2,
+      "name": "逃走中 グレートミッション",
+      "name_cn": "逃走中 终极任务",
+      "date": "2023-04-02",
+      "eps": 97,
+      "infobox": [
+        {
+          "key": "中文名",
+          "value": "逃走中 终极任务"
+        },
+        {
+          "key": "别名",
+          "value": [
+            {
+              "v": "逃走中 THE GREAT MISSION"
+            },
+            {
+              "v": "Tousouchuu: Great Mission"
+            },
+            {
+              "v": "全员逃走中 动画版"
+            }
+          ]
+        },
+        {
+          "key": "话数",
+          "value": "97"
+        },
+        {
+          "key": "放送开始",
+          "value": "2023年4月2日"
+        },
+        {
+          "key": "放送星期",
+          "value": "星期日"
+        },
+        {
+          "key": "官方网站",
+          "value": "https://www.toei-anim.co.jp/tv/tosochu_gm/"
+        },
+        {
+          "key": "播放电视台",
+          "value": "フジテレビ"
+        },
+        {
+          "key": "播放结束",
+          "value": "2025年3月30日"
+        },
+        {
+          "key": "导演",
+          "value": "チーフディレクター：川崎弘二(49-97)"
+        },
+        {
+          "key": "Copyright",
+          "value": "©フジテレビ・東映アニメーション"
+        },
+        {
+          "key": "原案",
+          "value": "「逃走中」 （フジテレビ）"
+        },
+        {
+          "key": "系列监督",
+          "value": "貝澤幸男、暮田公平"
+        },
+        {
+          "key": "人物原案",
+          "value": "岡野剛"
+        },
+        {
+          "key": "人物设定",
+          "value": "大西陽一、石橋大輔(49-97)"
+        },
+        {
+          "key": "副人物设定",
+          "value": "西口智也、小島隆寛、金久保典江、澤木巳登理、加野晃、佐藤敏明"
+        },
+        {
+          "key": "道具设计",
+          "value": "宇代祐規"
+        },
+        {
+          "key": "美术监督",
+          "value": "神綾香[藤井綾香]、秋山健太郎"
+        },
+        {
+          "key": "美术设计",
+          "value": "福田健二"
+        },
+        {
+          "key": "背景设定",
+          "value": "田村正平(3D舞台设计)"
+        },
+        {
+          "key": "摄影监督",
+          "value": "毛塚沙織"
+        },
+        {
+          "key": "摄影监督助理",
+          "value": "小川庵"
+        },
+        {
+          "key": "CG 导演",
+          "value": "池上義孝、森田信廣、田村正平"
+        },
+        {
+          "key": "监修",
+          "value": "梅澤淳稔；企画监修：笹谷隆司、加藤大"
+        },
+        {
+          "key": "主题歌编曲",
+          "value": "佐藤純一（OP） / Suzzy（ED5） / 玉屋2060%（ED6） / HoneyWorks（ED7） / 藤原燈太（ED8）"
+        },
+        {
+          "key": "主题歌作曲",
+          "value": "佐藤純一（OP） / Stand Alone、Yu-ki Kokubo、JUNE（ED1） / 玉屋2060%（ED2,6） / 稲生司（ED3） / Phil Schwan、SOFTSERVEBOY、SQVARE（ED4） / 大智、伊橋成哉、Suzzy（ED5） / shito（ED7） / 前山田健一（ED8）"
+        },
+        {
+          "key": "主题歌作词",
+          "value": "林英樹（OP） / Yu-ki Kokubo（ED1） / 玉屋2060%（ED2,6） / 稲生司（ED3） / 藤林聖子（ED4） / miyake（ED5） / shito、Gom（ED7） / 前山田健一（ED8）"
+        },
+        {
+          "key": "主题歌演出",
+          "value": "fhána（OP） / AB6IX（ED1） / Wienners（ED2） / Mr.ふぉるて（ED3） / TEMPEST（ED4） / ICEx（ED5） / AXXX1S（ED6） / 高嶺のなでしこ（ED7） / ALL IN（ED8）"
+        },
+        {
+          "key": "製作",
+          "value": "フジテレビ・読売広告社・東映アニメーション"
+        },
+        {
+          "key": "制作管理",
+          "value": "製作担当：太田有紀(1-7)、小林克規"
+        },
+        {
+          "key": "企画协力",
+          "value": "フジクリエイティブコーポレーション"
+        },
+        {
+          "key": "制片人",
+          "value": "渡辺恒也(フジテレビ)、佐川直子(読売広告社)、横溝真結美(読売広告社)、櫻田博之、橋本信太郎→高田伸治"
+        },
+        {
+          "key": "助理制片人",
+          "value": "高田伸治"
+        },
+        {
+          "key": "脚本",
+          "value": "中山智博、藤田伸三、井上テテ、福嶋幸典、山口宏、佐藤寿昭、森地夏美、吉高寿男、山崎亮"
+        },
+        {
+          "key": "分镜",
+          "value": "貝澤幸男、暮田公平、谷東、川崎弘二、鈴木正男、宮元宏彰、角銅博之、柳屋圭宏、西森章、髙戸谷一歩、渡部穏寛、中島豊、志田直俊、三塚雅人、志水淳児、小松由依、中島啓太郎、三木琴絵、中村亮太、山室直儀、中村哲治、古賀豪、鎌谷悠、石平信司、山崎響介、中村明博、釆野晴樹"
+        },
+        {
+          "key": "演出",
+          "value": "川崎弘二、三木琴絵、中島啓太郎、羽多野浩平、小松由依、宮元宏彰、野呂彩芳、角銅博之、柳屋圭宏、松川朋弘、村山靖、髙戸谷一歩、谷東、志水淳児、前屋俊広、山崎響介、佐土原武之、金子エマ、中村明博、都築悠一、鎌谷悠、ましろ、石田暢、暮田公平、釆野晴樹、貝澤幸男"
+        },
+        {
+          "key": "总作画监督",
+          "value": "真庭秀明、大西陽一、金久保典江、石橋大輔、香川久、二階堂渥志、浅沼昭弘、諸葛子敬、仲條久美"
+        },
+        {
+          "key": "OP・ED 分镜",
+          "value": "小松由依(OP1&2) / 髙戸谷一歩(ED1)、三木琴絵(ED2)、長谷川和哉(ED3)、釆野晴樹(ED4)、角銅博之(ED5)、山崎響介(ED6)、小松由依(ED7)、中島啓太郎(ED8)"
+        },
+        {
+          "key": "OP・ED 演出",
+          "value": "小松由依(OP1&2) / 髙戸谷一歩(ED1)、三木琴絵(ED2)、長谷川和哉(ED3)、釆野晴樹(ED4)、角銅博之(ED5)、山崎響介(ED6)、小松由依(ED7)、中島啓太郎(ED8)"
+        }
+      ],
+      "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/80/50/413786_1NqZt.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/80/50/413786_1NqZt.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/80/50/413786_1NqZt.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/80/50/413786_1NqZt.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/80/50/413786_1NqZt.jpg"
+      }
+    },
+    "entries": [
+      {
+        "id": 1182930,
+        "subject_id": 413786,
+        "sort": 1,
+        "type": 0,
+        "airdate": "2023-04-02"
+      },
+      {
+        "id": 1182931,
+        "subject_id": 413786,
+        "sort": 2,
+        "type": 0,
+        "airdate": "2023-04-09"
+      },
+      {
+        "id": 1182932,
+        "subject_id": 413786,
+        "sort": 3,
+        "type": 0,
+        "airdate": "2023-04-16"
+      },
+      {
+        "id": 1182933,
+        "subject_id": 413786,
+        "sort": 4,
+        "type": 0,
+        "airdate": "2023-04-23"
+      },
+      {
+        "id": 1182934,
+        "subject_id": 413786,
+        "sort": 5,
+        "type": 0,
+        "airdate": "2023-04-30"
+      },
+      {
+        "id": 1182935,
+        "subject_id": 413786,
+        "sort": 6,
+        "type": 0,
+        "airdate": "2023-05-07"
+      },
+      {
+        "id": 1182936,
+        "subject_id": 413786,
+        "sort": 7,
+        "type": 0,
+        "airdate": "2023-05-14"
+      },
+      {
+        "id": 1182937,
+        "subject_id": 413786,
+        "sort": 8,
+        "type": 0,
+        "airdate": "2023-05-28"
+      },
+      {
+        "id": 1182938,
+        "subject_id": 413786,
+        "sort": 9,
+        "type": 0,
+        "airdate": "2023-06-04"
+      },
+      {
+        "id": 1182939,
+        "subject_id": 413786,
+        "sort": 10,
+        "type": 0,
+        "airdate": "2023-06-11"
+      },
+      {
+        "id": 1182940,
+        "subject_id": 413786,
+        "sort": 11,
+        "type": 0,
+        "airdate": "2023-06-18"
+      },
+      {
+        "id": 1182941,
+        "subject_id": 413786,
+        "sort": 12,
+        "type": 0,
+        "airdate": "2023-06-25"
+      },
+      {
+        "id": 1191854,
+        "subject_id": 413786,
+        "sort": 13,
+        "type": 0,
+        "airdate": "2023-07-02"
+      },
+      {
+        "id": 1191855,
+        "subject_id": 413786,
+        "sort": 14,
+        "type": 0,
+        "airdate": "2023-07-09"
+      },
+      {
+        "id": 1191856,
+        "subject_id": 413786,
+        "sort": 15,
+        "type": 0,
+        "airdate": "2023-07-16"
+      },
+      {
+        "id": 1191857,
+        "subject_id": 413786,
+        "sort": 16,
+        "type": 0,
+        "airdate": "2023-07-30"
+      },
+      {
+        "id": 1191858,
+        "subject_id": 413786,
+        "sort": 17,
+        "type": 0,
+        "airdate": "2023-08-06"
+      },
+      {
+        "id": 1191859,
+        "subject_id": 413786,
+        "sort": 18,
+        "type": 0,
+        "airdate": "2023-08-13"
+      },
+      {
+        "id": 1191860,
+        "subject_id": 413786,
+        "sort": 19,
+        "type": 0,
+        "airdate": "2023-08-20"
+      },
+      {
+        "id": 1191861,
+        "subject_id": 413786,
+        "sort": 20,
+        "type": 0,
+        "airdate": "2023-08-27"
+      },
+      {
+        "id": 1191862,
+        "subject_id": 413786,
+        "sort": 21,
+        "type": 0,
+        "airdate": "2023-09-03"
+      },
+      {
+        "id": 1191863,
+        "subject_id": 413786,
+        "sort": 22,
+        "type": 0,
+        "airdate": "2023-09-10"
+      },
+      {
+        "id": 1191864,
+        "subject_id": 413786,
+        "sort": 23,
+        "type": 0,
+        "airdate": "2023-09-17"
+      },
+      {
+        "id": 1191865,
+        "subject_id": 413786,
+        "sort": 24,
+        "type": 0,
+        "airdate": "2023-09-24"
+      },
+      {
+        "id": 1191866,
+        "subject_id": 413786,
+        "sort": 25,
+        "type": 0,
+        "airdate": "2023-10-01"
+      },
+      {
+        "id": 1191867,
+        "subject_id": 413786,
+        "sort": 26,
+        "type": 0,
+        "airdate": "2023-10-08"
+      },
+      {
+        "id": 1191868,
+        "subject_id": 413786,
+        "sort": 27,
+        "type": 0,
+        "airdate": "2023-10-15"
+      },
+      {
+        "id": 1191869,
+        "subject_id": 413786,
+        "sort": 28,
+        "type": 0,
+        "airdate": "2023-10-22"
+      },
+      {
+        "id": 1191870,
+        "subject_id": 413786,
+        "sort": 29,
+        "type": 0,
+        "airdate": "2023-10-29"
+      },
+      {
+        "id": 1191871,
+        "subject_id": 413786,
+        "sort": 30,
+        "type": 0,
+        "airdate": "2023-11-05"
+      },
+      {
+        "id": 1191872,
+        "subject_id": 413786,
+        "sort": 31,
+        "type": 0,
+        "airdate": "2023-11-12"
+      },
+      {
+        "id": 1191873,
+        "subject_id": 413786,
+        "sort": 32,
+        "type": 0,
+        "airdate": "2023-11-19"
+      },
+      {
+        "id": 1191874,
+        "subject_id": 413786,
+        "sort": 33,
+        "type": 0,
+        "airdate": "2023-11-26"
+      },
+      {
+        "id": 1191875,
+        "subject_id": 413786,
+        "sort": 34,
+        "type": 0,
+        "airdate": "2023-12-03"
+      },
+      {
+        "id": 1191876,
+        "subject_id": 413786,
+        "sort": 35,
+        "type": 0,
+        "airdate": "2023-12-10"
+      },
+      {
+        "id": 1191877,
+        "subject_id": 413786,
+        "sort": 36,
+        "type": 0,
+        "airdate": "2023-12-17"
+      },
+      {
+        "id": 1191878,
+        "subject_id": 413786,
+        "sort": 37,
+        "type": 0,
+        "airdate": "2023-12-24"
+      },
+      {
+        "id": 1191879,
+        "subject_id": 413786,
+        "sort": 38,
+        "type": 0,
+        "airdate": "2024-01-07"
+      },
+      {
+        "id": 1191880,
+        "subject_id": 413786,
+        "sort": 39,
+        "type": 0,
+        "airdate": "2024-01-14"
+      },
+      {
+        "id": 1191881,
+        "subject_id": 413786,
+        "sort": 40,
+        "type": 0,
+        "airdate": "2024-01-21"
+      },
+      {
+        "id": 1191882,
+        "subject_id": 413786,
+        "sort": 41,
+        "type": 0,
+        "airdate": "2024-01-28"
+      },
+      {
+        "id": 1191883,
+        "subject_id": 413786,
+        "sort": 42,
+        "type": 0,
+        "airdate": "2024-02-04"
+      },
+      {
+        "id": 1191884,
+        "subject_id": 413786,
+        "sort": 43,
+        "type": 0,
+        "airdate": "2024-02-11"
+      },
+      {
+        "id": 1191885,
+        "subject_id": 413786,
+        "sort": 44,
+        "type": 0,
+        "airdate": "2024-02-18"
+      },
+      {
+        "id": 1191886,
+        "subject_id": 413786,
+        "sort": 45,
+        "type": 0,
+        "airdate": "2024-02-25"
+      },
+      {
+        "id": 1191887,
+        "subject_id": 413786,
+        "sort": 46,
+        "type": 0,
+        "airdate": "2024-03-03"
+      },
+      {
+        "id": 1191888,
+        "subject_id": 413786,
+        "sort": 47,
+        "type": 0,
+        "airdate": "2024-03-17"
+      },
+      {
+        "id": 1191889,
+        "subject_id": 413786,
+        "sort": 48,
+        "type": 0,
+        "airdate": "2024-03-24"
+      },
+      {
+        "id": 1191890,
+        "subject_id": 413786,
+        "sort": 49,
+        "type": 0,
+        "airdate": "2024-03-31"
+      },
+      {
+        "id": 1313305,
+        "subject_id": 413786,
+        "sort": 50,
+        "type": 0,
+        "airdate": "2024-04-07"
+      },
+      {
+        "id": 1313306,
+        "subject_id": 413786,
+        "sort": 51,
+        "type": 0,
+        "airdate": "2024-04-14"
+      },
+      {
+        "id": 1313307,
+        "subject_id": 413786,
+        "sort": 52,
+        "type": 0,
+        "airdate": "2024-04-21"
+      },
+      {
+        "id": 1313308,
+        "subject_id": 413786,
+        "sort": 53,
+        "type": 0,
+        "airdate": "2024-04-28"
+      },
+      {
+        "id": 1337103,
+        "subject_id": 413786,
+        "sort": 54,
+        "type": 0,
+        "airdate": "2024-05-05"
+      },
+      {
+        "id": 1337104,
+        "subject_id": 413786,
+        "sort": 55,
+        "type": 0,
+        "airdate": "2024-05-12"
+      },
+      {
+        "id": 1337105,
+        "subject_id": 413786,
+        "sort": 56,
+        "type": 0,
+        "airdate": "2024-05-19"
+      },
+      {
+        "id": 1337106,
+        "subject_id": 413786,
+        "sort": 57,
+        "type": 0,
+        "airdate": "2024-05-26"
+      },
+      {
+        "id": 1348525,
+        "subject_id": 413786,
+        "sort": 58,
+        "type": 0,
+        "airdate": "2024-06-02"
+      },
+      {
+        "id": 1348526,
+        "subject_id": 413786,
+        "sort": 59,
+        "type": 0,
+        "airdate": "2024-06-09"
+      },
+      {
+        "id": 1348527,
+        "subject_id": 413786,
+        "sort": 60,
+        "type": 0,
+        "airdate": "2024-06-16"
+      },
+      {
+        "id": 1348528,
+        "subject_id": 413786,
+        "sort": 61,
+        "type": 0,
+        "airdate": "2024-06-23"
+      },
+      {
+        "id": 1348529,
+        "subject_id": 413786,
+        "sort": 62,
+        "type": 0,
+        "airdate": "2024-06-30"
+      },
+      {
+        "id": 1360109,
+        "subject_id": 413786,
+        "sort": 63,
+        "type": 0,
+        "airdate": "2024-07-07"
+      },
+      {
+        "id": 1360110,
+        "subject_id": 413786,
+        "sort": 64,
+        "type": 0,
+        "airdate": "2024-07-14"
+      },
+      {
+        "id": 1360111,
+        "subject_id": 413786,
+        "sort": 65,
+        "type": 0,
+        "airdate": "2024-07-28"
+      },
+      {
+        "id": 1360112,
+        "subject_id": 413786,
+        "sort": 66,
+        "type": 0,
+        "airdate": "2024-08-04"
+      },
+      {
+        "id": 1379342,
+        "subject_id": 413786,
+        "sort": 67,
+        "type": 0,
+        "airdate": "2024-08-11"
+      },
+      {
+        "id": 1379343,
+        "subject_id": 413786,
+        "sort": 68,
+        "type": 0,
+        "airdate": "2024-08-18"
+      },
+      {
+        "id": 1379344,
+        "subject_id": 413786,
+        "sort": 69,
+        "type": 0,
+        "airdate": "2024-08-25"
+      },
+      {
+        "id": 1387213,
+        "subject_id": 413786,
+        "sort": 70,
+        "type": 0,
+        "airdate": "2024-09-01"
+      },
+      {
+        "id": 1390033,
+        "subject_id": 413786,
+        "sort": 71,
+        "type": 0,
+        "airdate": "2024-09-08"
+      },
+      {
+        "id": 1393333,
+        "subject_id": 413786,
+        "sort": 72,
+        "type": 0,
+        "airdate": "2024-09-15"
+      },
+      {
+        "id": 1395195,
+        "subject_id": 413786,
+        "sort": 73,
+        "type": 0,
+        "airdate": "2024-09-22"
+      },
+      {
+        "id": 1400331,
+        "subject_id": 413786,
+        "sort": 74,
+        "type": 0,
+        "airdate": "2024-09-29"
+      },
+      {
+        "id": 1400332,
+        "subject_id": 413786,
+        "sort": 75,
+        "type": 0,
+        "airdate": "2024-10-06"
+      },
+      {
+        "id": 1400333,
+        "subject_id": 413786,
+        "sort": 76,
+        "type": 0,
+        "airdate": "2024-10-13"
+      },
+      {
+        "id": 1400334,
+        "subject_id": 413786,
+        "sort": 77,
+        "type": 0,
+        "airdate": "2024-10-20"
+      },
+      {
+        "id": 1400335,
+        "subject_id": 413786,
+        "sort": 78,
+        "type": 0,
+        "airdate": "2024-11-03"
+      },
+      {
+        "id": 1400337,
+        "subject_id": 413786,
+        "sort": 79,
+        "type": 0,
+        "airdate": "2024-11-17"
+      },
+      {
+        "id": 1400338,
+        "subject_id": 413786,
+        "sort": 80,
+        "type": 0,
+        "airdate": "2024-11-24"
+      },
+      {
+        "id": 1400339,
+        "subject_id": 413786,
+        "sort": 81,
+        "type": 0,
+        "airdate": "2024-12-01"
+      },
+      {
+        "id": 1400340,
+        "subject_id": 413786,
+        "sort": 82,
+        "type": 0,
+        "airdate": "2024-12-08"
+      },
+      {
+        "id": 1400341,
+        "subject_id": 413786,
+        "sort": 83,
+        "type": 0,
+        "airdate": "2024-12-15"
+      },
+      {
+        "id": 1400342,
+        "subject_id": 413786,
+        "sort": 84,
+        "type": 0,
+        "airdate": "2024-12-22"
+      },
+      {
+        "id": 1400343,
+        "subject_id": 413786,
+        "sort": 85,
+        "type": 0,
+        "airdate": "2024-12-29"
+      },
+      {
+        "id": 1400344,
+        "subject_id": 413786,
+        "sort": 86,
+        "type": 0,
+        "airdate": "2025-01-05"
+      },
+      {
+        "id": 1400345,
+        "subject_id": 413786,
+        "sort": 87,
+        "type": 0,
+        "airdate": "2025-01-12"
+      },
+      {
+        "id": 1400346,
+        "subject_id": 413786,
+        "sort": 88,
+        "type": 0,
+        "airdate": "2025-01-19"
+      },
+      {
+        "id": 1400347,
+        "subject_id": 413786,
+        "sort": 89,
+        "type": 0,
+        "airdate": "2025-01-26"
+      },
+      {
+        "id": 1454120,
+        "subject_id": 413786,
+        "sort": 90,
+        "type": 0,
+        "airdate": "2025-02-02"
+      },
+      {
+        "id": 1456604,
+        "subject_id": 413786,
+        "sort": 91,
+        "type": 0,
+        "airdate": "2025-02-09"
+      },
+      {
+        "id": 1459583,
+        "subject_id": 413786,
+        "sort": 92,
+        "type": 0,
+        "airdate": "2025-02-16"
+      },
+      {
+        "id": 1459584,
+        "subject_id": 413786,
+        "sort": 93,
+        "type": 0,
+        "airdate": "2025-02-23"
+      },
+      {
+        "id": 1459585,
+        "subject_id": 413786,
+        "sort": 94,
+        "type": 0,
+        "airdate": "2025-03-02"
+      },
+      {
+        "id": 1459586,
+        "subject_id": 413786,
+        "sort": 95,
+        "type": 0,
+        "airdate": "2025-03-16"
+      },
+      {
+        "id": 1459587,
+        "subject_id": 413786,
+        "sort": 96,
+        "type": 0,
+        "airdate": "2025-03-23"
+      },
+      {
+        "id": 1459588,
+        "subject_id": 413786,
+        "sort": 97,
+        "type": 0,
+        "airdate": "2025-03-30"
+      }
+    ]
+  },
+  {
+    "subject_id": 472386,
+    "checked_at": "2026-10-16T07:01:56.551251+08:00",
+    "subject": {
+      "id": 472386,
+      "type": 2,
+      "name": "シンカリオン チェンジ ザ ワールド",
+      "name_cn": "进化先锋 改变世界",
+      "date": "2024-04-07",
+      "eps": 39,
+      "infobox": [
+        {
+          "key": "中文名",
+          "value": "进化先锋 改变世界"
+        },
+        {
+          "key": "别名",
+          "value": [
+            {
+              "v": "SHINKALION CHANGE THE WORLD"
+            },
+            {
+              "v": "新幹線変形ロボ シンカリオン チェンジ ザ ワールド"
+            },
+            {
+              "v": "新干线变形机器人 进化先锋 改变世界"
+            },
+            {
+              "v": "新幹線戰士 改變世界"
+            },
+            {
+              "v": "新幹線變形機器人：變革世代"
+            }
+          ]
+        },
+        {
+          "key": "话数",
+          "value": "39"
+        },
+        {
+          "key": "放送开始",
+          "value": "2024年4月7日"
+        },
+        {
+          "key": "放送星期",
+          "value": "星期日"
+        },
+        {
+          "key": "官方网站",
+          "value": "https://www.shinkalion.com/"
+        },
+        {
+          "key": "播放电视台",
+          "value": "テレ東系列"
+        },
+        {
+          "key": "其他电视台",
+          "value": "BSテレ東"
+        },
+        {
+          "key": "播放结束",
+          "value": "2025年2月2日"
+        },
+        {
+          "key": "导演",
+          "value": "駒屋健一郎"
+        },
+        {
+          "key": "Copyright",
+          "value": "©プロジェクト シンカリオン・JR-HECWK/ERDA・TX"
+        },
+        {
+          "key": "人物设定",
+          "value": "朝香栞、森田二惟奈"
+        },
+        {
+          "key": "机械设定",
+          "value": "桐敷晃"
+        },
+        {
+          "key": "系列构成",
+          "value": "梅原英司"
+        },
+        {
+          "key": "副系列构成",
+          "value": "石橋大助"
+        },
+        {
+          "key": "原案",
+          "value": "ジェイアール東日本企画、小学館集英社プロダクション、タカラトミー；原案协力：竹村武司、田中智之、濵﨑拓人、岸康太"
+        },
+        {
+          "key": "监修",
+          "value": "横山拓也"
+        },
+        {
+          "key": "动画制作",
+          "value": "SIGNAL.MD＆Production I.G"
+        },
+        {
+          "key": "主题歌编曲",
+          "value": "GRe4N BOYZ、nishi-ken / 三好啓太 / 高見沢俊彦 with 本田優一郎 / 江口亮"
+        },
+        {
+          "key": "主题歌作曲",
+          "value": "GRe4N BOYZ / meiyo / 高見沢俊彦 / 山本彩"
+        },
+        {
+          "key": "主题歌作词",
+          "value": "GRe4N BOYZ / meiyo / 高見沢俊彦 / 山本彩"
+        },
+        {
+          "key": "主题歌演出",
+          "value": "GRe4N BOYZ / meiyo / THE ALFEE / 山本彩"
+        },
+        {
+          "key": "製作",
+          "value": "テレビ東京、ERDA"
+        },
+        {
+          "key": "企画",
+          "value": "弓矢政法、丸茂礼、盛武源、竹内俊介、千野孝敏、和田丈嗣"
+        },
+        {
+          "key": "总制片人",
+          "value": "鈴木寿広"
+        },
+        {
+          "key": "制片人",
+          "value": "伊藤渉太、大石淳子、藤井大希、長沼豪、清水紀衣"
+        },
+        {
+          "key": "联合制片人",
+          "value": "勝谷潤一"
+        },
+        {
+          "key": "助理制片人",
+          "value": "沼越有加、菊地音々子、岡野千恵、富樫里帆"
+        },
+        {
+          "key": "计划管理",
+          "value": "畔田雄一、小山達也、牧田麻由子"
+        },
+        {
+          "key": "动画制片人",
+          "value": "松村ゆかり"
+        },
+        {
+          "key": "音乐制作",
+          "value": "小学館ミュージック&デジタルエンタテイメント[SMDE]"
+        },
+        {
+          "key": "音乐制作人",
+          "value": "大隅啓良"
+        },
+        {
+          "key": "协力",
+          "value": "北海道旅客鉄道株式会社、東日本旅客鉄道株式会社、東海旅客鉄道株式会社、西日本旅客鉄道株式会社、九州旅客鉄道株式会社"
+        }
+      ],
+      "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/6c/5b/472386_cffgZ.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/6c/5b/472386_cffgZ.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/6c/5b/472386_cffgZ.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/6c/5b/472386_cffgZ.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/6c/5b/472386_cffgZ.jpg"
+      }
+    },
+    "entries": [
+      {
+        "id": 1311835,
+        "subject_id": 472386,
+        "sort": 1,
+        "type": 0,
+        "airdate": "2024-04-07"
+      },
+      {
+        "id": 1311836,
+        "subject_id": 472386,
+        "sort": 2,
+        "type": 0,
+        "airdate": "2024-04-14"
+      },
+      {
+        "id": 1311837,
+        "subject_id": 472386,
+        "sort": 3,
+        "type": 0,
+        "airdate": "2024-04-21"
+      },
+      {
+        "id": 1311838,
+        "subject_id": 472386,
+        "sort": 4,
+        "type": 0,
+        "airdate": "2024-04-28"
+      },
+      {
+        "id": 1311839,
+        "subject_id": 472386,
+        "sort": 5,
+        "type": 0,
+        "airdate": "2024-05-05"
+      },
+      {
+        "id": 1311840,
+        "subject_id": 472386,
+        "sort": 6,
+        "type": 0,
+        "airdate": "2024-05-12"
+      },
+      {
+        "id": 1311841,
+        "subject_id": 472386,
+        "sort": 7,
+        "type": 0,
+        "airdate": "2024-05-19"
+      },
+      {
+        "id": 1311842,
+        "subject_id": 472386,
+        "sort": 8,
+        "type": 0,
+        "airdate": "2024-05-26"
+      },
+      {
+        "id": 1311843,
+        "subject_id": 472386,
+        "sort": 9,
+        "type": 0,
+        "airdate": "2024-06-02"
+      },
+      {
+        "id": 1311844,
+        "subject_id": 472386,
+        "sort": 10,
+        "type": 0,
+        "airdate": "2024-06-09"
+      },
+      {
+        "id": 1311845,
+        "subject_id": 472386,
+        "sort": 11,
+        "type": 0,
+        "airdate": "2024-06-16"
+      },
+      {
+        "id": 1311846,
+        "subject_id": 472386,
+        "sort": 12,
+        "type": 0,
+        "airdate": "2024-06-23"
+      },
+      {
+        "id": 1360038,
+        "subject_id": 472386,
+        "sort": 13,
+        "type": 0,
+        "airdate": "2024-06-30"
+      },
+      {
+        "id": 1360040,
+        "subject_id": 472386,
+        "sort": 14,
+        "type": 0,
+        "airdate": "2024-07-14"
+      },
+      {
+        "id": 1360041,
+        "subject_id": 472386,
+        "sort": 15,
+        "type": 0,
+        "airdate": "2024-07-21"
+      },
+      {
+        "id": 1360042,
+        "subject_id": 472386,
+        "sort": 16,
+        "type": 0,
+        "airdate": "2024-07-28"
+      },
+      {
+        "id": 1360043,
+        "subject_id": 472386,
+        "sort": 17,
+        "type": 0,
+        "airdate": "2024-08-04"
+      },
+      {
+        "id": 1360044,
+        "subject_id": 472386,
+        "sort": 18,
+        "type": 0,
+        "airdate": "2024-08-11"
+      },
+      {
+        "id": 1360045,
+        "subject_id": 472386,
+        "sort": 19,
+        "type": 0,
+        "airdate": "2024-08-25"
+      },
+      {
+        "id": 1360046,
+        "subject_id": 472386,
+        "sort": 20,
+        "type": 0,
+        "airdate": "2024-09-01"
+      },
+      {
+        "id": 1360047,
+        "subject_id": 472386,
+        "sort": 21,
+        "type": 0,
+        "airdate": "2024-09-08"
+      },
+      {
+        "id": 1360048,
+        "subject_id": 472386,
+        "sort": 22,
+        "type": 0,
+        "airdate": "2024-09-15"
+      },
+      {
+        "id": 1360049,
+        "subject_id": 472386,
+        "sort": 23,
+        "type": 0,
+        "airdate": "2024-09-22"
+      },
+      {
+        "id": 1401949,
+        "subject_id": 472386,
+        "sort": 24,
+        "type": 0,
+        "airdate": "2024-09-29"
+      },
+      {
+        "id": 1401950,
+        "subject_id": 472386,
+        "sort": 25,
+        "type": 0,
+        "airdate": "2024-10-06"
+      },
+      {
+        "id": 1405284,
+        "subject_id": 472386,
+        "sort": 26,
+        "type": 0,
+        "airdate": "2024-10-13"
+      },
+      {
+        "id": 1405285,
+        "subject_id": 472386,
+        "sort": 27,
+        "type": 0,
+        "airdate": "2024-10-20"
+      },
+      {
+        "id": 1405286,
+        "subject_id": 472386,
+        "sort": 28,
+        "type": 0,
+        "airdate": "2024-11-03"
+      },
+      {
+        "id": 1405287,
+        "subject_id": 472386,
+        "sort": 29,
+        "type": 0,
+        "airdate": "2024-11-10"
+      },
+      {
+        "id": 1405288,
+        "subject_id": 472386,
+        "sort": 30,
+        "type": 0,
+        "airdate": "2024-11-17"
+      },
+      {
+        "id": 1405289,
+        "subject_id": 472386,
+        "sort": 31,
+        "type": 0,
+        "airdate": "2024-11-24"
+      },
+      {
+        "id": 1405290,
+        "subject_id": 472386,
+        "sort": 32,
+        "type": 0,
+        "airdate": "2024-12-01"
+      },
+      {
+        "id": 1405291,
+        "subject_id": 472386,
+        "sort": 33,
+        "type": 0,
+        "airdate": "2024-12-08"
+      },
+      {
+        "id": 1405292,
+        "subject_id": 472386,
+        "sort": 34,
+        "type": 0,
+        "airdate": "2024-12-15"
+      },
+      {
+        "id": 1405293,
+        "subject_id": 472386,
+        "sort": 35,
+        "type": 0,
+        "airdate": "2024-12-22"
+      },
+      {
+        "id": 1405294,
+        "subject_id": 472386,
+        "sort": 36,
+        "type": 0,
+        "airdate": "2025-01-12"
+      },
+      {
+        "id": 1449107,
+        "subject_id": 472386,
+        "sort": 37,
+        "type": 0,
+        "airdate": "2025-01-19"
+      },
+      {
+        "id": 1449108,
+        "subject_id": 472386,
+        "sort": 38,
+        "type": 0,
+        "airdate": "2025-01-26"
+      },
+      {
+        "id": 1449109,
+        "subject_id": 472386,
+        "sort": 39,
+        "type": 0,
+        "airdate": "2025-02-02"
+      }
+    ]
+  },
+  {
+    "subject_id": 501203,
+    "checked_at": "2026-10-16T07:01:56.551251+08:00",
+    "subject": {
+      "id": 501203,
+      "type": 2,
+      "name": "クマーバ シーズン2",
+      "name_cn": "",
+      "date": "2024-10-05",
+      "eps": 12,
+      "infobox": [
+        {
+          "key": "别名",
+          "value": [
+            {
+              "v": "Kumarba Season 2"
+            }
+          ]
+        },
+        {
+          "key": "话数",
+          "value": "12"
+        },
+        {
+          "key": "放送开始",
+          "value": "2024年10月5日"
+        },
+        {
+          "key": "放送星期",
+          "value": "星期六"
+        },
+        {
+          "key": "官方网站",
+          "value": "https://kumarba.com/pages/tv-anime"
+        },
+        {
+          "key": "播放电视台",
+          "value": "テレビ東京"
+        },
+        {
+          "key": "播放结束",
+          "value": "2024年12月21日"
+        },
+        {
+          "key": "导演",
+          "value": "樋渡昇一郎"
+        },
+        {
+          "key": "Copyright",
+          "value": "©Kumarba Inc."
+        },
+        {
+          "key": "原案",
+          "value": "樋渡昇一郎"
+        },
+        {
+          "key": "脚本",
+          "value": "ハシモトコーキ"
+        },
+        {
+          "key": "系列构成",
+          "value": "ハシモトコーキ"
+        },
+        {
+          "key": "演出助理",
+          "value": "日野トミー"
+        },
+        {
+          "key": "动作捕捉",
+          "value": "川島勇輝"
+        },
+        {
+          "key": "动画制作",
+          "value": "クリエイティブハウスポケット"
+        },
+        {
+          "key": "动画制片人",
+          "value": "柳澤麗"
+        },
+        {
+          "key": "製作",
+          "value": "Kumarba(アカツキメディアスタジオ)"
+        },
+        {
+          "key": "制片人",
+          "value": "樋渡昇一郎"
+        },
+        {
+          "key": "宣传制片人",
+          "value": "土本幹郎"
+        },
+        {
+          "key": "制作协力",
+          "value": "辻橋賢弥、 関根知佳、永澤夏子、越川理沙"
+        },
+        {
+          "key": "原作协力",
+          "value": "滝渕紘一朗、水野崇志"
+        },
+        {
+          "key": "监修",
+          "value": "香田哲朗"
+        }
+      ],
+      "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/9c/9e/501203_VJ33y.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/9c/9e/501203_VJ33y.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/9c/9e/501203_VJ33y.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/9c/9e/501203_VJ33y.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/9c/9e/501203_VJ33y.jpg"
+      }
+    },
+    "entries": [
+      {
+        "id": 1393235,
+        "subject_id": 501203,
+        "sort": 1,
+        "type": 0,
+        "airdate": "2024-10-05"
+      },
+      {
+        "id": 1393236,
+        "subject_id": 501203,
+        "sort": 2,
+        "type": 0,
+        "airdate": "2024-10-12"
+      },
+      {
+        "id": 1393237,
+        "subject_id": 501203,
+        "sort": 3,
+        "type": 0,
+        "airdate": "2024-10-19"
+      },
+      {
+        "id": 1393238,
+        "subject_id": 501203,
+        "sort": 4,
+        "type": 0,
+        "airdate": "2024-10-26"
+      },
+      {
+        "id": 1393239,
+        "subject_id": 501203,
+        "sort": 5,
+        "type": 0,
+        "airdate": "2024-11-02"
+      },
+      {
+        "id": 1393240,
+        "subject_id": 501203,
+        "sort": 6,
+        "type": 0,
+        "airdate": "2024-11-09"
+      },
+      {
+        "id": 1393241,
+        "subject_id": 501203,
+        "sort": 7,
+        "type": 0,
+        "airdate": "2024-11-16"
+      },
+      {
+        "id": 1393242,
+        "subject_id": 501203,
+        "sort": 8,
+        "type": 0,
+        "airdate": "2024-11-23"
+      },
+      {
+        "id": 1393243,
+        "subject_id": 501203,
+        "sort": 9,
+        "type": 0,
+        "airdate": "2024-11-30"
+      },
+      {
+        "id": 1393244,
+        "subject_id": 501203,
+        "sort": 10,
+        "type": 0,
+        "airdate": "2024-12-07"
+      },
+      {
+        "id": 1393245,
+        "subject_id": 501203,
+        "sort": 11,
+        "type": 0,
+        "airdate": "2024-12-14"
+      },
+      {
+        "id": 1393246,
+        "subject_id": 501203,
+        "sort": 12,
+        "type": 0,
+        "airdate": "2024-12-21"
+      }
+    ]
+  }
+]

@@ -21,6 +21,7 @@ from zoneinfo import ZoneInfo
 import requests
 
 from models import Anime, EpisodeMetadata
+from services import episode_refresh
 from services.episode_source_reviews import reviewed_source
 
 logger = logging.getLogger(__name__)
@@ -325,6 +326,7 @@ class BangumiClient:
         session: requests.Session | None = None,
         request_budget: int = 240,
         interval_seconds: float = 0.5,
+        time_budget_seconds: float = 600,
     ) -> None:
         self.session = session or requests.Session()
         self.session.headers.update(
@@ -338,7 +340,7 @@ class BangumiClient:
         self.next_request = 0.0
         self.unavailable = False
         self.pages_unavailable = False
-        self.deadline = time.monotonic() + 300
+        self.deadline = time.monotonic() + time_budget_seconds
 
     def _get(self, path: str, **params: object) -> dict[str, Any]:
         return self._request(API_ORIGIN + path, params=params)
@@ -485,38 +487,27 @@ class EpisodeEnricher:
     ) -> None:
         self.client = client or BangumiClient()
         self.retry_failed = retry_failed
+        self.quarters: dict[episode_refresh.Identity, episode_refresh.Quarter] = {}
         self.deferred: set[tuple[str, str, str | None, int | None]] = set()
         self.snapshots: dict[
             tuple[str, str, str | None, int | None], EpisodeMetadata | None
         ] = {}
 
     @staticmethod
-    def next_refresh_at(anime: Anime, now: datetime) -> datetime | None:
-        info = anime.episodes
-        if info is None or info.attempted_at is None:
-            return None
-        days = (
-            30 if info.airing_status == "finished" and info.fetch_state == "ok" else 1
-        )
-        if (
-            info.airing_status == "finished"
-            and info.end_date
-            and now.astimezone(TOKYO_TZ).date() - info.end_date < timedelta(days=7)
-        ):
-            days = 1
-        if info.airing_status == "not_yet_aired":
-            days = 1
-        return info.attempted_at + timedelta(days=days)
+    def next_refresh_at(
+        anime: Anime,
+        now: datetime,
+        latest_quarter: episode_refresh.Quarter | None = None,
+    ) -> datetime | None:
+        return episode_refresh.next_refresh_at(anime, now, latest_quarter)
 
     @staticmethod
-    def due(anime: Anime, now: datetime) -> bool:
-        review = reviewed_source(anime)
-        if anime.external_ids.bangumi is None or (
-            review and review["mode"] == "snapshot"
-        ):
-            return False
-        next_refresh = EpisodeEnricher.next_refresh_at(anime, now)
-        return next_refresh is None or now >= next_refresh
+    def due(
+        anime: Anime,
+        now: datetime,
+        latest_quarter: episode_refresh.Quarter | None = None,
+    ) -> bool:
+        return episode_refresh.due(anime, now, latest_quarter)
 
     def enrich(self, anime: Anime, now: datetime) -> Anime:
         review = reviewed_source(anime)
@@ -532,18 +523,20 @@ class EpisodeEnricher:
             and anime.episodes.fetch_state != "ok"
             and subject_id is not None
         )
-        if not retry and not self.due(anime, now):
+        key = episode_refresh.identity(anime)
+        if not retry and not self.due(anime, now, self.quarters.get(key)):
             return anime
         # Share provider evidence only across the same reviewed source identity.
         # Per-record fallback values must never become another quarter's cache.
-        key = (anime.bangumi_id, anime.anime_name, anime.original_name, subject_id)
         if key not in self.snapshots:
             try:
                 self.snapshots[key] = self.client.fetch(anime, now)
+                self.deferred.discard(key)
             except RequestBudgetExceeded:
                 self.deferred.add(key)
                 return anime
             except MetadataUnavailable as exc:
+                self.deferred.discard(key)
                 logger.warning(
                     "Episode metadata retained for %s: %s", anime.bangumi_id, exc
                 )
@@ -604,7 +597,7 @@ def refresh_repository_episodes(
     *,
     selected_ids: set[str] | None = None,
 ) -> set[str]:
-    """Refresh mapped entries across all quarters, oldest due time first.
+    """Reserve capacity for both daily priority and staggered background work.
 
     Metadata itself is the persistent cache. No image requests or uploads occur.
     Previously linked long-running anime remain eligible outside crawl windows.
@@ -629,14 +622,57 @@ def refresh_repository_episodes(
         for index, anime in enumerate(records):
             if selected_ids is not None and anime.bangumi_id not in selected_ids:
                 continue
-            next_refresh = enricher.next_refresh_at(anime, now)
-            priority = next_refresh.timestamp() if next_refresh else float("-inf")
-            pending.append((priority, records, index, anime))
-    # Fixed quarter order can starve older records when the budget runs out
-    # daily. Successful attempts move behind records still waiting; preserve
-    # card order and each record's own fallback when writing the quarters.
-    for _, records, index, anime in sorted(pending, key=lambda item: item[0]):
-        records[index] = enricher.enrich(anime, now)
+            pending.append((records, index, anime))
+    rows = [
+        (path.stem, anime)
+        for path, dataset, _ in datasets
+        for anime in dataset.anime_list
+    ]
+    enricher.quarters = episode_refresh.quarter_context(rows)
+    groups: dict[bool, list] = {True: [], False: []}
+    for records, index, anime in pending:
+        quarter = enricher.quarters[episode_refresh.identity(anime)]
+        target = enricher.next_refresh_at(anime, now, quarter)
+        order = target.timestamp() if target else float("-inf")
+        groups[episode_refresh.refresh_policy(anime, now, quarter).priority].append(
+            (order, records, index, anime)
+        )
+    for group in groups.values():
+        group.sort(key=lambda item: item[0])
+
+    def process(group: list) -> None:
+        for _, records, index, anime in group:
+            records[index] = enricher.enrich(anime, now)
+
+    client = enricher.client
+    background_due = any(
+        enricher.due(anime, now, enricher.quarters[episode_refresh.identity(anime)])
+        for _, _, _, anime in groups[False]
+    )
+    if isinstance(client, BangumiClient) and background_due:
+        # Keep at least one quarter of the run's time and up to 64 requests
+        # for history, even if the priority group grows or the provider slows.
+        reserve = min(64, client.remaining // 3)
+        deadline = client.deadline
+        client.remaining -= reserve
+        client.deadline -= max(0, deadline - time.monotonic()) / 4
+        try:
+            process(groups[True])
+        finally:
+            client.remaining += reserve
+            client.deadline = deadline
+    else:
+        process(groups[True])
+    process(groups[False])
+    # Unused background capacity can finish priority work deferred by its
+    # reserved phase. Cached provider evidence still uses per-record guards.
+    process(
+        [
+            item
+            for item in groups[True]
+            if episode_refresh.identity(item[3]) in enricher.deferred
+        ]
+    )
     if enricher.deferred:
         logger.warning(
             "Episode request/time budget exhausted: %s identities deferred; "
@@ -658,4 +694,10 @@ def refresh_repository_episodes(
         )
         if result.changed:
             changed.add(path.name)
+    stats = episode_refresh.refresh_statistics(
+        [(path.stem, anime) for path, _, records in datasets for anime in records], now
+    )
+    logger.info("Episode refresh health: %s", stats)
+    if stats["priority_older_than_48h"] or stats["priority_unverified"]:
+        logger.warning("Priority episode verification is overdue or missing: %s", stats)
     return changed

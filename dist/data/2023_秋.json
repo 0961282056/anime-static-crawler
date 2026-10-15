@@ -79,8 +79,8 @@
           "https://bgm.tv/subject/320456",
           "https://bgm.tv/subject/320456/ep"
         ],
-        "checked_at": "2026-10-13T21:11:11.477336+08:00",
-        "attempted_at": "2026-10-13T21:11:11.477336+08:00",
+        "checked_at": "2026-10-16T07:16:40.437305+08:00",
+        "attempted_at": "2026-10-16T07:16:40.437305+08:00",
         "end_date": "2023-12-18",
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -1739,6 +1739,34 @@
       }
     },
     {
+      "bangumi_id": "anime-1294",
+      "anime_name": "全員逃走中 -終極任務-",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e245203ac717597d1095ff4ace5f26e9",
+      "premiere_date": "日",
+      "premiere_time": "09:00",
+      "story": "暫無簡介",
+      "original_name": "逃走中 グレートミッション",
+      "external_ids": {
+        "bangumi": 413786,
+        "anilist": 159560
+      },
+      "episodes": {
+        "total_episodes": 97,
+        "aired_episodes": 97,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/413786",
+          "https://bgm.tv/subject/413786/ep"
+        ],
+        "checked_at": "2026-10-13T21:12:32.150582+08:00",
+        "attempted_at": "2026-10-13T21:12:32.150582+08:00",
+        "end_date": "2025-03-30",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    },
+    {
       "bangumi_id": "anime-1395",
       "anime_name": "偶像大師 百萬人演唱會！",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b594b3b886e436e4739e2c4afe80f0fe",
@@ -2047,14 +2075,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-15T14:10:14.348937+08:00",
+  "generated_at": "2026-10-16T07:16:40.437305+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202310/",
   "quality": {
-    "source_count": 73,
-    "record_count": 73,
+    "source_count": 74,
+    "record_count": 74,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 22,
+    "missing_story_count": 23,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

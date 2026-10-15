@@ -469,7 +469,7 @@ def test_cache_and_completed_refresh_intervals(anime_record_factory):
     )
     record = anime(anime_record_factory, episodes=recent)
     assert not EpisodeEnricher.due(record, NOW)
-    assert EpisodeEnricher.due(record, NOW + timedelta(days=31))
+    assert EpisodeEnricher.due(record, NOW + timedelta(days=91))
     recent.end_date = date(2026, 10, 12)
     assert EpisodeEnricher.due(record, NOW)
     assert not EpisodeEnricher.due(anime(anime_record_factory, external_ids={}), NOW)
@@ -539,21 +539,29 @@ def test_exhausted_budget_resumes_overdue_history_before_repeating_new_quarter(
     tmp_path, anime_record_factory, caplog
 ):
     repository = DataRepository(tmp_path, DataQualityPolicy())
-    for year, card, delay in [(2018, 1, 4), (2026, 2, 2), (2025, 3, 3)]:
+    from services.episode_refresh import refresh_policy
+
+    for year, card, lateness in [(2018, 1, 4), (2026, 2, 2), (2025, 3, 3)]:
+        record = anime(
+            anime_record_factory,
+            bangumi_id=f"anime-{card}",
+            episodes=EpisodeMetadata(total_episodes=12, aired_episodes=1),
+        )
+        delay = refresh_policy(record, NOW, (year, 0)).days + lateness
         repository.write_quarter(
             year=str(year),
             season="春",
             records=[
-                anime(
-                    anime_record_factory,
-                    bangumi_id=f"anime-{card}",
-                    episodes=EpisodeMetadata(
-                        total_episodes=12,
-                        aired_episodes=1,
-                        attempted_at=NOW - timedelta(days=delay),
-                        checked_at=NOW - timedelta(days=delay),
-                    ),
-                )
+                record.model_copy(
+                    update={
+                        "episodes": EpisodeMetadata(
+                            total_episodes=12,
+                            aired_episodes=1,
+                            attempted_at=NOW - timedelta(days=delay),
+                            checked_at=NOW - timedelta(days=delay),
+                        )
+                    }
+                ),
             ],
             source_url=f"https://acgsecrets.hk/bangumi/{year}04/",
             source_count=1,
