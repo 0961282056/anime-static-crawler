@@ -472,7 +472,9 @@ class EpisodeEnricher:
     ) -> None:
         self.client = client or BangumiClient()
         self.retry_failed = retry_failed
-        self.snapshots: dict[int, EpisodeMetadata] = {}
+        self.snapshots: dict[
+            tuple[str, str, str | None, int | None], EpisodeMetadata | None
+        ] = {}
 
     @staticmethod
     def due(anime: Anime, now: datetime) -> bool:
@@ -497,13 +499,11 @@ class EpisodeEnricher:
     def enrich(self, anime: Anime, now: datetime) -> Anime:
         review = reviewed_source(anime)
         if review and review["mode"] == "snapshot":
-            # Stable reviewed facts retain the original verification timestamp.
+            # Reviewed facts and unresolved scopes keep their verification time.
             return anime.model_copy(
                 update={"episodes": EpisodeMetadata.model_validate(review["metadata"])}
             )
         subject_id = anime.external_ids.bangumi
-        if subject_id in self.snapshots:
-            return anime.model_copy(update={"episodes": self.snapshots[subject_id]})
         retry = (
             self.retry_failed
             and anime.episodes is not None
@@ -511,17 +511,22 @@ class EpisodeEnricher:
             and subject_id is not None
         )
         if not retry and not self.due(anime, now):
-            if subject_id is not None and anime.episodes is not None:
-                self.snapshots[subject_id] = anime.episodes
             return anime
-        try:
-            info = self.client.fetch(anime, now)
-        except RequestBudgetExceeded:
-            return anime
-        except MetadataUnavailable as exc:
-            logger.warning(
-                "Episode metadata retained for %s: %s", anime.bangumi_id, exc
-            )
+        # Share provider evidence only across the same reviewed source identity.
+        # Per-record fallback values must never become another quarter's cache.
+        key = (anime.bangumi_id, anime.anime_name, anime.original_name, subject_id)
+        if key not in self.snapshots:
+            try:
+                self.snapshots[key] = self.client.fetch(anime, now)
+            except RequestBudgetExceeded:
+                return anime
+            except MetadataUnavailable as exc:
+                logger.warning(
+                    "Episode metadata retained for %s: %s", anime.bangumi_id, exc
+                )
+                self.snapshots[key] = None
+        info = self.snapshots[key]
+        if info is None:
             info = EpisodeMetadata.model_validate(
                 {
                     **(anime.episodes.model_dump() if anime.episodes else {}),
@@ -566,8 +571,6 @@ class EpisodeEnricher:
                         else "來源資料不完整，保留上次確認資料。",
                     }
                 )
-        if subject_id is not None:
-            self.snapshots[subject_id] = info
         return anime.model_copy(update={"episodes": info})
 
 

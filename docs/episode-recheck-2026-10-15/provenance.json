@@ -1,0 +1,25 @@
+{
+  "archive_url": "https://github.com/bangumi/Archive/releases/download/archive/dump-2026-10-13.210353Z.zip",
+  "archive_sha256": "19d12d42502fefeb4a2b14561cc978986a554320b06ca4bbf454d1830b101f90",
+  "archive_as_of": "2026-10-14T05:03:54+08:00",
+  "full_episode_table_read_with_zip_crc": true,
+  "archive_mapped_subjects_with_episodes": 1922,
+  "archive_mapped_episode_entries": 31375,
+  "prior_evidence_hashes_verified": 10,
+  "prior_provenance": "../episode-followup-2026-10-15/provenance.json",
+  "scope_note": "Name/ID matching does not prove that TV and web episode scopes coincide. Pending scope is explicitly retained as a conflict. Snapshot comparison is not a live query of all historical subjects.",
+  "evidence_sha256": {
+    "active-live-audit.jsonl": "90a6030972bee3eff4a43915f2dc67bd377221eccdc0e859ebacf4df404636e2",
+    "archive-comparison-before-review.json": "2c9cfcba7493a3c97f46b2cc6a710bb841da82267bc1fdfdc3b461f40378afc2",
+    "date-scope-candidates.json": "c62ba77128b5b7bdf36f6d6d840a5e75a228b4c8fab3c581147c0d0f6e199d8d",
+    "fetch-observations.json": "3274cd790a3acc01e61c6ff1a7a79da927b4e47b682b3ab582fa4b84dd4064ac",
+    "identity-audit.csv": "93781638692b08425b841492629577b4f1e8ee7fc6d8d93b80355ecaf688fe5b",
+    "pending.csv": "911713f692851954ee589db8f50487c60700d044a74c852d8a2ee02f7bae035d",
+    "primary-source-evidence.json": "15316d0aa1f7c49cec7b56f8929b5023cde8599063c5eea6f7db9bd1e5408217",
+    "progress-changes.json": "5eb485143bdff7f43238f4e7368bfdf2e1377726f14ca40b3a34d7a7b19d0787",
+    "provider-evidence.json": "1bdbb240897739f3ad229f19e360f413e815becd5b191864d86b07dbe0b7d994",
+    "record-changes.json": "a6ced137bc185ba99e229bb293887dffe60b7a0f4d2b4fd0da588e0ab6db07df",
+    "scope-findings.json": "94005ea7ea35027a301ef5ee452981992922c1c9eef5afa540987af3762b1ff7",
+    "summary.json": "afe7ec1e70da5659d93b8e5d4a3a90294a2bb1a6f0fbadd6f940c7d17681355c"
+  }
+}

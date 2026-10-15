@@ -1,0 +1,72 @@
+[
+  {
+    "quarter": "2023_春",
+    "source_url": "https://acgsecrets.hk/bangumi/202304/",
+    "retrieved_at": "2026-10-15T14:05:44.419248+08:00",
+    "candidate": {
+      "bangumi_id": "anime-1292",
+      "anime_name": "The Marginal Service",
+      "source_image_url": "https://static.acgsecrets.hk/img/3e/3eb0f9b215fc8c73de02908dfdc07412/a9047c8e2785c7ecbe75e20419fe2691ec5bb852dd0ac13fda5d3f3f5422d71b.jpg",
+      "premiere_date": "二",
+      "premiere_time": "25:29",
+      "original_name": "THE MARGINAL SERVICE",
+      "external_ids": {
+        "bangumi": 357961,
+        "anilist": 156854
+      }
+    },
+    "schedule_excerpt": "The Marginal Service THE MARGINAL SERVICE The Marginal Service THE MARGINAL SERVICE 原創作品 新作 動作 播放日： 2023年4月11日起／每週二深夜／25時29分 2023年4月12日起／每週三凌晨／1時29分 ",
+    "links": [
+      {
+        "text": "官方網站",
+        "url": "https://marginalservice.com/"
+      },
+      {
+        "text": "MAL",
+        "url": "https://myanimelist.net/anime/53587/"
+      },
+      {
+        "text": "AniList",
+        "url": "https://anilist.co/anime/156854/"
+      },
+      {
+        "text": "番组计划",
+        "url": "https://bangumi.tv/subject/357961"
+      }
+    ]
+  },
+  {
+    "quarter": "2019_冬",
+    "source_url": "https://acgsecrets.hk/bangumi/201901/",
+    "retrieved_at": "2026-10-15T14:06:26.338475+08:00",
+    "candidate": {
+      "bangumi_id": "anime-362",
+      "anime_name": "正中間的理久",
+      "source_image_url": "https://static.acgsecrets.hk/img/00/0000_oldbangumi/CFdLIv1.png",
+      "premiere_date": "三",
+      "premiere_time": "07:30",
+      "original_name": "まんなかのりっくん",
+      "external_ids": {
+        "bangumi": 241044,
+        "anilist": 101579
+      }
+    },
+    "schedule_excerpt": "正中間的理久 まんなかのりっくん 正中間的理久 まんなかのりっくん 改編作品 新作 播放日： 2019年1月9日起／每週三／7時30分 2019年1月9日起／每週三／7時30分 ",
+    "links": [
+      {
+        "text": "官方網站",
+        "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin13/"
+      },
+      {
+        "text": "番组计划",
+        "url": "https://bangumi.tv/subject/241044"
+      }
+    ],
+    "production_matches": {
+      "原作": "土塚理弘",
+      "導演": "関暁子",
+      "監修": "土塚理弘",
+      "角色設計": "池内直子"
+    }
+  }
+]

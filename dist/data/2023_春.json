@@ -318,23 +318,23 @@
       "story": "有一天，地球遭到了Gary型外星人的攻擊。在外星人的攻擊下，航空自衛隊毫無防禦之力，但卻被擁有人類臉孔的“傳說生物”所救。國家在這次事件中首次認識到他們曾經在地球上共存，將他們稱為≪境界人≫，並對他們進行監視。然後幾年後......移民和不可思議的恐怖襲擊事件發生了，一個名為≪Marginal Service≫的機構應運而生。這個機構專門打擊≪境界人≫犯罪，並徹底隱藏他們的存在。舞台設定在日本的澁宿……精英們集結在一起，身穿日本的驕傲“Nikkapoka”，日夜對抗≪境界人≫，保護地球的故事。",
       "original_name": "THE MARGINAL SERVICE",
       "external_ids": {
-        "bangumi": 357961,
+        "bangumi": 407659,
         "anilist": 156854
       },
       "episodes": {
         "total_episodes": 12,
         "aired_episodes": 12,
-        "airing_status": "finished",
-        "episode_count_status": "confirmed",
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
         "fetch_state": "ok",
         "source_urls": [
-          "https://bgm.tv/subject/357961",
-          "https://bgm.tv/subject/357961/ep"
+          "https://bgm.tv/subject/407659",
+          "https://bgm.tv/subject/407659/ep"
         ],
-        "checked_at": "2026-10-13T21:40:36.201567+08:00",
-        "attempted_at": "2026-10-13T21:40:36.201567+08:00",
-        "end_date": "2023-06-20",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "checked_at": "2026-10-15T14:04:45.316536+08:00",
+        "attempted_at": "2026-10-15T14:04:45.316536+08:00",
+        "end_date": null,
+        "note": "已修正原站誤連《躍動青春》的ID；本條目完整12話已播，未公告明確結束日，播畢狀態待確認。"
       }
     },
     {
@@ -1514,7 +1514,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-15T13:42:21.180111+08:00",
+  "generated_at": "2026-10-15T14:07:20.056728+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202304/",
   "quality": {
     "source_count": 54,

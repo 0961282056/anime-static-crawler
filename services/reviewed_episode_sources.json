@@ -477,5 +477,30 @@
     "main_range": null,
     "total_override": null,
     "scope_note": "僅計2025年7月新作，自通算66話起；不合併2023及2024篇，最終總數未定。"
+  },
+  {
+    "card_id": "anime-362",
+    "anime_name": "正中間的理久",
+    "original_name": "まんなかのりっくん",
+    "subject_id": 241044,
+    "mode": "snapshot",
+    "review_type": "unresolved_broadcast_scope",
+    "metadata": {
+      "total_episodes": 16,
+      "aired_episodes": 16,
+      "airing_status": "unknown",
+      "episode_count_status": "unknown",
+      "fetch_state": "conflict",
+      "source_urls": [
+        "https://bgm.tv/subject/241044",
+        "https://bgm.tv/subject/241044/ep"
+      ],
+      "checked_at": "2026-10-13T21:16:16.084860+08:00",
+      "attempted_at": "2026-10-15T14:11:43.344081+08:00",
+      "end_date": "2019-08-10",
+      "note": "本卡為2019-01-09電視版；資料庫記為2019-04-27網路版，計數範圍尚未證實一致。保留原條目16話快照，非已確認的電視版全集；等待官方節目單核對。"
+    },
+    "evidence": "docs/episode-recheck-2026-10-15/scope-findings.json",
+    "scope_note": "相同原名、原作、導演及角色設計不足以確認電視版與網路版的16話計數範圍相同；官方頁目前未能存取，維持衝突，避免排程自動恢復已播畢。"
   }
 ]

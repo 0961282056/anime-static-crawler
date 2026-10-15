@@ -355,6 +355,63 @@ def test_regressed_progress_is_marked_for_review(anime_record_factory):
     assert updated.fetch_state == "conflict"
 
 
+@pytest.mark.parametrize("outcome", ["regressed", "incomplete", "conflict", "offline"])
+def test_cross_quarter_cache_preserves_each_records_last_valid_snapshot(
+    anime_record_factory, outcome
+):
+    calls = []
+
+    def fetch(record, now):
+        calls.append(record.bangumi_id)
+        if outcome == "offline":
+            raise MetadataUnavailable("offline")
+        return EpisodeMetadata(
+            total_episodes=12 if outcome != "conflict" else None,
+            aired_episodes=None if outcome == "incomplete" else 6,
+            fetch_state="conflict" if outcome == "conflict" else "ok",
+            checked_at=now,
+            attempted_at=now,
+        )
+
+    enricher = EpisodeEnricher(SimpleNamespace(fetch=fetch))
+    for count, days in [(8, 3), (10, 2)]:
+        old = EpisodeMetadata(
+            total_episodes=12,
+            aired_episodes=count,
+            checked_at=NOW - timedelta(days=days),
+            attempted_at=NOW - timedelta(days=days),
+        )
+        updated = enricher.enrich(anime(anime_record_factory, episodes=old), NOW)
+        assert updated.episodes.aired_episodes == count
+        assert updated.episodes.total_episodes == 12
+        assert updated.episodes.checked_at == old.checked_at
+        assert updated.episodes.attempted_at == NOW
+        assert updated.episodes.fetch_state == (
+            "conflict" if outcome in {"regressed", "conflict"} else "stale"
+        )
+    assert len(calls) == 1
+
+
+def test_cross_quarter_cache_does_not_skip_a_different_titles_identity_check(
+    anime_record_factory,
+):
+    calls = []
+
+    def fetch(record, now):
+        calls.append(record.original_name)
+        return parse_episode_metadata(record, subject(), [episode(1)], now)
+
+    enricher = EpisodeEnricher(SimpleNamespace(fetch=fetch))
+    valid = enricher.enrich(anime(anime_record_factory), NOW)
+    assert valid.episodes.aired_episodes == 1
+    other = enricher.enrich(
+        anime(anime_record_factory, original_name="LIAR GAME 第2期"), NOW
+    )
+    assert other.episodes.fetch_state == "stale"
+    assert other.episodes.aired_episodes is None
+    assert len(calls) == 2
+
+
 def test_cache_and_completed_refresh_intervals(anime_record_factory):
     recent = EpisodeMetadata(
         total_episodes=12,
@@ -594,18 +651,30 @@ def test_reviewed_identity_does_not_approve_different_anime_or_ambiguous_part(
     )
 
 
-def test_reviewed_source_id_correction_is_exact_and_does_not_overwrite_new_links():
+@pytest.mark.parametrize(
+    ("args", "wrong_id", "correct_id"),
+    [
+        (("anime-371", "魔法禁書目錄III", "とある魔術の禁書目録III"), 22654, 226540),
+        (
+            ("anime-1292", "The Marginal Service", "THE MARGINAL SERVICE"),
+            357961,
+            407659,
+        ),
+    ],
+)
+def test_reviewed_source_id_correction_is_exact_and_does_not_overwrite_new_links(
+    args, wrong_id, correct_id
+):
     from services.episode_metadata import reviewed_source_subject_id
 
-    args = ("anime-371", "魔法禁書目錄III", "とある魔術の禁書目録III")
-    assert reviewed_source_subject_id(*args, 22654) == 226540
-    assert reviewed_source_subject_id(*args, 226540) == 226540
+    assert reviewed_source_subject_id(*args, wrong_id) == correct_id
+    assert reviewed_source_subject_id(*args, correct_id) == correct_id
     assert reviewed_source_subject_id(*args, 999) == 999
-    assert reviewed_source_subject_id("anime-999", *args[1:], 22654) == 22654
-    assert reviewed_source_subject_id(args[0], "別的作品", args[2], 22654) == 22654
+    assert reviewed_source_subject_id("anime-999", *args[1:], wrong_id) == wrong_id
     assert (
-        reviewed_source_subject_id(
-            args[0], args[1], "とある魔術の禁書目録 第2期", 22654
-        )
-        == 22654
+        reviewed_source_subject_id(args[0], "別的作品", args[2], wrong_id) == wrong_id
+    )
+    assert (
+        reviewed_source_subject_id(args[0], args[1], "another season", wrong_id)
+        == wrong_id
     )

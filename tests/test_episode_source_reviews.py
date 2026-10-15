@@ -90,6 +90,25 @@ def test_snapshot_is_exactly_bound_and_not_rechecked(anime_record_factory):
     )
 
 
+def test_unresolved_tv_web_scope_cannot_automatically_become_finished(
+    anime_record_factory,
+):
+    review = next(r for r in source_reviews() if r["subject_id"] == 241044)
+    anime = reviewed_anime(review, anime_record_factory)
+    client = Mock()
+    result = EpisodeEnricher(client, retry_failed=True).enrich(
+        anime, NOW + timedelta(days=40)
+    )
+    assert result.episodes.fetch_state == "conflict"
+    assert result.episodes.airing_status == "unknown"
+    assert result.episodes.episode_count_status == "unknown"
+    assert result.episodes.aired_episodes == result.episodes.total_episodes == 16
+    assert result.episodes.checked_at == anime.episodes.checked_at
+    assert "非已確認的電視版全集" in result.episodes.note
+    client.fetch.assert_not_called()
+    assert reviewed_source(anime.model_copy(update={"bangumi_id": "anime-999"})) is None
+
+
 @pytest.mark.parametrize(
     ("sid", "total", "aired"), [(568244, 12, 2), (584847, 11, 1), (418599, None, 135)]
 )

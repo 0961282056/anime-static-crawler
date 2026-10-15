@@ -463,7 +463,7 @@
       },
       "episodes": {
         "total_episodes": 24,
-        "aired_episodes": 14,
+        "aired_episodes": 15,
         "airing_status": "airing",
         "episode_count_status": "planned",
         "fetch_state": "ok",
@@ -471,10 +471,10 @@
           "https://bgm.tv/subject/627648",
           "https://bgm.tv/subject/627648/ep"
         ],
-        "checked_at": "2026-10-13T20:21:15.474975+08:00",
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
         "end_date": null,
-        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1003,10 +1003,10 @@
           "https://bgm.tv/subject/511177",
           "https://bgm.tv/subject/511177/ep"
         ],
-        "checked_at": "2026-10-13T20:21:15.474975+08:00",
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
         "end_date": null,
-        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1227,10 +1227,10 @@
           "https://bgm.tv/subject/613438",
           "https://bgm.tv/subject/613438/ep"
         ],
-        "checked_at": "2026-10-13T20:21:15.474975+08:00",
-        "attempted_at": "2026-10-13T20:21:15.474975+08:00",
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
         "end_date": null,
-        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
     },
     {
@@ -1451,8 +1451,8 @@
           "https://bgm.tv/subject/530725",
           "https://bgm.tv/subject/530725/ep"
         ],
-        "checked_at": "2026-10-13T20:52:04.176625+08:00",
-        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
         "end_date": null,
         "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
       }
@@ -2102,7 +2102,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-15T13:42:21.277358+08:00",
+  "generated_at": "2026-10-15T14:10:14.348937+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202607/",
   "quality": {
     "source_count": 75,

@@ -352,17 +352,17 @@
       "episodes": {
         "total_episodes": 16,
         "aired_episodes": 16,
-        "airing_status": "finished",
-        "episode_count_status": "confirmed",
-        "fetch_state": "ok",
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "conflict",
         "source_urls": [
           "https://bgm.tv/subject/241044",
           "https://bgm.tv/subject/241044/ep"
         ],
         "checked_at": "2026-10-13T21:16:16.084860+08:00",
-        "attempted_at": "2026-10-13T21:16:16.084860+08:00",
+        "attempted_at": "2026-10-15T14:11:43.344081+08:00",
         "end_date": "2019-08-10",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "本卡為2019-01-09電視版；資料庫記為2019-04-27網路版，計數範圍尚未證實一致。保留原條目16話快照，非已確認的電視版全集；等待官方節目單核對。"
       }
     },
     {
@@ -1429,7 +1429,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-15T13:42:21.060451+08:00",
+  "generated_at": "2026-10-15T14:11:43.347188+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201901/",
   "quality": {
     "source_count": 51,

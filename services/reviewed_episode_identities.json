@@ -1968,5 +1968,22 @@
       "https://github.com/bangumi/Archive/releases/download/archive/dump-2026-10-13.210353Z.zip"
     ],
     "scope_note": "僅計算此精確綁定動畫條目的正篇；不合併其他季、網路版或特別篇。"
+  },
+  {
+    "card_id": "anime-1292",
+    "anime_name": "The Marginal Service",
+    "source_original_name": "THE MARGINAL SERVICE",
+    "source_subject_id": 357961,
+    "subject_id": 407659,
+    "subject_name": "THE MARGINAL SERVICE",
+    "first_air_date": "2023-04-11",
+    "reviewed_on": "2026-10-15",
+    "basis": "原站此精確卡片的Bangumi連結誤指向《スキップとローファー》357961；完整原名、2023-04-11首播日及marginalservice.com官方網址與407659一致。",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202304/",
+      "https://bgm.tv/subject/407659",
+      "https://bgm.tv/subject/357961"
+    ],
+    "scope_note": "只修正此卡片及兩種名稱原先357961的連結，不覆寫其他來源ID；清除誤連條目的集數快照後重新取得正確條目資料。"
   }
 ]

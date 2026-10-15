@@ -1,0 +1,60 @@
+[
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-624",
+    "name": "Classica Loid 第二期",
+    "original": "クラシカロイド 第2シリーズ",
+    "subject_id": 212315,
+    "provider_name": "クラシカロイド 第2シリーズ",
+    "first": "2017-10-07",
+    "end": [
+      "2017-03-24"
+    ]
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-362",
+    "name": "正中間的理久",
+    "original": "まんなかのりっくん",
+    "subject_id": 241044,
+    "provider_name": "まんなかのりっくん",
+    "first": "2019-04-27",
+    "end": [
+      "2019-08-10"
+    ]
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-127",
+    "name": "巨神與冰華之城",
+    "original": "巨神と氷華の城",
+    "subject_id": 303553,
+    "provider_name": "巨神と氷華の城",
+    "first": "2020-08-08",
+    "end": []
+  },
+  {
+    "quarter": "2021_秋",
+    "card_id": "anime-998",
+    "name": "魔法紀錄 魔法少女小圓外傳 最終季",
+    "original": "マギアレコード 魔法少女まどか☆マギカ外伝 Final SEASON‐浅き夢の暁‐",
+    "subject_id": 339998,
+    "provider_name": "マギアレコード 魔法少女まどか☆マギカ外伝 Final SEASON ‐浅き夢の暁‐",
+    "first": "2022-04-03",
+    "end": [
+      "2022-04-03"
+    ]
+  },
+  {
+    "quarter": "2024_冬",
+    "card_id": "anime-1438",
+    "name": "為了在異世界也能撫摸毛茸茸而努力。",
+    "original": "異世界でもふもふなでなでするためにがんばってます。",
+    "subject_id": 391117,
+    "provider_name": "異世界でもふもふなでなでするためにがんばってます。",
+    "first": "2024-01-07",
+    "end": [
+      "2023-03-24"
+    ]
+  }
+]

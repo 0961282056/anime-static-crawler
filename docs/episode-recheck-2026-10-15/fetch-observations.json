@@ -1,0 +1,70 @@
+[
+  {
+    "requested_url": "https://shucap.cf-anime.com/",
+    "error": "HTTPSConnectionPool(host='shucap.cf-anime.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  {
+    "requested_url": "https://harecam.af-original.com/",
+    "error": "HTTPSConnectionPool(host='harecam.af-original.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  {
+    "requested_url": "https://gunpuku-mouai.af-original.com/",
+    "error": "HTTPSConnectionPool(host='gunpuku-mouai.af-original.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  {
+    "requested_url": "https://www.tms-e.co.jp/alltitles/2010s/073401.html",
+    "final_url": "https://www.tms-e.co.jp/alltitles/2010s/073401.html",
+    "status": 404,
+    "retrieved_at": "2026-10-15T14:02:56.885406+08:00",
+    "sha256": "f2836a2409921b7be0c3fe11bef959603b765373b0f6d3a9b77afa031d5e07db",
+    "title": "お探しのページは見つかりませんでした | 2010年代 | TMS作品一覧 | アニメーションの総合プロデュース会社 トムス・エンタテインメント"
+  },
+  {
+    "requested_url": "https://www.ntv.co.jp/tonegawa/story/",
+    "final_url": "https://www.ntv.co.jp/tonegawa/story/",
+    "status": 404,
+    "retrieved_at": "2026-10-15T14:02:56.785091+08:00",
+    "sha256": "1bb96b903e6f484d41bef8ab4753b0c5e182883372990950fced38af0ee7b7d6",
+    "title": "日テレ"
+  },
+  {
+    "requested_url": "https://www.toei-anim.co.jp/tv/zenitendo/episode/summary/",
+    "final_url": "https://www.toei-anim.co.jp/tv/zenitendo/episode/summary/",
+    "status": 403,
+    "retrieved_at": "2026-10-15T14:02:56.330381+08:00",
+    "sha256": "58bf2215b395dcac74c009aa98701854e43cbe54a1cd3a95fee6a647ca9910d4",
+    "title": "403 Forbidden"
+  },
+  {
+    "requested_url": "https://shucap.cf-anime.com/",
+    "error": "HTTPSConnectionPool(host='shucap.cf-anime.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  {
+    "requested_url": "https://harecam.af-original.com/",
+    "error": "HTTPSConnectionPool(host='harecam.af-original.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  {
+    "requested_url": "https://gunpuku-mouai.af-original.com/",
+    "error": "HTTPSConnectionPool(host='gunpuku-mouai.af-original.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  {
+    "requested_url": "https://marginalservice.com/",
+    "error": "HTTPSConnectionPool(host='marginalservice.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  {
+    "requested_url": "https://www.classicaloid.net/",
+    "error": "HTTPSConnectionPool(host='www.classicaloid.net', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  {
+    "requested_url": "https://mohunadeanime.com/",
+    "error": "HTTPSConnectionPool(host='mohunadeanime.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  {
+    "requested_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin13/",
+    "error": "HTTPSConnectionPool(host='www.tv-tokyo.co.jp', port=443): Max retries exceeded with url: /anime/kinder/intro/sakuhin13/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  {
+    "requested_url": "https://www.hokto-kinoko.co.jp/kinokolabo/rikkun/",
+    "error": "HTTPSConnectionPool(host='www.hokto-kinoko.co.jp', port=443): Max retries exceeded with url: /kinokolabo/rikkun/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  }
+]
