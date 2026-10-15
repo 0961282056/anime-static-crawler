@@ -378,5 +378,104 @@
       "note": "第四季度為通算39～50，共12話；排除資料庫多出的空白sort=11集目。"
     },
     "mode": "snapshot"
+  },
+  {
+    "card_id": "anime-1868",
+    "anime_name": "為你著迷",
+    "original_name": "夢中さ、きみに。",
+    "subject_id": 519958,
+    "metadata": {
+      "total_episodes": 5,
+      "aired_episodes": 5,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://karaoke-muchusa.com/muchusa/",
+        "https://s.mxtv.jp/anime/karaoke-muchusa/episode.html?ep_id=6bnbqxtagzoshqm3",
+        "https://bgm.tv/subject/519958/ep"
+      ],
+      "checked_at": "2026-10-15T08:40:24+08:00",
+      "attempted_at": "2026-10-15T08:40:24+08:00",
+      "end_date": "2025-09-18",
+      "note": "2025年動畫版全5話，官方第5話播出紀錄及全5話配信資料一致；不合併《去唱卡拉OK吧！》或2021真人劇。"
+    },
+    "mode": "snapshot"
+  },
+  {
+    "card_id": "anime-1784",
+    "anime_name": "聖騎士之戰 奮戰：DUAL RULERS",
+    "original_name": "GUILTY GEAR STRIVE: DUAL RULERS",
+    "subject_id": 499140,
+    "metadata": {
+      "total_episodes": 8,
+      "aired_episodes": 8,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://www.guiltygear.com/ggstdr/jp/",
+        "https://www.guiltygear.com/ggstdr/jp/blu-ray.html",
+        "https://www.guiltygear.com/ggstdr/jp/news-30/",
+        "https://bgm.tv/subject/499140/ep"
+      ],
+      "checked_at": "2026-10-15T08:40:24+08:00",
+      "attempted_at": "2026-10-15T08:40:24+08:00",
+      "end_date": "2025-05-24",
+      "note": "全8話；官方全話Blu-ray收錄、第8話2025-05-24放送紀念及完整資料庫集目一致。"
+    },
+    "mode": "snapshot"
+  },
+  {
+    "card_id": "anime-1929",
+    "anime_name": "罪惡黃窟",
+    "original_name": "ギルティホール",
+    "subject_id": 516604,
+    "metadata": {
+      "total_episodes": 8,
+      "aired_episodes": 8,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://guiltyhole.af-original.com/",
+        "https://s.mxtv.jp/anime/guiltyhole/episode.html",
+        "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28264",
+        "https://bgm.tv/subject/516604/ep"
+      ],
+      "checked_at": "2026-10-15T08:40:24+08:00",
+      "attempted_at": "2026-10-15T08:40:24+08:00",
+      "end_date": null,
+      "note": "TV播出版全8話，官方最終第8話與合法全8話配信資料一致；Bangumi ID取自明確公開動畫目錄連結，API目前403，集數採官方證據。"
+    },
+    "mode": "snapshot"
+  },
+  {
+    "card_id": "anime-1876",
+    "anime_name": "小哥斯拉的逆襲",
+    "original_name": "ちびゴジラの逆襲",
+    "subject_id": 561787,
+    "metadata": {
+      "total_episodes": null,
+      "aired_episodes": 54,
+      "airing_status": "airing",
+      "episode_count_status": "unknown",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://chibigodzilla.jp/",
+        "https://chibigodzilla.jp/news/『ちびゴジラの逆襲』シリーズ最新作放送決定/",
+        "https://bgm.tv/subject/561787/ep"
+      ],
+      "checked_at": "2026-10-15T08:40:24+08:00",
+      "attempted_at": "2026-10-15T08:40:24+08:00",
+      "end_date": null,
+      "note": "本卡為2025年7月新作，自通算66話起；已公開至119，共54話，最終總集數未定。不合併2023年13話或2024年52話。"
+    },
+    "mode": "live",
+    "subject_name": "ちびゴジラの逆襲 シリーズ最新作",
+    "first_air_date": "2025-07-02",
+    "main_range": null,
+    "total_override": null,
+    "scope_note": "僅計2025年7月新作，自通算66話起；不合併2023及2024篇，最終總數未定。"
   }
 ]

@@ -1718,10 +1718,26 @@
       "story": "暫無簡介",
       "original_name": "ギルティホール",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 516604,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://guiltyhole.af-original.com/",
+          "https://s.mxtv.jp/anime/guiltyhole/episode.html",
+          "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28264",
+          "https://bgm.tv/subject/516604/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24+08:00",
+        "attempted_at": "2026-10-15T08:40:24+08:00",
+        "end_date": null,
+        "note": "TV播出版全8話，官方最終第8話與合法全8話配信資料一致；Bangumi ID取自明確公開動畫目錄連結，API目前403，集數採官方證據。"
+      }
     },
     {
       "bangumi_id": "anime-1911",

@@ -1522,10 +1522,24 @@
       "story": "暫無簡介",
       "original_name": "キミとアイドルプリキュア♪",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 526104,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 49,
+        "aired_episodes": 49,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/526104",
+          "https://bgm.tv/subject/526104/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24.837548+08:00",
+        "attempted_at": "2026-10-15T08:40:24.837548+08:00",
+        "end_date": "2026-01-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1733",

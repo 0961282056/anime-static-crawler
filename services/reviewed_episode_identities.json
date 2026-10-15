@@ -760,5 +760,157 @@
       "https://bgm.tv/subject/197162"
     ],
     "scope_note": "第一季正篇。"
+  },
+  {
+    "card_id": "anime-1751",
+    "anime_name": "你和偶像 光之美少女",
+    "source_original_name": "キミとアイドルプリキュア♪",
+    "subject_id": 526104,
+    "subject_name": "キミとアイドルプリキュア♪",
+    "first_air_date": "2025-02-02",
+    "reviewed_on": "2026-10-15",
+    "basis": "Exact original/alias or manually reviewed season+official start date+full anime subject; no fuzzy linking.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202501/",
+      "https://bgm.tv/subject/526104",
+      "https://www.toei-anim.co.jp/tv/you-and-idol_precure/episode/summary/49/"
+    ],
+    "scope_note": "僅計此季／篇動畫正篇，不含漫畫、真人劇、電影及其他季。"
+  },
+  {
+    "card_id": "anime-1875",
+    "anime_name": "加密忍者咲耶 三之卷",
+    "source_original_name": "忍ばない！クリプトニンジャ咲耶　参ノ巻",
+    "subject_id": 531576,
+    "subject_name": "忍ばない！クリプトニンジャ咲耶 参ノ巻",
+    "first_air_date": "2025-07-07",
+    "reviewed_on": "2026-10-15",
+    "basis": "Exact original/alias or manually reviewed season+official start date+full anime subject; no fuzzy linking.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202507/",
+      "https://bgm.tv/subject/531576",
+      "https://cryptoninja-sakuya.xyz/"
+    ],
+    "scope_note": "僅計此季／篇動畫正篇，不含漫畫、真人劇、電影及其他季。"
+  },
+  {
+    "card_id": "anime-1876",
+    "anime_name": "小哥斯拉的逆襲",
+    "source_original_name": "ちびゴジラの逆襲",
+    "subject_id": 561787,
+    "subject_name": "ちびゴジラの逆襲 シリーズ最新作",
+    "first_air_date": "2025-07-02",
+    "reviewed_on": "2026-10-15",
+    "basis": "Exact original/alias or manually reviewed season+official start date+full anime subject; no fuzzy linking.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202507/",
+      "https://bgm.tv/subject/561787",
+      "https://chibigodzilla.jp/",
+      "https://chibigodzilla.jp/news/『ちびゴジラの逆襲』シリーズ最新作放送決定/"
+    ],
+    "scope_note": "2025年7月系列最新作，自通算66話起，不沿用2024年續編484191或2023年422505。"
+  },
+  {
+    "card_id": "anime-1868",
+    "anime_name": "為你著迷",
+    "source_original_name": "夢中さ、きみに。",
+    "subject_id": 519958,
+    "subject_name": "夢中さ、きみに。",
+    "first_air_date": "2025-08-21",
+    "reviewed_on": "2026-10-15",
+    "basis": "Exact original/alias or manually reviewed season+official start date+full anime subject; no fuzzy linking.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202507/",
+      "https://bgm.tv/subject/519958",
+      "https://karaoke-muchusa.com/muchusa/",
+      "https://s.mxtv.jp/anime/karaoke-muchusa/episode.html?ep_id=6bnbqxtagzoshqm3"
+    ],
+    "scope_note": "僅計此季／篇動畫正篇，不含漫畫、真人劇、電影及其他季。"
+  },
+  {
+    "card_id": "anime-1805",
+    "anime_name": "Everyday Host",
+    "source_original_name": "えぶりでいホスト",
+    "subject_id": 529078,
+    "subject_name": "えぶりでいホスト",
+    "first_air_date": "2025-04-04",
+    "reviewed_on": "2026-10-15",
+    "basis": "Exact original/alias or manually reviewed season+official start date+full anime subject; no fuzzy linking.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202504/",
+      "https://acgsecrets.hk/bangumi/202507/",
+      "https://bgm.tv/subject/529078",
+      "https://www.tv-tokyo.co.jp/anime/everydayhost/episodes/"
+    ],
+    "scope_note": "2025春、夏為同一連續兩季度作品，不分別配到未定檔續作611890。"
+  },
+  {
+    "card_id": "anime-1755",
+    "anime_name": "持續狩獵史萊姆三百年，不知不覺就練到 LV MAX 第二季",
+    "source_original_name": "スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～",
+    "subject_id": 364844,
+    "subject_name": "スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～",
+    "first_air_date": "2025-04-05",
+    "reviewed_on": "2026-10-15",
+    "basis": "Exact original/alias or manually reviewed season+official start date+full anime subject; no fuzzy linking.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202504/",
+      "https://bgm.tv/subject/364844",
+      "https://slime300-anime.com/"
+    ],
+    "scope_note": "僅計此季／篇動畫正篇，不含漫畫、真人劇、電影及其他季。"
+  },
+  {
+    "card_id": "anime-1784",
+    "anime_name": "聖騎士之戰 奮戰：DUAL RULERS",
+    "source_original_name": "GUILTY GEAR STRIVE: DUAL RULERS",
+    "subject_id": 499140,
+    "subject_name": "GUILTY GEAR STRIVE: DUAL RULERS",
+    "first_air_date": "2025-04-05",
+    "reviewed_on": "2026-10-15",
+    "basis": "Exact original/alias or manually reviewed season+official start date+full anime subject; no fuzzy linking.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202504/",
+      "https://bgm.tv/subject/499140",
+      "https://www.guiltygear.com/ggstdr/jp/",
+      "https://www.guiltygear.com/ggstdr/jp/blu-ray.html",
+      "https://www.guiltygear.com/ggstdr/jp/news-30/"
+    ],
+    "scope_note": "僅計此季／篇動畫正篇，不含漫畫、真人劇、電影及其他季。"
+  },
+  {
+    "card_id": "anime-1775",
+    "anime_name": "LAZARUS",
+    "source_original_name": "LAZARUS ラザロ",
+    "subject_id": 446296,
+    "subject_name": "LAZARUS",
+    "first_air_date": "2025-04-06",
+    "reviewed_on": "2026-10-15",
+    "basis": "Exact original/alias or manually reviewed season+official start date+full anime subject; no fuzzy linking.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202504/",
+      "https://bgm.tv/subject/446296",
+      "https://lazarus.aniplex.co.jp/",
+      "https://lazarus.aniplex.co.jp/story/"
+    ],
+    "scope_note": "LAZARUS與ラザロ為同一部2025年4月動畫的英日並列標題。"
+  },
+  {
+    "card_id": "anime-1929",
+    "anime_name": "罪惡黃窟",
+    "source_original_name": "ギルティホール",
+    "subject_id": 516604,
+    "subject_name": "ギルティホール",
+    "first_air_date": "2025-10-05",
+    "reviewed_on": "2026-10-15",
+    "basis": "Explicit Bangumi public anime catalog link with exact title, 2025-10-05 and 8 episodes; official TV series and complete on-air streaming agree. Subject API returned 403; episode values use official sources.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202510/",
+      "https://bgm.tv/subject/516604",
+      "https://guiltyhole.af-original.com/",
+      "https://s.mxtv.jp/anime/guiltyhole/episode.html",
+      "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28264"
+    ],
+    "scope_note": "僅計此季／篇動畫正篇，不含漫畫、真人劇、電影及其他季。"
   }
 ]

@@ -1,0 +1,359 @@
+[
+  {
+    "quarter": "2025_冬",
+    "card_id": "anime-1751",
+    "anime_name": "你和偶像 光之美少女",
+    "original_name": "キミとアイドルプリキュア♪",
+    "subject_id": 526104,
+    "before": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 526104,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 49,
+        "aired_episodes": 49,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/526104",
+          "https://bgm.tv/subject/526104/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24.837548+08:00",
+        "attempted_at": "2026-10-15T08:40:24.837548+08:00",
+        "end_date": "2026-01-25",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    }
+  },
+  {
+    "quarter": "2025_夏",
+    "card_id": "anime-1875",
+    "anime_name": "加密忍者咲耶 三之卷",
+    "original_name": "忍ばない！クリプトニンジャ咲耶　参ノ巻",
+    "subject_id": 531576,
+    "before": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 531576,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/531576",
+          "https://bgm.tv/subject/531576/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24.837548+08:00",
+        "attempted_at": "2026-10-15T08:40:24.837548+08:00",
+        "end_date": "2025-09-29",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    }
+  },
+  {
+    "quarter": "2025_夏",
+    "card_id": "anime-1876",
+    "anime_name": "小哥斯拉的逆襲",
+    "original_name": "ちびゴジラの逆襲",
+    "subject_id": 561787,
+    "before": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 561787,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 54,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://chibigodzilla.jp/",
+          "https://chibigodzilla.jp/news/『ちびゴジラの逆襲』シリーズ最新作放送決定/",
+          "https://bgm.tv/subject/561787/ep",
+          "https://bgm.tv/subject/561787/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24.837548+08:00",
+        "attempted_at": "2026-10-15T08:40:24.837548+08:00",
+        "end_date": null,
+        "note": "依已核對官方範圍自動更新；僅計2025年7月新作，自通算66話起；不合併2023及2024篇，最終總數未定。"
+      }
+    }
+  },
+  {
+    "quarter": "2025_夏",
+    "card_id": "anime-1868",
+    "anime_name": "為你著迷",
+    "original_name": "夢中さ、きみに。",
+    "subject_id": 519958,
+    "before": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 519958,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 5,
+        "aired_episodes": 5,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://karaoke-muchusa.com/muchusa/",
+          "https://s.mxtv.jp/anime/karaoke-muchusa/episode.html?ep_id=6bnbqxtagzoshqm3",
+          "https://bgm.tv/subject/519958/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24+08:00",
+        "attempted_at": "2026-10-15T08:40:24+08:00",
+        "end_date": "2025-09-18",
+        "note": "2025年動畫版全5話，官方第5話播出紀錄及全5話配信資料一致；不合併《去唱卡拉OK吧！》或2021真人劇。"
+      }
+    }
+  },
+  {
+    "quarter": "2025_夏",
+    "card_id": "anime-1805",
+    "anime_name": "Everyday Host",
+    "original_name": "えぶりでいホスト",
+    "subject_id": 529078,
+    "before": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 529078,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/529078",
+          "https://bgm.tv/subject/529078/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24.837548+08:00",
+        "attempted_at": "2026-10-15T08:40:24.837548+08:00",
+        "end_date": "2025-09-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    }
+  },
+  {
+    "quarter": "2025_春",
+    "card_id": "anime-1805",
+    "anime_name": "Everyday Host",
+    "original_name": "えぶりでいホスト",
+    "subject_id": 529078,
+    "before": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 529078,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/529078",
+          "https://bgm.tv/subject/529078/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24.837548+08:00",
+        "attempted_at": "2026-10-15T08:40:24.837548+08:00",
+        "end_date": "2025-09-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    }
+  },
+  {
+    "quarter": "2025_春",
+    "card_id": "anime-1755",
+    "anime_name": "持續狩獵史萊姆三百年，不知不覺就練到 LV MAX 第二季",
+    "original_name": "スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～",
+    "subject_id": 364844,
+    "before": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 364844,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/364844",
+          "https://bgm.tv/subject/364844/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24.837548+08:00",
+        "attempted_at": "2026-10-15T08:40:24.837548+08:00",
+        "end_date": "2025-06-21",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    }
+  },
+  {
+    "quarter": "2025_春",
+    "card_id": "anime-1784",
+    "anime_name": "聖騎士之戰 奮戰：DUAL RULERS",
+    "original_name": "GUILTY GEAR STRIVE: DUAL RULERS",
+    "subject_id": 499140,
+    "before": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 499140,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://www.guiltygear.com/ggstdr/jp/",
+          "https://www.guiltygear.com/ggstdr/jp/blu-ray.html",
+          "https://www.guiltygear.com/ggstdr/jp/news-30/",
+          "https://bgm.tv/subject/499140/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24+08:00",
+        "attempted_at": "2026-10-15T08:40:24+08:00",
+        "end_date": "2025-05-24",
+        "note": "全8話；官方全話Blu-ray收錄、第8話2025-05-24放送紀念及完整資料庫集目一致。"
+      }
+    }
+  },
+  {
+    "quarter": "2025_春",
+    "card_id": "anime-1775",
+    "anime_name": "LAZARUS",
+    "original_name": "LAZARUS ラザロ",
+    "subject_id": 446296,
+    "before": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 446296,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/446296",
+          "https://bgm.tv/subject/446296/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24.837548+08:00",
+        "attempted_at": "2026-10-15T08:40:24.837548+08:00",
+        "end_date": "2025-06-29",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
+    }
+  },
+  {
+    "quarter": "2025_秋",
+    "card_id": "anime-1929",
+    "anime_name": "罪惡黃窟",
+    "original_name": "ギルティホール",
+    "subject_id": 516604,
+    "before": {
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
+    },
+    "after": {
+      "external_ids": {
+        "bangumi": 516604,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": 8,
+        "aired_episodes": 8,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://guiltyhole.af-original.com/",
+          "https://s.mxtv.jp/anime/guiltyhole/episode.html",
+          "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28264",
+          "https://bgm.tv/subject/516604/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24+08:00",
+        "attempted_at": "2026-10-15T08:40:24+08:00",
+        "end_date": null,
+        "note": "TV播出版全8話，官方最終第8話與合法全8話配信資料一致；Bangumi ID取自明確公開動畫目錄連結，API目前403，集數採官方證據。"
+      }
+    }
+  }
+]

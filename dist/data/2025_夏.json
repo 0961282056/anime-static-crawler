@@ -38,10 +38,24 @@
       "story": "暫無簡介",
       "original_name": "忍ばない！クリプトニンジャ咲耶　参ノ巻",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 531576,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/531576",
+          "https://bgm.tv/subject/531576/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24.837548+08:00",
+        "attempted_at": "2026-10-15T08:40:24.837548+08:00",
+        "end_date": "2025-09-29",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1849",
@@ -444,10 +458,26 @@
       "story": "暫無簡介",
       "original_name": "ちびゴジラの逆襲",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 561787,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 54,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://chibigodzilla.jp/",
+          "https://chibigodzilla.jp/news/『ちびゴジラの逆襲』シリーズ最新作放送決定/",
+          "https://bgm.tv/subject/561787/ep",
+          "https://bgm.tv/subject/561787/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24.837548+08:00",
+        "attempted_at": "2026-10-15T08:40:24.837548+08:00",
+        "end_date": null,
+        "note": "依已核對官方範圍自動更新；僅計2025年7月新作，自通算66話起；不合併2023及2024篇，最終總數未定。"
+      }
     },
     {
       "bangumi_id": "anime-1843",
@@ -766,10 +796,25 @@
       "story": "二階堂明本來是個笑起來很陽光的國中男孩，很受女生歡迎。有一次情人節，他的置物櫃裡堆滿巧克力，其中居然夾雜了一片用過的衛生棉，讓他留下嚴重的心理創傷，上高中後整個人出現一百八十度大轉變，不僅死氣沉沉，也不與人打交道，於是校內「誰和二階堂對看到，就會被鬼壓床」之類的傳聞不斷，大家對他避之唯恐不及，偏偏有人不信邪去找他搭訕，結果…？",
       "original_name": "夢中さ、きみに。",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 519958,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 5,
+        "aired_episodes": 5,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://karaoke-muchusa.com/muchusa/",
+          "https://s.mxtv.jp/anime/karaoke-muchusa/episode.html?ep_id=6bnbqxtagzoshqm3",
+          "https://bgm.tv/subject/519958/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24+08:00",
+        "attempted_at": "2026-10-15T08:40:24+08:00",
+        "end_date": "2025-09-18",
+        "note": "2025年動畫版全5話，官方第5話播出紀錄及全5話配信資料一致；不合併《去唱卡拉OK吧！》或2021真人劇。"
+      }
     },
     {
       "bangumi_id": "anime-1869",
@@ -1172,10 +1217,24 @@
       "story": "暫無簡介",
       "original_name": "えぶりでいホスト",
       "external_ids": {
-        "bangumi": null,
+        "bangumi": 529078,
         "anilist": null
       },
-      "episodes": null
+      "episodes": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/529078",
+          "https://bgm.tv/subject/529078/ep"
+        ],
+        "checked_at": "2026-10-15T08:40:24.837548+08:00",
+        "attempted_at": "2026-10-15T08:40:24.837548+08:00",
+        "end_date": "2025-09-26",
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      }
     },
     {
       "bangumi_id": "anime-1840",
