@@ -101,11 +101,41 @@ def test_only_reviewed_official_url_is_allowed():
             EpisodeMetadata(source_urls=[unsafe])
 
 
-def test_uncertain_programme_scope_keeps_unknown_counts(anime_record_factory):
+def test_reviewed_mewkle_main_scope_survives_provider_mixed_total(anime_record_factory):
     review = next(r for r in source_reviews() if r["subject_id"] == 321387)
-    result = EpisodeEnricher(Mock()).enrich(
-        reviewed_anime(review, anime_record_factory), NOW
+    client = Mock()
+    anime = reviewed_anime(review, anime_record_factory)
+    result = EpisodeEnricher(client, retry_failed=True).enrich(
+        anime, NOW + timedelta(days=60)
     )
-    assert result.episodes.fetch_state == "conflict"
-    assert result.episodes.total_episodes is None
-    assert result.episodes.aired_episodes is None
+    assert result.episodes.fetch_state == "ok"
+    assert result.episodes.airing_status == "finished"
+    assert result.episodes.total_episodes == result.episodes.aired_episodes == 37
+    assert result.episodes.end_date.isoformat() == "2022-03-27"
+    assert result.episodes.checked_at == anime.episodes.checked_at
+    assert "50次" in result.episodes.note
+    assert "特別節目13次" in result.episodes.note
+    assert "第50話回顧最終回" in result.episodes.note
+    client.fetch.assert_not_called()
+
+
+def test_mewkle_evidence_accounts_for_every_official_programme():
+    evidence = json.loads(
+        Path("docs/episode-review-2026-10-15/mewkle-scope-evidence.json").read_text()
+    )
+    rows = evidence["episodes"]
+    assert len(rows) == 50
+    assert {row["number"] for row in rows} == set(range(1, 51))
+    main = {row["number"] for row in rows if row["counted_as_main"]}
+    specials = {row["number"] for row in rows if not row["counted_as_main"]}
+    assert len(main) == 37
+    assert specials == {4, 8, 12, 16, 18, 20, 25, 30, 34, 38, 40, 42, 46}
+    assert main.isdisjoint(specials) and main | specials == set(range(1, 51))
+    assert all(
+        row["provider_type"] == (0 if row["counted_as_main"] else 1) for row in rows
+    )
+    assert len({row["provider_episode_id"] for row in rows}) == 50
+    assert 50 in main
+    assert max(row["airdate"] for row in rows) == evidence["end_date"]
+    review = next(r for r in source_reviews() if r["subject_id"] == 321387)
+    assert len(main) == review["metadata"]["total_episodes"]

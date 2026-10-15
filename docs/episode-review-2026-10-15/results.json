@@ -338,19 +338,23 @@
       "note": "來源話數、正篇集目或結束日期不一致，總集數待確認。保留上次確認資料。"
     },
     "after": {
-      "total_episodes": null,
-      "aired_episodes": null,
-      "airing_status": "unknown",
-      "episode_count_status": "unknown",
-      "fetch_state": "conflict",
+      "total_episodes": 37,
+      "aired_episodes": 37,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
       "source_urls": [
         "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/",
+        "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_2.html",
+        "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_3.html",
+        "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_4.html",
+        "https://www.tv-tokyo.co.jp/anime/mewklemix/episodes/index_5.html",
         "https://bgm.tv/subject/321387/ep"
       ],
-      "checked_at": "2026-10-15T08:14:24+08:00",
-      "attempted_at": "2026-10-15T08:14:24+08:00",
-      "end_date": null,
-      "note": "尚待核對：官方節目編號至50並已播畢，但Bangumi僅37筆正篇且號碼有缺口；包含いちなる企劃節目，尚不能把50次節目或37筆直接當動畫正篇總數。"
+      "checked_at": "2026-10-15T08:25:47+08:00",
+      "attempted_at": "2026-10-15T08:25:47+08:00",
+      "end_date": "2022-03-27",
+      "note": "全季電視節目共50次：動畫本篇37集（依Bangumi本篇分類，含第50話回顧最終回）＋いちなる主持人特別節目13次。卡片計入本篇37集；官方50個編號及日期已逐筆對上，不將節目總數當作動畫本篇數。"
     }
   },
   {
