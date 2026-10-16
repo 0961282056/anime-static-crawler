@@ -71,7 +71,7 @@ def _save_queue(client: Any, issue: dict | None, pending: dict) -> dict | None:
             f"目前有 **{len(pending)}** 筆尚未發出通知的待辦。",
             "",
             "這是系統維護的持久待辦，不是集數審核；無需回覆或修改本文。",
-            "待辦會保留首次發現的證據，直到通知完成或取得明確的解決證據。",
+            "待辦保留首次發現時間與最近可用證據，直到通知完成或取得明確的解決證據。",
             "",
             f"{PAYLOAD}{encoded} -->",
             "",

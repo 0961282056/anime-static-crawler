@@ -836,7 +836,10 @@ def test_link_backfill_rejects_ambiguous_identity(
     record = Anime.model_validate(
         {
             **anime_record_factory(2200, name="測試動畫"),
-            "external_ids": {"bangumi": 580133, "anilist": 197754},
+            "external_ids": {
+                "bangumi": 580133,
+                "anilist": 197754 if problem == "anilist_conflict" else None,
+            },
             "episodes": {"total_episodes": 12},
         }
     )
