@@ -1,0 +1,3440 @@
+{
+  "baseline": "4da71d7689317e8858bd75b7fb564d9e741b3967",
+  "checked_at": "2026-10-16T21:45:30.168596+08:00",
+  "quarters": 37,
+  "records": 2150,
+  "identities_order_and_non_target_fields_preserved": true,
+  "changed_records": 86,
+  "source_method_changes": [
+    {
+      "before": "unknown",
+      "after": "bangumi_api",
+      "records": 86
+    }
+  ],
+  "fact_changes": [
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2229",
+      "anime_name": "遭到流放的轉生重騎士憑藉遊戲知識大開無雙",
+      "before": {
+        "total_episodes": 26,
+        "aired_episodes": 15,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511177",
+          "https://bgm.tv/subject/511177/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 26,
+        "aired_episodes": 16,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511177",
+          "https://bgm.tv/subject/511177/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "changed_facts": [
+        "aired_episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2300",
+      "anime_name": "FX 戰士久留美",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/622288",
+          "https://bgm.tv/subject/622288/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 3,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/622288",
+          "https://bgm.tv/subject/622288/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "changed_facts": [
+        "aired_episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2308",
+      "anime_name": "冰之城牆 第二季",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/665390",
+          "https://bgm.tv/subject/665390/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 3,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/665390",
+          "https://bgm.tv/subject/665390/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "changed_facts": [
+        "aired_episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2330",
+      "anime_name": "鐵道行！meet with 鐵道娘",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/590553",
+          "https://bgm.tv/subject/590553/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/590553",
+          "https://bgm.tv/subject/590553/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "changed_facts": [
+        "aired_episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2229",
+      "anime_name": "遭到流放的轉生重騎士憑藉遊戲知識大開無雙",
+      "before": {
+        "total_episodes": 26,
+        "aired_episodes": 15,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511177",
+          "https://bgm.tv/subject/511177/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 26,
+        "aired_episodes": 16,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511177",
+          "https://bgm.tv/subject/511177/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "changed_facts": [
+        "aired_episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2293",
+      "anime_name": "冰劍的魔術師將要統一世界 第二季",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/654294",
+          "https://bgm.tv/subject/654294/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/654294",
+          "https://bgm.tv/subject/654294/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "changed_facts": [
+        "aired_episodes"
+      ]
+    }
+  ],
+  "stories_filled": [
+    {
+      "quarter": "2022_冬",
+      "card_id": "anime-1036",
+      "story": "その昔、とある国に隕石が落ち、そこに特殊な力を授かりし者たちが現れた。\r\n彼らは『忍者』と呼ばれ、乱世の時代、大名に仕え、諜報活動を中心とする様々な任務に当たった。しかし時が流れ、いつしか忍者は不要な存在に。\r\nそうして忍者たちは追われるように海を渡り、世界各地へと散っていった。\r\n\r\n時は流れて現代。\r\n\r\n忍者の子孫たちは自分たちの持つ特殊な能力、シノビの力を存続させるため、\r\n世界忍者協会『WNA』を設立。\r\nそして『WNA』は身体の中に眠るシノビの力をより強力に引き出すことができる「ニンジャガム」の研究開発に成功するのだった。\r\n\r\n最強のシノビの力を持つ忍者を探し出すため、ニンジャガムを使ったエクストリームニンジャ競技大会「ニンジャラ」が開催されるが、\r\nその大会の裏ではニンジャガムを巡る事件、陰謀、そして未知なる生物の存在が交錯していた...。",
+      "source": {
+        "provider": "bangumi",
+        "subject_id": 360611,
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "quarter": "2026_冬",
+      "card_id": "anime-2104",
+      "story": "【明智あんな】は、マコトミライタウンに暮らす14歳の中学２年生！\r\n誕生日に現れた妖精【ポチタン】とお部屋にあったペンダントに導かれて\r\n2027年から1999年のまことみらい市にタイムスリップ…！\r\n\r\nそこで出会ったのは、名探偵に憧れている14歳の女の子【小林みくる】！\r\n\r\nそんな中、事件発生！？大切なものを盗まれて困っている人がいるみたい…！\r\n事件は【怪盗団ファントム】のしわざ…！？\r\n困っている人を見逃せない…！そんな思いから、あんなとみくるは【名探偵プリキュア】に\r\n変身！！\r\n\r\n名探偵プリキュアがみんなの笑顔を推理で守る！\r\n\r\n「そのナゾ！キュアット解決！」\r\n\r\nそして、あんなは元の時代に戻ることができるのか…！？",
+      "source": {
+        "provider": "bangumi",
+        "subject_id": 611077,
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2233",
+      "story": "死神与灭却师，在历经千年的血战尽头，即使看见的是毁灭的未来……。\r\n\r\n为了拦阻企图闯入灵王宫的优哈巴哈，隶属于王的特务「第零队」挺身迎击，但灭却师之王和他的亲卫队却击败了第零队壮烈的卍解，最终踏入灵王的大内里。\r\n黑崎一护等人受兵主部一兵卫之托守护灵王，一护却中了优哈巴哈的计，用剑斩向灵王。\r\n灵王之死，意味着三界即将崩坏。\r\n各界开始出现扭曲，毁灭的征兆笼罩整个世界。\r\n护廷十三队与灭却师余党联手，前往灵王宫，但此时的灵王宫已落入看不见的帝国手中，蜕变成真世界城。在宛如嘲弄死神般耸立天际的城池中，亲卫队正严阵以待。\r\n在真世界城各处，护廷十三队与亲卫队展开激烈的交战。\r\n一护得知雨龙真正的意图，两人作为彼此信任的好友，重新下定守护世界的决心。\r\n\r\n优哈巴哈已进化为超越「全知全能」的存在。\r\n这场赌上三界存亡的壮烈战斗，即将迎来结局。\r\n\r\n在混乱的漩涡中前进，于尽头等待的究竟是绝望，还是希望呢？\r\n\r\n\r\n\r\n[简介原文]\r\n死神と滅却師、千年に亘る血戦の果てに滅びの未来が視えようとも──\r\n\r\n霊王宮に立ち入らんとするユーハバッハを迎え撃つ王属特務・零番隊。\r\nだが、滅却師の王とその親衛隊は、零番隊の壮絶な卍解を打ち破り、遂に霊王大内裏に踏み入る。\r\n兵主部一兵衛から霊王護衛を託された黒崎一護たち。\r\nしかし、ユーハバッハの策略により、一護はその剣で霊王を斬ってしまう。\r\n霊王の死──それは、三界の崩壊を意味していた。\r\n各界に『歪み』が現れ、滅びの予兆が世界を覆い始める。\r\n護廷十三隊は滅却師の残党と手を組んで、霊王宮へと向かう。\r\nだが、霊王宮は《見えざる帝国》の手に堕ち、《真世界城》へと姿を変えていた。\r\n死神たちを嘲笑うかのように天空に聳え立つ城で親衛隊が待ち受ける。\r\n《真世界城》各地で、護廷十三隊と親衛隊の激戦が繰り広げられる。\r\n一護は雨竜の真意を知り、互いに信じあう友として、世界を護る決意を新たにする。\r\n\r\n『全知全能』をも越えた存在となったユーハバッハ。\r\n三界の存亡を懸けた壮絶な戦いは終焉へと向かう。\r\n\r\n混沌の禍を進んだ先に待つのは絶望か希望か——。",
+      "source": {
+        "provider": "bangumi",
+        "subject_id": 530725,
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2213",
+      "story": "みんなとあそんだいつもの公園、ちょっと遠くまで出かけた町。\r\nひさしぶりのおともだちとの笑顔やはじめましてのあいさつ。\r\n子ザメちゃんのまわりには、きらきら光る瞬間がぽつぽつと咲いていく。\r\n\r\nおいしい匂いが風にのったり、見たことのない景色がひらけたり、\r\n初めてなのに心がふわっとあったかくなる場所に出会ったり、\r\n歩くたびに世界はそっと色を変えていく。\r\n\r\nどんな一日が生まれるのか、どんな出会いが待っているのか、\r\n胸の奥で小さなときめきを光らせながら、\r\n\r\n「今日はどんな楽しい日になるのかな？」\r\n\r\n子ザメちゃんのやさしい冒険とおでかけが、\r\nまた始まる！",
+      "source": {
+        "provider": "bangumi",
+        "subject_id": 616378,
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2207",
+      "story": "ミラーパクトを開いたら、\r\nメイクとコーデでオシャレな私に大変身！\r\n\r\nそれがアイドルプリンセス・アイプリ！\r\n\r\nおねがい町に引っ越してきた好実いのりは、\r\n歌っておどれる\"アイプリ\"が大好きな中学1年生！\r\n\r\n「アイプリになるチャンスをください！」\r\n\r\nいのりが広場の女神像にお願いしていると\r\n偶然、人気アイプリのあおいと\r\nぬいぐるみのようなフォーチュに出会ったの。\r\n\r\nフォーチュのおねがいを叶えられる\r\nアイプリを探しているというあおい。\r\nあおいにもらった特別なミラーパクトを開いて…\r\nいのり、あこがれのアイプリデビュー！\r\n\r\nあおいとフォーチュは\r\nいのりに運命を感じたというけれど…\r\nこれからアイプリでどんな出会いが待っているのでしょう？\r\n\r\nあなたのココロのまんなかで\r\nキラッと光る「おねがい」はなぁに？\r\n\r\nキラキラライブで\r\nみんなの「おねがい」かなえちゃお！",
+      "source": {
+        "provider": "bangumi",
+        "subject_id": 622634,
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "quarter": "2027_冬",
+      "card_id": "anime-2314",
+      "story": "狮堂光、龙咲海、凤凰寺风在户外教学来到东京铁塔时，突然被召唤到了异世界「塞费罗」。在那里，三人得知一直守护「塞费罗」和平与秩序的艾梅洛德公主遭人囚禁，世界正陷入危机。为了拯救「塞费罗」，被艾梅洛德公主召唤的三位少女，究竟能否成为传说中的「魔法骑士」，拯救公主与这个世界呢？\r\n\r\n\r\n\r\n[简介原文]\r\n「信じる心が力になる」\r\n社会見学にやってきた東京タワーで突然、異世界「セフィーロ」に招喚された獅堂光・龍咲海・鳳凰寺風。\r\nそこで三人は、「セフィーロ」の平和と秩序を祈りの力で守ってきた姫・エメロードが、捕われの身となり世界に危機が訪れていることを知る。\r\n「セフィーロ」を救うべく、エメロードによって招喚された三人の少女は、果たして伝説の「魔法騎士」となり、姫と世界を救うことが出来るのか！？",
+      "source": {
+        "provider": "bangumi",
+        "subject_id": 502123,
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    }
+  ],
+  "held_records": [],
+  "records_evidence": [
+    {
+      "quarter": "2022_冬",
+      "card_id": "anime-1036",
+      "anime_name": "Ninjala 泡泡糖忍戰",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/360611",
+          "https://bgm.tv/subject/360611/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/360611",
+          "https://bgm.tv/subject/360611/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1406",
+      "anime_name": "爆旋陀螺 X",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 135,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://beyblade.takaratomy.co.jp/anime/movie/",
+          "https://beyblade.takaratomy.co.jp/anime/newsList/newsA260925.html",
+          "https://bgm.tv/subject/418599/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依已核對官方範圍自動更新；最終總集數未知，不以資料庫已落後的總話數封頂。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 135,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://beyblade.takaratomy.co.jp/anime/movie/",
+          "https://beyblade.takaratomy.co.jp/anime/newsList/newsA260925.html",
+          "https://bgm.tv/subject/418599/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依已核對官方範圍自動更新；最終總集數未知，不以資料庫已落後的總話數封頂。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2025_夏",
+      "card_id": "anime-1876",
+      "anime_name": "小哥斯拉的逆襲",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 54,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://chibigodzilla.jp/",
+          "https://chibigodzilla.jp/news/『ちびゴジラの逆襲』シリーズ最新作放送決定/",
+          "https://bgm.tv/subject/561787/ep",
+          "https://bgm.tv/subject/561787/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依已核對官方範圍自動更新；僅計2025年7月新作，自通算66話起；不合併2023及2024篇，最終總數未定。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 54,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://chibigodzilla.jp/",
+          "https://chibigodzilla.jp/news/『ちびゴジラの逆襲』シリーズ最新作放送決定/",
+          "https://bgm.tv/subject/561787/ep",
+          "https://bgm.tv/subject/561787/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依已核對官方範圍自動更新；僅計2025年7月新作，自通算66話起；不合併2023及2024篇，最終總數未定。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_冬",
+      "card_id": "anime-2104",
+      "anime_name": "名偵探光之美少女！",
+      "before": {
+        "total_episodes": 51,
+        "aired_episodes": 37,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/611077",
+          "https://bgm.tv/subject/611077/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 51,
+        "aired_episodes": 37,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/611077",
+          "https://bgm.tv/subject/611077/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2251",
+      "anime_name": "赤河戀影",
+      "before": {
+        "total_episodes": 24,
+        "aired_episodes": 15,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/627648",
+          "https://bgm.tv/subject/627648/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 24,
+        "aired_episodes": 15,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/627648",
+          "https://bgm.tv/subject/627648/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2229",
+      "anime_name": "遭到流放的轉生重騎士憑藉遊戲知識大開無雙",
+      "before": {
+        "total_episodes": 26,
+        "aired_episodes": 15,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511177",
+          "https://bgm.tv/subject/511177/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 26,
+        "aired_episodes": 16,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511177",
+          "https://bgm.tv/subject/511177/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2263",
+      "anime_name": "我家的弟弟們真是讓您費心了",
+      "before": {
+        "total_episodes": 24,
+        "aired_episodes": 14,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/613438",
+          "https://bgm.tv/subject/613438/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 24,
+        "aired_episodes": 14,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/613438",
+          "https://bgm.tv/subject/613438/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2233",
+      "anime_name": "BLEACH 千年血戰篇-禍進譚-",
+      "before": {
+        "total_episodes": 10,
+        "aired_episodes": 8,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/530725",
+          "https://bgm.tv/subject/530725/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 10,
+        "aired_episodes": 8,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/530725",
+          "https://bgm.tv/subject/530725/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2213",
+      "anime_name": "小鯊鯊出門去 第2季",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/616378",
+          "https://bgm.tv/subject/616378/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/616378",
+          "https://bgm.tv/subject/616378/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2207",
+      "anime_name": "願望的偶像公主",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 28,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/622634",
+          "https://bgm.tv/subject/622634/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 28,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/622634",
+          "https://bgm.tv/subject/622634/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2305",
+      "anime_name": "你好，身為魔女的我，被心上人委託製作迷情藥",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/624923",
+          "https://bgm.tv/subject/624923/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/624923",
+          "https://bgm.tv/subject/624923/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2319",
+      "anime_name": "轉生哥布林有什麼問題嗎？",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/634587",
+          "https://bgm.tv/subject/634587/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/634587",
+          "https://bgm.tv/subject/634587/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2313",
+      "anime_name": "PSYREN－末日遊戲－",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/614640",
+          "https://bgm.tv/subject/614640/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/614640",
+          "https://bgm.tv/subject/614640/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2316",
+      "anime_name": "羅梅莉亞戰記",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511936",
+          "https://bgm.tv/subject/511936/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511936",
+          "https://bgm.tv/subject/511936/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2304",
+      "anime_name": "魔法少女育成計畫 restart",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/418229",
+          "https://bgm.tv/subject/418229/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/418229",
+          "https://bgm.tv/subject/418229/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2301",
+      "anime_name": "冷淡的佐藤同學只對我撒嬌",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/634708",
+          "https://bgm.tv/subject/634708/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/634708",
+          "https://bgm.tv/subject/634708/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2302",
+      "anime_name": "亂世千金倪亞．利斯頓 轉生為嬌弱千金的弒神武人華麗無雙錄",
+      "before": {
+        "total_episodes": 25,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/624085",
+          "https://bgm.tv/subject/624085/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 25,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/624085",
+          "https://bgm.tv/subject/624085/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2334",
+      "anime_name": "Battle Spirits [Re] 絕界之空",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/544378",
+          "https://bgm.tv/subject/544378/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/544378",
+          "https://bgm.tv/subject/544378/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2326",
+      "anime_name": "超巡！超條前輩",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/593565",
+          "https://bgm.tv/subject/593565/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/593565",
+          "https://bgm.tv/subject/593565/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2318",
+      "anime_name": "幻想水滸傳 The Anime",
+      "before": {
+        "total_episodes": 23,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/541538",
+          "https://bgm.tv/subject/541538/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 23,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/541538",
+          "https://bgm.tv/subject/541538/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2310",
+      "anime_name": "被放逐的作弊賦予魔術師享受隨心所欲的第二人生。",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/625799",
+          "https://bgm.tv/subject/625799/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/625799",
+          "https://bgm.tv/subject/625799/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2282",
+      "anime_name": "DARK MACHINE THE ANIMATION",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/505550",
+          "https://bgm.tv/subject/505550/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/505550",
+          "https://bgm.tv/subject/505550/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2251",
+      "anime_name": "赤河戀影",
+      "before": {
+        "total_episodes": 24,
+        "aired_episodes": 15,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/627648",
+          "https://bgm.tv/subject/627648/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 24,
+        "aired_episodes": 15,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/627648",
+          "https://bgm.tv/subject/627648/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2347",
+      "anime_name": "MAZENCHU",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/701779",
+          "https://bgm.tv/subject/701779/ep"
+        ],
+        "checked_at": "2026-10-15T13:39:15.691272+08:00",
+        "attempted_at": "2026-10-15T13:39:15.691272+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/701779",
+          "https://bgm.tv/subject/701779/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2286",
+      "anime_name": "偵探已經，死了。第二季",
+      "before": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/393010",
+          "https://bgm.tv/subject/393010/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/393010",
+          "https://bgm.tv/subject/393010/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2295",
+      "anime_name": "佐佐木與文鳥小嗶 第二季",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/486456",
+          "https://bgm.tv/subject/486456/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/486456",
+          "https://bgm.tv/subject/486456/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2312",
+      "anime_name": "世界最強的魔女，就此開始",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/646154",
+          "https://bgm.tv/subject/646154/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/646154",
+          "https://bgm.tv/subject/646154/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2314",
+      "anime_name": "魔法騎士",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/502123",
+          "https://bgm.tv/subject/502123/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/502123",
+          "https://bgm.tv/subject/502123/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2287",
+      "anime_name": "轉生就是劍 第二季",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/412008",
+          "https://bgm.tv/subject/412008/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/412008",
+          "https://bgm.tv/subject/412008/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2333",
+      "anime_name": "新網球王子 U-17 WORLD CUP 世界盃決賽成員決定戰",
+      "before": {
+        "total_episodes": 13,
+        "aired_episodes": 3,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/586941",
+          "https://bgm.tv/subject/586941/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 13,
+        "aired_episodes": 3,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/586941",
+          "https://bgm.tv/subject/586941/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2322",
+      "anime_name": "獸王武神丹帝拜恩",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/657778",
+          "https://bgm.tv/subject/657778/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/657778",
+          "https://bgm.tv/subject/657778/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2289",
+      "anime_name": "重生者的魔法一定要特別 第二季",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/471844",
+          "https://bgm.tv/subject/471844/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/471844",
+          "https://bgm.tv/subject/471844/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2300",
+      "anime_name": "FX 戰士久留美",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/622288",
+          "https://bgm.tv/subject/622288/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 3,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/622288",
+          "https://bgm.tv/subject/622288/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2308",
+      "anime_name": "冰之城牆 第二季",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/665390",
+          "https://bgm.tv/subject/665390/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 3,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/665390",
+          "https://bgm.tv/subject/665390/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2330",
+      "anime_name": "鐵道行！meet with 鐵道娘",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/590553",
+          "https://bgm.tv/subject/590553/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/590553",
+          "https://bgm.tv/subject/590553/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2229",
+      "anime_name": "遭到流放的轉生重騎士憑藉遊戲知識大開無雙",
+      "before": {
+        "total_episodes": 26,
+        "aired_episodes": 15,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511177",
+          "https://bgm.tv/subject/511177/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 26,
+        "aired_episodes": 16,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511177",
+          "https://bgm.tv/subject/511177/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2293",
+      "anime_name": "冰劍的魔術師將要統一世界 第二季",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/654294",
+          "https://bgm.tv/subject/654294/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/654294",
+          "https://bgm.tv/subject/654294/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2344",
+      "anime_name": "麵包小偷",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/563508",
+          "https://bgm.tv/subject/563508/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/563508",
+          "https://bgm.tv/subject/563508/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2338",
+      "anime_name": "Welsh & Shedar",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/701782",
+          "https://bgm.tv/subject/701782/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/701782",
+          "https://bgm.tv/subject/701782/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2279",
+      "anime_name": "藥師少女的獨語 第三季 前半",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://kusuriyanohitorigoto.jp/season3/bd/vol1.php",
+          "https://kusuriyanohitorigoto.jp/season3/bd/vol2.php",
+          "https://kusuriyanohitorigoto.jp/season3/episodes/",
+          "https://bgm.tv/subject/568244/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依已核對官方範圍自動更新；第三季前半通算49～60，計畫12話；當日與未來集目不計已播。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://kusuriyanohitorigoto.jp/season3/bd/vol1.php",
+          "https://kusuriyanohitorigoto.jp/season3/bd/vol2.php",
+          "https://kusuriyanohitorigoto.jp/season3/episodes/",
+          "https://bgm.tv/subject/568244/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依已核對官方範圍自動更新；第三季前半通算49～60，計畫12話；當日與未來集目不計已播。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2283",
+      "anime_name": "裝備仔",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/657656",
+          "https://bgm.tv/subject/657656/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/657656",
+          "https://bgm.tv/subject/657656/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2299",
+      "anime_name": "螢火蟲的出嫁",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/621108",
+          "https://bgm.tv/subject/621108/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/621108",
+          "https://bgm.tv/subject/621108/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2263",
+      "anime_name": "我家的弟弟們真是讓您費心了",
+      "before": {
+        "total_episodes": 24,
+        "aired_episodes": 14,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/613438",
+          "https://bgm.tv/subject/613438/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 24,
+        "aired_episodes": 14,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/613438",
+          "https://bgm.tv/subject/613438/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2281",
+      "anime_name": "暗部共生少女",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/537738",
+          "https://bgm.tv/subject/537738/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/537738",
+          "https://bgm.tv/subject/537738/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2296",
+      "anime_name": "桃源暗鬼 ～日光・華嚴之瀧篇～",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/617948",
+          "https://bgm.tv/subject/617948/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/617948",
+          "https://bgm.tv/subject/617948/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2291",
+      "anime_name": "東京復仇者 三天戰爭篇",
+      "before": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/499474",
+          "https://bgm.tv/subject/499474/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/499474",
+          "https://bgm.tv/subject/499474/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2323",
+      "anime_name": "Keroro軍曹☆",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/617273",
+          "https://bgm.tv/subject/617273/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/617273",
+          "https://bgm.tv/subject/617273/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2343",
+      "anime_name": "鼠小弟的小背心 第二季",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/694622",
+          "https://bgm.tv/subject/694622/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/694622",
+          "https://bgm.tv/subject/694622/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2317",
+      "anime_name": "朱色的面具",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/568525",
+          "https://bgm.tv/subject/568525/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/568525",
+          "https://bgm.tv/subject/568525/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2332",
+      "anime_name": "七葉樹王國的七名騎士",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/657084",
+          "https://bgm.tv/subject/657084/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/657084",
+          "https://bgm.tv/subject/657084/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2297",
+      "anime_name": "轉生後的大聖女，極力隱瞞聖女的身分",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/542007",
+          "https://bgm.tv/subject/542007/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/542007",
+          "https://bgm.tv/subject/542007/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2292",
+      "anime_name": "野生的大魔王出現了！第二季",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/616808",
+          "https://bgm.tv/subject/616808/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/616808",
+          "https://bgm.tv/subject/616808/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2284",
+      "anime_name": "彈珠汽水瓶裏的千歲同學 第二季度",
+      "before": {
+        "total_episodes": 11,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://chiramune.com/bd/04.html",
+          "https://chiramune.com/bd/05.html",
+          "https://chiramune.com/bd/06.html",
+          "https://chiramune.com/onair/",
+          "https://bgm.tv/subject/584847/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依已核對官方範圍自動更新；第二季度正篇14～24，計畫11話；排除13.5與25。"
+      },
+      "after": {
+        "total_episodes": 11,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://chiramune.com/bd/04.html",
+          "https://chiramune.com/bd/05.html",
+          "https://chiramune.com/bd/06.html",
+          "https://chiramune.com/onair/",
+          "https://bgm.tv/subject/584847/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依已核對官方範圍自動更新；第二季度正篇14～24，計畫11話；排除13.5與25。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2288",
+      "anime_name": "黑色五葉草 第二季",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/567896",
+          "https://bgm.tv/subject/567896/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/567896",
+          "https://bgm.tv/subject/567896/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2346",
+      "anime_name": "Funbarus",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/701565",
+          "https://bgm.tv/subject/701565/ep"
+        ],
+        "checked_at": "2026-10-15T13:39:34.515865+08:00",
+        "attempted_at": "2026-10-15T13:39:34.515865+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/701565",
+          "https://bgm.tv/subject/701565/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2321",
+      "anime_name": "Vertex Force",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/636512",
+          "https://bgm.tv/subject/636512/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/636512",
+          "https://bgm.tv/subject/636512/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2325",
+      "anime_name": "#尋找殭屍中",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/586255",
+          "https://bgm.tv/subject/586255/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/586255",
+          "https://bgm.tv/subject/586255/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2337",
+      "anime_name": "恐怖收集者",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/613256",
+          "https://bgm.tv/subject/613256/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/613256",
+          "https://bgm.tv/subject/613256/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2215",
+      "anime_name": "魔法★探險家",
+      "before": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/456078",
+          "https://bgm.tv/subject/456078/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/456078",
+          "https://bgm.tv/subject/456078/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2280",
+      "anime_name": "學生會也有洞！",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/554779",
+          "https://bgm.tv/subject/554779/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/554779",
+          "https://bgm.tv/subject/554779/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2311",
+      "anime_name": "亂馬½ 第三季",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/637802",
+          "https://bgm.tv/subject/637802/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/637802",
+          "https://bgm.tv/subject/637802/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2306",
+      "anime_name": "用【循環利息】強制收回借出的魔力",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/606716",
+          "https://bgm.tv/subject/606716/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/606716",
+          "https://bgm.tv/subject/606716/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2345",
+      "anime_name": "小狸貓和小狐狸",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/638081",
+          "https://bgm.tv/subject/638081/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/638081",
+          "https://bgm.tv/subject/638081/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2342",
+      "anime_name": "軟軟噗尼寵物小精靈 4",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/646586",
+          "https://bgm.tv/subject/646586/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/646586",
+          "https://bgm.tv/subject/646586/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2290",
+      "anime_name": "青春盒子 第二季",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/548156",
+          "https://bgm.tv/subject/548156/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/548156",
+          "https://bgm.tv/subject/548156/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2298",
+      "anime_name": "青之蘆葦 第二季",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/555605",
+          "https://bgm.tv/subject/555605/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/555605",
+          "https://bgm.tv/subject/555605/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2303",
+      "anime_name": "夜櫻家大作戰 第二季 第二部分",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/664389",
+          "https://bgm.tv/subject/664389/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/664389",
+          "https://bgm.tv/subject/664389/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2329",
+      "anime_name": "鑽石王牌 actⅡ第2季 2nd cour",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/664395",
+          "https://bgm.tv/subject/664395/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/664395",
+          "https://bgm.tv/subject/664395/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2294",
+      "anime_name": "一覺醒來就有了最強裝備跟太空船 決定以自家獨棟建築為目標當傭兵自由過活",
+      "before": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/536270",
+          "https://bgm.tv/subject/536270/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/536270",
+          "https://bgm.tv/subject/536270/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2331",
+      "anime_name": "大叔喜歡可愛小玩意",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/605533",
+          "https://bgm.tv/subject/605533/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/605533",
+          "https://bgm.tv/subject/605533/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2327",
+      "anime_name": "魔法姊妹露露特莉莉 2nd cour",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/634210",
+          "https://bgm.tv/subject/634210/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/634210",
+          "https://bgm.tv/subject/634210/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2320",
+      "anime_name": "戰車椅子-TANK CHAIR-",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/636023",
+          "https://bgm.tv/subject/636023/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/636023",
+          "https://bgm.tv/subject/636023/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2307",
+      "anime_name": "龍珠超 比路斯",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/623249",
+          "https://bgm.tv/subject/623249/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/623249",
+          "https://bgm.tv/subject/623249/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2309",
+      "anime_name": "和沒有信徒的女神大人一起攻略異世界",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/621073",
+          "https://bgm.tv/subject/621073/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 1,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/621073",
+          "https://bgm.tv/subject/621073/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2315",
+      "anime_name": "極致軟弱千金小姐，不小心答應了精明未婚夫的賭局",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/596771",
+          "https://bgm.tv/subject/596771/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/596771",
+          "https://bgm.tv/subject/596771/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2328",
+      "anime_name": "殺手旅店 第二季",
+      "before": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/589775",
+          "https://bgm.tv/subject/589775/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 13,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/589775",
+          "https://bgm.tv/subject/589775/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2285",
+      "anime_name": "轉生貴族憑鑑定技能扭轉人生 第三季",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 3,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/530104",
+          "https://bgm.tv/subject/530104/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 3,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/530104",
+          "https://bgm.tv/subject/530104/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2324",
+      "anime_name": "異境奇緣",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/636058",
+          "https://bgm.tv/subject/636058/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/636058",
+          "https://bgm.tv/subject/636058/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2340",
+      "anime_name": "因為滑鼠遊標似乎可以操控現實，所以我要瘋狂點擊女孩子",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/698032",
+          "https://bgm.tv/subject/698032/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/698032",
+          "https://bgm.tv/subject/698032/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2335",
+      "anime_name": "女友的朋友",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/647220",
+          "https://bgm.tv/subject/647220/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/647220",
+          "https://bgm.tv/subject/647220/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2341",
+      "anime_name": "不擅交際的未亡人雪女與詛咒戒指",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/656083",
+          "https://bgm.tv/subject/656083/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/656083",
+          "https://bgm.tv/subject/656083/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2336",
+      "anime_name": "與暗黑召喚師秘密戀愛中",
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/630160",
+          "https://bgm.tv/subject/630160/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/630160",
+          "https://bgm.tv/subject/630160/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2027_冬",
+      "card_id": "anime-2316",
+      "anime_name": "羅梅莉亞戰記",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511936",
+          "https://bgm.tv/subject/511936/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/511936",
+          "https://bgm.tv/subject/511936/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2027_冬",
+      "card_id": "anime-2302",
+      "anime_name": "亂世千金倪亞．利斯頓 轉生為嬌弱千金的弒神武人華麗無雙錄",
+      "before": {
+        "total_episodes": 25,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/624085",
+          "https://bgm.tv/subject/624085/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 25,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/624085",
+          "https://bgm.tv/subject/624085/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2027_冬",
+      "card_id": "anime-2318",
+      "anime_name": "幻想水滸傳 The Anime",
+      "before": {
+        "total_episodes": 23,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/541538",
+          "https://bgm.tv/subject/541538/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": 23,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/541538",
+          "https://bgm.tv/subject/541538/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "quarter": "2027_冬",
+      "card_id": "anime-2314",
+      "anime_name": "魔法騎士",
+      "before": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/502123",
+          "https://bgm.tv/subject/502123/ep"
+        ],
+        "checked_at": "2026-10-15T14:10:14.348937+08:00",
+        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+      },
+      "after": {
+        "total_episodes": null,
+        "aired_episodes": 2,
+        "airing_status": "airing",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/502123",
+          "https://bgm.tv/subject/502123/ep"
+        ],
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
+        "end_date": null,
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    }
+  ]
+}

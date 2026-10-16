@@ -1,0 +1,74 @@
+[
+  {
+    "quarter": "2022_冬",
+    "card_id": "anime-1036",
+    "anime_name": "Ninjala 泡泡糖忍戰",
+    "subject_id": 360611,
+    "provider_name": "ニンジャラ",
+    "type": 2,
+    "provider_date": "2022-01-08",
+    "source_url": "https://api.bgm.tv/v0/subjects/360611",
+    "checked_at": "2026-10-16T21:48:51.205226+08:00",
+    "summary_sha256": "8f3e09196a452d931ec12588ff0f50d0e6ba92c82dd24f8c2fca7702b9543ace"
+  },
+  {
+    "quarter": "2026_冬",
+    "card_id": "anime-2104",
+    "anime_name": "名偵探光之美少女！",
+    "subject_id": 611077,
+    "provider_name": "名探偵プリキュア！",
+    "type": 2,
+    "provider_date": "2026-02-01",
+    "source_url": "https://api.bgm.tv/v0/subjects/611077",
+    "checked_at": "2026-10-16T21:48:52.636057+08:00",
+    "summary_sha256": "c9f04d487e8040b38bd2f076e6c94579bc7437372fd9b8bc877dd470bfc1b105"
+  },
+  {
+    "quarter": "2026_夏",
+    "card_id": "anime-2233",
+    "anime_name": "BLEACH 千年血戰篇-禍進譚-",
+    "subject_id": 530725,
+    "provider_name": "BLEACH 千年血戦篇-禍進譚-",
+    "type": 2,
+    "provider_date": "2026-07-25",
+    "source_url": "https://api.bgm.tv/v0/subjects/530725",
+    "checked_at": "2026-10-16T21:48:53.345544+08:00",
+    "summary_sha256": "26f34e4ab784ddf71e3ad9d2bec3cc6717a3c2f755d60c885395589edfbf088a"
+  },
+  {
+    "quarter": "2026_春",
+    "card_id": "anime-2213",
+    "anime_name": "小鯊鯊出門去 第2季",
+    "subject_id": 616378,
+    "provider_name": "おでかけ子ザメ シーズン2",
+    "type": 2,
+    "provider_date": "2026-04-12",
+    "source_url": "https://api.bgm.tv/v0/subjects/616378",
+    "checked_at": "2026-10-16T21:48:54.779259+08:00",
+    "summary_sha256": "78cfd65ded97ca57bd81c581f3696d71ce901e219ac4fb1d3cbc088d13443cfb"
+  },
+  {
+    "quarter": "2026_春",
+    "card_id": "anime-2207",
+    "anime_name": "願望的偶像公主",
+    "subject_id": 622634,
+    "provider_name": "おねがいアイプリ",
+    "type": 2,
+    "provider_date": "2026-04-05",
+    "source_url": "https://api.bgm.tv/v0/subjects/622634",
+    "checked_at": "2026-10-16T21:48:55.472141+08:00",
+    "summary_sha256": "d8b79283de2826bd1308d677c1fb70f0db88af7197f88abc8a6be54594ca7201"
+  },
+  {
+    "quarter": "2027_冬",
+    "card_id": "anime-2314",
+    "anime_name": "魔法騎士",
+    "subject_id": 502123,
+    "provider_name": "魔法騎士レイアース",
+    "type": 2,
+    "provider_date": "2026-10-07",
+    "source_url": "https://api.bgm.tv/v0/subjects/502123",
+    "checked_at": "2026-10-16T21:48:56.196473+08:00",
+    "summary_sha256": "4e5fb6857d9053b68c93514e955fb772d96f87cdbbee5507de222a7dfb457899"
+  }
+]

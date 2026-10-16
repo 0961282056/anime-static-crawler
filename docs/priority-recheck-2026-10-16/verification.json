@@ -1,0 +1,624 @@
+{
+  "quarters": 37,
+  "records": 2150,
+  "changed_records": 86,
+  "identities_and_order_preserved": true,
+  "existing_summaries_preserved": true,
+  "missing_summaries_after": 945,
+  "changes": [
+    {
+      "quarter": "2022_冬",
+      "card_id": "anime-1036",
+      "fields": [
+        "story",
+        "story_source",
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1406",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2025_夏",
+      "card_id": "anime-1876",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_冬",
+      "card_id": "anime-2104",
+      "fields": [
+        "story",
+        "story_source",
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2251",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2229",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2263",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2233",
+      "fields": [
+        "story",
+        "story_source",
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2213",
+      "fields": [
+        "story",
+        "story_source",
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2207",
+      "fields": [
+        "story",
+        "story_source",
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2305",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2319",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2313",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2316",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2304",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2301",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2302",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2334",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2326",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2318",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2310",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2282",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2251",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2347",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2286",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2295",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2312",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2314",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2287",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2333",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2322",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2289",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2300",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2308",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2330",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2229",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2293",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2344",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2338",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2279",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2283",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2299",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2263",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2281",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2296",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2291",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2323",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2343",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2317",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2332",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2297",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2292",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2284",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2288",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2346",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2321",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2325",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2337",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2215",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2280",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2311",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2306",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2345",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2342",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2290",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2298",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2303",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2329",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2294",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2331",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2327",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2320",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2307",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2309",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2315",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2328",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2285",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2324",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2340",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2335",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2341",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2336",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2027_冬",
+      "card_id": "anime-2316",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2027_冬",
+      "card_id": "anime-2302",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2027_冬",
+      "card_id": "anime-2318",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2027_冬",
+      "card_id": "anime-2314",
+      "fields": [
+        "story",
+        "story_source",
+        "episodes"
+      ]
+    }
+  ]
+}
