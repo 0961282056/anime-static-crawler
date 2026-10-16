@@ -227,6 +227,7 @@ def parse_args() -> argparse.Namespace:
             "validate-all",
             "quality-report",
             "source-audit",
+            "notify-source-reviews",
             "notify-workflow",
             "selector-canary",
             "notify-selector-canary-failure",
@@ -236,6 +237,18 @@ def parse_args() -> argparse.Namespace:
 
 
 def execute_command(command: str) -> None:
+    if command == "notify-source-reviews":
+        from services.review_notifications import publish_from_environment
+
+        result = publish_from_environment(
+            os.getenv("SOURCE_REVIEW_REPORT", "audit-output/source-audit.json")
+        )
+        print(result)
+        summary_path = os.getenv("GITHUB_STEP_SUMMARY", "").strip()
+        if summary_path:
+            with Path(summary_path).open("a", encoding="utf-8") as summary:
+                summary.write(f"## 人工複查通知\n\n{result}\n")
+        return
     if command == "source-audit":
         from services.errors import SourceFetchError
         from services.source_audit import run_source_audit, write_audit_report

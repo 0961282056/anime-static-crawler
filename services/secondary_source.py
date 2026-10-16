@@ -36,6 +36,7 @@ class AniListClient:
         self.requests_used = 0
         self.started: float | None = None
         self.last_request: float | None = None
+        self.last_response_info: dict | None = None
 
     def fetch(self, ids: list[int]) -> dict[int, dict]:
         if not ids or len(ids) > 40 or any(type(i) is not int or i <= 0 for i in ids):
@@ -63,6 +64,13 @@ class AniListClient:
                 allow_redirects=False,
             )
             try:
+                self.last_response_info = {
+                    "http_status": response.status_code,
+                    "content_type": response.headers.get("content-type", ""),
+                    "cloudflare_block_page": response.status_code == 403
+                    and "Cloudflare" in response.text
+                    and "Sorry, you have been blocked" in response.text,
+                }
                 if response.status_code != 200:
                     raise SecondarySourceError(f"http_{response.status_code}")
                 payload = response.json()

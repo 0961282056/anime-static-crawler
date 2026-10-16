@@ -48,3 +48,39 @@ jobs:
           retention-days: 30
           if-no-files-found: error
           overwrite: true
+
+  notify-reviews:
+    needs: source-audit
+    if: always() && github.ref == 'refs/heads/main' && needs.source-audit.result != 'skipped'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout trusted notification code
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Download report from this run
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: source-audit-${{ github.run_id }}
+          path: audit-output
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-build.txt
+
+      - name: Install locked notification dependencies
+        run: python -m pip install --require-hashes -r requirements-build.txt
+
+      - name: Notify only new or changed review evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_REVIEW_ASSIGNEE: ${{ vars.SOURCE_REVIEW_ASSIGNEE || github.repository_owner }}
+        run: python manage.py notify-source-reviews

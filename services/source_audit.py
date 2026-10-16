@@ -301,7 +301,12 @@ def run_source_audit(
             if reason == "request_budget_exhausted":
                 attempted_ids.difference_update(batch)
             report["errors"].append(
-                {"stage": "anilist", "subject_ids": batch, "reason": reason}
+                {
+                    "stage": "anilist",
+                    "subject_ids": batch,
+                    "reason": reason,
+                    "response": getattr(secondary_client, "last_response_info", None),
+                }
             )
             for subject_id in ids[offset:]:
                 failed[subject_id] = reason
@@ -346,6 +351,7 @@ def run_source_audit(
             ],
             "manual_review": None,
             "secondary": [],
+            "explicit_anilist_ids": sorted(group["ids"]),
         }
         reviews = [manual_review_entry(copy, now) for copy in group["copies"]]
         reviews = [review for review in reviews if review]
@@ -440,6 +446,10 @@ def write_audit_report(report: dict, output: Path) -> str:
         f"- {key}: {json.dumps(value, ensure_ascii=False)}"
         for key, value in summary.items()
     )
+    for error in report["errors"]:
+        lines.append(
+            f"- 來源異常：{error['stage']}／{error['reason']}；回應：{json.dumps(error.get('response'), ensure_ascii=False)}"
+        )
 
     def cell(value: Any) -> str:
         return str(value).replace("|", "\\|").replace("\n", " ").replace("<", "&lt;")

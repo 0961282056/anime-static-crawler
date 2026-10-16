@@ -46,6 +46,7 @@ STAGE_LABELS = {
     "notify-workflow": "送出排程通知",
     "selector-canary": "檢查來源解析規則",
     "source-audit": "核對季度收錄與第二資料來源",
+    "notify-source-reviews": "建立或更新人工複查 Issue",
     "notify-selector-canary-failure": "送出來源檢查通知",
     "publish": "建立及合併資料更新 PR",
     "preflight": "執行爬取前品質檢查",

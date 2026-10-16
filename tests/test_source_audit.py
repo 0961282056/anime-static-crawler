@@ -198,6 +198,8 @@ def test_snapshot_queue_uses_oldest_success_not_attempt(monkeypatch, anime):
 class Response:
     status_code = 200
     closed = False
+    headers = {"content-type": "application/json"}
+    text = ""
 
     def __init__(self, payload):
         self.payload = payload
@@ -495,7 +497,7 @@ def test_audit_cli_writes_partial_report_before_failing(
             "summary": {},
             "identities": [],
             "quarters": [],
-            "errors": [{"reason": "http_403"}],
+            "errors": [{"stage": "anilist", "reason": "http_403"}],
             "observed_at": NOW.isoformat(),
         },
     )
