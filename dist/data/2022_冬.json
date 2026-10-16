@@ -737,7 +737,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9b7d7de9e696ecf049200135f5d42f73",
       "premiere_date": "六",
       "premiere_time": "10:30",
-      "story": "暫無簡介",
+      "story": "その昔、とある国に隕石が落ち、そこに特殊な力を授かりし者たちが現れた。\r\n彼らは『忍者』と呼ばれ、乱世の時代、大名に仕え、諜報活動を中心とする様々な任務に当たった。しかし時が流れ、いつしか忍者は不要な存在に。\r\nそうして忍者たちは追われるように海を渡り、世界各地へと散っていった。\r\n\r\n時は流れて現代。\r\n\r\n忍者の子孫たちは自分たちの持つ特殊な能力、シノビの力を存続させるため、\r\n世界忍者協会『WNA』を設立。\r\nそして『WNA』は身体の中に眠るシノビの力をより強力に引き出すことができる「ニンジャガム」の研究開発に成功するのだった。\r\n\r\n最強のシノビの力を持つ忍者を探し出すため、ニンジャガムを使ったエクストリームニンジャ競技大会「ニンジャラ」が開催されるが、\r\nその大会の裏ではニンジャガムを巡る事件、陰謀、そして未知なる生物の存在が交錯していた...。",
       "original_name": "ニンジャラ",
       "external_ids": {
         "bangumi": 360611,
@@ -753,10 +753,18 @@
           "https://bgm.tv/subject/360611",
           "https://bgm.tv/subject/360611/ep"
         ],
-        "checked_at": "2026-10-15T14:10:14.348937+08:00",
-        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 360611,
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1212,14 +1220,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T09:14:07.155639+08:00",
+  "generated_at": "2026-10-16T21:45:30.168596+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202201/",
   "quality": {
     "source_count": 43,
     "record_count": 43,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 27,
+    "missing_story_count": 26,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

@@ -1639,7 +1639,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c8bf3ecb3d904679e15e55ee3106bda2",
       "premiere_date": "日",
       "premiere_time": "07:00",
-      "story": "暫無簡介",
+      "story": "みんなとあそんだいつもの公園、ちょっと遠くまで出かけた町。\r\nひさしぶりのおともだちとの笑顔やはじめましてのあいさつ。\r\n子ザメちゃんのまわりには、きらきら光る瞬間がぽつぽつと咲いていく。\r\n\r\nおいしい匂いが風にのったり、見たことのない景色がひらけたり、\r\n初めてなのに心がふわっとあったかくなる場所に出会ったり、\r\n歩くたびに世界はそっと色を変えていく。\r\n\r\nどんな一日が生まれるのか、どんな出会いが待っているのか、\r\n胸の奥で小さなときめきを光らせながら、\r\n\r\n「今日はどんな楽しい日になるのかな？」\r\n\r\n子ザメちゃんのやさしい冒険とおでかけが、\r\nまた始まる！",
       "original_name": "おでかけ子ザメ シーズン2",
       "external_ids": {
         "bangumi": 616378,
@@ -1655,10 +1655,18 @@
           "https://bgm.tv/subject/616378",
           "https://bgm.tv/subject/616378/ep"
         ],
-        "checked_at": "2026-10-15T14:10:14.348937+08:00",
-        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 616378,
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1696,7 +1704,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/2212d785210079ee4a89222bc9734689",
       "premiere_date": "日",
       "premiere_time": "09:30",
-      "story": "暫無簡介",
+      "story": "ミラーパクトを開いたら、\r\nメイクとコーデでオシャレな私に大変身！\r\n\r\nそれがアイドルプリンセス・アイプリ！\r\n\r\nおねがい町に引っ越してきた好実いのりは、\r\n歌っておどれる\"アイプリ\"が大好きな中学1年生！\r\n\r\n「アイプリになるチャンスをください！」\r\n\r\nいのりが広場の女神像にお願いしていると\r\n偶然、人気アイプリのあおいと\r\nぬいぐるみのようなフォーチュに出会ったの。\r\n\r\nフォーチュのおねがいを叶えられる\r\nアイプリを探しているというあおい。\r\nあおいにもらった特別なミラーパクトを開いて…\r\nいのり、あこがれのアイプリデビュー！\r\n\r\nあおいとフォーチュは\r\nいのりに運命を感じたというけれど…\r\nこれからアイプリでどんな出会いが待っているのでしょう？\r\n\r\nあなたのココロのまんなかで\r\nキラッと光る「おねがい」はなぁに？\r\n\r\nキラキラライブで\r\nみんなの「おねがい」かなえちゃお！",
       "original_name": "おねがいアイプリ",
       "external_ids": {
         "bangumi": 622634,
@@ -1712,10 +1720,18 @@
           "https://bgm.tv/subject/622634",
           "https://bgm.tv/subject/622634/ep"
         ],
-        "checked_at": "2026-10-15T14:10:14.348937+08:00",
-        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 622634,
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2034,14 +2050,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T09:14:07.289977+08:00",
+  "generated_at": "2026-10-16T21:45:30.168596+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202604/",
   "quality": {
     "source_count": 71,
     "record_count": 71,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 16,
+    "missing_story_count": 14,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

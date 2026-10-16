@@ -23,10 +23,11 @@
           "https://bgm.tv/subject/511936",
           "https://bgm.tv/subject/511936/ep"
         ],
-        "checked_at": "2026-10-15T14:10:14.348937+08:00",
-        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -51,10 +52,11 @@
           "https://bgm.tv/subject/624085",
           "https://bgm.tv/subject/624085/ep"
         ],
-        "checked_at": "2026-10-15T14:10:14.348937+08:00",
-        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -79,10 +81,11 @@
           "https://bgm.tv/subject/541538",
           "https://bgm.tv/subject/541538/ep"
         ],
-        "checked_at": "2026-10-15T14:10:14.348937+08:00",
-        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -91,7 +94,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/876237c358baba90d1c4ad4055ad62d0a91ded6dfd83a35000919e51c66e33d1",
       "premiere_date": "三",
       "premiere_time": "23:45",
-      "story": "暫無簡介",
+      "story": "狮堂光、龙咲海、凤凰寺风在户外教学来到东京铁塔时，突然被召唤到了异世界「塞费罗」。在那里，三人得知一直守护「塞费罗」和平与秩序的艾梅洛德公主遭人囚禁，世界正陷入危机。为了拯救「塞费罗」，被艾梅洛德公主召唤的三位少女，究竟能否成为传说中的「魔法骑士」，拯救公主与这个世界呢？\r\n\r\n\r\n\r\n[简介原文]\r\n「信じる心が力になる」\r\n社会見学にやってきた東京タワーで突然、異世界「セフィーロ」に招喚された獅堂光・龍咲海・鳳凰寺風。\r\nそこで三人は、「セフィーロ」の平和と秩序を祈りの力で守ってきた姫・エメロードが、捕われの身となり世界に危機が訪れていることを知る。\r\n「セフィーロ」を救うべく、エメロードによって招喚された三人の少女は、果たして伝説の「魔法騎士」となり、姫と世界を救うことが出来るのか！？",
       "original_name": "魔法騎士レイアース",
       "external_ids": {
         "bangumi": 502123,
@@ -107,21 +110,29 @@
           "https://bgm.tv/subject/502123",
           "https://bgm.tv/subject/502123/ep"
         ],
-        "checked_at": "2026-10-15T14:10:14.348937+08:00",
-        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 502123,
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     }
   ],
-  "generated_at": "2026-10-15T14:10:14.348937+08:00",
+  "generated_at": "2026-10-16T21:45:30.168596+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202701/",
   "quality": {
     "source_count": 4,
     "record_count": 4,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 1,
+    "missing_story_count": 0,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

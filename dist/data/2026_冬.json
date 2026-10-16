@@ -1376,7 +1376,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/979d6faec871e7f023d2c1f410580b6b",
       "premiere_date": "日",
       "premiere_time": "08:30",
-      "story": "暫無簡介",
+      "story": "【明智あんな】は、マコトミライタウンに暮らす14歳の中学２年生！\r\n誕生日に現れた妖精【ポチタン】とお部屋にあったペンダントに導かれて\r\n2027年から1999年のまことみらい市にタイムスリップ…！\r\n\r\nそこで出会ったのは、名探偵に憧れている14歳の女の子【小林みくる】！\r\n\r\nそんな中、事件発生！？大切なものを盗まれて困っている人がいるみたい…！\r\n事件は【怪盗団ファントム】のしわざ…！？\r\n困っている人を見逃せない…！そんな思いから、あんなとみくるは【名探偵プリキュア】に\r\n変身！！\r\n\r\n名探偵プリキュアがみんなの笑顔を推理で守る！\r\n\r\n「そのナゾ！キュアット解決！」\r\n\r\nそして、あんなは元の時代に戻ることができるのか…！？",
       "original_name": "名探偵プリキュア！",
       "external_ids": {
         "bangumi": 611077,
@@ -1392,10 +1392,18 @@
           "https://bgm.tv/subject/611077",
           "https://bgm.tv/subject/611077/ep"
         ],
-        "checked_at": "2026-10-15T14:10:14.348937+08:00",
-        "attempted_at": "2026-10-15T14:10:14.348937+08:00",
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "attempted_at": "2026-10-16T21:45:30.168596+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 611077,
+        "checked_at": "2026-10-16T21:45:30.168596+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1863,14 +1871,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T09:14:07.273543+08:00",
+  "generated_at": "2026-10-16T21:45:30.168596+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202601/",
   "quality": {
     "source_count": 65,
     "record_count": 65,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 21,
+    "missing_story_count": 20,
     "missing_date_count": 0,
     "missing_time_count": 0
   }
