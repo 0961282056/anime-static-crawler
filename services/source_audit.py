@@ -33,7 +33,7 @@ logger = logging.getLogger(__name__)
 
 def manual_review_entry(anime: Anime, now: datetime) -> dict | None:
     review = reviewed_source(anime)
-    if not review or review["mode"] != "snapshot":
+    if not review or review["mode"] != "snapshot" or review.get("official_adapter"):
         return None
     info = anime.episodes
     checked = info.checked_at if info else None
@@ -65,11 +65,17 @@ def provenance(anime: Anime) -> dict:
         if anime.external_ids.bangumi
         else "unknown",
         "verification_method": "manual_official_review"
-        if review and review["mode"] == "snapshot"
+        if review
+        and review["mode"] == "snapshot"
+        and not review.get("official_adapter")
+        else info.source_kind
+        if info and info.source_kind != "unknown"
         else "legacy_method_not_structured",
         "scope": "manually_reviewed_entry" if review else "linked_entry_main_episodes",
         "scope_explanation": (
-            review.get("scope_note") or review["metadata"].get("note", "")
+            info.note
+            if info and review.get("official_adapter")
+            else review.get("scope_note") or review["metadata"].get("note", "")
         )
         if review
         else "僅限已連結條目正篇；跨來源範圍尚未獨立確認。",
@@ -80,8 +86,12 @@ def provenance(anime: Anime) -> dict:
         "last_attempt_at": info.attempted_at.isoformat()
         if info and info.attempted_at
         else None,
-        "source_snapshot_at": None,
-        "snapshot_date_reason": "not_structured_in_legacy_data",
+        "source_snapshot_at": info.source_snapshot_date.isoformat()
+        if info and info.source_snapshot_date
+        else None,
+        "snapshot_date_reason": "explicit_recorded_snapshot_date"
+        if info and info.source_snapshot_date
+        else "not_structured_in_legacy_data",
         "unknown_fields": [
             field
             for field, unknown in (
@@ -275,7 +285,8 @@ def run_source_audit(
             )
             if (
                 candidate
-                and identity(candidate) == identity(anime)
+                and same_card
+                and candidate.external_ids.bangumi in (None, anime.external_ids.bangumi)
                 and candidate.external_ids.anilist
             ):
                 group["ids"].add(candidate.external_ids.anilist)
@@ -315,6 +326,21 @@ def run_source_audit(
 
     for group in grouped.values():
         anime = group["copies"][0]
+        if (
+            (review := reviewed_source(anime))
+            and review.get("official_adapter")
+            and any(
+                copy.episodes and copy.episodes.fetch_state != "ok"
+                for copy in group["copies"]
+            )
+        ):
+            report["errors"].append(
+                {
+                    "stage": "official_catalogue",
+                    "reason": "verification_failed_prior_evidence_retained",
+                    "card_id": anime.bangumi_id,
+                }
+            )
         row = {
             "card_id": anime.bangumi_id,
             "anime_name": anime.anime_name,

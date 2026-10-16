@@ -635,7 +635,7 @@ def test_backfill_links_preserves_existing_records_and_images(
 ):
     repository = DataRepository(tmp_path, DataQualityPolicy())
     records = [
-        Anime.model_validate(anime_record_factory(2200)),
+        Anime.model_validate(anime_record_factory(2200, name="測試動畫")),
         Anime.model_validate(anime_record_factory(999)),
     ]
     repository.write_quarter(
@@ -817,3 +817,60 @@ def test_reviewed_source_id_correction_is_exact_and_does_not_overwrite_new_links
         reviewed_source_subject_id(args[0], args[1], "another season", wrong_id)
         == wrong_id
     )
+
+
+@pytest.mark.parametrize(
+    "problem",
+    [
+        "renamed",
+        "original_changed",
+        "bangumi_conflict",
+        "anilist_conflict",
+        "duplicate",
+    ],
+)
+def test_link_backfill_rejects_ambiguous_identity(
+    tmp_path, anime_record_factory, fixture_dir, problem
+):
+    repository = DataRepository(tmp_path, DataQualityPolicy())
+    record = Anime.model_validate(
+        {
+            **anime_record_factory(2200, name="測試動畫"),
+            "external_ids": {"bangumi": 580133, "anilist": 197754},
+            "episodes": {"total_episodes": 12},
+        }
+    )
+    repository.write_quarter(
+        year="2026",
+        season="夏",
+        records=[record],
+        source_url="https://acgsecrets.hk/bangumi/202607/",
+        source_count=1,
+        parse_failure_count=0,
+    )
+    html = (fixture_dir / "acgsecrets_202607_minimal.html").read_text()
+    html = html.replace(
+        '<div class="anime_story">',
+        '<a href="https://bgm.tv/subject/580133">BGM</a><a href="https://anilist.co/anime/197754">AniList</a><div class="anime_story">',
+    )
+    if problem == "renamed":
+        html = html.replace("測試動畫", "其他作品")
+    elif problem == "original_changed":
+        record = record.model_copy(update={"original_name": "TV 第2期"})
+        repository.write_quarter(
+            year="2026",
+            season="夏",
+            records=[record],
+            source_url="https://acgsecrets.hk/bangumi/202607/",
+            source_count=1,
+            parse_failure_count=0,
+        )
+    elif problem == "bangumi_conflict":
+        html = html.replace("subject/580133", "subject/999")
+    elif problem == "anilist_conflict":
+        html = html.replace("anime/197754", "anime/999")
+    else:
+        html += html
+    source = SimpleNamespace(fetch_quarter_html=lambda *args: ("url", html))
+    assert backfill_source_links(repository, source, year="2026") == 0
+    assert repository.load_quarter("2026", "夏").anime_list == [record]

@@ -418,7 +418,8 @@
         "checked_at": "2026-10-15T08:14:24+08:00",
         "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "本卡為整季：襲擊篇8＋反擊篇8，共16話（通算51～66）；原Bangumi ID僅涵蓋襲擊篇，不採其8話為整季。"
+        "note": "本卡為整季：襲擊篇8＋反擊篇8，共16話（通算51～66）；原Bangumi ID僅涵蓋襲擊篇，不採其8話為整季。",
+        "source_kind": "manual_official"
       }
     },
     {
@@ -1790,7 +1791,8 @@
         "checked_at": "2026-10-15T08:14:24+08:00",
         "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "TV版全8話；官方公告最終回第8話。"
+        "note": "TV版全8話；官方公告最終回第8話。",
+        "source_kind": "manual_official"
       }
     },
     {
@@ -1822,7 +1824,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T07:16:40.437305+08:00",
+  "generated_at": "2026-10-16T09:14:07.243318+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202501/",
   "quality": {
     "source_count": 65,

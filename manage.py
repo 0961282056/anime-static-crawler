@@ -118,7 +118,9 @@ def quality_report(paths: ProjectPaths) -> None:
     snapshots = [
         record
         for record in episode_records
-        if (review := reviewed_source(record)) and review["mode"] == "snapshot"
+        if (review := reviewed_source(record))
+        and review["mode"] == "snapshot"
+        and not review.get("official_adapter")
     ]
     now = datetime.now().astimezone()
     health = refresh_statistics(
@@ -228,6 +230,7 @@ def parse_args() -> argparse.Namespace:
             "quality-report",
             "source-audit",
             "notify-source-reviews",
+            "remind-source-reviews",
             "notify-workflow",
             "selector-canary",
             "notify-selector-canary-failure",
@@ -237,6 +240,15 @@ def parse_args() -> argparse.Namespace:
 
 
 def execute_command(command: str) -> None:
+    if command == "remind-source-reviews":
+        from services.review_queue import remind_from_environment
+
+        result = remind_from_environment()
+        print(result)
+        if path := os.getenv("GITHUB_STEP_SUMMARY", "").strip():
+            with Path(path).open("a", encoding="utf-8") as summary:
+                summary.write(f"## 待查日期提醒\n\n{result}\n")
+        return
     if command == "notify-source-reviews":
         from services.review_notifications import publish_from_environment
 

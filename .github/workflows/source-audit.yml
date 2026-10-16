@@ -50,6 +50,9 @@ jobs:
           overwrite: true
 
   notify-reviews:
+    concurrency:
+      group: anime-source-review-writes
+      cancel-in-progress: false
     needs: source-audit
     if: always() && github.ref == 'refs/heads/main' && needs.source-audit.result != 'skipped'
     runs-on: ubuntu-24.04

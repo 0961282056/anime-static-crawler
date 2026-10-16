@@ -35,7 +35,7 @@ test('episode progress, status filter and source details work with real Alpine o
   await expect(page.locator('.airing-status')).toHaveText('本季已播畢');
   await page.getByText('集數來源與確認時間', {exact: true}).click();
   await expect(page.locator('.episode-details')).toContainText('最後確認：');
-  await expect(page.getByRole('link', {name: '查看集數來源'})).toHaveAttribute('href', 'https://chiramune.com/bd/06.html');
+  await expect(page.locator('.source-links a').first()).toHaveAttribute('href', 'https://chiramune.com/bd/06.html');
   await page.getByLabel('播出狀態').selectOption('unknown');
   await expect(page.locator('.anime-title')).toHaveText('舊資料範例');
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
@@ -69,9 +69,39 @@ test('reviewed historical scopes render real data and official sources on mobile
     await expect(card).toHaveCount(1);
     await expect(card.locator('.episode-count')).toHaveText(label);
     await card.getByText('集數來源與確認時間', {exact: true}).click();
-    const href = await card.getByRole('link', {name: '查看集數來源'}).getAttribute('href');
+    const href = await card.locator('.source-links a').first().getAttribute('href');
     expect(new URL(href).hostname).toBe(host);
   }
   expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
   expect(errors).toEqual([]);
+});
+
+test('source details distinguish failed refreshes and dated summary evidence', async ({page}) => {
+  await page.setViewportSize({width: 360, height: 800});
+  await page.addInitScript(() => localStorage.clear());
+  await page.route('**/data/*.json*', route => route.fulfill({contentType: 'application/json', body: JSON.stringify({
+    generated_at: '2026-10-16T09:00:00+08:00',
+    anime_list: [{
+      bangumi_id: 'anime-999', anime_name: '來源查證範例', original_name: 'Source Example',
+      anime_image_url: `https://res.cloudinary.com/demo/image/upload/v1/anime_covers/${'a'.repeat(64)}`,
+      premiere_date: '一', premiere_time: '12:00', story: '這是有明確作品身分與快照日期的來源簡介。',
+      external_ids: {bangumi: 580133, anilist: 197754},
+      story_source: {provider: 'bangumi', subject_id: 580133, method: 'bangumi_archive', checked_at: '2026-10-16T09:00:00+08:00', source_snapshot_date: '2026-10-14'},
+      episodes: {total_episodes: 12, aired_episodes: 8, airing_status: 'airing', episode_count_status: 'confirmed', fetch_state: 'stale', source_kind: 'bangumi_archive', source_snapshot_date: '2026-10-14', checked_at: '2026-10-15T08:00:00+08:00', attempted_at: '2026-10-16T09:00:00+08:00', source_urls: ['https://bgm.tv/subject/580133/ep'], note: '僅計電視正篇，不含特別篇。'},
+    }],
+  })}));
+  await page.route('https://res.cloudinary.com/**', route => route.fulfill({contentType: 'image/png', body: png}));
+  await page.goto('/');
+  const card = page.locator('.anime-card');
+  await expect(card).toHaveCount(1);
+  await card.getByText('集數來源與確認時間', {exact: true}).click();
+  await expect(card.locator('.source-facts')).toContainText('最近更新失敗，保留上次成功資料');
+  await expect(card.locator('.source-facts')).toContainText('2026-10-14');
+  await expect(card.locator('.source-facts')).toContainText('2026/10/15');
+  await expect(card.locator('.source-facts')).toContainText('2026/10/16');
+  await expect(card.locator('.episode-details')).toContainText('不含特別篇');
+  await expect(card.getByRole('link', {name: /AniList 條目/})).toHaveAttribute('href', 'https://anilist.co/anime/197754');
+  await expect(card.locator('.story-source')).toHaveText('簡介來源：Bangumi 原文快照（截至 2026-10-14）');
+  await expect(card.locator('.story-source')).toHaveAttribute('href', 'https://bgm.tv/subject/580133');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
 });

@@ -1006,7 +1006,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2024-06-29",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -1034,7 +1036,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2024-06-22",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -1075,7 +1079,7 @@
       "original_name": "僕のヒーローアカデミア 第7期",
       "external_ids": {
         "bangumi": 425587,
-        "anilist": null
+        "anilist": 163139
       },
       "episodes": {
         "total_episodes": 21,
@@ -1090,7 +1094,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2024-10-12",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -1523,7 +1529,7 @@
       "original_name": "鬼滅の刃 柱稽古編",
       "external_ids": {
         "bangumi": 441939,
-        "anilist": null
+        "anilist": 166240
       },
       "episodes": {
         "total_episodes": 8,
@@ -1538,7 +1544,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2024-06-30",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -1706,11 +1714,12 @@
         "checked_at": "2026-10-15T08:14:24+08:00",
         "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "TV版全8話；官方已公告最終回後的後日談。"
+        "note": "TV版全8話；官方已公告最終回後的後日談。",
+        "source_kind": "manual_official"
       }
     }
   ],
-  "generated_at": "2026-10-16T07:16:40.437305+08:00",
+  "generated_at": "2026-10-16T09:14:07.226860+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202404/",
   "quality": {
     "source_count": 61,

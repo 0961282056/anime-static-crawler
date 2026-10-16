@@ -48,6 +48,17 @@ class EpisodeMetadata(BaseModel):
     attempted_at: datetime | None = None
     end_date: date | None = None
     note: str = ""
+    source_kind: Literal[
+        "unknown",
+        "bangumi_api",
+        "bangumi_html",
+        "bangumi_archive",
+        "manual_official",
+        "official_catalogue",
+    ] = Field(default="unknown", exclude_if=lambda value: value == "unknown")
+    source_snapshot_date: date | None = Field(
+        default=None, exclude_if=lambda value: value is None
+    )
 
     @field_validator("checked_at", "attempted_at")
     @classmethod
@@ -129,6 +140,33 @@ def _validated_broadcast_time(value: object) -> str:
     return text
 
 
+class StorySource(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    provider: Literal["bangumi"] = "bangumi"
+    subject_id: int = Field(gt=0, strict=True)
+    checked_at: datetime
+    method: Literal["bangumi_api", "bangumi_archive"]
+    source_snapshot_date: date | None = None
+
+    @field_validator("checked_at")
+    @classmethod
+    def aware_checked_at(cls, value: datetime) -> datetime:
+        if value.tzinfo is None:
+            raise ValueError("summary verification time must include timezone")
+        return value.astimezone(TAIPEI_TZ)
+
+    @model_validator(mode="after")
+    def archive_date_required(self) -> StorySource:
+        if self.method == "bangumi_archive" and self.source_snapshot_date is None:
+            raise ValueError("archive summaries require a snapshot date")
+        if (
+            self.source_snapshot_date
+            and self.source_snapshot_date > self.checked_at.date()
+        ):
+            raise ValueError("summary snapshot date may not be after verification")
+        return self
+
+
 class Anime(BaseModel):
     """Validated anime record written to the public quarterly JSON files."""
 
@@ -143,6 +181,18 @@ class Anime(BaseModel):
     original_name: str | None = None
     external_ids: ExternalIds = Field(default_factory=ExternalIds)
     episodes: EpisodeMetadata | None = None
+    story_source: StorySource | None = Field(
+        default=None, exclude_if=lambda value: value is None
+    )
+
+    @model_validator(mode="after")
+    def consistent_story_identity(self) -> Anime:
+        if (
+            self.story_source
+            and self.story_source.subject_id != self.external_ids.bangumi
+        ):
+            raise ValueError("summary evidence must match the linked Bangumi subject")
+        return self
 
     @field_validator("bangumi_id", mode="before")
     @classmethod

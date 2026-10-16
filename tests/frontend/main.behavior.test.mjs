@@ -155,6 +155,26 @@ test('official evidence links take priority and unsafe schemes cannot become lin
   }
 });
 
+test('source details distinguish failed attempts, fixed snapshots and reference links', () => {
+  const {app} = createContext();
+  const anime = {external_ids: {bangumi: 100, anilist: 200}, episodes: {source_kind: 'bangumi_archive', checked_at: '2026-10-14T10:00:00+08:00', attempted_at: '2026-10-16T10:00:00+08:00', fetch_state: 'stale', note: '', source_urls: ['javascript:alert(1)', 'https://bgm.tv/subject/100', 'https://bgm.tv/subject/100']}};
+  assert.equal(app.episodeSourceKind(anime), 'Bangumi 固定資料快照');
+  assert.match(app.episodeVerificationState(anime), /保留上次成功資料/);
+  const links = app.episodeSourceLinks(anime);
+  assert.equal(links.length, 2);
+  assert.match(links[1].label, /參考；不代表計數範圍已一致/);
+  assert.equal(app.formatSourceTimestamp('invalid'), '尚未記錄');
+  assert.equal(app.episodeVerificationState({episodes: {checked_at: 'invalid'}}), '尚未成功查證');
+});
+
+test('summary attribution never links a different subject or claims a fresh archive', () => {
+  const {app} = createContext();
+  const anime = {external_ids: {bangumi: 100}, story_source: {subject_id: 100, method: 'bangumi_archive', source_snapshot_date: '2026-10-14'}};
+  assert.equal(app.storySourceUrl(anime), 'https://bgm.tv/subject/100');
+  assert.match(app.storySourceLabel(anime), /截至 2026-10-14/);
+  assert.equal(app.storySourceUrl({...anime, external_ids: {bangumi: 200}}), null);
+});
+
 test('airing filter combines with weekday and keyword while supporting legacy records', () => {
   const {app} = createContext();
   app.rawAnimeList = [

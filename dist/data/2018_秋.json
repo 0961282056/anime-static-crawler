@@ -334,7 +334,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2018-12-25",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -403,7 +405,7 @@
       "original_name": "CONCEPTION 俺の子供を産んでくれ！",
       "external_ids": {
         "bangumi": 245531,
-        "anilist": null
+        "anilist": 101609
       },
       "episodes": {
         "total_episodes": 12,
@@ -418,7 +420,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2018-12-25",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -450,7 +454,8 @@
         "checked_at": "2026-10-15T22:13:11.372465+08:00",
         "attempted_at": "2026-10-15T22:13:11.372465+08:00",
         "end_date": null,
-        "note": "官方摘要可確認合輯Agenda14、15、18、23以班長為主線，但不能據此排除其他合輯集內的短篇；獨立總數與完整已播進度待確認。Bangumi為《利根川》母條目，不採用其24話。"
+        "note": "官方摘要可確認合輯Agenda14、15、18、23以班長為主線，但不能據此排除其他合輯集內的短篇；獨立總數與完整已播進度待確認。Bangumi為《利根川》母條目，不採用其24話。",
+        "source_kind": "manual_official"
       }
     },
     {
@@ -491,7 +496,7 @@
       "original_name": "俺が好きなのは妹だけど妹じゃない",
       "external_ids": {
         "bangumi": 228255,
-        "anilist": null
+        "anilist": 100382
       },
       "episodes": {
         "total_episodes": 10,
@@ -534,7 +539,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2018-11-03",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -590,7 +597,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2018-12-26",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -659,7 +668,7 @@
       "original_name": "ベルゼブブ嬢のお気に召すまま。",
       "external_ids": {
         "bangumi": 242633,
-        "anilist": null
+        "anilist": 101505
       },
       "episodes": {
         "total_episodes": 12,
@@ -743,7 +752,7 @@
       "original_name": "メルクストーリア -無気力少年と瓶の中の少女-",
       "external_ids": {
         "bangumi": 236612,
-        "anilist": null
+        "anilist": 101125
       },
       "episodes": {
         "total_episodes": 12,
@@ -855,7 +864,7 @@
       "original_name": "学園BASARA",
       "external_ids": {
         "bangumi": 241949,
-        "anilist": null
+        "anilist": 101470
       },
       "episodes": {
         "total_episodes": 12,
@@ -883,7 +892,7 @@
       "original_name": "BAKUMATSU",
       "external_ids": {
         "bangumi": 241181,
-        "anilist": null
+        "anilist": 101373
       },
       "episodes": {
         "total_episodes": 12,
@@ -1051,7 +1060,7 @@
       "original_name": "グラゼニ シーズン2",
       "external_ids": {
         "bangumi": 251060,
-        "anilist": null
+        "anilist": 102974
       },
       "episodes": {
         "total_episodes": 12,
@@ -1079,7 +1088,7 @@
       "original_name": "狐狸之声",
       "external_ids": {
         "bangumi": 223127,
-        "anilist": null
+        "anilist": 102385
       },
       "episodes": {
         "total_episodes": 12,
@@ -1135,7 +1144,7 @@
       "original_name": "閃乱カグラ SHINOVI MASTER -東京妖魔篇-",
       "external_ids": {
         "bangumi": 221190,
-        "anilist": null
+        "anilist": 102822
       },
       "episodes": {
         "total_episodes": 12,
@@ -1387,7 +1396,7 @@
       "original_name": "ラディアン",
       "external_ids": {
         "bangumi": 236597,
-        "anilist": null
+        "anilist": 101024
       },
       "episodes": {
         "total_episodes": 21,
@@ -1639,7 +1648,7 @@
       "original_name": "DOUBLE DECKER! ダグ＆キリル",
       "external_ids": {
         "bangumi": 234761,
-        "anilist": null
+        "anilist": 101318
       },
       "episodes": {
         "total_episodes": 13,
@@ -1654,7 +1663,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2018-12-23",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -1695,7 +1706,7 @@
       "original_name": "ツルネ -風舞高校弓道部-",
       "external_ids": {
         "bangumi": 228378,
-        "anilist": null
+        "anilist": 100402
       },
       "episodes": {
         "total_episodes": 14,
@@ -1850,11 +1861,12 @@
         "checked_at": "2026-10-15T14:30:20.978892+08:00",
         "attempted_at": "2026-10-15T14:40:59.030367+08:00",
         "end_date": "2018-12-23",
-        "note": "TV版全12話，官方OA版收錄第1～12話；排除資料庫誤列本篇的第13筆節目。"
+        "note": "TV版全12話，官方OA版收錄第1～12話；排除資料庫誤列本篇的第13筆節目。",
+        "source_kind": "manual_official"
       }
     }
   ],
-  "generated_at": "2026-10-16T07:16:40.437305+08:00",
+  "generated_at": "2026-10-16T09:14:07.069544+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201810/",
   "quality": {
     "source_count": 66,

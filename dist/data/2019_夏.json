@@ -179,7 +179,7 @@
       "original_name": "われしょ！我ら小動物愛護委員会",
       "external_ids": {
         "bangumi": 285670,
-        "anilist": null
+        "anilist": 110201
       },
       "episodes": {
         "total_episodes": 5,
@@ -838,7 +838,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2019-09-28",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -935,7 +937,7 @@
       "original_name": "博多明太！ぴりからこちゃん",
       "external_ids": {
         "bangumi": 285513,
-        "anilist": null
+        "anilist": 109929
       },
       "episodes": {
         "total_episodes": 12,
@@ -1103,7 +1105,7 @@
       "original_name": "ビジネスフィッシュ",
       "external_ids": {
         "bangumi": 285517,
-        "anilist": null
+        "anilist": 110124
       },
       "episodes": {
         "total_episodes": 12,
@@ -1174,7 +1176,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2019-09-01",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -1215,7 +1219,7 @@
       "original_name": "闇芝居 七期",
       "external_ids": {
         "bangumi": 283480,
-        "anilist": null
+        "anilist": 109603
       },
       "episodes": {
         "total_episodes": 13,
@@ -1230,11 +1234,13 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2019-09-29",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     }
   ],
-  "generated_at": "2026-10-16T07:16:40.437305+08:00",
+  "generated_at": "2026-10-16T09:14:07.080991+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201907/",
   "quality": {
     "source_count": 44,

@@ -1,0 +1,43 @@
+name: Daily Review Reminders
+
+on:
+  schedule:
+    - cron: "0 11 * * *"
+      timezone: "Asia/Taipei"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  remind:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    concurrency:
+      group: anime-source-review-writes
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout trusted reminder code
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-build.txt
+
+      - name: Install locked reminder dependencies
+        run: python -m pip install --require-hashes -r requirements-build.txt
+
+      - name: Notify only explicitly dated waiting reviews
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_REVIEW_ASSIGNEE: ${{ vars.SOURCE_REVIEW_ASSIGNEE || github.repository_owner }}
+        run: python manage.py remind-source-reviews

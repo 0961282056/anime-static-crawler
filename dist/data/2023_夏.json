@@ -347,7 +347,7 @@
       "original_name": "白聖女と黒牧師",
       "external_ids": {
         "bangumi": 387822,
-        "anilist": null
+        "anilist": 150972
       },
       "episodes": {
         "total_episodes": 12,
@@ -431,7 +431,7 @@
       "original_name": "BanG Dream! It's MyGO!!!!!",
       "external_ids": {
         "bangumi": 428735,
-        "anilist": null
+        "anilist": 163571
       },
       "episodes": {
         "total_episodes": 13,
@@ -446,7 +446,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2023-09-14",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -1370,7 +1372,8 @@
         "checked_at": "2026-10-15T08:14:24+08:00",
         "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "TV版全8話，已發售完整收錄；官方故事集目1～8。"
+        "note": "TV版全8話，已發售完整收錄；官方故事集目1～8。",
+        "source_kind": "manual_official"
       }
     },
     {
@@ -1430,7 +1433,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T07:15:37.721765+08:00",
+  "generated_at": "2026-10-16T09:14:07.190360+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202307/",
   "quality": {
     "source_count": 51,

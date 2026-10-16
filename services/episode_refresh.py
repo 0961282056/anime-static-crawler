@@ -44,6 +44,8 @@ def refresh_policy(
 ) -> RefreshPolicy:
     now = now.astimezone(ZoneInfo("Asia/Tokyo"))
     info = anime.episodes
+    if (review := reviewed_source(anime)) and review.get("official_adapter"):
+        return RefreshPolicy(1 if info and info.fetch_state != "ok" else 7, False)
     current = (now.year, (now.month - 1) // 3)
     recent_end = bool(
         info and info.end_date and 0 <= (now.date() - info.end_date).days < 7
@@ -70,9 +72,22 @@ def next_refresh_at(
 ) -> datetime | None:
     if anime.episodes is None or anime.episodes.attempted_at is None:
         return None
+    review = reviewed_source(anime)
+    if (
+        review
+        and review.get("official_adapter")
+        and anime.episodes.source_kind != "official_catalogue"
+        and anime.episodes.fetch_state == "ok"
+    ):
+        return None
     policy = refresh_policy(anime, now, latest_quarter)
     days = policy.days
-    if not policy.priority and anime.episodes.fetch_state == "ok":
+    review = reviewed_source(anime)
+    if (
+        not policy.priority
+        and anime.episodes.fetch_state == "ok"
+        and not (review and review.get("official_adapter"))
+    ):
         # Assign a stable calendar phase. Bulk verification is spread across
         # the entire first cycle; subsequent successful cycles keep 30/90 days.
         digest = hashlib.sha256(repr(identity(anime)).encode()).digest()
@@ -89,7 +104,7 @@ def next_refresh_at(
 def automatically_refreshed(anime: Anime) -> bool:
     review = reviewed_source(anime)
     return anime.external_ids.bangumi is not None and not (
-        review and review["mode"] == "snapshot"
+        review and review["mode"] == "snapshot" and not review.get("official_adapter")
     )
 
 
