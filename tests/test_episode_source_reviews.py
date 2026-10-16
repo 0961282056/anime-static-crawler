@@ -109,6 +109,29 @@ def test_verified_rikkun_tv_scope_does_not_revert_to_web_sixteen_episodes(
     assert reviewed_source(anime.model_copy(update={"bangumi_id": "anime-999"})) is None
 
 
+def test_business_fish_counts_stories_not_programme_pairs_or_plus_repeats(
+    anime_record_factory,
+):
+    review = next(r for r in source_reviews() if r["subject_id"] == 285517)
+    anime = reviewed_anime(review, anime_record_factory)
+    client = Mock()
+    result = EpisodeEnricher(client, retry_failed=True).enrich(
+        anime, NOW + timedelta(days=100)
+    )
+    assert result.episodes.total_episodes == result.episodes.aired_episodes == 12
+    assert result.episodes.end_date is None
+    assert result.episodes.source_kind == "manual_official"
+    assert result.episodes.checked_at == anime.episodes.checked_at
+    assert "共6個" in result.episodes.note and "不重複計數" in result.episodes.note
+    client.fetch.assert_not_called()
+    for changed in (
+        {"bangumi_id": "anime-999"},
+        {"original_name": "ビジネスフィッシュ＋"},
+        {"external_ids": anime.external_ids.model_copy(update={"bangumi": 1})},
+    ):
+        assert reviewed_source(anime.model_copy(update=changed)) is None
+
+
 def test_verified_official_episodes_work_without_a_bangumi_subject_id(
     anime_record_factory,
 ):

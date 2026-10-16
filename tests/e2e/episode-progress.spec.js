@@ -53,6 +53,7 @@ test('reviewed historical scopes render real data and official sources on mobile
   await expect(page.locator('.anime-card').first()).toBeVisible();
   const input = page.getByLabel('關鍵字搜尋');
   const cases = [
+    ['上班族魚先生', '全 12 集', 'www.videx.jp'],
     ['1日外出錄班長', '集數待確認', 'www.vap.co.jp'],
     ['末班電車後、膠囊旅館、給上司微熱的夜晚。', '全 12 集', 'shucap.cf-anime.com'],
     ['正中間的理久', '全 12 集', 'www.tv-tokyo.co.jp'],
@@ -71,6 +72,30 @@ test('reviewed historical scopes render real data and official sources on mobile
     await card.getByText('集數來源與確認時間', {exact: true}).click();
     const href = await card.locator('.source-links a').first().getAttribute('href');
     expect(new URL(href).hostname).toBe(host);
+  }
+  expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
+  expect(errors).toEqual([]);
+});
+
+test('official summary excerpts render real season data with attributed links', async ({page}) => {
+  await page.setViewportSize({width: 360, height: 800});
+  await page.addInitScript(() => localStorage.clear());
+  await page.route('https://res.cloudinary.com/**', route => route.fulfill({contentType: 'image/png', body: png}));
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.goto('/');
+  await expect(page.locator('.anime-card').first()).toBeVisible();
+  for (const [name, host] of [
+    ['佐佐木與文鳥小嗶 第二季', 'kadokawa-animation.jp'],
+    ['重生者的魔法一定要特別 第二季', 'www.fujitv.co.jp'],
+    ['冰之城牆 第二季', 'korinojoheki-pr.com'],
+    ['Welsh & Shedar', 'welshandshedar-anime.com'],
+  ]) {
+    await page.getByLabel('關鍵字搜尋').fill(name);
+    const card = page.locator('.anime-card');
+    await expect(card).toHaveCount(1);
+    await expect(card.locator('.story-source')).toHaveText('簡介來源：官方作品介紹原文（節錄）');
+    expect(new URL(await card.locator('.story-source').getAttribute('href')).hostname).toBe(host);
   }
   expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
   expect(errors).toEqual([]);

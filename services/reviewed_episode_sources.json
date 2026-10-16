@@ -661,5 +661,29 @@
     "evidence": "docs/remaining-nine-2026-10-15/verified-zenitendo-scope.json",
     "scope_note": "保留官方148個不同節目URL及首播日的快照，不按不同標題數去重、不採空白未來占位。來源未公告最終總數，後續若有新節目需重新核對官方清單，不宣稱每日自動查核NHK。",
     "official_adapter": "nhk_zenitendo"
+  },
+  {
+    "card_id": "anime-275",
+    "anime_name": "上班族魚先生",
+    "original_name": "ビジネスフィッシュ",
+    "subject_id": 285517,
+    "metadata": {
+      "total_episodes": 12,
+      "aired_episodes": 12,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://www.videx.jp/detail/anime/v_a_ryosenmytheater/amyc0087_0000/index.htm",
+        "https://www.videx.jp/detail/anime/v_a_ryosenmytheater/amyc0088_0000/index.htm",
+        "https://animestore.docomo.ne.jp/animestore/ci_pc?partId=22976003&workId=22976"
+      ],
+      "checked_at": "2026-10-16T21:26:42.594354+08:00",
+      "attempted_at": "2026-10-16T21:26:42.594354+08:00",
+      "end_date": null,
+      "note": "依配信方正式集目按正篇故事第1～12話計12；每次含2話，共6個播出／配信單位。＋版僅ED不同、本篇相同，不重複計數。未取得完整官方首播日期表，終了日期留空，不沿用2019-09-23。",
+      "source_kind": "manual_official"
+    },
+    "mode": "snapshot"
   }
 ]

@@ -175,6 +175,19 @@ test('summary attribution never links a different subject or claims a fresh arch
   assert.equal(app.storySourceUrl({...anime, external_ids: {bangumi: 200}}), null);
 });
 
+test('official summary excerpts link the reviewed season and reject arbitrary URLs', () => {
+  const {app} = createContext();
+  const anime = {bangumi_id: 'anime-2289', external_ids: {bangumi: 471844}, story_source: {
+    provider: 'official', method: 'manual_official', subject_id: 471844,
+    source_url: 'https://www.fujitv.co.jp/b_hp/returners-magic2/index.html'
+  }};
+  assert.equal(app.storySourceUrl(anime), anime.story_source.source_url);
+  assert.match(app.storySourceLabel(anime), /官方作品介紹原文（節錄）/);
+  assert.equal(app.storySourceUrl({...anime, bangumi_id: 'anime-999'}), null);
+  assert.equal(app.storySourceUrl({...anime, story_source: {...anime.story_source, source_url: 'javascript:alert(1)'}}), null);
+  assert.equal(app.storySourceUrl({...anime, external_ids: {bangumi: 1}}), null);
+});
+
 test('airing filter combines with weekday and keyword while supporting legacy records', () => {
   const {app} = createContext();
   app.rawAnimeList = [
