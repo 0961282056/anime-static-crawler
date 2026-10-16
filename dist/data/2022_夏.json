@@ -1401,7 +1401,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bb26e430f3aa35b7bcd7ff9881d8864d",
       "premiere_date": "日",
       "premiere_time": "23:00",
-      "story": "暫無簡介",
+      "story": "信息城市汤姆索亚岛。这里的居民使用视觉信息装置“DECO”，过着被称为“超再现空间”的在虚拟空间和现实之间线性穿梭的生活。\r\n此外，被称为“Love”的相互评价通过数值可视化，通过保持均衡的价值观，形成和平的社会。\r\n因为DECO可以通过收集许多“Love”进行增强，所以居民们每天都争先恐后地收集尽可能多的“Love”。\r\n在这样的岛上，由“怪人0”引起的，被称为“0现象”的“Love”消失事件的传闻正在扩散。\r\n某日，因为意外被卷入到“0现象”中的少女贝里，变成了未进行市民登记的看不见的存在“You0”。\r\n在与天才黑客兼You0的哈克相遇后，贝里为查明怪人0和0现象的谜团，加入到了哈克领导的You0侦探团中。\r\n在解决作为You0收到的委托的过程中，贝里逐渐接近了隐藏在汤姆索亚岛的真相。",
       "original_name": "ユーレイデコ",
       "external_ids": {
         "bangumi": 371396,
@@ -1417,12 +1417,18 @@
           "https://bgm.tv/subject/371396",
           "https://bgm.tv/subject/371396/ep"
         ],
-        "checked_at": "2026-10-14T05:03:54+08:00",
-        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "attempted_at": "2026-10-17T03:51:54.296604+08:00",
         "end_date": "2022-09-18",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
-        "source_kind": "bangumi_archive",
-        "source_snapshot_date": "2026-10-14"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 371396,
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1486,14 +1492,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T09:14:07.162082+08:00",
+  "generated_at": "2026-10-17T03:51:54.296604+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202207/",
   "quality": {
     "source_count": 51,
     "record_count": 51,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 34,
+    "missing_story_count": 33,
     "missing_date_count": 1,
     "missing_time_count": 1
   }

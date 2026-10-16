@@ -147,7 +147,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6beb5e5dc596a82e53d694207f4ec1f8",
       "premiere_date": "二",
       "premiere_time": "22:00",
-      "story": "暫無簡介",
+      "story": "怕生的御宅族女大学生宫子，遇到了天使般的小学生！？\r\n在看到妹妹带来的新朋友小花的瞬间，宫子就无法抑制住心跳！！\r\n她为了和小花成为朋友而奋斗，但……\r\n“想要和超绝可爱的她做朋友”系小品喜剧，开幕♪",
       "original_name": "私に天使が舞い降りた！",
       "external_ids": {
         "bangumi": 249637,
@@ -163,10 +163,18 @@
           "https://bgm.tv/subject/249637",
           "https://bgm.tv/subject/249637/ep"
         ],
-        "checked_at": "2026-10-15T13:33:33.911055+08:00",
-        "attempted_at": "2026-10-15T13:33:33.911055+08:00",
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "attempted_at": "2026-10-17T03:51:54.296604+08:00",
         "end_date": "2019-03-26",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 249637,
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1431,14 +1439,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T09:14:07.075517+08:00",
+  "generated_at": "2026-10-17T03:51:54.296604+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201901/",
   "quality": {
     "source_count": 51,
     "record_count": 51,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 39,
+    "missing_story_count": 38,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

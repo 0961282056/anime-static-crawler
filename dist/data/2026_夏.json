@@ -107,10 +107,11 @@
           "https://bgm.tv/subject/590786",
           "https://bgm.tv/subject/590786/ep"
         ],
-        "checked_at": "2026-10-15T13:36:57.746011+08:00",
-        "attempted_at": "2026-10-15T13:36:57.746011+08:00",
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "attempted_at": "2026-10-17T03:51:54.296604+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -653,7 +654,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/095748b31f1a898f05955fa848921b9d",
       "premiere_date": "三",
       "premiere_time": "23:45",
-      "story": "暫無簡介",
+      "story": "片田舎の剣術師範ベリル・ガーデナント。\r\n彼はいまや騎士団の特別指南役として、そして孤児の後見人として、首都での日々に馴染みつつあった。\r\nしかし、取り巻く環境はベリルに安穏を許さない。\r\n\r\n魔術の学究に勤しむ教育機関で。\r\n乗り越えるべき壁がそびえる故郷で。\r\n国境を臨む辺境伯領で。\r\n策謀渦巻く異国の地で。\r\n\r\nベリルは剣士として、ひとりの人間として、避けることのできない新たな戦いに立ち向かう――",
       "original_name": "片田舎のおっさん、剣聖になるII",
       "external_ids": {
         "bangumi": 565701,
@@ -669,10 +670,18 @@
           "https://bgm.tv/subject/565701",
           "https://bgm.tv/subject/565701/ep"
         ],
-        "checked_at": "2026-10-15T13:37:07.768054+08:00",
-        "attempted_at": "2026-10-15T13:37:07.768054+08:00",
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "attempted_at": "2026-10-17T03:51:54.296604+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 565701,
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2070,7 +2079,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/760de5e50a7667dd8bc19592000ae666",
       "premiere_date": "日",
       "premiere_time": "25:00",
-      "story": "暫無簡介",
+      "story": "2017年9月、日本でのサービスを開始したスマートフォン向け艦船擬人化アプリゲーム『アズールレーン』。2019年冬にはTVアニメーションが放送され、その他にも様々な業界との異色コラボなどでゲーム内外で常に話題を呼びつつ、2024年９月にはサービス開始7周年を迎えました。\r\nそんな『アズールレーン』の公式スピンオフ作品が『アズールレーン　びそくぜんしんっ！』。アズールレーン公式X（旧Twitter）、月刊ComicREX（一迅社刊）にて連載中の4コマコミック、待望のショートアニメ新シリーズがついに始動！\r\n監督は牧俊治、アニメーション制作はStudio CANDY BOXが担当。新進気鋭の実力派制作陣を揃え、『アズールレーン びそくぜんしんっ！』を担当する漫画家・ホリの描く、可愛らしくもどこかコケティッシュで魅力あふれる艦船たちの姿を、生き生きとしたアニメーションで描きだします。",
       "original_name": "アズールレーン びそくぜんしんっ！にっ!!",
       "external_ids": {
         "bangumi": 454083,
@@ -2086,10 +2095,18 @@
           "https://bgm.tv/subject/454083",
           "https://bgm.tv/subject/454083/ep"
         ],
-        "checked_at": "2026-10-15T13:37:37.743664+08:00",
-        "attempted_at": "2026-10-15T13:37:37.743664+08:00",
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "attempted_at": "2026-10-17T03:51:54.296604+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 454083,
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2121,14 +2138,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T21:45:30.168596+08:00",
+  "generated_at": "2026-10-17T03:51:54.296604+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202607/",
   "quality": {
     "source_count": 75,
     "record_count": 75,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 24,
+    "missing_story_count": 22,
     "missing_date_count": 0,
     "missing_time_count": 0
   }
