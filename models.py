@@ -142,10 +142,11 @@ def _validated_broadcast_time(value: object) -> str:
 
 class StorySource(BaseModel):
     model_config = ConfigDict(extra="forbid")
-    provider: Literal["bangumi"] = "bangumi"
+    provider: Literal["bangumi", "official"] = "bangumi"
     subject_id: int = Field(gt=0, strict=True)
     checked_at: datetime
-    method: Literal["bangumi_api", "bangumi_archive"]
+    method: Literal["bangumi_api", "bangumi_archive", "manual_official"]
+    source_url: str | None = Field(default=None, exclude_if=lambda value: value is None)
     source_snapshot_date: date | None = None
 
     @field_validator("checked_at")
@@ -157,6 +158,17 @@ class StorySource(BaseModel):
 
     @model_validator(mode="after")
     def archive_date_required(self) -> StorySource:
+        if self.provider == "official":
+            from services.story_source_reviews import story_reviews
+
+            if (
+                self.method != "manual_official"
+                or self.source_snapshot_date is not None
+                or not any(r["source_url"] == self.source_url for r in story_reviews())
+            ):
+                raise ValueError("official summaries require a reviewed source URL")
+        elif self.method == "manual_official" or self.source_url is not None:
+            raise ValueError("Bangumi summaries require a Bangumi method")
         if self.method == "bangumi_archive" and self.source_snapshot_date is None:
             raise ValueError("archive summaries require a snapshot date")
         if (
@@ -192,6 +204,18 @@ class Anime(BaseModel):
             and self.story_source.subject_id != self.external_ids.bangumi
         ):
             raise ValueError("summary evidence must match the linked Bangumi subject")
+        if self.story_source and self.story_source.provider == "official":
+            from services.story_source_reviews import reviewed_story
+
+            review = reviewed_story(self)
+            if (
+                not review
+                or review["source_url"] != self.story_source.source_url
+                or review["story"] != self.story
+            ):
+                raise ValueError(
+                    "official summary must match its reviewed card and text"
+                )
         return self
 
     @field_validator("bangumi_id", mode="before")

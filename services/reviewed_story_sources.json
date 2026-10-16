@@ -1,0 +1,42 @@
+[
+  {
+    "card_id": "anime-2295",
+    "anime_name": "佐佐木與文鳥小嗶 第二季",
+    "original_name": "佐々木とピーちゃん シーズン2",
+    "subject_id": 486456,
+    "source_url": "https://kadokawa-animation.jp/lineup/sasapi-anime",
+    "story": "転生賢者の文鳥と中年リーマンの異世界×現代を行ったり来たり物語",
+    "checked_at": "2026-10-16T21:26:42.594354+08:00",
+    "scope_note": "官方Season2頁面明列的作品介紹短文。"
+  },
+  {
+    "card_id": "anime-2289",
+    "anime_name": "重生者的魔法一定要特別 第二季",
+    "original_name": "帰還者の魔法は特別です 第二期",
+    "subject_id": 471844,
+    "source_url": "https://www.fujitv.co.jp/b_hp/returners-magic2/index.html",
+    "story": "へブリオン学園での生活を経て3人の仲間を得たデジールは、突如出現した影の世界の攻略のため奔走する。束の間訪れた平穏の中、デジールを襲う“ロマンティカの死”の悪夢。",
+    "checked_at": "2026-10-16T21:26:42.594354+08:00",
+    "scope_note": "第二期放送内容詳細的連續兩句；未取用每週單集預告。"
+  },
+  {
+    "card_id": "anime-2308",
+    "anime_name": "冰之城牆 第二季",
+    "original_name": "氷の城壁 第2期",
+    "subject_id": 665390,
+    "source_url": "https://korinojoheki-pr.com/",
+    "story": "親交を深めていく内に、お互いに友達以上の感情を抱くようになった小雪と湊。長年抱えていた想いを美姫に伝えた陽太。想いを伝える者、心の内に秘める者、それぞれの矢印はすれ違いを加速していく。",
+    "checked_at": "2026-10-16T21:26:42.594354+08:00",
+    "scope_note": "第2期現行官方介紹的續篇段落；只移除排版換行。"
+  },
+  {
+    "card_id": "anime-2338",
+    "anime_name": "Welsh & Shedar",
+    "original_name": "蒼き伝承 ウェルシュ＆シェダー",
+    "subject_id": 701782,
+    "source_url": "https://welshandshedar-anime.com/",
+    "story": "神の力を宿すと言われ、世界を創ったともされる伝説のアイテム・『ドフス』。その力は使う者によって壮大な善にも、強大な悪にも変化する。",
+    "checked_at": "2026-10-16T21:26:42.594354+08:00",
+    "scope_note": "日本電視版2026-10-02首播官網イントロダクション首段；只移除排版換行。"
+  }
+]

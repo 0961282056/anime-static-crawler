@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-16T21:26:42.594354+08:00",
+  "card_id": "anime-275",
+  "subject_id": 285517,
+  "anilist_id": 110124,
+  "before": {
+    "total_episodes": 12,
+    "aired_episodes": 12,
+    "airing_status": "finished",
+    "episode_count_status": "confirmed",
+    "fetch_state": "ok",
+    "source_urls": [
+      "https://bgm.tv/subject/285517",
+      "https://bgm.tv/subject/285517/ep"
+    ],
+    "checked_at": "2026-10-13T22:12:29.148814+08:00",
+    "attempted_at": "2026-10-13T22:12:29.148814+08:00",
+    "end_date": "2019-09-23",
+    "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+  },
+  "after": {
+    "total_episodes": 12,
+    "aired_episodes": 12,
+    "airing_status": "finished",
+    "episode_count_status": "confirmed",
+    "fetch_state": "ok",
+    "source_urls": [
+      "https://www.videx.jp/detail/anime/v_a_ryosenmytheater/amyc0087_0000/index.htm",
+      "https://www.videx.jp/detail/anime/v_a_ryosenmytheater/amyc0088_0000/index.htm",
+      "https://animestore.docomo.ne.jp/animestore/ci_pc?partId=22976003&workId=22976"
+    ],
+    "checked_at": "2026-10-16T21:26:42.594354+08:00",
+    "attempted_at": "2026-10-16T21:26:42.594354+08:00",
+    "end_date": null,
+    "note": "依配信方正式集目按正篇故事第1～12話計12；每次含2話，共6個播出／配信單位。＋版僅ED不同、本篇相同，不重複計數。未取得完整官方首播日期表，終了日期留空，不沿用2019-09-23。",
+    "source_kind": "manual_official"
+  },
+  "counting_unit": "numbered_main_story",
+  "programme_pairs": [
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      11,
+      12
+    ]
+  ],
+  "plus_has_same_main_content": true,
+  "official_tv_date_table_verified": false,
+  "businessfish_http_status": 200,
+  "businessfish_html_sha256": "13e95c2107dff1dd71fdd37ab68f5fd47bd701d508352c7a0b55e60e0614489f",
+  "businessfish_caveat": "現行頁面含第三方感想，網站自稱官方並非營運身分驗證；不以此域名單獨作為官方計數證據。"
+}

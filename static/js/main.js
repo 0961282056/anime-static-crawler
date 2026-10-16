@@ -13,6 +13,21 @@ const HTML2CANVAS_INTEGRITY = 'sha384-ZZ1pncU3bQe8y31yfZdMFdSpttDoPmOZg2wguVK9al
 let html2canvasLoadPromise = null;
 const pendingRequestStates = new WeakMap();
 
+const OFFICIAL_STORY_SOURCES = {
+    'anime-2295': [486456, 'https://kadokawa-animation.jp/lineup/sasapi-anime'],
+    'anime-2289': [471844, 'https://www.fujitv.co.jp/b_hp/returners-magic2/index.html'],
+    'anime-2308': [665390, 'https://korinojoheki-pr.com/'],
+    'anime-2338': [701782, 'https://welshandshedar-anime.com/']
+};
+
+function officialStoryUrl(anime) {
+    const expected = OFFICIAL_STORY_SOURCES[anime.bangumi_id];
+    const source = anime.story_source;
+    return expected && source?.provider === 'official' && source.method === 'manual_official' &&
+        source.subject_id === expected[0] && anime.external_ids?.bangumi === expected[0] &&
+        source.source_url === expected[1] ? expected[1] : null;
+}
+
 function getPendingRequestState(owner) {
     let state = pendingRequestStates.get(owner);
     if (!state) {
@@ -122,7 +137,9 @@ function validateDataset(payload) {
         }
         if (item.story_source !== undefined && item.story_source !== null) {
             const source = item.story_source;
-            if (typeof source !== 'object' || Array.isArray(source) || source.provider !== 'bangumi' || !Number.isInteger(source.subject_id) || source.subject_id <= 0 || source.subject_id !== item.external_ids?.bangumi || !['bangumi_api', 'bangumi_archive'].includes(source.method) || (source.method === 'bangumi_archive' && (typeof source.source_snapshot_date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(source.source_snapshot_date)))) {
+            const official = source?.provider === 'official' && source.method === 'manual_official' && officialStoryUrl(item) !== null;
+            const bangumi = source?.provider === 'bangumi' && ['bangumi_api', 'bangumi_archive'].includes(source.method);
+            if (typeof source !== 'object' || Array.isArray(source) || (!official && !bangumi) || !Number.isInteger(source.subject_id) || source.subject_id <= 0 || source.subject_id !== item.external_ids?.bangumi || (source.method === 'bangumi_archive' && (typeof source.source_snapshot_date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(source.source_snapshot_date)))) {
                 throw createDataError('DATA_SCHEMA', `第 ${index + 1} 筆動畫的簡介來源無法確認。`, {retryable: false});
             }
         }
@@ -925,12 +942,14 @@ function animeApp() {
 
         storySourceUrl(anime) {
             const id = anime.story_source?.subject_id;
+            if (anime.story_source?.provider === 'official') return officialStoryUrl(anime);
             return Number.isInteger(id) && id > 0 && id === anime.external_ids?.bangumi ? `https://bgm.tv/subject/${id}` : null;
         },
 
         storySourceLabel(anime) {
             const source = anime.story_source;
             if (!source || !this.storySourceUrl(anime)) return '';
+            if (source.provider === 'official') return '簡介來源：官方作品介紹原文（節錄）';
             return source.method === 'bangumi_archive'
                 ? `簡介來源：Bangumi 原文快照（截至 ${source.source_snapshot_date || '日期未記錄'}）`
                 : '簡介來源：Bangumi 條目原文';

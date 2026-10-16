@@ -1,0 +1,47 @@
+{
+  "baseline": "bbea130d4150eeea1ea29f56e2801b460a5609d6",
+  "quarters": 37,
+  "records": 2150,
+  "identities_and_order_preserved": true,
+  "changed_records": [
+    {
+      "quarter": "2019_夏",
+      "card_id": "anime-275",
+      "fields": [
+        "episodes"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2295",
+      "fields": [
+        "story",
+        "story_source"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2289",
+      "fields": [
+        "story",
+        "story_source"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2308",
+      "fields": [
+        "story",
+        "story_source"
+      ]
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2338",
+      "fields": [
+        "story",
+        "story_source"
+      ]
+    }
+  ]
+}

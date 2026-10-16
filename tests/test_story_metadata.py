@@ -1,13 +1,58 @@
 from datetime import date, datetime
 
 import pytest
+from pydantic import ValidationError
 
-from models import Anime, ExternalIds
+from models import Anime, ExternalIds, StorySource
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.story_metadata import enrich_story
 
 NOW = datetime.fromisoformat("2026-10-16T12:00:00+08:00")
 SUMMARY = "這是來源提供的作品簡介，用於驗證來源身分、快照日期與資料保留行為。"
+
+
+def test_official_excerpt_requires_exact_reviewed_card_url_and_text(
+    anime_record_factory,
+):
+    from services.story_source_reviews import story_reviews
+
+    for row in story_reviews():
+        raw = {
+            **anime_record_factory(1, name=row["anime_name"], story=row["story"]),
+            "bangumi_id": row["card_id"],
+            "original_name": row["original_name"],
+            "external_ids": {"bangumi": row["subject_id"]},
+            "story_source": {
+                "provider": "official",
+                "method": "manual_official",
+                "source_url": row["source_url"],
+                "subject_id": row["subject_id"],
+                "checked_at": row["checked_at"],
+            },
+        }
+        anime = Anime.model_validate(raw)
+        assert enrich_story(anime, {}, NOW, method="bangumi_api") == anime
+        for changes in (
+            {"original_name": "第一季"},
+            {"bangumi_id": "anime-999"},
+            {"story": "錯誤的母條目內容"},
+            {
+                "story_source": {
+                    **raw["story_source"],
+                    "source_url": row["source_url"] + "?redirect=evil",
+                }
+            },
+            {
+                "story_source": {
+                    **raw["story_source"],
+                    "source_snapshot_date": "2026-10-14",
+                }
+            },
+        ):
+            with pytest.raises(ValidationError):
+                Anime.model_validate({**raw, **changes})
+        with pytest.raises(ValidationError):
+            StorySource.model_validate({**raw["story_source"], "provider": "bangumi"})
 
 
 @pytest.fixture
@@ -60,6 +105,41 @@ def test_missing_malformed_or_different_work_does_not_fill(anime, changes):
 def test_existing_summary_is_never_replaced(anime):
     known = anime.model_copy(update={"story": "原有介紹"})
     assert enrich(known) == known
+
+
+def test_recrawl_without_summary_preserves_official_excerpt(
+    tmp_path, anime_record_factory
+):
+    from services.story_source_reviews import story_reviews
+
+    row = story_reviews()[0]
+    raw = {
+        **anime_record_factory(1, name=row["anime_name"], story=row["story"]),
+        "bangumi_id": row["card_id"],
+        "original_name": row["original_name"],
+        "external_ids": {"bangumi": row["subject_id"]},
+        "story_source": {
+            "provider": "official",
+            "method": "manual_official",
+            "subject_id": row["subject_id"],
+            "source_url": row["source_url"],
+            "checked_at": row["checked_at"],
+        },
+    }
+    repository = DataRepository(tmp_path, DataQualityPolicy())
+    for record in (raw, {**raw, "story": "暫無簡介", "story_source": None}):
+        repository.write_quarter(
+            year="2026",
+            season="秋",
+            records=[Anime.model_validate(record)],
+            source_url="https://acgsecrets.hk/bangumi/202610/",
+            source_count=1,
+            parse_failure_count=0,
+        )
+    saved = repository.load_quarter("2026", "秋").anime_list[0]
+    assert saved.story == row["story"]
+    assert saved.story_source.checked_at.isoformat() == row["checked_at"]
+    assert saved.story_source.source_url == row["source_url"]
 
 
 def test_base_source_missing_text_preserves_attributed_summary_and_quality(
