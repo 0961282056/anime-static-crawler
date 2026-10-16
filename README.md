@@ -160,3 +160,7 @@ python cloudinary_cleaner.py ... Cloudinary retention；預設 dry-run
 - 誤刪 Cloudinary 圖片：立即停用爬蟲與清理，從 Cloudinary Backup／Deleted assets 復原。
 
 完整處理方式請看[安全維運與災難復原手冊](docs/安全維運與災難復原.md)。
+
+## 每週資料來源核對
+
+執行 `python manage.py source-audit` 可唯讀核對所有已收錄季度、產生官方人工快照複查清單，並用明確 AniList 連結交叉核對集數與狀態。報告位於忽略的 `audit-output/`；每週排程在 GitHub Actions 保存摘要與完整 artifact。來源失敗與資料差異分開記錄，不自動覆蓋公開資料。規則與限制見[資料來源交叉核對與複查](docs/資料來源交叉核對與複查.md)。
