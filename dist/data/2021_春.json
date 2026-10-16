@@ -79,10 +79,11 @@
           "https://bgm.tv/subject/297954",
           "https://bgm.tv/subject/297954/ep"
         ],
-        "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "attempted_at": "2026-10-17T03:51:54.296604+08:00",
         "end_date": "2021-08-30",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -289,7 +290,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/699c50fface623a17e2e08fb414d9929",
       "premiere_date": "二",
       "premiere_time": "25:29",
-      "story": "暫無簡介",
+      "story": "時は、明治64年。\r\n舞台は、徳川慶喜が絶対権力を維持し続けている、もう一つの日本。\r\n国家は、独自のエネルギー源、“龍脈”を整備し、江戸時代と科学が混ざり合う、独特な発展を遂げた。\r\nしかし、そんな華やかな都市の裏で、\r\n革命の炎をくすぶらせ、政権打倒を目論む、反体制派組織クチナワが、うごめく。\r\nその駆除を任された、徳川政府の闇組織、「鵺」。\r\n幼い頃、家族を殺された雪村咲羽は、「鵺」の処刑人となり、その仇、蛇埜目を探し続けていた。",
       "original_name": "擾乱　THE PRINCESS OF SNOW AND BLOOD",
       "external_ids": {
         "bangumi": 327519,
@@ -305,10 +306,18 @@
           "https://bgm.tv/subject/327519",
           "https://bgm.tv/subject/327519/ep"
         ],
-        "checked_at": "2026-10-13T21:57:54.309746+08:00",
-        "attempted_at": "2026-10-13T21:57:54.309746+08:00",
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "attempted_at": "2026-10-17T03:51:54.296604+08:00",
         "end_date": "2021-06-22",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 327519,
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1869,14 +1878,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T09:14:07.137585+08:00",
+  "generated_at": "2026-10-17T03:51:54.296604+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202104/",
   "quality": {
     "source_count": 66,
     "record_count": 66,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 37,
+    "missing_story_count": 36,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

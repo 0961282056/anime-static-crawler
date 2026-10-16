@@ -767,7 +767,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/08b4d6ad597daa57368753ddbe9c9709",
       "premiere_date": "五",
       "premiere_time": "17:20",
-      "story": "暫無簡介",
+      "story": "とおい宇宙のかなた、K10星雲チョーチイ星。\r\nきょうも、こどもかいじゅうが、楽しく遊んでる。\r\n泣いて、笑って、走りまわって、おおさわぎ。土にもぐったり、火を吹いたりもできるんだ。\r\nこの星にやってきたピグちゃんは、ともだちのカネちゃん、ダダちゃんと\r\nみんなを助ける“かいじゅうやさん”をはじめたよ。\r\n勇気がでなくて立ち止まりそうなときは\r\n大きな声で、「ワンダバダー！」\r\nさあ、いっぽ ふみだそう。",
       "original_name": "かいじゅうステップ ワンダバダ",
       "external_ids": {
         "bangumi": 302157,
@@ -783,10 +783,18 @@
           "https://bgm.tv/subject/302157",
           "https://bgm.tv/subject/302157/ep"
         ],
-        "checked_at": "2026-10-15T13:33:49.034364+08:00",
-        "attempted_at": "2026-10-15T13:33:49.034364+08:00",
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "attempted_at": "2026-10-17T03:51:54.296604+08:00",
         "end_date": "2020-03-27",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 302157,
+        "checked_at": "2026-10-17T03:51:54.296604+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1584,14 +1592,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T09:14:07.092586+08:00",
+  "generated_at": "2026-10-17T03:51:54.296604+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201910/",
   "quality": {
     "source_count": 56,
     "record_count": 56,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 36,
+    "missing_story_count": 35,
     "missing_date_count": 0,
     "missing_time_count": 0
   }
