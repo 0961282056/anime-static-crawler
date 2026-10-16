@@ -1,0 +1,719 @@
+{
+  "observed_at": "2026-10-16T08:59:26.571665+08:00",
+  "changed_records": 92,
+  "changed_quarters": 13,
+  "records": [
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-392",
+      "anime_name": "CONCEPTION 為我而生",
+      "original_name": "CONCEPTION 俺の子供を産んでくれ！",
+      "anilist": 101609
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-385",
+      "anime_name": "我喜歡的妹妹不是妹妹",
+      "original_name": "俺が好きなのは妹だけど妹じゃない",
+      "anilist": 100382
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-384",
+      "anime_name": "只要別西卜大小姐喜歡就好",
+      "original_name": "ベルゼブブ嬢のお気に召すまま。",
+      "anilist": 101505
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-393",
+      "anime_name": "梅露可物語 -無氣力少年與瓶中少女-",
+      "original_name": "メルクストーリア -無気力少年と瓶の中の少女-",
+      "anilist": 101125
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-402",
+      "anime_name": "學園BASARA",
+      "original_name": "学園BASARA",
+      "anilist": 101470
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-403",
+      "anime_name": "BAKUMATSU",
+      "original_name": "BAKUMATSU",
+      "anilist": 101373
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-374",
+      "anime_name": "錢進球場 Season 2",
+      "original_name": "グラゼニ シーズン2",
+      "anilist": 102974
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-423",
+      "anime_name": "狐狸之聲",
+      "original_name": "狐狸之声",
+      "anilist": 102385
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-399",
+      "anime_name": "閃亂神樂 SHINOVI MASTER -東京妖魔篇-",
+      "original_name": "閃乱カグラ SHINOVI MASTER -東京妖魔篇-",
+      "anilist": 102822
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-412",
+      "anime_name": "Radiant",
+      "original_name": "ラディアン",
+      "anilist": 101024
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-404",
+      "anime_name": "DOUBLE DECKER！道格＆西里爾",
+      "original_name": "DOUBLE DECKER! ダグ＆キリル",
+      "anilist": 101318
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-381",
+      "anime_name": "弦音－風舞高中弓道部－",
+      "original_name": "ツルネ -風舞高校弓道部-",
+      "anilist": 100402
+    },
+    {
+      "quarter": "2019_冬",
+      "card_id": "anime-412",
+      "anime_name": "Radiant",
+      "original_name": "ラディアン",
+      "anilist": 101024
+    },
+    {
+      "quarter": "2019_夏",
+      "card_id": "anime-277",
+      "anime_name": "我們是愛護小動物委員會",
+      "original_name": "われしょ！我ら小動物愛護委員会",
+      "anilist": 110201
+    },
+    {
+      "quarter": "2019_夏",
+      "card_id": "anime-272",
+      "anime_name": "博多明太!麻辣子醬",
+      "original_name": "博多明太！ぴりからこちゃん",
+      "anilist": 109929
+    },
+    {
+      "quarter": "2019_夏",
+      "card_id": "anime-275",
+      "anime_name": "上班族魚先生",
+      "original_name": "ビジネスフィッシュ",
+      "anilist": 110124
+    },
+    {
+      "quarter": "2019_夏",
+      "card_id": "anime-274",
+      "anime_name": "暗芝居 7期",
+      "original_name": "闇芝居 七期",
+      "anilist": 109603
+    },
+    {
+      "quarter": "2019_春",
+      "card_id": "anime-296",
+      "anime_name": "RobiHachi",
+      "original_name": "ロビハチ",
+      "anilist": 105928
+    },
+    {
+      "quarter": "2022_秋",
+      "card_id": "anime-1164",
+      "anime_name": "山T女福星",
+      "original_name": "うる星やつら",
+      "anilist": 143277
+    },
+    {
+      "quarter": "2022_秋",
+      "card_id": "anime-1154",
+      "anime_name": "入間同學入魔了！ 第3季",
+      "original_name": "魔入りました！入間くん 第3シリーズ",
+      "anilist": 139092
+    },
+    {
+      "quarter": "2022_秋",
+      "card_id": "anime-1153",
+      "anime_name": "BLUE LOCK 藍色監獄",
+      "original_name": "ブルーロック",
+      "anilist": 137822
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1227",
+      "anime_name": "HIGH CARD 至高之牌",
+      "original_name": "HIGH CARD",
+      "anilist": 135778
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1219",
+      "anime_name": "吸血鬼馬上死2",
+      "original_name": "吸血鬼すぐ死ぬ２",
+      "anilist": 142914
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1226",
+      "anime_name": "物之古物奇譚",
+      "original_name": "もののがたり",
+      "anilist": 141785
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1237",
+      "anime_name": "海盜戰記 Season 2",
+      "original_name": "ヴィンランド・サガ SEASON2",
+      "anilist": 136430
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1201",
+      "anime_name": "妖幻三重奏",
+      "original_name": "あやかしトライアングル",
+      "anilist": 142849
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1240",
+      "anime_name": "「FLAGLIA」～夏天的故事～",
+      "original_name": "「FLAGLIA」～なつやすみの物語～",
+      "anilist": 155997
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1203",
+      "anime_name": "英雄王，為了窮盡武道而轉生 ～而後成為世界最強見習騎士♀～",
+      "original_name": "英雄王、武を極めるため転生す 〜そして、世界最強の見習い騎士♀〜",
+      "anilist": 142193
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1206",
+      "anime_name": "久保同學不放過我",
+      "original_name": "久保さんは僕を許さない",
+      "anilist": 145969
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1207",
+      "anime_name": "擁有超常技能的異世界流浪美食家",
+      "original_name": "とんでもスキルで異世界放浪メシ",
+      "anilist": 156067
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1241",
+      "anime_name": "魔術士歐菲 流浪之旅 阿邦拉瑪篇",
+      "original_name": "魔術士オーフェンはぐれ旅 アーバンラマ編",
+      "anilist": 155068
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1216",
+      "anime_name": "冰屬性男子與無表情女子",
+      "original_name": "氷属性男子とクールな同僚女子",
+      "anilist": 151252
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1217",
+      "anime_name": "文豪Stray Dogs 第四季",
+      "original_name": "文豪ストレイドッグス 第4シーズン",
+      "anilist": 141249
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-798",
+      "anime_name": "怕痛的我，把防禦力點滿就對了 第2季",
+      "original_name": "痛いのは嫌なので防御力に極振りしたいと思います。第2期",
+      "anilist": 116867
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1221",
+      "anime_name": "弦音－相繫的一射－",
+      "original_name": "ツルネ －つながりの一射－",
+      "anilist": 153841
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1233",
+      "anime_name": "Technoroid Overmind",
+      "original_name": "テクノロイド オーバーマインド",
+      "anilist": 141062
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1202",
+      "anime_name": "小智是女孩啦！",
+      "original_name": "トモちゃんは女の子！",
+      "anilist": 151806
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1215",
+      "anime_name": "大雪海的卡納",
+      "original_name": "大雪海のカイナ",
+      "anilist": 144144
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1193",
+      "anime_name": "間諜教室",
+      "original_name": "スパイ教室",
+      "anilist": 146323
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1222",
+      "anime_name": "REVENGER",
+      "original_name": "REVENGER",
+      "anilist": 155202
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1197",
+      "anime_name": "不當哥哥了！",
+      "original_name": "お兄ちゃんはおしまい！",
+      "anilist": 147864
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1164",
+      "anime_name": "山T女福星",
+      "original_name": "うる星やつら",
+      "anilist": 143277
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1223",
+      "anime_name": "冰劍的魔術師將要統一世界",
+      "original_name": "冰剣の魔術師が世界を統べる",
+      "anilist": 148116
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1224",
+      "anime_name": "銀砂糖師與黑妖精～sugar apple fairy tale～",
+      "original_name": "シュガーアップル・フェアリーテイル",
+      "anilist": 139821
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1230",
+      "anime_name": "Love Live！虹咲學園學園偶像同好會 短篇動畫",
+      "original_name": "にじよんあにめーしょん",
+      "anilist": 154785
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1235",
+      "anime_name": "D4DJ All Mix",
+      "original_name": "D4DJ All Mix",
+      "anilist": 147216
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1195",
+      "anime_name": "Buddy Daddies",
+      "original_name": "Buddy Daddies",
+      "anilist": 155907
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1199",
+      "anime_name": "在地下城尋求邂逅是否搞錯了什麼IV 深章 災厄篇",
+      "original_name": "ダンジョンに出会いを求めるのは間違っているだろうかⅣ 深章 厄災篇",
+      "anilist": 155211
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1239",
+      "anime_name": "真·進化果實～不知不覺踏上勝利的人生～",
+      "original_name": "真・進化の実 ～知らないうちに勝ち組人生～",
+      "anilist": 146954
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1229",
+      "anime_name": "阿魯斯的巨獸",
+      "original_name": "アルスの巨獣",
+      "anilist": 155089
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1204",
+      "anime_name": "無意間變成狗，被喜歡的女生撿回家。",
+      "original_name": "犬になったら好きな人に拾われた。",
+      "anilist": 146346
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1209",
+      "anime_name": "傲嬌反派千金莉潔洛特與實況主遠藤同學及解說員小林同學",
+      "original_name": "ツンデレ悪役令嬢リーゼロッテと実況の遠藤くんと解説の小林さん",
+      "anilist": 143064
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1247",
+      "anime_name": "卡片戰鬥!! 先導者 will+Dress Season2",
+      "original_name": "カードファイト!! ヴァンガード will+Dress Season2",
+      "anilist": 139213
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1154",
+      "anime_name": "入間同學入魔了！ 第3季",
+      "original_name": "魔入りました！入間くん 第3シリーズ",
+      "anilist": 139092
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1225",
+      "anime_name": "被解僱的暗黑士兵（30多歲）慢生活的第二人生",
+      "original_name": "解雇された暗黒兵士（30代）のスローなセカンドライフ",
+      "anilist": 152523
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1194",
+      "anime_name": "關於我在無意間被隔壁的天使變成廢柴這件事",
+      "original_name": "お隣の天使様にいつの間にか駄目人間にされていた件",
+      "anilist": 143338
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1228",
+      "anime_name": "狩火之王",
+      "original_name": "火狩りの王",
+      "anilist": 125869
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1210",
+      "anime_name": "TRIGUN STAMPEDE",
+      "original_name": "TRIGUN STAMPEDE",
+      "anilist": 151040
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1214",
+      "anime_name": "最強陰陽師的異世界轉生記",
+      "original_name": "最強陰陽師の異世界転生記",
+      "anilist": 144553
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1234",
+      "anime_name": "UniteUp! 眾星齊聚",
+      "original_name": "UniteUp!",
+      "anilist": 154969
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1198",
+      "anime_name": "NieR:Automata Ver1.1a",
+      "original_name": "NieR:Automata Ver1.1a",
+      "anilist": 145665
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1196",
+      "anime_name": "魔王學院的不適任者 第二季",
+      "original_name": "魔王学院の不適合者 Ⅱ ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～",
+      "anilist": 130588
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1218",
+      "anime_name": "不要欺負我，長瀞同學 2nd Attack",
+      "original_name": "イジらないで、長瀞さん 2nd Attack",
+      "anilist": 140596
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1153",
+      "anime_name": "BLUE LOCK 藍色監獄",
+      "original_name": "ブルーロック",
+      "anilist": 137822
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1208",
+      "anime_name": "為了養老金去異界存八萬金",
+      "original_name": "老後に備えて異世界で8万枚の金貨を貯めます",
+      "anilist": 152765
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1205",
+      "anime_name": "東京復仇者 聖夜決戰篇",
+      "original_name": "東京リベンジャーズ 聖夜決戦編",
+      "anilist": 142853
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1243",
+      "anime_name": "伸向天空！光之美少女",
+      "original_name": "ひろがるスカイ！プリキュア",
+      "anilist": 157883
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1211",
+      "anime_name": "淪落者之夜",
+      "original_name": "ノケモノたちの夜",
+      "anilist": 151679
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1213",
+      "anime_name": "萬事屋齋藤先生轉生異世界",
+      "original_name": "便利屋斎藤さん、異世界に行く",
+      "anilist": 144092
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1232",
+      "anime_name": "英雄傳說 閃之軌跡：北方戰役",
+      "original_name": "The Legend of Heroes 閃の軌跡 Northern War",
+      "anilist": 130696
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1236",
+      "anime_name": "眾神眷顧的男人2",
+      "original_name": "神達に拾われた男２",
+      "anilist": 135102
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1246",
+      "anime_name": "我與機器子",
+      "original_name": "僕とロボコ",
+      "anilist": 150117
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1238",
+      "anime_name": "虛構推理 Season2",
+      "original_name": "虚構推理 Season2",
+      "anilist": 126529
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1231",
+      "anime_name": "再得一勝！",
+      "original_name": "もういっぽん！",
+      "anilist": 136435
+    },
+    {
+      "quarter": "2023_冬",
+      "card_id": "anime-1244",
+      "anime_name": "KJ File 續篇",
+      "original_name": "KJファイル 続編",
+      "anilist": 155291
+    },
+    {
+      "quarter": "2023_夏",
+      "card_id": "anime-1319",
+      "anime_name": "白聖女與黑牧師",
+      "original_name": "白聖女と黒牧師",
+      "anilist": 150972
+    },
+    {
+      "quarter": "2023_夏",
+      "card_id": "anime-1337",
+      "anime_name": "BanG Dream! It's MyGO!!!!!",
+      "original_name": "BanG Dream! It's MyGO!!!!!",
+      "anilist": 163571
+    },
+    {
+      "quarter": "2023_春",
+      "card_id": "anime-1237",
+      "anime_name": "海盜戰記 Season 2",
+      "original_name": "ヴィンランド・サガ SEASON2",
+      "anilist": 136430
+    },
+    {
+      "quarter": "2023_春",
+      "card_id": "anime-1284",
+      "anime_name": "躍動青春",
+      "original_name": "スキップとローファー",
+      "anilist": 141911
+    },
+    {
+      "quarter": "2023_春",
+      "card_id": "anime-1241",
+      "anime_name": "魔術士歐菲 流浪之旅 阿邦拉瑪篇",
+      "original_name": "魔術士オーフェンはぐれ旅 アーバンラマ編",
+      "anilist": 155068
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1362",
+      "anime_name": "想當冒險者前往都市的女兒成為S級",
+      "original_name": "冒険者になりたいと都に出て行った娘がＳランクになってた",
+      "anilist": 156184
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1376",
+      "anime_name": "大小姐和看門犬",
+      "original_name": "お嬢と番犬くん",
+      "anilist": 155527
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1387",
+      "anime_name": "烈焰先鋒 救國的橘衣消防員",
+      "original_name": "め組の大吾 救国のオレンジ",
+      "anilist": 158791
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1363",
+      "anime_name": "堤亞穆帝國物語",
+      "original_name": "ティアムーン帝国物語～断頭台から始まる、姫の転生逆転ストーリー～",
+      "anilist": 154384
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1359",
+      "anime_name": "狩龍人拉格納",
+      "original_name": "ラグナクリムゾン",
+      "anilist": 146493
+    },
+    {
+      "quarter": "2023_秋",
+      "card_id": "anime-1385",
+      "anime_name": "MF GHOST 燃油車鬥魂",
+      "original_name": "MFゴースト",
+      "anilist": 143327
+    },
+    {
+      "quarter": "2024_冬",
+      "card_id": "anime-1387",
+      "anime_name": "烈焰先鋒 救國的橘衣消防員",
+      "original_name": "め組の大吾 救国のオレンジ",
+      "anilist": 158791
+    },
+    {
+      "quarter": "2024_冬",
+      "card_id": "anime-1359",
+      "anime_name": "狩龍人拉格納",
+      "original_name": "ラグナクリムゾン",
+      "anilist": 146493
+    },
+    {
+      "quarter": "2024_春",
+      "card_id": "anime-1530",
+      "anime_name": "我的英雄學院 第七季",
+      "original_name": "僕のヒーローアカデミア 第7期",
+      "anilist": 163139
+    },
+    {
+      "quarter": "2024_春",
+      "card_id": "anime-1527",
+      "anime_name": "鬼滅之刃 柱訓練篇",
+      "original_name": "鬼滅の刃 柱稽古編",
+      "anilist": 166240
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1696",
+      "anime_name": "樂天胖達！",
+      "original_name": "お買いものパンダ！",
+      "anilist": 177603
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2344",
+      "anime_name": "麵包小偷",
+      "original_name": "パンどろぼう",
+      "anilist": 194207
+    }
+  ],
+  "source_documents": [
+    {
+      "quarter": "2018_秋",
+      "url": "https://acgsecrets.hk/bangumi/201810/",
+      "document_sha256": "0f7b383f99cf1778a2161811db4c96c859fed757cbb6ff63960c219db1da443d"
+    },
+    {
+      "quarter": "2019_冬",
+      "url": "https://acgsecrets.hk/bangumi/201901/",
+      "document_sha256": "c0df52d8b1b55b0cc8b611a44ee8c29ba35b235e1f9fcda1a6c77032de215b18"
+    },
+    {
+      "quarter": "2019_夏",
+      "url": "https://acgsecrets.hk/bangumi/201907/",
+      "document_sha256": "4c0545f18f37ae9b1c0475e33fba526d168f73ad75ce09d0769f6153825da6d9"
+    },
+    {
+      "quarter": "2019_春",
+      "url": "https://acgsecrets.hk/bangumi/201904/",
+      "document_sha256": "07fd6ea93a3155f2b651871f6432223af21ec5b612897de74a5ec87eda04968f"
+    },
+    {
+      "quarter": "2022_秋",
+      "url": "https://acgsecrets.hk/bangumi/202210/",
+      "document_sha256": "a2aa8626db6719fe8967671e3e080d551ed1c7f1aaa97bcf477ee2c141332289"
+    },
+    {
+      "quarter": "2023_冬",
+      "url": "https://acgsecrets.hk/bangumi/202301/",
+      "document_sha256": "9063f033e934548300e50bc01dc35c9a139a03286ad920eb8d590394d1833c68"
+    },
+    {
+      "quarter": "2023_夏",
+      "url": "https://acgsecrets.hk/bangumi/202307/",
+      "document_sha256": "7e5fbf1e0d13059af5e495d9a3273a4f6a7dea0b1cce04de1bcb7f532bb99299"
+    },
+    {
+      "quarter": "2023_春",
+      "url": "https://acgsecrets.hk/bangumi/202304/",
+      "document_sha256": "445b1c122d2705988f03b52ae7428cb2d7e2acceb4e05d1844f55ebe0a5d3537"
+    },
+    {
+      "quarter": "2023_秋",
+      "url": "https://acgsecrets.hk/bangumi/202310/",
+      "document_sha256": "f7000eed0ac6a7e267bedd595e477ab631c517258cec43b42b4765a1f455c904"
+    },
+    {
+      "quarter": "2024_冬",
+      "url": "https://acgsecrets.hk/bangumi/202401/",
+      "document_sha256": "f6d347fe9a05acdfb43d3a8f07df41d062d59b120874297138a1d78d97326590"
+    },
+    {
+      "quarter": "2024_春",
+      "url": "https://acgsecrets.hk/bangumi/202404/",
+      "document_sha256": "fcac7d3d15c5a38ab620a900896c1368b6dac29b4f5a924f6cee3de3385dfc0f"
+    },
+    {
+      "quarter": "2024_秋",
+      "url": "https://acgsecrets.hk/bangumi/202410/",
+      "document_sha256": "fb765660f3d7c308b52e255eccdf35d241ca5ffad835945232923567fab4df1d"
+    },
+    {
+      "quarter": "2026_秋",
+      "url": "https://acgsecrets.hk/bangumi/202610/",
+      "document_sha256": "b13106f8340b66ba54082b1391401ea02fa5cf2c332b221ff4052d7485384265"
+    }
+  ],
+  "all_other_record_fields_and_order_preserved": true
+}

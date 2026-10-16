@@ -11,7 +11,7 @@ from pathlib import Path
 
 from pydantic import ValidationError
 
-from models import TAIPEI_TZ, Anime, DataQuality, QuarterDataset
+from models import TAIPEI_TZ, Anime, DataQuality, ExternalIds, QuarterDataset
 from services.atomic_io import atomic_write_json
 from services.diagnostics import operation
 from services.errors import DataContractError
@@ -193,12 +193,26 @@ class DataRepository:
                     validated_records[index] = record.model_copy(
                         update={
                             "episodes": old.episodes,
-                            "external_ids": record.external_ids
-                            if record.external_ids.bangumi is not None
-                            else old.external_ids,
+                            "external_ids": ExternalIds(
+                                bangumi=record.external_ids.bangumi
+                                or old.external_ids.bangumi,
+                                anilist=record.external_ids.anilist
+                                or old.external_ids.anilist,
+                            ),
                             "original_name": record.original_name or old.original_name,
+                            "story": old.story
+                            if record.story == "暫無簡介" and old.story_source
+                            else record.story,
+                            "story_source": old.story_source
+                            if record.story == "暫無簡介" and old.story_source
+                            else record.story_source,
                         }
                     )
+        quality = DataQuality.from_records(
+            validated_records,
+            source_count=source_count,
+            parse_failure_count=parse_failure_count,
+        )
         self.policy.validate(validated_records, quality, previous)
 
         previous_records = (

@@ -12,6 +12,7 @@ from typing import Any
 import requests
 
 MARKER = "<!-- anime-source-review:v1:"
+QUEUE_MARKER = "<!-- anime-source-review-queue:v1 -->"
 BOT = "github-actions[bot]"
 KINDS = {
     "snapshot_due": "官方快照複查到期",
@@ -266,7 +267,10 @@ class GitHubReviewClient:
                 for issue in batch
                 if "pull_request" not in issue
                 and issue.get("user", {}).get("login") == BOT
-                and MARKER in (issue.get("body") or "")
+                and any(
+                    marker in (issue.get("body") or "")
+                    for marker in (MARKER, QUEUE_MARKER)
+                )
             )
             if len(batch) < 100:
                 return result
@@ -275,9 +279,15 @@ class GitHubReviewClient:
         )
 
 
-def publish_reviews(
-    report: dict, client: Any, *, assignee: str, run_url: str, max_changes: int = 10
-) -> dict:
+def publish_cases(
+    cases: list[dict],
+    client: Any,
+    *,
+    assignee: str,
+    run_url: str,
+    max_changes: int = 10,
+    existing: list[dict] | None = None,
+) -> tuple[dict, set[str]]:
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9-]{0,38}", assignee):
         raise ValueError("Invalid review assignee")
     if not re.fullmatch(
@@ -285,9 +295,6 @@ def publish_reviews(
         run_url,
     ):
         raise ValueError("A canonical workflow run URL is required")
-    if report.get("schema_version") != 1 or report.get("mode") != "read_only":
-        raise ValueError("Unsupported source audit report")
-    cases = review_cases(report)
     result = {
         "candidates": len(cases),
         "created": 0,
@@ -295,9 +302,10 @@ def publish_reviews(
         "unchanged": 0,
         "deferred": 0,
     }
+    handled: set[str] = set()
     if not cases:
-        return result
-    existing = client.issues()
+        return result, handled
+    existing = client.issues() if existing is None else existing
     for case in cases:
         prefix = f"{MARKER}{case['key']}:"
         matches = [issue for issue in existing if prefix in (issue.get("body") or "")]
@@ -309,6 +317,7 @@ def publish_reviews(
         marker = f"{prefix}{case['fingerprint']} -->"
         if issue and marker in issue["body"]:
             result["unchanged"] += 1
+            handled.add(case["key"])
             continue
         if result["created"] + result["updated"] >= max_changes:
             result["deferred"] += 1
@@ -342,14 +351,32 @@ def publish_reviews(
                 json={"title": title, "body": body, "assignees": [assignee]},
             )
             result["created"] += 1
+        handled.add(case["key"])
+    return result, handled
+
+
+def publish_reviews(
+    report: dict, client: Any, *, assignee: str, run_url: str, max_changes: int = 10
+) -> dict:
+    if report.get("schema_version") != 1 or report.get("mode") != "read_only":
+        raise ValueError("Unsupported source audit report")
+    result, _ = publish_cases(
+        review_cases(report),
+        client,
+        assignee=assignee,
+        run_url=run_url,
+        max_changes=max_changes,
+    )
     return result
 
 
 def publish_from_environment(report_path: str) -> dict:
+    from services.review_queue import publish_review_queue
+
     with open(report_path, encoding="utf-8") as handle:
         report = json.load(handle)
     repository = os.environ["GITHUB_REPOSITORY"]
-    return publish_reviews(
+    return publish_review_queue(
         report,
         GitHubReviewClient(repository, os.environ["GH_TOKEN"]),
         assignee=os.getenv("SOURCE_REVIEW_ASSIGNEE") or repository.split("/")[0],

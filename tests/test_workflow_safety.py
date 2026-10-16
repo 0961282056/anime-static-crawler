@@ -255,3 +255,27 @@ def test_pull_request_publishers_have_cleanup_time_after_merge_polling() -> None
         assert "timeout-minutes: 45" in publisher
         assert "for _ in {1..120}" in publisher
         assert "sleep 15" in publisher
+
+
+def test_daily_review_reminders_have_no_source_or_production_access():
+    workflow = _workflow("review-reminders.yml")
+    assert 'cron: "0 11 * * *"' in workflow
+    assert 'timezone: "Asia/Taipei"' in workflow
+    assert "github.ref == 'refs/heads/main'" in workflow
+    assert "issues: write" in workflow
+    assert "remind-source-reviews" in workflow
+    for forbidden in (
+        "source-audit",
+        "CLOUDINARY_",
+        "crawler-production",
+        "contents: write",
+        "git push",
+        "secrets.",
+    ):
+        assert forbidden not in workflow
+    for source in (
+        workflow,
+        _job_section(_workflow("source-audit.yml"), "notify-reviews"),
+    ):
+        assert "group: anime-source-review-writes" in source
+        assert "cancel-in-progress: false" in source

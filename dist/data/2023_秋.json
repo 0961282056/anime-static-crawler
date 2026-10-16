@@ -26,7 +26,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2024-03-25",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -739,7 +741,7 @@
       "original_name": "冒険者になりたいと都に出て行った娘がＳランクになってた",
       "external_ids": {
         "bangumi": 406736,
-        "anilist": null
+        "anilist": 156184
       },
       "episodes": {
         "total_episodes": 13,
@@ -754,7 +756,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2023-12-21",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -851,7 +855,7 @@
       "original_name": "お嬢と番犬くん",
       "external_ids": {
         "bangumi": 403631,
-        "anilist": null
+        "anilist": 155527
       },
       "episodes": {
         "total_episodes": 13,
@@ -866,7 +870,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2023-12-21",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -1328,7 +1334,7 @@
       "original_name": "め組の大吾 救国のオレンジ",
       "external_ids": {
         "bangumi": 411106,
-        "anilist": null
+        "anilist": 158791
       },
       "episodes": {
         "total_episodes": 23,
@@ -1343,7 +1349,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2024-03-23",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -1636,7 +1644,7 @@
       "original_name": "ティアムーン帝国物語～断頭台から始まる、姫の転生逆転ストーリー～",
       "external_ids": {
         "bangumi": 400114,
-        "anilist": null
+        "anilist": 154384
       },
       "episodes": {
         "total_episodes": 12,
@@ -1692,7 +1700,7 @@
       "original_name": "ラグナクリムゾン",
       "external_ids": {
         "bangumi": 374648,
-        "anilist": null
+        "anilist": 146493
       },
       "episodes": {
         "total_episodes": 24,
@@ -1707,7 +1715,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2024-03-30",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -2000,7 +2010,7 @@
       "original_name": "MFゴースト",
       "external_ids": {
         "bangumi": 364252,
-        "anilist": null
+        "anilist": 143327
       },
       "episodes": {
         "total_episodes": 12,
@@ -2015,7 +2025,9 @@
         "checked_at": "2026-10-14T05:03:54+08:00",
         "attempted_at": "2026-10-15T13:34:12.981777+08:00",
         "end_date": "2023-12-17",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -2043,7 +2055,8 @@
         "checked_at": "2026-10-15T08:14:24+08:00",
         "attempted_at": "2026-10-15T08:14:24+08:00",
         "end_date": null,
-        "note": "TV版全8話；官方光碟收錄與最終第8話公告一致。"
+        "note": "TV版全8話；官方光碟收錄與最終第8話公告一致。",
+        "source_kind": "manual_official"
       }
     },
     {
@@ -2075,7 +2088,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T07:16:40.437305+08:00",
+  "generated_at": "2026-10-16T09:14:07.204383+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202310/",
   "quality": {
     "source_count": 74,

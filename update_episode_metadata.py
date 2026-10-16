@@ -51,10 +51,34 @@ def backfill_source_links(
             logger.warning("Source link backfill skipped %s: %s", path.name, exc)
             continue
         by_id = {candidate.bangumi_id: candidate for candidate in candidates}
+        if len(by_id) != len(candidates):
+            logger.warning(
+                "Source link backfill skipped duplicate card IDs: %s", path.name
+            )
+            continue
         records = []
         for anime in dataset.anime_list:
             candidate = by_id.get(anime.bangumi_id)
-            if candidate is not None and (not anime_id or anime.bangumi_id == anime_id):
+            if (
+                candidate is not None
+                and candidate.anime_name == anime.anime_name
+                and candidate.original_name == anime.original_name
+                and (not anime_id or anime.bangumi_id == anime_id)
+            ):
+                if any(
+                    getattr(anime.external_ids, provider) is not None
+                    and getattr(candidate.external_ids, provider) is not None
+                    and getattr(anime.external_ids, provider)
+                    != getattr(candidate.external_ids, provider)
+                    for provider in ("bangumi", "anilist")
+                ):
+                    logger.warning(
+                        "Conflicting explicit source link retained: %s %s",
+                        path.stem,
+                        anime.bangumi_id,
+                    )
+                    records.append(anime)
+                    continue
                 # A temporarily missing source link is not a new identity.
                 ids = ExternalIds(
                     bangumi=candidate.external_ids.bangumi
@@ -66,6 +90,7 @@ def backfill_source_links(
                     ids.bangumi is not None
                     and ids.bangumi != anime.external_ids.bangumi
                 )
+                old_ids = anime.external_ids
                 anime = anime.model_copy(
                     update={
                         "external_ids": ids,
@@ -73,7 +98,7 @@ def backfill_source_links(
                         "episodes": None if changed_identity else anime.episodes,
                     }
                 )
-                updated += 1
+                updated += int(ids != old_ids)
             records.append(anime)
         repository.write_quarter(
             year=file_year,
@@ -97,6 +122,11 @@ def main() -> None:
     parser.add_argument("--anime-id", help="Only backfill this acgsecrets card ID")
     parser.add_argument(
         "--write", action="store_true", help="Write updates; otherwise dry run"
+    )
+    parser.add_argument(
+        "--links-only",
+        action="store_true",
+        help="Only fill explicit source links; do not fetch episode metadata",
     )
     parser.add_argument(
         "--retry-failed",
@@ -136,6 +166,12 @@ def main() -> None:
                 season=args.season,
                 anime_id=args.anime_id,
             )
+            if args.links_only:
+                repository.validate_all()
+                print(
+                    f"{'WRITE' if args.write else 'DRY RUN'}: updated {count} explicit source links"
+                )
+                return
             # Scope this manual command; normal crawling refreshes all linked
             # entries. Unselected records must not consume the request budget.
             selected_ids = {

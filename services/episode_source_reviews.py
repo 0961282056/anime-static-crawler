@@ -1,6 +1,7 @@
 """Exact reviewed source scope, independent of models to avoid import cycles."""
 
 import json
+import re
 from functools import cache
 from pathlib import Path
 from typing import Any
@@ -30,6 +31,11 @@ def reviewed_source(anime: Any) -> dict[str, Any] | None:
 
 
 def reviewed_source_url(value: str) -> bool:
+    if re.fullmatch(
+        r"https://www\.web\.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list(?:\?page=(?:[1-9]|[1-3][0-9]|40))?",
+        value,
+    ):
+        return True
     return any(
         value in review["metadata"]["source_urls"] for review in source_reviews()
     )

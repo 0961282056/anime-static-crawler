@@ -647,3 +647,9 @@ body {
 }
 .source-quarters { margin-bottom: 8px; }
 .form-select:disabled { opacity: 0.6; cursor: not-allowed; }
+.source-facts { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 0.35rem 0.7rem; margin: 0.8rem 0; }
+.source-facts dt { color: #b8c3cf; }
+.source-facts dd { margin: 0; overflow-wrap: anywhere; }
+.source-scope-note { color: #b8c3cf; line-height: 1.6; }
+.source-links { padding-left: 1.2rem; line-height: 1.8; overflow-wrap: anywhere; }
+.story-source { font-size: 0.78rem; line-height: 1.5; margin-bottom: 0.8rem; color: #a9d9e7; }

@@ -274,6 +274,7 @@ def parse_episode_metadata(
     )
     if conflict:
         return EpisodeMetadata(
+            source_kind="bangumi_api",
             aired_episodes=progress,
             airing_status="unknown",
             fetch_state="conflict",
@@ -288,6 +289,7 @@ def parse_episode_metadata(
     if complete:
         status = "finished"
     return EpisodeMetadata(
+        source_kind="bangumi_api",
         total_episodes=total,
         aired_episodes=progress,
         airing_status=status,
@@ -341,6 +343,7 @@ class BangumiClient:
         self.unavailable = False
         self.pages_unavailable = False
         self.deadline = time.monotonic() + time_budget_seconds
+        self.subjects: dict[int, dict] = {}
 
     def _get(self, path: str, **params: object) -> dict[str, Any]:
         return self._request(API_ORIGIN + path, params=params)
@@ -434,7 +437,10 @@ class BangumiClient:
             raise MetadataUnavailable("Bangumi page structure is invalid") from exc
         info = parse_episode_metadata(anime, subject, entries, now)
         return info.model_copy(
-            update={"note": "Bangumi 頁面備援（bangumi.tv）；" + info.note}
+            update={
+                "source_kind": "bangumi_html",
+                "note": "Bangumi 頁面備援（bangumi.tv）；" + info.note,
+            }
         )
 
     def _fetch_api(self, anime: Anime, now: datetime) -> EpisodeMetadata:
@@ -442,6 +448,7 @@ class BangumiClient:
         subject = self._get(f"/subjects/{subject_id}")
         # Reject a wrong or malformed linked subject before fetching pages.
         parse_episode_metadata(anime, subject, [], now)
+        self.subjects[subject_id] = subject
         entries: list[dict[str, Any]] = []
         identities: set[int] = set()
         expected_total: int | None = None
@@ -483,10 +490,15 @@ class BangumiClient:
 
 class EpisodeEnricher:
     def __init__(
-        self, client: BangumiClient | None = None, *, retry_failed: bool = False
+        self,
+        client: BangumiClient | None = None,
+        *,
+        retry_failed: bool = False,
+        official_client: Any = None,
     ) -> None:
         self.client = client or BangumiClient()
         self.retry_failed = retry_failed
+        self.official_client = official_client
         self.quarters: dict[episode_refresh.Identity, episode_refresh.Quarter] = {}
         self.deferred: set[tuple[str, str, str | None, int | None]] = set()
         self.snapshots: dict[
@@ -511,10 +523,51 @@ class EpisodeEnricher:
 
     def enrich(self, anime: Anime, now: datetime) -> Anime:
         review = reviewed_source(anime)
+        if review and review.get("official_adapter") == "nhk_zenitendo":
+            from services.official_catalogue import (
+                NHKCatalogueClient,
+                OfficialSourceUnavailable,
+            )
+
+            previous = anime.episodes or EpisodeMetadata.model_validate(
+                {**review["metadata"], "source_kind": "manual_official"}
+            )
+            record = anime.model_copy(update={"episodes": previous})
+            if not (
+                self.retry_failed and previous.fetch_state != "ok"
+            ) and not self.due(
+                record, now, self.quarters.get(episode_refresh.identity(record))
+            ):
+                return record
+            key = episode_refresh.identity(record)
+            if key not in self.snapshots:
+                if self.official_client is None:
+                    self.official_client = NHKCatalogueClient()
+                try:
+                    self.snapshots[key] = self.official_client.fetch(record, now)
+                except OfficialSourceUnavailable:
+                    self.snapshots[key] = None
+                    logger.warning(
+                        "NHK official verification failed; previous evidence retained"
+                    )
+            info = self.snapshots[key]
+            if info is None:
+                info = previous.model_copy(
+                    update={
+                        "fetch_state": "stale",
+                        "attempted_at": now,
+                        "note": "官方目錄本次查證未成功，保留上次已確認節目數與查證時間。",
+                    }
+                )
+            return record.model_copy(update={"episodes": info})
         if review and review["mode"] == "snapshot":
             # Reviewed facts and unresolved scopes keep their verification time.
             return anime.model_copy(
-                update={"episodes": EpisodeMetadata.model_validate(review["metadata"])}
+                update={
+                    "episodes": EpisodeMetadata.model_validate(
+                        {**review["metadata"], "source_kind": "manual_official"}
+                    )
+                }
             )
         subject_id = anime.external_ids.bangumi
         retry = (
@@ -587,7 +640,14 @@ class EpisodeEnricher:
                         else "來源資料不完整，保留上次確認資料。",
                     }
                 )
-        return anime.model_copy(update={"episodes": info})
+        result = anime.model_copy(update={"episodes": info})
+        if isinstance(self.client, BangumiClient) and (
+            subject := self.client.subjects.get(subject_id)
+        ):
+            from services.story_metadata import enrich_story
+
+            result = enrich_story(result, subject, now, method="bangumi_api")
+        return result
 
 
 def refresh_repository_episodes(

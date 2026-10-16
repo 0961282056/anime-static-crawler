@@ -197,15 +197,25 @@ def test_zenitendo_counts_distinct_official_programmes_without_inventing_a_final
     assert sorted(p["episode_cards"] for p in catalogue["pages"]) == [8] + [10] * 14
     review = next(r for r in source_reviews() if r["subject_id"] == 315772)
     client = Mock()
-    result = EpisodeEnricher(client, retry_failed=True).enrich(
-        reviewed_anime(review, anime_record_factory), NOW + timedelta(days=40)
+    official = Mock()
+    official.fetch.return_value = EpisodeMetadata.model_validate(
+        {
+            **review["metadata"],
+            "checked_at": NOW + timedelta(days=40),
+            "attempted_at": NOW + timedelta(days=40),
+            "source_kind": "official_catalogue",
+        }
     )
+    result = EpisodeEnricher(
+        client, retry_failed=True, official_client=official
+    ).enrich(reviewed_anime(review, anime_record_factory), NOW + timedelta(days=40))
     assert result.episodes.aired_episodes == 148
     assert result.episodes.total_episodes is None
     assert result.episodes.airing_status == "unknown"
     assert result.episodes.episode_count_status == "unknown"
     assert result.episodes.fetch_state == "ok"
     client.fetch.assert_not_called()
+    official.fetch.assert_called_once()
 
 
 @pytest.mark.parametrize(

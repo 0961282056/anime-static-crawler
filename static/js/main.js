@@ -112,9 +112,18 @@ function validateDataset(payload) {
                 !Object.hasOwn(AIRING_STATUS_LABELS, info.airing_status) ||
                 !['unknown', 'planned', 'confirmed'].includes(info.episode_count_status) ||
                 !['ok', 'unmatched', 'stale', 'conflict'].includes(info.fetch_state) ||
+                (info.note !== undefined && typeof info.note !== 'string') ||
+                (info.source_urls !== undefined && (!Array.isArray(info.source_urls) || info.source_urls.some(url => typeof url !== 'string'))) ||
+                (info.source_kind !== undefined && !['unknown', 'bangumi_api', 'bangumi_html', 'bangumi_archive', 'manual_official', 'official_catalogue'].includes(info.source_kind)) ||
                 (Number.isInteger(info.total_episodes) && Number.isInteger(info.aired_episodes) && info.aired_episodes > info.total_episodes) ||
                 (info.airing_status === 'finished' && (!Number.isInteger(info.total_episodes) || info.aired_episodes !== info.total_episodes || info.episode_count_status !== 'confirmed'))) {
                 throw createDataError('DATA_SCHEMA', `第 ${index + 1} 筆動畫的集數資料格式錯誤，無法安全顯示。`, {retryable: false});
+            }
+        }
+        if (item.story_source !== undefined && item.story_source !== null) {
+            const source = item.story_source;
+            if (typeof source !== 'object' || Array.isArray(source) || source.provider !== 'bangumi' || !Number.isInteger(source.subject_id) || source.subject_id <= 0 || source.subject_id !== item.external_ids?.bangumi || !['bangumi_api', 'bangumi_archive'].includes(source.method) || (source.method === 'bangumi_archive' && (typeof source.source_snapshot_date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(source.source_snapshot_date)))) {
+                throw createDataError('DATA_SCHEMA', `第 ${index + 1} 筆動畫的簡介來源無法確認。`, {retryable: false});
             }
         }
     });
@@ -900,6 +909,63 @@ function animeApp() {
             const stamp = checked && !Number.isNaN(checked.getTime())
                 ? `最後確認：${checked.toLocaleString('zh-TW', {timeZone: 'Asia/Taipei'})}` : '尚未確認';
             return `${stamp}。${info.note || '集數以對應動畫條目的正篇為範圍。'}`;
+        },
+
+        episodeSourceKind(anime) {
+            const info = anime.episodes;
+            if (!info) return '尚無可靠來源';
+            const labels = {bangumi_api: 'Bangumi API', bangumi_html: 'Bangumi 頁面備援', bangumi_archive: 'Bangumi 固定資料快照', manual_official: '已人工核對的官方快照', official_catalogue: '官方完整節目目錄'};
+            if (Object.hasOwn(labels, info.source_kind)) return labels[info.source_kind];
+            if ((info.note || '').startsWith('Bangumi 官方資料快照')) return 'Bangumi 固定快照（依既有備註）';
+            if ((info.note || '').startsWith('Bangumi 頁面備援')) return 'Bangumi 頁面備援（依既有備註）';
+            const first = this.episodeSourceLinks(anime)[0];
+            if (first && !['bgm.tv', 'bangumi.tv', 'chii.in', 'anilist.co'].includes(new URL(first.url).hostname)) return '已審查的外部來源';
+            return anime.external_ids?.bangumi ? 'Bangumi（舊資料未記錄取得方式）' : '舊資料未記錄取得方式';
+        },
+
+        storySourceUrl(anime) {
+            const id = anime.story_source?.subject_id;
+            return Number.isInteger(id) && id > 0 && id === anime.external_ids?.bangumi ? `https://bgm.tv/subject/${id}` : null;
+        },
+
+        storySourceLabel(anime) {
+            const source = anime.story_source;
+            if (!source || !this.storySourceUrl(anime)) return '';
+            return source.method === 'bangumi_archive'
+                ? `簡介來源：Bangumi 原文快照（截至 ${source.source_snapshot_date || '日期未記錄'}）`
+                : '簡介來源：Bangumi 條目原文';
+        },
+
+        formatSourceTimestamp(value) {
+            if (typeof value !== 'string' || !value.trim()) return '尚未記錄';
+            const date = new Date(value);
+            return Number.isNaN(date.getTime()) ? '尚未記錄' : date.toLocaleString('zh-TW', {timeZone: 'Asia/Taipei'});
+        },
+
+        episodeVerificationState(anime) {
+            const info = anime.episodes;
+            if (!info || this.formatSourceTimestamp(info.checked_at) === '尚未記錄') return '尚未成功查證';
+            if (info.fetch_state === 'stale') return '最近更新失敗，保留上次成功資料';
+            if (info.fetch_state === 'conflict') return '來源有差異，需核對計數範圍';
+            if (['manual_official', 'bangumi_archive'].includes(info.source_kind) || (info.note || '').startsWith('Bangumi 官方資料快照')) return '固定快照，需定期複查';
+            return '已記錄成功查證時間；不代表即時播出進度';
+        },
+
+        episodeSourceLinks(anime) {
+            const sources = Array.isArray(anime.episodes?.source_urls) ? anime.episodes.source_urls : [];
+            const links = [];
+            for (const source of sources) {
+                try {
+                    const url = new URL(source);
+                    if (url.protocol !== 'https:' || url.username || url.password || url.hash || links.some(link => link.url === url.href)) continue;
+                    links.push({url: url.href, label: url.hostname === 'bgm.tv' ? 'Bangumi 集數證據' : url.hostname});
+                } catch { /* Preserve valid evidence links; ignore malformed values. */ }
+            }
+            const id = anime.external_ids?.bangumi;
+            if (!links.length && Number.isInteger(id) && id > 0) links.push({url: `https://bgm.tv/subject/${id}/ep`, label: 'Bangumi 條目（參考）'});
+            const anilist = anime.external_ids?.anilist;
+            if (Number.isInteger(anilist) && anilist > 0) links.push({url: `https://anilist.co/anime/${anilist}`, label: 'AniList 條目（參考；不代表計數範圍已一致）'});
+            return links;
         },
 
         episodeSourceUrl(anime) {

@@ -1,0 +1,381 @@
+{
+  "verified_at": "2026-10-16T09:14:06.976759+08:00",
+  "source_kinds": {
+    "unknown": 1795,
+    "bangumi_archive": 154,
+    "manual_official": 24,
+    "official_catalogue": 2,
+    "bangumi_html": 175
+  },
+  "stories_filled": 30,
+  "story_records": [
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2313",
+      "anime_name": "PSYREN－末日遊戲－",
+      "original_name": "PSYREN -サイレン-",
+      "subject_id": 614640,
+      "subject_original_name": "PSYREN -サイレン-",
+      "summary_sha256": "3973b991ae10965a0bb357d01eecc7629675f3bfde4da1c0c45b40086d349d7e",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2334",
+      "anime_name": "Battle Spirits [Re] 絕界之空",
+      "original_name": "Battle Spirits [Re] 絶界の空",
+      "subject_id": 544378,
+      "subject_original_name": "Battle Spirits [Re] 絶界の空",
+      "summary_sha256": "03be353eabe3872814d036b6bf9edbab75c59ea63196ed78d408633015f18059",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2347",
+      "anime_name": "MAZENCHU",
+      "original_name": "マゼンチュ",
+      "subject_id": 701779,
+      "subject_original_name": "マゼンチュ",
+      "summary_sha256": "11133e10b7f4b2f23d6b977e25e4d299f3482e7d714d70f474d17f127a14c87f",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2286",
+      "anime_name": "偵探已經，死了。第二季",
+      "original_name": "探偵はもう、死んでいる。Season2",
+      "subject_id": 393010,
+      "subject_original_name": "探偵はもう、死んでいる。 Season 2",
+      "summary_sha256": "14a6b54a53364b2c71a831a18756fd69da007d269a9b8db1bab95faaea37b3e7",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2314",
+      "anime_name": "魔法騎士",
+      "original_name": "魔法騎士レイアース",
+      "subject_id": 502123,
+      "subject_original_name": "魔法騎士レイアース",
+      "summary_sha256": "4e5fb6857d9053b68c93514e955fb772d96f87cdbbee5507de222a7dfb457899",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2287",
+      "anime_name": "轉生就是劍 第二季",
+      "original_name": "転生したら剣でしたII",
+      "subject_id": 412008,
+      "subject_original_name": "転生したら剣でしたII",
+      "summary_sha256": "fecf81a0469bec906ee58f784e4b162ecee9d1098afbd050398def7b6abbe6c5",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2333",
+      "anime_name": "新網球王子 U-17 WORLD CUP 世界盃決賽成員決定戰",
+      "original_name": "新テニスの王子様 U-17 WORLD CUP 決勝メンバー決定戦",
+      "subject_id": 586941,
+      "subject_original_name": "新テニスの王子様 U-17 WORLD CUP 決勝メンバー決定戦",
+      "summary_sha256": "0d85bf075b8ed859899838ed49f1037160500f81610dee2689629b966110a8ae",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2293",
+      "anime_name": "冰劍的魔術師將要統一世界 第二季",
+      "original_name": "冰剣の魔術師が世界を統べるⅡ",
+      "subject_id": 654294,
+      "subject_original_name": "冰剣の魔術師が世界を統べるⅡ",
+      "summary_sha256": "aa00b5ff4a18152b7cb8dea08acf197fb0a268e80d8dbbffbe34772c396032c7",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2344",
+      "anime_name": "麵包小偷",
+      "original_name": "パンどろぼう",
+      "subject_id": 563508,
+      "subject_original_name": "パンどろぼう",
+      "summary_sha256": "db1214f280fad5e326608d225df0893d907fa48288172603af4d856ed8b4ecf1",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2296",
+      "anime_name": "桃源暗鬼 ～日光・華嚴之瀧篇～",
+      "original_name": "桃源暗鬼～日光・華厳の滝編～",
+      "subject_id": 617948,
+      "subject_original_name": "桃源暗鬼 ～日光・華厳の滝編～",
+      "summary_sha256": "616154b1751653a484b3cd292db1be1a2831ff5806390e64209eb5582ea72212",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2291",
+      "anime_name": "東京復仇者 三天戰爭篇",
+      "original_name": "東京リベンジャーズ 三天戦争編",
+      "subject_id": 499474,
+      "subject_original_name": "東京リベンジャーズ 三天戦争編",
+      "summary_sha256": "997078f1d59d37c2840d2bafe8234f5690d2d1517378b3057ffca808dd9736fb",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2323",
+      "anime_name": "Keroro軍曹☆",
+      "original_name": "ケロロ軍曹☆",
+      "subject_id": 617273,
+      "subject_original_name": "ケロロ軍曹☆",
+      "summary_sha256": "3cc5a7198463ff6ac58f7b21c7160ce80140509bc336fd39206b8a5a012e604a",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2292",
+      "anime_name": "野生的大魔王出現了！第二季",
+      "original_name": "野生のラスボスが現れた! 第2期",
+      "subject_id": 616808,
+      "subject_original_name": "野生のラスボスが現れた！第2期",
+      "summary_sha256": "56ae8f44804fc62a5c174ac43c655e26f71827a2a0f75f5373320be7868a3e27",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2284",
+      "anime_name": "彈珠汽水瓶裏的千歲同學 第二季度",
+      "original_name": "千歳くんはラムネ瓶のなか 第2クール",
+      "subject_id": 584847,
+      "subject_original_name": "千歳くんはラムネ瓶のなか 第2クール",
+      "summary_sha256": "d404ec17f60ebaa73dfecdef6c7246d085968660037e7dbd88d4227e3318fa75",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2288",
+      "anime_name": "黑色五葉草 第二季",
+      "original_name": "ブラッククローバー 2nd Season",
+      "subject_id": 567896,
+      "subject_original_name": "ブラッククローバー 2nd Season",
+      "summary_sha256": "bf3eaab1a7816ad7cebe121243f3cc68963730c7e002447e6b9881189b81a9f5",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2346",
+      "anime_name": "Funbarus",
+      "original_name": "ふんばるず",
+      "subject_id": 701565,
+      "subject_original_name": "ふんばるず",
+      "summary_sha256": "29f00193dde45090d06a3beb76fc4f56020cd09377073c70212a8613335ac77b",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2337",
+      "anime_name": "恐怖收集者",
+      "original_name": "恐怖コレクター",
+      "subject_id": 613256,
+      "subject_original_name": "恐怖コレクター",
+      "summary_sha256": "b0593179487a4e74deb95ed7c6cdde42e0dc21a097bcc4b71a82a326201c0a7e",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2311",
+      "anime_name": "亂馬½ 第三季",
+      "original_name": "らんま1/2 第3期",
+      "subject_id": 637802,
+      "subject_original_name": "らんま1/2 第3期",
+      "summary_sha256": "a110bda46bcb86eaac52111657373db2e81fe654c35ca1f67433c24e09e5cbb1",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2339",
+      "anime_name": "Dreamland",
+      "original_name": "dreamland",
+      "subject_id": 559080,
+      "subject_original_name": "Dreamland",
+      "summary_sha256": "59f071534cc45fcdca83ede45f68fa6048cb1bfa582293bd0127bfaed77b0372",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2345",
+      "anime_name": "小狸貓和小狐狸",
+      "original_name": "タヌキとキツネ",
+      "subject_id": 638081,
+      "subject_original_name": "タヌキとキツネ",
+      "summary_sha256": "166a50327ba055714a1b50b907e3e7992e5bc2af91b60e280c420f1b028cb844",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2342",
+      "anime_name": "軟軟噗尼寵物小精靈 4",
+      "original_name": "ぷにるんず ぷに４",
+      "subject_id": 646586,
+      "subject_original_name": "ぷにるんず ぷに４",
+      "summary_sha256": "9222e61d97b645f2670b32dce22b1b0e014a68f392ccd6e66f0e1ea04fdbaf79",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2290",
+      "anime_name": "青春盒子 第二季",
+      "original_name": "アオのハコ Season2",
+      "subject_id": 548156,
+      "subject_original_name": "アオのハコ Season 2",
+      "summary_sha256": "ddef28598cfbdf07733975d9c235247c8a7d14ee31dab1097c14adcf35ca1286",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2298",
+      "anime_name": "青之蘆葦 第二季",
+      "original_name": "アオアシ Season2",
+      "subject_id": 555605,
+      "subject_original_name": "アオアシ Season 2",
+      "summary_sha256": "2addab25099a4ac9372adf3a2d712b769049e178e74b99dc2218d9d5b1df128e",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2327",
+      "anime_name": "魔法姊妹露露特莉莉 2nd cour",
+      "original_name": "魔法の姉妹ルルットリリィ 第2クール",
+      "subject_id": 634210,
+      "subject_original_name": "魔法の姉妹ルルットリリィ 第2クール",
+      "summary_sha256": "90e9d64411a02ee608837b08a153297b9aab709266623a4a44316d2573760ead",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2328",
+      "anime_name": "殺手旅店 第二季",
+      "original_name": "ホテル・インヒューマンズ 第2期",
+      "subject_id": 589775,
+      "subject_original_name": "ホテル・インヒューマンズ 第2期",
+      "summary_sha256": "d587b1e87057b6a581baa0b8dc215b722f9f8e72d22fdb85ef68b773b9b7a6f6",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2285",
+      "anime_name": "轉生貴族憑鑑定技能扭轉人生 第三季",
+      "original_name": "転生貴族、鑑定スキルで成り上がる 第3期",
+      "subject_id": 530104,
+      "subject_original_name": "転生貴族、鑑定スキルで成り上がる 第3期",
+      "summary_sha256": "22af133ff1d3f6d70cd8c099d43c68d321e9529ce59bba3af357fc32c1980075",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2324",
+      "anime_name": "異境奇緣",
+      "original_name": "彼方から",
+      "subject_id": 636058,
+      "subject_original_name": "彼方から",
+      "summary_sha256": "c636080797ccc003c44fac24ba63df67e5d1dccc66450c4c403fbcb50e6ac010",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2340",
+      "anime_name": "因為滑鼠遊標似乎可以操控現實，所以我要瘋狂點擊女孩子",
+      "original_name": "マウスカーソルで現実を操作できるようになったので、女の子をいっぱいクリックしまーす",
+      "subject_id": 698032,
+      "subject_original_name": "マウスカーソルで 現実を操作できるようになったので、女の子をいっぱいクリックしまーす",
+      "summary_sha256": "2acc2a4a20635e841df7d8a65d8fac16d87bf9ad87a60798112138067dc17e5f",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2335",
+      "anime_name": "女友的朋友",
+      "original_name": "彼女の友達",
+      "subject_id": 647220,
+      "subject_original_name": "彼女の友達",
+      "summary_sha256": "271a3c89da7a4d153a9845ea1d128f5a8f4f574db944bb2ed7b97df205f95c9b",
+      "source_snapshot_date": "2026-10-14"
+    },
+    {
+      "quarter": "2026_秋",
+      "card_id": "anime-2336",
+      "anime_name": "與暗黑召喚師秘密戀愛中",
+      "original_name": "ダークサモナーとデキている",
+      "subject_id": 630160,
+      "subject_original_name": "ダークサモナーとデキている",
+      "summary_sha256": "888e8b1e93a6cf0ee6187858e66b5716ef4ff1c918da6447536c876448826f06",
+      "source_snapshot_date": "2026-10-14"
+    }
+  ],
+  "stories_left_unfilled": [
+    {
+      "card_id": "anime-2295",
+      "anime_name": "佐佐木與文鳥小嗶 第二季",
+      "subject_name": "佐々木とピーちゃん 第2期",
+      "summary_length": 907
+    },
+    {
+      "card_id": "anime-2289",
+      "anime_name": "重生者的魔法一定要特別 第二季",
+      "subject_name": "帰還者の魔法は特別です 第2期",
+      "summary_length": 586
+    },
+    {
+      "card_id": "anime-2308",
+      "anime_name": "冰之城牆 第二季",
+      "subject_name": "氷の城壁 第2期",
+      "summary_length": 0
+    },
+    {
+      "card_id": "anime-2338",
+      "anime_name": "Welsh & Shedar",
+      "subject_name": "Welsh & Shedar",
+      "summary_length": 1317
+    },
+    {
+      "card_id": "anime-2279",
+      "anime_name": "藥師少女的獨語 第三季 前半",
+      "subject_name": "薬屋のひとりごと 第3期",
+      "summary_length": 269
+    },
+    {
+      "card_id": "anime-2343",
+      "anime_name": "鼠小弟的小背心 第二季",
+      "subject_name": "ねずみくんのチョッキ 第2期",
+      "summary_length": 0
+    },
+    {
+      "card_id": "anime-2303",
+      "anime_name": "夜櫻家大作戰 第二季 第二部分",
+      "subject_name": "夜桜さんちの大作戦 第2期 第2クール",
+      "summary_length": 0
+    },
+    {
+      "card_id": "anime-2329",
+      "anime_name": "鑽石王牌 actⅡ第2季 2nd cour",
+      "subject_name": "ダイヤのA actⅡ Second Season 第2クール",
+      "summary_length": 0
+    }
+  ],
+  "official_catalogue": {
+    "total_episodes": null,
+    "aired_episodes": 148,
+    "airing_status": "unknown",
+    "episode_count_status": "unknown",
+    "fetch_state": "ok",
+    "source_urls": [
+      "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list",
+      "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=15"
+    ],
+    "checked_at": "2026-10-16T09:11:34.886892+08:00",
+    "attempted_at": "2026-10-16T09:11:34.886892+08:00",
+    "end_date": null,
+    "note": "已自動核對 NHK 全部 15 頁、148 個不同節目 URL；依首播日期確認已播 148 個，排除當日及未來節目。總數與終了未公告，不推測完結；每七天複查，失敗時保留舊資料。",
+    "source_kind": "official_catalogue",
+    "source_snapshot_date": null
+  },
+  "changed_records_metadata_or_story": 385
+}
