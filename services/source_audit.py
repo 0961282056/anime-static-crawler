@@ -254,7 +254,13 @@ def run_source_audit(
             if anime.external_ids.anilist:
                 group["ids"].add(anime.external_ids.anilist)
             candidate = source_cards.get(anime.bangumi_id)
-            same_identity = candidate and identity(candidate) == identity(anime)
+            # Text availability is tied to the card and its two names. A BG ID
+            # resolved by the enricher may be absent from the source HTML.
+            same_card = candidate and (
+                candidate.bangumi_id,
+                candidate.anime_name,
+                candidate.original_name,
+            ) == (anime.bangumi_id, anime.anime_name, anime.original_name)
             unavailable_reason = (
                 "source_fetch_or_parse_failed"
                 if item["result"] == "error"
@@ -264,7 +270,7 @@ def run_source_audit(
             )
             group["availability"].append(
                 optional_field_availability(
-                    anime, candidate if same_identity else None, unavailable_reason
+                    anime, candidate if same_card else None, unavailable_reason
                 )
             )
             if (

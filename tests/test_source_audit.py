@@ -327,6 +327,37 @@ def test_full_audit_uses_explicit_missing_link_and_preserves_all_files(
     )
 
 
+def test_optional_availability_does_not_require_source_to_repeat_resolved_bg_id(
+    tmp_path, anime
+):
+    repository = DataRepository(tmp_path / "data", DataQualityPolicy())
+    missing_story = anime.model_copy(
+        update={"story": "暫無簡介", "external_ids": ExternalIds(bangumi=999)}
+    )
+    save(repository, missing_story)
+    source = SimpleNamespace(
+        fetch_quarter_html=lambda *_: (
+            "https://acgsecrets.hk/bangumi/202401/",
+            card(anime),
+        )
+    )
+    report = run_source_audit(
+        repository.data_dir,
+        now=NOW,
+        source_client=source,
+        secondary_client=SimpleNamespace(fetch=lambda _: {}),
+    )
+    assert (
+        report["identities"][0]["primary_observations"][0][
+            "optional_field_availability"
+        ]["story"]
+        == "absent_at_source"
+    )
+    assert (
+        report["identities"][0]["secondary"] == []
+    )  # Secondary ID inheritance remains stricter.
+
+
 def test_failures_are_partial_report_not_false_coverage_or_freshness(tmp_path, anime):
     repository = DataRepository(tmp_path / "data", DataQualityPolicy())
     save(repository, anime)
