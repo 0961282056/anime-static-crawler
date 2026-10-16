@@ -34,6 +34,7 @@ dist/*
 retention-plan*.json
 *.tmp
 /tmp/
+/audit-output/
 
 # Editor and operating-system files
 .DS_Store

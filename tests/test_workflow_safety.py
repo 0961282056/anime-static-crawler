@@ -149,6 +149,22 @@ def test_crawler_path_allowlist_handles_unicode_json_names_safely() -> None:
     assert "anime-data-${{ github.run_id }}" in crawler
 
 
+def test_source_review_notifications_keep_issue_writes_out_of_fetch_job() -> None:
+    workflow = _workflow("source-audit.yml")
+    fetch = _job_section(workflow, "source-audit")
+    notify = _job_section(workflow, "notify-reviews")
+    assert "issues: write" not in fetch
+    assert "GH_TOKEN" not in fetch
+    assert "issues: write" in notify
+    assert "always()" in notify
+    assert "github.ref == 'refs/heads/main'" in notify
+    assert "source-audit-${{ github.run_id }}" in notify
+    assert "notify-source-reviews" in notify
+    assert "environment: crawler-production" not in workflow
+    assert "CLOUDINARY_" not in workflow
+    assert "contents: write" not in workflow
+
+
 def test_retention_workflows_are_manual_and_execution_stops_during_crawling() -> None:
     plan = _workflow("retention-plan.yml")
     execute = _workflow("retention-execute.yml")

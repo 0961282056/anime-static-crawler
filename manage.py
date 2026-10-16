@@ -226,6 +226,8 @@ def parse_args() -> argparse.Namespace:
             "verify-dist",
             "validate-all",
             "quality-report",
+            "source-audit",
+            "notify-source-reviews",
             "notify-workflow",
             "selector-canary",
             "notify-selector-canary-failure",
@@ -235,6 +237,41 @@ def parse_args() -> argparse.Namespace:
 
 
 def execute_command(command: str) -> None:
+    if command == "notify-source-reviews":
+        from services.review_notifications import publish_from_environment
+
+        result = publish_from_environment(
+            os.getenv("SOURCE_REVIEW_REPORT", "audit-output/source-audit.json")
+        )
+        print(result)
+        summary_path = os.getenv("GITHUB_STEP_SUMMARY", "").strip()
+        if summary_path:
+            with Path(summary_path).open("a", encoding="utf-8") as summary:
+                summary.write(f"## 人工複查通知\n\n{result}\n")
+        return
+    if command == "source-audit":
+        from services.errors import SourceFetchError
+        from services.source_audit import run_source_audit, write_audit_report
+
+        paths = ProjectPaths.from_environment()
+        output = Path(os.getenv("SOURCE_AUDIT_OUTPUT", "audit-output"))
+        # Audit artifacts must never overwrite public quarterly data.
+        if output.resolve().is_relative_to(paths.output_dir.resolve()):
+            raise ValueError(
+                "SOURCE_AUDIT_OUTPUT must be outside the public output directory"
+            )
+        report = run_source_audit(paths.data_dir)
+        content = write_audit_report(report, output)
+        print(content)
+        summary_path = os.getenv("GITHUB_STEP_SUMMARY", "").strip()
+        if summary_path:
+            with Path(summary_path).open("a", encoding="utf-8") as summary:
+                summary.write(content)
+        if report["errors"]:
+            raise SourceFetchError(
+                "Source audit incomplete; see saved report for failed sources"
+            )
+        return
     if command == "notify-workflow":
         notify_workflow()
         return
