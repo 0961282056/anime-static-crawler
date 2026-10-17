@@ -172,10 +172,36 @@ def test_base_source_missing_text_preserves_attributed_summary_and_quality(
         candidate.model_copy(
             update={
                 "original_name": "另一作品",
-                "external_ids": ExternalIds(bangumi=300),
+                "external_ids": ExternalIds(bangumi=100, anilist=200),
             }
         )
     )
     changed = repository.load_quarter("2026", "秋")
     assert changed.anime_list[0].story == "暫無簡介"
     assert changed.anime_list[0].story_source is None
+
+
+@pytest.mark.parametrize(
+    "variant", ["作品 第2期＋", "作品 第3期", "作品 第2期 第2部分"]
+)
+def test_different_version_cannot_inherit_subject_story_or_episode_identity(
+    anime, variant
+):
+    from services.episode_metadata import subject_identity_matches
+
+    variant_record = anime.model_copy(update={"original_name": variant})
+    subject = {"id": 100, "type": 2, "name": "作品 第2期", "summary": SUMMARY}
+    assert not subject_identity_matches(variant_record, subject)
+    assert (
+        enrich_story(variant_record, subject, NOW, method="bangumi_api")
+        == variant_record
+    )
+
+
+def test_fullwidth_and_whitespace_normalization_preserves_version_symbol(anime):
+    from services.episode_metadata import subject_identity_matches
+
+    variant = anime.model_copy(update={"original_name": "作品　第２期＋"})
+    subject = {"id": 100, "type": 2, "name": "作品 第2期+", "summary": SUMMARY}
+    assert subject_identity_matches(variant, subject)
+    assert enrich_story(variant, subject, NOW, method="bangumi_api").story == SUMMARY

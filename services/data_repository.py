@@ -15,6 +15,7 @@ from models import TAIPEI_TZ, Anime, DataQuality, ExternalIds, QuarterDataset
 from services.atomic_io import atomic_write_json
 from services.diagnostics import operation
 from services.errors import DataContractError
+from services.source_identity import conflicting_providers
 
 QUARTER_FILE_PATTERN = re.compile(r"^(\d{4})_(冬|春|夏|秋)\.json$")
 
@@ -176,6 +177,15 @@ class DataRepository:
         )
         for index, record in enumerate(validated_records):
             old = previous_by_id.get(record.bangumi_id)
+            if old and (
+                conflicts := conflicting_providers(
+                    old.external_ids, record.external_ids
+                )
+            ):
+                raise DataContractError(
+                    f"Conflicting explicit source IDs for {record.bangumi_id}: "
+                    f"{', '.join(conflicts)}; reviewed identity correction required"
+                )
             if old and record.episodes is None:
                 changed_identity = (
                     (
