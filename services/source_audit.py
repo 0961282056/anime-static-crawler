@@ -257,7 +257,13 @@ def run_source_audit(
         for anime in dataset.anime_list:
             group = grouped.setdefault(
                 identity(anime),
-                {"copies": [], "quarters": [], "availability": [], "ids": set()},
+                {
+                    "copies": [],
+                    "quarters": [],
+                    "availability": [],
+                    "source_links": [],
+                    "ids": set(),
+                },
             )
             group["copies"].append(anime)
             group["quarters"].append(quarter)
@@ -283,12 +289,20 @@ def run_source_audit(
                     anime, candidate if same_card else None, unavailable_reason
                 )
             )
-            if (
-                candidate
-                and same_card
+            link_verified = bool(
+                same_card
                 and candidate.external_ids.bangumi in (None, anime.external_ids.bangumi)
-                and candidate.external_ids.anilist
-            ):
+            )
+            group["source_links"].append(
+                {
+                    "state": "verified" if link_verified else unavailable_reason,
+                    "checked_at": now.isoformat() if link_verified else None,
+                    "anilist_id": candidate.external_ids.anilist
+                    if link_verified
+                    else None,
+                }
+            )
+            if link_verified and candidate.external_ids.anilist:
                 group["ids"].add(candidate.external_ids.anilist)
 
     ids = sorted(
@@ -367,11 +381,13 @@ def run_source_audit(
                     if copy.episodes
                     else "unmatched",
                     "optional_field_availability": availability,
+                    "source_link_observation": source_link,
                 }
-                for quarter, copy, availability in zip(
+                for quarter, copy, availability, source_link in zip(
                     group["quarters"],
                     group["copies"],
                     group["availability"],
+                    group["source_links"],
                     strict=True,
                 )
             ],

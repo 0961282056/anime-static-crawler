@@ -129,10 +129,20 @@ def _explicitly_resolved(case: dict, report: dict) -> bool:
             for q in report["quarters"]
             if q.get("checked_at") and q["result"] != "error"
         }
-        return (
-            len(row.get("explicit_anilist_ids", [])) == 1
-            and set(case["quarters"]) <= checked
-        )
+        ids = row.get("explicit_anilist_ids", [])
+        if len(ids) != 1:
+            return False
+        # A missing source link leaves the stored ID as the only candidate;
+        # that is not evidence that the earlier conflict was resolved.
+        verified = {
+            observation["quarter"]
+            for observation in row.get("primary_observations", [])
+            if (link := observation.get("source_link_observation"))
+            and link.get("state") == "verified"
+            and link.get("checked_at")
+            and link.get("anilist_id") == ids[0]
+        }
+        return set(case["quarters"]) <= checked & verified
     return False
 
 
