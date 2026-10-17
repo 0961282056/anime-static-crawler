@@ -109,6 +109,13 @@ class DataQualityPolicy:
                     f"{len(records)}; minimum allowed is {minimum_count}"
                 )
 
+            missing_ids = {a.bangumi_id for a in previous.anime_list} - set(ids)
+            if missing_ids:
+                raise DataContractError(
+                    "Previously stored cards disappeared; reviewed removal required: "
+                    + ", ".join(sorted(missing_ids))
+                )
+
 
 class DataRepository:
     def __init__(self, data_dir: Path, policy: DataQualityPolicy) -> None:

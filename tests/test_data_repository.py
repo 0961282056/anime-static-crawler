@@ -269,3 +269,29 @@ def test_conflicting_known_link_rejects_entire_write(
     with pytest.raises(DataContractError, match=provider):
         _write(repository, [incoming])
     assert result.path.read_bytes() == original
+
+
+@pytest.mark.parametrize("replacement", [False, True])
+def test_single_disappearing_card_blocks_write_even_with_new_replacement(
+    tmp_path, anime_record_factory, replacement
+):
+    repository = _repository(tmp_path)
+    records = [anime_record_factory(i) for i in range(4)]
+    result = _write(repository, records)
+    original = result.path.read_bytes()
+    incoming = records[:3]
+    if replacement:
+        incoming.append(anime_record_factory(5))
+    with pytest.raises(DataContractError, match="disappeared.*anime-0003"):
+        _write(repository, incoming)
+    assert result.path.read_bytes() == original
+
+
+def test_new_card_with_all_previous_ids_is_allowed(tmp_path, anime_record_factory):
+    repository = _repository(tmp_path)
+    records = [anime_record_factory(i) for i in range(4)]
+    _write(repository, records)
+    records.append(anime_record_factory(5))
+    result = _write(repository, records)
+    assert result.changed
+    assert result.current_count == 5
