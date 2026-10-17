@@ -507,3 +507,58 @@ def test_audit_cli_writes_partial_report_before_failing(
     monkeypatch.setenv("SOURCE_AUDIT_OUTPUT", str(project_paths.data_dir))
     with pytest.raises(ValueError, match="outside"):
         manage.execute_command("source-audit")
+
+
+@pytest.mark.parametrize(
+    ("variant", "state", "anilist_id"),
+    [
+        ("unchanged", "verified", 20),
+        ("missing_anilist", "verified", None),
+        ("missing_bangumi", "verified", 20),
+        ("changed_original", "source_identity_changed", None),
+        ("conflicting_bangumi", "source_identity_changed", None),
+        ("absent_card", "source_card_absent", None),
+        ("offline", "source_fetch_or_parse_failed", None),
+    ],
+)
+def test_audit_distinguishes_fresh_explicit_links_from_stored_ids(
+    tmp_path, anime, variant, state, anilist_id
+):
+    repository = DataRepository(tmp_path / "data", DataQualityPolicy())
+    save(repository, anime)
+    path = repository.validate_all()[0]
+    before = path.read_bytes()
+    document = card(anime)
+    if variant == "missing_anilist":
+        document = document.replace('<a href="https://anilist.co/anime/20">AL</a>', "")
+    elif variant == "missing_bangumi":
+        document = document.replace('<a href="https://bgm.tv/subject/10">BG</a>', "")
+    elif variant == "changed_original":
+        document = card(anime.model_copy(update={"original_name": "作品 第3期"}))
+    elif variant == "conflicting_bangumi":
+        document = document.replace(
+            "https://bgm.tv/subject/10", "https://bgm.tv/subject/11"
+        )
+    elif variant == "absent_card":
+        document = card(anime.model_copy(update={"bangumi_id": "anime-2"}))
+
+    def source(*_):
+        if variant == "offline":
+            raise SourceFetchError("offline")
+        return "https://acgsecrets.hk/bangumi/202401/", document
+
+    result = run_source_audit(
+        repository.data_dir,
+        now=NOW,
+        source_client=SimpleNamespace(fetch_quarter_html=source),
+        secondary_client=SimpleNamespace(fetch=lambda _: {}),
+    )
+    observed = result["identities"][0]["primary_observations"][0][
+        "source_link_observation"
+    ]
+    assert observed == {
+        "state": state,
+        "checked_at": NOW.isoformat() if state == "verified" else None,
+        "anilist_id": anilist_id,
+    }
+    assert path.read_bytes() == before

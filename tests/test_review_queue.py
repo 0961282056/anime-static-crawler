@@ -281,3 +281,75 @@ def test_evidence_returning_to_old_fingerprint_sends_new_notification():
         assert publish(data, client)["updated"] == 1
     assert sum(c["user"]["login"] == BOT for c in client.comments[1]) == 3
     assert publish(changed, client)["unchanged"] == 1
+
+
+@pytest.mark.parametrize(
+    "link",
+    [
+        None,
+        {"state": "verified", "checked_at": NOW.isoformat(), "anilist_id": None},
+        {"state": "source_card_absent", "checked_at": None, "anilist_id": None},
+        {"state": "source_identity_changed", "checked_at": None, "anilist_id": None},
+        {"state": "verified", "checked_at": None, "anilist_id": 20},
+        {"state": "verified", "checked_at": NOW.isoformat(), "anilist_id": 21},
+    ],
+)
+def test_missing_or_unbound_source_link_cannot_resolve_deferred_conflict(link):
+    client = GitHub()
+    data = report(1)
+    row = data["identities"][0]
+    row.update(
+        manual_review=None,
+        secondary_unavailable_reason="conflicting_explicit_ids",
+        explicit_anilist_ids=[20, 21],
+    )
+    assert publish(data, client, max_changes=0)["pending"] == 1
+    before = deepcopy(_load_queue(client.issues())[1])
+    row.pop("secondary_unavailable_reason")
+    row["explicit_anilist_ids"] = [20]
+    row["primary_observations"] = [
+        {"quarter": "2026_秋", "total_episodes": 12, "source_link_observation": link}
+    ]
+    data["quarters"] = [
+        {"quarter": "2026_秋", "checked_at": NOW.isoformat(), "result": "matched"}
+    ]
+    assert publish(data, client, max_changes=0)["pending"] == 1
+    assert _load_queue(client.issues())[1] == before
+    assert not any(MARKER in issue["body"] for issue in client.rows.values())
+
+
+@pytest.mark.parametrize("verified_quarters", [1, 2])
+def test_conflict_resolution_requires_explicit_links_for_every_original_quarter(
+    verified_quarters,
+):
+    client = GitHub()
+    data = report(1)
+    row = data["identities"][0]
+    row.update(
+        manual_review=None,
+        quarters=["2026_夏", "2026_秋"],
+        secondary_unavailable_reason="conflicting_explicit_ids",
+        explicit_anilist_ids=[20, 21],
+    )
+    assert publish(data, client, max_changes=0)["pending"] == 1
+    row.pop("secondary_unavailable_reason")
+    row["explicit_anilist_ids"] = [20]
+    row["primary_observations"] = [
+        {
+            "quarter": quarter,
+            "total_episodes": 12,
+            "source_link_observation": {
+                "state": "verified",
+                "checked_at": NOW.isoformat(),
+                "anilist_id": 20,
+            },
+        }
+        for quarter in row["quarters"][:verified_quarters]
+    ]
+    data["quarters"] = [
+        {"quarter": q, "checked_at": NOW.isoformat(), "result": "matched"}
+        for q in row["quarters"]
+    ]
+    result = publish(data, client, max_changes=0)
+    assert result["pending"] == (1 if verified_quarters == 1 else 0)
+    assert not any(MARKER in issue["body"] for issue in client.rows.values())
