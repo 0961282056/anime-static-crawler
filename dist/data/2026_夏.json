@@ -734,10 +734,11 @@
           "https://bgm.tv/subject/630163",
           "https://bgm.tv/subject/630163/ep"
         ],
-        "checked_at": "2026-10-15T13:37:10.260269+08:00",
-        "attempted_at": "2026-10-15T13:37:10.260269+08:00",
+        "checked_at": "2026-10-17T16:00:39.755017+08:00",
+        "attempted_at": "2026-10-17T16:00:39.755017+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -858,7 +859,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ead6d3ae5fb394c3a398a16de4762519",
       "premiere_date": "四",
       "premiere_time": "21:40",
-      "story": "暫無簡介",
+      "story": "欢迎来到以架空城市「横滨」为舞台，这群野犬「汪！」气十足的日常生活！专门处理棘手案件的侦探事务所「武装侦探社」，以及以港口为地盘的犯罪组织「港口黑帮」，一如既往，火花四射、针锋相对。然而，就在此时，来海另一端的「公会」来袭！与此同时，军警最强特殊部队「猎犬」亦同步出击，「天人五衰」更引导着众人走向毁灭……！？这部大人气角色们以迷你姿态大闹特闹的搞笑外传，第二幕即将隆重登场！\r\n\r\n\r\n\r\n[简介原文]\r\n架空の都市「ヨコハマ」を舞台に吠えて噛みつき駆けまわる迷い犬たちの〝わん！〟だふるな日常へようこそ！\r\n相も変わらずバチバチ火花を散らすのは荒事専門の探偵事務所《武装探偵社》と港が縄張りの犯罪組織《ポートマフィア》。\r\nそして、そこへ── 大国より《組合（ギルド）》が襲来！さらに軍警最強の特殊部隊《猟犬》が牙をむき《天人五衰》が破滅への引導を渡す……！？\r\nいにしえの文豪の名を懐く者たちがその名になぞらえた「異能力」による死闘を繰り広げるアクションバトル大作「文豪ストレイドッグス」。\r\nその人気キャラクターたちが小さな姿で大暴れするギャグスピンオフバラエティショーの第二幕がついに！　オールスター大集合で上がります！",
       "original_name": "文豪ストレイドッグスわん！2",
       "external_ids": {
         "bangumi": 603352,
@@ -874,10 +875,18 @@
           "https://bgm.tv/subject/603352",
           "https://bgm.tv/subject/603352/ep"
         ],
-        "checked_at": "2026-10-15T13:37:14.016816+08:00",
-        "attempted_at": "2026-10-15T13:37:14.016816+08:00",
+        "checked_at": "2026-10-17T16:00:39.755017+08:00",
+        "attempted_at": "2026-10-17T16:00:39.755017+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 603352,
+        "checked_at": "2026-10-17T16:00:39.755017+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1528,10 +1537,11 @@
           "https://bgm.tv/subject/552533",
           "https://bgm.tv/subject/552533/ep"
         ],
-        "checked_at": "2026-10-15T13:37:24.075834+08:00",
-        "attempted_at": "2026-10-15T13:37:24.075834+08:00",
+        "checked_at": "2026-10-17T16:00:39.755017+08:00",
+        "attempted_at": "2026-10-17T16:00:39.755017+08:00",
         "end_date": null,
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -2138,14 +2148,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T03:51:54.296604+08:00",
+  "generated_at": "2026-10-17T16:00:39.755017+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202607/",
   "quality": {
     "source_count": 75,
     "record_count": 75,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 22,
+    "missing_story_count": 21,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

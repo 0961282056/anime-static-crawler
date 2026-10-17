@@ -912,7 +912,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/225a59c35003bef00402bfd758e0d6a2",
       "premiere_date": "四",
       "premiere_time": "26:50",
-      "story": "暫無簡介",
+      "story": "パワースポットとして人気の観光地 インドネシア・バリ島に暮らす\r\n“幸せを呼ぶ犬”とも呼ばれている 「アンジン・キンタマーニバリ」の\r\nキンタが幼いころ突然いなくなった 父親を探す旅をしながら、\r\n愛と開運を伝える\r\nショートトリップアニメです。",
       "original_name": "キンタマーニドッグ",
       "external_ids": {
         "bangumi": 366037,
@@ -928,10 +928,18 @@
           "https://bgm.tv/subject/366037",
           "https://bgm.tv/subject/366037/ep"
         ],
-        "checked_at": "2026-10-15T13:34:28.504770+08:00",
-        "attempted_at": "2026-10-15T13:34:28.504770+08:00",
+        "checked_at": "2026-10-17T16:00:39.755017+08:00",
+        "attempted_at": "2026-10-17T16:00:39.755017+08:00",
         "end_date": "2021-12-26",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 366037,
+        "checked_at": "2026-10-17T16:00:39.755017+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1753,14 +1761,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T03:51:54.296604+08:00",
+  "generated_at": "2026-10-17T16:00:39.755017+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202101/",
   "quality": {
     "source_count": 62,
     "record_count": 62,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 42,
+    "missing_story_count": 41,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

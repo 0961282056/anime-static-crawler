@@ -1,0 +1,36 @@
+{
+  "checked_on": "2026-10-17",
+  "diagnostic_example": "ProxyError: Unable to connect to proxy; Tunnel connection failed: 403 Forbidden",
+  "tls_verification": true,
+  "proxy_preserved": true,
+  "requests": [
+    {
+      "url": "https://kusuriyanohitorigoto.jp/season3/introduction/",
+      "error_type": "ProxyError",
+      "network_policy": "restricted; requested host absent from allowed egress rules",
+      "result": "Not verified; existing missing summary retained",
+      "runtime_revision": "63"
+    },
+    {
+      "url": "https://www.poplar.co.jp/pr/anime-nezumikun/",
+      "error_type": "ProxyError",
+      "network_policy": "restricted; requested host absent from allowed egress rules",
+      "result": "Not verified; existing missing summary retained",
+      "runtime_revision": "63"
+    },
+    {
+      "url": "https://mission-yozakura-family.com/onair/02.html",
+      "error_type": "ProxyError",
+      "network_policy": "restricted; requested host absent from allowed egress rules",
+      "result": "Not verified; existing missing summary retained",
+      "runtime_revision": "63"
+    },
+    {
+      "url": "https://diaace.com/",
+      "error_type": "ProxyError",
+      "network_policy": "restricted; requested host absent from allowed egress rules",
+      "result": "Not verified; existing missing summary retained",
+      "runtime_revision": "63"
+    }
+  ]
+}

@@ -2001,5 +2001,21 @@
       "https://bgm.tv/subject/237834"
     ],
     "scope_note": "精確卡片維持官方範圍待確認快照；不採合輯24話或母作品的跨季度快取。"
+  },
+  {
+    "card_id": "anime-1659",
+    "anime_name": "放學後少年花子君 續篇",
+    "source_original_name": "放課後少年花子くん (続編)",
+    "subject_id": 464594,
+    "subject_name": "放課後少年花子くん 続編",
+    "first_air_date": "2024-10-07",
+    "reviewed_on": "2026-10-17",
+    "basis": "Re-read the exact source card: explicit Bangumi 464594 link, sequel label, four episodes and 2024-10-07 25:35 first broadcast. Live linked subject is the same sequel/date; only parentheses around 続編 differ. Exact tuple only; base series, another season or plus version are not aliases.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202410/",
+      "https://api.bgm.tv/v0/subjects/464594",
+      "https://bgm.tv/subject/464594/ep"
+    ],
+    "scope_note": "僅限2024年10月7日首播的4話續篇；括號僅包住續編字樣，不包含本篇或其他季。"
   }
 ]

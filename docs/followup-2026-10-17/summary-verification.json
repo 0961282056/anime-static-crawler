@@ -1,0 +1,62 @@
+[
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-361",
+    "subject_id": 267018,
+    "subject_name": "みにとじ",
+    "subject_type": 2,
+    "first_air_date": "2019-01-05",
+    "summary_sha256": "cd063a48b7ce6c58f7472ed00ad2ce41cc01b5550e24195cb7a5663000b060b9",
+    "original_text_equal": true
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-235",
+    "subject_id": 302137,
+    "subject_name": "GO!GO!アトム",
+    "subject_type": 2,
+    "first_air_date": "2019-10-03",
+    "summary_sha256": "6876be28575f502d59643d3df678058ee7febe0f36ce4b8c7651ae8980ed8347",
+    "original_text_equal": true
+  },
+  {
+    "quarter": "2020_冬",
+    "card_id": "anime-235",
+    "subject_id": 302137,
+    "subject_name": "GO!GO!アトム",
+    "subject_type": 2,
+    "first_air_date": "2019-10-03",
+    "summary_sha256": "6876be28575f502d59643d3df678058ee7febe0f36ce4b8c7651ae8980ed8347",
+    "original_text_equal": true
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-235",
+    "subject_id": 302137,
+    "subject_name": "GO!GO!アトム",
+    "subject_type": 2,
+    "first_air_date": "2019-10-03",
+    "summary_sha256": "6876be28575f502d59643d3df678058ee7febe0f36ce4b8c7651ae8980ed8347",
+    "original_text_equal": true
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-717",
+    "subject_id": 366037,
+    "subject_name": "キンタマーニドッグ",
+    "subject_type": 2,
+    "first_air_date": "2021-01-15",
+    "summary_sha256": "af5a46e1c7bbf5d4a25c70b650b3206d0dbe0163990cba18a6fcba892190f71e",
+    "original_text_equal": true
+  },
+  {
+    "quarter": "2026_夏",
+    "card_id": "anime-2262",
+    "subject_id": 603352,
+    "subject_name": "文豪ストレイドッグス わん！２",
+    "subject_type": 2,
+    "first_air_date": "2026-07-02",
+    "summary_sha256": "34a1c1029351b2dc178950b6f756fab5b0aa85e78ccf3023ce9ef2adaccf90f1",
+    "original_text_equal": true
+  }
+]
