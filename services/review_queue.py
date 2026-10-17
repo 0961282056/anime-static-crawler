@@ -19,6 +19,7 @@ from services.review_notifications import (
     GitHubReviewClient,
     publish_cases,
     review_cases,
+    review_comments,
 )
 
 PAYLOAD = "<!-- queue-payload:"
@@ -135,20 +136,6 @@ def _explicitly_resolved(case: dict, report: dict) -> bool:
     return False
 
 
-def _comments(client: Any, number: int) -> list[dict]:
-    result = []
-    for page in range(1, 6):
-        batch = client.request(
-            "GET", f"/issues/{number}/comments", params={"per_page": 100, "page": page}
-        )
-        if not isinstance(batch, list):
-            raise RuntimeError("Invalid review comment response")
-        result.extend(batch)
-        if len(batch) < 100:
-            return result
-    raise RuntimeError("Review comment pagination budget exhausted")
-
-
 def remind_waiting_reviews(
     client: Any, issues: list[dict], *, assignee: str, today: date, max_changes: int
 ) -> tuple[int, int]:
@@ -156,7 +143,7 @@ def remind_waiting_reviews(
     for issue in sorted(issues, key=lambda item: item["number"]):
         if MARKER not in (issue.get("body") or ""):
             continue
-        comments = _comments(client, issue["number"])
+        comments = review_comments(client, issue["number"])
         decisions = [
             c
             for c in comments

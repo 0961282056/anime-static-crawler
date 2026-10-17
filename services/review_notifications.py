@@ -279,6 +279,20 @@ class GitHubReviewClient:
         )
 
 
+def review_comments(client: Any, number: int) -> list[dict]:
+    result = []
+    for page in range(1, 6):
+        batch = client.request(
+            "GET", f"/issues/{number}/comments", params={"per_page": 100, "page": page}
+        )
+        if not isinstance(batch, list):
+            raise RuntimeError("Invalid review comment response")
+        result.extend(batch)
+        if len(batch) < 100:
+            return result
+    raise RuntimeError("Review comment pagination budget exhausted")
+
+
 def publish_cases(
     cases: list[dict],
     client: Any,
@@ -328,11 +342,30 @@ def publish_cases(
         ).replace("\n", " ")[:180]
         if issue:
             number = issue["number"]
-            client.request(
-                "POST",
-                f"/issues/{number}/comments",
-                json={"body": f"@{assignee} 核對證據已有變更，請重新審查。\n\n" + body},
+            # A previous POST may have succeeded before its response or the
+            # following PATCH failed. Reconcile trusted comments first.
+            latest_notification = max(
+                (
+                    comment
+                    for comment in review_comments(client, number)
+                    if comment.get("user", {}).get("login") == BOT
+                    and prefix in comment.get("body", "")
+                ),
+                key=lambda comment: comment["id"],
+                default=None,
             )
+            notified = (
+                latest_notification is not None
+                and marker in latest_notification.get("body", "")
+            )
+            if not notified:
+                client.request(
+                    "POST",
+                    f"/issues/{number}/comments",
+                    json={
+                        "body": f"@{assignee} 核對證據已有變更，請重新審查。\n\n" + body
+                    },
+                )
             client.request(
                 "PATCH",
                 f"/issues/{number}",
