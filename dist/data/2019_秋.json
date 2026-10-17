@@ -7,7 +7,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6da139c6910705eb249cd0760a2a9fa6",
       "premiere_date": "一",
       "premiere_time": "22:00",
-      "story": "暫無簡介",
+      "story": "「その啓示は、静かにそっと訪れる―」\r\n東京地検特捜部検事・正崎善は、製薬会社の不正事件を追ううちに、一枚の奇妙な書面を発見する。\r\nそこに残されていたのは、毛や皮膚のまじった異様な血痕と、紙一面を埋め尽くすアルファベットの『F』の文字。捜査線上に浮かんだ参考人のもとを訪ねる正崎だが、そこには信じがたい光景が広がっていた。\r\n時を同じくして、東京都西部には『新域』と呼ばれる新たな独立自治体が誕生しようとしていた。\r\n正崎が事件の謎を追い求めるうちに、次第に巨大な陰謀が見え始め――？",
       "original_name": "バビロン",
       "external_ids": {
         "bangumi": 240835,
@@ -23,10 +23,18 @@
           "https://bgm.tv/subject/240835",
           "https://bgm.tv/subject/240835/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:17.090739+08:00",
+        "attempted_at": "2026-10-17T17:35:17.090739+08:00",
         "end_date": "2020-01-27",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 240835,
+        "checked_at": "2026-10-17T17:35:18.559925+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -51,10 +59,11 @@
           "https://bgm.tv/subject/277217",
           "https://bgm.tv/subject/277217/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:17.622552+08:00",
+        "attempted_at": "2026-10-17T17:35:17.622552+08:00",
         "end_date": "2020-03-30",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -63,7 +72,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bbc599640d94650e8e53a1acc1eb7f3e",
       "premiere_date": "一",
       "premiere_time": "23:00",
-      "story": "暫無簡介",
+      "story": "『スタンド(STand Alone National Department)』\r\n麻薬取締官、刑事、情報屋、著名人、名家の人間といった官民に関係なく適正のある者で構成された、薬物絡みの事件を取り扱う独立捜査機関。\r\n\r\n新人マトリである泉玲は、［スタンド］の候補者として選出されたメンバーのスカウト役に任命される。\r\n\r\nその候補者として選出されたメンバーを待ち受けていたのは、\r\n異なる正義を持つ組織間の対立と、謎のドラッグに紐付く未解決事件であった。\r\n彼らがたどりつく真実とは――",
       "original_name": "スタンドマイヒーローズ PIECE OF TRUTH",
       "external_ids": {
         "bangumi": 260729,
@@ -79,10 +88,18 @@
           "https://bgm.tv/subject/260729",
           "https://bgm.tv/subject/260729/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:18.174738+08:00",
+        "attempted_at": "2026-10-17T17:35:18.174738+08:00",
         "end_date": "2019-12-23",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 260729,
+        "checked_at": "2026-10-17T17:35:19.659927+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -107,10 +124,11 @@
           "https://bgm.tv/subject/238962",
           "https://bgm.tv/subject/238962/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:20.379134+08:00",
+        "attempted_at": "2026-10-17T17:35:20.379134+08:00",
         "end_date": "2019-12-23",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -119,7 +137,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7f5c888c828d03922ba5e08d51c5f92f",
       "premiere_date": "二",
       "premiere_time": "07:30",
-      "story": "暫無簡介",
+      "story": "这个世界里还有许多我们不了解的神奇生物。在某座星球上，诞生了一只不可思议的生物。它的名字叫「香蕉喵」。它们会在怎样的星球上诞生，过上怎样的生活呢？而且，如果它们也梦想来到地球的话…",
       "original_name": "ばなにゃ ふしぎななかまたち",
       "external_ids": {
         "bangumi": 288311,
@@ -135,10 +153,18 @@
           "https://bgm.tv/subject/288311",
           "https://bgm.tv/subject/288311/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:20.928742+08:00",
+        "attempted_at": "2026-10-17T17:35:20.928742+08:00",
         "end_date": "2019-12-24",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 288311,
+        "checked_at": "2026-10-17T17:35:22.410030+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -163,10 +189,11 @@
           "https://bgm.tv/subject/267615",
           "https://bgm.tv/subject/267615/ep"
         ],
-        "checked_at": "2026-10-13T21:14:33.425420+08:00",
-        "attempted_at": "2026-10-13T21:14:33.425420+08:00",
+        "checked_at": "2026-10-17T17:34:01.182214+08:00",
+        "attempted_at": "2026-10-17T17:34:01.182214+08:00",
         "end_date": "2020-03-31",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -175,7 +202,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4e7cc99cf3074a5f09aca1fa87b667c7",
       "premiere_date": "二",
       "premiere_time": "23:00",
-      "story": "暫無簡介",
+      "story": "少女たちは戦う\r\n大切な仲間のために！\r\n\r\n互いに争い続けていた5つの異世界からの来訪者 ｢ゼクス｣ たちと休戦条約を結ぶことで、滅亡の危機を回避した人類。\r\n主人公・各務原あづみは青の世界の命を受け、パートナーとなったゼクス・リゲルとともに新設された女子校 ｢富士御崎学園｣ に向かう。\r\nこの学園で彼女たちはどのような ｢運命｣ に出会うのだろうか。",
       "original_name": "Z/X Code reunion",
       "external_ids": {
         "bangumi": 225941,
@@ -191,10 +218,18 @@
           "https://bgm.tv/subject/225941",
           "https://bgm.tv/subject/225941/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:21.492234+08:00",
+        "attempted_at": "2026-10-17T17:35:21.492234+08:00",
         "end_date": "2019-12-24",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 225941,
+        "checked_at": "2026-10-17T17:35:22.960003+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -203,7 +238,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/93a44ec7f1daf32c2923d5f050e47ff3",
       "premiere_date": "二",
       "premiere_time": "23:30",
-      "story": "暫無簡介",
+      "story": "操控机器的“Jetter”和用水枪攻击对手的“Shooter”二人一组乘搭摩托艇，在水面飞驰的运动“Jet Race”成为世界的主流运动。\r\n有着一位传说中的Jetter的母亲，自己也梦想成为Jet Race选手的波黄凛，离开了故乡的岛屿，来到了东京浅草。在那里她遇到了冷酷的美少女苍井美沙，两人成为了搭档。\r\n她们与对手们展开激烈比赛的同时，也在一点点地加深彼此间的牵绊。",
       "original_name": "神田川JET GIRLS",
       "external_ids": {
         "bangumi": 288010,
@@ -219,10 +254,18 @@
           "https://bgm.tv/subject/288010",
           "https://bgm.tv/subject/288010/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:23.680072+08:00",
+        "attempted_at": "2026-10-17T17:35:23.680072+08:00",
         "end_date": "2020-01-07",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 288010,
+        "checked_at": "2026-10-17T17:35:25.159922+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -231,7 +274,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c50c87b2d338e97a64f82b4ef2ba9f32",
       "premiere_date": "二",
       "premiere_time": "25:00",
-      "story": "暫無簡介",
+      "story": "距離10m、直径1mm、弾数60発、競技時間45分。硬いジャケットを身にまとい、見た目よりもずっと気力を振り絞る過酷な勝負の世界──ビームライフル競技。\r\n\r\n　……のはずが、誰もわかってくれないのが知名度の低いスポーツのつらいところ。でも私、世界を目指してます！\r\n\r\n　千鳥高校に偶然集った、小倉ひかり、渋沢泉水、姪浜エリカ、五十嵐雪緒の女子高生4人がおくる、ゆるーいけどひたむきな射撃部ライフ!!",
       "original_name": "ライフル・イズ・ビューティフル",
       "external_ids": {
         "bangumi": 263771,
@@ -247,10 +290,18 @@
           "https://bgm.tv/subject/263771",
           "https://bgm.tv/subject/263771/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:24.227968+08:00",
+        "attempted_at": "2026-10-17T17:35:24.227968+08:00",
         "end_date": "2020-01-18",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 263771,
+        "checked_at": "2026-10-17T17:35:25.709934+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -259,7 +310,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/874149148c67406a3bab60c601f41b79",
       "premiere_date": "二",
       "premiere_time": "25:29",
-      "story": "暫無簡介",
+      "story": "クイーンになる夢も、将来の夢も諦めたくない！\r\nこの一瞬に一生を懸ける―――――\r\n高校2年生の夏、新入部員と共に全国大会へ出場した千早たち瑞沢高校かるた部。\r\n団体戦では常勝校・富士崎高校を破り瑞沢高校が念願の初優勝、個人戦ではB級が太一、\r\nそしてA級では新が優勝を果たす。\r\n千早は団体戦で負傷した右指の手術も無事成功し、太一と共に富士崎高校の夏合宿に参加する。\r\n顧問の桜沢先生によるスパルタな指導にもめげず、名人・クイーン戦に照準を合わせ練習に励んでいた矢先、出場が危ぶまれるある事実を知ることに……\r\n一方、チームを持つことでかるたへの可能性が広がることが知った新は、かるた部創設に向け動き出していた。\r\n新たなるライバルの登場、これからの進路、クイーンになる夢……\r\n等身大の高校生によるひたむきでまっすぐな想いと情熱が溢れ出す第3期が開幕！",
       "original_name": "ちはやふる3",
       "external_ids": {
         "bangumi": 238815,
@@ -275,10 +326,18 @@
           "https://bgm.tv/subject/238815",
           "https://bgm.tv/subject/238815/ep"
         ],
-        "checked_at": "2026-10-13T21:14:33.425420+08:00",
-        "attempted_at": "2026-10-13T21:14:33.425420+08:00",
+        "checked_at": "2026-10-17T17:35:24.786413+08:00",
+        "attempted_at": "2026-10-17T17:35:24.786413+08:00",
         "end_date": "2020-03-24",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 238815,
+        "checked_at": "2026-10-17T17:35:26.259933+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -287,7 +346,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a6107d2f2e030025f5679e722719b622",
       "premiere_date": "三",
       "premiere_time": "17:55",
-      "story": "暫無簡介",
+      "story": "いまだ人と、人ならざるものの世界が、分かたれてはいなかった古の物語。\r\n三千年の時を経て復活した、魔神族の精鋭〈十戒〉との戦いに 〈七つの大罪〉は敗れ、メリオダスは死んだ。\r\nそして、ブリタニアには暗黒の時代が訪れる。\r\nディアンヌ、キング、ゴウセルも行方不明の中、リオネス王国に迫る〈十戒〉の魔の手。\r\nエスカノールがエスタロッサを退けるも劣勢は続く。\r\nそして、エリザベスが窮地に陥ったその時、圧倒的な力を取り戻したメリオダスが煉獄より復活を果たす。\r\n〈十戒〉のグレイロードとフラウドリンは討たれリオネス王国は守られた。\r\n復旧する建物。しかし、人々の恐怖に傷ついた心は癒えない。\r\nそして、力を取り戻した事でメリオダスは 最凶の魔神と呼ばれた時代に逆行しつつあった。\r\nキャメロット王国を根城にする〈十戒〉の脅威は続く。\r\nブリタニアを魔神族から解放する為、〈七つの大罪〉は再集結に向けて動き出すー。",
       "original_name": "七つの大罪　神々の逆鱗",
       "external_ids": {
         "bangumi": 280380,
@@ -303,10 +362,18 @@
           "https://bgm.tv/subject/280380",
           "https://bgm.tv/subject/280380/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:27.044942+08:00",
+        "attempted_at": "2026-10-17T17:35:27.044942+08:00",
         "end_date": "2020-03-25",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 280380,
+        "checked_at": "2026-10-17T17:35:28.459947+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -331,10 +398,11 @@
           "https://bgm.tv/subject/239125",
           "https://bgm.tv/subject/239125/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:27.745631+08:00",
+        "attempted_at": "2026-10-17T17:35:27.745631+08:00",
         "end_date": "2020-09-30",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -359,10 +427,11 @@
           "https://bgm.tv/subject/276051",
           "https://bgm.tv/subject/276051/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:28.115704+08:00",
+        "attempted_at": "2026-10-17T17:35:28.115704+08:00",
         "end_date": "2020-02-26",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -371,7 +440,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1e4bd251b5e2c4cb47a3ff2b0ecc177a",
       "premiere_date": "三",
       "premiere_time": "21:54",
-      "story": "暫無簡介",
+      "story": "学校生活ーー それは誰もが一度は経験する かけがえのない日々。\r\nクラスの人気者になれば 誰もが羨むハイスクールデイズを 送れると相場は決まっていた。\r\n転入生であるうらたは 高校デビューを華麗に決めようと\r\nどきどきしながら教室の扉を 開こうとしたーーその時だった。\r\n立ち塞がったのは 同じく高校生の志麻、坂田、センラ！\r\n彼らは敵か味方か、 それとも一体……！？\r\nわくわくどきどきな 転校”青春”ストーリーが 今、幕を開けるーー！",
       "original_name": "浦島坂田船の日常",
       "external_ids": {
         "bangumi": 287615,
@@ -387,10 +456,18 @@
           "https://bgm.tv/subject/287615",
           "https://bgm.tv/subject/287615/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:30.287707+08:00",
+        "attempted_at": "2026-10-17T17:35:30.287707+08:00",
         "end_date": "2019-12-18",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 287615,
+        "checked_at": "2026-10-17T17:35:31.760096+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -415,10 +492,11 @@
           "https://bgm.tv/subject/266157",
           "https://bgm.tv/subject/266157/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:30.826738+08:00",
+        "attempted_at": "2026-10-17T17:35:30.826738+08:00",
         "end_date": "2019-12-27",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -473,10 +551,11 @@
           "https://bgm.tv/subject/262943",
           "https://bgm.tv/subject/262943/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:31.401268+08:00",
+        "attempted_at": "2026-10-17T17:35:31.401268+08:00",
         "end_date": "2019-12-25",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -501,10 +580,11 @@
           "https://bgm.tv/subject/273843",
           "https://bgm.tv/subject/273843/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:33.573753+08:00",
+        "attempted_at": "2026-10-17T17:35:33.573753+08:00",
         "end_date": "2019-12-25",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -529,10 +609,11 @@
           "https://bgm.tv/subject/272034",
           "https://bgm.tv/subject/272034/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:34.139815+08:00",
+        "attempted_at": "2026-10-17T17:35:34.139815+08:00",
         "end_date": "2019-12-18",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -541,7 +622,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c6fc3cf8c404fe549a55f1d718d961f1",
       "premiere_date": "三",
       "premiere_time": "26:16",
-      "story": "暫無簡介",
+      "story": "与你一起，享受极致的“快乐”！\r\n总是一人独处——对于不擅长与人交往、性格畏缩内向的武笠美姬而言，这是理所当然的日常生活。这样的美姬，与天真烂漫的同班同学高屋敷绫、班长大野翠和德国的转学生艾米莉亚相遇了，她们通过桌上游戏加深友情，一步一步地向前进。曾理所当然的日常，如今每天都在变化成为特别的日子——",
       "original_name": "放課後さいころ倶楽部",
       "external_ids": {
         "bangumi": 259790,
@@ -557,10 +638,18 @@
           "https://bgm.tv/subject/259790",
           "https://bgm.tv/subject/259790/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:34.699040+08:00",
+        "attempted_at": "2026-10-17T17:35:34.699040+08:00",
         "end_date": "2019-12-18",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 259790,
+        "checked_at": "2026-10-17T17:35:36.159933+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -621,10 +710,11 @@
           "https://bgm.tv/subject/277399",
           "https://bgm.tv/subject/277399/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:36.874903+08:00",
+        "attempted_at": "2026-10-17T17:35:36.874903+08:00",
         "end_date": "2019-12-19",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -679,10 +769,11 @@
           "https://bgm.tv/subject/264356",
           "https://bgm.tv/subject/264356/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:37.434496+08:00",
+        "attempted_at": "2026-10-17T17:35:37.434496+08:00",
         "end_date": "2019-12-26",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -691,7 +782,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6a8ec9e84b18f81b78a78cd83d9cf202",
       "premiere_date": "四",
       "premiere_time": "24:55",
-      "story": "暫無簡介",
+      "story": "魂を数値化する巨大監視ネットワーク・シビュラシステムが人々の治安を維持している近未来。\r\n変わりゆく世界で、犯罪に関する数値〈犯罪係数〉を測定する銃〈ドミネーター〉を持つ刑事たちは、\r\n犯罪を犯す前の〈潜在犯〉を追う。\r\n2012年にスタートしたオリジナルTVアニメーション作品『PSYCHO-PASS サイコパス』の第三期シリーズとなる本作は、ふたりの新人監視官の物語。\r\n慎導灼と炯・ミハイル・イグナトフは、厚生省公安局の刑事となり、変わりゆく世界で真実を求めていく。",
       "original_name": "PSYCHO-PASS サイコパス ３",
       "external_ids": {
         "bangumi": 277105,
@@ -707,10 +798,18 @@
           "https://bgm.tv/subject/277105",
           "https://bgm.tv/subject/277105/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:37.982303+08:00",
+        "attempted_at": "2026-10-17T17:35:37.982303+08:00",
         "end_date": "2019-12-12",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 277105,
+        "checked_at": "2026-10-17T17:35:39.459919+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -735,10 +834,11 @@
           "https://bgm.tv/subject/277627",
           "https://bgm.tv/subject/277627/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:40.178159+08:00",
+        "attempted_at": "2026-10-17T17:35:40.178159+08:00",
         "end_date": "2019-12-26",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -747,7 +847,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1d55e446336a560695f6786b95a6c061",
       "premiere_date": "四",
       "premiere_time": "25:58",
-      "story": "暫無簡介",
+      "story": "以即将废部的男子中学软式网球部为舞台，讲述了抱着各自想法的少年们讴歌青春的故事。",
       "original_name": "星合の空 -ほしあいのそら-",
       "external_ids": {
         "bangumi": 248665,
@@ -763,10 +863,18 @@
           "https://bgm.tv/subject/248665",
           "https://bgm.tv/subject/248665/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:40.728547+08:00",
+        "attempted_at": "2026-10-17T17:35:40.728547+08:00",
         "end_date": "2019-12-26",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 248665,
+        "checked_at": "2026-10-17T17:35:42.209942+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -811,7 +919,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/67dd44c73ffb9d38087c0dad3e2b85ef",
       "premiere_date": "五",
       "premiere_time": "17:55",
-      "story": "暫無簡介",
+      "story": "ゾイドとは、銀河の彼方に生息する、戦う意思を持った金属生命体である。\r\n惑星が最後を迎え、人類は第二の故郷として地球を目指すが、ゾイド因子の暴走と不慮のタイムワープで、突如、21世紀の地球にゾイドが出現。ゾイドによる破壊と度重なる地殻変動で地球は一度滅びた。\r\nレオは自ら発掘したビーストライガーを相棒に、地球の未来を左右する少女サリーと冒険の旅に出発した。",
       "original_name": "ゾイドワイルド ZERO",
       "external_ids": {
         "bangumi": 285109,
@@ -827,10 +935,18 @@
           "https://bgm.tv/subject/285109",
           "https://bgm.tv/subject/285109/ep"
         ],
-        "checked_at": "2026-10-15T13:33:50.352552+08:00",
-        "attempted_at": "2026-10-15T13:33:50.352552+08:00",
+        "checked_at": "2026-10-17T17:35:41.274317+08:00",
+        "attempted_at": "2026-10-17T17:35:41.274317+08:00",
         "end_date": "2020-10-16",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 285109,
+        "checked_at": "2026-10-17T17:35:42.759978+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -855,10 +971,11 @@
           "https://bgm.tv/subject/266794",
           "https://bgm.tv/subject/266794/ep"
         ],
-        "checked_at": "2026-10-13T21:14:33.425420+08:00",
-        "attempted_at": "2026-10-13T21:14:33.425420+08:00",
+        "checked_at": "2026-10-17T17:34:15.480362+08:00",
+        "attempted_at": "2026-10-17T17:34:15.480362+08:00",
         "end_date": "2019-12-13",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -867,7 +984,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/91c68811fa14c4ab1d097f15d4e6903a",
       "premiere_date": "五",
       "premiere_time": "22:30",
-      "story": "暫無簡介",
+      "story": "是的，我已经觉醒了——！\r\n由于某些原因而在这个不上不下的时间转入皆神高中的高中生，圣瑞姬。在这里，瑞姬在命运指引下遇到了重度厨二病的残念男子们——「英雄部」。\r\n不知为何逐渐被卷入英雄部活动的瑞姬，身陷他们永不停息的妄想与暴走当中，吐槽已经跟不上了！甚至连感到疲累的空闲都没有！\r\n「……奇怪了。我所期望的明明只是平稳的高中生活而已……！」\r\n期望平稳高中生活的瑞姬与厨二病男子交织而成的妄想炸裂厨二病学园喜剧，开幕☆",
       "original_name": "厨病激発ボーイ",
       "external_ids": {
         "bangumi": 278220,
@@ -883,10 +1000,18 @@
           "https://bgm.tv/subject/278220",
           "https://bgm.tv/subject/278220/ep"
         ],
-        "checked_at": "2026-10-15T13:33:51.623772+08:00",
-        "attempted_at": "2026-10-15T13:33:51.623772+08:00",
+        "checked_at": "2026-10-17T17:35:43.476937+08:00",
+        "attempted_at": "2026-10-17T17:35:43.476937+08:00",
         "end_date": "2019-12-13",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 278220,
+        "checked_at": "2026-10-17T17:35:44.959933+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -911,10 +1036,11 @@
           "https://bgm.tv/subject/289145",
           "https://bgm.tv/subject/289145/ep"
         ],
-        "checked_at": "2026-10-15T13:33:52.886023+08:00",
-        "attempted_at": "2026-10-15T13:33:52.886023+08:00",
+        "checked_at": "2026-10-17T17:35:44.031081+08:00",
+        "attempted_at": "2026-10-17T17:35:44.031081+08:00",
         "end_date": "2019-12-20",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -923,7 +1049,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7908fbfa94065e2669941fa87c1457c1",
       "premiere_date": "五",
       "premiere_time": "24:00",
-      "story": "暫無簡介",
+      "story": "空に憧れ、星の島を目指す少年は、蒼い髪の不思議な少女と、\r\n運命と生命を共にすることになった。\r\n空へと旅立った少年と少女が出会ったのは、信頼できる仲間たち、そして空を渡る騎空艇。\r\n帝国の追撃を躱し、星晶獣との邂逅を経て、二人は絆を深め、成長していく。\r\nだが、星の島への道程はまだ半ば。\r\n少年と少女は、仲間と共に次なる旅路へ進む。",
       "original_name": "GRANBLUE FANTASY The Animation Season2",
       "external_ids": {
         "bangumi": 227980,
@@ -939,10 +1065,18 @@
           "https://bgm.tv/subject/227980",
           "https://bgm.tv/subject/227980/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:44.578976+08:00",
+        "attempted_at": "2026-10-17T17:35:44.578976+08:00",
         "end_date": "2019-12-27",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 227980,
+        "checked_at": "2026-10-17T17:35:46.059937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -951,7 +1085,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/18f6ca419ef88f1926abd23d6b4b63e0",
       "premiere_date": "五",
       "premiere_time": "24:30",
-      "story": "暫無簡介",
+      "story": "一边在自家的餐馆“幸平”帮忙，一边磨炼料理水平的幸平创真，进入了超级精英料理学校“远月茶寮料理学园”。\r\n创真在学园内外与各种各样的料理人相遇并不断成长，但随着薙切蓟就任远月学园的新领袖，状况发生了转变。\r\n在新创设的中枢美食机关影响下，无法再自由地制作料理……。创真等人反对中枢美食机关的做法，结果却被视作学园的背叛者。\r\n——之后，他们迎来了二年级升级考试。\r\n即使遭人白眼，众人仍然齐心协力突破考试，但中枢美食机关的妨碍并未停止。同伴们终于遭到退学处分的打击！\r\n被逼入绝境的创真等人为了打破这一状况，决定与蓟政权下的新远月十杰展开连队食戟。\r\n初战取得了压倒性胜利，但决定他们命运的激战才刚刚开始。\r\n终于迎来2nd BOUT！\r\n究竟创真等人能否夺取十杰之座，拯救同伴呢？",
       "original_name": "食戟のソーマ 神ノ皿",
       "external_ids": {
         "bangumi": 284546,
@@ -967,10 +1101,18 @@
           "https://bgm.tv/subject/284546",
           "https://bgm.tv/subject/284546/ep"
         ],
-        "checked_at": "2026-10-16T07:16:40.437305+08:00",
-        "attempted_at": "2026-10-16T07:16:40.437305+08:00",
+        "checked_at": "2026-10-17T17:35:46.789456+08:00",
+        "attempted_at": "2026-10-17T17:35:46.789456+08:00",
         "end_date": "2019-12-27",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 284546,
+        "checked_at": "2026-10-17T17:35:48.259928+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -979,7 +1121,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/254a585de4cf02307788b51756b3db4b",
       "premiere_date": "五",
       "premiere_time": "25:05",
-      "story": "暫無簡介",
+      "story": "喜欢游戏的少年，因为游戏与少女相遇。\r\n\r\n对胜利的渴望，对技术的追求，对自尊的维护，在游戏中心孕育的友情与爱慕。依靠着来自朋友、家庭和游戏角色对内心的支撑，少年少女们也在不断的成长，只要继续坚持就能无限续关？\r\n\r\n春雄、晶、小春挑战最终关卡的结果究竟是？",
       "original_name": "ハイスコアガールⅡ",
       "external_ids": {
         "bangumi": 278569,
@@ -995,10 +1137,18 @@
           "https://bgm.tv/subject/278569",
           "https://bgm.tv/subject/278569/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:47.329626+08:00",
+        "attempted_at": "2026-10-17T17:35:47.329626+08:00",
         "end_date": "2019-12-20",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 278569,
+        "checked_at": "2026-10-17T17:35:48.809985+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1023,10 +1173,11 @@
           "https://bgm.tv/subject/266372",
           "https://bgm.tv/subject/266372/ep"
         ],
-        "checked_at": "2026-10-13T21:14:33.425420+08:00",
-        "attempted_at": "2026-10-13T21:14:33.425420+08:00",
+        "checked_at": "2026-10-17T17:34:21.534854+08:00",
+        "attempted_at": "2026-10-17T17:34:21.534854+08:00",
         "end_date": "2019-12-27",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -1035,7 +1186,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f1548969bc54cec2ebcee63a716b20b4",
       "premiere_date": "五",
       "premiere_time": "25:55",
-      "story": "暫無簡介",
+      "story": "新宿区东侧……极尽混沌的街区中心，是霓虹闪烁的歌舞伎町。光线愈强则暗影愈浓，在恶人潜伏着的黑暗更深处，侦探长屋的灯光长明。哈德森夫人所经营的这间长屋，聚集着各种古怪之人。野心满满的洁癖侦探、迷惑男人的姐妹侦探、落魄刑警大叔侦探、被黑道驱逐的不良侦探……而其中的压轴人物，是酷爱落语的天才侦探夏洛克·福尔摩斯。开膛手杰克引发猎奇杀人的那一夜，舞台拉开了序幕。侦探之间的互相欺骗为纬，夏洛克、华生、莫里亚蒂三方牵制的友情为经……神秘？或是喜剧？无法判别的戏剧就此开演～。",
       "original_name": "歌舞伎町シャーロック",
       "external_ids": {
         "bangumi": 256649,
@@ -1051,10 +1202,18 @@
           "https://bgm.tv/subject/256649",
           "https://bgm.tv/subject/256649/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:47.886071+08:00",
+        "attempted_at": "2026-10-17T17:35:47.886071+08:00",
         "end_date": "2020-03-27",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 256649,
+        "checked_at": "2026-10-17T17:35:49.359936+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1063,7 +1222,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/37576d1595af72be1734daa0d29782a9",
       "premiere_date": "五",
       "premiere_time": "26:25",
-      "story": "暫無簡介",
+      "story": "故事发生在十九世纪的中国，主人公名叫刘昴星（小当家），是史上最年轻的通过中国顶尖厨师资格——“特级厨师考试”的少年。在其师傅周瑜的劝说下，刘昴星为了丰富和拓展厨师的经验知识，和同伴四郎、梅丽一起在中国西南地区游历。回到广州“阳泉酒家”的阿昴，结识了新的伙伴——解师傅和雷恩，并下定决心和妄图用美食支配人心的黑暗料理界对抗到底。随后，他们知晓了守护着中国美食界的八个“传说中的厨具”的秘密。原来，阿昴的母亲阿贝为了谋求大众的幸福，曾经和“黑暗料理界”展开壮烈的斗争。刘昴星继承了母亲的意志，为了防止散布在中国各地的“传说中的厨具”被“黑暗料理界”所利用，和四名伙伴一起踏上了寻找 “传说中的厨具”的浩大旅程……",
       "original_name": "真・中華一番！",
       "external_ids": {
         "bangumi": 273834,
@@ -1079,10 +1238,18 @@
           "https://bgm.tv/subject/273834",
           "https://bgm.tv/subject/273834/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:50.081601+08:00",
+        "attempted_at": "2026-10-17T17:35:50.081601+08:00",
         "end_date": "2019-12-27",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 273834,
+        "checked_at": "2026-10-17T17:35:51.559924+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1091,7 +1258,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3c142259e8e8585402ea6c2f5c50e576",
       "premiere_date": "六",
       "premiere_time": "10:30",
-      "story": "暫無簡介",
+      "story": "スターハーモニー学園に転入してきた「姫石らき」の夢は\r\nいつか自分でデザインしたプレミアムレアドレスを着ること。\r\n\r\nお姉ちゃんがくれた『アイカツパス』を使って初めてのステージに立ったら、\r\n急に『アイカツパス』が光りだした！？\r\n\r\n不思議な扉の先にはたくさんのアイドルたち新しい出会いと\r\n誰も知らない新しいアイカツ！がまっていた！\r\n\r\nアイドル活動　“アイカツ！”　にはげむ女の子の\r\n努力と奇跡の成長物語！\r\n\r\nみんなで歌って、踊っちゃお！\r\nアイドルも、ドレスも大集合！",
       "original_name": "アイカツオンパレード！",
       "external_ids": {
         "bangumi": 289119,
@@ -1107,10 +1274,18 @@
           "https://bgm.tv/subject/289119",
           "https://bgm.tv/subject/289119/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:50.647745+08:00",
+        "attempted_at": "2026-10-17T17:35:50.647745+08:00",
         "end_date": "2020-03-28",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 289119,
+        "checked_at": "2026-10-17T17:35:52.109936+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1135,10 +1310,11 @@
           "https://bgm.tv/subject/262162",
           "https://bgm.tv/subject/262162/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:51.182985+08:00",
+        "attempted_at": "2026-10-17T17:35:51.182985+08:00",
         "end_date": "2020-04-04",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -1147,7 +1323,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/734781ce1b3803357ec4fbb2eba285c4",
       "premiere_date": "六",
       "premiere_time": "17:35",
-      "story": "暫無簡介",
+      "story": "无法拒绝任何拜托的老好人铃木入间，是个从1岁开始就踏入社会、为了金钱东奔西走、在修罗场求生的十四岁少年，他的父母为了金钱将他卖给了恶魔！阴差阳错之下他签下了恶魔契约、进入了恶魔学院、成为了特待生，并且即将与学院第一的新生代表决斗——",
       "original_name": "魔入りました！入間くん",
       "external_ids": {
         "bangumi": 273844,
@@ -1163,10 +1339,18 @@
           "https://bgm.tv/subject/273844",
           "https://bgm.tv/subject/273844/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:53.391345+08:00",
+        "attempted_at": "2026-10-17T17:35:53.391345+08:00",
         "end_date": "2020-03-07",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 273844,
+        "checked_at": "2026-10-17T17:35:54.859923+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1191,10 +1375,11 @@
           "https://bgm.tv/subject/282564",
           "https://bgm.tv/subject/282564/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:53.936633+08:00",
+        "attempted_at": "2026-10-17T17:35:53.936633+08:00",
         "end_date": "2019-12-21",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -1219,10 +1404,11 @@
           "https://bgm.tv/subject/255526",
           "https://bgm.tv/subject/255526/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:54.475551+08:00",
+        "attempted_at": "2026-10-17T17:35:54.475551+08:00",
         "end_date": "2020-03-21",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -1247,10 +1433,11 @@
           "https://bgm.tv/subject/279457",
           "https://bgm.tv/subject/279457/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:56.697309+08:00",
+        "attempted_at": "2026-10-17T17:35:56.697309+08:00",
         "end_date": "2019-12-28",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -1259,7 +1446,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6364b76fb997e1b4ab03cba23acce452",
       "premiere_date": "六",
       "premiere_time": "24:30",
-      "story": "暫無簡介",
+      "story": "苦学の高校３年生・唯我成幸は、\r\n大学の学費が免除される「特別ＶＩＰ推薦」獲得のため、\r\n学園が誇る３人の天才・古橋文乃、緒方理珠、武元うるかの\r\n教育係を引き受けることに。\r\n苦手科目にはとことんポンコツな彼女らを導き、志望校合格を目指すが…!?\r\nさらに、冷血に見えつつ超ドジっ子な教師・桐須真冬、\r\nメイドのバイトをしながら医学部を目指す先輩・小美浪あすみも加わり、\r\n成幸たちの勉強はさらなる追い込みへ！\r\nそして密かに恋の気配も…？\r\n「できない」天才たちが繰り広げるラブコメディ、 勉強も恋もまだまだ続く!!",
       "original_name": "ぼくたちは勉強ができない",
       "external_ids": {
         "bangumi": 285130,
@@ -1275,10 +1462,18 @@
           "https://bgm.tv/subject/285130",
           "https://bgm.tv/subject/285130/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:58:22.223345+08:00",
+        "attempted_at": "2026-10-17T17:58:22.223345+08:00",
         "end_date": "2019-12-28",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 285130,
+        "checked_at": "2026-10-17T17:58:23.658768+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1333,10 +1528,11 @@
           "https://bgm.tv/subject/291842",
           "https://bgm.tv/subject/291842/ep"
         ],
-        "checked_at": "2026-10-15T13:33:54.143905+08:00",
-        "attempted_at": "2026-10-15T13:33:54.143905+08:00",
+        "checked_at": "2026-10-17T17:35:57.774700+08:00",
+        "attempted_at": "2026-10-17T17:35:57.774700+08:00",
         "end_date": "2020-03-28",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -1391,10 +1587,11 @@
           "https://bgm.tv/subject/159159",
           "https://bgm.tv/subject/159159/ep"
         ],
-        "checked_at": "2026-10-13T21:14:33.425420+08:00",
-        "attempted_at": "2026-10-13T21:14:33.425420+08:00",
+        "checked_at": "2026-10-17T17:34:31.424987+08:00",
+        "attempted_at": "2026-10-17T17:34:31.424987+08:00",
         "end_date": "2019-12-22",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -1403,7 +1600,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0842218556092a778da21c4c212c290f",
       "premiere_date": "日",
       "premiere_time": "22:54",
-      "story": "暫無簡介",
+      "story": "乙女の姿をもつ刀剣・巫剣。彼女たちは、禍憑の脅威から平和な世を守るため人知れず戦う傍ら、洋風茶房「めいじ館」で給仕服を身にまとい、働いていた！\r\n\r\n 城和泉正宗や桑名江、牛王吉光、七香、八宵をはじめ、 新たに「庖丁三姉妹」も加わって、さらにドタバタ（ガッシャン）と騒がしい巫剣たちの日常譚、はじまり、はじまりー！",
       "original_name": "天華百剣 ～めいじ館へようこそ！～",
       "external_ids": {
         "bangumi": 289672,
@@ -1419,10 +1616,18 @@
           "https://bgm.tv/subject/289672",
           "https://bgm.tv/subject/289672/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:35:59.976817+08:00",
+        "attempted_at": "2026-10-17T17:35:59.976817+08:00",
         "end_date": "2019-12-29",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 289672,
+        "checked_at": "2026-10-17T17:36:01.459931+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1431,7 +1636,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/61a27f00b0945b9fffca595ebb31836c",
       "premiere_date": "日",
       "premiere_time": "23:30",
-      "story": "暫無簡介",
+      "story": "“私立天翔学园”位于巨大学园都市群施莱弗中心第七学区。\r\n心事重重又不善言辞的转学生音之宫朔，在与歌唱社团和考古学社团中个性丰富的同学相处后，感受到与同伴们相处的愉悦。\r\n与外表高冷内心热情的神乐苍介、语出惊人难以捉摸的往田诗的邂逅，也让他深刻感受到“音乐”的乐趣。\r\n有笑有泪，偶有争吵。日子一天天过去，他察觉自己身上正发生着从未有过的改变……\r\n这是讲述少年们努力生活的青春物语。",
       "original_name": "ACTORS -Songs Connection-",
       "external_ids": {
         "bangumi": 266348,
@@ -1447,10 +1652,18 @@
           "https://bgm.tv/subject/266348",
           "https://bgm.tv/subject/266348/ep"
         ],
-        "checked_at": "2026-10-15T13:33:55.399061+08:00",
-        "attempted_at": "2026-10-15T13:33:55.399061+08:00",
+        "checked_at": "2026-10-17T17:36:01.079030+08:00",
+        "attempted_at": "2026-10-17T17:36:01.079030+08:00",
         "end_date": "2019-12-22",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 266348,
+        "checked_at": "2026-10-17T17:36:02.009923+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1505,10 +1718,11 @@
           "https://bgm.tv/subject/240386",
           "https://bgm.tv/subject/240386/ep"
         ],
-        "checked_at": "2026-10-13T21:14:33.425420+08:00",
-        "attempted_at": "2026-10-13T21:14:33.425420+08:00",
+        "checked_at": "2026-10-17T17:34:34.177854+08:00",
+        "attempted_at": "2026-10-17T17:34:34.177854+08:00",
         "end_date": "2019-12-29",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -1517,7 +1731,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f079a401648b58db97e28b496c2bf6e5",
       "premiere_date": "日",
       "premiere_time": "24:30",
-      "story": "暫無簡介",
+      "story": "热带草原和食物链都无所谓。\r\n日本的社会生活\r\n非洲的上班族们\r\n汗水和泪水社畜喜剧☆\r\n在非洲的大企业工作，狮子，巨嘴鸟，蜥蜴3人\r\n共同交织在一起的：\r\n以粗暴的暴言和奇行突破日本人的社会的每天。\r\n毫无理由的项目，不容辩驳的减薪……\r\n比人类所知还要痛苦的工薪生活，动物们大奋斗！\r\n必然会引起全日本的上班族的共鸣！\r\n热带草原和食物链都完全忘记了。\r\n动物公司职员的日常生活在这里！！",
       "original_name": "アフリカのサラリーマン",
       "external_ids": {
         "bangumi": 278828,
@@ -1533,10 +1747,18 @@
           "https://bgm.tv/subject/278828",
           "https://bgm.tv/subject/278828/ep"
         ],
-        "checked_at": "2026-10-13T22:10:20.716020+08:00",
-        "attempted_at": "2026-10-13T22:10:20.716020+08:00",
+        "checked_at": "2026-10-17T17:36:01.147693+08:00",
+        "attempted_at": "2026-10-17T17:36:01.147693+08:00",
         "end_date": "2019-12-22",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 278828,
+        "checked_at": "2026-10-17T17:36:02.559942+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1545,7 +1767,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a9e714883e402fd8fd879768710ff60f",
       "premiere_date": "日",
       "premiere_time": "25:00",
-      "story": "暫無簡介",
+      "story": "「滅多にないＸＬサイズなら…ココにある」\r\n友達の紹介で、XＬのゴムモニターになってしまった咲。\r\n彼氏もいないのに絶対ムリ…！とヤケ酒を飲んだ夜、\r\n自宅まで送ってくれた鬼上司・須藤さんに大量のゴムを見られてしまう！\r\n\r\n「何発ヤるつもりだ…？」って、ち、違うんです！！！\r\n事情を話すと、須藤さんが秘めたモノを露わにし――\r\n\r\n犬猿の上司と、ＸＬゴムモニター…\r\nしかも全種類を制覇って…嘘でしょ！？",
       "original_name": "XL上司。",
       "external_ids": {
         "bangumi": 288940,
@@ -1566,6 +1788,13 @@
         "end_date": "2019-11-24",
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 288940,
+        "checked_at": "2026-10-17T18:07:16.295887+08:00",
+        "method": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
       }
     },
@@ -1600,14 +1829,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T16:00:39.755017+08:00",
+  "generated_at": "2026-10-17T18:07:16.837589+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201910/",
   "quality": {
     "source_count": 56,
     "record_count": 56,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 34,
+    "missing_story_count": 8,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

@@ -1,0 +1,93 @@
+{
+  "baseline": "19ed257f5e7c3d1f260c7999f64f8d180992e9d3",
+  "live_result_files": 1616,
+  "request_receipts": 3154,
+  "summary_body_policy": "Live summaries stored as stripped-text SHA256/length; new original text is in dist/data. Archive-only original summaries retained separately. Primary source plots and unrelated search snippets excluded.",
+  "files": [
+    {
+      "path": "applied.json",
+      "bytes": 773111,
+      "sha256": "fe22ae5ae53576992a6b755be0c2065896fac5c443f1b6fac45258668b0a5f29"
+    },
+    {
+      "path": "archive-provenance.json",
+      "bytes": 264,
+      "sha256": "e8173613c2c1031890b0678144fc4714c1e3aeffe790ba831ee5e44146249f69"
+    },
+    {
+      "path": "archive-stories.json",
+      "bytes": 89520,
+      "sha256": "532be52e626a71b6c5ff975496eeb9e7c05981c8888fa91d541d07edc008ab6f"
+    },
+    {
+      "path": "businessfish-access.json",
+      "bytes": 109,
+      "sha256": "358d05a2fcc78bf4b780c80b10e3405adbafb03d8092eaca1afd742a40f27dbd"
+    },
+    {
+      "path": "data-invariants.json",
+      "bytes": 470,
+      "sha256": "11f154601e0c33603bd52ab5748d62f728dd906cb0b727f1b8f897454cb48f3a"
+    },
+    {
+      "path": "date-crosscheck.json",
+      "bytes": 2099,
+      "sha256": "75e39d7d98f4072b92676ff591d18097dc96f7c81a5da0554c5ae416556f13c2"
+    },
+    {
+      "path": "formatting-alias-review.json",
+      "bytes": 58832,
+      "sha256": "99e658a3531cd31b485a4560d23e60a48bea4e7c2bfdf0705d7e639461cc0ca3"
+    },
+    {
+      "path": "live-receipts.jsonl.gz",
+      "bytes": 801715,
+      "sha256": "bb631e43af89d846a017e1f83ece2eb28561e1ea8036a6b9ee809e4500bb92e2"
+    },
+    {
+      "path": "official-alternative-summary.json",
+      "bytes": 1038,
+      "sha256": "a5afa58d448b838aaa92dc8d6479808cb7d6576ccf1e682ba533ec7ef88a45ff"
+    },
+    {
+      "path": "official-intro-access.json",
+      "bytes": 1794,
+      "sha256": "b9d138e373487cda36e0b7119f68501f380f75b0c2c70b78944446702bb1a1da"
+    },
+    {
+      "path": "official-page-access.json",
+      "bytes": 5648,
+      "sha256": "bde4339e9ecf56dfb01cfec3dc7fb65a0f684307619e2151559db0e9b897863b"
+    },
+    {
+      "path": "primary-updates.json",
+      "bytes": 8683,
+      "sha256": "70c94233e09527616809a6b318ab5c53f878e20ff60ca48b7fb7c1bb636b5c23"
+    },
+    {
+      "path": "quality-report.md",
+      "bytes": 1444,
+      "sha256": "7a232a533bc37fdeb88b00ac603a9c607ba6bea2b21ae904f623bc3289ea59e5"
+    },
+    {
+      "path": "remaining-stories.json",
+      "bytes": 57542,
+      "sha256": "5f6d075756c05137312440eac38138589d9ac02f9cda540f951602caef17df91"
+    },
+    {
+      "path": "rilakkuma-status-evidence.json",
+      "bytes": 752,
+      "sha256": "be7bb3958337eec82671e36666ed8159fe330796685485ab188023f53d53ce23"
+    },
+    {
+      "path": "source-audit-summary.json",
+      "bytes": 18573,
+      "sha256": "500cc0025d1ea339b0bec136713b73ed161aab21818e8e6208b4cd41d801b254"
+    },
+    {
+      "path": "source-page-cache.json",
+      "bytes": 5331,
+      "sha256": "55864e73c5f4102902a85f1bdf86ec297d49a77f69d0e712fb825b101db70b6c"
+    }
+  ]
+}

@@ -205,3 +205,59 @@ def test_fullwidth_and_whitespace_normalization_preserves_version_symbol(anime):
     subject = {"id": 100, "type": 2, "name": "作品 第2期+", "summary": SUMMARY}
     assert subject_identity_matches(variant, subject)
     assert enrich_story(variant, subject, NOW, method="bangumi_api").story == SUMMARY
+
+
+def test_full_subject_formatting_review_can_fill_summary_but_keeps_plus_boundary(
+    anime_record_factory,
+):
+    anime = Anime(
+        **{
+            **anime_record_factory(1401, story="暫無簡介"),
+            "bangumi_id": "anime-1401",
+            "anime_name": "催眠麥克風 -Division Rap Battle- Rhyme Anima +",
+            "original_name": "ヒプノシスマイク-Division Rap Battle- Rhyme Anima +",
+            "external_ids": {"bangumi": 426049},
+        }
+    )
+    subject = {
+        "id": 426049,
+        "type": 2,
+        "name": "『ヒプノシスマイク-Division Rap Battle-』Rhyme Anima ＋",
+        "date": "2023-10-06",
+        "summary": SUMMARY,
+    }
+    assert enrich_story(anime, subject, NOW, method="bangumi_api").story == SUMMARY
+    for change in (
+        {"date": "2020-10-02"},
+        {"name": "『ヒプノシスマイク-Division Rap Battle-』Rhyme Anima"},
+        {"id": 999},
+    ):
+        assert (
+            enrich_story(anime, {**subject, **change}, NOW, method="bangumi_api")
+            == anime
+        )
+
+
+def test_episode_binding_to_parent_does_not_authorize_parent_summary(
+    anime_record_factory,
+):
+    from services.episode_metadata import subject_identity_matches
+
+    anime = Anime(
+        **{
+            **anime_record_factory(418, story="暫無簡介"),
+            "bangumi_id": "anime-418",
+            "anime_name": "1日外出錄班長",
+            "original_name": "1日外出録ハンチョウ",
+            "external_ids": {"bangumi": 237834},
+        }
+    )
+    parent = {
+        "id": 237834,
+        "type": 2,
+        "name": "中間管理録トネガワ",
+        "date": "2018-07-03",
+        "summary": SUMMARY,
+    }
+    assert subject_identity_matches(anime, parent)
+    assert enrich_story(anime, parent, NOW, method="bangumi_api") == anime

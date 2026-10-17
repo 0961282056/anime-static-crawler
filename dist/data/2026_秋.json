@@ -336,7 +336,7 @@
     },
     {
       "bangumi_id": "anime-2282",
-      "anime_name": "DARK MACHINE THE ANIMATION",
+      "anime_name": "闇機 DARK MACHINE",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5c301433f4a4bdc01f48aa6b1976c13665afc4d7b4cc2e5d2c1078055cf302de",
       "premiere_date": "二",
       "premiere_time": "25:45",
@@ -772,7 +772,7 @@
     },
     {
       "bangumi_id": "anime-2330",
-      "anime_name": "鐵道行！meet with 鐵道娘",
+      "anime_name": "鐵旅！meet with 鐵道少女",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0f186edec2463e853f47b4959618e7f073abd3ef95f3e4b11fae067c104c46bf",
       "premiere_date": "四",
       "premiere_time": "24:00",
@@ -1348,7 +1348,7 @@
       "bangumi_id": "anime-2284",
       "anime_name": "彈珠汽水瓶裏的千歲同學 第二季度",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f28218a86991f9c8f33dd27159bed3f7eaffe650b46a79b30f236a79779ec394",
-      "premiere_date": "六",
+      "premiere_date": "二",
       "premiere_time": "23:00",
       "story": "就读县内首屈一指的升学学校——藤志高中的千岁朔。学业、运动、社交能力皆出类拔萃的他，总是众人的焦点，但其实他心中藏着一段未曾向人倾诉的过去。春天转瞬即逝，在交替的季节中，为了追求梦想、追寻心中渴望的景色，这群高中生全力以赴地挥洒仅有一次的「青春」。以福井为舞台，谱写出一片湛蓝、无比眩目且动人的青春故事，再次揭开新一章！\r\n\r\n\r\n\r\n[简介原文]\r\n県内随一の進学校・藤志高校に通う千歳朔。\r\n勉強、運動、コミュ力すべてがハイレベルで、良くも悪くも注目を集める彼には、誰にも打ち明けていない過去があった。\r\n新たな出会いと苦難が舞い込んだ春が終わり、移りゆく季節のなかで、諦められない夢を追って、焦がれ続ける景色を求めて、一度きりの「青」を全力で生きる高校生たちの物語が、再び始まる。\r\n福井を舞台に紡がれる、どこまでも青く、どこまでも眩しい、エモーショナル青春ストーリー！",
       "original_name": "千歳くんはラムネ瓶のなか 第2クール",
@@ -1457,7 +1457,7 @@
     },
     {
       "bangumi_id": "anime-2321",
-      "anime_name": "Vertex Force",
+      "anime_name": "至高之力 Vertex Force",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1a3ebaa323984eb0559fb9b1e3a620649bcb39185d2ba8fa74b21f13e745b14b",
       "premiere_date": "六",
       "premiere_time": "23:30",
@@ -2366,7 +2366,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T16:00:39.755017+08:00",
+  "generated_at": "2026-10-17T18:07:16.989031+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202610/",
   "quality": {
     "source_count": 73,

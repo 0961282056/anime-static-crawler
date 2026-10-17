@@ -90,6 +90,7 @@ test('official summary excerpts render real season data with attributed links', 
     ['重生者的魔法一定要特別 第二季', 'www.fujitv.co.jp'],
     ['冰之城牆 第二季', 'korinojoheki-pr.com'],
     ['Welsh & Shedar', 'welshandshedar-anime.com'],
+    ['毛球剛次郎', 'www.tv-tokyo.co.jp'],
   ]) {
     await page.getByLabel('關鍵字搜尋').fill(name);
     const card = page.locator('.anime-card');

@@ -1,0 +1,158 @@
+[
+  {
+    "attempted_at": "2026-10-17T09:51:20.771058+00:00",
+    "status": 404,
+    "final_url": "https://vap.co.jp/chitosechan/"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:20.771467+00:00",
+    "status": 200,
+    "final_url": "https://oshiri-tantei.com:443/",
+    "sha256": "d00aa5165c61fb41e2186c09003def951c75d6fc3406011154b9393839945e37"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:20.772134+00:00",
+    "status": 403,
+    "final_url": "https://www.toei-anim.co.jp/tv/tropical-rouge_precure/"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:21.272244+00:00",
+    "status": 403,
+    "final_url": "https://www.toei-anim.co.jp/tv/wt/"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:22.123544+00:00",
+    "status": 200,
+    "final_url": "https://www.tonegawa-anime.com/",
+    "sha256": "a979c5aab8f776464bcbf6c9ad21e826a33f6857427577bfac219afeab8679c1"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:22.198241+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/gintama/",
+    "sha256": "cfc03c29329b4f91792dd9e97b54ed3ddd5ae7b6f6e3421d27d3cd4ce63a1199"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:22.698367+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai/",
+    "sha256": "94a175586a0ea4da2a0c233e91aafaeffa02ef2eab320bdf156f819cc4687ca2"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:23.198370+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/",
+    "sha256": "3576c8ea7cf14fd254f0a82e779b55ce8f6791660a67bc333f2d58f8257fa210"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:23.282334+00:00",
+    "status": 200,
+    "final_url": "https://anime.magireco.com/",
+    "sha256": "76a53323f2de37b9e77530d81cd60a909d6ad56ca279b3aef63e1cde0d02bee4"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:23.378392+00:00",
+    "status": 200,
+    "final_url": "https://niagho.com/info/tvanime.html",
+    "sha256": "03f3dce03c8f8f807c09ac6b65c107852eb270b13b9ffeb0d61d13b832b1698c"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:23.583694+00:00",
+    "status": 404,
+    "final_url": "https://www.nhk.or.jp/anime/radiant/"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:24.193860+00:00",
+    "status": 200,
+    "final_url": "https://oshiri-tantei.com:443/",
+    "sha256": "d00aa5165c61fb41e2186c09003def951c75d6fc3406011154b9393839945e37"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:24.226359+00:00",
+    "status": 403,
+    "final_url": "https://www.toei-anim.co.jp/tv/delicious-party_precure/"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:24.726498+00:00",
+    "status": 403,
+    "final_url": "https://www.toei-anim.co.jp/tv/wt/"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:25.010870+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/four_of_a_kind/",
+    "sha256": "e4764f83c756f322195f8fad8fc3fe6c46254738093d230621a0f22f2f77cc42"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:25.510987+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/gonjiro/",
+    "sha256": "80aaada2f8e4d0b13a882236923c6d333fc738c4b028ccf07189902d9f26dab0"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:26.012097+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kjfile/",
+    "sha256": "f8a5ca9daf345fa09938335b5e79e6759ed8b94836b48db7e5b1566c11ef9635"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:26.510987+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/prichan/",
+    "sha256": "593c6cf236480abb92a80313b1c8d801134cfb0c67eeecb2bd32e1389c95eebd"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:27.010999+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/",
+    "sha256": "1e9ed84d46780be8caeea72b9e48e29326e26a051f16d966f82cc3b0398d33d0"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:27.510976+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai10/",
+    "sha256": "3ade2e2b7108c9a6f71a10869807b8e4c2c75b24c33dbba186922a8b4c049333"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:28.010959+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai11/",
+    "sha256": "1a63dbbf9ffdc8cfc6d900bbd6728febfbc27e59bc30d7502e334168d8bc47a4"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:28.510947+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai12/",
+    "sha256": "64eb3f9acd1965aa328936275ee6a1c28c17f50f55d492e9215f08cd2dde5911"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:29.011006+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai13/",
+    "sha256": "e02517799572bbd99d9ed6f89cec08ff99d9ded6fc3aac197fa1c392c26cd033"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:29.510979+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai14/",
+    "sha256": "14c0d09dca45002ccd2804a82537295056c185d90bd28927da027e9694144f1b"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:30.010991+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai15/",
+    "sha256": "35da2cf10bc823ff276cc58df775ebb046a142e15bd1d48163b6169699748acf"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:30.511011+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai9/",
+    "sha256": "cd9b7e55a2de598fcebea90f27c6140ed1b94717a611ace385920a187e5880bd"
+  },
+  {
+    "attempted_at": "2026-10-17T09:51:31.010993+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/",
+    "sha256": "cc3152902c98e27ae5fb8f7fdba82c983fc1e444842b8755daec8a29011e438b"
+  }
+]

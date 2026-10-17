@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import date, datetime
 
 from models import Anime, StorySource
-from services.episode_metadata import _name
+from services.episode_metadata import _name, reviewed_identity
 
 
 def enrich_story(
@@ -20,12 +20,14 @@ def enrich_story(
         return anime
     if subject.get("id") != anime.external_ids.bangumi or subject.get("type") != 2:
         return anime
-    if (
-        not anime.original_name
-        or not isinstance(subject.get("name"), str)
-        or _name(anime.original_name) != _name(subject["name"])
-    ):
+    if not anime.original_name or not isinstance(subject.get("name"), str):
         return anime
+    if _name(anime.original_name) != _name(subject["name"]):
+        review = reviewed_identity(anime, subject)
+        # Episode-only aliases can describe a component of a parent entry.
+        # Summary reuse requires separate proof of the complete subject scope.
+        if not review or review.get("summary_scope") != "full_linked_subject":
+            return anime
     summary = subject.get("summary")
     if not isinstance(summary, str) or not 20 <= len(summary.strip()) <= 10_000:
         return anime
