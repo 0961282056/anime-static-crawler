@@ -475,7 +475,7 @@ def test_cache_and_completed_refresh_intervals(anime_record_factory):
     assert not EpisodeEnricher.due(anime(anime_record_factory, external_ids={}), NOW)
 
 
-def test_base_recrawl_retains_metadata_but_new_identity_resets_it(
+def test_base_recrawl_retains_metadata_and_rejects_conflicting_identity(
     tmp_path, anime_record_factory
 ):
     repository = DataRepository(tmp_path, DataQualityPolicy())
@@ -499,8 +499,14 @@ def test_base_recrawl_retains_metadata_but_new_identity_resets_it(
         repository.load_quarter("2026", "春").anime_list[0].episodes.total_episodes
         == 12
     )
-    write(anime(anime_record_factory, external_ids={"bangumi": 999}))
-    assert repository.load_quarter("2026", "春").anime_list[0].episodes is None
+    from services.errors import DataContractError
+
+    with pytest.raises(DataContractError, match="Conflicting explicit source IDs"):
+        write(anime(anime_record_factory, external_ids={"bangumi": 999}))
+    assert (
+        repository.load_quarter("2026", "春").anime_list[0].episodes.total_episodes
+        == 12
+    )
 
 
 def test_old_linked_anime_outside_crawl_window_refreshes_once(

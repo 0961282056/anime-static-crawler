@@ -59,7 +59,7 @@ def _name(value: str) -> str:
     return "".join(
         character
         for character in unicodedata.normalize("NFKC", value).casefold()
-        if character.isalnum()
+        if not character.isspace()
     )
 
 

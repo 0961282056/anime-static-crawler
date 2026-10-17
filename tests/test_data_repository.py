@@ -252,3 +252,20 @@ def test_strict_validation_rejects_tampered_quality_summary(
 
     with pytest.raises(DataContractError, match="quality summary"):
         repository.validate_all()
+
+
+@pytest.mark.parametrize("provider", ["bangumi", "anilist"])
+@pytest.mark.parametrize("has_metadata", [False, True])
+def test_conflicting_known_link_rejects_entire_write(
+    tmp_path, anime_record_factory, provider, has_metadata
+):
+    repository = _repository(tmp_path)
+    old = {**anime_record_factory(1), "external_ids": {provider: 100}}
+    result = _write(repository, [old])
+    original = result.path.read_bytes()
+    incoming = {**old, "external_ids": {provider: 200}}
+    if has_metadata:
+        incoming["episodes"] = {"total_episodes": 12}
+    with pytest.raises(DataContractError, match=provider):
+        _write(repository, [incoming])
+    assert result.path.read_bytes() == original

@@ -26,6 +26,7 @@ from services.errors import ItemParseError, SourceFetchError
 from services.http_client import SourceClient
 from services.parser import extract_item_html, parse_anime_item
 from services.settings import CrawlerSettings, ProjectPaths
+from services.source_identity import conflicting_providers
 
 logger = logging.getLogger(__name__)
 
@@ -65,13 +66,7 @@ def backfill_source_links(
                 and candidate.original_name == anime.original_name
                 and (not anime_id or anime.bangumi_id == anime_id)
             ):
-                if any(
-                    getattr(anime.external_ids, provider) is not None
-                    and getattr(candidate.external_ids, provider) is not None
-                    and getattr(anime.external_ids, provider)
-                    != getattr(candidate.external_ids, provider)
-                    for provider in ("bangumi", "anilist")
-                ):
+                if conflicting_providers(anime.external_ids, candidate.external_ids):
                     logger.warning(
                         "Conflicting explicit source link retained: %s %s",
                         path.stem,
