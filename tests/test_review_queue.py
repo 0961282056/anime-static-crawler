@@ -203,3 +203,81 @@ def test_reopen_failure_does_not_mark_a_reminder_as_delivered():
     client.request = original
     assert publish(report(), client)["reminded"] == 1
     assert client.rows[1]["state"] == "open"
+
+
+@pytest.mark.parametrize("failure", ["patch", "post_response"])
+def test_sent_notification_survives_partial_failure_without_duplicate(failure):
+    client = GitHub()
+    seed_review(client, comment="A 保留")
+    data = report(1)
+    data["identities"][0]["manual_review"]["scope_explanation"] = "新證據"
+    original = client.request
+
+    def fail_after_delivery(method, path, **kwargs):
+        if failure == "patch" and method == "PATCH" and path == "/issues/1":
+            raise RuntimeError("patch failed")
+        result = original(method, path, **kwargs)
+        if (
+            failure == "post_response"
+            and method == "POST"
+            and path.endswith("/comments")
+        ):
+            raise RuntimeError("comment response lost after delivery")
+        return result
+
+    client.request = fail_after_delivery
+    with pytest.raises(RuntimeError):
+        publish(data, client)
+    assert len(_load_queue(client.issues())[1]) == 1
+    assert sum(c["user"]["login"] == BOT for c in client.comments[1]) == 1
+
+    client.request = original
+    result = publish(data, client)
+    assert result["updated"] == 1 and result["pending"] == 0
+    assert client.rows[1]["state"] == "open"
+    assert sum(c["user"]["login"] == BOT for c in client.comments[1]) == 1
+    assert publish(data, client)["unchanged"] == 1
+
+
+def test_human_comment_cannot_claim_evidence_has_already_been_notified():
+    client = GitHub()
+    seed_review(client, comment="A 保留")
+    data = report(1)
+    data["identities"][0]["manual_review"]["scope_explanation"] = "新證據"
+    body = issue_body(review_cases(data)[0], RUN)
+    client.comments[1].append({"id": 60, "user": {"login": "human"}, "body": body})
+    assert publish(data, client)["updated"] == 1
+    assert sum(c["user"]["login"] == BOT for c in client.comments[1]) == 1
+
+
+def test_failed_comment_lookup_keeps_evidence_pending_without_sending():
+    client = GitHub()
+    seed_review(client, comment="A 保留")
+    data = report(1)
+    data["identities"][0]["manual_review"]["scope_explanation"] = "新證據"
+    old_body = client.rows[1]["body"]
+    original = client.request
+
+    def fail_lookup(method, path, **kwargs):
+        if method == "GET" and path.endswith("/comments"):
+            raise RuntimeError("comment lookup unavailable")
+        return original(method, path, **kwargs)
+
+    client.request = fail_lookup
+    with pytest.raises(RuntimeError, match="lookup unavailable"):
+        publish(data, client)
+    assert len(_load_queue(client.issues())[1]) == 1
+    assert client.rows[1]["body"] == old_body
+    assert not any(c["user"]["login"] == BOT for c in client.comments[1])
+
+
+def test_evidence_returning_to_old_fingerprint_sends_new_notification():
+    client = GitHub()
+    seed_review(client, comment="A 保留")
+    original = report(1)
+    changed = deepcopy(original)
+    changed["identities"][0]["manual_review"]["scope_explanation"] = "另一組證據"
+    for data in (changed, original, changed):
+        assert publish(data, client)["updated"] == 1
+    assert sum(c["user"]["login"] == BOT for c in client.comments[1]) == 3
+    assert publish(changed, client)["unchanged"] == 1

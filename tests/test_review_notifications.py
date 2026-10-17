@@ -70,8 +70,8 @@ class Client:
         return self.existing
 
     def request(self, method, path, **kwargs):
-        self.calls.append((method, path, kwargs["json"]))
-        return {"number": 1}
+        self.calls.append((method, path, kwargs.get("json", kwargs.get("params", {}))))
+        return [] if method == "GET" else {"number": 1}
 
 
 def publish(report, client, **kwargs):
@@ -128,9 +128,10 @@ def test_changed_evidence_comments_and_reopens_same_issue(report):
     client = Client([{"number": 5, "state": "closed", "body": issue_body(case, RUN)}])
     report["identities"][0]["secondary"][0]["observation"]["total_episodes"] = 24
     assert publish(report, client)["updated"] == 1
-    assert client.calls[0][:2] == ("POST", "/issues/5/comments")
-    assert "@0961282056" in client.calls[0][2]["body"]
-    assert client.calls[1][2]["state"] == "open"
+    assert client.calls[0][:2] == ("GET", "/issues/5/comments")
+    assert client.calls[1][:2] == ("POST", "/issues/5/comments")
+    assert "@0961282056" in client.calls[1][2]["body"]
+    assert client.calls[2][2]["state"] == "open"
 
 
 def test_provider_failure_is_operations_issue_not_episode_approval(report):
@@ -186,7 +187,9 @@ def test_failed_comment_does_not_mark_new_evidence_as_notified(report):
         [{"number": 5, "body": f"{MARKER}{review_cases(report)[0]['key']}:old -->"}]
     )
 
-    def fail(*args, **kwargs):
+    def fail(method, path, **kwargs):
+        if method == "GET":
+            return []
         raise RuntimeError("HTTP 403")
 
     client.request = fail
@@ -219,3 +222,20 @@ def test_invalid_run_or_assignee_and_duplicate_markers_fail_closed(report):
     issue = {"number": 1, "body": issue_body(review_cases(report)[0], RUN)}
     with pytest.raises(RuntimeError, match="Duplicate"):
         publish(report, Client([issue, issue]))
+
+
+def test_incomplete_comment_listing_does_not_send_or_update_evidence(report):
+    case = review_cases(report)[0]
+    client = Client([{"number": 5, "state": "closed", "body": issue_body(case, RUN)}])
+    report["identities"][0]["secondary"][0]["observation"]["total_episodes"] = 24
+    reads = []
+
+    def endless_comments(method, path, **kwargs):
+        reads.append((method, kwargs["params"]["page"]))
+        return [{"id": i, "body": "", "user": {"login": "human"}} for i in range(100)]
+
+    client.request = endless_comments
+    with pytest.raises(RuntimeError, match="pagination budget exhausted"):
+        publish(report, client)
+    assert reads == [("GET", n) for n in range(1, 6)]
+    assert client.existing[0]["state"] == "closed"
