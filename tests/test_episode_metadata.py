@@ -883,3 +883,34 @@ def test_link_backfill_rejects_ambiguous_identity(
     source = SimpleNamespace(fetch_quarter_html=lambda *args: ("url", html))
     assert backfill_source_links(repository, source, year="2026") == 0
     assert repository.load_quarter("2026", "夏").anime_list == [record]
+
+
+def test_reviewed_parenthesized_sequel_is_not_base_or_another_version(
+    anime_record_factory,
+):
+    from services.episode_metadata import subject_identity_matches
+
+    record = anime(
+        anime_record_factory,
+        bangumi_id="anime-1659",
+        anime_name="放學後少年花子君 續篇",
+        original_name="放課後少年花子くん (続編)",
+        external_ids={"bangumi": 464594},
+    )
+    provider = {
+        "id": 464594,
+        "type": 2,
+        "name": "放課後少年花子くん 続編",
+        "date": "2024-10-07",
+    }
+    assert subject_identity_matches(record, provider)
+    for key, value in [
+        ("name", "放課後少年花子くん"),
+        ("name", "放課後少年花子くん 続編＋"),
+        ("date", "2023-10-12"),
+        ("id", 999),
+    ]:
+        assert not subject_identity_matches(record, {**provider, key: value})
+    assert not subject_identity_matches(
+        record.model_copy(update={"bangumi_id": "anime-999"}), provider
+    )

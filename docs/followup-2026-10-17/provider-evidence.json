@@ -1,0 +1,1991 @@
+{
+  "observed_at": "2026-10-17T16:00:39.755017+08:00",
+  "selected_card_ids": [
+    "anime-1244",
+    "anime-1659",
+    "anime-2236",
+    "anime-2249",
+    "anime-2262",
+    "anime-2339",
+    "anime-235",
+    "anime-361",
+    "anime-717"
+  ],
+  "before": {
+    "automatic_identities": 1905,
+    "priority_identities": 80,
+    "priority_overdue": 1,
+    "background_overdue": 8,
+    "priority_unverified": 0,
+    "priority_older_than_48h": 0,
+    "oldest_checked_at": "2026-10-13T20:52:04.176625+08:00",
+    "priority_oldest_checked_at": "2026-10-16T07:15:38.630848+08:00"
+  },
+  "after": {
+    "automatic_identities": 1905,
+    "priority_identities": 80,
+    "priority_overdue": 0,
+    "background_overdue": 0,
+    "priority_unverified": 0,
+    "priority_older_than_48h": 0,
+    "oldest_checked_at": "2026-10-13T20:52:04.176625+08:00",
+    "priority_oldest_checked_at": "2026-10-16T21:45:30.168596+08:00"
+  },
+  "elapsed_seconds": 11.39,
+  "actual_requests": 18,
+  "changed_quarters": [
+    "2019_冬.json",
+    "2019_秋.json",
+    "2020_冬.json",
+    "2020_春.json",
+    "2021_冬.json",
+    "2023_冬.json",
+    "2024_秋.json",
+    "2026_夏.json",
+    "2026_秋.json"
+  ],
+  "deferred": 0,
+  "requests": [
+    {
+      "url": "https://api.bgm.tv/v0/subjects/559080",
+      "params": {},
+      "attempted_at": "2026-10-17T16:00:40.097257+08:00",
+      "success": true,
+      "response": {
+        "id": 559080,
+        "name": "Dreamland",
+        "name_cn": "",
+        "summary": "Depuis la disparition tragique de sa mère dans un incendie, Terrence, 18 ans, souffre d’une peur viscérale du feu. Hanté par ce traumatisme qu’il revit chaque nuit, il parvient à s’en affranchir et à contrôler les flammes le consumant. Son chemin croise alors la route d’un homme énigmatique, qui lui révèle qu’il est désormais un « voyageur » : un être capable d’arpenter Dreamland, un univers onirique sans limites, façonné par les songes. Une grande épopée est sur le point de commencer !",
+        "type": 2,
+        "date": "2026-10-17",
+        "eps": 10,
+        "infobox": [
+          {
+            "key": "别名",
+            "value": [
+              {
+                "v": "ドリームランド"
+              }
+            ]
+          },
+          {
+            "key": "话数",
+            "value": "10"
+          },
+          {
+            "key": "放送开始",
+            "value": "2026年10月17日"
+          },
+          {
+            "key": "官方网站",
+            "value": [
+              {
+                "k": "日语版",
+                "v": "https://www.dreamland-anime.com/"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 559080,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "attempted_at": "2026-10-17T16:00:40.306014+08:00",
+      "success": true,
+      "response": {
+        "total": 10,
+        "limit": 200,
+        "offset": 0,
+        "data": [
+          {
+            "id": 1723346,
+            "subject_id": 559080,
+            "sort": 1,
+            "ep": 1,
+            "airdate": "2026-10-17",
+            "type": 0
+          },
+          {
+            "id": 1723347,
+            "subject_id": 559080,
+            "sort": 2,
+            "ep": 2,
+            "airdate": "2026-10-24",
+            "type": 0
+          },
+          {
+            "id": 1723348,
+            "subject_id": 559080,
+            "sort": 3,
+            "ep": 3,
+            "airdate": "2026-10-31",
+            "type": 0
+          },
+          {
+            "id": 1723349,
+            "subject_id": 559080,
+            "sort": 4,
+            "ep": 4,
+            "airdate": "2026-11-07",
+            "type": 0
+          },
+          {
+            "id": 1723350,
+            "subject_id": 559080,
+            "sort": 5,
+            "ep": 5,
+            "airdate": "2026-11-14",
+            "type": 0
+          },
+          {
+            "id": 1723351,
+            "subject_id": 559080,
+            "sort": 6,
+            "ep": 6,
+            "airdate": "2026-11-21",
+            "type": 0
+          },
+          {
+            "id": 1723352,
+            "subject_id": 559080,
+            "sort": 7,
+            "ep": 7,
+            "airdate": "2026-11-28",
+            "type": 0
+          },
+          {
+            "id": 1723353,
+            "subject_id": 559080,
+            "sort": 8,
+            "ep": 8,
+            "airdate": "2026-12-05",
+            "type": 0
+          },
+          {
+            "id": 1723354,
+            "subject_id": 559080,
+            "sort": 9,
+            "ep": 9,
+            "airdate": "2026-12-12",
+            "type": 0
+          },
+          {
+            "id": 1723355,
+            "subject_id": 559080,
+            "sort": 10,
+            "ep": 10,
+            "airdate": "2026-12-19",
+            "type": 0
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/267018",
+      "params": {},
+      "attempted_at": "2026-10-17T16:00:40.966388+08:00",
+      "success": true,
+      "response": {
+        "id": 267018,
+        "name": "みにとじ",
+        "name_cn": "迷你刀使",
+        "summary": "少女たちの日常は戦ったり戦わなかったり？\r\nTVアニメ「刀使ノ巫女」とスマートフォンゲーム「刀使ノ巫女 刻みし一閃の燈火」の\r\nキャラクターがちいさくなって大集合！",
+        "type": 2,
+        "date": "2019-01-05",
+        "eps": 12,
+        "infobox": [
+          {
+            "key": "话数",
+            "value": "12"
+          },
+          {
+            "key": "放送开始",
+            "value": "2019年1月5日"
+          },
+          {
+            "key": "官方网站",
+            "value": "http://minitoji.jp/"
+          },
+          {
+            "key": "播放结束",
+            "value": "2019年3月16日"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 267018,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "attempted_at": "2026-10-17T16:00:41.507900+08:00",
+      "success": true,
+      "response": {
+        "total": 11,
+        "limit": 200,
+        "offset": 0,
+        "data": [
+          {
+            "id": 851107,
+            "subject_id": 267018,
+            "sort": 0,
+            "ep": 1,
+            "airdate": "2019-01-05",
+            "type": 0
+          },
+          {
+            "id": 849988,
+            "subject_id": 267018,
+            "sort": 1,
+            "ep": 2,
+            "airdate": "2019-01-12",
+            "type": 0
+          },
+          {
+            "id": 849989,
+            "subject_id": 267018,
+            "sort": 2,
+            "ep": 3,
+            "airdate": "2019-01-19",
+            "type": 0
+          },
+          {
+            "id": 849990,
+            "subject_id": 267018,
+            "sort": 3,
+            "ep": 4,
+            "airdate": "2019-01-26",
+            "type": 0
+          },
+          {
+            "id": 849991,
+            "subject_id": 267018,
+            "sort": 4,
+            "ep": 5,
+            "airdate": "2019-02-02",
+            "type": 0
+          },
+          {
+            "id": 849992,
+            "subject_id": 267018,
+            "sort": 5,
+            "ep": 6,
+            "airdate": "2019-02-09",
+            "type": 0
+          },
+          {
+            "id": 849993,
+            "subject_id": 267018,
+            "sort": 6,
+            "ep": 7,
+            "airdate": "2019-02-16",
+            "type": 0
+          },
+          {
+            "id": 849994,
+            "subject_id": 267018,
+            "sort": 7,
+            "ep": 8,
+            "airdate": "2019-02-23",
+            "type": 0
+          },
+          {
+            "id": 849995,
+            "subject_id": 267018,
+            "sort": 8,
+            "ep": 9,
+            "airdate": "2019-03-02",
+            "type": 0
+          },
+          {
+            "id": 849996,
+            "subject_id": 267018,
+            "sort": 9,
+            "ep": 10,
+            "airdate": "2019-03-09",
+            "type": 0
+          },
+          {
+            "id": 849997,
+            "subject_id": 267018,
+            "sort": 10,
+            "ep": 11,
+            "airdate": "2019-03-16",
+            "type": 0
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/302137",
+      "params": {},
+      "attempted_at": "2026-10-17T16:00:42.273748+08:00",
+      "success": true,
+      "response": {
+        "id": 302137,
+        "name": "GO!GO!アトム",
+        "name_cn": "GO!GO!阿童木",
+        "summary": "「GO!GO!アトム」は 地球環境がテーマのコメディ＆アクションシリーズ！ \r\nアトム、スズ、アトニャン、3人の “チームアトム” が力を合わせて地球環境に起こる様々な問題を解決するミッションに挑みます！ \r\nチームアトムは時にケンカや失敗を重ねながらも、ミッションを通して自然のメカニズムを知り、命の多様性を発見していきます。 \r\n毎回どこかでおこるミッションは 彼等にとってハラハラワクワクの大冒険なのです！ \r\n\r\n『GO！GO！アトム』（ゴー！ゴー！アトム、原題：GO ASTRO BOY GO!）は、手塚治虫原作の漫画『鉄腕アトム』のテレビアニメ作品。\r\n\r\n日本向けローカライズ版は2019年10月3日からテレビ東京系列で同日より新設される「プリスクタイム」枠にて放送中。",
+        "type": 2,
+        "date": "2019-10-03",
+        "eps": 52,
+        "infobox": [
+          {
+            "key": "别名",
+            "value": [
+              {
+                "v": "GO ASTRO BOY GO!"
+              },
+              {
+                "v": "Little Astro Boy"
+              },
+              {
+                "v": "ゴー!ゴー!アトム"
+              }
+            ]
+          },
+          {
+            "key": "话数",
+            "value": "52"
+          },
+          {
+            "key": "放送开始",
+            "value": "2019年10月3日"
+          },
+          {
+            "key": "官方网站",
+            "value": "https://gogo-atom.jp/"
+          },
+          {
+            "key": "播放结束",
+            "value": "2020年10月1日"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 302137,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "attempted_at": "2026-10-17T16:00:42.834939+08:00",
+      "success": true,
+      "response": {
+        "total": 52,
+        "limit": 200,
+        "offset": 0,
+        "data": [
+          {
+            "id": 937224,
+            "subject_id": 302137,
+            "sort": 1,
+            "ep": 1,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937225,
+            "subject_id": 302137,
+            "sort": 2,
+            "ep": 2,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937226,
+            "subject_id": 302137,
+            "sort": 3,
+            "ep": 3,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937227,
+            "subject_id": 302137,
+            "sort": 4,
+            "ep": 4,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937228,
+            "subject_id": 302137,
+            "sort": 5,
+            "ep": 5,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937229,
+            "subject_id": 302137,
+            "sort": 6,
+            "ep": 6,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937230,
+            "subject_id": 302137,
+            "sort": 7,
+            "ep": 7,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937231,
+            "subject_id": 302137,
+            "sort": 8,
+            "ep": 8,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937232,
+            "subject_id": 302137,
+            "sort": 9,
+            "ep": 9,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937233,
+            "subject_id": 302137,
+            "sort": 10,
+            "ep": 10,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937234,
+            "subject_id": 302137,
+            "sort": 11,
+            "ep": 11,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937235,
+            "subject_id": 302137,
+            "sort": 12,
+            "ep": 12,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937236,
+            "subject_id": 302137,
+            "sort": 13,
+            "ep": 13,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937237,
+            "subject_id": 302137,
+            "sort": 14,
+            "ep": 14,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937238,
+            "subject_id": 302137,
+            "sort": 15,
+            "ep": 15,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937239,
+            "subject_id": 302137,
+            "sort": 16,
+            "ep": 16,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937240,
+            "subject_id": 302137,
+            "sort": 17,
+            "ep": 17,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937241,
+            "subject_id": 302137,
+            "sort": 18,
+            "ep": 18,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937242,
+            "subject_id": 302137,
+            "sort": 19,
+            "ep": 19,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937243,
+            "subject_id": 302137,
+            "sort": 20,
+            "ep": 20,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937244,
+            "subject_id": 302137,
+            "sort": 21,
+            "ep": 21,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937245,
+            "subject_id": 302137,
+            "sort": 22,
+            "ep": 22,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937246,
+            "subject_id": 302137,
+            "sort": 23,
+            "ep": 23,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937247,
+            "subject_id": 302137,
+            "sort": 24,
+            "ep": 24,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937248,
+            "subject_id": 302137,
+            "sort": 25,
+            "ep": 25,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937249,
+            "subject_id": 302137,
+            "sort": 26,
+            "ep": 26,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937250,
+            "subject_id": 302137,
+            "sort": 27,
+            "ep": 27,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937251,
+            "subject_id": 302137,
+            "sort": 28,
+            "ep": 28,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937252,
+            "subject_id": 302137,
+            "sort": 29,
+            "ep": 29,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937253,
+            "subject_id": 302137,
+            "sort": 30,
+            "ep": 30,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937254,
+            "subject_id": 302137,
+            "sort": 31,
+            "ep": 31,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937255,
+            "subject_id": 302137,
+            "sort": 32,
+            "ep": 32,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937256,
+            "subject_id": 302137,
+            "sort": 33,
+            "ep": 33,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937257,
+            "subject_id": 302137,
+            "sort": 34,
+            "ep": 34,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937258,
+            "subject_id": 302137,
+            "sort": 35,
+            "ep": 35,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937259,
+            "subject_id": 302137,
+            "sort": 36,
+            "ep": 36,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937260,
+            "subject_id": 302137,
+            "sort": 37,
+            "ep": 37,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937261,
+            "subject_id": 302137,
+            "sort": 38,
+            "ep": 38,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937262,
+            "subject_id": 302137,
+            "sort": 39,
+            "ep": 39,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937263,
+            "subject_id": 302137,
+            "sort": 40,
+            "ep": 40,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937264,
+            "subject_id": 302137,
+            "sort": 41,
+            "ep": 41,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937265,
+            "subject_id": 302137,
+            "sort": 42,
+            "ep": 42,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937266,
+            "subject_id": 302137,
+            "sort": 43,
+            "ep": 43,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937267,
+            "subject_id": 302137,
+            "sort": 44,
+            "ep": 44,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937268,
+            "subject_id": 302137,
+            "sort": 45,
+            "ep": 45,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937269,
+            "subject_id": 302137,
+            "sort": 46,
+            "ep": 46,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937270,
+            "subject_id": 302137,
+            "sort": 47,
+            "ep": 47,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937271,
+            "subject_id": 302137,
+            "sort": 48,
+            "ep": 48,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937272,
+            "subject_id": 302137,
+            "sort": 49,
+            "ep": 49,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937273,
+            "subject_id": 302137,
+            "sort": 50,
+            "ep": 50,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937274,
+            "subject_id": 302137,
+            "sort": 51,
+            "ep": 51,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 937275,
+            "subject_id": 302137,
+            "sort": 52,
+            "ep": 52,
+            "airdate": "",
+            "type": 0
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/403671",
+      "params": {},
+      "attempted_at": "2026-10-17T16:00:43.518573+08:00",
+      "success": true,
+      "response": {
+        "id": 403671,
+        "name": "KJファイル 第2期",
+        "name_cn": "怪兽档案 第二季",
+        "summary": "20世纪初，在世界各地突然出现各种各样的怪兽。\r\n人类在最初尝试抵抗，但是在那巨大的力量面前，得出完全驱逐是不可能的结论，于是将所有智慧集中在监视、分析怪兽上。\r\n于是诞生了联合国怪兽监视团（通称：克隆斯）。\r\n以不屈不挠的领袖海堂勇一郎事务局局长为首，怪兽生态学的权威小林丸兆治、怪兽功能分析学的才子克莱尔·科尔曼、怪兽防灾学的异端肯尼御子柴、对怪兽战略学的贵公子尼基塔·塔尔科夫斯基、开拓怪兽语言学之路的新世代皮卡德，以及怪兽生命科学的重量级人物马尔克斯。\r\n怪兽科学的专家们监视分析多达数百只怪兽，继续探索怪兽和人类共同生存的世界。",
+        "type": 2,
+        "date": "2023-01-08",
+        "eps": 13,
+        "infobox": [
+          {
+            "key": "别名",
+            "value": [
+              {
+                "v": "KJ File 2nd Season"
+              }
+            ]
+          },
+          {
+            "key": "话数",
+            "value": "13"
+          },
+          {
+            "key": "放送开始",
+            "value": "2023年1月8日"
+          },
+          {
+            "key": "官方网站",
+            "value": "https://www.tv-tokyo.co.jp/anime/kjfile/"
+          },
+          {
+            "key": "播放结束",
+            "value": "2023年4月2日"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 403671,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "attempted_at": "2026-10-17T16:00:44.179513+08:00",
+      "success": true,
+      "response": {
+        "total": 13,
+        "limit": 200,
+        "offset": 0,
+        "data": [
+          {
+            "id": 1156461,
+            "subject_id": 403671,
+            "sort": 14,
+            "ep": 1,
+            "airdate": "2023-01-08",
+            "type": 0
+          },
+          {
+            "id": 1156462,
+            "subject_id": 403671,
+            "sort": 15,
+            "ep": 2,
+            "airdate": "2023-01-15",
+            "type": 0
+          },
+          {
+            "id": 1156463,
+            "subject_id": 403671,
+            "sort": 16,
+            "ep": 3,
+            "airdate": "2023-01-22",
+            "type": 0
+          },
+          {
+            "id": 1156464,
+            "subject_id": 403671,
+            "sort": 17,
+            "ep": 4,
+            "airdate": "2023-01-29",
+            "type": 0
+          },
+          {
+            "id": 1156465,
+            "subject_id": 403671,
+            "sort": 18,
+            "ep": 5,
+            "airdate": "2023-02-05",
+            "type": 0
+          },
+          {
+            "id": 1156466,
+            "subject_id": 403671,
+            "sort": 19,
+            "ep": 6,
+            "airdate": "2023-02-12",
+            "type": 0
+          },
+          {
+            "id": 1156467,
+            "subject_id": 403671,
+            "sort": 20,
+            "ep": 7,
+            "airdate": "2023-02-19",
+            "type": 0
+          },
+          {
+            "id": 1156468,
+            "subject_id": 403671,
+            "sort": 21,
+            "ep": 8,
+            "airdate": "2023-02-26",
+            "type": 0
+          },
+          {
+            "id": 1156469,
+            "subject_id": 403671,
+            "sort": 22,
+            "ep": 9,
+            "airdate": "2023-03-05",
+            "type": 0
+          },
+          {
+            "id": 1156470,
+            "subject_id": 403671,
+            "sort": 23,
+            "ep": 10,
+            "airdate": "2023-03-12",
+            "type": 0
+          },
+          {
+            "id": 1156471,
+            "subject_id": 403671,
+            "sort": 24,
+            "ep": 11,
+            "airdate": "2023-03-19",
+            "type": 0
+          },
+          {
+            "id": 1156472,
+            "subject_id": 403671,
+            "sort": 25,
+            "ep": 12,
+            "airdate": "2023-03-26",
+            "type": 0
+          },
+          {
+            "id": 1189656,
+            "subject_id": 403671,
+            "sort": 26,
+            "ep": 13,
+            "airdate": "2023-04-02",
+            "type": 0
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/366037",
+      "params": {},
+      "attempted_at": "2026-10-17T16:00:44.837240+08:00",
+      "success": true,
+      "response": {
+        "id": 366037,
+        "name": "キンタマーニドッグ",
+        "name_cn": "",
+        "summary": "パワースポットとして人気の観光地 インドネシア・バリ島に暮らす\r\n“幸せを呼ぶ犬”とも呼ばれている 「アンジン・キンタマーニバリ」の\r\nキンタが幼いころ突然いなくなった 父親を探す旅をしながら、\r\n愛と開運を伝える\r\nショートトリップアニメです。",
+        "type": 2,
+        "date": "2021-01-15",
+        "eps": 50,
+        "infobox": [
+          {
+            "key": "别名",
+            "value": [
+              {
+                "v": "Kintamani Dog"
+              }
+            ]
+          },
+          {
+            "key": "话数",
+            "value": "50"
+          },
+          {
+            "key": "放送开始",
+            "value": "2021年1月15日"
+          },
+          {
+            "key": "官方网站",
+            "value": "https://kintamani-dog.com/"
+          },
+          {
+            "key": "播放结束",
+            "value": "2021年12月26日"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 366037,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "attempted_at": "2026-10-17T16:00:45.372883+08:00",
+      "success": true,
+      "response": {
+        "total": 50,
+        "limit": 200,
+        "offset": 0,
+        "data": [
+          {
+            "id": 1079394,
+            "subject_id": 366037,
+            "sort": 1,
+            "ep": 1,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079395,
+            "subject_id": 366037,
+            "sort": 2,
+            "ep": 2,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079396,
+            "subject_id": 366037,
+            "sort": 3,
+            "ep": 3,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079397,
+            "subject_id": 366037,
+            "sort": 4,
+            "ep": 4,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079398,
+            "subject_id": 366037,
+            "sort": 5,
+            "ep": 5,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079399,
+            "subject_id": 366037,
+            "sort": 6,
+            "ep": 6,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079400,
+            "subject_id": 366037,
+            "sort": 7,
+            "ep": 7,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079401,
+            "subject_id": 366037,
+            "sort": 8,
+            "ep": 8,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079402,
+            "subject_id": 366037,
+            "sort": 9,
+            "ep": 9,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079403,
+            "subject_id": 366037,
+            "sort": 10,
+            "ep": 10,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079404,
+            "subject_id": 366037,
+            "sort": 11,
+            "ep": 11,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079405,
+            "subject_id": 366037,
+            "sort": 12,
+            "ep": 12,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079406,
+            "subject_id": 366037,
+            "sort": 13,
+            "ep": 13,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079407,
+            "subject_id": 366037,
+            "sort": 14,
+            "ep": 14,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079408,
+            "subject_id": 366037,
+            "sort": 15,
+            "ep": 15,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079409,
+            "subject_id": 366037,
+            "sort": 16,
+            "ep": 16,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079410,
+            "subject_id": 366037,
+            "sort": 17,
+            "ep": 17,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079411,
+            "subject_id": 366037,
+            "sort": 18,
+            "ep": 18,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079412,
+            "subject_id": 366037,
+            "sort": 19,
+            "ep": 19,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079413,
+            "subject_id": 366037,
+            "sort": 20,
+            "ep": 20,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079414,
+            "subject_id": 366037,
+            "sort": 21,
+            "ep": 21,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079415,
+            "subject_id": 366037,
+            "sort": 22,
+            "ep": 22,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079416,
+            "subject_id": 366037,
+            "sort": 23,
+            "ep": 23,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079417,
+            "subject_id": 366037,
+            "sort": 24,
+            "ep": 24,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079418,
+            "subject_id": 366037,
+            "sort": 25,
+            "ep": 25,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079419,
+            "subject_id": 366037,
+            "sort": 26,
+            "ep": 26,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079420,
+            "subject_id": 366037,
+            "sort": 27,
+            "ep": 27,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079421,
+            "subject_id": 366037,
+            "sort": 28,
+            "ep": 28,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079422,
+            "subject_id": 366037,
+            "sort": 29,
+            "ep": 29,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079423,
+            "subject_id": 366037,
+            "sort": 30,
+            "ep": 30,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079424,
+            "subject_id": 366037,
+            "sort": 31,
+            "ep": 31,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079425,
+            "subject_id": 366037,
+            "sort": 32,
+            "ep": 32,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079426,
+            "subject_id": 366037,
+            "sort": 33,
+            "ep": 33,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079427,
+            "subject_id": 366037,
+            "sort": 34,
+            "ep": 34,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079428,
+            "subject_id": 366037,
+            "sort": 35,
+            "ep": 35,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079429,
+            "subject_id": 366037,
+            "sort": 36,
+            "ep": 36,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079430,
+            "subject_id": 366037,
+            "sort": 37,
+            "ep": 37,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079431,
+            "subject_id": 366037,
+            "sort": 38,
+            "ep": 38,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079432,
+            "subject_id": 366037,
+            "sort": 39,
+            "ep": 39,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079433,
+            "subject_id": 366037,
+            "sort": 40,
+            "ep": 40,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079434,
+            "subject_id": 366037,
+            "sort": 41,
+            "ep": 41,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079435,
+            "subject_id": 366037,
+            "sort": 42,
+            "ep": 42,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079436,
+            "subject_id": 366037,
+            "sort": 43,
+            "ep": 43,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079437,
+            "subject_id": 366037,
+            "sort": 44,
+            "ep": 44,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079438,
+            "subject_id": 366037,
+            "sort": 45,
+            "ep": 45,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079439,
+            "subject_id": 366037,
+            "sort": 46,
+            "ep": 46,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079440,
+            "subject_id": 366037,
+            "sort": 47,
+            "ep": 47,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079441,
+            "subject_id": 366037,
+            "sort": 48,
+            "ep": 48,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079442,
+            "subject_id": 366037,
+            "sort": 49,
+            "ep": 49,
+            "airdate": "",
+            "type": 0
+          },
+          {
+            "id": 1079443,
+            "subject_id": 366037,
+            "sort": 50,
+            "ep": 50,
+            "airdate": "",
+            "type": 0
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/464594",
+      "params": {},
+      "attempted_at": "2026-10-17T16:00:46.034105+08:00",
+      "success": true,
+      "response": {
+        "id": 464594,
+        "name": "放課後少年花子くん 続編",
+        "name_cn": "放学后少年花子君 续篇",
+        "summary": "「ねえ知ってる？この学園の七不思議にまつわる奇妙な噂」\r\n\r\n旧校舎3階女子トイレの3番目には『トイレの花子さん』がいて、\r\n大切なものと引き替えに願いを叶えてくれるという。\r\n\r\nかもめ学園の七不思議・トイレの花子くんと、\r\nその助手になったオカルト少女・八尋寧々。\r\n\r\n怪異事件ばかりが起こるこの学園で、\r\n彼らは平和な日をどう過ごしているのか。\r\n\r\nこれは本編では描かれない、ゆる～い放課後のひととき。",
+        "type": 2,
+        "date": "2024-10-07",
+        "eps": 4,
+        "infobox": [
+          {
+            "key": "别名",
+            "value": [
+              {
+                "v": "放学后少年花子君 第二季"
+              },
+              {
+                "v": "Houkago Shounen Hanako-kun Part 2"
+              },
+              {
+                "v": "After-School Hanako-kun Part 2"
+              }
+            ]
+          },
+          {
+            "key": "话数",
+            "value": "4"
+          },
+          {
+            "key": "放送开始",
+            "value": "2024年10月7日"
+          },
+          {
+            "key": "官方网站",
+            "value": "https://www.tbs.co.jp/anime/hanakokun/"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 464594,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "attempted_at": "2026-10-17T16:00:46.570259+08:00",
+      "success": true,
+      "response": {
+        "total": 4,
+        "limit": 200,
+        "offset": 0,
+        "data": [
+          {
+            "id": 1269254,
+            "subject_id": 464594,
+            "sort": 5,
+            "ep": 1,
+            "airdate": "2024-10-07",
+            "type": 0
+          },
+          {
+            "id": 1269255,
+            "subject_id": 464594,
+            "sort": 6,
+            "ep": 2,
+            "airdate": "2024-10-14",
+            "type": 0
+          },
+          {
+            "id": 1269256,
+            "subject_id": 464594,
+            "sort": 7,
+            "ep": 3,
+            "airdate": "2024-10-21",
+            "type": 0
+          },
+          {
+            "id": 1269257,
+            "subject_id": 464594,
+            "sort": 8,
+            "ep": 4,
+            "airdate": "2024-10-28",
+            "type": 0
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/630163",
+      "params": {},
+      "attempted_at": "2026-10-17T16:00:47.231351+08:00",
+      "success": true,
+      "response": {
+        "id": 630163,
+        "name": "落第賢者の学院無双～二度目の転生、Sランクチート魔術師冒険録～",
+        "name_cn": "落第贤者的学院无双～第二次转生的S级开外挂魔术师冒险录～",
+        "summary": "現代から転生し、人生のすべてを魔導の研究に費やした大賢者エフタル。しかし彼は己の才能の限界を知り、絶望と後悔の果てに命を落としてしまう。\r\n――それから400年。前世の知識と魔術を携え、二度目の転生を遂げたエフタルは、再び魔導の頂きを目指すことを決意する。だが彼を待っていたのは、なぜか魔法文明が著しく衰退した世界だった。彼の扱う魔法は、もはや“奇跡”と呼ばれる領域――。\r\nそれでもなお魔導には上があると信じ、彼は旅の途中で出会った奴隷の少女、アナスタシアとともに魔法学院の入学試験へと向かう。その前にたちはだかったのは、魔族屈指の魔術師にして名門学院の学長マーリン――400年を越えてなお、師であるエフタルを想い続ける“かつての弟子”だった。\r\n絶望から転生した賢者が、世界の常識を塗り替える。規格外の学院ファンタジー、開幕！\r\n",
+        "type": 2,
+        "date": "2026-07-01",
+        "eps": 12,
+        "infobox": [
+          {
+            "key": "别名",
+            "value": [
+              {
+                "v": "Rakudai Kenja no Gakuin Musou: Nidome no Tensei, S-Rank Cheat Majutsushi Boukenroku"
+              },
+              {
+                "v": "落第贤者的学院无双～第二回转生，S等级作弊魔术师冒险记～"
+              }
+            ]
+          },
+          {
+            "key": "话数",
+            "value": "12"
+          },
+          {
+            "key": "放送开始",
+            "value": "2026年7月1日"
+          },
+          {
+            "key": "官方网站",
+            "value": "https://rakudai-anime.com/"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 630163,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "attempted_at": "2026-10-17T16:00:47.774842+08:00",
+      "success": true,
+      "response": {
+        "total": 12,
+        "limit": 200,
+        "offset": 0,
+        "data": [
+          {
+            "id": 1705068,
+            "subject_id": 630163,
+            "sort": 1,
+            "ep": 1,
+            "airdate": "2026-07-01",
+            "type": 0
+          },
+          {
+            "id": 1705069,
+            "subject_id": 630163,
+            "sort": 2,
+            "ep": 2,
+            "airdate": "2026-07-08",
+            "type": 0
+          },
+          {
+            "id": 1705070,
+            "subject_id": 630163,
+            "sort": 3,
+            "ep": 3,
+            "airdate": "2026-07-15",
+            "type": 0
+          },
+          {
+            "id": 1705071,
+            "subject_id": 630163,
+            "sort": 4,
+            "ep": 4,
+            "airdate": "2026-07-22",
+            "type": 0
+          },
+          {
+            "id": 1705072,
+            "subject_id": 630163,
+            "sort": 5,
+            "ep": 5,
+            "airdate": "2026-07-29",
+            "type": 0
+          },
+          {
+            "id": 1705073,
+            "subject_id": 630163,
+            "sort": 6,
+            "ep": 6,
+            "airdate": "2026-08-05",
+            "type": 0
+          },
+          {
+            "id": 1705074,
+            "subject_id": 630163,
+            "sort": 7,
+            "ep": 7,
+            "airdate": "2026-08-12",
+            "type": 0
+          },
+          {
+            "id": 1705075,
+            "subject_id": 630163,
+            "sort": 8,
+            "ep": 8,
+            "airdate": "2026-08-19",
+            "type": 0
+          },
+          {
+            "id": 1705076,
+            "subject_id": 630163,
+            "sort": 9,
+            "ep": 9,
+            "airdate": "2026-08-26",
+            "type": 0
+          },
+          {
+            "id": 1705077,
+            "subject_id": 630163,
+            "sort": 10,
+            "ep": 10,
+            "airdate": "2026-09-02",
+            "type": 0
+          },
+          {
+            "id": 1705078,
+            "subject_id": 630163,
+            "sort": 11,
+            "ep": 11,
+            "airdate": "2026-09-09",
+            "type": 0
+          },
+          {
+            "id": 1705079,
+            "subject_id": 630163,
+            "sort": 12,
+            "ep": 12,
+            "airdate": "2026-09-16",
+            "type": 0
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/603352",
+      "params": {},
+      "attempted_at": "2026-10-17T16:00:48.606888+08:00",
+      "success": true,
+      "response": {
+        "id": 603352,
+        "name": "文豪ストレイドッグス わん！２",
+        "name_cn": "文豪野犬 汪！第二季",
+        "summary": "欢迎来到以架空城市「横滨」为舞台，这群野犬「汪！」气十足的日常生活！专门处理棘手案件的侦探事务所「武装侦探社」，以及以港口为地盘的犯罪组织「港口黑帮」，一如既往，火花四射、针锋相对。然而，就在此时，来海另一端的「公会」来袭！与此同时，军警最强特殊部队「猎犬」亦同步出击，「天人五衰」更引导着众人走向毁灭……！？这部大人气角色们以迷你姿态大闹特闹的搞笑外传，第二幕即将隆重登场！\r\n\r\n\r\n\r\n[简介原文]\r\n架空の都市「ヨコハマ」を舞台に吠えて噛みつき駆けまわる迷い犬たちの〝わん！〟だふるな日常へようこそ！\r\n相も変わらずバチバチ火花を散らすのは荒事専門の探偵事務所《武装探偵社》と港が縄張りの犯罪組織《ポートマフィア》。\r\nそして、そこへ── 大国より《組合（ギルド）》が襲来！さらに軍警最強の特殊部隊《猟犬》が牙をむき《天人五衰》が破滅への引導を渡す……！？\r\nいにしえの文豪の名を懐く者たちがその名になぞらえた「異能力」による死闘を繰り広げるアクションバトル大作「文豪ストレイドッグス」。\r\nその人気キャラクターたちが小さな姿で大暴れするギャグスピンオフバラエティショーの第二幕がついに！　オールスター大集合で上がります！",
+        "type": 2,
+        "date": "2026-07-02",
+        "eps": 12,
+        "infobox": [
+          {
+            "key": "别名",
+            "value": [
+              {
+                "v": "Bungo Stray Dogs WAN! 2"
+              },
+              {
+                "v": "Bungou Stray Dogs Wan! 2"
+              }
+            ]
+          },
+          {
+            "key": "话数",
+            "value": "12"
+          },
+          {
+            "key": "放送开始",
+            "value": "2026年7月2日"
+          },
+          {
+            "key": "官方网站",
+            "value": "https://wan2.bungo-stray-dogs-wan.com/"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 603352,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "attempted_at": "2026-10-17T16:00:49.166148+08:00",
+      "success": true,
+      "response": {
+        "total": 12,
+        "limit": 200,
+        "offset": 0,
+        "data": [
+          {
+            "id": 1705432,
+            "subject_id": 603352,
+            "sort": 1,
+            "ep": 1,
+            "airdate": "2026-07-02",
+            "type": 0
+          },
+          {
+            "id": 1705433,
+            "subject_id": 603352,
+            "sort": 2,
+            "ep": 2,
+            "airdate": "2026-07-09",
+            "type": 0
+          },
+          {
+            "id": 1705434,
+            "subject_id": 603352,
+            "sort": 3,
+            "ep": 3,
+            "airdate": "2026-07-16",
+            "type": 0
+          },
+          {
+            "id": 1705435,
+            "subject_id": 603352,
+            "sort": 4,
+            "ep": 4,
+            "airdate": "2026-07-23",
+            "type": 0
+          },
+          {
+            "id": 1705436,
+            "subject_id": 603352,
+            "sort": 5,
+            "ep": 5,
+            "airdate": "2026-07-30",
+            "type": 0
+          },
+          {
+            "id": 1705437,
+            "subject_id": 603352,
+            "sort": 6,
+            "ep": 6,
+            "airdate": "2026-08-06",
+            "type": 0
+          },
+          {
+            "id": 1705438,
+            "subject_id": 603352,
+            "sort": 7,
+            "ep": 7,
+            "airdate": "2026-08-13",
+            "type": 0
+          },
+          {
+            "id": 1705439,
+            "subject_id": 603352,
+            "sort": 8,
+            "ep": 8,
+            "airdate": "2026-08-20",
+            "type": 0
+          },
+          {
+            "id": 1705440,
+            "subject_id": 603352,
+            "sort": 9,
+            "ep": 9,
+            "airdate": "2026-08-27",
+            "type": 0
+          },
+          {
+            "id": 1705441,
+            "subject_id": 603352,
+            "sort": 10,
+            "ep": 10,
+            "airdate": "2026-09-03",
+            "type": 0
+          },
+          {
+            "id": 1705442,
+            "subject_id": 603352,
+            "sort": 11,
+            "ep": 11,
+            "airdate": "2026-09-10",
+            "type": 0
+          },
+          {
+            "id": 1705443,
+            "subject_id": 603352,
+            "sort": 12,
+            "ep": 12,
+            "airdate": "2026-09-17",
+            "type": 0
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/subjects/552533",
+      "params": {},
+      "attempted_at": "2026-10-17T16:00:49.849946+08:00",
+      "success": true,
+      "response": {
+        "id": 552533,
+        "name": "天幕のジャードゥーガル",
+        "name_cn": "穹庐下的魔女",
+        "summary": "13世纪，一名少女身处伊朗的奴隶市场。\r\n这是一个将辽阔大陆操弄于股掌间的一位魔女的故事。失去母亲，又被迫远离故乡的希塔拉，年纪尚幼，既没有独自生存的能力，也没有未来的希望。这样的她，被心地善良的学者一家的夫人法蒂玛收留。\r\n「只要透过学习变聪明，不管遇到什么困扰，都会知道怎么做才是最好的」法蒂玛的儿子穆罕默德的一番话触动了希塔拉。她明白了「知」的可能性与重要性，开始充实自己的学识。她梦想着有朝一日能追上踏上求知之旅的穆罕默德。\r\n就在此时，由皇帝成吉思汗所统治，地表最强的「蒙古帝国」正不断向他国发动侵略，势力与日俱增。那永无止境的野心，终于也波及了希塔拉居住的城市。在帝国第四皇子拖雷的侵略下，安稳的日子画上了句点。\r\n失去一切的希塔拉，发誓要向这个深不可测的强国复仇。\r\n\r\n\r\n\r\n\r\n[简介原文]\r\n13世紀、イランの奴隷市場にその少女はいた。これは、広大な大陸を翻弄した一人の魔女の話――。\r\n母を亡くし、故郷からも遠く引き離されたシタラ。まだ幼く、一人で生きていく術も未来への希望も持たない彼女は、学者一家の心優しい奥方・ファーティマに拾われる。 \r\n「勉強して賢くなれば、どんなに困ったことが起きたって何をすれば一番いいのかわかるんだ」――ファーティマの息子・ムハンマドの言葉に心を揺さぶられたシタラは、\"知\"の可能性と大切さを知り、教養を深めていく。いつの日にか、知を探求する旅に出たムハンマドに追いつくことを夢見て……。 \r\nその頃、皇帝チンギス・カンによる地上最強の「モンゴル帝国」が他国への侵攻を繰り返し、日に日に勢力を拡大していた。留まるところを知らぬ野望は、ついにシタラの住む街に到達。帝国の第四皇子トルイによって穏やかな日々は終わりを告げる。すべてを失ったシタラは得体の知れない強国への復讐を誓うのだった。",
+        "type": 2,
+        "date": "2026-07-04",
+        "eps": 12,
+        "infobox": [
+          {
+            "key": "别名",
+            "value": [
+              {
+                "v": "穹廬下的魔女"
+              },
+              {
+                "v": "Tenmaku no Jaadugar"
+              },
+              {
+                "k": "英文名",
+                "v": "Jaadugar: A Witch in Mongolia"
+              }
+            ]
+          },
+          {
+            "key": "话数",
+            "value": "12"
+          },
+          {
+            "key": "放送开始",
+            "value": "2026年7月4日"
+          },
+          {
+            "key": "官方网站",
+            "value": "https://anime-jaadugar.com/"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bgm.tv/v0/episodes",
+      "params": {
+        "subject_id": 552533,
+        "type": 0,
+        "limit": 200,
+        "offset": 0
+      },
+      "attempted_at": "2026-10-17T16:00:50.388433+08:00",
+      "success": true,
+      "response": {
+        "total": 12,
+        "limit": 200,
+        "offset": 0,
+        "data": [
+          {
+            "id": 1696986,
+            "subject_id": 552533,
+            "sort": 1,
+            "ep": 1,
+            "airdate": "2026-07-04",
+            "type": 0
+          },
+          {
+            "id": 1696987,
+            "subject_id": 552533,
+            "sort": 2,
+            "ep": 2,
+            "airdate": "2026-07-04",
+            "type": 0
+          },
+          {
+            "id": 1696988,
+            "subject_id": 552533,
+            "sort": 3,
+            "ep": 3,
+            "airdate": "2026-07-11",
+            "type": 0
+          },
+          {
+            "id": 1696989,
+            "subject_id": 552533,
+            "sort": 4,
+            "ep": 4,
+            "airdate": "2026-07-18",
+            "type": 0
+          },
+          {
+            "id": 1696990,
+            "subject_id": 552533,
+            "sort": 5,
+            "ep": 5,
+            "airdate": "2026-07-25",
+            "type": 0
+          },
+          {
+            "id": 1696991,
+            "subject_id": 552533,
+            "sort": 6,
+            "ep": 6,
+            "airdate": "2026-08-01",
+            "type": 0
+          },
+          {
+            "id": 1696992,
+            "subject_id": 552533,
+            "sort": 7,
+            "ep": 7,
+            "airdate": "2026-08-08",
+            "type": 0
+          },
+          {
+            "id": 1696993,
+            "subject_id": 552533,
+            "sort": 8,
+            "ep": 8,
+            "airdate": "2026-08-15",
+            "type": 0
+          },
+          {
+            "id": 1696994,
+            "subject_id": 552533,
+            "sort": 9,
+            "ep": 9,
+            "airdate": "2026-08-22",
+            "type": 0
+          },
+          {
+            "id": 1696995,
+            "subject_id": 552533,
+            "sort": 10,
+            "ep": 10,
+            "airdate": "2026-08-29",
+            "type": 0
+          },
+          {
+            "id": 1696996,
+            "subject_id": 552533,
+            "sort": 11,
+            "ep": 11,
+            "airdate": "2026-09-05",
+            "type": 0
+          },
+          {
+            "id": 1696997,
+            "subject_id": 552533,
+            "sort": 12,
+            "ep": 12,
+            "airdate": "2026-09-12",
+            "type": 0
+          }
+        ]
+      }
+    }
+  ]
+}

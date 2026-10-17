@@ -1,0 +1,69 @@
+[
+  {
+    "quarter": "2024_秋",
+    "url": "https://acgsecrets.hk/bangumi/202410/",
+    "checked_at": "2026-10-17T16:00:10.806919+08:00",
+    "sha256": "fb765660f3d7c308b52e255eccdf35d241ca5ffad835945232923567fab4df1d",
+    "source_count": 74,
+    "missing_cards": [],
+    "filled_links": 0,
+    "hanako_card": {
+      "bangumi_id": "anime-1659",
+      "anime_name": "放學後少年花子君 續篇",
+      "source_image_url": "https://static.acgsecrets.hk/img/36/36ffc19e9fd183a7c82410e8d46cb6e4/94d6e3ef9e6bcff2625ada64bcda1846c7bfc1c115c1e27ffec8453ae13d5295.jpg",
+      "premiere_date": "一",
+      "premiere_time": "25:35",
+      "story": "暫無簡介",
+      "original_name": "放課後少年花子くん (続編)",
+      "external_ids": {
+        "bangumi": 464594,
+        "anilist": null
+      }
+    }
+  },
+  {
+    "quarter": "2026_冬",
+    "url": "https://acgsecrets.hk/bangumi/202601/",
+    "checked_at": "2026-10-17T16:00:19.902370+08:00",
+    "sha256": "3f766164f9e56514b993724636e0df46c61ab6c0810296a09394ecff09461e0d",
+    "source_count": 65,
+    "missing_cards": [],
+    "filled_links": 0
+  },
+  {
+    "quarter": "2026_春",
+    "url": "https://acgsecrets.hk/bangumi/202604/",
+    "checked_at": "2026-10-17T16:00:29.347960+08:00",
+    "sha256": "21374d72d5386266739fb29dfe20d59daaa3d5e1dcc288ee0bcd21c3d7b63119",
+    "source_count": 71,
+    "missing_cards": [],
+    "filled_links": 0
+  },
+  {
+    "quarter": "2026_夏",
+    "url": "https://acgsecrets.hk/bangumi/202607/",
+    "checked_at": "2026-10-17T16:00:39.485459+08:00",
+    "sha256": "aff38839b83c69d3083357f76e3ea2d6c7e33e3a3e24839a96474bc7702f0da5",
+    "source_count": 75,
+    "missing_cards": [],
+    "filled_links": 0
+  },
+  {
+    "quarter": "2026_秋",
+    "url": "https://acgsecrets.hk/bangumi/202610/",
+    "checked_at": "2026-10-17T16:00:44.124604+08:00",
+    "sha256": "8bc886dfa2b01987590c729c6b32e66e5615ef4b5058d9716ee2a86136be7366",
+    "source_count": 73,
+    "missing_cards": [],
+    "filled_links": 0
+  },
+  {
+    "quarter": "2027_冬",
+    "url": "https://acgsecrets.hk/bangumi/202701/",
+    "checked_at": "2026-10-17T16:00:46.377614+08:00",
+    "sha256": "7329586c14507fa35d7dbc032f229bb7bf119363dad39d5565cb09d01aad04ba",
+    "source_count": 4,
+    "missing_cards": [],
+    "filled_links": 0
+  }
+]

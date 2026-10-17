@@ -543,7 +543,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/14b069ffbdddaf0793927d0a54df698c",
       "premiere_date": "四",
       "premiere_time": "17:55",
-      "story": "暫無簡介",
+      "story": "「GO!GO!アトム」は 地球環境がテーマのコメディ＆アクションシリーズ！ \r\nアトム、スズ、アトニャン、3人の “チームアトム” が力を合わせて地球環境に起こる様々な問題を解決するミッションに挑みます！ \r\nチームアトムは時にケンカや失敗を重ねながらも、ミッションを通して自然のメカニズムを知り、命の多様性を発見していきます。 \r\n毎回どこかでおこるミッションは 彼等にとってハラハラワクワクの大冒険なのです！ \r\n\r\n『GO！GO！アトム』（ゴー！ゴー！アトム、原題：GO ASTRO BOY GO!）は、手塚治虫原作の漫画『鉄腕アトム』のテレビアニメ作品。\r\n\r\n日本向けローカライズ版は2019年10月3日からテレビ東京系列で同日より新設される「プリスクタイム」枠にて放送中。",
       "original_name": "GO！GO！アトム",
       "external_ids": {
         "bangumi": 302137,
@@ -559,10 +559,18 @@
           "https://bgm.tv/subject/302137",
           "https://bgm.tv/subject/302137/ep"
         ],
-        "checked_at": "2026-10-15T13:33:47.768137+08:00",
-        "attempted_at": "2026-10-15T13:33:47.768137+08:00",
+        "checked_at": "2026-10-17T16:00:39.755017+08:00",
+        "attempted_at": "2026-10-17T16:00:39.755017+08:00",
         "end_date": "2020-10-01",
-        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。"
+        "note": "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 302137,
+        "checked_at": "2026-10-17T16:00:39.755017+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1664,14 +1672,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T09:14:07.111409+08:00",
+  "generated_at": "2026-10-17T16:00:39.755017+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202004/",
   "quality": {
     "source_count": 59,
     "record_count": 59,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 37,
+    "missing_story_count": 36,
     "missing_date_count": 1,
     "missing_time_count": 1
   }
