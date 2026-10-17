@@ -402,3 +402,145 @@ def test_display_name_review_cannot_authorize_another_version(
     _write(repository, [old])
     _write(repository, [{**old, **updates, "episodes": None}])
     assert repository.load_quarter("2026", "夏").anime_list[0].episodes is None
+
+
+@pytest.mark.parametrize("kind", ["episode", "story"])
+@pytest.mark.parametrize("supplied_metadata", [False, True])
+def test_original_title_change_cannot_drop_reviewed_binding(
+    tmp_path, anime_record_factory, kind, supplied_metadata
+):
+    from services.episode_source_reviews import source_reviews
+    from services.story_source_reviews import story_reviews
+
+    row = (
+        next(r for r in source_reviews() if r["card_id"] == "anime-275")
+        if kind == "episode"
+        else story_reviews()[0]
+    )
+    old = {
+        **anime_record_factory(1, name=row["anime_name"]),
+        "bangumi_id": row["card_id"],
+        "original_name": row["original_name"],
+        "external_ids": {"bangumi": row["subject_id"]},
+    }
+    if kind == "episode":
+        old["episodes"] = row["metadata"]
+    else:
+        old.update(
+            story=row["story"],
+            story_source={
+                "provider": "official",
+                "method": "manual_official",
+                "subject_id": row["subject_id"],
+                "source_url": row["source_url"],
+                "checked_at": row["checked_at"],
+            },
+        )
+    repository = _repository(tmp_path)
+    result = _write(repository, [old])
+    original = result.path.read_bytes()
+    incoming = {
+        **old,
+        "original_name": row["original_name"] + " Season 2",
+        "story": "暫無簡介",
+        "story_source": None,
+        "episodes": {"total_episodes": 6} if supplied_metadata else None,
+    }
+    with pytest.raises(DataContractError, match="Reviewed source binding"):
+        _write(repository, [incoming])
+    assert result.path.read_bytes() == original
+
+
+def test_validated_instance_with_modified_invalid_counts_is_rejected(
+    tmp_path, anime_record_factory
+):
+    from models import Anime, EpisodeMetadata
+
+    repository = _repository(tmp_path)
+    old = {
+        **anime_record_factory(1),
+        "episodes": {"total_episodes": 12, "aired_episodes": 10},
+    }
+    result = _write(repository, [old])
+    original = result.path.read_bytes()
+    valid = Anime.model_validate(old)
+    invalid = valid.model_copy(
+        update={
+            "episodes": EpisodeMetadata.model_validate(old["episodes"]).model_copy(
+                update={"total_episodes": 6}
+            )
+        }
+    )
+    with pytest.raises(DataContractError, match="Anime contract"):
+        _write(repository, [invalid])
+    assert result.path.read_bytes() == original
+
+
+def test_modified_instance_cannot_write_story_evidence_for_another_subject(
+    tmp_path, anime_record_factory
+):
+    from models import Anime, ExternalIds
+
+    repository = _repository(tmp_path)
+    valid = Anime.model_validate(
+        {
+            **anime_record_factory(1),
+            "external_ids": {"bangumi": 100},
+            "story_source": {
+                "subject_id": 100,
+                "checked_at": INITIAL_TIME,
+                "method": "bangumi_api",
+            },
+        }
+    )
+    invalid = valid.model_copy(update={"external_ids": ExternalIds(bangumi=200)})
+    with pytest.raises(DataContractError, match="Anime contract"):
+        _write(repository, [invalid])
+    assert not repository.quarter_path("2026", "夏").exists()
+
+
+@pytest.mark.parametrize("kind", ["episode", "story"])
+def test_temporary_identity_omissions_preserve_reviewed_evidence(
+    tmp_path, anime_record_factory, kind
+):
+    from services.episode_source_reviews import source_reviews
+    from services.story_source_reviews import story_reviews
+
+    row = (
+        next(r for r in source_reviews() if r["card_id"] == "anime-275")
+        if kind == "episode"
+        else story_reviews()[0]
+    )
+    old = {
+        **anime_record_factory(1, name=row["anime_name"]),
+        "bangumi_id": row["card_id"],
+        "original_name": row["original_name"],
+        "external_ids": {"bangumi": row["subject_id"]},
+    }
+    if kind == "episode":
+        old["story"] = "暫無簡介"
+        old["episodes"] = row["metadata"]
+    else:
+        old.update(
+            story=row["story"],
+            story_source={
+                "provider": "official",
+                "method": "manual_official",
+                "subject_id": row["subject_id"],
+                "source_url": row["source_url"],
+                "checked_at": row["checked_at"],
+            },
+        )
+    repository = _repository(tmp_path)
+    result = _write(repository, [old])
+    original = result.path.read_bytes()
+    incoming = {
+        **old,
+        "original_name": None,
+        "external_ids": {},
+        "episodes": None,
+        "story": "暫無簡介",
+        "story_source": None,
+    }
+    assert not _write(repository, [incoming]).changed
+    assert result.path.read_bytes() == original

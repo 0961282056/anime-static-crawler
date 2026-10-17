@@ -162,10 +162,12 @@ class DataRepository:
         validated_records = []
         for index, record in enumerate(records, start=1):
             try:
+                # model_copy() bypasses validation, including nested models.
+                # Revalidate serialized fields at the persistence boundary.
                 validated_records.append(
-                    record
-                    if isinstance(record, Anime)
-                    else Anime.model_validate(record)
+                    Anime.model_validate(
+                        record.model_dump() if isinstance(record, Anime) else record
+                    )
                 )
             except ValidationError as exc:
                 raise DataContractError(
@@ -197,18 +199,6 @@ class DataRepository:
                     f"{', '.join(conflicts)}; reviewed identity correction required"
                 )
             renamed = old is not None and record.anime_name != old.anime_name
-            if renamed and (
-                (reviewed_source(old) and not reviewed_source(record))
-                or (
-                    old.story_source
-                    and old.story_source.provider == "official"
-                    and not reviewed_story(record)
-                )
-            ):
-                raise DataContractError(
-                    f"Reviewed source binding changed for {record.bangumi_id}; "
-                    "update its exact reviewed rule before renaming"
-                )
             if old and record.episodes is None:
                 changed_identity = (
                     (
@@ -241,6 +231,22 @@ class DataRepository:
                             else record.story_source,
                         }
                     )
+            # Check the effective record after restoring temporarily absent
+            # source fields. Every identity field can invalidate a reviewed
+            # scope, even when the Chinese display name has not changed.
+            effective = validated_records[index]
+            if old and (
+                (reviewed_source(old) and not reviewed_source(effective))
+                or (
+                    old.story_source
+                    and old.story_source.provider == "official"
+                    and not reviewed_story(effective)
+                )
+            ):
+                raise DataContractError(
+                    f"Reviewed source binding changed for {record.bangumi_id}; "
+                    "update its exact reviewed rule before changing identity"
+                )
         quality = DataQuality.from_records(
             validated_records,
             source_count=source_count,
