@@ -1,0 +1,35 @@
+{
+  "card_id": "anime-2154",
+  "subject_id": 520633,
+  "old_status": "unknown",
+  "new_status": "airing",
+  "aired_episodes_retained": 27,
+  "total_retained": null,
+  "latest_entries": [
+    {
+      "id": 1756497,
+      "subject_id": 520633,
+      "type": 0,
+      "sort": 26,
+      "ep": 26,
+      "airdate": "2026-10-03"
+    },
+    {
+      "id": 1759791,
+      "subject_id": 520633,
+      "type": 0,
+      "sort": 27,
+      "ep": 27,
+      "airdate": "2026-10-10"
+    },
+    {
+      "id": 1763398,
+      "subject_id": 520633,
+      "type": 0,
+      "sort": 28,
+      "ep": 28,
+      "airdate": "2026-10-17"
+    }
+  ],
+  "policy": "Same-day entry 28 is not counted as aired; an explicitly dated pending entry supports airing under existing policy."
+}

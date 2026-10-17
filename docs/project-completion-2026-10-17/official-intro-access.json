@@ -1,0 +1,44 @@
+[
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/gonjiro/story/",
+    "attempted_at": "2026-10-17T09:53:17.466098+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/gonjiro/story/",
+    "sha256": "8c405d8b7576aff8635a8f3097643258616d6f02783890a248803b129cb07924"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/story/",
+    "attempted_at": "2026-10-17T09:53:17.466891+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/story/",
+    "sha256": "71b640a1a8e09072920e4fcc032e6c457f5ca324273bfc46302968fc99736e32"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/prichan/story/",
+    "attempted_at": "2026-10-17T09:53:17.467250+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/prichan/story/",
+    "sha256": "7025fa12aa753b33c102c71a51c6c962dc33b497096dd3867f2e4f48c5a13b9c"
+  },
+  {
+    "url": "https://anime.magireco.com/introduction/",
+    "attempted_at": "2026-10-17T09:53:18.576105+00:00",
+    "status": 200,
+    "final_url": "https://anime.magireco.com/introduction/",
+    "sha256": "96a176ea5294212e82d23e8be1646fd9b1deea66c34b1048203058b06247b5a4"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/introduction/",
+    "attempted_at": "2026-10-17T09:53:18.589973+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/introduction/",
+    "sha256": "5e3f29718f87be00d663cddc6dae2402c43a251379f6890a96a9c5e9c74a2e55"
+  },
+  {
+    "url": "https://www.oshiri-tantei.com/story/",
+    "attempted_at": "2026-10-17T09:53:18.616375+00:00",
+    "status": 200,
+    "final_url": "https://oshiri-tantei.com:443/story/story134.html",
+    "sha256": "df1a4ed9a45847ab6c53f0d628f0926ba54d495e2d7f94593422a37e77514c62"
+  }
+]

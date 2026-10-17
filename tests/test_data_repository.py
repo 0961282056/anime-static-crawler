@@ -295,3 +295,110 @@ def test_new_card_with_all_previous_ids_is_allowed(tmp_path, anime_record_factor
     result = _write(repository, records)
     assert result.changed
     assert result.current_count == 5
+
+
+def test_reviewed_exact_display_rename_preserves_episode_evidence(
+    tmp_path, anime_record_factory
+):
+    repository = _repository(tmp_path)
+    old = {
+        **anime_record_factory(1, name="DARK MACHINE THE ANIMATION"),
+        "bangumi_id": "anime-2282",
+        "original_name": "DARK MACHINE THE ANIMATION",
+        "external_ids": {"bangumi": 505550, "anilist": 179876},
+        "episodes": {
+            "total_episodes": 12,
+            "aired_episodes": 1,
+            "checked_at": INITIAL_TIME.isoformat(),
+            "attempted_at": INITIAL_TIME.isoformat(),
+            "source_kind": "bangumi_api",
+        },
+    }
+    _write(repository, [old])
+    before = repository.load_quarter("2026", "夏").anime_list[0]
+    _write(repository, [{**old, "anime_name": "闇機 DARK MACHINE", "episodes": None}])
+    after = repository.load_quarter("2026", "夏").anime_list[0]
+    assert after.anime_name == "闇機 DARK MACHINE"
+    assert after.episodes == before.episodes
+    assert after.external_ids == before.external_ids
+
+
+def test_manual_episode_scope_cannot_be_lost_by_display_rename(
+    tmp_path, anime_record_factory
+):
+    from services.episode_source_reviews import source_reviews
+
+    row = next(r for r in source_reviews() if r["card_id"] == "anime-275")
+    old = {
+        **anime_record_factory(1, name=row["anime_name"]),
+        "bangumi_id": row["card_id"],
+        "original_name": row["original_name"],
+        "external_ids": {"bangumi": row["subject_id"]},
+        "episodes": row["metadata"],
+    }
+    repository = _repository(tmp_path)
+    result = _write(repository, [old])
+    original = result.path.read_bytes()
+    with pytest.raises(DataContractError, match="Reviewed source binding"):
+        _write(repository, [{**old, "anime_name": "新版中文名", "episodes": None}])
+    assert result.path.read_bytes() == original
+
+
+def test_official_story_binding_cannot_be_lost_by_display_rename(
+    tmp_path, anime_record_factory
+):
+    from services.story_source_reviews import story_reviews
+
+    row = story_reviews()[0]
+    old = {
+        **anime_record_factory(1, name=row["anime_name"], story=row["story"]),
+        "bangumi_id": row["card_id"],
+        "original_name": row["original_name"],
+        "external_ids": {"bangumi": row["subject_id"]},
+        "story_source": {
+            "provider": "official",
+            "method": "manual_official",
+            "subject_id": row["subject_id"],
+            "source_url": row["source_url"],
+            "checked_at": row["checked_at"],
+        },
+    }
+    repository = _repository(tmp_path)
+    result = _write(repository, [old])
+    original = result.path.read_bytes()
+    with pytest.raises(DataContractError, match="Reviewed source binding"):
+        _write(
+            repository,
+            [
+                {
+                    **old,
+                    "anime_name": "新版中文名",
+                    "story": "暫無簡介",
+                    "story_source": None,
+                }
+            ],
+        )
+    assert result.path.read_bytes() == original
+
+
+@pytest.mark.parametrize(
+    "updates",
+    [
+        {"anime_name": "闇機 DARK MACHINE 第二季"},
+        {"anime_name": "闇機 DARK MACHINE", "original_name": "DARK MACHINE Season 2"},
+    ],
+)
+def test_display_name_review_cannot_authorize_another_version(
+    tmp_path, anime_record_factory, updates
+):
+    repository = _repository(tmp_path)
+    old = {
+        **anime_record_factory(1, name="DARK MACHINE THE ANIMATION"),
+        "bangumi_id": "anime-2282",
+        "original_name": "DARK MACHINE THE ANIMATION",
+        "external_ids": {"bangumi": 505550, "anilist": 179876},
+        "episodes": {"total_episodes": 12, "aired_episodes": 1},
+    }
+    _write(repository, [old])
+    _write(repository, [{**old, **updates, "episodes": None}])
+    assert repository.load_quarter("2026", "夏").anime_list[0].episodes is None

@@ -914,3 +914,35 @@ def test_reviewed_parenthesized_sequel_is_not_base_or_another_version(
     assert not subject_identity_matches(
         record.model_copy(update={"bangumi_id": "anime-999"}), provider
     )
+
+
+def test_reviewed_quote_formatting_keeps_plus_version_boundary(anime_record_factory):
+    from services.episode_metadata import subject_identity_matches
+
+    record = anime(
+        anime_record_factory,
+        bangumi_id="anime-1401",
+        anime_name="催眠麥克風 -Division Rap Battle- Rhyme Anima +",
+        original_name="ヒプノシスマイク-Division Rap Battle- Rhyme Anima +",
+        external_ids={"bangumi": 426049},
+    )
+    provider = {
+        "id": 426049,
+        "type": 2,
+        "name": "『ヒプノシスマイク-Division Rap Battle-』Rhyme Anima ＋",
+        "date": "2023-10-06",
+    }
+    assert subject_identity_matches(record, provider)
+    assert not subject_identity_matches(
+        record,
+        {**provider, "name": "『ヒプノシスマイク-Division Rap Battle-』Rhyme Anima"},
+    )
+    assert not subject_identity_matches(
+        record.model_copy(
+            update={
+                "original_name": "ヒプノシスマイク-Division Rap Battle- Rhyme Anima"
+            }
+        ),
+        provider,
+    )
+    assert not subject_identity_matches(record, {**provider, "date": "2020-10-02"})

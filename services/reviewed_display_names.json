@@ -1,0 +1,44 @@
+[
+  {
+    "card_id": "anime-2282",
+    "names": [
+      "DARK MACHINE THE ANIMATION",
+      "闇機 DARK MACHINE"
+    ],
+    "original_name": "DARK MACHINE THE ANIMATION",
+    "anilist_id": 179876,
+    "reviewed_on": "2026-10-17",
+    "source_url": "https://acgsecrets.hk/bangumi/202610/",
+    "source_document_sha256": "a353f195a248e91495cdb93278a44132b57eeb70ac5cef51c4a5009f47348026",
+    "basis": "Same source card, exact original title and both unchanged explicit external IDs; source added/updated the Chinese display translation only.",
+    "subject_id": 505550
+  },
+  {
+    "card_id": "anime-2321",
+    "names": [
+      "Vertex Force",
+      "至高之力 Vertex Force"
+    ],
+    "original_name": "バーテックスフォース",
+    "anilist_id": 209562,
+    "reviewed_on": "2026-10-17",
+    "source_url": "https://acgsecrets.hk/bangumi/202610/",
+    "source_document_sha256": "a353f195a248e91495cdb93278a44132b57eeb70ac5cef51c4a5009f47348026",
+    "basis": "Same source card, exact original title and both unchanged explicit external IDs; source added/updated the Chinese display translation only.",
+    "subject_id": 636512
+  },
+  {
+    "card_id": "anime-2330",
+    "names": [
+      "鐵道行！meet with 鐵道娘",
+      "鐵旅！meet with 鐵道少女"
+    ],
+    "original_name": "てつりょー！meet with 鉄道むすめ",
+    "anilist_id": 199594,
+    "reviewed_on": "2026-10-17",
+    "source_url": "https://acgsecrets.hk/bangumi/202610/",
+    "source_document_sha256": "a353f195a248e91495cdb93278a44132b57eeb70ac5cef51c4a5009f47348026",
+    "basis": "Same source card, exact original title and both unchanged explicit external IDs; source added/updated the Chinese display translation only.",
+    "subject_id": 590553
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "records": 2150,
+  "all_existing_ids_images_order_original_names_and_stories_preserved": true,
+  "all_total_aired_count_status_end_dates_preserved": true,
+  "field_change_counts": {
+    "episodes": 1680,
+    "story": 751,
+    "story_source": 751,
+    "anime_name": 3,
+    "premiere_date": 1
+  },
+  "status_changes": [
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2154",
+      "from": "unknown",
+      "to": "airing"
+    }
+  ],
+  "unknown_methods": 0
+}

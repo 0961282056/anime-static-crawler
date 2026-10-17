@@ -14,8 +14,11 @@ from pydantic import ValidationError
 from models import TAIPEI_TZ, Anime, DataQuality, ExternalIds, QuarterDataset
 from services.atomic_io import atomic_write_json
 from services.diagnostics import operation
+from services.display_name_reviews import reviewed_display_rename
+from services.episode_source_reviews import reviewed_source
 from services.errors import DataContractError
 from services.source_identity import conflicting_providers
+from services.story_source_reviews import reviewed_story
 
 QUARTER_FILE_PATTERN = re.compile(r"^(\d{4})_(冬|春|夏|秋)\.json$")
 
@@ -193,13 +196,26 @@ class DataRepository:
                     f"Conflicting explicit source IDs for {record.bangumi_id}: "
                     f"{', '.join(conflicts)}; reviewed identity correction required"
                 )
+            renamed = old is not None and record.anime_name != old.anime_name
+            if renamed and (
+                (reviewed_source(old) and not reviewed_source(record))
+                or (
+                    old.story_source
+                    and old.story_source.provider == "official"
+                    and not reviewed_story(record)
+                )
+            ):
+                raise DataContractError(
+                    f"Reviewed source binding changed for {record.bangumi_id}; "
+                    "update its exact reviewed rule before renaming"
+                )
             if old and record.episodes is None:
                 changed_identity = (
                     (
                         record.external_ids.bangumi is not None
                         and record.external_ids.bangumi != old.external_ids.bangumi
                     )
-                    or record.anime_name != old.anime_name
+                    or (renamed and not reviewed_display_rename(old, record))
                     or (
                         record.original_name is not None
                         and old.original_name is not None

@@ -1,0 +1,187 @@
+[
+  {
+    "quarter": "2018_冬",
+    "sha256": "ad010d4a609bd00d3d43a38be9c5d04b9a8bca9ec028a9bbb41c0147eac67004",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2018_夏",
+    "sha256": "e6a9d11d068da34495cbf1f0d395bb4a893455a21def7cb3cc11cfb981e7f917",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2018_春",
+    "sha256": "da36ce04f854d6ba2972d611c3e4bde575b4d65df7a707d8a3a88b8569100031",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2018_秋",
+    "sha256": "0f7b383f99cf1778a2161811db4c96c859fed757cbb6ff63960c219db1da443d",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2019_冬",
+    "sha256": "c0df52d8b1b55b0cc8b611a44ee8c29ba35b235e1f9fcda1a6c77032de215b18",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2019_夏",
+    "sha256": "4c0545f18f37ae9b1c0475e33fba526d168f73ad75ce09d0769f6153825da6d9",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2019_春",
+    "sha256": "07fd6ea93a3155f2b651871f6432223af21ec5b612897de74a5ec87eda04968f",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2019_秋",
+    "sha256": "88346b810621bb5da7a78b01c093e683edfa924c38220f4d00eec4f773dc44d1",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2020_冬",
+    "sha256": "6ea45861f0a11deea21fc8d2bff3d81a10baa6e68df5f2061686a823f58cf5e7",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2020_夏",
+    "sha256": "efa37f1ad76722ad3be1483e834e43536b58e5cab7683f54ae7bfa7af6f18ec8",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2020_春",
+    "sha256": "352b307f736eaef6cb4a20a069afc2347ecb36f012d9fc8ce97db8f674d9f39e",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2020_秋",
+    "sha256": "aa19f0b19a82ef54dd58b011b46295284b3ff3253a6a7c17f33b76747681c05c",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2021_冬",
+    "sha256": "b1edb6d5d065d51af45ed1b75208b1bc97d65381aceae64ee4d95223efdfe768",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2021_夏",
+    "sha256": "708bc73259da6358d5903dd370629944db3cb5e56c7dc80244cafd32a3f0e9f9",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2021_春",
+    "sha256": "e90dcfcbe82dc438e282085a4e7a7c34c579ebe31da7e6ba38edc496a9325520",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2021_秋",
+    "sha256": "e844d9b829654c4bd57875411d84abdcc3259790def24cfcc69a638e70ee8dd2",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2022_冬",
+    "sha256": "272fa03b8c4eed10ced62185b0c783f71c4d4bfde2a3bb2e2961dfc90d176c65",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2022_夏",
+    "sha256": "3616c32648706da477ef5bc234170662db9bbffbfe76551e2fbf0a709f02eb0f",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2022_春",
+    "sha256": "7ad2a82473189bda6271de25a8e61cf946654299c0212a35973d2cff3c100f9f",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2022_秋",
+    "sha256": "a2aa8626db6719fe8967671e3e080d551ed1c7f1aaa97bcf477ee2c141332289",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2023_冬",
+    "sha256": "9063f033e934548300e50bc01dc35c9a139a03286ad920eb8d590394d1833c68",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2023_夏",
+    "sha256": "7e5fbf1e0d13059af5e495d9a3273a4f6a7dea0b1cce04de1bcb7f532bb99299",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2023_春",
+    "sha256": "445b1c122d2705988f03b52ae7428cb2d7e2acceb4e05d1844f55ebe0a5d3537",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2023_秋",
+    "sha256": "f7000eed0ac6a7e267bedd595e477ab631c517258cec43b42b4765a1f455c904",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2024_冬",
+    "sha256": "f6d347fe9a05acdfb43d3a8f07df41d062d59b120874297138a1d78d97326590",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2024_夏",
+    "sha256": "963e0d069d28cbfd4860926edc075f1ff5f8a39a0ee440e395dea1e6e2b51c90",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2024_春",
+    "sha256": "fcac7d3d15c5a38ab620a900896c1368b6dac29b4f5a924f6cee3de3385dfc0f",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2024_秋",
+    "sha256": "fb765660f3d7c308b52e255eccdf35d241ca5ffad835945232923567fab4df1d",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2025_冬",
+    "sha256": "8eb96bc0e691c1a1f6a909d7c8c28b4de6ee50426713179cdab7f18594140344",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2025_夏",
+    "sha256": "5c5f3d398080c180aea91308a534ac7a5257d0bbc608f2c290f5b93cffb0b525",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2025_春",
+    "sha256": "1ef1e3961e07e6e424aba908824ef5f1a482c8c3b2320162f89367ad48eb7d28",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2025_秋",
+    "sha256": "f7782226a23345bd24f3bf32042ef232e6e9a862719fa72f661c4d37be397f0e",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2026_冬",
+    "sha256": "3f766164f9e56514b993724636e0df46c61ab6c0810296a09394ecff09461e0d",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2026_夏",
+    "sha256": "aff38839b83c69d3083357f76e3ea2d6c7e33e3a3e24839a96474bc7702f0da5",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2026_春",
+    "sha256": "21374d72d5386266739fb29dfe20d59daaa3d5e1dcc288ee0bcd21c3d7b63119",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2026_秋",
+    "sha256": "a353f195a248e91495cdb93278a44132b57eeb70ac5cef51c4a5009f47348026",
+    "same_as_audit": true
+  },
+  {
+    "quarter": "2027_冬",
+    "sha256": "8001dd2578cc3ba217b8627b48b5eddaf74f908a6a9d1e0f6a3e658a137c9fbc",
+    "same_as_audit": true
+  }
+]

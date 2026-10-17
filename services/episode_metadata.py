@@ -115,6 +115,25 @@ def reviewed_source_subject_id(
     return source_id
 
 
+def reviewed_identity(anime: Anime, subject: dict[str, Any]) -> dict[str, Any] | None:
+    """Return only the exact reviewed card/title/ID/first-date binding."""
+    if subject.get("id") != anime.external_ids.bangumi or subject.get("type") != 2:
+        return None
+    return next(
+        (
+            review
+            for review in reviewed_identities()
+            if review["card_id"] == anime.bangumi_id
+            and review["anime_name"] == anime.anime_name
+            and review["source_original_name"] == anime.original_name
+            and review["subject_id"] == anime.external_ids.bangumi
+            and review["subject_name"] == subject.get("name")
+            and _date(review["first_air_date"]) == _date(subject.get("date"))
+        ),
+        None,
+    )
+
+
 def subject_identity_matches(anime: Anime, subject: dict[str, Any]) -> bool:
     """Exact provider names, or a manually reviewed card/title/ID/date tuple."""
     if subject.get("id") != anime.external_ids.bangumi or subject.get("type") != 2:
@@ -122,15 +141,7 @@ def subject_identity_matches(anime: Anime, subject: dict[str, Any]) -> bool:
     names = subject_names(subject)
     if not anime.original_name or _name(anime.original_name) in names:
         return True
-    return any(
-        review["card_id"] == anime.bangumi_id
-        and review["anime_name"] == anime.anime_name
-        and review["source_original_name"] == anime.original_name
-        and review["subject_id"] == anime.external_ids.bangumi
-        and review["subject_name"] == subject.get("name")
-        and _date(review["first_air_date"]) == _date(subject.get("date"))
-        for review in reviewed_identities()
-    )
+    return reviewed_identity(anime, subject) is not None
 
 
 def parse_episode_metadata(
@@ -315,7 +326,7 @@ def parse_episode_metadata(
         if scoped
         else "來源結束日期早於首播，未採用；播出狀態待確認。"
         if invalid_end
-        else "依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        else "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
     )
 
 

@@ -1,0 +1,30 @@
+[
+  {
+    "query": "site:ntv.co.jp 薬屋のひとりごと 第3期 第1クール",
+    "http_status": 200,
+    "result_count": 10,
+    "accepted_evidence_count": 0,
+    "result": "Returned unrelated results; no independent official evidence accepted."
+  },
+  {
+    "query": "site:tv-tokyo.co.jp ダイヤのA actII Second Season 第2クール",
+    "http_status": 200,
+    "result_count": 10,
+    "accepted_evidence_count": 0,
+    "result": "Returned unrelated results; no independent official evidence accepted."
+  },
+  {
+    "query": "site:tv-tokyo.co.jp ねずみくんのチョッキ 第2期",
+    "http_status": 200,
+    "result_count": 10,
+    "accepted_evidence_count": 0,
+    "result": "Returned unrelated results; no independent official evidence accepted."
+  },
+  {
+    "query": "夜桜さんちの大作戦 第2期 第2クール 公式 あらすじ",
+    "http_status": 200,
+    "result_count": 10,
+    "accepted_evidence_count": 0,
+    "result": "Returned unrelated results; no independent official evidence accepted."
+  }
+]
