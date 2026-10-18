@@ -1095,7 +1095,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d51ed48d7431a32667aecd9e4a7912eb",
       "premiere_date": "五",
       "premiere_time": "18:25",
-      "story": "暫無簡介",
+      "story": "プロを目指す風見バードは元チャンピオンの\r\n黒須エクス──『仮面X』と出会いチームを結成。\r\nＸタワーの『頂上』を目指す。\r\nしかし彼らを待ち受けるのは誰も見たことがない\r\n壮絶なバトルだった。\r\nまだ見ぬもの、そして見えないもの──“X”。\r\n最高加速（エクストリーム）したベイブレードが\r\n新時代を駆け抜ける！",
       "original_name": "ベイブレードエックス",
       "external_ids": {
         "bangumi": 418599,
@@ -1117,6 +1117,13 @@
         "end_date": null,
         "note": "依已核對官方範圍自動更新；最終總集數未知，不以資料庫已落後的總話數封頂。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 418599,
+        "checked_at": "2026-10-18T16:34:24.334766+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2302,14 +2309,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T03:10:45.758581+08:00",
+  "generated_at": "2026-10-18T16:43:18.940675+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202310/",
   "quality": {
     "source_count": 74,
     "record_count": 74,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 2,
+    "missing_story_count": 1,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

@@ -1402,7 +1402,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ab7990ff4098f1510d83837d70d424a1",
       "premiere_date": "日",
       "premiere_time": "21:30",
-      "story": "暫無簡介",
+      "story": "TOKYO MX「月刊ブシロードTV」内およびYouTubeにて放送毎週日曜放送。\r\n\r\n名古屋にあるごく普通の学校・手羽先高校1年生の有はTCG〈トレーディングカードゲーム〉「Reバース」が大好きな女の子。\r\nひょんなことから串カツ屋の看板娘千春・天才中学生周子とチームを結成！\r\nマッドサイエンティスト青・ミステリアスなただのいい人の梢・宇宙を見過ぎて足元を見ない育未もあつまってきて、にぎやかで充実のReバースライフを過ごしている。\r\n一方、東京・上野の名門校セントパンダ女学院では、有とスマホへの依存が止まらない圭・過剰に品行方正な京・食欲モンスター雪・庶民派の豊・覆面ミュージシャン樹里・何も考えていない沙希という面々がエレガントかつバイオレンスな寮生活を送っていた。\r\n\r\nReバースをプレイする12人の少女達の「りばあす」な日々へ、Reバース GO!",
       "original_name": "Reバース",
       "external_ids": {
         "bangumi": 295615,
@@ -1423,6 +1423,13 @@
         "end_date": "2021-06-23",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 295615,
+        "checked_at": "2026-10-18T16:35:05.993756+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1616,14 +1623,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.842923+08:00",
+  "generated_at": "2026-10-18T16:43:18.836424+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202001/",
   "quality": {
     "source_count": 51,
     "record_count": 51,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 7,
+    "missing_story_count": 6,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

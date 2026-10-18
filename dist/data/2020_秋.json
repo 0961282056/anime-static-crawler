@@ -36,7 +36,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e6e919cc1eae40e3025747645a08c9ba",
       "premiere_date": "一",
       "premiere_time": "23:00",
-      "story": "暫無簡介",
+      "story": "杉元とアシㇼパの再会は叶うのか!?\r\n極寒の地で新たな局面を迎える生存競争サバイバル、樺太編が開幕ッッ!!!\r\n網走監獄で繰り広げられた激しい攻防戦の末に、離れ離れになってしまった「不死身の杉元」こと杉元佐一とアイヌの少女・アシㇼパ。アシㇼパは「脱獄王」の白石由竹とともに、キロランケと尾形百之助によって父の足跡が残る場所・樺太に連れ去られていた。アイヌの金塊を強奪した張本人である「のっぺら坊」が死んだ今、その秘密を解けるのは娘のアシㇼパのみ。キロランケの目的は、彼女を連れてかつての仲間である極東ロシアのパルチザンと合流することにあった。\r\n一方、第七師団の鶴見中尉と手を組んだ杉元と谷垣源次郎は、アシㇼパを捜索するための先遣隊に志願。月島軍曹と鯉登少尉を同行者として樺太を目指す。北海道よりさらに北に位置する極寒の地で、それぞれの旅路を進む杉元とアシㇼパを待ち受けるものとは!?　新たなサバイバルが幕を開ける！",
       "original_name": "ゴールデンカムイ 第三期",
       "external_ids": {
         "bangumi": 285901,
@@ -58,6 +58,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 285901,
+        "checked_at": "2026-10-18T16:34:56.855453+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -753,7 +760,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7ab14926ca75c275434866b9f3c2330f",
       "premiere_date": "五",
       "premiere_time": "07:30",
-      "story": "暫無簡介",
+      "story": "水豚君迎来诞生15周年纪念。\r\n2020年秋，首次电视动画化！\r\n生活在绿色大草原上的水豚和伙伴们的\r\nQ弹的每日就此奉上。",
       "original_name": "アニメ カピバラさん",
       "external_ids": {
         "bangumi": 316796,
@@ -774,6 +781,13 @@
         "end_date": "2021-03-26",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 316796,
+        "checked_at": "2026-10-18T16:34:58.257514+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1886,14 +1900,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.857127+08:00",
+  "generated_at": "2026-10-18T16:43:18.857630+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202010/",
   "quality": {
     "source_count": 58,
     "record_count": 58,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 6,
+    "missing_story_count": 4,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

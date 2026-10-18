@@ -391,7 +391,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/298b335f7c18105ab0de68e3ebca72a9",
       "premiere_date": "三",
       "premiere_time": "07:05",
-      "story": "暫無簡介",
+      "story": "2024年4月3日(水)あさ7:05よりテレビ東京系列「おはスタ」番組内にて、\r\n全世界待望のゴジラシリーズ最新作は・・・\r\nまさかのショート TV アニメ！！\r\n\r\n豪華すぎる声優陣で、\r\nクセが強すぎるちび怪獣たちの、ゆるすぎる日常を描く。\r\n果たしてちびゴジラは父であるゴジラのような\r\n立派な大怪獣になれるのか！？\r\n毎話3分くらいで送る\r\nノンストップモンスターエンターテインメント！",
       "original_name": "ちびゴジラの逆襲",
       "external_ids": {
         "bangumi": 484191,
@@ -412,6 +412,13 @@
         "end_date": "2025-03-26",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 484191,
+        "checked_at": "2026-10-18T16:34:17.960914+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -883,7 +890,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/90c2e7e30ade4245e0c6dc5518a0989c",
       "premiere_date": "五",
       "premiere_time": "22:00",
-      "story": "暫無簡介",
+      "story": "平和をもたらした暴虐の魔王は、 \r\n地底に広がる未知の世界で行われる神の代行者を選ぶ戦い《選定審判》に巻き込まれていく。 \r\nそれは、あらゆる理不尽をものともしない《不適合者》の失われた記憶を辿る物語。\r\nそして過去は世界の理へ導かれる——。\r\n\r\n「神ごときの力が魔王を上回るとでも思ったか」",
       "original_name": "魔王学院の不適合者II 2ndクール",
       "external_ids": {
         "bangumi": 455981,
@@ -904,6 +911,13 @@
         "end_date": "2024-07-24",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 455981,
+        "checked_at": "2026-10-18T16:34:21.514876+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1859,14 +1873,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.933773+08:00",
+  "generated_at": "2026-10-18T16:43:18.957040+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202404/",
   "quality": {
     "source_count": 61,
     "record_count": 61,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 3,
+    "missing_story_count": 1,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

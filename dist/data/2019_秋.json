@@ -723,7 +723,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a4b77bd589f8be54511493590ec22658",
       "premiere_date": "四",
       "premiere_time": "23:30",
-      "story": "暫無簡介",
+      "story": "致碧蓝航线以祝福——\r\n“碧蓝航线”的少女们，击溃了自外界入侵的神秘之敌“塞壬”的强烈攻势。\r\n然而，斗争世世代代都未曾改变。\r\n就如同人类曾经夺取海洋霸权一般，由于理念上的差异“碧蓝航线”与“赤色中轴”成为对立阵营。\r\n之后，时光流逝——",
       "original_name": "アズールレーン",
       "external_ids": {
         "bangumi": 260677,
@@ -745,6 +745,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 260677,
+        "checked_at": "2026-10-18T16:35:15.104922+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1541,7 +1548,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d5e8f47be1c9e11fd8dc2fcf717b9c53",
       "premiere_date": "日",
       "premiere_time": "21:00",
-      "story": "暫無簡介",
+      "story": "在很久以前，世界存在着精灵、矮人、吸血鬼、炼金术人造人、人类等众多种族。不断的纷争中君临种族顶点的是“龙”。\r\n但是经过漫长的岁月，“龙”消失了。剩下来的种族选择了共存的道路，并随着时代的变迁，演变成了除了保留下些许的外表特征外、大体上跟人类无异的姿态。\r\n2×19年，东京。让人联想到平静的现代。尽管如此，犯罪行为仍没有杜绝。向往着曾经存在于世的“龙”，渴望得到那份力量的犯罪事件组织“NINE”，他们策划起各种凶恶事件，计划颠覆现在的世界。\r\n为了与“NINE”对抗，警视厅组建了一个聚集了各个领域的能手的对策小组，其名为“警视厅特务部特殊凶恶犯对策室第七课——简称特7（TOKUNANA）”。虽然成员个个能力出类拔萃，却也有传言被人称为“脱群者集团”、“懒人集团”。\r\n七月清司是新配属到“特7”的新人刑警。一边被个性突出的同伴们捉弄着，一边以天生的明亮、正直性格为解决NINE事件发起挑战。在接二连三的疑难事件中，他能否找到自己所相信的正义——",
       "original_name": "トクナナ -警視庁 特務部 特殊凶悪犯対策室 第七課-",
       "external_ids": {
         "bangumi": 278440,
@@ -1563,6 +1570,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 278440,
+        "checked_at": "2026-10-18T16:35:17.190536+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1829,14 +1843,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.837589+08:00",
+  "generated_at": "2026-10-18T16:43:18.828978+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201910/",
   "quality": {
     "source_count": 56,
     "record_count": 56,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 8,
+    "missing_story_count": 6,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

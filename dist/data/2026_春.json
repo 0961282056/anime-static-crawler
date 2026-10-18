@@ -941,7 +941,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ec9396358cfa372f65a9f2c07c5edd66",
       "premiere_date": "四",
       "premiere_time": "25:50",
-      "story": "暫無簡介",
+      "story": "日本では「一粒のお米には７人の神様が宿る」という伝承があります。\r\nお米の神様（米女王）の子供である越野家７姉妹。\r\n失踪した母と、それを探しに旅立ってしまったお父さん。\r\nバラバラになってしまった家族を取り戻そうと奮闘する姉妹達が、\r\nさまざまな出会いや料理を通じて。食の大切さを学び成長していきます。",
       "original_name": "こめかみっ！ Girl’s",
       "external_ids": {
         "bangumi": 282118,
@@ -962,6 +962,13 @@
         "end_date": "2026-06-18",
         "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_html"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 282118,
+        "checked_at": "2026-10-18T16:34:06.444681+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1889,7 +1896,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b1b376ca8ad74a9902cbec61b618ae49",
       "premiere_date": "日",
       "premiere_time": "17:30",
-      "story": "暫無簡介",
+      "story": "全国高等学校野球選手権東京大会に参加する各校の選手の闘志みなぎる表情から始まります。稲城実業高等学校、市大三高、薬師高校といったライバルたちが登場し、彼らに挑む青道高校は沢村栄純がエースナンバーを背負う初めての大会が描き出されます。御幸ら3年生がいる現チームの最後の夏となる本大会、全国制覇を目指す青道高校の夏が始まります。",
       "original_name": "ダイヤのA actII -Second Season-",
       "external_ids": {
         "bangumi": 495238,
@@ -1910,6 +1917,13 @@
         "end_date": "2026-06-28",
         "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_html"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 495238,
+        "checked_at": "2026-10-18T16:34:07.141480+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2159,14 +2173,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T03:10:45.758581+08:00",
+  "generated_at": "2026-10-18T16:43:19.010374+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202604/",
   "quality": {
     "source_count": 71,
     "record_count": 71,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 2,
+    "missing_story_count": 0,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

@@ -1,0 +1,17 @@
+{
+  "base_commit": "1a0f1aab8fa878b1dd30e9f232c83f5abe1e6476",
+  "quarters": 37,
+  "records": 2150,
+  "missing_before": 179,
+  "missing_after": 114,
+  "filled_records": 65,
+  "changed_quarters": 28,
+  "bangumi_api_records": 64,
+  "official_records": 1,
+  "only_record_fields_changed": [
+    "story",
+    "story_source"
+  ],
+  "all_existing_summaries_preserved": true,
+  "all_episode_metadata_and_ids_preserved": true
+}

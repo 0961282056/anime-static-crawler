@@ -882,7 +882,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3609dc1c6d96960136312dc7531c65b8",
       "premiere_date": "三",
       "premiere_time": "25:15",
-      "story": "暫無簡介",
+      "story": "2025年，世界各地出现了神秘的「古墓」，古墓中的「文物」能赋予持有者异能力，更有不少人利用这些力量谋财。靠着「遗物」赋予的异能力以盗墓为生的刚力辽河，却因雇主大河原泰政的背叛，在「墓」中被逼入绝境，命悬一线。此时，一个突然开口说话的「乌鸦遗物」救了他一命。回过神来，他发现自己竟穿越回到了15年前的2025年！为了向大河原报复，辽河凭借著未来的记忆与知识作为武器，向所有掌握财富与权力的统治者们亮出獠牙！他将利用「文物」攀上世界顶点，成为真正的「盗墓王」!\r\n\r\n\r\n\r\n[简介原文]\r\n2025年――世界各地に謎の「墓」が出現し、人々を混乱に陥れる。「墓」の中に存在する「遺物」は所有者に異能力を与え、それを利用して財を成す者たちも現れた。\r\n「遺物」から得た異能力を使い、「墓」の盗掘で稼いでいた剛力遼河は、雇い主・大河原泰政の裏切りにより「墓」の中で死の淵へと追い詰められる。その命を救ったのは、突如語りかけてきた「カラスの遺物」。気がつくと15年前の2025年にタイムスリップしていた――！\r\n大河原への怒りを滾らせ、これまでの記憶と知識を武器に、富や権力を手にしたすべての支配者たちに牙を剥く遼河！\r\n「遺物」で世界の頂点へ駆け上がり、真の“盗掘王”となる男の大逆転人生が幕を開ける―――!!",
       "original_name": "盗掘王",
       "external_ids": {
         "bangumi": 621835,
@@ -903,6 +903,13 @@
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 621835,
+        "checked_at": "2026-10-18T16:34:07.842146+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2345,14 +2352,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T03:10:45.758581+08:00",
+  "generated_at": "2026-10-18T16:43:18.999591+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202607/",
   "quality": {
     "source_count": 75,
     "record_count": 75,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 1,
+    "missing_story_count": 0,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

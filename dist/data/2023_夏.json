@@ -1514,7 +1514,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/034b511935e4314d60e4e72d724e4a51",
       "premiere_date": "日",
       "premiere_time": "26:35",
-      "story": "暫無簡介",
+      "story": "2013年に第1期がスタートした「闇芝居」は、身の回りの怪奇な都市伝説をテーマに、紙芝居をデジタル表現で見せる昭和テイストにあふれたショートアニメ。新シリーズでは“再”をテーマにした新たな都市伝説が届けられる。",
       "original_name": "闇芝居 十一期",
       "external_ids": {
         "bangumi": 432751,
@@ -1535,17 +1535,24 @@
         "end_date": "2023-10-01",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 432751,
+        "checked_at": "2026-10-18T16:34:25.737918+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.906397+08:00",
+  "generated_at": "2026-10-18T16:43:18.930067+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202307/",
   "quality": {
     "source_count": 51,
     "record_count": 51,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 1,
+    "missing_story_count": 0,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

@@ -36,7 +36,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d7e881ae63a55ccda3032197be5b9f4d",
       "premiere_date": "一",
       "premiere_time": "23:00",
-      "story": "暫無簡介",
+      "story": "寻求着阿依努的财宝的日俄战争的英雄“不死的杉元”杉元佐一和阿依努族少女阿席莉帕。在追踪着身上刺青含有藏宝地提示的24名逃犯的过程中，逐渐发现了新的事实。抢走了宝藏、杀了阿席莉帕父亲的野篦坊，正是阿席莉帕的父亲本人。为了确认事情的真伪，只能去网走监狱中和他想见。“逃狱王”白石由竹和奇罗蓝克也加入了两人的旅行，从小樽到札幌最后前往夕张。另一边，目标同样是宝藏的第七师团的鹤见中尉与新选组“鬼之副长”土方岁三一派，也怀抱着各自的野心在行动着。明治时代后期，北方大地上发生的争夺财宝的生存战，更加激烈——",
       "original_name": "ゴールデンカムイ 第二期",
       "external_ids": {
         "bangumi": 251547,
@@ -57,6 +57,13 @@
         "end_date": "2018-12-24",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 251547,
+        "checked_at": "2026-10-18T16:35:32.206708+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -389,7 +396,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6cd6a35af49ee7d6c7c0ad9b6b602713",
       "premiere_date": "二",
       "premiere_time": "23:00",
-      "story": "暫無簡介",
+      "story": "混杂于群众之中，以人类的肉为食。拥有人类的形态，却与人类不同的存在……“喰种”。\r\n在对“喰种”进行驱逐、研究的“CCG”，曾经率领“Quinx”小组的喰种搜查官“佐佐木琲世”。他正是行踪不明的眼罩喰种“金木研”。\r\n另一方面，在成立了新体制的“CCG”，以旧多二福为中心，不安定的行动终于表面化……\r\n与“金木研”有关的故事，终于迈向最终章——。",
       "original_name": "東京喰種：re 第2期",
       "external_ids": {
         "bangumi": 244878,
@@ -411,6 +418,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 244878,
+        "checked_at": "2026-10-18T16:35:32.905279+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -484,7 +498,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f3c75968abe56cc59fea89083da4258f",
       "premiere_date": "二",
       "premiere_time": "25:30",
-      "story": "暫無簡介",
+      "story": "ケガレた異世界。巫女との絆。 \r\nそして、産まれる星の子達。世界の運命は――\r\n\r\n『ケガレ』に侵された魔法世界『グランバニア』。\r\n\r\nケガレを祓うために地球（ソラ）より召喚された弓削イツキは、\r\n『星の子』を誕生させるため、『12星座の巫女』達と愛好の儀に挑む。\r\n\r\n「使命を果たすために……俺の子供を産んでくれ！」",
       "original_name": "CONCEPTION 俺の子供を産んでくれ！",
       "external_ids": {
         "bangumi": 245531,
@@ -506,6 +520,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 245531,
+        "checked_at": "2026-10-18T16:35:33.605112+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -619,7 +640,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/99067032edeb22cbc9b5e6fb4ee74c2c",
       "premiere_date": "三",
       "premiere_time": "22:24",
-      "story": "暫無簡介",
+      "story": "这是一个围绕着单身青年漫画家大树与一只萌宠猫咪——神秘的“耳朵族”阿淼的生活趣事记录。\r\n阿淼的到来，使大树波澜不惊的生活发生了翻天覆地的变化。\r\n尽管时常手忙脚乱，麻烦不断，但也让大树体会到了真正的“生活”，使得他的心中，第一次对于“温暖”“幸福”产生了实感......",
       "original_name": "ほら、耳がみえてるよ！-喂，看见耳朵啦-",
       "external_ids": {
         "bangumi": 249243,
@@ -641,6 +662,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 249243,
+        "checked_at": "2026-10-18T16:35:35.003148+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -685,7 +713,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9713626a23942481794cc529aa2ee7e8",
       "premiere_date": "三",
       "premiere_time": "24:55",
-      "story": "暫無簡介",
+      "story": "2013年，瑞士的原子核研究机构“CERN”——\r\n在希格斯玻色子这一发现的暗影之下，某个秘密计划启动了。\r\n这一计划的名称是“Niantic计划”。\r\n其目的是研究干涉人类精神的未知物质。\r\n被称为“奇异物质（XM）”的这种物质，\r\n自古以来就感应着人们的精神及能力，甚至给人类的历史带来了极大的影响。\r\n世界各国的机关暗中进行着这项研究。\r\nXM被视为人类的希望或是威胁，\r\n大国及巨大企业为此而爆发了争夺战。\r\n接受XM的力量，并准备将其利用于人类进化的“启蒙军”。\r\n将XM视为威胁，并准备控制它的“反抗军”。\r\n世界划分为这两大阵营，至今仍在持续着争斗。\r\n在这个世界发生的争斗背后，正是XM的存在。\r\n之后，2018年——。\r\n以东京和世界为舞台，围绕着XM的新战斗开幕。\r\n将动画、在线位置信息游戏以及现实连结起来，\r\n从未体验过的全新“增强现实娱乐”开始了。",
       "original_name": "イングレス THE ANIMATION",
       "external_ids": {
         "bangumi": 239910,
@@ -707,6 +735,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 239910,
+        "checked_at": "2026-10-18T16:35:35.922703+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1617,7 +1652,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/83cb1f016ee23f30dc4167ca909fb0fb",
       "premiere_date": "六",
       "premiere_time": "17:30",
-      "story": "暫無簡介",
+      "story": "2016年4月に放送し、人気を集めたTVアニメ『逆転裁判 〜その「真実」、異議あり！〜』。このたび、その続編として『逆転裁判 〜その「真実」、異議あり！〜 Season 2』の制作が決定し、2018年秋に読売テレビで放送されることとなった。\r\n原作は、裁判を題材にした人気アドベンチャーゲーム「逆転裁判」。2001年の発売以来、シリーズ累計販売本数670万本(2017年12月31日現在)を突破する大ヒットを記録している。ゲームはプレイヤーが主人公の弁護士、成歩堂龍一（ナルホドウリュウイチ）になり、奇想天外な事件に巻き込まれ、無実の罪を着せられた依頼人を助けるという内容。\r\nこのアニメの見せ場は何といっても個性的なキャラクターたちがぶつかりあう法廷バトル。成歩堂はライバル検事に絶体絶命のピンチに追い込まれるが、判決が下るまでは決して諦めない。そして、「異議あり！」の言葉とともに反撃を開始。発想の逆転と依頼人を信じる心で戦い抜き、最後には事件の真相を暴いて無罪を勝ち取るという爽快感が作品の魅力になっている。前作でおなじみの、成歩堂の師匠で美人弁護士の綾里千尋（アヤサトチヒロ）、成歩堂の助手の綾里真宵（アヤサトマヨイ）、ライバル検事の御剣怜侍（ミツルギレイジ）のほか、新たに登場する強敵ゴドー検事ら、個性豊かなキャラクターたちが爽快な逆転劇を繰り広げる。\r\n今回は、原作ゲームディレクターの巧舟氏全面協力のもと制作される。熱烈なゲームファンにとっても、見ごたえのある作品になる予定だ。一回り成長した弁護士、成歩堂龍一の活躍をお楽しみに！",
       "original_name": "逆転裁判 Season2",
       "external_ids": {
         "bangumi": 240499,
@@ -1638,6 +1673,13 @@
         "end_date": "2019-03-30",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 240499,
+        "checked_at": "2026-10-18T16:35:38.749998+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2233,14 +2275,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.818533+08:00",
+  "generated_at": "2026-10-18T16:43:18.804208+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201810/",
   "quality": {
     "source_count": 66,
     "record_count": 66,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 11,
+    "missing_story_count": 5,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

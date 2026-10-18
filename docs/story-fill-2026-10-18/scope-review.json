@@ -1,0 +1,2387 @@
+[
+  {
+    "card_id": "anime-592",
+    "anime_name": "奧特怪獸擬人化計劃  2期",
+    "source_original_name": "ウルトラ怪獣擬人化計画  2期",
+    "subject_id": 223407,
+    "subject_name": "怪獣娘～ウルトラ怪獣擬人化計画～ 第2期",
+    "subject_type": 2,
+    "first_air_date": "2018-01-09",
+    "subject_episode_total": 12,
+    "provider_aliases": [],
+    "provider_url": "https://api.bgm.tv/v0/subjects/223407",
+    "provider_checked_at": "2026-10-18T08:35:53.781269+00:00",
+    "summary_sha256": "a36b375e67a29217a0abbd1f5006ee0c87fdd086f24e447c3855f7d88c25f7bb",
+    "summary_length": 183,
+    "scope_review": "第2期對應第2期；條目介紹延續GIRLS成員成長後的新事件，非第一季介紹。",
+    "primary_observations": [
+      {
+        "quarter": "2018_冬",
+        "source_url": "https://acgsecrets.hk/bangumi/201801/",
+        "checked_at": "2026-10-18T08:39:46.608170+00:00",
+        "document_sha256": "ad010d4a609bd00d3d43a38be9c5d04b9a8bca9ec028a9bbb41c0147eac67004",
+        "card_sha256": "d9a1ea2cbfeab0860bfd8cc2d0da56441455774af1c3ece219db562f6460d311",
+        "source_anime_name": "奧特怪獸擬人化計劃  2期",
+        "source_original_name": "ウルトラ怪獣擬人化計画  2期",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2018年1月9日起／每週二／22時54分 2018年1月9日起／每週二／22時54分 ",
+        "source_scope_text": "奧特怪獸擬人化計劃  2期 ウルトラ怪獣擬人化計画  2期 奧特怪獸擬人化計劃  2期 ウルトラ怪獣擬人化計画  2期 改編作品 新作 12集 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-629",
+    "anime_name": "牙狼＜GARO＞-VANISHING LINE-",
+    "source_original_name": "VANISHING LINE",
+    "subject_id": 222425,
+    "subject_name": "牙狼〈GARO〉-VANISHING LINE-",
+    "subject_type": 2,
+    "first_air_date": "2017-10-06",
+    "subject_episode_total": 24,
+    "provider_aliases": [
+      [
+        {
+          "v": "牙狼＜GARO＞ -VANISHING LINE-"
+        },
+        {
+          "v": "VANISHING LINE"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/222425",
+    "provider_checked_at": "2026-10-18T08:35:55.205043+00:00",
+    "summary_sha256": "1d2b655c0272f67184af4c01d903b02cfaaf5030256f2d7c70a619d00cfd2594",
+    "summary_length": 251,
+    "scope_review": "VANISHING LINE是條目明示別名；2017-10同一TV動畫，非GARO系列母條目。",
+    "primary_observations": [
+      {
+        "quarter": "2018_冬",
+        "source_url": "https://acgsecrets.hk/bangumi/201801/",
+        "checked_at": "2026-10-18T08:39:46.608170+00:00",
+        "document_sha256": "ad010d4a609bd00d3d43a38be9c5d04b9a8bca9ec028a9bbb41c0147eac67004",
+        "card_sha256": "baf396d06a6fbc1105048916d5dd7e67d806e5211165ce741f42c2f8e8758703",
+        "source_anime_name": "牙狼＜GARO＞-VANISHING LINE-",
+        "source_original_name": "VANISHING LINE",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": null,
+        "source_scope_text": "牙狼＜GARO＞-VANISHING LINE- VANISHING LINE 牙狼＜GARO＞-VANISHING LINE- VANISHING LINE 改編作品 續作 2季度(24集) ",
+        "source_continuing": true
+      }
+    ]
+  },
+  {
+    "card_id": "anime-591",
+    "anime_name": "新幹線變形機器人Shinkalion THE ANIMATION",
+    "source_original_name": "新幹線変形ロボ シンカリオン THE ANIMATION",
+    "subject_id": 227240,
+    "subject_name": "新幹線変形ロボ シンカリオン",
+    "subject_type": 2,
+    "first_air_date": "2018-01-06",
+    "subject_episode_total": 76,
+    "provider_aliases": [
+      [
+        {
+          "v": "新干线战士"
+        },
+        {
+          "v": "新干线变形机器人 Shinkalion"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/227240",
+    "provider_checked_at": "2026-10-18T08:35:44.570198+00:00",
+    "summary_sha256": "39a4815c4aee40b55d56810baa48e9a5ab1ca015adec4ad37199e4325bcf30bd",
+    "summary_length": 165,
+    "scope_review": "來源含THE ANIMATION、條目省略副標；2018-01首部Shinkalion電視版，未套用Z或CHANGE THE WORLD。",
+    "primary_observations": [
+      {
+        "quarter": "2018_冬",
+        "source_url": "https://acgsecrets.hk/bangumi/201801/",
+        "checked_at": "2026-10-18T08:39:46.608170+00:00",
+        "document_sha256": "ad010d4a609bd00d3d43a38be9c5d04b9a8bca9ec028a9bbb41c0147eac67004",
+        "card_sha256": "daae384b70699db33fa5ddd0bedcf0356727720dfd976a3fb77e23a1127540fd",
+        "source_anime_name": "新幹線變形機器人Shinkalion THE ANIMATION",
+        "source_original_name": "新幹線変形ロボ シンカリオン THE ANIMATION",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2018年1月6日起／每週六／7時0分 2018年1月6日起／每週六／7時0分 ",
+        "source_scope_text": "新幹線變形機器人Shinkalion THE ANIMATION 新幹線変形ロボ シンカリオン THE ANIMATION 新幹線變形機器人Shinkalion THE ANIMATION 新幹線変形ロボ シンカリオン THE ANIMATION 原創作品 新作 3季度(37集) ",
+        "source_continuing": false
+      },
+      {
+        "quarter": "2018_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/201807/",
+        "checked_at": "2026-10-18T08:39:46.608523+00:00",
+        "document_sha256": "e6a9d11d068da34495cbf1f0d395bb4a893455a21def7cb3cc11cfb981e7f917",
+        "card_sha256": "42403fd40c4b6c2fab96caa7ca436b5975f3aaec033b6c1478494d4c24728355",
+        "source_anime_name": "新幹線變形機器人Shinkalion THE ANIMATION",
+        "source_original_name": "新幹線変形ロボ シンカリオン THE ANIMATION",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": null,
+        "source_scope_text": "新幹線變形機器人Shinkalion THE ANIMATION 新幹線変形ロボ シンカリオン THE ANIMATION 新幹線變形機器人Shinkalion THE ANIMATION 新幹線変形ロボ シンカリオン THE ANIMATION 原創作品 新作 3季度(37集) ",
+        "source_continuing": true
+      },
+      {
+        "quarter": "2018_春",
+        "source_url": "https://acgsecrets.hk/bangumi/201804/",
+        "checked_at": "2026-10-18T08:39:46.608816+00:00",
+        "document_sha256": "509254f6cf02655d2f53530be4803677489d9588f9d46e993b6133c8b32117ec",
+        "card_sha256": "42403fd40c4b6c2fab96caa7ca436b5975f3aaec033b6c1478494d4c24728355",
+        "source_anime_name": "新幹線變形機器人Shinkalion THE ANIMATION",
+        "source_original_name": "新幹線変形ロボ シンカリオン THE ANIMATION",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": null,
+        "source_scope_text": "新幹線變形機器人Shinkalion THE ANIMATION 新幹線変形ロボ シンカリオン THE ANIMATION 新幹線變形機器人Shinkalion THE ANIMATION 新幹線変形ロボ シンカリオン THE ANIMATION 原創作品 新作 3季度(37集) ",
+        "source_continuing": true
+      }
+    ]
+  },
+  {
+    "card_id": "anime-472",
+    "anime_name": "快把我哥帶走2",
+    "source_original_name": "兄に付ける薬はない！2-快把我哥帯走2-",
+    "subject_id": 219143,
+    "subject_name": "快把我哥带走2",
+    "subject_type": 2,
+    "first_air_date": "2018-07-02",
+    "subject_episode_total": 24,
+    "provider_aliases": [
+      [
+        {
+          "v": "没有给我哥吃的药！2"
+        },
+        {
+          "v": "兄に付ける薬はない！2-快把我哥帯走2-"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/219143",
+    "provider_checked_at": "2026-10-18T08:35:46.669210+00:00",
+    "summary_sha256": "f6e7ab4d71baf280f8f868320d4dbda816fe1b5943f5585f0b897a64bc9a52a0",
+    "summary_length": 359,
+    "scope_review": "條目明示完整日文別名及第2期製作／2018年7月放送；中日首播相差一週，不是第一期。",
+    "primary_observations": [
+      {
+        "quarter": "2018_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/201807/",
+        "checked_at": "2026-10-18T08:39:46.608523+00:00",
+        "document_sha256": "e6a9d11d068da34495cbf1f0d395bb4a893455a21def7cb3cc11cfb981e7f917",
+        "card_sha256": "27da13f899b388bfd680362ab2778d9a9f1099daeb08d31c91550f716c4e966f",
+        "source_anime_name": "快把我哥帶走2",
+        "source_original_name": "兄に付ける薬はない！2-快把我哥帯走2-",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2018年7月9日起／每週一／21時54分 2018年7月9日起／每週一／21時54分 ",
+        "source_scope_text": "快把我哥帶走2 兄に付ける薬はない！2-快把我哥帯走2- 快把我哥帶走2 兄に付ける薬はない！2-快把我哥帯走2- 改編作品 續作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-473",
+    "anime_name": "惡偶 -天才玩偶-",
+    "source_original_name": "悪偶 -天才人形-",
+    "subject_id": 242737,
+    "subject_name": "天才玩偶",
+    "subject_type": 2,
+    "first_air_date": "2018-07-06",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "k": "日语版原名",
+          "v": "悪偶 -天才人形-"
+        },
+        {
+          "k": "日语版译名",
+          "v": "恶偶 -天才玩偶-"
+        },
+        {
+          "v": "Aguu: Tensai Ningyou"
+        },
+        {
+          "v": "악우 - 천재인형"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/242737",
+    "provider_checked_at": "2026-10-18T08:35:47.377460+00:00",
+    "summary_sha256": "549f5e97d186b5300e2638bd8b6087932a989bfbd711a0e3f5a53767d818a4ee",
+    "summary_length": 145,
+    "scope_review": "條目明示日語版原名「悪偶 -天才人形-」，對應同一2018年動畫，未採漫畫內容。",
+    "primary_observations": [
+      {
+        "quarter": "2018_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/201807/",
+        "checked_at": "2026-10-18T08:39:46.608523+00:00",
+        "document_sha256": "e6a9d11d068da34495cbf1f0d395bb4a893455a21def7cb3cc11cfb981e7f917",
+        "card_sha256": "653417ac54bb70594b8be2c257ea7182bc251cf5f33dc764f1c8139543534327",
+        "source_anime_name": "惡偶 -天才玩偶-",
+        "source_original_name": "悪偶 -天才人形-",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2018年7月9日起／每週一深夜／24時0分 2018年7月10日起／每週二凌晨／0時0分 ",
+        "source_scope_text": "惡偶 -天才玩偶- 悪偶 -天才人形- 惡偶 -天才玩偶- 悪偶 -天才人形- 改編作品 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-516",
+    "anime_name": "銀河英雄傳說 Die Neue These 邂逅",
+    "source_original_name": "銀河英雄伝説 Die Neue These",
+    "subject_id": 143694,
+    "subject_name": "銀河英雄伝説 Die Neue These 邂逅",
+    "subject_type": 2,
+    "first_air_date": "2018-04-03",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "银河英雄传说：全新命题"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/143694",
+    "provider_checked_at": "2026-10-18T08:35:40.155514+00:00",
+    "summary_sha256": "57c7358794546f9114915838bf5453b56523f8af3e127f824ffd6cd25d18624d",
+    "summary_length": 234,
+    "scope_review": "來源中文名明列邂逅，原名省略邂逅；2018-04首部12話，非星亂等後續篇。",
+    "primary_observations": [
+      {
+        "quarter": "2018_春",
+        "source_url": "https://acgsecrets.hk/bangumi/201804/",
+        "checked_at": "2026-10-18T08:39:46.608816+00:00",
+        "document_sha256": "509254f6cf02655d2f53530be4803677489d9588f9d46e993b6133c8b32117ec",
+        "card_sha256": "43edd247305d40b1bed2f7e937d64814b49f8c296e5c4d64fa32ce5e300a8476",
+        "source_anime_name": "銀河英雄傳說 Die Neue These 邂逅",
+        "source_original_name": "銀河英雄伝説 Die Neue These",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2018年4月3日起／每週二／21時0分 2018年4月3日起／每週二／21時0分 ",
+        "source_scope_text": "銀河英雄傳說 Die Neue These 邂逅 銀河英雄伝説 Die Neue These 銀河英雄傳說 Die Neue These 邂逅 銀河英雄伝説 Die Neue These 改編作品 續作 12集 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-504",
+    "anime_name": "東京喰種:re",
+    "source_original_name": "東京喰種：re",
+    "subject_id": 148481,
+    "subject_name": "東京喰種トーキョーグール：re",
+    "subject_type": 2,
+    "first_air_date": "2018-04-03",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "东京食尸鬼:re"
+        },
+        {
+          "v": "东京战记:re"
+        },
+        {
+          "v": "Tokyo Guru"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/148481",
+    "provider_checked_at": "2026-10-18T08:35:41.084008+00:00",
+    "summary_sha256": "b066404179ba323f334d2578e8332a963bc9f2a56a95b1d73128c9661f4df7c6",
+    "summary_length": 171,
+    "scope_review": "東京喰種與トーキョーグール是同名重複寫法；2018-04的re首季，介紹Quinx新章。",
+    "primary_observations": [
+      {
+        "quarter": "2018_春",
+        "source_url": "https://acgsecrets.hk/bangumi/201804/",
+        "checked_at": "2026-10-18T08:39:46.608816+00:00",
+        "document_sha256": "509254f6cf02655d2f53530be4803677489d9588f9d46e993b6133c8b32117ec",
+        "card_sha256": "bc212b784ce21ac43076ef007493d52497395396ea7c1b510252519fe793ffb3",
+        "source_anime_name": "東京喰種:re",
+        "source_original_name": "東京喰種：re",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2018年4月3日起／每週二／23時0分 2018年4月3日起／每週二／23時0分 ",
+        "source_scope_text": "東京喰種:re 東京喰種：re 東京喰種:re 東京喰種：re 改編作品 續作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-390",
+    "anime_name": "黃金神威 第2期",
+    "source_original_name": "ゴールデンカムイ 第二期",
+    "subject_id": 251547,
+    "subject_name": "ゴールデンカムイ 第2期",
+    "subject_type": 2,
+    "first_air_date": "2018-10-08",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "Golden Kamuy (2018)"
+        },
+        {
+          "v": "ゴールデンカムイ (2018)"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/251547",
+    "provider_checked_at": "2026-10-18T08:35:32.206708+00:00",
+    "summary_sha256": "766c751cf4e02d109e7d3bec1cbd3a6c41f523a93166b5d8726f377099acf56c",
+    "summary_length": 249,
+    "scope_review": "第二期與第2期對應；2018-10續篇，介紹網走監獄線的新進展。",
+    "primary_observations": [
+      {
+        "quarter": "2018_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/201810/",
+        "checked_at": "2026-10-18T08:39:49.912694+00:00",
+        "document_sha256": "0f7b383f99cf1778a2161811db4c96c859fed757cbb6ff63960c219db1da443d",
+        "card_sha256": "d919f89bcab797b55eedf1b54a30344699d787b907b0e768db5a31192a98f479",
+        "source_anime_name": "黃金神威 第2期",
+        "source_original_name": "ゴールデンカムイ 第二期",
+        "source_explicit_subject_id": 251547,
+        "source_broadcast_text": " 2018年10月8日起／每週一／23時0分 2018年10月8日起／每週一／23時0分 ",
+        "source_scope_text": "黃金神威 第2期 ゴールデンカムイ 第二期 黃金神威 第2期 ゴールデンカムイ 第二期 改編作品 續作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-401",
+    "anime_name": "東京喰種：re 第2期",
+    "source_original_name": "東京喰種：re 第2期",
+    "subject_id": 244878,
+    "subject_name": "東京喰種トーキョーグール：re 第2期",
+    "subject_type": 2,
+    "first_air_date": "2018-10-09",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "东京食尸鬼re 第二季"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/244878",
+    "provider_checked_at": "2026-10-18T08:35:32.905279+00:00",
+    "summary_sha256": "9dedb5ec5c2144bb71ab43dc65db217f95722a91c9081c4e617835778cd42193",
+    "summary_length": 174,
+    "scope_review": "東京喰種與トーキョーグール重複寫法；2018-10 re第2期，介紹舊多新體制與最終章。",
+    "primary_observations": [
+      {
+        "quarter": "2018_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/201810/",
+        "checked_at": "2026-10-18T08:39:49.912694+00:00",
+        "document_sha256": "0f7b383f99cf1778a2161811db4c96c859fed757cbb6ff63960c219db1da443d",
+        "card_sha256": "6504e4d6c5fe85de901ae76a909740e05fb04cc0e4503c79d059b7ab6af54059",
+        "source_anime_name": "東京喰種：re 第2期",
+        "source_original_name": "東京喰種：re 第2期",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2018年10月9日起／每週二／23時0分 2018年10月9日起／每週二／23時0分 ",
+        "source_scope_text": "東京喰種：re 第2期 東京喰種：re 第2期 東京喰種：re 第2期 東京喰種：re 第2期 改編作品 續作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-392",
+    "anime_name": "CONCEPTION 為我而生",
+    "source_original_name": "CONCEPTION 俺の子供を産んでくれ！",
+    "subject_id": 245531,
+    "subject_name": "CONCEPTION",
+    "subject_type": 2,
+    "first_air_date": "2018-10-09",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "产子救世录"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/245531",
+    "provider_checked_at": "2026-10-18T08:35:33.605112+00:00",
+    "summary_sha256": "5a0d454c7b8de353483da648f9472af58a2c53aad5949aef66731d818dd69ce9",
+    "summary_length": 161,
+    "scope_review": "來源以原作副標補足CONCEPTION；2018-10同一動畫條目，非遊戲母條目。",
+    "primary_observations": [
+      {
+        "quarter": "2018_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/201810/",
+        "checked_at": "2026-10-18T08:39:49.912694+00:00",
+        "document_sha256": "0f7b383f99cf1778a2161811db4c96c859fed757cbb6ff63960c219db1da443d",
+        "card_sha256": "248f6fa25f4cc34a59ebb24e732ee1f3a51eddf5e7b8d40344aa65c5e88e7ba4",
+        "source_anime_name": "CONCEPTION 為我而生",
+        "source_original_name": "CONCEPTION 俺の子供を産んでくれ！",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2018年10月9日起／每週二深夜／25時30分 2018年10月10日起／每週三凌晨／1時30分 ",
+        "source_scope_text": "CONCEPTION 為我而生 CONCEPTION 俺の子供を産んでくれ！ CONCEPTION 為我而生 CONCEPTION 俺の子供を産んでくれ！ 改編作品 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-424",
+    "anime_name": "喂，看見耳朵啦",
+    "source_original_name": "ほら、耳がみえてるよ！-喂，看见耳朵啦-",
+    "subject_id": 249243,
+    "subject_name": "喂，看见耳朵啦",
+    "subject_type": 2,
+    "first_air_date": "2018-08-25",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "ほら、耳がみえてるよ！-喂，看见耳朵啦-"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/249243",
+    "provider_checked_at": "2026-10-18T08:35:35.003148+00:00",
+    "summary_sha256": "35e872a12ba0b57e6cb6e77b939498aefd594dab1f82d3038d121fef70aaf1f8",
+    "summary_length": 136,
+    "scope_review": "條目中文名與來源括附中文同名、日文標題為同一動畫別名；2018-10首播一致。",
+    "primary_observations": [
+      {
+        "quarter": "2018_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/201810/",
+        "checked_at": "2026-10-18T08:39:49.912694+00:00",
+        "document_sha256": "0f7b383f99cf1778a2161811db4c96c859fed757cbb6ff63960c219db1da443d",
+        "card_sha256": "a96eabb95eb98ead64f43aa35acdbadd1412c228068c6ace6a36acd344bccfbc",
+        "source_anime_name": "喂，看見耳朵啦",
+        "source_original_name": "ほら、耳がみえてるよ！-喂，看见耳朵啦-",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2018年10月3日起／每週三／22時24分 2018年10月3日起／每週三／22時24分 ",
+        "source_scope_text": "喂，看見耳朵啦 ほら、耳がみえてるよ！-喂，看见耳朵啦- 喂，看見耳朵啦 ほら、耳がみえてるよ！-喂，看见耳朵啦- 改編作品 新作 12集 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-397",
+    "anime_name": "INGRESS THE ANIMATION",
+    "source_original_name": "イングレス THE ANIMATION",
+    "subject_id": 239910,
+    "subject_name": "イングレス",
+    "subject_type": 2,
+    "first_air_date": "2018-10-17",
+    "subject_episode_total": 11,
+    "provider_aliases": [
+      [
+        {
+          "v": "虚拟入口"
+        },
+        {
+          "v": "浸视界"
+        },
+        {
+          "v": "INGRESS THE ANIMATION"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/239910",
+    "provider_checked_at": "2026-10-18T08:35:35.922703+00:00",
+    "summary_sha256": "cc5d7bab86c321b9b01643d05eace6ce3413d4391d6ffc720fdcbb4c4b858063",
+    "summary_length": 387,
+    "scope_review": "INGRESS THE ANIMATION／イングレス對應同一2018-10動畫，非遊戲條目。",
+    "primary_observations": [
+      {
+        "quarter": "2018_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/201810/",
+        "checked_at": "2026-10-18T08:39:49.912694+00:00",
+        "document_sha256": "0f7b383f99cf1778a2161811db4c96c859fed757cbb6ff63960c219db1da443d",
+        "card_sha256": "e82acaacc46b0753fc1ac29d4b974a30afb0260a0abcc445d0228cba9a029b7c",
+        "source_anime_name": "INGRESS THE ANIMATION",
+        "source_original_name": "イングレス THE ANIMATION",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2018年10月17日起／每週三深夜／24時55分 2018年10月18日起／每週四凌晨／0時55分 ",
+        "source_scope_text": "INGRESS THE ANIMATION イングレス THE ANIMATION INGRESS THE ANIMATION イングレス THE ANIMATION 改編作品 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-413",
+    "anime_name": "逆轉裁判 Season2",
+    "source_original_name": "逆転裁判 Season2",
+    "subject_id": 240499,
+    "subject_name": "逆転裁判 ～その『真実』、異議あり！～ Season 2",
+    "subject_type": 2,
+    "first_air_date": "2018-10-06",
+    "subject_episode_total": 23,
+    "provider_aliases": [
+      [
+        {
+          "v": "Ace Attorney Season 2"
+        },
+        {
+          "v": "Gyakuten Saiban: Sono \"Shinjitsu\", Igi Ari! Season 2"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/240499",
+    "provider_checked_at": "2026-10-18T08:35:38.749998+00:00",
+    "summary_sha256": "a43bf2410961a285287b8e025c94ede26cd3899ff41f1329b3e23f83133b5a1f",
+    "summary_length": 672,
+    "scope_review": "來源省略法庭宣傳副標，Season2與2018-10首播均一致；介紹明列Season2製作。",
+    "primary_observations": [
+      {
+        "quarter": "2018_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/201810/",
+        "checked_at": "2026-10-18T08:39:49.912694+00:00",
+        "document_sha256": "0f7b383f99cf1778a2161811db4c96c859fed757cbb6ff63960c219db1da443d",
+        "card_sha256": "81e5cbc162c645467e7bb8d4ff01a4f12490939a4eb4093d3027e8f3dc821eb4",
+        "source_anime_name": "逆轉裁判 Season2",
+        "source_original_name": "逆転裁判 Season2",
+        "source_explicit_subject_id": 240499,
+        "source_broadcast_text": " 2018年10月6日起／每週六／17時30分 2018年10月6日起／每週六／17時30分 ",
+        "source_scope_text": "逆轉裁判 Season2 逆転裁判 Season2 逆轉裁判 Season2 逆転裁判 Season2 改編作品 續作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-349",
+    "anime_name": "revisions",
+    "source_original_name": "revisions",
+    "subject_id": 239911,
+    "subject_name": "revisions リヴィジョンズ",
+    "subject_type": 2,
+    "first_air_date": "2019-01-09",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "新世纪涉谷战(港)"
+        },
+        {
+          "v": "涩谷新视界(台)"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/239911",
+    "provider_checked_at": "2026-10-18T08:35:27.736268+00:00",
+    "summary_sha256": "b54194f84b3e2443299cc746db5321e9c012175b82a496bee86546a3753714ea",
+    "summary_length": 468,
+    "scope_review": "revisions與リヴィジョンズ是同一作品英日並記；2019-01首播一致。",
+    "primary_observations": [
+      {
+        "quarter": "2019_冬",
+        "source_url": "https://acgsecrets.hk/bangumi/201901/",
+        "checked_at": "2026-10-18T08:39:50.221311+00:00",
+        "document_sha256": "c0df52d8b1b55b0cc8b611a44ee8c29ba35b235e1f9fcda1a6c77032de215b18",
+        "card_sha256": "2fcac47a4f5e2ee935d4fa611f272e075d559d3220c2e406e42d620c1d837cd9",
+        "source_anime_name": "revisions",
+        "source_original_name": "revisions",
+        "source_explicit_subject_id": 239911,
+        "source_broadcast_text": " 2019年1月9日起／每週三深夜／24時55分 2019年1月10日起／每週四凌晨／0時55分 ",
+        "source_scope_text": "revisions revisions revisions revisions 原創作品 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-346",
+    "anime_name": "巴哈姆特之怒 Mysteria Friends",
+    "source_original_name": "神撃のバハムート マナリアフレンズ",
+    "subject_id": 145354,
+    "subject_name": "マナリアフレンズ",
+    "subject_type": 2,
+    "first_air_date": "2019-01-20",
+    "subject_episode_total": 10,
+    "provider_aliases": [
+      [
+        {
+          "v": "Manaria Friends"
+        },
+        {
+          "v": "Mysteria Friends"
+        },
+        {
+          "v": "巴哈姆特之怒 玛娜利亚魔法学院"
+        },
+        {
+          "v": "玛纳利亚魔法学院"
+        },
+        {
+          "v": "玛娜利亚学院"
+        },
+        {
+          "v": "玛娜莉亚的朋友"
+        },
+        {
+          "v": "马纳利亚朋友"
+        },
+        {
+          "v": "玛娜莉亚魔法学院"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/145354",
+    "provider_checked_at": "2026-10-18T08:35:31.498026+00:00",
+    "summary_sha256": "941c2a7cf6e9102804a574bc9afa7403e782360124ad2febf2e91967998f0da8",
+    "summary_length": 87,
+    "scope_review": "神撃のバハムート為系列冠名；此卡與條目均為2019-01瑪娜利亞學院故事，不是巴哈姆特其他動畫。",
+    "primary_observations": [
+      {
+        "quarter": "2019_冬",
+        "source_url": "https://acgsecrets.hk/bangumi/201901/",
+        "checked_at": "2026-10-18T08:39:50.221311+00:00",
+        "document_sha256": "c0df52d8b1b55b0cc8b611a44ee8c29ba35b235e1f9fcda1a6c77032de215b18",
+        "card_sha256": "fdc2368f906f4996e6c30610ef17d894dc9a560fc90b74c6246fd7f4602fcb34",
+        "source_anime_name": "巴哈姆特之怒 Mysteria Friends",
+        "source_original_name": "神撃のバハムート マナリアフレンズ",
+        "source_explicit_subject_id": 145354,
+        "source_broadcast_text": " 2019年1月20日起／每週日深夜／24時30分 2019年1月21日起／每週一凌晨／0時30分 ",
+        "source_scope_text": "巴哈姆特之怒 Mysteria Friends 神撃のバハムート マナリアフレンズ 巴哈姆特之怒 Mysteria Friends 神撃のバハムート マナリアフレンズ 遊戲改編 新作 10集 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-296",
+    "anime_name": "RobiHachi",
+    "source_original_name": "ロビハチ",
+    "subject_id": 267250,
+    "subject_name": "RobiHachi",
+    "subject_type": 2,
+    "first_air_date": "2019-04-08",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "ロビハチ"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/267250",
+    "provider_checked_at": "2026-10-18T08:35:20.043255+00:00",
+    "summary_sha256": "bdcbd674d89177dc38aa17b906ce740d33b25f9bc5de3a01aebf265d63bd4d49",
+    "summary_length": 260,
+    "scope_review": "條目明示ロビハチ別名；2019-04同一原創TV動畫。",
+    "primary_observations": [
+      {
+        "quarter": "2019_春",
+        "source_url": "https://acgsecrets.hk/bangumi/201904/",
+        "checked_at": "2026-10-18T08:39:53.666264+00:00",
+        "document_sha256": "41f5f6942874ef33318284e8d0ac12d6225b80fc3fae355283002738d2d09397",
+        "card_sha256": "5d6817d63ed433a3b92e9f8d6a4d99654b390ab87dcd953b4d6f58b2abc590eb",
+        "source_anime_name": "RobiHachi",
+        "source_original_name": "ロビハチ",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2019年4月8日起／每週一／23時30分 2019年4月8日起／每週一／23時30分 ",
+        "source_scope_text": "RobiHachi ロビハチ RobiHachi ロビハチ 原創作品 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-279",
+    "anime_name": "進擊的巨人 Season3 (後半)",
+    "source_original_name": "進撃の巨人 Season3",
+    "subject_id": 263750,
+    "subject_name": "進撃の巨人 Season 3 Part.2",
+    "subject_type": 2,
+    "first_air_date": "2019-04-28",
+    "subject_episode_total": 10,
+    "provider_aliases": [
+      [
+        {
+          "v": "自由之翼 3 Part.2"
+        },
+        {
+          "v": "Attack on Titan Season 3 Part.2"
+        },
+        {
+          "v": "Shingeki no Kyojin Season 3 Part.2"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/263750",
+    "provider_checked_at": "2026-10-18T08:35:23.547689+00:00",
+    "summary_sha256": "bf890521b8c48bcc02c4459641ff3fd157383164010d2a41a9843a64ec2237a7",
+    "summary_length": 228,
+    "scope_review": "卡片中文明列Season3後半，原名省略後半；2019-04開播對應Part.2完整10話，不是完整Season3母條目。",
+    "primary_observations": [
+      {
+        "quarter": "2019_春",
+        "source_url": "https://acgsecrets.hk/bangumi/201904/",
+        "checked_at": "2026-10-18T08:39:53.666264+00:00",
+        "document_sha256": "41f5f6942874ef33318284e8d0ac12d6225b80fc3fae355283002738d2d09397",
+        "card_sha256": "6c6d371f4057e617bd7b8b2a3c33b160a1b0a9ae13f5760f64537aa16212a006",
+        "source_anime_name": "進擊的巨人 Season3 (後半)",
+        "source_original_name": "進撃の巨人 Season3",
+        "source_explicit_subject_id": 263750,
+        "source_broadcast_text": " 2019年4月28日起／每週日深夜／24時10分 2019年4月29日起／每週一凌晨／0時10分 ",
+        "source_scope_text": "進擊的巨人 Season3 (後半) 進撃の巨人 Season3 進擊的巨人 Season3 (後半) 進撃の巨人 Season3 改編作品 續作 12集 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-198",
+    "anime_name": "碧藍航線",
+    "source_original_name": "アズールレーン",
+    "subject_id": 260677,
+    "subject_name": "アズールレーン THE ANIMATION",
+    "subject_type": 2,
+    "first_air_date": "2019-10-03",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "Azur Lane the Animation"
+        },
+        {
+          "v": "벽람항로"
+        },
+        {
+          "v": "舰B"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/260677",
+    "provider_checked_at": "2026-10-18T08:35:15.104922+00:00",
+    "summary_sha256": "ca3c265b6efe245aad380e5da44c78910285210265cb69a37bcfe0b99c7edd99",
+    "summary_length": 120,
+    "scope_review": "アズールレーン與THE ANIMATION對應2019-10同一首部動畫，不是びそくぜんしん等外傳。",
+    "primary_observations": [
+      {
+        "quarter": "2019_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/201910/",
+        "checked_at": "2026-10-18T08:39:54.075080+00:00",
+        "document_sha256": "88346b810621bb5da7a78b01c093e683edfa924c38220f4d00eec4f773dc44d1",
+        "card_sha256": "701fafd7a05e459aec6ffc55600e1d26f87c92c8d6574bd68dc4b9eba525b0f6",
+        "source_anime_name": "碧藍航線",
+        "source_original_name": "アズールレーン",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2019年10月3日起／每週四／23時30分 2019年10月3日起／每週四／23時30分 ",
+        "source_scope_text": "碧藍航線 アズールレーン 碧藍航線 アズールレーン 遊戲改編 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-217",
+    "anime_name": "警視廳特務部特殊兇惡犯對策室第七課",
+    "source_original_name": "トクナナ -警視庁 特務部 特殊凶悪犯対策室 第七課-",
+    "subject_id": 278440,
+    "subject_name": "警視庁 特務部 特殊凶悪犯対策室 第七課 -トクナナ-",
+    "subject_type": 2,
+    "first_air_date": "2019-10-06",
+    "subject_episode_total": 12,
+    "provider_aliases": [],
+    "provider_url": "https://api.bgm.tv/v0/subjects/278440",
+    "provider_checked_at": "2026-10-18T08:35:17.190536+00:00",
+    "summary_sha256": "4e9f26046b8bf9a0f4a1a72627c4d08bc49744003152497c55551378de35b328",
+    "summary_length": 426,
+    "scope_review": "トクナナ宣傳主副標順序不同；警視廳第七課標題內容、2019-10日期相同。",
+    "primary_observations": [
+      {
+        "quarter": "2019_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/201910/",
+        "checked_at": "2026-10-18T08:39:54.075080+00:00",
+        "document_sha256": "88346b810621bb5da7a78b01c093e683edfa924c38220f4d00eec4f773dc44d1",
+        "card_sha256": "131b02154d2d9460cd7e9e269c570dfe2d2159ae27a99669539efb31e359c312",
+        "source_anime_name": "警視廳特務部特殊兇惡犯對策室第七課",
+        "source_original_name": "トクナナ -警視庁 特務部 特殊凶悪犯対策室 第七課-",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2019年10月6日起／每週日／21時0分 2019年10月6日起／每週日／21時0分 ",
+        "source_scope_text": "警視廳特務部特殊兇惡犯對策室第七課 トクナナ -警視庁 特務部 特殊凶悪犯対策室 第七課- 警視廳特務部特殊兇惡犯對策室第七課 トクナナ -警視庁 特務部 特殊凶悪犯対策室 第七課- 原創作品 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-16",
+    "anime_name": "ReBIRTH for you",
+    "source_original_name": "Reバース",
+    "subject_id": 295615,
+    "subject_name": "りばあす",
+    "subject_type": 2,
+    "first_air_date": "2020-01-05",
+    "subject_episode_total": 51,
+    "provider_aliases": [
+      [
+        {
+          "v": "Reバース"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/295615",
+    "provider_checked_at": "2026-10-18T08:35:05.993756+00:00",
+    "summary_sha256": "51ac2f261e8767a980e26eac015d6dd9abcbebc67d514d60d4d7e78d700842f9",
+    "summary_length": 382,
+    "scope_review": "條目明示Reバース別名；2020-01同一短篇動畫，非卡牌遊戲母條目。",
+    "primary_observations": [
+      {
+        "quarter": "2020_冬",
+        "source_url": "https://acgsecrets.hk/bangumi/202001/",
+        "checked_at": "2026-10-18T08:39:55.741101+00:00",
+        "document_sha256": "6ea45861f0a11deea21fc8d2bff3d81a10baa6e68df5f2061686a823f58cf5e7",
+        "card_sha256": "1e78a49a6fce671b532186209d3b0e3493173a2c183a25a6d72181e025e189e4",
+        "source_anime_name": "ReBIRTH for you",
+        "source_original_name": "Reバース",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2020年1月5日起／每週日／21時30分 2020年1月5日起／每週日／21時30分 ",
+        "source_scope_text": "ReBIRTH for you Reバース ReBIRTH for you Reバース 遊戲改編 新作 3季度 ",
+        "source_continuing": false
+      },
+      {
+        "quarter": "2020_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202007/",
+        "checked_at": "2026-10-18T08:39:56.687497+00:00",
+        "document_sha256": "efa37f1ad76722ad3be1483e834e43536b58e5cab7683f54ae7bfa7af6f18ec8",
+        "card_sha256": "d83b3a937b873cf85474c7aed4ee8be6814648b45290ea90d249483f2cdacc9f",
+        "source_anime_name": "ReBIRTH for you",
+        "source_original_name": "Reバース",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": null,
+        "source_scope_text": "ReBIRTH for you Reバース ReBIRTH for you Reバース 遊戲改編 新作 3季度 ",
+        "source_continuing": true
+      },
+      {
+        "quarter": "2020_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202004/",
+        "checked_at": "2026-10-18T08:39:59.539356+00:00",
+        "document_sha256": "352b307f736eaef6cb4a20a069afc2347ecb36f012d9fc8ce97db8f674d9f39e",
+        "card_sha256": "d83b3a937b873cf85474c7aed4ee8be6814648b45290ea90d249483f2cdacc9f",
+        "source_anime_name": "ReBIRTH for you",
+        "source_original_name": "Reバース",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": null,
+        "source_scope_text": "ReBIRTH for you Reバース ReBIRTH for you Reバース 遊戲改編 新作 3季度 ",
+        "source_continuing": true
+      }
+    ]
+  },
+  {
+    "card_id": "anime-160",
+    "anime_name": "GET UP! GET LIVE!",
+    "source_original_name": "GET UP! GET LIVE!",
+    "subject_id": 303173,
+    "subject_name": "GETUP! GETLIVE! #げらげら",
+    "subject_type": 2,
+    "first_air_date": "2020-07-10",
+    "subject_episode_total": 10,
+    "provider_aliases": [
+      [
+        {
+          "v": "GET UP! GET LIVE!"
+        },
+        {
+          "v": "ゲラゲラ"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/303173",
+    "provider_checked_at": "2026-10-18T08:35:08.774002+00:00",
+    "summary_sha256": "09fdd7a253c6a23096c78375af930368552fb5fb83f2947768ebdfa8f4672542",
+    "summary_length": 155,
+    "scope_review": "條目明示GET UP! GET LIVE!別名；2020-07同一#げらげら動畫，非朗讀劇母條目。",
+    "primary_observations": [
+      {
+        "quarter": "2020_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202007/",
+        "checked_at": "2026-10-18T08:39:56.687497+00:00",
+        "document_sha256": "efa37f1ad76722ad3be1483e834e43536b58e5cab7683f54ae7bfa7af6f18ec8",
+        "card_sha256": "10bd9bed6b24e5f0cd0870f0a6a12e5abda78d8035490bf275fedd845339b4b4",
+        "source_anime_name": "GET UP! GET LIVE!",
+        "source_original_name": "GET UP! GET LIVE!",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2020年7月10日起／每週五深夜／25時50分 2020年7月11日起／每週六凌晨／1時50分 ",
+        "source_scope_text": "GET UP! GET LIVE! GET UP! GET LIVE! GET UP! GET LIVE! GET UP! GET LIVE! 原創作品 新作 喜劇 日常 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-62",
+    "anime_name": "白貓Project ZERO CHRONICLE",
+    "source_original_name": "白猫プロジェクト ZERO CHRONICLE",
+    "subject_id": 269436,
+    "subject_name": "白猫プロジェクト ゼロ・クロニクル",
+    "subject_type": 2,
+    "first_air_date": "2020-04-06",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "白猫计划 ZERO CHRONICLE"
+        },
+        {
+          "v": "白猫Project ZERO CHRONICLE"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/269436",
+    "provider_checked_at": "2026-10-18T08:35:01.049580+00:00",
+    "summary_sha256": "646ba3cdd13f6a62f008e21e956ddc598d4dfa50cbac0206a4834141e7031d93",
+    "summary_length": 293,
+    "scope_review": "ZERO CHRONICLE與ゼロ・クロニクル是同一副標英日寫法；2020-04日期一致。",
+    "primary_observations": [
+      {
+        "quarter": "2020_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202004/",
+        "checked_at": "2026-10-18T08:39:59.539356+00:00",
+        "document_sha256": "352b307f736eaef6cb4a20a069afc2347ecb36f012d9fc8ce97db8f674d9f39e",
+        "card_sha256": "3f8b8f42fab741a2338e409a0cd7da64b51c3f15c8dec506a7a60b56c1f4a6a3",
+        "source_anime_name": "白貓Project ZERO CHRONICLE",
+        "source_original_name": "白猫プロジェクト ZERO CHRONICLE",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2020年4月6日起／每週一／22時0分 2020年4月6日起／每週一／22時0分 ",
+        "source_scope_text": "白貓Project ZERO CHRONICLE 白猫プロジェクト ZERO CHRONICLE 白貓Project ZERO CHRONICLE 白猫プロジェクト ZERO CHRONICLE 遊戲改編 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-92",
+    "anime_name": "那個世界全部都是妖怪！",
+    "source_original_name": "あの世のすべては、おばけぐみ",
+    "subject_id": 301809,
+    "subject_name": "あの世のすべては、おばけぐみっ！",
+    "subject_type": 2,
+    "first_air_date": "2020-04-06",
+    "subject_episode_total": 13,
+    "provider_aliases": [],
+    "provider_url": "https://api.bgm.tv/v0/subjects/301809",
+    "provider_checked_at": "2026-10-18T08:35:01.766861+00:00",
+    "summary_sha256": "e83030514987218d4c34d24620fa1cd871f98348011fc099efa9dc9011d56766",
+    "summary_length": 74,
+    "scope_review": "片尾感嘆號差異；2020-04同一おばけぐみ電視動畫。",
+    "primary_observations": [
+      {
+        "quarter": "2020_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202004/",
+        "checked_at": "2026-10-18T08:39:59.539356+00:00",
+        "document_sha256": "352b307f736eaef6cb4a20a069afc2347ecb36f012d9fc8ce97db8f674d9f39e",
+        "card_sha256": "ff164eb07db3acd0832c5fb6ee37e75637f0b61ef9e7a7572dab43209ce5ce74",
+        "source_anime_name": "那個世界全部都是妖怪！",
+        "source_original_name": "あの世のすべては、おばけぐみ",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2020年4月6日起／每週一深夜／25時0分 2020年4月7日起／每週二凌晨／1時0分 ",
+        "source_scope_text": "那個世界全部都是妖怪！ あの世のすべては、おばけぐみ 那個世界全部都是妖怪！ あの世のすべては、おばけぐみ 原創作品 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-89",
+    "anime_name": "ARGONAVIS from BanG Dream! ANIMATION",
+    "source_original_name": "アルゴナビス from BanG Dream!",
+    "subject_id": 294202,
+    "subject_name": "アルゴナビス from BanG Dream! ANIMATION",
+    "subject_type": 2,
+    "first_air_date": "2020-04-10",
+    "subject_episode_total": 13,
+    "provider_aliases": [
+      [
+        {
+          "v": "ARGONAVIS from BanG Dream! 梦想协奏曲"
+        },
+        {
+          "v": "邦男人"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/294202",
+    "provider_checked_at": "2026-10-18T08:35:03.176068+00:00",
+    "summary_sha256": "463ca9e0b9530794a251458cfb0474501fc50a3b54340cb6c984c482487654f3",
+    "summary_length": 108,
+    "scope_review": "副標ANIMATION省略；2020-04同一ARGONAVIS動畫，非BanG Dream母系列。",
+    "primary_observations": [
+      {
+        "quarter": "2020_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202004/",
+        "checked_at": "2026-10-18T08:39:59.539356+00:00",
+        "document_sha256": "352b307f736eaef6cb4a20a069afc2347ecb36f012d9fc8ce97db8f674d9f39e",
+        "card_sha256": "382429e7dcb88a02f29270fb1ed907eae1f354a8ab79e946006ff92a316ab5ec",
+        "source_anime_name": "ARGONAVIS from BanG Dream! ANIMATION",
+        "source_original_name": "アルゴナビス from BanG Dream!",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2020年4月10日起／每週五深夜／25時25分 2020年4月11日起／每週六凌晨／1時25分 ",
+        "source_scope_text": "ARGONAVIS from BanG Dream! ANIMATION アルゴナビス from BanG Dream! ARGONAVIS from BanG Dream! ANIMATION アルゴナビス from BanG Dream! 原創作品 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-187",
+    "anime_name": "黃金神威 第三期",
+    "source_original_name": "ゴールデンカムイ 第三期",
+    "subject_id": 285901,
+    "subject_name": "ゴールデンカムイ 第3期",
+    "subject_type": 2,
+    "first_air_date": "2020-10-05",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "Golden Kamuy 3"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/285901",
+    "provider_checked_at": "2026-10-18T08:34:56.855453+00:00",
+    "summary_sha256": "6818068373944fcf6d43ea4c1dd70e45969b1d0af838a5c577306d072a7eaab3",
+    "summary_length": 408,
+    "scope_review": "第三期與第3期對應；2020-10同一第三期，介紹樺太尋人與金塊競爭。",
+    "primary_observations": [
+      {
+        "quarter": "2020_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/202010/",
+        "checked_at": "2026-10-18T08:39:59.624978+00:00",
+        "document_sha256": "aa19f0b19a82ef54dd58b011b46295284b3ff3253a6a7c17f33b76747681c05c",
+        "card_sha256": "b0287a0e48b595af80815e66fcacf8a1d1d904ef719a6da8f2e4eaca632b0cde",
+        "source_anime_name": "黃金神威 第三期",
+        "source_original_name": "ゴールデンカムイ 第三期",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2020年10月5日起／每週一／23時0分 2020年10月5日起／每週一／23時0分 ",
+        "source_scope_text": "黃金神威 第三期 ゴールデンカムイ 第三期 黃金神威 第三期 ゴールデンカムイ 第三期 漫畫改編 續作 動作 冒險 喜劇 歷史 青年 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-658",
+    "anime_name": "動畫 水豚君",
+    "source_original_name": "アニメ カピバラさん",
+    "subject_id": 316796,
+    "subject_name": "カピバラさん",
+    "subject_type": 2,
+    "first_air_date": "2020-10-09",
+    "subject_episode_total": 24,
+    "provider_aliases": [
+      [
+        {
+          "v": "水豚先生"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/316796",
+    "provider_checked_at": "2026-10-18T08:34:58.257514+00:00",
+    "summary_sha256": "9eb8286d9ccf945943db0b571eade1241d7a76e2a43c24c36105cdc571822ebb",
+    "summary_length": 62,
+    "scope_review": "來源加「アニメ」前綴；2020-10同一水豚君動畫，不是原作角色母條目。",
+    "primary_observations": [
+      {
+        "quarter": "2020_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/202010/",
+        "checked_at": "2026-10-18T08:39:59.624978+00:00",
+        "document_sha256": "aa19f0b19a82ef54dd58b011b46295284b3ff3253a6a7c17f33b76747681c05c",
+        "card_sha256": "512430f47e3e39c0c3ad8e7f5985239e40b0e0488d73076f95b7624901dd563f",
+        "source_anime_name": "動畫 水豚君",
+        "source_original_name": "アニメ カピバラさん",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2020年10月9日起／每週五／7時30分 2020年10月9日起／每週五／7時30分 ",
+        "source_scope_text": "動畫 水豚君 アニメ カピバラさん 動畫 水豚君 アニメ カピバラさん 原創作品 新作 喜劇 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-693",
+    "anime_name": "BEASTARS 第二季",
+    "source_original_name": "ビースターズ 2期",
+    "subject_id": 297224,
+    "subject_name": "BEASTARS 2nd Season",
+    "subject_type": 2,
+    "first_air_date": "2021-01-06",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "ビースターズ 2期"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/297224",
+    "provider_checked_at": "2026-10-18T08:34:54.033622+00:00",
+    "summary_sha256": "06943e99810faf2267fb3d24befd465f584da9304a73c50cee2a7feda4feac61",
+    "summary_length": 488,
+    "scope_review": "條目明示ビースターズ2期別名；2021-01第二季，介紹校園食殺事件後續。",
+    "primary_observations": [
+      {
+        "quarter": "2021_冬",
+        "source_url": "https://acgsecrets.hk/bangumi/202101/",
+        "checked_at": "2026-10-18T08:39:59.721712+00:00",
+        "document_sha256": "dade6653a4d4b3b7c9a739c3f5f00d9f8a576a8fe6d6115d7b51c96740ccd04f",
+        "card_sha256": "c9dd8c928ebb6c4b07638ae7681407e4cce09a0e77d0f0ff9061ae6a60c670fa",
+        "source_anime_name": "BEASTARS 第二季",
+        "source_original_name": "ビースターズ 2期",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2021年1月6日起／每週三深夜／24時55分 2021年1月7日起／每週四凌晨／0時55分 ",
+        "source_scope_text": "BEASTARS 第二季 ビースターズ 2期 BEASTARS 第二季 ビースターズ 2期 漫畫改編 續作 戲劇 心理 少年 日常 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-692",
+    "anime_name": "約定的夢幻島 第二季",
+    "source_original_name": "約束のネバーランド 2期",
+    "subject_id": 279202,
+    "subject_name": "約束のネバーランド Season 2",
+    "subject_type": 2,
+    "first_air_date": "2021-01-07",
+    "subject_episode_total": 11,
+    "provider_aliases": [
+      [
+        {
+          "v": "約束のネバーランド 第2期"
+        },
+        {
+          "v": "Yakusoku no Neverland (2021)"
+        },
+        {
+          "v": "The Promised Neverland Season 2"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/279202",
+    "provider_checked_at": "2026-10-18T08:34:54.750577+00:00",
+    "summary_sha256": "443dd1dbbb3a498e5def2bf84fc0e7cdfeab92f2554d44e1ef13ead62a1c0de4",
+    "summary_length": 197,
+    "scope_review": "2期與Season2對應2021-01第二季，介紹逃離Grace Field後的故事。",
+    "primary_observations": [
+      {
+        "quarter": "2021_冬",
+        "source_url": "https://acgsecrets.hk/bangumi/202101/",
+        "checked_at": "2026-10-18T08:39:59.721712+00:00",
+        "document_sha256": "dade6653a4d4b3b7c9a739c3f5f00d9f8a576a8fe6d6115d7b51c96740ccd04f",
+        "card_sha256": "2162f55c32ec3690325332e1e53d4c5dc2e449af8a7319aaae638f924d6ce754",
+        "source_anime_name": "約定的夢幻島 第二季",
+        "source_original_name": "約束のネバーランド 2期",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2021年1月7日起／每週四深夜／25時25分 2021年1月8日起／每週五凌晨／1時25分 ",
+        "source_scope_text": "約定的夢幻島 第二季 約束のネバーランド 2期 約定的夢幻島 第二季 約束のネバーランド 2期 漫畫改編 續作 高人氣 神秘 心理 科幻 少年 驚悚 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-966",
+    "anime_name": "RE-MAIN",
+    "source_original_name": "リメイン",
+    "subject_id": 329909,
+    "subject_name": "RE-MAIN",
+    "subject_type": 2,
+    "first_air_date": "2021-07-03",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "リメイン"
+        },
+        {
+          "v": "少年与水球"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/329909",
+    "provider_checked_at": "2026-10-18T08:34:50.412958+00:00",
+    "summary_sha256": "c9445f92ed96d09e7e4a037387467e36c9aba15fe2bb7b7f764e7b03d6585bae",
+    "summary_length": 95,
+    "scope_review": "條目明示リメイン別名；2021-07同一水球原創動畫RE-MAIN。",
+    "primary_observations": [
+      {
+        "quarter": "2021_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202107/",
+        "checked_at": "2026-10-18T08:40:03.450309+00:00",
+        "document_sha256": "ea3957977271c8f2009e7ef8f797bde0e326b817a03409b129d2cd53911c8870",
+        "card_sha256": "9d5e14c8c10d0828168fbd094866e31a96104711f0d24dc4a2490232987edfac",
+        "source_anime_name": "RE-MAIN",
+        "source_original_name": "リメイン",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2021年7月3日起／每週六深夜／25時30分 2021年7月4日起／每週日凌晨／1時30分 ",
+        "source_scope_text": "RE-MAIN リメイン RE-MAIN リメイン 原創作品 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-724",
+    "anime_name": "關於我轉生變成史萊姆這檔事 轉生史萊姆日記",
+    "source_original_name": "転生したらスライムだった件 転スラ日記",
+    "subject_id": 299673,
+    "subject_name": "転スラ日記 転生したらスライムだった件",
+    "subject_type": 2,
+    "first_air_date": "2021-04-06",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "Tensura Nikki: Tensei shitara Slime Datta Ken"
+        },
+        {
+          "v": "The Slime Diaries: That Time I Got Reincarnated as a Slime"
+        },
+        {
+          "v": "关于我转生变成史莱姆这档事 转生史莱姆日记"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/299673",
+    "provider_checked_at": "2026-10-18T08:34:42.683267+00:00",
+    "summary_sha256": "c0c00d735013b966f4a2ed0c40dc3d1ba5eb51ec39fb4860589d83d9e79e53f2",
+    "summary_length": 152,
+    "scope_review": "系列名與轉生日記副標順序不同；2021-04同一轉生日記外傳，不是轉生史萊姆正篇。",
+    "primary_observations": [
+      {
+        "quarter": "2021_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202104/",
+        "checked_at": "2026-10-18T08:40:03.986172+00:00",
+        "document_sha256": "7c6ba5c28acb90897dd2567c9148e8cfec6530c4c3eb6660fda4141d40e0bc2a",
+        "card_sha256": "ced8f8799c98e96938c8fed94f112c442dc922995028f0fcd3427bfe669dbd8b",
+        "source_anime_name": "關於我轉生變成史萊姆這檔事 轉生史萊姆日記",
+        "source_original_name": "転生したらスライムだった件 転スラ日記",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2021年4月6日起／每週二／23時0分 2021年4月6日起／每週二／23時0分 ",
+        "source_scope_text": "關於我轉生變成史萊姆這檔事 轉生史萊姆日記 転生したらスライムだった件 転スラ日記 關於我轉生變成史萊姆這檔事 轉生史萊姆日記 転生したらスライムだった件 転スラ日記 漫畫改編 新作 高期待 高人氣 喜劇 奇幻 少年 日常 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-738",
+    "anime_name": "哥斯拉 奇異點",
+    "source_original_name": "ゴジラ シンギュラポイント",
+    "subject_id": 316519,
+    "subject_name": "ゴジラS.P<シンギュラポイント>",
+    "subject_type": 2,
+    "first_air_date": "2021-04-01",
+    "subject_episode_total": 13,
+    "provider_aliases": [
+      [
+        {
+          "v": "哥斯拉 奇异点"
+        },
+        {
+          "v": "哥斯拉：奇异点"
+        },
+        {
+          "v": "Godzilla Singular Point"
+        },
+        {
+          "v": "ゴジラ シンギュラポイント"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/316519",
+    "provider_checked_at": "2026-10-18T08:34:44.072577+00:00",
+    "summary_sha256": "7dabcc016275ea0303efbe939a372f866e4096ad97435a79d547a4b27d0fe6de",
+    "summary_length": 289,
+    "scope_review": "シンギュラポイント為S.P的展開讀法；2021-04同一Singular Point動畫，不是其他哥斯拉作品。",
+    "primary_observations": [
+      {
+        "quarter": "2021_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202104/",
+        "checked_at": "2026-10-18T08:40:03.986172+00:00",
+        "document_sha256": "7c6ba5c28acb90897dd2567c9148e8cfec6530c4c3eb6660fda4141d40e0bc2a",
+        "card_sha256": "cc81c5fc1572bddc6a76f5cd382a2cbe992fbb84185939b1a231d8e03f857375",
+        "source_anime_name": "哥斯拉 奇異點",
+        "source_original_name": "ゴジラ シンギュラポイント",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2021年4月1日起／每週四／22時30分 2021年4月1日起／每週四／22時30分 ",
+        "source_scope_text": "哥斯拉 奇異點 哥吉拉 奇異點 ゴジラ シンギュラポイント 哥斯拉 奇異點 哥吉拉 奇異點 ゴジラ シンギュラポイント 原創作品 新作 動作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-778",
+    "anime_name": "Mazica Party",
+    "source_original_name": "Mazica Party",
+    "subject_id": 330652,
+    "subject_name": "マジカパーティ",
+    "subject_type": 2,
+    "first_air_date": "2021-04-04",
+    "subject_episode_total": 51,
+    "provider_aliases": [
+      [
+        {
+          "v": "MAZICA PARTY"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/330652",
+    "provider_checked_at": "2026-10-18T08:34:46.898589+00:00",
+    "summary_sha256": "2f9afeb83e6a133ea32a8c8c1bd404be9aebf46a0a3564a75e899bef5ffdfb65",
+    "summary_length": 337,
+    "scope_review": "條目明示MAZICA PARTY別名；2021-04同一動畫。",
+    "primary_observations": [
+      {
+        "quarter": "2021_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202104/",
+        "checked_at": "2026-10-18T08:40:03.986172+00:00",
+        "document_sha256": "7c6ba5c28acb90897dd2567c9148e8cfec6530c4c3eb6660fda4141d40e0bc2a",
+        "card_sha256": "1ead7f2d54beda7cd930f8ddaf688540da5a8f0341ddd1cbf4702bd3cf234750",
+        "source_anime_name": "Mazica Party",
+        "source_original_name": "Mazica Party",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2021年4月4日起／每週日／9時30分 2021年4月4日起／每週日／9時30分 ",
+        "source_scope_text": "Mazica Party Mazica Party Mazica Party Mazica Party 遊戲改編 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-982",
+    "anime_name": "狂熱深淵 迷失的孩子",
+    "source_original_name": "ディープインサニティ ザ・ロストチャイルド",
+    "subject_id": 339969,
+    "subject_name": "Deep Insanity THE LOST CHILD",
+    "subject_type": 2,
+    "first_air_date": "2021-10-12",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "狂熱深淵 迷失的孩子"
+        },
+        {
+          "v": "ディープインサニティ ザ・ロストチャイルド"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/339969",
+    "provider_checked_at": "2026-10-18T08:34:40.567837+00:00",
+    "summary_sha256": "a2daab489b6d1058b62515cfb828af4a34224878eb72dead8576b1818189a2ab",
+    "summary_length": 228,
+    "scope_review": "條目明示完整日文別名；2021-10同一THE LOST CHILD動畫，不是其他Deep Insanity媒體。",
+    "primary_observations": [
+      {
+        "quarter": "2021_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/202110/",
+        "checked_at": "2026-10-18T08:40:06.189257+00:00",
+        "document_sha256": "e844d9b829654c4bd57875411d84abdcc3259790def24cfcc69a638e70ee8dd2",
+        "card_sha256": "adff637859fd19619e4554c81920bba136c141d612a7e9b4641c29c85d1fe917",
+        "source_anime_name": "狂熱深淵 迷失的孩子",
+        "source_original_name": "ディープインサニティ ザ・ロストチャイルド",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2021年10月12日起／每週二深夜／24時30分 2021年10月13日起／每週三凌晨／0時30分 ",
+        "source_scope_text": "狂熱深淵 迷失的孩子 ディープインサニティ ザ・ロストチャイルド 狂熱深淵 迷失的孩子 ディープインサニティ ザ・ロストチャイルド 原創作品 新作 科幻 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-989",
+    "anime_name": "Build Divide: Code Black",
+    "source_original_name": "ビルディバイド -#000000（コードブラック）-",
+    "subject_id": 333623,
+    "subject_name": "ビルディバイド -#000000-",
+    "subject_type": 2,
+    "first_air_date": "2021-10-09",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "ビルディバイド -#000000(コードブラック)-"
+        },
+        {
+          "v": "Build Divide: Code Black"
+        },
+        {
+          "v": "Build Divide -#000000-"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/333623",
+    "provider_checked_at": "2026-10-18T08:34:41.264532+00:00",
+    "summary_sha256": "3de4454f573f13a7099b6d185bd6a6701134228c19023815cd03d18e22bce734",
+    "summary_length": 384,
+    "scope_review": "來源括號為#000000讀法Code Black；2021-10首部12話，不是Code White。",
+    "primary_observations": [
+      {
+        "quarter": "2021_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/202110/",
+        "checked_at": "2026-10-18T08:40:06.189257+00:00",
+        "document_sha256": "e844d9b829654c4bd57875411d84abdcc3259790def24cfcc69a638e70ee8dd2",
+        "card_sha256": "78c6caf97669f88a82769925550701ddbc2c0a63b3d64ed68276739fa6da7949",
+        "source_anime_name": "Build Divide: Code Black",
+        "source_original_name": "ビルディバイド -#000000（コードブラック）-",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2021年10月9日起／每週六深夜／24時30分 2021年10月10日起／每週日凌晨／0時30分 ",
+        "source_scope_text": "Build Divide: Code Black ビルディバイド -#000000（コードブラック）- Build Divide: Code Black ビルディバイド -#000000（コードブラック）- 原創作品 新作 奇幻 遊戲 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-872",
+    "anime_name": "平凡職業造就世界最強 第二季",
+    "source_original_name": "ありふれた職業で世界最強 2ndシーズン",
+    "subject_id": 292316,
+    "subject_name": "ありふれた職業で世界最強 2nd season",
+    "subject_type": 2,
+    "first_air_date": "2022-01-13",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "平职 2"
+        },
+        {
+          "v": "平凡职业成就世界最强 第二季"
+        },
+        {
+          "v": "ありふれた職業で世界最強 第2期"
+        },
+        {
+          "v": "Arifureta: From Commonplace to World's Strongest 2"
+        },
+        {
+          "v": "Arifureta Shokugyou de Sekai Saikyou 2"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/292316",
+    "provider_checked_at": "2026-10-18T08:34:38.468140+00:00",
+    "summary_sha256": "28ceb2c4d4b8f2d587b73b61aba9556dc72ecca8b272f0dfef181ce204bc962c",
+    "summary_length": 447,
+    "scope_review": "2ndシーズン與2nd season同為2022-01第二季；介紹同學分別後的大迷宮及王都危機。",
+    "primary_observations": [
+      {
+        "quarter": "2022_冬",
+        "source_url": "https://acgsecrets.hk/bangumi/202201/",
+        "checked_at": "2026-10-18T08:40:06.756112+00:00",
+        "document_sha256": "272fa03b8c4eed10ced62185b0c783f71c4d4bfde2a3bb2e2961dfc90d176c65",
+        "card_sha256": "f46d550b34c3137e0e7e6044d9f2dfe2cddcc3fef42e3a23307339701498f1b1",
+        "source_anime_name": "平凡職業造就世界最強 第二季",
+        "source_original_name": "ありふれた職業で世界最強 2ndシーズン",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2022年1月13日起／每週四／23時30分 2022年1月13日起／每週四／23時30分 ",
+        "source_scope_text": "平凡職業造就世界最強 第二季 ありふれた職業で世界最強 2ndシーズン 平凡職業造就世界最強 第二季 ありふれた職業で世界最強 2ndシーズン 小說改編 續作 高期待 高人氣 動作 冒險 奇幻 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1116",
+    "anime_name": "金裝的維爾梅",
+    "source_original_name": "金装のヴェルメイユ",
+    "subject_id": 373710,
+    "subject_name": "金装のヴェルメイユ～崖っぷち魔術師は最強の厄災と魔法世界を突き進む～",
+    "subject_type": 2,
+    "first_air_date": "2022-07-05",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "Vermeil in Gold - A Magician Pushes Through the Magical World With the Strongest Disaster"
+        },
+        {
+          "v": "Kinsou no Vermeil: Gakeppuchi Majutsushi wa Saikyou no Yakusai to Mahou Sekai o Tsukisusumu"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/373710",
+    "provider_checked_at": "2026-10-18T08:34:34.941012+00:00",
+    "summary_sha256": "ce92bccea8ab08b74d9adce78f4d943e1e56d691e605b9aefbd4a7172d639670",
+    "summary_length": 236,
+    "scope_review": "來源省略長副標，2022-07同一金裝維爾梅動畫，非其他續作。",
+    "primary_observations": [
+      {
+        "quarter": "2022_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202207/",
+        "checked_at": "2026-10-18T08:40:08.288828+00:00",
+        "document_sha256": "3616c32648706da477ef5bc234170662db9bbffbfe76551e2fbf0a709f02eb0f",
+        "card_sha256": "8eae75afb73d10be3f52c42d0ff7563b39963ae1a6f1f63d13d5c2dc5afe7492",
+        "source_anime_name": "金裝的維爾梅",
+        "source_original_name": "金装のヴェルメイユ",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2022年7月5日起／每週二／22時30分 2022年7月5日起／每週二／22時30分 ",
+        "source_scope_text": "金裝的維爾梅 金装のヴェルメイユ 金裝的維爾梅 金装のヴェルメイユ 漫畫改編 新作 高人氣 奇幻 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1117",
+    "anime_name": "東京Mew Mew New～♥",
+    "source_original_name": "東京ミュウミュウ にゅ～♥",
+    "subject_id": 303195,
+    "subject_name": "東京ミュウミュウ にゅ～♡",
+    "subject_type": 2,
+    "first_air_date": "2022-07-05",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "Tokyo Mew Mew New～♡"
+        },
+        {
+          "v": "东京喵喵 NEW～♡"
+        },
+        {
+          "v": "新 东京猫猫"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/303195",
+    "provider_checked_at": "2026-10-18T08:34:35.643290+00:00",
+    "summary_sha256": "f2860b9c52e5f06d383222c87ce1da47089e9a449c07d4d9d5c15c4d08017d75",
+    "summary_length": 226,
+    "scope_review": "同一2022年新版東京Mew Mew，差異僅心形實心／空心符號；非2002年舊版或新版第二季。",
+    "primary_observations": [
+      {
+        "quarter": "2022_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202207/",
+        "checked_at": "2026-10-18T08:40:08.288828+00:00",
+        "document_sha256": "3616c32648706da477ef5bc234170662db9bbffbfe76551e2fbf0a709f02eb0f",
+        "card_sha256": "5141a2208ac91aaa9c1bbcb8c1e71db8a254d3aaa419dd34433e38dd73eb5669",
+        "source_anime_name": "東京Mew Mew New～♥",
+        "source_original_name": "東京ミュウミュウ にゅ～♥",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2022年7月5日起／每週二深夜／24時0分 2022年7月6日起／每週三凌晨／0時0分 ",
+        "source_scope_text": "東京Mew Mew New～♥ 東京貓貓 New～♥ 東京ミュウミュウ にゅ～♥ 東京Mew Mew New～♥ 東京貓貓 New～♥ 東京ミュウミュウ にゅ～♥ 漫畫改編 新作 喜劇 奇幻 浪漫 科幻 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1123",
+    "anime_name": "SHINE POST",
+    "source_original_name": "シャインポスト",
+    "subject_id": 354414,
+    "subject_name": "SHINE POST",
+    "subject_type": 2,
+    "first_air_date": "2022-07-12",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "シャインポスト"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/354414",
+    "provider_checked_at": "2026-10-18T08:34:36.339961+00:00",
+    "summary_sha256": "33f12c7f203f3688afdd25f362fe627e9a429793430c458c89c91b061fbc6187",
+    "summary_length": 154,
+    "scope_review": "條目明示シャインポスト別名；2022-07同一動畫SHINE POST。",
+    "primary_observations": [
+      {
+        "quarter": "2022_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202207/",
+        "checked_at": "2026-10-18T08:40:08.288828+00:00",
+        "document_sha256": "3616c32648706da477ef5bc234170662db9bbffbfe76551e2fbf0a709f02eb0f",
+        "card_sha256": "53e8ea390b403421cf785681cf8f2aa75c1f328ab2d4b4d80e78ae6f66d5fa8f",
+        "source_anime_name": "SHINE POST",
+        "source_original_name": "シャインポスト",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2022年7月12日起／每週二深夜／25時29分 2022年7月13日起／每週三凌晨／1時29分 ",
+        "source_scope_text": "SHINE POST シャインポスト SHINE POST シャインポスト 原創作品 新作 高評價 日常 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1132",
+    "anime_name": "Extreme Hearts",
+    "source_original_name": "エクストリームハーツ",
+    "subject_id": 368816,
+    "subject_name": "Extreme Hearts",
+    "subject_type": 2,
+    "first_air_date": "2022-07-09",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "极限之众心"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/368816",
+    "provider_checked_at": "2026-10-18T08:34:37.048000+00:00",
+    "summary_sha256": "49765140af142f2e5fdf1065a96b00a6dd0a459314690f9ac636502806d99707",
+    "summary_length": 124,
+    "scope_review": "Extreme Hearts與エクストリームハーツ為英日對應；2022-07首播相同。",
+    "primary_observations": [
+      {
+        "quarter": "2022_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202207/",
+        "checked_at": "2026-10-18T08:40:08.288828+00:00",
+        "document_sha256": "3616c32648706da477ef5bc234170662db9bbffbfe76551e2fbf0a709f02eb0f",
+        "card_sha256": "aa7ed7c71ffb32ae43250da67e8a6100d906148ab9f4570f5c90a666ede29246",
+        "source_anime_name": "Extreme Hearts",
+        "source_original_name": "エクストリームハーツ",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2022年7月9日起／每週六深夜／25時30分 2022年7月10日起／每週日凌晨／1時30分 ",
+        "source_scope_text": "Extreme Hearts エクストリームハーツ Extreme Hearts エクストリームハーツ 原創作品 新作 運動 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1095",
+    "anime_name": "名偵探柯南 零的日常",
+    "source_original_name": "名探偵コナン ゼロの日常（ティータイム）",
+    "subject_id": 351714,
+    "subject_name": "名探偵コナン ゼロの日常",
+    "subject_type": 2,
+    "first_air_date": "2022-04-04",
+    "subject_episode_total": 6,
+    "provider_aliases": [
+      [
+        {
+          "v": "名侦探柯南 零的日常"
+        },
+        {
+          "v": "Meitantei Conan: Zero no Tea Time"
+        },
+        {
+          "v": "Detective Conan: Zero's Tea Time"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/351714",
+    "provider_checked_at": "2026-10-18T08:34:32.097189+00:00",
+    "summary_sha256": "62bf0bbfd75e829f1979ddcdb2eaeceb3fa199c804530fdfdca5dbecdabcb66b",
+    "summary_length": 142,
+    "scope_review": "括號ティータイム為零の日常讀法；2022-04同一外傳短篇，不是柯南正篇。",
+    "primary_observations": [
+      {
+        "quarter": "2022_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202204/",
+        "checked_at": "2026-10-18T08:40:10.059861+00:00",
+        "document_sha256": "302ee96017c94c0538dcfa21e4e4e16e8dab9d003e3ec399a71a617a47c97e94",
+        "card_sha256": "e66b1a69feebeffdac05ea6d1ec7f99b0a9ab036e5063eaca18b8489049e258f",
+        "source_anime_name": "名偵探柯南 零的日常",
+        "source_original_name": "名探偵コナン ゼロの日常（ティータイム）",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2022年4月4日起／每週一深夜／25時20分 2022年4月5日起／每週二凌晨／1時20分 ",
+        "source_scope_text": "名偵探柯南 零的日常 名探偵コナン ゼロの日常（ティータイム） 名偵探柯南 零的日常 名探偵コナン ゼロの日常（ティータイム） 漫畫改編 新作 日常 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1058",
+    "anime_name": "Build Divide: Code White",
+    "source_original_name": "ビルディバイド -#FFFFFF(コードホワイト)-",
+    "subject_id": 333624,
+    "subject_name": "ビルディバイド -#FFFFFF-",
+    "subject_type": 2,
+    "first_air_date": "2022-04-02",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "ビルディバイド -#FFFFFF-（コードホワイト）"
+        },
+        {
+          "v": "Build Divide: Code White"
+        },
+        {
+          "v": "Build Divide -#FFFFFF-"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/333624",
+    "provider_checked_at": "2026-10-18T08:34:34.234176+00:00",
+    "summary_sha256": "2a3ed892883be2c6e94841a76a2fc64cdd1d31272be5f4232c5008e3d272cc0a",
+    "summary_length": 624,
+    "scope_review": "來源括號為#FFFFFF讀法Code White；2022-04續篇，介紹三年後崩毀新京都，非Code Black。",
+    "primary_observations": [
+      {
+        "quarter": "2022_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202204/",
+        "checked_at": "2026-10-18T08:40:10.059861+00:00",
+        "document_sha256": "302ee96017c94c0538dcfa21e4e4e16e8dab9d003e3ec399a71a617a47c97e94",
+        "card_sha256": "9210f4c5ef6f36ed1e5ae9a594718a800bdb524ea4d8478796a0c194d26c0c4a",
+        "source_anime_name": "Build Divide: Code White",
+        "source_original_name": "ビルディバイド -#FFFFFF(コードホワイト)-",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2022年4月2日起／每週六深夜／24時30分 2022年4月3日起／每週日凌晨／0時30分 ",
+        "source_scope_text": "Build Divide: Code White ビルディバイド -#FFFFFF(コードホワイト)- Build Divide: Code White ビルディバイド -#FFFFFF(コードホワイト)- 原創作品 續作 奇幻 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1160",
+    "anime_name": "黃金神威 第四期",
+    "source_original_name": "ゴールデンカムイ 第四期",
+    "subject_id": 361095,
+    "subject_name": "ゴールデンカムイ 第4期",
+    "subject_type": 2,
+    "first_air_date": "2022-10-03",
+    "subject_episode_total": 13,
+    "provider_aliases": [
+      [
+        {
+          "v": "Golden Kamuy 4"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/361095",
+    "provider_checked_at": "2026-10-18T08:34:27.872829+00:00",
+    "summary_sha256": "961607650a5f83611b74fca69b443ba1c0faa60a65a649c61f2019109e626cd0",
+    "summary_length": 399,
+    "scope_review": "第四期與第4期對應；2022-10同一第四期，介紹杉元與阿席莉帕在樺太重逢後旅程。",
+    "primary_observations": [
+      {
+        "quarter": "2022_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/202210/",
+        "checked_at": "2026-10-18T08:40:11.261879+00:00",
+        "document_sha256": "b969affd9d37929aa7e02b000047d88f907f4f330bf42b6c61d11a8aee69f8f1",
+        "card_sha256": "3d9a71f79f21e61f5b2636aebc43a46b6edddd3b70f404de5e5c1f252a17d839",
+        "source_anime_name": "黃金神威 第四期",
+        "source_original_name": "ゴールデンカムイ 第四期",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2022年10月3日起／每週一／23時0分 2022年10月3日起／每週一／23時0分 ",
+        "source_scope_text": "黃金神威 第四期 ゴールデンカムイ 第四期 黃金神威 第四期 ゴールデンカムイ 第四期 漫畫改編 續作 動作 冒險 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1144",
+    "anime_name": "BLEACH 千年血戰篇",
+    "source_original_name": "BLEACH 千年血戰篇",
+    "subject_id": 302286,
+    "subject_name": "BLEACH 千年血戦篇",
+    "subject_type": 2,
+    "first_air_date": "2022-10-10",
+    "subject_episode_total": 13,
+    "provider_aliases": [
+      [
+        {
+          "v": "BLEACH 千年血戦編"
+        },
+        {
+          "v": "Bleach: Sennen Kessen-hen"
+        },
+        {
+          "v": "Bleach: Thousand-Year Blood War"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/302286",
+    "provider_checked_at": "2026-10-18T08:34:28.572913+00:00",
+    "summary_sha256": "47869e16c5281428b8315c54f37b4bb24335fdef1ee823fe4c5f69393938605a",
+    "summary_length": 341,
+    "scope_review": "血戰／血戦漢字寫法差異；2022-10同一千年血戰首部分，不是後續訣別譚等分割篇。",
+    "primary_observations": [
+      {
+        "quarter": "2022_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/202210/",
+        "checked_at": "2026-10-18T08:40:11.261879+00:00",
+        "document_sha256": "b969affd9d37929aa7e02b000047d88f907f4f330bf42b6c61d11a8aee69f8f1",
+        "card_sha256": "31c416af0907d15c6f1853c0d0d0b01e2c6440569a3671ff32c46af9b9724290",
+        "source_anime_name": "BLEACH 千年血戰篇",
+        "source_original_name": "BLEACH 千年血戰篇",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2022年10月10日起／每週一深夜／24時0分 2022年10月11日起／每週二凌晨／0時0分 ",
+        "source_scope_text": "BLEACH 千年血戰篇 BLEACH 千年血戰篇 BLEACH 千年血戰篇 BLEACH 千年血戰篇 漫畫改編 續作 高期待 高評價 動作 冒險 奇幻 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1192",
+    "anime_name": "明日方舟：黎明前奏",
+    "source_original_name": "アークナイツ 黎明前奏",
+    "subject_id": 354190,
+    "subject_name": "アークナイツ【黎明前奏/PRELUDE TO DAWN】",
+    "subject_type": 2,
+    "first_air_date": "2022-10-28",
+    "subject_episode_total": 8,
+    "provider_aliases": [
+      [
+        {
+          "v": "Arknights: Reimei Zensou"
+        },
+        {
+          "v": "アークナイツ -黎明前奏-"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/354190",
+    "provider_checked_at": "2026-10-18T08:34:30.668624+00:00",
+    "summary_sha256": "7d3ee045f3e823e580622e12b8852235abfee42fa3adf5ae809a0aadfa99fa8d",
+    "summary_length": 151,
+    "scope_review": "黎明前奏是同一副標，條目另列英文副標；2022-10同一首部動畫，不是冬隱歸路等續篇。",
+    "primary_observations": [
+      {
+        "quarter": "2022_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/202210/",
+        "checked_at": "2026-10-18T08:40:11.261879+00:00",
+        "document_sha256": "b969affd9d37929aa7e02b000047d88f907f4f330bf42b6c61d11a8aee69f8f1",
+        "card_sha256": "6b8a677e8ec1831221dbf05973ec5e340f822490ebcff38909ff6b2e70f1477e",
+        "source_anime_name": "明日方舟：黎明前奏",
+        "source_original_name": "アークナイツ 黎明前奏",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2022年10月28日起／每週五深夜／25時23分 2022年10月29日起／每週六凌晨／1時23分 ",
+        "source_scope_text": "明日方舟：黎明前奏 アークナイツ 黎明前奏 明日方舟：黎明前奏 アークナイツ 黎明前奏 遊戲改編 新作 動作 奇幻 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1341",
+    "anime_name": "闇芝居 第11季",
+    "source_original_name": "闇芝居 十一期",
+    "subject_id": 432751,
+    "subject_name": "闇芝居 第11期",
+    "subject_type": 2,
+    "first_air_date": "2023-07-09",
+    "subject_episode_total": 13,
+    "provider_aliases": [
+      [
+        {
+          "v": "Yami Shibai 11"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/432751",
+    "provider_checked_at": "2026-10-18T08:34:25.737918+00:00",
+    "summary_sha256": "80dac4f1547f6e0d64e7d924e1f5ebbe742237fcd59cb877471f27c02feed000",
+    "summary_length": 105,
+    "scope_review": "十一期與第11期對應；2023-07同季，介紹明列本季以「再」為主題。",
+    "primary_observations": [
+      {
+        "quarter": "2023_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202307/",
+        "checked_at": "2026-10-18T08:40:14.757947+00:00",
+        "document_sha256": "fb421779699d0fe72204bc9e5ad79e91f325a00af86c7bf6dd5fbff756a8d770",
+        "card_sha256": "cd9528c2650719edd6c112f7c8ebf9acd34c16e43f23e0886e0e2f670b5036a6",
+        "source_anime_name": "闇芝居 第11季",
+        "source_original_name": "闇芝居 十一期",
+        "source_explicit_subject_id": 432751,
+        "source_broadcast_text": " 2023年7月9日起／每週日深夜／26時35分 2023年7月10日起／每週一凌晨／2時35分 ",
+        "source_scope_text": "闇芝居 第11季 闇芝居 十一期 闇芝居 第11季 闇芝居 十一期 改編作品 續作 恐怖 超自然 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1406",
+    "anime_name": "爆旋陀螺 X",
+    "source_original_name": "ベイブレードエックス",
+    "subject_id": 418599,
+    "subject_name": "BEYBLADE X",
+    "subject_type": 2,
+    "first_air_date": "2023-10-06",
+    "subject_episode_total": 0,
+    "provider_aliases": [
+      [
+        {
+          "v": "ベイブレードエックス"
+        },
+        {
+          "v": "战斗陀螺 X"
+        },
+        {
+          "v": "霸旋陀螺 X"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/418599",
+    "provider_checked_at": "2026-10-18T08:34:24.334766+00:00",
+    "summary_sha256": "59a0f6ee563145ba2c887334171271a904d96ebc5d71ba9e2c0e0f24b9fe0492",
+    "summary_length": 157,
+    "scope_review": "條目明示ベイブレードエックス別名；2023-10同一BEYBLADE X動畫，非前系列。",
+    "primary_observations": [
+      {
+        "quarter": "2023_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/202310/",
+        "checked_at": "2026-10-18T08:40:17.724568+00:00",
+        "document_sha256": "b2621d751cbbdbb70f03307272780f6137c48878622f96b20c560ac64173e63d",
+        "card_sha256": "8327e30734ff03a37386e2008f3e7061ec92d3f2e8a8a2c4cbf938438b85f726",
+        "source_anime_name": "爆旋陀螺 X",
+        "source_original_name": "ベイブレードエックス",
+        "source_explicit_subject_id": 418599,
+        "source_broadcast_text": " 2023年10月6日起／每週五／18時25分 2023年10月6日起／每週五／18時25分 ",
+        "source_scope_text": "爆旋陀螺 X 戰鬥陀螺 X ベイブレードエックス 爆旋陀螺 X 戰鬥陀螺 X ベイブレードエックス 漫畫改編 新作 動作 冒險 運動 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1578",
+    "anime_name": "小哥斯拉的逆襲 第二季",
+    "source_original_name": "ちびゴジラの逆襲",
+    "subject_id": 484191,
+    "subject_name": "ちびゴジラの逆襲 続編",
+    "subject_type": 2,
+    "first_air_date": "2024-04-03",
+    "subject_episode_total": 52,
+    "provider_aliases": [
+      [
+        {
+          "v": "宝宝哥斯拉的反击 续篇"
+        },
+        {
+          "v": "Chibi Godzilla no Gyakushuu 2nd Season"
+        },
+        {
+          "v": "Chibi Godzilla Raids Again Season 2"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/484191",
+    "provider_checked_at": "2026-10-18T08:34:17.960914+00:00",
+    "summary_sha256": "53e4b4fcb9c2edda9b7ee811ca7620dd25e24f4e6f8701fa828153aac215b8c6",
+    "summary_length": 197,
+    "scope_review": "來源中文名明列第二季，2024-04與条目続編日期一致，條目介紹也明列2024-04開始。",
+    "primary_observations": [
+      {
+        "quarter": "2024_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202407/",
+        "checked_at": "2026-10-18T08:40:21.162098+00:00",
+        "document_sha256": "963e0d069d28cbfd4860926edc075f1ff5f8a39a0ee440e395dea1e6e2b51c90",
+        "card_sha256": "03af2502cb229f7a2de43535f8ae66269f2a45c2fd2ba0889943ffe8524baefa",
+        "source_anime_name": "小哥斯拉的逆襲 第二季",
+        "source_original_name": "ちびゴジラの逆襲",
+        "source_explicit_subject_id": 484191,
+        "source_broadcast_text": null,
+        "source_scope_text": "小哥斯拉的逆襲 第二季 小小哥吉拉的逆襲 第二季 ちびゴジラの逆襲 小哥斯拉的逆襲 第二季 小小哥吉拉的逆襲 第二季 ちびゴジラの逆襲 劇集改編 續作 4季度 奇幻 ",
+        "source_continuing": true
+      },
+      {
+        "quarter": "2024_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202404/",
+        "checked_at": "2026-10-18T08:40:24.048036+00:00",
+        "document_sha256": "350f941788e09b47bc5a98caccad9c952217301822d34ddba6c4b14d9be4524f",
+        "card_sha256": "753defdcdbcae6db0508a517590c4d5c73faef78c203e6ef81ff6a302972fc76",
+        "source_anime_name": "小哥斯拉的逆襲 第二季",
+        "source_original_name": "ちびゴジラの逆襲",
+        "source_explicit_subject_id": 484191,
+        "source_broadcast_text": " 2024年4月3日起／每週三／7時5分 2024年4月3日起／每週三／7時5分 ",
+        "source_scope_text": "小哥斯拉的逆襲 第二季 小小哥吉拉的逆襲 第二季 ちびゴジラの逆襲 小哥斯拉的逆襲 第二季 小小哥吉拉的逆襲 第二季 ちびゴジラの逆襲 劇集改編 續作 4季度 奇幻 ",
+        "source_continuing": false
+      },
+      {
+        "quarter": "2024_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/202410/",
+        "checked_at": "2026-10-18T08:40:24.930253+00:00",
+        "document_sha256": "8d2bdb1cb0094673e53491a4e568b2d0d65990b8c0848309b84f124182b686eb",
+        "card_sha256": "3b846a3e35a32e16d6f811c539181d137b0f9f714bebc4b6b39bf4abf85a9cee",
+        "source_anime_name": "小哥斯拉的逆襲 第二季",
+        "source_original_name": "ちびゴジラの逆襲",
+        "source_explicit_subject_id": 484191,
+        "source_broadcast_text": null,
+        "source_scope_text": "小哥斯拉的逆襲 第二季 小小哥吉拉的逆襲 第二季 ちびゴジラの逆襲 小哥斯拉的逆襲 第二季 小小哥吉拉的逆襲 第二季 ちびゴジラの逆襲 劇集改編 續作 4季度 奇幻 ",
+        "source_continuing": true
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1576",
+    "anime_name": "魔王學院的不適任者 第二季 第二部份",
+    "source_original_name": "魔王学院の不適合者II 2ndクール",
+    "subject_id": 455981,
+    "subject_name": "魔王学院の不適合者 ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～ Ⅱ 2ndクール",
+    "subject_type": 2,
+    "first_air_date": "2024-04-12",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "The Misfit of Demon King Academy: History`s Strongest Demon King Reincarnates and Goes to School with His Descendants II Part 2"
+        },
+        {
+          "v": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou II Part 2"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/455981",
+    "provider_checked_at": "2026-10-18T08:34:21.514876+00:00",
+    "summary_sha256": "cc2cc665cc7d36085d49c1434977c6e1c980b5d9ee7d18dfe7a68641a294aab4",
+    "summary_length": 147,
+    "scope_review": "來源省略魔王學院長副標；II及2ndクール、2024-04開播一致，介紹選定審判篇。",
+    "primary_observations": [
+      {
+        "quarter": "2024_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202404/",
+        "checked_at": "2026-10-18T08:40:24.048036+00:00",
+        "document_sha256": "350f941788e09b47bc5a98caccad9c952217301822d34ddba6c4b14d9be4524f",
+        "card_sha256": "d465101bed75a4695c450f4be08180f4ef2b9828fd0681faf5afade3f4f0e39f",
+        "source_anime_name": "魔王學院的不適任者 第二季 第二部份",
+        "source_original_name": "魔王学院の不適合者II 2ndクール",
+        "source_explicit_subject_id": 455981,
+        "source_broadcast_text": " 2024年4月12日起／每週五／22時0分 2024年4月12日起／每週五／22時0分 ",
+        "source_scope_text": "魔王學院的不適任者 第二季 第二部份 魔王学院の不適合者II 2ndクール 魔王學院的不適任者 第二季 第二部份 魔王学院の不適合者II 2ndクール 小說改編 續作 動作 奇幻 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1697",
+    "anime_name": "莫名成為邪龍的五千歲草食龍 第二季",
+    "source_original_name": "齢5000年の草食ドラゴン、いわれなき邪竜認定 season2",
+    "subject_id": 456164,
+    "subject_name": "食草老龙被冠以恶龙之名 第二季",
+    "subject_type": 2,
+    "first_air_date": "2024-10-02",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "齢5000年の草食ドラゴン、いわれなき邪竜認定 season2"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/456164",
+    "provider_checked_at": "2026-10-18T08:34:19.378106+00:00",
+    "summary_sha256": "bf112228ee9bce9eaa1d5898244ddf4ccc92ede1438fd219eba515abf2165e00",
+    "summary_length": 263,
+    "scope_review": "條目明示完整日文season2別名，2024-10同一第二季，介紹進入新國度亞斯嘉的後續。",
+    "primary_observations": [
+      {
+        "quarter": "2024_秋",
+        "source_url": "https://acgsecrets.hk/bangumi/202410/",
+        "checked_at": "2026-10-18T08:40:24.930253+00:00",
+        "document_sha256": "8d2bdb1cb0094673e53491a4e568b2d0d65990b8c0848309b84f124182b686eb",
+        "card_sha256": "c44963b93e506319c11985c54f17c6a4c44fdb024035141d5f4d0fbc980f7a0d",
+        "source_anime_name": "莫名成為邪龍的五千歲草食龍 第二季",
+        "source_original_name": "齢5000年の草食ドラゴン、いわれなき邪竜認定 season2",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 電視台首播 2024年10月2日起／每週三深夜／25時5分 2024年10月3日起／每週四凌晨／1時5分 串流平台首播 2024年10月2日起／每週三／11時0分 2024年10月2日起／每週三／11時0分 ",
+        "source_scope_text": "莫名成為邪龍的五千歲草食龍 第二季 齢5000年の草食ドラゴン、いわれなき邪竜認定 season2 莫名成為邪龍的五千歲草食龍 第二季 齢5000年の草食ドラゴン、いわれなき邪竜認定 season2 小說改編 續作 動作 喜劇 奇幻 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1876",
+    "anime_name": "小哥斯拉的逆襲",
+    "source_original_name": "ちびゴジラの逆襲",
+    "subject_id": 561787,
+    "subject_name": "ちびゴジラの逆襲 シリーズ最新作",
+    "subject_type": 2,
+    "first_air_date": "2025-07-02",
+    "subject_episode_total": 0,
+    "provider_aliases": [
+      [
+        {
+          "v": "宝宝哥斯拉的反击 系列最新作"
+        },
+        {
+          "v": "Chibi Godzilla no Gyakushuu 3rd Season"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/561787",
+    "provider_checked_at": "2026-10-18T08:34:12.963289+00:00",
+    "summary_sha256": "7d9dc08b27558a0892d6d232e3ab413605edc6403cebb2f1813021d7fd6931ed",
+    "summary_length": 218,
+    "scope_review": "2025-07新作源卡與條目シリーズ最新作綁定一致；條目介紹也明列2025-07-02開始，不用2023／2024介紹。",
+    "primary_observations": [
+      {
+        "quarter": "2025_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202507/",
+        "checked_at": "2026-10-18T08:40:29.992353+00:00",
+        "document_sha256": "7eea8a9260ac4809b6e2d3c0810503327ba864c91a927a8d7db8d0586dd5590e",
+        "card_sha256": "3074113448600829e77608549f0870b2994d7e7129ee39e3b429760ae3c384f9",
+        "source_anime_name": "小哥斯拉的逆襲",
+        "source_original_name": "ちびゴジラの逆襲",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2025年7月2日起／每週三／7時5分 2025年7月2日起／每週三／7時5分 ",
+        "source_scope_text": "小哥斯拉的逆襲 小小哥吉拉的逆襲 ちびゴジラの逆襲 小哥斯拉的逆襲 小小哥吉拉的逆襲 ちびゴジラの逆襲 劇集改編 續作 奇幻 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1851",
+    "anime_name": "地縛少年花子君 2 後篇",
+    "source_original_name": "地縛少年花子くん2 後編",
+    "subject_id": 548940,
+    "subject_name": "地縛少年花子くん２ 第2クール",
+    "subject_type": 2,
+    "first_air_date": "2025-07-06",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "Jibaku Shounen Hanako-kun 2 Part 2"
+        },
+        {
+          "v": "Toilet-Bound Hanako-kun Season 2 Part 2"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/548940",
+    "provider_checked_at": "2026-10-18T08:34:14.401862+00:00",
+    "summary_sha256": "00a1cc3b23b93e8bf34c8ddf57e417a97d0131401d39bf806d71b12031dfb527",
+    "summary_length": 391,
+    "scope_review": "後編與第2クール對應；源卡明示Part2別名、2025-07首播，條目介紹宿泊學習新篇。",
+    "primary_observations": [
+      {
+        "quarter": "2025_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202507/",
+        "checked_at": "2026-10-18T08:40:29.992353+00:00",
+        "document_sha256": "7eea8a9260ac4809b6e2d3c0810503327ba864c91a927a8d7db8d0586dd5590e",
+        "card_sha256": "b9a8af541dee30811b64647ab3a3fd3e1bf492138f9a2c395ce679971c6475b8",
+        "source_anime_name": "地縛少年花子君 2 後篇",
+        "source_original_name": "地縛少年花子くん2 後編",
+        "source_explicit_subject_id": 548940,
+        "source_broadcast_text": " 2025年7月6日起／每週日／16時30分 2025年7月6日起／每週日／16時30分 ",
+        "source_scope_text": "地縛少年花子君 2 後篇 地縛少年花子くん2 後編 地縛少年花子君 2 後篇 地縛少年花子くん2 後編 漫畫改編 續作 超自然 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-1991",
+    "anime_name": "地獄樂 第二季",
+    "source_original_name": "地獄楽 第2期",
+    "subject_id": 443446,
+    "subject_name": "地獄楽 第二期",
+    "subject_type": 2,
+    "first_air_date": "2026-01-11",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "Jigokuraku 2nd Season"
+        },
+        {
+          "v": "Jigokuraku Season 2"
+        },
+        {
+          "v": "Hell’s Paradise Season 2"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/443446",
+    "provider_checked_at": "2026-10-18T08:34:09.319107+00:00",
+    "summary_sha256": "2629af8c059a9f018e962fe3148941a3a0dfea97779585faea6c62e8b80a2ff5",
+    "summary_length": 422,
+    "scope_review": "第2期與第二期對應；2026-01同季，介紹殊現增援及人類對天仙的新戰鬥。",
+    "primary_observations": [
+      {
+        "quarter": "2026_冬",
+        "source_url": "https://acgsecrets.hk/bangumi/202601/",
+        "checked_at": "2026-10-18T08:40:36.363409+00:00",
+        "document_sha256": "82ce93f1aae31e2f83337f4b252b4e4ae5fdd140097fe8faaba166c6b2b6d4be",
+        "card_sha256": "ecfd6d1e4d04d70beb1c094df4ce426bf5daaa565a6854e123261d5f4b3b71b6",
+        "source_anime_name": "地獄樂 第二季",
+        "source_original_name": "地獄楽 第2期",
+        "source_explicit_subject_id": 443446,
+        "source_broadcast_text": " 1月11日起／每週日／23時45分 1月11日起／每週日／23時45分 作品頁面 ",
+        "source_scope_text": "地獄樂 第二季 地獄楽 第2期 地獄樂 第二季 地獄楽 第2期 漫畫改編 續作 高期待 高人氣 動作 冒險 超自然 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-2246",
+    "anime_name": "盜墓王",
+    "source_original_name": "盗掘王",
+    "subject_id": 621835,
+    "subject_name": "도굴왕",
+    "subject_type": 2,
+    "first_air_date": "2026-07-08",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "Dogulwang"
+        },
+        {
+          "k": "日文版",
+          "v": "盗掘王"
+        },
+        {
+          "v": "独行宝物猎人"
+        },
+        {
+          "k": "英文版",
+          "v": "Tomb Raider King"
+        },
+        {
+          "k": "漫画版",
+          "v": "我独自盗墓"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/621835",
+    "provider_checked_at": "2026-10-18T08:34:07.842146+00:00",
+    "summary_sha256": "219bfad81076c48f0626c281c3a4cd8045d0435ce92d95f2690800ed7ae21ec2",
+    "summary_length": 552,
+    "scope_review": "條目明示日文版盗掘王及英文Tomb Raider King別名，2026-07同一動畫，不是原作漫畫。",
+    "primary_observations": [
+      {
+        "quarter": "2026_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202607/",
+        "checked_at": "2026-10-18T08:40:36.682279+00:00",
+        "document_sha256": "104d18baf9505da2c44a68d49439d62c7454442d8a1c2a0e9c8b0feaa8c76350",
+        "card_sha256": "817a5615a793b50584c1483e71ab49f785a25314453217170f27691a2716f3d1",
+        "source_anime_name": "盜墓王",
+        "source_original_name": "盗掘王",
+        "source_explicit_subject_id": 621835,
+        "source_broadcast_text": " 7月8日起／每週三深夜／25時15分 7月9日起／每週四凌晨／1時15分 作品頁面 ",
+        "source_scope_text": "盜墓王 盗掘王 盜墓王 盗掘王 漫畫改編 新作 動作 冒險 奇幻 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-2214",
+    "anime_name": "米之神！女孩們",
+    "source_original_name": "こめかみっ！ Girl’s",
+    "subject_id": 282118,
+    "subject_name": "こめかみっ！ガールズ",
+    "subject_type": 2,
+    "first_air_date": "2026-04-02",
+    "subject_episode_total": 12,
+    "provider_aliases": [
+      [
+        {
+          "v": "こめかみっ！ Girl’s"
+        },
+        {
+          "v": "Komekami Girls"
+        },
+        {
+          "v": "七米神物语"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/282118",
+    "provider_checked_at": "2026-10-18T08:34:06.444681+00:00",
+    "summary_sha256": "e3e0a5ef1032c5c86fc0e1b207863c769d9a2f2283b3f44a1e8a4f5c6e470852",
+    "summary_length": 152,
+    "scope_review": "條目明示こめかみっ！ Girl’s別名；2026-04同一七姊妹動畫。",
+    "primary_observations": [
+      {
+        "quarter": "2026_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202604/",
+        "checked_at": "2026-10-18T08:40:40.122349+00:00",
+        "document_sha256": "f1c370dde63a2a9f9ee543295fa95fe7df761d2fde07810a79a0fdb08b51f1c8",
+        "card_sha256": "53a0f3420c667d8012917f32317634104692e2db32526f8c65b248239962b873",
+        "source_anime_name": "米之神！女孩們",
+        "source_original_name": "こめかみっ！ Girl’s",
+        "source_explicit_subject_id": 282118,
+        "source_broadcast_text": " 4月2日起／每週四深夜／25時50分 4月3日起／每週五凌晨／1時50分 作品頁面 ",
+        "source_scope_text": "米之神！女孩們 こめかみっ！ Girl’s 米之神！女孩們 こめかみっ！ Girl’s 原創作品 新作 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-2147",
+    "anime_name": "鑽石王牌 actⅡ第2季",
+    "source_original_name": "ダイヤのA actII -Second Season-",
+    "subject_id": 495238,
+    "subject_name": "ダイヤのA actⅡ Second Season",
+    "subject_type": 2,
+    "first_air_date": "2026-04-05",
+    "subject_episode_total": 13,
+    "provider_aliases": [],
+    "provider_url": "https://api.bgm.tv/v0/subjects/495238",
+    "provider_checked_at": "2026-10-18T08:34:07.141480+00:00",
+    "summary_sha256": "2eb260f8196d4c4f07c84547bcd4b1c24cf2c8b58a46fc372fdf3bdc74c6020d",
+    "summary_length": 162,
+    "scope_review": "actII／actⅡ與Second Season同指2026-04第二季首部分，非2026-10第二cour；介紹澤村背上王牌背號的夏季大會。",
+    "primary_observations": [
+      {
+        "quarter": "2026_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202604/",
+        "checked_at": "2026-10-18T08:40:40.122349+00:00",
+        "document_sha256": "f1c370dde63a2a9f9ee543295fa95fe7df761d2fde07810a79a0fdb08b51f1c8",
+        "card_sha256": "88d9bc53d9d1576ca45513dc41e7b1a413b16d6fdb01ec179c463a70359750c1",
+        "source_anime_name": "鑽石王牌 actⅡ第2季",
+        "source_original_name": "ダイヤのA actII -Second Season-",
+        "source_explicit_subject_id": 495238,
+        "source_broadcast_text": " 4月5日起／每週日／17時30分 4月5日起／每週日／17時30分 作品頁面 ",
+        "source_scope_text": "鑽石王牌 actⅡ第2季 ダイヤのA actII -Second Season- 鑽石王牌 actⅡ第2季 ダイヤのA actII -Second Season- 漫畫改編 續作 校園 運動 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-585",
+    "anime_name": "一人之下 羅天大醮篇",
+    "source_original_name": "一人之下　羅天大醮篇",
+    "subject_id": 206925,
+    "subject_name": "一人之下 the outcast 2",
+    "subject_type": 2,
+    "first_air_date": "2017-10-27",
+    "subject_episode_total": 24,
+    "provider_aliases": [
+      [
+        {
+          "v": "一人之下2"
+        },
+        {
+          "v": "一人之下 the outcast 第2期"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/206925",
+    "provider_checked_at": "2026-10-18T08:35:42.475455+00:00",
+    "summary_sha256": "901a72d5f88c1f0a1eb0bd67c725ce1c6f3045daf42423a513c4e23c4cd02bc0",
+    "summary_length": 67,
+    "scope_review": "源卡明列羅天大醮篇、2季度24集；條目24集且簡介明列張楚嵐與馮寶寶參加羅天大醮，對應完整第2季。中國2017-10-27與日本2018-01-09為既有已核對的地區首播差異，不改寫日期或集數。",
+    "primary_observations": [
+      {
+        "quarter": "2018_冬",
+        "source_url": "https://acgsecrets.hk/bangumi/201801/",
+        "checked_at": "2026-10-18T08:39:46.608170+00:00",
+        "document_sha256": "ad010d4a609bd00d3d43a38be9c5d04b9a8bca9ec028a9bbb41c0147eac67004",
+        "card_sha256": "c9ca15d347fc3fe217904c7814f7d8db9be3a0a81d7400fc02033f53a193f3a4",
+        "source_anime_name": "一人之下 羅天大醮篇",
+        "source_original_name": "一人之下　羅天大醮篇",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2018年1月9日起／每週二深夜／25時40分 2018年1月10日起／每週三凌晨／1時40分 ",
+        "source_scope_text": "一人之下 羅天大醮篇 一人之下　羅天大醮篇 一人之下 羅天大醮篇 一人之下　羅天大醮篇 改編作品 續作 2季度(24集) ",
+        "source_continuing": false
+      },
+      {
+        "quarter": "2018_春",
+        "source_url": "https://acgsecrets.hk/bangumi/201804/",
+        "checked_at": "2026-10-18T08:39:46.608816+00:00",
+        "document_sha256": "509254f6cf02655d2f53530be4803677489d9588f9d46e993b6133c8b32117ec",
+        "card_sha256": "258d80234a0af830ccc9958a61bf9451797a2302fe15ee5c7dd7feabeb6edb39",
+        "source_anime_name": "一人之下 羅天大醮篇",
+        "source_original_name": "一人之下　羅天大醮篇",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": null,
+        "source_scope_text": "一人之下 羅天大醮篇 一人之下　羅天大醮篇 一人之下 羅天大醮篇 一人之下　羅天大醮篇 改編作品 續作 2季度(24集) ",
+        "source_continuing": true
+      }
+    ]
+  },
+  {
+    "card_id": "anime-475",
+    "anime_name": "天降女子!～女孩子從2樓…掉了下來!?～",
+    "source_original_name": "じょしおちっ！",
+    "subject_id": 248206,
+    "subject_name": "じょしおちっ！～2階から女の子が…降ってきた！？～",
+    "subject_type": 2,
+    "first_air_date": "2018-07-01",
+    "subject_episode_total": 9,
+    "provider_aliases": [
+      [
+        {
+          "v": "Joshi Ochi! 2-kai kara Onnanoko ga Futte Kita"
+        }
+      ]
+    ],
+    "provider_url": "https://api.bgm.tv/v0/subjects/248206",
+    "provider_checked_at": "2026-10-18T08:35:50.922879+00:00",
+    "summary_sha256": "b51182cbba8d8cc85c7f6291a4a953227137a472fa803474cbf3a5f068407812",
+    "summary_length": 182,
+    "scope_review": "源卡中文完整標題對應條目日文副標「2階から女の子が…降ってきた」，2018-07-01同一首部動畫。僅採該已綁定動畫條目故事，不改配音版本或計數。",
+    "primary_observations": [
+      {
+        "quarter": "2018_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/201807/",
+        "checked_at": "2026-10-18T08:39:46.608523+00:00",
+        "document_sha256": "e6a9d11d068da34495cbf1f0d395bb4a893455a21def7cb3cc11cfb981e7f917",
+        "card_sha256": "3e3c9e2896b33cf3b0dee1a4374b7fdef29c1cfe64e4d747f5a0ee254e067ecc",
+        "source_anime_name": "天降女子!～女孩子從2樓…掉了下來!?～",
+        "source_original_name": "じょしおちっ！",
+        "source_explicit_subject_id": null,
+        "source_broadcast_text": " 2018年7月1日起／每週日深夜／25時0分 2018年7月2日起／每週一凌晨／1時0分 ",
+        "source_scope_text": "天降女子!～女孩子從2樓…掉了下來!?～ じょしおちっ！ 天降女子!～女孩子從2樓…掉了下來!?～ じょしおちっ！ 改編作品 新作 ",
+        "source_continuing": false
+      }
+    ]
+  }
+]

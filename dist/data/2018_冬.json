@@ -321,7 +321,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b5aeeb9ce3bd5d1d7a690d18e81c4e97",
       "premiere_date": "二",
       "premiere_time": "22:54",
-      "story": "暫無簡介",
+      "story": "人類と怪獣との戦いは遠い昔。\r\nかつての怪獣の魂を宿した少女”怪獣娘”たちが現れるようになった時代。\r\n晴れてGIRLSの一員となったアギラ、ミクラス、ウインダムは着実に成長し、充実した日々を送っていた。\r\nそんなある日、新種の「シャドウ」がトラブルを起こしているという情報が入る。\r\n一方、GIRLSのメンバーの「ガッツ星人」は、不思議な体調の変化を感じていた……",
       "original_name": "ウルトラ怪獣擬人化計画  2期",
       "external_ids": {
         "bangumi": 223407,
@@ -343,6 +343,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 223407,
+        "checked_at": "2026-10-18T16:35:53.781269+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -380,7 +387,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/cceede742e224b6e1eca1b504b37530a",
       "premiere_date": "二",
       "premiere_time": "25:40",
-      "story": "暫無簡介",
+      "story": "这个世界是存在异人的。张楚岚为了解开爷爷和自身的秘密，和冯宝宝一起前往龙虎山天师府参加异人界的盛会——罗天大醮，并与众多异人高手对战。",
       "original_name": "一人之下　羅天大醮篇",
       "external_ids": {
         "bangumi": 206925,
@@ -401,6 +408,13 @@
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 206925,
+        "checked_at": "2026-10-18T16:35:42.475455+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1045,7 +1059,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c1919ad7b9a87716338c933c4bf31c36",
       "premiere_date": "五",
       "premiere_time": "25:23",
-      "story": "暫無簡介",
+      "story": "高度发展的都市，拉塞尔市。在讴歌繁荣的这座城市中，动摇这个世界的巨大阴谋开始启动——立刻察知阴谋动向的男人索德，为了揭露阴谋而投身于不为人知的战斗当中。但他得到的线索却只有“El Dorado”这样的关键字而已。在战斗当中，索德遇到了一位名叫索菲亚的少女。索菲亚也在寻求着失踪的哥哥马丁留下的讯息“El Dorado”的含义。索菲亚失去了马丁，而索德也有过失去妹妹的过去。被“El Dorado”这一字句所吸引的两人，从对方身上感受到看不见的羁绊，并开始一同行动。就这样，各自的心意交错的旅程开始了——",
       "original_name": "VANISHING LINE",
       "external_ids": {
         "bangumi": 222425,
@@ -1067,6 +1081,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 222425,
+        "checked_at": "2026-10-18T16:35:55.205043+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1162,7 +1183,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a6b943accfbc60817f922130e968d7a5",
       "premiere_date": "六",
       "premiere_time": "07:00",
-      "story": "暫無簡介",
+      "story": "新干线超进化研究所为了从诞生于“漆黑新干线”的巨大怪物体手中守护日本的未来，\r\n人们开发了“新干线变形机器人SHINKALION”。\r\n具备与SHINKALION较高适合率的孩子们成为驾驶员，\r\n与研究所员齐心协力，面对强大的敌人！\r\n究竟“漆黑新干线”的目的是……。孩子们能否守护日本的未来……。\r\n变身！SHINKALION！",
       "original_name": "新幹線変形ロボ シンカリオン THE ANIMATION",
       "external_ids": {
         "bangumi": 227240,
@@ -1184,6 +1205,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 227240,
+        "checked_at": "2026-10-18T16:35:44.570198+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1258,7 +1286,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/752d620fc1c2e03e0728fbcd6d8fd6f6",
       "premiere_date": "六",
       "premiere_time": "17:35",
-      "story": "暫無簡介",
+      "story": "魚になったり宇宙人がやってきたり、すでに大混乱な日常に、ワーグナーとドヴォルザークが新たに加わり、音羽館はますます大騒ぎ！！",
       "original_name": "クラシカロイド 第2シリーズ",
       "external_ids": {
         "bangumi": 212315,
@@ -1279,6 +1307,14 @@
         "end_date": null,
         "note": "來源結束日期早於首播，未採用；播出狀態待確認。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "official",
+        "subject_id": 212315,
+        "checked_at": "2026-10-18T16:40:27.766825+08:00",
+        "method": "manual_official",
+        "source_url": "https://www.classicaloid.net/introduction/",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1863,14 +1899,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.800436+08:00",
+  "generated_at": "2026-10-18T16:47:50.225595+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201801/",
   "quality": {
     "source_count": 59,
     "record_count": 59,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 12,
+    "missing_story_count": 7,
     "missing_date_count": 0,
     "missing_time_count": 0
   }
