@@ -293,7 +293,9 @@ def parse_episode_metadata(
                 f"https://bgm.tv/subject/{subject_id}",
                 f"https://bgm.tv/subject/{subject_id}/ep",
             ],
-            checked_at=now,
+            # Contradictory evidence is an attempt, never a new success.
+            # The enricher restores a prior success separately when available.
+            checked_at=None,
             attempted_at=now,
             note="來源話數、正篇集目或結束日期不一致，總集數待確認。",
         )

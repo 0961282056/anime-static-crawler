@@ -165,6 +165,10 @@ test('source details distinguish failed attempts, fixed snapshots and reference 
   assert.match(links[1].label, /參考；不代表計數範圍已一致/);
   assert.equal(app.formatSourceTimestamp('invalid'), '尚未記錄');
   assert.equal(app.episodeVerificationState({episodes: {checked_at: 'invalid'}}), '尚未成功查證');
+  const firstConflict = {episodes: {fetch_state: 'conflict', checked_at: null, attempted_at: '2026-10-18T10:00:00+08:00'}};
+  assert.equal(app.episodeVerificationState(firstConflict), '尚未成功查證');
+  assert.equal(app.formatSourceTimestamp(firstConflict.episodes.checked_at), '尚未記錄');
+  assert.notEqual(app.formatSourceTimestamp(firstConflict.episodes.attempted_at), '尚未記錄');
 });
 
 test('summary attribution never links a different subject or claims a fresh archive', () => {
