@@ -72,7 +72,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/44d7cfbfb0a13f777a7a867053b5086f",
       "premiere_date": "一",
       "premiere_time": "10:00",
-      "story": "暫無簡介",
+      "story": "ある日、謎のプリ☆チャンアイドル「だいあ」があらわれて、ジュエルパクトをみんなに与える。そして、宝石のような輝きをもった「ジュエルアイドル」を選ぶ番組、『ジュエルオーディション』の開催を宣言した！",
       "original_name": "キラッとプリ☆チャン シーズン２",
       "external_ids": {
         "bangumi": 269023,
@@ -93,6 +93,14 @@
         "end_date": "2020-03-29",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "official",
+        "subject_id": 269023,
+        "checked_at": "2026-10-18T17:30:13.354010+08:00",
+        "method": "manual_official",
+        "source_url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_5.html",
+        "source_snapshot_date": null
       }
     },
     {
@@ -891,7 +899,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0c431301dedd19b871595699db6f063c",
       "premiere_date": "五",
       "premiere_time": "18:25",
-      "story": "暫無簡介",
+      "story": "フツーの小学5年生『天野景太（ケータ）』と妖怪の『ウィスパー』や『ジバニャン』たちが繰り広げる、ドタバタ楽しくて、ちょっぴり奇妙な物語が、新要素満載で帰ってきた！",
       "original_name": "妖怪ウォッチ！",
       "external_ids": {
         "bangumi": 279472,
@@ -912,6 +920,14 @@
         "end_date": "2019-12-20",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "official",
+        "subject_id": 279472,
+        "checked_at": "2026-10-18T17:29:16.133571+08:00",
+        "method": "manual_official",
+        "source_url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/story/",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1697,14 +1713,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T16:43:18.821424+08:00",
+  "generated_at": "2026-10-18T17:33:17.285798+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201904/",
   "quality": {
     "source_count": 51,
     "record_count": 51,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 7,
+    "missing_story_count": 5,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

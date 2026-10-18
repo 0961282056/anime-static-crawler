@@ -19,7 +19,13 @@ const OFFICIAL_STORY_SOURCES = {
     'anime-2308': [665390, 'https://korinojoheki-pr.com/'],
     'anime-2338': [701782, 'https://welshandshedar-anime.com/'],
     'anime-322': [274549, 'https://www.tv-tokyo.co.jp/anime/gonjiro/story/'],
-    'anime-624': [212315, 'https://www.classicaloid.net/introduction/']
+    'anime-624': [212315, 'https://www.classicaloid.net/introduction/'],
+    'anime-590': [227778, 'https://www.tv-tokyo.co.jp/anime/pikachin/story/'],
+    'anime-646': [221018, 'https://www.tv-tokyo.co.jp/anime/cf-vanguard-gz/story/'],
+    'anime-776': [321387, 'https://www.tv-tokyo.co.jp/anime/mewklemix/story/'],
+    'anime-314': [279472, 'https://www.tv-tokyo.co.jp/anime/youkai-watch2019/story/'],
+    'anime-117': [296702, 'https://www.tv-tokyo.co.jp/anime/prichan/story/'],
+    'anime-313': [269023, 'https://www.tv-tokyo.co.jp/anime/prichan/news/index_5.html']
 };
 
 function officialStoryUrl(anime) {
