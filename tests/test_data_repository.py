@@ -544,3 +544,89 @@ def test_temporary_identity_omissions_preserve_reviewed_evidence(
     }
     assert not _write(repository, [incoming]).changed
     assert result.path.read_bytes() == original
+
+
+@pytest.mark.parametrize("provider", ["bangumi", "official"])
+@pytest.mark.parametrize("same_text", [True, False])
+def test_base_recrawl_keeps_attributed_story_and_evidence(
+    tmp_path, anime_record_factory, provider, same_text
+):
+    if provider == "official":
+        from services.story_source_reviews import story_reviews
+
+        row = story_reviews()[0]
+        old = {
+            **anime_record_factory(1, name=row["anime_name"], story=row["story"]),
+            "bangumi_id": row["card_id"],
+            "original_name": row["original_name"],
+            "external_ids": {"bangumi": row["subject_id"]},
+            "story_source": {
+                "provider": "official",
+                "method": "manual_official",
+                "subject_id": row["subject_id"],
+                "source_url": row["source_url"],
+                "checked_at": row["checked_at"],
+            },
+        }
+    else:
+        old = {
+            **anime_record_factory(1, story="已逐筆核對並保留來源的作品介紹原文"),
+            "original_name": "Verified Work",
+            "external_ids": {"bangumi": 100},
+            "story_source": {
+                "provider": "bangumi",
+                "method": "bangumi_api",
+                "subject_id": 100,
+                "checked_at": INITIAL_TIME.isoformat(),
+            },
+        }
+    repository = _repository(tmp_path)
+    result = _write(repository, [old])
+    before = repository.load_path(result.path).anime_list[0]
+    _write(
+        repository,
+        [
+            {
+                **old,
+                "story": old["story"]
+                if same_text
+                else "來源頁新增但尚未獨立核對範圍的介紹",
+                "story_source": None,
+                "episodes": None,
+            }
+        ],
+    )
+    after = repository.load_path(result.path).anime_list[0]
+    assert after.story == before.story
+    assert after.story_source == before.story_source
+
+
+def test_explicitly_attributed_replacement_remains_possible(
+    tmp_path, anime_record_factory
+):
+    repository = _repository(tmp_path)
+    old = {
+        **anime_record_factory(1, story="先前核對的作品介紹原文"),
+        "original_name": "Verified Work",
+        "external_ids": {"bangumi": 100},
+        "story_source": {
+            "provider": "bangumi",
+            "method": "bangumi_api",
+            "subject_id": 100,
+            "checked_at": INITIAL_TIME.isoformat(),
+        },
+    }
+    result = _write(repository, [old])
+    new = {
+        **old,
+        "story": "附有新來源證據的作品介紹更正內容",
+        "story_source": {
+            **old["story_source"],
+            "checked_at": (INITIAL_TIME + timedelta(days=1)).isoformat(),
+        },
+        "episodes": None,
+    }
+    assert _write(repository, [new]).changed
+    after = repository.load_path(result.path).anime_list[0]
+    assert after.story == new["story"]
+    assert after.story_source.checked_at == INITIAL_TIME + timedelta(days=1)

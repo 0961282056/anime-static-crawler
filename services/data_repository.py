@@ -213,6 +213,11 @@ class DataRepository:
                     )
                 )
                 if not changed_identity:
+                    # Base-source text cannot replace independently attributed
+                    # evidence, even when the new text is nonempty or identical.
+                    preserve_story = (
+                        old.story_source is not None and record.story_source is None
+                    )
                     validated_records[index] = record.model_copy(
                         update={
                             "episodes": old.episodes,
@@ -223,11 +228,9 @@ class DataRepository:
                                 or old.external_ids.anilist,
                             ),
                             "original_name": record.original_name or old.original_name,
-                            "story": old.story
-                            if record.story == "暫無簡介" and old.story_source
-                            else record.story,
+                            "story": old.story if preserve_story else record.story,
                             "story_source": old.story_source
-                            if record.story == "暫無簡介" and old.story_source
+                            if preserve_story
                             else record.story_source,
                         }
                     )

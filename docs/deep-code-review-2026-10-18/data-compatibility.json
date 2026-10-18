@@ -1,0 +1,224 @@
+[
+  {
+    "quarter": "2018_冬",
+    "records": 59,
+    "attributed_stories_preserved": 20,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2018_夏",
+    "records": 58,
+    "attributed_stories_preserved": 34,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2018_春",
+    "records": 83,
+    "attributed_stories_preserved": 44,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2018_秋",
+    "records": 66,
+    "attributed_stories_preserved": 44,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2019_冬",
+    "records": 51,
+    "attributed_stories_preserved": 31,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2019_夏",
+    "records": 44,
+    "attributed_stories_preserved": 17,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2019_春",
+    "records": 51,
+    "attributed_stories_preserved": 28,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2019_秋",
+    "records": 56,
+    "attributed_stories_preserved": 28,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2020_冬",
+    "records": 51,
+    "attributed_stories_preserved": 19,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2020_夏",
+    "records": 38,
+    "attributed_stories_preserved": 7,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2020_春",
+    "records": 59,
+    "attributed_stories_preserved": 27,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2020_秋",
+    "records": 58,
+    "attributed_stories_preserved": 28,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2021_冬",
+    "records": 62,
+    "attributed_stories_preserved": 36,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2021_夏",
+    "records": 45,
+    "attributed_stories_preserved": 15,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2021_春",
+    "records": 66,
+    "attributed_stories_preserved": 29,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2021_秋",
+    "records": 52,
+    "attributed_stories_preserved": 27,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2022_冬",
+    "records": 43,
+    "attributed_stories_preserved": 23,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2022_夏",
+    "records": 51,
+    "attributed_stories_preserved": 30,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2022_春",
+    "records": 54,
+    "attributed_stories_preserved": 34,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2022_秋",
+    "records": 56,
+    "attributed_stories_preserved": 34,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2023_冬",
+    "records": 62,
+    "attributed_stories_preserved": 33,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2023_夏",
+    "records": 51,
+    "attributed_stories_preserved": 8,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2023_春",
+    "records": 54,
+    "attributed_stories_preserved": 8,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2023_秋",
+    "records": 74,
+    "attributed_stories_preserved": 21,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2024_冬",
+    "records": 57,
+    "attributed_stories_preserved": 12,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2024_夏",
+    "records": 59,
+    "attributed_stories_preserved": 10,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2024_春",
+    "records": 61,
+    "attributed_stories_preserved": 12,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2024_秋",
+    "records": 74,
+    "attributed_stories_preserved": 21,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2025_冬",
+    "records": 65,
+    "attributed_stories_preserved": 6,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2025_夏",
+    "records": 74,
+    "attributed_stories_preserved": 9,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2025_春",
+    "records": 65,
+    "attributed_stories_preserved": 11,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2025_秋",
+    "records": 63,
+    "attributed_stories_preserved": 8,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2026_冬",
+    "records": 65,
+    "attributed_stories_preserved": 19,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2026_夏",
+    "records": 75,
+    "attributed_stories_preserved": 24,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2026_春",
+    "records": 71,
+    "attributed_stories_preserved": 14,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2026_秋",
+    "records": 73,
+    "attributed_stories_preserved": 34,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  },
+  {
+    "quarter": "2027_冬",
+    "records": 4,
+    "attributed_stories_preserved": 1,
+    "roundtrip_and_simulated_base_refresh_bytes_unchanged": true
+  }
+]
