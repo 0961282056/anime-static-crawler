@@ -171,6 +171,54 @@ def test_unknown_dates_and_future_start(anime_record_factory):
     assert info.aired_episodes == 0
 
 
+@pytest.mark.parametrize("total", [1, 12])
+def test_aired_episodes_with_future_subject_premiere_are_conflicting_evidence(
+    anime_record_factory, total
+):
+    info = parse_episode_metadata(
+        anime(anime_record_factory),
+        {**subject(total), "date": "2027-01-01"},
+        [episode(1, "2026-10-01")],
+        NOW,
+    )
+    assert info.fetch_state == "conflict"
+    assert info.airing_status == "unknown"
+    assert info.total_episodes is None
+    assert info.checked_at is None
+    assert info.attempted_at == NOW
+
+
+def test_contradictory_provider_dates_keep_prior_success_instead_of_crashing(
+    anime_record_factory,
+):
+    old = EpisodeMetadata(
+        total_episodes=1,
+        aired_episodes=1,
+        episode_count_status="confirmed",
+        airing_status="finished",
+        fetch_state="ok",
+        checked_at=NOW - timedelta(days=100),
+        attempted_at=NOW - timedelta(days=100),
+        source_kind="bangumi_api",
+    )
+    record = anime(anime_record_factory, episodes=old)
+    responses = [
+        FakeResponse({**subject(1), "date": "2027-01-01"}),
+        FakeResponse({"data": [episode(1)], "total": 1}),
+    ]
+    session = FakeSession(responses)
+    client = BangumiClient(session=session, interval_seconds=0)
+    updated = EpisodeEnricher(client).enrich(record, NOW)
+    assert updated.episodes.fetch_state == "conflict"
+    assert updated.episodes.total_episodes == old.total_episodes
+    assert updated.episodes.aired_episodes == old.aired_episodes
+    assert updated.episodes.checked_at == old.checked_at
+    assert updated.episodes.attempted_at == NOW
+    assert updated.episodes.airing_status == "unknown"
+    assert all(response.closed for response in responses)
+    assert len(session.calls) == 2
+
+
 def test_conflicting_count_is_not_silently_replaced(anime_record_factory):
     data = subject(12)
     data["infobox"] = [{"key": "话数", "value": "13"}]

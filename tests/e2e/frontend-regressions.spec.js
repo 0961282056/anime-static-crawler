@@ -1,9 +1,60 @@
 import { expect, test } from '@playwright/test';
+import { readFileSync } from 'node:fs';
 
 const transparentPng = Buffer.from(
   'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=',
   'base64',
 );
+
+test('summary dialog renders markup in source text literally under production CSP', async ({page}) => {
+  const csp = readFileSync('_headers', 'utf8').match(/Content-Security-Policy:\s*(.+)/)[1].trim();
+  const title = '<a href="https://example.test/" data-review-title="true">作品 & 特別篇</a>';
+  const story = '<b data-review-story="true">原文簡介</b>';
+  await page.addInitScript(() => localStorage.clear());
+  await page.route('http://127.0.0.1:4173/', async route => {
+    const response = await route.fetch();
+    await route.fulfill({response, headers: {...response.headers(), 'content-security-policy': csp}});
+  });
+  await installFixtureRoutes(page);
+  await page.route('**/data/*.json*', route => {
+    const payload = fixtureDataset('literal');
+    Object.assign(payload.anime_list[0], {anime_name: title, story});
+    return route.fulfill({contentType: 'application/json', body: JSON.stringify(payload)});
+  });
+  await page.goto('/');
+  await expect(page.locator('.anime-title').first()).toHaveText(title);
+  await page.locator('.story-box').first().click();
+  await expect(page.locator('.swal2-title')).toHaveText(title);
+  await expect(page.locator('.swal2-html-container')).toHaveText(story);
+  await expect(page.locator('[data-review-title], [data-review-story]')).toHaveCount(0);
+  await page.getByRole('button', {name: 'OK', exact: true}).click();
+  await expect(page.locator('.swal2-popup')).toHaveCount(0);
+});
+
+test('contradictory airing status fails safely and a corrected response can be retried', async ({page}) => {
+  await page.addInitScript(() => localStorage.clear());
+  await installFixtureRoutes(page);
+  let requests = 0;
+  await page.route('**/data/*.json*', route => {
+    requests += 1;
+    const payload = fixtureDataset('count-recovery');
+    payload.anime_list[0].episodes = {
+      total_episodes: 12, aired_episodes: requests === 1 ? 1 : 0,
+      airing_status: 'not_yet_aired', episode_count_status: 'planned', fetch_state: 'ok',
+    };
+    return route.fulfill({contentType: 'application/json', body: JSON.stringify(payload)});
+  });
+  await page.goto('/');
+  await expect(page.getByRole('alert')).toContainText('DATA_SCHEMA');
+  await expect(page.locator('.anime-card')).toHaveCount(0);
+  expect(await page.evaluate(() => Object.keys(window.Alpine.$data(document.querySelector('[x-data]')).dataCache))).toEqual([]);
+  await page.getByRole('button', {name: '重新載入'}).click();
+  await expect(page.getByRole('alert')).toBeHidden();
+  await expect(page.locator('.anime-card')).toHaveCount(1);
+  await expect(page.locator('.episode-count')).toHaveText('已播 0 集／預定 12 集');
+  await expect(page.locator('.airing-status')).toHaveText('尚未播出');
+  expect(requests).toBe(2);
+});
 
 function fixtureDataset(key) {
   return {
