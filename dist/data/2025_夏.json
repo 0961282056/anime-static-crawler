@@ -52,8 +52,8 @@
           "https://bgm.tv/subject/531576",
           "https://bgm.tv/subject/531576/ep"
         ],
-        "checked_at": "2026-10-17T17:52:31.638894+08:00",
-        "attempted_at": "2026-10-17T17:52:31.638894+08:00",
+        "checked_at": "2026-10-19T03:21:24.546793+08:00",
+        "attempted_at": "2026-10-19T03:21:24.546793+08:00",
         "end_date": "2025-09-29",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -510,8 +510,8 @@
           "https://bgm.tv/subject/561787/ep",
           "https://bgm.tv/subject/561787/ep"
         ],
-        "checked_at": "2026-10-18T03:10:45.758581+08:00",
-        "attempted_at": "2026-10-18T03:10:45.758581+08:00",
+        "checked_at": "2026-10-19T03:21:24.546793+08:00",
+        "attempted_at": "2026-10-19T03:21:24.546793+08:00",
         "end_date": null,
         "note": "依已核對官方範圍自動更新；僅計2025年7月新作，自通算66話起；不合併2023及2024篇，最終總數未定。",
         "source_kind": "bangumi_api"
@@ -2228,7 +2228,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T16:43:18.979684+08:00",
+  "generated_at": "2026-10-19T03:21:24.546793+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202507/",
   "quality": {
     "source_count": 74,

@@ -1511,7 +1511,7 @@
       },
       "episodes": {
         "total_episodes": 51,
-        "aired_episodes": 37,
+        "aired_episodes": 38,
         "airing_status": "airing",
         "episode_count_status": "planned",
         "fetch_state": "ok",
@@ -1519,8 +1519,8 @@
           "https://bgm.tv/subject/611077",
           "https://bgm.tv/subject/611077/ep"
         ],
-        "checked_at": "2026-10-18T03:10:45.758581+08:00",
-        "attempted_at": "2026-10-18T03:10:45.758581+08:00",
+        "checked_at": "2026-10-19T03:21:24.546793+08:00",
+        "attempted_at": "2026-10-19T03:21:24.546793+08:00",
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -2034,7 +2034,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T16:52:43.571715+08:00",
+  "generated_at": "2026-10-19T03:21:24.546793+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202601/",
   "quality": {
     "source_count": 65,
