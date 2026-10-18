@@ -1,0 +1,20 @@
+{
+  "url": "https://acgsecrets.hk/bangumi/202610/",
+  "status": 200,
+  "sha256": "983121e5ec950b614aa6dbd5340dec5c88d980ec8665630c39625c410ecbb861",
+  "card_sha256": "b5f902ad57379619d5a66d7398bc8cf8e14e37b653f87f8810ffbe6b4bdbe117",
+  "broadcast_date_text": "10月11日起／每週日／17時30分",
+  "source_year": 2026,
+  "date_basis": "Year from the explicit 202610 source quarter; month/day from this card broadcast block.",
+  "candidate": {
+    "bangumi_id": "anime-2329",
+    "anime_name": "鑽石王牌 actⅡ第2季 2nd cour",
+    "premiere_date": "日",
+    "premiere_time": "17:30",
+    "original_name": "ダイヤのA actII -Second Season- 第2クール",
+    "external_ids": {
+      "bangumi": 664395,
+      "anilist": 213658
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "url": "https://api.bgm.tv/v0/subjects/664395",
+  "status": 200,
+  "id": 664395,
+  "type": 2,
+  "name": "ダイヤのA actⅡ Second Season 第2クール",
+  "name_cn": "钻石王牌 act2 第二季 第2部分",
+  "date": "2026-10-11",
+  "eps": 12,
+  "infobox": [
+    {
+      "key": "中文名",
+      "value": "钻石王牌 act2 第二季 第2部分"
+    },
+    {
+      "key": "话数",
+      "value": "12"
+    },
+    {
+      "key": "放送开始",
+      "value": "2026年10月11日"
+    },
+    {
+      "key": "官方网站",
+      "value": "http://diaace.com/"
+    }
+  ],
+  "response_sha256": "2c4bf3be48bc15dadae22f23ca711ad3f4fdb15ad62f1a49a7905bea358b38d2"
+}

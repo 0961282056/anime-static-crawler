@@ -2625,5 +2625,20 @@
     ],
     "scope_note": "精確卡片、版本名稱、既有條目ID與首播日期綁定；不合併其他季／篇或base／plus。",
     "summary_scope": "full_linked_subject"
+  },
+  {
+    "card_id": "anime-2329",
+    "anime_name": "鑽石王牌 actⅡ第2季 2nd cour",
+    "source_original_name": "ダイヤのA actII -Second Season- 第2クール",
+    "subject_id": 664395,
+    "subject_name": "ダイヤのA actⅡ Second Season 第2クール",
+    "first_air_date": "2026-10-11",
+    "reviewed_on": "2026-10-18",
+    "basis": "The 202610 source card explicitly links Bangumi 664395 and AniList 213658 and lists October 11. Same work, Second Season and second cour; provider date 2026-10-11. Only Roman numeral typography and subtitle dashes differ; no ID rebinding or fuzzy matching.",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202610/",
+      "https://api.bgm.tv/v0/subjects/664395"
+    ],
+    "scope_note": "僅恢復這張第二季第2クール卡片的既有條目查證；不匹配母條目／第1クール，不授權簡介補入。"
   }
 ]

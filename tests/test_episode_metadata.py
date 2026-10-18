@@ -946,3 +946,38 @@ def test_reviewed_quote_formatting_keeps_plus_version_boundary(anime_record_fact
         provider,
     )
     assert not subject_identity_matches(record, {**provider, "date": "2020-10-02"})
+
+
+def test_reviewed_diamond_formatting_cannot_cross_cour_or_authorize_summary(
+    anime_record_factory,
+):
+    from services.episode_metadata import subject_identity_matches
+    from services.story_metadata import enrich_story
+
+    record = anime(
+        anime_record_factory,
+        bangumi_id="anime-2329",
+        anime_name="鑽石王牌 actⅡ第2季 2nd cour",
+        original_name="ダイヤのA actII -Second Season- 第2クール",
+        external_ids={"bangumi": 664395, "anilist": 213658},
+        story="暫無簡介",
+    )
+    subject = {
+        "id": 664395,
+        "type": 2,
+        "name": "ダイヤのA actⅡ Second Season 第2クール",
+        "date": "2026-10-11",
+        "summary": "A provider summary cannot authorize an unreviewed official part scope.",
+    }
+    assert subject_identity_matches(record, subject)
+    for change in (
+        {"name": "ダイヤのA actⅡ Second Season"},
+        {"name": "ダイヤのA actⅡ Second Season 第1クール"},
+        {"date": "2026-04-05"},
+        {"id": 123},
+    ):
+        assert not subject_identity_matches(record, {**subject, **change})
+    assert not subject_identity_matches(
+        record.model_copy(update={"bangumi_id": "anime-999"}), subject
+    )
+    assert enrich_story(record, subject, NOW, method="bangumi_api") == record
