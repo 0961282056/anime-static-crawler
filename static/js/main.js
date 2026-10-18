@@ -131,6 +131,8 @@ function validateDataset(payload) {
                 (info.note !== undefined && typeof info.note !== 'string') ||
                 (info.source_urls !== undefined && (!Array.isArray(info.source_urls) || info.source_urls.some(url => typeof url !== 'string'))) ||
                 (info.source_kind !== undefined && !['unknown', 'bangumi_api', 'bangumi_html', 'bangumi_archive', 'manual_official', 'official_catalogue'].includes(info.source_kind)) ||
+                (info.episode_count_status !== 'unknown' && !Number.isInteger(info.total_episodes)) ||
+                (info.airing_status === 'not_yet_aired' && Number.isInteger(info.aired_episodes) && info.aired_episodes !== 0) ||
                 (Number.isInteger(info.total_episodes) && Number.isInteger(info.aired_episodes) && info.aired_episodes > info.total_episodes) ||
                 (info.airing_status === 'finished' && (!Number.isInteger(info.total_episodes) || info.aired_episodes !== info.total_episodes || info.episode_count_status !== 'confirmed'))) {
                 throw createDataError('DATA_SCHEMA', `第 ${index + 1} 筆動畫的集數資料格式錯誤，無法安全顯示。`, {retryable: false});
@@ -1048,7 +1050,7 @@ function animeApp() {
 
         showStory(title, story) {
             Swal.fire({
-                title: title,
+                titleText: title,
                 text: story || '暫無簡介',
                 background: '#1e1e1e', color: '#e0e0e0', 
                 confirmButtonColor: '#bb86fc'

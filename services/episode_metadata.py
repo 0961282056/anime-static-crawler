@@ -270,6 +270,7 @@ def parse_episode_metadata(
     conflict = (
         invalid
         or has_gap
+        or bool(start and start > today and aired)
         or len(ends) > 1
         or any(value != total for value in count_values)
     )
@@ -297,7 +298,7 @@ def parse_episode_metadata(
             # The enricher restores a prior success separately when available.
             checked_at=None,
             attempted_at=now,
-            note="來源話數、正篇集目或結束日期不一致，總集數待確認。",
+            note="來源話數、正篇集目、首播或結束日期不一致，總集數待確認。",
         )
     if complete:
         status = "finished"

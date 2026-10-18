@@ -226,6 +226,50 @@ test('bad episode counts and impossible finished status fail validation', async 
   }
 });
 
+test('summary dialog treats source titles and summaries as literal text', () => {
+  const calls = [];
+  const {app} = createContext({swal: {fire: options => calls.push(options)}});
+  const title = '<a href="https://example.test/">作品 & 特別篇</a>';
+  const story = '<b>原文簡介</b>';
+  app.showStory(title, story);
+  assert.equal(calls[0].titleText, title);
+  assert.equal(calls[0].title, undefined);
+  assert.equal(calls[0].text, story);
+});
+
+for (const episodes of [
+  {total_episodes: null, aired_episodes: 0, airing_status: 'not_yet_aired', episode_count_status: 'planned', fetch_state: 'ok'},
+  {total_episodes: null, aired_episodes: 1, airing_status: 'airing', episode_count_status: 'confirmed', fetch_state: 'ok'},
+  {total_episodes: 12, aired_episodes: 1, airing_status: 'not_yet_aired', episode_count_status: 'planned', fetch_state: 'ok'},
+]) {
+  test(`contradictory episode metadata is rejected: ${JSON.stringify(episodes)}`, async () => {
+    const payload = dataset('contradictory');
+    payload.anime_list[0].episodes = episodes;
+    const {app} = createContext({fetchImpl: async () => responseFor(payload)});
+    app.year = '2026'; app.season = '秋';
+    await app.loadData();
+    assert.equal(app.loadError?.code, 'DATA_SCHEMA');
+    assert.equal(app.rawAnimeList.length, 0);
+    assert.equal(Object.keys(app.dataCache).length, 0);
+  });
+}
+
+test('unknown totals and zero unaired progress remain valid', async () => {
+  for (const episodes of [
+    {total_episodes: null, aired_episodes: null, airing_status: 'unknown', episode_count_status: 'unknown', fetch_state: 'unmatched'},
+    {total_episodes: null, aired_episodes: 0, airing_status: 'not_yet_aired', episode_count_status: 'unknown', fetch_state: 'ok'},
+    {total_episodes: 12, aired_episodes: 0, airing_status: 'not_yet_aired', episode_count_status: 'planned', fetch_state: 'ok'},
+  ]) {
+    const payload = dataset('valid-counts');
+    payload.anime_list[0].episodes = episodes;
+    const {app} = createContext({fetchImpl: async () => responseFor(payload)});
+    app.year = '2026'; app.season = '秋';
+    await app.loadData();
+    assert.equal(app.loadError, null);
+    assert.equal(app.rawAnimeList.length, 1);
+  }
+});
+
 test('latest quarter request wins when an older response arrives later', async () => {
   const requests = [];
   const { app } = createContext({
