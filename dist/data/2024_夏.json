@@ -275,7 +275,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/298b335f7c18105ab0de68e3ebca72a9",
       "premiere_date": "三",
       "premiere_time": "07:05",
-      "story": "暫無簡介",
+      "story": "2024年4月3日(水)あさ7:05よりテレビ東京系列「おはスタ」番組内にて、\r\n全世界待望のゴジラシリーズ最新作は・・・\r\nまさかのショート TV アニメ！！\r\n\r\n豪華すぎる声優陣で、\r\nクセが強すぎるちび怪獣たちの、ゆるすぎる日常を描く。\r\n果たしてちびゴジラは父であるゴジラのような\r\n立派な大怪獣になれるのか！？\r\n毎話3分くらいで送る\r\nノンストップモンスターエンターテインメント！",
       "original_name": "ちびゴジラの逆襲",
       "external_ids": {
         "bangumi": 484191,
@@ -296,6 +296,13 @@
         "end_date": "2025-03-26",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 484191,
+        "checked_at": "2026-10-18T16:34:17.960914+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1784,14 +1791,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.928588+08:00",
+  "generated_at": "2026-10-18T16:43:18.949079+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202407/",
   "quality": {
     "source_count": 59,
     "record_count": 59,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 2,
+    "missing_story_count": 1,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

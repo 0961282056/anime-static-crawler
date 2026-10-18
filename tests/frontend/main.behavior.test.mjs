@@ -192,6 +192,17 @@ test('official summary excerpts link the reviewed season and reject arbitrary UR
   assert.equal(app.storySourceUrl({...anime, external_ids: {bangumi: 1}}), null);
 });
 
+test('Classica Loid second-series excerpt links only the reviewed official identity', () => {
+  const {app} = createContext();
+  const anime = {bangumi_id: 'anime-624', external_ids: {bangumi: 212315}, story_source: {
+    provider: 'official', method: 'manual_official', subject_id: 212315,
+    source_url: 'https://www.classicaloid.net/introduction/'
+  }};
+  assert.equal(app.storySourceUrl(anime), anime.story_source.source_url);
+  assert.equal(app.storySourceUrl({...anime, bangumi_id: 'anime-623'}), null);
+  assert.equal(app.storySourceUrl({...anime, external_ids: {bangumi: 180749}}), null);
+});
+
 test('airing filter combines with weekday and keyword while supporting legacy records', () => {
   const {app} = createContext();
   app.rawAnimeList = [

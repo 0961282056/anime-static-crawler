@@ -115,7 +115,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/741ac3a3eba33061da8ced575e3eaf63",
       "premiere_date": "一",
       "premiere_time": "25:20",
-      "story": "暫無簡介",
+      "story": "ある時は名探偵毛利小五郎の弟子、安室透。ある時は日本を守る公安警察、降谷零。\r\n\r\nまたある時は、黒ずくめの一員、バーボン。三つの顔（トリプルフェイス）を持つ男のプライベートは誰も知らない……はずだった。\r\n\r\n光と影をまとう安室透のなんでもない日常（ティータイム）が今、明かされる。",
       "original_name": "名探偵コナン ゼロの日常（ティータイム）",
       "external_ids": {
         "bangumi": 351714,
@@ -137,6 +137,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 351714,
+        "checked_at": "2026-10-18T16:34:32.097189+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1424,7 +1431,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/6e0a9e5bcb56b91b963263a3fe58c67c",
       "premiere_date": "六",
       "premiere_time": "24:30",
-      "story": "暫無簡介",
+      "story": "「王」によって統治されている都市「新京都」\r\nこの新京都では、願いを叶えるために\r\n「王」に挑戦する戦い\r\n「リビルドバトル」が行われていた。\r\nしかしその真実は、\r\n新京都とは仮想都市であり、\r\n都市を動かすプログラムと融合するための\r\nメインＣＰＵとして据えられる\r\nビルディバイドの実力者を\r\n選定することなのだった。\r\nそして照人の戦いとは、\r\nＣＰＵとして囚われていた\r\n菊花を救うことだったのだが……\r\n\r\n―時は流れ、３年後―\r\n新京都はかつての街並みを失い、\r\n崩壊した都市となっていた。\r\n民衆はＫＵＧＥと呼ばれる王の使いによって\r\n捕獲され、\r\n呪力を奪うための「樽」へと送られている。\r\nすべては「王」を維持するために\r\n\r\nそんな中、ＫＵＧＥに追われる\r\nひとりの少女が……\r\n少女はかつての王、蔵部菊花。\r\n新京都の歴史の中で\r\n一番強いとされていた菊花だが、\r\nそんな彼女でもなすすべなく\r\nＫＵＧＥに追われ続けている。\r\n菊花の手元にはビルディバイドの\r\nデッキがなかったのだ。\r\n\r\n『これは罪、これは罰。\r\n私には二度と光は訪れない……』\r\n様々な後悔と共にひたすらに逃げ続ける日々\r\n絶望の淵に沈む彼女に\r\n救いの手を差し伸べるのは――\r\n\r\n―もう一度会いたい―\r\n『照人に』『師匠に』\r\n崩壊した都市「新京都」を舞台に、\r\n少女と少女が手を取り合う\r\n大切な人に会いに行くため、\r\n彼女たちの戦いが今始まる。",
       "original_name": "ビルディバイド -#FFFFFF(コードホワイト)-",
       "external_ids": {
         "bangumi": 333624,
@@ -1446,6 +1453,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 333624,
+        "checked_at": "2026-10-18T16:34:34.234176+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1811,14 +1825,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.891225+08:00",
+  "generated_at": "2026-10-18T16:43:18.913205+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202204/",
   "quality": {
     "source_count": 54,
     "record_count": 54,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 4,
+    "missing_story_count": 2,
     "missing_date_count": 1,
     "missing_time_count": 1
   }

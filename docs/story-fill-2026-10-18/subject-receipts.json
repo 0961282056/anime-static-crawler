@@ -1,0 +1,2222 @@
+[
+  {
+    "url": "https://api.bgm.tv/v0/subjects/143694",
+    "checked_at": "2026-10-18T08:35:40.155514+00:00",
+    "subject": {
+      "id": 143694,
+      "type": 2,
+      "name": "銀河英雄伝説 Die Neue These 邂逅",
+      "name_cn": "银河英雄传说 Die Neue These 邂逅",
+      "date": "2018-04-03",
+      "eps": 12,
+      "summary_sha256": "9651169904b35da485fdb3e74514d44a4ae6813239be74528325ae28e5d1d593",
+      "summary_length": 235
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/145354",
+    "checked_at": "2026-10-18T08:35:31.498026+00:00",
+    "subject": {
+      "id": 145354,
+      "type": 2,
+      "name": "マナリアフレンズ",
+      "name_cn": "玛纳利亚的密友",
+      "date": "2019-01-20",
+      "eps": 10,
+      "summary_sha256": "941c2a7cf6e9102804a574bc9afa7403e782360124ad2febf2e91967998f0da8",
+      "summary_length": 87
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/148481",
+    "checked_at": "2026-10-18T08:35:41.084008+00:00",
+    "subject": {
+      "id": 148481,
+      "type": 2,
+      "name": "東京喰種トーキョーグール：re",
+      "name_cn": "东京喰种:re",
+      "date": "2018-04-03",
+      "eps": 12,
+      "summary_sha256": "53244fce35110b1443d50d4ab15f09e0a7fd321484501d981cab7e9ac42cb409",
+      "summary_length": 172
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/191323",
+    "checked_at": "2026-10-18T08:35:48.806820+00:00",
+    "subject": {
+      "id": 191323,
+      "type": 2,
+      "name": "夢王国と眠れる100人の王子様",
+      "name_cn": "梦王国与沉睡的100名王子",
+      "date": "2018-07-05",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/204027",
+    "checked_at": "2026-10-18T08:35:41.775889+00:00",
+    "subject": {
+      "id": 204027,
+      "type": 2,
+      "name": "斉木楠雄のΨ難 第2期",
+      "name_cn": "齐木楠雄的灾难 第二季",
+      "date": "2018-01-16",
+      "eps": 24,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/206925",
+    "checked_at": "2026-10-18T08:35:42.475455+00:00",
+    "subject": {
+      "id": 206925,
+      "type": 2,
+      "name": "一人之下 the outcast 2",
+      "name_cn": "一人之下 第二季",
+      "date": "2017-10-27",
+      "eps": 24,
+      "summary_sha256": "901a72d5f88c1f0a1eb0bd67c725ce1c6f3045daf42423a513c4e23c4cd02bc0",
+      "summary_length": 67
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/212315",
+    "checked_at": "2026-10-18T08:35:56.933743+00:00",
+    "subject": {
+      "id": 212315,
+      "type": 2,
+      "name": "クラシカロイド 第2シリーズ",
+      "name_cn": "克拉斯卡劳埃德 第二季",
+      "date": "2017-10-07",
+      "eps": 25,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/219143",
+    "checked_at": "2026-10-18T08:35:46.669210+00:00",
+    "subject": {
+      "id": 219143,
+      "type": 2,
+      "name": "快把我哥带走2",
+      "name_cn": "快把我哥带走2",
+      "date": "2018-07-02",
+      "eps": 24,
+      "summary_sha256": "f6e7ab4d71baf280f8f868320d4dbda816fe1b5943f5585f0b897a64bc9a52a0",
+      "summary_length": 359
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/221018",
+    "checked_at": "2026-10-18T08:35:57.788996+00:00",
+    "subject": {
+      "id": 221018,
+      "type": 2,
+      "name": "カードファイト!! ヴァンガードG Z",
+      "name_cn": "卡片战斗先导者 GZ",
+      "date": "2017-10-08",
+      "eps": 24,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/221190",
+    "checked_at": "2026-10-18T08:35:38.043750+00:00",
+    "subject": {
+      "id": 221190,
+      "type": 2,
+      "name": "閃乱カグラ SHINOVI MASTER -東京妖魔篇-",
+      "name_cn": "闪乱神乐 SHINOVI MASTER -东京妖魔篇-",
+      "date": "2018-10-12",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/222425",
+    "checked_at": "2026-10-18T08:35:55.205043+00:00",
+    "subject": {
+      "id": 222425,
+      "type": 2,
+      "name": "牙狼〈GARO〉-VANISHING LINE-",
+      "name_cn": "牙狼 死亡线",
+      "date": "2017-10-06",
+      "eps": 24,
+      "summary_sha256": "1a85a8d532be8cf1d557cb9b1be898a75a670c828e4c9e41aede2bbd9760d3e9",
+      "summary_length": 253
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/223407",
+    "checked_at": "2026-10-18T08:35:53.781269+00:00",
+    "subject": {
+      "id": 223407,
+      "type": 2,
+      "name": "怪獣娘～ウルトラ怪獣擬人化計画～ 第2期",
+      "name_cn": "怪兽娘～奥特怪兽拟人化计划～ 第二季",
+      "date": "2018-01-09",
+      "eps": 12,
+      "summary_sha256": "a36b375e67a29217a0abbd1f5006ee0c87fdd086f24e447c3855f7d88c25f7bb",
+      "summary_length": 183
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/227240",
+    "checked_at": "2026-10-18T08:35:44.570198+00:00",
+    "subject": {
+      "id": 227240,
+      "type": 2,
+      "name": "新幹線変形ロボ シンカリオン",
+      "name_cn": "新干线变形机器人",
+      "date": "2018-01-06",
+      "eps": 76,
+      "summary_sha256": "118e8176019f70bec9591f017a498d628258df9855e0da150ef7f73d421ad9e0",
+      "summary_length": 166
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/227778",
+    "checked_at": "2026-10-18T08:35:56.042344+00:00",
+    "subject": {
+      "id": 227778,
+      "type": 2,
+      "name": "ポチっと発明 ピカちんキット",
+      "name_cn": "灵感大冒险",
+      "date": "2018-01-06",
+      "eps": 115,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/229165",
+    "checked_at": "2026-10-18T08:35:52.375723+00:00",
+    "subject": {
+      "id": 229165,
+      "type": 2,
+      "name": "まめねこ",
+      "name_cn": "豆猫",
+      "date": "2018-01-08",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/229872",
+    "checked_at": "2026-10-18T08:35:53.090064+00:00",
+    "subject": {
+      "id": 229872,
+      "type": 2,
+      "name": "gdメン gdgd men’s party",
+      "name_cn": "",
+      "date": "2018-01-08",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/232646",
+    "checked_at": "2026-10-18T08:35:45.279500+00:00",
+    "subject": {
+      "id": 232646,
+      "type": 2,
+      "name": "食戟のソーマ 餐ノ皿 遠月列車篇",
+      "name_cn": "食戟之灵 餐之皿 远月列车篇",
+      "date": "2018-04-08",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/232884",
+    "checked_at": "2026-10-18T08:35:58.535309+00:00",
+    "subject": {
+      "id": 232884,
+      "type": 2,
+      "name": "銀魂. 銀ノ魂篇",
+      "name_cn": "银魂. 银之魂篇",
+      "date": "2018-01-07",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/233609",
+    "checked_at": "2026-10-18T08:35:54.496512+00:00",
+    "subject": {
+      "id": 233609,
+      "type": 2,
+      "name": "みっちりねこ",
+      "name_cn": "密奇丽猫咪",
+      "date": "2018-01-04",
+      "eps": 39,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/237834",
+    "checked_at": "2026-10-18T08:35:34.304311+00:00",
+    "subject": {
+      "id": 237834,
+      "type": 2,
+      "name": "中間管理録トネガワ",
+      "name_cn": "中间管理录利根川",
+      "date": "2018-07-03",
+      "eps": 24,
+      "summary_sha256": "33d73fb4c07932ebbcc54b7f32f8c97a9d789bc99c141f6f326a549e9f7273dc",
+      "summary_length": 126
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/238087",
+    "checked_at": "2026-10-18T08:35:48.081227+00:00",
+    "subject": {
+      "id": 238087,
+      "type": 2,
+      "name": "アイドルマスター シンデレラガールズ劇場 第3期",
+      "name_cn": "偶像大师 灰姑娘女孩剧场 第三季",
+      "date": "2018-07-03",
+      "eps": 13,
+      "summary_sha256": "329b77e3cdd9adfbd1acd3dad9f04435f7302159e27d5fe0cc02453001d43162",
+      "summary_length": 145
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/239840",
+    "checked_at": "2026-10-18T08:35:43.875809+00:00",
+    "subject": {
+      "id": 239840,
+      "type": 2,
+      "name": "ケッケロケー",
+      "name_cn": "",
+      "date": "2018-04-05",
+      "eps": 13,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/239853",
+    "checked_at": "2026-10-18T08:35:43.170921+00:00",
+    "subject": {
+      "id": 239853,
+      "type": 2,
+      "name": "うさぎのマシュー",
+      "name_cn": "兔子玛修",
+      "date": "2018-04-05",
+      "eps": 51,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/239910",
+    "checked_at": "2026-10-18T08:35:35.922703+00:00",
+    "subject": {
+      "id": 239910,
+      "type": 2,
+      "name": "イングレス",
+      "name_cn": "Ingress",
+      "date": "2018-10-17",
+      "eps": 11,
+      "summary_sha256": "cc5d7bab86c321b9b01643d05eace6ce3413d4391d6ffc720fdcbb4c4b858063",
+      "summary_length": 387
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/239911",
+    "checked_at": "2026-10-18T08:35:27.736268+00:00",
+    "subject": {
+      "id": 239911,
+      "type": 2,
+      "name": "revisions リヴィジョンズ",
+      "name_cn": "涩谷保卫战",
+      "date": "2019-01-09",
+      "eps": 12,
+      "summary_sha256": "b54194f84b3e2443299cc746db5321e9c012175b82a496bee86546a3753714ea",
+      "summary_length": 468
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/239962",
+    "checked_at": "2026-10-18T08:35:39.456220+00:00",
+    "subject": {
+      "id": 239962,
+      "type": 2,
+      "name": "レディスポ",
+      "name_cn": "Lady Sport",
+      "date": "2018-04-09",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/240499",
+    "checked_at": "2026-10-18T08:35:38.749998+00:00",
+    "subject": {
+      "id": 240499,
+      "type": 2,
+      "name": "逆転裁判 ～その『真実』、異議あり！～ Season 2",
+      "name_cn": "逆转裁判 第二季",
+      "date": "2018-10-06",
+      "eps": 23,
+      "summary_sha256": "a43bf2410961a285287b8e025c94ede26cd3899ff41f1329b3e23f83133b5a1f",
+      "summary_length": 672
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/240811",
+    "checked_at": "2026-10-18T08:35:51.648253+00:00",
+    "subject": {
+      "id": 240811,
+      "type": 2,
+      "name": "銀魂. 銀ノ魂篇 第2クール",
+      "name_cn": "银魂. 银之魂篇 第二季",
+      "date": "2018-07-08",
+      "eps": 14,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/241831",
+    "checked_at": "2026-10-18T08:35:49.513242+00:00",
+    "subject": {
+      "id": 241831,
+      "type": 2,
+      "name": "働くお兄さん！の2！",
+      "name_cn": "打工小哥！之2！",
+      "date": "2018-07-06",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/242737",
+    "checked_at": "2026-10-18T08:35:47.377460+00:00",
+    "subject": {
+      "id": 242737,
+      "type": 2,
+      "name": "天才玩偶",
+      "name_cn": "天才玩偶",
+      "date": "2018-07-06",
+      "eps": 12,
+      "summary_sha256": "549f5e97d186b5300e2638bd8b6087932a989bfbd711a0e3f5a53767d818a4ee",
+      "summary_length": 145
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/244878",
+    "checked_at": "2026-10-18T08:35:32.905279+00:00",
+    "subject": {
+      "id": 244878,
+      "type": 2,
+      "name": "東京喰種トーキョーグール：re 第2期",
+      "name_cn": "东京喰种:re 第二季",
+      "date": "2018-10-09",
+      "eps": 12,
+      "summary_sha256": "9dedb5ec5c2144bb71ab43dc65db217f95722a91c9081c4e617835778cd42193",
+      "summary_length": 174
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/245531",
+    "checked_at": "2026-10-18T08:35:33.605112+00:00",
+    "subject": {
+      "id": 245531,
+      "type": 2,
+      "name": "CONCEPTION",
+      "name_cn": "为我而生",
+      "date": "2018-10-09",
+      "eps": 12,
+      "summary_sha256": "5a0d454c7b8de353483da648f9472af58a2c53aad5949aef66731d818dd69ce9",
+      "summary_length": 161
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/246429",
+    "checked_at": "2026-10-18T08:35:28.664087+00:00",
+    "subject": {
+      "id": 246429,
+      "type": 2,
+      "name": "BanG Dream! 2nd Season",
+      "name_cn": "BanG Dream! 第二季",
+      "date": "2019-01-03",
+      "eps": 13,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/248206",
+    "checked_at": "2026-10-18T08:35:50.922879+00:00",
+    "subject": {
+      "id": 248206,
+      "type": 2,
+      "name": "じょしおちっ！～2階から女の子が…降ってきた！？～",
+      "name_cn": "天降少女！～从2层落下了少女！？～",
+      "date": "2018-07-01",
+      "eps": 9,
+      "summary_sha256": "b51182cbba8d8cc85c7f6291a4a953227137a472fa803474cbf3a5f068407812",
+      "summary_length": 182
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/249243",
+    "checked_at": "2026-10-18T08:35:35.003148+00:00",
+    "subject": {
+      "id": 249243,
+      "type": 2,
+      "name": "喂，看见耳朵啦",
+      "name_cn": "喂，看见耳朵啦",
+      "date": "2018-08-25",
+      "eps": 12,
+      "summary_sha256": "35e872a12ba0b57e6cb6e77b939498aefd594dab1f82d3038d121fef70aaf1f8",
+      "summary_length": 136
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/250117",
+    "checked_at": "2026-10-18T08:35:50.229986+00:00",
+    "subject": {
+      "id": 250117,
+      "type": 2,
+      "name": "闇芝居 第6期",
+      "name_cn": "暗芝居 第六季",
+      "date": "2018-07-06",
+      "eps": 13,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/250514",
+    "checked_at": "2026-10-18T08:35:27.049819+00:00",
+    "subject": {
+      "id": 250514,
+      "type": 2,
+      "name": "3D彼女 リアルガール 第2シリーズ",
+      "name_cn": "3D彼女 第二季",
+      "date": "2019-01-08",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/251060",
+    "checked_at": "2026-10-18T08:35:37.326329+00:00",
+    "subject": {
+      "id": 251060,
+      "type": 2,
+      "name": "グラゼニ シーズン2",
+      "name_cn": "钱进球场 第二季",
+      "date": "2018-10-05",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/251547",
+    "checked_at": "2026-10-18T08:35:32.206708+00:00",
+    "subject": {
+      "id": 251547,
+      "type": 2,
+      "name": "ゴールデンカムイ 第2期",
+      "name_cn": "黄金神威 第二季",
+      "date": "2018-10-08",
+      "eps": 12,
+      "summary_sha256": "766c751cf4e02d109e7d3bec1cbd3a6c41f523a93166b5d8726f377099acf56c",
+      "summary_length": 249
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/252347",
+    "checked_at": "2026-10-18T08:35:30.792127+00:00",
+    "subject": {
+      "id": 252347,
+      "type": 2,
+      "name": "ピアノの森 第2シリーズ",
+      "name_cn": "钢琴之森 第二季",
+      "date": "2019-01-27",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/255550",
+    "checked_at": "2026-10-18T08:35:29.362450+00:00",
+    "subject": {
+      "id": 255550,
+      "type": 2,
+      "name": "おこしやす、ちとせちゃん",
+      "name_cn": "欢迎光临千岁酱",
+      "date": "2018-10-05",
+      "eps": 24,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/257608",
+    "checked_at": "2026-10-18T08:35:30.070554+00:00",
+    "subject": {
+      "id": 257608,
+      "type": 2,
+      "name": "バミューダトライアングル ～カラフル・パストラーレ～",
+      "name_cn": "百慕大三角～Colorful Pastrale～",
+      "date": "2019-01-12",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/260677",
+    "checked_at": "2026-10-18T08:35:15.104922+00:00",
+    "subject": {
+      "id": 260677,
+      "type": 2,
+      "name": "アズールレーン THE ANIMATION",
+      "name_cn": "碧蓝航线 THE ANIMATION",
+      "date": "2019-10-03",
+      "eps": 12,
+      "summary_sha256": "ca3c265b6efe245aad380e5da44c78910285210265cb69a37bcfe0b99c7edd99",
+      "summary_length": 120
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/261048",
+    "checked_at": "2026-10-18T08:35:21.442927+00:00",
+    "subject": {
+      "id": 261048,
+      "type": 2,
+      "name": "叛逆性ミリオンアーサー 第2シーズン",
+      "name_cn": "叛逆性百万亚瑟王 第二季",
+      "date": "2019-04-04",
+      "eps": 13,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/261082",
+    "checked_at": "2026-10-18T08:35:36.630575+00:00",
+    "subject": {
+      "id": 261082,
+      "type": 2,
+      "name": "でびどる！",
+      "name_cn": "恶魔偶像",
+      "date": "2018-10-04",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/263750",
+    "checked_at": "2026-10-18T08:35:23.547689+00:00",
+    "subject": {
+      "id": 263750,
+      "type": 2,
+      "name": "進撃の巨人 Season 3 Part.2",
+      "name_cn": "进击的巨人 第三季 Part.2",
+      "date": "2019-04-28",
+      "eps": 10,
+      "summary_sha256": "bf890521b8c48bcc02c4459641ff3fd157383164010d2a41a9843a64ec2237a7",
+      "summary_length": 228
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/263756",
+    "checked_at": "2026-10-18T08:35:45.968406+00:00",
+    "subject": {
+      "id": 263756,
+      "type": 2,
+      "name": "マーベル フューチャー・アベンジャーズ2",
+      "name_cn": "漫威未来复仇者 第二季",
+      "date": "2018-07-30",
+      "eps": 13,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/264358",
+    "checked_at": "2026-10-18T08:35:26.338062+00:00",
+    "subject": {
+      "id": 264358,
+      "type": 2,
+      "name": "雨色ココアside G",
+      "name_cn": "雨色可可 side G",
+      "date": "2019-01-08",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/267250",
+    "checked_at": "2026-10-18T08:35:20.043255+00:00",
+    "subject": {
+      "id": 267250,
+      "type": 2,
+      "name": "RobiHachi",
+      "name_cn": "",
+      "date": "2019-04-08",
+      "eps": 12,
+      "summary_sha256": "bdcbd674d89177dc38aa17b906ce740d33b25f9bc5de3a01aebf265d63bd4d49",
+      "summary_length": 260
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/269023",
+    "checked_at": "2026-10-18T08:35:19.345027+00:00",
+    "subject": {
+      "id": 269023,
+      "type": 2,
+      "name": "キラッとプリ☆チャン シーズン2",
+      "name_cn": "闪亮美妙☆频道 第二季",
+      "date": "2019-04-07",
+      "eps": 51,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/269436",
+    "checked_at": "2026-10-18T08:35:01.049580+00:00",
+    "subject": {
+      "id": 269436,
+      "type": 2,
+      "name": "白猫プロジェクト ゼロ・クロニクル",
+      "name_cn": "白猫计划 零之纪元",
+      "date": "2020-04-06",
+      "eps": 12,
+      "summary_sha256": "64d0d2c75f56ad293ac7ee621a0bd8ad83c45aae37d89cc97bae3ef5f214105c",
+      "summary_length": 295
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/269906",
+    "checked_at": "2026-10-18T08:35:18.601539+00:00",
+    "subject": {
+      "id": 269906,
+      "type": 2,
+      "name": "ジモトがジャパン",
+      "name_cn": "",
+      "date": "2019-04-08",
+      "eps": 50,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/270060",
+    "checked_at": "2026-10-18T08:35:15.789983+00:00",
+    "subject": {
+      "id": 270060,
+      "type": 2,
+      "name": "この音とまれ！第2クール",
+      "name_cn": "一弦定音！第2部分",
+      "date": "2019-10-05",
+      "eps": 13,
+      "summary_sha256": "f7e33ff12e6f087b366fdb4d40c9c980318760284b6efbe1774db91c78da23ae",
+      "summary_length": 72
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/276051",
+    "checked_at": "2026-10-18T08:35:12.997225+00:00",
+    "subject": {
+      "id": 276051,
+      "type": 2,
+      "name": "ラディアン 第2シリーズ",
+      "name_cn": "虚空魔境 第二季",
+      "date": "2019-10-02",
+      "eps": 21,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/277217",
+    "checked_at": "2026-10-18T08:35:10.880151+00:00",
+    "subject": {
+      "id": 277217,
+      "type": 2,
+      "name": "ファンタシースターオンライン2 エピソード・オラクル",
+      "name_cn": "梦幻之星 神谕篇",
+      "date": "2019-10-07",
+      "eps": 25,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/278440",
+    "checked_at": "2026-10-18T08:35:17.190536+00:00",
+    "subject": {
+      "id": 278440,
+      "type": 2,
+      "name": "警視庁 特務部 特殊凶悪犯対策室 第七課 -トクナナ-",
+      "name_cn": "警视厅 特务部 特殊凶恶犯对策室 第七课",
+      "date": "2019-10-06",
+      "eps": 12,
+      "summary_sha256": "4e9f26046b8bf9a0f4a1a72627c4d08bc49744003152497c55551378de35b328",
+      "summary_length": 426
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/279202",
+    "checked_at": "2026-10-18T08:34:54.750577+00:00",
+    "subject": {
+      "id": 279202,
+      "type": 2,
+      "name": "約束のネバーランド Season 2",
+      "name_cn": "约定的梦幻岛 第二季",
+      "date": "2021-01-07",
+      "eps": 11,
+      "summary_sha256": "443dd1dbbb3a498e5def2bf84fc0e7cdfeab92f2554d44e1ef13ead62a1c0de4",
+      "summary_length": 197
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/279470",
+    "checked_at": "2026-10-18T08:35:20.742643+00:00",
+    "subject": {
+      "id": 279470,
+      "type": 2,
+      "name": "少年アシベ GO!GO!ゴマちゃん 第4シリーズ",
+      "name_cn": "少年阿贝GO！GO！小芝麻 第四季",
+      "date": "2019-04-02",
+      "eps": 24,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/279472",
+    "checked_at": "2026-10-18T08:35:22.152918+00:00",
+    "subject": {
+      "id": 279472,
+      "type": 2,
+      "name": "妖怪ウォッチ！",
+      "name_cn": "妖怪手表！",
+      "date": "2019-04-05",
+      "eps": 36,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/282118",
+    "checked_at": "2026-10-18T08:34:06.444681+00:00",
+    "subject": {
+      "id": 282118,
+      "type": 2,
+      "name": "こめかみっ！ガールズ",
+      "name_cn": "七米神物语",
+      "date": "2026-04-02",
+      "eps": 12,
+      "summary_sha256": "e3e0a5ef1032c5c86fc0e1b207863c769d9a2f2283b3f44a1e8a4f5c6e470852",
+      "summary_length": 152
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/282762",
+    "checked_at": "2026-10-18T08:35:13.684938+00:00",
+    "subject": {
+      "id": 282762,
+      "type": 2,
+      "name": "八十亀ちゃんかんさつにっき 2さつめ",
+      "name_cn": "八十龟酱观察日记 第二册",
+      "date": "2020-01-05",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/283053",
+    "checked_at": "2026-10-18T08:35:14.400956+00:00",
+    "subject": {
+      "id": 283053,
+      "type": 2,
+      "name": "Fairy gone フェアリーゴーン2",
+      "name_cn": "Fairy gone 2",
+      "date": "2019-10-06",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/283480",
+    "checked_at": "2026-10-18T08:35:25.642747+00:00",
+    "subject": {
+      "id": 283480,
+      "type": 2,
+      "name": "闇芝居 第7期",
+      "name_cn": "暗芝居 第七季",
+      "date": "2019-07-07",
+      "eps": 13,
+      "summary_sha256": "56e0583ed2343663401a58a7000b05f56917b0df5e67e3a2752668e8fff8da55",
+      "summary_length": 1139
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/285422",
+    "checked_at": "2026-10-18T08:35:11.605299+00:00",
+    "subject": {
+      "id": 285422,
+      "type": 2,
+      "name": "異世界かるてっと２",
+      "name_cn": "异世界四重奏 第二季",
+      "date": "2020-01-14",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/285664",
+    "checked_at": "2026-10-18T08:35:22.851110+00:00",
+    "subject": {
+      "id": 285664,
+      "type": 2,
+      "name": "カードファイト!! ヴァンガード 続・高校生編",
+      "name_cn": "卡片战斗先导者 续・高校生篇",
+      "date": "2019-05-11",
+      "eps": 14,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/285670",
+    "checked_at": "2026-10-18T08:35:24.237308+00:00",
+    "subject": {
+      "id": 285670,
+      "type": 2,
+      "name": "われしょ!～我ら!小動物愛護委員会～",
+      "name_cn": "",
+      "date": "2019-07-01",
+      "eps": 5,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/285762",
+    "checked_at": "2026-10-18T08:35:05.296191+00:00",
+    "subject": {
+      "id": 285762,
+      "type": 2,
+      "name": "もっと！まじめにふまじめ かいけつゾロリ",
+      "name_cn": "更多！正经又不正经 怪侠佐罗利",
+      "date": "2020-04-05",
+      "eps": 25,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/285901",
+    "checked_at": "2026-10-18T08:34:56.855453+00:00",
+    "subject": {
+      "id": 285901,
+      "type": 2,
+      "name": "ゴールデンカムイ 第3期",
+      "name_cn": "黄金神威 第三季",
+      "date": "2020-10-05",
+      "eps": 12,
+      "summary_sha256": "6818068373944fcf6d43ea4c1dd70e45969b1d0af838a5c577306d072a7eaab3",
+      "summary_length": 408
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/291479",
+    "checked_at": "2026-10-18T08:35:08.078176+00:00",
+    "subject": {
+      "id": 291479,
+      "type": 2,
+      "name": "ノー・ガンズ・ライフ 第2クール",
+      "name_cn": "非枪人生 第2部分",
+      "date": "2020-07-09",
+      "eps": 12,
+      "summary_sha256": "ed076784e98a6f7dda06d2aeacb69eb0ac012ef5f340101d2fc4813887b94ddc",
+      "summary_length": 389
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/291842",
+    "checked_at": "2026-10-18T08:35:16.489163+00:00",
+    "subject": {
+      "id": 291842,
+      "type": 2,
+      "name": "耐え子の日常",
+      "name_cn": "",
+      "date": "2019-10-05",
+      "eps": 26,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/291844",
+    "checked_at": "2026-10-18T08:35:17.897685+00:00",
+    "subject": {
+      "id": 291844,
+      "type": 2,
+      "name": "Four of a kind 新シリーズ",
+      "name_cn": "四牌士 新系列",
+      "date": "2019-10-06",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/292316",
+    "checked_at": "2026-10-18T08:34:38.468140+00:00",
+    "subject": {
+      "id": 292316,
+      "type": 2,
+      "name": "ありふれた職業で世界最強 2nd season",
+      "name_cn": "平凡职业造就世界最强 第二季",
+      "date": "2022-01-13",
+      "eps": 12,
+      "summary_sha256": "28ceb2c4d4b8f2d587b73b61aba9556dc72ecca8b272f0dfef181ce204bc962c",
+      "summary_length": 447
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/294202",
+    "checked_at": "2026-10-18T08:35:03.176068+00:00",
+    "subject": {
+      "id": 294202,
+      "type": 2,
+      "name": "アルゴナビス from BanG Dream! ANIMATION",
+      "name_cn": "ARGONAVIS from BanG Dream! ANIMATION",
+      "date": "2020-04-10",
+      "eps": 13,
+      "summary_sha256": "463ca9e0b9530794a251458cfb0474501fc50a3b54340cb6c984c482487654f3",
+      "summary_length": 108
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/295421",
+    "checked_at": "2026-10-18T08:34:58.968121+00:00",
+    "subject": {
+      "id": 295421,
+      "type": 2,
+      "name": "ハイキュー!! TO THE TOP 第2クール",
+      "name_cn": "排球少年 TO THE TOP 第二期",
+      "date": "2020-10-02",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/295615",
+    "checked_at": "2026-10-18T08:35:05.993756+00:00",
+    "subject": {
+      "id": 295615,
+      "type": 2,
+      "name": "りばあす",
+      "name_cn": "Rebirth",
+      "date": "2020-01-05",
+      "eps": 51,
+      "summary_sha256": "51ac2f261e8767a980e26eac015d6dd9abcbebc67d514d60d4d7e78d700842f9",
+      "summary_length": 382
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/296702",
+    "checked_at": "2026-10-18T08:35:04.595189+00:00",
+    "subject": {
+      "id": 296702,
+      "type": 2,
+      "name": "キラッとプリ☆チャン シーズン3",
+      "name_cn": "闪亮美妙☆频道 第三季",
+      "date": "2020-04-05",
+      "eps": 51,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/296875",
+    "checked_at": "2026-10-18T08:34:55.442214+00:00",
+    "subject": {
+      "id": 296875,
+      "type": 2,
+      "name": "ワールドトリガー 2ndシーズン",
+      "name_cn": "境界触发者 第二季",
+      "date": "2021-01-09",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/297224",
+    "checked_at": "2026-10-18T08:34:54.033622+00:00",
+    "subject": {
+      "id": 297224,
+      "type": 2,
+      "name": "BEASTARS 2nd Season",
+      "name_cn": "动物狂想曲 第二季",
+      "date": "2021-01-06",
+      "eps": 12,
+      "summary_sha256": "06943e99810faf2267fb3d24befd465f584da9304a73c50cee2a7feda4feac61",
+      "summary_length": 488
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/297344",
+    "checked_at": "2026-10-18T08:34:52.608864+00:00",
+    "subject": {
+      "id": 297344,
+      "type": 2,
+      "name": "真・中華一番！ 続編",
+      "name_cn": "厨神小当家 续篇",
+      "date": "2021-01-11",
+      "eps": 12,
+      "summary_sha256": "f8087b76d55dda73414d88f25777d5e8c62c3e85bbb9dc3a17d81c19fc142546",
+      "summary_length": 339
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/297459",
+    "checked_at": "2026-10-18T08:35:12.296680+00:00",
+    "subject": {
+      "id": 297459,
+      "type": 2,
+      "name": "フライングベイビーズ☆プチ",
+      "name_cn": "小草裙舞女孩",
+      "date": "2020-01-08",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/299673",
+    "checked_at": "2026-10-18T08:34:42.683267+00:00",
+    "subject": {
+      "id": 299673,
+      "type": 2,
+      "name": "転スラ日記 転生したらスライムだった件",
+      "name_cn": "转生史莱姆日记",
+      "date": "2021-04-06",
+      "eps": 12,
+      "summary_sha256": "c0c00d735013b966f4a2ed0c40dc3d1ba5eb51ec39fb4860589d83d9e79e53f2",
+      "summary_length": 152
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/299687",
+    "checked_at": "2026-10-18T08:35:03.874136+00:00",
+    "subject": {
+      "id": 299687,
+      "type": 2,
+      "name": "ハクション大魔王2020",
+      "name_cn": "喷嚏大魔王2020",
+      "date": "2020-04-11",
+      "eps": 20,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/300865",
+    "error": "MetadataUnavailable",
+    "reason": "Bangumi returned HTTP 404",
+    "attempted_at": "2026-10-18T08:35:06.692740+00:00"
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/301700",
+    "checked_at": "2026-10-18T08:35:02.478163+00:00",
+    "subject": {
+      "id": 301700,
+      "type": 2,
+      "name": "あはれ！名作くん 第5期",
+      "name_cn": "做得很好！名作君 第五季",
+      "date": "2020-04-03",
+      "eps": 37,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/301809",
+    "checked_at": "2026-10-18T08:35:01.766861+00:00",
+    "subject": {
+      "id": 301809,
+      "type": 2,
+      "name": "あの世のすべては、おばけぐみっ！",
+      "name_cn": "那个世界全部都是妖怪！",
+      "date": "2020-04-06",
+      "eps": 13,
+      "summary_sha256": "e83030514987218d4c34d24620fa1cd871f98348011fc099efa9dc9011d56766",
+      "summary_length": 74
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/302286",
+    "checked_at": "2026-10-18T08:34:28.572913+00:00",
+    "subject": {
+      "id": 302286,
+      "type": 2,
+      "name": "BLEACH 千年血戦篇",
+      "name_cn": "死神 千年血战篇",
+      "date": "2022-10-10",
+      "eps": 13,
+      "summary_sha256": "47869e16c5281428b8315c54f37b4bb24335fdef1ee823fe4c5f69393938605a",
+      "summary_length": 341
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/302523",
+    "checked_at": "2026-10-18T08:34:48.299006+00:00",
+    "subject": {
+      "id": 302523,
+      "type": 2,
+      "name": "転生したらスライムだった件 第2期 2",
+      "name_cn": "关于我转生变成史莱姆这档事 第二季 第2部分",
+      "date": "2021-07-06",
+      "eps": 12,
+      "summary_sha256": "b764bf3c3c42b6595da8e67bde49c30f814d7d80d2d9fefc849b88ca6874ca2b",
+      "summary_length": 274
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/302875",
+    "checked_at": "2026-10-18T08:34:49.712146+00:00",
+    "subject": {
+      "id": 302875,
+      "type": 2,
+      "name": "マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON -覚醒前夜-",
+      "name_cn": "魔法纪录 魔法少女小圆外传 2nd SEASON -觉醒前夜-",
+      "date": "2021-07-31",
+      "eps": 8,
+      "summary_sha256": "0453f905fe3137b045f362072b1b4ea67c7f619d6d2a3b38970afdb39b3def93",
+      "summary_length": 17
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/303173",
+    "checked_at": "2026-10-18T08:35:08.774002+00:00",
+    "subject": {
+      "id": 303173,
+      "type": 2,
+      "name": "GETUP! GETLIVE! #げらげら",
+      "name_cn": "",
+      "date": "2020-07-10",
+      "eps": 10,
+      "summary_sha256": "09fdd7a253c6a23096c78375af930368552fb5fb83f2947768ebdfa8f4672542",
+      "summary_length": 155
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/303195",
+    "checked_at": "2026-10-18T08:34:35.643290+00:00",
+    "subject": {
+      "id": 303195,
+      "type": 2,
+      "name": "東京ミュウミュウ にゅ～♡",
+      "name_cn": "东京猫猫 NEW～♡",
+      "date": "2022-07-05",
+      "eps": 12,
+      "summary_sha256": "f2860b9c52e5f06d383222c87ce1da47089e9a449c07d4d9d5c15c4d08017d75",
+      "summary_length": 226
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/303433",
+    "checked_at": "2026-10-18T08:34:57.547666+00:00",
+    "subject": {
+      "id": 303433,
+      "type": 2,
+      "name": "ぽっこりーず",
+      "name_cn": "",
+      "date": "2020-04-06",
+      "eps": 50,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/303878",
+    "checked_at": "2026-10-18T08:35:24.940488+00:00",
+    "subject": {
+      "id": 303878,
+      "type": 2,
+      "name": "おしりたんてい 第3シリーズ",
+      "name_cn": "屁屁侦探 第三季",
+      "date": "2019-07-06",
+      "eps": 13,
+      "summary_sha256": "693022d57b1aa223b7573eb9713e971eab577e9b476eddcc0821dd93d1248643",
+      "summary_length": 211
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/306993",
+    "error": "MetadataUnavailable",
+    "reason": "Bangumi returned HTTP 404",
+    "attempted_at": "2026-10-18T08:35:09.478817+00:00"
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/310150",
+    "checked_at": "2026-10-18T08:35:07.387989+00:00",
+    "subject": {
+      "id": 310150,
+      "type": 2,
+      "name": "超普通都市カシワ伝説R",
+      "name_cn": "超普通都市柏传说R",
+      "date": "2020-07-06",
+      "eps": 10,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/310950",
+    "checked_at": "2026-10-18T08:34:53.329165+00:00",
+    "subject": {
+      "id": 310950,
+      "type": 2,
+      "name": "ワールドウィッチーズ 発進しますっ！",
+      "name_cn": "世界魔女 起飞！",
+      "date": "2021-01-12",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/315804",
+    "checked_at": "2026-10-18T08:34:56.140953+00:00",
+    "subject": {
+      "id": 315804,
+      "type": 2,
+      "name": "八十亀ちゃんかんさつにっき 3さつめ",
+      "name_cn": "八十龟酱观察日记 第三册",
+      "date": "2021-01-10",
+      "eps": 12,
+      "summary_sha256": "52b2b31dac48c4b01ea60e685b97f3721258b0c57ddd2caa04a52c256d639c79",
+      "summary_length": 143
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/316103",
+    "checked_at": "2026-10-18T08:34:59.661171+00:00",
+    "subject": {
+      "id": 316103,
+      "type": 2,
+      "name": "秘密結社 鷹の爪 ～ゴールデン・スペル～",
+      "name_cn": "秘密结社 鹰之爪 ~Golden Spell~",
+      "date": "2020-10-04",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/316106",
+    "error": "MetadataUnavailable",
+    "reason": "Bangumi returned HTTP 404",
+    "attempted_at": "2026-10-18T08:35:00.353016+00:00"
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/316108",
+    "checked_at": "2026-10-18T08:35:10.178633+00:00",
+    "subject": {
+      "id": 316108,
+      "type": 2,
+      "name": "耐え子の日常 第二期",
+      "name_cn": "",
+      "date": "2020-07-01",
+      "eps": 132,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/316519",
+    "checked_at": "2026-10-18T08:34:44.072577+00:00",
+    "subject": {
+      "id": 316519,
+      "type": 2,
+      "name": "ゴジラS.P<シンギュラポイント>",
+      "name_cn": "哥斯拉：奇点",
+      "date": "2021-04-01",
+      "eps": 13,
+      "summary_sha256": "7dabcc016275ea0303efbe939a372f866e4096ad97435a79d547a4b27d0fe6de",
+      "summary_length": 289
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/316796",
+    "checked_at": "2026-10-18T08:34:58.257514+00:00",
+    "subject": {
+      "id": 316796,
+      "type": 2,
+      "name": "カピバラさん",
+      "name_cn": "水豚君",
+      "date": "2020-10-09",
+      "eps": 24,
+      "summary_sha256": "9eb8286d9ccf945943db0b571eade1241d7a76e2a43c24c36105cdc571822ebb",
+      "summary_length": 62
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/316893",
+    "checked_at": "2026-10-18T08:34:43.380341+00:00",
+    "subject": {
+      "id": 316893,
+      "type": 2,
+      "name": "宇宙なんちゃら こてつくん",
+      "name_cn": "宇宙奇妙生物小铁君",
+      "date": "2021-04-07",
+      "eps": 0,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/321387",
+    "checked_at": "2026-10-18T08:34:47.600487+00:00",
+    "subject": {
+      "id": 321387,
+      "type": 2,
+      "name": "ミュークルドリーミー みっくす！",
+      "name_cn": "甜梦猫 MIX!",
+      "date": "2021-04-11",
+      "eps": 50,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/322859",
+    "checked_at": "2026-10-18T08:34:49.009164+00:00",
+    "subject": {
+      "id": 322859,
+      "type": 2,
+      "name": "100万の命の上に俺は立っている 第2シーズン",
+      "name_cn": "我立于百万生命之上 第二季",
+      "date": "2021-07-09",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/322967",
+    "checked_at": "2026-10-18T08:34:41.971981+00:00",
+    "subject": {
+      "id": 322967,
+      "type": 2,
+      "name": "ワールドトリガー 3rdシーズン",
+      "name_cn": "境界触发者 第三季",
+      "date": "2021-10-09",
+      "eps": 14,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/329909",
+    "checked_at": "2026-10-18T08:34:50.412958+00:00",
+    "subject": {
+      "id": 329909,
+      "type": 2,
+      "name": "RE-MAIN",
+      "name_cn": "RE-MAIN：少年与水球",
+      "date": "2021-07-03",
+      "eps": 12,
+      "summary_sha256": "c9445f92ed96d09e7e4a037387467e36c9aba15fe2bb7b7f764e7b03d6585bae",
+      "summary_length": 95
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/330652",
+    "checked_at": "2026-10-18T08:34:46.898589+00:00",
+    "subject": {
+      "id": 330652,
+      "type": 2,
+      "name": "マジカパーティ",
+      "name_cn": "魔卡派对",
+      "date": "2021-04-04",
+      "eps": 51,
+      "summary_sha256": "2f9afeb83e6a133ea32a8c8c1bd404be9aebf46a0a3564a75e899bef5ffdfb65",
+      "summary_length": 337
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/330889",
+    "checked_at": "2026-10-18T08:34:46.180044+00:00",
+    "subject": {
+      "id": 330889,
+      "type": 2,
+      "name": "ダイナ荘びより",
+      "name_cn": "恐龙日和",
+      "date": "2021-04-03",
+      "eps": 26,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/332655",
+    "error": "MetadataUnavailable",
+    "reason": "Bangumi returned HTTP 404",
+    "attempted_at": "2026-10-18T08:34:51.160688+00:00"
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/333623",
+    "checked_at": "2026-10-18T08:34:41.264532+00:00",
+    "subject": {
+      "id": 333623,
+      "type": 2,
+      "name": "ビルディバイド -#000000-",
+      "name_cn": "创之界限 -#000000-",
+      "date": "2021-10-09",
+      "eps": 12,
+      "summary_sha256": "3de4454f573f13a7099b6d185bd6a6701134228c19023815cd03d18e22bce734",
+      "summary_length": 384
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/333624",
+    "checked_at": "2026-10-18T08:34:34.234176+00:00",
+    "subject": {
+      "id": 333624,
+      "type": 2,
+      "name": "ビルディバイド -#FFFFFF-",
+      "name_cn": "创之界限 -#FFFFFF-",
+      "date": "2022-04-02",
+      "eps": 12,
+      "summary_sha256": "2a3ed892883be2c6e94841a76a2fc64cdd1d31272be5f4232c5008e3d272cc0a",
+      "summary_length": 624
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/336281",
+    "checked_at": "2026-10-18T08:34:44.767466+00:00",
+    "subject": {
+      "id": 336281,
+      "type": 2,
+      "name": "もっと！まじめにふまじめ かいけつゾロリ 第2シリーズ",
+      "name_cn": "更多！正经又不正经 怪侠佐罗利 第2系列",
+      "date": "2021-04-02",
+      "eps": 25,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/338201",
+    "checked_at": "2026-10-18T08:34:51.884523+00:00",
+    "subject": {
+      "id": 338201,
+      "type": 2,
+      "name": "闇芝居 第9期",
+      "name_cn": "暗芝居 第九季",
+      "date": "2021-07-11",
+      "eps": 13,
+      "summary_sha256": "a0ed5d0fc912f4d69a971789a4ddd54bf521979f5a0bce057593f1dcf9826c16",
+      "summary_length": 32
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/338270",
+    "checked_at": "2026-10-18T08:34:39.158895+00:00",
+    "subject": {
+      "id": 338270,
+      "type": 2,
+      "name": "ヴァニタスの手記 第2クール",
+      "name_cn": "瓦尼塔斯的手记 第2部分",
+      "date": "2022-01-14",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/339969",
+    "checked_at": "2026-10-18T08:34:40.567837+00:00",
+    "subject": {
+      "id": 339969,
+      "type": 2,
+      "name": "Deep Insanity THE LOST CHILD",
+      "name_cn": "狂热深渊-迷失的孩子",
+      "date": "2021-10-12",
+      "eps": 12,
+      "summary_sha256": "a2daab489b6d1058b62515cfb828af4a34224878eb72dead8576b1818189a2ab",
+      "summary_length": 228
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/351714",
+    "checked_at": "2026-10-18T08:34:32.097189+00:00",
+    "subject": {
+      "id": 351714,
+      "type": 2,
+      "name": "名探偵コナン ゼロの日常",
+      "name_cn": "名侦探柯南：零的日常",
+      "date": "2022-04-04",
+      "eps": 6,
+      "summary_sha256": "62bf0bbfd75e829f1979ddcdb2eaeceb3fa199c804530fdfdca5dbecdabcb66b",
+      "summary_length": 142
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/354190",
+    "checked_at": "2026-10-18T08:34:30.668624+00:00",
+    "subject": {
+      "id": 354190,
+      "type": 2,
+      "name": "アークナイツ【黎明前奏/PRELUDE TO DAWN】",
+      "name_cn": "明日方舟：黎明前奏",
+      "date": "2022-10-28",
+      "eps": 8,
+      "summary_sha256": "7d3ee045f3e823e580622e12b8852235abfee42fa3adf5ae809a0aadfa99fa8d",
+      "summary_length": 151
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/354414",
+    "checked_at": "2026-10-18T08:34:36.339961+00:00",
+    "subject": {
+      "id": 354414,
+      "type": 2,
+      "name": "SHINE POST",
+      "name_cn": "闪耀路标",
+      "date": "2022-07-12",
+      "eps": 12,
+      "summary_sha256": "33f12c7f203f3688afdd25f362fe627e9a429793430c458c89c91b061fbc6187",
+      "summary_length": 154
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/358514",
+    "checked_at": "2026-10-18T08:34:37.765603+00:00",
+    "subject": {
+      "id": 358514,
+      "type": 2,
+      "name": "ガル学。II～Lucky Stars～",
+      "name_cn": "GIRL学。Ⅱ～Lucky Stars～",
+      "date": "2022-01-10",
+      "eps": 10,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/359059",
+    "error": "MetadataUnavailable",
+    "reason": "Bangumi returned HTTP 404",
+    "attempted_at": "2026-10-18T08:34:26.453674+00:00"
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/359527",
+    "checked_at": "2026-10-18T08:34:33.516115+00:00",
+    "subject": {
+      "id": 359527,
+      "type": 2,
+      "name": "八十亀ちゃんかんさつにっき 4さつめ",
+      "name_cn": "八十龟酱观察日记 第四册",
+      "date": "2022-04-09",
+      "eps": 10,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/361095",
+    "checked_at": "2026-10-18T08:34:27.872829+00:00",
+    "subject": {
+      "id": 361095,
+      "type": 2,
+      "name": "ゴールデンカムイ 第4期",
+      "name_cn": "黄金神威 第四季",
+      "date": "2022-10-03",
+      "eps": 13,
+      "summary_sha256": "961607650a5f83611b74fca69b443ba1c0faa60a65a649c61f2019109e626cd0",
+      "summary_length": 399
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/362733",
+    "checked_at": "2026-10-18T08:34:39.865248+00:00",
+    "subject": {
+      "id": 362733,
+      "type": 2,
+      "name": "闇芝居 第10期",
+      "name_cn": "暗芝居 第十季",
+      "date": "2022-01-09",
+      "eps": 13,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/363242",
+    "checked_at": "2026-10-18T08:34:32.799369+00:00",
+    "subject": {
+      "id": 363242,
+      "type": 2,
+      "name": "古見さんは、コミュ症です。2期",
+      "name_cn": "古见同学有交流障碍症 第二季",
+      "date": "2022-04-06",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/363263",
+    "checked_at": "2026-10-18T08:34:29.971710+00:00",
+    "subject": {
+      "id": 363263,
+      "type": 2,
+      "name": "マブラヴ オルタネイティヴ 第2期",
+      "name_cn": "Muv-Luv Alternative 第二季",
+      "date": "2022-10-05",
+      "eps": 12,
+      "summary_sha256": "b0ccfbfdc859b86baeb695225cf5d4d88197cf3a91341475f6560f7e5223eded",
+      "summary_length": 121
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/368816",
+    "checked_at": "2026-10-18T08:34:37.048000+00:00",
+    "subject": {
+      "id": 368816,
+      "type": 2,
+      "name": "Extreme Hearts",
+      "name_cn": "极限之心",
+      "date": "2022-07-09",
+      "eps": 12,
+      "summary_sha256": "49765140af142f2e5fdf1065a96b00a6dd0a459314690f9ac636502806d99707",
+      "summary_length": 124
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/373267",
+    "checked_at": "2026-10-18T08:34:31.392973+00:00",
+    "subject": {
+      "id": 373267,
+      "type": 2,
+      "name": "SPY×FAMILY 第2クール",
+      "name_cn": "间谍过家家 第2部分",
+      "date": "2022-10-01",
+      "eps": 13,
+      "summary_sha256": "4e487396dfcacc4193559227d899c2c2e31435a9aeca13ac27dc6cf82b6d9892",
+      "summary_length": 334
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/373710",
+    "checked_at": "2026-10-18T08:34:34.941012+00:00",
+    "subject": {
+      "id": 373710,
+      "type": 2,
+      "name": "金装のヴェルメイユ～崖っぷち魔術師は最強の厄災と魔法世界を突き進む～",
+      "name_cn": "金装的维尔梅～濒临堕落的魔法师和最强的灾厄一起冲入魔法世界～",
+      "date": "2022-07-05",
+      "eps": 12,
+      "summary_sha256": "4bf533652158c2748b1d34b24f80898d178e75c0fdafc5d6715fdfb77779d34c",
+      "summary_length": 240
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/396487",
+    "checked_at": "2026-10-18T08:34:29.275408+00:00",
+    "subject": {
+      "id": 396487,
+      "type": 2,
+      "name": "チキップダンサーズ 2期",
+      "name_cn": "小鸡舞者 第二季",
+      "date": "2022-09-27",
+      "eps": 26,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/403671",
+    "checked_at": "2026-10-18T08:34:27.162959+00:00",
+    "subject": {
+      "id": 403671,
+      "type": 2,
+      "name": "KJファイル 第2期",
+      "name_cn": "怪兽档案 第二季",
+      "date": "2023-01-08",
+      "eps": 13,
+      "summary_sha256": "36cdcd4a8a3abfa3486cefb3338e3a8a0e2fa10cea01ee225820cf9ee65fc755",
+      "summary_length": 269
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/413635",
+    "checked_at": "2026-10-18T08:34:20.796062+00:00",
+    "subject": {
+      "id": 413635,
+      "type": 2,
+      "name": "うる星やつら 第2期",
+      "name_cn": "福星小子 第二季",
+      "date": "2024-01-11",
+      "eps": 23,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/418599",
+    "checked_at": "2026-10-18T08:34:24.334766+00:00",
+    "subject": {
+      "id": 418599,
+      "type": 2,
+      "name": "BEYBLADE X",
+      "name_cn": "霸旋陀螺 极限突破",
+      "date": "2023-10-06",
+      "eps": 0,
+      "summary_sha256": "59a0f6ee563145ba2c887334171271a904d96ebc5d71ba9e2c0e0f24b9fe0492",
+      "summary_length": 157
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/422505",
+    "checked_at": "2026-10-18T08:34:25.039741+00:00",
+    "subject": {
+      "id": 422505,
+      "type": 2,
+      "name": "ちびゴジラの逆襲",
+      "name_cn": "小哥斯拉的逆袭",
+      "date": "2023-04-01",
+      "eps": 13,
+      "summary_sha256": "27c17d588b6ab614131473eb6dd1a0b3f978071d2f8c59571ab591f7b471e852",
+      "summary_length": 14
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/432751",
+    "checked_at": "2026-10-18T08:34:25.737918+00:00",
+    "subject": {
+      "id": 432751,
+      "type": 2,
+      "name": "闇芝居 第11期",
+      "name_cn": "暗芝居 第十一季",
+      "date": "2023-07-09",
+      "eps": 13,
+      "summary_sha256": "80dac4f1547f6e0d64e7d924e1f5ebbe742237fcd59cb877471f27c02feed000",
+      "summary_length": 105
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/443446",
+    "checked_at": "2026-10-18T08:34:09.319107+00:00",
+    "subject": {
+      "id": 443446,
+      "type": 2,
+      "name": "地獄楽 第二期",
+      "name_cn": "地狱乐 第二季",
+      "date": "2026-01-11",
+      "eps": 12,
+      "summary_sha256": "2629af8c059a9f018e962fe3148941a3a0dfea97779585faea6c62e8b80a2ff5",
+      "summary_length": 422
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/451858",
+    "checked_at": "2026-10-18T08:34:23.629464+00:00",
+    "subject": {
+      "id": 451858,
+      "type": 2,
+      "name": "チキップダンサーズ 3期",
+      "name_cn": "小鸡舞者 第三季",
+      "date": "2023-09-25",
+      "eps": 26,
+      "summary_sha256": "add29efc10fcc34f7a598e9f164c0f1b9047d714ed6aa82e6e54c1da7ef22cfd",
+      "summary_length": 129
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/455981",
+    "checked_at": "2026-10-18T08:34:21.514876+00:00",
+    "subject": {
+      "id": 455981,
+      "type": 2,
+      "name": "魔王学院の不適合者 ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～ Ⅱ 2ndクール",
+      "name_cn": "魔王学院的不适任者～史上最强的魔王始祖，转生就读子孙们的学校～ 第二季 第2部分",
+      "date": "2024-04-12",
+      "eps": 12,
+      "summary_sha256": "cc2cc665cc7d36085d49c1434977c6e1c980b5d9ee7d18dfe7a68641a294aab4",
+      "summary_length": 147
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/456164",
+    "checked_at": "2026-10-18T08:34:19.378106+00:00",
+    "subject": {
+      "id": 456164,
+      "type": 2,
+      "name": "食草老龙被冠以恶龙之名 第二季",
+      "name_cn": "",
+      "date": "2024-10-02",
+      "eps": 12,
+      "summary_sha256": "bf112228ee9bce9eaa1d5898244ddf4ccc92ede1438fd219eba515abf2165e00",
+      "summary_length": 263
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/464594",
+    "checked_at": "2026-10-18T08:34:17.237231+00:00",
+    "subject": {
+      "id": 464594,
+      "type": 2,
+      "name": "放課後少年花子くん 続編",
+      "name_cn": "放学后少年花子君 续篇",
+      "date": "2024-10-07",
+      "eps": 4,
+      "summary_sha256": "c5106775ca3f7be3d5c4072430b2ef3ea0655857248c84ad1507050c41c2de4a",
+      "summary_length": 206
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/465694",
+    "checked_at": "2026-10-18T08:34:22.933999+00:00",
+    "subject": {
+      "id": 465694,
+      "type": 2,
+      "name": "闇芝居 第12期",
+      "name_cn": "暗芝居 第十二季",
+      "date": "2024-01-14",
+      "eps": 13,
+      "summary_sha256": "bc6d65a0da31be7333e6e75efd3815cbeb91eedef359d935c540f3f5dfebace7",
+      "summary_length": 16
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/467803",
+    "checked_at": "2026-10-18T08:34:18.671877+00:00",
+    "subject": {
+      "id": 467803,
+      "type": 2,
+      "name": "カミエラビ シーズン2",
+      "name_cn": "神选 第二季",
+      "date": "2024-10-02",
+      "eps": 12,
+      "summary_sha256": "42b62b1e9655d6f0e84b6bbbaadc9525afd117c2425321b48054c9a51314cc0d",
+      "summary_length": 616
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/470777",
+    "checked_at": "2026-10-18T08:34:20.097373+00:00",
+    "subject": {
+      "id": 470777,
+      "type": 2,
+      "name": "百姓貴族 2nd Season",
+      "name_cn": "百姓贵族 第二季",
+      "date": "2024-10-04",
+      "eps": 12,
+      "summary_sha256": "eda02c02e32383285c127079f44e6605b33e2282da07ed968e0bb634471b203f",
+      "summary_length": 192
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/484191",
+    "checked_at": "2026-10-18T08:34:17.960914+00:00",
+    "subject": {
+      "id": 484191,
+      "type": 2,
+      "name": "ちびゴジラの逆襲 続編",
+      "name_cn": "小哥斯拉的逆袭 续篇",
+      "date": "2024-04-03",
+      "eps": 52,
+      "summary_sha256": "53e4b4fcb9c2edda9b7ee811ca7620dd25e24f4e6f8701fa828153aac215b8c6",
+      "summary_length": 197
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/495238",
+    "checked_at": "2026-10-18T08:34:07.141480+00:00",
+    "subject": {
+      "id": 495238,
+      "type": 2,
+      "name": "ダイヤのA actⅡ Second Season",
+      "name_cn": "钻石王牌 act2 第二季",
+      "date": "2026-04-05",
+      "eps": 13,
+      "summary_sha256": "2eb260f8196d4c4f07c84547bcd4b1c24cf2c8b58a46fc372fdf3bdc74c6020d",
+      "summary_length": 162
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/498178",
+    "checked_at": "2026-10-18T08:34:22.224598+00:00",
+    "subject": {
+      "id": 498178,
+      "type": 2,
+      "name": "闇芝居 十三期",
+      "name_cn": "暗芝居 第十三季",
+      "date": "2024-07-14",
+      "eps": 13,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/523889",
+    "checked_at": "2026-10-18T08:34:11.497393+00:00",
+    "subject": {
+      "id": 523889,
+      "type": 2,
+      "name": "全力ウサギ 第2期",
+      "name_cn": "全力兔子 第二季",
+      "date": "2025-04-09",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/526223",
+    "checked_at": "2026-10-18T08:34:16.539890+00:00",
+    "subject": {
+      "id": 526223,
+      "type": 2,
+      "name": "闇芝居 十四期",
+      "name_cn": "暗芝居 第十四季",
+      "date": "2025-01-05",
+      "eps": 13,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/526567",
+    "checked_at": "2026-10-18T08:34:12.219836+00:00",
+    "subject": {
+      "id": 526567,
+      "type": 2,
+      "name": "ギャグマンガ日和GO",
+      "name_cn": "搞笑漫画日和GO",
+      "date": "2025-04-05",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/529232",
+    "checked_at": "2026-10-18T08:34:45.475419+00:00",
+    "subject": {
+      "id": 529232,
+      "type": 2,
+      "name": "おしりたんてい 第5シリーズ",
+      "name_cn": "屁屁侦探 第五季",
+      "date": "2021-04-03",
+      "eps": 13,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/529694",
+    "checked_at": "2026-10-18T08:34:10.028517+00:00",
+    "subject": {
+      "id": 529694,
+      "type": 2,
+      "name": "百姓貴族 3rd Season",
+      "name_cn": "百姓贵族 第三季",
+      "date": "2025-10-03",
+      "eps": 12,
+      "summary_sha256": "eda02c02e32383285c127079f44e6605b33e2282da07ed968e0bb634471b203f",
+      "summary_length": 192
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/530115",
+    "checked_at": "2026-10-18T08:34:15.104376+00:00",
+    "subject": {
+      "id": 530115,
+      "type": 2,
+      "name": "ぷにるはかわいいスライム 第2期",
+      "name_cn": "噗妮露是可爱史莱姆 第二季",
+      "date": "2025-07-06",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/548940",
+    "checked_at": "2026-10-18T08:34:14.401862+00:00",
+    "subject": {
+      "id": 548940,
+      "type": 2,
+      "name": "地縛少年花子くん２ 第2クール",
+      "name_cn": "地缚少年花子君 第二季 第2部分",
+      "date": "2025-07-06",
+      "eps": 12,
+      "summary_sha256": "00a1cc3b23b93e8bf34c8ddf57e417a97d0131401d39bf806d71b12031dfb527",
+      "summary_length": 391
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/559674",
+    "checked_at": "2026-10-18T08:34:13.675701+00:00",
+    "subject": {
+      "id": 559674,
+      "type": 2,
+      "name": "学校では教えてくれない大切なこと 整理整頓編",
+      "name_cn": "",
+      "date": "2025-07-05",
+      "eps": 9,
+      "summary_sha256": "907add7cfd359cc1b017f9f909f05835b0293c95d1d7a23763f4b772122169bc",
+      "summary_length": 222
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/561787",
+    "checked_at": "2026-10-18T08:34:12.963289+00:00",
+    "subject": {
+      "id": 561787,
+      "type": 2,
+      "name": "ちびゴジラの逆襲 シリーズ最新作",
+      "name_cn": "小哥斯拉的逆袭 系列最新作",
+      "date": "2025-07-02",
+      "eps": 0,
+      "summary_sha256": "7d9dc08b27558a0892d6d232e3ab413605edc6403cebb2f1813021d7fd6931ed",
+      "summary_length": 218
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/562793",
+    "checked_at": "2026-10-18T08:34:15.826523+00:00",
+    "subject": {
+      "id": 562793,
+      "type": 2,
+      "name": "闇芝居 十五期",
+      "name_cn": "暗芝居 第十五季",
+      "date": "2025-07-13",
+      "eps": 13,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/568244",
+    "checked_at": "2026-10-18T08:34:02.764002+00:00",
+    "subject": {
+      "id": 568244,
+      "type": 2,
+      "name": "薬屋のひとりごと 第3期",
+      "name_cn": "药屋少女的呢喃 第三季",
+      "date": "2026-10-02",
+      "eps": 12,
+      "summary_sha256": "5dd46207badb7f27791a397f4127851f26cd556aad25ce14e43f60e855b2045c",
+      "summary_length": 269
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/582915",
+    "checked_at": "2026-10-18T08:34:10.740509+00:00",
+    "subject": {
+      "id": 582915,
+      "type": 2,
+      "name": "SHIBUYA♡HACHI 第4クール",
+      "name_cn": "涩谷♡八 第四部分",
+      "date": "2025-10-04",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/583313",
+    "error": "MetadataUnavailable",
+    "reason": "Bangumi returned HTTP 404",
+    "attempted_at": "2026-10-18T08:34:08.621268+00:00"
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/621835",
+    "checked_at": "2026-10-18T08:34:07.842146+00:00",
+    "subject": {
+      "id": 621835,
+      "type": 2,
+      "name": "도굴왕",
+      "name_cn": "盗墓王",
+      "date": "2026-07-08",
+      "eps": 12,
+      "summary_sha256": "219bfad81076c48f0626c281c3a4cd8045d0435ce92d95f2690800ed7ae21ec2",
+      "summary_length": 552
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/664389",
+    "checked_at": "2026-10-18T08:34:04.584947+00:00",
+    "subject": {
+      "id": 664389,
+      "type": 2,
+      "name": "夜桜さんちの大作戦 第2期 第2クール",
+      "name_cn": "夜樱家的大作战 第二季 第2部分",
+      "date": "2026-10-11",
+      "eps": 0,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/664395",
+    "checked_at": "2026-10-18T08:34:05.314857+00:00",
+    "subject": {
+      "id": 664395,
+      "type": 2,
+      "name": "ダイヤのA actⅡ Second Season 第2クール",
+      "name_cn": "钻石王牌 act2 第二季 第2部分",
+      "date": "2026-10-11",
+      "eps": 12,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/subjects/694622",
+    "checked_at": "2026-10-18T08:34:03.425370+00:00",
+    "subject": {
+      "id": 694622,
+      "type": 2,
+      "name": "ねずみくんのチョッキ 第2期",
+      "name_cn": "",
+      "date": "2026-10-03",
+      "eps": 0,
+      "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary_length": 0
+    }
+  }
+]

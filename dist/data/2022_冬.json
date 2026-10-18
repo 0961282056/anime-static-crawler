@@ -491,7 +491,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/2e3a8f439b27db8c463709e066fbcbe0",
       "premiere_date": "四",
       "premiere_time": "23:30",
-      "story": "暫無簡介",
+      "story": "在与昔日的同班同学们道别后，主角始所率领的队伍为了取得新的神代魔法动身前往大迷宫。一行人突破了各式各样的试炼，一步步取得了为返回原本的世界所需的力量。然而，此刻在台面底下，魔人族们却出现了不平稳的动向。\r\n等待他们的是悄悄逼近王都的黑影以及在暗中行动的神秘人物。\r\n「我要击败所有敌人――哪怕对方是神也一样。」\r\n阻挡在他们面前的真正的敌人到底是何方神圣呢――！？\r\n「最强」的异世界奇幻故事，第二季现在即将拉开序幕！\r\n\r\n\r\n\r\n[简介原文]\r\nかつてのクラスメイトたちと別れた後、主人公ハジメが率いるパーティーは新たな神代魔法を手に入れるため大迷宮へと向かっていた。様々な試練を突破し、元の世界に帰るために着々と力をつけていく一行。しかし、その裏では魔人族たちも不穏な動きをみせていた。\r\n王都に忍び寄る影と暗躍する謎の人物。\r\n「敵はすべて倒す――たとえそれが神だとしても」\r\n彼らの前に立ちはだかる真の敵とは一体何者なのか――!?\r\n“最強”異世界ファンタジー、セカンドシーズン開幕！",
       "original_name": "ありふれた職業で世界最強 2ndシーズン",
       "external_ids": {
         "bangumi": 292316,
@@ -513,6 +513,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 292316,
+        "checked_at": "2026-10-18T16:34:38.468140+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1413,14 +1420,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T03:10:45.758581+08:00",
+  "generated_at": "2026-10-18T16:43:18.897268+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202201/",
   "quality": {
     "source_count": 43,
     "record_count": 43,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 4,
+    "missing_story_count": 3,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

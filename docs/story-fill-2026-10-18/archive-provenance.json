@@ -1,0 +1,12 @@
+{
+  "url": "https://github.com/bangumi/Archive/releases/download/archive/dump-2026-10-13.210353Z.zip",
+  "sha256": "19d12d42502fefeb4a2b14561cc978986a554320b06ca4bbf454d1830b101f90",
+  "snapshot_date": "2026-10-14",
+  "extracted_subject_ids": [
+    300865,
+    332655,
+    583313
+  ],
+  "verification": "Full local ZIP SHA256 rechecked; three subjects re-extracted from raw subject.jsonlines and equal to cached fields.",
+  "verified_at": "2026-10-18T08:52:41.286121+00:00"
+}

@@ -318,7 +318,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/196444b46b2c4a337f75c8155a9e37f2",
       "premiere_date": "二",
       "premiere_time": "25:00",
-      "story": "暫無簡介",
+      "story": "「帅气哥哥入手！」\r\n这种好事果然没那么容易！\r\n因父亲再婚而多出来的妹妹，竟然是和自己完全相反的超级辣妹！\r\n同居后，她还经常把男人带回家，让光太每天都快受不了了，然而某起事件之后，蓝花开始对他提出拥抱，甚至更进一步的要求！ ？\r\n\r\nイケメン兄貴ゲット！\r\nとか都合よくいかないかぁ(´-д-)=3\r\n父親の再婚でできた妹は自分とは正反対な\r\nゴリゴリのギャルだった…！\r\n同居開始後も男を連れ込むなどやりたい放題の藍花に\r\nうんざりの光太だったが、ある事件をきっかけにして\r\n彼女からハグやそれ以上を求められるようになってしまい…！？ \r\n生意気ギャルと理屈屋童貞のでこぼこ義兄妹ラブコメ爆誕！！",
       "original_name": "イチゴ哀歌 ～雑で生イキな妹と割り切れない兄～",
       "external_ids": {
         "bangumi": 583313,
@@ -338,6 +338,13 @@
         "end_date": null,
         "note": "官方公告最終回第12話；不以預告或光碟發售日當作播出日期。",
         "source_kind": "manual_official"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 583313,
+        "checked_at": "2026-10-18T16:52:41.286121+08:00",
+        "method": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -1930,7 +1937,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/585f26d15534937f69f6180494cb562a",
       "premiere_date": "日",
       "premiere_time": "23:45",
-      "story": "暫無簡介",
+      "story": "为寻找仙药的线索，一行人抵达了统治这座岛的怪物「天仙」的居城。\r\n想要活着从岛上离开，死刑犯和处刑人就必须抛开彼此的身份互相合作。\r\n与此同时，幕府下令「山田浅卫门殊现」率队登陆神仙乡增援。\r\n在队伍之中，还有来自画眉丸曾经隶属的忍者村，石影村的人。\r\n画眉丸一行只想尽快找到仙药，逃离此岛，但他们还要面对天仙们的阻挠。\r\n围绕仙药的战斗终于发展到「人类」与「天仙」的全面对决！！\r\n\r\n\r\n\r\n[简介原文]\r\n仙薬の手がかりを求め、島を統べる化物\"天仙\"の居城に着いた一行。\r\n島からの生還には、もはや死罪人も執行人も関係なく協力が不可欠だった。\r\n一方で、幕府は“山田浅ェ門殊現”を筆頭に神仙郷への追加上陸を命じていた。\r\nそこには、画眉丸と因縁のある石隠れ衆の姿も。\r\n一刻も早く仙薬を見つけて島から脱出しようとする画眉丸たちだったが、\r\n彼らの前に天仙たちが立ち塞がる。\r\n仙薬を巡る戦いは“人間”と“天仙”の全面対決に突入する——!!",
       "original_name": "地獄楽 第2期",
       "external_ids": {
         "bangumi": 443446,
@@ -1951,6 +1958,13 @@
         "end_date": "2026-03-29",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 443446,
+        "checked_at": "2026-10-18T16:34:09.319107+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2020,14 +2034,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T03:10:45.758581+08:00",
+  "generated_at": "2026-10-18T16:52:43.571715+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202601/",
   "quality": {
     "source_count": 65,
     "record_count": 65,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 2,
+    "missing_story_count": 0,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

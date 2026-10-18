@@ -1,0 +1,1023 @@
+[
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-585",
+    "name": "一人之下 羅天大醮篇",
+    "subject_id": 206925,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 206925,
+      "checked_at": "2026-10-18T16:35:42.475455+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "901a72d5f88c1f0a1eb0bd67c725ce1c6f3045daf42423a513c4e23c4cd02bc0",
+    "summary_length": 67
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-591",
+    "name": "新幹線變形機器人Shinkalion THE ANIMATION",
+    "subject_id": 227240,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 227240,
+      "checked_at": "2026-10-18T16:35:44.570198+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "39a4815c4aee40b55d56810baa48e9a5ab1ca015adec4ad37199e4325bcf30bd",
+    "summary_length": 165
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-592",
+    "name": "奧特怪獸擬人化計劃  2期",
+    "subject_id": 223407,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 223407,
+      "checked_at": "2026-10-18T16:35:53.781269+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "a36b375e67a29217a0abbd1f5006ee0c87fdd086f24e447c3855f7d88c25f7bb",
+    "summary_length": 183
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-624",
+    "name": "Classica Loid 第二期",
+    "subject_id": 212315,
+    "source": {
+      "provider": "official",
+      "subject_id": 212315,
+      "checked_at": "2026-10-18T16:40:27.766825+08:00",
+      "method": "manual_official",
+      "source_url": "https://www.classicaloid.net/introduction/",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "dec5c02843fe5fc7f0fbaccd4c9a2ee8c7a93c600bdcf6a675c49c930586e755",
+    "summary_length": 62
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-629",
+    "name": "牙狼＜GARO＞-VANISHING LINE-",
+    "subject_id": 222425,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 222425,
+      "checked_at": "2026-10-18T16:35:55.205043+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "1d2b655c0272f67184af4c01d903b02cfaaf5030256f2d7c70a619d00cfd2594",
+    "summary_length": 251
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-472",
+    "name": "快把我哥帶走2",
+    "subject_id": 219143,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 219143,
+      "checked_at": "2026-10-18T16:35:46.669210+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "f6e7ab4d71baf280f8f868320d4dbda816fe1b5943f5585f0b897a64bc9a52a0",
+    "summary_length": 359
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-473",
+    "name": "惡偶 -天才玩偶-",
+    "subject_id": 242737,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 242737,
+      "checked_at": "2026-10-18T16:35:47.377460+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "549f5e97d186b5300e2638bd8b6087932a989bfbd711a0e3f5a53767d818a4ee",
+    "summary_length": 145
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-475",
+    "name": "天降女子!～女孩子從2樓…掉了下來!?～",
+    "subject_id": 248206,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 248206,
+      "checked_at": "2026-10-18T16:35:50.922879+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "b51182cbba8d8cc85c7f6291a4a953227137a472fa803474cbf3a5f068407812",
+    "summary_length": 182
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-591",
+    "name": "新幹線變形機器人Shinkalion THE ANIMATION",
+    "subject_id": 227240,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 227240,
+      "checked_at": "2026-10-18T16:35:44.570198+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "39a4815c4aee40b55d56810baa48e9a5ab1ca015adec4ad37199e4325bcf30bd",
+    "summary_length": 165
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-504",
+    "name": "東京喰種:re",
+    "subject_id": 148481,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 148481,
+      "checked_at": "2026-10-18T16:35:41.084008+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "b066404179ba323f334d2578e8332a963bc9f2a56a95b1d73128c9661f4df7c6",
+    "summary_length": 171
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-516",
+    "name": "銀河英雄傳說 Die Neue These 邂逅",
+    "subject_id": 143694,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 143694,
+      "checked_at": "2026-10-18T16:35:40.155514+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "57c7358794546f9114915838bf5453b56523f8af3e127f824ffd6cd25d18624d",
+    "summary_length": 234
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-585",
+    "name": "一人之下 羅天大醮篇",
+    "subject_id": 206925,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 206925,
+      "checked_at": "2026-10-18T16:35:42.475455+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "901a72d5f88c1f0a1eb0bd67c725ce1c6f3045daf42423a513c4e23c4cd02bc0",
+    "summary_length": 67
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-591",
+    "name": "新幹線變形機器人Shinkalion THE ANIMATION",
+    "subject_id": 227240,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 227240,
+      "checked_at": "2026-10-18T16:35:44.570198+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "39a4815c4aee40b55d56810baa48e9a5ab1ca015adec4ad37199e4325bcf30bd",
+    "summary_length": 165
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-390",
+    "name": "黃金神威 第2期",
+    "subject_id": 251547,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 251547,
+      "checked_at": "2026-10-18T16:35:32.206708+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "766c751cf4e02d109e7d3bec1cbd3a6c41f523a93166b5d8726f377099acf56c",
+    "summary_length": 249
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-392",
+    "name": "CONCEPTION 為我而生",
+    "subject_id": 245531,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 245531,
+      "checked_at": "2026-10-18T16:35:33.605112+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "5a0d454c7b8de353483da648f9472af58a2c53aad5949aef66731d818dd69ce9",
+    "summary_length": 161
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-397",
+    "name": "INGRESS THE ANIMATION",
+    "subject_id": 239910,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 239910,
+      "checked_at": "2026-10-18T16:35:35.922703+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "cc5d7bab86c321b9b01643d05eace6ce3413d4391d6ffc720fdcbb4c4b858063",
+    "summary_length": 387
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-401",
+    "name": "東京喰種：re 第2期",
+    "subject_id": 244878,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 244878,
+      "checked_at": "2026-10-18T16:35:32.905279+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "9dedb5ec5c2144bb71ab43dc65db217f95722a91c9081c4e617835778cd42193",
+    "summary_length": 174
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-413",
+    "name": "逆轉裁判 Season2",
+    "subject_id": 240499,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 240499,
+      "checked_at": "2026-10-18T16:35:38.749998+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "a43bf2410961a285287b8e025c94ede26cd3899ff41f1329b3e23f83133b5a1f",
+    "summary_length": 672
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-424",
+    "name": "喂，看見耳朵啦",
+    "subject_id": 249243,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 249243,
+      "checked_at": "2026-10-18T16:35:35.003148+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "35e872a12ba0b57e6cb6e77b939498aefd594dab1f82d3038d121fef70aaf1f8",
+    "summary_length": 136
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-346",
+    "name": "巴哈姆特之怒 Mysteria Friends",
+    "subject_id": 145354,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 145354,
+      "checked_at": "2026-10-18T16:35:31.498026+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "941c2a7cf6e9102804a574bc9afa7403e782360124ad2febf2e91967998f0da8",
+    "summary_length": 87
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-349",
+    "name": "revisions",
+    "subject_id": 239911,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 239911,
+      "checked_at": "2026-10-18T16:35:27.736268+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "b54194f84b3e2443299cc746db5321e9c012175b82a496bee86546a3753714ea",
+    "summary_length": 468
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-279",
+    "name": "進擊的巨人 Season3 (後半)",
+    "subject_id": 263750,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 263750,
+      "checked_at": "2026-10-18T16:35:23.547689+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "bf890521b8c48bcc02c4459641ff3fd157383164010d2a41a9843a64ec2237a7",
+    "summary_length": 228
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-296",
+    "name": "RobiHachi",
+    "subject_id": 267250,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 267250,
+      "checked_at": "2026-10-18T16:35:20.043255+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "bdcbd674d89177dc38aa17b906ce740d33b25f9bc5de3a01aebf265d63bd4d49",
+    "summary_length": 260
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-198",
+    "name": "碧藍航線",
+    "subject_id": 260677,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 260677,
+      "checked_at": "2026-10-18T16:35:15.104922+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "ca3c265b6efe245aad380e5da44c78910285210265cb69a37bcfe0b99c7edd99",
+    "summary_length": 120
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-217",
+    "name": "警視廳特務部特殊兇惡犯對策室第七課",
+    "subject_id": 278440,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 278440,
+      "checked_at": "2026-10-18T16:35:17.190536+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "4e9f26046b8bf9a0f4a1a72627c4d08bc49744003152497c55551378de35b328",
+    "summary_length": 426
+  },
+  {
+    "quarter": "2020_冬",
+    "card_id": "anime-16",
+    "name": "ReBIRTH for you",
+    "subject_id": 295615,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 295615,
+      "checked_at": "2026-10-18T16:35:05.993756+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "51ac2f261e8767a980e26eac015d6dd9abcbebc67d514d60d4d7e78d700842f9",
+    "summary_length": 382
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-16",
+    "name": "ReBIRTH for you",
+    "subject_id": 295615,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 295615,
+      "checked_at": "2026-10-18T16:35:05.993756+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "51ac2f261e8767a980e26eac015d6dd9abcbebc67d514d60d4d7e78d700842f9",
+    "summary_length": 382
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-160",
+    "name": "GET UP! GET LIVE!",
+    "subject_id": 303173,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 303173,
+      "checked_at": "2026-10-18T16:35:08.774002+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "09fdd7a253c6a23096c78375af930368552fb5fb83f2947768ebdfa8f4672542",
+    "summary_length": 155
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-16",
+    "name": "ReBIRTH for you",
+    "subject_id": 295615,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 295615,
+      "checked_at": "2026-10-18T16:35:05.993756+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "51ac2f261e8767a980e26eac015d6dd9abcbebc67d514d60d4d7e78d700842f9",
+    "summary_length": 382
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-62",
+    "name": "白貓Project ZERO CHRONICLE",
+    "subject_id": 269436,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 269436,
+      "checked_at": "2026-10-18T16:35:01.049580+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "646ba3cdd13f6a62f008e21e956ddc598d4dfa50cbac0206a4834141e7031d93",
+    "summary_length": 293
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-89",
+    "name": "ARGONAVIS from BanG Dream! ANIMATION",
+    "subject_id": 294202,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 294202,
+      "checked_at": "2026-10-18T16:35:03.176068+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "463ca9e0b9530794a251458cfb0474501fc50a3b54340cb6c984c482487654f3",
+    "summary_length": 108
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-92",
+    "name": "那個世界全部都是妖怪！",
+    "subject_id": 301809,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 301809,
+      "checked_at": "2026-10-18T16:35:01.766861+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "e83030514987218d4c34d24620fa1cd871f98348011fc099efa9dc9011d56766",
+    "summary_length": 74
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-187",
+    "name": "黃金神威 第三期",
+    "subject_id": 285901,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 285901,
+      "checked_at": "2026-10-18T16:34:56.855453+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "6818068373944fcf6d43ea4c1dd70e45969b1d0af838a5c577306d072a7eaab3",
+    "summary_length": 408
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-658",
+    "name": "動畫 水豚君",
+    "subject_id": 316796,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 316796,
+      "checked_at": "2026-10-18T16:34:58.257514+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "9eb8286d9ccf945943db0b571eade1241d7a76e2a43c24c36105cdc571822ebb",
+    "summary_length": 62
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-692",
+    "name": "約定的夢幻島 第二季",
+    "subject_id": 279202,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 279202,
+      "checked_at": "2026-10-18T16:34:54.750577+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "443dd1dbbb3a498e5def2bf84fc0e7cdfeab92f2554d44e1ef13ead62a1c0de4",
+    "summary_length": 197
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-693",
+    "name": "BEASTARS 第二季",
+    "subject_id": 297224,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 297224,
+      "checked_at": "2026-10-18T16:34:54.033622+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "06943e99810faf2267fb3d24befd465f584da9304a73c50cee2a7feda4feac61",
+    "summary_length": 488
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-966",
+    "name": "RE-MAIN",
+    "subject_id": 329909,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 329909,
+      "checked_at": "2026-10-18T16:34:50.412958+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "c9445f92ed96d09e7e4a037387467e36c9aba15fe2bb7b7f764e7b03d6585bae",
+    "summary_length": 95
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-724",
+    "name": "關於我轉生變成史萊姆這檔事 轉生史萊姆日記",
+    "subject_id": 299673,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 299673,
+      "checked_at": "2026-10-18T16:34:42.683267+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "c0c00d735013b966f4a2ed0c40dc3d1ba5eb51ec39fb4860589d83d9e79e53f2",
+    "summary_length": 152
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-738",
+    "name": "哥斯拉 奇異點",
+    "subject_id": 316519,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 316519,
+      "checked_at": "2026-10-18T16:34:44.072577+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "7dabcc016275ea0303efbe939a372f866e4096ad97435a79d547a4b27d0fe6de",
+    "summary_length": 289
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-778",
+    "name": "Mazica Party",
+    "subject_id": 330652,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 330652,
+      "checked_at": "2026-10-18T16:34:46.898589+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "2f9afeb83e6a133ea32a8c8c1bd404be9aebf46a0a3564a75e899bef5ffdfb65",
+    "summary_length": 337
+  },
+  {
+    "quarter": "2021_秋",
+    "card_id": "anime-982",
+    "name": "狂熱深淵 迷失的孩子",
+    "subject_id": 339969,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 339969,
+      "checked_at": "2026-10-18T16:34:40.567837+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "a2daab489b6d1058b62515cfb828af4a34224878eb72dead8576b1818189a2ab",
+    "summary_length": 228
+  },
+  {
+    "quarter": "2021_秋",
+    "card_id": "anime-989",
+    "name": "Build Divide: Code Black",
+    "subject_id": 333623,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 333623,
+      "checked_at": "2026-10-18T16:34:41.264532+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "3de4454f573f13a7099b6d185bd6a6701134228c19023815cd03d18e22bce734",
+    "summary_length": 384
+  },
+  {
+    "quarter": "2022_冬",
+    "card_id": "anime-872",
+    "name": "平凡職業造就世界最強 第二季",
+    "subject_id": 292316,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 292316,
+      "checked_at": "2026-10-18T16:34:38.468140+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "28ceb2c4d4b8f2d587b73b61aba9556dc72ecca8b272f0dfef181ce204bc962c",
+    "summary_length": 447
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1116",
+    "name": "金裝的維爾梅",
+    "subject_id": 373710,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 373710,
+      "checked_at": "2026-10-18T16:34:34.941012+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "ce92bccea8ab08b74d9adce78f4d943e1e56d691e605b9aefbd4a7172d639670",
+    "summary_length": 236
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1117",
+    "name": "東京Mew Mew New～♥",
+    "subject_id": 303195,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 303195,
+      "checked_at": "2026-10-18T16:34:35.643290+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "f2860b9c52e5f06d383222c87ce1da47089e9a449c07d4d9d5c15c4d08017d75",
+    "summary_length": 226
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1123",
+    "name": "SHINE POST",
+    "subject_id": 354414,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 354414,
+      "checked_at": "2026-10-18T16:34:36.339961+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "33f12c7f203f3688afdd25f362fe627e9a429793430c458c89c91b061fbc6187",
+    "summary_length": 154
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1132",
+    "name": "Extreme Hearts",
+    "subject_id": 368816,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 368816,
+      "checked_at": "2026-10-18T16:34:37.048000+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "49765140af142f2e5fdf1065a96b00a6dd0a459314690f9ac636502806d99707",
+    "summary_length": 124
+  },
+  {
+    "quarter": "2022_春",
+    "card_id": "anime-1058",
+    "name": "Build Divide: Code White",
+    "subject_id": 333624,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 333624,
+      "checked_at": "2026-10-18T16:34:34.234176+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "2a3ed892883be2c6e94841a76a2fc64cdd1d31272be5f4232c5008e3d272cc0a",
+    "summary_length": 624
+  },
+  {
+    "quarter": "2022_春",
+    "card_id": "anime-1095",
+    "name": "名偵探柯南 零的日常",
+    "subject_id": 351714,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 351714,
+      "checked_at": "2026-10-18T16:34:32.097189+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "62bf0bbfd75e829f1979ddcdb2eaeceb3fa199c804530fdfdca5dbecdabcb66b",
+    "summary_length": 142
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1144",
+    "name": "BLEACH 千年血戰篇",
+    "subject_id": 302286,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 302286,
+      "checked_at": "2026-10-18T16:34:28.572913+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "47869e16c5281428b8315c54f37b4bb24335fdef1ee823fe4c5f69393938605a",
+    "summary_length": 341
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1160",
+    "name": "黃金神威 第四期",
+    "subject_id": 361095,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 361095,
+      "checked_at": "2026-10-18T16:34:27.872829+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "961607650a5f83611b74fca69b443ba1c0faa60a65a649c61f2019109e626cd0",
+    "summary_length": 399
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1192",
+    "name": "明日方舟：黎明前奏",
+    "subject_id": 354190,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 354190,
+      "checked_at": "2026-10-18T16:34:30.668624+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "7d3ee045f3e823e580622e12b8852235abfee42fa3adf5ae809a0aadfa99fa8d",
+    "summary_length": 151
+  },
+  {
+    "quarter": "2023_夏",
+    "card_id": "anime-1341",
+    "name": "闇芝居 第11季",
+    "subject_id": 432751,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 432751,
+      "checked_at": "2026-10-18T16:34:25.737918+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "80dac4f1547f6e0d64e7d924e1f5ebbe742237fcd59cb877471f27c02feed000",
+    "summary_length": 105
+  },
+  {
+    "quarter": "2023_秋",
+    "card_id": "anime-1406",
+    "name": "爆旋陀螺 X",
+    "subject_id": 418599,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 418599,
+      "checked_at": "2026-10-18T16:34:24.334766+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "59a0f6ee563145ba2c887334171271a904d96ebc5d71ba9e2c0e0f24b9fe0492",
+    "summary_length": 157
+  },
+  {
+    "quarter": "2024_夏",
+    "card_id": "anime-1578",
+    "name": "小哥斯拉的逆襲 第二季",
+    "subject_id": 484191,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 484191,
+      "checked_at": "2026-10-18T16:34:17.960914+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "53e4b4fcb9c2edda9b7ee811ca7620dd25e24f4e6f8701fa828153aac215b8c6",
+    "summary_length": 197
+  },
+  {
+    "quarter": "2024_春",
+    "card_id": "anime-1576",
+    "name": "魔王學院的不適任者 第二季 第二部份",
+    "subject_id": 455981,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 455981,
+      "checked_at": "2026-10-18T16:34:21.514876+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "cc2cc665cc7d36085d49c1434977c6e1c980b5d9ee7d18dfe7a68641a294aab4",
+    "summary_length": 147
+  },
+  {
+    "quarter": "2024_春",
+    "card_id": "anime-1578",
+    "name": "小哥斯拉的逆襲 第二季",
+    "subject_id": 484191,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 484191,
+      "checked_at": "2026-10-18T16:34:17.960914+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "53e4b4fcb9c2edda9b7ee811ca7620dd25e24f4e6f8701fa828153aac215b8c6",
+    "summary_length": 197
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1578",
+    "name": "小哥斯拉的逆襲 第二季",
+    "subject_id": 484191,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 484191,
+      "checked_at": "2026-10-18T16:34:17.960914+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "53e4b4fcb9c2edda9b7ee811ca7620dd25e24f4e6f8701fa828153aac215b8c6",
+    "summary_length": 197
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1697",
+    "name": "莫名成為邪龍的五千歲草食龍 第二季",
+    "subject_id": 456164,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 456164,
+      "checked_at": "2026-10-18T16:34:19.378106+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "bf112228ee9bce9eaa1d5898244ddf4ccc92ede1438fd219eba515abf2165e00",
+    "summary_length": 263
+  },
+  {
+    "quarter": "2025_夏",
+    "card_id": "anime-1851",
+    "name": "地縛少年花子君 2 後篇",
+    "subject_id": 548940,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 548940,
+      "checked_at": "2026-10-18T16:34:14.401862+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "00a1cc3b23b93e8bf34c8ddf57e417a97d0131401d39bf806d71b12031dfb527",
+    "summary_length": 391
+  },
+  {
+    "quarter": "2025_夏",
+    "card_id": "anime-1876",
+    "name": "小哥斯拉的逆襲",
+    "subject_id": 561787,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 561787,
+      "checked_at": "2026-10-18T16:34:12.963289+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "7d9dc08b27558a0892d6d232e3ab413605edc6403cebb2f1813021d7fd6931ed",
+    "summary_length": 218
+  },
+  {
+    "quarter": "2026_冬",
+    "card_id": "anime-1991",
+    "name": "地獄樂 第二季",
+    "subject_id": 443446,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 443446,
+      "checked_at": "2026-10-18T16:34:09.319107+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "2629af8c059a9f018e962fe3148941a3a0dfea97779585faea6c62e8b80a2ff5",
+    "summary_length": 422
+  },
+  {
+    "quarter": "2026_夏",
+    "card_id": "anime-2246",
+    "name": "盜墓王",
+    "subject_id": 621835,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 621835,
+      "checked_at": "2026-10-18T16:34:07.842146+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "219bfad81076c48f0626c281c3a4cd8045d0435ce92d95f2690800ed7ae21ec2",
+    "summary_length": 552
+  },
+  {
+    "quarter": "2026_春",
+    "card_id": "anime-2147",
+    "name": "鑽石王牌 actⅡ第2季",
+    "subject_id": 495238,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 495238,
+      "checked_at": "2026-10-18T16:34:07.141480+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "2eb260f8196d4c4f07c84547bcd4b1c24cf2c8b58a46fc372fdf3bdc74c6020d",
+    "summary_length": 162
+  },
+  {
+    "quarter": "2026_春",
+    "card_id": "anime-2214",
+    "name": "米之神！女孩們",
+    "subject_id": 282118,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 282118,
+      "checked_at": "2026-10-18T16:34:06.444681+08:00",
+      "method": "bangumi_api",
+      "source_snapshot_date": null
+    },
+    "summary_sha256": "e3e0a5ef1032c5c86fc0e1b207863c769d9a2f2283b3f44a1e8a4f5c6e470852",
+    "summary_length": 152
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-114",
+    "name": "用我的手指來擾亂吧。〜關店後兩人的沙龍…〜",
+    "subject_id": 300865,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 300865,
+      "checked_at": "2026-10-18T16:52:41.286121+08:00",
+      "method": "bangumi_archive",
+      "source_snapshot_date": "2026-10-14"
+    },
+    "summary_sha256": "a7e009ea827c164688796e063572d7a057b3c6f8d4d1a98c4a2e1bc3851c4fee",
+    "summary_length": 193
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-870",
+    "name": "指尖傳出的真摯熱情2-戀人是消防員-",
+    "subject_id": 332655,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 332655,
+      "checked_at": "2026-10-18T16:52:41.286121+08:00",
+      "method": "bangumi_archive",
+      "source_snapshot_date": "2026-10-14"
+    },
+    "summary_sha256": "e9a090c9c87ec11a6c7902cbc066111ea8a6e76c43fae8c8b35d9c54840b0b92",
+    "summary_length": 137
+  },
+  {
+    "quarter": "2026_冬",
+    "card_id": "anime-2103",
+    "name": "草莓哀歌～缺根筋的活潑妹妹與無法釋懷的哥哥～",
+    "subject_id": 583313,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 583313,
+      "checked_at": "2026-10-18T16:52:41.286121+08:00",
+      "method": "bangumi_archive",
+      "source_snapshot_date": "2026-10-14"
+    },
+    "summary_sha256": "59787da610fad13972190cc505105af544cdcc60d48aa04038a23f392e6a33ac",
+    "summary_length": 301
+  }
+]

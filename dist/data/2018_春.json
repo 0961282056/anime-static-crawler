@@ -586,7 +586,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/70925b3054c1b647fb506707fae236a6",
       "premiere_date": "二",
       "premiere_time": "21:00",
-      "story": "暫無簡介",
+      "story": "数千年后的未来，进入宇宙空间的人类，被分为银河帝国与自由行星同盟这两个拥有“专制政治”与“民主主义”两种不同政治体制的国家。两国之间的抗争持续了150年，以无边无际的广袤银河为舞台，重复着无止境的战斗银河帝国的门阀贵族社会的腐败，以及自由行星同盟可称为民主主义的弊端的群愚政治侵蚀着两个国家。之后，宇宙历8世纪末，两位天才的登场驱动了历史。“常胜的天才”莱因哈特·冯·罗严克拉姆，以及人称“不败的魔术师”的杨威利。两人率领着帝国军与同盟军，展开了不知道是第几次的冲突。",
       "original_name": "銀河英雄伝説 Die Neue These",
       "external_ids": {
         "bangumi": 143694,
@@ -608,6 +608,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 143694,
+        "checked_at": "2026-10-18T16:35:40.155514+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -652,7 +659,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e99fe23fec9c8ea490bf229c6ba794bf",
       "premiere_date": "二",
       "premiere_time": "23:00",
-      "story": "暫無簡介",
+      "story": "混杂于群众之中，以人类的肉为食。拥有人类的形态，却与人类不同的存在……“喰种”。\r\n对“喰种”进行驱逐、研究的CCG，为了达成某个命题，而新设了实验体集团。\r\n——其名为“Quinx”。\r\n并非“正经人类”的他们，与佐佐木琲世一等搜查官一起在“东京”面对的事物究竟是——！？\r\n描绘《东京食尸鬼√A》2年后的新章《东京食尸鬼:re》终于启动。",
       "original_name": "東京喰種：re",
       "external_ids": {
         "bangumi": 148481,
@@ -674,6 +681,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 148481,
+        "checked_at": "2026-10-18T16:35:41.084008+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -805,7 +819,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/cceede742e224b6e1eca1b504b37530a",
       "premiere_date": "二",
       "premiere_time": "25:40",
-      "story": "暫無簡介",
+      "story": "这个世界是存在异人的。张楚岚为了解开爷爷和自身的秘密，和冯宝宝一起前往龙虎山天师府参加异人界的盛会——罗天大醮，并与众多异人高手对战。",
       "original_name": "一人之下　羅天大醮篇",
       "external_ids": {
         "bangumi": 206925,
@@ -826,6 +840,13 @@
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 206925,
+        "checked_at": "2026-10-18T16:35:42.475455+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1875,7 +1896,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a6b943accfbc60817f922130e968d7a5",
       "premiere_date": "六",
       "premiere_time": "07:00",
-      "story": "暫無簡介",
+      "story": "新干线超进化研究所为了从诞生于“漆黑新干线”的巨大怪物体手中守护日本的未来，\r\n人们开发了“新干线变形机器人SHINKALION”。\r\n具备与SHINKALION较高适合率的孩子们成为驾驶员，\r\n与研究所员齐心协力，面对强大的敌人！\r\n究竟“漆黑新干线”的目的是……。孩子们能否守护日本的未来……。\r\n变身！SHINKALION！",
       "original_name": "新幹線変形ロボ シンカリオン THE ANIMATION",
       "external_ids": {
         "bangumi": 227240,
@@ -1897,6 +1918,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 227240,
+        "checked_at": "2026-10-18T16:35:44.570198+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2726,14 +2754,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.812442+08:00",
+  "generated_at": "2026-10-18T16:47:50.248799+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201804/",
   "quality": {
     "source_count": 83,
     "record_count": 83,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 9,
+    "missing_story_count": 5,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

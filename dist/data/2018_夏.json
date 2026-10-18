@@ -36,7 +36,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a165fbb8d5b66e641b331ebe67c7b5f0",
       "premiere_date": "一",
       "premiere_time": "21:54",
-      "story": "暫無簡介",
+      "story": "中国での合計閲覧数が約30億回の人気Web漫画のアニメ化。\r\nバイオレンスな妹が…おバカな兄を殴る蹴る！？\r\n兄弟愛！恋！グルメ…?　全部入りの学園コメディ。\r\n\r\nキャスト：\r\n時分：中村悠一、時秒：雨宮天、開心：小野賢章、万歳：花江夏樹　他\r\n\r\nこの度、好評を受けて第2期の制作を決定し、2018年7月より、\r\n中国ではテンセントが運営する動画配信プラットフォームにて、\r\n国内ではTOKYO  MX1にて放送・配信を開始します。\r\n第2期は合計24話で、WEB漫画原作の内容だけでなく、\r\nアニメ用のオリジナルエピソードも満載です。\r\n\r\n「兄に付ける薬はない！2-快把我哥帯走2-」\r\n日中両国で、7月より配信・放送決定！！\r\nhttp://fanworks.co.jp/news/20180522_ani/",
       "original_name": "兄に付ける薬はない！2-快把我哥帯走2-",
       "external_ids": {
         "bangumi": 219143,
@@ -57,6 +57,13 @@
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 219143,
+        "checked_at": "2026-10-18T16:35:46.669210+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -130,7 +137,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/c06fea77134a90eccf0e89a9476747ae",
       "premiere_date": "一",
       "premiere_time": "24:00",
-      "story": "暫無簡介",
+      "story": "平凡的少女爱是随处可见的舞者。她一直看着自己的朋友町展现出舞者的才能并为此感到消沉，但有一天她发觉了町的才能的“秘密”。那是，被邪恶的法术变成手掌大小的天才们“恶偶”这一存在。只要持有恶偶，不论是谁都能成为天才。爱为了拯救成为制造恶偶的“裁缝师”的町，而成为了代代与裁缝师对立的“救济者”。",
       "original_name": "悪偶 -天才人形-",
       "external_ids": {
         "bangumi": 242737,
@@ -152,6 +159,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 242737,
+        "checked_at": "2026-10-18T16:35:47.377460+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1412,7 +1426,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/a6b943accfbc60817f922130e968d7a5",
       "premiere_date": "六",
       "premiere_time": "07:00",
-      "story": "暫無簡介",
+      "story": "新干线超进化研究所为了从诞生于“漆黑新干线”的巨大怪物体手中守护日本的未来，\r\n人们开发了“新干线变形机器人SHINKALION”。\r\n具备与SHINKALION较高适合率的孩子们成为驾驶员，\r\n与研究所员齐心协力，面对强大的敌人！\r\n究竟“漆黑新干线”的目的是……。孩子们能否守护日本的未来……。\r\n变身！SHINKALION！",
       "original_name": "新幹線変形ロボ シンカリオン THE ANIMATION",
       "external_ids": {
         "bangumi": 227240,
@@ -1434,6 +1448,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 227240,
+        "checked_at": "2026-10-18T16:35:44.570198+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1875,7 +1896,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/fa9f7b4cecffb761682d2548c98d2b2e",
       "premiere_date": "日",
       "premiere_time": "25:00",
-      "story": "暫無簡介",
+      "story": "本作はボロアパートを舞台に繰り広げられる、冴えない男子と美女2人のエッチなドタバタ劇。主人公のフリーター・相川壮介は、アパートの大家・清水由紀と、真上の部屋の住人・丹生砂生という2人の美女が日々の癒し。ある日、壮介の部屋の天井から軋む音がしたかと思うと、2階の部屋の床が抜け、穴から砂生が降ってきて……。ハプニングから始まる2人との濃厚な共同生活をコミカルに描く。",
       "original_name": "じょしおちっ！",
       "external_ids": {
         "bangumi": 248206,
@@ -1897,6 +1918,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 248206,
+        "checked_at": "2026-10-18T16:35:50.922879+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1930,14 +1958,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.806556+08:00",
+  "generated_at": "2026-10-18T16:47:50.235070+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201807/",
   "quality": {
     "source_count": 58,
     "record_count": 58,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 10,
+    "missing_story_count": 6,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

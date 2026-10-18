@@ -1,0 +1,205 @@
+[
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/intro/",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/intro/",
+    "attempted_at": "2026-10-18T08:34:22.102263+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai9/intro/",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai9/intro/",
+    "attempted_at": "2026-10-18T08:34:22.102570+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai10/intro/",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai10/intro/",
+    "attempted_at": "2026-10-18T08:34:22.102872+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai11/intro/",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai11/intro/",
+    "attempted_at": "2026-10-18T08:34:23.307833+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai12/intro/",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai12/intro/",
+    "attempted_at": "2026-10-18T08:34:23.643302+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai13/intro/",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai13/intro/",
+    "attempted_at": "2026-10-18T08:34:23.649114+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai14/intro/",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai14/intro/",
+    "attempted_at": "2026-10-18T08:34:24.204006+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai15/intro/",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai15/intro/",
+    "attempted_at": "2026-10-18T08:34:24.266353+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai/introduction/",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai/introduction/",
+    "attempted_at": "2026-10-18T08:34:24.477562+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kjfile/intro/",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kjfile/intro/",
+    "attempted_at": "2026-10-18T08:34:24.918438+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/four_of_a_kind/intro/",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/four_of_a_kind/intro/",
+    "attempted_at": "2026-10-18T08:34:25.502396+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/introduction/",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/introduction/",
+    "attempted_at": "2026-10-18T08:34:25.531746+00:00"
+  },
+  {
+    "url": "https://www.toei-anim.co.jp/tv/wt/about/",
+    "status": 403,
+    "final_url": "https://www.toei-anim.co.jp/tv/wt/about/",
+    "attempted_at": "2026-10-18T08:34:25.535143+00:00"
+  },
+  {
+    "url": "https://anime.magireco.com/2nd/intro/",
+    "status": 404,
+    "final_url": "https://anime.magireco.com/2nd/intro/",
+    "attempted_at": "2026-10-18T08:34:26.118379+00:00"
+  },
+  {
+    "url": "https://www.vap.co.jp/chitosechan/introduction/",
+    "status": 404,
+    "final_url": "https://www.vap.co.jp/chitosechan/introduction/",
+    "attempted_at": "2026-10-18T08:34:26.642203+00:00"
+  },
+  {
+    "url": "https://www.classicaloid.net/story/",
+    "checked_at": "2026-10-18T08:34:26.797008+00:00",
+    "status": 200,
+    "final_url": "https://www.classicaloid.net/story/",
+    "file": "e83ee3e9e6db43ec10949b26896ad496681ea905e76f69c1853ba688e76689ab.html",
+    "sha256": "aa524fb35a71b08992ee8bc30792e788d845e3fa990d42474cc30d73a860b1ad"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai9/news/",
+    "checked_at": "2026-10-18T08:37:28.602918+00:00",
+    "status": 200,
+    "file": "c7b89cb34e4f7b441847ea8d47c8a075e29259ace4757c168c7f160af18105be.html",
+    "sha256": "fbf9d721e66667e71e01b9fde2a3e97030c018fbe10b19b6ec5d6ddb8321bbf2"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai10/news/",
+    "checked_at": "2026-10-18T08:37:28.603395+00:00",
+    "status": 200,
+    "file": "2fda38b99252a5ce03c78ca27080c3518d45ea142343f70c866097ceb40a2b34.html",
+    "sha256": "b64d94303009b8fd21e2cdea1b0d7067d768acc9b7a8032880269e894bb54eff"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai11/news/",
+    "checked_at": "2026-10-18T08:37:28.603792+00:00",
+    "status": 200,
+    "file": "ba39c4407cbd20362a40900c4d17db4f29e67d6c9561b8f89e0c28732584cb8c.html",
+    "sha256": "805791781ca272db1f82d1051e58da7f3b590b249ace1be74b1336946f0bef18"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai12/news/",
+    "checked_at": "2026-10-18T08:37:29.478860+00:00",
+    "status": 200,
+    "file": "d81c1b3948a6c9bd6a8bc4be92141acf2c8fff8300f47bc415018d51d826f75a.html",
+    "sha256": "93a2ea3e45097f09c12bb1cf203dc90055bcd8ceef449a239c3fc8440009f62e"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai13/news/",
+    "checked_at": "2026-10-18T08:37:29.669500+00:00",
+    "status": 200,
+    "file": "8dbc9012c6fae844b55de011bbc76bc04c90217dc8e5cd26d2994b50f48d81ec.html",
+    "sha256": "32ce05d0378e33448e9796abca2fd3a480f4c6c5ef7791b176e60fa837ece0d1"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai14/news/",
+    "checked_at": "2026-10-18T08:37:29.746345+00:00",
+    "status": 200,
+    "file": "bc2308c4aed47411850c11f448dc0ae657e285eb80251e327552fb6f5fcee759.html",
+    "sha256": "77246f0abd682f8df463abcdf090c3b70aea74780eec717083cadb3bc5b93741"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai15/news/",
+    "checked_at": "2026-10-18T08:37:30.088350+00:00",
+    "status": 200,
+    "file": "271de13e8213576f6904c8a132adc2d19af0a578540b11d6636fb3ba41af7901.html",
+    "sha256": "00642b3f9fb930d9455dbb1b26136155c459ec164c7c44b10fe4e7e93e2872c4"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kjfile/news/",
+    "checked_at": "2026-10-18T08:37:30.399441+00:00",
+    "status": 200,
+    "file": "56b5e707b2d8ca37282538fe1b8ff21a5ecc38d440fb8afb4b9dab2f7ab880d2.html",
+    "sha256": "b8eee8708418cc5f2d1fff3980140d8a918bc437a20e1c3f29659c32dd99133d"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/four_of_a_kind/news/",
+    "checked_at": "2026-10-18T08:37:30.895961+00:00",
+    "status": 200,
+    "file": "173fef7918f415bf68c0a9e8373e4848d8f5a94bcebaf99e8719b29e99717e23.html",
+    "sha256": "9f170c51a9e2a0a8e92991ae0971bf8b487c63a742d5e459538719078a12b5f1"
+  },
+  {
+    "url": "https://www.classicaloid.net/introduction/",
+    "checked_at": "2026-10-18T08:40:27.766825+00:00",
+    "status": 200,
+    "sha256": "57db320405801f5e5edac0f50f3aad013de61e2b104dab259aa605a36907ef8c",
+    "file": "8be48cc470ca5d113bf3ca1720cccbd72e1dfd1fb8347b4d907592e2f120d169.html",
+    "intro_alt": "高校生の音羽歌苗が大家を務める洋館に“クラシカロイド”を名乗る人物が\n大集合。ベートーヴェンやモーツァルトなど、実在の音楽家と同じ名前を\n名乗る彼らはやっぱり天才！不思議な力を持つ音楽“ムジーク”を奏で、\n次から次へと奇想天外な出来事を引き起こす。\n魚になったり宇宙人がやってきたり、すでに大混乱な日常に、\nワーグナーとドヴォルザークが新たに加わり、音羽館はますます大騒ぎ！！",
+    "excerpt": "魚になったり宇宙人がやってきたり、すでに大混乱な日常に、ワーグナーとドヴォルザークが新たに加わり、音羽館はますます大騒ぎ！！"
+  },
+  {
+    "url": "https://www.classicaloid.net/story/",
+    "checked_at": "2026-10-18T08:40:29.297857+00:00",
+    "status": 200,
+    "sha256": "aa524fb35a71b08992ee8bc30792e788d845e3fa990d42474cc30d73a860b1ad",
+    "file": "e83ee3e9e6db43ec10949b26896ad496681ea905e76f69c1853ba688e76689ab.html"
+  },
+  {
+    "url": "https://www.classicaloid.net/onair/",
+    "status": 404,
+    "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+    "attempted_at": "2026-10-18T08:40:30.808634+00:00"
+  },
+  {
+    "url": "https://www.ntv.co.jp/kusuriyanohitorigoto/",
+    "status": 404,
+    "attempted_at": "2026-10-18T08:42:24.307423+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/diaace/",
+    "status": 302,
+    "attempted_at": "2026-10-18T08:42:25.695185+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/diaace/introduction/",
+    "status": 404,
+    "attempted_at": "2026-10-18T08:42:26.812023+00:00"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/prichan/introduction/",
+    "status": 404,
+    "attempted_at": "2026-10-18T08:42:28.299606+00:00"
+  }
+]

@@ -627,7 +627,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/cbeca5a4d3c9a14ce16a6655e6932953",
       "premiere_date": "三",
       "premiere_time": "24:55",
-      "story": "暫無簡介",
+      "story": "“这是预言。一个巨大的危机，将会降临到你们五人的身上。到那时候能保护他们的只有你了。”\r\n小时候曾经历过被人诱拐的高中二年级生堂岛大介，与儿时玩伴的阿凯、小露、铃铃、庆作一起，被卷入了不可思议的现象“涩谷传送”之中。\r\n涩谷的市中心区穿越到了300年后的“未来”。在那里等待着他们的是，广阔无际的荒野和森林、散布的废墟……以及，未来人“修订者（revisions）”与他们操纵着的巨大机械怪物。\r\n为了拯救理由不明地被肆意蹂躏着的涩谷，此时出现的是与诱拐事件中大介的恩人有着相同名字的少女·米罗。她为大介他们提供了只有他们能够操纵的人型兵器“提线木偶（string puppet）”，帮助他们守护涩谷。\r\n对于诱拐事件的恩人——米罗曾经说过的“保护同伴的命运”的预言，大介一直都是以此为信条活至现在，他因为终于降临的危机和得到的力量而感到高兴。但是，儿时玩伴的五人之间的牵绊也因为诱拐事件而变得支离破碎。\r\n被孤立的城区。未知的敌人。不确定的过去与命运的预言。少年少女们，为了取回“现在”而向“未来”发起挑战。绝对，要回到原来的时代——",
       "original_name": "revisions",
       "external_ids": {
         "bangumi": 239911,
@@ -648,6 +648,13 @@
         "end_date": "2019-03-27",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 239911,
+        "checked_at": "2026-10-18T16:35:27.736268+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1638,7 +1645,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d169157bf314e4a630c36e9345160658",
       "premiere_date": "日",
       "premiere_time": "24:30",
-      "story": "暫無簡介",
+      "story": "这里是《人》《神》《魔》等各种种族都存在着的神秘世界密斯塔尔希亚\r\n活泼的玛娜利亚王国公主——安\r\n内向的龙族公主——古蕾雅\r\n从两人的相遇开始，玛娜利亚魔法学院的生活开始了",
       "original_name": "神撃のバハムート マナリアフレンズ",
       "external_ids": {
         "bangumi": 145354,
@@ -1659,6 +1666,13 @@
         "end_date": "2019-03-24",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 145354,
+        "checked_at": "2026-10-18T16:35:31.498026+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1697,14 +1711,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.823619+08:00",
+  "generated_at": "2026-10-18T16:43:18.813024+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201901/",
   "quality": {
     "source_count": 51,
     "record_count": 51,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 8,
+    "missing_story_count": 6,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

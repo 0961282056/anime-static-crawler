@@ -173,7 +173,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5877b69536137563229b48e66ff5a3d8",
       "premiere_date": "一",
       "premiere_time": "23:30",
-      "story": "暫無簡介",
+      "story": "GC0051，从第一次接触过了半个世纪，拥有超光速航行技术的人类，与几个种族（宇宙人）结成了行星联邦——NEO TOKYO八百八町。洛比虽然长得不错，但其实已经三十岁了。他自称自由撰稿人，但由于工作上的失误而解除契约，被女朋友甩了，又在交通事故中险些丧命，人生中的不幸接连不断，最后沦为被追债者。某天被人抢走包的洛皮被一个叫哈奇的青年相助，抓住犯人后，作为回礼洛皮请哈奇吃饭。第二天，洛比的追债人找上门，没想到这人正是哈奇，两人意外的坐上了前往传说行星「伊塞坎达尔」的宇宙船，性格相反的两人，因为意外展开了一段有趣之旅。",
       "original_name": "ロビハチ",
       "external_ids": {
         "bangumi": 267250,
@@ -195,6 +195,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 267250,
+        "checked_at": "2026-10-18T16:35:20.043255+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1521,7 +1528,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8af2da239522cea230c19f48fca8d298",
       "premiere_date": "日",
       "premiere_time": "24:10",
-      "story": "暫無簡介",
+      "story": "历经百年的时光，将人类与外侧世界隔开的墙壁。在墙壁的另一侧，似乎有前所未见的世界延伸开来。火焰之水、冰之大地、砂之雪原……记载在书中的，尽是些激发少年探究心的文字。在时间流转，墙壁被巨人毁坏的现在，人类正一步步接近世界的真相。巨人的真实身份是什麽？为何墙壁中会埋著巨人？巨人化的艾伦·耶格尔所持有的“坐标”之力是？以及，希斯特莉亚·雷斯究竟知道这个世界的什麽事情？在艾伦等104期兵的加入下，建立新体制的利威尔班。最强最恶的敌人，阻拦在开始行动的他们面前。",
       "original_name": "進撃の巨人 Season3",
       "external_ids": {
         "bangumi": 263750,
@@ -1542,6 +1549,13 @@
         "end_date": "2019-06-30",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 263750,
+        "checked_at": "2026-10-18T16:35:23.547689+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1683,14 +1697,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.832484+08:00",
+  "generated_at": "2026-10-18T16:43:18.821424+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201904/",
   "quality": {
     "source_count": 51,
     "record_count": 51,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 9,
+    "missing_story_count": 7,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

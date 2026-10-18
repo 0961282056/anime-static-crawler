@@ -267,7 +267,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1794a241abf26b3e1e629f14c6d6355c",
       "premiere_date": "二",
       "premiere_time": "23:00",
-      "story": "暫無簡介",
+      "story": "美妙的史莱姆人生，开始了！\r\n“由于得到了珍贵的纸，我决定将自己至今为止的经历以日记的形式记录下来。日记标题的话……就写《我转生后变成了史莱姆》。自那之后我的冒险就开始了——冒险要写的东西也长了吧？！\r\n描述了爱开玩笑且幽默的利姆鲁与特恩佩斯特的同伴们之间的日常故事的“史莱姆生活系”转生物语，现在开幕！",
       "original_name": "転生したらスライムだった件 転スラ日記",
       "external_ids": {
         "bangumi": 299673,
@@ -289,6 +289,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 299673,
+        "checked_at": "2026-10-18T16:34:42.683267+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -601,7 +608,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f0f69e7438fd5270a98d5addd373c38d",
       "premiere_date": "四",
       "premiere_time": "22:30",
-      "story": "暫無簡介",
+      "story": "２０３０年、千葉県逃尾市。\r\n“何でも屋”な町工場「オオタキファクトリー」の有川ユンは、\r\n誰も住んでいないはずの洋館に気配がするということで調査へ。\r\n空想生物を研究する大学院生の神野銘は、\r\n旧嗣野地区管理局“ミサキオク”で受信された謎の信号の調査へ。\r\nまったく違う調査で、まったく違う場所を訪れた見知らぬ同士の2人は、\r\nそれぞれの場所で同じ歌を耳にする。\r\nその歌は2人を繋げ、世界中を巻き込む想像を絶する戦いへと導いていく。\r\n孤高の研究者が残した謎、各国に出現する怪獣たち、紅く染められる世界。\r\n果たして2人は、人類に訪れる抗えない未来＜ゴジラ＞を覆せるのか―。",
       "original_name": "ゴジラ シンギュラポイント",
       "external_ids": {
         "bangumi": 316519,
@@ -623,6 +630,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 316519,
+        "checked_at": "2026-10-18T16:34:44.072577+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1847,7 +1861,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/fa8357532bd961a3bdd5706f09f4cdf4",
       "premiere_date": "日",
       "premiere_time": "09:30",
-      "story": "暫無簡介",
+      "story": "中学生凯兹尔做了一个谜一样的梦醒来。在那里有一个打扮成魔法使的自己，被称为“魔人”的生物，还有一个神秘的少女。\r\n第二天，凯兹尔被朋友库拉提夸耀新发售的卡片游戏《魔卡派对》。令人吃惊的是，那张卡片上描绘的角色和梦中见到的完全一样。\r\n在这样的情况下，凯兹尔收到了来自世界性大企业Magika公司的活动通知。凯斯尔很感兴趣，跟着向导去了马卡商店，发现CEO杰夫·琼斯在那里给他带来了一句“我对你有特别的期待”，并接受了马卡齿轮。\r\n回来的凯兹被气球怪物袭击。想着“没有结局”的那一瞬间，魔卡齿轮发出激烈的光，魔卡书出现了。\r\n再加上兴致勃勃的音乐，把卡片撕碎，就可以和气球和猫融合的魔神『PARTY』缔结契约了！\r\n成为魔法使的凯兹和搭档魔法师巴尼亚的故事（派对）现在开始了！",
       "original_name": "Mazica Party",
       "external_ids": {
         "bangumi": 330652,
@@ -1869,6 +1883,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 330652,
+        "checked_at": "2026-10-18T16:34:46.898589+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2130,14 +2151,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.872004+08:00",
+  "generated_at": "2026-10-18T16:43:18.882582+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202104/",
   "quality": {
     "source_count": 66,
     "record_count": 66,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 8,
+    "missing_story_count": 5,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

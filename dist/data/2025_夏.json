@@ -492,7 +492,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8dd8a0f5206e79bfdba4737b9fcf511f",
       "premiere_date": "三",
       "premiere_time": "07:05",
-      "story": "暫無簡介",
+      "story": "ちびゴジラと仲間たちのゆるすぎる毎日を描くアニメ『ちびゴジラの逆襲』\r\nショートアニメとは思えない豪華すぎる声優陣と、クセ強すぎるちび怪獣たちが忙しい現代人の毎日にくすっと笑える約3分をお届け！\r\n果たしてちびゴジラは父ゴジラのような「最強」の大怪獣になれるのか――⁉\r\n\r\n2025年7月2日(水)より毎週水曜あさ7:05 テレ東系列「おはスタ」番組内にて放送中！\r\n放送後、ちびゴジラ公式YouTubeチャンネルにて全話無料配信中！",
       "original_name": "ちびゴジラの逆襲",
       "external_ids": {
         "bangumi": 561787,
@@ -515,6 +515,13 @@
         "end_date": null,
         "note": "依已核對官方範圍自動更新；僅計2025年7月新作，自通算66話起；不合併2023及2024篇，最終總數未定。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 561787,
+        "checked_at": "2026-10-18T16:34:12.963289+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1864,7 +1871,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/55b297c85f6db0560f85f215ebd2c20e",
       "premiere_date": "日",
       "premiere_time": "16:30",
-      "story": "暫無簡介",
+      "story": "ねえ、知ってる？かもめ学園の七不思議、七番目の噂話。\r\n旧校舎3階の女子トイレ。そこには花子さんがいて、何かひとつを代償に呼び出した人の願いを叶えてくれる。\r\n呼び出し方はノックを3回。そして――\r\n「花子さん、花子さん、いらっしゃいますか？」\r\n七不思議七番目『トイレの花子さん』こと“花子くん”と縁を結んだ少女・八尋寧々。祓い屋の少年・源 光。2人は花子くんと共に、改変された七不思議や怪異たちの噂を元に戻すため、日々奔走していた。\r\n七不思議『三人の時計守』から端を発したトラブルや、『美術室のシジマさん』が創造した偽物の世界からの脱出を経て寧々は自身の寿命について、真実を知る。\r\n混沌とした気持ちのまま、かもめ学園の伝統行事である宿泊学習に参加することに。\r\n誰にも聴こえない笛の音… 眠る人の魂を掴まえにくる死神の噂…\r\n新たな七不思議とともに、再び物語は動き出す――。",
       "original_name": "地縛少年花子くん2 後編",
       "external_ids": {
         "bangumi": 548940,
@@ -1885,6 +1892,13 @@
         "end_date": "2025-09-21",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 548940,
+        "checked_at": "2026-10-18T16:34:14.401862+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2214,14 +2228,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T03:10:45.758581+08:00",
+  "generated_at": "2026-10-18T16:43:18.979684+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202507/",
   "quality": {
     "source_count": 74,
     "record_count": 74,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 5,
+    "missing_story_count": 3,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

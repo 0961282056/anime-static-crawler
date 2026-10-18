@@ -91,6 +91,7 @@ test('official summary excerpts render real season data with attributed links', 
     ['冰之城牆 第二季', 'korinojoheki-pr.com'],
     ['Welsh & Shedar', 'welshandshedar-anime.com'],
     ['毛球剛次郎', 'www.tv-tokyo.co.jp'],
+    ['Classica Loid 第二期', 'www.classicaloid.net'],
   ]) {
     await page.getByLabel('關鍵字搜尋').fill(name);
     const card = page.locator('.anime-card');

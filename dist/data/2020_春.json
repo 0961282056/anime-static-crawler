@@ -72,7 +72,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/fb1bb9b00c35aac71abfec3535941f2c",
       "premiere_date": "一",
       "premiere_time": "22:00",
-      "story": "暫無簡介",
+      "story": "很久很久以前的时代，天空中白色王国，与地上的黑色王国，保持着“均衡”并同时“循环”着。有一天，在黑色王国因被怪物袭击而毁灭的村子里，一位少年正在挖坟墓。在那个少年面前出现了上一代黑暗之王候选人史基亚斯。被史基亚斯发现的少年，决心成为黑之王子改变这个世界。而另一方面，作为白色王国守护神的光之王爱丽丝，担心光与暗的平衡被破坏。在得到破坏平衡的巴尔出现的消息后，黑暗之王为了讨伐碍眼的巴尔提出盟约。光之王爱丽丝与黑暗王国的使者兼王子相遇，两人“约定”共同建立和平的世界。但是，两人的“约定”却被黑暗之王践踏。两人交换的“约定”与世界毁灭开始之罪，通向“根源”“ZERO”的故事拉开了帷幕――",
       "original_name": "白猫プロジェクト ZERO CHRONICLE",
       "external_ids": {
         "bangumi": 269436,
@@ -94,6 +94,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 269436,
+        "checked_at": "2026-10-18T16:35:01.049580+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -268,7 +275,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/fde3b7ce4540aa4f2144764b8fbfd1b8",
       "premiere_date": "一",
       "premiere_time": "25:00",
-      "story": "暫無簡介",
+      "story": "テーマは妖怪×学校。\r\n西洋から日本の妖怪学校に転校してきた吸血鬼「ラクル」と「まなこ」や「のの」といったクラスメイトとの日常を描いたギャグアニメ。",
       "original_name": "あの世のすべては、おばけぐみ",
       "external_ids": {
         "bangumi": 301809,
@@ -290,6 +297,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 301809,
+        "checked_at": "2026-10-18T16:35:01.766861+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -977,7 +991,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8911904f9bbf8c3d431f844e214cd44e",
       "premiere_date": "五",
       "premiere_time": "25:25",
-      "story": "暫無簡介",
+      "story": "北海道、函館。\r\nヨーロッパと日本文化が融合した、\r\n華やかな建物が並ぶ街――\r\nこの街で僕たちは出会い、ぶつかりあい、\r\nそして輝く大ステージへと運命の船を漕ぎ出していく。\r\n\r\nやがてこの歌が運命だったと気づく。",
       "original_name": "アルゴナビス from BanG Dream!",
       "external_ids": {
         "bangumi": 294202,
@@ -999,6 +1013,13 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 294202,
+        "checked_at": "2026-10-18T16:35:03.176068+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1680,7 +1701,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ab7990ff4098f1510d83837d70d424a1",
       "premiere_date": "日",
       "premiere_time": "21:30",
-      "story": "暫無簡介",
+      "story": "TOKYO MX「月刊ブシロードTV」内およびYouTubeにて放送毎週日曜放送。\r\n\r\n名古屋にあるごく普通の学校・手羽先高校1年生の有はTCG〈トレーディングカードゲーム〉「Reバース」が大好きな女の子。\r\nひょんなことから串カツ屋の看板娘千春・天才中学生周子とチームを結成！\r\nマッドサイエンティスト青・ミステリアスなただのいい人の梢・宇宙を見過ぎて足元を見ない育未もあつまってきて、にぎやかで充実のReバースライフを過ごしている。\r\n一方、東京・上野の名門校セントパンダ女学院では、有とスマホへの依存が止まらない圭・過剰に品行方正な京・食欲モンスター雪・庶民派の豊・覆面ミュージシャン樹里・何も考えていない沙希という面々がエレガントかつバイオレンスな寮生活を送っていた。\r\n\r\nReバースをプレイする12人の少女達の「りばあす」な日々へ、Reバース GO!",
       "original_name": "Reバース",
       "external_ids": {
         "bangumi": 295615,
@@ -1701,6 +1722,13 @@
         "end_date": "2021-06-23",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 295615,
+        "checked_at": "2026-10-18T16:35:05.993756+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1846,7 +1874,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8da59274fdd0c1531409e5470b5b7c66",
       "premiere_date": "日",
       "premiere_time": "25:00",
-      "story": "暫無簡介",
+      "story": "閉店後のサロンを舞台に繰り広げられる大人気ティーンズラブ作品！ 本作品の魅力はなんと言ってもカリスマ美容師・蒼甫の艶のある指使いによる攻め感と、 モデル・要の気怠げな眼差しに秘めた色気です！ こんな美容師やモデルがいるサロンがあったら…常連になりたい！ 夢を追いかけて頑張る主人公・ふみも応援したくなります！ それぞれの思いを抱えたまま交差する３人の男女… 果たして彼らの恋の行方は…！",
       "original_name": "俺の指で乱れろ。～閉店後二人きりのサロンで…～",
       "external_ids": {
         "bangumi": 300865,
@@ -1867,6 +1895,13 @@
         "end_date": "2020-05-24",
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 300865,
+        "checked_at": "2026-10-18T16:52:41.286121+08:00",
+        "method": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
       }
     },
@@ -1907,14 +1942,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-17T18:07:16.851871+08:00",
+  "generated_at": "2026-10-18T16:52:43.556647+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202004/",
   "quality": {
     "source_count": 59,
     "record_count": 59,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 10,
+    "missing_story_count": 5,
     "missing_date_count": 1,
     "missing_time_count": 1
   }

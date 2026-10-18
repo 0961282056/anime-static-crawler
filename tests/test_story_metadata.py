@@ -1,4 +1,6 @@
+import json
 from datetime import date, datetime
+from pathlib import Path
 
 import pytest
 from pydantic import ValidationError
@@ -261,3 +263,69 @@ def test_episode_binding_to_parent_does_not_authorize_parent_summary(
     }
     assert subject_identity_matches(anime, parent)
     assert enrich_story(anime, parent, NOW, method="bangumi_api") == anime
+
+
+def test_reviewed_summary_aliases_require_the_entire_exact_identity(
+    anime_record_factory,
+):
+    proof = json.loads(
+        Path("docs/story-fill-2026-10-18/scope-review.json").read_text(encoding="utf-8")
+    )
+    for row in proof:
+        record = Anime.model_validate(
+            {
+                **anime_record_factory(1, story="暫無簡介"),
+                "bangumi_id": row["card_id"],
+                "anime_name": row["anime_name"],
+                "original_name": row["source_original_name"],
+                "external_ids": {"bangumi": row["subject_id"]},
+            }
+        )
+        subject = {
+            "id": row["subject_id"],
+            "type": 2,
+            "name": row["subject_name"],
+            "date": row["first_air_date"],
+            "summary": SUMMARY,
+        }
+        filled = enrich_story(record, subject, NOW, method="bangumi_api")
+        assert filled.story == SUMMARY, row["card_id"]
+        for mutation in (
+            {"id": 99999999},
+            {"date": "1900-01-01"},
+            {"name": row["subject_name"] + " 第2クール＋"},
+        ):
+            assert (
+                enrich_story(record, {**subject, **mutation}, NOW, method="bangumi_api")
+                == record
+            ), row["card_id"]
+        for mutation in (
+            {"bangumi_id": "anime-99999999"},
+            {"original_name": row["source_original_name"] + " 第2クール＋"},
+        ):
+            other = record.model_copy(update=mutation)
+            assert enrich_story(other, subject, NOW, method="bangumi_api") == other, (
+                row["card_id"]
+            )
+
+
+def test_unreviewed_partial_season_cannot_use_whole_season_summary(
+    anime_record_factory,
+):
+    record = Anime.model_validate(
+        {
+            **anime_record_factory(2279, story="暫無簡介"),
+            "bangumi_id": "anime-2279",
+            "anime_name": "藥師少女的獨語 第三季 前半",
+            "original_name": "薬屋のひとりごと 第3期 第1クール",
+            "external_ids": {"bangumi": 568244},
+        }
+    )
+    whole_season = {
+        "id": 568244,
+        "type": 2,
+        "name": "薬屋のひとりごと 第3期",
+        "date": "2026-10-02",
+        "summary": SUMMARY,
+    }
+    assert enrich_story(record, whole_season, NOW, method="bangumi_api") == record
