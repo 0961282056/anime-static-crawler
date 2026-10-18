@@ -353,3 +353,42 @@ def test_conflict_resolution_requires_explicit_links_for_every_original_quarter(
     result = publish(data, client, max_changes=0)
     assert result["pending"] == (1 if verified_quarters == 1 else 0)
     assert not any(MARKER in issue["body"] for issue in client.rows.values())
+
+
+def test_closed_nonempty_queue_is_reopened_without_duplicate_notification():
+    client = GitHub()
+    publish(report(1), client, max_changes=0)
+    issue, before = _load_queue(client.issues())
+    client.rows[issue["number"]]["state"] = "closed"
+    result = publish(report(), client, max_changes=0)
+    issue, after = _load_queue(client.issues())
+    assert result["pending"] == 1
+    assert after == before
+    assert issue["state"] == "open"
+    assert not any(MARKER in row["body"] for row in client.rows.values())
+
+    client.calls.clear()
+    publish(report(), client, max_changes=0)
+    assert client.calls == []
+
+
+def test_reopened_empty_queue_is_closed_even_when_body_is_unchanged():
+    client = GitHub()
+    publish(report(1), client, max_changes=0)
+    resolved = report(1)
+    resolved["identities"][0]["manual_review"].update(
+        due=False, last_verified_at=NOW.isoformat()
+    )
+    assert publish(resolved, client)["pending"] == 0
+    issue, pending = _load_queue(client.issues())
+    assert pending == {}
+    body = issue["body"]
+    client.rows[issue["number"]]["state"] = "open"
+    assert publish(report(), client)["pending"] == 0
+    issue, _ = _load_queue(client.issues())
+    assert issue["body"] == body
+    assert issue["state"] == "closed"
+
+    client.calls.clear()
+    publish(report(), client)
+    assert client.calls == []

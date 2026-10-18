@@ -78,12 +78,13 @@ def _save_queue(client: Any, issue: dict | None, pending: dict) -> dict | None:
             "",
         ]
     )
-    if issue and issue["body"] == body:
+    desired_state = "open" if pending else "closed"
+    if issue and issue["body"] == body and issue.get("state") == desired_state:
         return issue
     data = {
         "title": "[系統] 資料複查持久待辦",
         "body": body,
-        "state": "open" if pending else "closed",
+        "state": desired_state,
     }
     if issue:
         result = client.request("PATCH", f"/issues/{issue['number']}", json=data)
