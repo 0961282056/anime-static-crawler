@@ -981,3 +981,58 @@ def test_reviewed_diamond_formatting_cannot_cross_cour_or_authorize_summary(
         record.model_copy(update={"bangumi_id": "anime-999"}), subject
     )
     assert enrich_story(record, subject, NOW, method="bangumi_api") == record
+
+
+def test_first_conflicting_evidence_does_not_claim_success(anime_record_factory):
+    data = subject(12)
+    data["infobox"] = [{"key": "话数", "value": "13"}]
+    result = parse_episode_metadata(
+        anime(anime_record_factory), data, [episode(1)], NOW
+    )
+    assert result.fetch_state == "conflict"
+    assert result.checked_at is None
+    assert result.attempted_at == NOW
+
+
+@pytest.mark.parametrize("had_success", [False, True])
+def test_conflict_keeps_success_history_until_real_recovery(
+    anime_record_factory, had_success
+):
+    old = (
+        EpisodeMetadata(
+            total_episodes=12,
+            aired_episodes=8,
+            airing_status="airing",
+            episode_count_status="planned",
+            fetch_state="ok",
+            checked_at=NOW - timedelta(days=2),
+            attempted_at=NOW - timedelta(days=2),
+        )
+        if had_success
+        else None
+    )
+    record = anime(anime_record_factory, episodes=old)
+    conflict = subject(12)
+    conflict["infobox"] = [{"key": "话数", "value": "13"}]
+    client = SimpleNamespace(
+        fetch=lambda a, now: parse_episode_metadata(a, conflict, [episode(1)], now)
+    )
+    failed = EpisodeEnricher(client).enrich(record, NOW)
+    assert failed.episodes.fetch_state == "conflict"
+    assert failed.episodes.checked_at == (old.checked_at if old else None)
+    assert failed.episodes.attempted_at == NOW
+    if old:
+        assert failed.episodes.total_episodes == old.total_episodes
+        assert failed.episodes.aired_episodes == old.aired_episodes
+    recovered_at = NOW + timedelta(days=1)
+    good_client = SimpleNamespace(
+        fetch=lambda a, now: parse_episode_metadata(
+            a, subject(12), [episode(n) for n in range(1, 9)], now
+        )
+    )
+    recovered = EpisodeEnricher(good_client, retry_failed=True).enrich(
+        failed, recovered_at
+    )
+    assert recovered.episodes.fetch_state == "ok"
+    assert recovered.episodes.checked_at == recovered_at
+    assert recovered.episodes.attempted_at == recovered_at

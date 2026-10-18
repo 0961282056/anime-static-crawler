@@ -131,3 +131,26 @@ test('source details distinguish failed refreshes and dated summary evidence', a
   await expect(card.locator('.story-source')).toHaveAttribute('href', 'https://bgm.tv/subject/580133');
   expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
 });
+
+test('first conflicting evidence shows an attempt without claiming successful verification', async ({page}) => {
+  await page.addInitScript(() => localStorage.clear());
+  await page.route('**/data/*.json*', route => route.fulfill({contentType: 'application/json', body: JSON.stringify({
+    generated_at: '2026-10-18T10:00:00+08:00',
+    anime_list: [{
+      bangumi_id: 'anime-999', anime_name: '首次查證衝突', original_name: 'First Conflict',
+      anime_image_url: `https://res.cloudinary.com/demo/image/upload/v1/anime_covers/${'a'.repeat(64)}`,
+      premiere_date: '日', premiere_time: '12:00', story: '暫無簡介',
+      external_ids: {bangumi: 580133},
+      episodes: {total_episodes: null, aired_episodes: 1, airing_status: 'unknown', episode_count_status: 'unknown', fetch_state: 'conflict', source_kind: 'bangumi_api', checked_at: null, attempted_at: '2026-10-18T10:00:00+08:00', source_urls: ['https://bgm.tv/subject/580133/ep'], note: '來源話數不一致，總集數待確認。'},
+    }],
+  })}));
+  await page.route('https://res.cloudinary.com/**', route => route.fulfill({contentType: 'image/png', body: png}));
+  await page.goto('/');
+  const card = page.locator('.anime-card');
+  await expect(card).toHaveCount(1);
+  await expect(card.locator('.episode-warning')).toHaveText('來源資料待核對');
+  await card.getByText('集數來源與確認時間', {exact: true}).click();
+  await expect(card.locator('.source-facts')).toContainText('尚未成功查證');
+  await expect(card.locator('.source-facts dt').filter({hasText: /^成功查證$/}).locator('xpath=following-sibling::dd[1]')).toHaveText('尚未記錄');
+  await expect(card.locator('.source-facts dt').filter({hasText: /^最近嘗試更新$/}).locator('xpath=following-sibling::dd[1]')).toContainText('2026/10/18');
+});
