@@ -1,0 +1,3133 @@
+[
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-594",
+    "name": "豆豆貓",
+    "original_name": "まめねこ",
+    "subject_id": 229165,
+    "subject_name": "まめねこ",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:52.375723+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/229165",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/229165",
+      "attempted_at": "2026-10-18T08:35:52.375723+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "482855989990f4ac14cf106135a1da3a1dc8595e991c91c47b27e2704e4cf232"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-589",
+    "name": "gd men",
+    "original_name": "gdメン",
+    "subject_id": 229872,
+    "subject_name": "gdメン gdgd men’s party",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:53.090064+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/229872",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/229872",
+      "attempted_at": "2026-10-18T08:35:53.090064+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "0cbea5835a51b4f339837e7844263c62129d97538c9a40ba64773edf18ba36df"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-574",
+    "name": "齊木楠雄的災難 第2期",
+    "original_name": "斉木楠雄のΨ難 第2期",
+    "subject_id": 204027,
+    "subject_name": "斉木楠雄のΨ難 第2期",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:41.775889+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/204027",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/204027",
+      "attempted_at": "2026-10-18T08:35:41.775889+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "ba58d4a211e467e1acc93889069a6d0d470da6ed2719b8f464fb550d104f8a4d"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-595",
+    "name": "萌貓",
+    "original_name": "みっちりねこ",
+    "subject_id": 233609,
+    "subject_name": "みっちりねこ",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:54.496512+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/233609",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/233609",
+      "attempted_at": "2026-10-18T08:35:54.496512+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "43daeccae487c1b4a15538d261751e79d78b274b8f2bc5b6f8ddcf63984cdacd"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-590",
+    "name": "按鍵發明PIKACHIN-KIT",
+    "original_name": "ポチっと発明ピカちんキット",
+    "subject_id": 227778,
+    "subject_name": "ポチっと発明 ピカちんキット",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:56.042344+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/227778",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/227778",
+      "attempted_at": "2026-10-18T08:35:56.042344+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "2d5cd466fcb08ac549171c3a7d21de178dbcf579d6398190149724b58218baf8"
+    },
+    "result": "filled_official_excerpt",
+    "official_evidence_url": "https://www.tv-tokyo.co.jp/anime/pikachin/story/"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-646",
+    "name": "卡片鬥爭!! 先導者GZ",
+    "original_name": "CARDFIGHT!! ヴァンガードG Z",
+    "subject_id": 221018,
+    "subject_name": "カードファイト!! ヴァンガードG Z",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:57.788996+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/221018",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/221018",
+      "attempted_at": "2026-10-18T08:35:57.788996+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "ae07a8b5348382f2428a21369fe3549eeb75a15c7d5101369d234f499759538b"
+    },
+    "result": "filled_official_excerpt",
+    "official_evidence_url": "https://www.tv-tokyo.co.jp/anime/cf-vanguard-gz/story/"
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-572",
+    "name": "銀魂. 銀之魂篇",
+    "original_name": "銀魂. 銀ノ魂篇",
+    "subject_id": 232884,
+    "subject_name": "銀魂. 銀ノ魂篇",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:58.535309+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/232884",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/232884",
+      "attempted_at": "2026-10-18T08:35:58.535309+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "0f5d18a5fa48012b6d5046e834e61ebaa0065552c38b21b4d7ecd1f8b881aac0"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-474",
+    "name": "MARVEL 復仇者聯盟Future Avengers 第2季",
+    "original_name": "マーベル フューチャー・アベンジャーズ シーズン2",
+    "subject_id": 263756,
+    "subject_name": "マーベル フューチャー・アベンジャーズ2",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:45.968406+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/263756",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://dlife.disney.co.jp/program/marvel_starwars/future_avengers_s2.html",
+        "host": "dlife.disney.co.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/263756",
+      "attempted_at": "2026-10-18T08:35:45.968406+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "1c848bd837e5fed4248b6b00bb4be3fd50ae86d8ff5f40e51d316633e1deb2bf"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-466",
+    "name": "偶像大師 灰姑娘女孩劇場 3rd SEASON",
+    "original_name": "アイドルマスター シンデレラガールズ劇場 3rd SEASON",
+    "subject_id": 238087,
+    "subject_name": "アイドルマスター シンデレラガールズ劇場 第3期",
+    "reason": "version_title_mismatch",
+    "summary_length": 145,
+    "attempted_at": "2026-10-18T08:35:48.081227+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/238087",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://cingeki-anime.com/",
+        "host": "cingeki-anime.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/238087",
+      "attempted_at": "2026-10-18T08:35:48.081227+00:00",
+      "summary_length": 145,
+      "cached_observation_sha256": "63a48966c2612c3cc9c0fcab7312e4f92a66ad5eadc71c4b2a05951e1782ecbb"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-445",
+    "name": "夢王國與沉睡中的100位王子殿下",
+    "original_name": "夢王国と眠れる100人の王子様",
+    "subject_id": 191323,
+    "subject_name": "夢王国と眠れる100人の王子様",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:48.806820+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/191323",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://yume-100-anime.com/",
+        "host": "yume-100-anime.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/191323",
+      "attempted_at": "2026-10-18T08:35:48.806820+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "c26df154b2166902f748d29a8bd9f9ee94c1fde57d8ca13cd5856512231bd0f3"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-464",
+    "name": "打工小哥!2",
+    "original_name": "働くお兄さん！の2！",
+    "subject_id": 241831,
+    "subject_name": "働くお兄さん！の2！",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:49.513242+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/241831",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://www.hataoni.jp/",
+        "host": "www.hataoni.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/241831",
+      "attempted_at": "2026-10-18T08:35:49.513242+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "cfcc7ed7d68e6f9da696158dbe5f1e67afeaa551d75314280e04cb74ec647949"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-470",
+    "name": "暗芝居 6期",
+    "original_name": "闇芝居 六期",
+    "subject_id": 250117,
+    "subject_name": "闇芝居 第6期",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:50.229986+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/250117",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://www.tv-tokyo.co.jp/anime/yamishibai/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/250117",
+      "attempted_at": "2026-10-18T08:35:50.229986+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "16eb07ba5bd18a2a95f850a73db2df489b74f20dd8922c37c92173e93ad8c6dc"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_夏",
+    "card_id": "anime-461",
+    "name": "銀魂. 銀之魂篇 後半戰",
+    "original_name": "銀魂. 銀ノ魂篇 後半戦",
+    "subject_id": 240811,
+    "subject_name": "銀魂. 銀ノ魂篇 第2クール",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:51.648253+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/240811",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://www.tv-tokyo.co.jp/anime/gintama/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/240811",
+      "attempted_at": "2026-10-18T08:35:51.648253+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "23fe01eed1b4c2f992279c9a642e542babbc89efc06690af4ee2e5e610099a0e"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-545",
+    "name": "Ladyspo",
+    "original_name": "レディスポ",
+    "subject_id": 239962,
+    "subject_name": "レディスポ",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:39.456220+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/239962",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/239962",
+      "attempted_at": "2026-10-18T08:35:39.456220+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "18d654207d5659a441ad62f720ce5149bacff4c9062e6a7cfefb77d01c280e08"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-574",
+    "name": "齊木楠雄的災難 第2期",
+    "original_name": "斉木楠雄のΨ難 第2期",
+    "subject_id": 204027,
+    "subject_name": "斉木楠雄のΨ難 第2期",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:41.775889+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/204027",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/204027",
+      "attempted_at": "2026-10-18T08:35:41.775889+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "ba58d4a211e467e1acc93889069a6d0d470da6ed2719b8f464fb550d104f8a4d"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-538",
+    "name": "兔子馬修",
+    "original_name": "うさぎのマシュー",
+    "subject_id": 239853,
+    "subject_name": "うさぎのマシュー",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:43.170921+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/239853",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/239853",
+      "attempted_at": "2026-10-18T08:35:43.170921+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "c8639fe18037f29446808867b83693216ab15ede8e4376d54b0f769961cff385"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-539",
+    "name": "Kekkeroke",
+    "original_name": "ケッケロケー",
+    "subject_id": 239840,
+    "subject_name": "ケッケロケー",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:43.875809+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/239840",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/239840",
+      "attempted_at": "2026-10-18T08:35:43.875809+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "0e02da6a8d6f0af6265a9eb7adce80dfab834e65265d7e01e190fec469e25d63"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_春",
+    "card_id": "anime-505",
+    "name": "食戟之靈 餐之皿 遠月列車篇",
+    "original_name": "食戟のソーマ 餐ノ皿 遠月列車篇",
+    "subject_id": 232646,
+    "subject_name": "食戟のソーマ 餐ノ皿 遠月列車篇",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:45.279500+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/232646",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/232646",
+      "attempted_at": "2026-10-18T08:35:45.279500+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "ba227ae7ba1ff79e9627eaa9c9469e26385a295e4d6811bdde0dd1faea3c8d8e"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-418",
+    "name": "1日外出錄班長",
+    "original_name": "1日外出録ハンチョウ",
+    "subject_id": 237834,
+    "subject_name": "中間管理録トネガワ",
+    "reason": "version_title_mismatch",
+    "summary_length": 126,
+    "attempted_at": "2026-10-18T08:35:34.304311+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/237834",
+    "latest_reason": "linked_entry_scope_not_approved",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://www.tonegawa-anime.com/index.html",
+        "host": "www.tonegawa-anime.com",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/237834",
+      "attempted_at": "2026-10-18T08:35:34.304311+00:00",
+      "summary_length": 126,
+      "cached_observation_sha256": "f414344eff942c78ebe0154679a4882991b27387d053388b8e4714ab30f6a6c8"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-395",
+    "name": "Devidol!",
+    "original_name": "でびどる！",
+    "subject_id": 261082,
+    "subject_name": "でびどる！",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:36.630575+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/261082",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://devidol.com/",
+        "host": "devidol.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/261082",
+      "attempted_at": "2026-10-18T08:35:36.630575+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "199b11157bbfdaee8394acad55868e098ab8a2991fe75cf35ffd203545d102c2"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-374",
+    "name": "錢進球場 Season 2",
+    "original_name": "グラゼニ シーズン2",
+    "subject_id": 251060,
+    "subject_name": "グラゼニ シーズン2",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:37.326329+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/251060",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.bs-sptv.com/gurazeni/",
+        "host": "www.bs-sptv.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/251060",
+      "attempted_at": "2026-10-18T08:35:37.326329+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "52a85f82d39046cb446d10736468097197aac0915d3b5d237b040f5fc7b5f83e"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-399",
+    "name": "閃亂神樂 SHINOVI MASTER -東京妖魔篇-",
+    "original_name": "閃乱カグラ SHINOVI MASTER -東京妖魔篇-",
+    "subject_id": 221190,
+    "subject_name": "閃乱カグラ SHINOVI MASTER -東京妖魔篇-",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:38.043750+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/221190",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://senran2.tv/",
+        "host": "senran2.tv",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/221190",
+      "attempted_at": "2026-10-18T08:35:38.043750+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "b2b2b927643c427467473b14ff22fead60d3cf43a202c8659513d761e6205e63"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-419",
+    "name": "歡迎光臨，千歲醬",
+    "original_name": "おこしやす、ちとせちゃん",
+    "subject_id": 255550,
+    "subject_name": "おこしやす、ちとせちゃん",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:29.362450+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/255550",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://vap.co.jp/chitosechan/",
+        "host": "vap.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/255550",
+      "attempted_at": "2026-10-18T08:35:29.362450+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "5f7086ef4b28daf05d2fd72844c095b7f4ae08f3e49f6d960b702c0c42268b49"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-360",
+    "name": "雨色可可 sideG",
+    "original_name": "雨色ココア　sideG",
+    "subject_id": 264358,
+    "subject_name": "雨色ココアside G",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:26.338062+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/264358",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://rainycocoa.jp/anime/",
+        "host": "rainycocoa.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/264358",
+      "attempted_at": "2026-10-18T08:35:26.338062+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "ed645ecae28f25469d12073c297f24ff0aadd8ccdf2713560f051cf00a44529d"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-348",
+    "name": "三次元女友 第二期",
+    "original_name": "3D彼女 リアルガール 第2シーズン",
+    "subject_id": 250514,
+    "subject_name": "3D彼女 リアルガール 第2シリーズ",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:27.049819+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/250514",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://www.3dkanojo-anime.com/",
+        "host": "www.3dkanojo-anime.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/250514",
+      "attempted_at": "2026-10-18T08:35:27.049819+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "bac9fb832b60b4b90f51aa0a0ab2c44bda82f2ba83949b07fbfeb5d6a82d1cee"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-338",
+    "name": "BanG Dream! 2nd Season",
+    "original_name": "BanG Dream! 2nd Season",
+    "subject_id": 246429,
+    "subject_name": "BanG Dream! 2nd Season",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:28.664087+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/246429",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://anime.bang-dream.com/2nd/",
+        "host": "anime.bang-dream.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/246429",
+      "attempted_at": "2026-10-18T08:35:28.664087+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "7e749b144da70733e01ea55a4eff76d44fa1b00cfd900ea236951433f565c512"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-419",
+    "name": "歡迎光臨，千歲醬",
+    "original_name": "おこしやす、ちとせちゃん",
+    "subject_id": 255550,
+    "subject_name": "おこしやす、ちとせちゃん",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:29.362450+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/255550",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://vap.co.jp/chitosechan/",
+        "host": "vap.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/255550",
+      "attempted_at": "2026-10-18T08:35:29.362450+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "5f7086ef4b28daf05d2fd72844c095b7f4ae08f3e49f6d960b702c0c42268b49"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-354",
+    "name": "百慕達△～繽紛田園曲～",
+    "original_name": "バミューダトライアングル ～カラフル・パストラーレ～",
+    "subject_id": 257608,
+    "subject_name": "バミューダトライアングル ～カラフル・パストラーレ～",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:30.070554+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/257608",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://colorful-pastrale.com",
+        "host": "colorful-pastrale.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/257608",
+      "attempted_at": "2026-10-18T08:35:30.070554+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "8ba654cbfeed911c0a989c03a257a9499da874c70fbe10aa94726075a19aa303"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-353",
+    "name": "琴絃森林 第二季",
+    "original_name": "ピアノの森 第2シリーズ",
+    "subject_id": 252347,
+    "subject_name": "ピアノの森 第2シリーズ",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:30.792127+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/252347",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://piano-anime.jp/",
+        "host": "piano-anime.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/252347",
+      "attempted_at": "2026-10-18T08:35:30.792127+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "2c3c061a4ae4fb9590e7c37511a229d121b86366eb28da22d73b7a9d522dd7c0"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_夏",
+    "card_id": "anime-277",
+    "name": "我們是愛護小動物委員會",
+    "original_name": "われしょ！我ら小動物愛護委員会",
+    "subject_id": 285670,
+    "subject_name": "われしょ!～我ら!小動物愛護委員会～",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:24.237308+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/285670",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.waresyo.com/",
+        "host": "www.waresyo.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/285670",
+      "attempted_at": "2026-10-18T08:35:24.237308+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "ebf8c8257c6b61a8644a64d512d80117a24a120ef5f8079a377b0a95ff9ff325"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_夏",
+    "card_id": "anime-273",
+    "name": "屁屁偵探",
+    "original_name": "おしりたんてい",
+    "subject_id": 303878,
+    "subject_name": "おしりたんてい 第3シリーズ",
+    "reason": "version_title_mismatch",
+    "summary_length": 211,
+    "attempted_at": "2026-10-18T08:35:24.940488+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/303878",
+    "latest_reason": "linked_entry_scope_not_approved",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://www.oshiri-tantei.com/",
+        "host": "www.oshiri-tantei.com",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/303878",
+      "attempted_at": "2026-10-18T08:35:24.940488+00:00",
+      "summary_length": 211,
+      "cached_observation_sha256": "c14a1ee0a118d61f61124726fff744a664941e4ada7508e15233e786c9bb7abe"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_夏",
+    "card_id": "anime-274",
+    "name": "暗芝居 7期",
+    "original_name": "闇芝居 七期",
+    "subject_id": 283480,
+    "subject_name": "闇芝居 第7期",
+    "reason": "version_title_mismatch",
+    "summary_length": 1139,
+    "attempted_at": "2026-10-18T08:35:25.642747+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/283480",
+    "latest_reason": "summary_contains_press_release_and_cast_commentary_needs_reviewed_excerpt",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://www.tv-tokyo.co.jp/anime/yamishibai7/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/283480",
+      "attempted_at": "2026-10-18T08:35:25.642747+00:00",
+      "summary_length": 1139,
+      "cached_observation_sha256": "211ef46a507b9afce8abca230b354f1e47fc1e68a822ff23593fd33ba1105eed"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-319",
+    "name": "地元是日本",
+    "original_name": "ジモトがジャパン",
+    "subject_id": 269906,
+    "subject_name": "ジモトがジャパン",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:18.601539+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/269906",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.shopro.co.jp/tv/jimoto-anime/",
+        "host": "www.shopro.co.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/269906",
+      "attempted_at": "2026-10-18T08:35:18.601539+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "89ec44721cdfddd405cc57fe0de6f31e1f1a8ba1ca2857ed35b50c5d134f46b9"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-313",
+    "name": "星光頻道 第二季",
+    "original_name": "キラッとプリ☆チャン シーズン２",
+    "subject_id": 269023,
+    "subject_name": "キラッとプリ☆チャン シーズン2",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:19.345027+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/269023",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tv-tokyo.co.jp/anime/prichan/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/269023",
+      "attempted_at": "2026-10-18T08:35:19.345027+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "986738ba822e7bd2ddd9bec0e585ab4d199f75ce6787721053c0f31f0c9f993f"
+    },
+    "result": "filled_official_excerpt",
+    "official_evidence_url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_5.html"
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-317",
+    "name": "少年阿貝GO！GO！小芝麻 第四期",
+    "original_name": "少年アシベ　GO!GO!ゴマちゃん 第4シリーズ",
+    "subject_id": 279470,
+    "subject_name": "少年アシベ GO!GO!ゴマちゃん 第4シリーズ",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:20.742643+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/279470",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://www6.nhk.or.jp/anime/program/detail.html?i=gomachan",
+        "host": "www6.nhk.or.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/279470",
+      "attempted_at": "2026-10-18T08:35:20.742643+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "816a7cbd5477b0824d1a318748974e8de6e573e8ec95e552f62faa3066d598bc"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-318",
+    "name": "奇喵的畫家",
+    "original_name": "猫のニャッホ",
+    "subject_id": null,
+    "subject_name": null,
+    "reason": "no_bound_subject",
+    "summary_length": 0,
+    "latest_reason": "no_bound_subject",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://niagho.com/info/tvanime.html",
+        "host": "niagho.com",
+        "permitted": true
+      }
+    ],
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-310",
+    "name": "叛逆性百萬亞瑟王 第二季",
+    "original_name": "叛逆性ミリオンアーサー 第2シーズン",
+    "subject_id": 261048,
+    "subject_name": "叛逆性ミリオンアーサー 第2シーズン",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:21.442927+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/261048",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://hangyakusei-anime.com/",
+        "host": "hangyakusei-anime.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/261048",
+      "attempted_at": "2026-10-18T08:35:21.442927+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "00d625c96eb6742a4dfad263297a405a1c70c54ef4c1a1f1a8a33eb13ad644e6"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-314",
+    "name": "妖怪手錶！",
+    "original_name": "妖怪ウォッチ！",
+    "subject_id": 279472,
+    "subject_name": "妖怪ウォッチ！",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:22.152918+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/279472",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/279472",
+      "attempted_at": "2026-10-18T08:35:22.152918+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "01c19f94b83be13599e78921bba91b8474f23e695c3dcf198f99790a403d2763"
+    },
+    "result": "filled_official_excerpt",
+    "official_evidence_url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/story/"
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-315",
+    "name": "卡片鬥爭!! 先導者  續・高中生篇",
+    "original_name": "カードファイト!! ヴァンガード 続・高校生編",
+    "subject_id": 285664,
+    "subject_name": "カードファイト!! ヴァンガード 続・高校生編",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:22.851110+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/285664",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://anime.cf-vanguard.com/",
+        "host": "anime.cf-vanguard.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/285664",
+      "attempted_at": "2026-10-18T08:35:22.851110+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "5b4a66d99ce759eebc75989b4d2cc0becd08fd3c637d20557cfd797a276c4ada"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-223",
+    "name": "夢幻之星 Online 2 神諭篇章",
+    "original_name": "ファンタシースターオンライン2 エピソード・オラクル",
+    "subject_id": 277217,
+    "subject_name": "ファンタシースターオンライン2 エピソード・オラクル",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:10.880151+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/277217",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://pso2.jp/anime_eporacle/",
+        "host": "pso2.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/277217",
+      "attempted_at": "2026-10-18T08:35:10.880151+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "31b3106dfc3ba65b2930e0c6215d64268bfadc6e94285941b41d5e69a382f7c3"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-218",
+    "name": "Radiant 虛空魔境 第二季",
+    "original_name": "ラディアン 第2シリーズ",
+    "subject_id": 276051,
+    "subject_name": "ラディアン 第2シリーズ",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:12.997225+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/276051",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.nhk.or.jp/anime/radiant/",
+        "host": "www.nhk.or.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/276051",
+      "attempted_at": "2026-10-18T08:35:12.997225+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "c4ade7c8568e865f208c1aa8c85da41ef0e661f9bfa5c58ba451823805928c30"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-214",
+    "name": "一弦定音！第二季",
+    "original_name": "この音とまれ！2クール目",
+    "subject_id": 270060,
+    "subject_name": "この音とまれ！第2クール",
+    "reason": "version_title_mismatch",
+    "summary_length": 72,
+    "attempted_at": "2026-10-18T08:35:15.789983+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/270060",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://www.konooto-anime.jp/",
+        "host": "www.konooto-anime.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/270060",
+      "attempted_at": "2026-10-18T08:35:15.789983+00:00",
+      "summary_length": 72,
+      "cached_observation_sha256": "c4a4ed68814d2520d2348fdc0b21efde96a4ddc3ac8d50073b4f7928a99757fc"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-237",
+    "name": "耐子的日常",
+    "original_name": "耐え子の日常",
+    "subject_id": 291842,
+    "subject_name": "耐え子の日常",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:16.489163+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/291842",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/291842",
+      "attempted_at": "2026-10-18T08:35:16.489163+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "bcb7b1094bcb9b1a1fc20918244cc7adf4a90a26f181a967aa3b459a293a4671"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-227",
+    "name": "Fairy Gone 第二季",
+    "original_name": "Fairy gone フェアリーゴーン 第2クール",
+    "subject_id": 283053,
+    "subject_name": "Fairy gone フェアリーゴーン2",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:14.400956+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/283053",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.fairygone.com/",
+        "host": "www.fairygone.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/283053",
+      "attempted_at": "2026-10-18T08:35:14.400956+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "5fd4858b00adadecaffc0511b3fde6bc700651c7a1cb35bf933cae8013e57871"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2019_秋",
+    "card_id": "anime-238",
+    "name": "Four of a Kind 四牌士 第二季",
+    "original_name": "フォーカード 新シリーズ",
+    "subject_id": 291844,
+    "subject_name": "Four of a kind 新シリーズ",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:17.897685+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/291844",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tv-tokyo.co.jp/anime/four_of_a_kind/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/291844",
+      "attempted_at": "2026-10-18T08:35:17.897685+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "d199c9444bf58fe13e7a008d77febb719fe71fd8e5d5ebd79d603a021b11b3ab"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_冬",
+    "card_id": "anime-223",
+    "name": "夢幻之星 Online 2 神諭篇章",
+    "original_name": "ファンタシースターオンライン2 エピソード・オラクル",
+    "subject_id": 277217,
+    "subject_name": "ファンタシースターオンライン2 エピソード・オラクル",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:10.880151+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/277217",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://pso2.jp/anime_eporacle/",
+        "host": "pso2.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/277217",
+      "attempted_at": "2026-10-18T08:35:10.880151+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "31b3106dfc3ba65b2930e0c6215d64268bfadc6e94285941b41d5e69a382f7c3"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_冬",
+    "card_id": "anime-53",
+    "name": "異世界四重奏2",
+    "original_name": "異世界かるてっと2",
+    "subject_id": 285422,
+    "subject_name": "異世界かるてっと２",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:11.605299+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/285422",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://isekai-quartet.com/",
+        "host": "isekai-quartet.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/285422",
+      "attempted_at": "2026-10-18T08:35:11.605299+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "7fd3c30d9cf5cd587480c36d14829fe9faaa812280e4ef5753040454e49ad7d1"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_冬",
+    "card_id": "anime-28",
+    "name": "Hulaing Babies☆Petit",
+    "original_name": "フライングベイビーズ☆プチ",
+    "subject_id": 297459,
+    "subject_name": "フライングベイビーズ☆プチ",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:12.296680+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/297459",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://hulaingbabies.com/",
+        "host": "hulaingbabies.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/297459",
+      "attempted_at": "2026-10-18T08:35:12.296680+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "cc4b6dc9efbf73109def6773d41beb8aa5aa62f0add92142e135556d2f070ae3"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_冬",
+    "card_id": "anime-218",
+    "name": "Radiant 虛空魔境 第二季",
+    "original_name": "ラディアン 第2シリーズ",
+    "subject_id": 276051,
+    "subject_name": "ラディアン 第2シリーズ",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:12.997225+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/276051",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.nhk.or.jp/anime/radiant/",
+        "host": "www.nhk.or.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/276051",
+      "attempted_at": "2026-10-18T08:35:12.997225+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "c4ade7c8568e865f208c1aa8c85da41ef0e661f9bfa5c58ba451823805928c30"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_冬",
+    "card_id": "anime-18",
+    "name": "八十龜醬觀察日記 第2冊",
+    "original_name": "八十亀ちゃんかんさつにっき　２さつめ",
+    "subject_id": 282762,
+    "subject_name": "八十亀ちゃんかんさつにっき 2さつめ",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:13.684938+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/282762",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://yatogame.nagoya/",
+        "host": "yatogame.nagoya",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/282762",
+      "attempted_at": "2026-10-18T08:35:13.684938+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "76bdd68d609e95ca563ebfc6066c22279c3de3f29e7d0cd6673679cd77db410a"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_冬",
+    "card_id": "anime-227",
+    "name": "Fairy Gone 第二季",
+    "original_name": "Fairy gone フェアリーゴーン 第2クール",
+    "subject_id": 283053,
+    "subject_name": "Fairy gone フェアリーゴーン2",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:14.400956+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/283053",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.fairygone.com/",
+        "host": "www.fairygone.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/283053",
+      "attempted_at": "2026-10-18T08:35:14.400956+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "5fd4858b00adadecaffc0511b3fde6bc700651c7a1cb35bf933cae8013e57871"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-154",
+    "name": "超普通都市柏傳說R",
+    "original_name": "超普通都市カシワ伝説R",
+    "subject_id": 310150,
+    "subject_name": "超普通都市カシワ伝説R",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:07.387989+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/310150",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://kashiden.dekimachi.com/story/03r/",
+        "host": "kashiden.dekimachi.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/310150",
+      "attempted_at": "2026-10-18T08:35:07.387989+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "4340ffd327c3a3c7fea860256cfc3976aefb334e0453dd467166ef48fd1ad564"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-105",
+    "name": "胖腹動物的生活",
+    "original_name": "ぽっこりーず",
+    "subject_id": 303433,
+    "subject_name": "ぽっこりーず",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:57.547666+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/303433",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://poccolies.com/",
+        "host": "poccolies.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/303433",
+      "attempted_at": "2026-10-18T08:34:57.547666+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "1c995e6be387c44f981d1a3dccf682438f4c389102435d906d4f18b8ec4d1654"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-97",
+    "name": "非槍人生 NO GUNS LIFE 第2期",
+    "original_name": "ノー・ガンズ・ライフ 第2期",
+    "subject_id": 291479,
+    "subject_name": "ノー・ガンズ・ライフ 第2クール",
+    "reason": "version_title_mismatch",
+    "summary_length": 389,
+    "attempted_at": "2026-10-18T08:35:08.078176+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/291479",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://nogunslife.com/",
+        "host": "nogunslife.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/291479",
+      "attempted_at": "2026-10-18T08:35:08.078176+00:00",
+      "summary_length": 389,
+      "cached_observation_sha256": "0e85c789547b0cad3798db51a464f0c03bfc9cd9831009ab81caa0716eb08883"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-157",
+    "name": "巨人族的新娘",
+    "original_name": "巨人族の花嫁",
+    "subject_id": 306993,
+    "subject_name": "巨人族の花嫁",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:09.478817+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/306993",
+    "latest_reason": "provider_http_404",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://kyojinzoku.cf-anime.com/",
+        "host": "kyojinzoku.cf-anime.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/306993",
+      "attempted_at": "2026-10-18T08:35:09.478817+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "401fb4b2d34f10fb64c3f4f47ca166ed5bb5434d3983a32be767d011ad54e63b"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_夏",
+    "card_id": "anime-159",
+    "name": "耐子的日常 新系列",
+    "original_name": "耐え子の日常 新シリーズ",
+    "subject_id": 316108,
+    "subject_name": "耐え子の日常 第二期",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:10.178633+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/316108",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://s.mxtv.jp/anime/taeko/",
+        "host": "s.mxtv.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/316108",
+      "attempted_at": "2026-10-18T08:35:10.178633+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "ef2a966e94b33857a7bd7df63e4b49f59c9429e4776507ddf61abecf3047c895"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-105",
+    "name": "胖腹動物的生活",
+    "original_name": "ぽっこりーず",
+    "subject_id": 303433,
+    "subject_name": "ぽっこりーず",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:57.547666+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/303433",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://poccolies.com/",
+        "host": "poccolies.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/303433",
+      "attempted_at": "2026-10-18T08:34:57.547666+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "1c995e6be387c44f981d1a3dccf682438f4c389102435d906d4f18b8ec4d1654"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-118",
+    "name": "做得很好！名作君 第五季",
+    "original_name": "あはれ！名作くん シーズン5",
+    "subject_id": 301700,
+    "subject_name": "あはれ！名作くん 第5期",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:02.478163+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/301700",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://meisakukun.com/",
+        "host": "meisakukun.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/301700",
+      "attempted_at": "2026-10-18T08:35:02.478163+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "2f7967b960b45b6bfac03eea1129d8472c01ccecc2bfbbc1756b264c4a75fa5d"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-75",
+    "name": "乞嚏大魔王2020",
+    "original_name": "ハクション大魔王2020",
+    "subject_id": 299687,
+    "subject_name": "ハクション大魔王2020",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:03.874136+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/299687",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.ytv.co.jp/hakushon2020/",
+        "host": "www.ytv.co.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/299687",
+      "attempted_at": "2026-10-18T08:35:03.874136+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "783aebf199de4fc0e4ff507c45cc74c63836752034e5765096be106f6d547fa6"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-117",
+    "name": "星光頻道 第三季",
+    "original_name": "キラッとプリ☆チャン シーズン３",
+    "subject_id": 296702,
+    "subject_name": "キラッとプリ☆チャン シーズン3",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:04.595189+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/296702",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tv-tokyo.co.jp/anime/prichan/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/296702",
+      "attempted_at": "2026-10-18T08:35:04.595189+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "2b0c99e0793ccb58979d71740981696cdcfbdd745da4b8cdbaed86c0d5dcb1e2"
+    },
+    "result": "filled_official_excerpt",
+    "official_evidence_url": "https://www.tv-tokyo.co.jp/anime/prichan/story/"
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-100",
+    "name": "更多！怪俠佐羅利",
+    "original_name": "まじめにふまじめ かいけつゾロリ",
+    "subject_id": 285762,
+    "subject_name": "もっと！まじめにふまじめ かいけつゾロリ",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:05.296191+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/285762",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://www.zorori.jp/",
+        "host": "www.zorori.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/285762",
+      "attempted_at": "2026-10-18T08:35:05.296191+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "a81c21244c9f91420a9d9d63f92397bfdacca2cf79bab7e04efdc6b61b981860"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-105",
+    "name": "胖腹動物的生活",
+    "original_name": "ぽっこりーず",
+    "subject_id": 303433,
+    "subject_name": "ぽっこりーず",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:57.547666+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/303433",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://poccolies.com/",
+        "host": "poccolies.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/303433",
+      "attempted_at": "2026-10-18T08:34:57.547666+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "1c995e6be387c44f981d1a3dccf682438f4c389102435d906d4f18b8ec4d1654"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-156",
+    "name": "排球少年!! TO THE TOP 第二季",
+    "original_name": "ハイキュー!! TO THE TOP 第2期",
+    "subject_id": 295421,
+    "subject_name": "ハイキュー!! TO THE TOP 第2クール",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:58.968121+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/295421",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://haikyu.jp/",
+        "host": "haikyu.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/295421",
+      "attempted_at": "2026-10-18T08:34:58.968121+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "f72c6a7c5b452db513bfc8f8ad0d365ade2006dc142ad38a721a0187b0ea4c7d"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-657",
+    "name": "秘密结社鷹之爪～Golden Spell～",
+    "original_name": "秘密結社 鷹の爪 ～ゴールデン・スペル～",
+    "subject_id": 316103,
+    "subject_name": "秘密結社 鷹の爪 ～ゴールデン・スペル～",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:59.661171+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/316103",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://xn--u9j429qiq1a.jp/gs/",
+        "host": "xn--u9j429qiq1a.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/316103",
+      "attempted_at": "2026-10-18T08:34:59.661171+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "2f36194c5f26607dbfd3125f4e0016ffe86263b0ccb2485cd2087fc8951cb02b"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2020_秋",
+    "card_id": "anime-660",
+    "name": "ETERNITY ～深夜的濡戀頻道♡～",
+    "original_name": "エタニティ ～深夜の濡恋ちゃんねる♥～",
+    "subject_id": 316106,
+    "subject_name": "エタニティ ～深夜の濡恋ちゃんねる♡～",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:35:00.353016+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/316106",
+    "latest_reason": "provider_http_404",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://eternity-nurechan.com/",
+        "host": "eternity-nurechan.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/316106",
+      "attempted_at": "2026-10-18T08:35:00.353016+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "cf1f5d1b59a401319a7dbb96817218cf1b31238fa36ce16395f6dca094abbee8"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-712",
+    "name": "真·中華一番！第二季",
+    "original_name": "真・中華一番！第二期",
+    "subject_id": 297344,
+    "subject_name": "真・中華一番！ 続編",
+    "reason": "version_title_mismatch",
+    "summary_length": 339,
+    "attempted_at": "2026-10-18T08:34:52.608864+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/297344",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://cookingmaster-anime.jp/",
+        "host": "cookingmaster-anime.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/297344",
+      "attempted_at": "2026-10-18T08:34:52.608864+00:00",
+      "summary_length": 339,
+      "cached_observation_sha256": "e1b31a5450276544b9b2df2a1003e987fed6e29b8112e59dead433b8f5462ec1"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-701",
+    "name": "世界魔女出發！",
+    "original_name": "ワールドウィッチーズ発進しますっ！",
+    "subject_id": 310950,
+    "subject_name": "ワールドウィッチーズ 発進しますっ！",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:53.329165+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/310950",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://w-witch.jp/ww_takeoff/",
+        "host": "w-witch.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/310950",
+      "attempted_at": "2026-10-18T08:34:53.329165+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "4a4e40c42c69446b6ad2e75b1316aeea1c703cd6e1d24f264c526bd7b44f3d09"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-709",
+    "name": "境界觸發者 2nd Season",
+    "original_name": "ワールドトリガー 2ndシーズン",
+    "subject_id": 296875,
+    "subject_name": "ワールドトリガー 2ndシーズン",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:55.442214+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/296875",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://www.toei-anim.co.jp/tv/wt/",
+        "host": "www.toei-anim.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/296875",
+      "attempted_at": "2026-10-18T08:34:55.442214+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "22c6f928c973ab74783c749043df7b02b632b9ee842b8e46497b7f9d4eef3b46"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_冬",
+    "card_id": "anime-706",
+    "name": "八十龜醬觀察日記 第3冊",
+    "original_name": "八十亀ちゃんかんさつにっき 八十亀ちゃんかんさつにっき 3さつめ",
+    "subject_id": 315804,
+    "subject_name": "八十亀ちゃんかんさつにっき 3さつめ",
+    "reason": "version_title_mismatch",
+    "summary_length": 143,
+    "attempted_at": "2026-10-18T08:34:56.140953+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/315804",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://yatogame.nagoya/",
+        "host": "yatogame.nagoya",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/315804",
+      "attempted_at": "2026-10-18T08:34:56.140953+00:00",
+      "summary_length": 143,
+      "cached_observation_sha256": "15a1be45417fe6473336eb6e1fd1fcfd247ef1cf3b0cbe473d295d0eb77b1b25"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-789",
+    "name": "關於我轉生變成史萊姆這檔事 第二季  第2部",
+    "original_name": "転生したらスライムだった件 第2期 第2部",
+    "subject_id": 302523,
+    "subject_name": "転生したらスライムだった件 第2期 2",
+    "reason": "version_title_mismatch",
+    "summary_length": 274,
+    "attempted_at": "2026-10-18T08:34:48.299006+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/302523",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.ten-sura.com/anime/tensura",
+        "host": "www.ten-sura.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/302523",
+      "attempted_at": "2026-10-18T08:34:48.299006+00:00",
+      "summary_length": 274,
+      "cached_observation_sha256": "e113f6446960eb606e08317787a5ed5dc0e41494502c94f086089f0e3c8bd56e"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-785",
+    "name": "我立於百萬生命之上 第二季",
+    "original_name": "100万の命の上に俺は立っている 第2シーズン",
+    "subject_id": 322859,
+    "subject_name": "100万の命の上に俺は立っている 第2シーズン",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:49.009164+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/322859",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://1000000-lives.com/",
+        "host": "1000000-lives.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/322859",
+      "attempted_at": "2026-10-18T08:34:49.009164+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "fb9969af09e93bf4d30e5587a1bb06e67266e93a5629bc41e3d6971ea31d4bdc"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-973",
+    "name": "魔法紀錄 魔法少女小圓外傳 2nd SEASON",
+    "original_name": "マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON",
+    "subject_id": 302875,
+    "subject_name": "マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON -覚醒前夜-",
+    "reason": "version_title_mismatch",
+    "summary_length": 17,
+    "attempted_at": "2026-10-18T08:34:49.712146+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/302875",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://anime.magireco.com/",
+        "host": "anime.magireco.com",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/302875",
+      "attempted_at": "2026-10-18T08:34:49.712146+00:00",
+      "summary_length": 17,
+      "cached_observation_sha256": "fb43dad347fc18a4a6cc6238e88a192cfdaa48a5434980912c0b0c156904222c"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-757",
+    "name": "恐龍莊日和",
+    "original_name": "ダイナ荘びより",
+    "subject_id": 330889,
+    "subject_name": "ダイナ荘びより",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:46.180044+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/330889",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://dinosaur-biyori.com/",
+        "host": "dinosaur-biyori.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/330889",
+      "attempted_at": "2026-10-18T08:34:46.180044+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "460768b6318976e817f17e237c469e57dd99f04f1430a3d1d9aaa182b816c455"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-972",
+    "name": "闇芝居 第九季",
+    "original_name": "闇芝居 九期",
+    "subject_id": 338201,
+    "subject_name": "闇芝居 第9期",
+    "reason": "version_title_mismatch",
+    "summary_length": 32,
+    "attempted_at": "2026-10-18T08:34:51.884523+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/338201",
+    "latest_reason": "source_summary_promotional_only",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tv-tokyo.co.jp/anime/yamishibai9/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/338201",
+      "attempted_at": "2026-10-18T08:34:51.884523+00:00",
+      "summary_length": 32,
+      "cached_observation_sha256": "1c4938fb61e9e9ee29651b290bb1858c5617ab2173fd21e5e4719d812c84c8b9"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-761",
+    "name": "宇宙奇妙生物小鐵君",
+    "original_name": "宇宙なんちゃら こてつくん",
+    "subject_id": 316893,
+    "subject_name": "宇宙なんちゃら こてつくん",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:43.380341+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/316893",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://space--academy.com/",
+        "host": "space--academy.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/316893",
+      "attempted_at": "2026-10-18T08:34:43.380341+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "fbba8480df1e9bea33d5afbf392fd3fb78ac693e54a844f2b7951aa57c09a269"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-762",
+    "name": "更多!認真地不認真的怪俠佐羅利 第2季",
+    "original_name": "もっと！まじめにふまじめ かいけつゾロリ 第2シリーズ",
+    "subject_id": 336281,
+    "subject_name": "もっと！まじめにふまじめ かいけつゾロリ 第2シリーズ",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:44.767466+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/336281",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "http://www.zorori.jp/",
+        "host": "www.zorori.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/336281",
+      "attempted_at": "2026-10-18T08:34:44.767466+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "d180f277077c19d9d7a2e149afbb6368ba39086b5d2a54f0416b339b8f798b84"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-782",
+    "name": "屁屁偵探",
+    "original_name": "おしりたんてい",
+    "subject_id": 529232,
+    "subject_name": "おしりたんてい 第5シリーズ",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:45.475419+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/529232",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.oshiri-tantei.com/",
+        "host": "www.oshiri-tantei.com",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/529232",
+      "attempted_at": "2026-10-18T08:34:45.475419+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "8a2fba6f23cf3073f8b9a483c7df951b7d8c2297311fc9f0a90c1b8f435f227d"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-757",
+    "name": "恐龍莊日和",
+    "original_name": "ダイナ荘びより",
+    "subject_id": 330889,
+    "subject_name": "ダイナ荘びより",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:46.180044+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/330889",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://dinosaur-biyori.com/",
+        "host": "dinosaur-biyori.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/330889",
+      "attempted_at": "2026-10-18T08:34:46.180044+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "460768b6318976e817f17e237c469e57dd99f04f1430a3d1d9aaa182b816c455"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-776",
+    "name": "夢夢貓 Mix!",
+    "original_name": "ミュークルドリーミー みっくす！",
+    "subject_id": 321387,
+    "subject_name": "ミュークルドリーミー みっくす！",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:47.600487+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/321387",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://mewkledreamy.com/",
+        "host": "mewkledreamy.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/321387",
+      "attempted_at": "2026-10-18T08:34:47.600487+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "90460f86a1461b53194f9708d11931233f68a8506a1a10e8ef652c0fe5303a14"
+    },
+    "result": "filled_official_excerpt",
+    "official_evidence_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/story/"
+  },
+  {
+    "quarter": "2021_秋",
+    "card_id": "anime-1003",
+    "name": "境界觸發者 3rd Season",
+    "original_name": "ワールドトリガー 3rdシーズン",
+    "subject_id": 322967,
+    "subject_name": "ワールドトリガー 3rdシーズン",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:41.971981+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/322967",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.toei-anim.co.jp/tv/wt/",
+        "host": "www.toei-anim.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/322967",
+      "attempted_at": "2026-10-18T08:34:41.971981+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "7468967097b713e3ae8ffee7cc835b15f1e4a52a3b63462fbf9fb6248e521636"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2022_冬",
+    "card_id": "anime-1041",
+    "name": "女學。II ～Lucky Stars～",
+    "original_name": "ガル学。II～Lucky Stars～",
+    "subject_id": 358514,
+    "subject_name": "ガル学。II～Lucky Stars～",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:37.765603+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/358514",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://garugaku.com/",
+        "host": "garugaku.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/358514",
+      "attempted_at": "2026-10-18T08:34:37.765603+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "78c612aedb4adbafe4b9a7c6106ac4d6437f4b73a70831b53847b683287b2fd2"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2022_冬",
+    "card_id": "anime-1026",
+    "name": "瓦尼塔斯的手札 第二季度",
+    "original_name": "ヴァニタスの手記 第2クール",
+    "subject_id": 338270,
+    "subject_name": "ヴァニタスの手記 第2クール",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:39.158895+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/338270",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://vanitas-anime.com/",
+        "host": "vanitas-anime.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/338270",
+      "attempted_at": "2026-10-18T08:34:39.158895+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "b121ba0debdbdac0ca2e733f848e70170feabbbb4ef437ca6f519a1bb315bd9c"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2022_冬",
+    "card_id": "anime-1042",
+    "name": "闇芝居 第十季",
+    "original_name": "闇芝居 十期",
+    "subject_id": 362733,
+    "subject_name": "闇芝居 第10期",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:39.865248+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/362733",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tv-tokyo.co.jp/anime/yamishibai10/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/362733",
+      "attempted_at": "2026-10-18T08:34:39.865248+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "98fc3efc0d2f6361baea95172f0136936b256e939daf16de305e5c62d0e8ffb7"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2022_春",
+    "card_id": "anime-1093",
+    "name": "古見同學有社交障礙 第2季",
+    "original_name": "古見さんは、コミュ症です。 第2期",
+    "subject_id": 363242,
+    "subject_name": "古見さんは、コミュ症です。2期",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:32.799369+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/363242",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://komisan-official.com/",
+        "host": "komisan-official.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/363242",
+      "attempted_at": "2026-10-18T08:34:32.799369+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "99f6527eaa2e12fa7b938b9da3171c3cf587771e39b296619f99b888ab46b83c"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2022_春",
+    "card_id": "anime-1059",
+    "name": "八十龜醬觀察日記 第4冊",
+    "original_name": "八十亀ちゃんかんさつにっき 4さつめ",
+    "subject_id": 359527,
+    "subject_name": "八十亀ちゃんかんさつにっき 4さつめ",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:33.516115+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/359527",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://yatogame.nagoya/",
+        "host": "yatogame.nagoya",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/359527",
+      "attempted_at": "2026-10-18T08:34:33.516115+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "7267706ad67da4c82f3ef44d02f4c0cd331cdce6254586a4d0a40b58ec1534d1"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1186",
+    "name": "跳跳小雞 第2季",
+    "original_name": "チキップダンサーズ 2期",
+    "subject_id": 396487,
+    "subject_name": "チキップダンサーズ 2期",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:29.275408+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/396487",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.san-x.co.jp/chickipdancers/",
+        "host": "www.san-x.co.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/396487",
+      "attempted_at": "2026-10-18T08:34:29.275408+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "871195c13bdeadda63fed654fd80c0c17e12c2814de5275a5cc98b4767f9b007"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1163",
+    "name": "Muv-Luv Alternative 第二季度",
+    "original_name": "マブラヴ オルタネイティヴ 第二期",
+    "subject_id": 363263,
+    "subject_name": "マブラヴ オルタネイティヴ 第2期",
+    "reason": "version_title_mismatch",
+    "summary_length": 121,
+    "attempted_at": "2026-10-18T08:34:29.971710+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/363263",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://muv-luv-alternative-anime.com/",
+        "host": "muv-luv-alternative-anime.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/363263",
+      "attempted_at": "2026-10-18T08:34:29.971710+00:00",
+      "summary_length": 121,
+      "cached_observation_sha256": "ff1daaf84859833b13ac080fc4508688ac1baddfeb3b99003edc00619368ef4b"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2022_秋",
+    "card_id": "anime-1143",
+    "name": "SPY×FAMILY 間諜家家酒 第二季度",
+    "original_name": "SPY×FAMILY 2クール目",
+    "subject_id": 373267,
+    "subject_name": "SPY×FAMILY 第2クール",
+    "reason": "version_title_mismatch",
+    "summary_length": 334,
+    "attempted_at": "2026-10-18T08:34:31.392973+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/373267",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://spy-family.net/",
+        "host": "spy-family.net",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/373267",
+      "attempted_at": "2026-10-18T08:34:31.392973+00:00",
+      "summary_length": 334,
+      "cached_observation_sha256": "6547acd5b25b525a21798fb33f3405f589fa78e648ff47163e9a574ca3f21e03"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2023_冬",
+    "card_id": "anime-1242",
+    "name": "Showtime！2 姊姊帶你一起動",
+    "original_name": "しょうたいむ！2～歌のお姉さんだってしたい",
+    "subject_id": 359059,
+    "subject_name": "しょうたいむ！～歌のお姉さんだってしたい 第2期",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:26.453674+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/359059",
+    "latest_reason": "provider_http_404",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://showtime.af-original.com/",
+        "host": "showtime.af-original.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/359059",
+      "attempted_at": "2026-10-18T08:34:26.453674+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "86e7981bff9dc659b6e89e052066f8f2a99b692b1ec145806c78a579b11a446b"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2023_冬",
+    "card_id": "anime-1244",
+    "name": "KJ File 續篇",
+    "original_name": "KJファイル 続編",
+    "subject_id": 403671,
+    "subject_name": "KJファイル 第2期",
+    "reason": "version_title_mismatch",
+    "summary_length": 269,
+    "attempted_at": "2026-10-18T08:34:27.162959+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/403671",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tv-tokyo.co.jp/anime/kjfile/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/403671",
+      "attempted_at": "2026-10-18T08:34:27.162959+00:00",
+      "summary_length": 269,
+      "cached_observation_sha256": "c484b7707bf09d8be4715ab93f00d9ed19151128f12c6a2ab9e3e198bcd64333"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2023_春",
+    "card_id": "anime-1296",
+    "name": "小哥斯拉的逆襲",
+    "original_name": "ちびゴジラの逆襲",
+    "subject_id": 422505,
+    "subject_name": "ちびゴジラの逆襲",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 14,
+    "attempted_at": "2026-10-18T08:34:25.039741+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/422505",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://godzilla.store/chibigodzilla/",
+        "host": "godzilla.store",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/422505",
+      "attempted_at": "2026-10-18T08:34:25.039741+00:00",
+      "summary_length": 14,
+      "cached_observation_sha256": "36865b76eb13b8870facfc8dd7cd715ffa86842c9375d3e84f9ab4aa7e0686f2"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2023_秋",
+    "card_id": "anime-1409",
+    "name": "跳跳小雞 第3季",
+    "original_name": "チキップダンサーズ 第3期",
+    "subject_id": 451858,
+    "subject_name": "チキップダンサーズ 3期",
+    "reason": "version_title_mismatch",
+    "summary_length": 129,
+    "attempted_at": "2026-10-18T08:34:23.629464+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/451858",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.san-x.co.jp/chickipdancers/",
+        "host": "www.san-x.co.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/451858",
+      "attempted_at": "2026-10-18T08:34:23.629464+00:00",
+      "summary_length": 129,
+      "cached_observation_sha256": "270415b9c40d571fe310eb330250bb3c1d7315815ed913796a453d7e2fd47bac"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2024_冬",
+    "card_id": "anime-1443",
+    "name": "山T女福星 第2季",
+    "original_name": "うる星やつら 第2期",
+    "subject_id": 413635,
+    "subject_name": "うる星やつら 第2期",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:20.796062+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/413635",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://uy-allstars.com/",
+        "host": "uy-allstars.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/413635",
+      "attempted_at": "2026-10-18T08:34:20.796062+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "f04f7b1363ce1386ee86c193417cff6cfb4c2117b6d93fbb6fb8991ce11c73c8"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2024_冬",
+    "card_id": "anime-1521",
+    "name": "闇芝居 第12季",
+    "original_name": "闇芝居 十二期",
+    "subject_id": 465694,
+    "subject_name": "闇芝居 第12期",
+    "reason": "version_title_mismatch",
+    "summary_length": 16,
+    "attempted_at": "2026-10-18T08:34:22.933999+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/465694",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tv-tokyo.co.jp/anime/yamishibai12/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/465694",
+      "attempted_at": "2026-10-18T08:34:22.933999+00:00",
+      "summary_length": 16,
+      "cached_observation_sha256": "35de914b0934606e8cbe28ad099baa4a35b826469bb621ed1b1099b915a15570"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2024_夏",
+    "card_id": "anime-1677",
+    "name": "闇芝居 第13季",
+    "original_name": "闇芝居 十三期",
+    "subject_id": 498178,
+    "subject_name": "闇芝居 十三期",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:22.224598+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/498178",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tv-tokyo.co.jp/anime/yamishibai13/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/498178",
+      "attempted_at": "2026-10-18T08:34:22.224598+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "7689298a30ef2226028e87a21736c95e51625272c139b9784b369285b46f9655"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2024_春",
+    "card_id": "anime-1443",
+    "name": "山T女福星 第2季",
+    "original_name": "うる星やつら 第2期",
+    "subject_id": 413635,
+    "subject_name": "うる星やつら 第2期",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:20.796062+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/413635",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://uy-allstars.com/",
+        "host": "uy-allstars.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/413635",
+      "attempted_at": "2026-10-18T08:34:20.796062+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "f04f7b1363ce1386ee86c193417cff6cfb4c2117b6d93fbb6fb8991ce11c73c8"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1659",
+    "name": "放學後少年花子君 續篇",
+    "original_name": "放課後少年花子くん (続編)",
+    "subject_id": 464594,
+    "subject_name": "放課後少年花子くん 続編",
+    "reason": "version_title_mismatch",
+    "summary_length": 206,
+    "attempted_at": "2026-10-18T08:34:17.237231+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/464594",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tbs.co.jp/anime/hanakokun/",
+        "host": "www.tbs.co.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/464594",
+      "attempted_at": "2026-10-18T08:34:17.237231+00:00",
+      "summary_length": 206,
+      "cached_observation_sha256": "9cb40d29e600cbcad8635f3b87931817558e5b622d65d26c25c2de9796c369cf"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1669",
+    "name": "GOD.app 第2季",
+    "original_name": "カミエラビ GOD.app シーズン２",
+    "subject_id": 467803,
+    "subject_name": "カミエラビ シーズン2",
+    "reason": "version_title_mismatch",
+    "summary_length": 616,
+    "attempted_at": "2026-10-18T08:34:18.671877+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/467803",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://kamierabi.com/",
+        "host": "kamierabi.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/467803",
+      "attempted_at": "2026-10-18T08:34:18.671877+00:00",
+      "summary_length": 616,
+      "cached_observation_sha256": "7bc6c40ac87cb6b62ed29ed3069c591ed9c30701311a0c70be80c0d54aafac6e"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2024_秋",
+    "card_id": "anime-1671",
+    "name": "百姓貴族 第2季",
+    "original_name": "百姓貴族 2期",
+    "subject_id": 470777,
+    "subject_name": "百姓貴族 2nd Season",
+    "reason": "version_title_mismatch",
+    "summary_length": 192,
+    "attempted_at": "2026-10-18T08:34:20.097373+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/470777",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://s.mxtv.jp/anime/hyakusho_kizoku/",
+        "host": "s.mxtv.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/470777",
+      "attempted_at": "2026-10-18T08:34:20.097373+00:00",
+      "summary_length": 192,
+      "cached_observation_sha256": "bd0f7085039be8df7c2074ca9f950080d667ef2896ccc26d6d8102e1510afb09"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2025_冬",
+    "card_id": "anime-1750",
+    "name": "闇芝居 第14季",
+    "original_name": "闇芝居 十四期",
+    "subject_id": 526223,
+    "subject_name": "闇芝居 十四期",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:16.539890+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/526223",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tv-tokyo.co.jp/anime/yamishibai14/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/526223",
+      "attempted_at": "2026-10-18T08:34:16.539890+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "995803fc1f7d9d7643028f811a4956b88217ecc53f36e66fbc1fdd7465391f41"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2025_夏",
+    "card_id": "anime-1878",
+    "name": "學校沒教的重要事情",
+    "original_name": "学校では教えてくれない大切なこと",
+    "subject_id": 559674,
+    "subject_name": "学校では教えてくれない大切なこと 整理整頓編",
+    "reason": "version_title_mismatch",
+    "summary_length": 222,
+    "attempted_at": "2026-10-18T08:34:13.675701+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/559674",
+    "latest_reason": "linked_entry_scope_not_approved",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://gakkodeha-anime.com/",
+        "host": "gakkodeha-anime.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/559674",
+      "attempted_at": "2026-10-18T08:34:13.675701+00:00",
+      "summary_length": 222,
+      "cached_observation_sha256": "378f83c021b9c0a4d346559269f8217bacb5cfa5482a6f64720cc829b0095bb1"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2025_夏",
+    "card_id": "anime-1874",
+    "name": "噗妮露是可愛史萊姆 第2季",
+    "original_name": "ぷにるはかわいいスライム 第2期",
+    "subject_id": 530115,
+    "subject_name": "ぷにるはかわいいスライム 第2期",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:15.104376+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/530115",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://puniru-anime.com/",
+        "host": "puniru-anime.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/530115",
+      "attempted_at": "2026-10-18T08:34:15.104376+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "17ea3a94a43743c51a5cc4425890e5ac136e5309bbdef620f85d82b85e2565a5"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2025_夏",
+    "card_id": "anime-1877",
+    "name": "闇芝居 第15季",
+    "original_name": "闇芝居 十五期",
+    "subject_id": 562793,
+    "subject_name": "闇芝居 十五期",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:15.826523+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/562793",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tv-tokyo.co.jp/anime/yamishibai15/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/562793",
+      "attempted_at": "2026-10-18T08:34:15.826523+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "75039928c607d7f2738553971428b32eeecd89bb5fbdb10c71206e98631a5154"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2025_春",
+    "card_id": "anime-1808",
+    "name": "全力兔 第2季",
+    "original_name": "全力ウサギ シーズン2",
+    "subject_id": 523889,
+    "subject_name": "全力ウサギ 第2期",
+    "reason": "version_title_mismatch",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:11.497393+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/523889",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://zenryoku-usagi-anime.com/",
+        "host": "zenryoku-usagi-anime.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/523889",
+      "attempted_at": "2026-10-18T08:34:11.497393+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "004edcc84102cc72add7b03285cefd94713860a1690f15be26b49398b01df346"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2025_春",
+    "card_id": "anime-1799",
+    "name": "搞笑漫畫日和 GO",
+    "original_name": "ギャグマンガ日和GO",
+    "subject_id": 526567,
+    "subject_name": "ギャグマンガ日和GO",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:12.219836+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/526567",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.gagbi-go.com/",
+        "host": "www.gagbi-go.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/526567",
+      "attempted_at": "2026-10-18T08:34:12.219836+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "b25759ab997bcbca11ce93474f9c8af68b526f4ac37ae863ef88aa442b5083b7"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2025_秋",
+    "card_id": "anime-1928",
+    "name": "百姓貴族 第3季",
+    "original_name": "百姓貴族 3期",
+    "subject_id": 529694,
+    "subject_name": "百姓貴族 3rd Season",
+    "reason": "version_title_mismatch",
+    "summary_length": 192,
+    "attempted_at": "2026-10-18T08:34:10.028517+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/529694",
+    "latest_reason": "version_specific_summary_evidence_insufficient",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://s.mxtv.jp/anime/hyakusho_kizoku/",
+        "host": "s.mxtv.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/529694",
+      "attempted_at": "2026-10-18T08:34:10.028517+00:00",
+      "summary_length": 192,
+      "cached_observation_sha256": "ee2c3fd22c96512aa7b1ef68c18fd0ba215ddde8480a27c06a79ef44deccaf3a"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2025_秋",
+    "card_id": "anime-1934",
+    "name": "SHIBUYA♡HACHI 第四季度",
+    "original_name": "SHIBUYA♡HACHI 第4クール",
+    "subject_id": 582915,
+    "subject_name": "SHIBUYA♡HACHI 第4クール",
+    "reason": "source_summary_missing_or_invalid",
+    "summary_length": 0,
+    "attempted_at": "2026-10-18T08:34:10.740509+00:00",
+    "source_url": "https://api.bgm.tv/v0/subjects/582915",
+    "latest_reason": "source_summary_missing_or_invalid",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/",
+        "host": "www.tv-tokyo.co.jp",
+        "permitted": true
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/582915",
+      "attempted_at": "2026-10-18T08:34:10.740509+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "ff270400ba60b19258f944efbe85b426760bf51775603db37ab90b1e8815da9e"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2026_秋",
+    "card_id": "anime-2279",
+    "name": "藥師少女的獨語 第三季 前半",
+    "original_name": "薬屋のひとりごと 第3期 第1クール",
+    "subject_id": 568244,
+    "subject_name": "薬屋のひとりごと 第3期",
+    "reason": "official_part_scope_evidence_unavailable",
+    "summary_length": 269,
+    "latest_reason": "official_part_scope_evidence_unavailable",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://kusuriyanohitorigoto.jp/season3/",
+        "host": "kusuriyanohitorigoto.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/568244",
+      "attempted_at": "2026-10-18T08:34:02.764002+00:00",
+      "summary_length": 269,
+      "cached_observation_sha256": "77f50fdd12800a09f11abf4c2276a3617a0b43097ebf1ecf8ece6fa4da58e0ab"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2026_秋",
+    "card_id": "anime-2343",
+    "name": "鼠小弟的小背心 第二季",
+    "original_name": "ねずみくんのチョッキ 第２期",
+    "subject_id": 694622,
+    "subject_name": "ねずみくんのチョッキ 第2期",
+    "reason": "official_part_scope_evidence_unavailable",
+    "summary_length": 0,
+    "latest_reason": "official_part_scope_evidence_unavailable",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://www.poplar.co.jp/pr/anime-nezumikun/",
+        "host": "www.poplar.co.jp",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/694622",
+      "attempted_at": "2026-10-18T08:34:03.425370+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "d4b790c25443360f471ee076b398dbe5a9bdb704d236d1ccaff423778513c093"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2026_秋",
+    "card_id": "anime-2303",
+    "name": "夜櫻家大作戰 第二季 第二部分",
+    "original_name": "夜桜さんちの大作戦 第2期 第2クール",
+    "subject_id": 664389,
+    "subject_name": "夜桜さんちの大作戦 第2期 第2クール",
+    "reason": "official_part_scope_evidence_unavailable",
+    "summary_length": 0,
+    "latest_reason": "official_part_scope_evidence_unavailable",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://mission-yozakura-family.com/",
+        "host": "mission-yozakura-family.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/664389",
+      "attempted_at": "2026-10-18T08:34:04.584947+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "6f7ff5bcb5266f989d11daf2e448b023bc9f2a709701c0f6a7ddaa857b96f4dc"
+    },
+    "result": "retain_missing_pending_evidence"
+  },
+  {
+    "quarter": "2026_秋",
+    "card_id": "anime-2329",
+    "name": "鑽石王牌 actⅡ第2季 2nd cour",
+    "original_name": "ダイヤのA actII -Second Season- 第2クール",
+    "subject_id": 664395,
+    "subject_name": "ダイヤのA actⅡ Second Season 第2クール",
+    "reason": "official_part_scope_evidence_unavailable",
+    "summary_length": 0,
+    "latest_reason": "official_part_scope_evidence_unavailable",
+    "reviewed_at": "2026-10-18T09:31:23.382636+00:00",
+    "review_method": "reinspect_existing_subject_response_and_exact_public_identity",
+    "official_candidates": [
+      {
+        "url": "https://diaace.com/",
+        "host": "diaace.com",
+        "permitted": false
+      }
+    ],
+    "reused_subject_observation": {
+      "url": "https://api.bgm.tv/v0/subjects/664395",
+      "attempted_at": "2026-10-18T08:34:05.314857+00:00",
+      "summary_length": 0,
+      "cached_observation_sha256": "83883c374e0f151b3d0997da08da1ac84bc9abb720f74f6f7a9620d36b6b2919"
+    },
+    "result": "retain_missing_pending_evidence"
+  }
+]

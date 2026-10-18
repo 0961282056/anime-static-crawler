@@ -1,0 +1,86 @@
+[
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-590",
+    "name": "按鍵發明PIKACHIN-KIT",
+    "subject_id": 227778,
+    "source": {
+      "provider": "official",
+      "subject_id": 227778,
+      "checked_at": "2026-10-18T17:26:45.985122+08:00",
+      "method": "manual_official",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/pikachin/story/",
+      "source_snapshot_date": null
+    }
+  },
+  {
+    "quarter": "2018_冬",
+    "card_id": "anime-646",
+    "name": "卡片鬥爭!! 先導者GZ",
+    "subject_id": 221018,
+    "source": {
+      "provider": "official",
+      "subject_id": 221018,
+      "checked_at": "2026-10-18T17:28:18.535738+08:00",
+      "method": "manual_official",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/cf-vanguard-gz/story/",
+      "source_snapshot_date": null
+    }
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-313",
+    "name": "星光頻道 第二季",
+    "subject_id": 269023,
+    "source": {
+      "provider": "official",
+      "subject_id": 269023,
+      "checked_at": "2026-10-18T17:30:13.354010+08:00",
+      "method": "manual_official",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_5.html",
+      "source_snapshot_date": null
+    }
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-314",
+    "name": "妖怪手錶！",
+    "subject_id": 279472,
+    "source": {
+      "provider": "official",
+      "subject_id": 279472,
+      "checked_at": "2026-10-18T17:29:16.133571+08:00",
+      "method": "manual_official",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/story/",
+      "source_snapshot_date": null
+    }
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-117",
+    "name": "星光頻道 第三季",
+    "subject_id": 296702,
+    "source": {
+      "provider": "official",
+      "subject_id": 296702,
+      "checked_at": "2026-10-18T17:28:57.350981+08:00",
+      "method": "manual_official",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/prichan/story/",
+      "source_snapshot_date": null
+    }
+  },
+  {
+    "quarter": "2021_春",
+    "card_id": "anime-776",
+    "name": "夢夢貓 Mix!",
+    "subject_id": 321387,
+    "source": {
+      "provider": "official",
+      "subject_id": 321387,
+      "checked_at": "2026-10-18T17:28:46.090084+08:00",
+      "method": "manual_official",
+      "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/story/",
+      "source_snapshot_date": null
+    }
+  }
+]

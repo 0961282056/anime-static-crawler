@@ -1220,7 +1220,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/113e9cbb3e0bc4447b896f3f81cc1f5d",
       "premiere_date": "六",
       "premiere_time": "09:30",
-      "story": "暫無簡介",
+      "story": "どの学校にもいそうな小学５年生・遠松エイジは、ある日、謎の『ピカちん大百科』を手に入れる。それは、「そんなことができたらいいな～」という願いをキャッチして、それをかなえるプラモを生み出してくれる夢のカタログだった！",
       "original_name": "ポチっと発明ピカちんキット",
       "external_ids": {
         "bangumi": 227778,
@@ -1241,6 +1241,14 @@
         "end_date": "2020-03-28",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "official",
+        "subject_id": 227778,
+        "checked_at": "2026-10-18T17:26:45.985122+08:00",
+        "method": "manual_official",
+        "source_url": "https://www.tv-tokyo.co.jp/anime/pikachin/story/",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1643,7 +1651,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5c23e953a931a2299877f69a813bed5a",
       "premiere_date": "日",
       "premiere_time": "10:00",
-      "story": "暫無簡介",
+      "story": "惑星クレイから“使徒”を名乗るユニットたちが地球に降り立った。全てを滅ぼす“破壊の竜神ギーゼ”。その復活を目論む“使徒”たちは、6体の竜“ゼロスドラゴン”の力を使い地球を侵略する！",
       "original_name": "CARDFIGHT!! ヴァンガードG Z",
       "external_ids": {
         "bangumi": 221018,
@@ -1664,6 +1672,14 @@
         "end_date": "2018-04-01",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "official",
+        "subject_id": 221018,
+        "checked_at": "2026-10-18T17:28:18.535738+08:00",
+        "method": "manual_official",
+        "source_url": "https://www.tv-tokyo.co.jp/anime/cf-vanguard-gz/story/",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1899,14 +1915,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T16:47:50.225595+08:00",
+  "generated_at": "2026-10-18T17:33:17.266301+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201801/",
   "quality": {
     "source_count": 59,
     "record_count": 59,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 7,
+    "missing_story_count": 5,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

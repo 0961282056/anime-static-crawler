@@ -1,0 +1,15 @@
+{
+  "base_commit": "b8e1ec8ce58370de85b1642a757dbd8af57255ea",
+  "quarters": 37,
+  "records": 2150,
+  "missing_before": 111,
+  "missing_after": 105,
+  "filled_records": 6,
+  "official_records": 6,
+  "all_existing_summaries_preserved": true,
+  "all_other_record_fields_preserved": true,
+  "only_record_fields_changed": [
+    "story",
+    "story_source"
+  ]
+}

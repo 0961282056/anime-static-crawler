@@ -1,0 +1,372 @@
+[
+  {
+    "url": "https://www.tms-e.co.jp/alltitles/",
+    "attempted_at": "2026-10-18T09:26:44.786327+00:00",
+    "status": 200,
+    "final_url": "https://www.tms-e.co.jp/alltitles/",
+    "sha256": "0ce1170a3a62e9fddd8a47d842649b634c7d5e486e506c26ab9c4d28ebf2c32d",
+    "file": "c89f52fe4c5d4503b123ed76e2f2f80f940abd167948f2736a6ae10d3bdd6437.html",
+    "title": "TMS作品一覧 | アニメーションの総合プロデュース会社 トムス・エンタテインメント"
+  },
+  {
+    "url": "https://www.madhouse.co.jp/works/",
+    "attempted_at": "2026-10-18T09:26:44.786641+00:00",
+    "status": 200,
+    "final_url": "https://madhouse.co.jp/works/",
+    "sha256": "ea27baa914db531ebb60373b37586734b4d076df163eeb64af569ba7a1e1f680",
+    "file": "9412f3c4305d918024e1878c3826f979073ea9f830ba8a3f586dacfa6f101bc9.html",
+    "title": "WORKS｜株式会社マッドハウス"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/saikikusuo/story/",
+    "attempted_at": "2026-10-18T09:26:44.786916+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/saikikusuo/story/",
+    "sha256": "bed004944d1b1e52d8f16dc0d88a27b6a705604fa5f4df32914bec4c6f1dca88",
+    "file": "5799087aff068cf921c3cd0ee8f1419450d23c142e0cdfdd07f65a7d0c6e63bb.html",
+    "title": "ストーリー　斉木楠雄のΨ難｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/garugaku2/story/",
+    "attempted_at": "2026-10-18T09:26:44.787171+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/garugaku2/story/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/pikachin/story/",
+    "attempted_at": "2026-10-18T09:26:45.985122+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/pikachin/story/",
+    "sha256": "84fa6f83b70843c1daaaf9392fdf4190f61bc670e24ad7df7321e355f600a55d",
+    "file": "e370cceef83f85ffc9aad09570021145b238486230c7e92f2fd8140a8a062379.html",
+    "title": "ストーリー　ポチっと発明 ピカちんキット｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/mewkledreamy_mix/story/",
+    "attempted_at": "2026-10-18T09:26:46.214136+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/mewkledreamy_mix/story/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/gintama/intro/",
+    "attempted_at": "2026-10-18T09:26:46.889528+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/gintama/intro/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/shokugeki3/story/",
+    "attempted_at": "2026-10-18T09:26:46.926620+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/shokugeki3/story/"
+  },
+  {
+    "url": "https://niagho.com/info/tvanime.html",
+    "attempted_at": "2026-10-18T09:26:47.018259+00:00",
+    "status": 200,
+    "final_url": "https://niagho.com/info/tvanime.html",
+    "sha256": "03f3dce03c8f8f807c09ac6b65c107852eb270b13b9ffeb0d61d13b832b1698c",
+    "file": "7f0c59a77496cd5c49bf83882860d6018f7302cc1370d45bd74d25daf724e23e.html",
+    "title": "【公式】猫のニャッホ 〜ニャ・ミゼラブル〜"
+  },
+  {
+    "url": "https://anime.magireco.com/",
+    "attempted_at": "2026-10-18T09:26:47.623264+00:00",
+    "status": 200,
+    "final_url": "https://anime.magireco.com/",
+    "sha256": "76a53323f2de37b9e77530d81cd60a909d6ad56ca279b3aef63e1cde0d02bee4",
+    "file": "ac3bec9e0d20e3c88f67c2c9a0538a189549293a8a6556978dbf36b548cafdc9.html",
+    "title": "TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝」公式サイト"
+  },
+  {
+    "url": "https://www.tms-e.co.jp/alltitles/2010-01-01/-/2019-12-31/",
+    "attempted_at": "2026-10-18T09:27:10.899423+00:00",
+    "status": 200,
+    "final_url": "https://www.tms-e.co.jp/alltitles/2010-01-01/-/2019-12-31/",
+    "sha256": "51e7716146c4c448d9c316d042cdd2d1312d14c82aa29aec636d001fd6a142f1",
+    "file": "ff2ddfc42c1404cafdb242714e7616820adf16663512610509ae5f3f35c117f3.html",
+    "title": "TMS作品一覧 | アニメーションの総合プロデュース会社 トムス・エンタテインメント"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/prichan/intro/",
+    "attempted_at": "2026-10-18T09:27:10.899831+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/prichan/intro/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/garugaku/",
+    "attempted_at": "2026-10-18T09:27:10.900333+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/garugaku/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/mewkledreamy/",
+    "attempted_at": "2026-10-18T09:27:10.900609+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/mewkledreamy/",
+    "sha256": "b9321596000e1ccee489a90da88aafc21d3a0a143db3331510859c8a0e453b2b",
+    "file": "2c531bd5cb6b4867495d62ad8c4d1ffdfb9b1ef27822823079f33ca0ad698c55.html",
+    "title": "ミュークルドリーミー　テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/shokugekinosoma3/",
+    "attempted_at": "2026-10-18T09:27:11.431676+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/shokugekinosoma3/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/gintama/story/",
+    "attempted_at": "2026-10-18T09:27:11.782618+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/gintama/story/",
+    "sha256": "b2b6d76507de388851e16cfa5c2db5f542ec3a8ad4f6897caf63ef3a3566b2d5",
+    "file": "584a1841576343cfbb27e76b5988edc790c45e66b981c8b2fc00ffac28bddd14.html",
+    "title": "ストーリー　銀魂｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/",
+    "attempted_at": "2026-10-18T09:27:11.833219+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/",
+    "sha256": "ff56994a9b9ea470bf24a50f56d8938d3d172876f898df6040ac10efa6162271",
+    "file": "4ccf1de8ae9615e03957eb2ff29e478dd6a5a7c0a1085c6fd9866bce75e0056f.html",
+    "title": "妖怪ウォッチ！　テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.ntv.co.jp/3dk/",
+    "attempted_at": "2026-10-18T09:27:11.891831+00:00",
+    "status": 404,
+    "final_url": "https://www.ntv.co.jp/3dk/"
+  },
+  {
+    "url": "https://www.ntv.co.jp/hakushon2020/",
+    "attempted_at": "2026-10-18T09:27:12.181197+00:00",
+    "status": 404,
+    "final_url": "https://www.ntv.co.jp/hakushon2020/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/jimoto-japan/",
+    "attempted_at": "2026-10-18T09:27:12.367923+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/jimoto-japan/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/cf-vanguard-gz/",
+    "attempted_at": "2026-10-18T09:27:38.726675+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/cf-vanguard-gz/",
+    "sha256": "069e86e3618b83c3e0c646874f3bd2d4598c49588c3fb0509313c54e963a4122",
+    "file": "c70ef0bd347b900b56707851d0a3c8ffba063541a700a490772fe3c544bcecbe.html",
+    "title": "カードファイト!!ヴァンガードG Z　テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/cf-vanguard2019/",
+    "attempted_at": "2026-10-18T09:27:38.727410+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/cf-vanguard2019/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/mewkledreamy-mix/",
+    "attempted_at": "2026-10-18T09:27:38.728230+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/mewkledreamy-mix/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/jimoto/",
+    "attempted_at": "2026-10-18T09:27:38.728623+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/jimoto/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/intro/",
+    "attempted_at": "2026-10-18T09:27:39.414863+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/intro/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/",
+    "attempted_at": "2026-10-18T09:27:39.470710+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/",
+    "sha256": "1677bedf14bbf517ac8221df42294df1165ed7254cd1a35ee5a80bf96b84ef57",
+    "file": "ad4e6d4eb01d8773418f4ce645fcc0863a2811aedbd1b2865c8cbc42a88d6c42.html",
+    "title": "闇芝居 7期　テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/pikachin/onair/",
+    "attempted_at": "2026-10-18T09:27:39.576873+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/pikachin/onair/",
+    "sha256": "4d59cc5f9b8ed24e672b2cf82691d7432c6e5d05c5efb5438b8ca0f638691202",
+    "file": "7cc8e8887807c2dcaa1252634f6df0126d6eb8f37a62fad274ddc1086a38037f.html",
+    "title": "放送局情報　ポチっと発明 ピカちんキット｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/prichan/news/",
+    "attempted_at": "2026-10-18T09:27:39.579159+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/prichan/news/",
+    "sha256": "d43ad2c96c07f65369519e1127272b9c9e59affdc1771fe26d671cd3ee0a038f",
+    "file": "ef0f19a042f4f75c67306bd148cc9000517502147674de3170d9ffef53d849d5.html",
+    "title": "おしらせ　キラッとプリ☆チャン｜テレビ東京アニメ公式　プリチャン やってみた！"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/garugaku2/",
+    "attempted_at": "2026-10-18T09:27:40.109496+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/garugaku2/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/gakushu/",
+    "attempted_at": "2026-10-18T09:27:40.127143+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/gakushu/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/cf-vanguard-gz/story/",
+    "attempted_at": "2026-10-18T09:27:55.192923+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/cf-vanguard-gz/story/",
+    "sha256": "17f79734ed5ac25b1d69ff5dc8875663d0860ea7c17ddcf85179ea2c2ae82e81",
+    "file": "07097fda62b9256777ae30fb8d923a9e8e5ff6bf34ee967d749278b95fe1778c.html",
+    "title": "ストーリー　カードファイト!!ヴァンガードG Z｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/cf-vanguard-gz/onair/",
+    "attempted_at": "2026-10-18T09:27:55.193559+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/cf-vanguard-gz/onair/",
+    "sha256": "7c9c620fdbdebdb36c6f8794adb836c0485a438a183d75c862c46bc5baf59305",
+    "file": "591901d4a1fc00ad774ef74eadbc39b2ec4742021e84b3bc6a9ca9c045dabe59.html",
+    "title": "放送局情報　カードファイト!!ヴァンガードG Z｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/news/",
+    "attempted_at": "2026-10-18T09:27:55.194005+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/news/",
+    "sha256": "dcd01e505be8a5ccf52fd501dd23867b6f4b2856b6940a45ed18b4394ada6f8c",
+    "file": "f7f31d0e29598e508a74dc49f8b4b75105b26caaa3ea83ceb640483d592d1463.html",
+    "title": "お知らせ　闇芝居 7期｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/mewklemix/",
+    "attempted_at": "2026-10-18T09:27:55.194283+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/",
+    "sha256": "489859fcf9e01b4db0135acf7acf55966e691b29f4696566a9f954b9dba7d1da",
+    "file": "088e1a2f5a465e1aac7fcdd9a19ead08d50736418074219dda056758e9b20188.html",
+    "title": "ミュークルドリーミー みっくす！　テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/mewkledreamy_mix/intro/",
+    "attempted_at": "2026-10-18T09:27:55.797965+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/mewkledreamy_mix/intro/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/mewklemix/story/",
+    "attempted_at": "2026-10-18T09:28:07.345541+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/story/",
+    "sha256": "1cc042d9d5d00ab206e4604bdb16c8a638969d3adb5aa3a3c43d3e335c170886",
+    "file": "36955383e203ab5cb7609fa632a6fe2405cfd42ada84ac7b65b3fc46e9186f76.html",
+    "title": "ストーリー　ミュークルドリーミー みっくす！｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/story/",
+    "attempted_at": "2026-10-18T09:28:57.350524+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/story/",
+    "sha256": "7a44afa133e1dc9294e7716099de3eb351d6e2295c93c0face80548ea067d672",
+    "file": "45f4a209b303763c1f2231df1545be8583495bf3c7e3fbeee97bc5afe63879e2.html",
+    "title": "ストーリー　妖怪ウォッチ！｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/prichan/story/",
+    "attempted_at": "2026-10-18T09:28:57.350981+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/prichan/story/",
+    "sha256": "82aa8bbf737e5c317e96aee3327faa4735f71183b0fdc680a3674e9ab692d61b",
+    "file": "2e0f0365ae412d5908d3a768a5f8be6bb176720c68d1e3651298ac78bdf9423d.html",
+    "title": "ストーリー　キラッとプリ☆チャン｜テレビ東京アニメ公式　プリチャン やってみた！"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai/story/",
+    "attempted_at": "2026-10-18T09:28:57.351385+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai/story/"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_4.html",
+    "attempted_at": "2026-10-18T09:30:13.353542+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_4.html",
+    "sha256": "19c50badf17e3fbb46e8ab22ec1d9d21143bb9d77d4a6fd5a4176948b3baa455",
+    "file": "a88d0fe33dff59fed6b7d92e4ba2330a56f7eb9fa3b1c60b3f26092c77c76be0.html",
+    "title": "おしらせ　キラッとプリ☆チャン｜テレビ東京アニメ公式　プリチャン やってみた！"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_5.html",
+    "attempted_at": "2026-10-18T09:30:13.354010+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_5.html",
+    "sha256": "203374e6530e4df3c3528f28e13c2831052d8132e5ae60097e4f35e2b2efb5a3",
+    "file": "b32262b151c4241f2a25c64773943b6ec1a588723be3803421dc5d23b6930db5.html",
+    "title": "おしらせ　キラッとプリ☆チャン｜テレビ東京アニメ公式　プリチャン やってみた！"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_6.html",
+    "attempted_at": "2026-10-18T09:30:13.354469+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_6.html",
+    "sha256": "9aea68a77b53276625d3fe0098acb26f0e8dbccf5789d253b989cdec6998fddb",
+    "file": "c8297745cb643829f89178411d1fe51f74ecb6b5c2432dd801ac92e601c981a9.html",
+    "title": "おしらせ　キラッとプリ☆チャン｜テレビ東京アニメ公式　プリチャン やってみた！"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_7.html",
+    "attempted_at": "2026-10-18T09:30:13.355038+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_7.html",
+    "sha256": "8293af5381695f41344b713d59d8d178a6d9720178de61c0315724d8ca0040b0",
+    "file": "2227a1a05aad81bd0f2e8558c15a7f4d0188ae51782d51df4a728d62483d0aab.html",
+    "title": "おしらせ　キラッとプリ☆チャン｜テレビ東京アニメ公式　プリチャン やってみた！"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_8.html",
+    "attempted_at": "2026-10-18T09:30:14.051634+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/prichan/news/index_8.html",
+    "sha256": "c336d890c7f128270897d18e63783374c4a96c861915608a76742bf9985d4bce",
+    "file": "0555baac7ab8cce232c172e74e172a5eee4baee9271445e0993e67ee2bbcf9d3.html",
+    "title": "おしらせ　キラッとプリ☆チャン｜テレビ東京アニメ公式　プリチャン やってみた！"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/cf-vanguard-gz/images/under/story.png",
+    "attempted_at": "2026-10-18T09:28:18.535738+00:00",
+    "status": 200,
+    "file": "vanguard-story.png",
+    "sha256": "ea52f9e1c68a8145c3d736ba60ac6f2f7e36282acfddb54596d173f348387e7a"
+  },
+  {
+    "url": "https://niagho.com/img/ja/info/tvanime.png",
+    "attempted_at": "2026-10-18T09:28:20.416271+00:00",
+    "status": 200,
+    "file": "niagho-tv.png",
+    "sha256": "f7fa21b7b4428d97745b874199295aa1fa0e98eb85d15976f1a3875ddba12a10"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/mewklemix/images/story/story_txt01.jpg",
+    "status": 200,
+    "attempted_at": "2026-10-18T09:28:46.090084+00:00",
+    "file": "mewkle-story.jpg",
+    "sha256": "12e14d8c14a6324437019fafbd162d1a05117078f75b28e369595c9811b453cc"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2019/images/under_story_txt_pc.png",
+    "status": 200,
+    "attempted_at": "2026-10-18T09:29:16.133571+00:00",
+    "file": "youkai-story.png",
+    "sha256": "bd8809931eee79f591c9d6d1bf38c4beb1e4e288bd1c4e1552e157832afdbf33"
+  }
+]

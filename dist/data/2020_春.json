@@ -1585,7 +1585,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3b20df33a5053fa41a393380b9010a30",
       "premiere_date": "日",
       "premiere_time": "10:00",
-      "story": "暫無簡介",
+      "story": "ある日、キラ宿が最新鋭のVR（バーチャル）遊園地「プリ☆チャンランド」になっちゃった！？さらに、プリ☆チャンランドを運営するカガヤキ・コーポレーションが、次世代トッププリ☆チャンアイドルを決める「プリンセスカップ」の開催を宣言！",
       "original_name": "キラッとプリ☆チャン シーズン３",
       "external_ids": {
         "bangumi": 296702,
@@ -1606,6 +1606,14 @@
         "end_date": "2021-05-30",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "official",
+        "subject_id": 296702,
+        "checked_at": "2026-10-18T17:28:57.350981+08:00",
+        "method": "manual_official",
+        "source_url": "https://www.tv-tokyo.co.jp/anime/prichan/story/",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1942,14 +1950,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T16:52:43.556647+08:00",
+  "generated_at": "2026-10-18T17:31:23.371262+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202004/",
   "quality": {
     "source_count": 59,
     "record_count": 59,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 5,
+    "missing_story_count": 4,
     "missing_date_count": 1,
     "missing_time_count": 1
   }

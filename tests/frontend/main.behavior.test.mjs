@@ -203,6 +203,21 @@ test('Classica Loid second-series excerpt links only the reviewed official ident
   assert.equal(app.storySourceUrl({...anime, external_ids: {bangumi: 180749}}), null);
 });
 
+test('every reviewed official excerpt has a working link bound to its own version', () => {
+  const {app} = createContext();
+  const reviews = JSON.parse(readFileSync(new URL('../../services/reviewed_story_sources.json', import.meta.url), 'utf8'));
+  for (const row of reviews) {
+    const anime = {bangumi_id: row.card_id, external_ids: {bangumi: row.subject_id}, story_source: {
+      provider: 'official', method: 'manual_official', subject_id: row.subject_id,
+      source_url: row.source_url
+    }};
+    assert.equal(app.storySourceUrl(anime), row.source_url, row.card_id);
+    for (const other of reviews.filter(item => item.card_id !== row.card_id)) {
+      assert.equal(app.storySourceUrl({...anime, bangumi_id: other.card_id}), null);
+    }
+  }
+});
+
 test('airing filter combines with weekday and keyword while supporting legacy records', () => {
   const {app} = createContext();
   app.rawAnimeList = [

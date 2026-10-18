@@ -1898,7 +1898,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/dd4e3a5d2ba3f14d1bce8f298fea1c3f",
       "premiere_date": "日",
       "premiere_time": "10:30",
-      "story": "暫無簡介",
+      "story": "仲間達との希望ワクワク、夢キラキラな日々の中、赤ちゃんのぬいぐるみ『ちあ』もお空から落ちてきて、2人は『ちあ』のお世話にてんやわんや！",
       "original_name": "ミュークルドリーミー みっくす！",
       "external_ids": {
         "bangumi": 321387,
@@ -1923,6 +1923,14 @@
         "end_date": "2022-03-27",
         "note": "全季電視節目共50次：動畫本篇37集（依Bangumi本篇分類，含第50話回顧最終回）＋いちなる主持人特別節目13次。卡片計入本篇37集；官方50個編號及日期已逐筆對上，不將節目總數當作動畫本篇數。",
         "source_kind": "manual_official"
+      },
+      "story_source": {
+        "provider": "official",
+        "subject_id": 321387,
+        "checked_at": "2026-10-18T17:28:46.090084+08:00",
+        "method": "manual_official",
+        "source_url": "https://www.tv-tokyo.co.jp/anime/mewklemix/story/",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2151,14 +2159,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T16:43:18.882582+08:00",
+  "generated_at": "2026-10-18T17:33:17.308224+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202104/",
   "quality": {
     "source_count": 66,
     "record_count": 66,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 5,
+    "missing_story_count": 4,
     "missing_date_count": 0,
     "missing_time_count": 0
   }
