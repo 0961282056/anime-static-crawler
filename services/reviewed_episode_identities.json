@@ -3141,5 +3141,59 @@
     "summary_scope": "full_linked_subject",
     "summary_reviewed_on": "2026-10-18",
     "summary_review_basis": "actII／actⅡ與Second Season同指2026-04第二季首部分，非2026-10第二cour；介紹澤村背上王牌背號的夏季大會。"
+  },
+  {
+    "card_id": "anime-114",
+    "anime_name": "用我的手指來擾亂吧。〜關店後兩人的沙龍…〜",
+    "source_original_name": "俺の指で乱れろ。～閉店後二人きりのサロンで…～",
+    "subject_id": 300865,
+    "subject_name": "俺の指で乱れろ。〜閉店後二人きりのサロンで…〜",
+    "first_air_date": "2020-04-05",
+    "reviewed_on": "2026-10-18",
+    "basis": "完整書名及關店後沙龍副標相同，僅波浪線字元不同；2020-04-05同一動畫，非其他媒體／續季。",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202004/",
+      "https://github.com/bangumi/Archive/releases/download/archive/dump-2026-10-13.210353Z.zip"
+    ],
+    "scope_note": "精確原名、版本、副標與既有條目綁定；不以名稱搜尋改綁ID。",
+    "summary_scope": "full_linked_subject",
+    "summary_reviewed_on": "2026-10-18",
+    "summary_review_basis": "完整書名及關店後沙龍副標相同，僅波浪線字元不同；2020-04-05同一動畫，非其他媒體／續季。"
+  },
+  {
+    "card_id": "anime-870",
+    "anime_name": "指尖傳出的真摯熱情2-戀人是消防員-",
+    "source_original_name": "指先から本気の熱情2-恋人は消防士",
+    "subject_id": 332655,
+    "subject_name": "指先から本気の熱情2-恋人は消防士-",
+    "first_air_date": "2021-07-04",
+    "reviewed_on": "2026-10-18",
+    "basis": "第2季、恋人は消防士副標及2021-07-04一致，末尾連字號省略；介紹明列戀人關係及前男友玲到訪的新情節，不是第一季介紹。",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202107/",
+      "https://github.com/bangumi/Archive/releases/download/archive/dump-2026-10-13.210353Z.zip"
+    ],
+    "scope_note": "精確原名、版本、副標與既有條目綁定；不以名稱搜尋改綁ID。",
+    "summary_scope": "full_linked_subject",
+    "summary_reviewed_on": "2026-10-18",
+    "summary_review_basis": "第2季、恋人は消防士副標及2021-07-04一致，末尾連字號省略；介紹明列戀人關係及前男友玲到訪的新情節，不是第一季介紹。"
+  },
+  {
+    "card_id": "anime-2103",
+    "anime_name": "草莓哀歌～缺根筋的活潑妹妹與無法釋懷的哥哥～",
+    "source_original_name": "イチゴ哀歌 ～雑で生イキな妹と割り切れない兄～",
+    "subject_id": 583313,
+    "subject_name": "イチゴ哀歌〜雑で生イキな妹と割り切れない兄〜",
+    "first_air_date": "2026-01-04",
+    "reviewed_on": "2026-10-18",
+    "basis": "完整書名、妹妹／哥哥副標相同，僅波浪線、空白寫法不同；快照2026-01-04對應既有同一首部動畫條目，不改主來源2026-01-06的平台播出日期。",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202601/",
+      "https://github.com/bangumi/Archive/releases/download/archive/dump-2026-10-13.210353Z.zip"
+    ],
+    "scope_note": "精確原名、版本、副標與既有條目綁定；不以名稱搜尋改綁ID。",
+    "summary_scope": "full_linked_subject",
+    "summary_reviewed_on": "2026-10-18",
+    "summary_review_basis": "完整書名、妹妹／哥哥副標相同，僅波浪線、空白寫法不同；快照2026-01-04對應既有同一首部動畫條目，不改主來源2026-01-06的平台播出日期。"
   }
 ]

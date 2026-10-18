@@ -974,5 +974,50 @@
     },
     "summary_sha256": "e3e0a5ef1032c5c86fc0e1b207863c769d9a2f2283b3f44a1e8a4f5c6e470852",
     "summary_length": 152
+  },
+  {
+    "quarter": "2020_春",
+    "card_id": "anime-114",
+    "name": "用我的手指來擾亂吧。〜關店後兩人的沙龍…〜",
+    "subject_id": 300865,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 300865,
+      "checked_at": "2026-10-18T16:52:41.286121+08:00",
+      "method": "bangumi_archive",
+      "source_snapshot_date": "2026-10-14"
+    },
+    "summary_sha256": "a7e009ea827c164688796e063572d7a057b3c6f8d4d1a98c4a2e1bc3851c4fee",
+    "summary_length": 193
+  },
+  {
+    "quarter": "2021_夏",
+    "card_id": "anime-870",
+    "name": "指尖傳出的真摯熱情2-戀人是消防員-",
+    "subject_id": 332655,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 332655,
+      "checked_at": "2026-10-18T16:52:41.286121+08:00",
+      "method": "bangumi_archive",
+      "source_snapshot_date": "2026-10-14"
+    },
+    "summary_sha256": "e9a090c9c87ec11a6c7902cbc066111ea8a6e76c43fae8c8b35d9c54840b0b92",
+    "summary_length": 137
+  },
+  {
+    "quarter": "2026_冬",
+    "card_id": "anime-2103",
+    "name": "草莓哀歌～缺根筋的活潑妹妹與無法釋懷的哥哥～",
+    "subject_id": 583313,
+    "source": {
+      "provider": "bangumi",
+      "subject_id": 583313,
+      "checked_at": "2026-10-18T16:52:41.286121+08:00",
+      "method": "bangumi_archive",
+      "source_snapshot_date": "2026-10-14"
+    },
+    "summary_sha256": "59787da610fad13972190cc505105af544cdcc60d48aa04038a23f392e6a33ac",
+    "summary_length": 301
   }
 ]

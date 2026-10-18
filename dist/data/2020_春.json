@@ -1874,7 +1874,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8da59274fdd0c1531409e5470b5b7c66",
       "premiere_date": "日",
       "premiere_time": "25:00",
-      "story": "暫無簡介",
+      "story": "閉店後のサロンを舞台に繰り広げられる大人気ティーンズラブ作品！ 本作品の魅力はなんと言ってもカリスマ美容師・蒼甫の艶のある指使いによる攻め感と、 モデル・要の気怠げな眼差しに秘めた色気です！ こんな美容師やモデルがいるサロンがあったら…常連になりたい！ 夢を追いかけて頑張る主人公・ふみも応援したくなります！ それぞれの思いを抱えたまま交差する３人の男女… 果たして彼らの恋の行方は…！",
       "original_name": "俺の指で乱れろ。～閉店後二人きりのサロンで…～",
       "external_ids": {
         "bangumi": 300865,
@@ -1895,6 +1895,13 @@
         "end_date": "2020-05-24",
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 300865,
+        "checked_at": "2026-10-18T16:52:41.286121+08:00",
+        "method": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
       }
     },
@@ -1935,14 +1942,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T16:43:18.850199+08:00",
+  "generated_at": "2026-10-18T16:52:43.556647+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202004/",
   "quality": {
     "source_count": 59,
     "record_count": 59,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 6,
+    "missing_story_count": 5,
     "missing_date_count": 1,
     "missing_time_count": 1
   }

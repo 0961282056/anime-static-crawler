@@ -3,8 +3,8 @@
   "quarters": 37,
   "records": 2150,
   "missing_before": 179,
-  "missing_after": 114,
-  "filled_records": 65,
+  "missing_after": 111,
+  "filled_records": 68,
   "changed_quarters": 28,
   "bangumi_api_records": 64,
   "official_records": 1,
@@ -13,5 +13,6 @@
     "story_source"
   ],
   "all_existing_summaries_preserved": true,
-  "all_episode_metadata_and_ids_preserved": true
+  "all_episode_metadata_and_ids_preserved": true,
+  "bangumi_archive_records": 3
 }

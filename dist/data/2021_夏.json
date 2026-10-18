@@ -1373,7 +1373,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/2ca204c56bd8b4f12a3c71ea994f1c49",
       "premiere_date": "日",
       "premiere_time": "25:00",
-      "story": "暫無簡介",
+      "story": "互いへの想いを通じ合わせた涼と颯馬は、ついに恋人同士に。\r\n\r\n心もカラダもより深く繋がってラブラブな日々…と思いきや、涼の職場に元カレ・玲が現れて！？\r\n\r\n3人の頭をよぎる、すれ違った学生時代の記憶。\r\n\r\n関わるまいとする涼だが、玲とチームを組むことになってしまい――",
       "original_name": "指先から本気の熱情2-恋人は消防士",
       "external_ids": {
         "bangumi": 332655,
@@ -1394,6 +1394,13 @@
         "end_date": "2021-08-22",
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 332655,
+        "checked_at": "2026-10-18T16:52:41.286121+08:00",
+        "method": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
       }
     },
@@ -1428,14 +1435,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T16:43:18.872407+08:00",
+  "generated_at": "2026-10-18T16:52:43.564099+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202107/",
   "quality": {
     "source_count": 45,
     "record_count": 45,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 6,
+    "missing_story_count": 5,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

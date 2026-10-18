@@ -318,7 +318,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/196444b46b2c4a337f75c8155a9e37f2",
       "premiere_date": "二",
       "premiere_time": "25:00",
-      "story": "暫無簡介",
+      "story": "「帅气哥哥入手！」\r\n这种好事果然没那么容易！\r\n因父亲再婚而多出来的妹妹，竟然是和自己完全相反的超级辣妹！\r\n同居后，她还经常把男人带回家，让光太每天都快受不了了，然而某起事件之后，蓝花开始对他提出拥抱，甚至更进一步的要求！ ？\r\n\r\nイケメン兄貴ゲット！\r\nとか都合よくいかないかぁ(´-д-)=3\r\n父親の再婚でできた妹は自分とは正反対な\r\nゴリゴリのギャルだった…！\r\n同居開始後も男を連れ込むなどやりたい放題の藍花に\r\nうんざりの光太だったが、ある事件をきっかけにして\r\n彼女からハグやそれ以上を求められるようになってしまい…！？ \r\n生意気ギャルと理屈屋童貞のでこぼこ義兄妹ラブコメ爆誕！！",
       "original_name": "イチゴ哀歌 ～雑で生イキな妹と割り切れない兄～",
       "external_ids": {
         "bangumi": 583313,
@@ -338,6 +338,13 @@
         "end_date": null,
         "note": "官方公告最終回第12話；不以預告或光碟發售日當作播出日期。",
         "source_kind": "manual_official"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 583313,
+        "checked_at": "2026-10-18T16:52:41.286121+08:00",
+        "method": "bangumi_archive",
+        "source_snapshot_date": "2026-10-14"
       }
     },
     {
@@ -2027,14 +2034,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T16:43:18.989487+08:00",
+  "generated_at": "2026-10-18T16:52:43.571715+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202601/",
   "quality": {
     "source_count": 65,
     "record_count": 65,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 1,
+    "missing_story_count": 0,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

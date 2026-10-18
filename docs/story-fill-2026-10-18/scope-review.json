@@ -2383,5 +2383,98 @@
         "source_continuing": false
       }
     ]
+  },
+  {
+    "card_id": "anime-114",
+    "anime_name": "用我的手指來擾亂吧。〜關店後兩人的沙龍…〜",
+    "source_original_name": "俺の指で乱れろ。～閉店後二人きりのサロンで…～",
+    "subject_id": 300865,
+    "subject_name": "俺の指で乱れろ。〜閉店後二人きりのサロンで…〜",
+    "subject_type": 2,
+    "first_air_date": "2020-04-05",
+    "provider_url": "https://github.com/bangumi/Archive/releases/download/archive/dump-2026-10-13.210353Z.zip",
+    "provider_checked_at": "2026-10-18T08:52:41.286121+00:00",
+    "verification_method": "bangumi_archive",
+    "source_snapshot_date": "2026-10-14",
+    "summary_sha256": "a7e009ea827c164688796e063572d7a057b3c6f8d4d1a98c4a2e1bc3851c4fee",
+    "summary_length": 193,
+    "scope_review": "完整書名及關店後沙龍副標相同，僅波浪線字元不同；2020-04-05同一動畫，非其他媒體／續季。",
+    "primary_observations": [
+      {
+        "quarter": "2020_春",
+        "source_url": "https://acgsecrets.hk/bangumi/202004/",
+        "checked_at": "2026-10-18T08:39:59.539356+00:00",
+        "document_sha256": "352b307f736eaef6cb4a20a069afc2347ecb36f012d9fc8ce97db8f674d9f39e",
+        "card_sha256": "2c339bbd6688461a51dfbad1ef2a4ca5881965da5319a09f8a31905548fa75ee",
+        "source_anime_name": "用我的手指來擾亂吧。〜關店後兩人的沙龍…〜",
+        "source_original_name": "俺の指で乱れろ。～閉店後二人きりのサロンで…～",
+        "source_explicit_subject_id": null,
+        "source_scope_text": "用我的手指來擾亂吧。〜關店後兩人的沙龍…〜 俺の指で乱れろ。～閉店後二人きりのサロンで…～ 用我的手指來擾亂吧。〜關店後兩人的沙龍…〜 俺の指で乱れろ。～閉店後二人きりのサロンで…～ 漫畫改編 新作 ",
+        "source_broadcast_text": " 2020年4月5日起／每週日深夜／25時0分 2020年4月6日起／每週一凌晨／1時0分 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-870",
+    "anime_name": "指尖傳出的真摯熱情2-戀人是消防員-",
+    "source_original_name": "指先から本気の熱情2-恋人は消防士",
+    "subject_id": 332655,
+    "subject_name": "指先から本気の熱情2-恋人は消防士-",
+    "subject_type": 2,
+    "first_air_date": "2021-07-04",
+    "provider_url": "https://github.com/bangumi/Archive/releases/download/archive/dump-2026-10-13.210353Z.zip",
+    "provider_checked_at": "2026-10-18T08:52:41.286121+00:00",
+    "verification_method": "bangumi_archive",
+    "source_snapshot_date": "2026-10-14",
+    "summary_sha256": "e9a090c9c87ec11a6c7902cbc066111ea8a6e76c43fae8c8b35d9c54840b0b92",
+    "summary_length": 137,
+    "scope_review": "第2季、恋人は消防士副標及2021-07-04一致，末尾連字號省略；介紹明列戀人關係及前男友玲到訪的新情節，不是第一季介紹。",
+    "primary_observations": [
+      {
+        "quarter": "2021_夏",
+        "source_url": "https://acgsecrets.hk/bangumi/202107/",
+        "checked_at": "2026-10-18T08:40:03.450309+00:00",
+        "document_sha256": "ea3957977271c8f2009e7ef8f797bde0e326b817a03409b129d2cd53911c8870",
+        "card_sha256": "b676b27c2ebeb0a37e861011390399d4fc7502a4fc44a73ccdbb453d211e6630",
+        "source_anime_name": "指尖傳出的真摯熱情2-戀人是消防員-",
+        "source_original_name": "指先から本気の熱情2-恋人は消防士",
+        "source_explicit_subject_id": null,
+        "source_scope_text": "指尖傳出的真摯熱情2-戀人是消防員- 指先から本気の熱情2-恋人は消防士 指尖傳出的真摯熱情2-戀人是消防員- 指先から本気の熱情2-恋人は消防士 漫畫改編 續作 喜劇 家長指引 浪漫 ",
+        "source_broadcast_text": " 2021年7月4日起／每週日深夜／25時0分 2021年7月5日起／每週一凌晨／1時0分 ",
+        "source_continuing": false
+      }
+    ]
+  },
+  {
+    "card_id": "anime-2103",
+    "anime_name": "草莓哀歌～缺根筋的活潑妹妹與無法釋懷的哥哥～",
+    "source_original_name": "イチゴ哀歌 ～雑で生イキな妹と割り切れない兄～",
+    "subject_id": 583313,
+    "subject_name": "イチゴ哀歌〜雑で生イキな妹と割り切れない兄〜",
+    "subject_type": 2,
+    "first_air_date": "2026-01-04",
+    "provider_url": "https://github.com/bangumi/Archive/releases/download/archive/dump-2026-10-13.210353Z.zip",
+    "provider_checked_at": "2026-10-18T08:52:41.286121+00:00",
+    "verification_method": "bangumi_archive",
+    "source_snapshot_date": "2026-10-14",
+    "summary_sha256": "59787da610fad13972190cc505105af544cdcc60d48aa04038a23f392e6a33ac",
+    "summary_length": 301,
+    "scope_review": "完整書名、妹妹／哥哥副標相同，僅波浪線、空白寫法不同；快照2026-01-04對應既有同一首部動畫條目，不改主來源2026-01-06的平台播出日期。",
+    "primary_observations": [
+      {
+        "quarter": "2026_冬",
+        "source_url": "https://acgsecrets.hk/bangumi/202601/",
+        "checked_at": "2026-10-18T08:40:36.363409+00:00",
+        "document_sha256": "82ce93f1aae31e2f83337f4b252b4e4ae5fdd140097fe8faaba166c6b2b6d4be",
+        "card_sha256": "cc4855ea9c066d10c3528c440103f9a34a45a9b3fcb79ffe77940584c78ef17f",
+        "source_anime_name": "草莓哀歌～缺根筋的活潑妹妹與無法釋懷的哥哥～",
+        "source_original_name": "イチゴ哀歌 ～雑で生イキな妹と割り切れない兄～",
+        "source_explicit_subject_id": 583313,
+        "source_scope_text": "草莓哀歌～缺根筋的活潑妹妹與無法釋懷的哥哥～ イチゴ哀歌 ～雑で生イキな妹と割り切れない兄～ 草莓哀歌～缺根筋的活潑妹妹與無法釋懷的哥哥～ イチゴ哀歌 ～雑で生イキな妹と割り切れない兄～ 漫畫改編 新作 高人氣 喜劇 家長指引 ",
+        "source_broadcast_text": " 1月6日起／每週二深夜／25時0分 1月7日起／每週三凌晨／1時0分 作品頁面 ",
+        "source_continuing": false
+      }
+    ]
   }
 ]

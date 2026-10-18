@@ -791,19 +791,6 @@
     "latest_reason": "source_summary_missing_or_invalid"
   },
   {
-    "quarter": "2020_春",
-    "card_id": "anime-114",
-    "name": "用我的手指來擾亂吧。〜關店後兩人的沙龍…〜",
-    "original_name": "俺の指で乱れろ。～閉店後二人きりのサロンで…～",
-    "subject_id": 300865,
-    "subject_name": "俺の指で乱れろ。〜閉店後二人きりのサロンで…〜",
-    "reason": "version_title_mismatch",
-    "summary_length": 193,
-    "attempted_at": "2026-10-18T08:35:06.692740+00:00",
-    "source_url": "https://api.bgm.tv/v0/subjects/300865",
-    "latest_reason": "provider_http_404"
-  },
-  {
     "quarter": "2020_秋",
     "card_id": "anime-105",
     "name": "胖腹動物的生活",
@@ -958,19 +945,6 @@
     "attempted_at": "2026-10-18T08:34:46.180044+00:00",
     "source_url": "https://api.bgm.tv/v0/subjects/330889",
     "latest_reason": "source_summary_missing_or_invalid"
-  },
-  {
-    "quarter": "2021_夏",
-    "card_id": "anime-870",
-    "name": "指尖傳出的真摯熱情2-戀人是消防員-",
-    "original_name": "指先から本気の熱情2-恋人は消防士",
-    "subject_id": 332655,
-    "subject_name": "指先から本気の熱情2-恋人は消防士-",
-    "reason": "version_title_mismatch",
-    "summary_length": 137,
-    "attempted_at": "2026-10-18T08:34:51.160688+00:00",
-    "source_url": "https://api.bgm.tv/v0/subjects/332655",
-    "latest_reason": "provider_http_404"
   },
   {
     "quarter": "2021_夏",
@@ -1413,19 +1387,6 @@
     "attempted_at": "2026-10-18T08:34:10.740509+00:00",
     "source_url": "https://api.bgm.tv/v0/subjects/582915",
     "latest_reason": "source_summary_missing_or_invalid"
-  },
-  {
-    "quarter": "2026_冬",
-    "card_id": "anime-2103",
-    "name": "草莓哀歌～缺根筋的活潑妹妹與無法釋懷的哥哥～",
-    "original_name": "イチゴ哀歌 ～雑で生イキな妹と割り切れない兄～",
-    "subject_id": 583313,
-    "subject_name": "イチゴ哀歌〜雑で生イキな妹と割り切れない兄〜",
-    "reason": "version_title_mismatch",
-    "summary_length": 301,
-    "attempted_at": "2026-10-18T08:34:08.621268+00:00",
-    "source_url": "https://api.bgm.tv/v0/subjects/583313",
-    "latest_reason": "provider_http_404"
   },
   {
     "quarter": "2026_秋",
