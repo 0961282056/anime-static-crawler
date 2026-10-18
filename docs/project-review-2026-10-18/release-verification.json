@@ -1,0 +1,173 @@
+{
+  "verified_at": "2026-10-18T03:25:59.379230+00:00",
+  "commit": "97fa96979715ba154e1081d476adfcb70dc67d38",
+  "quarters": 37,
+  "records": 2150,
+  "assets": 5,
+  "all_equal": true,
+  "results": [
+    {
+      "path": "dist/data/2018_冬.json",
+      "records": 59
+    },
+    {
+      "path": "dist/data/2018_夏.json",
+      "records": 58
+    },
+    {
+      "path": "dist/data/2018_春.json",
+      "records": 83
+    },
+    {
+      "path": "dist/data/2018_秋.json",
+      "records": 66
+    },
+    {
+      "path": "dist/data/2019_冬.json",
+      "records": 51
+    },
+    {
+      "path": "dist/data/2019_夏.json",
+      "records": 44
+    },
+    {
+      "path": "dist/data/2019_春.json",
+      "records": 51
+    },
+    {
+      "path": "dist/data/2019_秋.json",
+      "records": 56
+    },
+    {
+      "path": "dist/data/2020_冬.json",
+      "records": 51
+    },
+    {
+      "path": "dist/data/2020_夏.json",
+      "records": 38
+    },
+    {
+      "path": "dist/data/2020_春.json",
+      "records": 59
+    },
+    {
+      "path": "dist/data/2020_秋.json",
+      "records": 58
+    },
+    {
+      "path": "dist/data/2021_冬.json",
+      "records": 62
+    },
+    {
+      "path": "dist/data/2021_夏.json",
+      "records": 45
+    },
+    {
+      "path": "dist/data/2021_春.json",
+      "records": 66
+    },
+    {
+      "path": "dist/data/2021_秋.json",
+      "records": 52
+    },
+    {
+      "path": "dist/data/2022_冬.json",
+      "records": 43
+    },
+    {
+      "path": "dist/data/2022_夏.json",
+      "records": 51
+    },
+    {
+      "path": "dist/data/2022_春.json",
+      "records": 54
+    },
+    {
+      "path": "dist/data/2022_秋.json",
+      "records": 56
+    },
+    {
+      "path": "dist/data/2023_冬.json",
+      "records": 62
+    },
+    {
+      "path": "dist/data/2023_夏.json",
+      "records": 51
+    },
+    {
+      "path": "dist/data/2023_春.json",
+      "records": 54
+    },
+    {
+      "path": "dist/data/2023_秋.json",
+      "records": 74
+    },
+    {
+      "path": "dist/data/2024_冬.json",
+      "records": 57
+    },
+    {
+      "path": "dist/data/2024_夏.json",
+      "records": 59
+    },
+    {
+      "path": "dist/data/2024_春.json",
+      "records": 61
+    },
+    {
+      "path": "dist/data/2024_秋.json",
+      "records": 74
+    },
+    {
+      "path": "dist/data/2025_冬.json",
+      "records": 65
+    },
+    {
+      "path": "dist/data/2025_夏.json",
+      "records": 74
+    },
+    {
+      "path": "dist/data/2025_春.json",
+      "records": 65
+    },
+    {
+      "path": "dist/data/2025_秋.json",
+      "records": 63
+    },
+    {
+      "path": "dist/data/2026_冬.json",
+      "records": 65
+    },
+    {
+      "path": "dist/data/2026_夏.json",
+      "records": 75
+    },
+    {
+      "path": "dist/data/2026_春.json",
+      "records": 71
+    },
+    {
+      "path": "dist/data/2026_秋.json",
+      "records": 73
+    },
+    {
+      "path": "dist/data/2027_冬.json",
+      "records": 4
+    },
+    {
+      "path": "static/css/main.css"
+    },
+    {
+      "path": "static/favicon.svg"
+    },
+    {
+      "path": "static/js/main.js"
+    },
+    {
+      "path": "static/vendor/ALPINE-LICENSE.md"
+    },
+    {
+      "path": "static/vendor/alpine-csp-3.15.12.min.js"
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "base": "37cec90b74757d64ff5e0e7da9110d433ffd8692",
+  "scheduled_merge": "97fa96979715ba154e1081d476adfcb70dc67d38",
+  "schedule_run": 39061262544,
+  "updated_records": 87,
+  "reordered_quarters": [
+    "2026_秋"
+  ],
+  "fields": {
+    "episodes": 87,
+    "anime_name": 1
+  },
+  "failure_log": "2026-10-17T19:12:40.1766630Z 2026-10-18 03:12:40,176 WARNING services.episode_metadata Episode metadata retained for anime-2329: Linked anime title differs from the source original title",
+  "real_failure_preserved_counts_status_end_sources_and_checked_at": true,
+  "changes": [
+    {
+      "quarter": "2023_秋",
+      "card": "anime-1406",
+      "name": "爆旋陀螺 X",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          135,
+          136
+        ]
+      }
+    },
+    {
+      "quarter": "2026_夏",
+      "card": "anime-2263",
+      "name": "我家的弟弟們真是讓您費心了",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2344",
+      "name": "麵包小偷",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2338",
+      "name": "Welsh & Shedar",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2279",
+      "name": "藥師少女的獨語 第三季 前半",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2283",
+      "name": "裝備仔",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2299",
+      "name": "螢火蟲的出嫁",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2263",
+      "name": "我家的弟弟們真是讓您費心了",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2281",
+      "name": "暗部共生少女",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2296",
+      "name": "桃源暗鬼 ～日光・華嚴之瀧篇～",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2291",
+      "name": "東京復仇者 三天戰爭篇",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2323",
+      "name": "Keroro軍曹☆",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2343",
+      "name": "鼠小弟的小背心 第二季",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2317",
+      "name": "朱色假面",
+      "changed": [
+        "anime_name",
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2332",
+      "name": "七葉樹王國的七名騎士",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2297",
+      "name": "轉生後的大聖女，極力隱瞞聖女的身分",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2292",
+      "name": "野生的大魔王出現了！第二季",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2288",
+      "name": "黑色五葉草 第二季",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2321",
+      "name": "至高之力 Vertex Force",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2325",
+      "name": "#尋找殭屍中",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2337",
+      "name": "恐怖收集者",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2215",
+      "name": "魔法★探險家",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2280",
+      "name": "學生會也有洞！",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2311",
+      "name": "亂馬½ 第三季",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2306",
+      "name": "用【循環利息】強制收回借出的魔力",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "aired_episodes": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "quarter": "2026_秋",
+      "card": "anime-2329",
+      "name": "鑽石王牌 actⅡ第2季 2nd cour",
+      "changed": [
+        "episodes"
+      ],
+      "facts": {
+        "fetch_state": [
+          "ok",
+          "stale"
+        ]
+      }
+    }
+  ]
+}
