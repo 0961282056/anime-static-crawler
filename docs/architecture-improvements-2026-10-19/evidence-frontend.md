@@ -28,6 +28,6 @@
 
 本地 Python **584 通過、2 個 Windows 本地略過**，覆蓋率 **83.78%**；前端行為 **41 通過**；Chromium **18 通過**。包含髒資料快照、歷史重建／截斷、失敗／沿用證據、來源不明、模組圖、過期生成檔、私有作用域及 getter／狀態隔離回歸。瀏覽器實際檢查 Alpine、跨季搜尋、競態、錯誤恢復、來源顯示、分享及 CSP。
 
-Ruff、format、node syntax、actionlint、shellcheck、pip check、BUILD_ONLY 建置、validate-all 及資料／cache 基準比對通過。最後整合補強只涉及證據快照，未再更動已通過瀏覽器驗證的執行邏輯。PR／原生 Windows／預覽／正式工作與正式網站實際結果，於合併後記在本批 PR。
+Ruff、format、node syntax、actionlint、shellcheck、pip check、BUILD_ONLY 建置、validate-all 及資料／cache 基準比對通過。最後整合補強只涉及證據快照，未再更動已通過瀏覽器驗證的執行邏輯。PR／原生 Windows／預覽／正式工作與正式網站實際結果，於合併後記在 [PR #64](https://github.com/0961282056/anime-static-crawler/pull/64)。
 
 限制：歷史查證方法或日期沒有記錄仍維持未知；品質數量不是正確性保證。這次沒有進行新一輪來源查證、補簡介、觸發人工審查通知或修改 Cloudinary；缺漏及既有待辦仍按證據處理。
