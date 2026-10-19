@@ -17,6 +17,7 @@
      data-quarter-versions="{{ quarter_versions_json }}"
      data-official-story-sources="{{ official_story_sources_json }}"
      data-bangumi-story-excerpts="{{ bangumi_story_excerpts_json }}"
+     data-wikipedia-stories="{{ wikipedia_stories_json }}"
      data-reviewed-broadcast-sources="{{ reviewed_broadcast_sources_json }}"></div>
 <div x-data="animeApp" x-init="initApp" class="app-wrapper">
 
@@ -192,8 +193,13 @@
                                 </details>
                             </div>
 
-                            <div class="story-box" :title="anime.story" @click="showStory(anime.anime_name, anime.story)" x-text="anime.story || '暫無簡介'"></div>
+                            <div class="story-box" :title="anime.story" @click="showStory(anime.anime_name, anime.story, anime)" x-text="anime.story || '暫無簡介'"></div>
                             <a class="story-source" x-show="storySourceUrl(anime)" :href="storySourceUrl(anime)" target="_blank" rel="noopener noreferrer" x-text="storySourceLabel(anime)"></a>
+                            <div class="wikipedia-credit" x-show="wikipediaCredit(anime)">
+                                <span x-text="wikipediaCredit(anime)"></span>
+                                <a :href="wikipediaContributorsUrl(anime)" target="_blank" rel="noopener noreferrer">維基百科貢獻者</a> ·
+                                <a :href="wikipediaLicenseUrl(anime)" target="_blank" rel="license noopener noreferrer">CC BY-SA 4.0</a>
+                            </div>
                             
                             <div style="margin-top: auto;">
                                 <button class="btn-add mb-2" @click="addToShare(anime)">

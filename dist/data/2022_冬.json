@@ -7,7 +7,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9fa7398cf4cf1a158e96d73572389f7d",
       "premiere_date": "一",
       "premiere_time": "07:05",
-      "story": "暫無簡介",
+      "story": "少女劇場舉行的Girls²「ツナグツナグ」演唱會成為傳說的數年後。6位少女們為了轉入「聖女斯克威爾學院」，通稱「女學」，於養成所「ガルスタ」上學的故事。",
       "original_name": "ガル学。II～Lucky Stars～",
       "external_ids": {
         "bangumi": 358514,
@@ -28,6 +28,23 @@
         "end_date": "2022-03-18",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "wikipedia",
+        "subject_id": 358514,
+        "checked_at": "2026-10-19T20:40:05.493997+08:00",
+        "method": "wikipedia_excerpt",
+        "source_url": "https://zh.wikipedia.org/w/index.php?title=%E5%A5%B3%E5%AD%B8%E3%80%82&oldid=94057307&variant=zh-tw#%E5%A5%B3%E5%AD%B8%E3%80%82%E2%85%A1%EF%BD%9ELucky_Stars%EF%BD%9E",
+        "source_snapshot_date": null,
+        "wikipedia": {
+          "page_title": "女學。",
+          "revision_id": 94057307,
+          "revision_at": "2026-08-26T18:25:45Z",
+          "contributors_url": "https://zh.wikipedia.org/w/index.php?title=%E5%A5%B3%E5%AD%B8%E3%80%82&action=history",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "原文連續片段節錄；僅移除排版空白與參考註號，未改寫。"
+        }
       }
     },
     {
@@ -1426,7 +1443,7 @@
     "record_count": 43,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 3,
+    "missing_story_count": 2,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

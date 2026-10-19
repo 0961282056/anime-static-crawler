@@ -1,0 +1,15 @@
+{
+  "base": "5c656eaaf0d9c0e7539429ab3b95d239272aeaa1",
+  "counts": {
+    "quarters": 37,
+    "records": 2150,
+    "story": 98,
+    "weekday": 0,
+    "bangumi": 1,
+    "anilist": 1378,
+    "any_missing": 1395
+  },
+  "changed_records": 3,
+  "all_existing_summaries_preserved": true,
+  "all_episode_metadata_images_ids_broadcasts_and_order_preserved": true
+}

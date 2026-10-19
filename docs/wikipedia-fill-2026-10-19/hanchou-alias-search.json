@@ -1,0 +1,35 @@
+{
+  "query": "\"1日外出錄大槻\"",
+  "url": "https://zh.wikipedia.org/w/api.php?action=query&list=search&srsearch=%221%E6%97%A5%E5%A4%96%E5%87%BA%E9%8C%84%E5%A4%A7%E6%A7%BB%22&format=json&srlimit=10",
+  "status": 200,
+  "checked_at": "2026-10-19T12:45:47.954150+00:00",
+  "sha256": "ff7f39c63ccaa8a0b4ca74ac5aa542a5f81f0a2d26b98df05421c487c2479a72",
+  "response": {
+    "batchcomplete": "",
+    "query": {
+      "searchinfo": {
+        "totalhits": 2
+      },
+      "search": [
+        {
+          "ns": 0,
+          "title": "中間管理錄利根川",
+          "pageid": 6056256,
+          "size": 35699,
+          "wordcount": 4140,
+          "snippet": "大槻的跟班。35歳。『<span class=\"searchmatch\">1</span><span class=\"searchmatch\">日</span><span class=\"searchmatch\">外出</span><span class=\"searchmatch\">錄</span><span class=\"searchmatch\">大槻</span>』的角色。個性相較大槻跟石和而言行事穩重且小心謹慎。購買一日單人間後，其歌聲甚至傳至整個工作空間，暴露了其喜歡唱大塚愛《櫻桃》的喜好，並且曾在每年一度的決算會上在大槻的要求下唱了數次此曲。 石和薫（いさわ かおる，聲優：松岡禎丞） 大槻的跟班。34歳。『<span class=\"searchmatch\">1</span><span class=\"searchmatch\">日</span><span class=\"searchmatch\">外出</span><span class=\"searchmatch\">錄</span><span class=\"searchmatch\">大槻</span>』的角色。個性較為頭腦簡單，容易跟風。",
+          "timestamp": "2026-09-14T08:46:52Z"
+        },
+        {
+          "ns": 0,
+          "title": "賭博默示錄",
+          "pageid": 1098944,
+          "size": 72565,
+          "wordcount": 7617,
+          "snippet": "走臨時跟遠藤借的一千萬且加總利息的錢，最後剩6153萬元。於最後救出了45組，並在山崎的慷慨解囊下與他們會面。 在外傳《中間管理錄利根川》、《<span class=\"searchmatch\">1</span><span class=\"searchmatch\">日</span><span class=\"searchmatch\">外出</span><span class=\"searchmatch\">錄</span><span class=\"searchmatch\">大槻</span>》客串登場。 兵藤和尊（兵藤 和尊（ひょうどう かずたか）） 聲優：津嘉山正種（日本）；陳幼文（台灣） 演員：佐藤慶，台灣配音：李香生→陳幼文",
+          "timestamp": "2026-10-03T22:52:54Z"
+        }
+      ]
+    }
+  }
+}

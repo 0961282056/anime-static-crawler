@@ -101,6 +101,8 @@ const presentationMethods = {
 
     storySourceUrl(anime) {
         const id = anime.story_source?.subject_id;
+        if (anime.story_source?.provider === 'wikipedia') return reviewedWikipediaStory(anime)?.source_url || null;
+        if (anime.story_source?.method === 'wikipedia_excerpt' || anime.story_source?.wikipedia != null) return null;
         if (anime.story_source?.provider === 'official') return officialStoryUrl(anime);
         if (anime.story_source?.method === 'bangumi_excerpt' && !reviewedBangumiExcerpt(anime)) return null;
         return Number.isInteger(id) && id > 0 && id === anime.external_ids?.bangumi ? `https://bgm.tv/subject/${id}` : null;
@@ -109,11 +111,27 @@ const presentationMethods = {
     storySourceLabel(anime) {
         const source = anime.story_source;
         if (!source || !this.storySourceUrl(anime)) return '';
+        if (source.provider === 'wikipedia') return `簡介來源：維基百科〈${source.wikipedia.page_title}〉（原文節錄）`;
         if (source.provider === 'official') return '簡介來源：官方作品介紹原文（節錄）';
         if (source.method === 'bangumi_excerpt') return '簡介來源：Bangumi 條目原文（人工核對節錄）';
         return source.method === 'bangumi_archive'
             ? `簡介來源：Bangumi 原文快照（截至 ${source.source_snapshot_date || '日期未記錄'}）`
             : '簡介來源：Bangumi 條目原文';
+    },
+
+    wikipediaCredit(anime) {
+        const row = reviewedWikipediaStory(anime);
+        if (!row) return '';
+        const credit = row.attribution;
+        return `修訂 ${credit.revision_id}（${this.formatSourceTimestamp(credit.revision_at)}，臺北時間）。${credit.changes}`;
+    },
+
+    wikipediaContributorsUrl(anime) {
+        return reviewedWikipediaStory(anime)?.attribution.contributors_url || null;
+    },
+
+    wikipediaLicenseUrl(anime) {
+        return reviewedWikipediaStory(anime)?.attribution.license_url || null;
     },
 
     formatSourceTimestamp(value) {
@@ -165,10 +183,15 @@ const presentationMethods = {
         return '';
     },
 
-    showStory(title, story) {
+    showStory(title, story, anime = null) {
+        const row = anime && title === anime.anime_name && story === anime.story ? reviewedWikipediaStory(anime) : null;
+        const text = row ? [story, this.storySourceLabel(anime), row.source_url,
+            this.wikipediaCredit(anime), `維基百科貢獻者：${row.attribution.contributors_url}`,
+            `CC BY-SA 4.0：${row.attribution.license_url}`].join('\n\n') : story;
         Swal.fire({
             titleText: title,
-            text: story || '暫無簡介',
+            text: text || '暫無簡介',
+            customClass: row ? {htmlContainer: 'wikipedia-dialog'} : {},
             background: '#1e1e1e', color: '#e0e0e0',
             confirmButtonColor: '#bb86fc'
         });

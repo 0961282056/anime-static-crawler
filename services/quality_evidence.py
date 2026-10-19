@@ -377,7 +377,9 @@ def stored_evidence(data_dir: Path) -> tuple[dict, list]:
                     field="story",
                     provider=story.provider if story else "unknown",
                     method=story.method if story else "unrecorded",
-                    scope="exact_linked_entry_summary_original_text"
+                    scope="reviewed_wikipedia_revision_excerpt"
+                    if story and story.wikipedia
+                    else "exact_linked_entry_summary_original_text"
                     if story
                     else "unrecorded",
                     state="retained" if story else "unrecorded",
@@ -387,7 +389,9 @@ def stored_evidence(data_dir: Path) -> tuple[dict, list]:
                     if story
                     else [],
                     last_verified_at=story.checked_at.isoformat() if story else None,
-                    snapshot_at=story.source_snapshot_date.isoformat()
+                    snapshot_at=story.wikipedia.revision_at.isoformat()
+                    if story and story.wikipedia
+                    else story.source_snapshot_date.isoformat()
                     if story and story.source_snapshot_date
                     else None,
                     locator=f"dist/data/{path.name}#/anime_list/{index}/story",

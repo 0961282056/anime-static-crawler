@@ -1,0 +1,20 @@
+{
+  "base": "5c656eaaf0d9c0e7539429ab3b95d239272aeaa1",
+  "added_stories": 3,
+  "added_bangumi_links": 0,
+  "added_anilist_links": 0,
+  "counts": {
+    "quarters": 37,
+    "records": 2150,
+    "story": 98,
+    "weekday": 0,
+    "bangumi": 1,
+    "anilist": 1378,
+    "any_missing": 1395
+  },
+  "saved_search_requests": 101,
+  "candidate_page_statuses": {
+    "200": 19,
+    "404": 4
+  }
+}

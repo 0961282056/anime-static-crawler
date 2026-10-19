@@ -655,3 +655,7 @@ body {
 .story-source { font-size: 0.78rem; line-height: 1.5; margin-bottom: 0.8rem; color: #a9d9e7; }
 .broadcast-note { font-size: 0.8rem; line-height: 1.6; color: #bbc9d6; overflow-wrap: anywhere; }
 .broadcast-note a { color: #a9d9e7; }
+
+.wikipedia-credit { color: var(--text-muted); font-size: .7rem; line-height: 1.5; margin: 0 0 12px; overflow-wrap: anywhere; }
+.wikipedia-credit a { color: var(--accent); }
+.wikipedia-dialog { overflow-wrap: anywhere; white-space: pre-line; }

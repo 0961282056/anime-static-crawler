@@ -1335,7 +1335,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f0a17c5254f582c00a7e1baa6082f0a9",
       "premiere_date": "六",
       "premiere_time": "22:00",
-      "story": "暫無簡介",
+      "story": "講述了五名人魚少女如何相遇，又是如何以偶像為奮鬥目標。",
       "original_name": "バミューダトライアングル ～カラフル・パストラーレ～",
       "external_ids": {
         "bangumi": 257608,
@@ -1356,6 +1356,23 @@
         "end_date": "2019-03-30",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "wikipedia",
+        "subject_id": 257608,
+        "checked_at": "2026-10-19T20:40:04.319048+08:00",
+        "method": "wikipedia_excerpt",
+        "source_url": "https://zh.wikipedia.org/w/index.php?title=%E7%99%BE%E6%85%95%E9%81%94%E4%B8%89%E8%A7%92%EF%BD%9E%E5%A4%9A%E5%BD%A9%E7%94%B0%E5%9C%92%E6%9B%B2%EF%BD%9E&oldid=84719819&variant=zh-tw",
+        "source_snapshot_date": null,
+        "wikipedia": {
+          "page_title": "百慕達三角～多彩田園曲～",
+          "revision_id": 84719819,
+          "revision_at": "2024-10-25T07:53:53Z",
+          "contributors_url": "https://zh.wikipedia.org/w/index.php?title=%E7%99%BE%E6%85%95%E9%81%94%E4%B8%89%E8%A7%92%EF%BD%9E%E5%A4%9A%E5%BD%A9%E7%94%B0%E5%9C%92%E6%9B%B2%EF%BD%9E&action=history",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "原文連續片段節錄；僅移除排版空白與參考註號，未改寫。"
+        }
       }
     },
     {
@@ -1726,7 +1743,7 @@
     "record_count": 51,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 5,
+    "missing_story_count": 4,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

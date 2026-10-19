@@ -1158,7 +1158,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/45cb0fc24095e1859f8f912c200e74db",
       "premiere_date": "六",
       "premiere_time": "17:30",
-      "story": "暫無簡介",
+      "story": "時隔50年，為了讓小呵欠成為女王，噴嚏大魔王決定讓她跟自己一樣去人間修行，這次的主人選擇了堅仔的孫子「與田山甘太郎」。",
       "original_name": "ハクション大魔王2020",
       "external_ids": {
         "bangumi": 299687,
@@ -1179,6 +1179,23 @@
         "end_date": "2020-09-26",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "wikipedia",
+        "subject_id": 299687,
+        "checked_at": "2026-10-19T20:40:04.859139+08:00",
+        "method": "wikipedia_excerpt",
+        "source_url": "https://zh.wikipedia.org/w/index.php?title=%E5%96%B7%E5%9A%8F%E5%A4%A7%E9%AD%94%E7%8E%8B&oldid=94711468&variant=zh-tw#2020%E5%B9%B4%E5%8B%95%E7%95%AB%E7%89%88",
+        "source_snapshot_date": null,
+        "wikipedia": {
+          "page_title": "喷嚏大魔王",
+          "revision_id": 94711468,
+          "revision_at": "2026-10-02T15:03:04Z",
+          "contributors_url": "https://zh.wikipedia.org/w/index.php?title=%E5%96%B7%E5%9A%8F%E5%A4%A7%E9%AD%94%E7%8E%8B&action=history",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "原文連續片段節錄；僅移除排版空白與參考註號，未改寫。"
+        }
       }
     },
     {
@@ -1957,7 +1974,7 @@
     "record_count": 59,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 4,
+    "missing_story_count": 3,
     "missing_date_count": 0,
     "missing_time_count": 1
   }
