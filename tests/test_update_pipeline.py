@@ -178,3 +178,46 @@ def test_schema_invalid_source_card_retains_quarter_and_still_refreshes(
         lambda *args: calls.append(True) or set(),
     )
     assert calls and result["parse_failures"] == 1
+
+
+def test_all_collection_precedes_images_and_quota_is_rechecked_for_each_uploading_quarter(
+    setup_pipeline,
+):
+    paths, repo, old, candidate = setup_pipeline
+    events = []
+
+    def fetch(year, season):
+        events.append("collect-" + season)
+        return (
+            f"https://acgsecrets.hk/bangumi/{year}{'10' if season == '秋' else '07'}/",
+            [
+                candidate.model_copy(
+                    update={
+                        "source_image_url": f"https://static.acgsecrets.hk/{season}.png"
+                    }
+                )
+            ],
+        )
+
+    class Images:
+        def assert_quota_available(self):
+            events.append("quota")
+
+        def store(self, *args):
+            events.append("image")
+            return old.anime_image_url
+
+    run_update_pipeline(
+        paths,
+        repo,
+        NOW,
+        [("2026", "秋"), ("2026", "夏")],
+        future=lambda *args: False,
+        source=SimpleNamespace(fetch_quarter_html=fetch),
+        image_factory=Images,
+        refresh=lambda *args: events.append("episodes") or set(),
+    )
+    assert events[:2] == ["collect-秋", "collect-夏"]
+    assert events.count("quota") == 2
+    assert events[-1] == "episodes"
+    assert repo.load_quarter("2026", "夏") is not None

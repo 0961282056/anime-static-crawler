@@ -20,6 +20,28 @@ from services.settings import ProjectPaths
 SITE = "https://anime-static-crawler.pages.dev/"
 REPOSITORY_API = "https://api.github.com/repos/0961282056/anime-static-crawler"
 COMMIT = re.compile(r"[0-9a-f]{40}")
+CF_ANALYTICS = re.compile(
+    rb"<!-- Cloudflare Pages Analytics --><script defer "
+    rb"src='https://static\.cloudflareinsights\.com/beacon\.min\.js' "
+    rb"data-cf-beacon='([^']+)'></script><!-- Cloudflare Pages Analytics -->"
+)
+
+
+def canonical_home(content: bytes) -> bytes:
+    """Allow only the one measured Pages Analytics injection, not arbitrary HTML."""
+    matches = list(CF_ANALYTICS.finditer(content))
+    if len(matches) != 1:
+        return content
+    match = matches[0]
+    try:
+        config = json.loads(match[1])
+        if set(config) != {"token"} or not re.fullmatch(
+            r"[0-9a-f]{32}", config["token"]
+        ):
+            return content
+    except (ValueError, TypeError):
+        return content
+    return content[: match.start()] + content[match.end() :]
 
 
 def release_commit(paths: ProjectPaths, environment: dict) -> str:
@@ -132,6 +154,8 @@ def verify_once(paths: ProjectPaths, expected: str, read, *, attempt: int = 0) -
     def check(item):
         path, content = item
         actual = read(f"{SITE}{quote(path)}?release={expected}&attempt={attempt}")
+        if path == "index.html":
+            actual = canonical_home(actual)
         if hashlib.sha256(actual).digest() != hashlib.sha256(content).digest():
             raise RuntimeError(f"Canonical content differs: {path}")
         return path

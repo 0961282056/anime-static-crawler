@@ -17,3 +17,6 @@
 
 /static/*
   Cache-Control: public, max-age=31536000, immutable
+
+/search-index.json
+  Cache-Control: public, max-age=300, must-revalidate

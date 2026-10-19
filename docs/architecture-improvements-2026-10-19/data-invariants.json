@@ -1,0 +1,14 @@
+{
+  "base_commit": "d7c7fec0a3603baabde311b19c44c3b93b8445ea",
+  "quarters": 37,
+  "quarter_records": 2150,
+  "search_identities": 1928,
+  "all_public_data_and_image_cache_unchanged": true,
+  "quarter_json_bytes": 3806784,
+  "quarter_json_gzip_estimate": 993605,
+  "index_bytes": 1316025,
+  "index_gzip_estimate": 616740,
+  "quarter_file_requests_before": 37,
+  "typical_specific_query_requests_after": "one index plus matched quarters (cached quarters reused)",
+  "broad_query_limitation": "A query matching every quarter downloads the index plus every matched quarter; no universal latency improvement is claimed."
+}

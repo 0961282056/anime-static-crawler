@@ -17,6 +17,7 @@ from models import Anime
 from services.anime_service import parse_date_time
 from services.atomic_io import atomic_write_json
 from services.cache_repository import CacheRepository
+from services.diagnostics import redact
 from services.display_name_reviews import reviewed_display_rename
 from services.episode_metadata import refresh_repository_episodes
 from services.errors import (
@@ -124,11 +125,17 @@ def run_update_pipeline(
             failures += 1
             parse_failures += isinstance(exc, (ItemParseError, ValidationError))
             report["collection"].append(
-                {"quarter": quarter, "status": "retained", "error": type(exc).__name__}
+                {
+                    "quarter": quarter,
+                    "status": "retained",
+                    "error": type(exc).__name__,
+                    "reason": redact(str(exc))[:500],
+                }
             )
     atomic_write_json(report_path, report)
 
     store = None
+    quota_quarter = None
     unavailable = False
     primary_error = None
     try:
@@ -156,20 +163,27 @@ def run_update_pipeline(
                             if store is None:
                                 try:
                                     store = image_factory()
-                                    store.assert_quota_available()
                                 except (ConfigurationError, ImageStoreError):
+                                    unavailable = True
+                                    raise
+                            if quota_quarter != (year, season):
+                                try:
+                                    store.assert_quota_available()
+                                    quota_quarter = (year, season)
+                                except ImageStoreError:
                                     unavailable = True
                                     raise
                             image_url = store.store(
                                 candidate.source_image_url, candidate.anime_name
                             )
-                        except (ConfigurationError, ImageStoreError):
+                        except (ConfigurationError, ImageStoreError) as exc:
                             failures += 1
                             report["images"].append(
                                 {
                                     "quarter": f"{year}_{season}",
                                     "card_id": candidate.bangumi_id,
                                     "status": "deferred",
+                                    "reason": redact(str(exc))[:500],
                                 }
                             )
                             if not same_work(old, candidate):
@@ -207,6 +221,7 @@ def run_update_pipeline(
                         "quarter": f"{year}_{season}",
                         "status": "retained",
                         "error": type(exc).__name__,
+                        "reason": redact(str(exc))[:500],
                     }
                 )
     except BaseException as exc:

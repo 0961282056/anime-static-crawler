@@ -113,3 +113,47 @@ def test_release_sha_validation_and_fixture_fallback(project_paths):
     with pytest.raises(ValueError):
         release_commit(project_paths, {"RELEASE_COMMIT": "../bad"})
     assert release_commit(project_paths, {}) == "unknown"
+
+
+def test_generated_release_manifest_is_compared_with_all_published_files(
+    project_paths, reader
+):
+    from services.release_manifest import write_release
+
+    home = f'<div data-build-version="{compute_build_version(project_paths)}"></div>'
+    (project_paths.output_dir / "index.html").write_text(home)
+    manifest = write_release(
+        project_paths, {"RELEASE_COMMIT": SHA}, compute_build_version(project_paths)
+    )
+
+    def read(url):
+        if "/release.json" in url:
+            return json.dumps(manifest).encode()
+        return reader(url)
+
+    result = verify_once(project_paths, SHA, read)
+    assert result["status"] == "verified"
+    assert "index.html" in result["files"]
+    assert result["quarters"] == 1
+
+
+def test_only_known_cloudflare_analytics_injection_is_removed():
+    from services.production_verification import canonical_home
+
+    block = (
+        "<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{\"token\":\""
+        + "a" * 32
+        + "\"}'></script><!-- Cloudflare Pages Analytics -->"
+    ).encode()
+    expected = b"<html><body>real content</body></html>"
+    injected = expected.replace(b"</body>", block + b"</body>")
+    assert canonical_home(injected) == expected
+    assert (
+        canonical_home(
+            injected.replace(b"<script defer", b'<script onload="evil()" defer')
+        )
+        != expected
+    )
+    assert canonical_home(injected.replace(b"beacon.min.js", b"other.js")) != expected
+    assert canonical_home(injected.replace(b'"token"', b'"extra"')) != expected
+    assert canonical_home(injected.replace(block, block + block)) != expected

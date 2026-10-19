@@ -50,3 +50,47 @@ def test_manifest_is_deterministic_and_detects_asset_or_version_drift(project_pa
     (p.output_dir / "release.json").write_text(json.dumps(manifest))
     with pytest.raises(RuntimeError, match="data version"):
         validate_release(p)
+
+
+def test_search_index_merges_only_exact_versions_and_keeps_latest_copy(
+    project_paths, anime_record_factory
+):
+    from models import Anime
+    from services.data_repository import DataQualityPolicy, DataRepository
+    from services.search_index import validate_search_index, write_search_index
+
+    p = project_paths
+    repo = DataRepository(p.data_dir, DataQualityPolicy())
+    first = Anime(
+        **anime_record_factory(1, name="同一作品", story="過去的簡介"),
+        original_name="Work 2",
+    )
+    latest = first.model_copy(update={"story": "現在のＳＴＯＲＹ"})
+    other_version = Anime(
+        **anime_record_factory(2, name="另一版本"), original_name="Work 3"
+    )
+    for season, records, month in [
+        ("夏", [first], "07"),
+        ("秋", [latest, other_version], "10"),
+    ]:
+        repo.write_quarter(
+            year="2026",
+            season=season,
+            records=records,
+            source_url=f"https://acgsecrets.hk/bangumi/2026{month}/",
+            source_count=len(records),
+            parse_failure_count=0,
+        )
+    result = write_search_index(p, repo)
+    assert len(result["entries"]) == 2
+    entry = result["entries"][0]
+    assert entry["quarters"] == ["2026_秋", "2026_夏"]
+    assert entry["story"] == "現在のstory"
+    assert not any(
+        "anime_image_url" in row or "episodes" in row for row in result["entries"]
+    )
+    validate_search_index(p, repo)
+    result["entries"][0]["story"] = "wrong"
+    (p.output_dir / "search-index.json").write_text(json.dumps(result))
+    with pytest.raises(RuntimeError, match="Search index"):
+        validate_search_index(p, repo)

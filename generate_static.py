@@ -329,6 +329,9 @@ def generate_static_files() -> None:
     with operation("data-validation", path=paths.data_dir):
         validated_paths = repository.validate_all()
     logger.info("Validated %s quarterly JSON files", len(validated_paths))
+    from services.search_index import write_search_index
+
+    write_search_index(paths, repository)
     with operation("static-assets", path=paths.static_output_dir):
         sync_static_assets(paths)
     with operation("render", path=paths.output_dir / "index.html"):

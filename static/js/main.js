@@ -258,6 +258,23 @@ function isRetryableStatus(status) {
     return status === 408 || status === 425 || status === 429 || (status >= 500 && status <= 599);
 }
 
+function validateSearchIndex(data, app) {
+    const fail = () => { throw createDataError('SEARCH_SCHEMA', '搜尋資料不完整或版本不一致，請重新載入頁面。', {retryable: false}); };
+    if (!data || data.schema_version !== 1 || data.data_version !== app.dataVersion || !Array.isArray(data.entries) || data.entries.length > 50000) fail();
+    const quarters = Object.entries(app.availableData).flatMap(([year, seasons]) => seasons.map(season => `${year}_${season}`));
+    const versions = data.quarter_versions;
+    if (!versions || Object.keys(versions).length !== quarters.length || quarters.some(key => !/^[a-f0-9]{64}$/.test(versions[key]) || (app.quarterVersions[key] && app.quarterVersions[key] !== versions[key]))) fail();
+    const seen = new Set();
+    for (const row of data.entries) {
+        const id = row?.identity;
+        if (!Array.isArray(id) || id.length !== 4 || !/^anime-\d+$/.test(id[0]) || typeof id[1] !== 'string' || !id[1] || typeof id[2] !== 'string' || !(id[3] === null || (Number.isInteger(id[3]) && id[3] > 0)) || typeof row.story !== 'string' || row.story.length > 50000 || !Array.isArray(row.quarters) || !row.quarters.length || new Set(row.quarters).size !== row.quarters.length || row.quarters.some(key => !quarters.includes(key))) fail();
+        const key = JSON.stringify(id);
+        if (seen.has(key)) fail();
+        seen.add(key);
+    }
+    return data;
+}
+
 async function fetchWithDeadline(url, signal, readResponse = response => response, timeoutMs = FETCH_TIMEOUT_MS) {
     const requestController = new AbortController();
     let timedOut = false;
@@ -615,7 +632,7 @@ function animeApp() {
 
         async fetchDatasetFromNetwork(cacheKey, signal) {
             const version = this.quarterVersions[cacheKey] || this.dataVersion;
-            const url = `data/${cacheKey}.json?v=${encodeURIComponent(version)}`;
+            const url = cacheKey === '__search_index__' ? `search-index.json?v=${encodeURIComponent(version)}` : `data/${cacheKey}.json?v=${encodeURIComponent(version)}`;
             let lastError = null;
             const maxRetries = Number.isInteger(this.MAX_FETCH_RETRIES)
                 ? Math.max(0, this.MAX_FETCH_RETRIES)
@@ -632,7 +649,7 @@ function animeApp() {
                         if (!statusError.retryable) throw statusError;
                         lastError = statusError;
                     } else {
-                        return validateDataset(data);
+                        return cacheKey === '__search_index__' ? validateSearchIndex(data, this) : validateDataset(data);
                     }
                 } catch (error) {
                     if (isAbortError(error, signal)) throw createAbortError();
@@ -719,19 +736,23 @@ function animeApp() {
         },
 
         async getAllQuarterData(signal) {
-            const seasonOrder = ['秋', '夏', '春', '冬'];
-            const quarters = Object.keys(this.availableData).sort((a, b) => b - a)
-                .flatMap(year => seasonOrder.filter(season => this.availableData[year].includes(season))
-                    .map(season => ({key: `${year}_${season}`, label: `${year}年${season}季`})));
-            const datasets = new Array(quarters.length);
+            const keyword = this.searchKeyword.normalize('NFKC').toLowerCase().trim();
+            const index = await this.getDataset('__search_index__', signal);
+            if (signal.aborted) throw createAbortError();
+            const matches = index.entries.filter(row => [row.identity[1], row.identity[2], row.story]
+                .some(value => value.normalize('NFKC').toLowerCase().includes(keyword)));
+            const quarters = [...new Set(matches.map(row => row.quarters[0]))];
+            const datasets = new Map();
             let next = 0;
             let stopped = false;
             const worker = async () => {
                 while (!stopped && next < quarters.length) {
                     if (signal.aborted) throw createAbortError();
-                    const index = next++;
+                    const quarter = quarters[next++];
                     try {
-                        datasets[index] = await this.getDataset(quarters[index].key, signal);
+                        const dataset = await this.getDataset(quarter, signal);
+                        const records = new Map(dataset.anime_list.map(anime => [JSON.stringify([anime.bangumi_id, anime.anime_name, anime.original_name || '', anime.external_ids?.bangumi || null]), anime]));
+                        datasets.set(quarter, records);
                     } catch (error) {
                         stopped = true;
                         throw error;
@@ -740,22 +761,13 @@ function animeApp() {
             };
             await Promise.all(Array.from({length: Math.min(4, quarters.length)}, worker));
             if (signal.aborted) throw createAbortError();
-            const works = new Map();
-            let latest = null;
-            datasets.forEach((dataset, index) => {
-                if (dataset.generated_at && (!latest || Date.parse(dataset.generated_at) > Date.parse(latest))) latest = dataset.generated_at;
-                dataset.anime_list.forEach(anime => {
-                    const identity = JSON.stringify([anime.bangumi_id || anime.anime_name, anime.anime_name,
-                        anime.original_name || '', anime.external_ids?.bangumi || null]);
-                    const existing = works.get(identity);
-                    if (existing) {
-                        existing.source_quarters.push(quarters[index].label);
-                    } else {
-                        works.set(identity, {...anime, result_key: identity, source_quarters: [quarters[index].label]});
-                    }
-                });
+            const anime_list = matches.map(row => {
+                const key = JSON.stringify(row.identity);
+                const anime = datasets.get(row.quarters[0]).get(key);
+                if (!anime) throw createDataError('SEARCH_VERSION', '搜尋資料已有更新，請重新載入頁面後再試。', {retryable: false});
+                return {...anime, result_key: key, source_quarters: row.quarters.map(quarter => `${quarter.slice(0, 4)}年${quarter.slice(-1)}季`)};
             });
-            return {anime_list: Array.from(works.values()), generated_at: latest};
+            return {anime_list, generated_at: index.generated_at};
         },
 
         animeResultKey(anime) {
@@ -860,7 +872,25 @@ function animeApp() {
             }
         },
 
-        retryLoad() {
+        async retryLoad() {
+            if (['SEARCH_SCHEMA', 'SEARCH_VERSION'].includes(this.loadError?.code)) {
+                try {
+                    const {response, data} = await fetchJsonWithDeadline('release.json?refresh=' + Date.now(), null, this.FETCH_TIMEOUT_MS);
+                    const quarters = Object.entries(this.availableData).flatMap(([year, seasons]) => seasons.map(season => `${year}_${season}`));
+                    if (!response.ok || data?.schema_version !== 1 || !/^[a-f0-9]{16}$/.test(data.data_version) || !data.quarter_versions || Object.keys(data.quarter_versions).length !== quarters.length || quarters.some(key => !/^[a-f0-9]{64}$/.test(data.quarter_versions[key]))) {
+                        throw createDataError('SEARCH_SCHEMA', '無法取得完整的新版搜尋資料，請稍後重試。', {retryable: false});
+                    }
+                    if (data.build_version !== this.buildVersion) {
+                        throw createDataError('APP_UPDATED', '網站已有新版，請重新整理頁面後再試。', {retryable: false});
+                    }
+                    this.dataVersion = data.data_version;
+                    this.quarterVersions = data.quarter_versions;
+                    this.dataCache = {};
+                } catch (error) {
+                    this.loadError = describeDataError(error, this.rawAnimeList.length > 0);
+                    return;
+                }
+            }
             return this.loadData(false);
         },
 

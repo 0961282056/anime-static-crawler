@@ -281,6 +281,6 @@ def test_partial_stage_results_are_not_announced_as_complete_success():
             partial_failures=2,
         )
     )
-    assert result.status == "FAILURE"
+    assert result.status == "PARTIAL"
     assert "部分階段" in result.message
     assert "PR" in result.message
