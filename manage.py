@@ -238,6 +238,7 @@ def parse_args() -> argparse.Namespace:
             "validate-all",
             "quality-report",
             "quality-evidence",
+            "build-frontend",
             "source-audit",
             "notify-source-reviews",
             "remind-source-reviews",
@@ -250,6 +251,12 @@ def parse_args() -> argparse.Namespace:
 
 
 def execute_command(command: str) -> None:
+    if command == "build-frontend":
+        from services.frontend_bundle import build_frontend_bundle
+
+        build_frontend_bundle(ProjectPaths.from_environment().root)
+        print("Built static/js/main.js from frontend/modules.json")
+        return
     if command == "remind-source-reviews":
         from services.review_queue import remind_from_environment
 

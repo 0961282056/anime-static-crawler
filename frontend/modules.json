@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "modules": [
+    {
+      "name": "settings",
+      "file": "settings.js",
+      "requires": []
+    },
+    {
+      "name": "errors",
+      "file": "errors.js",
+      "requires": [
+        "settings"
+      ]
+    },
+    {
+      "name": "schema",
+      "file": "schema.js",
+      "requires": [
+        "settings",
+        "errors"
+      ]
+    },
+    {
+      "name": "transport",
+      "file": "transport.js",
+      "requires": [
+        "settings",
+        "errors"
+      ]
+    },
+    {
+      "name": "images",
+      "file": "images.js",
+      "requires": []
+    },
+    {
+      "name": "data",
+      "file": "data.js",
+      "requires": [
+        "settings",
+        "errors",
+        "schema",
+        "transport"
+      ]
+    },
+    {
+      "name": "search",
+      "file": "search.js",
+      "requires": [
+        "errors",
+        "data"
+      ]
+    },
+    {
+      "name": "presentation",
+      "file": "presentation.js",
+      "requires": [
+        "settings",
+        "schema",
+        "images"
+      ]
+    },
+    {
+      "name": "sharing",
+      "file": "sharing.js",
+      "requires": [
+        "settings",
+        "images"
+      ]
+    },
+    {
+      "name": "app",
+      "file": "app.js",
+      "requires": [
+        "settings",
+        "data",
+        "search",
+        "presentation",
+        "sharing"
+      ]
+    }
+  ]
+}

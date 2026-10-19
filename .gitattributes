@@ -11,3 +11,4 @@
 *.md text eol=lf
 *.json text eol=lf
 _headers text eol=lf
+static/js/main.js linguist-generated=true
