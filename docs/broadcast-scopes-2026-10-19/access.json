@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://acgsecrets.hk/bangumi/202204/",
+    "observed_at": "2026-10-19T06:30:09.691376+00:00",
+    "status": 200,
+    "sha256": "6cfc347a7de988afec5c63c7d4ae82695c7819de9a3a3401030bd34961d1a786"
+  },
+  {
+    "url": "https://acgsecrets.hk/bangumi/202007/",
+    "observed_at": "2026-10-19T06:30:05.453752+00:00",
+    "status": 200,
+    "sha256": "5b19afe927ddb19847a12cf3b0aca86346f94711af916c5f849169253add80a0"
+  },
+  {
+    "url": "https://api.bgm.tv/v0/episodes?subject_id=367727&type=0&limit=100",
+    "observed_at": "2026-10-19T06:30:47.638714+00:00",
+    "status": 200,
+    "sha256": "3a5c33ceaf59de8c1c772c6c03a9ff59a541c06b46d970ae732d48c79ff84b68",
+    "location": null
+  },
+  {
+    "url": "https://api.bgm.tv/v0/episodes?subject_id=367727&type=0&limit=100",
+    "observed_at": "2026-10-19T06:30:03.294965+00:00",
+    "status": 403,
+    "sha256": "8ad38b6d6fdf10121dffd78ad22835a2a2c1e51cff85e3ef701f326a6b68d721"
+  },
+  {
+    "url": "https://api.bgm.tv/v0/episodes?subject_id=303553&type=0&limit=100",
+    "observed_at": "2026-10-19T06:30:47.654757+00:00",
+    "status": 200,
+    "sha256": "a751c5e8eb7067de2665747475336a46213abea674561fab76ea22c94f5bfe5f",
+    "location": null
+  },
+  {
+    "url": "https://api.bgm.tv/v0/episodes?subject_id=303553&type=0&limit=100",
+    "observed_at": "2026-10-19T06:30:03.067620+00:00",
+    "status": 403,
+    "sha256": "43e6521bdc234cf9b47d68251a6d9b71e66e6eee9e477578b857d531c799df65"
+  },
+  {
+    "url": "https://www.ncctv.co.jp/minamishimabara/anime.html",
+    "observed_at": "2026-10-19T06:30:50.150815+00:00",
+    "status": 308,
+    "sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1",
+    "location": "/"
+  },
+  {
+    "url": "https://acgsecrets.hk/bangumi/202004/",
+    "observed_at": "2026-10-19T06:30:10.660404+00:00",
+    "status": 200,
+    "sha256": "1b3be82265029e79949deca94ae9fb1e694e571e54a9bdd239f5710caf996d1b"
+  },
+  {
+    "url": "https://www.bing.com/search?q=%E8%80%90%E3%81%88%E5%AD%90%E3%81%AE%E6%97%A5%E5%B8%B8+2020+%E6%9C%88%E6%9B%9C+%E9%87%91%E6%9B%9C+7%E6%9C%88",
+    "observed_at": "2026-10-19T06:30:09.449891+00:00",
+    "status": 200,
+    "sha256": "d5e4be692ad2e4612d0f7ab91c228fcc04634758cfe36d694e86b4e3bf3ae089"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/broad_tvtokyo/program/detail/202204/14148_202204150705.html",
+    "observed_at": "2026-10-19T06:30:49.704453+00:00",
+    "status": 404,
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c",
+    "location": null
+  },
+  {
+    "url": "https://www.bing.com/search?q=%E5%B7%A8%E7%A5%9E%E3%81%A8%E6%B0%B7%E8%8F%AF%E3%81%AE%E5%9F%8E+%E7%AC%AC1%E8%A9%B1+%E7%AC%AC2%E8%A9%B1+%E5%85%AC%E9%96%8B",
+    "observed_at": "2026-10-19T06:30:11.806289+00:00",
+    "status": 200,
+    "sha256": "1ae2f72272e8b2c662e4d4fe2f174662d1305ec4f8fb6b453d493a8239bfb15e"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/broad_tvtokyo/program/detail/202204/14148_202204110705.html",
+    "observed_at": "2026-10-19T06:30:48.502185+00:00",
+    "status": 404,
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c",
+    "location": null
+  },
+  {
+    "url": "https://www.ncctv.co.jp/minamishimabara/",
+    "observed_at": "2026-10-19T06:30:50.562894+00:00",
+    "status": 308,
+    "sha256": "6bbc9febf9bf984adb088ff1a31ace9a61467d9e13e1a11779aa7b5ff92ebccc",
+    "location": "/minamishimabara"
+  },
+  {
+    "url": "https://www.bing.com/search?q=%E3%81%8A%E3%81%AB%E3%81%B1%E3%82%93+site%3Atv-tokyo.co.jp+%E6%AF%8E%E9%80%B1+%E9%87%91%E6%9B%9C+2022",
+    "observed_at": "2026-10-19T06:30:07.706217+00:00",
+    "status": 200,
+    "sha256": "fb248a73136e67ceff696799012ca4f8e1e3d7a70ce77593f3496e50ff35bd97"
+  }
+]

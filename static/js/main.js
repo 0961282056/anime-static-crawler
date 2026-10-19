@@ -10,6 +10,10 @@ const MAX_FETCH_RETRIES = 2;
 const RETRY_DELAYS_MS = [300, 700];
 const HTML2CANVAS_TIMEOUT_MS = 15 * 1000;
 const SHARE_IMAGE_TIMEOUT_MS = 15 * 1000;
+const BROADCAST_DAY_LABELS = {
+    '一': '週一', '二': '週二', '三': '週三', '四': '週四', '五': '週五', '六': '週六', '日': '週日',
+    '一至五': '週一至五', '不定期公開': '不定期公開', '無首播日期': '播出日待確認'
+};
 const AIRING_STATUS_LABELS = {
     unknown: '狀態待確認', not_yet_aired: '尚未播出', airing: '播出中',
     finished: '本季已播畢', paused: '暫停播出', cancelled: '取消播出'
@@ -25,6 +29,7 @@ function readAppConfig() {
         buildVersion: element.dataset.buildVersion,
         dataVersion: element.dataset.dataVersion || element.dataset.buildVersion,
         quarterVersions: JSON.parse(element.dataset.quarterVersions || '{}'),
+        reviewedBroadcastSources: JSON.parse(element.dataset.reviewedBroadcastSources || '{}'),
         availableData: JSON.parse(element.dataset.availableData)
     };
 }
@@ -622,7 +627,8 @@ const searchMethods = {
         let list = this.rawAnimeList;
 
         if (this.filterDay !== '全部') {
-            list = list.filter(item => item.premiere_date === this.filterDay);
+            list = list.filter(item => (item.premiere_date || '無首播日期') === this.filterDay ||
+                (item.premiere_date === '一至五' && ['一', '二', '三', '四', '五'].includes(this.filterDay)));
         }
         if (this.filterStatus !== '全部') {
             list = list.filter(item => (item.episodes?.airing_status || 'unknown') === this.filterStatus);
@@ -641,6 +647,30 @@ const searchMethods = {
 // Module: presentation
 // Requires: settings, schema, images
 const presentationMethods = {
+    broadcastDayLabel(anime) {
+        return Object.hasOwn(BROADCAST_DAY_LABELS, anime.premiere_date)
+            ? BROADCAST_DAY_LABELS[anime.premiere_date] : '播出日待確認';
+    },
+
+    reviewedBroadcast(anime) {
+        const row = this.reviewedBroadcastSources?.[anime.bangumi_id];
+        if (!row || row.anime_name !== anime.anime_name || row.original_name !== anime.original_name ||
+            row.subject_id !== anime.external_ids?.bangumi || row.weekday !== anime.premiere_date ||
+            typeof row.display_note !== 'string' || typeof row.source_url !== 'string') return null;
+        try {
+            const url = new URL(row.source_url);
+            return url.protocol === 'https:' && !url.username && !url.password && (!url.port || url.port === '443') ? row : null;
+        } catch { return null; }
+    },
+
+    broadcastNote(anime) {
+        return this.reviewedBroadcast(anime)?.display_note || '';
+    },
+
+    broadcastSourceUrl(anime) {
+        return this.reviewedBroadcast(anime)?.source_url || null;
+    },
+
     seasonLabel(season) {
         const monthBySeason = {'冬': 1, '春': 4, '夏': 7, '秋': 10};
         return `${season}(${monthBySeason[season]}月)`;
@@ -1172,6 +1202,7 @@ function animeApp() {
         buildVersion: appConfig.buildVersion,
         dataVersion: appConfig.dataVersion,
         quarterVersions: appConfig.quarterVersions,
+        reviewedBroadcastSources: appConfig.reviewedBroadcastSources,
         years: [],
         seasons: [],
 
@@ -1214,7 +1245,7 @@ function animeApp() {
             // A. 初始化年份選單
             this.years = Object.keys(this.availableData).sort((a, b) => b - a);
             const savedDay = this.readStorage(this.STORAGE_KEYS.FILTER_DAY);
-            this.filterDay = savedDay || '全部';
+            this.filterDay = Object.hasOwn(BROADCAST_DAY_LABELS, savedDay) ? savedDay : '全部';
 
             // --- 🟢 第一層 $nextTick: 等待年份選單就緒 ---
             this.$nextTick(() => {

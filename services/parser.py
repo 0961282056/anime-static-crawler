@@ -44,9 +44,19 @@ def _broadcast_details(item: Tag) -> tuple[str, str]:
     time_element = item.select_one("div.time_today.main_time")
     if time_element:
         text = time_element.get_text(" ", strip=True)
-        week_match = re.search(r"每週([一二三四五六日天])", text)
+        week_match = re.search(
+            r"每週([一二三四五六日天](?:[至到～、及與-](?:週)?[一二三四五六日天])*)",
+            text,
+        )
         if week_match:
-            premiere_date = "日" if week_match.group(1) == "天" else week_match.group(1)
+            raw_day = week_match.group(1).replace("週", "")
+            if raw_day in {"一至五", "一到五", "一～五", "一-五"}:
+                raw_day = "一至五"
+            if len(raw_day) > 1 and raw_day != "一至五":
+                raise ItemParseError("Unsupported multiple broadcast weekdays")
+            premiere_date = "日" if raw_day == "天" else raw_day
+        elif "不定期公開" in text:
+            premiere_date = "不定期公開"
         time_match = re.search(r"(\d{1,2})時(\d{1,2})分", text)
         if time_match:
             premiere_time = (
@@ -55,7 +65,18 @@ def _broadcast_details(item: Tag) -> tuple[str, str]:
 
     if premiere_date == "無首播日期":
         raw_weekday = str(item.get("weektoday", "")).strip()
-        if raw_weekday in {"一", "二", "三", "四", "五", "六", "日", "天"}:
+        if raw_weekday in {
+            "一",
+            "二",
+            "三",
+            "四",
+            "五",
+            "六",
+            "日",
+            "天",
+            "一至五",
+            "不定期公開",
+        }:
             premiere_date = "日" if raw_weekday == "天" else raw_weekday
 
     if premiere_time == "無首播時間":

@@ -1157,7 +1157,7 @@
       "bangumi_id": "anime-159",
       "anime_name": "耐子的日常 新系列",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0d98efd3e74501c8823b914e5f85d6c4",
-      "premiere_date": "無首播日期",
+      "premiere_date": "一至五",
       "premiere_time": "無首播時間",
       "story": "暫無簡介",
       "original_name": "耐え子の日常 新シリーズ",
@@ -1183,7 +1183,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T16:43:18.841945+08:00",
+  "generated_at": "2026-10-19T14:36:39.815854+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202007/",
   "quality": {
     "source_count": 38,
@@ -1191,7 +1191,7 @@
     "parse_failure_count": 0,
     "fallback_id_count": 0,
     "missing_story_count": 5,
-    "missing_date_count": 1,
+    "missing_date_count": 0,
     "missing_time_count": 1
   }
 }

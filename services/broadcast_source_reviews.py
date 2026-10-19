@@ -5,7 +5,10 @@ import re
 from datetime import datetime
 from functools import cache
 from pathlib import Path
+from typing import get_args
 from urllib.parse import urlsplit
+
+from models import BroadcastDay
 
 
 @cache
@@ -23,7 +26,7 @@ def broadcast_reviews() -> list[dict]:
             or row["card_id"] in seen
             or type(row["subject_id"]) is not int
             or row["subject_id"] <= 0
-            or row["weekday"] not in {"一", "二", "三", "四", "五", "六", "日"}
+            or row["weekday"] not in set(get_args(BroadcastDay)) - {"無首播日期"}
             or not row["anime_name"]
             or not row["original_name"]
             or parsed.scheme != "https"
@@ -35,10 +38,35 @@ def broadcast_reviews() -> list[dict]:
             or not re.fullmatch(r"[a-f0-9]{64}", row["document_sha256"])
             or not row["excerpt"]
             or not row["scope_note"]
+            or (
+                "display_note" in row
+                and (
+                    not isinstance(row["display_note"], str)
+                    or not row["display_note"].strip()
+                    or len(row["display_note"]) > 160
+                )
+            )
         ):
             raise ValueError("Invalid reviewed broadcast identity or evidence")
         seen.add(row["card_id"])
     return rows
+
+
+def public_broadcast_sources() -> dict[str, dict]:
+    """Use the same reviewed identity and note in the generated browser config."""
+    fields = (
+        "anime_name",
+        "original_name",
+        "subject_id",
+        "weekday",
+        "display_note",
+        "source_url",
+    )
+    return {
+        row["card_id"]: {field: row[field] for field in fields}
+        for row in broadcast_reviews()
+        if row.get("display_note")
+    }
 
 
 def reviewed_broadcast(anime):

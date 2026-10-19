@@ -47,7 +47,8 @@ const searchMethods = {
         let list = this.rawAnimeList;
 
         if (this.filterDay !== '全部') {
-            list = list.filter(item => item.premiere_date === this.filterDay);
+            list = list.filter(item => (item.premiere_date || '無首播日期') === this.filterDay ||
+                (item.premiere_date === '一至五' && ['一', '二', '三', '四', '五'].includes(this.filterDay)));
         }
         if (this.filterStatus !== '全部') {
             list = list.filter(item => (item.episodes?.airing_status || 'unknown') === this.filterStatus);

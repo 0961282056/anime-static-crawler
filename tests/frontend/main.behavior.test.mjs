@@ -35,6 +35,7 @@ function createContext({storage = null, fetchImpl = null, html2canvas = null, na
       buildVersion: 'test-build',
       dataVersion: 'aaaaaaaaaaaaaaaa',
       officialStorySources: JSON.stringify(Object.fromEntries(JSON.parse(readFileSync(new URL('../../services/reviewed_story_sources.json', import.meta.url), 'utf8')).map(row => [row.card_id, row.subject_id === null ? [null, row.source_url, row.anime_name, row.original_name] : [row.subject_id, row.source_url]]))),
+      reviewedBroadcastSources: JSON.stringify(Object.fromEntries(JSON.parse(readFileSync(new URL('../../services/reviewed_broadcast_sources.json', import.meta.url), 'utf8')).filter(row => row.display_note).map(row => [row.card_id, row]))),
       availableData: JSON.stringify({ 2025: ['夏'], 2026: ['秋'] }),
     },
   };
@@ -993,5 +994,49 @@ test('official summary with no database ID binds exact names and rejects invente
     {story_source: {...record.story_source, provider: 'bangumi', method: 'bangumi_api'}}]) {
     current = {...record, ...changes};
     await assert.rejects(app.fetchDatasetFromNetwork('2019_春'), error => error.code === 'DATA_SCHEMA');
+  }
+});
+
+test('weekday filters include weekday runs and keep nonweekly separate from unknown', () => {
+  const {app} = createContext();
+  app.rawAnimeList = [
+    {anime_name:'daily', premiere_date:'一至五'},
+    {anime_name:'friday', premiere_date:'五'},
+    {anime_name:'nonweekly', premiere_date:'不定期公開'},
+    {anime_name:'unknown', premiere_date:'無首播日期'},
+  ];
+  for (const day of ['一','二','三','四','五']) {
+    app.filterDay = day;
+    assert.ok(app.filteredAnime.some(row => row.anime_name === 'daily'));
+    assert.ok(!app.filteredAnime.some(row => ['nonweekly','unknown'].includes(row.anime_name)));
+  }
+  for (const day of ['六','日']) {
+    app.filterDay = day;
+    assert.equal(app.filteredAnime.length, 0);
+  }
+  for (const [day,name] of [['一至五','daily'],['不定期公開','nonweekly'],['無首播日期','unknown']]) {
+    app.filterDay = day;
+    assert.deepEqual(Array.from(app.filteredAnime, row => row.anime_name), [name]);
+    assert.notEqual(app.broadcastDayLabel(app.filteredAnime[0]), '週六');
+  }
+  assert.equal(app.broadcastDayLabel({premiere_date:'一至五'}), '週一至五');
+  assert.equal(app.broadcastDayLabel({premiere_date:'不定期公開'}), '不定期公開');
+  assert.equal(app.broadcastDayLabel({}), '播出日待確認');
+});
+
+test('broadcast scope notes bind exact card, names, database and reviewed weekday', () => {
+  const {app} = createContext();
+  for (const [id,row] of Object.entries(app.reviewedBroadcastSources)) {
+    const anime = {bangumi_id:id, anime_name:row.anime_name, original_name:row.original_name, premiere_date:row.weekday, external_ids:{bangumi:row.subject_id}};
+    assert.equal(app.broadcastNote(anime), row.display_note);
+    assert.equal(app.broadcastSourceUrl(anime), row.source_url);
+    for (const changes of [{bangumi_id:'anime-999999'}, {anime_name:'another'}, {original_name:'another'}, {premiere_date:'日'}, {external_ids:{bangumi:1}}]) {
+      assert.equal(app.broadcastNote({...anime,...changes}), '');
+      assert.equal(app.broadcastSourceUrl({...anime,...changes}), null);
+    }
+    const original = row.source_url;
+    row.source_url = 'https://user:pass@example.test/';
+    assert.equal(app.broadcastSourceUrl(anime), null);
+    row.source_url = original;
   }
 });

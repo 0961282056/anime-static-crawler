@@ -1,0 +1,40 @@
+{
+  "baseline": "4b0cf3fa83715f3ed53b66cd31f91d0c4815ebc5",
+  "quarters": 37,
+  "records": 2150,
+  "changed": [
+    {
+      "quarter": "2020_夏",
+      "card_id": "anime-159",
+      "name": "耐子的日常 新系列",
+      "old": "無首播日期",
+      "new": "一至五"
+    },
+    {
+      "quarter": "2020_春",
+      "card_id": "anime-127",
+      "name": "巨神與冰華之城",
+      "old": "無首播日期",
+      "new": "不定期公開"
+    },
+    {
+      "quarter": "2022_春",
+      "card_id": "anime-1070",
+      "name": "OniPan!",
+      "old": "無首播日期",
+      "new": "五"
+    }
+  ],
+  "all_episode_metadata_and_timestamps_preserved": true,
+  "all_stories_ids_images_names_and_order_preserved": true,
+  "counts": {
+    "missing_story": 102,
+    "missing_date": 0,
+    "missing_bangumi": 1,
+    "missing_anilist": 1378,
+    "episode_stale": 0,
+    "episode_conflict": 0,
+    "episode_method_unknown": 0,
+    "episode_evidence_missing": 0
+  }
+}

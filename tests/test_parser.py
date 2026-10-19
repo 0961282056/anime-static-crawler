@@ -154,6 +154,29 @@ def test_extract_items_rejects_changed_card_structure() -> None:
         extract_item_html('<div id="acgs-anime-list"></div>')
 
 
+@pytest.mark.parametrize("day", ["一至五", "不定期公開"])
+def test_parser_preserves_explicit_non_single_weekday(fixture_dir, day):
+    text = f"每週{day}" if day == "一至五" else day
+    document = _replace_once(
+        _document(fixture_dir),
+        NORMAL_TIME,
+        f'<div class="time_today main_time">{text}</div>',
+    )
+    candidate = parse_anime_item(_single_item(document))
+    assert candidate.premiere_date == day
+    assert candidate.premiere_time == "無首播時間"
+
+
+def test_parser_does_not_truncate_an_unsupported_range_to_its_first_day(fixture_dir):
+    document = _replace_once(
+        _document(fixture_dir),
+        NORMAL_TIME,
+        '<div class="time_today main_time">每週一至六</div>',
+    )
+    with pytest.raises(ItemParseError, match="Unsupported multiple broadcast"):
+        parse_anime_item(_single_item(document))
+
+
 def test_reviewed_wrong_source_link_is_corrected_during_normal_parsing(fixture_dir):
     document = (
         _document(fixture_dir)

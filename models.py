@@ -21,7 +21,9 @@ CLOUDINARY_DELIVERY_PATH_PATTERN = re.compile(
     r"anime_covers/[0-9a-f]{32}(?:[0-9a-f]{32})?"
     r"(?:\.[A-Za-z0-9]+)?\Z"
 )
-BroadcastDay = Literal["一", "二", "三", "四", "五", "六", "日", "無首播日期"]
+BroadcastDay = Literal[
+    "一", "二", "三", "四", "五", "六", "日", "一至五", "不定期公開", "無首播日期"
+]
 
 
 class ExternalIds(BaseModel):
