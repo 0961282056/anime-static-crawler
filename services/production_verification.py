@@ -153,7 +153,10 @@ def verify_once(paths: ProjectPaths, expected: str, read, *, attempt: int = 0) -
 
     def check(item):
         path, content = item
-        actual = read(f"{SITE}{quote(path)}?release={expected}&attempt={attempt}")
+        # Pages canonicalizes /index.html with a 308 to /. Request the known
+        # same-origin homepage directly; arbitrary redirects remain forbidden.
+        public_path = "" if path == "index.html" else quote(path)
+        actual = read(f"{SITE}{public_path}?release={expected}&attempt={attempt}")
         if path == "index.html":
             actual = canonical_home(actual)
         if hashlib.sha256(actual).digest() != hashlib.sha256(content).digest():

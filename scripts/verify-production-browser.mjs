@@ -6,18 +6,19 @@ if (!/^[a-f0-9]{40}$/.test(expected || '')) throw new Error('EXPECTED_COMMIT mus
 const browser = await chromium.launch(process.env.CHROMIUM_EXECUTABLE ? {executablePath: process.env.CHROMIUM_EXECUTABLE} : {});
 try {
   const page = await browser.newPage();
-  const marker = async () => {
-    const response = await page.request.get(`${site}release.json?verify=${expected}`);
-    expect(response.ok()).toBeTruthy();
-    return response.json();
-  };
-  expect((await marker()).commit).toBe(expected);
+  // Exercise the same-origin browser network path, including managed proxy/TLS
+  // settings, rather than using Node's separate APIRequestContext connection.
   await page.goto(`${site}?verify=${expected}`, {waitUntil: 'domcontentloaded'});
+  const readJson = async path => page.evaluate(async url => {
+    const response = await fetch(url, {cache: 'no-store'});
+    if (!response.ok) throw new Error(`Production JSON HTTP ${response.status}`);
+    return response.json();
+  }, site + path);
+  const marker = () => readJson(`release.json?verify=${expected}`);
+  expect((await marker()).commit).toBe(expected);
   await expect(page.locator('.anime-card').first()).toBeVisible({timeout: 30000});
   const quarter = `${await page.locator('#yearSelect').inputValue()}_${await page.locator('#seasonSelect').inputValue()}`;
-  const response = await page.request.get(`${site}data/${encodeURIComponent(quarter)}.json?verify=${expected}`);
-  expect(response.ok()).toBeTruthy();
-  const dataset = await response.json();
+  const dataset = await readJson(`data/${encodeURIComponent(quarter)}.json?verify=${expected}`);
   await expect(page.locator('.anime-card')).toHaveCount(dataset.anime_list.length);
   const checked = [];
   for (const row of dataset.anime_list.slice(0, 3)) {
@@ -31,9 +32,7 @@ try {
     checked.push(row.bangumi_id);
   }
   const release = await marker();
-  const indexResponse = await page.request.get(`${site}search-index.json?verify=${expected}`);
-  expect(indexResponse.ok()).toBeTruthy();
-  const index = await indexResponse.json();
+  const index = await readJson(`search-index.json?verify=${expected}`);
   expect(index.data_version).toBe(release.data_version);
   const historical = index.entries.find(row => row.identity[0] === 'anime-646') || index.entries.find(row => row.quarters[0] !== quarter);
   expect(historical).toBeTruthy();
