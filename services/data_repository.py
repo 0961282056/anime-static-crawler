@@ -13,6 +13,7 @@ from pydantic import ValidationError
 
 from models import TAIPEI_TZ, Anime, DataQuality, ExternalIds, QuarterDataset
 from services.atomic_io import atomic_write_json
+from services.broadcast_source_reviews import reviewed_broadcast
 from services.diagnostics import operation
 from services.display_name_reviews import reviewed_display_rename
 from services.episode_source_reviews import reviewed_source
@@ -238,6 +239,22 @@ class DataRepository:
             # source fields. Every identity field can invalidate a reviewed
             # scope, even when the Chinese display name has not changed.
             effective = validated_records[index]
+            if old and (review := reviewed_broadcast(old)):
+                if not reviewed_broadcast(effective):
+                    raise DataContractError(
+                        "Reviewed broadcast identity changed; update its exact rule before changing identity"
+                    )
+                if effective.premiere_date not in {"無首播日期", review["weekday"]}:
+                    raise DataContractError(
+                        "Reviewed broadcast weekday conflicts with source; review required"
+                    )
+            if (
+                review := reviewed_broadcast(effective)
+            ) and effective.premiere_date == "無首播日期":
+                effective = effective.model_copy(
+                    update={"premiere_date": review["weekday"]}
+                )
+                validated_records[index] = effective
             if old and (
                 (reviewed_source(old) and not reviewed_source(effective))
                 or (

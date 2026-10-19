@@ -492,7 +492,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e67f2610f73c6e46680efdb40d81c4c7",
       "premiere_date": "三",
       "premiere_time": "07:30",
-      "story": "暫無簡介",
+      "story": "パリの片隅、貧乏画家サークルの仲間たちが暮らすボロアパートに、相棒テオとともにニャッホは暮らしている。",
       "original_name": "猫のニャッホ",
       "external_ids": {
         "bangumi": null,
@@ -516,6 +516,14 @@
         "end_date": "2019-09-18",
         "note": "2019年首輪TV版全25話，已逐話核對TV Tokyo 1～25話及播出日；排除アンコール再放送。尚無可靠Bangumi ID，以官方來源提供集數。",
         "source_kind": "manual_official"
+      },
+      "story_source": {
+        "provider": "official",
+        "subject_id": null,
+        "checked_at": "2026-10-19T14:02:37.029893+08:00",
+        "method": "manual_official",
+        "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin15/",
+        "source_snapshot_date": null
       }
     },
     {
@@ -1713,14 +1721,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T17:33:17.285798+08:00",
+  "generated_at": "2026-10-19T14:11:19.069815+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201904/",
   "quality": {
     "source_count": 51,
     "record_count": 51,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 5,
+    "missing_story_count": 4,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

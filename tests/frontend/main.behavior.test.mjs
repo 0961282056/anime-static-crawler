@@ -34,7 +34,7 @@ function createContext({storage = null, fetchImpl = null, html2canvas = null, na
       defaultSeason: '秋',
       buildVersion: 'test-build',
       dataVersion: 'aaaaaaaaaaaaaaaa',
-      officialStorySources: JSON.stringify(Object.fromEntries(JSON.parse(readFileSync(new URL('../../services/reviewed_story_sources.json', import.meta.url), 'utf8')).map(row => [row.card_id, [row.subject_id, row.source_url]]))),
+      officialStorySources: JSON.stringify(Object.fromEntries(JSON.parse(readFileSync(new URL('../../services/reviewed_story_sources.json', import.meta.url), 'utf8')).map(row => [row.card_id, row.subject_id === null ? [null, row.source_url, row.anime_name, row.original_name] : [row.subject_id, row.source_url]]))),
       availableData: JSON.stringify({ 2025: ['夏'], 2026: ['秋'] }),
     },
   };
@@ -242,7 +242,7 @@ test('every reviewed official excerpt has a working link bound to its own versio
   const {app} = createContext();
   const reviews = JSON.parse(readFileSync(new URL('../../services/reviewed_story_sources.json', import.meta.url), 'utf8'));
   for (const row of reviews) {
-    const anime = {bangumi_id: row.card_id, external_ids: {bangumi: row.subject_id}, story_source: {
+    const anime = {bangumi_id: row.card_id, anime_name: row.anime_name, original_name: row.original_name, external_ids: {bangumi: row.subject_id}, story_source: {
       provider: 'official', method: 'manual_official', subject_id: row.subject_id,
       source_url: row.source_url
     }};
@@ -976,4 +976,22 @@ test('module composition preserves reactive getters and independent app state', 
   assert.equal(second.shareList.length, 0);
   assert.equal(Object.keys(second.dataCache).length, 0);
   assert.equal(second.rawAnimeList.length, 0);
+});
+
+test('official summary with no database ID binds exact names and rejects invented IDs', async () => {
+  const rows = JSON.parse(readFileSync(new URL('../../services/reviewed_story_sources.json', import.meta.url), 'utf8'));
+  const row = rows.find(row => row.card_id === 'anime-318');
+  const record = {...dataset(row.anime_name).anime_list[0], bangumi_id: row.card_id,
+    original_name: row.original_name, external_ids: {bangumi: null}, story: row.story,
+    story_source: {provider: 'official', method: 'manual_official', subject_id: null,
+      source_url: row.source_url, checked_at: row.checked_at}};
+  let current = record;
+  const {app} = createContext({fetchImpl: async () => ({ok: true, json: async () => ({anime_list: [current]})})});
+  assert.equal(app.storySourceUrl(record), row.source_url);
+  assert.equal((await app.fetchDatasetFromNetwork('2019_春')).anime_list[0].story, row.story);
+  for (const changes of [{anime_name: '別的作品'}, {original_name: '別的原名'}, {external_ids: {bangumi: 1}},
+    {story_source: {...record.story_source, provider: 'bangumi', method: 'bangumi_api'}}]) {
+    current = {...record, ...changes};
+    await assert.rejects(app.fetchDatasetFromNetwork('2019_春'), error => error.code === 'DATA_SCHEMA');
+  }
 });

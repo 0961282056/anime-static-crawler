@@ -348,3 +348,49 @@ def test_browser_registry_rejects_duplicate_and_unsafe_official_bindings(monkeyp
         monkeypatch.setattr(reviews, "story_reviews", lambda rows=rows: rows)
         with pytest.raises(ValueError):
             reviews.public_story_sources()
+
+
+def test_official_story_without_database_id_still_requires_exact_reviewed_work(
+    anime_record_factory,
+):
+    from services.story_source_reviews import public_story_sources, story_reviews
+
+    row = next(row for row in story_reviews() if row["card_id"] == "anime-318")
+    raw = {
+        **anime_record_factory(1),
+        "bangumi_id": row["card_id"],
+        "anime_name": row["anime_name"],
+        "original_name": row["original_name"],
+        "external_ids": {"bangumi": None},
+        "story": row["story"],
+        "story_source": {
+            "provider": "official",
+            "method": "manual_official",
+            "subject_id": None,
+            "source_url": row["source_url"],
+            "checked_at": row["checked_at"],
+        },
+    }
+    record = Anime.model_validate(raw)
+    assert record.external_ids.bangumi is None
+    assert public_story_sources()[row["card_id"]] == [
+        None,
+        row["source_url"],
+        row["anime_name"],
+        row["original_name"],
+    ]
+    for update in [
+        {"anime_name": "另一作品"},
+        {"original_name": "另一原名"},
+        {"external_ids": {"bangumi": 1}},
+        {
+            "story_source": {
+                **raw["story_source"],
+                "provider": "bangumi",
+                "method": "bangumi_api",
+                "source_url": None,
+            }
+        },
+    ]:
+        with pytest.raises(ValidationError):
+            Anime.model_validate({**raw, **update})

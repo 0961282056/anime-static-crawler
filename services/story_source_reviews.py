@@ -39,8 +39,14 @@ def public_story_sources() -> dict[str, list]:
         if (
             not re.fullmatch(r"anime-\d+", card)
             or card in result
-            or type(subject) is not int
-            or subject <= 0
+            or (subject is not None and (type(subject) is not int or subject <= 0))
+            or (
+                subject is None
+                and not all(
+                    isinstance(row.get(k), str) and row[k].strip()
+                    for k in ("anime_name", "original_name")
+                )
+            )
             or parsed.scheme != "https"
             or not parsed.hostname
             or parsed.username is not None
@@ -49,4 +55,7 @@ def public_story_sources() -> dict[str, list]:
         ):
             raise ValueError("Invalid or duplicate reviewed official summary binding")
         result[card] = [subject, url]
+        if subject is None:
+            # Without a database ID, the browser must bind both exact names too.
+            result[card].extend([row["anime_name"], row["original_name"]])
     return result

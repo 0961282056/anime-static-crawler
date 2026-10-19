@@ -1,0 +1,269 @@
+{
+  "baseline": "6a226385d6375b086dd917972f9e54a616a6282b",
+  "quarters": [
+    {
+      "quarter": "2018_冬",
+      "records": 59,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2018_夏",
+      "records": 58,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2018_春",
+      "records": 83,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2018_秋",
+      "records": 66,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2019_冬",
+      "records": 51,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2019_夏",
+      "records": 44,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2019_春",
+      "records": 51,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2019_秋",
+      "records": 56,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2020_冬",
+      "records": 51,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2020_夏",
+      "records": 38,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2020_春",
+      "records": 59,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2020_秋",
+      "records": 58,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2021_冬",
+      "records": 62,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2021_夏",
+      "records": 45,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2021_春",
+      "records": 66,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2021_秋",
+      "records": 52,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2022_冬",
+      "records": 43,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2022_夏",
+      "records": 51,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2022_春",
+      "records": 54,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2022_秋",
+      "records": 56,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2023_冬",
+      "records": 62,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2023_夏",
+      "records": 51,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2023_春",
+      "records": 54,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2023_秋",
+      "records": 74,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2024_冬",
+      "records": 57,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2024_夏",
+      "records": 59,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2024_春",
+      "records": 61,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2024_秋",
+      "records": 74,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2025_冬",
+      "records": 65,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2025_夏",
+      "records": 74,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2025_春",
+      "records": 65,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2025_秋",
+      "records": 63,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2026_冬",
+      "records": 65,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2026_夏",
+      "records": 75,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2026_春",
+      "records": 71,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2026_秋",
+      "records": 73,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    },
+    {
+      "quarter": "2027_冬",
+      "records": 4,
+      "card_order_preserved": true,
+      "episode_metadata_and_external_ids_preserved": true
+    }
+  ],
+  "changed_records": [
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-419",
+      "changed_fields": [
+        "story",
+        "story_source"
+      ]
+    },
+    {
+      "quarter": "2019_冬",
+      "card_id": "anime-419",
+      "changed_fields": [
+        "story",
+        "story_source"
+      ]
+    },
+    {
+      "quarter": "2019_春",
+      "card_id": "anime-318",
+      "changed_fields": [
+        "story",
+        "story_source"
+      ]
+    },
+    {
+      "quarter": "2021_秋",
+      "card_id": "anime-998",
+      "changed_fields": [
+        "premiere_date"
+      ]
+    },
+    {
+      "quarter": "2022_夏",
+      "card_id": "anime-1139",
+      "changed_fields": [
+        "premiere_date"
+      ]
+    }
+  ],
+  "all_existing_stories_preserved": true,
+  "all_names_ids_images_counts_statuses_episode_timestamps_and_order_preserved": true
+}
