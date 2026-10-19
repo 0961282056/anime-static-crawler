@@ -229,7 +229,7 @@ def run_source_audit(
         source_cards = {}
         item = {
             "quarter": quarter,
-            "attempted_at": now.isoformat(),
+            "attempted_at": None,
             "checked_at": None,
             "result": "error",
         }
@@ -237,6 +237,7 @@ def run_source_audit(
             if time.monotonic() - source_started >= 600:
                 raise SourceFetchError("Quarter audit time budget exhausted")
             year, season = quarter.split("_")
+            item["attempted_at"] = now.isoformat()
             url, document = source_client.fetch_quarter_html(year, season)
             comparison, cards = audit_quarter(dataset, document)
             source_cards = {card.bangumi_id: card for card in cards}
@@ -475,6 +476,17 @@ def run_source_audit(
 
 def write_audit_report(report: dict, output: Path) -> str:
     atomic_write_json(output / "source-audit.json", report)
+    from services.quality_evidence import audit_evidence
+
+    atomic_write_json(
+        output / "evidence.json",
+        {
+            "schema_version": 1,
+            "assembled_at": report["observed_at"],
+            "basis": "source_audit_with_retained_primary_evidence",
+            "records": audit_evidence(report),
+        },
+    )
     summary = report["summary"]
     lines = [
         "## 每週資料來源核對",
