@@ -127,6 +127,9 @@ def test_generated_release_manifest_is_compared_with_all_published_files(
     )
 
     def read(url):
+        assert "/index.html" not in url, (
+            "Cloudflare canonical homepage must be fetched directly"
+        )
         if "/release.json" in url:
             return json.dumps(manifest).encode()
         return reader(url)

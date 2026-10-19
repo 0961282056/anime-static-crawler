@@ -43,3 +43,7 @@
 - 尚未聲稱真實Cloudinary故障已於正式每日排程驗收；本輪故障隔離由fixture證實，後續正常排程會留下階段報告。
 - 正式合併、Cloudflare canonical與新自動驗收工作成功後，才在本批PR補實際run／commit及發布證據，不預寫成功。
 - 實際執行環境revision97=observed97、current=true、network=enforced；未更動網路／TLS／認證。不建立假Issue、不發測試通知；105筆簡介及官方來源待查照既有規則保留。
+
+## 首次正式驗收的入口修正
+
+PR #62合併為460144e後，正式驗收實際發現Cloudflare會將`/index.html`以HTTP308導向`/`。已調整為直接取得既知同站首頁，繼續拒絕任意重新導向；新增回歸斷言。修正程式已對460144e正式站完成37季2150筆／5資產／首頁／索引共44檔比對。瀏覽器查JSON改用頁面同源fetch，沿用瀏覽器網路與TLS路徑，避免受管環境Node APIRequestContext獨立DNS失敗；沒有改代理、認證或網路規則。初次舊驗收因已知308停止，修正PR合併後以新main自動工作重新驗收，實際結果記於修正PR。
