@@ -237,6 +237,8 @@ def parse_args() -> argparse.Namespace:
             "verify-dist",
             "validate-all",
             "quality-report",
+            "quality-evidence",
+            "build-frontend",
             "source-audit",
             "notify-source-reviews",
             "remind-source-reviews",
@@ -249,6 +251,12 @@ def parse_args() -> argparse.Namespace:
 
 
 def execute_command(command: str) -> None:
+    if command == "build-frontend":
+        from services.frontend_bundle import build_frontend_bundle
+
+        build_frontend_bundle(ProjectPaths.from_environment().root)
+        print("Built static/js/main.js from frontend/modules.json")
+        return
     if command == "remind-source-reviews":
         from services.review_queue import remind_from_environment
 
@@ -292,6 +300,25 @@ def execute_command(command: str) -> None:
             raise SourceFetchError(
                 "Source audit incomplete; see saved report for failed sources"
             )
+        return
+    if command == "quality-evidence":
+        from services.quality_evidence import write_quality_evidence
+
+        paths = ProjectPaths.from_environment()
+        output = Path(os.getenv("QUALITY_EVIDENCE_OUTPUT", "audit-output/quality"))
+        if output.resolve().is_relative_to(paths.output_dir.resolve()):
+            raise ValueError("QUALITY_EVIDENCE_OUTPUT must be outside public output")
+        content = write_quality_evidence(
+            paths.root,
+            paths.data_dir,
+            output,
+            history_limit=int(os.getenv("QUALITY_HISTORY_LIMIT", "120")),
+        )
+        print(content)
+        summary_path = os.getenv("GITHUB_STEP_SUMMARY", "").strip()
+        if summary_path:
+            with Path(summary_path).open("a", encoding="utf-8") as summary:
+                summary.write(content)
         return
     if command == "notify-workflow":
         notify_workflow()

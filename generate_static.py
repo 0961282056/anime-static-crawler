@@ -206,6 +206,9 @@ def sync_static_assets(paths: ProjectPaths) -> None:
 
 
 def compute_build_version(paths: ProjectPaths) -> str:
+    from services.frontend_bundle import verify_frontend_bundle
+
+    verify_frontend_bundle(paths.root)
     explicit = os.getenv("BUILD_VERSION", "").strip()
     if explicit:
         return explicit
@@ -304,6 +307,9 @@ def generate_static_files() -> None:
         load_dotenv()
         configure_runtime()
         paths = ProjectPaths.from_environment()
+        from services.frontend_bundle import verify_frontend_bundle
+
+        verify_frontend_bundle(paths.root)
         build_only = os.getenv("BUILD_ONLY", "false").lower() == "true"
         settings = CrawlerSettings.from_environment() if not build_only else None
     policy = (

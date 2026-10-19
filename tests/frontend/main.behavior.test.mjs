@@ -5,6 +5,26 @@ import vm from 'node:vm';
 
 const source = readFileSync(new URL('../../static/js/main.js', import.meta.url), 'utf8');
 
+test('production bundle registers only through Alpine and keeps helpers private', () => {
+  const events = new Map();
+  const registrations = [];
+  const context = {
+    document: {
+      getElementById: () => ({dataset: {officialStorySources: '{}'}}),
+      addEventListener: (name, callback) => events.set(name, callback),
+    },
+    Alpine: {data: (name, factory) => registrations.push({name, factory})},
+  };
+  vm.runInNewContext(source, context);
+  assert.equal(registrations.length, 0);
+  events.get('alpine:init')();
+  assert.equal(registrations.length, 1);
+  assert.equal(registrations[0].name, 'animeApp');
+  for (const name of ['animeApp', 'dataMethods', 'searchMethods', 'loadHtml2Canvas', 'officialStoryUrl', '__frontendHooks']) {
+    assert.equal(context[name], undefined, name);
+  }
+});
+
 function createContext({storage = null, fetchImpl = null, html2canvas = null, navigatorImpl = null, swal = null} = {}) {
   const scripts = [];
   const button = { innerHTML: '生成圖片', disabled: false };
@@ -96,7 +116,7 @@ function createContext({storage = null, fetchImpl = null, html2canvas = null, na
   if (storage !== null) context.localStorage = storage;
   context.globalThis = context;
   vm.runInNewContext(
-    `${source}\n globalThis.__animeAppFactory = animeApp; globalThis.__frontendHooks = {loadHtml2Canvas, buildCloudinaryTransformationUrl};`,
+    source.replace(/\}\)\(\);\n$/, '\n globalThis.__animeAppFactory = animeApp; globalThis.__frontendHooks = {loadHtml2Canvas, buildCloudinaryTransformationUrl};\n})();\n'),
     context,
     { filename: 'main.js' },
   );
@@ -941,4 +961,19 @@ test('a late response from an older quarter version cannot overwrite the new cac
   resolvers[0](responseFor(dataset('old'))); await old;
   assert.equal(app.dataCache['2026_秋'].anime_list[0].anime_name, 'new');
   assert.equal(app.dataCache['2026_秋'].version, 'b'.repeat(64));
+});
+
+test('module composition preserves reactive getters and independent app state', () => {
+  const {context, app} = createContext();
+  const second = context.__animeAppFactory();
+  assert.equal(typeof Object.getOwnPropertyDescriptor(app, 'filteredAnime').get, 'function');
+  app.rawAnimeList = dataset('第一筆').anime_list;
+  assert.equal(app.filteredAnime.length, 1);
+  app.searchKeyword = '不存在';
+  assert.equal(app.filteredAnime.length, 0);
+  app.shareList.push({name: '第一筆'});
+  app.dataCache.quarter = {cachedAt: 1};
+  assert.equal(second.shareList.length, 0);
+  assert.equal(Object.keys(second.dataCache).length, 0);
+  assert.equal(second.rawAnimeList.length, 0);
 });
