@@ -329,3 +329,22 @@ def test_unreviewed_partial_season_cannot_use_whole_season_summary(
         "summary": SUMMARY,
     }
     assert enrich_story(record, whole_season, NOW, method="bangumi_api") == record
+
+
+def test_browser_registry_rejects_duplicate_and_unsafe_official_bindings(monkeypatch):
+    import services.story_source_reviews as reviews
+
+    row = reviews.story_reviews()[0]
+    assert reviews.public_story_sources()[row["card_id"]] == [
+        row["subject_id"],
+        row["source_url"],
+    ]
+    for rows in (
+        [row, row],
+        [{**row, "source_url": "javascript:alert(1)"}],
+        [{**row, "source_url": "https://user:password@example.test/"}],
+        [{**row, "subject_id": True}],
+    ):
+        monkeypatch.setattr(reviews, "story_reviews", lambda rows=rows: rows)
+        with pytest.raises(ValueError):
+            reviews.public_story_sources()

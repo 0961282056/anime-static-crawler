@@ -13,25 +13,14 @@ const HTML2CANVAS_INTEGRITY = 'sha384-ZZ1pncU3bQe8y31yfZdMFdSpttDoPmOZg2wguVK9al
 let html2canvasLoadPromise = null;
 const pendingRequestStates = new WeakMap();
 
-const OFFICIAL_STORY_SOURCES = {
-    'anime-2295': [486456, 'https://kadokawa-animation.jp/lineup/sasapi-anime'],
-    'anime-2289': [471844, 'https://www.fujitv.co.jp/b_hp/returners-magic2/index.html'],
-    'anime-2308': [665390, 'https://korinojoheki-pr.com/'],
-    'anime-2338': [701782, 'https://welshandshedar-anime.com/'],
-    'anime-322': [274549, 'https://www.tv-tokyo.co.jp/anime/gonjiro/story/'],
-    'anime-624': [212315, 'https://www.classicaloid.net/introduction/'],
-    'anime-590': [227778, 'https://www.tv-tokyo.co.jp/anime/pikachin/story/'],
-    'anime-646': [221018, 'https://www.tv-tokyo.co.jp/anime/cf-vanguard-gz/story/'],
-    'anime-776': [321387, 'https://www.tv-tokyo.co.jp/anime/mewklemix/story/'],
-    'anime-314': [279472, 'https://www.tv-tokyo.co.jp/anime/youkai-watch2019/story/'],
-    'anime-117': [296702, 'https://www.tv-tokyo.co.jp/anime/prichan/story/'],
-    'anime-313': [269023, 'https://www.tv-tokyo.co.jp/anime/prichan/news/index_5.html']
-};
+const OFFICIAL_STORY_SOURCES = JSON.parse(document.getElementById('app-config')?.dataset.officialStorySources || '{}');
 
 function officialStoryUrl(anime) {
     const expected = OFFICIAL_STORY_SOURCES[anime.bangumi_id];
     const source = anime.story_source;
-    return expected && source?.provider === 'official' && source.method === 'manual_official' &&
+    return Array.isArray(expected) && expected.length === 2 &&
+        typeof expected[1] === 'string' && /^https:\/\//.test(expected[1]) &&
+        source?.provider === 'official' && source.method === 'manual_official' &&
         source.subject_id === expected[0] && anime.external_ids?.bangumi === expected[0] &&
         source.source_url === expected[1] ? expected[1] : null;
 }

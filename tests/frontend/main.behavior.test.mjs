@@ -13,6 +13,7 @@ function createContext({storage = null, fetchImpl = null, html2canvas = null, na
       defaultYear: '2026',
       defaultSeason: '秋',
       buildVersion: 'test-build',
+      officialStorySources: JSON.stringify(Object.fromEntries(JSON.parse(readFileSync(new URL('../../services/reviewed_story_sources.json', import.meta.url), 'utf8')).map(row => [row.card_id, [row.subject_id, row.source_url]]))),
       availableData: JSON.stringify({ 2025: ['夏'], 2026: ['秋'] }),
     },
   };

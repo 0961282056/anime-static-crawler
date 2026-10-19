@@ -1,8 +1,10 @@
 """Manually verified official summary excerpts bound to exact card identities."""
 
 import json
+import re
 from functools import cache
 from pathlib import Path
+from urllib.parse import urlsplit
 
 
 @cache
@@ -26,3 +28,25 @@ def reviewed_story(anime):
         ),
         None,
     )
+
+
+def public_story_sources() -> dict[str, list]:
+    """Generate the browser's exact allowlist from the reviewed registry."""
+    result = {}
+    for row in story_reviews():
+        card, subject, url = row["card_id"], row["subject_id"], row["source_url"]
+        parsed = urlsplit(url)
+        if (
+            not re.fullmatch(r"anime-\d+", card)
+            or card in result
+            or type(subject) is not int
+            or subject <= 0
+            or parsed.scheme != "https"
+            or not parsed.hostname
+            or parsed.username is not None
+            or parsed.password is not None
+            or parsed.port not in (None, 443)
+        ):
+            raise ValueError("Invalid or duplicate reviewed official summary binding")
+        result[card] = [subject, url]
+    return result

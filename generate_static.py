@@ -29,6 +29,7 @@ from services.data_repository import DataQualityPolicy, DataRepository
 from services.diagnostics import RedactingFormatter, operation, run_command
 from services.errors import ConfigurationError, SourceNotFoundError
 from services.settings import CrawlerSettings, ProjectPaths
+from services.story_source_reviews import public_story_sources
 
 logger = logging.getLogger(__name__)
 START_YEAR_ON_EMPTY = 2018
@@ -248,6 +249,9 @@ def render_index(
         available_data=available_data,
         available_data_json=json.dumps(available_data, ensure_ascii=False),
         build_version=compute_build_version(paths),
+        official_story_sources_json=json.dumps(
+            public_story_sources(), ensure_ascii=False
+        ),
     )
     output_path = paths.output_dir / "index.html"
     atomic_write_text(output_path, content)
