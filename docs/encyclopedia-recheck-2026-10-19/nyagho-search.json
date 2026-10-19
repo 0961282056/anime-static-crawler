@@ -1,0 +1,3448 @@
+[
+  {
+    "url": "https://api.bgm.tv/v0/search/subjects?limit=50",
+    "request": {
+      "keyword": "猫のニャッホ",
+      "filter": {
+        "type": [
+          2
+        ]
+      }
+    },
+    "status": 200,
+    "sha256": "b29d2a11a2e16a00ea926002ebec94c230fafc7844b5787fd7e743883dd339bf",
+    "checked_at": "2026-10-19T07:33:18.766583+00:00",
+    "response": {
+      "data": [
+        {
+          "date": "2002-07-20",
+          "platform": "剧场版",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/ff/4d/506_ZvPRV.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/ff/4d/506_ZvPRV.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/ff/4d/506_ZvPRV.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/ff/4d/506_ZvPRV.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/ff/4d/506_ZvPRV.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/ff/4d/506_ZvPRV.jpg",
+          "summary": "内容描述一位平凡善良的高中女生小春，在一次上学途中救了一只猫，意外开启了一趟奇幻冒险经历。小春救的是猫王国的王子，“猫之国度”的猫国王为了报答她，不断送她礼物，并邀请小春到猫王国作客，希望她嫁给猫王子。困惑的小春向“猫事务所”的猫男爵巴隆（Baron）求助，遇到大肥猫胖胖（MUTA）、大乌鸦多多（TOTO）。突然，小春被一大群猫强行带往猫国，猫男爵和胖胖、多多紧追进入猫国。待在舒服的猫国中，小春渐渐地长出胡须和猫耳朵，小春快变成真正的猫了。在猫王的阻挠之下，小春、猫男爵和胖胖拼命的奔往迷宫出口，想在时间之内重回人类世界。",
+          "name": "猫の恩返し",
+          "name_cn": "猫的报恩",
+          "tags": [
+            {
+              "name": "吉卜力",
+              "count": 1177,
+              "total_count": 43431
+            },
+            {
+              "name": "剧场版",
+              "count": 895,
+              "total_count": 736426
+            },
+            {
+              "name": "宫崎骏",
+              "count": 741,
+              "total_count": 39241
+            },
+            {
+              "name": "治愈",
+              "count": 488,
+              "total_count": 308068
+            },
+            {
+              "name": "2002",
+              "count": 457,
+              "total_count": 16899
+            },
+            {
+              "name": "猫的报恩",
+              "count": 356,
+              "total_count": 356
+            },
+            {
+              "name": "奇幻",
+              "count": 341,
+              "total_count": 490488
+            },
+            {
+              "name": "森田宏幸",
+              "count": 227,
+              "total_count": 349
+            },
+            {
+              "name": "猫咪",
+              "count": 137,
+              "total_count": 352
+            },
+            {
+              "name": "猫",
+              "count": 136,
+              "total_count": 1663
+            },
+            {
+              "name": "幻想",
+              "count": 135,
+              "total_count": 3229
+            },
+            {
+              "name": "青春",
+              "count": 122,
+              "total_count": 110065
+            },
+            {
+              "name": "漫画改",
+              "count": 119,
+              "total_count": 889844
+            },
+            {
+              "name": "动画电影",
+              "count": 77,
+              "total_count": 44524
+            },
+            {
+              "name": "GHIBLI",
+              "count": 74,
+              "total_count": 1483
+            },
+            {
+              "name": "日本",
+              "count": 63,
+              "total_count": 312235
+            },
+            {
+              "name": "吉田玲子",
+              "count": 37,
+              "total_count": 7402
+            },
+            {
+              "name": "原创",
+              "count": 36,
+              "total_count": 634133
+            },
+            {
+              "name": "不是宫崎骏",
+              "count": 27,
+              "total_count": 39
+            },
+            {
+              "name": "2002年",
+              "count": 24,
+              "total_count": 1065
+            },
+            {
+              "name": "2002年7月",
+              "count": 22,
+              "total_count": 173
+            },
+            {
+              "name": "电影",
+              "count": 17,
+              "total_count": 13715
+            },
+            {
+              "name": "童年",
+              "count": 16,
+              "total_count": 94222
+            },
+            {
+              "name": "漫改",
+              "count": 16,
+              "total_count": 369559
+            },
+            {
+              "name": "宮崎駿",
+              "count": 15,
+              "total_count": 10917
+            },
+            {
+              "name": "映画",
+              "count": 13,
+              "total_count": 6332
+            },
+            {
+              "name": "动画",
+              "count": 8,
+              "total_count": 35849
+            },
+            {
+              "name": "经典",
+              "count": 8,
+              "total_count": 23283
+            },
+            {
+              "name": "スタジオジブリ",
+              "count": 8,
+              "total_count": 501
+            },
+            {
+              "name": "日本动画",
+              "count": 7,
+              "total_count": 35990
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "猫的报恩"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "貓的報恩"
+                },
+                {
+                  "v": "The Cat Returns"
+                }
+              ]
+            },
+            {
+              "key": "上映年度",
+              "value": "2002年7月20日"
+            },
+            {
+              "key": "片长",
+              "value": "75分"
+            },
+            {
+              "key": "导演",
+              "value": "森田宏幸"
+            },
+            {
+              "key": "话数",
+              "value": "1"
+            },
+            {
+              "key": "原作",
+              "value": "柊あおい"
+            },
+            {
+              "key": "人物设定",
+              "value": "森川聡子"
+            },
+            {
+              "key": "原画",
+              "value": "松本憲生（NC）"
+            }
+          ],
+          "rating": {
+            "rank": 1251,
+            "total": 3515,
+            "count": {
+              "1": 0,
+              "2": 2,
+              "3": 9,
+              "4": 22,
+              "5": 82,
+              "6": 462,
+              "7": 1345,
+              "8": 1262,
+              "9": 219,
+              "10": 112
+            },
+            "score": 7.4
+          },
+          "collection": {
+            "on_hold": 101,
+            "dropped": 26,
+            "wish": 1285,
+            "collect": 5756,
+            "doing": 71
+          },
+          "id": 506,
+          "eps": 1,
+          "total_episodes": 1,
+          "meta_tags": [
+            "剧场版",
+            "日本",
+            "奇幻",
+            "漫画改"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "2014-04-26",
+          "platform": "TV",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/39/92/101269_D72C9.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/39/92/101269_D72C9.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/39/92/101269_D72C9.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/39/92/101269_D72C9.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/39/92/101269_D72C9.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/39/92/101269_D72C9.jpg",
+          "summary": "",
+          "name": "猫のダヤン",
+          "name_cn": "猫咪达洋",
+          "tags": [
+            {
+              "name": "泡面番",
+              "count": 4,
+              "total_count": 151853
+            },
+            {
+              "name": "2014",
+              "count": 2,
+              "total_count": 70286
+            },
+            {
+              "name": "日本",
+              "count": 1,
+              "total_count": 276422
+            },
+            {
+              "name": "TV",
+              "count": 1,
+              "total_count": 1366633
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "猫咪达洋"
+            },
+            {
+              "key": "话数",
+              "value": "52"
+            },
+            {
+              "key": "放送开始",
+              "value": "2014年4月26日"
+            },
+            {
+              "key": "放送星期",
+              "value": "星期六"
+            },
+            {
+              "key": "官方网站",
+              "value": "http://anime-dayan.com/"
+            },
+            {
+              "key": "播放电视台",
+              "value": "TOKYO MX"
+            },
+            {
+              "key": "播放结束",
+              "value": "2015年4月25日"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 6,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 1,
+              "4": 0,
+              "5": 0,
+              "6": 1,
+              "7": 2,
+              "8": 1,
+              "9": 0,
+              "10": 1
+            },
+            "score": 6.8
+          },
+          "collection": {
+            "on_hold": 6,
+            "dropped": 9,
+            "wish": 17,
+            "collect": 5,
+            "doing": 7
+          },
+          "id": 101269,
+          "eps": 52,
+          "total_episodes": 52,
+          "meta_tags": [
+            "TV",
+            "日本"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "2016-10-01",
+          "platform": "TV",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/55/dd/209630_E4ItO.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/55/dd/209630_E4ItO.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/55/dd/209630_E4ItO.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/55/dd/209630_E4ItO.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/55/dd/209630_E4ItO.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/55/dd/209630_E4ItO.jpg",
+          "summary": "",
+          "name": "猫のダヤン ふしぎ劇場",
+          "name_cn": "",
+          "tags": [
+            {
+              "name": "泡面番",
+              "count": 1,
+              "total_count": 151090
+            },
+            {
+              "name": "日本",
+              "count": 1,
+              "total_count": 271920
+            },
+            {
+              "name": "TV",
+              "count": 1,
+              "total_count": 1358060
+            }
+          ],
+          "infobox": [
+            {
+              "key": "话数",
+              "value": "30"
+            },
+            {
+              "key": "放送开始",
+              "value": "2016年10月1日"
+            },
+            {
+              "key": "官方网站",
+              "value": "http://anime-dayan.com/"
+            },
+            {
+              "key": "播放结束",
+              "value": "2017年4月20日"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 0,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0,
+              "8": 0,
+              "9": 0,
+              "10": 0
+            },
+            "score": 0
+          },
+          "collection": {
+            "on_hold": 1,
+            "dropped": 5,
+            "wish": 1,
+            "collect": 1,
+            "doing": 0
+          },
+          "id": 209630,
+          "eps": 30,
+          "total_episodes": 30,
+          "meta_tags": [
+            "TV",
+            "日本"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "2015-10-17",
+          "platform": "TV",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/cd/fe/258329_k5dt8.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/cd/fe/258329_k5dt8.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/cd/fe/258329_k5dt8.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/cd/fe/258329_k5dt8.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/cd/fe/258329_k5dt8.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/cd/fe/258329_k5dt8.jpg",
+          "summary": "",
+          "name": "猫のダヤン 日本へ行く",
+          "name_cn": "",
+          "tags": [
+            {
+              "name": "泡面番",
+              "count": 1,
+              "total_count": 151090
+            },
+            {
+              "name": "日本",
+              "count": 1,
+              "total_count": 271919
+            },
+            {
+              "name": "TV",
+              "count": 1,
+              "total_count": 1358058
+            }
+          ],
+          "infobox": [
+            {
+              "key": "话数",
+              "value": "12"
+            },
+            {
+              "key": "放送开始",
+              "value": "2015年10月17日"
+            },
+            {
+              "key": "官方网站",
+              "value": "http://anime-dayan.com/"
+            },
+            {
+              "key": "播放结束",
+              "value": "2016年1月9日"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 0,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0,
+              "8": 0,
+              "9": 0,
+              "10": 0
+            },
+            "score": 0
+          },
+          "collection": {
+            "on_hold": 2,
+            "dropped": 5,
+            "wish": 2,
+            "collect": 1,
+            "doing": 1
+          },
+          "id": 258329,
+          "eps": 12,
+          "total_episodes": 12,
+          "meta_tags": [
+            "TV",
+            "日本"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "2023-10-23",
+          "platform": "WEB",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/78/e6/461203_r7699.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/78/e6/461203_r7699.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/78/e6/461203_r7699.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/78/e6/461203_r7699.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/78/e6/461203_r7699.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/78/e6/461203_r7699.jpg",
+          "summary": "本作がより楽しめるミニアニメ「猫猫のひとりごと」の配信が決定！\r\nTOHO animation公式YouTubeチャンネル、『薬屋のひとりごと』公式TikTokにて配信！\r\n\r\nミニアニメ「猫猫のひとりごと」は、各エピソードに登場したキーアイテムの解説を猫猫がする各話の後日譚となっています。\r\nちびキャラになった猫猫と壬氏の本編では見ることのできないやり取り、エピソードにもご注目ください。「猫猫のひとりごと」第1話～３話は、23日（月）正午12時より配信開始。\r\n第4話以降は放送後月曜日正午12時に更新されていくのでお楽しみに！\r\n詳しくは公式サイトのMOVIEページをご確認ください。",
+          "name": "猫猫のひとりごと",
+          "name_cn": "猫猫的呢喃",
+          "tags": [
+            {
+              "name": "泡面番",
+              "count": 145,
+              "total_count": 156919
+            },
+            {
+              "name": "WEB",
+              "count": 107,
+              "total_count": 73747
+            },
+            {
+              "name": "2023",
+              "count": 101,
+              "total_count": 82754
+            },
+            {
+              "name": "2023年10月",
+              "count": 76,
+              "total_count": 37931
+            },
+            {
+              "name": "TOHOanimationSTUDIO",
+              "count": 63,
+              "total_count": 3367
+            },
+            {
+              "name": "轻小说改",
+              "count": 56,
+              "total_count": 507993
+            },
+            {
+              "name": "科普",
+              "count": 44,
+              "total_count": 13080
+            },
+            {
+              "name": "推理",
+              "count": 33,
+              "total_count": 75243
+            },
+            {
+              "name": "短动画",
+              "count": 31,
+              "total_count": 35
+            },
+            {
+              "name": "悬疑",
+              "count": 20,
+              "total_count": 116374
+            },
+            {
+              "name": "番外",
+              "count": 17,
+              "total_count": 4424
+            },
+            {
+              "name": "中国风",
+              "count": 16,
+              "total_count": 3448
+            },
+            {
+              "name": "小说改",
+              "count": 14,
+              "total_count": 166520
+            },
+            {
+              "name": "轻改",
+              "count": 13,
+              "total_count": 155288
+            },
+            {
+              "name": "日本",
+              "count": 9,
+              "total_count": 311315
+            },
+            {
+              "name": "SP",
+              "count": 7,
+              "total_count": 6048
+            },
+            {
+              "name": "短片",
+              "count": 7,
+              "total_count": 103862
+            },
+            {
+              "name": "药屋少女的呢喃",
+              "count": 6,
+              "total_count": 153
+            },
+            {
+              "name": "漫画改",
+              "count": 5,
+              "total_count": 888110
+            },
+            {
+              "name": "2023年",
+              "count": 4,
+              "total_count": 3672
+            },
+            {
+              "name": "泡面",
+              "count": 4,
+              "total_count": 10699
+            },
+            {
+              "name": "TV",
+              "count": 3,
+              "total_count": 1439013
+            },
+            {
+              "name": "OLM",
+              "count": 3,
+              "total_count": 13038
+            },
+            {
+              "name": "小剧场",
+              "count": 2,
+              "total_count": 1914
+            },
+            {
+              "name": "中国古风",
+              "count": 2,
+              "total_count": 8
+            },
+            {
+              "name": "日向夏",
+              "count": 2,
+              "total_count": 23
+            },
+            {
+              "name": "6",
+              "count": 2,
+              "total_count": 2307
+            },
+            {
+              "name": "2024",
+              "count": 2,
+              "total_count": 72865
+            },
+            {
+              "name": "动画",
+              "count": 2,
+              "total_count": 35821
+            },
+            {
+              "name": "5分",
+              "count": 2,
+              "total_count": 1875
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "猫猫的呢喃"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "『薬屋のひとりごと』ミニアニメ"
+                },
+                {
+                  "v": "Maomao no Hitorigoto"
+                }
+              ]
+            },
+            {
+              "key": "话数",
+              "value": "24"
+            },
+            {
+              "key": "放送开始",
+              "value": "2023年10月23日"
+            },
+            {
+              "key": "放送星期",
+              "value": "星期一"
+            },
+            {
+              "key": "官方网站",
+              "value": "https://kusuriyanohitorigoto.jp/#p-movie"
+            },
+            {
+              "key": "在线播放平台",
+              "value": "YouTube、TikTok"
+            },
+            {
+              "key": "播放结束",
+              "value": "2024年3月25日"
+            },
+            {
+              "key": "Copyright",
+              "value": "©日向夏・イマジカインフォス／「薬屋のひとりごと」製作委員会"
+            }
+          ],
+          "rating": {
+            "rank": 6701,
+            "total": 314,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 10,
+              "5": 61,
+              "6": 147,
+              "7": 72,
+              "8": 16,
+              "9": 4,
+              "10": 4
+            },
+            "score": 6.2
+          },
+          "collection": {
+            "on_hold": 27,
+            "dropped": 29,
+            "wish": 121,
+            "collect": 593,
+            "doing": 76
+          },
+          "id": 461203,
+          "eps": 24,
+          "total_episodes": 24,
+          "meta_tags": [
+            "日本",
+            "WEB"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "2025-01-13",
+          "platform": "WEB",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/61/09/533096_n9lJ8.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/61/09/533096_n9lJ8.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/61/09/533096_n9lJ8.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/61/09/533096_n9lJ8.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/61/09/533096_n9lJ8.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/61/09/533096_n9lJ8.jpg",
+          "summary": "ミニアニメ「猫猫のひとりごと」がパワーアップして帰ってくる✨\r\n毎話エピソードに登場したキーアイテムを猫猫たちが解説！",
+          "name": "猫猫のひとりごと 第2期",
+          "name_cn": "猫猫的呢喃 第二季",
+          "tags": [
+            {
+              "name": "泡面番",
+              "count": 65,
+              "total_count": 157114
+            },
+            {
+              "name": "2025",
+              "count": 58,
+              "total_count": 74675
+            },
+            {
+              "name": "WEB",
+              "count": 50,
+              "total_count": 73893
+            },
+            {
+              "name": "2025年1月",
+              "count": 36,
+              "total_count": 27405
+            },
+            {
+              "name": "短片",
+              "count": 30,
+              "total_count": 103968
+            },
+            {
+              "name": "TOHOanimationSTUDIO",
+              "count": 23,
+              "total_count": 3387
+            },
+            {
+              "name": "轻小说改",
+              "count": 23,
+              "total_count": 508666
+            },
+            {
+              "name": "日本",
+              "count": 22,
+              "total_count": 312235
+            },
+            {
+              "name": "番外",
+              "count": 20,
+              "total_count": 4441
+            },
+            {
+              "name": "推理",
+              "count": 18,
+              "total_count": 75355
+            },
+            {
+              "name": "藥師少女的獨語",
+              "count": 13,
+              "total_count": 23
+            },
+            {
+              "name": "悬疑",
+              "count": 12,
+              "total_count": 116565
+            },
+            {
+              "name": "SP",
+              "count": 11,
+              "total_count": 6053
+            },
+            {
+              "name": "小说改",
+              "count": 10,
+              "total_count": 167065
+            },
+            {
+              "name": "轻改",
+              "count": 4,
+              "total_count": 155511
+            },
+            {
+              "name": "TV",
+              "count": 4,
+              "total_count": 1441175
+            },
+            {
+              "name": "科普",
+              "count": 3,
+              "total_count": 13093
+            },
+            {
+              "name": "2025年",
+              "count": 2,
+              "total_count": 3574
+            },
+            {
+              "name": "小剧场",
+              "count": 2,
+              "total_count": 1920
+            },
+            {
+              "name": "日向夏",
+              "count": 2,
+              "total_count": 23
+            },
+            {
+              "name": "悠木碧",
+              "count": 2,
+              "total_count": 12376
+            },
+            {
+              "name": "药屋少女的呢喃",
+              "count": 2,
+              "total_count": 157
+            },
+            {
+              "name": "OLM",
+              "count": 2,
+              "total_count": 13073
+            },
+            {
+              "name": "日本动画",
+              "count": 1,
+              "total_count": 35990
+            },
+            {
+              "name": "猫猫的呢喃",
+              "count": 1,
+              "total_count": 2
+            },
+            {
+              "name": "字母M",
+              "count": 1,
+              "total_count": 80
+            },
+            {
+              "name": "THS",
+              "count": 1,
+              "total_count": 2
+            },
+            {
+              "name": "TOHO_animation_STUDIO",
+              "count": 1,
+              "total_count": 46
+            },
+            {
+              "name": "OVA",
+              "count": 1,
+              "total_count": 371410
+            },
+            {
+              "name": "◆小剧场◆",
+              "count": 1,
+              "total_count": 24
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "猫猫的呢喃 第二季"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "『薬屋のひとりごと』第2期 ミニアニメ"
+                },
+                {
+                  "v": "Maomao no Hitorigoto 2nd Season"
+                }
+              ]
+            },
+            {
+              "key": "话数",
+              "value": "24"
+            },
+            {
+              "key": "放送开始",
+              "value": "2025年1月13日"
+            },
+            {
+              "key": "放送星期",
+              "value": "星期一"
+            },
+            {
+              "key": "官方网站",
+              "value": "https://kusuriyanohitorigoto.jp/#p-movie"
+            },
+            {
+              "key": "在线播放平台",
+              "value": "YouTube"
+            },
+            {
+              "key": "播放结束",
+              "value": "2025年7月7日"
+            },
+            {
+              "key": "链接",
+              "value": [
+                {
+                  "k": "YouTube",
+                  "v": "https://www.youtube.com/@TOHOanimation"
+                }
+              ]
+            },
+            {
+              "key": "Copyright",
+              "value": "©日向夏・イマジカインフォス／「薬屋のひとりごと」製作委員会"
+            }
+          ],
+          "rating": {
+            "rank": 5852,
+            "total": 173,
+            "count": {
+              "1": 1,
+              "2": 2,
+              "3": 0,
+              "4": 3,
+              "5": 30,
+              "6": 79,
+              "7": 39,
+              "8": 11,
+              "9": 3,
+              "10": 5
+            },
+            "score": 6.2
+          },
+          "collection": {
+            "on_hold": 27,
+            "dropped": 14,
+            "wish": 99,
+            "collect": 360,
+            "doing": 59
+          },
+          "id": 533096,
+          "eps": 24,
+          "total_episodes": 24,
+          "meta_tags": [
+            "日本",
+            "WEB"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "2026-10-05",
+          "platform": "WEB",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/44/89/707667_JL0l8.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/44/89/707667_JL0l8.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/44/89/707667_JL0l8.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/44/89/707667_JL0l8.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/44/89/707667_JL0l8.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/44/89/707667_JL0l8.jpg",
+          "summary": "",
+          "name": "猫猫のひとりごと 第3期",
+          "name_cn": "猫猫的呢喃 第三季",
+          "tags": [
+            {
+              "name": "2026年10月",
+              "count": 8,
+              "total_count": 10494
+            },
+            {
+              "name": "2026",
+              "count": 7,
+              "total_count": 54228
+            },
+            {
+              "name": "WEB",
+              "count": 6,
+              "total_count": 73894
+            },
+            {
+              "name": "泡面番",
+              "count": 4,
+              "total_count": 157118
+            },
+            {
+              "name": "藥師少女的獨語",
+              "count": 2,
+              "total_count": 23
+            },
+            {
+              "name": "OLM",
+              "count": 2,
+              "total_count": 13076
+            },
+            {
+              "name": "SP",
+              "count": 2,
+              "total_count": 6053
+            },
+            {
+              "name": "日本",
+              "count": 2,
+              "total_count": 312277
+            },
+            {
+              "name": "药屋少女的呢喃",
+              "count": 1,
+              "total_count": 160
+            },
+            {
+              "name": "◆小剧场◆",
+              "count": 1,
+              "total_count": 24
+            },
+            {
+              "name": "中华风",
+              "count": 1,
+              "total_count": 203
+            },
+            {
+              "name": "悬疑",
+              "count": 1,
+              "total_count": 116570
+            },
+            {
+              "name": "轻小说改",
+              "count": 1,
+              "total_count": 508699
+            },
+            {
+              "name": "推理",
+              "count": 1,
+              "total_count": 75359
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "猫猫的呢喃 第三季"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "『薬屋のひとりごと』第3期 ミニアニメ"
+                },
+                {
+                  "v": "Maomao no Hitorigoto 3nd Season"
+                }
+              ]
+            },
+            {
+              "key": "话数",
+              "value": "*"
+            },
+            {
+              "key": "放送开始",
+              "value": "2026年10月5日"
+            },
+            {
+              "key": "放送星期",
+              "value": "星期一"
+            },
+            {
+              "key": "官方网站",
+              "value": "https://kusuriyanohitorigoto.jp/"
+            },
+            {
+              "key": "在线播放平台",
+              "value": "YouTube"
+            },
+            {
+              "key": "链接",
+              "value": [
+                {
+                  "k": "YouTube",
+                  "v": "https://www.youtube.com/@TOHOanimation"
+                }
+              ]
+            },
+            {
+              "key": "Copyright",
+              "value": "©日向夏・イマジカインフォス／「薬屋のひとりごと」製作委員会"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 11,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 5,
+              "7": 5,
+              "8": 0,
+              "9": 0,
+              "10": 1
+            },
+            "score": 6.8
+          },
+          "collection": {
+            "on_hold": 3,
+            "dropped": 9,
+            "wish": 21,
+            "collect": 5,
+            "doing": 78
+          },
+          "id": 707667,
+          "eps": 0,
+          "total_episodes": 0,
+          "meta_tags": [
+            "日本",
+            "WEB"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "2006-10-14",
+          "platform": "剧场版",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/07/eb/112660_TCAVv.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/07/eb/112660_TCAVv.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/07/eb/112660_TCAVv.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/07/eb/112660_TCAVv.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/07/eb/112660_TCAVv.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/07/eb/112660_TCAVv.jpg",
+          "summary": "　　ますむらひろし原作のロングセラー・コミックを3DCGアニメで映画化。年に1度の祭りで賑わうアタゴオル。トラブルメイカーのデブ猫ヒデヨシは、大好物の紅マグロに目が眩んで封印の扉を開けてしまう。中から出てきたのは、世界征服を企む植物女王ピレアだった……。ファンタジックなアタゴオルの世界をCGで描き出したのは、CGアニメ「アップルシード」や「デスノート」の死神CGで高い評価を得たクリエイター集団、デジタル・フロンティア。 ",
+          "name": "アタゴオルは猫の森",
+          "name_cn": "不可思议猫森林",
+          "tags": [
+            {
+              "name": "剧场版",
+              "count": 5,
+              "total_count": 722347
+            },
+            {
+              "name": "治愈",
+              "count": 2,
+              "total_count": 301048
+            },
+            {
+              "name": "4",
+              "count": 1,
+              "total_count": 487
+            },
+            {
+              "name": "2006",
+              "count": 1,
+              "total_count": 34171
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "不可思议猫森林"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "Atagoal Cat's Magical Forest"
+                }
+              ]
+            },
+            {
+              "key": "上映年度",
+              "value": "2006年10月14日"
+            },
+            {
+              "key": "片长",
+              "value": "81分钟"
+            },
+            {
+              "key": "官方网站",
+              "value": "www.atagoal.com"
+            },
+            {
+              "key": "话数",
+              "value": "1"
+            },
+            {
+              "key": "IMDb_id",
+              "value": "tt0871971"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 9,
+            "count": {
+              "1": 0,
+              "2": 2,
+              "3": 1,
+              "4": 3,
+              "5": 0,
+              "6": 3,
+              "7": 0,
+              "8": 0,
+              "9": 0,
+              "10": 0
+            },
+            "score": 4.1
+          },
+          "collection": {
+            "on_hold": 2,
+            "dropped": 8,
+            "wish": 4,
+            "collect": 14,
+            "doing": 1
+          },
+          "id": 112660,
+          "eps": 1,
+          "total_episodes": 1,
+          "meta_tags": [
+            "剧场版"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "1992-04-01",
+          "platform": "TV",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/04/fa/79851_y3FOS.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/04/fa/79851_y3FOS.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/04/fa/79851_y3FOS.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/04/fa/79851_y3FOS.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/04/fa/79851_y3FOS.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/04/fa/79851_y3FOS.jpg",
+          "summary": "　　貧しい農家の子供ハンスは、魔法の靴によって賢さを得た猫のクストと共に旅に出る。やがてクストの計略によって、ハンスはサーラ姫と結婚することとなる。だが、結婚式に招待されなかった妖精ザキルの呪いにより、姫は百年の眠りについてしまう。こうしてハンスとクストは、ネズミに変えられた妖精ピエールと共に、ザキルを追う旅に出る。",
+          "name": "ファンタジーアドベンチャー 長靴をはいた猫の冒険",
+          "name_cn": "神剑飞天猫",
+          "tags": [
+            {
+              "name": "TV",
+              "count": 3,
+              "total_count": 1437514
+            },
+            {
+              "name": "旧物",
+              "count": 1,
+              "total_count": 3607
+            },
+            {
+              "name": "1992",
+              "count": 1,
+              "total_count": 4425
+            },
+            {
+              "name": "童年",
+              "count": 1,
+              "total_count": 94011
+            },
+            {
+              "name": "日本",
+              "count": 1,
+              "total_count": 310809
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "神剑飞天猫"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "长靴猫的冒险"
+                },
+                {
+                  "v": "梦幻冒险：穿靴子的猫"
+                },
+                {
+                  "v": "Adventures of Puss-in-Boots"
+                }
+              ]
+            },
+            {
+              "key": "话数",
+              "value": "26"
+            },
+            {
+              "key": "放送开始",
+              "value": "1992年4月1日"
+            },
+            {
+              "key": "放送星期",
+              "value": "星期三"
+            },
+            {
+              "key": "播放电视台",
+              "value": "テレビ東京"
+            },
+            {
+              "key": "播放结束",
+              "value": "1992年9月23日"
+            },
+            {
+              "key": "导演",
+              "value": "石崎すすむ"
+            },
+            {
+              "key": "系列构成",
+              "value": "山田隆司、雪室俊一"
+            },
+            {
+              "key": "动画制作",
+              "value": "エノキフイルム"
+            },
+            {
+              "key": "人物设定",
+              "value": "白梅進"
+            },
+            {
+              "key": "摄影监督",
+              "value": "沖野雅英"
+            },
+            {
+              "key": "音响监督",
+              "value": "田中英行"
+            },
+            {
+              "key": "主题歌编曲",
+              "value": "梁邦彦"
+            },
+            {
+              "key": "企画",
+              "value": "榎善教"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 0,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0,
+              "8": 0,
+              "9": 0,
+              "10": 0
+            },
+            "score": 0
+          },
+          "collection": {
+            "on_hold": 1,
+            "dropped": 6,
+            "wish": 14,
+            "collect": 4,
+            "doing": 0
+          },
+          "id": 79851,
+          "eps": 26,
+          "total_episodes": 26,
+          "meta_tags": [
+            "TV",
+            "日本"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "1998-05-30",
+          "platform": "剧场版",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/c8/14/130370_I8z11.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/c8/14/130370_I8z11.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/c8/14/130370_I8z11.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/c8/14/130370_I8z11.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/c8/14/130370_I8z11.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/c8/14/130370_I8z11.jpg",
+          "summary": "　猫が支配する国を訪れた兄弟たちの冒険譚を描いた劇場用長編アニメーション作品。物語の舞台は、猫の国・バニパルウェット。主人公のトリヤスとミーコの兄弟は逃げた飼い犬のパパドールを探すために旅をしていく。無事にパパドールを見つけることができるのか？　二人の前に待ち受ける困難とは？　\r\n　本作は、『ピーターパンの冒険』『アキラ』のなかむらたかしが監督・脚本を担当し、堀裕晶や佐々木未来、日高のり子、飯塚雅弓などの豪華声優陣が起用され、骨太な作りとなっている。",
+          "name": "とつぜん!ネコの国 バニパルウィット",
+          "name_cn": "猫之乡",
+          "tags": [
+            {
+              "name": "中村孝",
+              "count": 8,
+              "total_count": 172
+            },
+            {
+              "name": "小中千昭",
+              "count": 4,
+              "total_count": 712
+            },
+            {
+              "name": "剧场版",
+              "count": 4,
+              "total_count": 725445
+            },
+            {
+              "name": "なかむらたかし",
+              "count": 3,
+              "total_count": 77
+            },
+            {
+              "name": "江村丰秋",
+              "count": 3,
+              "total_count": 8
+            },
+            {
+              "name": "冲浦启之",
+              "count": 3,
+              "total_count": 883
+            },
+            {
+              "name": "安藤真裕",
+              "count": 3,
+              "total_count": 1634
+            },
+            {
+              "name": "木村真二",
+              "count": 3,
+              "total_count": 174
+            },
+            {
+              "name": "滨洲英喜",
+              "count": 2,
+              "total_count": 34
+            },
+            {
+              "name": "1995",
+              "count": 2,
+              "total_count": 9367
+            },
+            {
+              "name": "田中达之",
+              "count": 2,
+              "total_count": 142
+            },
+            {
+              "name": "日本動畫電影",
+              "count": 2,
+              "total_count": 126
+            },
+            {
+              "name": "TriangleStaff",
+              "count": 2,
+              "total_count": 535
+            },
+            {
+              "name": "トライアングルスタッフ",
+              "count": 1,
+              "total_count": 113
+            },
+            {
+              "name": "旧物",
+              "count": 1,
+              "total_count": 3540
+            },
+            {
+              "name": "long",
+              "count": 1,
+              "total_count": 242
+            },
+            {
+              "name": "山下高明",
+              "count": 1,
+              "total_count": 72
+            },
+            {
+              "name": "川名久美子",
+              "count": 1,
+              "total_count": 1
+            },
+            {
+              "name": "1998年",
+              "count": 1,
+              "total_count": 632
+            },
+            {
+              "name": "1998",
+              "count": 1,
+              "total_count": 13242
+            },
+            {
+              "name": "原创",
+              "count": 1,
+              "total_count": 621028
+            },
+            {
+              "name": "1990s",
+              "count": 1,
+              "total_count": 1647
+            },
+            {
+              "name": "佐佐木守",
+              "count": 1,
+              "total_count": 8
+            },
+            {
+              "name": "清水洋",
+              "count": 1,
+              "total_count": 42
+            },
+            {
+              "name": "电影",
+              "count": 1,
+              "total_count": 13584
+            },
+            {
+              "name": "黑泽守",
+              "count": 1,
+              "total_count": 14
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "猫之乡"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "とつぜん!猫の国 バニパルウィット"
+                },
+                {
+                  "v": "猫の国 バニパルウィット"
+                }
+              ]
+            },
+            {
+              "key": "上映年度",
+              "value": "1998年5月30日"
+            },
+            {
+              "key": "片长",
+              "value": "75分钟"
+            },
+            {
+              "key": "imdb",
+              "value": "tt0114689"
+            },
+            {
+              "key": "话数",
+              "value": "1"
+            },
+            {
+              "key": "製作",
+              "value": "バンダイビジュアル、ACクリエイト"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 11,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 5,
+              "7": 3,
+              "8": 3,
+              "9": 0,
+              "10": 0
+            },
+            "score": 6.8
+          },
+          "collection": {
+            "on_hold": 4,
+            "dropped": 5,
+            "wish": 25,
+            "collect": 16,
+            "doing": 3
+          },
+          "id": 130370,
+          "eps": 1,
+          "total_episodes": 1,
+          "meta_tags": [],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "1989-07-18",
+          "platform": "OVA",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/05/e4/112593_10p1x.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/05/e4/112593_10p1x.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/05/e4/112593_10p1x.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/05/e4/112593_10p1x.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/05/e4/112593_10p1x.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/05/e4/112593_10p1x.jpg",
+          "summary": "　テレビでのオンエアが決まっていないのに、26本の新作を作ってしまい、それからテレビ局に売り込もうという、危険な冒険をしたライオン・ブックスシリーズの第一弾。趣味も含めてハイクォリティーのものを作ろうと意気込んだ手塚プロの熱意が伝わる作品です。原作は主人公を悪の道へといざなう緑色の猫が、じつは地球征服を企む宇宙生物だった、という侵略テーマSFの傑作です。",
+          "name": "緑の猫",
+          "name_cn": "绿猫",
+          "tags": [
+            {
+              "name": "1983",
+              "count": 7,
+              "total_count": 1730
+            },
+            {
+              "name": "OVA",
+              "count": 7,
+              "total_count": 352007
+            },
+            {
+              "name": "漫画改",
+              "count": 4,
+              "total_count": 809071
+            },
+            {
+              "name": "西村緋禄司",
+              "count": 3,
+              "total_count": 9
+            },
+            {
+              "name": "手塚治虫",
+              "count": 3,
+              "total_count": 2873
+            },
+            {
+              "name": "手塚PRODUCTION",
+              "count": 3,
+              "total_count": 4944
+            },
+            {
+              "name": "短片",
+              "count": 2,
+              "total_count": 97955
+            },
+            {
+              "name": "独立ova",
+              "count": 2,
+              "total_count": 2934
+            },
+            {
+              "name": "日本动画",
+              "count": 1,
+              "total_count": 34058
+            },
+            {
+              "name": "漫改",
+              "count": 1,
+              "total_count": 345018
+            },
+            {
+              "name": "旧物",
+              "count": 1,
+              "total_count": 3285
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "绿猫"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "The Green Cat"
+                },
+                {
+                  "v": "Midori no Neko"
+                }
+              ]
+            },
+            {
+              "key": "话数",
+              "value": "1"
+            },
+            {
+              "key": "发售日",
+              "value": "1989年7月18日"
+            },
+            {
+              "key": "片长",
+              "value": "24分钟"
+            },
+            {
+              "key": "脚本",
+              "value": "西村緋禄司"
+            },
+            {
+              "key": "制作年代",
+              "value": "1983年10月"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 15,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 2,
+              "5": 5,
+              "6": 4,
+              "7": 3,
+              "8": 1,
+              "9": 0,
+              "10": 0
+            },
+            "score": 5.7
+          },
+          "collection": {
+            "on_hold": 2,
+            "dropped": 7,
+            "wish": 7,
+            "collect": 18,
+            "doing": 1
+          },
+          "id": 112593,
+          "eps": 1,
+          "total_episodes": 1,
+          "meta_tags": [
+            "OVA",
+            "漫画改"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "1992-03-30",
+          "platform": "TV",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/5a/3d/220055_NoEOZ.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/5a/3d/220055_NoEOZ.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/5a/3d/220055_NoEOZ.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/5a/3d/220055_NoEOZ.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/5a/3d/220055_NoEOZ.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/5a/3d/220055_NoEOZ.jpg",
+          "summary": "　日本テレビの深夜に放送された5分のミニアニメシリーズ。90年代序盤のグルメブームの中、擬人化された主人公の猫たちの視点を通じて食事のレシピを学ぶことができた。\r\n　ここは猫だけの島イル・ガット。マスターのヨーヨーと娘のココが切り盛りするバーの海猫亭は、今日も昔話に花を咲かせる提督や無口で味オンチのドクたち色んな常連客が集まっている。ヨーヨーやココが出すお洒落なお酒のおつまみには誰もが満足。\r\n　本作の原案は猫の「ダヤン」シリーズで有名な絵本作家・池田あきこによるもの。料理の監修には服部栄養専門学校も協力している。ちなみに本作の実制作は『楽しいムーミン一家』などのビジュアル80が担当。",
+          "name": "ヨーヨーの猫つまみ",
+          "name_cn": "",
+          "tags": [
+            {
+              "name": "TV",
+              "count": 2,
+              "total_count": 1406341
+            },
+            {
+              "name": "1992",
+              "count": 2,
+              "total_count": 4379
+            },
+            {
+              "name": "1992年四月番",
+              "count": 1,
+              "total_count": 5
+            },
+            {
+              "name": "旧物",
+              "count": 1,
+              "total_count": 3540
+            },
+            {
+              "name": "1992年",
+              "count": 1,
+              "total_count": 235
+            },
+            {
+              "name": "日本",
+              "count": 1,
+              "total_count": 298231
+            },
+            {
+              "name": "1992年3月",
+              "count": 1,
+              "total_count": 16
+            }
+          ],
+          "infobox": [
+            {
+              "key": "话数",
+              "value": "130"
+            },
+            {
+              "key": "放送开始",
+              "value": "1992年3月30日"
+            },
+            {
+              "key": "播放结束",
+              "value": "1992年9月25日"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 0,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0,
+              "8": 0,
+              "9": 0,
+              "10": 0
+            },
+            "score": 0
+          },
+          "collection": {
+            "on_hold": 0,
+            "dropped": 6,
+            "wish": 5,
+            "collect": 2,
+            "doing": 0
+          },
+          "id": 220055,
+          "eps": 130,
+          "total_episodes": 130,
+          "meta_tags": [
+            "TV",
+            "日本"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": null,
+          "platform": "OVA",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/0d/c1/301739_1z2m0.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/0d/c1/301739_1z2m0.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/0d/c1/301739_1z2m0.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/0d/c1/301739_1z2m0.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/0d/c1/301739_1z2m0.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/0d/c1/301739_1z2m0.jpg",
+          "summary": "　　居住在神户的一家人和某两只猫搬家到了东京。而作为姐弟的薫和卓也面对着转学深感到不安。而转校当天因为过于紧张，薰错失了打招呼的时机。而坐在她身边的同桌则是一名叫加藤nicorosi的混血儿。而加藤也因为红色头发以及说话太过耿直的原因受到了霸凌。薰本来打算帮助的时候，这时候因为被欺负他的人恐吓不由得逃开了，原来薰之前因为戴着眼镜有些胖的原因也曾经受到过嘲笑。另一方面，母亲也在工作地点受到了差别对待。但是一家人会想起地震的经历决心面对这些困难。与此同时，两只小猫也被当地的猫团体欺负。终于在周日的早上猫咪们的决斗开始了，而在打斗中逐渐了解到这两只猫凄惨过去的当地猫们开始了和解。而受到感召的加藤看到这样的画面也开始练习起了跳箱子，终于在成功之后得到了大家的认可。最终以在课堂上大方打招呼的薰的画面结束。",
+          "name": "二匹の猫と元気な家族",
+          "name_cn": "两只猫和元气的家族",
+          "tags": [
+            {
+              "name": "OVA",
+              "count": 2,
+              "total_count": 370150
+            },
+            {
+              "name": "空",
+              "count": 1,
+              "total_count": 1467
+            },
+            {
+              "name": "京阿尼",
+              "count": 1,
+              "total_count": 216387
+            },
+            {
+              "name": "日本",
+              "count": 1,
+              "total_count": 309114
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "两只猫和元气的家族"
+            },
+            {
+              "key": "话数",
+              "value": "1"
+            },
+            {
+              "key": "发售日",
+              "value": "1997年"
+            },
+            {
+              "key": "导演",
+              "value": "石原立也、家喜俊彦"
+            },
+            {
+              "key": "分镜",
+              "value": "石原立也"
+            },
+            {
+              "key": "演出",
+              "value": "石原立也"
+            },
+            {
+              "key": "作画监督",
+              "value": "逢坂浩司"
+            },
+            {
+              "key": "原画",
+              "value": "木上益治、北之原孝将[北之原孝將]、笹井昌治、高桥博行[高橋博行]、武本康弘、米田光良、逢坂浩司"
+            },
+            {
+              "key": "脚本",
+              "value": "大津一瑯"
+            },
+            {
+              "key": "制作协力",
+              "value": "井之上企画、京都アニメーション"
+            },
+            {
+              "key": "制片人",
+              "value": "古田誠宏、井之上綾子"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 0,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0,
+              "8": 0,
+              "9": 0,
+              "10": 0
+            },
+            "score": 0
+          },
+          "collection": {
+            "on_hold": 3,
+            "dropped": 3,
+            "wish": 3,
+            "collect": 4,
+            "doing": 1
+          },
+          "id": 301739,
+          "eps": 1,
+          "total_episodes": 1,
+          "meta_tags": [
+            "OVA"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "1992-07-21",
+          "platform": "OVA",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/9a/cb/117811_00IvG.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/9a/cb/117811_00IvG.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/9a/cb/117811_00IvG.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/9a/cb/117811_00IvG.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/9a/cb/117811_00IvG.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/9a/cb/117811_00IvG.jpg",
+          "summary": "短編集「三毛猫ホームズと愛の花束」に収録されている「三毛猫ホームズの幽霊城主」が1992年7月21日にOVA化されている。収録時間45分。",
+          "name": "三毛猫ホームズの幽霊城主",
+          "name_cn": "三色猫福尔摩斯之幽灵城主",
+          "tags": [
+            {
+              "name": "OVA",
+              "count": 2,
+              "total_count": 365651
+            },
+            {
+              "name": "旧物",
+              "count": 1,
+              "total_count": 3541
+            },
+            {
+              "name": "独立ova",
+              "count": 1,
+              "total_count": 3013
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "三色猫福尔摩斯之幽灵城主"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "三毛猫福尔摩斯的幽灵城主"
+                }
+              ]
+            },
+            {
+              "key": "话数",
+              "value": "1"
+            },
+            {
+              "key": "发售日",
+              "value": "1992年7月21日"
+            },
+            {
+              "key": "片长",
+              "value": "45分"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 4,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 1,
+              "4": 0,
+              "5": 2,
+              "6": 0,
+              "7": 0,
+              "8": 1,
+              "9": 0,
+              "10": 0
+            },
+            "score": 5.3
+          },
+          "collection": {
+            "on_hold": 2,
+            "dropped": 5,
+            "wish": 7,
+            "collect": 6,
+            "doing": 2
+          },
+          "id": 117811,
+          "eps": 1,
+          "total_episodes": 1,
+          "meta_tags": [
+            "OVA"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "2002-04-19",
+          "platform": "OVA",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/c3/99/534_LQL2a.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/c3/99/534_LQL2a.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/c3/99/534_LQL2a.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/c3/99/534_LQL2a.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/c3/99/534_LQL2a.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/c3/99/534_LQL2a.jpg",
+          "summary": "新海诚仍在Falcom公司时一边工作，一边自行创作的作品，为时长约5分钟长的黑白动画。故事描述一名在都市里独居的女子与她偶然拾获的猫的日常生活片段。本作并获得了第12回CG动画竞赛的大奖。\r\n\r\n本作有完整版、3分钟版和浓缩版的三种区别，在后来的《星之声》DVD版中以映像特典的方式收录。\r\n\r\n本动画片以一只公猫的视角，讲述“他”与女主人在同一个屋檐下所过的略带感伤的淡然日子。\r\n很久之前的某天，“他”被美丽温柔的女孩捡回家，开始自认幸福无比的生活。女孩孤身一人，做着一份“他”不知也不介意为何的工作，“他”在意的是女孩很早出门时的那副面庞、身上的那缕清香、问候“他”时的那声淡语以及爱抚“他”时的那份轻柔……以致后来，一只名叫“咪咪”的猫咪向“他”表白爱意时，“他”婉言拒绝——“他”早已被女孩深深征服。然而，一个个季节逝去，“他”终究无法抚慰她寂寞的心灵。\r\n\r\n本作于1999年制作完成（见 https://ja.wikipedia.org/wiki/彼女と彼女の猫 中提到 封切日：1999年），于2000年4月23日在DoGA東京上映会上映，这是能查到的最早上映记录。（来源： https://web.archive.org/web/20060917031527/http://www2.odn.ne.jp/~ccs50140/profile_old00.html \r\nhttps://zh.m.wikipedia.org/zh-cn/她與她的貓 ）\r\n虽然本作最初在1999年便以同人作品形式发售，但是在2002年星之声DVD版特典才第一次发售包括完整版在内的三个版本。",
+          "name": "彼女と彼女の猫",
+          "name_cn": "她和她的猫",
+          "tags": [
+            {
+              "name": "新海诚",
+              "count": 1077,
+              "total_count": 35809
+            },
+            {
+              "name": "短片",
+              "count": 905,
+              "total_count": 103972
+            },
+            {
+              "name": "治愈",
+              "count": 447,
+              "total_count": 308116
+            },
+            {
+              "name": "1999",
+              "count": 404,
+              "total_count": 13723
+            },
+            {
+              "name": "OVA",
+              "count": 376,
+              "total_count": 371436
+            },
+            {
+              "name": "原创",
+              "count": 327,
+              "total_count": 634187
+            },
+            {
+              "name": "黑白",
+              "count": 247,
+              "total_count": 591
+            },
+            {
+              "name": "彼女と彼女の猫",
+              "count": 177,
+              "total_count": 178
+            },
+            {
+              "name": "她与她的猫",
+              "count": 117,
+              "total_count": 223
+            },
+            {
+              "name": "新海誠",
+              "count": 96,
+              "total_count": 10724
+            },
+            {
+              "name": "天门",
+              "count": 81,
+              "total_count": 2217
+            },
+            {
+              "name": "猫",
+              "count": 78,
+              "total_count": 1663
+            },
+            {
+              "name": "吾辈乃猫",
+              "count": 61,
+              "total_count": 61
+            },
+            {
+              "name": "日本",
+              "count": 59,
+              "total_count": 312314
+            },
+            {
+              "name": "治愈系",
+              "count": 43,
+              "total_count": 25422
+            },
+            {
+              "name": "2000",
+              "count": 38,
+              "total_count": 10863
+            },
+            {
+              "name": "1999年",
+              "count": 32,
+              "total_count": 655
+            },
+            {
+              "name": "CoMixWave",
+              "count": 19,
+              "total_count": 5074
+            },
+            {
+              "name": "独立动画",
+              "count": 14,
+              "total_count": 2559
+            },
+            {
+              "name": "日本动画",
+              "count": 13,
+              "total_count": 35990
+            },
+            {
+              "name": "天門",
+              "count": 11,
+              "total_count": 89
+            },
+            {
+              "name": "日常",
+              "count": 10,
+              "total_count": 414158
+            },
+            {
+              "name": "她和她",
+              "count": 8,
+              "total_count": 8
+            },
+            {
+              "name": "剧场版",
+              "count": 8,
+              "total_count": 736465
+            },
+            {
+              "name": "90年代",
+              "count": 8,
+              "total_count": 4092
+            },
+            {
+              "name": "动画短片",
+              "count": 6,
+              "total_count": 2098
+            },
+            {
+              "name": "动画",
+              "count": 6,
+              "total_count": 35849
+            },
+            {
+              "name": "她和她的猫",
+              "count": 6,
+              "total_count": 15
+            },
+            {
+              "name": "短篇",
+              "count": 5,
+              "total_count": 2832
+            },
+            {
+              "name": "1990s",
+              "count": 5,
+              "total_count": 1555
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "她和她的猫"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "她与她的猫"
+                },
+                {
+                  "v": "She and Her Cat"
+                },
+                {
+                  "v": "彼女と彼女の猫 Their standing points"
+                }
+              ]
+            },
+            {
+              "key": "话数",
+              "value": "1"
+            },
+            {
+              "key": "发售日",
+              "value": "2002年4月19日"
+            },
+            {
+              "key": "官方网站",
+              "value": "http://www2.odn.ne.jp/~ccs50140/cat/index.html"
+            },
+            {
+              "key": "上映年度",
+              "value": "2000年4月23日"
+            },
+            {
+              "key": "片长",
+              "value": "4分46秒（完整版） / 3分 / 1分36秒"
+            }
+          ],
+          "rating": {
+            "rank": 2797,
+            "total": 2987,
+            "count": {
+              "1": 6,
+              "2": 4,
+              "3": 10,
+              "4": 39,
+              "5": 181,
+              "6": 616,
+              "7": 1305,
+              "8": 657,
+              "9": 98,
+              "10": 71
+            },
+            "score": 7
+          },
+          "collection": {
+            "on_hold": 85,
+            "dropped": 24,
+            "wish": 797,
+            "collect": 4799,
+            "doing": 97
+          },
+          "id": 534,
+          "eps": 1,
+          "total_episodes": 1,
+          "meta_tags": [
+            "OVA",
+            "原创",
+            "日本"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "1989-12-26",
+          "platform": "OVA",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/9b/64/8379_6C519.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/9b/64/8379_6C519.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/9b/64/8379_6C519.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/9b/64/8379_6C519.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/9b/64/8379_6C519.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/9b/64/8379_6C519.jpg",
+          "summary": "      拉蒂鲁和阿普洛是海贼课的一对问题搭档。在抓捕海盗的过程的破坏的公共设施，比任何一名海盗都多，所需赔付的账单就算是抵押他们的宇宙船和所有的工资和退休金都无法还完。当一个叫尤美的疯子想用猫86机器占领火星（把所有人都变成猫来启动计划！），谁比这两人更能抓住目标？",
+          "name": "敵は海賊〜猫たちの饗宴〜",
+          "name_cn": "敌人是海盗- 猫们的飨宴",
+          "tags": [
+            {
+              "name": "OVA",
+              "count": 10,
+              "total_count": 371236
+            },
+            {
+              "name": "MADHouse",
+              "count": 6,
+              "total_count": 112273
+            },
+            {
+              "name": "小说改",
+              "count": 5,
+              "total_count": 166865
+            },
+            {
+              "name": "Production.I.G",
+              "count": 5,
+              "total_count": 42782
+            },
+            {
+              "name": "山田勝久",
+              "count": 3,
+              "total_count": 55
+            },
+            {
+              "name": "遠藤明範",
+              "count": 3,
+              "total_count": 78
+            },
+            {
+              "name": "盐泽兼人",
+              "count": 3,
+              "total_count": 209
+            },
+            {
+              "name": "1989",
+              "count": 3,
+              "total_count": 6198
+            },
+            {
+              "name": "独立ova",
+              "count": 2,
+              "total_count": 3025
+            },
+            {
+              "name": "1990",
+              "count": 1,
+              "total_count": 2850
+            },
+            {
+              "name": "旧物",
+              "count": 1,
+              "total_count": 3607
+            },
+            {
+              "name": "1989年",
+              "count": 1,
+              "total_count": 305
+            },
+            {
+              "name": "神林长平",
+              "count": 1,
+              "total_count": 9
+            },
+            {
+              "name": "塩沢兼人",
+              "count": 1,
+              "total_count": 74
+            },
+            {
+              "name": "日本动画",
+              "count": 1,
+              "total_count": 35985
+            },
+            {
+              "name": "后藤隆幸",
+              "count": 1,
+              "total_count": 20
+            },
+            {
+              "name": "机战",
+              "count": 1,
+              "total_count": 52012
+            },
+            {
+              "name": "ProductionI.G",
+              "count": 1,
+              "total_count": 35502
+            },
+            {
+              "name": "85-89",
+              "count": 1,
+              "total_count": 194
+            },
+            {
+              "name": "SF",
+              "count": 1,
+              "total_count": 7292
+            },
+            {
+              "name": "山田胜久",
+              "count": 1,
+              "total_count": 24
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "敌人是海盗- 猫们的飨宴"
+            },
+            {
+              "key": "话数",
+              "value": "6"
+            },
+            {
+              "key": "发售日",
+              "value": "1989年12月26日"
+            },
+            {
+              "key": "原作",
+              "value": "神林長平"
+            },
+            {
+              "key": "人物原案",
+              "value": "天野喜孝"
+            },
+            {
+              "key": "导演",
+              "value": "山田勝久"
+            },
+            {
+              "key": "企画",
+              "value": "落合茂一、宇田川淳一"
+            },
+            {
+              "key": "脚本",
+              "value": "遠藤明範"
+            },
+            {
+              "key": "人物设定",
+              "value": "後藤隆幸"
+            },
+            {
+              "key": "作画监督",
+              "value": "後藤隆幸"
+            },
+            {
+              "key": "机械设定",
+              "value": "渡部隆"
+            },
+            {
+              "key": "美术监督",
+              "value": "高遠和茂"
+            },
+            {
+              "key": "摄影监督",
+              "value": "石川欣一"
+            },
+            {
+              "key": "音响监督",
+              "value": "本田保則"
+            },
+            {
+              "key": "制作",
+              "value": "田原正利"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 17,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 1,
+              "4": 2,
+              "5": 5,
+              "6": 6,
+              "7": 2,
+              "8": 1,
+              "9": 0,
+              "10": 0
+            },
+            "score": 5.5
+          },
+          "collection": {
+            "on_hold": 4,
+            "dropped": 8,
+            "wish": 36,
+            "collect": 26,
+            "doing": 2
+          },
+          "id": 8379,
+          "eps": 6,
+          "total_episodes": 6,
+          "meta_tags": [
+            "OVA"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "2016-03-04",
+          "platform": "TV",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/91/32/164649_rn935.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/91/32/164649_rn935.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/91/32/164649_rn935.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/91/32/164649_rn935.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/91/32/164649_rn935.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/91/32/164649_rn935.jpg",
+          "summary": "ある夏の一番暑い日、彼女と、彼女の飼い猫である“僕”の暮らしが始まった。\r\n彼女は、通っている短大の卒業を控え、就職活動に追われる毎日を送っている。いつも頑張っている彼女にとって、“僕”と過ごす時間は、互いにひと時の安らぎを感じられる、とても大切なものだった。しかし、家族のことや、友達のこと、将来のこと…いろいろなことがうまくいかず、彼女は次第に傷つき、立ち止まってしまいそうになる。\r\nそれでも彼女は、背筋を伸ばし、今日も扉を開けて外の世界へと踏み出していく。そんな大好きな彼女のことを、“僕”はいつまでも見守っていたいと思っていた。",
+          "name": "彼女と彼女の猫 -Everything Flows-",
+          "name_cn": "她和她的猫 -Everything Flows-",
+          "tags": [
+            {
+              "name": "新海诚",
+              "count": 1041,
+              "total_count": 35796
+            },
+            {
+              "name": "泡面番",
+              "count": 733,
+              "total_count": 157085
+            },
+            {
+              "name": "治愈",
+              "count": 682,
+              "total_count": 307959
+            },
+            {
+              "name": "TV",
+              "count": 521,
+              "total_count": 1440392
+            },
+            {
+              "name": "短片",
+              "count": 406,
+              "total_count": 103947
+            },
+            {
+              "name": "2016",
+              "count": 405,
+              "total_count": 72224
+            },
+            {
+              "name": "2016年3月",
+              "count": 334,
+              "total_count": 892
+            },
+            {
+              "name": "LIDENFILMS",
+              "count": 333,
+              "total_count": 14599
+            },
+            {
+              "name": "花泽香菜",
+              "count": 329,
+              "total_count": 43594
+            },
+            {
+              "name": "原创",
+              "count": 311,
+              "total_count": 633926
+            },
+            {
+              "name": "动画短片改",
+              "count": 112,
+              "total_count": 112
+            },
+            {
+              "name": "她与她的猫",
+              "count": 106,
+              "total_count": 223
+            },
+            {
+              "name": "再动画化",
+              "count": 63,
+              "total_count": 63
+            },
+            {
+              "name": "坂本一也",
+              "count": 62,
+              "total_count": 280
+            },
+            {
+              "name": "日本",
+              "count": 60,
+              "total_count": 312039
+            },
+            {
+              "name": "新海誠",
+              "count": 40,
+              "total_count": 10721
+            },
+            {
+              "name": "日常",
+              "count": 34,
+              "total_count": 413971
+            },
+            {
+              "name": "新海诚改",
+              "count": 24,
+              "total_count": 24
+            },
+            {
+              "name": "泡面",
+              "count": 20,
+              "total_count": 10708
+            },
+            {
+              "name": "OVA",
+              "count": 20,
+              "total_count": 371278
+            },
+            {
+              "name": "2016年1月",
+              "count": 19,
+              "total_count": 20402
+            },
+            {
+              "name": "浅沼晋太郎",
+              "count": 17,
+              "total_count": 330
+            },
+            {
+              "name": "催泪",
+              "count": 16,
+              "total_count": 61342
+            },
+            {
+              "name": "2016年",
+              "count": 15,
+              "total_count": 4632
+            },
+            {
+              "name": "花澤香菜",
+              "count": 12,
+              "total_count": 6976
+            },
+            {
+              "name": "猫",
+              "count": 11,
+              "total_count": 1663
+            },
+            {
+              "name": "她和她的猫",
+              "count": 9,
+              "total_count": 15
+            },
+            {
+              "name": "ライデンフィルム",
+              "count": 9,
+              "total_count": 350
+            },
+            {
+              "name": "永川成基",
+              "count": 9,
+              "total_count": 13
+            },
+            {
+              "name": "动画改",
+              "count": 8,
+              "total_count": 16
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "她和她的猫 -Everything Flows-"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "她与她的猫"
+                },
+                {
+                  "v": "Kanojo to Kanojo no Neko: Everything Flows"
+                },
+                {
+                  "v": "She and Her Cat: Everything Flows"
+                }
+              ]
+            },
+            {
+              "key": "话数",
+              "value": "4"
+            },
+            {
+              "key": "放送开始",
+              "value": "2016年3月4日"
+            },
+            {
+              "key": "放送星期",
+              "value": "星期五"
+            },
+            {
+              "key": "官方网站",
+              "value": "http://kanoneko.com/"
+            },
+            {
+              "key": "播放电视台",
+              "value": "TOKYO MX"
+            },
+            {
+              "key": "其他电视台",
+              "value": "BS11"
+            },
+            {
+              "key": "播放结束",
+              "value": "2016年3月25日"
+            },
+            {
+              "key": "导演",
+              "value": "坂本一也"
+            },
+            {
+              "key": "动画制作",
+              "value": "ライデンフィルム京都スタジオ"
+            },
+            {
+              "key": "摄影监督",
+              "value": "高橋昭裕（J.C.STAFF）"
+            },
+            {
+              "key": "3DCG",
+              "value": "塩田潤（J.C.STAFF）"
+            },
+            {
+              "key": "美术监督",
+              "value": "田中孝典（Ordet）"
+            },
+            {
+              "key": "原作",
+              "value": "新海誠"
+            },
+            {
+              "key": "人物设定",
+              "value": "海島千本"
+            }
+          ],
+          "rating": {
+            "rank": 2596,
+            "total": 3342,
+            "count": {
+              "1": 4,
+              "2": 1,
+              "3": 9,
+              "4": 29,
+              "5": 142,
+              "6": 639,
+              "7": 1624,
+              "8": 741,
+              "9": 105,
+              "10": 48
+            },
+            "score": 7
+          },
+          "collection": {
+            "on_hold": 126,
+            "dropped": 53,
+            "wish": 1064,
+            "collect": 5592,
+            "doing": 151
+          },
+          "id": 164649,
+          "eps": 4,
+          "total_episodes": 4,
+          "meta_tags": [
+            "TV",
+            "日本",
+            "动画改"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "2010-12-15",
+          "platform": "剧场版",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/c2/41/30123_gnCy4.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/c2/41/30123_gnCy4.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/c2/41/30123_gnCy4.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/c2/41/30123_gnCy4.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/c2/41/30123_gnCy4.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/c2/41/30123_gnCy4.jpg",
+          "summary": "一只名叫蒂诺的小猫，看尽巴黎的白天与黑夜。白天，它是小女孩佐伊的宠物，每天早上为她带来小礼物。佐伊的父母都是警察，父亲被城中最大的恶棍维克托·科斯塔杀害，母亲让娜发誓将科斯塔绳之于法，渐渐忽略了对佐伊的关怀。小佐伊从此封闭了自己，不发一言。每到夜晚，蒂诺便跳出窗户，寻找它另一个生活在黑夜的朋友尼克。尼克是一个身手敏捷的大盗，他神出鬼没，手法娴熟，不过蒂诺是他唯一的朋友。蒂诺穿梭往来，成为了两个完全不同的人儿间的奇妙纽带。\r\n某晚，佐伊跟着蒂诺溜出房间，却意外遭遇企图抢劫展览馆石像的科斯塔团伙。佐伊、尼克和让娜纷纷被卷入其中…… \r\n\r\n\r\n法国动画工作室Folimage的第三部长篇动画电影作品。",
+          "name": "Une vie de chat",
+          "name_cn": "猫在巴黎",
+          "tags": [
+            {
+              "name": "法国",
+              "count": 17,
+              "total_count": 3754
+            },
+            {
+              "name": "剧场版",
+              "count": 15,
+              "total_count": 735887
+            },
+            {
+              "name": "欧美",
+              "count": 10,
+              "total_count": 88315
+            },
+            {
+              "name": "2010",
+              "count": 9,
+              "total_count": 44195
+            },
+            {
+              "name": "动画电影",
+              "count": 8,
+              "total_count": 44500
+            },
+            {
+              "name": "Folimage",
+              "count": 6,
+              "total_count": 12
+            },
+            {
+              "name": "Jean-LoupFelicioli",
+              "count": 3,
+              "total_count": 3
+            },
+            {
+              "name": "AlainGagnol",
+              "count": 3,
+              "total_count": 3
+            },
+            {
+              "name": "原创",
+              "count": 2,
+              "total_count": 633662
+            },
+            {
+              "name": "治愈",
+              "count": 2,
+              "total_count": 307798
+            },
+            {
+              "name": "映画",
+              "count": 2,
+              "total_count": 6332
+            },
+            {
+              "name": "Jacques-RémyGirerd",
+              "count": 2,
+              "total_count": 4
+            },
+            {
+              "name": "2010s",
+              "count": 1,
+              "total_count": 5589
+            },
+            {
+              "name": "8",
+              "count": 1,
+              "total_count": 1969
+            },
+            {
+              "name": "欧洲动画",
+              "count": 1,
+              "total_count": 69
+            },
+            {
+              "name": "动画",
+              "count": 1,
+              "total_count": 35837
+            },
+            {
+              "name": "アニメ映画",
+              "count": 1,
+              "total_count": 2876
+            },
+            {
+              "name": "非日本動畫電影",
+              "count": 1,
+              "total_count": 95
+            },
+            {
+              "name": "动物",
+              "count": 1,
+              "total_count": 6294
+            },
+            {
+              "name": "法国动画",
+              "count": 1,
+              "total_count": 99
+            },
+            {
+              "name": "电影",
+              "count": 1,
+              "total_count": 13709
+            },
+            {
+              "name": "7(+2)",
+              "count": 1,
+              "total_count": 314
+            },
+            {
+              "name": "奥斯卡",
+              "count": 1,
+              "total_count": 1894
+            },
+            {
+              "name": "Jacques-Rémy.Girerd",
+              "count": 1,
+              "total_count": 6
+            },
+            {
+              "name": "Short",
+              "count": 1,
+              "total_count": 1568
+            },
+            {
+              "name": "Alain.Gagnol",
+              "count": 1,
+              "total_count": 2
+            },
+            {
+              "name": "Jean-Loup.Felicioli",
+              "count": 1,
+              "total_count": 3
+            },
+            {
+              "name": "long",
+              "count": 1,
+              "total_count": 250
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "猫在巴黎"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "猫的一生"
+                },
+                {
+                  "v": "パリ猫ディノの夜"
+                },
+                {
+                  "v": "猫的生活"
+                },
+                {
+                  "v": "A Cat in Paris"
+                }
+              ]
+            },
+            {
+              "key": "上映年度",
+              "value": "2010年12月15日"
+            },
+            {
+              "key": "片长",
+              "value": "62分钟"
+            },
+            {
+              "key": "官方网站",
+              "value": "http://www.uneviedechat-lefilm.fr/"
+            },
+            {
+              "key": "导演",
+              "value": "Jean-Loup Felicioli、Alain Gagnol"
+            },
+            {
+              "key": "脚本",
+              "value": "Alain Gagnol、Jacques-Rémy Girerd"
+            },
+            {
+              "key": "动画制作",
+              "value": "Folimage"
+            },
+            {
+              "key": "国家/地区",
+              "value": "法国"
+            },
+            {
+              "key": "话数",
+              "value": "1"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 44,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 1,
+              "5": 2,
+              "6": 8,
+              "7": 15,
+              "8": 15,
+              "9": 1,
+              "10": 2
+            },
+            "score": 7.2
+          },
+          "collection": {
+            "on_hold": 6,
+            "dropped": 5,
+            "wish": 43,
+            "collect": 64,
+            "doing": 2
+          },
+          "id": 30123,
+          "eps": 1,
+          "total_episodes": 1,
+          "meta_tags": [
+            "剧场版",
+            "法国"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "2008-11-14",
+          "platform": "TV",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/61/d5/20692_0hiif.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/61/d5/20692_0hiif.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/61/d5/20692_0hiif.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/61/d5/20692_0hiif.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/61/d5/20692_0hiif.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/61/d5/20692_0hiif.jpg",
+          "summary": "",
+          "name": "猫ラーメン~俺の醤油味~",
+          "name_cn": "猫拉面 第二季",
+          "tags": [
+            {
+              "name": "泡面番",
+              "count": 11,
+              "total_count": 156549
+            },
+            {
+              "name": "2008",
+              "count": 9,
+              "total_count": 36173
+            },
+            {
+              "name": "TV",
+              "count": 7,
+              "total_count": 1433114
+            },
+            {
+              "name": "漫画改",
+              "count": 5,
+              "total_count": 884381
+            },
+            {
+              "name": "S-inc.",
+              "count": 4,
+              "total_count": 8
+            },
+            {
+              "name": "日常系",
+              "count": 4,
+              "total_count": 813
+            },
+            {
+              "name": "flash",
+              "count": 3,
+              "total_count": 342
+            },
+            {
+              "name": "猫",
+              "count": 3,
+              "total_count": 1661
+            },
+            {
+              "name": "2008冬アニメ",
+              "count": 3,
+              "total_count": 13
+            },
+            {
+              "name": "ONA",
+              "count": 3,
+              "total_count": 573
+            },
+            {
+              "name": "日常",
+              "count": 2,
+              "total_count": 410897
+            },
+            {
+              "name": "四格改",
+              "count": 2,
+              "total_count": 78
+            },
+            {
+              "name": "猫拉面",
+              "count": 2,
+              "total_count": 11
+            },
+            {
+              "name": "★TV",
+              "count": 2,
+              "total_count": 452
+            },
+            {
+              "name": "续作",
+              "count": 1,
+              "total_count": 47908
+            },
+            {
+              "name": "漫改",
+              "count": 1,
+              "total_count": 367564
+            },
+            {
+              "name": "泡面",
+              "count": 1,
+              "total_count": 10681
+            },
+            {
+              "name": "搞笑",
+              "count": 1,
+              "total_count": 652318
+            },
+            {
+              "name": "5",
+              "count": 1,
+              "total_count": 1082
+            },
+            {
+              "name": "TVA",
+              "count": 1,
+              "total_count": 16162
+            },
+            {
+              "name": "治愈",
+              "count": 1,
+              "total_count": 306841
+            },
+            {
+              "name": "日本",
+              "count": 1,
+              "total_count": 308709
+            },
+            {
+              "name": "マッグガーデン",
+              "count": 1,
+              "total_count": 5
+            },
+            {
+              "name": "シンク",
+              "count": 1,
+              "total_count": 7
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "猫拉面 第二季"
+            },
+            {
+              "key": "话数",
+              "value": "13"
+            },
+            {
+              "key": "放送开始",
+              "value": "2008年11月14日"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 40,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 1,
+              "4": 1,
+              "5": 6,
+              "6": 12,
+              "7": 13,
+              "8": 4,
+              "9": 3,
+              "10": 0
+            },
+            "score": 6.5
+          },
+          "collection": {
+            "on_hold": 4,
+            "dropped": 4,
+            "wish": 24,
+            "collect": 59,
+            "doing": 1
+          },
+          "id": 20692,
+          "eps": 13,
+          "total_episodes": 13,
+          "meta_tags": [
+            "TV",
+            "日本",
+            "漫画改"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        },
+        {
+          "date": "2001-12-21",
+          "platform": "OVA",
+          "images": {
+            "small": "https://lain.bgm.tv/r/200/pic/cover/l/4b/89/316818_8538d.jpg",
+            "grid": "https://lain.bgm.tv/r/100/pic/cover/l/4b/89/316818_8538d.jpg",
+            "large": "https://lain.bgm.tv/pic/cover/l/4b/89/316818_8538d.jpg",
+            "medium": "https://lain.bgm.tv/r/800/pic/cover/l/4b/89/316818_8538d.jpg",
+            "common": "https://lain.bgm.tv/r/400/pic/cover/l/4b/89/316818_8538d.jpg"
+          },
+          "image": "https://lain.bgm.tv/pic/cover/l/4b/89/316818_8538d.jpg",
+          "summary": "",
+          "name": "ハローキティの長靴をはいた猫",
+          "name_cn": "凯蒂猫 穿长靴的猫",
+          "tags": [
+            {
+              "name": "OVA",
+              "count": 1,
+              "total_count": 362071
+            },
+            {
+              "name": "优秀子供向",
+              "count": 1,
+              "total_count": 107
+            },
+            {
+              "name": "旧物",
+              "count": 1,
+              "total_count": 3967
+            }
+          ],
+          "infobox": [
+            {
+              "key": "中文名",
+              "value": "凯蒂猫 穿长靴的猫"
+            },
+            {
+              "key": "别名",
+              "value": [
+                {
+                  "v": "Hello Kitty in Puss in Boots"
+                },
+                {
+                  "v": "Hello Kitty no Nagagutsu o Naita Neko"
+                }
+              ]
+            },
+            {
+              "key": "话数",
+              "value": "1"
+            },
+            {
+              "key": "发售日",
+              "value": "2001-12-21"
+            }
+          ],
+          "rating": {
+            "rank": 0,
+            "total": 3,
+            "count": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 3,
+              "7": 0,
+              "8": 0,
+              "9": 0,
+              "10": 0
+            },
+            "score": 6
+          },
+          "collection": {
+            "on_hold": 2,
+            "dropped": 6,
+            "wish": 3,
+            "collect": 10,
+            "doing": 0
+          },
+          "id": 316818,
+          "eps": 1,
+          "total_episodes": 1,
+          "meta_tags": [
+            "OVA"
+          ],
+          "volumes": 0,
+          "series": false,
+          "locked": false,
+          "nsfw": false,
+          "type": 2
+        }
+      ],
+      "total": 441,
+      "limit": 20,
+      "offset": 0
+    }
+  },
+  {
+    "url": "https://api.bgm.tv/v0/search/subjects?limit=50",
+    "request": {
+      "keyword": "ニャッホ",
+      "filter": {
+        "type": [
+          2
+        ]
+      }
+    },
+    "status": 200,
+    "sha256": "8a57372bfa4a98352fae883320ded702032b96bc402cd5005f3fbc65dcdc6384",
+    "checked_at": "2026-10-19T07:33:18.964467+00:00",
+    "response": {
+      "data": [],
+      "total": 0,
+      "limit": 20,
+      "offset": 0
+    }
+  }
+]

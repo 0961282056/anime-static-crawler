@@ -1376,7 +1376,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/90cfc3d30fb792229ab63d3fda7b030a",
       "premiere_date": "日",
       "premiere_time": "27:05",
-      "story": "暫無簡介",
+      "story": "第7期の舞台となるのは“閉ざされた空間”。シリーズ常連の紙芝居屋のおじさん役・津田寛治が馴染みある語り口で恐怖の世界へと誘っていく。",
       "original_name": "闇芝居 七期",
       "external_ids": {
         "bangumi": 283480,
@@ -1398,6 +1398,14 @@
         "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_archive",
         "source_snapshot_date": "2026-10-14"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 283480,
+        "checked_at": "2026-10-19T15:32:14.738060+08:00",
+        "method": "bangumi_excerpt",
+        "source_url": "https://api.bgm.tv/v0/subjects/283480",
+        "source_snapshot_date": null
       }
     }
   ],
@@ -1408,7 +1416,7 @@
     "record_count": 44,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 3,
+    "missing_story_count": 2,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

@@ -13,6 +13,7 @@ from pydantic import ValidationError
 
 from models import TAIPEI_TZ, Anime, DataQuality, ExternalIds, QuarterDataset
 from services.atomic_io import atomic_write_json
+from services.bangumi_story_reviews import reviewed_bangumi_story
 from services.broadcast_source_reviews import reviewed_broadcast
 from services.diagnostics import operation
 from services.display_name_reviews import reviewed_display_rename
@@ -259,6 +260,15 @@ class DataRepository:
                     old.story_source
                     and old.story_source.provider == "official"
                     and not reviewed_story(effective)
+                )
+                or (
+                    old.story_source
+                    and old.story_source.method == "bangumi_excerpt"
+                    and (
+                        not reviewed_bangumi_story(effective)
+                        or effective.story != old.story
+                        or effective.story_source != old.story_source
+                    )
                 )
             ):
                 raise DataContractError(

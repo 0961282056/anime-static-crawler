@@ -102,6 +102,7 @@ const presentationMethods = {
     storySourceUrl(anime) {
         const id = anime.story_source?.subject_id;
         if (anime.story_source?.provider === 'official') return officialStoryUrl(anime);
+        if (anime.story_source?.method === 'bangumi_excerpt' && !reviewedBangumiExcerpt(anime)) return null;
         return Number.isInteger(id) && id > 0 && id === anime.external_ids?.bangumi ? `https://bgm.tv/subject/${id}` : null;
     },
 
@@ -109,6 +110,7 @@ const presentationMethods = {
         const source = anime.story_source;
         if (!source || !this.storySourceUrl(anime)) return '';
         if (source.provider === 'official') return '簡介來源：官方作品介紹原文（節錄）';
+        if (source.method === 'bangumi_excerpt') return '簡介來源：Bangumi 條目原文（人工核對節錄）';
         return source.method === 'bangumi_archive'
             ? `簡介來源：Bangumi 原文快照（截至 ${source.source_snapshot_date || '日期未記錄'}）`
             : '簡介來源：Bangumi 條目原文';

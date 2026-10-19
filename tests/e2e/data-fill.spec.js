@@ -31,3 +31,17 @@ test('new official excerpts and reviewed weekdays work with real historical data
   expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
   expect(errors).toEqual([]);
 });
+
+test('seventh-series excerpt is searchable and attributed to Bangumi', async ({page}) => {
+  await page.route('https://res.cloudinary.com/**', route => route.fulfill({contentType: 'image/png', body: png}));
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.goto('/');
+  await page.getByLabel('關鍵字搜尋').fill('暗芝居 7期');
+  const card = page.locator('.anime-card').filter({has: page.locator('.anime-title', {hasText: '暗芝居 7期'})});
+  await expect(card).toHaveCount(1);
+  await expect(card.locator('.story-source')).toHaveText('簡介來源：Bangumi 條目原文（人工核對節錄）');
+  await expect(card.locator('.story-source')).toHaveAttribute('href', 'https://bgm.tv/subject/283480');
+  await expect.poll(() => page.evaluate(() => window.Alpine.$data(document.querySelector('[x-data]')).rawAnimeList.find(a => a.bangumi_id === 'anime-274')?.story)).toContain('第7期の舞台となるのは“閉ざされた空間”');
+  expect(errors).toEqual([]);
+});
