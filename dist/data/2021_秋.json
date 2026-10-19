@@ -1684,7 +1684,7 @@
       "bangumi_id": "anime-998",
       "anime_name": "魔法紀錄 魔法少女小圓外傳 最終季",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bb5f91f691c177ad593e2d50ed394efc",
-      "premiere_date": "無首播日期",
+      "premiere_date": "日",
       "premiere_time": "無首播時間",
       "story": "願い、その向こうに――\r\n\r\nいろはのもとへと急ぐ魔法少女たちは、兵隊グマのウワサと戦闘を繰り広げる。\r\n行く手に天音姉妹が立ちふさがるも、それを制するみふゆ。\r\n一方、ねむの力によって、隠された記憶に触れるいろは達。\r\nそれぞれの願いの為に戦い続けてきた、魔法少女たちの結末とはーー",
       "original_name": "マギアレコード 魔法少女まどか☆マギカ外伝 Final SEASON‐浅き夢の暁‐",
@@ -1718,7 +1718,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-19T03:21:24.546793+08:00",
+  "generated_at": "2026-10-19T14:11:19.069815+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202110/",
   "quality": {
     "source_count": 52,
@@ -1726,7 +1726,7 @@
     "parse_failure_count": 0,
     "fallback_id_count": 0,
     "missing_story_count": 1,
-    "missing_date_count": 1,
+    "missing_date_count": 0,
     "missing_time_count": 1
   }
 }

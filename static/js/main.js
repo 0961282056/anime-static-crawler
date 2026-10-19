@@ -124,7 +124,10 @@ const OFFICIAL_STORY_SOURCES = JSON.parse(document.getElementById('app-config')?
 function officialStoryUrl(anime) {
     const expected = OFFICIAL_STORY_SOURCES[anime.bangumi_id];
     const source = anime.story_source;
-    return Array.isArray(expected) && expected.length === 2 &&
+    const exactOfficialIdentity = Array.isArray(expected) &&
+        ((Number.isInteger(expected[0]) && expected[0] > 0 && expected.length === 2) ||
+         (expected[0] === null && expected.length === 4 && anime.anime_name === expected[2] && anime.original_name === expected[3]));
+    return exactOfficialIdentity &&
         typeof expected[1] === 'string' && /^https:\/\//.test(expected[1]) &&
         source?.provider === 'official' && source.method === 'manual_official' &&
         source.subject_id === expected[0] && anime.external_ids?.bangumi === expected[0] &&
@@ -173,7 +176,8 @@ function validateDataset(payload) {
             const source = item.story_source;
             const official = source?.provider === 'official' && source.method === 'manual_official' && officialStoryUrl(item) !== null;
             const bangumi = source?.provider === 'bangumi' && ['bangumi_api', 'bangumi_archive'].includes(source.method);
-            if (typeof source !== 'object' || Array.isArray(source) || (!official && !bangumi) || !Number.isInteger(source.subject_id) || source.subject_id <= 0 || source.subject_id !== item.external_ids?.bangumi || (source.method === 'bangumi_archive' && (typeof source.source_snapshot_date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(source.source_snapshot_date)))) {
+            const validSubject = (Number.isInteger(source?.subject_id) && source.subject_id > 0) || (official && source.subject_id === null);
+            if (typeof source !== 'object' || Array.isArray(source) || (!official && !bangumi) || !validSubject || source.subject_id !== item.external_ids?.bangumi || (source.method === 'bangumi_archive' && (typeof source.source_snapshot_date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(source.source_snapshot_date)))) {
                 throw createDataError('DATA_SCHEMA', `第 ${index + 1} 筆動畫的簡介來源無法確認。`, {retryable: false});
             }
         }

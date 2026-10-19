@@ -1,0 +1,47 @@
+[
+  {
+    "quarter": "2018_秋",
+    "card_id": "anime-419",
+    "name": "歡迎光臨，千歲醬",
+    "field": "story",
+    "source_url": "https://www.vap.co.jp/chitosechan/",
+    "checked_at": "2026-10-19T14:02:33.517486+08:00",
+    "value": "京都に住む子ペンギン、その名もちとせちゃん。もふもふした愛らしい子ペンギンのちとせちゃんは、おいしいものや楽しいことが大好き。"
+  },
+  {
+    "quarter": "2019_冬",
+    "card_id": "anime-419",
+    "name": "歡迎光臨，千歲醬",
+    "field": "story",
+    "source_url": "https://www.vap.co.jp/chitosechan/",
+    "checked_at": "2026-10-19T14:02:33.517486+08:00",
+    "value": "京都に住む子ペンギン、その名もちとせちゃん。もふもふした愛らしい子ペンギンのちとせちゃんは、おいしいものや楽しいことが大好き。"
+  },
+  {
+    "quarter": "2019_春",
+    "card_id": "anime-318",
+    "name": "奇喵的畫家",
+    "field": "story",
+    "source_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin15/",
+    "checked_at": "2026-10-19T14:02:37.029893+08:00",
+    "value": "パリの片隅、貧乏画家サークルの仲間たちが暮らすボロアパートに、相棒テオとともにニャッホは暮らしている。"
+  },
+  {
+    "quarter": "2021_秋",
+    "card_id": "anime-998",
+    "name": "魔法紀錄 魔法少女小圓外傳 最終季",
+    "field": "premiere_date",
+    "source_url": "https://anime.magireco.com/onair/",
+    "checked_at": "2026-10-19T14:03:43.034090+08:00",
+    "value": "日"
+  },
+  {
+    "quarter": "2022_夏",
+    "card_id": "anime-1139",
+    "name": "KJ FILE",
+    "field": "premiere_date",
+    "source_url": "https://www.tv-tokyo.co.jp/anime/kjfile/news/",
+    "checked_at": "2026-10-19T14:02:32.827346+08:00",
+    "value": "日"
+  }
+]

@@ -1,0 +1,274 @@
+[
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai15/",
+    "attempted_at": "2026-10-19T14:03:42.796560+08:00",
+    "status": 200,
+    "sha256": "f5b124625c6c67c893133015362beef4a72cbd21962aaaa73985b3e89aee481f",
+    "title": "闇芝居 十五期　テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://anime.magireco.com/onair/",
+    "attempted_at": "2026-10-19T14:03:43.034090+08:00",
+    "status": 200,
+    "sha256": "9c3509edd4c9ab53336012170594ca6bd9fca5588a0c9e37919c2fd662a5abb9",
+    "title": "ON AIR | TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝」公式サイト"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai14/story/",
+    "attempted_at": "2026-10-19T14:02:32.128299+08:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai14/story/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.ntv.co.jp/3dkanojo/",
+    "attempted_at": "2026-10-19T14:02:34.723904+08:00",
+    "status": 404,
+    "final_url": "https://www.ntv.co.jp/3dkanojo/",
+    "sha256": "1bb96b903e6f484d41bef8ab4753b0c5e182883372990950fced38af0ee7b7d6"
+  },
+  {
+    "url": "https://anime.magireco.com/introduction/",
+    "attempted_at": "2026-10-19T14:02:34.153187+08:00",
+    "status": 200,
+    "final_url": "https://anime.magireco.com/introduction/",
+    "sha256": "96a176ea5294212e82d23e8be1646fd9b1deea66c34b1048203058b06247b5a4",
+    "title": "INTRODUCTION | TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝」公式サイト"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai15/news/",
+    "attempted_at": "2026-10-19T06:05:39.601909+00:00",
+    "status": 200,
+    "sha256": "00642b3f9fb930d9455dbb1b26136155c459ec164c7c44b10fe4e7e93e2872c4"
+  },
+  {
+    "url": "https://www.ncctv.co.jp/minamishimabara/anime.html",
+    "attempted_at": "2026-10-19T14:02:36.573274+08:00",
+    "status": 200,
+    "final_url": "https://www.ncctv.co.jp/",
+    "sha256": "8c826e4ce487a491c94062a04147fc01559d8824ed4de00c0f29236ee90de4f2",
+    "title": "NCC長崎文化放送 | NCCは5ch"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai10/news/",
+    "attempted_at": "2026-10-19T06:05:38.326225+00:00",
+    "status": 200,
+    "sha256": "b64d94303009b8fd21e2cdea1b0d7067d768acc9b7a8032880269e894bb54eff"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai13/story/",
+    "attempted_at": "2026-10-19T14:02:31.863301+08:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai13/story/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/story/",
+    "attempted_at": "2026-10-19T14:02:30.724580+08:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/story/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin15/",
+    "attempted_at": "2026-10-19T14:02:37.029893+08:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin15/",
+    "sha256": "1c5d134233e007eee3e22cec0dc85b7ac0985b1ea0b209d8bf570af9282dc3c8",
+    "title": "番組内容・　きんだーてれび｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/index2.html",
+    "attempted_at": "2026-10-19T06:05:39.798762+00:00",
+    "status": 200,
+    "sha256": "358fd1bc4a6682247e9fede1dd5daa403f59362e8eea2dd5a581176a2b42bce6"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kjfile/news/",
+    "attempted_at": "2026-10-19T14:02:32.827346+08:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kjfile/news/",
+    "sha256": "b8eee8708418cc5f2d1fff3980140d8a918bc437a20e1c3f29659c32dd99133d",
+    "title": "新着情報　KJファイル｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.vap.co.jp/chitosechan/",
+    "attempted_at": "2026-10-19T14:02:33.517486+08:00",
+    "status": 200,
+    "final_url": "https://www.vap.co.jp/chitosechan/",
+    "sha256": "b4ad7b82a709f81e4e38add775c596747f602a0ca7ce1769899e44320bdb8785",
+    "title": "TVアニメ「おこしやす、ちとせちゃん」公式サイト - Vap"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai9/story/",
+    "attempted_at": "2026-10-19T14:02:30.725077+08:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai9/story/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kjfile/news/index.html",
+    "attempted_at": "2026-10-19T14:02:36.760159+08:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kjfile/news/index.html",
+    "sha256": "b8eee8708418cc5f2d1fff3980140d8a918bc437a20e1c3f29659c32dd99133d",
+    "title": "新着情報　KJファイル｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai13/",
+    "attempted_at": "2026-10-19T14:03:42.317657+08:00",
+    "status": 200,
+    "sha256": "d8afa8220c25bea160294bfcaaa48e2254c6fd4a748d1bd5d7697f6e45aae747",
+    "title": "闇芝居 十三期　テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://niagho.com/info/tvanime.html",
+    "attempted_at": "2026-10-19T14:03:42.980696+08:00",
+    "status": 200,
+    "sha256": "03f3dce03c8f8f807c09ac6b65c107852eb270b13b9ffeb0d61d13b832b1698c",
+    "title": "【公式】猫のニャッホ 〜ニャ・ミゼラブル〜"
+  },
+  {
+    "url": "https://anime.magireco.com/2nd/",
+    "attempted_at": "2026-10-19T14:02:33.532734+08:00",
+    "status": 404,
+    "final_url": "https://anime.magireco.com/2nd/",
+    "sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai13/news/",
+    "attempted_at": "2026-10-19T06:05:38.975090+00:00",
+    "status": 200,
+    "sha256": "32ce05d0378e33448e9796abca2fd3a480f4c6c5ef7791b176e60fa837ece0d1"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai9/",
+    "attempted_at": "2026-10-19T14:03:41.212557+08:00",
+    "status": 200,
+    "sha256": "94083a2c88e52f612b394180c986730f096773bef0bf0e386575a306d82e8dd3",
+    "title": "闇芝居 九期　テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kjfile/story/",
+    "attempted_at": "2026-10-19T14:02:32.805397+08:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kjfile/story/",
+    "sha256": "301c0b0d7816a1d356bfbd82de407d9e7911df9b1e2cb51b19457e09d8ffd975",
+    "title": "ストーリー　KJファイル｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/",
+    "attempted_at": "2026-10-19T14:02:33.356187+08:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/",
+    "sha256": "b394e9e2ec5fc4a744c43132adc82039c5bec47cef0167295f30015f7fc9bbeb",
+    "title": "番組内容　きんだーてれび｜テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai12/",
+    "attempted_at": "2026-10-19T14:03:42.252905+08:00",
+    "status": 200,
+    "sha256": "fac5bab73fce077598e0e045519be50cf0ea49da12b2769741248de55744de0f",
+    "title": "闇芝居十二期　テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/",
+    "attempted_at": "2026-10-19T14:03:41.212109+08:00",
+    "status": 200,
+    "sha256": "1677bedf14bbf517ac8221df42294df1165ed7254cd1a35ee5a80bf96b84ef57",
+    "title": "闇芝居 7期　テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.nhk.or.jp/anime/radiant/",
+    "attempted_at": "2026-10-19T14:02:35.507556+08:00",
+    "status": 404,
+    "final_url": "https://www.nhk.or.jp/anime/radiant/",
+    "sha256": "a168a7ae791c3f6e857103121e91ca31266c1222df512c40122c5d3571799f36"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai14/",
+    "attempted_at": "2026-10-19T14:03:42.319991+08:00",
+    "status": 200,
+    "sha256": "62916cfde157f1b05e42e034732c103e3078d0f1ad6291f25c11ef07069d0b44",
+    "title": "闇芝居 十四期　テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai14/news/",
+    "attempted_at": "2026-10-19T06:05:39.159688+00:00",
+    "status": 200,
+    "sha256": "77246f0abd682f8df463abcdf090c3b70aea74780eec717083cadb3bc5b93741"
+  },
+  {
+    "url": "https://anime.magireco.com/story/",
+    "attempted_at": "2026-10-19T14:03:43.458637+08:00",
+    "status": 200,
+    "sha256": "4ba6f5af592a2fb6213866675593cf0520fc9c75d490ee94a1047d68ff69093d",
+    "title": "STORY | TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝」公式サイト"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai9/news/",
+    "attempted_at": "2026-10-19T06:05:38.325641+00:00",
+    "status": 200,
+    "sha256": "fbf9d721e66667e71e01b9fde2a3e97030c018fbe10b19b6ec5d6ddb8321bbf2"
+  },
+  {
+    "url": "https://niagho.com/img/ja/info/tvanime.png",
+    "checked_at": "2026-10-19T06:06:17.517874+00:00",
+    "status": 200,
+    "sha256": "f7fa21b7b4428d97745b874199295aa1fa0e98eb85d15976f1a3875ddba12a10"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai15/story/",
+    "attempted_at": "2026-10-19T14:02:32.773042+08:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai15/story/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai12/news/",
+    "attempted_at": "2026-10-19T06:05:38.905835+00:00",
+    "status": 200,
+    "sha256": "93a2ea3e45097f09c12bb1cf203dc90055bcd8ceef449a239c3fc8440009f62e"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai10/",
+    "attempted_at": "2026-10-19T14:03:41.212873+08:00",
+    "status": 200,
+    "sha256": "7db2f7af92c4cb219fa4f5b7646a1931954932cd978ed3038c39e8904fe09fb4",
+    "title": "闇芝居 十期　テレビ東京アニメ公式"
+  },
+  {
+    "url": "https://www.ntv.co.jp/3dkanojo-anime/",
+    "attempted_at": "2026-10-19T14:02:35.302914+08:00",
+    "status": 404,
+    "final_url": "https://www.ntv.co.jp/3dkanojo-anime/",
+    "sha256": "1bb96b903e6f484d41bef8ab4753b0c5e182883372990950fced38af0ee7b7d6"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai10/story/",
+    "attempted_at": "2026-10-19T14:02:30.725422+08:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai10/story/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/story/",
+    "attempted_at": "2026-10-19T14:02:35.812382+08:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/story/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/news/",
+    "attempted_at": "2026-10-19T06:05:38.325114+00:00",
+    "status": 200,
+    "sha256": "dcd01e505be8a5ccf52fd501dd23867b6f4b2856b6940a45ed18b4394ada6f8c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai12/story/",
+    "attempted_at": "2026-10-19T14:02:31.809117+08:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai12/story/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  }
+]

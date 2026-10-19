@@ -1515,7 +1515,7 @@
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/de0aaccb2b6905ea36bc8979847cb3b6",
       "premiere_date": "五",
       "premiere_time": "25:35",
-      "story": "暫無簡介",
+      "story": "京都に住む子ペンギン、その名もちとせちゃん。もふもふした愛らしい子ペンギンのちとせちゃんは、おいしいものや楽しいことが大好き。",
       "original_name": "おこしやす、ちとせちゃん",
       "external_ids": {
         "bangumi": 255550,
@@ -1536,6 +1536,14 @@
         "end_date": "2019-03-30",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "official",
+        "subject_id": 255550,
+        "checked_at": "2026-10-19T14:02:33.517486+08:00",
+        "method": "manual_official",
+        "source_url": "https://www.vap.co.jp/chitosechan/",
+        "source_snapshot_date": null
       }
     },
     {
@@ -2275,14 +2283,14 @@
       }
     }
   ],
-  "generated_at": "2026-10-19T03:21:24.546793+08:00",
+  "generated_at": "2026-10-19T14:11:19.069815+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201810/",
   "quality": {
     "source_count": 66,
     "record_count": 66,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 5,
+    "missing_story_count": 4,
     "missing_date_count": 0,
     "missing_time_count": 0
   }

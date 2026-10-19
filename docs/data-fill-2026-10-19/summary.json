@@ -1,0 +1,75 @@
+{
+  "reviewed_at": "2026-10-19T14:16:57.529778+08:00",
+  "quarters": 37,
+  "records": 2150,
+  "before": {
+    "missing_story": 105,
+    "missing_date": 5,
+    "missing_bangumi": 1,
+    "missing_anilist": 1378
+  },
+  "after": {
+    "missing_story": 102,
+    "missing_date": 3,
+    "missing_bangumi": 1,
+    "missing_anilist": 1378,
+    "episode_stale": 0,
+    "episode_conflict": 0,
+    "episode_method_unknown": 0,
+    "episode_evidence_missing": 0
+  },
+  "primary_quarters_fetched": 37,
+  "linked_subjects_queried": 99,
+  "remaining_quarter_records_with_any_gap": 1397,
+  "remaining_story_reasons": {
+    "source_summary_missing_or_too_short": 76,
+    "version_specific_summary_evidence_insufficient": 14,
+    "linked_entry_scope_not_approved": 3,
+    "summary_contains_press_release_and_cast_commentary_needs_reviewed_excerpt": 1,
+    "provider_request_failed": 3,
+    "source_summary_promotional_only": 1,
+    "official_part_scope_evidence_unavailable": 4
+  },
+  "remaining_link_quarter_records": 1378,
+  "remaining_weekdays": [
+    {
+      "quarter": "2020_夏",
+      "card_id": "anime-159",
+      "name": "耐子的日常 新系列",
+      "original_name": "耐え子の日常 新シリーズ",
+      "bangumi_id": 316108,
+      "anilist_id": null,
+      "primary_url": "https://acgsecrets.hk/bangumi/202007/",
+      "primary_observed_at": "2026-10-19T13:58:10.376686+08:00",
+      "reason": "multiple_daily_weekdays_or_edition_scope_not_representable_by_single_weekday",
+      "explanation": "平日連播（或每日短篇與週合集範圍不同）；現有欄位只支援單一星期，先保留未知。",
+      "source_url": "https://api.bgm.tv/v0/subjects/316108"
+    },
+    {
+      "quarter": "2020_春",
+      "card_id": "anime-127",
+      "name": "巨神與冰華之城",
+      "original_name": "巨神と氷華の城",
+      "bangumi_id": 303553,
+      "anilist_id": null,
+      "primary_url": "https://acgsecrets.hk/bangumi/202004/",
+      "primary_observed_at": "2026-10-19T13:58:12.952738+08:00",
+      "reason": "no_regular_weekly_slot_confirmed",
+      "explanation": "網路分次公開作品；不能把首支影片發布日期換算成每週固定播出日。",
+      "source_url": "https://api.bgm.tv/v0/subjects/303553"
+    },
+    {
+      "quarter": "2022_春",
+      "card_id": "anime-1070",
+      "name": "OniPan!",
+      "original_name": "おにぱん！",
+      "bangumi_id": 367727,
+      "anilist_id": null,
+      "primary_url": "https://acgsecrets.hk/bangumi/202204/",
+      "primary_observed_at": "2026-10-19T13:58:29.961306+08:00",
+      "reason": "multiple_daily_weekdays_or_edition_scope_not_representable_by_single_weekday",
+      "explanation": "平日連播（或每日短篇與週合集範圍不同）；現有欄位只支援單一星期，先保留未知。",
+      "source_url": "https://api.bgm.tv/v0/subjects/367727"
+    }
+  ]
+}

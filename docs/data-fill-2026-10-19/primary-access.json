@@ -1,0 +1,298 @@
+[
+  {
+    "quarter": "2018_冬",
+    "url": "https://acgsecrets.hk/bangumi/201801/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:57:58.053917+08:00",
+    "sha256": "ad010d4a609bd00d3d43a38be9c5d04b9a8bca9ec028a9bbb41c0147eac67004",
+    "card_count": 59
+  },
+  {
+    "quarter": "2018_夏",
+    "url": "https://acgsecrets.hk/bangumi/201807/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:00.138698+08:00",
+    "sha256": "9a8d6b79f59501bb65a42d2113cf640ebfd3b4f00ef8fb030d42090157331877",
+    "card_count": 58
+  },
+  {
+    "quarter": "2018_春",
+    "url": "https://acgsecrets.hk/bangumi/201804/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:57:59.549728+08:00",
+    "sha256": "ac118e6af131ada583603b1d0643feefaf90dd2c59259c7977b51bafbc610f3f",
+    "card_count": 83
+  },
+  {
+    "quarter": "2018_秋",
+    "url": "https://acgsecrets.hk/bangumi/201810/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:02.334553+08:00",
+    "sha256": "4ddca2077fd0343acaa3e49ac0ac43c9f5df41f7009e5b113aa9ee012b5d3caa",
+    "card_count": 66
+  },
+  {
+    "quarter": "2019_冬",
+    "url": "https://acgsecrets.hk/bangumi/201901/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:03.936299+08:00",
+    "sha256": "c0df52d8b1b55b0cc8b611a44ee8c29ba35b235e1f9fcda1a6c77032de215b18",
+    "card_count": 51
+  },
+  {
+    "quarter": "2019_夏",
+    "url": "https://acgsecrets.hk/bangumi/201907/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:04.545410+08:00",
+    "sha256": "4c0545f18f37ae9b1c0475e33fba526d168f73ad75ce09d0769f6153825da6d9",
+    "card_count": 44
+  },
+  {
+    "quarter": "2019_春",
+    "url": "https://acgsecrets.hk/bangumi/201904/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:06.745278+08:00",
+    "sha256": "6889694e75e8fc0586bc7a6b55dedb3e13cf39436a2f1e9aa79ef498cd892450",
+    "card_count": 51
+  },
+  {
+    "quarter": "2019_秋",
+    "url": "https://acgsecrets.hk/bangumi/201910/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:08.727005+08:00",
+    "sha256": "200d50e29cbde95ebe8319bfe9d0745396ff6eedf308c49443af52df2d10b8fc",
+    "card_count": 56
+  },
+  {
+    "quarter": "2020_冬",
+    "url": "https://acgsecrets.hk/bangumi/202001/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:07.496466+08:00",
+    "sha256": "f844775986ecb0544ba1d1582130e29dce03f7047a1bfba4308bc3cbd444f33e",
+    "card_count": 51
+  },
+  {
+    "quarter": "2020_夏",
+    "url": "https://acgsecrets.hk/bangumi/202007/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:10.376686+08:00",
+    "sha256": "5b19afe927ddb19847a12cf3b0aca86346f94711af916c5f849169253add80a0",
+    "card_count": 38
+  },
+  {
+    "quarter": "2020_春",
+    "url": "https://acgsecrets.hk/bangumi/202004/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:12.952738+08:00",
+    "sha256": "1b3be82265029e79949deca94ae9fb1e694e571e54a9bdd239f5710caf996d1b",
+    "card_count": 59
+  },
+  {
+    "quarter": "2020_秋",
+    "url": "https://acgsecrets.hk/bangumi/202010/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:15.289197+08:00",
+    "sha256": "aa19f0b19a82ef54dd58b011b46295284b3ff3253a6a7c17f33b76747681c05c",
+    "card_count": 58
+  },
+  {
+    "quarter": "2021_冬",
+    "url": "https://acgsecrets.hk/bangumi/202101/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:17.092287+08:00",
+    "sha256": "dade6653a4d4b3b7c9a739c3f5f00d9f8a576a8fe6d6115d7b51c96740ccd04f",
+    "card_count": 62
+  },
+  {
+    "quarter": "2021_夏",
+    "url": "https://acgsecrets.hk/bangumi/202107/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:18.021057+08:00",
+    "sha256": "83739cbdfa79d668991d61035dc63fbac794c02655eff09c09b29bd505101812",
+    "card_count": 45
+  },
+  {
+    "quarter": "2021_春",
+    "url": "https://acgsecrets.hk/bangumi/202104/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:24.284941+08:00",
+    "sha256": "8cbde87655ce95f3e3410e1a7a9ba04d262c1ce99297c493a5022a47e66eab15",
+    "card_count": 66
+  },
+  {
+    "quarter": "2021_秋",
+    "url": "https://acgsecrets.hk/bangumi/202110/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:20.666158+08:00",
+    "sha256": "e844d9b829654c4bd57875411d84abdcc3259790def24cfcc69a638e70ee8dd2",
+    "card_count": 52
+  },
+  {
+    "quarter": "2022_冬",
+    "url": "https://acgsecrets.hk/bangumi/202201/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:23.112380+08:00",
+    "sha256": "272fa03b8c4eed10ced62185b0c783f71c4d4bfde2a3bb2e2961dfc90d176c65",
+    "card_count": 43
+  },
+  {
+    "quarter": "2022_夏",
+    "url": "https://acgsecrets.hk/bangumi/202207/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:26.904687+08:00",
+    "sha256": "656eccd77d3279ec530e22041e0323c3215b797ce55db0bfd587365e0fcc9daf",
+    "card_count": 51
+  },
+  {
+    "quarter": "2022_春",
+    "url": "https://acgsecrets.hk/bangumi/202204/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:29.961306+08:00",
+    "sha256": "6cfc347a7de988afec5c63c7d4ae82695c7819de9a3a3401030bd34961d1a786",
+    "card_count": 54
+  },
+  {
+    "quarter": "2022_秋",
+    "url": "https://acgsecrets.hk/bangumi/202210/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:31.074255+08:00",
+    "sha256": "a9e18ee385b083cd8716df492e758bdc71b70813c35bdea724e4248f39a4df13",
+    "card_count": 56
+  },
+  {
+    "quarter": "2023_冬",
+    "url": "https://acgsecrets.hk/bangumi/202301/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:34.061134+08:00",
+    "sha256": "860532301fc4ce54d36c1e6b8abc34018beffe0e9bb5a806f49a558b7826dc3b",
+    "card_count": 62
+  },
+  {
+    "quarter": "2023_夏",
+    "url": "https://acgsecrets.hk/bangumi/202307/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:36.567004+08:00",
+    "sha256": "a76c4e0008cc48dad6bf586c3ca4b85021751338dc23aef0562a27d0b0514230",
+    "card_count": 51
+  },
+  {
+    "quarter": "2023_春",
+    "url": "https://acgsecrets.hk/bangumi/202304/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:37.887524+08:00",
+    "sha256": "58accb92db8831d2738553b34a3576d3f36532897e00c77d6f1a092215eee795",
+    "card_count": 54
+  },
+  {
+    "quarter": "2023_秋",
+    "url": "https://acgsecrets.hk/bangumi/202310/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:41.035395+08:00",
+    "sha256": "67620d24d190625d204533b98b882f241e10391c2c2c4b07d1d405b4f8a9bb20",
+    "card_count": 74
+  },
+  {
+    "quarter": "2024_冬",
+    "url": "https://acgsecrets.hk/bangumi/202401/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:45.573213+08:00",
+    "sha256": "c9eb015f57c8b912d87e374772e28137d417970e300cf6ac9bc7f437b62700ad",
+    "card_count": 57
+  },
+  {
+    "quarter": "2024_夏",
+    "url": "https://acgsecrets.hk/bangumi/202407/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:46.697010+08:00",
+    "sha256": "46ae3b1b756bb1946f3d73e78f1720f238e307398602d79b32f3694c345257fd",
+    "card_count": 59
+  },
+  {
+    "quarter": "2024_春",
+    "url": "https://acgsecrets.hk/bangumi/202404/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:47.990264+08:00",
+    "sha256": "cf7753d40fabf8e40333cf7ded0ceb89e6b21e0cb7a663963bd59e654b9eb79f",
+    "card_count": 61
+  },
+  {
+    "quarter": "2024_秋",
+    "url": "https://acgsecrets.hk/bangumi/202410/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:58.619512+08:00",
+    "sha256": "6fbadd6676db5c7184925286d60373b40f8ce8b64efb4fedf2fc42a3794389ff",
+    "card_count": 74
+  },
+  {
+    "quarter": "2025_冬",
+    "url": "https://acgsecrets.hk/bangumi/202501/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:56.461977+08:00",
+    "sha256": "7806558ed66c4703b55e4c5900cc99654ae730128374049b27462e72518a69f6",
+    "card_count": 65
+  },
+  {
+    "quarter": "2025_夏",
+    "url": "https://acgsecrets.hk/bangumi/202507/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:58:59.784203+08:00",
+    "sha256": "39f98df6c6253e95375efbf4b5ae5d3ca15b35df07dc7e90f4c80d6cd1aa5de4",
+    "card_count": 74
+  },
+  {
+    "quarter": "2025_春",
+    "url": "https://acgsecrets.hk/bangumi/202504/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:59:05.317361+08:00",
+    "sha256": "4342374c920727372d1d80062b9c3e175d38d4e59293cac6ee614355beb74b6f",
+    "card_count": 65
+  },
+  {
+    "quarter": "2025_秋",
+    "url": "https://acgsecrets.hk/bangumi/202510/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:59:07.021706+08:00",
+    "sha256": "20b15dd2d067cfe6b17352b6d78214906f1347f05d8f9555f301675d074e0fea",
+    "card_count": 63
+  },
+  {
+    "quarter": "2026_冬",
+    "url": "https://acgsecrets.hk/bangumi/202601/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:59:08.605126+08:00",
+    "sha256": "1fa4b42aeab5b74bc62e55629836f7128079f164993ac58bbdcc3fee1aa238c2",
+    "card_count": 65
+  },
+  {
+    "quarter": "2026_夏",
+    "url": "https://acgsecrets.hk/bangumi/202607/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:59:14.459318+08:00",
+    "sha256": "b7f59c272aaa07ea81fa39058d157fa9c81d168c05d22ac0061995ac35b4e5fd",
+    "card_count": 75
+  },
+  {
+    "quarter": "2026_春",
+    "url": "https://acgsecrets.hk/bangumi/202604/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:59:17.368387+08:00",
+    "sha256": "f6c645863ed2ef2c6d52cadc17156adf5ef5574c1c06e82d90a4e6952b046106",
+    "card_count": 71
+  },
+  {
+    "quarter": "2026_秋",
+    "url": "https://acgsecrets.hk/bangumi/202610/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:59:11.477992+08:00",
+    "sha256": "ba47465d687f595236ff7332b737e60e00d2cc1a9bf8c9af03e4537f4b99a1a5",
+    "card_count": 73
+  },
+  {
+    "quarter": "2027_冬",
+    "url": "https://acgsecrets.hk/bangumi/202701/",
+    "status": 200,
+    "checked_at": "2026-10-19T13:59:12.834233+08:00",
+    "sha256": "bbcecd4eb50bc35d47b3b3d57d4bd5931081b471f21223bd99f4f99397886ea2",
+    "card_count": 4
+  }
+]

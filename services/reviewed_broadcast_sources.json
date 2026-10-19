@@ -1,0 +1,26 @@
+[
+  {
+    "card_id": "anime-998",
+    "anime_name": "魔法紀錄 魔法少女小圓外傳 最終季",
+    "original_name": "マギアレコード 魔法少女まどか☆マギカ外伝 Final SEASON‐浅き夢の暁‐",
+    "subject_id": 339998,
+    "weekday": "日",
+    "source_url": "https://anime.magireco.com/onair/",
+    "checked_at": "2026-10-19T14:03:43.034090+08:00",
+    "excerpt": "TOKYO MX 2022年4月3日 日曜19：00～",
+    "document_sha256": "9c3509edd4c9ab53336012170594ca6bd9fca5588a0c9e37919c2fd662a5abb9",
+    "scope_note": "官方明列本版本首播星期，保留公告季度、時間及所有集數欄位。Final SEASON四回與官方story索引、2022-04-03集中放送表相符，仍保留原2021秋公告季度。"
+  },
+  {
+    "card_id": "anime-1139",
+    "anime_name": "KJ FILE",
+    "original_name": "KJファイル",
+    "subject_id": 381384,
+    "weekday": "日",
+    "source_url": "https://www.tv-tokyo.co.jp/anime/kjfile/news/",
+    "checked_at": "2026-10-19T14:02:32.827346+08:00",
+    "excerpt": "第1話『ファンバーン／ゲソラマリ』7月10日（日）深夜4時5分～",
+    "document_sha256": "b8eee8708418cc5f2d1fff3980140d8a918bc437a20e1c3f29659c32dd99133d",
+    "scope_note": "官方明列本版本首播星期，保留公告季度、時間及所有集數欄位。2022-07-04公告首期第1話；按官方「日曜深夜」播出日歸屬，非2023續篇／現行重播表。"
+  }
+]
