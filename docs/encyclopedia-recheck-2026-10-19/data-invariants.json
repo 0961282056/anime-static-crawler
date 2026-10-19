@@ -1,0 +1,24 @@
+{
+  "base": "b35daa89dc7a221a0c669a6c96da2a7d0443521f",
+  "counts": {
+    "records": 2150,
+    "quarters": 37,
+    "stories": 101,
+    "weekdays": 0,
+    "bangumi": 1,
+    "anilist": 1378
+  },
+  "changes": [
+    {
+      "quarter": "2019_夏",
+      "card_id": "anime-274",
+      "fields": [
+        "story",
+        "story_source"
+      ]
+    }
+  ],
+  "all_existing_summaries_preserved": true,
+  "all_episode_metadata_preserved": true,
+  "all_other_record_fields_and_order_preserved": true
+}

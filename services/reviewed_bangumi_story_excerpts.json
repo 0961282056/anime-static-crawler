@@ -1,0 +1,16 @@
+[
+  {
+    "card_id": "anime-274",
+    "anime_name": "暗芝居 7期",
+    "original_name": "闇芝居 七期",
+    "subject_id": 283480,
+    "subject_name": "闇芝居 第7期",
+    "first_air_date": "2019-07-07",
+    "source_url": "https://api.bgm.tv/v0/subjects/283480",
+    "story": "第7期の舞台となるのは“閉ざされた空間”。シリーズ常連の紙芝居屋のおじさん役・津田寛治が馴染みある語り口で恐怖の世界へと誘っていく。",
+    "checked_at": "2026-10-19T07:32:14.738060+00:00",
+    "response_sha256": "c4b4ed97aa760e8be3c1132a1b8f9d869dfbc8bbc7f653b90db188c69dc157b2",
+    "summary_sha256": "56e0583ed2343663401a58a7000b05f56917b0df5e67e3a2752668e8fff8da55",
+    "scope_note": "本季專屬段落的連續兩句；僅去除段內換行，排除新聞標題、製作消息、跨季沿革及演員評論。不核准母系列或其他季度簡介。"
+  }
+]

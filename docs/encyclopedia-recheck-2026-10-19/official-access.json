@@ -1,0 +1,310 @@
+[
+  {
+    "url": "https://www.tonegawa-anime.com/",
+    "checked_at": "2026-10-19T07:29:27.217425+00:00",
+    "status": 200,
+    "final_url": "https://www.tonegawa-anime.com/",
+    "sha256": "a979c5aab8f776464bcbf6c9ad21e826a33f6857427577bfac219afeab8679c1"
+  },
+  {
+    "url": "https://www.tonegawa-anime.com/story/",
+    "checked_at": "2026-10-19T07:29:27.218058+00:00",
+    "status": 200,
+    "final_url": "https://www.tonegawa-anime.com/",
+    "sha256": "a979c5aab8f776464bcbf6c9ad21e826a33f6857427577bfac219afeab8679c1"
+  },
+  {
+    "url": "https://www.ntv.co.jp/tonegawa/",
+    "checked_at": "2026-10-19T07:29:27.218467+00:00",
+    "status": 404,
+    "final_url": "https://www.ntv.co.jp/tonegawa/",
+    "sha256": "1bb96b903e6f484d41bef8ab4753b0c5e182883372990950fced38af0ee7b7d6"
+  },
+  {
+    "url": "https://www.oshiri-tantei.com/",
+    "checked_at": "2026-10-19T07:29:27.219652+00:00",
+    "status": 200,
+    "final_url": "https://oshiri-tantei.com:443/",
+    "sha256": "345668450b0c76681840f9063e9ca30dfd781aa7fca4b4afa8ed7116a912347c"
+  },
+  {
+    "url": "https://www.toei-anim.co.jp/tv/oshiri_tantei/",
+    "checked_at": "2026-10-19T07:29:27.794050+00:00",
+    "status": 403,
+    "final_url": "https://www.toei-anim.co.jp/tv/oshiri_tantei/",
+    "sha256": "58bf2215b395dcac74c009aa98701854e43cbe54a1cd3a95fee6a647ca9910d4"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/gakkou/",
+    "checked_at": "2026-10-19T07:29:27.925326+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/gakkou/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/nezumikun/",
+    "checked_at": "2026-10-19T07:29:28.526396+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/nezumikun/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.ntv.co.jp/kusuriyanohitorigoto/",
+    "checked_at": "2026-10-19T07:29:28.592678+00:00",
+    "status": 404,
+    "final_url": "https://www.ntv.co.jp/kusuriyanohitorigoto/",
+    "sha256": "1bb96b903e6f484d41bef8ab4753b0c5e182883372990950fced38af0ee7b7d6"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/diaace/",
+    "checked_at": "2026-10-19T07:29:28.771984+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/diaace/index2.html",
+    "sha256": "604b5b692c1faea56b9ae31c81cea4d35f4492535a7f0f3e6dc9b559b57010ff"
+  },
+  {
+    "url": "https://acgsecrets.hk/bangumi/202610/",
+    "checked_at": "2026-10-19T07:29:29.132719+00:00",
+    "status": 200,
+    "final_url": "https://acgsecrets.hk/bangumi/202610/",
+    "sha256": "13d2cd7f1ea35f6953734975077a51dfbfa7450e75ad808aeae8fae0caf48550"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/",
+    "checked_at": "2026-10-19T07:29:29.416887+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/",
+    "sha256": "b394e9e2ec5fc4a744c43132adc82039c5bec47cef0167295f30015f7fc9bbeb"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin01/",
+    "checked_at": "2026-10-19T07:30:49.717054+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin01/",
+    "sha256": "d4b8d8690a16ca0c92f8984a19b26eb197a2492ac7426d8e836f3684f84a4717"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin02/",
+    "checked_at": "2026-10-19T07:30:49.717507+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin02/",
+    "sha256": "b547160f8105c1d0b6bcc36fa93b28f73f1e04db60b35612a4b211469aa80c42"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin03/",
+    "checked_at": "2026-10-19T07:30:49.719660+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin03/",
+    "sha256": "dff29b2943bb1905529c567341130c9c3168069944d083b1eef52ec7345dcb7d"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin04/",
+    "checked_at": "2026-10-19T07:30:49.720725+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin04/",
+    "sha256": "a94da1e14de96a4a3ecce93ca293422e45661ac865486c483125b575494c629e"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin05/",
+    "checked_at": "2026-10-19T07:30:50.499822+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin05/",
+    "sha256": "9e3fd8235dae97ba4df2f275090846b85397da3c5b18edeef5c7894b3c89f77f"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin06/",
+    "checked_at": "2026-10-19T07:30:50.521409+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin06/",
+    "sha256": "a9b55269eee83462e795f1b161091bf9db7f219e54af568ec876a63ca261883d"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin07/",
+    "checked_at": "2026-10-19T07:30:50.546325+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin07/",
+    "sha256": "21ab36f71dd6358ac23c627a19c6826badae052468c8e4fbe3f488d394a92894"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin08/",
+    "checked_at": "2026-10-19T07:30:50.624003+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin08/",
+    "sha256": "9684ff18c23064cbf40434c875f68efbc32e1add1724c42806aff292ae54389d"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin09/",
+    "checked_at": "2026-10-19T07:30:51.258952+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin09/",
+    "sha256": "69f8d6a5b939081222f0160b8565d41673fc43f30dd67c34d3ecf01418683c12"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin10/",
+    "checked_at": "2026-10-19T07:30:51.281810+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin10/",
+    "sha256": "16746a7188187853933f7bdaacc14c29592da58813f381b73e1050b6be8c26a5"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin11/",
+    "checked_at": "2026-10-19T07:30:51.525605+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin11/",
+    "sha256": "61fd5d0ac87a3cd7b6de9012f5f6b0961f19dc1a7e32a91165be5889b7249b5b"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin12/",
+    "checked_at": "2026-10-19T07:30:51.790915+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin12/",
+    "sha256": "37eb3d4140ce34e2798d9d6d2d7d666f57796ddf75a03d96fb9cb528ad2fbdfd"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin13/",
+    "checked_at": "2026-10-19T07:30:51.896238+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin13/",
+    "sha256": "d0e86f297a36376bb273b28f3719e36652f0df86c1b34a2791abb38f5d81c383"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin14/",
+    "checked_at": "2026-10-19T07:30:52.040235+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin14/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin15/",
+    "checked_at": "2026-10-19T07:30:52.138092+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin15/",
+    "sha256": "1c5d134233e007eee3e22cec0dc85b7ac0985b1ea0b209d8bf570af9282dc3c8"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin16/",
+    "checked_at": "2026-10-19T07:30:52.478172+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin16/",
+    "sha256": "d47571db3592edffe4c6732aa0b79b06543c3ffc94ac418d371f99d6a05d0fe3"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin17/",
+    "checked_at": "2026-10-19T07:30:52.584384+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin17/",
+    "sha256": "e6e414a79c883713efbf33f4d5abfa9bbaba900f74319d43a0dec697e1c4a10d"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin18/",
+    "checked_at": "2026-10-19T07:30:52.887008+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin18/",
+    "sha256": "3abeb90f4cbbb7ad395deef058f2a66f4c16c15fb03a30dbc9bff5212c9e4910"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin19/",
+    "checked_at": "2026-10-19T07:30:52.908858+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin19/",
+    "sha256": "00c101fce1198834d40283805e08ac404ec539b34b3e88ff329d70af3c5928f9"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin20/",
+    "checked_at": "2026-10-19T07:30:53.157317+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin20/",
+    "sha256": "c775c64fac7a925bdfb38e81c0b96d8ba72654582ab4564391a0d56e2d51661d"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin21/",
+    "checked_at": "2026-10-19T07:30:53.313797+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin21/",
+    "sha256": "8ca0b388f2a17650a3122440116d03a46413ae8e651785724c45efee874dcdb4"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin22/",
+    "checked_at": "2026-10-19T07:30:53.632049+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin22/",
+    "sha256": "ca382180aef20a9551505ef0b2de1daf43e3b2cc730b3bc228704cd06f25f4ea"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin23/",
+    "checked_at": "2026-10-19T07:30:53.793709+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/kinder/intro/sakuhin23/",
+    "sha256": "de6570e34a920dcb5b5ed4babdbc809c938a10acb1be67bd93a545601f9be135"
+  },
+  {
+    "url": "https://www.oshiri-tantei.com/story/",
+    "checked_at": "2026-10-19T07:32:28.709759+00:00",
+    "status": 200,
+    "final_url": "https://oshiri-tantei.com:443/story/story134.html",
+    "sha256": "6d1939dc9c73fafdcc702d80cc29bab3c5f6dc8653cc6b54691671ab29cf860d"
+  },
+  {
+    "url": "https://www.oshiri-tantei.com/news/20190617.html",
+    "checked_at": "2026-10-19T07:32:28.710617+00:00",
+    "status": 404,
+    "final_url": "https://oshiri-tantei.com:443/news/20190617.html",
+    "sha256": "8a482f2271a42c5f54c96e816a84340a6f2357a5b81f927d07d00788f5140a41"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/index2.html",
+    "checked_at": "2026-10-19T07:32:28.711356+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/index2.html",
+    "sha256": "358fd1bc4a6682247e9fede1dd5daa403f59362e8eea2dd5a581176a2b42bce6"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/news/",
+    "checked_at": "2026-10-19T07:32:28.711711+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/yamishibai7/news/",
+    "sha256": "dcd01e505be8a5ccf52fd501dd23867b6f4b2856b6940a45ed18b4394ada6f8c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/four_of_a_kind/story/",
+    "checked_at": "2026-10-19T07:32:29.740376+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/four_of_a_kind/story/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/garugaku2/story/",
+    "checked_at": "2026-10-19T07:32:29.790691+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/garugaku2/story/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/garugaku2/",
+    "checked_at": "2026-10-19T07:32:29.989212+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/garugaku2/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/introduction/",
+    "checked_at": "2026-10-19T07:32:30.640523+00:00",
+    "status": 200,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/shibuya-hachi/introduction/",
+    "sha256": "5e3f29718f87be00d663cddc6dae2402c43a251379f6890a96a9c5e9c74a2e55"
+  },
+  {
+    "url": "https://www.tv-tokyo.co.jp/anime/jimoto/story/",
+    "checked_at": "2026-10-19T07:32:30.646466+00:00",
+    "status": 404,
+    "final_url": "https://www.tv-tokyo.co.jp/anime/jimoto/story/",
+    "sha256": "418b90b67faab91977c09954d7e5095ab06c5f8e9fb8c2379e75225a47df673c"
+  },
+  {
+    "url": "https://www.madhouse.co.jp/works/2018-2017/works_tv_tonegawa.html",
+    "checked_at": "2026-10-19T07:32:30.734995+00:00",
+    "status": 404,
+    "final_url": "https://madhouse.co.jp/works/2018-2017/works_tv_tonegawa.html",
+    "sha256": "4af8bf51e6d54546dbdd5676e01267aa0f042aecbd24c731d9011d3ab563cf94"
+  }
+]

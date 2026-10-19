@@ -33,6 +33,7 @@ function createContext({storage = null, fetchImpl = null, html2canvas = null, na
       defaultYear: '2026',
       defaultSeason: '秋',
       buildVersion: 'test-build',
+      bangumiStoryExcerpts: JSON.stringify(Object.fromEntries(JSON.parse(readFileSync(new URL('../../services/reviewed_bangumi_story_excerpts.json', import.meta.url), 'utf8')).map(row => [row.card_id, row]))),
       dataVersion: 'aaaaaaaaaaaaaaaa',
       officialStorySources: JSON.stringify(Object.fromEntries(JSON.parse(readFileSync(new URL('../../services/reviewed_story_sources.json', import.meta.url), 'utf8')).map(row => [row.card_id, row.subject_id === null ? [null, row.source_url, row.anime_name, row.original_name] : [row.subject_id, row.source_url]]))),
       reviewedBroadcastSources: JSON.stringify(Object.fromEntries(JSON.parse(readFileSync(new URL('../../services/reviewed_broadcast_sources.json', import.meta.url), 'utf8')).filter(row => row.display_note).map(row => [row.card_id, row]))),
@@ -1038,5 +1039,28 @@ test('broadcast scope notes bind exact card, names, database and reviewed weekda
     row.source_url = 'https://user:pass@example.test/';
     assert.equal(app.broadcastSourceUrl(anime), null);
     row.source_url = original;
+  }
+});
+
+test('reviewed Bangumi excerpts retain truthful attribution and exact scope', async () => {
+  const row = JSON.parse(readFileSync(new URL('../../services/reviewed_bangumi_story_excerpts.json', import.meta.url), 'utf8'))[0];
+  const record = {...dataset(row.anime_name).anime_list[0], bangumi_id: row.card_id,
+    original_name: row.original_name, story: row.story, external_ids: {bangumi: row.subject_id},
+    story_source: {provider: 'bangumi', method: 'bangumi_excerpt', subject_id: row.subject_id,
+      source_url: row.source_url, checked_at: row.checked_at}};
+  let current = record;
+  const {app} = createContext({fetchImpl: async () => ({ok: true, json: async () => ({anime_list: [current]})})});
+  assert.equal((await app.fetchDatasetFromNetwork('2019_夏')).anime_list[0].story, row.story);
+  assert.equal(app.storySourceUrl(record), 'https://bgm.tv/subject/283480');
+  assert.match(app.storySourceLabel(record), /Bangumi.*人工核對節錄/);
+  for (const change of [
+    {bangumi_id: 'anime-275'}, {original_name: '闇芝居 六期'}, {story: '錯誤母作品介紹'},
+    {story_source: {...record.story_source, provider: 'official'}},
+    {story_source: {...record.story_source, source_url: 'https://api.bgm.tv/v0/subjects/250117'}},
+    {story_source: {...record.story_source, checked_at: '2026-10-18T00:00:00+08:00'}},
+  ]) {
+    current = {...record, ...change};
+    await assert.rejects(app.fetchDatasetFromNetwork('2019_夏'), error => error.code === 'DATA_SCHEMA');
+    assert.equal(app.storySourceUrl(current), null);
   }
 });

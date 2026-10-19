@@ -1,0 +1,32 @@
+{
+  "counts": {
+    "records": 2150,
+    "quarters": 37,
+    "stories": 101,
+    "weekdays": 0,
+    "bangumi": 1,
+    "anilist": 1378
+  },
+  "added": {
+    "stories": 1,
+    "bangumi": 0,
+    "anilist": 0,
+    "weekdays": 0
+  },
+  "primary_requests": 31,
+  "primary_statuses": {
+    "200": 31
+  },
+  "bangumi_requests": 94,
+  "bangumi_statuses": {
+    "200": 91,
+    "404": 3
+  },
+  "wikipedia_exact_title_requests": 97,
+  "wikipedia_statuses": {
+    "200": 7,
+    "404": 90
+  },
+  "official_requests": 44,
+  "remaining_records_with_any_missing_field": 1396
+}

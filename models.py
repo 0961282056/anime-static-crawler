@@ -147,7 +147,9 @@ class StorySource(BaseModel):
     provider: Literal["bangumi", "official"] = "bangumi"
     subject_id: int | None = Field(gt=0, strict=True)
     checked_at: datetime
-    method: Literal["bangumi_api", "bangumi_archive", "manual_official"]
+    method: Literal[
+        "bangumi_api", "bangumi_archive", "bangumi_excerpt", "manual_official"
+    ]
     source_url: str | None = Field(default=None, exclude_if=lambda value: value is None)
     source_snapshot_date: date | None = None
 
@@ -169,6 +171,16 @@ class StorySource(BaseModel):
                 or not any(r["source_url"] == self.source_url for r in story_reviews())
             ):
                 raise ValueError("official summaries require a reviewed source URL")
+        elif self.method == "bangumi_excerpt":
+            from services.bangumi_story_reviews import bangumi_story_reviews
+
+            if self.source_snapshot_date is not None or not any(
+                row["subject_id"] == self.subject_id
+                and row["source_url"] == self.source_url
+                and datetime.fromisoformat(row["checked_at"]) == self.checked_at
+                for row in bangumi_story_reviews()
+            ):
+                raise ValueError("Bangumi excerpts require reviewed source evidence")
         elif (
             self.subject_id is None
             or self.method == "manual_official"
@@ -221,6 +233,14 @@ class Anime(BaseModel):
             ):
                 raise ValueError(
                     "official summary must match its reviewed card and text"
+                )
+        if self.story_source and self.story_source.method == "bangumi_excerpt":
+            from services.bangumi_story_reviews import reviewed_bangumi_story
+
+            review = reviewed_bangumi_story(self)
+            if not review or review["story"] != self.story:
+                raise ValueError(
+                    "Bangumi excerpt must match its reviewed card and text"
                 )
         return self
 

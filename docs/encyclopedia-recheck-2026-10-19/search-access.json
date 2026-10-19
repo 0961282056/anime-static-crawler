@@ -1,0 +1,71 @@
+[
+  {
+    "url": "https://www.bing.com/search?q=%22%E5%AD%A6%E6%A0%A1%E3%81%A7%E3%81%AF%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%AA%E3%81%84%E5%A4%A7%E5%88%87%E3%81%AA%E3%81%93%E3%81%A8%22%20%22%E6%95%B4%E7%90%86%E6%95%B4%E9%A0%93%22%20%E3%82%A2%E3%83%8B%E3%83%A1%202025",
+    "checked_at": "2026-10-19T07:31:49.551847+00:00",
+    "status": 200,
+    "final_url": "https://www.bing.com/search?q=%22%E5%AD%A6%E6%A0%A1%E3%81%A7%E3%81%AF%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%AA%E3%81%84%E5%A4%A7%E5%88%87%E3%81%AA%E3%81%93%E3%81%A8%22%20%22%E6%95%B4%E7%90%86%E6%95%B4%E9%A0%93%22%20%E3%82%A2%E3%83%8B%E3%83%A1%202025",
+    "sha256": "4fd96e6df24ec95bc47d329b85d014874af5554ac698ec9392e19046c10382d0",
+    "result_titles": [
+      "Images",
+      "Videos",
+      "Maps",
+      "News",
+      "Shopping",
+      "Flights",
+      "instantcheckmate.com https:// www.instantcheckmate.com › people › lydia - sandifer",
+      "Found: Lydia Sandifer Public Records - Instant Checkmate",
+      "legacy.com https:// www.legacy.com › obituaries › name › brumfield › lydia",
+      "Search Lydia Brumfield Obituaries and Funeral Services",
+      "mylife.com https://www.mylife.com › lydia - brumfield",
+      "Lydia B Brumfield , 61 - Baton Rouge, LA - Has Court or Arrest Records"
+    ],
+    "usable": false,
+    "reason": "Returned results unrelated to the exact Japanese queries; no identity conclusions drawn."
+  },
+  {
+    "url": "https://www.bing.com/search?q=%22%E3%81%8A%E3%81%97%E3%82%8A%E3%81%9F%E3%82%93%E3%81%A6%E3%81%84%22%20%222019%E5%B9%B47%E6%9C%886%E6%97%A5%22",
+    "checked_at": "2026-10-19T07:31:49.552541+00:00",
+    "status": 200,
+    "final_url": "https://www.bing.com/search?q=%22%E3%81%8A%E3%81%97%E3%82%8A%E3%81%9F%E3%82%93%E3%81%A6%E3%81%84%22%20%222019%E5%B9%B47%E6%9C%886%E6%97%A5%22",
+    "sha256": "5885bb8a3fb008b203ffee72b76e9ccfbbc6ae02a8290c1a8a05b0366e2e696a",
+    "result_titles": [
+      "Images",
+      "Videos",
+      "Maps",
+      "News",
+      "Shopping",
+      "Flights",
+      "mayoclinic.org https://www.mayoclinic.org › diseases-conditions › coronavirus › symptoms-ca…",
+      "Coronavirus disease 2019 (COVID-19) - Symptoms and causes",
+      "who.int https://www.who.int › publications › item › home-care-for-patients-with-suspect…",
+      "Home care for patients with suspected or confirmed COVID-19 and ...",
+      "who.int https://www.who.int › indonesia › news › novel-coronavirus › new-infographics",
+      "New infographics - World Health Organization (WHO)"
+    ],
+    "usable": false,
+    "reason": "Returned results unrelated to the exact Japanese queries; no identity conclusions drawn."
+  },
+  {
+    "url": "https://www.bing.com/search?q=%221%E6%97%A5%E5%A4%96%E5%87%BA%E9%8C%B2%E3%83%8F%E3%83%B3%E3%83%81%E3%83%A7%E3%82%A6%22%20%E3%82%A2%E3%83%8B%E3%83%A1%202018%20%E3%81%82%E3%82%89%E3%81%99%E3%81%98",
+    "checked_at": "2026-10-19T07:31:49.552799+00:00",
+    "status": 200,
+    "final_url": "https://www.bing.com/search?q=%221%E6%97%A5%E5%A4%96%E5%87%BA%E9%8C%B2%E3%83%8F%E3%83%B3%E3%83%81%E3%83%A7%E3%82%A6%22%20%E3%82%A2%E3%83%8B%E3%83%A1%202018%20%E3%81%82%E3%82%89%E3%81%99%E3%81%98",
+    "sha256": "7db556c0ed424da3f7dfeeb8668029d5d2c08265013abd27d6675ec63817cd49",
+    "result_titles": [
+      "Images",
+      "Videos",
+      "Maps",
+      "News",
+      "Shopping",
+      "Flights",
+      "wikipedia.org https:// en.wikipedia.org › wiki",
+      "1 - Wikipedia",
+      "wikiwand.com https://www.wikiwand.com › en",
+      "1 - Wikiwand",
+      "youtube.com https:// www.youtube.com › watch",
+      "I Can Show the Number 1 in Many Ways - YouTube"
+    ],
+    "usable": false,
+    "reason": "Returned results unrelated to the exact Japanese queries; no identity conclusions drawn."
+  }
+]
