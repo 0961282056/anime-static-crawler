@@ -68,6 +68,9 @@ def verify_dist(paths: ProjectPaths) -> None:
             built_headers.read_bytes() != expected_headers
         ):
             raise RuntimeError("dist/_headers does not match the source _headers")
+    from services.release_manifest import validate_release
+
+    validate_release(paths)
     print(f"Verified deterministic static output: {len(source_hashes)} assets")
 
 

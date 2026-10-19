@@ -835,3 +835,22 @@ test('global search bounds simultaneous quarter loads', async () => {
   assert.equal(app.filteredAnime.length, 1);
   assert.equal(app.filteredAnime[0].source_quarters.length, 9);
 });
+
+test('a changed quarter hash invalidates a fresh dataset cache and changes its request URL', async () => {
+  const urls = [];
+  const {app} = createContext({fetchImpl: async url => {
+    urls.push(url);
+    return responseFor(dataset(`version-${urls.length}`));
+  }});
+  app.year = '2026'; app.season = '秋';
+  app.quarterVersions['2026_秋'] = 'a'.repeat(64);
+  await app.loadData();
+  await app.loadData();
+  assert.equal(urls.length, 1);
+  app.quarterVersions['2026_秋'] = 'b'.repeat(64);
+  await app.loadData();
+  assert.equal(urls.length, 2);
+  assert.match(urls[0], new RegExp('v=' + 'a'.repeat(64)));
+  assert.match(urls[1], new RegExp('v=' + 'b'.repeat(64)));
+  assert.equal(app.rawAnimeList[0].anime_name, 'version-2');
+});

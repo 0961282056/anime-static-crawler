@@ -399,6 +399,8 @@ function readAppConfig() {
         defaultYear: element.dataset.defaultYear,
         defaultSeason: element.dataset.defaultSeason,
         buildVersion: element.dataset.buildVersion,
+        dataVersion: element.dataset.dataVersion || element.dataset.buildVersion,
+        quarterVersions: JSON.parse(element.dataset.quarterVersions || '{}'),
         availableData: JSON.parse(element.dataset.availableData)
     };
 }
@@ -411,6 +413,8 @@ function animeApp() {
         defaultYear: appConfig.defaultYear,
         defaultSeason: appConfig.defaultSeason,
         buildVersion: appConfig.buildVersion,
+        dataVersion: appConfig.dataVersion,
+        quarterVersions: appConfig.quarterVersions,
         years: [],
         seasons: [],
         
@@ -610,7 +614,8 @@ function animeApp() {
         },
 
         async fetchDatasetFromNetwork(cacheKey, signal) {
-            const url = `data/${cacheKey}.json?v=${encodeURIComponent(this.buildVersion)}`;
+            const version = this.quarterVersions[cacheKey] || this.dataVersion;
+            const url = `data/${cacheKey}.json?v=${encodeURIComponent(version)}`;
             let lastError = null;
             const maxRetries = Number.isInteger(this.MAX_FETCH_RETRIES)
                 ? Math.max(0, this.MAX_FETCH_RETRIES)
@@ -659,9 +664,11 @@ function animeApp() {
         getDataset(cacheKey, signal) {
             if (signal && signal.aborted) return Promise.reject(createAbortError());
             const now = Date.now();
+            const version = this.quarterVersions[cacheKey] || this.dataVersion;
             const cached = this.dataCache[cacheKey];
             if (
                 cached &&
+                cached.version === (this.quarterVersions[cacheKey] || this.dataVersion) &&
                 Number.isFinite(cached.cachedAt) &&
                 now - cached.cachedAt < this.DATA_CACHE_TTL_MS
             ) {
@@ -671,7 +678,8 @@ function animeApp() {
             const pendingState = getPendingRequestState(this);
             let pendingToken = this._pendingDataRequests.get(cacheKey);
             let pending = pendingToken ? pendingState.get(pendingToken) : null;
-            if (pending && pending.isAborted()) {
+            if (pending && (pending.isAborted() || pending.version !== version)) {
+                pending.abort();
                 this._pendingDataRequests.delete(cacheKey);
                 pendingState.delete(pendingToken);
                 pending = null;
@@ -681,14 +689,17 @@ function animeApp() {
                 const requestToken = Symbol(`data:${cacheKey}`);
                 const entry = {
                     token: requestToken,
+                    version,
                     promise: null,
                     isAborted: () => requestController.signal.aborted,
                     abort: () => requestController.abort()
                 };
                 entry.promise = this.fetchDatasetFromNetwork(cacheKey, requestController.signal)
                     .then(data => {
-                        const dataset = {...data, cachedAt: Date.now()};
-                        this.dataCache[cacheKey] = dataset;
+                        const dataset = {...data, version: entry.version, cachedAt: Date.now()};
+                        if (entry.version === (this.quarterVersions[cacheKey] || this.dataVersion)) {
+                            this.dataCache[cacheKey] = dataset;
+                        }
                         return dataset;
                     })
                     .finally(() => {

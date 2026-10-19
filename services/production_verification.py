@@ -72,6 +72,11 @@ class PublicReader:
 
 
 def expected_files(paths: ProjectPaths) -> dict[str, bytes]:
+    marker = paths.output_dir / "release.json"
+    if marker.is_file():
+        inventory = json.loads(marker.read_text()).get("files")
+        if inventory:
+            return {path: (paths.output_dir / path).read_bytes() for path in inventory}
     return {
         path.relative_to(paths.output_dir).as_posix(): path.read_bytes()
         for root in (paths.data_dir, paths.static_output_dir)
@@ -117,6 +122,9 @@ def verify_once(paths: ProjectPaths, expected: str, read, *, attempt: int = 0) -
         raise RuntimeError(
             "Canonical deployment has not reached the expected main commit"
         )
+    local_marker = paths.output_dir / "release.json"
+    if local_marker.exists() and json.loads(local_marker.read_text()) != marker:
+        raise RuntimeError("Canonical release inventory differs from expected build")
     files = expected_files(paths)
     if not any(path.startswith("data/") for path in files):
         raise RuntimeError("No expected quarterly data is available")

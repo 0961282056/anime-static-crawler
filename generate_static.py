@@ -24,7 +24,7 @@ from jinja2 import (
 
 from config import Config
 from models import TAIPEI_TZ
-from services.atomic_io import atomic_write_json, atomic_write_text
+from services.atomic_io import atomic_write_text
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.diagnostics import RedactingFormatter, operation, run_command
 from services.errors import ConfigurationError
@@ -217,6 +217,7 @@ def compute_build_version(paths: ProjectPaths) -> str:
         if path.is_file():
             digest.update(path.relative_to(paths.root).as_posix().encode("utf-8"))
             digest.update(path.read_bytes())
+    digest.update(json.dumps(public_story_sources(), sort_keys=True).encode())
     return digest.hexdigest()[:12]
 
 
@@ -243,6 +244,9 @@ def render_index(
         undefined=StrictUndefined,
     )
     template = environment.get_template("index.html")
+    from services.release_manifest import data_inventory
+
+    inventory = data_inventory(paths)
     content = template.render(
         selected_year=default_year,
         selected_season=default_season,
@@ -250,6 +254,8 @@ def render_index(
         available_data=available_data,
         available_data_json=json.dumps(available_data, ensure_ascii=False),
         build_version=compute_build_version(paths),
+        data_version=inventory["data_version"],
+        quarter_versions_json=json.dumps(inventory["quarter_versions"]),
         official_story_sources_json=json.dumps(
             public_story_sources(), ensure_ascii=False
         ),
@@ -327,12 +333,9 @@ def generate_static_files() -> None:
         sync_static_assets(paths)
     with operation("render", path=paths.output_dir / "index.html"):
         output_path = render_index(paths, repository, now)
-    from services.production_verification import release_commit
+    from services.release_manifest import write_release
 
-    atomic_write_json(
-        paths.output_dir / "release.json",
-        {"schema_version": 1, "commit": release_commit(paths, os.environ)},
-    )
+    write_release(paths, os.environ, compute_build_version(paths))
     logger.info("Static site generated: %s", output_path)
     if crawl_summary is not None:
         with operation("summary"):
