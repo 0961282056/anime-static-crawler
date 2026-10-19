@@ -27,8 +27,9 @@ from models import TAIPEI_TZ
 from services.atomic_io import atomic_write_text
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.diagnostics import RedactingFormatter, operation, run_command
-from services.errors import ConfigurationError, SourceNotFoundError
+from services.errors import ConfigurationError
 from services.settings import CrawlerSettings, ProjectPaths
+from services.story_source_reviews import public_story_sources
 
 logger = logging.getLogger(__name__)
 START_YEAR_ON_EMPTY = 2018
@@ -43,6 +44,7 @@ class CrawlSummary:
     changed_quarters: int
     total_records: int
     parse_failures: int
+    partial_failures: int = 0
 
 
 def configure_runtime() -> None:
@@ -215,6 +217,7 @@ def compute_build_version(paths: ProjectPaths) -> str:
         if path.is_file():
             digest.update(path.relative_to(paths.root).as_posix().encode("utf-8"))
             digest.update(path.read_bytes())
+    digest.update(json.dumps(public_story_sources(), sort_keys=True).encode())
     return digest.hexdigest()[:12]
 
 
@@ -241,6 +244,9 @@ def render_index(
         undefined=StrictUndefined,
     )
     template = environment.get_template("index.html")
+    from services.release_manifest import data_inventory
+
+    inventory = data_inventory(paths)
     content = template.render(
         selected_year=default_year,
         selected_season=default_season,
@@ -248,6 +254,11 @@ def render_index(
         available_data=available_data,
         available_data_json=json.dumps(available_data, ensure_ascii=False),
         build_version=compute_build_version(paths),
+        data_version=inventory["data_version"],
+        quarter_versions_json=json.dumps(inventory["quarter_versions"]),
+        official_story_sources_json=json.dumps(
+            public_story_sources(), ensure_ascii=False
+        ),
     )
     output_path = paths.output_dir / "index.html"
     atomic_write_text(output_path, content)
@@ -259,66 +270,16 @@ def crawl_quarters(
     repository: DataRepository,
     now: datetime,
 ) -> CrawlSummary:
-    from services.anime_service import AnimeCrawlerService
-    from services.episode_metadata import refresh_repository_episodes
-
-    with operation("configuration"):
-        crawler = AnimeCrawlerService.from_environment()
-    has_existing_data = any(paths.data_dir.glob("*.json"))
-    full_crawl = not has_existing_data
-    processed_quarters = 0
-    changed_files: set[str] = set()
-    total_records = 0
-    total_parse_failures = 0
-
-    for year, season in target_quarters(now, full_crawl=full_crawl):
-        year_number = int(year)
-        output_path = repository.quarter_path(year, season)
-        historical = not is_future_quarter(year_number, season, now)
-        if full_crawl and historical and output_path.exists():
-            logger.info("Existing historical quarter retained: %s %s", year, season)
-            continue
-
-        try:
-            with operation("crawl", year=year, season=season):
-                result = crawler.fetch_quarter(year, season)
-            with operation("data-write", year=year, season=season, path=output_path):
-                write_result = repository.write_quarter(
-                    year=year,
-                    season=season,
-                    records=result.anime_list,
-                    source_url=result.source_url,
-                    source_count=result.source_count,
-                    parse_failure_count=result.parse_failure_count,
-                )
-            logger.info(
-                "%s %s validated: %s records, %s parse failures, changed=%s",
-                year,
-                season,
-                len(result.anime_list),
-                result.parse_failure_count,
-                write_result.changed,
-            )
-            processed_quarters += 1
-            if write_result.changed:
-                changed_files.add(output_path.name)
-            total_records += len(result.anime_list)
-            total_parse_failures += result.parse_failure_count
-        except SourceNotFoundError as exc:
-            if is_future_quarter(year_number, season, now):
-                logger.info("Future quarter not published yet: %s", exc)
-                continue
-            raise
-
-    # Supplementary metadata has its own cache and failures do not erase base
-    # records. Refresh all linked entries, including old long-running anime.
-    changed_files.update(refresh_repository_episodes(repository, now))
+    from services.update_pipeline import run_update_pipeline
 
     return CrawlSummary(
-        processed_quarters=processed_quarters,
-        changed_quarters=len(changed_files),
-        total_records=total_records,
-        parse_failures=total_parse_failures,
+        **run_update_pipeline(
+            paths,
+            repository,
+            now,
+            target_quarters(now, full_crawl=not any(paths.data_dir.glob("*.json"))),
+            future=is_future_quarter,
+        )
     )
 
 
@@ -331,6 +292,7 @@ def write_crawl_summary_outputs(summary: CrawlSummary) -> None:
         "changed_quarters": summary.changed_quarters,
         "record_count": summary.total_records,
         "parse_failures": summary.parse_failures,
+        "partial_failures": summary.partial_failures,
     }
     with Path(output_path).open("a", encoding="utf-8", newline="\n") as output:
         for name, value in values.items():
@@ -367,10 +329,16 @@ def generate_static_files() -> None:
     with operation("data-validation", path=paths.data_dir):
         validated_paths = repository.validate_all()
     logger.info("Validated %s quarterly JSON files", len(validated_paths))
+    from services.search_index import write_search_index
+
+    write_search_index(paths, repository)
     with operation("static-assets", path=paths.static_output_dir):
         sync_static_assets(paths)
     with operation("render", path=paths.output_dir / "index.html"):
         output_path = render_index(paths, repository, now)
+    from services.release_manifest import write_release
+
+    write_release(paths, os.environ, compute_build_version(paths))
     logger.info("Static site generated: %s", output_path)
     if crawl_summary is not None:
         with operation("summary"):

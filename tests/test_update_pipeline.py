@@ -1,0 +1,223 @@
+import json
+from datetime import datetime
+from types import SimpleNamespace
+
+import pytest
+
+from models import TAIPEI_TZ, Anime, AnimeCandidate
+from services.data_repository import DataQualityPolicy, DataRepository
+from services.errors import ImageStoreError, SourceFetchError
+from services.update_pipeline import run_update_pipeline
+
+NOW = datetime(2026, 10, 19, 9, tzinfo=TAIPEI_TZ)
+URL = "https://acgsecrets.hk/bangumi/202610/"
+
+
+@pytest.fixture
+def setup_pipeline(project_paths, anime_record_factory, monkeypatch):
+    repo = DataRepository(project_paths.data_dir, DataQualityPolicy())
+    raw = anime_record_factory(1, name="同一作品")
+    old = Anime(**raw, original_name="Same Work")
+    repo.write_quarter(
+        year="2026",
+        season="秋",
+        records=[old],
+        source_url=URL,
+        source_count=1,
+        parse_failure_count=0,
+    )
+    candidate = AnimeCandidate(
+        **{k: v for k, v in raw.items() if k != "anime_image_url"},
+        original_name="Same Work",
+        source_image_url="https://static.acgsecrets.hk/new.png",
+    )
+    monkeypatch.setattr("services.update_pipeline.extract_item_html", lambda html: html)
+    monkeypatch.setattr("services.update_pipeline.parse_anime_item", lambda card: card)
+    return project_paths, repo, old, candidate
+
+
+def run(setup, cards, factory, refresh):
+    paths, repo, _, _ = setup
+    return run_update_pipeline(
+        paths,
+        repo,
+        NOW,
+        [("2026", "秋")],
+        future=lambda *args: False,
+        source=SimpleNamespace(fetch_quarter_html=lambda *args: (URL, cards)),
+        image_factory=factory,
+        refresh=refresh,
+    )
+
+
+def test_source_failure_does_not_block_independent_episode_refresh(setup_pipeline):
+    paths, repo, old, candidate = setup_pipeline
+    calls = []
+
+    def fail(*args):
+        raise SourceFetchError("offline")
+
+    result = run_update_pipeline(
+        paths,
+        repo,
+        NOW,
+        [("2026", "秋")],
+        future=lambda *args: False,
+        source=SimpleNamespace(fetch_quarter_html=fail),
+        image_factory=lambda: pytest.fail("image stage must not run"),
+        refresh=lambda *args: calls.append("episodes") or set(),
+    )
+    assert calls == ["episodes"]
+    assert result["partial_failures"] == 1
+    assert repo.load_quarter("2026", "秋").anime_list == [old]
+    assert (
+        json.loads((paths.root / "audit-output/update-pipeline.json").read_text())[
+            "status"
+        ]
+        == "partial"
+    )
+
+
+def test_cached_images_do_not_require_cloudinary_credentials(setup_pipeline):
+    paths, repo, old, candidate = setup_pipeline
+    import hashlib
+
+    from services.cache_repository import CacheRepository
+
+    cache = CacheRepository(paths.cache_file)
+    cache.set(
+        "source_" + hashlib.sha256(candidate.source_image_url.encode()).hexdigest(),
+        old.anime_image_url,
+    )
+    cache.save_if_changed()
+    result = run(
+        setup_pipeline,
+        [candidate],
+        lambda: pytest.fail("cache hit must not construct Cloudinary"),
+        lambda *args: set(),
+    )
+    assert result["partial_failures"] == 0
+
+
+def test_image_outage_reuses_only_exact_existing_work(setup_pipeline):
+    paths, repo, old, candidate = setup_pipeline
+
+    def fail():
+        raise ImageStoreError("quota endpoint offline")
+
+    refreshed = []
+    changed = candidate.model_copy(update={"story": "來源有新的簡介"})
+    result = run(
+        setup_pipeline, [changed], fail, lambda *args: refreshed.append(True) or set()
+    )
+    saved = repo.load_quarter("2026", "秋").anime_list[0]
+    assert saved.anime_image_url == old.anime_image_url
+    assert saved.story == changed.story
+    assert refreshed and result["partial_failures"] > 0
+
+
+@pytest.mark.parametrize(
+    "change", [{"bangumi_id": "anime-2"}, {"anime_name": "另一作品"}]
+)
+def test_unresolved_new_or_different_work_retains_complete_quarter(
+    setup_pipeline, change
+):
+    paths, repo, old, candidate = setup_pipeline
+    other = candidate.model_copy(update=change)
+
+    def fail():
+        raise ImageStoreError("offline")
+
+    calls = []
+    cards = [candidate, other] if change.get("bangumi_id") else [other]
+    run(setup_pipeline, cards, fail, lambda *args: calls.append("episodes") or set())
+    assert calls == ["episodes"]
+    assert repo.load_quarter("2026", "秋").anime_list == [old]
+
+
+def test_source_card_disappearance_is_not_hidden_by_independent_stages(setup_pipeline):
+    paths, repo, old, candidate = setup_pipeline
+    changed = candidate.model_copy(update={"bangumi_id": "anime-2"})
+    result = run(
+        setup_pipeline,
+        [changed],
+        lambda: pytest.fail("missing card must be caught before images"),
+        lambda *args: set(),
+    )
+    assert result["partial_failures"] == 1
+    assert repo.load_quarter("2026", "秋").anime_list == [old]
+
+
+def test_unexpected_filesystem_error_is_not_converted_to_partial_success(
+    setup_pipeline,
+):
+    def fail():
+        raise PermissionError("disk denied")
+
+    with pytest.raises(PermissionError):
+        run(
+            setup_pipeline,
+            [setup_pipeline[3]],
+            fail,
+            lambda *args: pytest.fail("fatal failure must abort"),
+        )
+
+
+def test_schema_invalid_source_card_retains_quarter_and_still_refreshes(
+    setup_pipeline, monkeypatch
+):
+    def invalid(card):
+        return AnimeCandidate.model_validate({})
+
+    monkeypatch.setattr("services.update_pipeline.parse_anime_item", invalid)
+    calls = []
+    result = run(
+        setup_pipeline,
+        [setup_pipeline[3]],
+        lambda: pytest.fail("invalid source must not reach images"),
+        lambda *args: calls.append(True) or set(),
+    )
+    assert calls and result["parse_failures"] == 1
+
+
+def test_all_collection_precedes_images_and_quota_is_rechecked_for_each_uploading_quarter(
+    setup_pipeline,
+):
+    paths, repo, old, candidate = setup_pipeline
+    events = []
+
+    def fetch(year, season):
+        events.append("collect-" + season)
+        return (
+            f"https://acgsecrets.hk/bangumi/{year}{'10' if season == '秋' else '07'}/",
+            [
+                candidate.model_copy(
+                    update={
+                        "source_image_url": f"https://static.acgsecrets.hk/{season}.png"
+                    }
+                )
+            ],
+        )
+
+    class Images:
+        def assert_quota_available(self):
+            events.append("quota")
+
+        def store(self, *args):
+            events.append("image")
+            return old.anime_image_url
+
+    run_update_pipeline(
+        paths,
+        repo,
+        NOW,
+        [("2026", "秋"), ("2026", "夏")],
+        future=lambda *args: False,
+        source=SimpleNamespace(fetch_quarter_html=fetch),
+        image_factory=Images,
+        refresh=lambda *args: events.append("episodes") or set(),
+    )
+    assert events[:2] == ["collect-秋", "collect-夏"]
+    assert events.count("quota") == 2
+    assert events[-1] == "episodes"
+    assert repo.load_quarter("2026", "夏") is not None

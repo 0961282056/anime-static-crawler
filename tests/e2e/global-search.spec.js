@@ -1,4 +1,5 @@
 import {expect, test} from '@playwright/test';
+import {readFileSync} from 'node:fs';
 
 test('keywords search historical quarters, merge repeated works and clear back to the selected quarter', async ({page}) => {
   await page.setViewportSize({width: 360, height: 800});
@@ -8,12 +9,21 @@ test('keywords search historical quarters, merge repeated works and clear back t
     anime_image_url: '無圖片', premiere_date: '一', premiere_time: '20:00', story: '搜尋測試',
   });
   const shared = record(8001, '共用作品', 'Shared work');
+  const ancient = record(8002, '遠古作品', 'Ancient work');
+  const index = JSON.parse(readFileSync('dist/search-index.json', 'utf8'));
+  index.entries = [
+    {identity: [shared.bangumi_id, shared.anime_name, shared.original_name, null], story: shared.story, quarters: ['2026_秋', '2025_夏']},
+    {identity: [ancient.bangumi_id, ancient.anime_name, ancient.original_name, null], story: ancient.story, quarters: ['2018_冬']},
+  ];
+  await page.route('**/search-index.json*', route => route.fulfill({contentType: 'application/json', body: JSON.stringify(index)}));
+  const requested = [];
   await page.route('**/data/*.json*', route => {
     const path = decodeURIComponent(new URL(route.request().url()).pathname);
+    requested.push(path);
     let records = [];
     if (path.endsWith('/2026_秋.json')) records = [shared];
     if (path.endsWith('/2025_夏.json')) records = [shared];
-    if (path.endsWith('/2018_冬.json')) records = [record(8002, '遠古作品', 'Ancient work')];
+    if (path.endsWith('/2018_冬.json')) records = [ancient];
     return route.fulfill({contentType: 'application/json', body: JSON.stringify({
       generated_at: '2026-10-15T08:00:00+08:00', anime_list: records,
     })});
@@ -40,5 +50,6 @@ test('keywords search historical quarters, merge repeated works and clear back t
   await expect(page.getByLabel('年份')).toBeEnabled();
   await expect(page.getByLabel('季節', {exact: true})).toBeEnabled();
   expect(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)).toBe(false);
+  expect([...new Set(requested)]).toEqual(['/data/2026_秋.json', '/data/2018_冬.json']);
   expect(errors).toEqual([]);
 });

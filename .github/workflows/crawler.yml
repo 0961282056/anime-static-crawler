@@ -29,6 +29,7 @@ jobs:
       prepared_sha: ${{ steps.base-sha.outputs.sha }}
       record_count: ${{ steps.crawl.outputs.record_count }}
       parse_failures: ${{ steps.crawl.outputs.parse_failures }}
+      partial_failures: ${{ steps.crawl.outputs.partial_failures }}
       failure_code: ${{ steps.failure-summary.outputs.failure_code }}
       failure_stage: ${{ steps.failure-summary.outputs.failure_stage }}
     env:
@@ -140,6 +141,16 @@ jobs:
             cloudinary_cache.json
           if-no-files-found: error
           retention-days: 7
+          overwrite: true
+
+      - name: Retain independent stage outcomes
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: update-stage-report-${{ github.run_id }}
+          path: audit-output/update-pipeline.json
+          retention-days: 30
+          if-no-files-found: ignore
           overwrite: true
 
       - name: Summarize the first failed crawler stage
@@ -386,6 +397,7 @@ jobs:
           DATA_CHANGED: ${{ needs.crawl-and-prepare.outputs.data_changed }}
           RECORD_COUNT: ${{ needs.crawl-and-prepare.outputs.record_count }}
           PARSE_FAILURES: ${{ needs.crawl-and-prepare.outputs.parse_failures }}
+          PARTIAL_FAILURES: ${{ needs.crawl-and-prepare.outputs.partial_failures }}
           FAILURE_CODE: ${{ needs.crawl-and-prepare.outputs.failure_code || needs.publish-data-pr.outputs.failure_code }}
           FAILURE_STAGE: ${{ needs.crawl-and-prepare.outputs.failure_stage || needs.publish-data-pr.outputs.failure_stage }}
           PR_URL: ${{ needs.publish-data-pr.outputs.pr_url }}

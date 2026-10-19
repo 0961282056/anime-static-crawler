@@ -267,3 +267,20 @@ def test_discord_network_error_does_not_expose_request_details(
         )
 
     assert webhook_url not in "".join(traceback.format_exception(error.value))
+
+
+def test_partial_stage_results_are_not_announced_as_complete_success():
+    from services.notifier import WorkflowOutcome, build_workflow_notification
+
+    result = build_workflow_notification(
+        WorkflowOutcome(
+            crawl_result="success",
+            publish_result="success",
+            data_changed=True,
+            pr_url="https://github.com/example/repo/pull/1",
+            partial_failures=2,
+        )
+    )
+    assert result.status == "PARTIAL"
+    assert "部分階段" in result.message
+    assert "PR" in result.message

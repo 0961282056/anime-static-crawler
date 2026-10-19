@@ -13,6 +13,8 @@ function createContext({storage = null, fetchImpl = null, html2canvas = null, na
       defaultYear: '2026',
       defaultSeason: '秋',
       buildVersion: 'test-build',
+      dataVersion: 'aaaaaaaaaaaaaaaa',
+      officialStorySources: JSON.stringify(Object.fromEntries(JSON.parse(readFileSync(new URL('../../services/reviewed_story_sources.json', import.meta.url), 'utf8')).map(row => [row.card_id, [row.subject_id, row.source_url]]))),
       availableData: JSON.stringify({ 2025: ['夏'], 2026: ['秋'] }),
     },
   };
@@ -108,7 +110,7 @@ function dataset(name, generatedAt = '2026-09-30T00:00:00+08:00') {
     schema_version: 1,
     generated_at: generatedAt,
     anime_list: [{
-      bangumi_id: `anime-${name}`,
+      bangumi_id: `anime-${Array.from(name).reduce((n, ch) => (n * 31 + ch.charCodeAt(0)) >>> 0, 0)}`,
       anime_name: name,
       anime_image_url: `https://res.cloudinary.com/demo/image/upload/f_auto,q_auto:best/v1/anime_covers/${'a'.repeat(64)}`,
       premiere_date: '一',
@@ -116,6 +118,19 @@ function dataset(name, generatedAt = '2026-09-30T00:00:00+08:00') {
       story: `${name} story`,
     }],
   };
+}
+
+function searchIndexFor(quarters) {
+  const entries = new Map();
+  for (const [quarter, data] of Object.entries(quarters).sort(([a], [b]) => b.localeCompare(a))) {
+    for (const anime of data.anime_list) {
+      const identity = [anime.bangumi_id, anime.anime_name, anime.original_name || '', anime.external_ids?.bangumi || null];
+      const key = JSON.stringify(identity);
+      if (entries.has(key)) entries.get(key).quarters.push(quarter);
+      else entries.set(key, {identity, story: anime.story.normalize('NFKC').toLowerCase(), quarters: [quarter]});
+    }
+  }
+  return {schema_version: 1, data_version: 'aaaaaaaaaaaaaaaa', quarter_versions: Object.fromEntries(Object.keys(quarters).map(key => [key, 'a'.repeat(64)])), generated_at: '2026-09-30T00:00:00+08:00', entries: [...entries.values()]};
 }
 
 function responseFor(payload) {
@@ -757,7 +772,7 @@ test('keyword search covers every quarter, merges shared cards and clearing rest
   const calls = [];
   const {app} = createContext({fetchImpl: async url => {
     calls.push(url);
-    return responseFor(url.includes('2026_') ? recent : old);
+    return responseFor(url.startsWith('search-index') ? searchIndexFor({'2026_秋': recent, '2025_夏': old}) : url.includes('2026_') ? recent : old);
   }});
   app.year = '2026'; app.season = '秋';
   await app.loadData();
@@ -776,12 +791,13 @@ test('keyword search covers every quarter, merges shared cards and clearing rest
   assert.equal(app.rawAnimeList.length, 1);
   assert.equal(app.rawAnimeList[0].anime_name, 'shared');
   assert.equal(app.sourceQuarterLabel(app.rawAnimeList[0]), '');
-  assert.equal(calls.length, 2);
+  assert.equal(calls.length, 3);
 });
 
 test('a failed quarter cannot appear as complete global search and retry recovers', async () => {
   let failing = true;
   const {app} = createContext({fetchImpl: async url => {
+    if (url.startsWith('search-index')) return responseFor(searchIndexFor({'2026_秋': dataset('recent'), '2025_夏': dataset('old')}));
     if (url.includes('2025_') && failing) return errorResponse(503);
     return responseFor(dataset(url.includes('2025_') ? 'old' : 'recent'));
   }});
@@ -802,6 +818,7 @@ test('a failed quarter cannot appear as complete global search and retry recover
 test('clearing a keyword wins over an older pending global search', async () => {
   let resolveOld;
   const {app} = createContext({fetchImpl: async url => {
+    if (url.startsWith('search-index')) return responseFor(searchIndexFor({'2026_秋': dataset('recent'), '2025_夏': dataset('old')}));
     if (url.includes('2025_')) return new Promise(resolve => { resolveOld = resolve; });
     return responseFor(dataset('recent'));
   }});
@@ -819,18 +836,109 @@ test('clearing a keyword wins over an older pending global search', async () => 
   assert.equal(app.loadError, null);
 });
 
-test('global search bounds simultaneous quarter loads', async () => {
-  let active = 0; let maximum = 0; let calls = 0;
-  const {app} = createContext({fetchImpl: async () => {
-    active++; calls++; maximum = Math.max(maximum, active);
+test('indexed search bounds simultaneous matched-quarter loads', async () => {
+  let active = 0; let maximum = 0; const calls = [];
+  const quarters = Object.fromEntries(['2024_冬','2024_春','2024_夏','2024_秋','2025_冬','2025_春','2025_夏','2025_秋','2026_秋'].map((q, i) => [q, dataset(`shared-${i}`)]));
+  const {app} = createContext({fetchImpl: async url => {
+    calls.push(url);
+    if (url.startsWith('search-index')) return responseFor(searchIndexFor(quarters));
+    active++; maximum = Math.max(maximum, active);
     await nextTick(); active--;
-    return responseFor(dataset('shared'));
+    const key = url.split('/')[1].split('.json')[0];
+    return responseFor(quarters[key]);
   }});
   app.availableData = {2024: ['冬', '春', '夏', '秋'], 2025: ['冬', '春', '夏', '秋'], 2026: ['秋']};
   app.year = '2026'; app.season = '秋'; app.searchKeyword = 'shared';
   await app.loadData();
-  assert.equal(calls, 9);
+  assert.equal(calls.length, 10);
   assert.ok(maximum <= 4);
-  assert.equal(app.filteredAnime.length, 1);
-  assert.equal(app.filteredAnime[0].source_quarters.length, 9);
+  assert.equal(app.filteredAnime.length, 9);
+});
+
+test('a changed quarter hash invalidates a fresh dataset cache and changes its request URL', async () => {
+  const urls = [];
+  const {app} = createContext({fetchImpl: async url => {
+    urls.push(url);
+    return responseFor(dataset(`version-${urls.length}`));
+  }});
+  app.year = '2026'; app.season = '秋';
+  app.quarterVersions['2026_秋'] = 'a'.repeat(64);
+  await app.loadData();
+  await app.loadData();
+  assert.equal(urls.length, 1);
+  app.quarterVersions['2026_秋'] = 'b'.repeat(64);
+  await app.loadData();
+  assert.equal(urls.length, 2);
+  assert.match(urls[0], new RegExp('v=' + 'a'.repeat(64)));
+  assert.match(urls[1], new RegExp('v=' + 'b'.repeat(64)));
+  assert.equal(app.rawAnimeList[0].anime_name, 'version-2');
+});
+
+test('indexed search fetches no unrelated quarter and no quarter for zero matches', async () => {
+  const recent = dataset('recent'); const old = dataset('ancient'); const calls = [];
+  const {app} = createContext({fetchImpl: async url => {
+    calls.push(url);
+    if (url.startsWith('search-index')) return responseFor(searchIndexFor({'2026_秋': recent, '2025_夏': old}));
+    if (url.includes('2025_')) return responseFor(old);
+    throw new Error('Unrelated quarter must not be fetched');
+  }});
+  app.year = '2026'; app.season = '秋'; app.searchKeyword = 'ancient';
+  await app.loadData();
+  assert.equal(app.loadError, null);
+  assert.equal(app.filteredAnime[0].anime_name, 'ancient');
+  assert.equal(calls.length, 2);
+  app.searchKeyword = 'no match';
+  await app.loadData();
+  assert.equal(app.filteredAnime.length, 0);
+  assert.equal(calls.length, 2);
+});
+
+test('invalid index version, quarter references or duplicated identities fail closed', async () => {
+  for (const mutate of [index => {index.data_version = 'b'.repeat(16);}, index => {index.entries[0].quarters = ['../../private'];}, index => {index.entries.push(index.entries[0]);}]) {
+    const index = searchIndexFor({'2026_秋': dataset('recent'), '2025_夏': dataset('old')}); mutate(index);
+    let calls = 0;
+    const {app} = createContext({fetchImpl: async () => {calls++; return responseFor(index);}});
+    app.year = '2026'; app.season = '秋'; app.searchKeyword = 'story';
+    await app.loadData();
+    assert.equal(app.loadError.code, 'SEARCH_SCHEMA');
+    assert.equal(app.rawAnimeList.length, 0);
+    assert.equal(calls, 1);
+  }
+});
+
+test('retry refreshes release metadata after a data-only index version update', async () => {
+  const old = dataset('ancient'); const recent = dataset('recent');
+  const index = searchIndexFor({'2026_秋': recent, '2025_夏': old});
+  index.data_version = 'b'.repeat(16);
+  const calls = [];
+  const {app} = createContext({fetchImpl: async url => {
+    calls.push(url);
+    if (url.startsWith('release.json')) return responseFor({schema_version: 1, build_version: 'test-build', data_version: index.data_version, quarter_versions: index.quarter_versions});
+    if (url.startsWith('search-index')) return responseFor(index);
+    return responseFor(old);
+  }});
+  app.year = '2026'; app.season = '秋'; app.searchKeyword = 'ancient';
+  await app.loadData();
+  assert.equal(app.loadError.code, 'SEARCH_SCHEMA');
+  await app.retryLoad();
+  assert.equal(app.loadError, null);
+  assert.equal(app.dataVersion, 'b'.repeat(16));
+  assert.equal(app.filteredAnime[0].anime_name, 'ancient');
+  assert.equal(calls.filter(url => url.startsWith('search-index')).length, 2);
+});
+
+test('a late response from an older quarter version cannot overwrite the new cache', async () => {
+  const resolvers = [];
+  const {app} = createContext({fetchImpl: () => new Promise(resolve => resolvers.push(resolve))});
+  app.quarterVersions['2026_秋'] = 'a'.repeat(64);
+  const old = app.getDataset('2026_秋');
+  await nextTick();
+  app.quarterVersions['2026_秋'] = 'b'.repeat(64);
+  const current = app.getDataset('2026_秋');
+  await nextTick();
+  assert.equal(resolvers.length, 2);
+  resolvers[1](responseFor(dataset('new'))); await current;
+  resolvers[0](responseFor(dataset('old'))); await old;
+  assert.equal(app.dataCache['2026_秋'].anime_list[0].anime_name, 'new');
+  assert.equal(app.dataCache['2026_秋'].version, 'b'.repeat(64));
 });

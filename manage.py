@@ -68,6 +68,15 @@ def verify_dist(paths: ProjectPaths) -> None:
             built_headers.read_bytes() != expected_headers
         ):
             raise RuntimeError("dist/_headers does not match the source _headers")
+    from services.release_manifest import validate_release
+
+    validate_release(paths)
+    if (paths.output_dir / "search-index.json").exists():
+        from services.search_index import validate_search_index
+
+        validate_search_index(
+            paths, DataRepository(paths.data_dir, DataQualityPolicy())
+        )
     print(f"Verified deterministic static output: {len(source_hashes)} assets")
 
 
