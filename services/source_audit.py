@@ -484,6 +484,7 @@ def write_audit_report(report: dict, output: Path) -> str:
             "schema_version": 1,
             "assembled_at": report["observed_at"],
             "basis": "source_audit_with_retained_primary_evidence",
+            "content_fingerprint_kind": "sha256_of_sorted_json_or_quarter_html",
             "records": audit_evidence(report),
         },
     )

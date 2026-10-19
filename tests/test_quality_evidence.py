@@ -187,3 +187,43 @@ def test_reports_cannot_write_into_public_dist(tmp_path):
         write_quality_evidence(
             tmp_path, tmp_path / "data", tmp_path / "dist" / "evidence"
         )
+
+
+def test_dirty_data_report_preserves_exact_content_for_receipt_locators(
+    tmp_path, anime_record_factory
+):
+    import hashlib
+
+    from models import Anime, QuarterDataset
+
+    git(tmp_path, "init")
+    git(tmp_path, "config", "user.name", "Test")
+    git(tmp_path, "config", "user.email", "test@example.invalid")
+    data = tmp_path / "dist/data"
+    data.mkdir(parents=True)
+    dataset = QuarterDataset(
+        anime_list=[Anime(**anime_record_factory(1))],
+        generated_at="2026-10-19T00:00:00Z",
+    )
+    path = data / "2026_秋.json"
+    path.write_text(dataset.model_dump_json())
+    git(tmp_path, "add", ".")
+    git(tmp_path, "commit", "-m", "recorded data")
+    dataset.anime_list[0].story = "尚未提交的原始介紹"
+    path.write_text(dataset.model_dump_json())
+    output = tmp_path / "receipts"
+    before = path.read_bytes()
+    write_quality_evidence(tmp_path, data, output)
+    bundle = json.loads((output / "evidence.json").read_text())
+    assert bundle["data_matches_commit"] is False
+    snapshot = output / "dist/data/2026_秋.json"
+    assert (
+        bundle["data_snapshot_sha256"]["dist/data/2026_秋.json"]
+        == hashlib.sha256(snapshot.read_bytes()).hexdigest()
+    )
+    assert (
+        json.loads(snapshot.read_text())["anime_list"][0]["story"]
+        == dataset.anime_list[0].story
+    )
+    assert (output / "quality-trend.svg").is_file()
+    assert path.read_bytes() == before

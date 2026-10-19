@@ -447,12 +447,21 @@ def write_quality_evidence(
         raise ValueError("Evidence output must be outside public dist")
     documents, receipts = stored_evidence(data_dir)
     trend = quality_trend(root, documents, limit=history_limit)
+    commit = git(root, "rev-parse", "HEAD").decode().strip()
+    snapshots = {}
+    for quarter, document in documents.items():
+        relative = f"dist/data/{quarter}.json"
+        target = output / relative
+        atomic_write_json(target, document)
+        snapshots[relative] = hashlib.sha256(target.read_bytes()).hexdigest()
     bundle = {
         "schema_version": 1,
         "assembled_at": datetime.now(TAIPEI_TZ).isoformat(),
         "basis": "stored_evidence_not_a_new_source_verification",
-        "commit": git(root, "rev-parse", "HEAD").decode().strip(),
-        "data_sha256": {name: fingerprint(doc) for name, doc in documents.items()},
+        "commit": commit,
+        "data_matches_commit": documents == historical_documents(root, commit),
+        "data_snapshot_sha256": snapshots,
+        "content_fingerprint_kind": "sha256_of_sorted_json",
         "records": receipts,
     }
     atomic_write_json(output / "evidence.json", bundle)
