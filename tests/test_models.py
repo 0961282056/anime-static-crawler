@@ -64,6 +64,14 @@ def test_anime_normalizes_legacy_sunday_label() -> None:
     assert Anime.model_validate(payload).premiere_date == "日"
 
 
+@pytest.mark.parametrize("day", ["一至五", "不定期公開"])
+def test_anime_accepts_explicit_multiple_or_nonweekly_release(day):
+    assert (
+        Anime.model_validate({**_anime_payload(), "premiere_date": day}).premiere_date
+        == day
+    )
+
+
 @pytest.mark.parametrize("premiere_time", ("9:00", "30:00", "23:60", "明天"))
 def test_anime_rejects_invalid_broadcast_times(premiere_time: str) -> None:
     payload = _anime_payload()

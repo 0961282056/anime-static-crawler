@@ -51,7 +51,7 @@ class CrawlResult:
 
 def parse_date_time(anime: Anime) -> tuple[int, float, str, str]:
     if anime.premiere_date == "無首播日期":
-        return 8, float("inf"), anime.bangumi_id.casefold(), anime.anime_name.casefold()
+        return 9, float("inf"), anime.bangumi_id.casefold(), anime.anime_name.casefold()
     weekday = Config.WEEKDAY_MAP.get(anime.premiere_date, 7)
     if anime.premiere_time == "無首播時間":
         return weekday, 0.0, anime.bangumi_id.casefold(), anime.anime_name.casefold()

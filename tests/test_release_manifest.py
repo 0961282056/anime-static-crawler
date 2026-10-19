@@ -94,3 +94,16 @@ def test_search_index_merges_only_exact_versions_and_keeps_latest_copy(
     (p.output_dir / "search-index.json").write_text(json.dumps(result))
     with pytest.raises(RuntimeError, match="Search index"):
         validate_search_index(p, repo)
+
+
+def test_reviewed_broadcast_note_changes_invalidate_application_cache(
+    project_paths, monkeypatch
+):
+    import generate_static
+
+    monkeypatch.delenv("BUILD_VERSION", raising=False)
+    row = {"anime-1": {"display_note": "first"}}
+    monkeypatch.setattr(generate_static, "public_broadcast_sources", lambda: row)
+    before = compute_build_version(project_paths)
+    row["anime-1"]["display_note"] = "changed"
+    assert compute_build_version(project_paths) != before

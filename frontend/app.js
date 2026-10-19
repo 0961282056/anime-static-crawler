@@ -9,6 +9,7 @@ function animeApp() {
         buildVersion: appConfig.buildVersion,
         dataVersion: appConfig.dataVersion,
         quarterVersions: appConfig.quarterVersions,
+        reviewedBroadcastSources: appConfig.reviewedBroadcastSources,
         years: [],
         seasons: [],
 
@@ -51,7 +52,7 @@ function animeApp() {
             // A. 初始化年份選單
             this.years = Object.keys(this.availableData).sort((a, b) => b - a);
             const savedDay = this.readStorage(this.STORAGE_KEYS.FILTER_DAY);
-            this.filterDay = savedDay || '全部';
+            this.filterDay = Object.hasOwn(BROADCAST_DAY_LABELS, savedDay) ? savedDay : '全部';
 
             // --- 🟢 第一層 $nextTick: 等待年份選單就緒 ---
             this.$nextTick(() => {

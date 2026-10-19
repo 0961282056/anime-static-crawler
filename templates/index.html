@@ -15,7 +15,8 @@
      data-build-version="{{ build_version }}"
      data-data-version="{{ data_version }}"
      data-quarter-versions="{{ quarter_versions_json }}"
-     data-official-story-sources="{{ official_story_sources_json }}"></div>
+     data-official-story-sources="{{ official_story_sources_json }}"
+     data-reviewed-broadcast-sources="{{ reviewed_broadcast_sources_json }}"></div>
 <div x-data="animeApp" x-init="initApp" class="app-wrapper">
 
     <header class="site-header">
@@ -68,6 +69,9 @@
                         <option value="五">週五</option>
                         <option value="六">週六</option>
                         <option value="日">週日</option>
+                        <option value="一至五">週一至五（多日）</option>
+                        <option value="不定期公開">不定期公開</option>
+                        <option value="無首播日期">播出日待確認</option>
                     </select>
                 </div>
 
@@ -156,9 +160,13 @@
                             <h3 class="anime-title" x-text="anime.anime_name" @click="copyText(anime.anime_name)"></h3>
                             <div class="source-quarters" x-show="sourceQuarterLabel(anime)" x-text="sourceQuarterLabel(anime)"></div>
                             <div class="info-row">
-                                <span><i class="fas fa-calendar-alt"></i> <span x-text="anime.premiere_date || '?'"></span></span>
+                                <span><i class="fas fa-calendar-alt"></i> <span x-text="broadcastDayLabel(anime)"></span></span>
                                 <span><i class="fas fa-clock"></i> <span x-text="anime.premiere_time || '?'"></span></span>
                             </div>
+                            <p class="broadcast-note" x-show="broadcastNote(anime)">
+                                <span x-text="broadcastNote(anime)"></span>
+                                <a :href="broadcastSourceUrl(anime)" target="_blank" rel="noopener noreferrer">播出來源</a>
+                            </p>
                             
                             <div class="episode-info">
                                 <span class="episode-count" x-text="episodeCountLabel(anime)"></span>

@@ -653,3 +653,5 @@ body {
 .source-scope-note { color: #b8c3cf; line-height: 1.6; }
 .source-links { padding-left: 1.2rem; line-height: 1.8; overflow-wrap: anywhere; }
 .story-source { font-size: 0.78rem; line-height: 1.5; margin-bottom: 0.8rem; color: #a9d9e7; }
+.broadcast-note { font-size: 0.8rem; line-height: 1.6; color: #bbc9d6; overflow-wrap: anywhere; }
+.broadcast-note a { color: #a9d9e7; }

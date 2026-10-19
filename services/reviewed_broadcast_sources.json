@@ -22,5 +22,47 @@
     "excerpt": "第1話『ファンバーン／ゲソラマリ』7月10日（日）深夜4時5分～",
     "document_sha256": "b8eee8708418cc5f2d1fff3980140d8a918bc437a20e1c3f29659c32dd99133d",
     "scope_note": "官方明列本版本首播星期，保留公告季度、時間及所有集數欄位。2022-07-04公告首期第1話；按官方「日曜深夜」播出日歸屬，非2023續篇／現行重播表。"
+  },
+  {
+    "card_id": "anime-159",
+    "anime_name": "耐子的日常 新系列",
+    "original_name": "耐え子の日常 新シリーズ",
+    "subject_id": 316108,
+    "weekday": "一至五",
+    "source_url": "https://acgsecrets.hk/bangumi/202007/",
+    "checked_at": "2026-10-19T14:30:05.453752+08:00",
+    "excerpt": "（※本作一週五更(週一至週五各更一話)）",
+    "document_sha256": "5b19afe927ddb19847a12cf3b0aca86346f94711af916c5f849169253add80a0",
+    "source_kind": "primary_source",
+    "display_note": "週一至週五各更新一話。",
+    "scope_note": "來源同卡片明示週一至五；既有BG316108放送星期相符，未重選日期或重算集數。"
+  },
+  {
+    "card_id": "anime-1070",
+    "anime_name": "OniPan!",
+    "original_name": "おにぱん！",
+    "subject_id": 367727,
+    "weekday": "五",
+    "source_url": "https://acgsecrets.hk/bangumi/202204/",
+    "checked_at": "2026-10-19T14:30:09.691376+08:00",
+    "excerpt": "（日本4月11日起，週一到週五早上播放；串流網站集中每週五更新）",
+    "document_sha256": "6cfc347a7de988afec5c63c7d4ae82695c7819de9a3a3401030bd34961d1a786",
+    "source_kind": "primary_source",
+    "display_note": "本卡以12集週合集計數，週五串流更新；電視短篇於週一至五播出。",
+    "scope_note": "原來源明確區分電視每日與串流週合集；既有BG367727正篇12筆，1至12，單筆14分18秒、日期逐週。本卡保留12集口徑，星期以週合集串流五為準，不改成每日短篇或推算60集。"
+  },
+  {
+    "card_id": "anime-127",
+    "anime_name": "巨神與冰華之城",
+    "original_name": "巨神と氷華の城",
+    "subject_id": 303553,
+    "weekday": "不定期公開",
+    "source_url": "https://api.bgm.tv/v0/episodes?subject_id=303553&type=0&limit=100",
+    "checked_at": "2026-10-19T14:30:47.654757+08:00",
+    "excerpt": "2020-08-08, 2020-09-26, 2020-11-14, 2020-12-18",
+    "document_sha256": "a751c5e8eb7067de2665747475336a46213abea674561fab76ea22c94f5bfe5f",
+    "source_kind": "bangumi_api",
+    "display_note": "影片分次於網路公開，不是每週固定更新。",
+    "scope_note": "既有精確BG303553正篇4筆公開日間隔49、49、34日，不是固定每週放送。最後一筆為星期五，不把首支影片的星期六當固定星期。保留來源季度、4集及原有狀態，不推論完結。"
   }
 ]

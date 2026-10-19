@@ -264,3 +264,18 @@ def test_same_times_have_a_stable_id_and_name_tie_breaker() -> None:
         "anime-1",
         "anime-2",
     ]
+
+
+def test_multi_day_and_nonweekly_sort_without_becoming_sunday(anime_record_factory):
+    days = ["無首播日期", "不定期公開", "日", "五", "一至五"]
+    records = [
+        Anime.model_validate({**anime_record_factory(index + 1), "premiere_date": day})
+        for index, day in enumerate(days)
+    ]
+    assert [row.premiere_date for row in sorted(records, key=parse_date_time)] == [
+        "一至五",
+        "五",
+        "日",
+        "不定期公開",
+        "無首播日期",
+    ]

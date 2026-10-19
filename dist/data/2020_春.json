@@ -1917,7 +1917,7 @@
       "bangumi_id": "anime-127",
       "anime_name": "巨神與冰華之城",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ad546e8500bb23d53cf3b5e6142a0c09",
-      "premiere_date": "無首播日期",
+      "premiere_date": "不定期公開",
       "premiere_time": "無首播時間",
       "story": "舞台は長崎県南島原市。\r\n江戸時代初期、日本を揺るがした『島原の乱』で有名なこの地で、中学3年生の志郎は、学校の友人たちと変わりない日々を過ごしていた。\r\nそんな夏のある日、年上の幼なじみ茜が東京から帰郷する。\r\n同じく幼なじみの時八も連れて、市内を散策する志郎たち。\r\n懐かしさと複雑な想いが交差する中、突如目の前に現れたのは、ゴロンと名乗る不思議な生き物だった。\r\n小さな生き物ゴロンとの出会いが、この地に再び大事件を巻き起こす―。",
       "original_name": "巨神と氷華の城",
@@ -1950,7 +1950,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-18T17:31:23.371262+08:00",
+  "generated_at": "2026-10-19T14:36:39.826503+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202004/",
   "quality": {
     "source_count": 59,
@@ -1958,7 +1958,7 @@
     "parse_failure_count": 0,
     "fallback_id_count": 0,
     "missing_story_count": 4,
-    "missing_date_count": 1,
+    "missing_date_count": 0,
     "missing_time_count": 1
   }
 }

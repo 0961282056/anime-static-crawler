@@ -35,7 +35,7 @@ def write(repository, record):
     )
 
 
-@pytest.mark.parametrize("index", [0, 1])
+@pytest.mark.parametrize("index", range(len(broadcast_reviews())))
 def test_reviewed_weekday_survives_missing_source_fields_without_changing_episode_times(
     tmp_path, anime_record_factory, index
 ):
@@ -78,10 +78,12 @@ def test_conflicting_weekday_or_reused_card_does_not_overwrite_reviewed_date(
 @pytest.mark.parametrize(
     "changes",
     [
-        {"weekday": "一至五"},
+        {"weekday": "一至六"},
         {"subject_id": True},
         {"source_url": "https://user:pass@example.test/"},
         {"checked_at": "2026-10-19T12:00:00"},
+        {"display_note": 42},
+        {"display_note": " "},
     ],
 )
 def test_invalid_broadcast_evidence_is_rejected(tmp_path, monkeypatch, changes):
@@ -97,3 +99,14 @@ def test_invalid_broadcast_evidence_is_rejected(tmp_path, monkeypatch, changes):
                 reviews.broadcast_reviews()
     finally:
         reviews.broadcast_reviews.cache_clear()
+
+
+def test_first_write_cannot_replace_reviewed_scope_with_a_different_weekday(
+    tmp_path, anime_record_factory
+):
+    row = next(row for row in broadcast_reviews() if row["card_id"] == "anime-1070")
+    original = reviewed_record(row, anime_record_factory, weekday="一至五")
+    repository = DataRepository(tmp_path, DataQualityPolicy())
+    with pytest.raises(DataContractError, match="Reviewed broadcast weekday conflicts"):
+        write(repository, original)
+    assert not repository.quarter_path("2021", "秋").exists()

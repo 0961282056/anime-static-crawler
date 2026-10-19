@@ -25,6 +25,7 @@ from jinja2 import (
 from config import Config
 from models import TAIPEI_TZ
 from services.atomic_io import atomic_write_text
+from services.broadcast_source_reviews import public_broadcast_sources
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.diagnostics import RedactingFormatter, operation, run_command
 from services.errors import ConfigurationError
@@ -221,6 +222,7 @@ def compute_build_version(paths: ProjectPaths) -> str:
             digest.update(path.relative_to(paths.root).as_posix().encode("utf-8"))
             digest.update(path.read_bytes())
     digest.update(json.dumps(public_story_sources(), sort_keys=True).encode())
+    digest.update(json.dumps(public_broadcast_sources(), sort_keys=True).encode())
     return digest.hexdigest()[:12]
 
 
@@ -259,6 +261,9 @@ def render_index(
         build_version=compute_build_version(paths),
         data_version=inventory["data_version"],
         quarter_versions_json=json.dumps(inventory["quarter_versions"]),
+        reviewed_broadcast_sources_json=json.dumps(
+            public_broadcast_sources(), ensure_ascii=False
+        ),
         official_story_sources_json=json.dumps(
             public_story_sources(), ensure_ascii=False
         ),

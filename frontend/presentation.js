@@ -1,5 +1,29 @@
 // Requires: settings, schema, images
 const presentationMethods = {
+    broadcastDayLabel(anime) {
+        return Object.hasOwn(BROADCAST_DAY_LABELS, anime.premiere_date)
+            ? BROADCAST_DAY_LABELS[anime.premiere_date] : '播出日待確認';
+    },
+
+    reviewedBroadcast(anime) {
+        const row = this.reviewedBroadcastSources?.[anime.bangumi_id];
+        if (!row || row.anime_name !== anime.anime_name || row.original_name !== anime.original_name ||
+            row.subject_id !== anime.external_ids?.bangumi || row.weekday !== anime.premiere_date ||
+            typeof row.display_note !== 'string' || typeof row.source_url !== 'string') return null;
+        try {
+            const url = new URL(row.source_url);
+            return url.protocol === 'https:' && !url.username && !url.password && (!url.port || url.port === '443') ? row : null;
+        } catch { return null; }
+    },
+
+    broadcastNote(anime) {
+        return this.reviewedBroadcast(anime)?.display_note || '';
+    },
+
+    broadcastSourceUrl(anime) {
+        return this.reviewedBroadcast(anime)?.source_url || null;
+    },
+
     seasonLabel(season) {
         const monthBySeason = {'冬': 1, '春': 4, '夏': 7, '秋': 10};
         return `${season}(${monthBySeason[season]}月)`;
