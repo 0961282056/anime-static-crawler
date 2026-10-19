@@ -1,0 +1,70 @@
+{
+  "url": "https://zh.wikipedia.org/w/api.php?action=query&prop=info%7Crevisions&revids=84719819%7C94711468%7C94057307&rvprop=ids%7Ctimestamp&format=json&formatversion=2",
+  "status": 200,
+  "checked_at": "2026-10-19T12:39:38.158923+00:00",
+  "sha256": "20cfe79872828e2028e9def6e881fb333ab490346b744ac16d0b1b2159116783",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 2885063,
+          "ns": 0,
+          "title": "喷嚏大魔王",
+          "contentmodel": "wikitext",
+          "pagelanguage": "zh",
+          "pagelanguagehtmlcode": "zh",
+          "pagelanguagedir": "ltr",
+          "touched": "2026-10-02T15:03:04Z",
+          "lastrevid": 94711468,
+          "length": 35798,
+          "revisions": [
+            {
+              "revid": 94711468,
+              "parentid": 92767036,
+              "timestamp": "2026-10-02T15:03:04Z"
+            }
+          ]
+        },
+        {
+          "pageid": 6435576,
+          "ns": 0,
+          "title": "百慕達三角～多彩田園曲～",
+          "contentmodel": "wikitext",
+          "pagelanguage": "zh",
+          "pagelanguagehtmlcode": "zh",
+          "pagelanguagedir": "ltr",
+          "touched": "2026-09-27T02:20:46Z",
+          "lastrevid": 84719819,
+          "length": 7577,
+          "revisions": [
+            {
+              "revid": 84719819,
+              "parentid": 84487997,
+              "timestamp": "2024-10-25T07:53:53Z"
+            }
+          ]
+        },
+        {
+          "pageid": 7908798,
+          "ns": 0,
+          "title": "女學。",
+          "contentmodel": "wikitext",
+          "pagelanguage": "zh",
+          "pagelanguagehtmlcode": "zh",
+          "pagelanguagedir": "ltr",
+          "touched": "2026-10-10T23:04:36Z",
+          "lastrevid": 94057307,
+          "length": 43109,
+          "revisions": [
+            {
+              "revid": 94057307,
+              "parentid": 93589503,
+              "timestamp": "2026-08-26T18:25:45Z"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

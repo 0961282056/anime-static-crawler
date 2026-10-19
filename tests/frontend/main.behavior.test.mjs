@@ -33,6 +33,7 @@ function createContext({storage = null, fetchImpl = null, html2canvas = null, na
       defaultYear: '2026',
       defaultSeason: '秋',
       buildVersion: 'test-build',
+      wikipediaStories: JSON.stringify(Object.fromEntries(JSON.parse(readFileSync(new URL('../../services/reviewed_wikipedia_stories.json', import.meta.url), 'utf8')).map(row => [row.card_id, row]))),
       bangumiStoryExcerpts: JSON.stringify(Object.fromEntries(JSON.parse(readFileSync(new URL('../../services/reviewed_bangumi_story_excerpts.json', import.meta.url), 'utf8')).map(row => [row.card_id, row]))),
       dataVersion: 'aaaaaaaaaaaaaaaa',
       officialStorySources: JSON.stringify(Object.fromEntries(JSON.parse(readFileSync(new URL('../../services/reviewed_story_sources.json', import.meta.url), 'utf8')).map(row => [row.card_id, row.subject_id === null ? [null, row.source_url, row.anime_name, row.original_name] : [row.subject_id, row.source_url]]))),
@@ -1062,5 +1063,44 @@ test('reviewed Bangumi excerpts retain truthful attribution and exact scope', as
     current = {...record, ...change};
     await assert.rejects(app.fetchDatasetFromNetwork('2019_夏'), error => error.code === 'DATA_SCHEMA');
     assert.equal(app.storySourceUrl(current), null);
+  }
+});
+
+test('Wikipedia excerpts keep exact revisions, work identity and reuse attribution', async () => {
+  const rows = JSON.parse(readFileSync(new URL('../../services/reviewed_wikipedia_stories.json', import.meta.url), 'utf8'));
+  const dialogs = [];
+  let current;
+  const {app} = createContext({swal: {fire: options => dialogs.push(options)}, fetchImpl: async () => ({ok: true, json: async () => ({anime_list: [current]})})});
+  for (const row of rows) {
+    const record = {...dataset(row.anime_name).anime_list[0], bangumi_id: row.card_id,
+      original_name: row.original_name, story: row.story, external_ids: {bangumi: row.subject_id, anilist: row.anilist_id},
+      story_source: {provider: 'wikipedia', method: 'wikipedia_excerpt', subject_id: row.subject_id,
+        source_url: row.source_url, checked_at: row.checked_at, wikipedia: row.attribution}};
+    current = record;
+    assert.equal((await app.fetchDatasetFromNetwork('2026_秋')).anime_list[0].story, row.story);
+    assert.equal(app.storySourceUrl(record), row.source_url);
+    assert.match(app.storySourceLabel(record), /維基百科/);
+    assert.match(app.wikipediaCredit(record), new RegExp(String(row.attribution.revision_id)));
+    assert.equal(app.wikipediaContributorsUrl(record), row.attribution.contributors_url);
+    assert.equal(app.wikipediaLicenseUrl(record), 'https://creativecommons.org/licenses/by-sa/4.0/');
+    app.showStory(record.anime_name, record.story, record);
+    assert.match(dialogs.at(-1).text, /CC BY-SA 4.0/);
+    assert.ok(dialogs.at(-1).text.includes(row.source_url));
+    assert.equal(dialogs.at(-1).html, undefined);
+    for (const change of [
+      {original_name: '第一季'}, {anime_name: '母系列'}, {story: '母系列劇情'},
+      {external_ids: {bangumi: row.subject_id, anilist: 1}},
+      {story_source: {...record.story_source, provider: 'official'}},
+      {story_source: {...record.story_source, provider: 'bangumi'}},
+      {story_source: {...record.story_source, wikipedia: null}},
+      {story_source: {...record.story_source, source_url: 'https://example.com/'}},
+      ...['revision_id', 'contributors_url', 'license', 'license_url', 'changes'].map(key =>
+        ({story_source: {...record.story_source, wikipedia: {...row.attribution, [key]: 'invalid'}}})),
+    ]) {
+      current = {...record, ...change};
+      await assert.rejects(app.fetchDatasetFromNetwork('2026_秋'), error => error.code === 'DATA_SCHEMA');
+      assert.equal(app.storySourceUrl(current), null);
+      assert.equal(app.wikipediaCredit(current), '');
+    }
   }
 });

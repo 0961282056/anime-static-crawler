@@ -1,0 +1,9 @@
+{
+  "url": "https://graphql.anilist.co",
+  "method": "POST",
+  "query": "query { Page(page:1,perPage:50) { pageInfo {hasNextPage} media(type:ANIME,seasonYear:2018,season:WINTER) {id title{native} format startDate{year month day} siteUrl} } }",
+  "status": 403,
+  "checked_at": "2026-10-19T12:45:28.013335+00:00",
+  "sha256": "8d7d0de9cd3c2a0299889bcf8d9b9f13d5da30aae105c6213d39bed42761f6a0",
+  "cloudflare_block": true
+}

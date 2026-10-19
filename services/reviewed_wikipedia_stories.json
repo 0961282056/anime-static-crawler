@@ -1,0 +1,71 @@
+[
+  {
+    "card_id": "anime-354",
+    "anime_name": "百慕達△～繽紛田園曲～",
+    "original_name": "バミューダトライアングル ～カラフル・パストラーレ～",
+    "subject_id": 257608,
+    "anilist_id": 104102,
+    "source_url": "https://zh.wikipedia.org/w/index.php?title=%E7%99%BE%E6%85%95%E9%81%94%E4%B8%89%E8%A7%92%EF%BD%9E%E5%A4%9A%E5%BD%A9%E7%94%B0%E5%9C%92%E6%9B%B2%EF%BD%9E&oldid=84719819&variant=zh-tw",
+    "story": "講述了五名人魚少女如何相遇，又是如何以偶像為奮鬥目標。",
+    "checked_at": "2026-10-19T12:40:04.319048+00:00",
+    "attribution": {
+      "page_title": "百慕達三角～多彩田園曲～",
+      "revision_id": 84719819,
+      "revision_at": "2024-10-25T07:53:53Z",
+      "contributors_url": "https://zh.wikipedia.org/w/index.php?title=%E7%99%BE%E6%85%95%E9%81%94%E4%B8%89%E8%A7%92%EF%BD%9E%E5%A4%9A%E5%BD%A9%E7%94%B0%E5%9C%92%E6%9B%B2%EF%BD%9E&action=history",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "原文連續片段節錄；僅移除排版空白與參考註號，未改寫。"
+    },
+    "first_air_date_text": "2019年1月12日",
+    "scope_note": "2019年獨立電視動畫；非先導者母系列，節錄導言中的故事片段。",
+    "html_sha256": "33eb8caff48441286cd202da01137e2fd41e3fc67b3d9b1904ca15a938fe9a79",
+    "story_sha256": "242bd3992824ffadf8867b3f93cecfda429100a8e0a311a91c0397994482369a"
+  },
+  {
+    "card_id": "anime-75",
+    "anime_name": "乞嚏大魔王2020",
+    "original_name": "ハクション大魔王2020",
+    "subject_id": 299687,
+    "anilist_id": null,
+    "source_url": "https://zh.wikipedia.org/w/index.php?title=%E5%96%B7%E5%9A%8F%E5%A4%A7%E9%AD%94%E7%8E%8B&oldid=94711468&variant=zh-tw#2020%E5%B9%B4%E5%8B%95%E7%95%AB%E7%89%88",
+    "story": "時隔50年，為了讓小呵欠成為女王，噴嚏大魔王決定讓她跟自己一樣去人間修行，這次的主人選擇了堅仔的孫子「與田山甘太郎」。",
+    "checked_at": "2026-10-19T12:40:04.859139+00:00",
+    "attribution": {
+      "page_title": "喷嚏大魔王",
+      "revision_id": 94711468,
+      "revision_at": "2026-10-02T15:03:04Z",
+      "contributors_url": "https://zh.wikipedia.org/w/index.php?title=%E5%96%B7%E5%9A%8F%E5%A4%A7%E9%AD%94%E7%8E%8B&action=history",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "原文連續片段節錄；僅移除排版空白與參考註號，未改寫。"
+    },
+    "first_air_date_text": "2020年4月11日",
+    "scope_note": "只取故事簡介下的2020年動畫版dd，不取1969版、2001衍生版或電視劇。",
+    "html_sha256": "66688e49202ab9206981ef9018ea4b990cb4285133ae9d9f51494a9eba9f226d",
+    "story_sha256": "09bc5725c64e8edaca191354d2d00deca0d585d1db52a49996ca98227b395194"
+  },
+  {
+    "card_id": "anime-1041",
+    "anime_name": "女學。II ～Lucky Stars～",
+    "original_name": "ガル学。II～Lucky Stars～",
+    "subject_id": 358514,
+    "anilist_id": null,
+    "source_url": "https://zh.wikipedia.org/w/index.php?title=%E5%A5%B3%E5%AD%B8%E3%80%82&oldid=94057307&variant=zh-tw#%E5%A5%B3%E5%AD%B8%E3%80%82%E2%85%A1%EF%BD%9ELucky_Stars%EF%BD%9E",
+    "story": "少女劇場舉行的Girls²「ツナグツナグ」演唱會成為傳說的數年後。6位少女們為了轉入「聖女斯克威爾學院」，通稱「女學」，於養成所「ガルスタ」上學的故事。",
+    "checked_at": "2026-10-19T12:40:05.493997+00:00",
+    "attribution": {
+      "page_title": "女學。",
+      "revision_id": 94057307,
+      "revision_at": "2026-08-26T18:25:45Z",
+      "contributors_url": "https://zh.wikipedia.org/w/index.php?title=%E5%A5%B3%E5%AD%B8%E3%80%82&action=history",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "原文連續片段節錄；僅移除排版空白與參考註號，未改寫。"
+    },
+    "first_air_date_text": "2022年1月10日",
+    "scope_note": "只取女學。Ⅱ～Lucky Stars～下動畫段落，不取第一部或真人連續劇故事。",
+    "html_sha256": "872027bd3e0bba6318c919e852627c297ada6acf87b4604c0c50753e53b12f1f",
+    "story_sha256": "c8fd5175b8ceedfef67cd1df999c895209de7747dc0a9cf81c70b38d870dabcd"
+  }
+]

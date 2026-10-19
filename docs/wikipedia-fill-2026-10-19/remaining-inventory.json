@@ -1,0 +1,32 @@
+{
+  "base_inventory": "../encyclopedia-recheck-2026-10-19/remaining.json",
+  "resolved_fields": [
+    {
+      "quarter": "2019_冬",
+      "card_id": "anime-354",
+      "field": "story"
+    },
+    {
+      "quarter": "2020_春",
+      "card_id": "anime-75",
+      "field": "story"
+    },
+    {
+      "quarter": "2022_冬",
+      "card_id": "anime-1041",
+      "field": "story"
+    }
+  ],
+  "remaining_stories": "remaining-stories.csv",
+  "unchanged_link_inventory": "../encyclopedia-recheck-2026-10-19/remaining-links.csv",
+  "counts": {
+    "quarters": 37,
+    "records": 2150,
+    "story": 98,
+    "weekday": 0,
+    "bangumi": 1,
+    "anilist": 1378,
+    "any_missing": 1395
+  },
+  "note": "Apply resolved_fields to the complete base inventory; remove empty records. Existing per-record source times remain historical."
+}

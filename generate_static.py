@@ -32,6 +32,7 @@ from services.diagnostics import RedactingFormatter, operation, run_command
 from services.errors import ConfigurationError
 from services.settings import CrawlerSettings, ProjectPaths
 from services.story_source_reviews import public_story_sources
+from services.wikipedia_story_reviews import public_wikipedia_stories
 
 logger = logging.getLogger(__name__)
 START_YEAR_ON_EMPTY = 2018
@@ -224,6 +225,7 @@ def compute_build_version(paths: ProjectPaths) -> str:
             digest.update(path.read_bytes())
     digest.update(json.dumps(public_story_sources(), sort_keys=True).encode())
     digest.update(json.dumps(public_bangumi_story_reviews(), sort_keys=True).encode())
+    digest.update(json.dumps(public_wikipedia_stories(), sort_keys=True).encode())
     digest.update(json.dumps(public_broadcast_sources(), sort_keys=True).encode())
     return digest.hexdigest()[:12]
 
@@ -271,6 +273,9 @@ def render_index(
         ),
         bangumi_story_excerpts_json=json.dumps(
             public_bangumi_story_reviews(), ensure_ascii=False
+        ),
+        wikipedia_stories_json=json.dumps(
+            public_wikipedia_stories(), ensure_ascii=False
         ),
     )
     output_path = paths.output_dir / "index.html"

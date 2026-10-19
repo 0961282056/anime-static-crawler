@@ -1,0 +1,146 @@
+[
+  {
+    "url": "https://zh.wikipedia.org/w/api.php?action=query&list=exturlusage&euquery=anilist.co%2Fanime%2F%2A&euprotocol=https&euprop=ids%7Ctitle%7Curl&eulimit=500&format=json",
+    "status": 200,
+    "checked_at": "2026-10-19T12:36:44.641593+00:00",
+    "sha256": "d2a234721765930ecef05674ce83232aba2ce9ce5c4365e74cd8fdc834955b0a",
+    "response": {
+      "error": {
+        "code": "badquery",
+        "info": "Invalid query.",
+        "*": "See https://zh.wikipedia.org/w/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of API deprecations and breaking changes."
+      },
+      "servedby": "mw-api-ext.eqiad.main-5564d958dd-gxnvw"
+    }
+  },
+  {
+    "url": "https://zh.wikipedia.org/w/api.php?action=query&list=exturlusage&euquery=www.anilist.co%2Fanime%2F%2A&euprotocol=https&euprop=ids%7Ctitle%7Curl&eulimit=500&format=json",
+    "status": 200,
+    "checked_at": "2026-10-19T12:36:44.864068+00:00",
+    "sha256": "91a10ebd05f9624d0ef65651a36822e8a0db00be4c5641d49965723655302cbf",
+    "response": {
+      "error": {
+        "code": "badquery",
+        "info": "Invalid query.",
+        "*": "See https://zh.wikipedia.org/w/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of API deprecations and breaking changes."
+      },
+      "servedby": "mw-api-ext.eqiad.main-5564d958dd-7b7r4"
+    }
+  },
+  {
+    "url": "https://zh.wikipedia.org/w/api.php?action=query&list=exturlusage&euquery=anilist.co&euprotocol=https&euprop=ids%7Ctitle%7Curl&eulimit=500&format=json",
+    "status": 200,
+    "checked_at": "2026-10-19T12:36:53.918232+00:00",
+    "sha256": "9951bb6309337f4867bf822d33ba8cbefff49e55053bc415077e565716f3f554",
+    "response": {
+      "batchcomplete": "",
+      "query": {
+        "exturlusage": [
+          {
+            "pageid": 7315488,
+            "ns": 0,
+            "title": "蘑菇的擬態日常",
+            "url": "https://anilist.co/review/5629"
+          },
+          {
+            "pageid": 8609971,
+            "ns": 6,
+            "title": "File:碰之道動畫主視覺圖.jpg",
+            "url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx165314-IbbZBxdZDhEm.jpg"
+          },
+          {
+            "pageid": 8785726,
+            "ns": 0,
+            "title": "白色閃電",
+            "url": "https://anilist.co/anime/137802/Baise-Shandian/"
+          },
+          {
+            "pageid": 254572,
+            "ns": 6,
+            "title": "File:小鬼迪克.jpg",
+            "url": "https://anilist.co/anime/7625/Fairy-Dick"
+          },
+          {
+            "pageid": 8789624,
+            "ns": 6,
+            "title": "File:Mugen Shinshi- Bouken Katsugeki-hen OVA.png",
+            "url": "https://anilist.co/anime/8162/Mugen-Shinshi-Bouken-Katsugekihen"
+          },
+          {
+            "pageid": 9485063,
+            "ns": 6,
+            "title": "File:Yamishibai.jpg",
+            "url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b19383-vmpqTraCFNRg.jpg"
+          },
+          {
+            "pageid": 9485841,
+            "ns": 6,
+            "title": "File:Kowabon.jpg",
+            "url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21224-eQoxsSrPZEA2.jpg"
+          },
+          {
+            "pageid": 9486378,
+            "ns": 6,
+            "title": "File:Sekai no Yamizukan.png",
+            "url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98442-h5y4xlfqjKmg.png"
+          },
+          {
+            "pageid": 9488874,
+            "ns": 6,
+            "title": "File:Siscon Onee-chan to Ki ni Shinai Imouto.jpg",
+            "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx104853-jwilH6QXYpGW.jpg"
+          },
+          {
+            "pageid": 9490526,
+            "ns": 6,
+            "title": "File:Tsuki ga kirei desu ne.jpg",
+            "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx96574-mEYUkUXt4vQe.jpg"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "url": "https://zh.wikipedia.org/w/api.php?action=query&list=exturlusage&euquery=anilist.co%2Fanime%2F&euprotocol=https&euprop=ids%7Ctitle%7Curl&eulimit=500&format=json",
+    "status": 200,
+    "checked_at": "2026-10-19T12:36:54.102456+00:00",
+    "sha256": "b81d4601ed7bc7478c45ea012a1a36b5916a7a97ea0d2d4c149dc26ba9df3b1c",
+    "response": {
+      "batchcomplete": "",
+      "query": {
+        "exturlusage": [
+          {
+            "pageid": 8785726,
+            "ns": 0,
+            "title": "白色閃電",
+            "url": "https://anilist.co/anime/137802/Baise-Shandian/"
+          },
+          {
+            "pageid": 254572,
+            "ns": 6,
+            "title": "File:小鬼迪克.jpg",
+            "url": "https://anilist.co/anime/7625/Fairy-Dick"
+          },
+          {
+            "pageid": 8789624,
+            "ns": 6,
+            "title": "File:Mugen Shinshi- Bouken Katsugeki-hen OVA.png",
+            "url": "https://anilist.co/anime/8162/Mugen-Shinshi-Bouken-Katsugekihen"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "url": "https://zh.wikipedia.org/w/api.php?action=query&list=exturlusage&euquery=anilist.co&euprotocol=http&euprop=ids%7Ctitle%7Curl&eulimit=500&format=json",
+    "checked_at": "2026-10-19T12:45:11.650290+00:00",
+    "status": 200,
+    "sha256": "0b9c86115a511a7042e2291c0bf9c3f4dc037f194da56a167b9cfcabf4a8b634",
+    "response": {
+      "batchcomplete": "",
+      "query": {
+        "exturlusage": []
+      }
+    }
+  }
+]

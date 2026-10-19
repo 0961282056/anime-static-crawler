@@ -1,6 +1,24 @@
 // Requires: settings, errors
 const OFFICIAL_STORY_SOURCES = JSON.parse(document.getElementById('app-config')?.dataset.officialStorySources || '{}');
 const BANGUMI_STORY_EXCERPTS = JSON.parse(document.getElementById('app-config')?.dataset.bangumiStoryExcerpts || '{}');
+const WIKIPEDIA_STORIES = JSON.parse(document.getElementById('app-config')?.dataset.wikipediaStories || '{}');
+
+function reviewedWikipediaStory(anime) {
+    const row = WIKIPEDIA_STORIES[anime.bangumi_id];
+    const source = anime.story_source;
+    const attribution = source?.wikipedia;
+    if (!row || !attribution || typeof attribution !== 'object' || Array.isArray(attribution)) return null;
+    return source.provider === 'wikipedia' && source.method === 'wikipedia_excerpt' &&
+        anime.anime_name === row.anime_name && anime.original_name === row.original_name &&
+        anime.story === row.story && anime.external_ids?.bangumi === row.subject_id &&
+        anime.external_ids?.anilist === row.anilist_id && source.subject_id === row.subject_id &&
+        source.source_url === row.source_url && source.source_snapshot_date == null &&
+        new Date(source.checked_at).getTime() === new Date(row.checked_at).getTime() &&
+        Object.keys(attribution).length === Object.keys(row.attribution).length &&
+        Object.entries(row.attribution).every(([key, value]) => key === 'revision_at'
+            ? new Date(attribution[key]).getTime() === new Date(value).getTime()
+            : attribution[key] === value) ? row : null;
+}
 
 function reviewedBangumiExcerpt(anime) {
     const row = BANGUMI_STORY_EXCERPTS[anime.bangumi_id];
@@ -68,9 +86,10 @@ function validateDataset(payload) {
             const source = item.story_source;
             const official = source?.provider === 'official' && source.method === 'manual_official' && officialStoryUrl(item) !== null;
             const excerpt = reviewedBangumiExcerpt(item);
+            const wikipedia = reviewedWikipediaStory(item) !== null;
             const bangumi = source?.provider === 'bangumi' && (['bangumi_api', 'bangumi_archive'].includes(source.method) || excerpt);
-            const validSubject = (Number.isInteger(source?.subject_id) && source.subject_id > 0) || (official && source.subject_id === null);
-            if (typeof source !== 'object' || Array.isArray(source) || (!official && !bangumi) || !validSubject || source.subject_id !== item.external_ids?.bangumi || (source.method === 'bangumi_archive' && (typeof source.source_snapshot_date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(source.source_snapshot_date)))) {
+            const validSubject = (Number.isInteger(source?.subject_id) && source.subject_id > 0) || ((official || wikipedia) && source.subject_id === null);
+            if (typeof source !== 'object' || Array.isArray(source) || (!official && !bangumi && !wikipedia) || (!wikipedia && source.wikipedia != null) || !validSubject || source.subject_id !== item.external_ids?.bangumi || (source.method === 'bangumi_archive' && (typeof source.source_snapshot_date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(source.source_snapshot_date)))) {
                 throw createDataError('DATA_SCHEMA', `第 ${index + 1} 筆動畫的簡介來源無法確認。`, {retryable: false});
             }
         }

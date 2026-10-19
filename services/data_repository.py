@@ -21,6 +21,7 @@ from services.episode_source_reviews import reviewed_source
 from services.errors import DataContractError
 from services.source_identity import conflicting_providers
 from services.story_source_reviews import reviewed_story
+from services.wikipedia_story_reviews import reviewed_wikipedia_story
 
 QUARTER_FILE_PATTERN = re.compile(r"^(\d{4})_(冬|春|夏|秋)\.json$")
 
@@ -260,6 +261,15 @@ class DataRepository:
                     old.story_source
                     and old.story_source.provider == "official"
                     and not reviewed_story(effective)
+                )
+                or (
+                    old.story_source
+                    and old.story_source.provider == "wikipedia"
+                    and (
+                        not reviewed_wikipedia_story(effective)
+                        or effective.story != old.story
+                        or effective.story_source != old.story_source
+                    )
                 )
                 or (
                     old.story_source

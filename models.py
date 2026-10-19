@@ -142,16 +142,41 @@ def _validated_broadcast_time(value: object) -> str:
     return text
 
 
+class WikipediaAttribution(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    page_title: str = Field(min_length=1)
+    revision_id: int = Field(gt=0, strict=True)
+    revision_at: datetime
+    contributors_url: str
+    license: Literal["CC BY-SA 4.0"]
+    license_url: Literal["https://creativecommons.org/licenses/by-sa/4.0/"]
+    changes: str = Field(min_length=1)
+
+    @field_validator("revision_at")
+    @classmethod
+    def aware_revision_at(cls, value: datetime) -> datetime:
+        if value.tzinfo is None:
+            raise ValueError("Wikipedia revision time must include timezone")
+        return value
+
+
 class StorySource(BaseModel):
     model_config = ConfigDict(extra="forbid")
-    provider: Literal["bangumi", "official"] = "bangumi"
+    provider: Literal["bangumi", "official", "wikipedia"] = "bangumi"
     subject_id: int | None = Field(gt=0, strict=True)
     checked_at: datetime
     method: Literal[
-        "bangumi_api", "bangumi_archive", "bangumi_excerpt", "manual_official"
+        "bangumi_api",
+        "bangumi_archive",
+        "bangumi_excerpt",
+        "manual_official",
+        "wikipedia_excerpt",
     ]
     source_url: str | None = Field(default=None, exclude_if=lambda value: value is None)
     source_snapshot_date: date | None = None
+    wikipedia: WikipediaAttribution | None = Field(
+        default=None, exclude_if=lambda value: value is None
+    )
 
     @field_validator("checked_at")
     @classmethod
@@ -162,7 +187,26 @@ class StorySource(BaseModel):
 
     @model_validator(mode="after")
     def archive_date_required(self) -> StorySource:
-        if self.provider == "official":
+        if self.wikipedia is not None and self.provider != "wikipedia":
+            raise ValueError("Wikipedia attribution requires the Wikipedia provider")
+        if self.provider == "wikipedia":
+            from services.wikipedia_story_reviews import (
+                wikipedia_evidence_matches,
+                wikipedia_story_reviews,
+            )
+
+            if (
+                not self.wikipedia
+                or self.wikipedia.revision_at > self.checked_at
+                or not any(
+                    wikipedia_evidence_matches(self, row)
+                    for row in wikipedia_story_reviews()
+                )
+            ):
+                raise ValueError(
+                    "Wikipedia excerpts require reviewed revision and attribution"
+                )
+        elif self.provider == "official":
             from services.story_source_reviews import story_reviews
 
             if (
@@ -183,7 +227,7 @@ class StorySource(BaseModel):
                 raise ValueError("Bangumi excerpts require reviewed source evidence")
         elif (
             self.subject_id is None
-            or self.method == "manual_official"
+            or self.method not in {"bangumi_api", "bangumi_archive"}
             or self.source_url is not None
         ):
             raise ValueError("Bangumi summaries require a Bangumi method")
@@ -241,6 +285,21 @@ class Anime(BaseModel):
             if not review or review["story"] != self.story:
                 raise ValueError(
                     "Bangumi excerpt must match its reviewed card and text"
+                )
+        if self.story_source and self.story_source.provider == "wikipedia":
+            from services.wikipedia_story_reviews import (
+                reviewed_wikipedia_story,
+                wikipedia_evidence_matches,
+            )
+
+            review = reviewed_wikipedia_story(self)
+            if (
+                not review
+                or review["story"] != self.story
+                or not wikipedia_evidence_matches(self.story_source, review)
+            ):
+                raise ValueError(
+                    "Wikipedia excerpt must match its reviewed work and text"
                 )
         return self
 
