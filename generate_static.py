@@ -24,7 +24,7 @@ from jinja2 import (
 
 from config import Config
 from models import TAIPEI_TZ
-from services.atomic_io import atomic_write_text
+from services.atomic_io import atomic_write_json, atomic_write_text
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.diagnostics import RedactingFormatter, operation, run_command
 from services.errors import ConfigurationError, SourceNotFoundError
@@ -371,6 +371,12 @@ def generate_static_files() -> None:
         sync_static_assets(paths)
     with operation("render", path=paths.output_dir / "index.html"):
         output_path = render_index(paths, repository, now)
+    from services.production_verification import release_commit
+
+    atomic_write_json(
+        paths.output_dir / "release.json",
+        {"schema_version": 1, "commit": release_commit(paths, os.environ)},
+    )
     logger.info("Static site generated: %s", output_path)
     if crawl_summary is not None:
         with operation("summary"):

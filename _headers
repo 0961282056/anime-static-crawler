@@ -9,6 +9,9 @@
 /index.html
   Cache-Control: no-cache
 
+/release.json
+  Cache-Control: no-store
+
 /data/*
   Cache-Control: public, max-age=300, must-revalidate
 
