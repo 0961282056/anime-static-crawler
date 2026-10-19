@@ -40,6 +40,7 @@ class WorkflowOutcome:
     run_attempt: str = "1"
     failure_code: str = ""
     failure_stage: str = ""
+    partial_failures: int = 0
 
 
 def workflow_outcome_from_environment(
@@ -67,6 +68,7 @@ def workflow_outcome_from_environment(
         data_changed=changed_value == "true",
         record_count=nonnegative_integer("RECORD_COUNT"),
         parse_failures=nonnegative_integer("PARSE_FAILURES"),
+        partial_failures=nonnegative_integer("PARTIAL_FAILURES"),
         pr_url=environment.get("PR_URL", "").strip(),
         run_url=environment.get("RUN_URL", "").strip(),
         event_name=environment.get("EVENT_NAME", "").strip(),
@@ -114,6 +116,10 @@ def build_workflow_notification(
             detail += "\n處理建議：先查看 crawl-and-prepare 中第一個失敗步驟；本次資料發布未確認完成。"
         else:
             detail += "\n處理建議：查看 publish-data-pr 的 PR 與必要檢查；本次合併未確認完成。"
+
+    if outcome.partial_failures:
+        success = False
+        detail += f"\n部分階段保留舊資料／延期 {outcome.partial_failures} 項；已完成的可靠更新仍依PR流程處理。請查看update-stage-report，勿視為所有來源查證成功。"
 
     metadata = f"觸發={outcome.event_name or 'unknown'}；執行嘗試={outcome.run_attempt}"
     timestamp = now or datetime.now(TAIPEI_TZ)

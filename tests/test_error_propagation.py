@@ -155,15 +155,12 @@ def test_static_crawl_orchestrator_re_raises_crawler_failure(
 ) -> None:
     failure = CrawlerError("simulated crawler failure")
 
-    class FailingCrawler:
-        def fetch_quarter(self, year: str, season: str) -> None:
-            raise failure
+    import services.update_pipeline as pipeline
 
-    monkeypatch.setattr(
-        anime_service_module.AnimeCrawlerService,
-        "from_environment",
-        classmethod(lambda cls: FailingCrawler()),
-    )
+    def fail_pipeline(*args, **kwargs):
+        raise failure
+
+    monkeypatch.setattr(pipeline, "run_update_pipeline", fail_pipeline)
     repository = DataRepository(
         project_paths.data_dir,
         DataQualityPolicy(),
@@ -246,6 +243,7 @@ def test_crawl_summary_is_published_only_after_the_full_build_succeeds(
         b"changed_quarters=2\n"
         b"record_count=321\n"
         b"parse_failures=4\n"
+        b"partial_failures=0\n"
     )
 
 
