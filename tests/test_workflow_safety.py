@@ -1,7 +1,12 @@
 from __future__ import annotations
 
+import os
 import re
 import shlex
+import shutil
+import subprocess
+import sys
+import textwrap
 from pathlib import Path
 
 import pytest
@@ -78,6 +83,122 @@ def test_quality_gate_pins_and_verifies_workflow_linters() -> None:
     assert quality.count("sha256sum --check --strict") == 2
     assert '"$actionlint" -shellcheck "$shellcheck"' in quality
     assert '"$shellcheck" --severity=warning build.sh' in quality
+
+
+def _quality_step_script(step_name: str) -> str:
+    gate = _job_section(_workflow("ci.yml"), "quality")
+    step = gate.split(f"- name: {step_name}\n", 1)[1].split("\n      - name:", 1)[0]
+    return textwrap.dedent(step.split("run: |\n", 1)[1])
+
+
+def test_required_quality_context_waits_for_both_platforms_without_skipping() -> None:
+    workflow = _workflow("ci.yml")
+    gate = _job_section(workflow, "quality")
+    windows = _job_section(workflow, "windows-static")
+    triggers = workflow.split("permissions:", 1)[0]
+    assert "pull_request:" in triggers and "push:" in triggers
+    assert "paths:" not in triggers and "paths-ignore:" not in triggers
+    assert "needs: [linux-quality, windows-static]" in gate
+    assert "if: always()" in gate
+    assert "continue-on-error:" not in workflow
+    assert "name: Windows static build" in windows
+    assert "if:" not in windows
+    assert "python -m pytest tests/test_static_build.py --no-cov" in windows
+    assert "LINUX_RESULT: ${{ needs.linux-quality.result }}" in gate
+    assert "WINDOWS_RESULT: ${{ needs.windows-static.result }}" in gate
+
+
+@pytest.mark.parametrize(
+    ("linux", "windows", "success"),
+    [
+        ("success", "success", True),
+        ("failure", "success", False),
+        ("success", "failure", False),
+        ("cancelled", "success", False),
+        ("success", "cancelled", False),
+        ("skipped", "success", False),
+        ("success", "skipped", False),
+        ("", "success", False),
+        ("success", "", False),
+    ],
+)
+def test_required_quality_gate_rejects_unsuccessful_platforms(linux, windows, success):
+    script = _quality_step_script("Require Linux and Windows success")
+    bash = shutil.which("bash")
+    if bash is None:
+        pytest.skip("The quality gate executes Bash on Ubuntu")
+    result = subprocess.run(
+        [bash, "-e", "-c", script],
+        env={**os.environ, "LINUX_RESULT": linux, "WINDOWS_RESULT": windows},
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert (result.returncode == 0) is success, result.stdout + result.stderr
+
+
+@pytest.mark.parametrize("receipt_commit", ["a" * 40, "b" * 40, None])
+def test_required_quality_gate_verifies_extracted_artifact_revision(
+    tmp_path, receipt_commit
+):
+    import json
+
+    if receipt_commit is not None:
+        receipt = tmp_path / "quality-receipt/nested/release.json"
+        receipt.parent.mkdir(parents=True)
+        receipt.write_text(json.dumps({"commit": receipt_commit}), encoding="utf-8")
+    script = _quality_step_script(
+        "Verify extracted release receipt belongs to this revision"
+    )
+    code = script.split("python3 - <<'PYTHON'\n", 1)[1].rsplit("\nPYTHON", 1)[0]
+    result = subprocess.run(
+        [sys.executable, "-c", code],
+        env={**os.environ, "RUNNER_TEMP": str(tmp_path), "GITHUB_SHA": "a" * 40},
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert (result.returncode == 0) is (receipt_commit == "a" * 40)
+
+
+def test_artifact_actions_keep_archives_and_same_run_digest_protection() -> None:
+    uploads = downloads = 0
+    for path in WORKFLOWS.glob("*.yml"):
+        workflow = path.read_text(encoding="utf-8")
+        references = list(
+            re.finditer(
+                r"uses: actions/(upload-artifact|download-artifact)@([^\s]+) # v(\d+)\.\d+\.\d+",
+                workflow,
+            )
+        )
+        assert len(references) == len(
+            re.findall(
+                r"uses: actions/(?:upload-artifact|download-artifact)@", workflow
+            )
+        )
+        for match in references:
+            action, revision, major = match.groups()
+            assert re.fullmatch(r"[a-f0-9]{40}", revision), path.name
+            step = re.split(
+                r"\n(?:      - |  [a-zA-Z])", workflow[match.end() :], maxsplit=1
+            )[0]
+            assert "name:" in step
+            if action == "upload-artifact":
+                uploads += 1
+                assert int(major) >= 7
+                assert "archive: true" in step
+            else:
+                downloads += 1
+                assert int(major) >= 8
+                assert "digest-mismatch: error" in step
+                for cross_run_input in (
+                    "github-token:",
+                    "repository:",
+                    "run-id:",
+                    "pattern:",
+                ):
+                    assert cross_run_input not in step, path.name
+    assert uploads and downloads
 
 
 @pytest.mark.parametrize(

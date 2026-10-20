@@ -38,7 +38,8 @@ jobs:
       - name: Verify native Windows staging, ACL inheritance and rollback
         run: python -m pytest tests/test_static_build.py --no-cov
 
-  quality:
+  linux-quality:
+    name: Linux quality
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
@@ -160,3 +161,56 @@ jobs:
             exit 1
           fi
           npm run test:e2e
+
+      - name: Prepare public release receipt for artifact compatibility check
+        run: |
+          mkdir -p "$RUNNER_TEMP/quality-artifact/nested"
+          cp dist/release.json "$RUNNER_TEMP/quality-artifact/nested/release.json"
+
+      - name: Upload Linux quality receipt
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          archive: true
+          name: quality-receipt-${{ github.run_id }}
+          path: ${{ runner.temp }}/quality-artifact/
+          if-no-files-found: error
+          retention-days: 7
+          overwrite: true
+
+  quality:
+    # Keep the required context stable while requiring both platforms to succeed.
+    needs: [linux-quality, windows-static]
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Require Linux and Windows success
+        env:
+          LINUX_RESULT: ${{ needs.linux-quality.result }}
+          WINDOWS_RESULT: ${{ needs.windows-static.result }}
+        run: |
+          if [[ "$LINUX_RESULT" != "success" || "$WINDOWS_RESULT" != "success" ]]; then
+            printf 'Required checks did not succeed: Linux=%s Windows=%s\n' "$LINUX_RESULT" "$WINDOWS_RESULT"
+            exit 1
+          fi
+
+      - name: Download Linux quality receipt from this run
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          digest-mismatch: error
+          name: quality-receipt-${{ github.run_id }}
+          path: ${{ runner.temp }}/quality-receipt/
+
+      - name: Verify extracted release receipt belongs to this revision
+        run: |
+          python3 - <<'PYTHON'
+          import json
+          import os
+          from pathlib import Path
+
+          receipt = Path(os.environ["RUNNER_TEMP"]) / "quality-receipt/nested/release.json"
+          release = json.loads(receipt.read_text(encoding="utf-8"))
+          if release["commit"] != os.environ["GITHUB_SHA"]:
+              raise SystemExit("Artifact receipt does not match the checked revision")
+          print("Linux and Windows passed; same-run artifact digest, extraction and revision verified")
+          PYTHON
