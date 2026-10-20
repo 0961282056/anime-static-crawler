@@ -1499,7 +1499,10 @@
       "https://bgm.tv/subject/297344",
       "https://github.com/bangumi/Archive/releases/download/archive/dump-2026-10-13.210353Z.zip"
     ],
-    "scope_note": "僅計算此精確綁定動畫條目的正篇；不合併其他季、網路版或特別篇。"
+    "scope_note": "僅計算此精確綁定動畫條目的正篇；不合併其他季、網路版或特別篇。",
+    "summary_scope": "requires_review",
+    "summary_reviewed_on": "2026-10-20",
+    "summary_evidence": "docs/high-priority-data-2026-10-20/story-scope.json"
   },
   {
     "card_id": "anime-181",

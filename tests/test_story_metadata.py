@@ -109,6 +109,43 @@ def test_existing_summary_is_never_replaced(anime):
     assert enrich(known) == known
 
 
+@pytest.mark.parametrize("method", ["bangumi_api", "bangumi_archive"])
+@pytest.mark.parametrize(
+    "provider_name", ["真・中華一番！ 第二期", "真・中華一番！第二期"]
+)
+def test_reviewed_story_scope_is_not_reopened_by_matching_provider_title(
+    anime_record_factory, method, provider_name
+):
+    from services.episode_metadata import subject_identity_matches
+
+    subject = json.loads(
+        (Path(__file__).parent / "fixtures/chuka-second-season-summary.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    subject["name"] = provider_name
+    record = Anime.model_validate(
+        {
+            **anime_record_factory(712, name="真·中華一番！第二季", story="暫無簡介"),
+            "bangumi_id": "anime-712",
+            "original_name": "真・中華一番！第二期",
+            "external_ids": {"bangumi": 297344},
+        }
+    )
+    # Reliable episode identity does not approve the generic story's scope.
+    assert subject_identity_matches(record, subject)
+    snapshot = date(2026, 10, 14) if method == "bangumi_archive" else None
+    assert (
+        enrich_story(record, subject, NOW, method=method, snapshot_date=snapshot)
+        == record
+    )
+    known = record.model_copy(update={"story": "既有可靠介紹"})
+    assert (
+        enrich_story(known, subject, NOW, method=method, snapshot_date=snapshot)
+        == known
+    )
+
+
 def test_recrawl_without_summary_preserves_official_excerpt(
     tmp_path, anime_record_factory
 ):
