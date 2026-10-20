@@ -279,3 +279,44 @@ def test_daily_review_reminders_have_no_source_or_production_access():
     ):
         assert "group: anime-source-review-writes" in source
         assert "cancel-in-progress: false" in source
+
+
+def test_crawler_preflight_build_and_validation_agree_across_processes(tmp_path):
+    import os
+    import shutil
+    import subprocess
+    import sys
+
+    workflow = _workflow("crawler.yml")
+    step = workflow.split("- name: Run pre-crawl quality gate", 1)[1].split(
+        "\n      - name:", 1
+    )[0]
+    commands = [line.strip() for line in step.split("run: |", 1)[1].splitlines()]
+    build = next(line for line in commands if "python generate_static.py" in line)
+    validate = next(
+        line for line in commands if "python manage.py validate-all" in line
+    )
+    output = tmp_path / "preflight"
+    shutil.copytree(ROOT / "dist" / "data", output / "data")
+    environment = os.environ.copy()
+    environment.pop("BUILD_VERSION", None)
+    environment.update(OUTPUT_DIR=str(output), BUILD_ONLY="false")
+    for command in (build, validate):
+        child_environment = environment.copy()
+        tokens = shlex.split(command)
+        while tokens and "=" in tokens[0]:
+            key, value = tokens.pop(0).split("=", 1)
+            child_environment[key] = value
+        assert tokens.pop(0) == "python"
+        if tokens[0] == "generate_static.py":
+            # A regression must fail before it can start a real crawl.
+            assert child_environment["BUILD_ONLY"] == "true"
+        result = subprocess.run(
+            [sys.executable, *tokens],
+            cwd=ROOT,
+            env=child_environment,
+            capture_output=True,
+            text=True,
+            timeout=60,
+        )
+        assert result.returncode == 0, result.stdout + result.stderr

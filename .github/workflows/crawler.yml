@@ -96,7 +96,7 @@ jobs:
           python -m pip_audit --require-hashes -r requirements-dev.txt
           python -m ruff check .
           python -m pytest
-          BUILD_ONLY=true BUILD_VERSION=preflight python generate_static.py
+          BUILD_ONLY=true python generate_static.py
           python manage.py validate-all
 
       - name: Crawl, validate, and build
