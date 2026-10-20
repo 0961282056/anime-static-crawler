@@ -1,0 +1,21 @@
+{
+  "card_id": "anime-712",
+  "before_story": "暫無簡介",
+  "baseline_would_fill": true,
+  "candidate_length": 339,
+  "baseline_commit": "385115e1af434a66d938aadd0f5681d45146f8ca",
+  "subject_id": 297344,
+  "source_url": "https://api.bgm.tv/v0/subjects/297344",
+  "provider_name": "真・中華一番！ 第二期",
+  "summary_sha256": "f8087b76d55dda73414d88f25777d5e8c62c3e85bbb9dc3a17d81c19fc142546",
+  "previous_decision": "version_specific_summary_evidence_insufficient",
+  "previous_evidence": "../wikipedia-fill-2026-10-19/remaining-stories.csv",
+  "first_season_comparison": {
+    "subject_id": 273834,
+    "source_url": "https://api.bgm.tv/v0/subjects/273834",
+    "summary_language": "Chinese",
+    "comparison": "Both describe the initial journey to find the eight legendary utensils; the second-season text is Japanese, not byte-identical."
+  },
+  "fixed_result": "keeps_missing_story; episode identity remains usable",
+  "restriction": "requires_review is tied to card ID, Chinese name, source original name and linked subject, independently of provider title changes"
+}
