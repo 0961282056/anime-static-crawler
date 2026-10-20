@@ -1,5 +1,7 @@
 # 缺漏資料補充與完整剩餘清單（2026-10-19）
 
+本目錄是該批歷史快照，以下統計不是目前缺漏。[remaining-weekdays.csv](remaining-weekdays.csv)及[needs-your-decision.md](needs-your-decision.md)的三筆播出範圍已由[PR #66查證](../broadcast-scopes-2026-10-19/README.md)解決，不再是待辦。最新統計與有效清單請從[文件入口](../README.md)接續；保留以下原始紀錄供追溯。
+
 基準 main `6a226385d6375b086dd917972f9e54a616a6282b`（PR #64），37 季、2,150 筆季度記錄。本批可依證據補入 3 筆簡介、2 筆播出星期。以下均以季度記錄計算，同作跨季副本分別計入。
 
 | 欄位 | 修正前缺漏 | 修正後缺漏 | 本批補入 |
