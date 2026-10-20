@@ -12,7 +12,7 @@
 | 簡介缺漏 | 98 |
 | 播出方式缺漏 | 0 |
 | Bangumi連結缺漏 | 1 |
-| AniList連結缺漏 | 1,378 |
+| AniList連結缺漏（可選，暫停主動補齊） | 1,378 |
 | 集數stale／conflict | 0／0 |
 
 數量按季度記錄計算，不是獨立作品數；不同欄位會重疊。後續資料有變動時，更新本表的基準及數量，其他入口只連結本頁，避免多份現況漂移。`python manage.py quality-report`可重算主要缺漏與刷新狀態；連結缺漏及品質歷史另見`python manage.py quality-evidence`產生的唯讀報告，產物位於忽略的`audit-output/quality/`。
@@ -33,6 +33,8 @@
 | 安排CSP及跨瀏覽器工作 | [改善計畫](CSP與跨瀏覽器改善計畫.md)；目前是計畫，尚未實作 |
 
 ## 資料補齊入口
+
+依使用者決定，[AniList自動API核對已停用](anilist-disabled-2026-10-20/README.md)，保留既有772筆連結與身分綁定；未連結數保留為可選覆蓋統計。季度來源與官方快照核對照常。
 
 [10/20資料庫連結查證與鍵盤修正](links-keyboard-2026-10-20/README.md)：37季來源頁無新增明示ID，Bangumi完整目錄與搜尋無原名精確匹配，AniList仍回Cloudflare 403；連結缺漏數未變。鍵盤操作與焦點修正的驗證結果見該批PR。
 

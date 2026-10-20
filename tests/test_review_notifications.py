@@ -148,6 +148,27 @@ def test_provider_failure_is_operations_issue_not_episode_approval(report):
     assert review_cases(report)[0]["fingerprint"] == case["fingerprint"]
 
 
+def test_configured_disable_does_not_close_or_notify_existing_review(report):
+    case = review_cases(report)[0]
+    existing = {"number": 5, "state": "open", "body": issue_body(case, RUN)}
+    client = Client([existing])
+    report["secondary_source"] = {
+        "provider": "anilist",
+        "state": "disabled",
+        "enabled": False,
+    }
+    report["identities"][0]["secondary"][0].update(
+        result="not_attempted",
+        reasons=["disabled_by_configuration"],
+        checked_at=None,
+        attempted_at=None,
+        observation=None,
+    )
+    assert publish(report, client)["candidates"] == 0
+    assert client.calls == []
+    assert existing["state"] == "open"
+
+
 def test_expired_snapshot_and_id_conflicts_have_official_links(report):
     row = report["identities"][0]
     row["secondary"] = []
