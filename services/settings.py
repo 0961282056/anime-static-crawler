@@ -147,6 +147,20 @@ class CrawlerSettings:
         return settings
 
 
+@dataclass(frozen=True)
+class SourceAuditSettings:
+    anilist_enabled: bool = False
+
+    @classmethod
+    def from_environment(cls) -> SourceAuditSettings:
+        value = os.getenv("SOURCE_AUDIT_ANILIST_ENABLED", "false").strip().lower()
+        if value not in {"true", "false"}:
+            raise ConfigurationError(
+                "SOURCE_AUDIT_ANILIST_ENABLED must be true or false"
+            )
+        return cls(anilist_enabled=value == "true")
+
+
 def required_cloudinary_credentials() -> dict[str, str]:
     names = (
         "CLOUDINARY_CLOUD_NAME",

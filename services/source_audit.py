@@ -26,7 +26,7 @@ from services.secondary_source import (
     SecondarySourceError,
     compare_secondary,
 )
-from services.settings import CrawlerSettings
+from services.settings import CrawlerSettings, SourceAuditSettings
 
 logger = logging.getLogger(__name__)
 
@@ -189,7 +189,12 @@ def run_source_audit(
     now: datetime | None = None,
     source_client: Any = None,
     secondary_client: Any = None,
+    anilist_enabled: bool | None = None,
 ) -> dict:
+    if anilist_enabled is None:
+        anilist_enabled = SourceAuditSettings.from_environment().anilist_enabled
+    if type(anilist_enabled) is not bool:
+        raise ValueError("anilist_enabled must be a boolean")
     now = now or datetime.now(TAIPEI_TZ)
     if now.tzinfo is None:
         raise ValueError("Audit time must include a timezone")
@@ -203,12 +208,19 @@ def run_source_audit(
         session.headers.update({"User-Agent": settings.source_user_agent})
         # Weekly audit has a separate budget: one bounded attempt per quarter.
         source_client = SourceClient(settings, session=session)
-    secondary_client = secondary_client or AniListClient()
+    if anilist_enabled and secondary_client is None:
+        secondary_client = AniListClient()
     report: dict = {
         "schema_version": 1,
         "observed_at": now.isoformat(),
         "mode": "read_only",
         "published_data_changed": False,
+        "secondary_source": {
+            "provider": "anilist",
+            "enabled": anilist_enabled,
+            "state": "enabled" if anilist_enabled else "disabled",
+            "reason": None if anilist_enabled else "disabled_by_configuration",
+        },
         "quarters": [],
         "identities": [],
         "errors": [],
@@ -317,7 +329,7 @@ def run_source_audit(
     observations: dict[int, dict] = {}
     failed: dict[int, str] = {}
     attempted_ids: set[int] = set()
-    for offset in range(0, len(ids), 40):
+    for offset in range(0, len(ids) if anilist_enabled else 0, 40):
         batch = ids[offset : offset + 40]
         attempted_ids.update(batch)
         try:
@@ -426,11 +438,18 @@ def run_source_audit(
                     else None,
                     checked_at=now.isoformat() if subject_id in observations else None,
                     source_snapshot_at=None,
-                    verification_method="graphql_api",
+                    verification_method="graphql_api"
+                    if anilist_enabled
+                    else "not_attempted",
                     scope="linked_entry_reported_total_and_status",
                     link_basis="explicit_quarter_source_or_stored_link",
                 )
-                if subject_id in failed:
+                if not anilist_enabled:
+                    comparison.update(
+                        result="not_attempted",
+                        reasons=["disabled_by_configuration"],
+                    )
+                elif subject_id in failed:
                     comparison.update(
                         result="fetch_failed"
                         if subject_id in attempted_ids
@@ -455,7 +474,9 @@ def run_source_audit(
             bool(row["manual_review"] and row["manual_review"]["due"])
             for row in report["identities"]
         ),
-        "anilist_subjects_requested": len(ids),
+        "anilist_api_enabled": anilist_enabled,
+        "anilist_subjects_eligible": len(ids),
+        "anilist_subjects_requested": len(ids) if anilist_enabled else 0,
         "anilist_subjects_attempted": len(attempted_ids),
         "anilist_subjects_observed": len(observations),
         "secondary_results_by_quarter_record": dict(
@@ -501,6 +522,13 @@ def write_audit_report(report: dict, output: Path) -> str:
         f"- {key}: {json.dumps(value, ensure_ascii=False)}"
         for key, value in summary.items()
     )
+    if report.get("secondary_source", {}).get("state") == "disabled":
+        lines.extend(
+            [
+                "",
+                "AniList 自動 API 核對已依設定停用；本次沒有送出 AniList 請求或完成第二來源查證。既有連結保留，停用不列為來源故障。",
+            ]
+        )
     for error in report["errors"]:
         lines.append(
             f"- 來源異常：{error['stage']}／{error['reason']}；回應：{json.dumps(error.get('response'), ensure_ascii=False)}"
@@ -539,6 +567,7 @@ def write_audit_report(report: dict, output: Path) -> str:
         for row in report["identities"]
         for comparison in row["secondary"]
         if comparison["result"] != "corroborated"
+        and comparison["reasons"] != ["disabled_by_configuration"]
     ]
     for row, comparison in secondary_rows[:40]:
         lines.append(

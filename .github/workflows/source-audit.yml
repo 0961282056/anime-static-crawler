@@ -34,9 +34,10 @@ jobs:
       - name: Install locked read-only dependencies
         run: python -m pip install --require-hashes -r requirements-canary.txt
 
-      - name: Compare all recorded quarters and explicit AniList subjects
+      - name: Compare recorded quarters and review official snapshots
         env:
           SOURCE_AUDIT_OUTPUT: audit-output
+          SOURCE_AUDIT_ANILIST_ENABLED: "false"
         run: python manage.py source-audit
 
       - name: Retain complete report including partial source failures

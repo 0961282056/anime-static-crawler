@@ -9,6 +9,7 @@ from services.errors import ConfigurationError
 from services.settings import (
     CrawlerSettings,
     ProjectPaths,
+    SourceAuditSettings,
     required_cloudinary_credentials,
 )
 
@@ -26,6 +27,24 @@ ENV_NAMES = (
     "QUALITY_MAX_FALLBACK_ID_RATIO",
     "CLOUDINARY_QUOTA_LIMIT_PERCENT",
 )
+
+
+def test_source_audit_disables_anilist_by_default(monkeypatch):
+    monkeypatch.delenv("SOURCE_AUDIT_ANILIST_ENABLED", raising=False)
+    assert SourceAuditSettings.from_environment().anilist_enabled is False
+
+
+@pytest.mark.parametrize("value, enabled", [("true", True), (" FALSE ", False)])
+def test_source_audit_accepts_explicit_boolean_setting(monkeypatch, value, enabled):
+    monkeypatch.setenv("SOURCE_AUDIT_ANILIST_ENABLED", value)
+    assert SourceAuditSettings.from_environment().anilist_enabled is enabled
+
+
+@pytest.mark.parametrize("value", ["", "yes", "1", "tru"])
+def test_source_audit_rejects_ambiguous_setting(monkeypatch, value):
+    monkeypatch.setenv("SOURCE_AUDIT_ANILIST_ENABLED", value)
+    with pytest.raises(ConfigurationError, match="must be true or false"):
+        SourceAuditSettings.from_environment()
 
 
 def _clear_settings(monkeypatch: pytest.MonkeyPatch) -> None:

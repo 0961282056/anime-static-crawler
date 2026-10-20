@@ -161,4 +161,4 @@ python cloudinary_cleaner.py ... Cloudinary retention；預設 dry-run
 
 ## 每週資料來源核對
 
-執行 `python manage.py source-audit` 可唯讀核對所有已收錄季度、產生官方人工快照複查清單，並用明確 AniList 連結交叉核對集數與狀態。報告位於忽略的 `audit-output/`；每週排程在 GitHub Actions 保存摘要與完整 artifact，另以 GitHub Issue 通知需人工複查或維運的問題，相同證據不重複提醒；超額候選存入持久待辦，`C 待查 YYYY-MM-DD` 可指定到期提醒。網站可查看來源方式、成功查證／最近嘗試時間與簡介來源。來源失敗與資料差異分開記錄，不自動覆蓋公開資料。審核回覆方式、規則與限制見[資料來源交叉核對與複查](docs/資料來源交叉核對與複查.md)。
+執行 `python manage.py source-audit` 可唯讀核對所有已收錄季度、產生官方人工快照複查清單，AniList 自動 API 核對預設停用，既有明確連結仍保留。報告位於忽略的 `audit-output/`；每週排程在 GitHub Actions 保存摘要與完整 artifact，另以 GitHub Issue 通知需人工複查或維運的問題，相同證據不重複提醒；超額候選存入持久待辦，`C 待查 YYYY-MM-DD` 可指定到期提醒。網站可查看來源方式、成功查證／最近嘗試時間與簡介來源。來源失敗與資料差異分開記錄，不自動覆蓋公開資料。審核回覆方式、規則與限制見[資料來源交叉核對與複查](docs/資料來源交叉核對與複查.md)。

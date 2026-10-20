@@ -410,7 +410,7 @@ def trend_svg(trend: dict) -> str:
     snapshots = trend["snapshots"]
     series = [
         ("missing_story", "簡介缺漏", "#bb86fc"),
-        ("missing_anilist", "AniList 未連結", "#64b5f6"),
+        ("missing_anilist", "AniList 未連結（可選）", "#64b5f6"),
         ("episode_evidence_missing", "集數查證時間缺漏", "#ffb74d"),
     ]
     parts = [

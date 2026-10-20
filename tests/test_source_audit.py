@@ -290,9 +290,11 @@ def save(repository, anime, year="2024", season="冬"):
     )
 
 
+@pytest.mark.parametrize("enable_via_env", [False, True])
 def test_full_audit_uses_explicit_missing_link_and_preserves_all_files(
-    tmp_path, anime, media
+    monkeypatch, tmp_path, anime, media, enable_via_env
 ):
+    monkeypatch.setenv("SOURCE_AUDIT_ANILIST_ENABLED", "true")
     repository = DataRepository(tmp_path / "data", DataQualityPolicy())
     no_link = anime.model_copy(update={"external_ids": ExternalIds(bangumi=10)})
     save(repository, no_link)
@@ -312,9 +314,14 @@ def test_full_audit_uses_explicit_missing_link_and_preserves_all_files(
         )
     )
     report = run_source_audit(
-        repository.data_dir, now=NOW, source_client=source, secondary_client=Provider()
+        repository.data_dir,
+        anilist_enabled=None if enable_via_env else True,
+        now=NOW,
+        source_client=source,
+        secondary_client=Provider(),
     )
     assert calls == [[20]]
+    assert report["secondary_source"]["enabled"] is True
     assert report["summary"]["records"] == 2
     assert report["summary"]["unique_identities"] == 1
     assert report["summary"]["coverage_differences"] == 2
@@ -345,6 +352,7 @@ def test_optional_availability_does_not_require_source_to_repeat_resolved_bg_id(
     )
     report = run_source_audit(
         repository.data_dir,
+        anilist_enabled=True,
         now=NOW,
         source_client=source,
         secondary_client=SimpleNamespace(fetch=lambda _: {}),
@@ -374,6 +382,7 @@ def test_failures_are_partial_report_not_false_coverage_or_freshness(tmp_path, a
 
     report = run_source_audit(
         repository.data_dir,
+        anilist_enabled=True,
         now=NOW,
         source_client=Source(),
         secondary_client=Provider(),
@@ -402,7 +411,11 @@ def test_changed_identity_does_not_inherit_new_source_link(tmp_path, anime):
             raise AssertionError("Changed identity must not gain a secondary link")
 
     report = run_source_audit(
-        repository.data_dir, now=NOW, source_client=source, secondary_client=Provider()
+        repository.data_dir,
+        anilist_enabled=True,
+        now=NOW,
+        source_client=source,
+        secondary_client=Provider(),
     )
     assert (
         report["identities"][0]["secondary_unavailable_reason"]
@@ -427,6 +440,7 @@ def test_conflicting_links_across_quarters_are_not_arbitrarily_selected(
     )
     report = run_source_audit(
         repository.data_dir,
+        anilist_enabled=True,
         now=NOW,
         source_client=source,
         secondary_client=SimpleNamespace(fetch=lambda _: {}),
@@ -471,6 +485,7 @@ def test_unattempted_batches_do_not_get_attempt_timestamps(tmp_path, anime):
 
     report = run_source_audit(
         repository.data_dir,
+        anilist_enabled=True,
         now=NOW,
         source_client=Source(),
         secondary_client=Provider(),
@@ -549,6 +564,7 @@ def test_audit_distinguishes_fresh_explicit_links_from_stored_ids(
 
     result = run_source_audit(
         repository.data_dir,
+        anilist_enabled=True,
         now=NOW,
         source_client=SimpleNamespace(fetch_quarter_html=source),
         secondary_client=SimpleNamespace(fetch=lambda _: {}),
@@ -562,3 +578,139 @@ def test_audit_distinguishes_fresh_explicit_links_from_stored_ids(
         "anilist_id": anilist_id,
     }
     assert path.read_bytes() == before
+
+
+@pytest.mark.parametrize("inject_client", [False, True])
+def test_default_disabled_audit_preserves_data_without_constructing_or_calling_api(
+    monkeypatch, tmp_path, anime, inject_client
+):
+    from services.review_notifications import review_cases
+
+    monkeypatch.delenv("SOURCE_AUDIT_ANILIST_ENABLED", raising=False)
+    repository = DataRepository(tmp_path / "data", DataQualityPolicy())
+    save(repository, anime)
+    before = {p: p.read_bytes() for p in repository.validate_all()}
+
+    def forbidden(*args, **kwargs):
+        raise AssertionError("Disabled AniList must never construct or call a client")
+
+    monkeypatch.setattr("services.source_audit.AniListClient", forbidden)
+    source_calls = []
+
+    def source(year, season):
+        source_calls.append((year, season))
+        return "https://acgsecrets.hk/bangumi/202401/", card(anime)
+
+    kwargs = (
+        {"secondary_client": SimpleNamespace(fetch=forbidden)} if inject_client else {}
+    )
+    report = run_source_audit(
+        repository.data_dir,
+        now=NOW,
+        source_client=SimpleNamespace(fetch_quarter_html=source),
+        **kwargs,
+    )
+    assert source_calls == [("2024", "冬")]
+    assert report["quarters"][0]["checked_at"] == NOW.isoformat()
+    assert report["secondary_source"]["state"] == "disabled"
+    summary = report["summary"]
+    assert summary["anilist_api_enabled"] is False
+    assert summary["anilist_subjects_eligible"] == 1
+    assert summary["anilist_subjects_requested"] == 0
+    assert summary["anilist_subjects_attempted"] == 0
+    assert summary["anilist_subjects_observed"] == 0
+    assert summary["errors"] == 0
+    comparison = report["identities"][0]["secondary"][0]
+    assert comparison["result"] == "not_attempted"
+    assert comparison["reasons"] == ["disabled_by_configuration"]
+    assert comparison["attempted_at"] is comparison["checked_at"] is None
+    assert comparison["observation"] is None
+    assert review_cases(report) == []
+    assert before == {p: p.read_bytes() for p in before}
+    content = write_audit_report(report, tmp_path / "report")
+    assert "已依設定停用" in content
+    receipts = json.loads((tmp_path / "report/evidence.json").read_text())["records"]
+    receipt = next(r for r in receipts if r["provider"] == "anilist")
+    assert receipt["state"] == "not_attempted"
+    assert receipt["reason"] == ["disabled_by_configuration"]
+    assert receipt["attempted_at"] is receipt["checked_at"] is None
+
+
+@pytest.mark.parametrize("offline", [False, True])
+def test_disabled_audit_cli_still_fails_on_primary_errors(
+    monkeypatch, tmp_path, anime, project_paths, offline
+):
+    import manage
+
+    repository = DataRepository(project_paths.data_dir, DataQualityPolicy())
+    save(repository, anime)
+    before = {p: p.read_bytes() for p in repository.validate_all()}
+    monkeypatch.setattr(manage.ProjectPaths, "from_environment", lambda: project_paths)
+    monkeypatch.setenv("SOURCE_AUDIT_OUTPUT", str(tmp_path / "report"))
+    monkeypatch.setenv("SOURCE_AUDIT_ANILIST_ENABLED", "false")
+
+    def source(*args):
+        if offline:
+            raise SourceFetchError("offline")
+        return "https://acgsecrets.hk/bangumi/202401/", card(anime)
+
+    monkeypatch.setattr(
+        "services.source_audit.SourceClient",
+        lambda *a, **kw: SimpleNamespace(fetch_quarter_html=source),
+    )
+    monkeypatch.setattr(
+        "services.source_audit.AniListClient", lambda: pytest.fail("API client created")
+    )
+    if offline:
+        with pytest.raises(SourceFetchError, match="incomplete"):
+            manage.execute_command("source-audit")
+    else:
+        manage.execute_command("source-audit")
+    report = json.loads((tmp_path / "report/source-audit.json").read_text())
+    assert report["summary"]["errors"] == int(offline)
+    assert all(error["stage"] == "quarter" for error in report["errors"])
+    assert report["summary"]["anilist_subjects_attempted"] == 0
+    assert before == {p: p.read_bytes() for p in before}
+
+
+def test_disabled_audit_keeps_offline_identity_conflicts_and_snapshot_reviews(
+    monkeypatch, tmp_path, anime
+):
+    from services.review_notifications import review_cases
+
+    repository = DataRepository(tmp_path / "data", DataQualityPolicy())
+    older = anime.model_copy(
+        update={
+            "episodes": anime.episodes.model_copy(
+                update={"checked_at": NOW - timedelta(days=100)}
+            )
+        }
+    )
+    save(repository, older)
+    save(
+        repository,
+        older.model_copy(update={"external_ids": ExternalIds(bangumi=10, anilist=21)}),
+        year="2025",
+    )
+    monkeypatch.setattr(
+        "services.source_audit.reviewed_source",
+        lambda _: {
+            "mode": "snapshot",
+            "metadata": {"source_urls": ["https://example.test/official"]},
+        },
+    )
+    source = SimpleNamespace(
+        fetch_quarter_html=lambda year, _: (
+            f"https://acgsecrets.hk/bangumi/{year}01/",
+            card(anime, anilist=20 if year == "2024" else 21),
+        )
+    )
+    report = run_source_audit(
+        repository.data_dir, now=NOW, source_client=source, anilist_enabled=False
+    )
+    assert report["identities"][0]["explicit_anilist_ids"] == [20, 21]
+    assert report["summary"]["manual_reviews_due"] == 1
+    assert {case["kind"] for case in review_cases(report)} == {
+        "identity_conflict",
+        "snapshot_due",
+    }
