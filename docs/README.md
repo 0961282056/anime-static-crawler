@@ -17,7 +17,7 @@
 
 數量按季度記錄計算，不是獨立作品數；不同欄位會重疊。後續資料有變動時，更新本表的基準及數量，其他入口只連結本頁，避免多份現況漂移。`python manage.py quality-report`可重算主要缺漏與刷新狀態；連結缺漏及品質歷史另見`python manage.py quality-evidence`產生的唯讀報告，產物位於忽略的`audit-output/quality/`。
 
-最近一次程式發布[PR #71](https://github.com/0961282056/anime-static-crawler/pull/71)修復來源改名可能繞過故事範圍限制；本地Python620、前端46、Chromium22項通過，2個Windows整合測試本地略過、原生Windows CI通過。[正式驗收](https://github.com/0961282056/anime-static-crawler/actions/runs/39367341619)確認44個公開檔案與該版本一致，包含首頁、搜尋索引、季度JSON及靜態資產。這是該版本的實際紀錄，不預先保證未來版本。
+[PR #71](https://github.com/0961282056/anime-static-crawler/pull/71)修復來源改名可能繞過故事範圍限制；本地Python620、前端46、Chromium22項通過，2個Windows整合測試本地略過、原生Windows CI通過。[正式驗收](https://github.com/0961282056/anime-static-crawler/actions/runs/39367341619)確認44個公開檔案與該版本一致，包含首頁、搜尋索引、季度JSON及靜態資產。這是該版本的實際紀錄，不預先保證未來版本。
 
 ## 開始工作
 
@@ -33,6 +33,8 @@
 | 安排CSP及跨瀏覽器工作 | [改善計畫](CSP與跨瀏覽器改善計畫.md)；目前是計畫，尚未實作 |
 
 ## 資料補齊入口
+
+[10/20資料庫連結查證與鍵盤修正](links-keyboard-2026-10-20/README.md)：37季來源頁無新增明示ID，Bangumi完整目錄與搜尋無原名精確匹配，AniList仍回Cloudflare 403；連結缺漏數未變。鍵盤操作與焦點修正的驗證結果見該批PR。
 
 先讀[最新高優先查證與範圍防護](high-priority-data-2026-10-20/README.md)，再查[98筆簡介清單](wikipedia-fill-2026-10-19/remaining-stories.csv)及[完整剩餘清單索引](wikipedia-fill-2026-10-19/remaining-inventory.json)。清單的來源時間屬原查證日期，本輪有新觀察才追加新時間。可用原文、百科固定修訂及來源授權規則見[維基百科補齊紀錄](wikipedia-fill-2026-10-19/README.md)。
 

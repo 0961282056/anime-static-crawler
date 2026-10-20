@@ -198,6 +198,8 @@ const presentationMethods = {
     },
 
     scrollToTop() {
+        const title = document.getElementById('pageTitle');
+        if (title) title.focus({preventScroll: true});
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 };

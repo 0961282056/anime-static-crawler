@@ -1,0 +1,11 @@
+{
+  "result": "http_403",
+  "observed_at": "2026-10-20T05:26:45.549807+00:00",
+  "endpoint": "https://graphql.anilist.co",
+  "explicit_existing_id": 101360,
+  "response": {
+    "http_status": 403,
+    "content_type": "text/html; charset=UTF-8",
+    "cloudflare_block_page": true
+  }
+}

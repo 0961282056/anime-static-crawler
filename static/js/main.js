@@ -877,6 +877,8 @@ const presentationMethods = {
     },
 
     scrollToTop() {
+        const title = document.getElementById('pageTitle');
+        if (title) title.focus({preventScroll: true});
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 };
@@ -1022,8 +1024,17 @@ const sharingMethods = {
         Swal.fire({toast: true, position: 'top', icon: 'success', title: '已加入', timer: 1000, showConfirmButton: false, background: '#2b2b2b', color: '#fff'});
     },
 
-    removeFromShare(index) {
+    removeFromShare(index, event) {
+        const restoreFocus = event && event.currentTarget === document.activeElement;
         this.shareList.splice(index, 1);
+        if (restoreFocus) {
+            this.$nextTick(() => {
+                const buttons = document.querySelectorAll('#shareListContainer .share-remove');
+                const target = buttons[Math.min(index, buttons.length - 1)]
+                    || document.getElementById('shareListTitle');
+                if (target) target.focus();
+            });
+        }
     },
 
     async generateShareImage() {

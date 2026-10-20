@@ -323,6 +323,8 @@ body {
 
 /* 移除按鈕 */
 .share-remove {
+    flex-shrink: 0;
+    padding: 0;
     width: 30px; /* 按鈕微縮 */
     height: 30px;
     background-color: #fff5f5;
@@ -464,7 +466,29 @@ body {
     cursor: pointer;
 }
 
-.anime-title:hover { text-decoration: underline; }
+.title-copy {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.title-copy:hover { text-decoration: underline; }
+
+.title-copy:focus-visible,
+.story-box:focus-visible,
+.share-remove:focus-visible,
+#backToTopBtn:focus-visible,
+#shareListTitle:focus,
+#pageTitle:focus {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
 
 .info-row {
     display: flex;
@@ -475,6 +499,10 @@ body {
 }
 
 .story-box {
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    text-align: left;
     margin-top: 10px;
     font-size: 1rem;
     color: #ccc;

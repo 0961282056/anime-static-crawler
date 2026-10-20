@@ -1,0 +1,13 @@
+{
+  "spec_revision": "23",
+  "observed_spec_revision": "23",
+  "observations_current": true,
+  "network_state": "enforced",
+  "allowed_required_hosts": [
+    "api.bgm.tv",
+    "graphql.anilist.co",
+    "acgsecrets.hk"
+  ],
+  "configuration_modified": false,
+  "configuration_write_capabilities": []
+}

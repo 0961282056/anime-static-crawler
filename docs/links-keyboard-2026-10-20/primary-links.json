@@ -1,0 +1,372 @@
+[
+  {
+    "quarter": "2018_冬",
+    "url": "https://acgsecrets.hk/bangumi/201801/",
+    "observed_at": "2026-10-20T05:27:03.371021+00:00",
+    "status": 200,
+    "sha256": "ad010d4a609bd00d3d43a38be9c5d04b9a8bca9ec028a9bbb41c0147eac67004",
+    "count": 59,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2018_夏",
+    "url": "https://acgsecrets.hk/bangumi/201807/",
+    "observed_at": "2026-10-20T05:27:03.372236+00:00",
+    "status": 200,
+    "sha256": "9a8d6b79f59501bb65a42d2113cf640ebfd3b4f00ef8fb030d42090157331877",
+    "count": 58,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2018_春",
+    "url": "https://acgsecrets.hk/bangumi/201804/",
+    "observed_at": "2026-10-20T05:27:03.373146+00:00",
+    "status": 200,
+    "sha256": "ac118e6af131ada583603b1d0643feefaf90dd2c59259c7977b51bafbc610f3f",
+    "count": 83,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2018_秋",
+    "url": "https://acgsecrets.hk/bangumi/201810/",
+    "observed_at": "2026-10-20T05:27:06.272868+00:00",
+    "status": 200,
+    "sha256": "ba22ee81705049a3c5c56c81b45b6bf08a65f189b0deee6a0a71e2f355c48a42",
+    "count": 66,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2019_冬",
+    "url": "https://acgsecrets.hk/bangumi/201901/",
+    "observed_at": "2026-10-20T05:27:06.888519+00:00",
+    "status": 200,
+    "sha256": "f049cba81206c92da2ef6fd02bf2acdd4f5109885f2fbb0a8f63c170085d05fa",
+    "count": 51,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2019_夏",
+    "url": "https://acgsecrets.hk/bangumi/201907/",
+    "observed_at": "2026-10-20T05:27:09.866923+00:00",
+    "status": 200,
+    "sha256": "4c0545f18f37ae9b1c0475e33fba526d168f73ad75ce09d0769f6153825da6d9",
+    "count": 44,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2019_春",
+    "url": "https://acgsecrets.hk/bangumi/201904/",
+    "observed_at": "2026-10-20T05:27:10.399203+00:00",
+    "status": 200,
+    "sha256": "d762fd151ddd9862bdd784eb43fa2732d50d89c72a13fc5a2bbc2df69e23c5b4",
+    "count": 51,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2019_秋",
+    "url": "https://acgsecrets.hk/bangumi/201910/",
+    "observed_at": "2026-10-20T05:27:11.536646+00:00",
+    "status": 200,
+    "sha256": "200d50e29cbde95ebe8319bfe9d0745396ff6eedf308c49443af52df2d10b8fc",
+    "count": 56,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2020_冬",
+    "url": "https://acgsecrets.hk/bangumi/202001/",
+    "observed_at": "2026-10-20T05:27:12.853558+00:00",
+    "status": 200,
+    "sha256": "f844775986ecb0544ba1d1582130e29dce03f7047a1bfba4308bc3cbd444f33e",
+    "count": 51,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2020_夏",
+    "url": "https://acgsecrets.hk/bangumi/202007/",
+    "observed_at": "2026-10-20T05:27:14.342939+00:00",
+    "status": 200,
+    "sha256": "5b19afe927ddb19847a12cf3b0aca86346f94711af916c5f849169253add80a0",
+    "count": 38,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2020_春",
+    "url": "https://acgsecrets.hk/bangumi/202004/",
+    "observed_at": "2026-10-20T05:27:16.092373+00:00",
+    "status": 200,
+    "sha256": "1b3be82265029e79949deca94ae9fb1e694e571e54a9bdd239f5710caf996d1b",
+    "count": 59,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2020_秋",
+    "url": "https://acgsecrets.hk/bangumi/202010/",
+    "observed_at": "2026-10-20T05:27:17.061901+00:00",
+    "status": 200,
+    "sha256": "aa19f0b19a82ef54dd58b011b46295284b3ff3253a6a7c17f33b76747681c05c",
+    "count": 58,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2021_冬",
+    "url": "https://acgsecrets.hk/bangumi/202101/",
+    "observed_at": "2026-10-20T05:27:17.648810+00:00",
+    "status": 200,
+    "sha256": "dade6653a4d4b3b7c9a739c3f5f00d9f8a576a8fe6d6115d7b51c96740ccd04f",
+    "count": 62,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2021_夏",
+    "url": "https://acgsecrets.hk/bangumi/202107/",
+    "observed_at": "2026-10-20T05:27:21.070659+00:00",
+    "status": 200,
+    "sha256": "c66046ea5472716c686569dba77bc321b252504bba050bbceccfaebb6e4cb859",
+    "count": 45,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2021_春",
+    "url": "https://acgsecrets.hk/bangumi/202104/",
+    "observed_at": "2026-10-20T05:27:22.900718+00:00",
+    "status": 200,
+    "sha256": "8cbde87655ce95f3e3410e1a7a9ba04d262c1ce99297c493a5022a47e66eab15",
+    "count": 66,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2021_秋",
+    "url": "https://acgsecrets.hk/bangumi/202110/",
+    "observed_at": "2026-10-20T05:27:25.584816+00:00",
+    "status": 200,
+    "sha256": "e844d9b829654c4bd57875411d84abdcc3259790def24cfcc69a638e70ee8dd2",
+    "count": 52,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2022_冬",
+    "url": "https://acgsecrets.hk/bangumi/202201/",
+    "observed_at": "2026-10-20T05:27:26.176234+00:00",
+    "status": 200,
+    "sha256": "005a470466936a45db7298d460bf6753a412312b80e6c624a39b6cefa0929403",
+    "count": 43,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2022_夏",
+    "url": "https://acgsecrets.hk/bangumi/202207/",
+    "observed_at": "2026-10-20T05:27:28.776972+00:00",
+    "status": 200,
+    "sha256": "b924761f50bc66301876202447a9bc48b6ae7c67dfd9b07a9d8e8b14935a6793",
+    "count": 51,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2022_春",
+    "url": "https://acgsecrets.hk/bangumi/202204/",
+    "observed_at": "2026-10-20T05:27:29.940043+00:00",
+    "status": 200,
+    "sha256": "8908b72b7d8d515f7224133d010d0e2390eb7c8959dac864b28572143f9cad01",
+    "count": 54,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2022_秋",
+    "url": "https://acgsecrets.hk/bangumi/202210/",
+    "observed_at": "2026-10-20T05:27:30.582754+00:00",
+    "status": 200,
+    "sha256": "47f64d9cd2c883307632da947f2a0d074b34e613692656dfa4f5c35085860964",
+    "count": 56,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2023_冬",
+    "url": "https://acgsecrets.hk/bangumi/202301/",
+    "observed_at": "2026-10-20T05:27:34.876460+00:00",
+    "status": 200,
+    "sha256": "e64f6f762fe46965c0931bb176a05b3400bc517575e1e07fefbda0a0af5083a0",
+    "count": 62,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2023_夏",
+    "url": "https://acgsecrets.hk/bangumi/202307/",
+    "observed_at": "2026-10-20T05:27:35.899605+00:00",
+    "status": 200,
+    "sha256": "f7059851010ab7c2ea64d652c3a65a48e1d26d624f2ad06edb16086ed1e7e65d",
+    "count": 51,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2023_春",
+    "url": "https://acgsecrets.hk/bangumi/202304/",
+    "observed_at": "2026-10-20T05:27:36.937049+00:00",
+    "status": 200,
+    "sha256": "42caae67f55e336ed2a95d459f8a9dc0341bd03c9b088bc76fd2a2f424abdb5f",
+    "count": 54,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2023_秋",
+    "url": "https://acgsecrets.hk/bangumi/202310/",
+    "observed_at": "2026-10-20T05:27:43.072869+00:00",
+    "status": 200,
+    "sha256": "26577be83eaa0cf1e820f02edc16c38abcf93321f6918e1614bb2a2fff234df7",
+    "count": 74,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2024_冬",
+    "url": "https://acgsecrets.hk/bangumi/202401/",
+    "observed_at": "2026-10-20T05:27:45.210135+00:00",
+    "status": 200,
+    "sha256": "c9eb015f57c8b912d87e374772e28137d417970e300cf6ac9bc7f437b62700ad",
+    "count": 57,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2024_夏",
+    "url": "https://acgsecrets.hk/bangumi/202407/",
+    "observed_at": "2026-10-20T05:27:45.346462+00:00",
+    "status": 200,
+    "sha256": "7dc24929121a1caf5a371ba963a59ea8a5a1e0df466519057c28d97e081e26c2",
+    "count": 59,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2024_春",
+    "url": "https://acgsecrets.hk/bangumi/202404/",
+    "observed_at": "2026-10-20T05:27:51.850287+00:00",
+    "status": 200,
+    "sha256": "9e589010b4733e79df2fa340071377753609489809f33ec2b79b47f96fb587ca",
+    "count": 61,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2024_秋",
+    "url": "https://acgsecrets.hk/bangumi/202410/",
+    "observed_at": "2026-10-20T05:27:56.001607+00:00",
+    "status": 200,
+    "sha256": "86425160867a5b6c41d8486a178fdc4243c323ad8eda9dd28fea62795f0143a5",
+    "count": 74,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2025_冬",
+    "url": "https://acgsecrets.hk/bangumi/202501/",
+    "observed_at": "2026-10-20T05:27:56.212644+00:00",
+    "status": 200,
+    "sha256": "4b5e59fe838d2c611509d68ec40eddcd8f812c4d883c0eb36ca7745fa5c4373b",
+    "count": 65,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2025_夏",
+    "url": "https://acgsecrets.hk/bangumi/202507/",
+    "observed_at": "2026-10-20T05:27:58.432691+00:00",
+    "status": 200,
+    "sha256": "31838f1b7e8c6cfbecd80a5bf2dd9f0f6ce9e6f3c6ab6902cb9ce0c5861e1ed7",
+    "count": 74,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2025_春",
+    "url": "https://acgsecrets.hk/bangumi/202504/",
+    "observed_at": "2026-10-20T05:28:05.856369+00:00",
+    "status": 200,
+    "sha256": "cbdf8e7a310c58b44d490895cd91b8e5cda6f350e0ce3ab35754890f087319d8",
+    "count": 65,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2025_秋",
+    "url": "https://acgsecrets.hk/bangumi/202510/",
+    "observed_at": "2026-10-20T05:28:07.093744+00:00",
+    "status": 200,
+    "sha256": "448e58d2ca9fba4eee299e877977fca5ec57fc1ee8e2f41008ebb5dccd8a6782",
+    "count": 63,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2026_冬",
+    "url": "https://acgsecrets.hk/bangumi/202601/",
+    "observed_at": "2026-10-20T05:28:08.879583+00:00",
+    "status": 200,
+    "sha256": "5c65cb73aac819d62a908675de1d29381bf9ddd2176cb80863530770abbff404",
+    "count": 65,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2026_夏",
+    "url": "https://acgsecrets.hk/bangumi/202607/",
+    "observed_at": "2026-10-20T05:28:11.779059+00:00",
+    "status": 200,
+    "sha256": "1a3a5fbefe9c6db63b4795b9b7c78ef6649e28d622f396ddd4a3741c30edb48e",
+    "count": 75,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2026_春",
+    "url": "https://acgsecrets.hk/bangumi/202604/",
+    "observed_at": "2026-10-20T05:28:14.721202+00:00",
+    "status": 200,
+    "sha256": "ba323d2c6a110b06c15b6df1c7b280691b38433168c98e9319a34cec504b83a9",
+    "count": 71,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2026_秋",
+    "url": "https://acgsecrets.hk/bangumi/202610/",
+    "observed_at": "2026-10-20T05:28:16.704359+00:00",
+    "status": 200,
+    "sha256": "27185da3a7c3f805566589a4bdb4bbd9743c4d6663ffac552fce4afb27d9a9ea",
+    "count": 73,
+    "additions": [],
+    "conflicts": []
+  },
+  {
+    "quarter": "2027_冬",
+    "url": "https://acgsecrets.hk/bangumi/202701/",
+    "observed_at": "2026-10-20T05:28:20.704642+00:00",
+    "status": 200,
+    "sha256": "a0c5061d559a0c1f3d1dc7190b8b795fb22c326bc26b31ae9b0e2ea6bf4bcc59",
+    "count": 4,
+    "additions": [],
+    "conflicts": []
+  }
+]
