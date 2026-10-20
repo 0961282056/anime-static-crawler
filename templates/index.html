@@ -24,7 +24,7 @@
     <header class="site-header">
         <div class="container header-container">
             <div class="logo-area">
-                <h1 class="logo-text">📺 動畫新番資訊站</h1>
+                <h1 id="pageTitle" class="logo-text" tabindex="-1">📺 動畫新番資訊站</h1>
             </div>
         </div>
     </header>
@@ -96,22 +96,22 @@
                 </div>
 
                 <div class="share-widget">
-                    <h3 class="panel-title small"><i class="fas fa-list"></i> 分享清單</h3>
+                    <h3 id="shareListTitle" class="panel-title small" tabindex="-1"><i class="fas fa-list" aria-hidden="true"></i> 分享清單</h3>
                     <div id="shareListContainer">
                         <template x-if="shareList.length === 0">
                             <div class="empty-state" style="color:#888; text-align:center; padding:20px;">尚無內容</div>
                         </template>
                         
-                        <template x-for="(item, index) in shareList" :key="index">
+                        <template x-for="(item, index) in shareList" :key="item.name">
                             <div class="share-item">
                                 <img :src="item.img" loading="lazy" decoding="async" alt="">
                                 <div class="share-item-info">
                                     <div class="share-item-title" x-text="item.name"></div>
                                     <div x-text="item.date + ' ' + item.time"></div>
                                 </div>
-                                <div class="share-remove" @click="removeFromShare(index)" title="移除">
-                                    <i class="fas fa-trash-alt"></i>
-                                </div>
+                                <button type="button" class="share-remove" @click="removeFromShare(index, $event)" :aria-label="'從分享清單移除《' + item.name + '》'" title="移除">
+                                    <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                                </button>
                             </div>
                         </template>
                     </div>
@@ -159,7 +159,7 @@
                                  :alt="anime.anime_name || '動畫封面'">
                         </div>
                         <div class="card-body">
-                            <h3 class="anime-title" x-text="anime.anime_name" @click="copyText(anime.anime_name)"></h3>
+                            <h3 class="anime-title"><button type="button" class="title-copy" :aria-label="'複製《' + anime.anime_name + '》標題'" @click="copyText(anime.anime_name)" x-text="anime.anime_name"></button></h3>
                             <div class="source-quarters" x-show="sourceQuarterLabel(anime)" x-text="sourceQuarterLabel(anime)"></div>
                             <div class="info-row">
                                 <span><i class="fas fa-calendar-alt"></i> <span x-text="broadcastDayLabel(anime)"></span></span>
@@ -193,7 +193,7 @@
                                 </details>
                             </div>
 
-                            <div class="story-box" :title="anime.story" @click="showStory(anime.anime_name, anime.story, anime)" x-text="anime.story || '暫無簡介'"></div>
+                            <button type="button" class="story-box" aria-haspopup="dialog" :aria-label="'展開《' + anime.anime_name + '》簡介'" :title="anime.story" @click="showStory(anime.anime_name, anime.story, anime)" x-text="anime.story || '暫無簡介'"></button>
                             <a class="story-source" x-show="storySourceUrl(anime)" :href="storySourceUrl(anime)" target="_blank" rel="noopener noreferrer" x-text="storySourceLabel(anime)"></a>
                             <div class="wikipedia-credit" x-show="wikipediaCredit(anime)">
                                 <span x-text="wikipediaCredit(anime)"></span>
@@ -218,8 +218,8 @@
         </main>
     </div>
 
-    <button id="backToTopBtn" :class="{ 'show': showBackToTop }" @click="scrollToTop()">
-        <i class="fas fa-arrow-up"></i>
+    <button type="button" id="backToTopBtn" aria-label="回到頁面頂端" :class="{ 'show': showBackToTop }" @click="scrollToTop()">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 
 </div>
