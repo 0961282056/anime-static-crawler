@@ -204,8 +204,8 @@
           "https://bgm.tv/subject/569671",
           "https://bgm.tv/subject/569671/ep"
         ],
-        "checked_at": "2026-10-17T17:55:33.978391+08:00",
-        "attempted_at": "2026-10-17T17:55:33.978391+08:00",
+        "checked_at": "2026-10-20T11:22:49.641836+08:00",
+        "attempted_at": "2026-10-20T11:22:49.641836+08:00",
         "end_date": "2026-09-21",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -522,8 +522,8 @@
           "https://bgm.tv/subject/627648",
           "https://bgm.tv/subject/627648/ep"
         ],
-        "checked_at": "2026-10-19T03:21:24.546793+08:00",
-        "attempted_at": "2026-10-19T03:21:24.546793+08:00",
+        "checked_at": "2026-10-20T11:22:49.641836+08:00",
+        "attempted_at": "2026-10-20T11:22:49.641836+08:00",
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -652,8 +652,8 @@
           "https://bgm.tv/subject/558064",
           "https://bgm.tv/subject/558064/ep"
         ],
-        "checked_at": "2026-10-17T17:55:46.884606+08:00",
-        "attempted_at": "2026-10-17T17:55:46.884606+08:00",
+        "checked_at": "2026-10-20T11:22:49.641836+08:00",
+        "attempted_at": "2026-10-20T11:22:49.641836+08:00",
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1115,8 +1115,8 @@
           "https://bgm.tv/subject/511177",
           "https://bgm.tv/subject/511177/ep"
         ],
-        "checked_at": "2026-10-19T03:21:24.546793+08:00",
-        "attempted_at": "2026-10-19T03:21:24.546793+08:00",
+        "checked_at": "2026-10-20T11:22:49.641836+08:00",
+        "attempted_at": "2026-10-20T11:22:49.641836+08:00",
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1354,8 +1354,8 @@
           "https://bgm.tv/subject/613438",
           "https://bgm.tv/subject/613438/ep"
         ],
-        "checked_at": "2026-10-19T03:21:24.546793+08:00",
-        "attempted_at": "2026-10-19T03:21:24.546793+08:00",
+        "checked_at": "2026-10-20T11:22:49.641836+08:00",
+        "attempted_at": "2026-10-20T11:22:49.641836+08:00",
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1599,7 +1599,7 @@
       },
       "episodes": {
         "total_episodes": 10,
-        "aired_episodes": 8,
+        "aired_episodes": 9,
         "airing_status": "airing",
         "episode_count_status": "planned",
         "fetch_state": "ok",
@@ -1607,8 +1607,8 @@
           "https://bgm.tv/subject/530725",
           "https://bgm.tv/subject/530725/ep"
         ],
-        "checked_at": "2026-10-19T03:21:24.546793+08:00",
-        "attempted_at": "2026-10-19T03:21:24.546793+08:00",
+        "checked_at": "2026-10-20T11:22:49.641836+08:00",
+        "attempted_at": "2026-10-20T11:22:49.641836+08:00",
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -2019,11 +2019,11 @@
           "https://bgm.tv/subject/595106",
           "https://bgm.tv/subject/595106/ep"
         ],
-        "checked_at": "2026-10-13T20:52:04.176625+08:00",
-        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
+        "checked_at": "2026-10-20T11:22:49.641836+08:00",
+        "attempted_at": "2026-10-20T11:22:49.641836+08:00",
         "end_date": "2026-09-27",
-        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
-        "source_kind": "bangumi_html"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       },
       "story_source": {
         "provider": "bangumi",
@@ -2352,7 +2352,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-19T03:21:24.546793+08:00",
+  "generated_at": "2026-10-20T11:22:49.641836+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202607/",
   "quality": {
     "source_count": 75,
