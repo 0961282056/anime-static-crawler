@@ -82,18 +82,21 @@ const dataMethods = {
                 token: requestToken,
                 version,
                 promise: null,
+                subscribers: new Set(),
+                settled: false,
                 isAborted: () => requestController.signal.aborted,
                 abort: () => requestController.abort()
             };
             entry.promise = this.fetchDatasetFromNetwork(cacheKey, requestController.signal)
                 .then(data => {
                     const dataset = {...data, version: entry.version, cachedAt: Date.now()};
-                    if (entry.version === (this.quarterVersions[cacheKey] || this.dataVersion)) {
+                    if (!requestController.signal.aborted && entry.version === (this.quarterVersions[cacheKey] || this.dataVersion)) {
                         this.dataCache[cacheKey] = dataset;
                     }
                     return dataset;
                 })
                 .finally(() => {
+                    entry.settled = true;
                     const currentToken = this._pendingDataRequests.get(cacheKey);
                     if (currentToken === requestToken) {
                         this._pendingDataRequests.delete(cacheKey);
@@ -105,8 +108,8 @@ const dataMethods = {
             pending = entry;
         }
 
-        // 每個畫面請求都有自己的 abort signal；共用的網路 Promise 不會被舊請求取消。
-        return raceWithAbort(pending.promise, signal);
+        // Keep shared requests only while a consumer still needs them.
+        return subscribeToDataset(pending, signal);
     },
 
     setLastUpdateTime(generatedAt) {
@@ -158,17 +161,10 @@ const dataMethods = {
         this._activeLoadAbort = abortLoad;
 
         const searchingAll = this.searchKeyword.trim().length > 0;
+        this.resetVisibleAnime();
         const cacheKey = searchingAll ? '__all_quarters__' : `${this.year}_${this.season}`;
         const previousCacheKey = this._activeCacheKey;
         const keepPreviousData = previousCacheKey === cacheKey && this.rawAnimeList.length > 0;
-        if (this._activeCacheKey && this._activeCacheKey !== cacheKey) {
-            const pendingState = getPendingRequestState(this);
-            const previousToken = this._pendingDataRequests.get(this._activeCacheKey);
-            const previousPending = previousToken ? pendingState.get(previousToken) : null;
-            if (previousPending && !previousPending.isAborted()) {
-                previousPending.abort();
-            }
-        }
         this._activeCacheKey = cacheKey;
         this.writeStorage(this.STORAGE_KEYS.YEAR, this.year);
         this.writeStorage(this.STORAGE_KEYS.SEASON, this.season);

@@ -81,6 +81,8 @@ function createContext({storage = null, fetchImpl = null, html2canvas = null, na
       }
       return {
         style: {},
+        scrollWidth: 600,
+        scrollHeight: 1000,
         dataset: {},
         parentNode: null,
         appendChild() {},
@@ -1103,4 +1105,238 @@ test('Wikipedia excerpts keep exact revisions, work identity and reuse attributi
       assert.equal(app.wikipediaCredit(current), '');
     }
   }
+});
+
+test('cancelled global search releases its orphaned downloads without retries or caching', async () => {
+  const pending = [];
+  const quarters = {'2026_秋': dataset('recent'), '2025_夏': dataset('old')};
+  const {app} = createContext({fetchImpl: async (url, options) => {
+    if (url.startsWith('search-index')) return responseFor(searchIndexFor(quarters));
+    if (url.includes('2026_')) return responseFor(quarters['2026_秋']);
+    return new Promise((resolve, reject) => {
+      pending.push(options.signal);
+      options.signal.addEventListener('abort', () => reject(Object.assign(new Error('cancelled'), {name: 'AbortError'})), {once: true});
+    });
+  }});
+  app.year = '2026'; app.season = '秋';
+  await app.loadData();
+  app.searchKeyword = 'old';
+  const oldSearch = app.loadData();
+  while (!pending.length) await nextTick();
+  app.searchKeyword = '';
+  await app.loadData();
+  await oldSearch;
+  await nextTick();
+  assert.equal(pending[0].aborted, true);
+  assert.equal(app._pendingDataRequests.size, 0);
+  assert.equal(app.dataCache['2025_夏'], undefined);
+  assert.equal(app.rawAnimeList[0].anime_name, 'recent');
+});
+
+test('one cancelled subscriber preserves another, then the final cancellation releases the request', async () => {
+  const signals = [];
+  const {app} = createContext({fetchImpl: (url, options) => new Promise((resolve, reject) => {
+    signals.push(options.signal);
+    options.signal.addEventListener('abort', () => reject(Object.assign(new Error('cancelled'), {name: 'AbortError'})), {once: true});
+  })});
+  const first = new AbortController(); const second = new AbortController();
+  const a = app.getDataset('2026_秋', first.signal).catch(error => error.name);
+  const b = app.getDataset('2026_秋', second.signal).catch(error => error.name);
+  first.abort();
+  await nextTick();
+  assert.equal(signals.length, 1);
+  assert.equal(signals[0].aborted, false);
+  second.abort();
+  await Promise.all([a, b]); await nextTick();
+  assert.equal(signals[0].aborted, true);
+  assert.equal(app._pendingDataRequests.size, 0);
+});
+
+for (const stage of ['fonts', 'renderer', 'blob']) {
+  test(`stalled share ${stage} recovers the button and preserves the list`, async () => {
+    const alerts = [];
+    const renderer = () => stage === 'renderer' ? new Promise(() => {}) : {toBlob() {}};
+    const {app, context, button} = createContext({html2canvas: renderer, swal: {fire: options => alerts.push(options)}});
+    if (stage === 'fonts') context.document.fonts.ready = new Promise(() => {});
+    context.setTimeout = (callback, delay) => setTimeout(callback, delay >= 1000 ? 5 : delay);
+    app.shareList = [{name: 'kept', img: `https://res.cloudinary.com/demo/image/upload/v1/anime_covers/${'a'.repeat(64)}`}];
+    await Promise.race([app.generateShareImage(), new Promise((resolve, reject) => setTimeout(() => reject(new Error(`${stage} has no deadline`)), 100))]);
+    assert.equal(button.disabled, false);
+    assert.equal(button.innerHTML, '生成圖片');
+    assert.equal(app.shareList.length, 1);
+    assert.match(alerts.at(-1).text, /逾時/);
+  });
+}
+
+test('failed global-search worker cancels sibling downloads immediately', async () => {
+  const quarters = Object.fromEntries(['2024_冬','2024_春','2024_夏','2024_秋'].map((q, i) => [q, dataset(`shared-${i}`)]));
+  const pending = [];
+  let fail;
+  const {app} = createContext({fetchImpl: async (url, options) => {
+    if (url.startsWith('search-index')) return responseFor(searchIndexFor(quarters));
+    if (url.includes('2024_冬')) return new Promise(resolve => { fail = () => resolve(errorResponse(404)); });
+    return new Promise((resolve, reject) => {
+      pending.push(options.signal);
+      options.signal.addEventListener('abort', () => reject(Object.assign(new Error('cancelled'), {name: 'AbortError'})), {once: true});
+    });
+  }});
+  app.availableData = {2024: ['冬','春','夏','秋']};
+  app.year = '2024'; app.season = '冬'; app.searchKeyword = 'shared';
+  const load = app.loadData();
+  while (pending.length < 3) await nextTick();
+  fail(); await load; await nextTick();
+  assert.equal(app.loadError.code, 'HTTP_404');
+  assert.equal(app.rawAnimeList.length, 0);
+  assert.ok(pending.every(signal => signal.aborted));
+  assert.equal(app._pendingDataRequests.size, 0);
+});
+
+test('late response after cancellation cannot repopulate the cache', async () => {
+  let finish;
+  const {app} = createContext({fetchImpl: () => new Promise(resolve => { finish = resolve; })});
+  const controller = new AbortController();
+  const load = app.getDataset('2026_秋', controller.signal).catch(error => error.name);
+  controller.abort(); await load; await nextTick();
+  finish(responseFor(dataset('late'))); await nextTick();
+  assert.equal(app.dataCache['2026_秋'], undefined);
+  assert.equal(app._pendingDataRequests.size, 0);
+});
+
+function exportItem(name = 'original') {
+  return {name, img: `https://res.cloudinary.com/demo/image/upload/v1/anime_covers/${'a'.repeat(64)}`};
+}
+
+for (const height of [1000, 8000, 20000]) {
+  test(`share canvas bounds handle ${height}px content before rendering`, async () => {
+    const renders = []; const alerts = [];
+    const {app, context, button} = createContext({
+      html2canvas: (element, options) => { renders.push(options); throw new Error('stop after measuring'); },
+      swal: {fire: options => alerts.push(options)},
+    });
+    const create = context.document.createElement;
+    context.document.createElement = tag => ({...create(tag), scrollHeight: height});
+    app.shareList = [exportItem()];
+    await app.generateShareImage();
+    if (height > 16384) {
+      assert.equal(renders.length, 0);
+      assert.match(alerts[0].text, /分批匯出/);
+    } else {
+      assert.equal(renders.length, 1);
+      assert.ok(renders[0].scale >= 1 && renders[0].scale <= 3);
+      assert.ok(600 * height * renders[0].scale ** 2 <= 16000000 + 0.001);
+      assert.ok(height * renders[0].scale <= 16384);
+      if (height === 1000) assert.equal(renders[0].scale, 3);
+    }
+    assert.equal(button.disabled, false);
+    assert.equal(app.shareList.length, 1);
+  });
+}
+
+test('late toBlob callback after timeout cannot download or clear the list', async () => {
+  let finish;
+  let downloads = 0;
+  const {app, context, button} = createContext({html2canvas: () => ({toBlob(callback) { finish = callback; }})});
+  context.setTimeout = (callback, delay) => setTimeout(callback, delay >= 1000 ? 5 : delay);
+  context.window.URL = {createObjectURL() { downloads++; return 'blob:test'; }};
+  app.shareList = [exportItem()];
+  await app.generateShareImage();
+  finish({}); await nextTick();
+  assert.equal(downloads, 0);
+  assert.equal(app.shareList.length, 1);
+  assert.equal(button.disabled, false);
+});
+
+test('export snapshots the original list, deduplicates clicks and preserves newly added items', async () => {
+  let ready;
+  let renders = 0;
+  const {app, context} = createContext({
+    html2canvas: () => { renders++; return {toBlob(callback) { callback({}); }}; },
+    navigatorImpl: {clipboard: {write: async () => {}}},
+    swal: {fire() {}},
+  });
+  context.window.ClipboardItem = class {};
+  context.document.fonts.ready = new Promise(resolve => { ready = resolve; });
+  app.shareList = [exportItem()];
+  const first = app.generateShareImage();
+  await nextTick();
+  app.shareList.push(exportItem('added while preparing'));
+  await app.generateShareImage();
+  ready(); await first;
+  assert.equal(renders, 1);
+  assert.equal(app.shareList.length, 1);
+  assert.equal(app.shareList[0].name, 'added while preparing');
+  assert.equal(app._shareExportRunning, false);
+});
+
+test('scope proxies for one app share the same pending request', async () => {
+  const responses = [];
+  const {app} = createContext({fetchImpl: () => new Promise(resolve => { responses.push(resolve); })});
+  const scope = new Proxy(app, {});
+  const first = app.getDataset('2026_秋');
+  const second = scope.getDataset('2026_秋');
+  responses.forEach(resolve => resolve(responseFor(dataset('shared proxy'))));
+  const results = await Promise.all([first, second]);
+  assert.equal(responses.length, 1);
+  assert.equal(results[0], results[1]);
+  assert.equal(app._pendingDataRequests.size, 0);
+});
+
+test('rapid keyword replacement stops obsolete downloads and keeps four workers', async () => {
+  const old = ['2024_冬','2024_春','2024_夏','2024_秋'];
+  const recent = ['2025_冬','2025_春','2025_夏','2025_秋'];
+  const quarters = Object.fromEntries([...old, ...recent].map(q => [q, dataset(`${old.includes(q) ? 'obsolete' : 'latest'}-${q}`)]));
+  let active = 0; let maximum = 0; const started = [];
+  const {app} = createContext({fetchImpl: async (url, options) => {
+    if (url.startsWith('search-index')) return responseFor(searchIndexFor(quarters));
+    const key = url.split('/')[1].split('.json')[0];
+    started.push(key); active++; maximum = Math.max(maximum, active);
+    if (recent.includes(key)) { await nextTick(); active--; return responseFor(quarters[key]); }
+    return new Promise((resolve, reject) => options.signal.addEventListener('abort', () => {
+      active--; reject(Object.assign(new Error('cancelled'), {name: 'AbortError'}));
+    }, {once: true}));
+  }});
+  app.availableData = {2024: ['冬','春','夏','秋'], 2025: ['冬','春','夏','秋']};
+  app.year = '2025'; app.season = '秋'; app.searchKeyword = 'obsolete';
+  const previous = app.loadData();
+  while (started.length < 4) await nextTick();
+  app.searchKeyword = 'latest';
+  await app.loadData(); await previous; await nextTick();
+  assert.equal(maximum, 4);
+  assert.equal(active, 0);
+  assert.equal(app.filteredAnime.length, 4);
+  assert.equal(app._pendingDataRequests.size, 0);
+});
+
+test('share limits reject excess items before loading the renderer or covers', async () => {
+  const alerts = [];
+  const {app, scripts, button} = createContext({swal: {fire: options => alerts.push(options)}});
+  for (let i = 0; i < app.SHARE_MAX_ITEMS + 1; i++) app.addToShare({anime_name: `item-${i}`});
+  assert.equal(app.shareList.length, 20);
+  assert.match(alerts.at(-1).text, /20/);
+  app.shareList.push(exportItem('over limit'));
+  await app.generateShareImage();
+  assert.equal(scripts.length, 0);
+  assert.equal(button.disabled, false);
+  assert.equal(app._shareExportRunning, false);
+  assert.equal(app.shareList.length, 21);
+  assert.match(alerts.at(-1).text, /分批匯出/);
+});
+
+test('large global results render in batches while filters still see the complete result set', () => {
+  const {app} = createContext();
+  app.rawAnimeList = Array.from({length: 1560}, (_, i) => ({...dataset(`common-${i}`).anime_list[0], premiere_date: i >= 1500 ? '二' : '一'}));
+  app.searchKeyword = 'common';
+  assert.equal(app.filteredAnime.length, 1560);
+  assert.equal(app.visibleAnime.length, 60);
+  assert.equal(app.hasMoreAnime, true);
+  app.showMoreAnime();
+  assert.equal(app.visibleAnime.length, 120);
+  app.filterDay = '二'; app.saveFilterDay();
+  assert.equal(app.filteredAnime.length, 60);
+  assert.equal(app.visibleAnime.length, 60);
+  assert.equal(app.visibleAnime[0].anime_name, 'common-1500');
+  assert.equal(app.hasMoreAnime, false);
+  app.filterDay = '全部'; app.searchKeyword = '';
+  assert.equal(app.visibleAnime.length, 1560);
+  assert.equal(app.hasMoreAnime, false);
 });

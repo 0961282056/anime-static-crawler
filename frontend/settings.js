@@ -1,10 +1,17 @@
 // Requires: browser platform only
 const DATA_CACHE_TTL_MS = 5 * 60 * 1000;
+const SEARCH_PAGE_SIZE = 60;
 const FETCH_TIMEOUT_MS = 15 * 1000;
 const MAX_FETCH_RETRIES = 2;
 const RETRY_DELAYS_MS = [300, 700];
 const HTML2CANVAS_TIMEOUT_MS = 15 * 1000;
 const SHARE_IMAGE_TIMEOUT_MS = 15 * 1000;
+const SHARE_MAX_ITEMS = 20;
+const SHARE_CANVAS_MAX_PIXELS = 16000000;
+const SHARE_CANVAS_MAX_DIMENSION = 16384;
+const SHARE_FONT_TIMEOUT_MS = 15 * 1000;
+const SHARE_RENDER_TIMEOUT_MS = 30 * 1000;
+const SHARE_EXPORT_TIMEOUT_MS = 15 * 1000;
 const BROADCAST_DAY_LABELS = {
     '一': '週一', '二': '週二', '三': '週三', '四': '週四', '五': '週五', '六': '週六', '日': '週日',
     '一至五': '週一至五', '不定期公開': '不定期公開', '無首播日期': '播出日待確認'

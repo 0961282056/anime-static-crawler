@@ -1,10 +1,12 @@
 // Requires: settings, errors
 const pendingRequestStates = new WeakMap();
 function getPendingRequestState(owner) {
-    let state = pendingRequestStates.get(owner);
+    // Alpine may invoke methods through different scope proxies for one app.
+    const key = owner._pendingDataRequests;
+    let state = pendingRequestStates.get(key);
     if (!state) {
         state = new Map();
-        pendingRequestStates.set(owner, state);
+        pendingRequestStates.set(key, state);
     }
     return state;
 }
@@ -48,6 +50,25 @@ function raceWithAbort(promise, signal) {
             value => finish(resolve, value),
             error => finish(reject, error)
         );
+    });
+}
+function subscribeToDataset(entry, signal) {
+    const subscriber = Symbol('dataset-subscriber');
+    entry.subscribers.add(subscriber);
+    let released = false;
+    const release = () => {
+        if (released) return;
+        released = true;
+        entry.subscribers.delete(subscriber);
+        // A replacement load in the same turn may still need this request.
+        Promise.resolve().then(() => {
+            if (!entry.settled && entry.subscribers.size === 0) entry.abort();
+        });
+    };
+    if (signal) signal.addEventListener('abort', release, {once: true});
+    return raceWithAbort(entry.promise, signal).finally(() => {
+        if (signal) signal.removeEventListener('abort', release);
+        release();
     });
 }
 async function fetchWithDeadline(url, signal, readResponse = response => response, timeoutMs = FETCH_TIMEOUT_MS) {
