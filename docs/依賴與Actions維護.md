@@ -4,7 +4,7 @@
 
 ## Windows 與 Linux 都是合併條件
 
-`ci.yml` 的 `linux-quality` 執行完整 Linux 品質檢查，`windows-static` 實測 Windows 檔案替換、ACL 繼承與回復。既有 required context `quality` 等待兩者，透過 `if: always()` 明確檢查結果；任一 failure、cancelled、skipped 或缺少結果都失敗，只有兩者 success 才繼續。
+`ci.yml` 的 `linux-quality` 執行完整 Linux 品質檢查，`windows-static` 實測 Windows 檔案替換、ACL 繼承與回復，並驗證 Pillow 原生圖片格式及像素限制。既有 required context `quality` 等待兩者，透過 `if: always()` 明確檢查結果；任一 failure、cancelled、skipped 或缺少結果都失敗，只有兩者 success 才繼續。
 
 `quality` 另下載同次 Linux 工作上傳的公開 `release.json`，驗證 artifact digest、巢狀目錄解壓縮及 commit。這項實測不使用正式服務憑證、不執行爬蟲，也不操作 Cloudinary。
 
@@ -24,7 +24,7 @@ Actions 的 minor／patch 更新可分組；major 更新分開審查。沒有設
 
 Dependabot 原生支援 pip-compile 的 `.in` 與編譯輸出，實作可追查 [PipCompileFileUpdater](https://github.com/dependabot/dependabot-core/blob/main/python/lib/dependabot/python/file_updater/pip_compile_file_updater.rb)。CI 仍重編四份 lock 並比對，因此提案若漏更新相依 lock、Python 版本或編譯選項不符，不能直接合併；須修正產物並重新通過檢查。
 
-設定合併至預設分支後由 GitHub 讀取；首次實際 Dependabot 執行與更新 PR 仍待觀察，不將 schema 驗證當作遠端更新已完成。安全告警、平台端更新設定及實際可用性，亦須以 GitHub 觀察為準。
+2026-10-20 已觀察三類 Dependabot 動態工作成功，並建立更新 PR #77–#82；這些是實際更新提案，不等於已合併或已驗收。每份提案仍須通過完整 gate；安全告警、平台端更新設定及實際可用性以 GitHub 觀察為準。
 
 ## Actions 版本與相容性
 
@@ -69,3 +69,18 @@ Artifact 升級保留命名、overwrite、保留期限與原有工作分離：
 2. 修改 `frontend/` 時重新生成 `static/js/main.js`。驗證依賴圖、pip-audit／npm audit、Ruff、工作流程／shell、Python、前端及瀏覽器測試；缺少安全公告不當成安全證明。
 3. PR 的 Linux、Windows、彙總 `quality` 與 Cloudflare 預覽通過後合併，正式站版本、公開檔案及瀏覽器驗收再確認。
 4. 區分本地測試、PR、push、schedule、Dependabot 更新與正式維運案例。未實際觀察者保留待驗證，不發測試通知或動用正式圖片補足紀錄。
+
+
+## 安全稽核中止排程的處理
+
+[2026-10-21 04:23 的每日排程](https://github.com/0961282056/anime-static-crawler/actions/runs/39491545935)（schedule、PR #76 的 c7a5a91）在前置品質檢查失敗，抓取、資料 PR 與發布步驟未執行，錯誤通知成功。此流程未執行每週 AniList 核對。
+
+相同 main 鎖檔的本地 `pip-audit` 可重現非零退出：certifi 2026.6.17 的 PYSEC-2026-4320／[GHSA-6q48-6c7w-9gw2](https://github.com/advisories/GHSA-6q48-6c7w-9gw2)，以及 Pillow 12.3.0 的八項公告。certifi 公告發布於臺北時間 2026-10-21 03:35，早於這次 04:23 的排程；昨日通過的稽核不保證今日仍通過。這是已知漏洞檢查，不是已發生入侵的證據。
+
+原始 job 日誌重新導向的 productionresultssa14.blob.core.windows.net 當次遭環境拒絕；可確認失敗階段，並重現鎖檔阻塞，但未逐行讀到當次日誌，不冒稱取得原始完整錯誤輸出。
+
+修復由 [PR #82](https://github.com/0961282056/anime-static-crawler/pull/82) 接續 Pillow 提案：certifi 的安全最低版本登錄於共用 `requirements-build.in`，四份 lock 皆更新至 2026.10.19；Pillow 更新為 13.0.0（最低 13、上限 14）。只更新這兩個套件，依 canonical pip-compile 命令重建全部含 hash 鎖檔，並修正原提案未通過的 lock 一致性檢查。
+
+Pillow 13 不再支援 Python 3.10，專案既有基準為 3.11。核對[上游相容性變更](https://github.com/python-pillow/Pillow/blob/13.0.0/docs/releasenotes/13.0.0.rst)，並以真實 PNG／JPEG／WebP／GIF 位元組驗證既有辨識、原始內容／雜湊保存及像素上限，測試的上傳端為本地 mock；Windows 必要工作也執行同組圖片測試。安全稽核、hash 安裝、TLS 驗證、必要 gate 與通知規則保留。
+
+修復後依完整預檢、PR、原生 Windows、瀏覽器與正式站驗收判定；PR／push 成功不能當作下一次 schedule 已成功，也不為驗證手動觸發 crawler 或操作 Cloudinary。

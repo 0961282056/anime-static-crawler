@@ -1,4 +1,6 @@
 # Minimal dependencies required to validate data and build the static site.
+# Security minimum for the CA bundle used by requests.
+certifi>=2026.10.19
 Jinja2>=3.1.6,<4
 pydantic>=2.13.4,<3
 python-dotenv>=1.2.2,<2

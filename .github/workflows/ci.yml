@@ -38,6 +38,9 @@ jobs:
       - name: Verify native Windows staging, ACL inheritance and rollback
         run: python -m pytest tests/test_static_build.py --no-cov
 
+      - name: Verify native Pillow image formats and pixel limits
+        run: python -m pytest tests/test_image_store.py --no-cov
+
   linux-quality:
     name: Linux quality
     runs-on: ubuntu-24.04
