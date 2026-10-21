@@ -41,15 +41,16 @@ def _png_bytes() -> bytes:
 
 
 class _Downloader:
-    def __init__(self, content: bytes) -> None:
+    def __init__(self, content: bytes, content_type: str = "image/png") -> None:
         self.content = content
+        self.content_type = content_type
         self.calls: list[str] = []
 
     def download(self, source_url: str) -> DownloadedImage:
         self.calls.append(source_url)
         return DownloadedImage(
             content=self.content,
-            content_type="image/png",
+            content_type=self.content_type,
             final_url=source_url,
         )
 
@@ -169,13 +170,17 @@ def test_content_cache_hit_links_new_source_without_upload(
     assert store.cache.get(source_key) == cached_url
 
 
+@pytest.mark.parametrize("image_format", ["PNG", "JPEG", "WEBP", "GIF"])
 def test_upload_success_caches_content_and_source_keys(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
+    image_format: str,
 ) -> None:
-    source_url = "https://static.acgsecrets.hk/a.png"
-    content = _png_bytes()
-    downloader = _Downloader(content)
+    source_url = f"https://static.acgsecrets.hk/a.{image_format.lower()}"
+    buffer = io.BytesIO()
+    Image.new("RGB", (8, 8), (255, 0, 0)).save(buffer, format=image_format)
+    content = buffer.getvalue()
+    downloader = _Downloader(content, f"image/{image_format.lower()}")
     store = _store(tmp_path, monkeypatch, downloader=downloader)
     captured: dict[str, object] = {}
 
@@ -194,6 +199,7 @@ def test_upload_success_caches_content_and_source_keys(
 
     assert store.store(source_url, "Upload") == cloud_url
     digest = hashlib.sha256(content).hexdigest()
+    assert captured["payload"] == content
     assert captured["public_id"] == f"anime_covers/{digest}"
     assert captured["overwrite"] is False
     assert captured["timeout"] == store.settings.image_timeout_seconds
@@ -242,16 +248,18 @@ def test_invalid_downloaded_image_never_reaches_upload(
         store.store("https://static.acgsecrets.hk/a.png", "Invalid")
 
 
+@pytest.mark.parametrize("image_format", ["PNG", "JPEG", "WEBP", "GIF"])
 def test_oversized_pixel_dimensions_never_reach_upload(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
+    image_format: str,
 ) -> None:
     buffer = io.BytesIO()
-    Image.new("RGB", (11, 10), (255, 0, 0)).save(buffer, format="PNG")
+    Image.new("RGB", (11, 10), (255, 0, 0)).save(buffer, format=image_format)
     store = _store(
         tmp_path,
         monkeypatch,
-        downloader=_Downloader(buffer.getvalue()),
+        downloader=_Downloader(buffer.getvalue(), f"image/{image_format.lower()}"),
         settings=_settings(image_max_pixels=100),
     )
     monkeypatch.setattr(
