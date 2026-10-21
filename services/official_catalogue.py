@@ -14,6 +14,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from models import Anime, EpisodeMetadata
+from services.response_limits import bounded_response
 
 LIST_URL = "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list"
 TOKYO_TZ = ZoneInfo("Asia/Tokyo")
@@ -100,6 +101,8 @@ class NHKCatalogueClient:
                 url,
                 timeout=(5, 15),
                 allow_redirects=False,
+                stream=True,
+                hooks={"response": bounded_response(2 * 1024 * 1024)},
                 headers={"User-Agent": "anime-static-crawler/official-catalogue"},
             )
             try:

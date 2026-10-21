@@ -15,6 +15,7 @@ from urllib.parse import quote
 import requests
 
 from services.atomic_io import atomic_write_json
+from services.response_limits import bounded_response
 from services.settings import ProjectPaths
 
 SITE = "https://anime-static-crawler.pages.dev/"
@@ -77,6 +78,9 @@ class PublicReader:
             timeout=(min(5, remaining), min(15, remaining)),
             allow_redirects=False,
             stream=True,
+            hooks={
+                "response": bounded_response(10 * 1024 * 1024, deadline=self.deadline)
+            },
             headers={"Cache-Control": "no-cache"},
         ) as response:
             if response.status_code != 200:

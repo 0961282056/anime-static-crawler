@@ -23,6 +23,7 @@ import requests
 from models import Anime, EpisodeMetadata
 from services import episode_refresh
 from services.episode_source_reviews import reviewed_source
+from services.response_limits import bounded_response
 
 logger = logging.getLogger(__name__)
 TOKYO_TZ = ZoneInfo("Asia/Tokyo")
@@ -398,6 +399,8 @@ class BangumiClient:
                     min(15, available_seconds / 2),
                 ),
                 allow_redirects=False,
+                stream=True,
+                hooks={"response": bounded_response(2 * 1024 * 1024)},
                 headers={"Accept": "text/html"} if html else {},
                 **({"json": payload} if payload is not None else {}),
             )

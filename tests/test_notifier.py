@@ -226,10 +226,15 @@ def test_discord_http_error_raises_notification_error(
         *,
         json: dict[str, object],
         timeout: int,
+        stream: bool,
+        allow_redirects: bool,
+        hooks: dict,
     ) -> FailingResponse:
         assert url == webhook_url
         assert json["username"] == "Anime Crawler Bot"
         assert timeout == 10
+        assert stream is True and allow_redirects is False
+        assert callable(hooks["response"])
         return FailingResponse()
 
     monkeypatch.setattr("services.notifier.requests.post", post)

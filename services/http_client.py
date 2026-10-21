@@ -14,6 +14,7 @@ from urllib3.util.retry import Retry
 
 from config import Config
 from services.errors import ImageStoreError, SourceFetchError, SourceNotFoundError
+from services.response_limits import bounded_response
 from services.settings import CrawlerSettings
 
 RETRY_STATUSES = (429, 500, 502, 503, 504)
@@ -82,6 +83,9 @@ class SourceClient:
             response = self.session.get(
                 url,
                 timeout=self.settings.request_timeout_seconds,
+                stream=True,
+                allow_redirects=False,
+                hooks={"response": bounded_response(4 * 1024 * 1024)},
             )
         except requests.RequestException as exc:
             raise SourceFetchError(f"Unable to fetch {url}: {exc}") from exc
@@ -89,7 +93,7 @@ class SourceClient:
         try:
             if response.status_code == 404:
                 raise SourceNotFoundError(f"Source season does not exist yet: {url}")
-            if not response.ok:
+            if response.status_code != 200:
                 raise SourceFetchError(
                     f"Source returned HTTP {response.status_code}: {url}"
                 )
@@ -166,6 +170,7 @@ class SafeImageDownloader:
                     timeout=self.settings.image_timeout_seconds,
                     allow_redirects=False,
                     stream=True,
+                    hooks={"response": bounded_response(self.settings.image_max_bytes)},
                     headers={
                         "Accept": "image/avif,image/webp,image/png,image/jpeg,image/gif"
                     },

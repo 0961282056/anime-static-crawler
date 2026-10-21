@@ -12,6 +12,7 @@ import requests
 from models import TAIPEI_TZ
 from services.diagnostics import ERROR_GUIDANCE, STAGE_LABELS
 from services.errors import NotificationError
+from services.response_limits import bounded_response
 
 logger = logging.getLogger(__name__)
 
@@ -206,9 +207,16 @@ class DiscordNotifier:
                 self.webhook_url,
                 json=payload,
                 timeout=10,
+                stream=True,
+                allow_redirects=False,
+                hooks={"response": bounded_response(64 * 1024)},
             )
             try:
                 response.raise_for_status()
+                if response.status_code not in {200, 204}:
+                    raise NotificationError(
+                        f"Discord notification failed (HTTP {response.status_code})"
+                    )
                 return True
             finally:
                 response.close()
