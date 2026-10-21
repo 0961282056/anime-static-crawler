@@ -11,6 +11,8 @@ from typing import Any
 
 import requests
 
+from services.response_limits import bounded_response
+
 MARKER = "<!-- anime-source-review:v1:"
 QUEUE_MARKER = "<!-- anime-source-review-queue:v1 -->"
 BOT = "github-actions[bot]"
@@ -243,6 +245,8 @@ class GitHubReviewClient:
                 self.base + path,
                 timeout=(5, 20),
                 allow_redirects=False,
+                stream=True,
+                hooks={"response": bounded_response(16 * 1024 * 1024)},
                 **kwargs,
             )
             try:
