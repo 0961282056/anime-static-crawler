@@ -6,7 +6,6 @@ import json
 import unicodedata
 
 from services.atomic_io import atomic_write_text
-from services.release_manifest import data_inventory
 
 
 def search_identity(anime):
@@ -19,6 +18,7 @@ def search_identity(anime):
 
 
 def build_search_index(paths, repository):
+    repository = repository.validated_snapshot()
     entries = {}
     latest = None
     quarters = sorted(
@@ -43,7 +43,7 @@ def build_search_index(paths, repository):
                 }
     return {
         "schema_version": 1,
-        **data_inventory(paths),
+        **repository.data_inventory(),
         "generated_at": latest.isoformat() if latest else None,
         "entries": list(entries.values()),
     }

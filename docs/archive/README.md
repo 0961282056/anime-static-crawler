@@ -29,6 +29,16 @@
 
 一次性 `未知ID` 遷移與舊部署步驟的原文見[整理前部署手冊](https://github.com/0961282056/anime-static-crawler/blob/ac9875bd20e2e42309f6de093a867e2973926248/docs/%E9%83%A8%E7%BD%B2%E8%88%87%E5%B9%B3%E5%8F%B0%E8%A8%AD%E5%AE%9A.md)，不列為日常操作。舊來源核對與品質手冊已合併為[資料查證與品質](../資料查證與品質.md)；舊手冊的歷史測試數字見[原品質報告](https://github.com/0961282056/anime-static-crawler/blob/ac9875bd20e2e42309f6de093a867e2973926248/docs/%E8%AD%89%E6%93%9A%E7%B4%80%E9%8C%84%E8%88%87%E5%93%81%E8%B3%AA%E8%B6%A8%E5%8B%A2.md)。
 
+## 安全與效能複查
+
+以下保存已完成的檢查與當次量測；現行規則、命令及待辦回到主要手冊。固定版本不隨後續資料更新漂移，舊數字不是現況或永久保證。
+
+| 範圍 | 固定原文與驗收 | 現行入口 |
+|---|---|---|
+| HTTP 容量／重新導向、依賴與指定秘密格式檢查 | [PR #83](https://github.com/0961282056/anime-static-crawler/pull/83)；[2026-10-21 安全複查原文](https://github.com/0961282056/anime-static-crawler/blob/98bc43d782dd08ea4fc3ca50ff1b8a2577083a57/docs/安全維運與災難復原.md) | [安全維運](../安全維運與災難復原.md)、[依賴維護](../依賴與Actions維護.md) |
+| 搜尋分批／共用取消、分享逾時與畫布限制 | [PR #84](https://github.com/0961282056/anime-static-crawler/pull/84)；[2026-10-21 單次前後量測](https://github.com/0961282056/anime-static-crawler/blob/dd512cffe128c9763fe39d9599957251dd2954e2/docs/開發與測試.md) | [開發與測試](../開發與測試.md)、[前端模組](../../frontend/README.md) |
+| 一次性 `未知ID` 遷移工具 | [退役前程式](https://github.com/0961282056/anime-static-crawler/blob/95507570d949bba9d0130fe079ba47bfe5ca3c41/backfill_ids.py)；現有 2,150 筆已無此類 ID，無 workflow／測試呼叫者 | 不列入日常操作；模型與唯讀歷史檢查仍保留相容讀取 |
+
 ## 仍須保留的資料口徑
 
 - 班長不能借利根川母作品的集數或簡介；已撤回的 4／4 與完結判斷，以 [Hanchou 更正證據](../release-audit-2026-10-15/hanchou-scope-correction.json)為準。

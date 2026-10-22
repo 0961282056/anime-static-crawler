@@ -253,9 +253,7 @@ def render_index(
         undefined=StrictUndefined,
     )
     template = environment.get_template("index.html")
-    from services.release_manifest import data_inventory
-
-    inventory = data_inventory(paths)
+    inventory = repository.data_inventory()
     content = template.render(
         selected_year=default_year,
         selected_season=default_season,
@@ -348,6 +346,7 @@ def generate_static_files() -> None:
         crawl_summary = crawl_quarters(paths, repository, now)
 
     with operation("data-validation", path=paths.data_dir):
+        repository = repository.validated_snapshot()
         validated_paths = repository.validate_all()
     logger.info("Validated %s quarterly JSON files", len(validated_paths))
     from services.search_index import write_search_index
@@ -359,7 +358,9 @@ def generate_static_files() -> None:
         output_path = render_index(paths, repository, now)
     from services.release_manifest import write_release
 
-    write_release(paths, os.environ, compute_build_version(paths))
+    write_release(
+        paths, os.environ, compute_build_version(paths), data_snapshot=repository
+    )
     logger.info("Static site generated: %s", output_path)
     if crawl_summary is not None:
         with operation("summary"):
