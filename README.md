@@ -1,8 +1,8 @@
 # 動畫新番資訊站
 
-定期整理動畫資料，以季度 JSON 保存，再建置成可搜尋、篩選與分享的靜態網站。
+定期整理動畫資料，以季度 JSON 保存，再建置成可搜尋、篩選與分享的靜態網站。目前進入維護收斂，工作集中於穩定更新、資料保護與發布驗收。
 
-**[正式網站](https://anime-static-crawler.pages.dev/) · [文件入口](docs/README.md) · [目前待辦](docs/後續工作順序.md)**
+**[正式網站](https://anime-static-crawler.pages.dev/) · [文件入口](docs/README.md) · [維護順序](docs/後續工作順序.md)**
 
 ```mermaid
 flowchart LR

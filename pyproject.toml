@@ -28,7 +28,6 @@ addopts = [
 branch = true
 source = ["."]
 omit = [
-    "backfill_ids.py",
     "dist/*",
     "tests/*",
 ]
