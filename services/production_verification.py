@@ -119,13 +119,17 @@ def is_superseded(expected: str, deployed: str, read, *, comparison_cache=None) 
         if comparison_cache is not None and pair in comparison_cache:
             return comparison_cache[pair]
         result = json.loads(read(f"{REPOSITORY_API}/compare/{base}...{head}"))
+        if not isinstance(result, dict):
+            return False
         status = result.get("status")
-        merge_base = result.get("merge_base_commit", {}).get("sha", "")
+        merge = result.get("merge_base_commit")
+        merge_base = merge.get("sha", "") if isinstance(merge, dict) else ""
         matches = status == "ahead" and merge_base == base
         # Only complete successful responses for immutable SHA pairs are cached.
         # A transport error or incomplete response must remain retryable.
         if (
             comparison_cache is not None
+            and isinstance(status, str)
             and status in {"ahead", "behind", "identical", "diverged"}
             and isinstance(merge_base, str)
             and COMMIT.fullmatch(merge_base)

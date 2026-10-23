@@ -170,7 +170,9 @@ def test_main_membership_is_rechecked_after_a_foreign_preview(project_paths, tmp
     assert result["status"] == "superseded" and result["attempts"] == 2
 
 
-@pytest.mark.parametrize("failure", ["transport", "incomplete"])
+@pytest.mark.parametrize(
+    "failure", ["transport", "incomplete", "null_merge", "non_object"]
+)
 def test_comparison_failures_are_not_cached(project_paths, tmp_path, failure):
     now = [0]
     comparisons = []
@@ -184,6 +186,10 @@ def test_comparison_failures_are_not_cached(project_paths, tmp_path, failure):
         if len(comparisons) == 1:
             if failure == "transport":
                 raise RuntimeError("Public verification HTTP 403")
+            if failure == "null_merge":
+                return json.dumps({"status": "ahead", "merge_base_commit": None})
+            if failure == "non_object":
+                return json.dumps([])
             return json.dumps({"status": "ahead"})
         return json.dumps({"status": "ahead", "merge_base_commit": {"sha": SHA}})
 

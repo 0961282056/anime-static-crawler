@@ -250,14 +250,11 @@ class DataRepository:
                 if not changed_identity:
                     # Base-source omissions cannot erase existing text. Separately
                     # attributed evidence also survives nonempty source changes.
-                    preserve_story = (
-                        record.story_source is None
-                        and (
-                            old.story_source is not None
-                            or (
-                                old.story not in {"", "暫無簡介"}
-                                and record.story in {"", "暫無簡介"}
-                            )
+                    preserve_story = record.story_source is None and (
+                        old.story_source is not None
+                        or (
+                            old.story not in {"", "暫無簡介"}
+                            and record.story in {"", "暫無簡介"}
                         )
                     )
                     validated_records[index] = record.model_copy(
