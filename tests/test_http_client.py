@@ -99,6 +99,28 @@ def test_image_url_validation_rejects_unsafe_urls(
         downloader._validate_url(url)
 
 
+@pytest.mark.parametrize(
+    "url",
+    [
+        "https://static.acgsecrets.hk:not-a-port/a.jpg",
+        "https://static.acgsecrets.hk:70000/a.jpg",
+        "https://[invalid/a.jpg",
+    ],
+)
+def test_malformed_image_url_is_rejected_before_dns_or_http(url, monkeypatch):
+    monkeypatch.setattr(
+        http_client_module.socket,
+        "getaddrinfo",
+        lambda *args, **kwargs: pytest.fail("Invalid URL must not reach DNS"),
+    )
+    downloader = SafeImageDownloader(_settings())
+    session = _Session()
+    downloader._thread_local.session = session
+    with pytest.raises(ImageStoreError, match="malformed"):
+        downloader.download(url)
+    assert session.calls == []
+
+
 def test_image_url_validation_rejects_private_dns_result(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
@@ -170,6 +192,23 @@ def test_image_download_revalidates_redirect_destination(
 
     assert redirect.closed
     assert len(session.calls) == 1
+
+
+def test_malformed_redirect_is_closed_and_not_followed(monkeypatch):
+    monkeypatch.setattr(
+        http_client_module.socket,
+        "getaddrinfo",
+        lambda *args, **kwargs: [(2, 1, 6, "", ("93.184.216.34", 443))],
+    )
+    redirect = _Response(
+        status_code=302, headers={"Location": "https://[invalid/a.jpg"}
+    )
+    session = _Session(redirect)
+    downloader = SafeImageDownloader(_settings())
+    downloader._thread_local.session = session
+    with pytest.raises(ImageStoreError, match="redirect URL is malformed"):
+        downloader.download("https://static.acgsecrets.hk/start.jpg")
+    assert redirect.closed and len(session.calls) == 1
 
 
 @pytest.mark.parametrize(

@@ -115,7 +115,12 @@ def parse_anime_item(item_html: str) -> AnimeCandidate:
         ).strip()
     if not raw_image_url:
         raise ItemParseError(f"{anime_name}: anime card is missing its cover URL")
-    source_image_url = urljoin(SOURCE_ORIGIN, raw_image_url)
+    try:
+        source_image_url = urljoin(SOURCE_ORIGIN, raw_image_url)
+    except ValueError as exc:
+        raise ItemParseError(
+            f"{anime_name}: anime card has an invalid cover URL"
+        ) from exc
 
     story_element = item.select_one("div.anime_story")
     story = story_element.get_text(" ", strip=True) if story_element else "暫無簡介"

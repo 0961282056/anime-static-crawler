@@ -128,13 +128,17 @@ class SafeImageDownloader:
         return session
 
     def _validate_url(self, url: str) -> None:
-        parsed = urlparse(url)
-        host = (parsed.hostname or "").lower()
+        try:
+            parsed = urlparse(url)
+            host = (parsed.hostname or "").lower()
+            port = parsed.port
+        except ValueError as exc:
+            raise ImageStoreError("Image URL is malformed") from exc
         if parsed.scheme != "https" or not host:
             raise ImageStoreError("Image URL must use HTTPS")
         if parsed.username or parsed.password:
             raise ImageStoreError("Image URL may not contain credentials")
-        if parsed.port not in (None, 443):
+        if port not in (None, 443):
             raise ImageStoreError("Image URL may only use the default HTTPS port")
         if host not in self.settings.image_allowed_hosts:
             raise ImageStoreError(f"Image host is not allowed: {host}")
@@ -187,7 +191,10 @@ class SafeImageDownloader:
                     raise ImageStoreError("Image redirect omitted the Location header")
                 if redirect_number >= max_redirects:
                     raise ImageStoreError("Image exceeded the redirect limit")
-                current_url = urljoin(current_url, location)
+                try:
+                    current_url = urljoin(current_url, location)
+                except ValueError as exc:
+                    raise ImageStoreError("Image redirect URL is malformed") from exc
                 continue
 
             try:

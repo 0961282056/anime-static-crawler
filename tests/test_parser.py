@@ -31,6 +31,15 @@ def _single_item(document: str) -> str:
     return items[0]
 
 
+def test_malformed_cover_url_is_a_typed_parse_failure(fixture_dir):
+    document = _document(fixture_dir).replace(
+        "https://static.acgsecrets.hk/img/test/full-cover.jpg",
+        "https://[invalid/cover.jpg",
+    )
+    with pytest.raises(ItemParseError, match="invalid cover URL"):
+        parse_anime_item(_single_item(document))
+
+
 def test_parser_reads_current_detail_card_contract(fixture_dir: Path) -> None:
     candidate = parse_anime_item(_single_item(_document(fixture_dir)))
 
