@@ -150,7 +150,7 @@ const dataMethods = {
         }
     },
 
-    async loadData(shouldRestoreScroll = false) {
+    async loadData(shouldRestoreScroll = false, refreshRelease = false) {
         if (!this.year || !this.season) return;
 
         const requestId = this._loadRequestId + 1;
@@ -176,6 +176,20 @@ const dataMethods = {
         }
 
         try {
+            if (refreshRelease) {
+                const {response, data} = await fetchJsonWithDeadline('release.json?refresh=' + Date.now(), controller.signal, this.FETCH_TIMEOUT_MS);
+                if (!this.isCurrentLoad(requestId) || controller.signal.aborted) return;
+                const quarters = Object.entries(this.availableData).flatMap(([year, seasons]) => seasons.map(season => `${year}_${season}`));
+                if (!response.ok || data?.schema_version !== 1 || !/^[a-f0-9]{16}$/.test(data.data_version) || !data.quarter_versions || Object.keys(data.quarter_versions).length !== quarters.length || quarters.some(key => !/^[a-f0-9]{64}$/.test(data.quarter_versions[key]))) {
+                    throw createDataError('SEARCH_SCHEMA', '無法取得完整的新版搜尋資料，請稍後重試。', {retryable: false});
+                }
+                if (data.build_version !== this.buildVersion) {
+                    throw createDataError('APP_UPDATED', '網站已有新版，請重新整理頁面後再試。', {retryable: false});
+                }
+                this.dataVersion = data.data_version;
+                this.quarterVersions = data.quarter_versions;
+                this.dataCache = {};
+            }
             const dataset = searchingAll
                 ? await this.getAllQuarterData(controller.signal)
                 : await this.getDataset(cacheKey, controller.signal);
@@ -199,25 +213,8 @@ const dataMethods = {
         }
     },
 
-    async retryLoad() {
-        if (['SEARCH_SCHEMA', 'SEARCH_VERSION'].includes(this.loadError?.code)) {
-            try {
-                const {response, data} = await fetchJsonWithDeadline('release.json?refresh=' + Date.now(), null, this.FETCH_TIMEOUT_MS);
-                const quarters = Object.entries(this.availableData).flatMap(([year, seasons]) => seasons.map(season => `${year}_${season}`));
-                if (!response.ok || data?.schema_version !== 1 || !/^[a-f0-9]{16}$/.test(data.data_version) || !data.quarter_versions || Object.keys(data.quarter_versions).length !== quarters.length || quarters.some(key => !/^[a-f0-9]{64}$/.test(data.quarter_versions[key]))) {
-                    throw createDataError('SEARCH_SCHEMA', '無法取得完整的新版搜尋資料，請稍後重試。', {retryable: false});
-                }
-                if (data.build_version !== this.buildVersion) {
-                    throw createDataError('APP_UPDATED', '網站已有新版，請重新整理頁面後再試。', {retryable: false});
-                }
-                this.dataVersion = data.data_version;
-                this.quarterVersions = data.quarter_versions;
-                this.dataCache = {};
-            } catch (error) {
-                this.loadError = describeDataError(error, this.rawAnimeList.length > 0);
-                return;
-            }
-        }
-        return this.loadData(false);
+    retryLoad() {
+        if (this.loading) return;
+        return this.loadData(false, ['SEARCH_SCHEMA', 'SEARCH_VERSION'].includes(this.loadError?.code));
     }
 };

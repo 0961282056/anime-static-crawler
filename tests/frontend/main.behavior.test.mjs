@@ -952,6 +952,48 @@ test('retry refreshes release metadata after a data-only index version update', 
   assert.equal(calls.filter(url => url.startsWith('search-index')).length, 2);
 });
 
+for (const navigation of ['clear search', 'change quarter']) {
+  for (const success of [true, false]) {
+    test(`obsolete release refresh ${success ? 'success' : 'failure'} cannot change state after ${navigation}`, async () => {
+      let finish;
+      let releaseSignal;
+      let releaseCalls = 0;
+      const healthy = dataset('healthy-quarter');
+      const {app} = createContext({fetchImpl: async (url, options) => {
+        if (url.startsWith('release.json')) {
+          releaseCalls++;
+          releaseSignal = options.signal;
+          return new Promise(resolve => { finish = resolve; });
+        }
+        return responseFor(healthy);
+      }});
+      app.year = '2026'; app.season = '秋'; app.searchKeyword = 'missing';
+      app.loadError = {code: 'SEARCH_SCHEMA'};
+      const retry = app.retryLoad();
+      await nextTick();
+      assert.equal(app.loading, true);
+      await app.retryLoad();
+      assert.equal(releaseCalls, 1);
+      app.searchKeyword = '';
+      if (navigation === 'change quarter') { app.year = '2025'; app.season = '夏'; }
+      await app.loadData();
+      const currentKey = `${app.year}_${app.season}`;
+      const currentCache = app.dataCache[currentKey];
+      assert.equal(releaseSignal.aborted, true);
+      finish(success ? responseFor({
+        schema_version: 1, build_version: 'test-build', data_version: 'b'.repeat(16),
+        quarter_versions: {'2026_秋': 'b'.repeat(64), '2025_夏': 'b'.repeat(64)},
+      }) : errorResponse(503));
+      await retry;
+      assert.equal(app.loadError, null);
+      assert.equal(app.loading, false);
+      assert.equal(app.dataVersion, 'a'.repeat(16));
+      assert.equal(app.dataCache[currentKey], currentCache);
+      assert.equal(app.rawAnimeList[0].anime_name, 'healthy-quarter');
+    });
+  }
+}
+
 test('a late response from an older quarter version cannot overwrite the new cache', async () => {
   const resolvers = [];
   const {app} = createContext({fetchImpl: () => new Promise(resolve => resolvers.push(resolve))});
