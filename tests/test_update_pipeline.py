@@ -99,6 +99,25 @@ def test_cached_images_do_not_require_cloudinary_credentials(setup_pipeline):
     assert result["partial_failures"] == 0
 
 
+def test_missing_source_summary_keeps_existing_text_and_pipeline_succeeds(setup_pipeline):
+    paths, repo, old, candidate = setup_pipeline
+    refreshed = []
+    result = run(
+        setup_pipeline,
+        [candidate.model_copy(update={"story": "暫無簡介"})],
+        lambda: SimpleNamespace(
+            assert_quota_available=lambda: None,
+            store=lambda *args: old.anime_image_url,
+        ),
+        lambda *args: refreshed.append(True) or set(),
+    )
+    saved = repo.load_quarter("2026", "秋").anime_list[0]
+    assert saved.story == old.story
+    assert saved.story_source is None
+    assert refreshed and result["partial_failures"] == 0
+    assert result["changed_quarters"] == 0
+
+
 def test_image_outage_reuses_only_exact_existing_work(setup_pipeline):
     paths, repo, old, candidate = setup_pipeline
 
