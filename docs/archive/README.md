@@ -39,6 +39,16 @@
 | 搜尋分批／共用取消、分享逾時與畫布限制 | [PR #84](https://github.com/0961282056/anime-static-crawler/pull/84)；[2026-10-21 單次前後量測](https://github.com/0961282056/anime-static-crawler/blob/dd512cffe128c9763fe39d9599957251dd2954e2/docs/開發與測試.md) | [開發與測試](../開發與測試.md)、[前端模組](../../frontend/README.md) |
 | 一次性 `未知ID` 遷移工具 | [退役前程式](https://github.com/0961282056/anime-static-crawler/blob/95507570d949bba9d0130fe079ba47bfe5ca3c41/backfill_ids.py)；現有 2,150 筆已無此類 ID，無 workflow／測試呼叫者 | 不列入日常操作；模型與唯讀歷史檢查仍保留相容讀取 |
 
+## 事故與過渡操作
+
+已完成的事故、初次遷移及觀測保留在固定版本，現行手冊不再逐次轉抄。這些紀錄不代表目前憑證、備份／restore 或所有故障情境均已驗證；仍須依安全手冊保留平台核實邊界。
+
+| 範圍 | 固定原文／實際案例 | 現行處理 |
+|---|---|---|
+| 依賴初次盤點、certifi／Pillow 安全公告中止排程 | [整理前依賴手冊](https://github.com/0961282056/anime-static-crawler/blob/2237f25be2a293afa925e05c5594c5106b09567b/docs/%E4%BE%9D%E8%B3%B4%E8%88%87Actions%E7%B6%AD%E8%AD%B7.md)；修補 [PR #82](https://github.com/0961282056/anime-static-crawler/pull/82) | [依賴維護](../依賴與Actions維護.md)；舊版漏洞數與當時日誌限制只屬該次事故 |
+| 舊 crawler 工作流程停用、首次部署及 canary 導入 | [整理前部署手冊](https://github.com/0961282056/anime-static-crawler/blob/2237f25be2a293afa925e05c5594c5106b09567b/docs/%E9%83%A8%E7%BD%B2%E8%88%87%E5%B9%B3%E5%8F%B0%E8%A8%AD%E5%AE%9A.md) | [現行部署](../部署與平台設定.md)與[立即停機](../安全維運與災難復原.md#2-立即暫停自動工作)；憑證輪替／搬移仍須完成紀錄 |
+| PR #84 當次測試總數與 PR #85 排程觀測 | [原文件入口](https://github.com/0961282056/anime-static-crawler/blob/2237f25be2a293afa925e05c5594c5106b09567b/docs/README.md)、[原觀測細節](https://github.com/0961282056/anime-static-crawler/blob/2237f25be2a293afa925e05c5594c5106b09567b/docs/%E5%BE%8C%E7%BA%8C%E5%B7%A5%E4%BD%9C%E9%A0%86%E5%BA%8F.md)；[10/22 自然 schedule](https://github.com/0961282056/anime-static-crawler/actions/runs/39670757280)及其 [Production verification](https://github.com/0961282056/anime-static-crawler/actions/runs/39672057884)成功 | 不再保留「等下次排程」；設定臺北 01:00，該次延至 04:29 啟動。工作成功不代表已有 C 到期留言或 retention 真實案例 |
+
 ## 仍須保留的資料口徑
 
 - 班長不能借利根川母作品的集數或簡介；已撤回的 4／4 與完結判斷，以 [Hanchou 更正證據](../release-audit-2026-10-15/hanchou-scope-correction.json)為準。
