@@ -222,16 +222,34 @@ def test_retention_sdk_transport_has_a_deadline_and_does_not_replay_timeout(
 
     config = FakeConfig(cloud_name="fixture", api_key="fixture", api_secret="fixture")
     monkeypatch.setattr(retention_module.cloudinary, "config", lambda **kwargs: config)
+    sdk = importlib.import_module("cloudinary.api_client.call_api")
+    connector = retention_module.cloudinary.utils.get_http_connector(
+        config, retention_module.cloudinary.CERT_KWARGS
+    )
+    monkeypatch.setattr(sdk, "_http", connector)
+    monkeypatch.setattr(
+        retention_module,
+        "required_cloudinary_credentials",
+        lambda: {
+            "CLOUDINARY_CLOUD_NAME": "fixture",
+            "CLOUDINARY_API_KEY": "fixture",
+            "CLOUDINARY_API_SECRET": "fixture",
+        },
+    )
+    monkeypatch.setattr(
+        "socket.getaddrinfo", lambda *args, **kwargs: pytest.fail("No DNS allowed")
+    )
+    cache = _CacheSpy()
+    service = CloudinaryRetentionService(Path("unused"), cache)
+    pool = connector.connection_from_url("https://api.cloudinary.com/")
     calls = []
 
-    def timeout(**kwargs):
-        calls.append((kwargs["method"], kwargs.get("timeout")))
-        raise ReadTimeoutError(None, None, "fixture deadline")
+    def timeout(connection, method, url, **kwargs):
+        deadline = kwargs["timeout"]
+        calls.append((method, deadline.connect_timeout, deadline.read_timeout))
+        raise ReadTimeoutError(pool, url, "fixture deadline")
 
-    sdk = importlib.import_module("cloudinary.api_client.call_api")
-    monkeypatch.setattr(sdk, "_http", SimpleNamespace(request=timeout))
-    cache = _CacheSpy()
-    service = _service(cache)
+    monkeypatch.setattr(pool, "_make_request", timeout)
     with pytest.raises(RetentionError, match="Unable to list|deletion failed"):
         if operation == "inventory":
             service.list_cloud_resources()
@@ -243,7 +261,7 @@ def test_retention_sdk_transport_has_a_deadline_and_does_not_replay_timeout(
                 manifest_candidates={SHARED_PUBLIC_ID},
                 manifest_created_at=datetime.now(UTC) - timedelta(days=31),
             )
-    assert calls == [("GET" if operation == "inventory" else "DELETE", 30)]
+    assert calls == [("GET" if operation == "inventory" else "DELETE", 30, 30)]
     assert cache.removed is None and not cache.saved
 
 

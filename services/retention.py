@@ -139,6 +139,12 @@ class CloudinaryRetentionService:
             api_secret=credentials["CLOUDINARY_API_SECRET"],
             secure=True,
         )
+        # The SDK does not forward per-call retries; urllib3 otherwise retries
+        # DELETE after a read timeout. Change only retries on its existing
+        # connector, preserving proxy, credentials and CA configuration.
+        from cloudinary.api_client.call_api import _http
+
+        _http.connection_pool_kw["retries"] = False
         self.data_dir = data_dir
         self.cache = cache
 
