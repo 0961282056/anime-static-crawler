@@ -38,6 +38,7 @@ function animeApp() {
         _activeLoadAbort: null,
         _activeCacheKey: null,
         _shareExportRunning: false,
+        _shareItemSequence: 0,
         STORAGE_KEYS: {
             YEAR: 'anime_user_year',
             SEASON: 'anime_user_season',

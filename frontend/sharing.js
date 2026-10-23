@@ -131,7 +131,8 @@ const sharingMethods = {
     },
 
     addToShare(anime) {
-        if (this.shareList.some(i => i.name === anime.anime_name)) {
+        const identity = JSON.stringify([anime.bangumi_id || null, anime.anime_name, anime.original_name || '', anime.external_ids?.bangumi || null]);
+        if (this.shareList.some(item => item.identity === identity)) {
             Swal.fire({toast: true, position: 'top', icon: 'warning', title: '已在清單中', timer: 1000, showConfirmButton: false, background: '#2b2b2b', color: '#fff'});
             return;
         }
@@ -140,6 +141,8 @@ const sharingMethods = {
             return;
         }
         this.shareList.push({
+            identity,
+            token: ++this._shareItemSequence,
             name: anime.anime_name,
             img: (anime.anime_image_url && anime.anime_image_url !== '無圖片') ? anime.anime_image_url : 'https://placehold.co/50x50',
             date: anime.premiere_date || '?',
@@ -169,9 +172,9 @@ const sharingMethods = {
         if (this._shareExportRunning || !this.shareList.length) return;
         this._shareExportRunning = true;
         const exportItems = this.shareList.map(item => ({...item}));
-        const exportedNames = new Set(exportItems.map(item => item.name));
+        const exportedTokens = new Set(exportItems.map(item => item.token));
         const removeExportedItems = () => {
-            this.shareList = this.shareList.filter(item => !exportedNames.has(item.name));
+            this.shareList = this.shareList.filter(item => !exportedTokens.has(item.token));
         };
         let exporting = true;
         const btn = document.getElementById('copyButton');
