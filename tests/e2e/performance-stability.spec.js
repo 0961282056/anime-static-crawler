@@ -1,3 +1,4 @@
+import {installDatasetFixture} from '../helpers/versioned-data.cjs';
 import {expect, test} from '@playwright/test';
 import {readFileSync} from 'node:fs';
 
@@ -24,7 +25,8 @@ test('clearing a global search aborts its real fetch and releases pending state 
   await installPage(page);
   const current = record(9998, '目前季度');
   const historical = record(9999, 'historical needle');
-  const index = JSON.parse(readFileSync('dist/search-index.json', 'utf8'));
+  const fixture = await installDatasetFixture(page, quarter => ({anime_list: [quarter === '2025_夏' ? historical : current]}));
+  const index = fixture.index;
   index.entries = [{identity: [historical.bangumi_id, historical.anime_name, '', null], story: historical.story, quarters: ['2025_夏']}];
   await page.route('**/search-index.json*', route => route.fulfill({contentType: 'application/json', body: JSON.stringify(index)}));
   let release;
@@ -69,7 +71,7 @@ for (const stage of ['fonts', 'renderer']) {
         return new Promise(() => {});
       }});
     }, stage);
-    await page.route('**/data/*.json*', route => route.fulfill({contentType: 'application/json', body: JSON.stringify({anime_list: [record(9999, '分享期限測試')]})}));
+    await installDatasetFixture(page, () => ({anime_list: [record(9999, '分享期限測試')]}));
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
     await page.goto('/');
@@ -91,7 +93,8 @@ test('large searches show complete totals, expand with the keyboard and filter b
   await installPage(page);
   const current = record(8000, '當季作品');
   const records = Array.from({length: 125}, (_, i) => ({...record(9000 + i, `common-${i}`), premiere_date: i >= 120 ? '二' : '一'}));
-  const index = JSON.parse(readFileSync('dist/search-index.json', 'utf8'));
+  const fixture = await installDatasetFixture(page, quarter => ({anime_list: quarter === '2025_夏' ? records : [current]}));
+  const index = fixture.index;
   index.entries = records.map(item => ({identity: [item.bangumi_id, item.anime_name, '', null], story: item.story, quarters: ['2025_夏']}));
   await page.route('**/search-index.json*', route => route.fulfill({contentType: 'application/json', body: JSON.stringify(index)}));
   await page.route('**/data/*.json*', route => route.fulfill({contentType: 'application/json', body: JSON.stringify({anime_list: decodeURIComponent(route.request().url()).includes('2025_夏') ? records : [current]})}));

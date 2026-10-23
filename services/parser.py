@@ -128,7 +128,12 @@ def parse_anime_item(item_html: str) -> AnimeCandidate:
     original = item.select_one(".entity_original_name")
     ids: dict[str, int] = {}
     for link in item.select(".anime_link_group a[href]"):
-        parsed = urlsplit(str(link.get("href", "")))
+        try:
+            parsed = urlsplit(str(link.get("href", "")))
+        except ValueError as exc:
+            raise ItemParseError(
+                f"{anime_name}: anime card has an invalid link URL"
+            ) from exc
         if parsed.scheme != "https" or parsed.query or parsed.fragment:
             continue
         provider = None
@@ -141,7 +146,12 @@ def parse_anime_item(item_html: str) -> AnimeCandidate:
         else:
             continue
         if match and provider:
-            value = int(match.group(1))
+            try:
+                value = int(match.group(1))
+            except ValueError as exc:
+                raise ItemParseError(
+                    f"{anime_name}: anime card has an invalid {provider} ID"
+                ) from exc
             if provider in ids and ids[provider] != value:
                 raise ItemParseError(
                     f"{anime_name}: conflicting {provider} source links"

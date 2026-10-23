@@ -106,11 +106,15 @@ async function fetchWithDeadline(url, signal, readResponse = response => respons
         if (signal) signal.removeEventListener('abort', abortFromCaller);
     }
 }
-async function fetchJsonWithDeadline(url, signal, timeoutMs = FETCH_TIMEOUT_MS) {
+async function fetchJsonWithDeadline(url, signal, timeoutMs = FETCH_TIMEOUT_MS, expectedVersion = null) {
     return fetchWithDeadline(url, signal, async response => {
         if (!response.ok) return {response, data: null};
+        // Hash the decoded HTTP body bytes, exactly as release.json records them.
+        // Parsing and reserializing JSON would lose whitespace and key order.
+        const content = expectedVersion ? await response.arrayBuffer() : null;
+        let data;
         try {
-            return {response, data: await response.json()};
+            data = content ? JSON.parse(new TextDecoder().decode(content)) : await response.json();
         } catch (error) {
             throw createDataError(
                 'JSON_PARSE',
@@ -118,5 +122,9 @@ async function fetchJsonWithDeadline(url, signal, timeoutMs = FETCH_TIMEOUT_MS) 
                 {retryable: false}
             );
         }
+        const sha256 = content
+            ? Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', content)), byte => byte.toString(16).padStart(2, '0')).join('')
+            : null;
+        return {response, data, sha256};
     }, timeoutMs);
 }

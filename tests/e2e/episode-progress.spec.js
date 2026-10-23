@@ -1,3 +1,4 @@
+import {installDatasetFixture} from '../helpers/versioned-data.cjs';
 import {expect, test} from '@playwright/test';
 
 const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=', 'base64');
@@ -17,12 +18,10 @@ test('episode progress, status filter and source details work with real Alpine o
     source_urls: ['https://chiramune.com/bd/06.html'],
     checked_at: '2026-10-13T18:00:00+08:00', note: '依首播日期核對正篇。',
   };
-  await page.route('**/data/*.json*', route => route.fulfill({
-    contentType: 'application/json', body: JSON.stringify({
+  await installDatasetFixture(page, () => ({
       generated_at: '2026-10-13T18:00:00+08:00',
       anime_list: [record(1, '播出範例', info), record(2, '播畢範例', {...info, aired_episodes: 12, airing_status: 'finished'}), record(3, '舊資料範例', null)],
-    }),
-  }));
+    }));
   await page.route('https://res.cloudinary.com/**', route => route.fulfill({contentType: 'image/png', body: png}));
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
@@ -106,7 +105,7 @@ test('official summary excerpts render real season data with attributed links', 
 test('source details distinguish failed refreshes and dated summary evidence', async ({page}) => {
   await page.setViewportSize({width: 360, height: 800});
   await page.addInitScript(() => localStorage.clear());
-  await page.route('**/data/*.json*', route => route.fulfill({contentType: 'application/json', body: JSON.stringify({
+  await installDatasetFixture(page, () => ({
     generated_at: '2026-10-16T09:00:00+08:00',
     anime_list: [{
       bangumi_id: 'anime-999', anime_name: '來源查證範例', original_name: 'Source Example',
@@ -116,7 +115,7 @@ test('source details distinguish failed refreshes and dated summary evidence', a
       story_source: {provider: 'bangumi', subject_id: 580133, method: 'bangumi_archive', checked_at: '2026-10-16T09:00:00+08:00', source_snapshot_date: '2026-10-14'},
       episodes: {total_episodes: 12, aired_episodes: 8, airing_status: 'airing', episode_count_status: 'confirmed', fetch_state: 'stale', source_kind: 'bangumi_archive', source_snapshot_date: '2026-10-14', checked_at: '2026-10-15T08:00:00+08:00', attempted_at: '2026-10-16T09:00:00+08:00', source_urls: ['https://bgm.tv/subject/580133/ep'], note: '僅計電視正篇，不含特別篇。'},
     }],
-  })}));
+  }));
   await page.route('https://res.cloudinary.com/**', route => route.fulfill({contentType: 'image/png', body: png}));
   await page.goto('/');
   const card = page.locator('.anime-card');
@@ -135,7 +134,7 @@ test('source details distinguish failed refreshes and dated summary evidence', a
 
 test('first conflicting evidence shows an attempt without claiming successful verification', async ({page}) => {
   await page.addInitScript(() => localStorage.clear());
-  await page.route('**/data/*.json*', route => route.fulfill({contentType: 'application/json', body: JSON.stringify({
+  await installDatasetFixture(page, () => ({
     generated_at: '2026-10-18T10:00:00+08:00',
     anime_list: [{
       bangumi_id: 'anime-999', anime_name: '首次查證衝突', original_name: 'First Conflict',
@@ -144,7 +143,7 @@ test('first conflicting evidence shows an attempt without claiming successful ve
       external_ids: {bangumi: 580133},
       episodes: {total_episodes: null, aired_episodes: 1, airing_status: 'unknown', episode_count_status: 'unknown', fetch_state: 'conflict', source_kind: 'bangumi_api', checked_at: null, attempted_at: '2026-10-18T10:00:00+08:00', source_urls: ['https://bgm.tv/subject/580133/ep'], note: '來源話數不一致，總集數待確認。'},
     }],
-  })}));
+  }));
   await page.route('https://res.cloudinary.com/**', route => route.fulfill({contentType: 'image/png', body: png}));
   await page.goto('/');
   const card = page.locator('.anime-card');

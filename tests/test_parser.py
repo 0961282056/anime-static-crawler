@@ -40,6 +40,21 @@ def test_malformed_cover_url_is_a_typed_parse_failure(fixture_dir):
         parse_anime_item(_single_item(document))
 
 
+@pytest.mark.parametrize(
+    ("href", "message"),
+    [
+        ("https://[invalid", "invalid link URL"),
+        ("https://bgm.tv/subject/" + "1" * 5000, "invalid bangumi ID"),
+    ],
+)
+def test_malformed_card_link_is_a_typed_parse_failure(fixture_dir, href, message):
+    document = _document(fixture_dir).replace(
+        STORY, f'<div class="anime_link_group"><a href="{href}">link</a></div>' + STORY
+    )
+    with pytest.raises(ItemParseError, match=message):
+        parse_anime_item(_single_item(document))
+
+
 def test_parser_reads_current_detail_card_contract(fixture_dir: Path) -> None:
     candidate = parse_anime_item(_single_item(_document(fixture_dir)))
 

@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { readFileSync } from 'node:fs';
+import {installDatasetFixture} from '../helpers/versioned-data.cjs';
 
 const transparentPng = Buffer.from(
   'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=',
@@ -15,7 +16,9 @@ test('summary dialog renders markup in source text literally under production CS
     const response = await route.fetch();
     await route.fulfill({response, headers: {...response.headers(), 'content-security-policy': csp}});
   });
-  await installFixtureRoutes(page);
+  const literal = fixtureDataset('literal');
+  Object.assign(literal.anime_list[0], {anime_name: title, story});
+  await installFixtureRoutes(page, {payloadForQuarter: () => literal});
   await page.route('**/data/*.json*', route => {
     const payload = fixtureDataset('literal');
     Object.assign(payload.anime_list[0], {anime_name: title, story});
@@ -33,7 +36,12 @@ test('summary dialog renders markup in source text literally under production CS
 
 test('contradictory airing status fails safely and a corrected response can be retried', async ({page}) => {
   await page.addInitScript(() => localStorage.clear());
-  await installFixtureRoutes(page);
+  const recovered = fixtureDataset('count-recovery');
+  recovered.anime_list[0].episodes = {
+    total_episodes: 12, aired_episodes: 0,
+    airing_status: 'not_yet_aired', episode_count_status: 'planned', fetch_state: 'ok',
+  };
+  await installFixtureRoutes(page, {payloadForQuarter: () => recovered});
   let requests = 0;
   await page.route('**/data/*.json*', route => {
     requests += 1;
@@ -71,7 +79,8 @@ function fixtureDataset(key) {
   };
 }
 
-async function installFixtureRoutes(page, {delayFirst = false} = {}) {
+async function installFixtureRoutes(page, {delayFirst = false, payloadForQuarter = fixtureDataset} = {}) {
+  await installDatasetFixture(page, payloadForQuarter);
   let requestCount = 0;
   await page.route('**/data/*.json*', async route => {
     requestCount += 1;
@@ -81,7 +90,7 @@ async function installFixtureRoutes(page, {delayFirst = false} = {}) {
       await route.fulfill({
         status: 200,
         contentType: 'application/json',
-        body: JSON.stringify(fixtureDataset(key)),
+        body: JSON.stringify(payloadForQuarter(key)),
       });
     } catch (error) {
       // The stale request can be cancelled before the delayed fixture responds.
@@ -186,6 +195,7 @@ test('real Alpine tolerates throwing storage and refetches after TTL expiry', as
 
 test('real Alpine explains transient HTTP failures and allows a safe retry', async ({page}) => {
   await page.addInitScript(() => localStorage.clear());
+  await installDatasetFixture(page, fixtureDataset);
   let requestCount = 0;
   await page.route('**/data/*.json*', async route => {
     requestCount += 1;
@@ -220,6 +230,7 @@ test('real Alpine explains transient HTTP failures and allows a safe retry', asy
 
 test('real Alpine rejects malformed JSON shape and retries without leaving a pending request', async ({page}) => {
   await page.addInitScript(() => localStorage.clear());
+  await installDatasetFixture(page, fixtureDataset);
   let requestCount = 0;
   await page.route('**/data/*.json*', async route => {
     requestCount += 1;

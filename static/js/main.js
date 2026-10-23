@@ -355,11 +355,15 @@ async function fetchWithDeadline(url, signal, readResponse = response => respons
         if (signal) signal.removeEventListener('abort', abortFromCaller);
     }
 }
-async function fetchJsonWithDeadline(url, signal, timeoutMs = FETCH_TIMEOUT_MS) {
+async function fetchJsonWithDeadline(url, signal, timeoutMs = FETCH_TIMEOUT_MS, expectedVersion = null) {
     return fetchWithDeadline(url, signal, async response => {
         if (!response.ok) return {response, data: null};
+        // Hash the decoded HTTP body bytes, exactly as release.json records them.
+        // Parsing and reserializing JSON would lose whitespace and key order.
+        const content = expectedVersion ? await response.arrayBuffer() : null;
+        let data;
         try {
-            return {response, data: await response.json()};
+            data = content ? JSON.parse(new TextDecoder().decode(content)) : await response.json();
         } catch (error) {
             throw createDataError(
                 'JSON_PARSE',
@@ -367,6 +371,10 @@ async function fetchJsonWithDeadline(url, signal, timeoutMs = FETCH_TIMEOUT_MS) 
                 {retryable: false}
             );
         }
+        const sha256 = content
+            ? Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', content)), byte => byte.toString(16).padStart(2, '0')).join('')
+            : null;
+        return {response, data, sha256};
     }, timeoutMs);
 }
 
@@ -417,6 +425,7 @@ const dataMethods = {
 
     async fetchDatasetFromNetwork(cacheKey, signal) {
         const version = this.quarterVersions[cacheKey] || this.dataVersion;
+        const expectedVersion = cacheKey === '__search_index__' ? null : this.quarterVersions[cacheKey];
         const url = cacheKey === '__search_index__' ? `search-index.json?v=${encodeURIComponent(version)}` : `data/${cacheKey}.json?v=${encodeURIComponent(version)}`;
         let lastError = null;
         const maxRetries = Number.isInteger(this.MAX_FETCH_RETRIES)
@@ -428,13 +437,17 @@ const dataMethods = {
             if (signal && signal.aborted) throw createAbortError();
 
             try {
-                const {response, data} = await fetchJsonWithDeadline(url, signal, this.FETCH_TIMEOUT_MS);
+                const {response, data, sha256} = await fetchJsonWithDeadline(url, signal, this.FETCH_TIMEOUT_MS, expectedVersion);
                 if (!response.ok) {
                     const statusError = createHttpDataError(response.status);
                     if (!statusError.retryable) throw statusError;
                     lastError = statusError;
                 } else {
-                    return cacheKey === '__search_index__' ? validateSearchIndex(data, this) : validateDataset(data);
+                    const dataset = cacheKey === '__search_index__' ? validateSearchIndex(data, this) : validateDataset(data);
+                    if (expectedVersion && sha256 !== expectedVersion) {
+                        throw createDataError('SEARCH_VERSION', '資料版本已有更新，請按「重新載入」取得一致的搜尋資料。', {retryable: false});
+                    }
+                    return dataset;
                 }
             } catch (error) {
                 if (isAbortError(error, signal)) throw createAbortError();

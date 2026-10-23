@@ -246,10 +246,11 @@ def test_missing_episode_in_sequence_is_not_an_exact_progress_count(
     assert info.airing_status != "finished"
 
 
-def test_bad_infobox_is_a_supplementary_failure(anime_record_factory):
+@pytest.mark.parametrize("infobox", [None, {}, "invalid", [None], [1], [{"key": []}]])
+def test_bad_infobox_is_a_supplementary_failure(anime_record_factory, infobox):
     with pytest.raises(MetadataUnavailable, match="infobox"):
         parse_episode_metadata(
-            anime(anime_record_factory), {**subject(), "infobox": None}, [], NOW
+            anime(anime_record_factory), {**subject(), "infobox": infobox}, [], NOW
         )
 
 

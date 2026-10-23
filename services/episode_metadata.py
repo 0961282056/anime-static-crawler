@@ -64,23 +64,29 @@ def _name(value: str) -> str:
     )
 
 
+def _infobox_items(subject: dict[str, Any]) -> list[dict[str, Any]]:
+    items = subject.get("infobox", [])
+    if not isinstance(items, list) or any(
+        not isinstance(item, dict) or not isinstance(item.get("key"), str)
+        for item in items
+    ):
+        raise MetadataUnavailable("Anime infobox is invalid")
+    return items
+
+
 def _infobox(subject: dict[str, Any], keys: set[str]) -> list[str]:
     return [
         item["value"]
-        for item in subject.get("infobox", [])
-        if isinstance(item, dict)
-        and item.get("key") in keys
-        and isinstance(item.get("value"), str)
+        for item in _infobox_items(subject)
+        if item.get("key") in keys and isinstance(item.get("value"), str)
     ]
 
 
 def subject_names(subject: dict[str, Any]) -> set[str]:
     """Canonical names and explicit provider aliases, normalized identically."""
-    if not isinstance(subject.get("infobox", []), list):
-        raise MetadataUnavailable("Anime infobox is invalid")
     names = [subject.get("name", ""), subject.get("name_cn", "")]
-    for item in subject.get("infobox", []):
-        if isinstance(item, dict) and item.get("key") == "别名":
+    for item in _infobox_items(subject):
+        if item.get("key") == "别名":
             value = item.get("value")
             if isinstance(value, str):
                 names.append(value)
@@ -154,6 +160,7 @@ def parse_episode_metadata(
     subject_id = anime.external_ids.bangumi
     if subject.get("id") != subject_id or subject.get("type") != 2:
         raise MetadataUnavailable("Linked subject is not the expected anime")
+    infobox = _infobox_items(subject)
     review = reviewed_source(anime)
     scoped = bool(
         review
@@ -179,9 +186,7 @@ def parse_episode_metadata(
             **subject,
             "eps": review["total_override"],
             "infobox": [
-                item
-                for item in subject.get("infobox", [])
-                if item.get("key") not in {"话数", "話數"}
+                item for item in infobox if item.get("key") not in {"话数", "話數"}
             ],
         }
         bounds = review["main_range"]

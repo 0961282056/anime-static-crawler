@@ -1,3 +1,4 @@
+import {installDatasetFixture} from '../helpers/versioned-data.cjs';
 import { readFileSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
 
@@ -13,16 +14,13 @@ test('same-title series have independent share rows under production CSP', async
     const response = await route.fetch();
     await route.fulfill({response, headers: {...response.headers(), 'content-security-policy': csp}});
   });
-  await page.route('**/data/*.json*', route => route.fulfill({
-    contentType: 'application/json',
-    body: JSON.stringify({anime_list: [1672, 1936].map((id, i) => ({
+  await installDatasetFixture(page, () => ({anime_list: [1672, 1936].map((id, i) => ({
       bangumi_id: `anime-${id}`, anime_name: '科學×冒險生存！',
       original_name: i ? '科学×冒険サバイバル！ 第2シリーズ' : '科学×冒険サバイバル！',
       external_ids: {bangumi: i ? 536878 : 480716},
       story: '分享清單身分回歸測試', premiere_date: '一', premiere_time: '20:00',
       anime_image_url: `https://res.cloudinary.com/demo/image/upload/v1/anime_covers/${'a'.repeat(64)}`,
-    }))}),
-  }));
+    }))}));
   await page.route('https://res.cloudinary.com/**', route => route.fulfill({contentType: 'image/png', body: png}));
   await page.goto('/');
   const add = page.getByRole('button', {name: /加入清單/});
@@ -53,17 +51,14 @@ test('share export loads the integrity-pinned renderer on demand under productio
     const response = await route.fetch();
     await route.fulfill({response, headers: {...response.headers(), 'content-security-policy': csp}});
   });
-  await page.route('**/data/*.json*', route => route.fulfill({
-    contentType: 'application/json',
-    body: JSON.stringify({
+  await installDatasetFixture(page, () => ({
       generated_at: '2026-09-30T00:00:00+08:00',
       anime_list: [{
         bangumi_id: 'anime-9999', anime_name: '分享回歸測試', story: '測試簡介',
         premiere_date: '一', premiere_time: '20:00',
         anime_image_url: `https://res.cloudinary.com/demo/image/upload/f_auto,q_auto:best/v1/anime_covers/${'a'.repeat(64)}`,
       }],
-    }),
-  }));
+    }));
   await page.route('https://res.cloudinary.com/**', route => route.fulfill({
     contentType: 'image/png', headers: {'access-control-allow-origin': '*'}, body: png,
   }));
@@ -102,13 +97,10 @@ for (const failure of [
       const response = await route.fetch();
       await route.fulfill({response, headers: {...response.headers(), 'content-security-policy': csp}});
     });
-    await page.route('**/data/*.json*', route => route.fulfill({
-      contentType: 'application/json',
-      body: JSON.stringify({anime_list: [{
+    await installDatasetFixture(page, () => ({anime_list: [{
         anime_name: '分享故障回歸',
         anime_image_url: `https://res.cloudinary.com/demo/image/upload/v1/anime_covers/${'a'.repeat(64)}`,
-      }]}),
-    }));
+      }]}));
     let failedImageRequests = 0;
     await page.route('https://res.cloudinary.com/**', route => {
       const broken = failure.target === 'image' && decodeURIComponent(route.request().url()).includes('q_auto:best');

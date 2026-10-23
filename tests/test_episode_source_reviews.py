@@ -274,6 +274,61 @@ def test_live_official_scope_excludes_provider_phantoms(
         parse_episode_metadata(anime, {**subject, "date": "2000-01-01"}, entries, NOW)
 
 
+@pytest.mark.parametrize("infobox", [None, {}, [None], ["invalid"], [{"key": []}]])
+def test_live_scope_invalid_infobox_uses_fallback_and_retains_success(
+    anime_record_factory, infobox
+):
+    from services.episode_metadata import BangumiClient, MetadataUnavailable
+
+    review = next(r for r in source_reviews() if r["subject_id"] == 568244)
+    anime = reviewed_anime(review, anime_record_factory)
+    previous = anime.episodes
+    now = NOW + timedelta(days=3)
+    client = BangumiClient(interval_seconds=0)
+    calls = []
+
+    def get(path, **kwargs):
+        calls.append(path)
+        if path.startswith("/subjects/"):
+            return {
+                "id": review["subject_id"],
+                "type": 2,
+                "name": review["subject_name"],
+                "date": review["first_air_date"],
+                "infobox": infobox,
+            }
+        pytest.fail("Malformed subject must fail before API episode pagination")
+
+    def get_page(path):
+        calls.append("html:" + path)
+        raise MetadataUnavailable("Controlled HTML fallback failure")
+
+    client._get = get
+    client._get_page = get_page
+    enricher = EpisodeEnricher(client)
+    result = enricher.enrich(anime, now)
+    assert calls == ["/subjects/568244", "html:/subject/568244"]
+    assert result.episodes.fetch_state == "stale"
+    assert result.episodes.checked_at == previous.checked_at
+    assert result.episodes.attempted_at == now
+    assert result.episodes.aired_episodes == previous.aired_episodes
+    assert result.episodes.total_episodes == previous.total_episodes
+    # A malformed record must not prevent another exact identity's update.
+    healthy = Anime.model_validate(
+        {
+            **anime_record_factory(9999, name="Healthy"),
+            "original_name": "Healthy",
+            "external_ids": {"bangumi": 9999},
+        }
+    )
+    client._get = lambda path, **kwargs: (
+        {"id": 9999, "type": 2, "name": "Healthy", "infobox": []}
+        if path.startswith("/subjects/")
+        else {"total": 0, "data": []}
+    )
+    assert enricher.enrich(healthy, now).episodes.fetch_state == "ok"
+
+
 def test_only_reviewed_official_url_is_allowed():
     url = source_reviews()[0]["metadata"]["source_urls"][0]
     assert EpisodeMetadata(source_urls=[url]).source_urls == [url]

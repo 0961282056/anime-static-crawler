@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import vm from 'node:vm';
+import {createHash, webcrypto} from 'node:crypto';
 
 const source = readFileSync(new URL('../../static/js/main.js', import.meta.url), 'utf8');
 
@@ -109,6 +110,9 @@ function createContext({storage = null, fetchImpl = null, html2canvas = null, na
     Number,
     JSON,
     Error,
+    TextDecoder,
+    Uint8Array,
+    crypto: webcrypto,
     encodeURIComponent,
     setTimeout,
     clearTimeout,
@@ -155,11 +159,15 @@ function searchIndexFor(quarters) {
       else entries.set(key, {identity, story: anime.story.normalize('NFKC').toLowerCase(), quarters: [quarter]});
     }
   }
-  return {schema_version: 1, data_version: 'aaaaaaaaaaaaaaaa', quarter_versions: Object.fromEntries(Object.keys(quarters).map(key => [key, 'a'.repeat(64)])), generated_at: '2026-09-30T00:00:00+08:00', entries: [...entries.values()]};
+  return {schema_version: 1, data_version: 'aaaaaaaaaaaaaaaa', quarter_versions: Object.fromEntries(Object.entries(quarters).map(([key, data]) => [key, datasetHash(data)])), generated_at: '2026-09-30T00:00:00+08:00', entries: [...entries.values()]};
 }
 
+function datasetHash(payload) {
+  return createHash('sha256').update(JSON.stringify(payload)).digest('hex');
+}
 function responseFor(payload) {
-  return { ok: true, status: 200, json: async () => payload };
+  return { ok: true, status: 200, json: async () => payload,
+    arrayBuffer: async () => new TextEncoder().encode(JSON.stringify(payload)).buffer };
 }
 
 function errorResponse(status) {
@@ -881,21 +889,22 @@ test('indexed search bounds simultaneous matched-quarter loads', async () => {
 });
 
 test('a changed quarter hash invalidates a fresh dataset cache and changes its request URL', async () => {
+  const first = dataset('version-1'); const second = dataset('version-2');
   const urls = [];
   const {app} = createContext({fetchImpl: async url => {
     urls.push(url);
     return responseFor(dataset(`version-${urls.length}`));
   }});
   app.year = '2026'; app.season = '秋';
-  app.quarterVersions['2026_秋'] = 'a'.repeat(64);
+  app.quarterVersions['2026_秋'] = datasetHash(first);
   await app.loadData();
   await app.loadData();
   assert.equal(urls.length, 1);
-  app.quarterVersions['2026_秋'] = 'b'.repeat(64);
+  app.quarterVersions['2026_秋'] = datasetHash(second);
   await app.loadData();
   assert.equal(urls.length, 2);
-  assert.match(urls[0], new RegExp('v=' + 'a'.repeat(64)));
-  assert.match(urls[1], new RegExp('v=' + 'b'.repeat(64)));
+  assert.match(urls[0], new RegExp('v=' + datasetHash(first)));
+  assert.match(urls[1], new RegExp('v=' + datasetHash(second)));
   assert.equal(app.rawAnimeList[0].anime_name, 'version-2');
 });
 
@@ -952,6 +961,75 @@ test('retry refreshes release metadata after a data-only index version update', 
   assert.equal(calls.filter(url => url.startsWith('search-index')).length, 2);
 });
 
+test('a cached old index rejects new same-identity content, then retry loads a consistent release', async () => {
+  const current = dataset('current');
+  const before = dataset('same-work'); before.anime_list[0].story = 'old-only-word';
+  const after = structuredClone(before); after.anime_list[0].story = 'new-only-word';
+  const oldIndex = searchIndexFor({'2026_秋': current, '2025_夏': before});
+  const newIndex = searchIndexFor({'2026_秋': current, '2025_夏': after});
+  newIndex.data_version = 'bbbbbbbbbbbbbbbb';
+  let deployedNew = false;
+  const {app} = createContext({fetchImpl: async url => {
+    if (url.startsWith('release.json')) return responseFor({schema_version: 1, build_version: 'test-build', data_version: newIndex.data_version, quarter_versions: newIndex.quarter_versions});
+    if (url.startsWith('search-index')) return responseFor(deployedNew ? newIndex : oldIndex);
+    return responseFor(url.includes('2025_') ? after : current);
+  }});
+  app.quarterVersions = oldIndex.quarter_versions;
+  app.year = '2026'; app.season = '秋'; app.searchKeyword = 'prime-no-match';
+  await app.loadData();
+  deployedNew = true;
+  app.searchKeyword = 'old-only-word';
+  await app.loadData();
+  assert.equal(app.loadError.code, 'SEARCH_VERSION');
+  assert.equal(app.rawAnimeList.length, 0);
+  assert.equal(app.dataCache['2025_夏'], undefined);
+  await app.retryLoad();
+  assert.equal(app.loadError, null);
+  assert.equal(app.filteredAnime.length, 0); // Removed text no longer matches.
+  app.searchKeyword = 'new-only-word';
+  await app.loadData();
+  assert.equal(app.filteredAnime.length, 1);
+  assert.equal(app.dataCache['2025_夏'].version, datasetHash(after));
+});
+
+test('quarter integrity uses original UTF-8 bytes, including whitespace and JSON key order', async () => {
+  const payload = dataset('日本語／中文');
+  const body = JSON.stringify(payload, null, 2) + '\n';
+  const digest = createHash('sha256').update(body).digest('hex');
+  let receivedBody = body;
+  const {app} = createContext({fetchImpl: async () => ({ok: true, status: 200,
+    arrayBuffer: async () => new TextEncoder().encode(receivedBody).buffer,
+  })});
+  app.quarterVersions['2026_秋'] = digest;
+  const valid = await app.getDataset('2026_秋');
+  assert.equal(valid.anime_list[0].anime_name, '日本語／中文');
+  assert.equal(valid.version, digest);
+  app.dataCache = {};
+  receivedBody = JSON.stringify(payload); // Same JSON values, different bytes.
+  await assert.rejects(app.getDataset('2026_秋'), {code: 'SEARCH_VERSION'});
+  assert.equal(app.dataCache['2026_秋'], undefined);
+});
+
+test('cancelling during SHA-256 verification cannot cache or replace newer data', async () => {
+  const before = dataset('before'); const after = dataset('after');
+  let finishDigest;
+  const {app, context} = createContext({fetchImpl: async () => responseFor(finishDigest ? after : before)});
+  context.crypto = {subtle: {digest: () => new Promise(resolve => { finishDigest = resolve; })}};
+  app.quarterVersions['2026_秋'] = datasetHash(before);
+  const controller = new AbortController();
+  const obsolete = app.getDataset('2026_秋', controller.signal);
+  const cancelled = assert.rejects(obsolete, {name: 'AbortError'});
+  while (!finishDigest) await nextTick();
+  controller.abort(); await cancelled;
+  context.crypto = webcrypto;
+  app.quarterVersions['2026_秋'] = datasetHash(after);
+  await app.getDataset('2026_秋');
+  finishDigest(Uint8Array.from(Buffer.from(datasetHash(before), 'hex')).buffer);
+  await nextTick();
+  assert.equal(app.dataCache['2026_秋'].anime_list[0].anime_name, 'after');
+  assert.equal(app._pendingDataRequests.size, 0);
+});
+
 for (const navigation of ['clear search', 'change quarter']) {
   for (const success of [true, false]) {
     test(`obsolete release refresh ${success ? 'success' : 'failure'} cannot change state after ${navigation}`, async () => {
@@ -996,18 +1074,19 @@ for (const navigation of ['clear search', 'change quarter']) {
 
 test('a late response from an older quarter version cannot overwrite the new cache', async () => {
   const resolvers = [];
+  const oldData = dataset('old'); const newData = dataset('new');
   const {app} = createContext({fetchImpl: () => new Promise(resolve => resolvers.push(resolve))});
-  app.quarterVersions['2026_秋'] = 'a'.repeat(64);
+  app.quarterVersions['2026_秋'] = datasetHash(oldData);
   const old = app.getDataset('2026_秋');
   await nextTick();
-  app.quarterVersions['2026_秋'] = 'b'.repeat(64);
+  app.quarterVersions['2026_秋'] = datasetHash(newData);
   const current = app.getDataset('2026_秋');
   await nextTick();
   assert.equal(resolvers.length, 2);
-  resolvers[1](responseFor(dataset('new'))); await current;
-  resolvers[0](responseFor(dataset('old'))); await old;
+  resolvers[1](responseFor(newData)); await current;
+  resolvers[0](responseFor(oldData)); await old;
   assert.equal(app.dataCache['2026_秋'].anime_list[0].anime_name, 'new');
-  assert.equal(app.dataCache['2026_秋'].version, 'b'.repeat(64));
+  assert.equal(app.dataCache['2026_秋'].version, datasetHash(newData));
 });
 
 test('module composition preserves reactive getters and independent app state', () => {
