@@ -33,11 +33,11 @@ flowchart LR
 需要 Python 3.11；先依[開發手冊](docs/開發與測試.md)安裝鎖定依賴。在已啟用的虛擬環境執行：
 
 ```bash
-BUILD_ONLY=true python generate_static.py
+python generate_static.py
 python manage.py validate-all
 python -m http.server 4173 --bind 127.0.0.1 --directory dist
 ```
 
-PowerShell 的環境變數寫法見開發手冊。此模式不需 `.env`，不執行爬蟲或 Cloudinary 操作。
+此命令預設只建置，不需 `.env`，不執行爬蟲或 Cloudinary 操作。需要更新來源資料時才使用 `python generate_static.py --crawl`；它會連線抓取、更新 JSON，並可能上傳封面，先依[開發手冊](docs/開發與測試.md#確實需要執行本機爬蟲時)確認憑證、備份與授權。
 
 `dist/data/` 是受 Git 追蹤的核心資料，不能把整個 `dist/` 當暫存資料夾刪除。前端修改 `frontend/` 後，要以 `python manage.py build-frontend` 同步生成 `static/js/main.js`。資料與程式變更均經 PR 與品質檢查；圖片清理及 Git 歷史重寫另依安全手冊處理。

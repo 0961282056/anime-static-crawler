@@ -106,7 +106,7 @@ jobs:
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
           CRAWLER_USER_AGENT: ${{ vars.CRAWLER_USER_AGENT }}
-        run: python generate_static.py
+        run: python generate_static.py --crawl
 
       - name: Validate generated output before commit
         id: validate-output
