@@ -4,6 +4,7 @@ import pytest
 
 from generate_static import compute_build_version
 from services.production_verification import (
+    REPOSITORY_API,
     SITE,
     is_superseded,
     release_commit,
@@ -106,6 +107,96 @@ def test_old_deployment_retries_and_timeout_leaves_evidence(
     assert json.loads(out.read_text())["status"] == "failed"
     result = wait_for_production(project_paths, SHA, out, read=reader)
     assert result["status"] == "verified"
+
+
+def test_slow_deployment_stays_within_anonymous_api_budget(project_paths, tmp_path):
+    now = [0]
+    old = "c" * 40
+    api_calls = []
+
+    def read(url):
+        if url.startswith(SITE):
+            return json.dumps(
+                {"schema_version": 1, "commit": old if now[0] < 450 else NEW}
+            )
+        api_calls.append(url)
+        assert len(api_calls) <= 60, (
+            "Verification exhausted its own anonymous API budget"
+        )
+        if url.endswith(f"{SHA}...{old}"):
+            return json.dumps({"status": "behind", "merge_base_commit": {"sha": old}})
+        if url.endswith(f"{SHA}...{NEW}"):
+            return json.dumps({"status": "ahead", "merge_base_commit": {"sha": SHA}})
+        assert url == f"{REPOSITORY_API}/commits/main"
+        return json.dumps({"sha": NEW})
+
+    result = wait_for_production(
+        project_paths,
+        SHA,
+        tmp_path / "receipt.json",
+        read=read,
+        clock=lambda: now[0],
+        wait=lambda seconds: now.__setitem__(0, now[0] + seconds),
+    )
+    assert result["status"] == "superseded" and result["attempts"] == 31
+    assert len(api_calls) == 3
+
+
+def test_main_membership_is_rechecked_after_a_foreign_preview(project_paths, tmp_path):
+    now = [0]
+    other = "c" * 40
+    main_calls = []
+
+    def read(url):
+        if url.startswith(SITE):
+            return json.dumps({"schema_version": 1, "commit": NEW})
+        if url.endswith(f"{SHA}...{NEW}"):
+            return json.dumps({"status": "ahead", "merge_base_commit": {"sha": SHA}})
+        if url.endswith("/commits/main"):
+            main_calls.append(now[0])
+            return json.dumps({"sha": other if now[0] == 0 else NEW})
+        assert url.endswith(f"{NEW}...{other}")
+        return json.dumps({"status": "diverged", "merge_base_commit": {"sha": SHA}})
+
+    result = wait_for_production(
+        project_paths,
+        SHA,
+        tmp_path / "receipt.json",
+        read=read,
+        clock=lambda: now[0],
+        wait=lambda seconds: now.__setitem__(0, now[0] + seconds),
+    )
+    assert main_calls == [0, 15]
+    assert result["status"] == "superseded" and result["attempts"] == 2
+
+
+@pytest.mark.parametrize("failure", ["transport", "incomplete"])
+def test_comparison_failures_are_not_cached(project_paths, tmp_path, failure):
+    now = [0]
+    comparisons = []
+
+    def read(url):
+        if url.startswith(SITE):
+            return json.dumps({"schema_version": 1, "commit": NEW})
+        if url.endswith("/commits/main"):
+            return json.dumps({"sha": NEW})
+        comparisons.append(url)
+        if len(comparisons) == 1:
+            if failure == "transport":
+                raise RuntimeError("Public verification HTTP 403")
+            return json.dumps({"status": "ahead"})
+        return json.dumps({"status": "ahead", "merge_base_commit": {"sha": SHA}})
+
+    result = wait_for_production(
+        project_paths,
+        SHA,
+        tmp_path / "receipt.json",
+        read=read,
+        clock=lambda: now[0],
+        wait=lambda seconds: now.__setitem__(0, now[0] + seconds),
+    )
+    assert len(comparisons) == 2
+    assert result["status"] == "superseded" and result["attempts"] == 2
 
 
 def test_release_sha_validation_and_fixture_fallback(project_paths):
