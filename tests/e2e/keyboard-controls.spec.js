@@ -1,3 +1,4 @@
+import {installDatasetFixture} from '../helpers/versioned-data.cjs';
 import {readFileSync} from 'node:fs';
 import {expect, test} from '@playwright/test';
 
@@ -17,16 +18,14 @@ test.beforeEach(async ({page}) => {
     const response = await route.fetch();
     await route.fulfill({response, headers: {...response.headers(), 'content-security-policy': csp}});
   });
-  await page.route('**/data/*.json*', route => route.fulfill({
-    contentType: 'application/json', body: JSON.stringify({
+  await installDatasetFixture(page, () => ({
       generated_at: '2026-10-20T00:00:00+08:00',
       anime_list: titles.map((title, i) => ({
         bangumi_id: `anime-${9900 + i}`, anime_name: title,
         story: `${title}的完整簡介。`.repeat(20), premiere_date: '一', premiere_time: '20:00',
         anime_image_url: `https://res.cloudinary.com/demo/image/upload/v1/anime_covers/${'a'.repeat(64)}`,
       })),
-    }),
-  }));
+    }));
   await page.route('https://res.cloudinary.com/**', route => route.fulfill({contentType: 'image/png', body: png}));
 });
 

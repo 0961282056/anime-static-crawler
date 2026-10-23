@@ -1,5 +1,5 @@
 import {expect, test} from '@playwright/test';
-import {readFileSync} from 'node:fs';
+import {installDatasetFixture} from '../helpers/versioned-data.cjs';
 
 test('keywords search historical quarters, merge repeated works and clear back to the selected quarter', async ({page}) => {
   await page.setViewportSize({width: 360, height: 800});
@@ -10,7 +10,12 @@ test('keywords search historical quarters, merge repeated works and clear back t
   });
   const shared = record(8001, '共用作品', 'Shared work');
   const ancient = record(8002, '遠古作品', 'Ancient work');
-  const index = JSON.parse(readFileSync('dist/search-index.json', 'utf8'));
+  const fixture = await installDatasetFixture(page, {
+    '2026_秋': {generated_at: '2026-10-15T08:00:00+08:00', anime_list: [shared]},
+    '2025_夏': {generated_at: '2026-10-15T08:00:00+08:00', anime_list: [shared]},
+    '2018_冬': {generated_at: '2026-10-15T08:00:00+08:00', anime_list: [ancient]},
+  });
+  const index = fixture.index;
   index.entries = [
     {identity: [shared.bangumi_id, shared.anime_name, shared.original_name, null], story: shared.story, quarters: ['2026_秋', '2025_夏']},
     {identity: [ancient.bangumi_id, ancient.anime_name, ancient.original_name, null], story: ancient.story, quarters: ['2018_冬']},

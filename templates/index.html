@@ -216,7 +216,7 @@
                     </div>
                 </template>
             </div>
-            <div class="search-pagination" x-cloak x-show="!loading && !loadError && hasMoreAnime">
+            <div class="search-pagination" x-cloak x-show="!loading && (!loadError || (loadError && loadError.hasStaleData)) && hasMoreAnime">
                 <p role="status" aria-live="polite" x-text="'已顯示 ' + visibleAnime.length + '／共 ' + filteredAnime.length + ' 部'"></p>
                 <button type="button" class="btn-add" aria-controls="searchResults" @click="showMoreAnime($event)">顯示更多</button>
             </div>

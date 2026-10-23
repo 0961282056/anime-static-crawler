@@ -1,6 +1,7 @@
 import {expect, test} from '@playwright/test';
 import {readFileSync, readdirSync} from 'node:fs';
 import {verifyPublishedPage} from '../../scripts/verify-production-browser.mjs';
+import {installDatasetFixture} from '../helpers/versioned-data.cjs';
 
 const expected = 'a'.repeat(40);
 const site = 'http://127.0.0.1:4173/';
@@ -18,15 +19,16 @@ async function installFixture(page, {current, historical, changeRelease = false}
     await route.fulfill({response, headers: {...response.headers(), 'content-security-policy': csp}});
   });
   await page.route('https://res.cloudinary.com/**', route => route.fulfill({contentType: 'image/png', body: png}));
+  const fixture = await installDatasetFixture(page, quarter => ({anime_list: quarter === '2018_冬' ? historical : current}));
   let releaseReads = 0;
   await page.route('**/release.json*', route => {
     releaseReads += 1;
     return route.fulfill({contentType: 'application/json', body: JSON.stringify({
-      ...JSON.parse(readFileSync('dist/release.json', 'utf8')),
+      ...fixture.release,
       commit: changeRelease && releaseReads > 2 ? 'b'.repeat(40) : expected,
     })});
   });
-  const index = JSON.parse(readFileSync('dist/search-index.json', 'utf8'));
+  const index = fixture.index;
   index.entries = historical.map(row => ({
     identity: [row.bangumi_id, row.anime_name, row.original_name || '', row.external_ids?.bangumi || null],
     story: row.story, quarters: ['2018_冬'],

@@ -78,6 +78,74 @@ def test_source_failure_does_not_block_independent_episode_refresh(setup_pipelin
     )
 
 
+def test_bad_card_link_retains_quarter_and_continues_other_stages(
+    project_paths, anime_record_factory, fixture_dir
+):
+    from services.parser import extract_item_html, parse_anime_item
+
+    repo = DataRepository(project_paths.data_dir, DataQualityPolicy())
+    document = (fixture_dir / "acgsecrets_202607_minimal.html").read_text()
+    candidate = parse_anime_item(extract_item_html(document)[0])
+    old = Anime(
+        **{
+            key: value
+            for key, value in candidate.model_dump().items()
+            if key != "source_image_url"
+        },
+        anime_image_url=anime_record_factory(2200)["anime_image_url"],
+    )
+    repo.write_quarter(
+        year="2026",
+        season="夏",
+        records=[old],
+        source_url="https://acgsecrets.hk/bangumi/202607/",
+        source_count=1,
+        parse_failure_count=0,
+    )
+    before = (project_paths.data_dir / "2026_夏.json").read_bytes()
+    bad = document.replace(
+        '<div class="anime_content">',
+        '<div class="anime_content"><div class="anime_link_group">'
+        '<a href="https://[invalid">link</a></div>',
+    )
+    events = []
+
+    def fetch(year, season):
+        events.append("source-" + season)
+        return (
+            f"https://acgsecrets.hk/bangumi/{year}{'07' if season == '夏' else '10'}/",
+            bad if season == "夏" else document,
+        )
+
+    class Images:
+        def assert_quota_available(self):
+            events.append("quota")
+
+        def store(self, *args):
+            events.append("image")
+            return old.anime_image_url
+
+    result = run_update_pipeline(
+        project_paths,
+        repo,
+        NOW,
+        [("2026", "夏"), ("2026", "秋")],
+        future=lambda *args: False,
+        source=SimpleNamespace(fetch_quarter_html=fetch),
+        image_factory=Images,
+        refresh=lambda *args: events.append("episodes") or set(),
+    )
+    assert events == ["source-夏", "source-秋", "quota", "image", "episodes"]
+    assert (project_paths.data_dir / "2026_夏.json").read_bytes() == before
+    assert repo.load_quarter("2026", "秋").anime_list == [old]
+    assert result["partial_failures"] == result["parse_failures"] == 1
+    report = json.loads(
+        (project_paths.root / "audit-output/update-pipeline.json").read_text()
+    )
+    assert report["status"] == "partial" and report["episodes"] == "completed"
+    assert report["collection"][0]["error"] == "ItemParseError"
+
+
 def test_cached_images_do_not_require_cloudinary_credentials(setup_pipeline):
     paths, repo, old, candidate = setup_pipeline
     import hashlib

@@ -19,6 +19,8 @@
 
 `app` 以 property descriptors 組合方法，保留 filteredAnime／visibleAnime getter 的延遲求值和 Alpine 響應式行為；不能改成展開執行 getter 的 `{...searchMethods}`。共享請求狀態以每個 app 的 `_pendingDataRequests` Map 為 WeakMap 鍵，避免 Alpine 不同 scope proxy 分裂同一請求。每位訂閱者獨立取消；最後一位離開後，下一個 microtask 才取消底層 fetch，讓同一事件中的替代訂閱仍可共用。取消後的遲到回應不寫快取，全站搜尋任一 worker 失敗也取消其餘 worker。
 
+季度請求依 `quarter_versions` 的 SHA-256 核對實際回應位元組，通過格式及版本檢查後才寫快取；不以網址查詢參數當成已取得舊檔案的證明。版本不同會回報 `SEARCH_VERSION`，由重試更新發布資訊，避免舊索引與新季度內容混用。瀏覽器需提供 HTTPS／localhost 安全環境下的 Web Crypto。合成瀏覽器資料透過 `tests/helpers/versioned-data.cjs` 同步建立對應雜湊及頁面設定，保留真實版本檢查。
+
 全站搜尋的 `filteredAnime` 保留完整結果；`visibleAnime` 每次只增加 60 筆卡片，篩選及總數依完整結果計算，季度瀏覽不分批。分享清單最多 20 部，匯出使用開始時的快照，只移除實際匯出的項目；字型／渲染／匯出有期限，並限制畫布面積與邊長。設定集中於 `settings.js`。html2canvas 載入 Promise 刻意在模組作用域共享；它的內部渲染及瀏覽器剪貼簿作業沒有可用的取消介面，應用程式逾時後會清理自己的 DOM／狀態，並阻擋遲到 callback 再下載或清除清單。
 
 產物以 IIFE 封裝，不在 window 註冊 helper 或 app 方法。瀏覽器只透過既有 alpine:init 註冊 animeApp。測試為存取私有 helper 而在 VM 中插入測試掛點，不會將掛點寫入產物。
