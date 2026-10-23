@@ -20,7 +20,7 @@
 
 ## 資料與發布基準
 
-2026-10-22 依 [PR #85](https://github.com/0961282056/anime-static-crawler/pull/85) 合併版 `95507570d949bba9d0130fe079ba47bfe5ca3c41` 的季度 JSON 重新計算：
+2026-10-23 依 [PR #87](https://github.com/0961282056/anime-static-crawler/pull/87) 合併版 `2237f25be2a293afa925e05c5594c5106b09567b` 的季度 JSON 重新計算。這是資料快照，不代替每次程式變更的測試與發布驗收：
 
 | 項目 | 數量 |
 |---|---:|
@@ -31,11 +31,15 @@
 | AniList 連結缺漏（可選，暫停主動補齊） | 1,378 |
 | 集數 stale／conflict | 0／0 |
 
-數量按季度記錄計算，不是獨立作品數；不同缺漏欄位會重疊。資料變動時更新本表基準與數量，其他日常文件連回本頁。`python manage.py quality-report` 可重算缺漏與刷新狀態，`python manage.py quality-evidence` 另產生品質歷史，見開發手冊。當次刷新快照為優先逾期 0、背景逾期 27；「到期尚待刷新」不是來源連線失敗，不與 stale／conflict 混用。
+數量按季度記錄計算，不是獨立作品數；不同缺漏欄位會重疊。`python manage.py quality-report` 可離線重算缺漏與刷新狀態；到期尚待刷新不等於來源連線失敗，也不與 stale／conflict 混用。命令與品質證據用途見[開發手冊](開發與測試.md#查資料品質)。
 
-已觀察 [10/22 04:29 自然爬蟲 schedule](https://github.com/0961282056/anime-static-crawler/actions/runs/39670757280)完整成功，經資料 PR #85 合併後，[品質檢查](https://github.com/0961282056/anime-static-crawler/actions/runs/39672057979)、[品質趨勢](https://github.com/0961282056/anime-static-crawler/actions/runs/39672057901)與[正式部署驗收](https://github.com/0961282056/anime-static-crawler/actions/runs/39672057884)均成功。排程設定為臺北 01:00，此次實際啟動為 04:29，不將設定時間寫成實際啟動時間。
+| 要確認的現況 | 查詢位置 |
+|---|---|
+| 最新 main 與每批變更 | [main 提交](https://github.com/0961282056/anime-static-crawler/commits/main/)與[Pull Requests](https://github.com/0961282056/anime-static-crawler/pulls)；本機先同步 main，再看 `git log -1` |
+| 當次測試與排程 | PR 的 Checks 及 [Actions](https://github.com/0961282056/anime-static-crawler/actions)；核對 event、head commit、各工作結果與 artifact，不沿用舊版測試總數 |
+| 正式站正在提供哪版 | [release.json](https://anime-static-crawler.pages.dev/release.json)與對應的 Production verification 工作；合併、部署、公開檔案／瀏覽器驗收分開確認 |
 
-最近程式修補 [PR #84](https://github.com/0961282056/anime-static-crawler/pull/84) 的本地基準為 Python 682、前端 62、Chromium 30；2 個 Windows 專用測試本地略過，原生 Windows CI 通過。這是該版測試紀錄；本次與後續修補仍以各自 PR／正式驗收結果為準。
+已完成事故、遷移及先前排程觀察統一見[歷史索引](archive/README.md#事故與過渡操作)。設定時間不代表實際執行時間；schedule、workflow_dispatch、push 與 PR 必須分開判讀。
 
 ## 資料補齊入口
 
