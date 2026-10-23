@@ -30,9 +30,9 @@ Dependabot 原生支援 pip-compile 的 `.in` 與編譯輸出，實作可追查 
 
 | Action | 固定版本 | 執行環境 |
 |---|---|---|
-| `actions/checkout` | 7.0.0 | Node 24 |
-| `actions/setup-python` | 6.3.0 | Node 24 |
-| `actions/create-github-app-token` | 3.2.0 | Node 24 |
+| `actions/checkout` | 7.0.1 | Node 24 |
+| `actions/setup-python` | 7.0.0 | Node 24 |
+| `actions/create-github-app-token` | 3.3.0 | Node 24 |
 | `actions/upload-artifact` | 7.0.2 | Node 24 |
 | `actions/download-artifact` | 8.0.2 | Node 24 |
 
