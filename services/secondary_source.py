@@ -10,6 +10,7 @@ from typing import Any
 import requests
 
 from models import Anime
+from services.response_limits import bounded_response
 
 QUERY = """
 query ($ids: [Int]) {
@@ -62,6 +63,8 @@ class AniListClient:
                 },
                 timeout=(5, 20),
                 allow_redirects=False,
+                stream=True,
+                hooks={"response": bounded_response(2 * 1024 * 1024)},
             )
             try:
                 self.last_response_info = {

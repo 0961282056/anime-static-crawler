@@ -4,5 +4,5 @@
 beautifulsoup4>=4.15,<5
 cloudinary>=1.45,<2
 lxml>=6.1.1,<7
-Pillow>=12.3,<13
+Pillow>=13.0.0,<14
 urllib3>=2.8,<3

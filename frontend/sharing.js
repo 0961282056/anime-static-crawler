@@ -2,6 +2,12 @@
 const HTML2CANVAS_URL = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
 const HTML2CANVAS_INTEGRITY = 'sha384-ZZ1pncU3bQe8y31yfZdMFdSpttDoPmOZg2wguVK9almUodir1PghgT0eY7Mrty8H';
 let html2canvasLoadPromise = null;
+function withShareDeadline(promise, milliseconds, code) {
+    return new Promise((resolve, reject) => {
+        const timer = setTimeout(() => reject(createShareError(code, '分享圖片處理逾時')), milliseconds);
+        Promise.resolve(promise).then(resolve, reject).finally(() => clearTimeout(timer));
+    });
+}
 function createShareError(code, message) {
     const error = new Error(message);
     error.name = 'ShareImageError';
@@ -24,6 +30,10 @@ function describeShareError(error) {
         SHARE_RENDERER_TIMEOUT: '分享圖片元件載入逾時，請檢查網路後再試。',
         SHARE_RENDERER_NETWORK: '分享圖片元件載入失敗，請檢查網路後再試。',
         SHARE_RENDERER: '瀏覽器無法完成分享圖片渲染，請稍後再試。',
+        SHARE_FONT_TIMEOUT: '等待字型逾時，請檢查網路後再試。',
+        SHARE_RENDER_TIMEOUT: '分享圖片渲染逾時，請減少清單項目後重試。',
+        SHARE_EXPORT_TIMEOUT: '圖片匯出逾時，請確認下載或剪貼簿權限後再試。',
+        SHARE_SIZE: '清單產生的圖片過大，請減少項目並分批匯出。',
         SHARE_EXPORT: '圖片匯出失敗，請確認瀏覽器下載權限後再試。',
     };
     const requestedCode = error && error.code;
@@ -125,6 +135,10 @@ const sharingMethods = {
             Swal.fire({toast: true, position: 'top', icon: 'warning', title: '已在清單中', timer: 1000, showConfirmButton: false, background: '#2b2b2b', color: '#fff'});
             return;
         }
+        if (this.shareList.length >= SHARE_MAX_ITEMS) {
+            Swal.fire({icon: 'warning', title: '分享清單已滿', text: `單次最多 ${SHARE_MAX_ITEMS} 部，請先匯出或移除部分項目。`, background: '#1e1e1e', color: '#fff'});
+            return;
+        }
         this.shareList.push({
             name: anime.anime_name,
             img: (anime.anime_image_url && anime.anime_image_url !== '無圖片') ? anime.anime_image_url : 'https://placehold.co/50x50',
@@ -152,13 +166,24 @@ const sharingMethods = {
     },
 
     async generateShareImage() {
+        if (this._shareExportRunning || !this.shareList.length) return;
+        this._shareExportRunning = true;
+        const exportItems = this.shareList.map(item => ({...item}));
+        const exportedNames = new Set(exportItems.map(item => item.name));
+        const removeExportedItems = () => {
+            this.shareList = this.shareList.filter(item => !exportedNames.has(item.name));
+        };
+        let exporting = true;
         const btn = document.getElementById('copyButton');
         const originalText = btn ? btn.innerHTML : '';
         let exportContainer = null;
         try {
+            if (exportItems.length > SHARE_MAX_ITEMS) {
+                throw createShareError('SHARE_SIZE', '分享項目超過安全上限');
+            }
             if (btn) {
                 btn.disabled = true;
-                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 處理最高畫質圖片...';
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 正在生成分享圖片...';
             }
 
             const renderHtml2Canvas = await loadHtml2Canvas();
@@ -168,6 +193,7 @@ const sharingMethods = {
 
             // 建立隱藏容器；URL 驗證也在此 try 內，確保任何例外都會復原按鈕。
             exportContainer = document.createElement('div');
+            exportContainer.dataset.animeShareExport = 'true';
             exportContainer.style.cssText = `
                 position: fixed; top: 0; left: -9999px; z-index: -1;
                 width: 600px;
@@ -178,7 +204,7 @@ const sharingMethods = {
             `;
 
             // 使用 DOM API 建卡片，避免把外部資料拼成 HTML。
-            this.shareList.forEach(item => {
+            exportItems.forEach(item => {
                 let imageUrl;
                 try {
                     imageUrl = new URL(item.img, window.location.origin);
@@ -286,25 +312,35 @@ const sharingMethods = {
                     img.onerror = () => finish(reject, createShareError('SHARE_IMAGE_LOAD', '分享圖片無法載入'));
                 });
             }));
-            if (document.fonts && document.fonts.ready) await document.fonts.ready;
+            if (document.fonts && document.fonts.ready) {
+                await withShareDeadline(document.fonts.ready, SHARE_FONT_TIMEOUT_MS, 'SHARE_FONT_TIMEOUT');
+            }
+            const width = Math.max(1, exportContainer.scrollWidth);
+            const height = Math.max(1, exportContainer.scrollHeight);
+            const scale = Math.min(3, Math.sqrt(SHARE_CANVAS_MAX_PIXELS / (width * height)), SHARE_CANVAS_MAX_DIMENSION / Math.max(width, height));
+            if (!Number.isFinite(scale) || scale < 1) {
+                throw createShareError('SHARE_SIZE', '分享圖片尺寸超出安全上限');
+            }
 
             let canvas;
             try {
-                canvas = await renderHtml2Canvas(exportContainer, {
-                    scale: 3, useCORS: true, allowTaint: true,
+                canvas = await withShareDeadline(renderHtml2Canvas(exportContainer, {
+                    scale, useCORS: true, allowTaint: true,
                     backgroundColor: '#1a1a1a', logging: false, letterRendering: 1
-                });
+                }), SHARE_RENDER_TIMEOUT_MS, 'SHARE_RENDER_TIMEOUT');
             } catch (error) {
+                if (error?.code === 'SHARE_RENDER_TIMEOUT') throw error;
                 throw createShareError('SHARE_RENDERER', '瀏覽器無法完成分享圖片渲染');
             }
             if (!canvas || typeof canvas.toBlob !== 'function') {
                 throw createShareError('SHARE_EXPORT', '瀏覽器未提供圖片匯出功能');
             }
 
-            await new Promise((resolve, reject) => {
+            await withShareDeadline(new Promise((resolve, reject) => {
                 const rejectExport = () => reject(createShareError('SHARE_EXPORT', '圖片匯出失敗'));
                 try {
                     canvas.toBlob(blob => {
+                        if (!exporting) return;
                         try {
                             if (!blob) return rejectExport();
 
@@ -312,20 +348,22 @@ const sharingMethods = {
                             if (clipboard && window.ClipboardItem) {
                                 clipboard.write([new window.ClipboardItem({'image/png': blob})])
                                     .then(() => {
+                                        if (!exporting) return;
                                         Swal.fire({
                                             icon: 'success', title: '圖片已複製！',
-                                            text: '可直接貼上至 LINE 或社群，清單已清空',
+                                            text: '可直接貼上至 LINE 或社群，已匯出的項目已移除',
                                             background: '#1e1e1e', color: '#fff',
                                             timer: 2000, showConfirmButton: false
                                         });
-                                        this.shareList = [];
+                                        removeExportedItems();
                                         resolve();
                                     })
                                     .catch(() => {
+                                        if (!exporting) return;
                                         console.warn('[Clipboard] 寫入被拒絕，啟動下載備案');
                                         try {
                                             triggerFallbackDownload(blob);
-                                            this.shareList = [];
+                                            removeExportedItems();
                                             resolve();
                                         } catch (error) {
                                             reject(error);
@@ -335,7 +373,7 @@ const sharingMethods = {
                                 console.warn('[Clipboard] API 不支援，啟動下載備案');
                                 try {
                                     triggerFallbackDownload(blob);
-                                    this.shareList = [];
+                                    removeExportedItems();
                                     resolve();
                                 } catch (error) {
                                     reject(error);
@@ -348,7 +386,7 @@ const sharingMethods = {
                 } catch (error) {
                     rejectExport();
                 }
-            });
+            }), SHARE_EXPORT_TIMEOUT_MS, 'SHARE_EXPORT_TIMEOUT');
         } catch (error) {
             const safeError = describeShareError(error);
             console.error('[ShareImage Error]', {code: safeError.code});
@@ -361,11 +399,13 @@ const sharingMethods = {
                 });
             }
         } finally {
+            exporting = false;
+            this._shareExportRunning = false;
             if (exportContainer && document.body.contains(exportContainer)) {
                 document.body.removeChild(exportContainer);
             }
             if (btn) {
-                btn.disabled = false;
+                btn.disabled = this.shareList.length === 0;
                 btn.innerHTML = originalText;
             }
         }

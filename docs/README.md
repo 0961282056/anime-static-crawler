@@ -1,6 +1,6 @@
 # 文件入口
 
-第一次接手先讀[架構與資料流](架構與資料流.md)，要動手則讀[開發與測試](開發與測試.md)。接續工作前同步最新 `main`，再查[有效待辦](後續工作順序.md)。
+目前進入維護收斂：保留現有靜態網站與資料口徑，優先維持更新、驗證與發布穩定。第一次接手先讀[架構與資料流](架構與資料流.md)，要動手則讀[開發與測試](開發與測試.md)。接續工作前同步最新 `main`，再查[維護順序與重啟條件](後續工作順序.md)。
 
 ## 文件導覽
 
@@ -14,13 +14,13 @@
 | 來源與引用、審核回覆、證據時間與品質趨勢 | [資料查證與品質](資料查證與品質.md) |
 | Python／npm／Actions 自動更新與 CDN 維護 | [依賴與Actions維護](依賴與Actions維護.md) |
 | 執行錯誤代碼、保留資料與重試 | [錯誤診斷與重試](錯誤診斷與重試.md) |
-| 下一項工作與完成條件 | [後續工作順序](後續工作順序.md) |
+| 維護順序、收斂完成條件與資料重啟條件 | [後續工作順序](後續工作順序.md) |
 | 尚未實作的 CSP／跨瀏覽器改善 | [改善計畫](CSP與跨瀏覽器改善計畫.md) |
 | 已完成事項、原始查證、舊報告 | [歷史與證據索引](archive/README.md) |
 
 ## 資料與發布基準
 
-2026-10-20 依最新程式基準 [PR #74](https://github.com/0961282056/anime-static-crawler/pull/74)（`ac9875bd20e2e42309f6de093a867e2973926248`）的季度 JSON 重新計算：
+2026-10-23 依 [PR #87](https://github.com/0961282056/anime-static-crawler/pull/87) 合併版 `2237f25be2a293afa925e05c5594c5106b09567b` 的季度 JSON 重新計算。這是資料快照，不代替每次程式變更的測試與發布驗收：
 
 | 項目 | 數量 |
 |---|---:|
@@ -31,13 +31,19 @@
 | AniList 連結缺漏（可選，暫停主動補齊） | 1,378 |
 | 集數 stale／conflict | 0／0 |
 
-數量按季度記錄計算，不是獨立作品數；不同缺漏欄位會重疊。資料變動時更新本表基準與數量，其他日常文件連回本頁，避免多份現況漂移。`python manage.py quality-report` 可重算主要缺漏與刷新狀態，`python manage.py quality-evidence` 另產生連結覆蓋與品質歷史，見開發手冊。
+數量按季度記錄計算，不是獨立作品數；不同缺漏欄位會重疊。`python manage.py quality-report` 可離線重算缺漏與刷新狀態；到期尚待刷新不等於來源連線失敗，也不與 stale／conflict 混用。命令與品質證據用途見[開發手冊](開發與測試.md#查資料品質)。
 
-PR #74 本地 Python 634、前端 46、Chromium 26 通過；2 個 Windows 專用測試本地略過，原生 Windows CI 通過。[該版正式驗收](https://github.com/0961282056/anime-static-crawler/actions/runs/39393317784)確認 44 個公開檔案與發布版本一致。這是該版的歷史驗收結果，後續發布以各 PR 與驗收工作紀錄為準。
+| 要確認的現況 | 查詢位置 |
+|---|---|
+| 最新 main 與每批變更 | [main 提交](https://github.com/0961282056/anime-static-crawler/commits/main/)與[Pull Requests](https://github.com/0961282056/anime-static-crawler/pulls)；本機先同步 main，再看 `git log -1` |
+| 當次測試與排程 | PR 的 Checks 及 [Actions](https://github.com/0961282056/anime-static-crawler/actions)；核對 event、head commit、各工作結果與 artifact，不沿用舊版測試總數 |
+| 正式站正在提供哪版 | [release.json](https://anime-static-crawler.pages.dev/release.json)與對應的 Production verification 工作；合併、部署、公開檔案／瀏覽器驗收分開確認 |
+
+已完成事故、遷移及先前排程觀察統一見[歷史索引](archive/README.md#事故與過渡操作)。設定時間不代表實際執行時間；schedule、workflow_dispatch、push 與 PR 必須分開判讀。
 
 ## 資料補齊入口
 
-先讀[最新高優先查證與範圍防護](high-priority-data-2026-10-20/README.md)，再查[98 筆簡介清單](wikipedia-fill-2026-10-19/remaining-stories.csv)及[完整剩餘清單索引](wikipedia-fill-2026-10-19/remaining-inventory.json)。清單保留原來源時間，不表示本次全部重新連線查證。百科固定修訂、採用原文與授權見[維基百科補齊紀錄](wikipedia-fill-2026-10-19/README.md)。
+這些是保留的查證缺口，取得新來源或修訂證據時才重啟。先讀[最近查證與範圍防護](high-priority-data-2026-10-20/README.md)，再查[98 筆簡介清單](wikipedia-fill-2026-10-19/remaining-stories.csv)及[完整剩餘清單索引](wikipedia-fill-2026-10-19/remaining-inventory.json)。清單保留原來源時間，不表示本次全部重新連線查證。百科固定修訂、採用原文與授權見[維基百科補齊紀錄](wikipedia-fill-2026-10-19/README.md)。
 
 - 當季四筆：藥師第三季前半、鼠小弟第二季、夜櫻第二季第二部分、鑽石王牌 actⅡ 第二季 2nd cour，仍缺對應季別／cour 原文；預定集數不是簡介。
 - 2019 夏《屁屁偵探》已確認第三系列，只缺該系列介紹；班長不能借利根川母條目，《學校沒教的重要事情》的 9 話說明只適用整理整頓編。

@@ -441,3 +441,17 @@ def test_crawler_preflight_build_and_validation_agree_across_processes(tmp_path)
             timeout=60,
         )
         assert result.returncode == 0, result.stdout + result.stderr
+
+
+def test_only_the_crawler_step_explicitly_enables_crawling():
+    workflow = _workflow("crawler.yml")
+    preflight = workflow.split("- name: Run pre-crawl quality gate", 1)[1].split(
+        "\n      - name:", 1
+    )[0]
+    crawl = workflow.split("- name: Crawl, validate, and build", 1)[1].split(
+        "\n      - name:", 1
+    )[0]
+    assert "BUILD_ONLY=true python generate_static.py" in preflight
+    assert "--crawl" not in preflight
+    assert "run: python generate_static.py --crawl" in crawl
+    assert workflow.count("--crawl") == 1

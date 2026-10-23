@@ -19,6 +19,7 @@ function animeApp() {
         filterDay: '全部',
         filterStatus: '全部',
         searchKeyword: '',
+        visibleCount: SEARCH_PAGE_SIZE,
 
         // --- 3. 應用狀態 ---
         rawAnimeList: [],
@@ -36,6 +37,7 @@ function animeApp() {
         _loadRequestId: 0,
         _activeLoadAbort: null,
         _activeCacheKey: null,
+        _shareExportRunning: false,
         STORAGE_KEYS: {
             YEAR: 'anime_user_year',
             SEASON: 'anime_user_season',
@@ -46,6 +48,7 @@ function animeApp() {
         FETCH_TIMEOUT_MS,
         MAX_FETCH_RETRIES,
         RETRY_DELAYS_MS,
+        SHARE_MAX_ITEMS,
 
         // --- 5. 初始化 ---
         initApp() {
@@ -174,6 +177,7 @@ function animeApp() {
         },
 
         saveFilterDay() {
+            this.resetVisibleAnime();
             this.writeStorage(this.STORAGE_KEYS.FILTER_DAY, this.filterDay);
         },
 

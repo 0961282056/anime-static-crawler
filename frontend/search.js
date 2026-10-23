@@ -1,4 +1,4 @@
-// Requires: errors, data
+// Requires: settings, errors, data
 const searchMethods = {
     async getAllQuarterData(signal) {
         const keyword = this.searchKeyword.normalize('NFKC').toLowerCase().trim();
@@ -8,6 +8,9 @@ const searchMethods = {
             .some(value => value.normalize('NFKC').toLowerCase().includes(keyword)));
         const quarters = [...new Set(matches.map(row => row.quarters[0]))];
         const datasets = new Map();
+        const controller = new AbortController();
+        const abortSearch = () => controller.abort();
+        signal.addEventListener('abort', abortSearch, {once: true});
         let next = 0;
         let stopped = false;
         const worker = async () => {
@@ -15,7 +18,7 @@ const searchMethods = {
                 if (signal.aborted) throw createAbortError();
                 const quarter = quarters[next++];
                 try {
-                    const dataset = await this.getDataset(quarter, signal);
+                    const dataset = await this.getDataset(quarter, controller.signal);
                     const records = new Map(dataset.anime_list.map(anime => [JSON.stringify([anime.bangumi_id, anime.anime_name, anime.original_name || '', anime.external_ids?.bangumi || null]), anime]));
                     datasets.set(quarter, records);
                 } catch (error) {
@@ -24,7 +27,14 @@ const searchMethods = {
                 }
             }
         };
-        await Promise.all(Array.from({length: Math.min(4, quarters.length)}, worker));
+        try {
+            await Promise.all(Array.from({length: Math.min(4, quarters.length)}, worker));
+        } catch (error) {
+            controller.abort();
+            throw error;
+        } finally {
+            signal.removeEventListener('abort', abortSearch);
+        }
         if (signal.aborted) throw createAbortError();
         const anime_list = matches.map(row => {
             const key = JSON.stringify(row.identity);
@@ -41,6 +51,30 @@ const searchMethods = {
 
     sourceQuarterLabel(anime) {
         return (anime.source_quarters || []).join('、');
+    },
+
+    resetVisibleAnime() {
+        this.visibleCount = SEARCH_PAGE_SIZE;
+    },
+
+    showMoreAnime(event) {
+        const previousCount = this.visibleAnime.length;
+        this.visibleCount += SEARCH_PAGE_SIZE;
+        if (event && (event.detail === 0 || !this.hasMoreAnime)) {
+            this.$nextTick(() => {
+                const title = document.querySelectorAll('.anime-card .title-copy')[previousCount];
+                if (title) title.focus();
+            });
+        }
+    },
+
+    get visibleAnime() {
+        const list = this.filteredAnime;
+        return this.searchKeyword.trim() ? list.slice(0, this.visibleCount) : list;
+    },
+
+    get hasMoreAnime() {
+        return this.searchKeyword.trim().length > 0 && this.filteredAnime.length > this.visibleCount;
     },
 
     get filteredAnime() {

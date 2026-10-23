@@ -5,11 +5,18 @@
 // Module: settings
 // Requires: browser platform only
 const DATA_CACHE_TTL_MS = 5 * 60 * 1000;
+const SEARCH_PAGE_SIZE = 60;
 const FETCH_TIMEOUT_MS = 15 * 1000;
 const MAX_FETCH_RETRIES = 2;
 const RETRY_DELAYS_MS = [300, 700];
 const HTML2CANVAS_TIMEOUT_MS = 15 * 1000;
 const SHARE_IMAGE_TIMEOUT_MS = 15 * 1000;
+const SHARE_MAX_ITEMS = 20;
+const SHARE_CANVAS_MAX_PIXELS = 16000000;
+const SHARE_CANVAS_MAX_DIMENSION = 16384;
+const SHARE_FONT_TIMEOUT_MS = 15 * 1000;
+const SHARE_RENDER_TIMEOUT_MS = 30 * 1000;
+const SHARE_EXPORT_TIMEOUT_MS = 15 * 1000;
 const BROADCAST_DAY_LABELS = {
     '一': '週一', '二': '週二', '三': '週三', '四': '週四', '五': '週五', '六': '週六', '日': '週日',
     '一至五': '週一至五', '不定期公開': '不定期公開', '無首播日期': '播出日待確認'
@@ -243,10 +250,12 @@ function validateSearchIndex(data, app) {
 // Requires: settings, errors
 const pendingRequestStates = new WeakMap();
 function getPendingRequestState(owner) {
-    let state = pendingRequestStates.get(owner);
+    // Alpine may invoke methods through different scope proxies for one app.
+    const key = owner._pendingDataRequests;
+    let state = pendingRequestStates.get(key);
     if (!state) {
         state = new Map();
-        pendingRequestStates.set(owner, state);
+        pendingRequestStates.set(key, state);
     }
     return state;
 }
@@ -290,6 +299,25 @@ function raceWithAbort(promise, signal) {
             value => finish(resolve, value),
             error => finish(reject, error)
         );
+    });
+}
+function subscribeToDataset(entry, signal) {
+    const subscriber = Symbol('dataset-subscriber');
+    entry.subscribers.add(subscriber);
+    let released = false;
+    const release = () => {
+        if (released) return;
+        released = true;
+        entry.subscribers.delete(subscriber);
+        // A replacement load in the same turn may still need this request.
+        Promise.resolve().then(() => {
+            if (!entry.settled && entry.subscribers.size === 0) entry.abort();
+        });
+    };
+    if (signal) signal.addEventListener('abort', release, {once: true});
+    return raceWithAbort(entry.promise, signal).finally(() => {
+        if (signal) signal.removeEventListener('abort', release);
+        release();
     });
 }
 async function fetchWithDeadline(url, signal, readResponse = response => response, timeoutMs = FETCH_TIMEOUT_MS) {
@@ -465,18 +493,21 @@ const dataMethods = {
                 token: requestToken,
                 version,
                 promise: null,
+                subscribers: new Set(),
+                settled: false,
                 isAborted: () => requestController.signal.aborted,
                 abort: () => requestController.abort()
             };
             entry.promise = this.fetchDatasetFromNetwork(cacheKey, requestController.signal)
                 .then(data => {
                     const dataset = {...data, version: entry.version, cachedAt: Date.now()};
-                    if (entry.version === (this.quarterVersions[cacheKey] || this.dataVersion)) {
+                    if (!requestController.signal.aborted && entry.version === (this.quarterVersions[cacheKey] || this.dataVersion)) {
                         this.dataCache[cacheKey] = dataset;
                     }
                     return dataset;
                 })
                 .finally(() => {
+                    entry.settled = true;
                     const currentToken = this._pendingDataRequests.get(cacheKey);
                     if (currentToken === requestToken) {
                         this._pendingDataRequests.delete(cacheKey);
@@ -488,8 +519,8 @@ const dataMethods = {
             pending = entry;
         }
 
-        // 每個畫面請求都有自己的 abort signal；共用的網路 Promise 不會被舊請求取消。
-        return raceWithAbort(pending.promise, signal);
+        // Keep shared requests only while a consumer still needs them.
+        return subscribeToDataset(pending, signal);
     },
 
     setLastUpdateTime(generatedAt) {
@@ -541,17 +572,10 @@ const dataMethods = {
         this._activeLoadAbort = abortLoad;
 
         const searchingAll = this.searchKeyword.trim().length > 0;
+        this.resetVisibleAnime();
         const cacheKey = searchingAll ? '__all_quarters__' : `${this.year}_${this.season}`;
         const previousCacheKey = this._activeCacheKey;
         const keepPreviousData = previousCacheKey === cacheKey && this.rawAnimeList.length > 0;
-        if (this._activeCacheKey && this._activeCacheKey !== cacheKey) {
-            const pendingState = getPendingRequestState(this);
-            const previousToken = this._pendingDataRequests.get(this._activeCacheKey);
-            const previousPending = previousToken ? pendingState.get(previousToken) : null;
-            if (previousPending && !previousPending.isAborted()) {
-                previousPending.abort();
-            }
-        }
         this._activeCacheKey = cacheKey;
         this.writeStorage(this.STORAGE_KEYS.YEAR, this.year);
         this.writeStorage(this.STORAGE_KEYS.SEASON, this.season);
@@ -610,7 +634,7 @@ const dataMethods = {
 };
 
 // Module: search
-// Requires: errors, data
+// Requires: settings, errors, data
 const searchMethods = {
     async getAllQuarterData(signal) {
         const keyword = this.searchKeyword.normalize('NFKC').toLowerCase().trim();
@@ -620,6 +644,9 @@ const searchMethods = {
             .some(value => value.normalize('NFKC').toLowerCase().includes(keyword)));
         const quarters = [...new Set(matches.map(row => row.quarters[0]))];
         const datasets = new Map();
+        const controller = new AbortController();
+        const abortSearch = () => controller.abort();
+        signal.addEventListener('abort', abortSearch, {once: true});
         let next = 0;
         let stopped = false;
         const worker = async () => {
@@ -627,7 +654,7 @@ const searchMethods = {
                 if (signal.aborted) throw createAbortError();
                 const quarter = quarters[next++];
                 try {
-                    const dataset = await this.getDataset(quarter, signal);
+                    const dataset = await this.getDataset(quarter, controller.signal);
                     const records = new Map(dataset.anime_list.map(anime => [JSON.stringify([anime.bangumi_id, anime.anime_name, anime.original_name || '', anime.external_ids?.bangumi || null]), anime]));
                     datasets.set(quarter, records);
                 } catch (error) {
@@ -636,7 +663,14 @@ const searchMethods = {
                 }
             }
         };
-        await Promise.all(Array.from({length: Math.min(4, quarters.length)}, worker));
+        try {
+            await Promise.all(Array.from({length: Math.min(4, quarters.length)}, worker));
+        } catch (error) {
+            controller.abort();
+            throw error;
+        } finally {
+            signal.removeEventListener('abort', abortSearch);
+        }
         if (signal.aborted) throw createAbortError();
         const anime_list = matches.map(row => {
             const key = JSON.stringify(row.identity);
@@ -653,6 +687,30 @@ const searchMethods = {
 
     sourceQuarterLabel(anime) {
         return (anime.source_quarters || []).join('、');
+    },
+
+    resetVisibleAnime() {
+        this.visibleCount = SEARCH_PAGE_SIZE;
+    },
+
+    showMoreAnime(event) {
+        const previousCount = this.visibleAnime.length;
+        this.visibleCount += SEARCH_PAGE_SIZE;
+        if (event && (event.detail === 0 || !this.hasMoreAnime)) {
+            this.$nextTick(() => {
+                const title = document.querySelectorAll('.anime-card .title-copy')[previousCount];
+                if (title) title.focus();
+            });
+        }
+    },
+
+    get visibleAnime() {
+        const list = this.filteredAnime;
+        return this.searchKeyword.trim() ? list.slice(0, this.visibleCount) : list;
+    },
+
+    get hasMoreAnime() {
+        return this.searchKeyword.trim().length > 0 && this.filteredAnime.length > this.visibleCount;
     },
 
     get filteredAnime() {
@@ -888,6 +946,12 @@ const presentationMethods = {
 const HTML2CANVAS_URL = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
 const HTML2CANVAS_INTEGRITY = 'sha384-ZZ1pncU3bQe8y31yfZdMFdSpttDoPmOZg2wguVK9almUodir1PghgT0eY7Mrty8H';
 let html2canvasLoadPromise = null;
+function withShareDeadline(promise, milliseconds, code) {
+    return new Promise((resolve, reject) => {
+        const timer = setTimeout(() => reject(createShareError(code, '分享圖片處理逾時')), milliseconds);
+        Promise.resolve(promise).then(resolve, reject).finally(() => clearTimeout(timer));
+    });
+}
 function createShareError(code, message) {
     const error = new Error(message);
     error.name = 'ShareImageError';
@@ -910,6 +974,10 @@ function describeShareError(error) {
         SHARE_RENDERER_TIMEOUT: '分享圖片元件載入逾時，請檢查網路後再試。',
         SHARE_RENDERER_NETWORK: '分享圖片元件載入失敗，請檢查網路後再試。',
         SHARE_RENDERER: '瀏覽器無法完成分享圖片渲染，請稍後再試。',
+        SHARE_FONT_TIMEOUT: '等待字型逾時，請檢查網路後再試。',
+        SHARE_RENDER_TIMEOUT: '分享圖片渲染逾時，請減少清單項目後重試。',
+        SHARE_EXPORT_TIMEOUT: '圖片匯出逾時，請確認下載或剪貼簿權限後再試。',
+        SHARE_SIZE: '清單產生的圖片過大，請減少項目並分批匯出。',
         SHARE_EXPORT: '圖片匯出失敗，請確認瀏覽器下載權限後再試。',
     };
     const requestedCode = error && error.code;
@@ -1011,6 +1079,10 @@ const sharingMethods = {
             Swal.fire({toast: true, position: 'top', icon: 'warning', title: '已在清單中', timer: 1000, showConfirmButton: false, background: '#2b2b2b', color: '#fff'});
             return;
         }
+        if (this.shareList.length >= SHARE_MAX_ITEMS) {
+            Swal.fire({icon: 'warning', title: '分享清單已滿', text: `單次最多 ${SHARE_MAX_ITEMS} 部，請先匯出或移除部分項目。`, background: '#1e1e1e', color: '#fff'});
+            return;
+        }
         this.shareList.push({
             name: anime.anime_name,
             img: (anime.anime_image_url && anime.anime_image_url !== '無圖片') ? anime.anime_image_url : 'https://placehold.co/50x50',
@@ -1038,13 +1110,24 @@ const sharingMethods = {
     },
 
     async generateShareImage() {
+        if (this._shareExportRunning || !this.shareList.length) return;
+        this._shareExportRunning = true;
+        const exportItems = this.shareList.map(item => ({...item}));
+        const exportedNames = new Set(exportItems.map(item => item.name));
+        const removeExportedItems = () => {
+            this.shareList = this.shareList.filter(item => !exportedNames.has(item.name));
+        };
+        let exporting = true;
         const btn = document.getElementById('copyButton');
         const originalText = btn ? btn.innerHTML : '';
         let exportContainer = null;
         try {
+            if (exportItems.length > SHARE_MAX_ITEMS) {
+                throw createShareError('SHARE_SIZE', '分享項目超過安全上限');
+            }
             if (btn) {
                 btn.disabled = true;
-                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 處理最高畫質圖片...';
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 正在生成分享圖片...';
             }
 
             const renderHtml2Canvas = await loadHtml2Canvas();
@@ -1054,6 +1137,7 @@ const sharingMethods = {
 
             // 建立隱藏容器；URL 驗證也在此 try 內，確保任何例外都會復原按鈕。
             exportContainer = document.createElement('div');
+            exportContainer.dataset.animeShareExport = 'true';
             exportContainer.style.cssText = `
                 position: fixed; top: 0; left: -9999px; z-index: -1;
                 width: 600px;
@@ -1064,7 +1148,7 @@ const sharingMethods = {
             `;
 
             // 使用 DOM API 建卡片，避免把外部資料拼成 HTML。
-            this.shareList.forEach(item => {
+            exportItems.forEach(item => {
                 let imageUrl;
                 try {
                     imageUrl = new URL(item.img, window.location.origin);
@@ -1172,25 +1256,35 @@ const sharingMethods = {
                     img.onerror = () => finish(reject, createShareError('SHARE_IMAGE_LOAD', '分享圖片無法載入'));
                 });
             }));
-            if (document.fonts && document.fonts.ready) await document.fonts.ready;
+            if (document.fonts && document.fonts.ready) {
+                await withShareDeadline(document.fonts.ready, SHARE_FONT_TIMEOUT_MS, 'SHARE_FONT_TIMEOUT');
+            }
+            const width = Math.max(1, exportContainer.scrollWidth);
+            const height = Math.max(1, exportContainer.scrollHeight);
+            const scale = Math.min(3, Math.sqrt(SHARE_CANVAS_MAX_PIXELS / (width * height)), SHARE_CANVAS_MAX_DIMENSION / Math.max(width, height));
+            if (!Number.isFinite(scale) || scale < 1) {
+                throw createShareError('SHARE_SIZE', '分享圖片尺寸超出安全上限');
+            }
 
             let canvas;
             try {
-                canvas = await renderHtml2Canvas(exportContainer, {
-                    scale: 3, useCORS: true, allowTaint: true,
+                canvas = await withShareDeadline(renderHtml2Canvas(exportContainer, {
+                    scale, useCORS: true, allowTaint: true,
                     backgroundColor: '#1a1a1a', logging: false, letterRendering: 1
-                });
+                }), SHARE_RENDER_TIMEOUT_MS, 'SHARE_RENDER_TIMEOUT');
             } catch (error) {
+                if (error?.code === 'SHARE_RENDER_TIMEOUT') throw error;
                 throw createShareError('SHARE_RENDERER', '瀏覽器無法完成分享圖片渲染');
             }
             if (!canvas || typeof canvas.toBlob !== 'function') {
                 throw createShareError('SHARE_EXPORT', '瀏覽器未提供圖片匯出功能');
             }
 
-            await new Promise((resolve, reject) => {
+            await withShareDeadline(new Promise((resolve, reject) => {
                 const rejectExport = () => reject(createShareError('SHARE_EXPORT', '圖片匯出失敗'));
                 try {
                     canvas.toBlob(blob => {
+                        if (!exporting) return;
                         try {
                             if (!blob) return rejectExport();
 
@@ -1198,20 +1292,22 @@ const sharingMethods = {
                             if (clipboard && window.ClipboardItem) {
                                 clipboard.write([new window.ClipboardItem({'image/png': blob})])
                                     .then(() => {
+                                        if (!exporting) return;
                                         Swal.fire({
                                             icon: 'success', title: '圖片已複製！',
-                                            text: '可直接貼上至 LINE 或社群，清單已清空',
+                                            text: '可直接貼上至 LINE 或社群，已匯出的項目已移除',
                                             background: '#1e1e1e', color: '#fff',
                                             timer: 2000, showConfirmButton: false
                                         });
-                                        this.shareList = [];
+                                        removeExportedItems();
                                         resolve();
                                     })
                                     .catch(() => {
+                                        if (!exporting) return;
                                         console.warn('[Clipboard] 寫入被拒絕，啟動下載備案');
                                         try {
                                             triggerFallbackDownload(blob);
-                                            this.shareList = [];
+                                            removeExportedItems();
                                             resolve();
                                         } catch (error) {
                                             reject(error);
@@ -1221,7 +1317,7 @@ const sharingMethods = {
                                 console.warn('[Clipboard] API 不支援，啟動下載備案');
                                 try {
                                     triggerFallbackDownload(blob);
-                                    this.shareList = [];
+                                    removeExportedItems();
                                     resolve();
                                 } catch (error) {
                                     reject(error);
@@ -1234,7 +1330,7 @@ const sharingMethods = {
                 } catch (error) {
                     rejectExport();
                 }
-            });
+            }), SHARE_EXPORT_TIMEOUT_MS, 'SHARE_EXPORT_TIMEOUT');
         } catch (error) {
             const safeError = describeShareError(error);
             console.error('[ShareImage Error]', {code: safeError.code});
@@ -1247,11 +1343,13 @@ const sharingMethods = {
                 });
             }
         } finally {
+            exporting = false;
+            this._shareExportRunning = false;
             if (exportContainer && document.body.contains(exportContainer)) {
                 document.body.removeChild(exportContainer);
             }
             if (btn) {
-                btn.disabled = false;
+                btn.disabled = this.shareList.length === 0;
                 btn.innerHTML = originalText;
             }
         }
@@ -1280,6 +1378,7 @@ function animeApp() {
         filterDay: '全部',
         filterStatus: '全部',
         searchKeyword: '',
+        visibleCount: SEARCH_PAGE_SIZE,
 
         // --- 3. 應用狀態 ---
         rawAnimeList: [],
@@ -1297,6 +1396,7 @@ function animeApp() {
         _loadRequestId: 0,
         _activeLoadAbort: null,
         _activeCacheKey: null,
+        _shareExportRunning: false,
         STORAGE_KEYS: {
             YEAR: 'anime_user_year',
             SEASON: 'anime_user_season',
@@ -1307,6 +1407,7 @@ function animeApp() {
         FETCH_TIMEOUT_MS,
         MAX_FETCH_RETRIES,
         RETRY_DELAYS_MS,
+        SHARE_MAX_ITEMS,
 
         // --- 5. 初始化 ---
         initApp() {
@@ -1435,6 +1536,7 @@ function animeApp() {
         },
 
         saveFilterDay() {
+            this.resetVisibleAnime();
             this.writeStorage(this.STORAGE_KEYS.FILTER_DAY, this.filterDay);
         },
 

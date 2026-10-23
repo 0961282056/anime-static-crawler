@@ -1,7 +1,8 @@
-"""Crawl validated data and build the static Cloudflare Pages output."""
+"""Build static output; crawl and upload images only when explicitly requested."""
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import logging
@@ -253,9 +254,7 @@ def render_index(
         undefined=StrictUndefined,
     )
     template = environment.get_template("index.html")
-    from services.release_manifest import data_inventory
-
-    inventory = data_inventory(paths)
+    inventory = repository.data_inventory()
     content = template.render(
         selected_year=default_year,
         selected_season=default_season,
@@ -317,16 +316,22 @@ def write_crawl_summary_outputs(summary: CrawlSummary) -> None:
             output.write(f"{name}={value}\n")
 
 
-def generate_static_files() -> None:
+def generate_static_files(*, crawl: bool = False) -> None:
     with operation("configuration"):
         load_dotenv()
         configure_runtime()
+        if not isinstance(crawl, bool):
+            raise ConfigurationError("crawl must be a boolean")
+        build_only = os.getenv("BUILD_ONLY", "false").strip().lower()
+        if build_only not in {"true", "false"}:
+            raise ConfigurationError("BUILD_ONLY must be true or false")
+        if crawl and build_only == "true":
+            raise ConfigurationError("BUILD_ONLY=true prohibits --crawl")
         paths = ProjectPaths.from_environment()
         from services.frontend_bundle import verify_frontend_bundle
 
         verify_frontend_bundle(paths.root)
-        build_only = os.getenv("BUILD_ONLY", "false").lower() == "true"
-        settings = CrawlerSettings.from_environment() if not build_only else None
+        settings = CrawlerSettings.from_environment() if crawl else None
     policy = (
         DataQualityPolicy(
             minimum_count_ratio=settings.minimum_count_ratio,
@@ -342,12 +347,13 @@ def generate_static_files() -> None:
     now = datetime.now(TAIPEI_TZ)
     crawl_summary: CrawlSummary | None = None
 
-    if build_only:
-        logger.info("BUILD_ONLY enabled: validating data and building static output")
-    else:
+    if crawl:
         crawl_summary = crawl_quarters(paths, repository, now)
+    else:
+        logger.info("Validating existing data and building static output")
 
     with operation("data-validation", path=paths.data_dir):
+        repository = repository.validated_snapshot()
         validated_paths = repository.validate_all()
     logger.info("Validated %s quarterly JSON files", len(validated_paths))
     from services.search_index import write_search_index
@@ -359,12 +365,28 @@ def generate_static_files() -> None:
         output_path = render_index(paths, repository, now)
     from services.release_manifest import write_release
 
-    write_release(paths, os.environ, compute_build_version(paths))
+    write_release(
+        paths, os.environ, compute_build_version(paths), data_snapshot=repository
+    )
     logger.info("Static site generated: %s", output_path)
     if crawl_summary is not None:
         with operation("summary"):
             write_crawl_summary_outputs(crawl_summary)
 
 
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(
+        description="Build the static site from existing data by default.",
+        allow_abbrev=False,
+    )
+    parser.add_argument(
+        "--crawl",
+        action="store_true",
+        help="Fetch quarterly data and upload images before building the site.",
+    )
+    arguments = parser.parse_args(argv)
+    return run_command(lambda: generate_static_files(crawl=arguments.crawl), "build")
+
+
 if __name__ == "__main__":
-    raise SystemExit(run_command(generate_static_files, "build"))
+    raise SystemExit(main())

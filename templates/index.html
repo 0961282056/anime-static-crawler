@@ -79,7 +79,7 @@
 
                 <div class="form-group">
                     <label for="airingStatusSelect" class="form-label">播出狀態</label>
-                    <select id="airingStatusSelect" class="form-select" x-model="filterStatus">
+                    <select id="airingStatusSelect" class="form-select" x-model="filterStatus" @change="resetVisibleAnime()">
                         <option value="全部">全部顯示</option>
                         <option value="airing">播出中</option>
                         <option value="finished">本季已播畢</option>
@@ -115,7 +115,8 @@
                             </div>
                         </template>
                     </div>
-                    <button id="copyButton" class="action-btn" :disabled="shareList.length === 0" @click="generateShareImage()">
+                    <p class="share-help" x-text="'單次最多 ' + SHARE_MAX_ITEMS + ' 部；過長清單請分批匯出。'"></p>
+                    <button id="copyButton" class="action-btn" :disabled="shareList.length === 0 || _shareExportRunning" @click="generateShareImage()">
                         <i class="fas fa-image"></i> 生成圖片
                     </button>
                 </div>
@@ -146,8 +147,8 @@
                 沒有符合條件的動畫
             </div>
 
-            <div class="anime-grid" x-show="!loading && (!loadError || (loadError && loadError.hasStaleData))">
-                <template x-for="anime in filteredAnime" :key="animeResultKey(anime)">
+            <div id="searchResults" class="anime-grid" x-show="!loading && (!loadError || (loadError && loadError.hasStaleData))">
+                <template x-for="anime in visibleAnime" :key="animeResultKey(anime)">
                     <div class="anime-card">
                         <div class="card-img-wrapper">
                             <img :src="cardImageUrl(anime, 600)"
@@ -214,6 +215,10 @@
                         </div>
                     </div>
                 </template>
+            </div>
+            <div class="search-pagination" x-cloak x-show="!loading && !loadError && hasMoreAnime">
+                <p role="status" aria-live="polite" x-text="'已顯示 ' + visibleAnime.length + '／共 ' + filteredAnime.length + ' 部'"></p>
+                <button type="button" class="btn-add" aria-controls="searchResults" @click="showMoreAnime($event)">顯示更多</button>
             </div>
         </main>
     </div>

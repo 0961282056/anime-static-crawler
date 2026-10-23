@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import re
@@ -24,6 +25,17 @@ from services.story_source_reviews import reviewed_story
 from services.wikipedia_story_reviews import reviewed_wikipedia_story
 
 QUARTER_FILE_PATTERN = re.compile(r"^(\d{4})_(冬|春|夏|秋)\.json$")
+
+
+def _decode_dataset(path: Path, content: bytes) -> QuarterDataset:
+    try:
+        return QuarterDataset.model_validate(json.loads(content.decode("utf-8")))
+    except ValidationError as exc:
+        raise DataContractError(
+            f"Invalid quarterly data {path}: {_validation_detail(exc)}"
+        ) from exc
+    except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise DataContractError(f"Invalid quarterly data {path}: {exc}") from exc
 
 
 def _validation_detail(error: ValidationError) -> str:
@@ -137,14 +149,34 @@ class DataRepository:
 
     def load_path(self, path: Path) -> QuarterDataset:
         try:
-            raw = json.loads(path.read_text(encoding="utf-8"))
-            return QuarterDataset.model_validate(raw)
-        except ValidationError as exc:
-            raise DataContractError(
-                f"Invalid quarterly data {path}: {_validation_detail(exc)}"
-            ) from exc
-        except (OSError, json.JSONDecodeError) as exc:
+            content = path.read_bytes()
+        except OSError as exc:
             raise DataContractError(f"Invalid quarterly data {path}: {exc}") from exc
+        return _decode_dataset(path, content)
+
+    def data_inventory(self) -> dict:
+        from services.release_manifest import data_inventory
+
+        return data_inventory(self)
+
+    def validated_snapshot(self) -> ValidatedDataSnapshot:
+        """Read and fully validate one build's data, without a persistent cache."""
+        datasets = {}
+        fingerprints = {}
+        for path in sorted(self.data_dir.glob("*.json")):
+            with operation("data-validation", log_success=False, path=path):
+                try:
+                    content = path.read_bytes()
+                except OSError as exc:
+                    raise DataContractError(
+                        f"Unable to read quarterly data {path}"
+                    ) from exc
+                fingerprints[path] = hashlib.sha256(content).hexdigest()
+                if QUARTER_FILE_PATTERN.fullmatch(path.name):
+                    dataset = _decode_dataset(path, content)
+                    self._validate_dataset(path, dataset, allow_legacy=False)
+                    datasets[path] = dataset
+        return ValidatedDataSnapshot(self.data_dir, self.policy, datasets, fingerprints)
 
     def load_quarter(self, year: str, season: str) -> QuarterDataset | None:
         path = self.quarter_path(year, season)
@@ -354,19 +386,76 @@ class DataRepository:
             if QUARTER_FILE_PATTERN.fullmatch(path.name):
                 with operation("data-validation", log_success=False, path=path):
                     dataset = self.load_path(path)
-                    if not allow_legacy:
-                        if not dataset.source_url:
-                            raise DataContractError(
-                                f"Quarterly data is missing source_url: {path}"
-                            )
-                        if dataset.quality is None:
-                            raise DataContractError(
-                                f"Quarterly data is missing quality summary: {path}"
-                            )
-                        self.policy.validate(
-                            dataset.anime_list,
-                            dataset.quality,
-                            previous=None,
-                        )
+                    self._validate_dataset(path, dataset, allow_legacy=allow_legacy)
                 paths.append(path)
         return paths
+
+    def _validate_dataset(
+        self, path: Path, dataset: QuarterDataset, *, allow_legacy: bool
+    ) -> None:
+        if not allow_legacy:
+            if not dataset.source_url:
+                raise DataContractError(f"Quarterly data is missing source_url: {path}")
+            if dataset.quality is None:
+                raise DataContractError(
+                    f"Quarterly data is missing quality summary: {path}"
+                )
+            self.policy.validate(dataset.anime_list, dataset.quality, previous=None)
+
+
+class ValidatedDataSnapshot(DataRepository):
+    """A build-scoped view with writes disabled and filesystem drift checks."""
+
+    def __init__(
+        self,
+        data_dir: Path,
+        policy: DataQualityPolicy,
+        datasets: dict[Path, QuarterDataset],
+        fingerprints: dict[Path, str],
+    ) -> None:
+        super().__init__(data_dir, policy)
+        self._datasets = datasets
+        self._fingerprints = fingerprints
+
+    def load_path(self, path: Path) -> QuarterDataset:
+        try:
+            return self._datasets[path]
+        except KeyError as exc:
+            raise DataContractError(
+                f"Quarter is outside the validated snapshot: {path}"
+            ) from exc
+
+    def validate_all(self, *, allow_legacy: bool = False) -> list[Path]:
+        self.assert_unchanged()
+        return list(self._datasets)
+
+    def discover_available_data(self) -> dict[str, list[str]]:
+        self.assert_unchanged()
+        return super().discover_available_data()
+
+    def validated_snapshot(self) -> ValidatedDataSnapshot:
+        return self
+
+    def write_quarter(self, **kwargs) -> WriteResult:
+        raise DataContractError(
+            "A validated build snapshot cannot write quarterly data"
+        )
+
+    def data_inventory(self) -> dict:
+        from services.release_manifest import inventory_from_versions
+
+        self.assert_unchanged()
+        return inventory_from_versions(
+            {path.stem: value for path, value in self._fingerprints.items()}
+        )
+
+    def assert_unchanged(self) -> None:
+        try:
+            observed = {
+                path: hashlib.sha256(path.read_bytes()).hexdigest()
+                for path in sorted(self.data_dir.glob("*.json"))
+            }
+        except OSError as exc:
+            raise DataContractError("Quarterly data changed during the build") from exc
+        if observed != self._fingerprints:
+            raise DataContractError("Quarterly data changed during the build")

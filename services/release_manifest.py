@@ -17,6 +17,10 @@ def data_inventory(paths) -> dict:
     quarters = {}
     for path in sorted(paths.data_dir.glob("*.json")):
         quarters[path.stem] = digest(path.read_bytes())
+    return inventory_from_versions(quarters)
+
+
+def inventory_from_versions(quarters: dict[str, str]) -> dict:
     return {
         "data_version": digest(
             json.dumps(quarters, sort_keys=True, separators=(",", ":")).encode()
@@ -35,23 +39,42 @@ def served_files(paths) -> dict:
     for name in ("index.html", "search-index.json"):
         if (path := paths.output_dir / name).is_file():
             files.append(path)
-    return {
-        p.relative_to(paths.output_dir).as_posix(): {
-            "sha256": digest(p.read_bytes()),
-            "bytes": p.stat().st_size,
+    inventory = {}
+    for path in sorted(files):
+        content = path.read_bytes()
+        inventory[path.relative_to(paths.output_dir).as_posix()] = {
+            "sha256": digest(content),
+            "bytes": len(content),
         }
-        for p in sorted(files)
-    }
+    return inventory
 
 
-def write_release(paths, environment, build_version):
+def write_release(paths, environment, build_version, *, data_snapshot=None):
+    inventory = (
+        data_snapshot.data_inventory() if data_snapshot else data_inventory(paths)
+    )
     manifest = {
         "schema_version": 1,
         "commit": release_commit(paths, environment),
         "build_version": build_version,
-        **data_inventory(paths),
+        **inventory,
         "files": served_files(paths),
     }
+    if data_snapshot:
+        data_snapshot.assert_unchanged()
+        expected = {
+            f"data/{quarter}.json": version
+            for quarter, version in inventory["quarter_versions"].items()
+        }
+        observed = {
+            name: details.get("sha256")
+            for name, details in manifest["files"].items()
+            if name.startswith("data/")
+            and name.endswith(".json")
+            and "/" not in name[len("data/") :]
+        }
+        if observed != expected:
+            raise RuntimeError("Quarterly data changed while creating the release")
     atomic_write_json(paths.output_dir / "release.json", manifest)
     return manifest
 

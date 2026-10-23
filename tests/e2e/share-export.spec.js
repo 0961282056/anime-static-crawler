@@ -45,6 +45,11 @@ test('share export loads the integrity-pinned renderer on demand under productio
   expect(download.suggestedFilename()).toMatch(/^anime_list_\d+\.png$/);
   const bytes = readFileSync(await download.path());
   expect(bytes.subarray(0, 8).toString('hex')).toBe('89504e470d0a1a0a');
+  await expect(page.locator('.share-item')).toHaveCount(0);
+  await expect(page.locator('#copyButton')).toBeDisabled();
+  await expect(page.locator('#copyButton')).toHaveText('生成圖片');
+  await page.getByRole('button', {name: /加入清單/}).first().click();
+  await expect(page.locator('.share-item')).toHaveCount(1);
   await expect(page.locator('#copyButton')).toBeEnabled();
   expect(rendererRequests).toHaveLength(1);
   expect(browserErrors).toEqual([]);

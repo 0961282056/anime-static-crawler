@@ -185,7 +185,7 @@ def test_crawl_summary_is_published_only_after_the_full_build_succeeds(
         total_records=321,
         parse_failures=4,
     )
-    repository = SimpleNamespace(validate_all=lambda: [])
+    repository = DataRepository(project_paths.data_dir, DataQualityPolicy())
     github_output = tmp_path / "github-output.txt"
 
     monkeypatch.setenv("BUILD_ONLY", "false")
@@ -226,7 +226,7 @@ def test_crawl_summary_is_published_only_after_the_full_build_succeeds(
     monkeypatch.setattr(generate_static, "render_index", fail_render)
 
     with pytest.raises(RuntimeError, match="simulated final render failure"):
-        generate_static.generate_static_files()
+        generate_static.generate_static_files(crawl=True)
 
     assert not github_output.exists()
 
@@ -236,7 +236,7 @@ def test_crawl_summary_is_published_only_after_the_full_build_succeeds(
         lambda paths, data_repository, now: project_paths.output_dir / "index.html",
     )
 
-    generate_static.generate_static_files()
+    generate_static.generate_static_files(crawl=True)
 
     assert github_output.read_bytes() == (
         b"processed_quarters=6\n"
