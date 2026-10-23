@@ -16,7 +16,6 @@ from services.official_catalogue import NHKCatalogueClient, OfficialSourceUnavai
 from services.production_verification import PublicReader
 from services.response_limits import ResponseSizeExceeded, bounded_response
 from services.review_notifications import GitHubReviewClient
-from services.secondary_source import AniListClient, SecondarySourceError
 from services.settings import CrawlerSettings
 
 
@@ -194,7 +193,7 @@ def test_source_rejects_redirect_without_following_or_parsing(destination):
 
 @pytest.mark.parametrize(
     "provider",
-    ["source", "image", "bangumi", "nhk", "github", "anilist", "discord", "production"],
+    ["source", "image", "bangumi", "nhk", "github", "discord", "production"],
 )
 def test_every_upstream_installs_bound_before_eager_loading(provider, monkeypatch):
     adapter = ResponseAdapter(headers={"Content-Length": str(17 * 1024 * 1024)})
@@ -253,13 +252,7 @@ def test_every_upstream_installs_bound_before_eager_loading(provider, monkeypatc
 
         error = NotificationError
     else:
-        # Only a local mock exercises this opt-in client; AniList stays disabled.
-        client = AniListClient(session=session)
-
-        def call():
-            return client.fetch([1])
-
-        error = SecondarySourceError
+        raise AssertionError(f"Unknown provider {provider}")
     with pytest.raises(error):
         call()
     assert len(adapter.requests) == 1

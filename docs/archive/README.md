@@ -45,6 +45,7 @@
 
 | 範圍 | 固定原文／實際案例 | 現行處理 |
 |---|---|---|
+| AniList API 從停用至正式退役 | [先前停用紀錄](../anilist-disabled-2026-10-20/README.md)；[退役前客戶端與比較器](https://github.com/0961282056/anime-static-crawler/blob/907ba9fc2d6bbf9edad21da7c24ecc9de1af17da/services/secondary_source.py) | API 程式與啟用開關移除，既有連結、衝突保護及歷史報告保留；現行報告標示 retired／not_attempted |
 | 依賴初次盤點、certifi／Pillow 安全公告中止排程 | [整理前依賴手冊](https://github.com/0961282056/anime-static-crawler/blob/2237f25be2a293afa925e05c5594c5106b09567b/docs/%E4%BE%9D%E8%B3%B4%E8%88%87Actions%E7%B6%AD%E8%AD%B7.md)；修補 [PR #82](https://github.com/0961282056/anime-static-crawler/pull/82) | [依賴維護](../依賴與Actions維護.md)；舊版漏洞數與當時日誌限制只屬該次事故 |
 | 舊 crawler 工作流程停用、首次部署及 canary 導入 | [整理前部署手冊](https://github.com/0961282056/anime-static-crawler/blob/2237f25be2a293afa925e05c5594c5106b09567b/docs/%E9%83%A8%E7%BD%B2%E8%88%87%E5%B9%B3%E5%8F%B0%E8%A8%AD%E5%AE%9A.md) | [現行部署](../部署與平台設定.md)與[立即停機](../安全維運與災難復原.md#2-立即暫停自動工作)；憑證輪替／搬移仍須完成紀錄 |
 | PR #84 當次測試總數與 PR #85 排程觀測 | [原文件入口](https://github.com/0961282056/anime-static-crawler/blob/2237f25be2a293afa925e05c5594c5106b09567b/docs/README.md)、[原觀測細節](https://github.com/0961282056/anime-static-crawler/blob/2237f25be2a293afa925e05c5594c5106b09567b/docs/%E5%BE%8C%E7%BA%8C%E5%B7%A5%E4%BD%9C%E9%A0%86%E5%BA%8F.md)；[10/22 自然 schedule](https://github.com/0961282056/anime-static-crawler/actions/runs/39670757280)及其 [Production verification](https://github.com/0961282056/anime-static-crawler/actions/runs/39672057884)成功 | 不再保留「等下次排程」；設定臺北 01:00，該次延至 04:29 啟動。工作成功不代表已有 C 到期留言或 retention 真實案例 |

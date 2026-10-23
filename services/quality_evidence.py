@@ -324,7 +324,9 @@ def audit_evidence(report: dict) -> list[dict]:
                     else "failed"
                     if comparison.get("attempted_at")
                     else "not_attempted",
-                    source_urls=["https://graphql.anilist.co"],
+                    source_urls=[]
+                    if comparison.get("reasons") == ["anilist_api_retired"]
+                    else ["https://graphql.anilist.co"],
                     attempted_at=comparison.get("attempted_at"),
                     checked_at=comparison.get("checked_at"),
                     locator=f"source-audit.json#/identities/{index}/secondary/{offset}",

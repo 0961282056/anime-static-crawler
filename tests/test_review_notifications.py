@@ -148,18 +148,24 @@ def test_provider_failure_is_operations_issue_not_episode_approval(report):
     assert review_cases(report)[0]["fingerprint"] == case["fingerprint"]
 
 
-def test_configured_disable_does_not_close_or_notify_existing_review(report):
+@pytest.mark.parametrize(
+    ("state", "reason"),
+    [("disabled", "disabled_by_configuration"), ("retired", "anilist_api_retired")],
+)
+def test_unattempted_api_does_not_close_or_notify_existing_review(
+    report, state, reason
+):
     case = review_cases(report)[0]
     existing = {"number": 5, "state": "open", "body": issue_body(case, RUN)}
     client = Client([existing])
     report["secondary_source"] = {
         "provider": "anilist",
-        "state": "disabled",
+        "state": state,
         "enabled": False,
     }
     report["identities"][0]["secondary"][0].update(
         result="not_attempted",
-        reasons=["disabled_by_configuration"],
+        reasons=[reason],
         checked_at=None,
         attempted_at=None,
         observation=None,

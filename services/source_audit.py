@@ -21,12 +21,7 @@ from services.episode_source_reviews import reviewed_source
 from services.errors import ItemParseError, SourceFetchError
 from services.http_client import SourceClient
 from services.parser import extract_item_html, parse_anime_item
-from services.secondary_source import (
-    AniListClient,
-    SecondarySourceError,
-    compare_secondary,
-)
-from services.settings import CrawlerSettings, SourceAuditSettings
+from services.settings import CrawlerSettings
 
 logger = logging.getLogger(__name__)
 
@@ -188,13 +183,7 @@ def run_source_audit(
     *,
     now: datetime | None = None,
     source_client: Any = None,
-    secondary_client: Any = None,
-    anilist_enabled: bool | None = None,
 ) -> dict:
-    if anilist_enabled is None:
-        anilist_enabled = SourceAuditSettings.from_environment().anilist_enabled
-    if type(anilist_enabled) is not bool:
-        raise ValueError("anilist_enabled must be a boolean")
     now = now or datetime.now(TAIPEI_TZ)
     if now.tzinfo is None:
         raise ValueError("Audit time must include a timezone")
@@ -208,8 +197,6 @@ def run_source_audit(
         session.headers.update({"User-Agent": settings.source_user_agent})
         # Weekly audit has a separate budget: one bounded attempt per quarter.
         source_client = SourceClient(settings, session=session)
-    if anilist_enabled and secondary_client is None:
-        secondary_client = AniListClient()
     report: dict = {
         "schema_version": 1,
         "observed_at": now.isoformat(),
@@ -217,17 +204,16 @@ def run_source_audit(
         "published_data_changed": False,
         "secondary_source": {
             "provider": "anilist",
-            "enabled": anilist_enabled,
-            "state": "enabled" if anilist_enabled else "disabled",
-            "reason": None if anilist_enabled else "disabled_by_configuration",
+            "enabled": False,
+            "state": "retired",
+            "reason": "anilist_api_retired",
         },
         "quarters": [],
         "identities": [],
         "errors": [],
         "limitations": [
             "Only locally recorded quarters are checked; new unknown quarters are not discovered.",
-            "AniList explicit links only; no fuzzy search and no automatic count/status overrides.",
-            "Corroborated titles and numbers do not prove identical episode scope.",
+            "AniList API verification is retired and not attempted; explicit links remain recorded without independent API verification.",
             "Official manual snapshots are queued for review, not automatically reverified.",
             "Legacy source method/snapshot dates remain unknown where not structured.",
         ],
@@ -326,31 +312,6 @@ def run_source_audit(
             for key in group["ids"]
         }
     )
-    observations: dict[int, dict] = {}
-    failed: dict[int, str] = {}
-    attempted_ids: set[int] = set()
-    for offset in range(0, len(ids) if anilist_enabled else 0, 40):
-        batch = ids[offset : offset + 40]
-        attempted_ids.update(batch)
-        try:
-            observations.update(secondary_client.fetch(batch))
-        except SecondarySourceError as exc:
-            reason = str(exc)
-            if reason == "request_budget_exhausted":
-                attempted_ids.difference_update(batch)
-            report["errors"].append(
-                {
-                    "stage": "anilist",
-                    "subject_ids": batch,
-                    "reason": reason,
-                    "response": getattr(secondary_client, "last_response_info", None),
-                }
-            )
-            for subject_id in ids[offset:]:
-                failed[subject_id] = reason
-            # Do not hammer a failing provider; retain completed batches.
-            break
-
     for group in grouped.values():
         anime = group["copies"][0]
         if (
@@ -422,41 +383,27 @@ def run_source_audit(
             )
         else:
             subject_id = next(iter(group["ids"]))
-            for quarter, copy in zip(group["quarters"], group["copies"], strict=True):
-                comparison = compare_secondary(
-                    copy,
-                    observations.get(subject_id),
-                    subject_id=subject_id,
-                    quarter=quarter,
-                    today=now.date(),
-                    reviewed_scope=reviewed_source(copy) is not None,
-                )
-                comparison.update(
-                    quarter=quarter,
-                    attempted_at=now.isoformat()
-                    if subject_id in attempted_ids
-                    else None,
-                    checked_at=now.isoformat() if subject_id in observations else None,
-                    source_snapshot_at=None,
-                    verification_method="graphql_api"
-                    if anilist_enabled
-                    else "not_attempted",
-                    scope="linked_entry_reported_total_and_status",
-                    link_basis="explicit_quarter_source_or_stored_link",
-                )
-                if not anilist_enabled:
-                    comparison.update(
-                        result="not_attempted",
-                        reasons=["disabled_by_configuration"],
-                    )
-                elif subject_id in failed:
-                    comparison.update(
-                        result="fetch_failed"
-                        if subject_id in attempted_ids
-                        else "not_attempted",
-                        reasons=[failed[subject_id]],
-                    )
-                row["secondary"].append(comparison)
+            # Keep the report/receipt shape readable without retaining an API
+            # client or comparison path. A stored/source link is not an API check.
+            row["secondary"] = [
+                {
+                    "provider": "anilist",
+                    "subject_id": subject_id,
+                    "source_url": f"https://anilist.co/anime/{subject_id}",
+                    "quarter": quarter,
+                    "result": "not_attempted",
+                    "reasons": ["anilist_api_retired"],
+                    "observation": None,
+                    "attempted_at": None,
+                    "checked_at": None,
+                    "source_snapshot_at": None,
+                    "verification_method": "not_attempted",
+                    "scope": "linked_entry_reported_total_and_status",
+                    "link_basis": "explicit_quarter_source_or_stored_link",
+                    "published_data_changed": False,
+                }
+                for quarter in group["quarters"]
+            ]
         report["identities"].append(row)
 
     report["summary"] = {
@@ -474,11 +421,12 @@ def run_source_audit(
             bool(row["manual_review"] and row["manual_review"]["due"])
             for row in report["identities"]
         ),
-        "anilist_api_enabled": anilist_enabled,
+        "anilist_api_enabled": False,
+        "anilist_api_state": "retired",
         "anilist_subjects_eligible": len(ids),
-        "anilist_subjects_requested": len(ids) if anilist_enabled else 0,
-        "anilist_subjects_attempted": len(attempted_ids),
-        "anilist_subjects_observed": len(observations),
+        "anilist_subjects_requested": 0,
+        "anilist_subjects_attempted": 0,
+        "anilist_subjects_observed": 0,
         "secondary_results_by_quarter_record": dict(
             Counter(
                 comparison["result"]
@@ -522,7 +470,14 @@ def write_audit_report(report: dict, output: Path) -> str:
         f"- {key}: {json.dumps(value, ensure_ascii=False)}"
         for key, value in summary.items()
     )
-    if report.get("secondary_source", {}).get("state") == "disabled":
+    if report.get("secondary_source", {}).get("state") == "retired":
+        lines.extend(
+            [
+                "",
+                "AniList 自動 API 核對已退役；本次未嘗試 AniList 請求或完成第二來源查證。既有連結與身分衝突保護保留；主要來源故障仍列為錯誤，不因 API 退役而視為成功。",
+            ]
+        )
+    elif report.get("secondary_source", {}).get("state") == "disabled":
         lines.extend(
             [
                 "",
@@ -567,7 +522,8 @@ def write_audit_report(report: dict, output: Path) -> str:
         for row in report["identities"]
         for comparison in row["secondary"]
         if comparison["result"] != "corroborated"
-        and comparison["reasons"] != ["disabled_by_configuration"]
+        and comparison["reasons"]
+        not in (["disabled_by_configuration"], ["anilist_api_retired"])
     ]
     for row, comparison in secondary_rows[:40]:
         lines.append(

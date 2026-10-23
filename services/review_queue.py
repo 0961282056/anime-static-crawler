@@ -97,7 +97,21 @@ def _save_queue(client: Any, issue: dict | None, pending: dict) -> dict | None:
 
 def _explicitly_resolved(case: dict, report: dict) -> bool:
     if case["kind"] == "source_unavailable":
-        return not report["errors"]
+        # An absent error is not a fresh recovery observation. In particular,
+        # retiring AniList cannot resolve its earlier outage with quarter HTML.
+        # Legacy health cases retain stages/reasons, without per-quarter scope.
+        stages = {stage for stage, _ in case["evidence"]}
+        quarters = report.get("quarters", [])
+        return (
+            not report["errors"]
+            and stages == {"quarter"}
+            and bool(quarters)
+            and all(
+                quarter.get("result") in {"matched", "difference"}
+                and quarter.get("checked_at") == report["observed_at"]
+                for quarter in quarters
+            )
+        )
     row = next(
         (
             row
