@@ -229,23 +229,45 @@ def notify_selector_canary_failure() -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Project validation commands")
+    commands = {
+        "validate-data": "離線讀取：驗證季度 JSON。",
+        "verify-dist": "離線讀取：比對建置資產、搜尋索引與發布清單。",
+        "validate-all": "離線讀取：依序執行 validate-data 與 verify-dist。",
+        "quality-report": "離線讀取：列出資料缺漏、查證狀態與刷新到期情況。",
+        "quality-evidence": (
+            "離線＋本機寫入：讀取資料與 Git 歷史，寫入證據及品質趨勢報告；可追加工作摘要。"
+        ),
+        "build-frontend": "離線＋本機寫入：重新產生 static/js/main.js。",
+        "source-audit": ("連線查證＋本機寫入：核對來源並寫入報告；可追加工作摘要。"),
+        "notify-source-reviews": (
+            "GitHub 寫入：依報告建立／更新複查 Issue、持久待辦及留言；可追加工作摘要。"
+        ),
+        "remind-source-reviews": (
+            "GitHub 寫入：查詢到期待查，可能重開 Issue 並留言提醒；可追加工作摘要。"
+        ),
+        "notify-workflow": "Discord 通知：傳送工作流程摘要；可追加工作摘要。",
+        "selector-canary": "連線查證：抓取當季頁面檢查解析；可追加工作摘要。",
+        "notify-selector-canary-failure": "Discord 通知：傳送來源選擇器失敗通知。",
+    }
+    effects = "\n".join(
+        f"  {command}\n    {description}" for command, description in commands.items()
+    )
+    parser = argparse.ArgumentParser(
+        description="專案管理指令：資料驗證、報告、前端生成、來源查證與通知。",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=(
+            f"各指令的影響：\n{effects}\n\n"
+            "查證／報告指令不修改公開季度資料；本機報告與外部通知分開列明。\n"
+            "工作摘要僅在設定 GITHUB_STEP_SUMMARY 時追加本機檔案。\n"
+            "所有命令失敗診斷也可能追加設定的 GITHUB_OUTPUT／GITHUB_STEP_SUMMARY。\n"
+            "--help 只顯示說明，不執行任何管理指令。"
+        ),
+    )
     parser.add_argument(
         "command",
-        choices=(
-            "validate-data",
-            "verify-dist",
-            "validate-all",
-            "quality-report",
-            "quality-evidence",
-            "build-frontend",
-            "source-audit",
-            "notify-source-reviews",
-            "remind-source-reviews",
-            "notify-workflow",
-            "selector-canary",
-            "notify-selector-canary-failure",
-        ),
+        choices=commands,
+        metavar="COMMAND",
+        help="要執行的管理指令，名稱與影響見下方。",
     )
     return parser.parse_args()
 

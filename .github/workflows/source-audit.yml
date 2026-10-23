@@ -37,7 +37,6 @@ jobs:
       - name: Compare recorded quarters and review official snapshots
         env:
           SOURCE_AUDIT_OUTPUT: audit-output
-          SOURCE_AUDIT_ANILIST_ENABLED: "false"
         run: python manage.py source-audit
 
       - name: Retain complete report including partial source failures

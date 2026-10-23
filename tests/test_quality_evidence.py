@@ -178,6 +178,7 @@ def test_audit_receipts_keep_failed_attempt_distinct_from_retained_success():
     receipts = audit_evidence(report)
     assert [row["state"] for row in receipts] == ["failed", "retained", "failed"]
     assert receipts[1]["last_verified_at"] == old
+    assert receipts[2]["source_urls"] == ["https://graphql.anilist.co"]
     assert all(row["checked_at"] is None for row in receipts)
     assert len({row["evidence_id"] for row in receipts}) == 3
 

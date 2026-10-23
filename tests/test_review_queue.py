@@ -130,6 +130,93 @@ def test_only_explicit_reverification_clears_a_deferred_snapshot():
     assert not any(MARKER in row["body"] for row in client.rows.values())
 
 
+@pytest.mark.parametrize(
+    "stages", [("anilist",), ("anilist", "quarter"), ("official_catalogue",)]
+)
+def test_retired_api_and_other_services_are_not_resolved_by_quarter_success(stages):
+    client = GitHub()
+    unavailable = report()
+    unavailable["errors"] = [{"stage": stage, "reason": "http_403"} for stage in stages]
+    assert publish(unavailable, client, max_changes=0)["pending"] == 1
+    before = deepcopy(_load_queue(client.issues())[1])
+    later = report()
+    later["observed_at"] = "2026-10-23T00:00:00+08:00"
+    later["secondary_source"] = {
+        "provider": "anilist",
+        "state": "retired",
+        "enabled": False,
+    }
+    later["quarters"] = [
+        {
+            "quarter": "2026_秋",
+            "result": "matched",
+            "checked_at": later["observed_at"],
+        }
+    ]
+    client.calls.clear()
+    result = publish(later, client, max_changes=0)
+    assert result["pending"] == 1
+    assert _load_queue(client.issues())[1] == before
+    assert client.calls == []
+
+
+@pytest.mark.parametrize(
+    "observation",
+    [
+        None,
+        {"result": "matched", "checked_at": None},
+        {"result": "matched", "checked_at": "2026-10-01T00:00:00+08:00"},
+        {"result": "error", "checked_at": NOW.isoformat()},
+    ],
+)
+def test_missing_or_retained_quarter_observations_do_not_resolve_source_health(
+    observation,
+):
+    client = GitHub()
+    unavailable = report()
+    unavailable["errors"] = [{"stage": "quarter", "reason": "SourceFetchError"}]
+    publish(unavailable, client, max_changes=0)
+    before = deepcopy(_load_queue(client.issues())[1])
+    later = report()
+    later["quarters"] = (
+        [
+            {"quarter": "2026_夏", "result": "matched", "checked_at": NOW.isoformat()},
+            {"quarter": "2026_秋", **observation},
+        ]
+        if observation
+        else []
+    )
+    assert publish(later, client, max_changes=0)["pending"] == 1
+    assert _load_queue(client.issues())[1] == before
+
+
+@pytest.mark.parametrize("current_result", ["matched", "difference"])
+def test_fresh_quarter_observations_can_resolve_deferred_quarter_failure(
+    current_result,
+):
+    client = GitHub()
+    unavailable = report()
+    unavailable["errors"] = [{"stage": "quarter", "reason": "SourceFetchError"}]
+    publish(unavailable, client, max_changes=0)
+    later = report()
+    later["observed_at"] = "2026-10-23T00:00:00+08:00"
+    later["secondary_source"] = {
+        "provider": "anilist",
+        "state": "retired",
+        "enabled": False,
+    }
+    later["quarters"] = [
+        {
+            "quarter": "2026_秋",
+            "result": current_result,
+            "checked_at": later["observed_at"],
+        }
+    ]
+    assert publish(later, client, max_changes=0)["pending"] == 0
+    assert _load_queue(client.issues())[1] == {}
+    assert not any(MARKER in row["body"] for row in client.rows.values())
+
+
 def test_invalid_queue_is_not_silently_overwritten():
     client = GitHub()
     client.rows[1] = {"number": 1, "body": QUEUE_MARKER + " damaged", "state": "open"}
