@@ -1,14 +1,18 @@
 from __future__ import annotations
 
+import importlib
 import json
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
+from types import SimpleNamespace
 
 import pytest
+from urllib3.exceptions import ReadTimeoutError
 
 import services.retention as retention_module
 from services.errors import DataContractError, RetentionError
 from services.retention import (
+    CLOUDINARY_REQUEST_TIMEOUT_SECONDS,
     CONFIRMATION_PHRASE,
     CloudinaryRetentionService,
     PreparedDeletion,
@@ -206,6 +210,41 @@ def _plan(*candidates: str, inventory_size: int = 100) -> RetentionPlan:
         cloud_resources=frozenset(inventory),
         delete_candidates=tuple(candidates),
     )
+
+
+@pytest.mark.parametrize("operation", ["inventory", "delete"])
+def test_retention_sdk_transport_has_a_deadline_and_does_not_replay_timeout(
+    monkeypatch, operation
+):
+    class FakeConfig(SimpleNamespace):
+        def __getattr__(self, name):
+            return None
+
+    config = FakeConfig(cloud_name="fixture", api_key="fixture", api_secret="fixture")
+    monkeypatch.setattr(retention_module.cloudinary, "config", lambda **kwargs: config)
+    calls = []
+
+    def timeout(**kwargs):
+        calls.append((kwargs["method"], kwargs.get("timeout")))
+        raise ReadTimeoutError(None, None, "fixture deadline")
+
+    sdk = importlib.import_module("cloudinary.api_client.call_api")
+    monkeypatch.setattr(sdk, "_http", SimpleNamespace(request=timeout))
+    cache = _CacheSpy()
+    service = _service(cache)
+    with pytest.raises(RetentionError, match="Unable to list|deletion failed"):
+        if operation == "inventory":
+            service.list_cloud_resources()
+        else:
+            service.execute_prepared(
+                _plan(SHARED_PUBLIC_ID),
+                PreparedDeletion(30, 100, (SHARED_PUBLIC_ID,)),
+                confirmation=CONFIRMATION_PHRASE,
+                manifest_candidates={SHARED_PUBLIC_ID},
+                manifest_created_at=datetime.now(UTC) - timedelta(days=31),
+            )
+    assert calls == [("GET" if operation == "inventory" else "DELETE", 30)]
+    assert cache.removed is None and not cache.saved
 
 
 def test_retention_rejects_permission_filtered_empty_resource_page(
@@ -459,7 +498,11 @@ def test_retention_execute_prepared_returns_confirmed_delete(
         batch: list[str],
         **kwargs: object,
     ) -> dict[str, dict[str, str]]:
-        assert kwargs == {"resource_type": "image", "type": "upload"}
+        assert kwargs == {
+            "resource_type": "image",
+            "type": "upload",
+            "timeout": CLOUDINARY_REQUEST_TIMEOUT_SECONDS,
+        }
         return {
             "deleted": {
                 batch[0]: "deleted",

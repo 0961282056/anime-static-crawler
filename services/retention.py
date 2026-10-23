@@ -29,6 +29,7 @@ MINIMUM_RESOURCE_AGE_DAYS = 30
 MINIMUM_MANIFEST_GRACE_DAYS = 30
 MAXIMUM_DELETE_COUNT = 50
 MAXIMUM_DELETE_FRACTION = 0.02
+CLOUDINARY_REQUEST_TIMEOUT_SECONDS = 30
 # The original uploader used an MD5 content digest (32 hex characters). New
 # uploads use SHA-256 (64 hex characters). Both formats are project-managed
 # assets; arbitrary names and nested paths remain outside the contract.
@@ -154,6 +155,7 @@ class CloudinaryRetentionService:
                     prefix=folder_prefix,
                     max_results=500,
                     next_cursor=cursor,
+                    timeout=CLOUDINARY_REQUEST_TIMEOUT_SECONDS,
                 )
             except Exception as exc:
                 raise RetentionError(
@@ -404,6 +406,7 @@ class CloudinaryRetentionService:
                     batch,
                     resource_type="image",
                     type="upload",
+                    timeout=CLOUDINARY_REQUEST_TIMEOUT_SECONDS,
                 )
             except Exception as exc:
                 raise RetentionError(
