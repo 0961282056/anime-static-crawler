@@ -952,6 +952,48 @@ test('retry refreshes release metadata after a data-only index version update', 
   assert.equal(calls.filter(url => url.startsWith('search-index')).length, 2);
 });
 
+for (const navigation of ['clear search', 'change quarter']) {
+  for (const success of [true, false]) {
+    test(`obsolete release refresh ${success ? 'success' : 'failure'} cannot change state after ${navigation}`, async () => {
+      let finish;
+      let releaseSignal;
+      let releaseCalls = 0;
+      const healthy = dataset('healthy-quarter');
+      const {app} = createContext({fetchImpl: async (url, options) => {
+        if (url.startsWith('release.json')) {
+          releaseCalls++;
+          releaseSignal = options.signal;
+          return new Promise(resolve => { finish = resolve; });
+        }
+        return responseFor(healthy);
+      }});
+      app.year = '2026'; app.season = '秋'; app.searchKeyword = 'missing';
+      app.loadError = {code: 'SEARCH_SCHEMA'};
+      const retry = app.retryLoad();
+      await nextTick();
+      assert.equal(app.loading, true);
+      await app.retryLoad();
+      assert.equal(releaseCalls, 1);
+      app.searchKeyword = '';
+      if (navigation === 'change quarter') { app.year = '2025'; app.season = '夏'; }
+      await app.loadData();
+      const currentKey = `${app.year}_${app.season}`;
+      const currentCache = app.dataCache[currentKey];
+      assert.equal(releaseSignal.aborted, true);
+      finish(success ? responseFor({
+        schema_version: 1, build_version: 'test-build', data_version: 'b'.repeat(16),
+        quarter_versions: {'2026_秋': 'b'.repeat(64), '2025_夏': 'b'.repeat(64)},
+      }) : errorResponse(503));
+      await retry;
+      assert.equal(app.loadError, null);
+      assert.equal(app.loading, false);
+      assert.equal(app.dataVersion, 'a'.repeat(16));
+      assert.equal(app.dataCache[currentKey], currentCache);
+      assert.equal(app.rawAnimeList[0].anime_name, 'healthy-quarter');
+    });
+  }
+}
+
 test('a late response from an older quarter version cannot overwrite the new cache', async () => {
   const resolvers = [];
   const {app} = createContext({fetchImpl: () => new Promise(resolve => resolvers.push(resolve))});
@@ -1203,7 +1245,47 @@ test('late response after cancellation cannot repopulate the cache', async () =>
 });
 
 function exportItem(name = 'original') {
-  return {name, img: `https://res.cloudinary.com/demo/image/upload/v1/anime_covers/${'a'.repeat(64)}`};
+  return {name, token: Symbol(name), img: `https://res.cloudinary.com/demo/image/upload/v1/anime_covers/${'a'.repeat(64)}`};
+}
+
+const sameTitleSeries = [
+  {bangumi_id: 'anime-1672', anime_name: '科學×冒險生存！', original_name: '科学×冒険サバイバル！', external_ids: {bangumi: 480716}},
+  {bangumi_id: 'anime-1936', anime_name: '科學×冒險生存！', original_name: '科学×冒険サバイバル！ 第2シリーズ', external_ids: {bangumi: 536878}},
+].map(anime => ({...anime, anime_image_url: exportItem().img}));
+
+test('share list keeps distinct series with the same title and deduplicates quarter/search copies', () => {
+  const alerts = [];
+  const {app} = createContext({swal: {fire: options => alerts.push(options)}});
+  sameTitleSeries.forEach(anime => app.addToShare(anime));
+  app.addToShare({...sameTitleSeries[0], result_key: 'search-only-key', source_quarters: ['2024年秋季']});
+  assert.equal(app.shareList.length, 2);
+  assert.equal(new Set(app.shareList.map(item => item.token)).size, 2);
+  assert.equal(alerts.at(-1).title, '已在清單中');
+});
+
+for (const replacement of sameTitleSeries) {
+  test(`export preserves newly queued ${replacement.bangumi_id} after removing the snapshot item`, async () => {
+    let ready;
+    const {app, context} = createContext({
+      html2canvas: () => ({toBlob(callback) { callback({}); }}),
+      navigatorImpl: {clipboard: {write: async () => {}}},
+      swal: {fire() {}},
+    });
+    context.window.ClipboardItem = class {};
+    context.document.fonts.ready = new Promise(resolve => { ready = resolve; });
+    app.addToShare(sameTitleSeries[0]);
+    const firstToken = app.shareList[0].token;
+    const exporting = app.generateShareImage();
+    await nextTick();
+    app.removeFromShare(0);
+    app.addToShare(replacement);
+    const nextToken = app.shareList[0].token;
+    ready();
+    await exporting;
+    assert.notEqual(firstToken, nextToken);
+    assert.equal(app.shareList.length, 1);
+    assert.equal(app.shareList[0].token, nextToken);
+  });
 }
 
 for (const height of [1000, 8000, 20000]) {

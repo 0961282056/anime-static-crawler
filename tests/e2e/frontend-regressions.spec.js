@@ -93,6 +93,33 @@ async function installFixtureRoutes(page, {delayFirst = false} = {}) {
   return () => requestCount;
 }
 
+test('release retry is disabled while pending and cannot replace a recovered quarter error state', async ({page}) => {
+  await page.addInitScript(() => localStorage.clear());
+  await installFixtureRoutes(page);
+  await page.route('**/search-index.json*', route => route.fulfill({
+    contentType: 'application/json', body: JSON.stringify({schema_version: 999}),
+  }));
+  let releaseRoute;
+  await page.route('**/release.json?refresh=*', route => { releaseRoute = route; });
+  await page.goto('/');
+  await expect(page.locator('.anime-title').first()).toHaveText(/fixture-/);
+  const search = page.getByLabel('關鍵字搜尋');
+  await search.fill('search-version-failure');
+  await expect(page.getByRole('alert')).toContainText('SEARCH_SCHEMA');
+  const retry = page.getByRole('button', {name: '重新載入', includeHidden: true});
+  await retry.click();
+  await expect.poll(() => Boolean(releaseRoute)).toBe(true);
+  await expect(retry).toBeDisabled();
+  await search.fill('');
+  await expect(page.locator('.anime-title').first()).toHaveText(/fixture-/);
+  try {
+    await releaseRoute.fulfill({status: 503, contentType: 'application/json', body: '{}'});
+  } catch {
+    // Aborting the obsolete request can close the intercepted browser request.
+  }
+  await expect(page.getByRole('alert')).toBeHidden();
+});
+
 test('real Alpine handles rapid quarter switching and clears pending state', async ({page}) => {
   await page.addInitScript(() => localStorage.clear());
   const requestCount = await installFixtureRoutes(page, {delayFirst: true});

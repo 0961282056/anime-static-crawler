@@ -102,7 +102,7 @@
                             <div class="empty-state" style="color:#888; text-align:center; padding:20px;">尚無內容</div>
                         </template>
                         
-                        <template x-for="(item, index) in shareList" :key="item.name">
+                        <template x-for="(item, index) in shareList" :key="item.token">
                             <div class="share-item">
                                 <img :src="item.img" loading="lazy" decoding="async" alt="">
                                 <div class="share-item-info">

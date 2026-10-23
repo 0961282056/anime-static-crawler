@@ -561,7 +561,7 @@ const dataMethods = {
         }
     },
 
-    async loadData(shouldRestoreScroll = false) {
+    async loadData(shouldRestoreScroll = false, refreshRelease = false) {
         if (!this.year || !this.season) return;
 
         const requestId = this._loadRequestId + 1;
@@ -587,6 +587,20 @@ const dataMethods = {
         }
 
         try {
+            if (refreshRelease) {
+                const {response, data} = await fetchJsonWithDeadline('release.json?refresh=' + Date.now(), controller.signal, this.FETCH_TIMEOUT_MS);
+                if (!this.isCurrentLoad(requestId) || controller.signal.aborted) return;
+                const quarters = Object.entries(this.availableData).flatMap(([year, seasons]) => seasons.map(season => `${year}_${season}`));
+                if (!response.ok || data?.schema_version !== 1 || !/^[a-f0-9]{16}$/.test(data.data_version) || !data.quarter_versions || Object.keys(data.quarter_versions).length !== quarters.length || quarters.some(key => !/^[a-f0-9]{64}$/.test(data.quarter_versions[key]))) {
+                    throw createDataError('SEARCH_SCHEMA', '無法取得完整的新版搜尋資料，請稍後重試。', {retryable: false});
+                }
+                if (data.build_version !== this.buildVersion) {
+                    throw createDataError('APP_UPDATED', '網站已有新版，請重新整理頁面後再試。', {retryable: false});
+                }
+                this.dataVersion = data.data_version;
+                this.quarterVersions = data.quarter_versions;
+                this.dataCache = {};
+            }
             const dataset = searchingAll
                 ? await this.getAllQuarterData(controller.signal)
                 : await this.getDataset(cacheKey, controller.signal);
@@ -610,26 +624,9 @@ const dataMethods = {
         }
     },
 
-    async retryLoad() {
-        if (['SEARCH_SCHEMA', 'SEARCH_VERSION'].includes(this.loadError?.code)) {
-            try {
-                const {response, data} = await fetchJsonWithDeadline('release.json?refresh=' + Date.now(), null, this.FETCH_TIMEOUT_MS);
-                const quarters = Object.entries(this.availableData).flatMap(([year, seasons]) => seasons.map(season => `${year}_${season}`));
-                if (!response.ok || data?.schema_version !== 1 || !/^[a-f0-9]{16}$/.test(data.data_version) || !data.quarter_versions || Object.keys(data.quarter_versions).length !== quarters.length || quarters.some(key => !/^[a-f0-9]{64}$/.test(data.quarter_versions[key]))) {
-                    throw createDataError('SEARCH_SCHEMA', '無法取得完整的新版搜尋資料，請稍後重試。', {retryable: false});
-                }
-                if (data.build_version !== this.buildVersion) {
-                    throw createDataError('APP_UPDATED', '網站已有新版，請重新整理頁面後再試。', {retryable: false});
-                }
-                this.dataVersion = data.data_version;
-                this.quarterVersions = data.quarter_versions;
-                this.dataCache = {};
-            } catch (error) {
-                this.loadError = describeDataError(error, this.rawAnimeList.length > 0);
-                return;
-            }
-        }
-        return this.loadData(false);
+    retryLoad() {
+        if (this.loading) return;
+        return this.loadData(false, ['SEARCH_SCHEMA', 'SEARCH_VERSION'].includes(this.loadError?.code));
     }
 };
 
@@ -1075,7 +1072,8 @@ const sharingMethods = {
     },
 
     addToShare(anime) {
-        if (this.shareList.some(i => i.name === anime.anime_name)) {
+        const identity = JSON.stringify([anime.bangumi_id || null, anime.anime_name, anime.original_name || '', anime.external_ids?.bangumi || null]);
+        if (this.shareList.some(item => item.identity === identity)) {
             Swal.fire({toast: true, position: 'top', icon: 'warning', title: '已在清單中', timer: 1000, showConfirmButton: false, background: '#2b2b2b', color: '#fff'});
             return;
         }
@@ -1084,6 +1082,8 @@ const sharingMethods = {
             return;
         }
         this.shareList.push({
+            identity,
+            token: ++this._shareItemSequence,
             name: anime.anime_name,
             img: (anime.anime_image_url && anime.anime_image_url !== '無圖片') ? anime.anime_image_url : 'https://placehold.co/50x50',
             date: anime.premiere_date || '?',
@@ -1113,9 +1113,9 @@ const sharingMethods = {
         if (this._shareExportRunning || !this.shareList.length) return;
         this._shareExportRunning = true;
         const exportItems = this.shareList.map(item => ({...item}));
-        const exportedNames = new Set(exportItems.map(item => item.name));
+        const exportedTokens = new Set(exportItems.map(item => item.token));
         const removeExportedItems = () => {
-            this.shareList = this.shareList.filter(item => !exportedNames.has(item.name));
+            this.shareList = this.shareList.filter(item => !exportedTokens.has(item.token));
         };
         let exporting = true;
         const btn = document.getElementById('copyButton');
@@ -1397,6 +1397,7 @@ function animeApp() {
         _activeLoadAbort: null,
         _activeCacheKey: null,
         _shareExportRunning: false,
+        _shareItemSequence: 0,
         STORAGE_KEYS: {
             YEAR: 'anime_user_year',
             SEASON: 'anime_user_season',

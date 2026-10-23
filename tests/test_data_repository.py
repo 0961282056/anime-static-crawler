@@ -601,6 +601,42 @@ def test_base_recrawl_keeps_attributed_story_and_evidence(
     assert after.story_source == before.story_source
 
 
+@pytest.mark.parametrize("missing", [None, "", "   ", "暫無簡介"])
+def test_source_omission_keeps_unattributed_story_without_fabricating_evidence(
+    tmp_path, anime_record_factory, missing
+):
+    repository = _repository(tmp_path)
+    old = {
+        **anime_record_factory(1, story="原來源先前提供的作品介紹"),
+        "original_name": "Same Work",
+        "external_ids": {"bangumi": 100},
+    }
+    result = _write(repository, [old])
+    before = result.path.read_bytes()
+
+    assert not _write(repository, [{**old, "story": missing}]).changed
+    assert result.path.read_bytes() == before
+    saved = repository.load_path(result.path)
+    assert saved.anime_list[0].story_source is None
+    assert saved.quality.missing_story_count == 0
+
+
+@pytest.mark.parametrize(
+    "identity_change", [{"anime_name": "另一作品"}, {"original_name": "Other Work"}]
+)
+def test_source_omission_does_not_borrow_story_after_identity_change(
+    tmp_path, anime_record_factory, identity_change
+):
+    repository = _repository(tmp_path)
+    old = {
+        **anime_record_factory(1, story="只適用舊作品的介紹"),
+        "original_name": "Original Work",
+    }
+    result = _write(repository, [old])
+    _write(repository, [{**old, **identity_change, "story": "暫無簡介"}])
+    assert repository.load_path(result.path).anime_list[0].story == "暫無簡介"
+
+
 def test_explicitly_attributed_replacement_remains_possible(
     tmp_path, anime_record_factory
 ):

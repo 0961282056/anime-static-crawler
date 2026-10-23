@@ -5,6 +5,38 @@ const headersSource = readFileSync('_headers', 'utf8');
 const csp = headersSource.match(/Content-Security-Policy:\s*(.+)/)[1].trim();
 const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=', 'base64');
 
+test('same-title series have independent share rows under production CSP', async ({page}) => {
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.addInitScript(() => localStorage.clear());
+  await page.route('http://127.0.0.1:4173/', async route => {
+    const response = await route.fetch();
+    await route.fulfill({response, headers: {...response.headers(), 'content-security-policy': csp}});
+  });
+  await page.route('**/data/*.json*', route => route.fulfill({
+    contentType: 'application/json',
+    body: JSON.stringify({anime_list: [1672, 1936].map((id, i) => ({
+      bangumi_id: `anime-${id}`, anime_name: '科學×冒險生存！',
+      original_name: i ? '科学×冒険サバイバル！ 第2シリーズ' : '科学×冒険サバイバル！',
+      external_ids: {bangumi: i ? 536878 : 480716},
+      story: '分享清單身分回歸測試', premiere_date: '一', premiere_time: '20:00',
+      anime_image_url: `https://res.cloudinary.com/demo/image/upload/v1/anime_covers/${'a'.repeat(64)}`,
+    }))}),
+  }));
+  await page.route('https://res.cloudinary.com/**', route => route.fulfill({contentType: 'image/png', body: png}));
+  await page.goto('/');
+  const add = page.getByRole('button', {name: /加入清單/});
+  await expect(add).toHaveCount(2);
+  await add.nth(0).click();
+  await add.nth(1).click();
+  await expect(page.locator('.share-item')).toHaveCount(2);
+  await page.locator('.share-remove').first().click();
+  await expect(page.locator('.share-item')).toHaveCount(1);
+  await add.nth(0).click();
+  await expect(page.locator('.share-item')).toHaveCount(2);
+  expect(errors).toEqual([]);
+});
+
 test('share export loads the integrity-pinned renderer on demand under production CSP', async ({page}) => {
   test.setTimeout(60000);
   const rendererRequests = [];

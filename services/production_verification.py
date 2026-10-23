@@ -111,27 +111,46 @@ def expected_files(paths: ProjectPaths) -> dict[str, bytes]:
     }
 
 
-def is_superseded(expected: str, deployed: str, read) -> bool:
+def is_superseded(expected: str, deployed: str, read, *, comparison_cache=None) -> bool:
     """A foreign preview/branch commit cannot masquerade as a newer main."""
+
+    def ahead(base, head):
+        pair = (base, head)
+        if comparison_cache is not None and pair in comparison_cache:
+            return comparison_cache[pair]
+        result = json.loads(read(f"{REPOSITORY_API}/compare/{base}...{head}"))
+        if not isinstance(result, dict):
+            return False
+        status = result.get("status")
+        merge = result.get("merge_base_commit")
+        merge_base = merge.get("sha", "") if isinstance(merge, dict) else ""
+        matches = status == "ahead" and merge_base == base
+        # Only complete successful responses for immutable SHA pairs are cached.
+        # A transport error or incomplete response must remain retryable.
+        if (
+            comparison_cache is not None
+            and isinstance(status, str)
+            and status in {"ahead", "behind", "identical", "diverged"}
+            and isinstance(merge_base, str)
+            and COMMIT.fullmatch(merge_base)
+        ):
+            comparison_cache[pair] = matches
+        return matches
+
+    # An older deployment cannot supersede the target, regardless of current main.
+    if not ahead(expected, deployed):
+        return False
     main = json.loads(read(f"{REPOSITORY_API}/commits/main"))["sha"]
     if not COMMIT.fullmatch(main):
         return False
-    first = json.loads(read(f"{REPOSITORY_API}/compare/{expected}...{deployed}"))
-    if (
-        first.get("status") != "ahead"
-        or first.get("merge_base_commit", {}).get("sha") != expected
-    ):
-        return False
     if main == deployed:
         return True
-    second = json.loads(read(f"{REPOSITORY_API}/compare/{deployed}...{main}"))
-    return (
-        second.get("status") == "ahead"
-        and second.get("merge_base_commit", {}).get("sha") == deployed
-    )
+    return ahead(deployed, main)
 
 
-def verify_once(paths: ProjectPaths, expected: str, read, *, attempt: int = 0) -> dict:
+def verify_once(
+    paths: ProjectPaths, expected: str, read, *, attempt: int = 0, comparison_cache=None
+) -> dict:
     marker = json.loads(
         read(f"{SITE}release.json?expected={expected}&attempt={attempt}")
     )
@@ -139,7 +158,7 @@ def verify_once(paths: ProjectPaths, expected: str, read, *, attempt: int = 0) -
     if marker.get("schema_version") != 1 or not COMMIT.fullmatch(deployed):
         raise RuntimeError("Canonical release marker is invalid or not yet available")
     if deployed != expected:
-        if is_superseded(expected, deployed, read):
+        if is_superseded(expected, deployed, read, comparison_cache=comparison_cache):
             return {
                 "status": "superseded",
                 "expected_commit": expected,
@@ -215,11 +234,18 @@ def wait_for_production(
     if isinstance(reader, PublicReader):
         reader.deadline = deadline
     attempt = 0
+    comparison_cache = {}
     error = "Canonical deployment is not available"
     while clock() < deadline:
         attempt += 1
         try:
-            result = verify_once(paths, expected, reader, attempt=attempt)
+            result = verify_once(
+                paths,
+                expected,
+                reader,
+                attempt=attempt,
+                comparison_cache=comparison_cache,
+            )
         except (
             RuntimeError,
             requests.RequestException,
