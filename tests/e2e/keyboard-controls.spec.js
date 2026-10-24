@@ -103,6 +103,7 @@ test('named back-to-top control returns keyboard focus to the page heading', asy
   for (const link of await page.locator('footer').getByRole('link').all()) {
     await page.keyboard.press('Tab');
     await expect(link).toBeFocused();
+    await expect(link).toHaveCSS('outline-style', 'solid');
   }
   await page.keyboard.press('Tab');
   await expect(top).toBeFocused();
