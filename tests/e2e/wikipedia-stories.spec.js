@@ -10,6 +10,10 @@ test('Wikipedia excerpts show fixed revisions and complete attribution on mobile
   const errors=[];
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('/');
+  const footer = page.locator('footer');
+  await expect(footer.getByRole('link', {name:'bangumi-data 社群資料'})).toHaveAttribute('href', 'https://github.com/bangumi-data/bangumi-data/tree/94ea82be75d9e617c7970bb0fd0670ae5c60e53d');
+  await expect(footer.getByRole('link', {name:'CC BY 4.0', exact:true})).toHaveAttribute('href', 'https://creativecommons.org/licenses/by/4.0/');
+  await expect(footer).toContainText('依本站作品與季度範圍篩選');
   for (const row of rows) {
     await page.getByLabel('關鍵字搜尋').fill(row.anime_name);
     const card=page.locator('.anime-card').filter({has:page.locator('.anime-title',{hasText:row.anime_name})});
@@ -23,6 +27,8 @@ test('Wikipedia excerpts show fixed revisions and complete attribution on mobile
     await expect(credit.getByRole('link',{name:'維基百科貢獻者'})).toHaveAttribute('href',row.attribution.contributors_url);
     await expect(credit.getByRole('link',{name:'CC BY-SA 4.0'})).toHaveAttribute('href',row.attribution.license_url);
     await expect(credit).toContainText('原文連續片段節錄');
+    await card.getByText('集數來源與確認時間', {exact:true}).click();
+    await expect(card.getByRole('link', {name:/AniList 條目/})).toHaveAttribute('href', `https://anilist.co/anime/${row.anilist_id}`);
     await card.locator('.story-box').click();
     await expect(page.locator('.swal2-html-container')).toContainText(row.story);
     await expect(page.locator('.swal2-html-container')).toContainText('維基百科貢獻者');

@@ -105,7 +105,7 @@
       "original_name": "ここは俺に任せて先に行けと言ってから10年がたったら伝説になっていた。",
       "external_ids": {
         "bangumi": 590786,
-        "anilist": null
+        "anilist": 199748
       },
       "episodes": {
         "total_episodes": 12,
@@ -763,7 +763,7 @@
       "original_name": "LV999の村人",
       "external_ids": {
         "bangumi": 579787,
-        "anilist": null
+        "anilist": 197715
       },
       "episodes": {
         "total_episodes": 12,
@@ -886,7 +886,7 @@
       "original_name": "盗掘王",
       "external_ids": {
         "bangumi": 621835,
-        "anilist": null
+        "anilist": 184356
       },
       "episodes": {
         "total_episodes": 12,
@@ -987,7 +987,7 @@
       "original_name": "ワールド イズ ダンシング",
       "external_ids": {
         "bangumi": 622633,
-        "anilist": null
+        "anilist": 206521
       },
       "episodes": {
         "total_episodes": 13,
@@ -1407,7 +1407,7 @@
       "original_name": "うしろの正面カムイさん",
       "external_ids": {
         "bangumi": 627136,
-        "anilist": null
+        "anilist": 207674
       },
       "episodes": {
         "total_episodes": 12,
@@ -1508,7 +1508,7 @@
       "original_name": "猫と竜",
       "external_ids": {
         "bangumi": 538760,
-        "anilist": null
+        "anilist": 186863
       },
       "episodes": {
         "total_episodes": 12,
@@ -1935,7 +1935,7 @@
       "original_name": "プラノサウルス ガチコセイブツ部",
       "external_ids": {
         "bangumi": 633711,
-        "anilist": null
+        "anilist": 208824
       },
       "episodes": {
         "total_episodes": 12,
@@ -2289,7 +2289,7 @@
       "original_name": "アズールレーン びそくぜんしんっ！にっ!!",
       "external_ids": {
         "bangumi": 454083,
-        "anilist": null
+        "anilist": 169080
       },
       "episodes": {
         "total_episodes": 12,
@@ -2352,7 +2352,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-24T04:16:51.804924+08:00",
+  "generated_at": "2026-10-24T12:46:55.951035+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202607/",
   "quality": {
     "source_count": 75,

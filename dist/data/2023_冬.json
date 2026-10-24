@@ -177,7 +177,7 @@
       "original_name": "クールドジ男子",
       "external_ids": {
         "bangumi": 378860,
-        "anilist": null
+        "anilist": 147885
       },
       "episodes": {
         "total_episodes": 24,
@@ -271,7 +271,7 @@
       "original_name": "永久少年 Eternal Boys",
       "external_ids": {
         "bangumi": 374563,
-        "anilist": null
+        "anilist": 146438
       },
       "episodes": {
         "total_episodes": 24,
@@ -336,7 +336,7 @@
       "original_name": "人間不信の冒険者たちが世界を救うようです",
       "external_ids": {
         "bangumi": 346425,
-        "anilist": null
+        "anilist": 137909
       },
       "episodes": {
         "total_episodes": 12,
@@ -2035,7 +2035,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-24T04:16:51.804924+08:00",
+  "generated_at": "2026-10-24T12:46:55.951035+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202301/",
   "quality": {
     "source_count": 62,

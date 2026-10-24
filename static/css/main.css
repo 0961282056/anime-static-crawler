@@ -502,6 +502,7 @@ body {
 .title-copy:focus-visible,
 .story-box:focus-visible,
 .share-remove:focus-visible,
+.data-credit a:focus-visible,
 #backToTopBtn:focus-visible,
 #shareListTitle:focus,
 #pageTitle:focus {
@@ -705,4 +706,6 @@ body {
 
 .wikipedia-credit { color: var(--text-muted); font-size: .7rem; line-height: 1.5; margin: 0 0 12px; overflow-wrap: anywhere; }
 .wikipedia-credit a { color: var(--accent); }
+.data-credit { color: var(--text-muted); }
+.data-credit a { color: var(--accent); }
 .wikipedia-dialog { overflow-wrap: anywhere; white-space: pre-line; }

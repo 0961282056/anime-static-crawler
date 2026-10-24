@@ -40,7 +40,7 @@
       "original_name": "デュエル・マスターズ!!",
       "external_ids": {
         "bangumi": 279474,
-        "anilist": null
+        "anilist": 113242
       },
       "episodes": {
         "total_episodes": 51,
@@ -666,7 +666,7 @@
       "original_name": "Bラッパーズ ストリート",
       "external_ids": {
         "bangumi": 306161,
-        "anilist": null
+        "anilist": 108761
       },
       "episodes": {
         "total_episodes": 50,
@@ -911,7 +911,7 @@
       "original_name": "妖怪ウォッチ！",
       "external_ids": {
         "bangumi": 279472,
-        "anilist": null
+        "anilist": 108767
       },
       "episodes": {
         "total_episodes": 36,
@@ -1172,7 +1172,7 @@
       "original_name": "けだまのゴンじろー",
       "external_ids": {
         "bangumi": 274549,
-        "anilist": null
+        "anilist": 108734
       },
       "episodes": {
         "total_episodes": 51,
@@ -1721,7 +1721,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-24T04:16:51.804924+08:00",
+  "generated_at": "2026-10-24T12:46:55.951035+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201904/",
   "quality": {
     "source_count": 51,

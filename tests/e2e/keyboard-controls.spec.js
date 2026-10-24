@@ -98,8 +98,13 @@ test('named back-to-top control returns keyboard focus to the page heading', asy
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
   const top = page.getByRole('button', {name: '回到頁面頂端', exact: true});
   await expect(top).toBeVisible();
-  // It is the final control in the document's tab order.
+  // Source attribution links precede the final back-to-top control.
   await page.locator('.anime-card').last().getByRole('link').last().focus();
+  for (const link of await page.locator('footer').getByRole('link').all()) {
+    await page.keyboard.press('Tab');
+    await expect(link).toBeFocused();
+    await expect(link).toHaveCSS('outline-style', 'solid');
+  }
   await page.keyboard.press('Tab');
   await expect(top).toBeFocused();
   await expect(top).toHaveCSS('outline-style', 'solid');

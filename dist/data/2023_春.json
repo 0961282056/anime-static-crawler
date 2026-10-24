@@ -11,7 +11,7 @@
       "original_name": "ぼさにまる",
       "external_ids": {
         "bangumi": 426154,
-        "anilist": null
+        "anilist": 162840
       },
       "episodes": {
         "total_episodes": 96,
@@ -996,7 +996,7 @@
       "original_name": "ちびゴジラの逆襲",
       "external_ids": {
         "bangumi": 422505,
-        "anilist": null
+        "anilist": 162312
       },
       "episodes": {
         "total_episodes": 13,
@@ -1025,7 +1025,7 @@
       "original_name": "ぐんまちゃん シーズン2",
       "external_ids": {
         "bangumi": 418484,
-        "anilist": null
+        "anilist": 160173
       },
       "episodes": {
         "total_episodes": 13,
@@ -1604,7 +1604,7 @@
       "original_name": "漣蒼士に純潔を捧ぐ",
       "external_ids": {
         "bangumi": 369794,
-        "anilist": null
+        "anilist": 154650
       },
       "episodes": {
         "total_episodes": 8,
@@ -1624,7 +1624,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-24T04:16:51.804924+08:00",
+  "generated_at": "2026-10-24T12:46:55.951035+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202304/",
   "quality": {
     "source_count": 54,
