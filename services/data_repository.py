@@ -20,6 +20,7 @@ from services.diagnostics import operation
 from services.display_name_reviews import reviewed_display_rename
 from services.episode_source_reviews import reviewed_source
 from services.errors import DataContractError
+from services.external_link_reviews import reviewed_anilist_link
 from services.source_identity import conflicting_providers
 from services.story_source_reviews import reviewed_story
 from services.wikipedia_story_reviews import reviewed_wikipedia_story
@@ -277,6 +278,29 @@ class DataRepository:
             # source fields. Every identity field can invalidate a reviewed
             # scope, even when the Chinese display name has not changed.
             effective = validated_records[index]
+            link_review = reviewed_anilist_link(path.stem, effective)
+            if old and reviewed_anilist_link(path.stem, old) and not link_review:
+                raise DataContractError(
+                    "Reviewed external-link identity changed; update its exact rule before changing identity"
+                )
+            if link_review:
+                if effective.external_ids.anilist not in (
+                    None,
+                    link_review["anilist_id"],
+                ):
+                    raise DataContractError(
+                        "Explicit AniList ID conflicts with reviewed external-link evidence"
+                    )
+                if effective.external_ids.anilist is None:
+                    effective = effective.model_copy(
+                        update={
+                            "external_ids": ExternalIds(
+                                bangumi=effective.external_ids.bangumi,
+                                anilist=link_review["anilist_id"],
+                            )
+                        }
+                    )
+                    validated_records[index] = effective
             if old and reviewed_broadcast(old) and not reviewed_broadcast(effective):
                 raise DataContractError(
                     "Reviewed broadcast identity changed; update its exact rule before changing identity"

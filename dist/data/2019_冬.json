@@ -1165,7 +1165,7 @@
       "original_name": "おこしやす、ちとせちゃん",
       "external_ids": {
         "bangumi": 255550,
-        "anilist": null
+        "anilist": 103872
       },
       "episodes": {
         "total_episodes": 24,
@@ -1710,7 +1710,7 @@
       "original_name": "パパだって、したい",
       "external_ids": {
         "bangumi": 268653,
-        "anilist": null
+        "anilist": 106165
       },
       "episodes": {
         "total_episodes": 8,
@@ -1736,7 +1736,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-24T04:16:51.804924+08:00",
+  "generated_at": "2026-10-24T12:46:55.951035+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201901/",
   "quality": {
     "source_count": 51,

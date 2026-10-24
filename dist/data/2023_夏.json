@@ -69,7 +69,7 @@
       "original_name": "SYNDUALITY Noir",
       "external_ids": {
         "bangumi": 401301,
-        "anilist": null
+        "anilist": 154643
       },
       "episodes": {
         "total_episodes": 12,
@@ -599,7 +599,7 @@
       "original_name": "聖者無双～サラリーマン、異世界で生き残るために歩む道～",
       "external_ids": {
         "bangumi": 403741,
-        "anilist": null
+        "anilist": 155418
       },
       "episodes": {
         "total_episodes": 12,
@@ -744,7 +744,7 @@
       "original_name": "いきものさん",
       "external_ids": {
         "bangumi": 424509,
-        "anilist": null
+        "anilist": 169364
       },
       "episodes": {
         "total_episodes": 12,
@@ -1453,7 +1453,7 @@
       "original_name": "夫婦交歓～戻れない夜～",
       "external_ids": {
         "bangumi": 404643,
-        "anilist": null
+        "anilist": 168253
       },
       "episodes": {
         "total_episodes": 8,
@@ -1545,7 +1545,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-23T04:28:08.492826+08:00",
+  "generated_at": "2026-10-24T12:46:55.951035+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202307/",
   "quality": {
     "source_count": 51,
