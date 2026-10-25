@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from datetime import date, datetime
 from functools import cache
 from pathlib import Path
@@ -57,6 +58,18 @@ def external_link_reviews() -> dict[tuple, dict]:
             or not row["quarters"]
         ):
             raise ValueError("Invalid reviewed external-link identity")
+        comparison = row.get("name_comparison", "exact")
+        source_title = row.get("source_title", row["original_name"])
+        if comparison == "unicode_nfkc":
+            if (
+                not isinstance(source_title, str)
+                or unicodedata.normalize("NFKC", row["original_name"])
+                != unicodedata.normalize("NFKC", source_title)
+                or datetime.fromisoformat(row["reviewed_at"]).tzinfo is None
+            ):
+                raise ValueError("Invalid reviewed Unicode title evidence")
+        elif comparison != "exact" or source_title != row["original_name"]:
+            raise ValueError("Unreviewed external-link title comparison")
         begin = datetime.fromisoformat(row["source_begin"])
         if begin.tzinfo is None:
             raise ValueError("External-link source dates require a timezone")

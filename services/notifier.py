@@ -122,6 +122,8 @@ def build_workflow_notification(
     if outcome.partial_failures:
         success = False
         detail += f"\n部分階段保留舊資料／延期 {outcome.partial_failures} 項；已完成的可靠更新仍依PR流程處理。請查看update-stage-report，勿視為所有來源查證成功。"
+        if outcome.run_url:
+            detail += f"\n本次執行與報告：{outcome.run_url}#artifacts"
 
     metadata = f"觸發={outcome.event_name or 'unknown'}；執行嘗試={outcome.run_attempt}"
     timestamp = now or datetime.now(TAIPEI_TZ)

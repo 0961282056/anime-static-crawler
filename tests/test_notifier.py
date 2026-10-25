@@ -284,8 +284,12 @@ def test_partial_stage_results_are_not_announced_as_complete_success():
             data_changed=True,
             pr_url="https://github.com/example/repo/pull/1",
             partial_failures=2,
+            run_url="https://github.com/example/repo/actions/runs/123",
         )
     )
     assert result.status == "PARTIAL"
     assert "部分階段" in result.message
     assert "PR" in result.message
+    assert (
+        "https://github.com/example/repo/actions/runs/123#artifacts" in result.message
+    )

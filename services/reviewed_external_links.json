@@ -12,7 +12,7 @@
     "attribution": "bangumi-data contributors",
     "license_evidence_url": "https://github.com/bangumi-data/bangumi-data/blob/94ea82be75d9e617c7970bb0fd0670ae5c60e53d/README.md#license"
   },
-  "method": "Exact existing Bangumi ID and byte-identical original title; both explicit IDs in the same TV/web source item; one source item per ID across the full snapshot; reviewed quarters only. No AniList request, fuzzy matching, episode enrichment or replacement of existing links.",
+  "method": "Exact existing Bangumi ID and explicit same-item AniList reference, one source item per ID across the full snapshot. Titles are byte-identical unless an explicit per-entry Unicode NFKC comparison preserves both literal titles and review time. Reviewed quarters only; no runtime name search, AniList requests, episode enrichment or replacement of existing links.",
   "entries": [
     {
       "card_id": "anime-550",
@@ -12274,6 +12274,774 @@
       "source_item_index": 8703,
       "source_type": "tv",
       "source_begin": "2026-04-05T16:10:00.000Z"
+    },
+    {
+      "card_id": "anime-557",
+      "anime_name": "OVERLORD II",
+      "original_name": "オーバーロードⅡ",
+      "subject_id": 211027,
+      "anilist_id": 98437,
+      "source_item_index": 5806,
+      "source_title": "オーバーロードII",
+      "source_type": "tv",
+      "source_begin": "2018-01-09T15:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2018_冬"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-642",
+      "anime_name": "時間飛船 逆襲的三惡人",
+      "original_name": "タイムボカン　逆襲の三悪人",
+      "subject_id": 212009,
+      "anilist_id": 98521,
+      "source_item_index": 5728,
+      "source_title": "タイムボカン 逆襲の三悪人",
+      "source_type": "tv",
+      "source_begin": "2017-10-07T08:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2018_冬"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-429",
+      "anime_name": "OVERLORD III",
+      "original_name": "オーバーロードⅢ",
+      "subject_id": 242170,
+      "anilist_id": 101474,
+      "source_item_index": 6010,
+      "source_title": "オーバーロードIII",
+      "source_type": "tv",
+      "source_begin": "2018-07-10T15:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2018_夏"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-444",
+      "anime_name": "熱血自由式III",
+      "original_name": "Free!-Dive to the Future-",
+      "subject_id": 228820,
+      "anilist_id": 101117,
+      "source_item_index": 5998,
+      "source_title": "Free!－Dive to the Future－",
+      "source_type": "tv",
+      "source_begin": "2018-07-11T15:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2018_夏"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-469",
+      "anime_name": "LORD of VERMILION 紅蓮之王",
+      "original_name": "ロード オブ ヴァーミリオン　紅蓮の王",
+      "subject_id": 241091,
+      "anilist_id": 101384,
+      "source_item_index": 5989,
+      "source_title": "ロード オブ ヴァーミリオン 紅蓮の王",
+      "source_type": "tv",
+      "source_begin": "2018-07-13T16:05:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2018_夏"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-504",
+      "anime_name": "東京喰種:re",
+      "original_name": "東京喰種：re",
+      "subject_id": 148481,
+      "anilist_id": 100240,
+      "source_item_index": 5883,
+      "source_title": "東京喰種:re",
+      "source_type": "tv",
+      "source_begin": "2018-04-03T14:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2018_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-411",
+      "anime_name": "宇宙戰艦提拉米斯 II",
+      "original_name": "宇宙戦艦ティラミスⅡ",
+      "subject_id": 251666,
+      "anilist_id": 102978,
+      "source_item_index": 6074,
+      "source_title": "宇宙戦艦ティラミスII",
+      "source_type": "tv",
+      "source_begin": "2018-10-01T16:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2018_秋"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-417",
+      "anime_name": "偶像大師 SideM 有理由Mini！",
+      "original_name": "アイドルマスター SideM　理由あってMini!",
+      "subject_id": 257844,
+      "anilist_id": 103923,
+      "source_item_index": 6072,
+      "source_title": "アイドルマスター SideM 理由あってMini!",
+      "source_type": "tv",
+      "source_begin": "2018-10-09T12:54:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2018_秋"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-425",
+      "anime_name": "末班電車後、膠囊旅館、給上司微熱的夜晚。",
+      "original_name": "終電後､カプセルホテルで､上司に微熱伝わる夜｡",
+      "subject_id": 258081,
+      "anilist_id": 104117,
+      "source_item_index": 6122,
+      "source_title": "終電後、カプセルホテルで、上司に微熱伝わる夜。",
+      "source_type": "tv",
+      "source_begin": "2018-10-07T16:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2018_秋"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-313",
+      "anime_name": "星光頻道 第二季",
+      "original_name": "キラッとプリ☆チャン シーズン２",
+      "subject_id": 269023,
+      "anilist_id": 108625,
+      "source_item_index": 6304,
+      "source_title": "キラッとプリ☆チャン シーズン2",
+      "source_type": "tv",
+      "source_begin": "2019-04-06T16:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2019_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-321",
+      "anime_name": "香蕉怪大叔 吶吶~吶 好奇洞穴樂園",
+      "original_name": "テレビ野郎 ナナーナ わくわく洞窟ランド",
+      "subject_id": 279475,
+      "anilist_id": 112008,
+      "source_item_index": 6287,
+      "source_title": "テレビ野郎 ナナーナ　わくわく洞窟ランド",
+      "source_type": "tv",
+      "source_begin": "2019-04-11T16:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2019_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-323",
+      "anime_name": "老闆！ ～我和她在女澡堂裡！ ？ ～",
+      "original_name": "洗い屋さん！～俺とアイツが女湯で！？～",
+      "subject_id": 275610,
+      "anilist_id": 107974,
+      "source_item_index": 6275,
+      "source_title": "洗い屋さん！～俺とアイツが女湯で!?～",
+      "source_type": "tv",
+      "source_begin": "2019-04-07T16:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2019_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-226",
+      "anime_name": "募戀英雄",
+      "original_name": "スタンドマイヒーローズ PIECE OF TRUTH",
+      "subject_id": 260729,
+      "anilist_id": 104158,
+      "source_item_index": 6454,
+      "source_title": "スタンドマイヒーローズ　PIECE OF TRUTH",
+      "source_type": "tv",
+      "source_begin": "2019-10-07T14:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2019_秋"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-213",
+      "anime_name": "七大罪 眾神的逆鱗",
+      "original_name": "七つの大罪　神々の逆鱗",
+      "subject_id": 280380,
+      "anilist_id": 108928,
+      "source_item_index": 6451,
+      "source_title": "七つの大罪 神々の逆鱗",
+      "source_type": "tv",
+      "source_begin": "2019-10-09T08:55:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2019_秋"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-200",
+      "anime_name": "PSYCHO-PASS 心靈判官3",
+      "original_name": "PSYCHO-PASS サイコパス ３",
+      "subject_id": 277105,
+      "anilist_id": 108307,
+      "source_item_index": 6469,
+      "source_title": "PSYCHO-PASS サイコパス 3",
+      "source_type": "tv",
+      "source_begin": "2019-10-16T15:55:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2019_秋"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-192",
+      "anime_name": "高分少女Ⅱ",
+      "original_name": "ハイスコアガールⅡ",
+      "subject_id": 278569,
+      "anilist_id": 108581,
+      "source_item_index": 6420,
+      "source_title": "ハイスコアガールII",
+      "source_type": "tv",
+      "source_begin": "2019-10-25T16:05:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2019_秋"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-53",
+      "anime_name": "異世界四重奏2",
+      "original_name": "異世界かるてっと2",
+      "subject_id": 285422,
+      "anilist_id": 110178,
+      "source_item_index": 6539,
+      "source_title": "異世界かるてっと２",
+      "source_type": "tv",
+      "source_begin": "2020-01-14T15:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2020_冬"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-38",
+      "anime_name": "我家湯瑪？！ ～有沒有看到我們家的湯瑪？～",
+      "original_name": "うちタマ?! ～うちのタマ知りませんか？～",
+      "subject_id": 284575,
+      "anilist_id": 109964,
+      "source_item_index": 6545,
+      "source_title": "うちタマ⁈ ～うちのタマ知りませんか？～",
+      "source_type": "tv",
+      "source_begin": "2020-01-09T15:55:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2020_冬"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-18",
+      "anime_name": "八十龜醬觀察日記 第2冊",
+      "original_name": "八十亀ちゃんかんさつにっき　２さつめ",
+      "subject_id": 282762,
+      "anilist_id": 110090,
+      "source_item_index": 6530,
+      "source_title": "八十亀ちゃんかんさつにっき 2さつめ",
+      "source_type": "tv",
+      "source_begin": "2020-01-05T14:24:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2020_冬"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-117",
+      "anime_name": "星光頻道 第三季",
+      "original_name": "キラッとプリ☆チャン シーズン３",
+      "subject_id": 296702,
+      "anilist_id": 113990,
+      "source_item_index": 6651,
+      "source_title": "キラッとプリ☆チャン シーズン3",
+      "source_type": "tv",
+      "source_begin": "2020-04-04T16:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2020_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-102",
+      "anime_name": "月歌。THE ANIMATION 2",
+      "original_name": "ツキウタ。 THE ANIMATION２",
+      "subject_id": 266349,
+      "anilist_id": 105244,
+      "source_item_index": 6750,
+      "source_title": "ツキウタ。 THE ANIMATION2",
+      "source_type": "tv",
+      "source_begin": "2020-10-07T13:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2020_秋"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-695",
+      "anime_name": "大人的防具店 第2季",
+      "original_name": "おとなの防具屋さんII",
+      "subject_id": 322926,
+      "anilist_id": 124136,
+      "source_item_index": 6837,
+      "source_title": "おとなの防具屋さんⅡ",
+      "source_type": "tv",
+      "source_begin": "2021-01-08T16:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2021_冬"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-786",
+      "anime_name": "轉生成女性向遊戲只有毀滅END的壞人大小姐X",
+      "original_name": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…Ｘ",
+      "subject_id": 309056,
+      "anilist_id": 120209,
+      "source_item_index": 6992,
+      "source_title": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…X",
+      "source_type": "tv",
+      "source_begin": "2021-07-02T16:25:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2021_夏"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-758",
+      "anime_name": "擾亂 THE PRINCESS OF SNOW AND BLOOD",
+      "original_name": "擾乱　THE PRINCESS OF SNOW AND BLOOD",
+      "subject_id": 327519,
+      "anilist_id": 129664,
+      "source_item_index": 6932,
+      "source_title": "擾乱 THE PRINCESS OF SNOW AND BLOOD",
+      "source_type": "tv",
+      "source_begin": "2021-04-06T16:29:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2021_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-158",
+      "anime_name": "唱歌的足球熊貓 MIFANDA",
+      "original_name": "歌うサッカーパンダ　ミファンダ",
+      "subject_id": 309170,
+      "anilist_id": 122322,
+      "source_item_index": 6957,
+      "source_title": "歌うサッカーパンダ ミファンダ",
+      "source_type": "tv",
+      "source_begin": "2021-03-31T16:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2021_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-995",
+      "anime_name": "Waccha PriMagi!",
+      "original_name": "ワッチャプリマジ!",
+      "subject_id": 339904,
+      "anilist_id": 136119,
+      "source_item_index": 7098,
+      "source_title": "ワッチャプリマジ！",
+      "source_type": "tv",
+      "source_begin": "2021-10-03T01:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2021_秋"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-795",
+      "anime_name": "約會大作戰IV",
+      "original_name": "デート・ア・ライブIV",
+      "subject_id": 302128,
+      "anilist_id": 116605,
+      "source_item_index": 7250,
+      "source_title": "デート・ア・ライブⅣ",
+      "source_type": "tv",
+      "source_begin": "2022-04-08T13:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2022_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1089",
+      "anime_name": "遊戲王Go Rush!!",
+      "original_name": "遊☆戯☆王ゴーラッシュ！！",
+      "subject_id": 362997,
+      "anilist_id": 142842,
+      "source_item_index": 7252,
+      "source_title": "遊☆戯☆王ゴーラッシュ!!",
+      "source_type": "tv",
+      "source_begin": "2022-04-02T22:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2022_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1245",
+      "anime_name": "突然降臨的埃及神2",
+      "original_name": "とーとつにエジプト神２",
+      "subject_id": 343996,
+      "anilist_id": 137308,
+      "source_item_index": 7547,
+      "source_title": "とーとつにエジプト神2",
+      "source_type": "web",
+      "source_begin": "2023-01-10T16:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2023_冬"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1543",
+      "anime_name": "約會大作戰Ⅴ",
+      "original_name": "デート・ア・ライブV",
+      "subject_id": 389466,
+      "anilist_id": 151380,
+      "source_item_index": 7959,
+      "source_title": "デート・ア・ライブⅤ",
+      "source_type": "tv",
+      "source_begin": "2024-04-10T14:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2024_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1548",
+      "anime_name": "身為魔王的我娶了奴隸精靈為妻，該如何表白我的愛？",
+      "original_name": "魔王の俺が奴隷エルフを嫁にしたんだが、どう愛でればいい?",
+      "subject_id": 406251,
+      "anilist_id": 156023,
+      "source_item_index": 7983,
+      "source_title": "魔王の俺が奴隷エルフを嫁にしたんだが、どう愛でればいい？",
+      "source_type": "tv",
+      "source_begin": "2024-04-04T15:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2024_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1733",
+      "anime_name": "地縛少年花子君 2",
+      "original_name": "地縛少年花子くん２",
+      "subject_id": 464593,
+      "anilist_id": 170892,
+      "source_item_index": 8264,
+      "source_title": "地縛少年花子くん2",
+      "source_type": "tv",
+      "source_begin": "2025-01-12T07:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2025_冬"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1749",
+      "anime_name": "「只讓你摸1分鐘哦…」分租雅房不能說的祕密規定。",
+      "original_name": "「1分間だけ触れてもいいよ…」シェアハウスの秘密ルール｡",
+      "subject_id": 525733,
+      "anilist_id": 179333,
+      "source_item_index": 8258,
+      "source_title": "「1分間だけ触れてもいいよ…」シェアハウスの秘密ルール。",
+      "source_type": "tv",
+      "source_begin": "2025-01-05T16:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2025_冬"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1875",
+      "anime_name": "加密忍者咲耶 三之卷",
+      "original_name": "忍ばない！クリプトニンジャ咲耶　参ノ巻",
+      "subject_id": 531576,
+      "anilist_id": 181867,
+      "source_item_index": 8456,
+      "source_title": "忍ばない！クリプトニンジャ咲耶 参ノ巻",
+      "source_type": "tv",
+      "source_begin": "2025-07-07T12:54:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2025_夏"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1869",
+      "anime_name": "去唱卡拉OK吧！",
+      "original_name": "カラオケ行こ!",
+      "subject_id": 519956,
+      "anilist_id": 183127,
+      "source_item_index": 8447,
+      "source_title": "カラオケ行こ！",
+      "source_type": "tv",
+      "source_begin": "2025-07-24T12:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2025_夏"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1829",
+      "anime_name": "Silent Witch 沉默魔女的秘密",
+      "original_name": "サイレント・ウィッチ 沈黙の魔女の隠しごと",
+      "subject_id": 506677,
+      "anilist_id": 179966,
+      "source_item_index": 8392,
+      "source_title": "サイレント・ウィッチ　沈黙の魔女の隠しごと",
+      "source_type": "tv",
+      "source_begin": "2025-07-04T15:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2025_夏"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1791",
+      "anime_name": "中禪寺老師妖怪講義錄 解謎就交給老師。",
+      "original_name": "中禅寺先生物怪講義録　先生が謎を解いてしまうから。",
+      "subject_id": 516227,
+      "anilist_id": 182419,
+      "source_item_index": 8313,
+      "source_title": "中禅寺先生物怪講義録 先生が謎を解いてしまうから。",
+      "source_type": "tv",
+      "source_begin": "2025-04-07T12:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2025_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1789",
+      "anime_name": "Miru 我的未來",
+      "original_name": "未ル　わたしのみらい",
+      "subject_id": 442128,
+      "anilist_id": 166373,
+      "source_item_index": 8328,
+      "source_title": "未ル わたしのみらい",
+      "source_type": "tv",
+      "source_begin": "2025-04-02T17:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2025_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1786",
+      "anime_name": "真･武士傳 YAIBA",
+      "original_name": "真･侍伝 YAIBA",
+      "subject_id": 492881,
+      "anilist_id": 177476,
+      "source_item_index": 8347,
+      "source_title": "真・侍伝 YAIBA",
+      "source_type": "tv",
+      "source_begin": "2025-04-05T08:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2025_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1766",
+      "anime_name": "我是星際國家的惡德領主！",
+      "original_name": "俺は星間国家の悪徳領主!",
+      "subject_id": 520645,
+      "anilist_id": 183274,
+      "source_item_index": 8304,
+      "source_title": "俺は星間国家の悪徳領主！",
+      "source_type": "tv",
+      "source_begin": "2025-04-05T17:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2025_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1925",
+      "anime_name": "胖子與愛情以及過錯！",
+      "original_name": "デブとラブと過ちと!",
+      "subject_id": 465803,
+      "anilist_id": 170936,
+      "source_item_index": 8505,
+      "source_title": "デブとラブと過ちと！",
+      "source_type": "tv",
+      "source_begin": "2025-10-06T14:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2025_秋"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1935",
+      "anime_name": "怪物彈珠 Deadverse Reloaded",
+      "original_name": "モンスターストライク　デッドバースリローデッド",
+      "subject_id": 570330,
+      "anilist_id": 196230,
+      "source_item_index": 8517,
+      "source_title": "モンスターストライク デッドバースリローデッド",
+      "source_type": "tv",
+      "source_begin": "2025-10-21T14:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2025_秋"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-1894",
+      "anime_name": "野生的大魔王出現了！",
+      "original_name": "野生のラスボスが現れた!",
+      "subject_id": 509355,
+      "anilist_id": 180523,
+      "source_item_index": 8485,
+      "source_title": "野生のラスボスが現れた！",
+      "source_type": "tv",
+      "source_begin": "2025-10-04T13:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2025_秋"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-2241",
+      "anime_name": "女主角？聖女？都不對，我是雜役女僕（自豪）！",
+      "original_name": "ヒロイン?聖女?いいえ、オールワークスメイドです(誇)!",
+      "subject_id": 558064,
+      "anilist_id": 192800,
+      "source_item_index": 8761,
+      "source_title": "ヒロイン？聖女？いいえ、オールワークスメイドです(誇)！",
+      "source_type": "tv",
+      "source_begin": "2026-07-01T13:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2026_夏"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-2247",
+      "anime_name": "從0位居民開始的邊境領主大人",
+      "original_name": "領民０人スタートの辺境領主様",
+      "subject_id": 571895,
+      "anilist_id": 196218,
+      "source_item_index": 8769,
+      "source_title": "領民0人スタートの辺境領主様",
+      "source_type": "tv",
+      "source_begin": "2026-07-10T13:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2026_夏"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-2204",
+      "anime_name": "加油! 中村同學!!",
+      "original_name": "ガンバレ！中村くん！！",
+      "subject_id": 508455,
+      "anilist_id": 180228,
+      "source_item_index": 8696,
+      "source_title": "ガンバレ！中村くん!!",
+      "source_type": "tv",
+      "source_begin": "2026-04-01T15:30:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2026_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-2132",
+      "anime_name": "最強的職業不是勇者也不是賢者好像是鑑定士（暫）的樣子？",
+      "original_name": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
+      "subject_id": 599171,
+      "anilist_id": 200769,
+      "source_item_index": 8695,
+      "source_title": "最強の職業は勇者でも賢者でもなく鑑定士(仮)らしいですよ？",
+      "source_type": "tv",
+      "source_begin": "2026-04-01T13:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2026_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
+    },
+    {
+      "card_id": "anime-2208",
+      "anime_name": "三年生阿貝 QQ小芝麻",
+      "original_name": "小３アシベ QQゴマちゃん",
+      "subject_id": 607043,
+      "anilist_id": 202386,
+      "source_item_index": 8742,
+      "source_title": "小3アシベ QQゴマちゃん",
+      "source_type": "tv",
+      "source_begin": "2026-04-11T16:00:00.000Z",
+      "name_comparison": "unicode_nfkc",
+      "quarters": [
+        "2026_春"
+      ],
+      "reviewed_at": "2026-10-25T11:13:48.952689+08:00"
     }
   ]
 }

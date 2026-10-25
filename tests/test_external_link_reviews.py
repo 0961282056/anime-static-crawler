@@ -92,6 +92,26 @@ def test_other_quarter_is_not_implicitly_approved(tmp_path, anime_record_factory
     assert repository.load_path(result.path).anime_list[0].external_ids.anilist is None
 
 
+def test_reviewed_unicode_equivalence_does_not_expand_identity_matching(
+    tmp_path, anime_record_factory
+):
+    key, row = next(
+        (key, row)
+        for key, row in external_link_reviews().items()
+        if row.get("name_comparison") == "unicode_nfkc"
+    )
+    repository = DataRepository(tmp_path, DataQualityPolicy())
+    original = record(row, anime_record_factory)
+    result = write(repository, key[0], original)
+    stored = repository.load_path(result.path).anime_list[0]
+    assert stored.external_ids.anilist == row["anilist_id"]
+    assert stored.original_name == row["original_name"] != row["source_title"]
+    # Equivalence is evidence for this literal reviewed card, not a runtime
+    # permission to attach links to other spellings of an incoming identity.
+    changed = original.model_copy(update={"original_name": row["source_title"]})
+    assert reviewed_anilist_link(key[0], changed) is None
+
+
 @pytest.mark.parametrize("previous_write", [False, True])
 def test_conflicting_explicit_link_never_replaces_reviewed_reference(
     tmp_path, anime_record_factory, previous_write
@@ -159,6 +179,9 @@ def test_every_reviewed_quarter_reference_matches_published_data():
         "future_begin",
         "missing_timezone",
         "boolean_id",
+        "unicode_different_title",
+        "unicode_naive_review_time",
+        "unreviewed_comparison",
     ],
 )
 def test_invalid_or_ambiguous_review_evidence_is_rejected(
@@ -188,6 +211,18 @@ def test_invalid_or_ambiguous_review_evidence_is_rejected(
         row["source_begin"] = "2018-01-01T00:00:00"
     elif mutation == "boolean_id":
         row["anilist_id"] = True
+    elif mutation in {"unicode_different_title", "unicode_naive_review_time"}:
+        row.update(
+            name_comparison="unicode_nfkc",
+            source_title="Another Season"
+            if mutation == "unicode_different_title"
+            else row["original_name"],
+            reviewed_at="2026-10-25T12:00:00+08:00"
+            if mutation == "unicode_different_title"
+            else "2026-10-25T12:00:00",
+        )
+    elif mutation == "unreviewed_comparison":
+        row["name_comparison"] = "fuzzy"
     (tmp_path / path.name).write_text(json.dumps(document), encoding="utf-8")
     reviews.external_link_reviews.cache_clear()
     try:

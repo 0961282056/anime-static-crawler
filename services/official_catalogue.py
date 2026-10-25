@@ -26,6 +26,17 @@ EP_PATTERN = re.compile(
 class OfficialSourceUnavailable(RuntimeError):
     """Incomplete evidence must never replace the last verified catalogue."""
 
+    def __init__(
+        self,
+        message: str,
+        *,
+        code: str = "official_contract_error",
+        http_status: int | None = None,
+    ) -> None:
+        super().__init__(message)
+        self.code = code
+        self.http_status = http_status
+
 
 def parse_catalogue_page(document: str) -> tuple[int, list[dict]]:
     soup = BeautifulSoup(document, "lxml")
@@ -90,7 +101,8 @@ class NHKCatalogueClient:
             self.started = time.monotonic()
         if self.remaining <= 0 or time.monotonic() - self.started >= self.time_budget:
             raise OfficialSourceUnavailable(
-                "Official catalogue request/time budget exhausted"
+                "Official catalogue request/time budget exhausted",
+                code="official_budget_exhausted",
             )
         if self.last_request is not None:
             time.sleep(max(0, 0.5 - (time.monotonic() - self.last_request)))
@@ -108,7 +120,9 @@ class NHKCatalogueClient:
             try:
                 if response.status_code != 200:
                     raise OfficialSourceUnavailable(
-                        f"Official catalogue HTTP {response.status_code}"
+                        f"Official catalogue HTTP {response.status_code}",
+                        code="official_http_error",
+                        http_status=response.status_code,
                     )
                 response.encoding = "utf-8"
                 return response.text
@@ -116,7 +130,10 @@ class NHKCatalogueClient:
                 response.close()
         except requests.RequestException as exc:
             raise OfficialSourceUnavailable(
-                "Official catalogue transport failure"
+                "Official catalogue transport failure",
+                code="official_timeout"
+                if isinstance(exc, requests.Timeout)
+                else "official_transport_error",
             ) from exc
 
     def fetch(self, anime: Anime, now: datetime) -> EpisodeMetadata:

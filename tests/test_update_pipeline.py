@@ -1,16 +1,136 @@
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 from types import SimpleNamespace
+from unittest.mock import Mock
 
 import pytest
 
-from models import TAIPEI_TZ, Anime, AnimeCandidate
+from models import TAIPEI_TZ, Anime, AnimeCandidate, EpisodeMetadata, ExternalIds
 from services.data_repository import DataQualityPolicy, DataRepository
+from services.episode_metadata import BangumiClient, EpisodeEnricher
+from services.episode_source_reviews import source_reviews
 from services.errors import ImageStoreError, SourceFetchError
+from services.official_catalogue import OfficialSourceUnavailable
 from services.update_pipeline import run_update_pipeline
 
 NOW = datetime(2026, 10, 19, 9, tzinfo=TAIPEI_TZ)
 URL = "https://acgsecrets.hk/bangumi/202610/"
+
+
+def metadata_only_pipeline(paths, repo, enricher, monkeypatch):
+    monkeypatch.setattr("services.update_pipeline.EpisodeEnricher", lambda: enricher)
+    return run_update_pipeline(
+        paths,
+        repo,
+        NOW,
+        [],
+        future=lambda *args: False,
+        source=SimpleNamespace(
+            fetch_quarter_html=lambda *args: pytest.fail("unexpected source request")
+        ),
+        image_factory=lambda: pytest.fail("unexpected image request"),
+    )
+
+
+def test_budget_deferral_reports_partial_without_changing_metadata_or_check_times(
+    project_paths, anime_record_factory, monkeypatch
+):
+    repo = DataRepository(project_paths.data_dir, DataQualityPolicy())
+    old = Anime(
+        **anime_record_factory(1),
+        external_ids=ExternalIds(bangumi=123),
+        episodes=EpisodeMetadata(
+            airing_status="airing",
+            fetch_state="ok",
+            checked_at=NOW - timedelta(days=1),
+            attempted_at=NOW - timedelta(days=1),
+        ),
+    )
+    path = repo.write_quarter(
+        year="2026",
+        season="秋",
+        records=[old],
+        source_url=URL,
+        source_count=1,
+        parse_failure_count=0,
+    ).path
+    before = path.read_bytes()
+    enricher = EpisodeEnricher(BangumiClient(request_budget=0))
+    result = metadata_only_pipeline(project_paths, repo, enricher, monkeypatch)
+    report = json.loads(
+        (project_paths.root / "audit-output/update-pipeline.json").read_text()
+    )
+    assert result["partial_failures"] == 1
+    assert report["status"] == "partial"
+    assert report["metadata_failures"] == 0 and report["metadata_deferred"] == 1
+    assert report["metadata_issues"] == [
+        {
+            "kind": "deferred",
+            "card_id": old.bangumi_id,
+            "anime_name": old.anime_name,
+            "original_name": old.original_name,
+            "subject_id": 123,
+            "provider": "bangumi",
+            "code": "request_time_budget_exhausted",
+        }
+    ]
+    assert path.read_bytes() == before
+
+
+def test_official_failure_report_identifies_source_and_status_without_exception_text(
+    project_paths, anime_record_factory, monkeypatch, caplog
+):
+    repo = DataRepository(project_paths.data_dir, DataQualityPolicy())
+    review = next(r for r in source_reviews() if r["card_id"] == "anime-663")
+    old = Anime(
+        **{
+            **anime_record_factory(663),
+            "bangumi_id": "anime-663",
+            "anime_name": review["anime_name"],
+            "original_name": review["original_name"],
+            "external_ids": {"bangumi": 315772},
+            "episodes": {
+                **review["metadata"],
+                "fetch_state": "stale",
+                "attempted_at": NOW - timedelta(days=2),
+            },
+        }
+    )
+    for year, season, month in [("2020", "秋", "10"), ("2021", "冬", "01")]:
+        repo.write_quarter(
+            year=year,
+            season=season,
+            records=[old],
+            source_url=f"https://acgsecrets.hk/bangumi/{year}{month}/",
+            source_count=1,
+            parse_failure_count=0,
+        )
+    official = Mock()
+    secret_message = "private transport URL with token=do-not-publish"
+    official.fetch.side_effect = OfficialSourceUnavailable(
+        secret_message,
+        code="official_http_error",
+        http_status=403,
+    )
+    enricher = EpisodeEnricher(
+        BangumiClient(request_budget=0), official_client=official
+    )
+    result = metadata_only_pipeline(project_paths, repo, enricher, monkeypatch)
+    report_text = (project_paths.root / "audit-output/update-pipeline.json").read_text()
+    report = json.loads(report_text)
+    assert result["partial_failures"] == report["metadata_failures"] == 1
+    assert report["metadata_deferred"] == 0
+    assert report["metadata_issues"][0]["provider"] == "nhk"
+    assert report["metadata_issues"][0]["card_id"] == "anime-663"
+    assert report["metadata_issues"][0]["http_status"] == 403
+    assert report["metadata_issues"][0]["code"] == "official_http_error"
+    assert secret_message not in report_text and secret_message not in caplog.text
+    official.fetch.assert_called_once()
+    for path in repo.validate_all():
+        info = repo.load_path(path).anime_list[0].episodes
+        assert info.aired_episodes == old.episodes.aired_episodes
+        assert info.checked_at == old.episodes.checked_at
+        assert info.attempted_at == NOW and info.fetch_state == "stale"
 
 
 @pytest.fixture

@@ -250,15 +250,15 @@
         "aired_episodes": 148,
         "airing_status": "unknown",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
+        "fetch_state": "ok",
         "source_urls": [
           "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list",
           "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=15"
         ],
-        "checked_at": "2026-10-16T09:11:34.886892+08:00",
-        "attempted_at": "2026-10-24T04:16:51.804924+08:00",
+        "checked_at": "2026-10-25T11:01:04.422937+08:00",
+        "attempted_at": "2026-10-25T11:01:04.422937+08:00",
         "end_date": null,
-        "note": "官方目錄本次查證未成功，保留上次已確認節目數與查證時間。",
+        "note": "已自動核對 NHK 全部 15 頁、148 個不同節目 URL；依首播日期確認已播 148 個，排除當日及未來節目。總數與終了未公告，不推測完結；每七天複查，失敗時保留舊資料。",
         "source_kind": "official_catalogue"
       }
     },
@@ -1234,7 +1234,7 @@
       "original_name": "おとなの防具屋さんII",
       "external_ids": {
         "bangumi": 322926,
-        "anilist": null
+        "anilist": 124136
       },
       "episodes": {
         "total_episodes": 12,
@@ -2070,7 +2070,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-25T03:22:36.252678+08:00",
+  "generated_at": "2026-10-25T11:13:49.257822+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202101/",
   "quality": {
     "source_count": 62,
