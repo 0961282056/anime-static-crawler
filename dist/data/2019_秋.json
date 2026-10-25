@@ -76,7 +76,7 @@
       "original_name": "スタンドマイヒーローズ PIECE OF TRUTH",
       "external_ids": {
         "bangumi": 260729,
-        "anilist": null
+        "anilist": 104158
       },
       "episodes": {
         "total_episodes": 12,
@@ -350,7 +350,7 @@
       "original_name": "七つの大罪　神々の逆鱗",
       "external_ids": {
         "bangumi": 280380,
-        "anilist": null
+        "anilist": 108928
       },
       "episodes": {
         "total_episodes": 24,
@@ -793,7 +793,7 @@
       "original_name": "PSYCHO-PASS サイコパス ３",
       "external_ids": {
         "bangumi": 277105,
-        "anilist": null
+        "anilist": 108307
       },
       "episodes": {
         "total_episodes": 8,
@@ -1132,7 +1132,7 @@
       "original_name": "ハイスコアガールⅡ",
       "external_ids": {
         "bangumi": 278569,
-        "anilist": null
+        "anilist": 108581
       },
       "episodes": {
         "total_episodes": 9,
@@ -1843,7 +1843,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-24T12:46:55.951035+08:00",
+  "generated_at": "2026-10-25T11:13:49.218855+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201910/",
   "quality": {
     "source_count": 56,

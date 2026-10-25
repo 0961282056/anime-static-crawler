@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from unittest.mock import Mock
 
 import pytest
+import requests
 
 from models import Anime, EpisodeMetadata
 from services.episode_metadata import BangumiClient, EpisodeEnricher
@@ -146,13 +147,32 @@ def test_requests_have_independent_budget_and_reject_redirects():
     session = Mock()
     session.get.return_value.status_code = 302
     client = NHKCatalogueClient(session, request_budget=1)
-    with pytest.raises(OfficialSourceUnavailable, match="HTTP 302"):
+    with pytest.raises(OfficialSourceUnavailable, match="HTTP 302") as caught:
         client._get(LIST_URL)
+    assert caught.value.code == "official_http_error"
+    assert caught.value.http_status == 302
     assert session.get.call_args.kwargs["allow_redirects"] is False
     session.get.return_value.close.assert_called_once()
     with pytest.raises(OfficialSourceUnavailable, match="budget"):
         client._get(LIST_URL)
     assert session.get.call_count == 1
+
+
+@pytest.mark.parametrize(
+    ("failure", "code"),
+    [
+        (requests.Timeout("private token"), "official_timeout"),
+        (requests.ConnectionError("private token"), "official_transport_error"),
+    ],
+)
+def test_official_transport_failures_have_safe_structured_codes(failure, code):
+    session = Mock()
+    session.get.side_effect = failure
+    with pytest.raises(OfficialSourceUnavailable) as caught:
+        NHKCatalogueClient(session)._get(LIST_URL)
+    assert caught.value.code == code
+    assert caught.value.http_status is None
+    assert "private token" not in str(caught.value)
 
 
 def test_enricher_shares_official_fetch_and_retains_failure_time(anime):
@@ -170,7 +190,9 @@ def test_enricher_shares_official_fetch_and_retains_failure_time(anime):
     assert (
         result.episodes.attempted_at == NOW and result.episodes.fetch_state == "stale"
     )
-    assert next_refresh_at(result, NOW) == NOW + timedelta(days=1)
+    assert next_refresh_at(result, NOW) == datetime.fromisoformat(
+        "2026-10-17T00:00:00+09:00"
+    )
     official.fetch.assert_called_once()
     assert bg.remaining == 1
 

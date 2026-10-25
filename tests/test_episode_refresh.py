@@ -1,5 +1,7 @@
 from datetime import timedelta
 
+import pytest
+
 from models import EpisodeMetadata
 from services.data_repository import DataQualityPolicy, DataRepository
 from services.episode_metadata import (
@@ -9,6 +11,7 @@ from services.episode_metadata import (
     refresh_repository_episodes,
 )
 from services.episode_refresh import (
+    due,
     identity,
     next_refresh_at,
     quarter_context,
@@ -16,6 +19,31 @@ from services.episode_refresh import (
     refresh_statistics,
 )
 from tests.test_episode_metadata import NOW, anime
+
+
+@pytest.mark.parametrize(
+    ("previous", "current", "expected"),
+    [
+        ("2026-10-24T04:16:51+08:00", "2026-10-25T03:22:36+08:00", True),
+        ("2026-10-24T04:16:51+08:00", "2026-10-24T22:59:00+08:00", False),
+        ("2026-10-24T23:30:00+09:00", "2026-10-24T23:45:00+08:00", True),
+        ("2026-10-24T16:30:00+00:00", "2026-10-24T23:45:00+08:00", False),
+    ],
+)
+def test_daily_refresh_follows_japanese_dates_despite_schedule_jitter(
+    anime_record_factory, previous, current, expected
+):
+    from datetime import datetime
+
+    record = anime(
+        anime_record_factory,
+        episodes=EpisodeMetadata(
+            airing_status="airing",
+            fetch_state="ok",
+            attempted_at=datetime.fromisoformat(previous),
+        ),
+    )
+    assert due(record, datetime.fromisoformat(current), (2026, 3)) is expected
 
 
 def test_historical_unknown_uses_latest_quarter_and_stable_bounded_cadence(

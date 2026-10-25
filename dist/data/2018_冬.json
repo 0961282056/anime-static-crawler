@@ -296,7 +296,7 @@
       "original_name": "オーバーロードⅡ",
       "external_ids": {
         "bangumi": 211027,
-        "anilist": null
+        "anilist": 98437
       },
       "episodes": {
         "total_episodes": 13,
@@ -1261,7 +1261,7 @@
       "original_name": "タイムボカン　逆襲の三悪人",
       "external_ids": {
         "bangumi": 212009,
-        "anilist": null
+        "anilist": 98521
       },
       "episodes": {
         "total_episodes": 24,
@@ -1915,7 +1915,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-25T03:22:36.252678+08:00",
+  "generated_at": "2026-10-25T11:13:49.162756+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201801/",
   "quality": {
     "source_count": 59,

@@ -858,7 +858,7 @@
       "original_name": "デート・ア・ライブIV",
       "external_ids": {
         "bangumi": 302128,
-        "anilist": null
+        "anilist": 116605
       },
       "episodes": {
         "total_episodes": 12,
@@ -1530,7 +1530,7 @@
       "original_name": "遊☆戯☆王ゴーラッシュ！！",
       "external_ids": {
         "bangumi": 362997,
-        "anilist": null
+        "anilist": 142842
       },
       "episodes": {
         "total_episodes": 151,
@@ -1825,7 +1825,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-25T03:22:36.252678+08:00",
+  "generated_at": "2026-10-25T11:13:49.297199+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202204/",
   "quality": {
     "source_count": 54,

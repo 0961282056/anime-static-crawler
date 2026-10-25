@@ -5,7 +5,7 @@ from __future__ import annotations
 import hashlib
 from collections.abc import Iterable
 from dataclasses import dataclass
-from datetime import datetime, timedelta
+from datetime import datetime, time, timedelta
 from zoneinfo import ZoneInfo
 
 from models import Anime
@@ -82,6 +82,13 @@ def next_refresh_at(
         return None
     policy = refresh_policy(anime, now, latest_quarter)
     days = policy.days
+    if days == 1:
+        # GitHub's daily schedule can start earlier than yesterday's run. A
+        # rolling 24-hour deadline would skip that entire day's priority work.
+        previous = anime.episodes.attempted_at.astimezone(ZoneInfo("Asia/Tokyo"))
+        return datetime.combine(
+            previous.date() + timedelta(days=1), time.min, tzinfo=previous.tzinfo
+        )
     review = reviewed_source(anime)
     if (
         not policy.priority

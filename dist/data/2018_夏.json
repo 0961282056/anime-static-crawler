@@ -387,7 +387,7 @@
       "original_name": "オーバーロードⅢ",
       "external_ids": {
         "bangumi": 242170,
-        "anilist": null
+        "anilist": 101474
       },
       "episodes": {
         "total_episodes": 13,
@@ -627,7 +627,7 @@
       "original_name": "Free!-Dive to the Future-",
       "external_ids": {
         "bangumi": 228820,
-        "anilist": null
+        "anilist": 101117
       },
       "episodes": {
         "total_episodes": 12,
@@ -1262,7 +1262,7 @@
       "original_name": "ロード オブ ヴァーミリオン　紅蓮の王",
       "external_ids": {
         "bangumi": 241091,
-        "anilist": null
+        "anilist": 101384
       },
       "episodes": {
         "total_episodes": 12,
@@ -1957,7 +1957,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-24T12:46:55.951035+08:00",
+  "generated_at": "2026-10-25T11:13:49.172602+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201807/",
   "quality": {
     "source_count": 58,

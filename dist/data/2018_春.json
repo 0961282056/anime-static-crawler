@@ -663,7 +663,7 @@
       "original_name": "東京喰種：re",
       "external_ids": {
         "bangumi": 148481,
-        "anilist": null
+        "anilist": 100240
       },
       "episodes": {
         "total_episodes": 12,
@@ -2753,7 +2753,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-25T03:22:36.252678+08:00",
+  "generated_at": "2026-10-25T11:13:49.184763+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201804/",
   "quality": {
     "source_count": 83,

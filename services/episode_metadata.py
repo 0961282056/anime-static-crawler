@@ -523,6 +523,7 @@ class EpisodeEnricher:
         self.official_client = official_client
         self.quarters: dict[episode_refresh.Identity, episode_refresh.Quarter] = {}
         self.deferred: set[tuple[str, str, str | None, int | None]] = set()
+        self.failures: dict[episode_refresh.Identity, dict] = {}
         self.snapshots: dict[
             tuple[str, str, str | None, int | None], EpisodeMetadata | None
         ] = {}
@@ -567,10 +568,20 @@ class EpisodeEnricher:
                     self.official_client = NHKCatalogueClient()
                 try:
                     self.snapshots[key] = self.official_client.fetch(record, now)
-                except OfficialSourceUnavailable:
+                except OfficialSourceUnavailable as exc:
                     self.snapshots[key] = None
+                    self.failures[key] = {
+                        "provider": "nhk",
+                        "code": exc.code,
+                        **(
+                            {"http_status": exc.http_status}
+                            if exc.http_status is not None
+                            else {}
+                        ),
+                    }
                     logger.warning(
-                        "NHK official verification failed; previous evidence retained"
+                        "NHK official verification failed (%s); previous evidence retained",
+                        self.failures[key],
                     )
             info = self.snapshots[key]
             if info is None:
@@ -612,6 +623,10 @@ class EpisodeEnricher:
                 return anime
             except MetadataUnavailable as exc:
                 self.deferred.discard(key)
+                self.failures[key] = {
+                    "provider": "bangumi",
+                    "code": "metadata_unavailable",
+                }
                 logger.warning(
                     "Episode metadata retained for %s: %s", anime.bangumi_id, exc
                 )

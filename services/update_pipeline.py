@@ -14,12 +14,13 @@ from datetime import datetime
 from pydantic import ValidationError
 
 from models import Anime
+from services import episode_refresh
 from services.anime_service import parse_date_time
 from services.atomic_io import atomic_write_json
 from services.cache_repository import CacheRepository
 from services.diagnostics import redact
 from services.display_name_reviews import reviewed_display_rename
-from services.episode_metadata import refresh_repository_episodes
+from services.episode_metadata import EpisodeEnricher, refresh_repository_episodes
 from services.errors import (
     ConfigurationError,
     DataContractError,
@@ -69,7 +70,6 @@ def run_update_pipeline(
     source = source or SourceClient(settings)
     cache = CacheRepository(paths.cache_file)
     image_factory = image_factory or (lambda: CloudinaryImageStore(settings, cache))
-    refresh = refresh or refresh_repository_episodes
     report = {
         "status": "running",
         "collection": [],
@@ -243,22 +243,65 @@ def run_update_pipeline(
     # It operates only on complete validated datasets, including retained quarters.
     report["episodes"] = "running"
     atomic_write_json(report_path, report)
-    changed.update(refresh(repository, now))
+    enricher = None
+    if refresh is None:
+        # Start provider budgets here, after collection/image work, and retain
+        # the actual outcome instead of inferring budget deferral from old data.
+        enricher = EpisodeEnricher()
+        changed.update(refresh_repository_episodes(repository, now, enricher))
+    else:
+        changed.update(refresh(repository, now))
     all_records = [
         a for p in repository.validate_all() for a in repository.load_path(p).anime_list
     ]
-    failed_metadata = {
-        (a.bangumi_id, a.original_name, a.external_ids.bangumi)
-        for a in all_records
-        if a.episodes
-        and a.episodes.attempted_at == now
-        and a.episodes.fetch_state in {"stale", "conflict"}
-    }
-    failures += len(failed_metadata)
+    failed_metadata = {}
+    for anime in all_records:
+        if (
+            anime.episodes
+            and anime.episodes.attempted_at == now
+            and anime.episodes.fetch_state in {"stale", "conflict"}
+        ):
+            key = (anime.bangumi_id, anime.original_name, anime.external_ids.bangumi)
+            reason = (
+                enricher.failures.get(episode_refresh.identity(anime), {})
+                if enricher
+                else {}
+            )
+            failed_metadata[key] = {
+                "kind": "failed",
+                "card_id": anime.bangumi_id,
+                "anime_name": anime.anime_name,
+                "original_name": anime.original_name,
+                "subject_id": anime.external_ids.bangumi,
+                "provider": "bangumi" if anime.external_ids.bangumi else "unknown",
+                "code": "metadata_conflict"
+                if anime.episodes.fetch_state == "conflict"
+                else "metadata_unavailable",
+                **reason,
+            }
+    deferred = (
+        [
+            {
+                "kind": "deferred",
+                "card_id": key[0],
+                "anime_name": key[1],
+                "original_name": key[2],
+                "subject_id": key[3],
+                "provider": "bangumi",
+                "code": "request_time_budget_exhausted",
+            }
+            for key in sorted(enricher.deferred, key=repr)
+        ]
+        if enricher
+        else []
+    )
+    failures += len(failed_metadata) + len(deferred)
     report.update(
         status="partial" if failures else "completed",
         episodes="completed",
         metadata_failures=len(failed_metadata),
+        metadata_deferred=len(deferred),
+        metadata_issues=[*failed_metadata.values(), *deferred],
         failure_count=failures,
         changed_quarters=sorted(changed),
     )
