@@ -1159,11 +1159,11 @@
           "https://bgm.tv/subject/364450",
           "https://bgm.tv/subject/364450/ep"
         ],
-        "checked_at": "2026-10-13T21:49:37.616008+08:00",
-        "attempted_at": "2026-10-13T21:49:37.616008+08:00",
+        "checked_at": "2026-10-30T05:42:48.755405+08:00",
+        "attempted_at": "2026-10-30T05:42:48.755405+08:00",
         "end_date": "2022-09-24",
-        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
-        "source_kind": "bangumi_html"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -1729,7 +1729,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-27T05:31:57.185052+08:00",
+  "generated_at": "2026-10-30T05:42:48.755405+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202207/",
   "quality": {
     "source_count": 51,
