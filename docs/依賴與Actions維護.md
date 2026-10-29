@@ -75,4 +75,6 @@ CDN 更新須重新取得內容並核對 SRI；過往 HTTP 200 或雜湊相符�
 
 以前置檢查的第一個錯誤及相同鎖檔重現根因；公告可能在兩次成功排程之間新增，昨日通過不代表今日仍通過。依上節更新受影響依賴並通過完整 gate，保留 hash 安裝、TLS 驗證與通知規則，不因失敗而略過稽核。
 
+品質工具的間接依賴安全下限同時寫入 `requirements-dev.in`，再由 pip-compile 重建 lock 與 hash。例如 `pip-audit → CacheControl → msgpack` 的 `msgpack>=1.2.4` 下限，涵蓋 1.2.3 對 [CVE-2026-114613／GHSA-j586-36cw-2gc2](https://github.com/advisories/GHSA-j586-36cw-2gc2) 的修補，以及 [1.2.4 版本紀錄](https://github.com/msgpack/msgpack-python/blob/v1.2.4/CHANGELOG.md)中的記憶體配置防護；不只手改產生檔，也不把開發依賴的修補擴大成網站執行依賴升級。
+
 [certifi／Pillow 事故與修補](archive/README.md#事故與過渡操作)已保存固定原文。每次新事故仍分開確認本地重現、PR／push、自然 schedule 與正式站結果；無法取得原始日誌時明列限制，不用重跑綠燈代替根因。
