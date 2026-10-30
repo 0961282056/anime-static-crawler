@@ -212,6 +212,11 @@ const presentationMethods = {
             closeButtonAriaLabel: '關閉簡介',
             confirmButtonText: '關閉',
             didOpen: popup => {
+                const heading = popup.querySelector('.swal2-title');
+                if (heading) {
+                    heading.tabIndex = 0;
+                    heading.addEventListener('keydown', event => this.scrollRegion(event));
+                }
                 const content = popup.querySelector('.swal2-html-container');
                 if (content) {
                     content.tabIndex = 0;

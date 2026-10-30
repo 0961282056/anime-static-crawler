@@ -133,6 +133,12 @@ for (const viewport of [{width: 1280, height: 480}, {width: 360, height: 640}, {
     await content.focus();
     await page.keyboard.press('End');
     await expect.poll(() => content.evaluate(element => element.scrollTop)).toBeGreaterThan(0);
+    const heading = page.getByRole('heading', {name: `1 ${longTitle}`, exact: true});
+    await heading.focus();
+    await page.keyboard.press('End');
+    if (await heading.evaluate(element => element.scrollHeight > element.clientHeight)) {
+      await expect.poll(() => heading.evaluate(element => element.scrollTop)).toBeGreaterThan(0);
+    }
     await page.keyboard.press('Escape');
     await expect(page.getByRole('dialog')).toHaveCount(0);
     await expect(trigger).toBeFocused();

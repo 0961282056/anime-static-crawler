@@ -520,6 +520,7 @@ body {
 .control-panel:focus-visible,
 #shareListContainer:focus-visible,
 .story-dialog .swal2-html-container:focus-visible,
+.story-dialog .swal2-title:focus-visible,
 .data-credit a:focus-visible,
 #backToTopBtn:focus-visible,
 #shareListTitle:focus,
@@ -737,6 +738,7 @@ body {
     max-height: calc(100vh - 32px);
     max-height: calc(100dvh - 32px);
     overflow: hidden;
+    padding-bottom: 0.75rem;
 }
 
 .story-dialog > .swal2-title,
@@ -745,7 +747,17 @@ body {
 }
 
 .story-dialog > .swal2-title {
+    min-height: 0;
+    max-height: 25vh;
+    max-height: 25dvh;
+    overflow-y: auto;
+    font-size: 1.3rem;
+    line-height: 1.4;
     padding-right: 48px;
+}
+
+.story-dialog > .swal2-actions {
+    margin-top: 0.5rem;
 }
 
 .story-dialog > .swal2-close {
