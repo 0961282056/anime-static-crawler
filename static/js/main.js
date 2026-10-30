@@ -938,7 +938,18 @@ const presentationMethods = {
         Swal.fire({
             titleText: title,
             text: text || '暫無簡介',
-            customClass: row ? {htmlContainer: 'wikipedia-dialog'} : {},
+            customClass: {popup: 'story-dialog', htmlContainer: row ? 'wikipedia-dialog' : ''},
+            showCloseButton: true,
+            closeButtonAriaLabel: '關閉簡介',
+            confirmButtonText: '關閉',
+            didOpen: popup => {
+                const content = popup.querySelector('.swal2-html-container');
+                if (content) {
+                    content.tabIndex = 0;
+                    content.setAttribute('role', 'region');
+                    content.setAttribute('aria-label', '作品簡介內容');
+                }
+            },
             background: '#1e1e1e', color: '#e0e0e0',
             confirmButtonColor: '#bb86fc'
         });
