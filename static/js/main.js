@@ -1150,7 +1150,10 @@ const sharingMethods = {
                 const buttons = document.querySelectorAll('#shareListContainer .share-remove');
                 const target = buttons[Math.min(index, buttons.length - 1)]
                     || document.getElementById('shareListTitle');
-                if (target) target.focus();
+                if (target) {
+                    target.focus();
+                    target.scrollIntoView({block: 'center', inline: 'nearest'});
+                }
             });
         }
     },

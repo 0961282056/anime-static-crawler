@@ -94,7 +94,8 @@ test('a storage warning cannot hide sidebar recovery or export controls', async 
   await page.addInitScript(() => Object.defineProperty(window, 'localStorage', {
     configurable: true, get() { throw new Error('storage unavailable'); },
   }));
-  page.on('pageerror', error => console.log('Storage warning test page error:', error.message));
+  const pageErrors = [];
+  page.on('pageerror', error => pageErrors.push(error.message));
   await fillShareList(page, 3);
   const dismiss = page.getByRole('button', {name: '知道了', exact: true});
   await dismiss.scrollIntoViewIfNeeded();
@@ -103,6 +104,7 @@ test('a storage warning cannot hide sidebar recovery or export controls', async 
   await expect(dismiss).toBeHidden();
   await page.locator('#copyButton').scrollIntoViewIfNeeded();
   await expect(page.locator('#copyButton')).toBeInViewport({ratio: 1});
+  expect(pageErrors).toEqual([]);
 });
 
 test('story modal covers the back-to-top control instead of allowing background clicks', async ({page}) => {
