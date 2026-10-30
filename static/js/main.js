@@ -747,6 +747,22 @@ const searchMethods = {
 // Module: presentation
 // Requires: settings, schema, images
 const presentationMethods = {
+    scrollRegion(event) {
+        const region = event.currentTarget;
+        if (event.target !== region || event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+        if (region.scrollHeight <= region.clientHeight) return;
+        const page = region.clientHeight * 0.9;
+        const destinations = {
+            Home: 0, End: region.scrollHeight - region.clientHeight,
+            PageUp: region.scrollTop - page, PageDown: region.scrollTop + page,
+            ArrowUp: region.scrollTop - 40, ArrowDown: region.scrollTop + 40
+        };
+        if (!Object.hasOwn(destinations, event.key)) return;
+        event.preventDefault();
+        event.stopPropagation();
+        region.scrollTop = Math.max(0, Math.min(region.scrollHeight - region.clientHeight, destinations[event.key]));
+    },
+
     broadcastDayLabel(anime) {
         return Object.hasOwn(BROADCAST_DAY_LABELS, anime.premiere_date)
             ? BROADCAST_DAY_LABELS[anime.premiere_date] : '播出日待確認';
@@ -948,6 +964,7 @@ const presentationMethods = {
                     content.tabIndex = 0;
                     content.setAttribute('role', 'region');
                     content.setAttribute('aria-label', '作品簡介內容');
+                    content.addEventListener('keydown', event => this.scrollRegion(event));
                 }
             },
             background: '#1e1e1e', color: '#e0e0e0',

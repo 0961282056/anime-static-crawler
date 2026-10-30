@@ -178,6 +178,28 @@ function nextTick() {
   return new Promise(resolve => setTimeout(resolve, 0));
 }
 
+test('region scrolling keys preserve child controls, modifiers and normal document scrolling', () => {
+  const {app} = createContext();
+  const region = {clientHeight: 100, scrollHeight: 500, scrollTop: 150};
+  let prevented = 0, stopped = 0;
+  const event = {key: 'End', target: region, currentTarget: region,
+    preventDefault() { prevented++; }, stopPropagation() { stopped++; }};
+  for (const extra of [{target: {}}, {ctrlKey: true}, {shiftKey: true}, {key: 'Enter'}, {defaultPrevented: true}]) {
+    app.scrollRegion({...event, ...extra});
+    assert.equal(region.scrollTop, 150);
+  }
+  assert.equal(prevented, 0);
+  app.scrollRegion(event);
+  assert.equal(region.scrollTop, 400);
+  app.scrollRegion({...event, key: 'Home'});
+  assert.equal(region.scrollTop, 0);
+  assert.equal(prevented, 2);
+  assert.equal(stopped, 2);
+  region.scrollHeight = region.clientHeight;
+  app.scrollRegion(event);
+  assert.equal(prevented, 2);
+});
+
 test('episode labels distinguish planned, confirmed, finished and missing progress', () => {
   const {app} = createContext();
   const base = {total_episodes: 12, aired_episodes: 8, airing_status: 'airing', episode_count_status: 'confirmed', fetch_state: 'ok'};

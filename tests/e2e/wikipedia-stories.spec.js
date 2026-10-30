@@ -34,7 +34,7 @@ test('Wikipedia excerpts show fixed revisions and complete attribution on mobile
     await expect(page.locator('.swal2-html-container')).toContainText('維基百科貢獻者');
     await expect(page.locator('.swal2-html-container')).toContainText('CC BY-SA 4.0');
     expect(await page.evaluate(() => document.documentElement.scrollWidth>innerWidth)).toBe(false);
-    await page.getByRole('button',{name:'OK',exact:true}).click();
+    await page.getByRole('button',{name:'關閉',exact:true}).click();
     expect(await page.evaluate(() => document.documentElement.scrollWidth>innerWidth)).toBe(false);
   }
   expect(errors).toEqual([]);

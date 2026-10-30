@@ -731,12 +731,34 @@ body {
 .data-credit a { color: var(--accent); }
 .wikipedia-dialog { overflow-wrap: anywhere; white-space: pre-line; }
 
-.story-dialog {
+.swal2-popup.story-dialog {
+    display: flex !important;
+    flex-direction: column;
     max-height: calc(100vh - 32px);
     max-height: calc(100dvh - 32px);
+    overflow: hidden;
+}
+
+.story-dialog > .swal2-title,
+.story-dialog > .swal2-actions {
+    flex: 0 0 auto;
+}
+
+.story-dialog > .swal2-title {
+    padding-right: 48px;
+}
+
+.story-dialog > .swal2-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    margin: 0;
 }
 
 .story-dialog .swal2-html-container {
+    flex: 1 1 auto;
     min-height: 0;
     max-height: 55vh;
     max-height: 55dvh;

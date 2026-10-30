@@ -6,7 +6,7 @@ const longTitle = '很長的動畫名稱與WithoutSpacesForWrapping測試'.repea
 const story = '這是需要上下捲動才能完整閱讀的作品簡介。'.repeat(160);
 
 test.beforeEach(async ({page}) => {
-  await page.addInitScript(() => localStorage.clear());
+  await page.addInitScript(() => { try { localStorage.clear(); } catch { /* Storage denial is an explicit test case. */ } });
   await installDatasetFixture(page, () => ({anime_list: Array.from({length: 20}, (_, i) => ({
     bangumi_id: `anime-${9900 + i}`, anime_name: `${i + 1} ${longTitle}`,
     original_name: `Interaction ${i + 1}`, story,
@@ -29,9 +29,10 @@ for (const viewport of [{width: 1280, height: 720}, {width: 1280, height: 480}, 
     await page.setViewportSize(viewport);
     await fillShareList(page);
     const panel = page.getByRole('complementary', {name: '篩選與分享清單'});
+    await panel.scrollIntoViewIfNeeded();
     const box = await panel.boundingBox();
     expect(box).not.toBeNull();
-    await page.mouse.move(box.x + box.width - 8, Math.max(20, box.y + 30));
+    await page.mouse.move(box.x + 6, box.y + 30);
     await page.mouse.wheel(0, 1200);
     await expect.poll(() => panel.evaluate(element => element.scrollTop)).toBeGreaterThan(0);
     await expect(page.locator('#copyButton')).toBeInViewport({ratio: 1});
@@ -93,6 +94,7 @@ test('a storage warning cannot hide sidebar recovery or export controls', async 
   await page.addInitScript(() => Object.defineProperty(window, 'localStorage', {
     configurable: true, get() { throw new Error('storage unavailable'); },
   }));
+  page.on('pageerror', error => console.log('Storage warning test page error:', error.message));
   await fillShareList(page, 3);
   const dismiss = page.getByRole('button', {name: '知道了', exact: true});
   await dismiss.scrollIntoViewIfNeeded();
