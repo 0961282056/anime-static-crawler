@@ -82,6 +82,50 @@ test('share export loads the integrity-pinned renderer on demand under productio
   expect(browserErrors).toEqual([]);
 });
 
+test('pending clipboard preserves the rendered PNG for an explicit download under production CSP', async ({page}) => {
+  test.setTimeout(60000);
+  const errors = [];
+  const downloads = [];
+  page.on('pageerror', error => errors.push(error.message));
+  page.on('download', download => downloads.push(download));
+  await page.addInitScript(() => {
+    localStorage.clear();
+    Object.defineProperty(navigator, 'clipboard', {configurable: true, value: {
+      write: () => new Promise(resolve => { window.finishPendingClipboard = resolve; }),
+    }});
+  });
+  await page.route('http://127.0.0.1:4173/', async route => {
+    const response = await route.fetch();
+    await route.fulfill({response, headers: {...response.headers(), 'content-security-policy': csp}});
+  });
+  await installDatasetFixture(page, () => ({anime_list: [{
+    anime_name: '剪貼簿逾時下載',
+    anime_image_url: `https://res.cloudinary.com/demo/image/upload/v1/anime_covers/${'a'.repeat(64)}`,
+  }]}));
+  await page.route('https://res.cloudinary.com/**', route => route.fulfill({
+    contentType: 'image/png', headers: {'access-control-allow-origin': '*'}, body: png,
+  }));
+  await page.goto('/');
+  await page.getByRole('button', {name: /加入清單/}).first().click();
+  await page.locator('#copyButton').click();
+  const downloadButton = page.getByRole('button', {name: '下載圖片', exact: true});
+  await expect(downloadButton).toBeVisible({timeout: 30000});
+  expect(downloads).toHaveLength(0);
+  await expect(page.locator('.share-item')).toHaveCount(1);
+  await page.evaluate(() => window.finishPendingClipboard());
+  await expect(downloadButton).toBeVisible();
+  await expect(page.locator('.share-item')).toHaveCount(1);
+  const downloadPromise = page.waitForEvent('download');
+  await downloadButton.click();
+  const download = await downloadPromise;
+  const bytes = readFileSync(await download.path());
+  expect(bytes.subarray(0, 8).toString('hex')).toBe('89504e470d0a1a0a');
+  expect(downloads).toHaveLength(1);
+  await expect(page.locator('.share-item')).toHaveCount(0);
+  await expect(page.locator('#copyButton')).toBeDisabled();
+  expect(errors).toEqual([]);
+});
+
 for (const failure of [
   {target: 'renderer', code: 'SHARE_RENDERER_NETWORK', advice: '檢查網路'},
   {target: 'image', code: 'SHARE_IMAGE_LOAD', advice: '圖片服務'},

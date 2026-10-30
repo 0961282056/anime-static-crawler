@@ -15,6 +15,24 @@ ROOT = Path(__file__).resolve().parents[1]
 WORKFLOWS = ROOT / ".github" / "workflows"
 
 
+def test_production_notification_waits_for_same_run_verification_without_crawler_secrets():
+    workflow = _workflow("verify-production.yml")
+    verify = _job_section(workflow, "verify")
+    notify = _job_section(workflow, "notify")
+    assert "environment:" not in verify
+    assert "python manage.py production-report" in verify
+    assert verify.index("python manage.py production-report") < verify.index(
+        "Save verification evidence"
+    )
+    assert "needs: verify" in notify and "always()" in notify
+    assert "environment: crawler-production" in notify
+    assert "production-verification-${{ github.run_id }}" in notify
+    assert "digest-mismatch: error" in notify
+    assert "EXPECTED_COMMIT: ${{ github.sha }}" in notify
+    assert "python manage.py notify-production" in notify
+    assert "CLOUDINARY" not in workflow
+
+
 def _workflow(name: str) -> str:
     return (WORKFLOWS / name).read_text(encoding="utf-8")
 

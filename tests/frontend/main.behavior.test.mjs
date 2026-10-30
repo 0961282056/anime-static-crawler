@@ -1407,6 +1407,65 @@ test('late toBlob callback after timeout cannot download or clear the list', asy
   assert.equal(button.disabled, false);
 });
 
+for (const lateResult of ['resolved', 'rejected']) {
+  for (const choice of ['download', 'cancel']) {
+    test(`stalled clipboard offers the same PNG; ${choice} ignores a late ${lateResult} response`, {timeout: 2000}, async () => {
+      let finishClipboard, rejectClipboard, prompt, closePrompt;
+      let renders = 0, downloads = 0;
+      const blob = {png: true};
+      const alerts = [];
+      const {app, context, button} = createContext({
+        html2canvas: () => { renders++; return {toBlob(callback) { callback(blob); }}; },
+        navigatorImpl: {clipboard: {write: () => new Promise((resolve, reject) => {
+          finishClipboard = resolve; rejectClipboard = reject;
+        })}},
+        swal: {fire(options) {
+          alerts.push(options);
+          if (options.preConfirm) {
+            prompt = options;
+            return new Promise(resolve => { closePrompt = resolve; });
+          }
+        }},
+      });
+      context.window.ClipboardItem = class {};
+      context.setTimeout = (callback, delay) => setTimeout(callback, delay >= 1000 ? 5 : delay);
+      context.window.URL = {
+        createObjectURL(value) { assert.equal(value, blob); return 'blob:prepared-png'; },
+        revokeObjectURL() {},
+      };
+      const create = context.document.createElement;
+      context.document.createElement = tag => ({...create(tag), click() { downloads++; }});
+      app.shareList = [exportItem()];
+      const exporting = app.generateShareImage();
+      while (!prompt) await nextTick();
+      assert.equal(prompt.confirmButtonText, '下載圖片');
+      assert.equal(downloads, 0);
+      assert.equal(app.shareList.length, 1);
+      const added = exportItem('added while awaiting download');
+      app.shareList.push(added);
+      if (lateResult === 'resolved') finishClipboard();
+      else rejectClipboard(new Error('late clipboard rejection'));
+      await nextTick();
+      assert.equal(app.shareList.length, 2);
+      assert.equal(downloads, 0);
+      if (choice === 'download') {
+        prompt.preConfirm();
+        prompt.preConfirm();
+      }
+      closePrompt({isConfirmed: choice === 'download'});
+      await exporting;
+      assert.equal(renders, 1);
+      assert.equal(downloads, choice === 'download' ? 1 : 0);
+      assert.equal(app.shareList.length, choice === 'download' ? 1 : 2);
+      assert.equal(app.shareList.at(-1).token, added.token);
+      assert.equal(button.disabled, false);
+      assert.equal(button.innerHTML, '生成圖片');
+      assert.equal(app._shareExportRunning, false);
+      assert.equal(alerts.some(alert => alert.title === '圖片已複製！'), false);
+    });
+  }
+}
+
 test('export snapshots the original list, deduplicates clicks and preserves newly added items', async () => {
   let ready;
   let renders = 0;

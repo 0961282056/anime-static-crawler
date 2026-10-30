@@ -73,6 +73,13 @@ jobs:
               raise SystemExit('Production browser did not pass for the expected release')
           PY
 
+      - name: Join release verification and unresolved source refreshes
+        if: always()
+        env:
+          EXPECTED_COMMIT: ${{ github.sha }}
+          VERIFY_RESULT: ${{ job.status }}
+        run: python manage.py production-report
+
       - name: Save verification evidence even on failure
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
@@ -90,13 +97,54 @@ jobs:
           python - <<'PY'
           import json, os
           from pathlib import Path
-          path = Path('audit-output/production.json')
+          path = Path('audit-output/delivery.json')
           result = json.loads(path.read_text()) if path.exists() else {'status': 'failed_before_verification'}
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
               summary.write('## 正式站驗收\n\n')
-              summary.write(f"- 資料與資產：{result['status']}\n")
-              browser = Path('audit-output/production-browser.json')
-              summary.write(f"- 正式瀏覽器：{'passed' if browser.exists() else 'not verified'}\n")
+              summary.write(f"- 同一提交整體驗收：{result['status']}\n")
+              summary.write(f"- 資料與資產：{result.get('data_status', 'unavailable')}\n")
+              summary.write(f"- 正式瀏覽器：{result.get('browser_status', 'unavailable')}\n")
               summary.write(f"- 目標 commit：{result.get('expected_commit', 'unavailable')}\n")
               summary.write(f"- 正式 commit：{result.get('deployed_commit', 'unavailable')}\n")
+              pending = result.get('metadata_refresh')
+              summary.write(f"- 來源更新待辦：{pending['pending_count'] if pending else 'unavailable'}\n")
           PY
+
+  notify:
+    needs: verify
+    if: always() && github.ref == 'refs/heads/main' && needs.verify.result != 'skipped'
+    runs-on: ubuntu-24.04
+    environment: crawler-production
+    timeout-minutes: 5
+    steps:
+      - name: Checkout the verified revision for notification
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install locked notification dependencies
+        id: dependencies
+        run: python -m pip install --require-hashes -r requirements.txt
+
+      - name: Download verification evidence from this run
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          digest-mismatch: error
+          name: production-verification-${{ github.run_id }}
+          path: audit-output/
+
+      - name: Send final production verification summary
+        if: always() && steps.dependencies.outcome == 'success'
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          EXPECTED_COMMIT: ${{ github.sha }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python manage.py notify-production

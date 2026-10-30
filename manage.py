@@ -246,6 +246,8 @@ def parse_args() -> argparse.Namespace:
             "GitHub 寫入：查詢到期待查，可能重開 Issue 並留言提醒；可追加工作摘要。"
         ),
         "notify-workflow": "Discord 通知：傳送工作流程摘要；可追加工作摘要。",
+        "production-report": "離線＋本機寫入：整合正式站驗收與來源更新待辦，不連線查證。",
+        "notify-production": "Discord 通知：傳送同一提交的正式站驗收與來源更新待辦。",
         "selector-canary": "連線查證：抓取當季頁面檢查解析；可追加工作摘要。",
         "notify-selector-canary-failure": "Discord 通知：傳送來源選擇器失敗通知。",
     }
@@ -273,6 +275,35 @@ def parse_args() -> argparse.Namespace:
 
 
 def execute_command(command: str) -> None:
+    if command == "production-report":
+        from services.production_delivery import write_delivery_report
+
+        report = write_delivery_report(
+            ProjectPaths.from_environment(),
+            os.environ["EXPECTED_COMMIT"],
+            os.environ["VERIFY_RESULT"],
+        )
+        print(f"Production delivery report: {report['status']}")
+        if report["status"] == "failed":
+            raise ValueError("Production delivery is incomplete; see delivery.json")
+        return
+    if command == "notify-production":
+        from services.production_delivery import (
+            build_production_notification,
+            read_report,
+        )
+
+        paths = ProjectPaths.from_environment()
+        notification = build_production_notification(
+            read_report(paths.root / "audit-output/delivery.json"),
+            os.environ["EXPECTED_COMMIT"],
+            os.environ["RUN_URL"],
+        )
+        DiscordNotifier(os.getenv("DISCORD_WEBHOOK_URL"), required=True).send(
+            notification
+        )
+        print(f"Discord production notification sent: {notification.status}")
+        return
     if command == "build-frontend":
         from services.frontend_bundle import build_frontend_bundle
 

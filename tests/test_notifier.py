@@ -85,6 +85,7 @@ def test_changed_workflow_requires_a_successful_pull_request() -> None:
     assert notification.count == 418
     assert pr_url in notification.message
     assert "通過 Quality Gate 並自動合併" in notification.message
+    assert "正式站部署與頁面驗收另行通知" in notification.message
 
 
 @pytest.mark.parametrize(

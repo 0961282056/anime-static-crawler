@@ -63,6 +63,11 @@ def test_budget_deferral_reports_partial_without_changing_metadata_or_check_time
     assert result["partial_failures"] == 1
     assert report["status"] == "partial"
     assert report["metadata_failures"] == 0 and report["metadata_deferred"] == 1
+    assert report["metadata_refresh"]["pending_count"] == 1
+    assert (
+        report["metadata_refresh"]["items"][0]["checked_at"]
+        == old.episodes.checked_at.isoformat()
+    )
     assert report["metadata_issues"] == [
         {
             "kind": "deferred",
