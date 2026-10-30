@@ -294,8 +294,16 @@ def execute_command(command: str) -> None:
         )
 
         paths = ProjectPaths.from_environment()
+        report = read_report(paths.root / "audit-output/delivery.json")
+        if (
+            os.getenv("VERIFY_JOB_RESULT") != "success"
+            or os.getenv("EVIDENCE_RESULT") != "success"
+        ):
+            # A failed download/digest check may leave extracted files behind.
+            # Neither those files nor a later failed verifier job may announce success.
+            report = {}
         notification = build_production_notification(
-            read_report(paths.root / "audit-output/delivery.json"),
+            report,
             os.environ["EXPECTED_COMMIT"],
             os.environ["RUN_URL"],
         )

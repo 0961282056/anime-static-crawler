@@ -29,6 +29,8 @@ def test_management_commands_pass_exact_delivery_report_to_notification(
     monkeypatch.setenv("EXPECTED_COMMIT", SHA)
     monkeypatch.setenv("VERIFY_RESULT", "success")
     monkeypatch.setenv("RUN_URL", RUN)
+    monkeypatch.setenv("VERIFY_JOB_RESULT", "success")
+    monkeypatch.setenv("EVIDENCE_RESULT", "success")
     notifier = Mock()
     monkeypatch.setattr(manage, "DiscordNotifier", lambda *a, **k: notifier)
     manage.execute_command("production-report")
@@ -48,6 +50,41 @@ def test_failed_management_report_is_saved_before_command_fails(delivery, monkey
     with pytest.raises(ValueError, match="incomplete"):
         manage.execute_command("production-report")
     assert read_report(paths.root / "audit-output/delivery.json")["status"] == "failed"
+
+
+@pytest.mark.parametrize(
+    ("verify_result", "evidence_result"),
+    [
+        ("failure", "success"),
+        ("cancelled", "success"),
+        ("success", "failure"),
+        ("success", "skipped"),
+        (None, "success"),
+        ("success", None),
+    ],
+)
+def test_notification_rejects_leftover_reports_after_job_or_digest_failure(
+    delivery, monkeypatch, verify_result, evidence_result
+):
+    import manage
+
+    paths, _, _, _, _ = delivery
+    write_delivery_report(paths, SHA, "success", now=NOW)
+    monkeypatch.setattr(manage.ProjectPaths, "from_environment", lambda: paths)
+    monkeypatch.setenv("EXPECTED_COMMIT", SHA)
+    monkeypatch.setenv("RUN_URL", RUN)
+    for name, value in (
+        ("VERIFY_JOB_RESULT", verify_result),
+        ("EVIDENCE_RESULT", evidence_result),
+    ):
+        if value is None:
+            monkeypatch.delenv(name, raising=False)
+        else:
+            monkeypatch.setenv(name, value)
+    notifier = Mock()
+    monkeypatch.setattr(manage, "DiscordNotifier", lambda *a, **k: notifier)
+    manage.execute_command("notify-production")
+    assert notifier.send.call_args.args[0].status == "FAILURE"
 
 
 @pytest.fixture

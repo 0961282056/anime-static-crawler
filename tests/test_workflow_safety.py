@@ -30,6 +30,8 @@ def test_production_notification_waits_for_same_run_verification_without_crawler
     assert "digest-mismatch: error" in notify
     assert "EXPECTED_COMMIT: ${{ github.sha }}" in notify
     assert "python manage.py notify-production" in notify
+    assert "VERIFY_JOB_RESULT: ${{ needs.verify.result }}" in notify
+    assert "EVIDENCE_RESULT: ${{ steps.evidence.outcome }}" in notify
     assert "CLOUDINARY" not in workflow
 
 
