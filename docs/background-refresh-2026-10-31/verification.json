@@ -1,0 +1,1046 @@
+{
+  "base_commit": "b0e300304fa5a30c66f941f32b64d0899a5dff8b",
+  "checked_at": "2026-10-31T10:04:52.900636+08:00",
+  "scope": "episode metadata only; failed attempts and unrelated fields are not published",
+  "requested_identities": 18,
+  "verified_identities": 18,
+  "verified_records": 20,
+  "remaining_requested_ids": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/218226",
+      "status": 200,
+      "sha256": "877d17fd5ec773d6a6562dc82b67d6ee9f1bd8bae1a03dac76ea186dda96f660"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/218226/ep",
+      "status": 200,
+      "sha256": "c78abed2a4f745f0fc265b6dae3b7c650d0e0dcc99b857fb8b5ed475bfb67074"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/259135",
+      "status": 200,
+      "sha256": "21c5d6b0c675060a0d49a7f3f2a5040c50a25e7692ecaa375ac74b42faa8e237"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/259135/ep",
+      "status": 200,
+      "sha256": "307e6db7bfc5a6bc7f8f6e7fa0be7b88ae67a56e11ea0ead8568b30807b8299c"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/316108",
+      "status": 200,
+      "sha256": "308e5971c3ebc601773cbbe4b4c7347992ade06b9b0c68b08a7dcc3ecf1652ee"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/316108/ep",
+      "status": 200,
+      "sha256": "2a2f63e98b5ae864bf3a9cb8cf4a560ceacbb45ed03222a769eb898d3aa5aa38"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/307749",
+      "status": 200,
+      "sha256": "bc74ae10902777a385a30aac22aad85cdedc1e1bf5db5389633818ff5f28107d"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/307749/ep",
+      "status": 200,
+      "sha256": "1646be09c7910598cdbc5e8631490d52b714e9bda8d74661032f2c943c7ebfc6"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/296875",
+      "status": 200,
+      "sha256": "c9ae660f403206ea7d663f664eaca0a93453ee5dd965148cb885a74100047f3f"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/296875/ep",
+      "status": 200,
+      "sha256": "b7a193046bde55ba6763b439b8e35502b6ba2cbb0646d21ac4d4d82309d68daa"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/363600",
+      "status": 200,
+      "sha256": "eaf78e75e82771d2fa8122d831fa3e88f1fec3168cebd415c1a1ece623aff917"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/363600/ep",
+      "status": 200,
+      "sha256": "321f02b1be3ccb9175375ff530ca14a59f615c313a1ff9c869284d44f7a437c9"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/426531",
+      "status": 200,
+      "sha256": "586c2e608e23c47a8df667451232b2a9d1d0b541b9eb55d670424ca4cfb4e1b0"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/426531/ep",
+      "status": 200,
+      "sha256": "5d0d53e1036747aaed00e5010d21119c19f0b77cc53d6bb389e8f8e14497239a"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/402136",
+      "status": 200,
+      "sha256": "ab2ad3014a97b93a7a0fa2edb8ce6e4fde11568874b08824810d67f15e4a4777"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/402136/ep",
+      "status": 200,
+      "sha256": "bf4bf1ddc84fc28dc321820b02e3bd518f74c25c5c0d6beb650a8c7c097ee944"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/443112",
+      "status": 200,
+      "sha256": "f13fa0894312e518d15dbabc07485a016cc9d92d514b470801e68cf050141db0"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/443112/ep",
+      "status": 200,
+      "sha256": "3877cc443463fb5ee2ff6b62ea8ffeae251c1956c6ae6e6b27d1f603db2a8027"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/488197",
+      "status": 200,
+      "sha256": "38c53beb0d6fb6a99ec4b7c8303ee4beeb7c39046cf4a1aeb5466201397cb03c"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/488197/ep",
+      "status": 200,
+      "sha256": "f1178b9f6e2789840bb3bd1eab5d34a2551a36ec22c451caf0009528b447e82f"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/394996",
+      "status": 200,
+      "sha256": "417c81b9fd7ab233df09992999d4b3344e9e77b91792f00e9611c2c00e9d3747"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/394996/ep",
+      "status": 200,
+      "sha256": "f297ef3c5ba73a8c10a577cc89f75e39a206e50025af00ecac21418f7c2a9eff"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/494302",
+      "status": 200,
+      "sha256": "7e1a02dcf72f97e86247e48718f7838e894ec3e48d95e49064fbdf14750fd073"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/494302/ep",
+      "status": 200,
+      "sha256": "d09a780ed5b6a6dfdea69491da3d6541aa1c128c23aa2fbd48a45b2ba19b9124"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/371829",
+      "status": 200,
+      "sha256": "21222b33556f62c324177efb3dae35062a65dc443659d449bfd24d0da0626796"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/371829/ep",
+      "status": 200,
+      "sha256": "b9001d807637eb3902c4cd5981d6138edc169afe170488fe928cde65d0c953fd"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/364844",
+      "status": 200,
+      "sha256": "6cb5d8d9d31f80ae97ed440c5908447c71358e9e1da5f474b561cce371dceedb"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/364844/ep",
+      "status": 200,
+      "sha256": "429cff3136baa464d113c2376ce3856d62bee4043b3b18341fd093ad7ec6d4d2"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/405212",
+      "status": 200,
+      "sha256": "4e0cfb61fae084a3b236873124c200a515b9bab4e8728a6bd8618190362da887"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/405212/ep",
+      "status": 200,
+      "sha256": "86cde048e8b0981cc9f491bfeef2342b9020435fcf70a7db9d0ce55b3f436519"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/572613",
+      "status": 200,
+      "sha256": "ab4c275684b2a2f37f00934f6eca4397fcc8d7604aa34bcbbacfa010a0416b23"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/572613/ep",
+      "status": 200,
+      "sha256": "c801166ddc0a0ccb16c711ebed1c4e0b141cbe459224f73bc51c2ec498081558"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/331752",
+      "status": 200,
+      "sha256": "e7df05c3bfafef576f1d5bcf51ba777eaf9bf6989b4531a8ae831a0f23d9b5b0"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/331752/ep",
+      "status": 200,
+      "sha256": "abcf8c7b27cb8746ec2ccbce1e293bcd73f30bd6f336b7159416a923b9c40070"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/604307",
+      "status": 200,
+      "sha256": "e3f274f29ca00d5865c3321e896dc734304efc00e0fa008e3c6ca55541c9e457"
+    },
+    {
+      "method": "GET",
+      "url": "https://bangumi.tv/subject/604307/ep",
+      "status": 200,
+      "sha256": "e3098c456d1a77d89e4142cfa03a6ec60d769d3f6e445b65c26a91c2a66973bb"
+    }
+  ],
+  "outcomes": [
+    {
+      "quarter": "2018_夏",
+      "card_id": "anime-441",
+      "anime_name": "千緒的通學路",
+      "original_name": "ちおちゃんの通学路",
+      "subject_id": 218226,
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/218226",
+          "https://bgm.tv/subject/218226/ep"
+        ],
+        "checked_at": "2026-10-17T17:30:46.485203+08:00",
+        "attempted_at": "2026-10-17T17:30:46.485203+08:00",
+        "end_date": "2018-09-21",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/218226",
+          "https://bgm.tv/subject/218226/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2018-09-21",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2018_秋",
+      "card_id": "anime-400",
+      "anime_name": "能繼續奔跑下去真是太好了。",
+      "original_name": "走り続けてよかったって。",
+      "subject_id": 259135,
+      "before": {
+        "total_episodes": 4,
+        "aired_episodes": 4,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/259135",
+          "https://bgm.tv/subject/259135/ep"
+        ],
+        "checked_at": "2026-10-17T17:32:19.987205+08:00",
+        "attempted_at": "2026-10-17T17:32:19.987205+08:00",
+        "end_date": "2018-10-29",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 4,
+        "aired_episodes": 4,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/259135",
+          "https://bgm.tv/subject/259135/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2018-10-29",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2020_夏",
+      "card_id": "anime-159",
+      "anime_name": "耐子的日常 新系列",
+      "original_name": "耐え子の日常 新シリーズ",
+      "subject_id": 316108,
+      "before": {
+        "total_episodes": 132,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/316108",
+          "https://bgm.tv/subject/316108/ep"
+        ],
+        "checked_at": "2026-10-17T17:37:08.747767+08:00",
+        "attempted_at": "2026-10-17T17:37:08.747767+08:00",
+        "end_date": "2020-12-31",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 132,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/316108",
+          "https://bgm.tv/subject/316108/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2020-12-31",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2020_春",
+      "card_id": "anime-120",
+      "anime_name": "香蕉怪大叔 呐呐~呐 追趕怪物克拉肯！",
+      "original_name": "テレビ野郎ナナーナ 怪物クラーケンを追え！",
+      "subject_id": 307749,
+      "before": {
+        "total_episodes": 24,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/307749",
+          "https://bgm.tv/subject/307749/ep"
+        ],
+        "checked_at": "2026-10-17T17:37:23.020348+08:00",
+        "attempted_at": "2026-10-17T17:37:23.020348+08:00",
+        "end_date": "2020-09-24",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 24,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/307749",
+          "https://bgm.tv/subject/307749/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2020-09-24",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2021_冬",
+      "card_id": "anime-709",
+      "anime_name": "境界觸發者 2nd Season",
+      "original_name": "ワールドトリガー 2ndシーズン",
+      "subject_id": 296875,
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/296875",
+          "https://bgm.tv/subject/296875/ep"
+        ],
+        "checked_at": "2026-10-17T17:39:11.380885+08:00",
+        "attempted_at": "2026-10-17T17:39:11.380885+08:00",
+        "end_date": "2021-04-03",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/296875",
+          "https://bgm.tv/subject/296875/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2021-04-03",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2022_冬",
+      "card_id": "anime-1010",
+      "anime_name": "進擊的巨人 The Final Season Part 2",
+      "original_name": "進撃の巨人 The Final Season Part 2",
+      "subject_id": 331752,
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/331752",
+          "https://bgm.tv/subject/331752/ep"
+        ],
+        "checked_at": "2026-10-17T17:58:33.777091+08:00",
+        "attempted_at": "2026-10-17T17:58:33.777091+08:00",
+        "end_date": "2022-04-03",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/331752",
+          "https://bgm.tv/subject/331752/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2022-04-03",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2022_秋",
+      "card_id": "anime-1047",
+      "anime_name": "POP TEAM EPIC 第二季",
+      "original_name": "ポプテピピック 第二シリーズ",
+      "subject_id": 363600,
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/363600",
+          "https://bgm.tv/subject/363600/ep"
+        ],
+        "checked_at": "2026-10-17T17:43:51.326573+08:00",
+        "attempted_at": "2026-10-17T17:43:51.326573+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/363600",
+          "https://bgm.tv/subject/363600/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2023_夏",
+      "card_id": "anime-1334",
+      "anime_name": "物之古物奇譚 第二章",
+      "original_name": "もののがたり 第二章",
+      "subject_id": 426531,
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/426531",
+          "https://bgm.tv/subject/426531/ep"
+        ],
+        "checked_at": "2026-10-17T17:45:01.721603+08:00",
+        "attempted_at": "2026-10-17T17:45:01.721603+08:00",
+        "end_date": "2023-09-18",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/426531",
+          "https://bgm.tv/subject/426531/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2023-09-18",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2023_春",
+      "card_id": "anime-1281",
+      "anime_name": "東京Mew Mew New～♥ 第2季",
+      "original_name": "東京ミュウミュウ にゅ～♡ 第2期",
+      "subject_id": 402136,
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/402136",
+          "https://bgm.tv/subject/402136/ep"
+        ],
+        "checked_at": "2026-10-17T17:46:02.780043+08:00",
+        "attempted_at": "2026-10-17T17:46:02.780043+08:00",
+        "end_date": "2023-06-20",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/402136",
+          "https://bgm.tv/subject/402136/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2023-06-20",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2024_冬",
+      "card_id": "anime-1447",
+      "anime_name": "公主殿下，「拷問」的時間到了",
+      "original_name": "姫様“拷問”の時間です",
+      "subject_id": 443112,
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/443112",
+          "https://bgm.tv/subject/443112/ep"
+        ],
+        "checked_at": "2026-10-17T17:47:49.483326+08:00",
+        "attempted_at": "2026-10-17T17:47:49.483326+08:00",
+        "end_date": "2024-03-25",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/443112",
+          "https://bgm.tv/subject/443112/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2024-03-25",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2024_夏",
+      "card_id": "anime-1618",
+      "anime_name": "戰國妖狐 千魔混沌篇",
+      "original_name": "戦国妖狐 千魔混沌編",
+      "subject_id": 488197,
+      "before": {
+        "total_episodes": 22,
+        "aired_episodes": 22,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/488197",
+          "https://bgm.tv/subject/488197/ep"
+        ],
+        "checked_at": "2026-10-17T17:48:52.172249+08:00",
+        "attempted_at": "2026-10-17T17:48:52.172249+08:00",
+        "end_date": "2024-12-25",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 22,
+        "aired_episodes": 22,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/488197",
+          "https://bgm.tv/subject/488197/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2024-12-25",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2024_夏",
+      "card_id": "anime-1589",
+      "anime_name": "神之塔 -Tower of God- 第2季",
+      "original_name": "神之塔 -Tower of God- 2nd SEASON",
+      "subject_id": 394996,
+      "before": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/394996",
+          "https://bgm.tv/subject/394996/ep"
+        ],
+        "checked_at": "2026-10-17T17:49:31.465351+08:00",
+        "attempted_at": "2026-10-17T17:49:31.465351+08:00",
+        "end_date": "2024-12-29",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/394996",
+          "https://bgm.tv/subject/394996/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2024-12-29",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1618",
+      "anime_name": "戰國妖狐 千魔混沌篇",
+      "original_name": "戦国妖狐 千魔混沌編",
+      "subject_id": 488197,
+      "before": {
+        "total_episodes": 22,
+        "aired_episodes": 22,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/488197",
+          "https://bgm.tv/subject/488197/ep"
+        ],
+        "checked_at": "2026-10-17T17:48:52.172249+08:00",
+        "attempted_at": "2026-10-17T17:48:52.172249+08:00",
+        "end_date": "2024-12-25",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 22,
+        "aired_episodes": 22,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/488197",
+          "https://bgm.tv/subject/488197/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2024-12-25",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1674",
+      "anime_name": "菇狗",
+      "original_name": "きのこいぬ",
+      "subject_id": 494302,
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/494302",
+          "https://bgm.tv/subject/494302/ep"
+        ],
+        "checked_at": "2026-10-17T17:50:49.339283+08:00",
+        "attempted_at": "2026-10-17T17:50:49.339283+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/494302",
+          "https://bgm.tv/subject/494302/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2024_秋",
+      "card_id": "anime-1589",
+      "anime_name": "神之塔 -Tower of God- 第2季",
+      "original_name": "神之塔 -Tower of God- 2nd SEASON",
+      "subject_id": 394996,
+      "before": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/394996",
+          "https://bgm.tv/subject/394996/ep"
+        ],
+        "checked_at": "2026-10-17T17:49:31.465351+08:00",
+        "attempted_at": "2026-10-17T17:49:31.465351+08:00",
+        "end_date": "2024-12-29",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 26,
+        "aired_episodes": 26,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/394996",
+          "https://bgm.tv/subject/394996/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2024-12-29",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2025_冬",
+      "card_id": "anime-1713",
+      "anime_name": "灰色：幻影扳機",
+      "original_name": "グリザイア：ファントムトリガー",
+      "subject_id": 371829,
+      "before": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/371829",
+          "https://bgm.tv/subject/371829/ep"
+        ],
+        "checked_at": "2026-10-17T17:51:49.829333+08:00",
+        "attempted_at": "2026-10-17T17:51:49.829333+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 13,
+        "aired_episodes": 13,
+        "airing_status": "unknown",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/371829",
+          "https://bgm.tv/subject/371829/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": null,
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2025_春",
+      "card_id": "anime-1755",
+      "anime_name": "持續狩獵史萊姆三百年，不知不覺就練到 LV MAX 第二季",
+      "original_name": "スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～",
+      "subject_id": 364844,
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/364844",
+          "https://bgm.tv/subject/364844/ep"
+        ],
+        "checked_at": "2026-10-17T17:54:17.997456+08:00",
+        "attempted_at": "2026-10-17T17:54:17.997456+08:00",
+        "end_date": "2025-06-21",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/364844",
+          "https://bgm.tv/subject/364844/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2025-06-21",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2025_春",
+      "card_id": "anime-1798",
+      "anime_name": "凸變英雄 X",
+      "original_name": "TO BE HERO X",
+      "subject_id": 405212,
+      "before": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/405212",
+          "https://bgm.tv/subject/405212/ep"
+        ],
+        "checked_at": "2026-10-17T17:54:28.793154+08:00",
+        "attempted_at": "2026-10-17T17:54:28.793154+08:00",
+        "end_date": "2025-09-14",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 24,
+        "aired_episodes": 24,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/405212",
+          "https://bgm.tv/subject/405212/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2025-09-14",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2026_夏",
+      "card_id": "anime-2267",
+      "anime_name": "不虐待我的繼母與繼姐",
+      "original_name": "いびってこない義母と義姉",
+      "subject_id": 572613,
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/572613",
+          "https://bgm.tv/subject/572613/ep"
+        ],
+        "checked_at": "2026-10-17T17:55:47.981420+08:00",
+        "attempted_at": "2026-10-17T17:55:47.981420+08:00",
+        "end_date": "2026-09-25",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/572613",
+          "https://bgm.tv/subject/572613/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2026-09-25",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    },
+    {
+      "quarter": "2026_春",
+      "card_id": "anime-2134",
+      "anime_name": "溜掉的大魚比不上自己釣到的魚",
+      "original_name": "逃がした魚は大きかったが釣りあげた魚が大きすぎた件",
+      "subject_id": 604307,
+      "before": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/604307",
+          "https://bgm.tv/subject/604307/ep"
+        ],
+        "checked_at": "2026-10-13T20:52:04.176625+08:00",
+        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
+        "end_date": "2026-06-17",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      },
+      "after": {
+        "total_episodes": 12,
+        "aired_episodes": 12,
+        "airing_status": "finished",
+        "episode_count_status": "confirmed",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/604307",
+          "https://bgm.tv/subject/604307/ep"
+        ],
+        "checked_at": "2026-10-31T10:04:52.900636+08:00",
+        "attempted_at": "2026-10-31T10:04:52.900636+08:00",
+        "end_date": "2026-06-17",
+        "note": "Bangumi 頁面備援（bangumi.tv）；依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_html"
+      }
+    }
+  ],
+  "before_official_review_backlog": {
+    "as_of": "2026-10-31T10:04:52.900636+08:00",
+    "pending_count": 1,
+    "priority_count": 0,
+    "background_count": 1,
+    "oldest_checked_at": "2026-10-14T05:03:54+08:00",
+    "items": [
+      {
+        "card_id": "anime-182",
+        "anime_name": "大神同學想要被吃掉",
+        "original_name": "オオカミさんは食べられたい",
+        "subject_id": 312982,
+        "quarters": [
+          "2020_秋"
+        ],
+        "priority": false,
+        "reasons": [
+          "previous_attempt_failed"
+        ],
+        "checked_at": "2026-10-14T05:03:54+08:00",
+        "attempted_at": "2026-10-31T05:25:37.525087+08:00",
+        "fetch_states": [
+          "stale"
+        ],
+        "next_refresh_at": "2026-11-07T05:25:37.525087+08:00"
+      }
+    ]
+  },
+  "remaining_backlog": {
+    "as_of": "2026-10-31T10:06:22.661163+08:00",
+    "pending_count": 0,
+    "priority_count": 0,
+    "background_count": 0,
+    "oldest_checked_at": null,
+    "items": []
+  },
+  "official_review_card_id": "anime-182"
+}

@@ -685,5 +685,26 @@
       "source_kind": "manual_official"
     },
     "mode": "snapshot"
+  },
+  {
+    "card_id": "anime-182",
+    "anime_name": "大神同學想要被吃掉",
+    "original_name": "オオカミさんは食べられたい",
+    "subject_id": 312982,
+    "metadata": {
+      "total_episodes": 3,
+      "aired_episodes": 3,
+      "airing_status": "finished",
+      "episode_count_status": "confirmed",
+      "fetch_state": "ok",
+      "source_urls": [
+        "https://suiseisha.jp/itemsdetail?cat=la&pid=23098"
+      ],
+      "checked_at": "2026-10-31T10:06:22.509454+08:00",
+      "attempted_at": "2026-10-31T10:06:22.509454+08:00",
+      "end_date": null,
+      "note": "電視播出版全3話（官方發行資料收錄第1～3話）；不按串流合輯的影片筆數計話數。精確播畢日未重新確認，未填入日期。"
+    },
+    "mode": "snapshot"
   }
 ]
