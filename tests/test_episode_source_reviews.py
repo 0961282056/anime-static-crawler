@@ -90,6 +90,43 @@ def test_snapshot_is_exactly_bound_and_not_rechecked(anime_record_factory):
     )
 
 
+def test_ookami_onair_scope_uses_three_tv_episodes_not_one_streaming_bundle(
+    anime_record_factory,
+):
+    from services.episode_refresh import refresh_backlog
+
+    review = next(r for r in source_reviews() if r["card_id"] == "anime-182")
+    anime = reviewed_anime(review, anime_record_factory)
+    previous = anime.model_copy(
+        update={
+            "episodes": anime.episodes.model_copy(
+                update={"fetch_state": "stale", "checked_at": NOW}
+            )
+        }
+    )
+    client = Mock()
+    later = anime.episodes.checked_at + timedelta(days=365)
+    result = EpisodeEnricher(client, retry_failed=True).enrich(previous, later)
+    assert result.episodes.total_episodes == result.episodes.aired_episodes == 3
+    assert result.episodes.fetch_state == "ok"
+    assert result.episodes.airing_status == "finished"
+    assert result.episodes.source_kind == "manual_official"
+    assert result.episodes.end_date is None
+    assert result.episodes.checked_at == anime.episodes.checked_at
+    assert result.episodes.source_urls == [
+        "https://suiseisha.jp/itemsdetail?cat=la&pid=23098"
+    ]
+    assert refresh_backlog([("2020_秋", result)], later)["pending_count"] == 0
+    client.fetch.assert_not_called()
+    for changed in (
+        {"bangumi_id": "anime-999"},
+        {"anime_name": "another work"},
+        {"original_name": "オオカミさんは食べられたい 第2期"},
+        {"external_ids": anime.external_ids.model_copy(update={"bangumi": 1})},
+    ):
+        assert reviewed_source(anime.model_copy(update=changed)) is None
+
+
 def test_verified_rikkun_tv_scope_does_not_revert_to_web_sixteen_episodes(
     anime_record_factory,
 ):

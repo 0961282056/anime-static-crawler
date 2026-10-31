@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-31T10:06:22.509454+08:00",
+  "card_id": "anime-182",
+  "original_name": "オオカミさんは食べられたい",
+  "source_url": "https://suiseisha.jp/itemsdetail?cat=la&pid=23098",
+  "http_status": 200,
+  "response_sha256": "5467a7d607925e91632a402b320bd0a2d856ce4596ea09256434e41b5b31a196",
+  "title": "[オンエア版]オオカミさんは食べられたい[DVD]",
+  "scope_excerpt": "TV放送版　第1話～第3話",
+  "release_date": "2021-01-27",
+  "product_code": "WVSS-00036",
+  "source_interpretation": "Released television broadcast version contains episodes 1 through 3; bonus promotional videos are excluded. Exact broadcast end date was not reverified.",
+  "provider_observations": {
+    "date": "2026-10-31",
+    "bangumi_api_status": 404,
+    "bangumi_html_fallback": "read timeout"
+  },
+  "refresh_mode": "reviewed manual snapshot for this exact completed TV work"
+}
