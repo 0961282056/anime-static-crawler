@@ -163,7 +163,10 @@ const sharingMethods = {
                 const buttons = document.querySelectorAll('#shareListContainer .share-remove');
                 const target = buttons[Math.min(index, buttons.length - 1)]
                     || document.getElementById('shareListTitle');
-                if (target) target.focus();
+                if (target) {
+                    target.focus();
+                    target.scrollIntoView({block: 'center', inline: 'nearest'});
+                }
             });
         }
     },
@@ -267,7 +270,7 @@ const sharingMethods = {
             document.body.appendChild(exportContainer);
 
             // 架構防禦：剪貼簿不可用時自動下載。
-            const triggerFallbackDownload = (blob) => {
+            const triggerFallbackDownload = (blob, showNotice = true) => {
                 try {
                     const url = window.URL.createObjectURL(blob);
                     const a = document.createElement('a');
@@ -282,7 +285,7 @@ const sharingMethods = {
                     throw createShareError('SHARE_EXPORT', '圖片下載備案失敗');
                 }
 
-                Swal.fire({
+                if (showNotice) Swal.fire({
                     icon: 'success',
                     title: '圖片已下載！',
                     text: '因瀏覽器限制剪貼簿，已自動為您下載圖片',
@@ -339,57 +342,60 @@ const sharingMethods = {
                 throw createShareError('SHARE_EXPORT', '瀏覽器未提供圖片匯出功能');
             }
 
-            await withShareDeadline(new Promise((resolve, reject) => {
+            const blob = await withShareDeadline(new Promise((resolve, reject) => {
                 const rejectExport = () => reject(createShareError('SHARE_EXPORT', '圖片匯出失敗'));
                 try {
                     canvas.toBlob(blob => {
                         if (!exporting) return;
-                        try {
-                            if (!blob) return rejectExport();
-
-                            const clipboard = typeof navigator !== 'undefined' && navigator ? navigator.clipboard : null;
-                            if (clipboard && window.ClipboardItem) {
-                                clipboard.write([new window.ClipboardItem({'image/png': blob})])
-                                    .then(() => {
-                                        if (!exporting) return;
-                                        Swal.fire({
-                                            icon: 'success', title: '圖片已複製！',
-                                            text: '可直接貼上至 LINE 或社群，已匯出的項目已移除',
-                                            background: '#1e1e1e', color: '#fff',
-                                            timer: 2000, showConfirmButton: false
-                                        });
-                                        removeExportedItems();
-                                        resolve();
-                                    })
-                                    .catch(() => {
-                                        if (!exporting) return;
-                                        console.warn('[Clipboard] 寫入被拒絕，啟動下載備案');
-                                        try {
-                                            triggerFallbackDownload(blob);
-                                            removeExportedItems();
-                                            resolve();
-                                        } catch (error) {
-                                            reject(error);
-                                        }
-                                    });
-                            } else {
-                                console.warn('[Clipboard] API 不支援，啟動下載備案');
-                                try {
-                                    triggerFallbackDownload(blob);
-                                    removeExportedItems();
-                                    resolve();
-                                } catch (error) {
-                                    reject(error);
-                                }
-                            }
-                        } catch (error) {
-                            reject(error instanceof Error ? error : createShareError('SHARE_EXPORT', '圖片匯出失敗'));
-                        }
+                        if (!blob) return rejectExport();
+                        resolve(blob);
                     }, 'image/png');
                 } catch (error) {
                     rejectExport();
                 }
             }), SHARE_EXPORT_TIMEOUT_MS, 'SHARE_EXPORT_TIMEOUT');
+
+            const clipboard = typeof navigator !== 'undefined' && navigator ? navigator.clipboard : null;
+            if (!clipboard || typeof clipboard.write !== 'function' || !window.ClipboardItem) {
+                triggerFallbackDownload(blob);
+                removeExportedItems();
+                return;
+            }
+            try {
+                await withShareDeadline(Promise.resolve().then(() =>
+                    clipboard.write([new window.ClipboardItem({'image/png': blob})])
+                ), SHARE_EXPORT_TIMEOUT_MS, 'SHARE_CLIPBOARD_TIMEOUT');
+            } catch (error) {
+                if (error?.code === 'SHARE_CLIPBOARD_TIMEOUT') {
+                    // Keep the rendered PNG and obtain a fresh user gesture for download.
+                    // A late clipboard response has no list or download side effects.
+                    let downloaded = false;
+                    await Swal.fire({
+                        icon: 'info', title: '圖片已準備好',
+                        text: '複製圖片逾時，可直接下載這張圖片，或保留清單稍後再試。',
+                        confirmButtonText: '下載圖片', showCancelButton: true,
+                        cancelButtonText: '保留清單',
+                        background: '#1e1e1e', color: '#fff',
+                        preConfirm: () => {
+                            if (downloaded) return;
+                            triggerFallbackDownload(blob, false);
+                            downloaded = true;
+                            removeExportedItems();
+                        }
+                    });
+                    return;
+                }
+                triggerFallbackDownload(blob);
+                removeExportedItems();
+                return;
+            }
+            Swal.fire({
+                icon: 'success', title: '圖片已複製！',
+                text: '可直接貼上至 LINE 或社群，已匯出的項目已移除',
+                background: '#1e1e1e', color: '#fff',
+                timer: 2000, showConfirmButton: false
+            });
+            removeExportedItems();
         } catch (error) {
             const safeError = describeShareError(error);
             console.error('[ShareImage Error]', {code: safeError.code});

@@ -15,10 +15,78 @@ from services.episode_refresh import (
     identity,
     next_refresh_at,
     quarter_context,
+    refresh_backlog,
     refresh_policy,
     refresh_statistics,
 )
 from tests.test_episode_metadata import NOW, anime
+
+
+def test_backlog_tracks_exact_identities_and_clears_only_after_all_copies_refresh(
+    anime_record_factory,
+):
+    old = anime(
+        anime_record_factory,
+        episodes=EpisodeMetadata(
+            airing_status="airing",
+            fetch_state="ok",
+            checked_at=NOW - timedelta(days=2),
+            attempted_at=NOW - timedelta(days=2),
+        ),
+    )
+    rows = [("2026_夏", old), ("2026_秋", old)]
+    before = old.model_dump(mode="json")
+    report = refresh_backlog(rows, NOW)
+    assert report["pending_count"] == report["priority_count"] == 1
+    item = report["items"][0]
+    assert item["quarters"] == ["2026_夏", "2026_秋"]
+    assert item["checked_at"] == old.episodes.checked_at.isoformat()
+    assert item["attempted_at"] == old.episodes.attempted_at.isoformat()
+    assert item["subject_id"] == old.external_ids.bangumi
+    assert item["reasons"] == ["due"]
+    assert old.model_dump(mode="json") == before
+    fresh = old.model_copy(
+        update={
+            "episodes": old.episodes.model_copy(
+                update={
+                    "checked_at": NOW,
+                    "attempted_at": NOW,
+                }
+            )
+        }
+    )
+    assert (
+        refresh_backlog([("2026_夏", old), ("2026_秋", fresh)], NOW)["pending_count"]
+        == 1
+    )
+    assert (
+        refresh_backlog([("2026_夏", fresh), ("2026_秋", fresh)], NOW)["pending_count"]
+        == 0
+    )
+
+
+def test_backlog_keeps_failed_provider_work_even_before_retry_is_due(
+    anime_record_factory,
+):
+    old = anime(
+        anime_record_factory,
+        episodes=EpisodeMetadata(
+            airing_status="finished",
+            fetch_state="stale",
+            total_episodes=12,
+            aired_episodes=12,
+            episode_count_status="confirmed",
+            checked_at=NOW - timedelta(days=100),
+            attempted_at=NOW,
+        ),
+    )
+    report = refresh_backlog([("2018_春", old)], NOW)
+    assert not due(old, NOW, (2018, 1))
+    assert report["pending_count"] == report["background_count"] == 1
+    assert report["items"][0]["reasons"] == ["previous_attempt_failed"]
+    assert (
+        report["items"][0]["next_refresh_at"] == (NOW + timedelta(days=7)).isoformat()
+    )
 
 
 @pytest.mark.parametrize(

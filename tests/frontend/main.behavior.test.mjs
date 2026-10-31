@@ -178,6 +178,28 @@ function nextTick() {
   return new Promise(resolve => setTimeout(resolve, 0));
 }
 
+test('region scrolling keys preserve child controls, modifiers and normal document scrolling', () => {
+  const {app} = createContext();
+  const region = {clientHeight: 100, scrollHeight: 500, scrollTop: 150};
+  let prevented = 0, stopped = 0;
+  const event = {key: 'End', target: region, currentTarget: region,
+    preventDefault() { prevented++; }, stopPropagation() { stopped++; }};
+  for (const extra of [{target: {}}, {ctrlKey: true}, {shiftKey: true}, {key: 'Enter'}, {defaultPrevented: true}]) {
+    app.scrollRegion({...event, ...extra});
+    assert.equal(region.scrollTop, 150);
+  }
+  assert.equal(prevented, 0);
+  app.scrollRegion(event);
+  assert.equal(region.scrollTop, 400);
+  app.scrollRegion({...event, key: 'Home'});
+  assert.equal(region.scrollTop, 0);
+  assert.equal(prevented, 2);
+  assert.equal(stopped, 2);
+  region.scrollHeight = region.clientHeight;
+  app.scrollRegion(event);
+  assert.equal(prevented, 2);
+});
+
 test('episode labels distinguish planned, confirmed, finished and missing progress', () => {
   const {app} = createContext();
   const base = {total_episodes: 12, aired_episodes: 8, airing_status: 'airing', episode_count_status: 'confirmed', fetch_state: 'ok'};
@@ -1406,6 +1428,65 @@ test('late toBlob callback after timeout cannot download or clear the list', asy
   assert.equal(app.shareList.length, 1);
   assert.equal(button.disabled, false);
 });
+
+for (const lateResult of ['resolved', 'rejected']) {
+  for (const choice of ['download', 'cancel']) {
+    test(`stalled clipboard offers the same PNG; ${choice} ignores a late ${lateResult} response`, {timeout: 2000}, async () => {
+      let finishClipboard, rejectClipboard, prompt, closePrompt;
+      let renders = 0, downloads = 0;
+      const blob = {png: true};
+      const alerts = [];
+      const {app, context, button} = createContext({
+        html2canvas: () => { renders++; return {toBlob(callback) { callback(blob); }}; },
+        navigatorImpl: {clipboard: {write: () => new Promise((resolve, reject) => {
+          finishClipboard = resolve; rejectClipboard = reject;
+        })}},
+        swal: {fire(options) {
+          alerts.push(options);
+          if (options.preConfirm) {
+            prompt = options;
+            return new Promise(resolve => { closePrompt = resolve; });
+          }
+        }},
+      });
+      context.window.ClipboardItem = class {};
+      context.setTimeout = (callback, delay) => setTimeout(callback, delay >= 1000 ? 5 : delay);
+      context.window.URL = {
+        createObjectURL(value) { assert.equal(value, blob); return 'blob:prepared-png'; },
+        revokeObjectURL() {},
+      };
+      const create = context.document.createElement;
+      context.document.createElement = tag => ({...create(tag), click() { downloads++; }});
+      app.shareList = [exportItem()];
+      const exporting = app.generateShareImage();
+      while (!prompt) await nextTick();
+      assert.equal(prompt.confirmButtonText, '下載圖片');
+      assert.equal(downloads, 0);
+      assert.equal(app.shareList.length, 1);
+      const added = exportItem('added while awaiting download');
+      app.shareList.push(added);
+      if (lateResult === 'resolved') finishClipboard();
+      else rejectClipboard(new Error('late clipboard rejection'));
+      await nextTick();
+      assert.equal(app.shareList.length, 2);
+      assert.equal(downloads, 0);
+      if (choice === 'download') {
+        prompt.preConfirm();
+        prompt.preConfirm();
+      }
+      closePrompt({isConfirmed: choice === 'download'});
+      await exporting;
+      assert.equal(renders, 1);
+      assert.equal(downloads, choice === 'download' ? 1 : 0);
+      assert.equal(app.shareList.length, choice === 'download' ? 1 : 2);
+      assert.equal(app.shareList.at(-1).token, added.token);
+      assert.equal(button.disabled, false);
+      assert.equal(button.innerHTML, '生成圖片');
+      assert.equal(app._shareExportRunning, false);
+      assert.equal(alerts.some(alert => alert.title === '圖片已複製！'), false);
+    });
+  }
+}
 
 test('export snapshots the original list, deduplicates clicks and preserves newly added items', async () => {
   let ready;

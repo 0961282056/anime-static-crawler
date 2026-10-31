@@ -30,7 +30,7 @@
     </header>
 
     <div class="container main-layout">
-        <aside class="control-panel">
+        <aside class="control-panel" aria-label="篩選與分享清單" tabindex="0" @keydown="scrollRegion($event)">
             <div class="panel-inner">
                 <h3 class="panel-title"><i class="fas fa-filter"></i> 篩選條件</h3>
                 
@@ -96,8 +96,8 @@
                 </div>
 
                 <div class="share-widget">
-                    <h3 id="shareListTitle" class="panel-title small" tabindex="-1"><i class="fas fa-list" aria-hidden="true"></i> 分享清單</h3>
-                    <div id="shareListContainer">
+                    <h3 id="shareListTitle" class="panel-title small" tabindex="-1"><i class="fas fa-list" aria-hidden="true"></i> 分享清單 <span class="share-count" aria-hidden="true" x-text="shareList.length + ' / ' + SHARE_MAX_ITEMS"></span></h3>
+                    <div id="shareListContainer" role="region" aria-labelledby="shareListTitle" aria-describedby="shareHelp" tabindex="0" @keydown="scrollRegion($event)">
                         <template x-if="shareList.length === 0">
                             <div class="empty-state" style="color:#888; text-align:center; padding:20px;">尚無內容</div>
                         </template>
@@ -115,7 +115,7 @@
                             </div>
                         </template>
                     </div>
-                    <p class="share-help" x-text="'單次最多 ' + SHARE_MAX_ITEMS + ' 部；過長清單請分批匯出。'"></p>
+                    <p id="shareHelp" class="share-help" x-text="'單次最多 ' + SHARE_MAX_ITEMS + ' 部，可在清單內上下捲動；過長清單請分批匯出。'"></p>
                     <button id="copyButton" class="action-btn" :disabled="shareList.length === 0 || _shareExportRunning" @click="generateShareImage()">
                         <i class="fas fa-image"></i> 生成圖片
                     </button>

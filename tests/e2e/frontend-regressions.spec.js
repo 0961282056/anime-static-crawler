@@ -30,7 +30,7 @@ test('summary dialog renders markup in source text literally under production CS
   await expect(page.locator('.swal2-title')).toHaveText(title);
   await expect(page.locator('.swal2-html-container')).toHaveText(story);
   await expect(page.locator('[data-review-title], [data-review-story]')).toHaveCount(0);
-  await page.getByRole('button', {name: 'OK', exact: true}).click();
+  await page.getByRole('button', {name: '關閉', exact: true}).click();
   await expect(page.locator('.swal2-popup')).toHaveCount(0);
 });
 

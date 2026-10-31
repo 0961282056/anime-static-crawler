@@ -89,8 +89,14 @@ body {
     position: sticky;
     top: 15px;
     
-    /* 2. 高度計算：確保不會頂到視窗底部 */
-    height: calc(100vh - 30px);
+    /* Short windows and larger text must scroll instead of clipping controls. */
+    height: auto;
+    max-height: calc(100vh - 30px);
+    max-height: calc(100dvh - 30px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
     
     border: 1px solid var(--border);
     box-shadow: var(--shadow);
@@ -102,8 +108,8 @@ body {
 .panel-inner {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    overflow: hidden;
+    height: auto;
+    flex: 0 0 auto;
 }
 
 /* 標題與分隔線 */
@@ -250,8 +256,7 @@ body {
     padding-top: 10px;
     border-top: 1px solid var(--border);
     
-    /* 自動填滿剩餘高度 */
-    flex: 1; 
+    flex: none;
     
     display: flex;
     flex-direction: column;
@@ -261,6 +266,13 @@ body {
 .share-widget .panel-title {
     margin-bottom: 8px; /* 標題下方間距縮小 */
     flex-shrink: 0;
+}
+
+.share-count {
+    margin-left: auto;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    white-space: nowrap;
 }
 
 .share-help {
@@ -284,8 +296,11 @@ body {
     background-color: #fff;
     color: #000;
     
-    /* Flex 讓它自動長高，不需要寫 max-height */
-    flex: 1; 
+    flex: none;
+    min-height: 0;
+    max-height: 300px;
+    max-height: min(40vh, 300px);
+    max-height: min(40dvh, 300px);
     overflow-y: auto; 
     
     border-radius: 8px;
@@ -327,6 +342,7 @@ body {
 
 .share-item-info {
     flex: 1;
+    min-width: 0;
     font-size: 0.9rem;
     line-height: 1.2;
     overflow: hidden;
@@ -335,17 +351,16 @@ body {
 .share-item-title {
     font-weight: bold;
     margin-bottom: 2px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow-wrap: anywhere;
 }
 
 /* 移除按鈕 */
 .share-remove {
     flex-shrink: 0;
     padding: 0;
-    width: 30px; /* 按鈕微縮 */
-    height: 30px;
+    width: 44px;
+    height: 44px;
     background-color: #fff5f5;
     border: 1px solid #ffc9c9;
     color: #dc3545;
@@ -502,6 +517,10 @@ body {
 .title-copy:focus-visible,
 .story-box:focus-visible,
 .share-remove:focus-visible,
+.control-panel:focus-visible,
+#shareListContainer:focus-visible,
+.story-dialog .swal2-html-container:focus-visible,
+.story-dialog .swal2-title:focus-visible,
 .data-credit a:focus-visible,
 #backToTopBtn:focus-visible,
 #shareListTitle:focus,
@@ -590,7 +609,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
-    z-index: 9999;
+    z-index: 1000;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
@@ -621,6 +640,8 @@ body {
         width: 100%;
         height: auto;
         max-height: none;
+        overflow: visible;
+        scrollbar-gutter: auto;
         margin-bottom: 20px;
         padding: 20px;
         box-sizing: border-box;
@@ -641,7 +662,8 @@ body {
         flex: none;
         min-width: 0;
         height: auto;
-        max-height: 300px;
+        max-height: min(40vh, 300px);
+        max-height: min(40dvh, 300px);
     }
 
     .share-item-info,
@@ -709,3 +731,51 @@ body {
 .data-credit { color: var(--text-muted); }
 .data-credit a { color: var(--accent); }
 .wikipedia-dialog { overflow-wrap: anywhere; white-space: pre-line; }
+
+.swal2-popup.story-dialog {
+    display: flex !important;
+    flex-direction: column;
+    max-height: calc(100vh - 32px);
+    max-height: calc(100dvh - 32px);
+    overflow: hidden;
+    padding-bottom: 0.75rem;
+}
+
+.story-dialog > .swal2-title,
+.story-dialog > .swal2-actions {
+    flex: 0 0 auto;
+}
+
+.story-dialog > .swal2-title {
+    min-height: 0;
+    max-height: 25vh;
+    max-height: 25dvh;
+    overflow-y: auto;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    padding-right: 48px;
+}
+
+.story-dialog > .swal2-actions {
+    margin-top: 0.5rem;
+}
+
+.story-dialog > .swal2-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+}
+
+.story-dialog .swal2-html-container {
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: 55vh;
+    max-height: 55dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    text-align: left;
+    overflow-wrap: anywhere;
+}

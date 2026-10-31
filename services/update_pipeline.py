@@ -251,9 +251,12 @@ def run_update_pipeline(
         changed.update(refresh_repository_episodes(repository, now, enricher))
     else:
         changed.update(refresh(repository, now))
-    all_records = [
-        a for p in repository.validate_all() for a in repository.load_path(p).anime_list
+    rows = [
+        (p.stem, a)
+        for p in repository.validate_all()
+        for a in repository.load_path(p).anime_list
     ]
+    all_records = [a for _, a in rows]
     failed_metadata = {}
     for anime in all_records:
         if (
@@ -304,6 +307,7 @@ def run_update_pipeline(
         metadata_issues=[*failed_metadata.values(), *deferred],
         failure_count=failures,
         changed_quarters=sorted(changed),
+        metadata_refresh=episode_refresh.refresh_backlog(rows, now),
     )
     atomic_write_json(report_path, report)
     logger.info(

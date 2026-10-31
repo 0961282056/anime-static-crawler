@@ -26,6 +26,7 @@ class Notification:
     changed: bool = False
     parse_failures: int = 0
     message: str = ""
+    title: str = ""
 
 
 @dataclass(frozen=True)
@@ -99,6 +100,7 @@ def build_workflow_notification(
 
     if pull_request_success:
         detail = f"資料更新 PR 已通過 Quality Gate 並自動合併：{outcome.pr_url}"
+        detail += "\n正式站部署與頁面驗收另行通知，請以相同提交的驗收紀錄確認交付。"
     elif no_change_success:
         detail = "爬蟲、資料驗證與建置成功；沒有語意資料變更。"
     else:
@@ -177,7 +179,7 @@ class DiscordNotifier:
         success = notification.status == "SUCCESS"
         partial = notification.status == "PARTIAL"
         color = 16753920 if partial else 3066993 if success else 15158332
-        title = (
+        title = notification.title or (
             "⚠️ 動畫爬蟲部分完成"
             if partial
             else "✅ 動畫爬蟲更新成功"
@@ -190,6 +192,11 @@ class DiscordNotifier:
             f"**解析失敗**：{notification.parse_failures} 筆\n"
             f"**資料有變更**：{'是' if notification.changed else '否'}"
         )
+        if notification.season == "正式站驗收":
+            description = (
+                f"**階段**：{notification.year} 正式站驗收\n"
+                f"**驗收資料**：{notification.count} 筆"
+            )
         if notification.message:
             description += f"\n**說明**：{notification.message[:1000]}"
 

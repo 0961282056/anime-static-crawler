@@ -166,3 +166,74 @@ def refresh_statistics(rows: list[tuple[str, Anime]], now: datetime) -> dict:
         min(priority_checked).isoformat() if priority_checked else None
     )
     return result
+
+
+def refresh_backlog(rows: list[tuple[str, Anime]], now: datetime) -> dict:
+    """Inventory unresolved automatic refreshes without advancing any timestamps."""
+    context = quarter_context(rows)
+    copies: dict[Identity, list[tuple[str, Anime]]] = {}
+    for quarter, anime in rows:
+        if automatically_refreshed(anime):
+            copies.setdefault(identity(anime), []).append((quarter, anime))
+    items = []
+    for key, entries in sorted(copies.items(), key=lambda entry: repr(entry[0])):
+        records = [anime for _, anime in entries]
+        latest = context[key]
+        reasons = []
+        if any(due(anime, now, latest) for anime in records):
+            reasons.append("due")
+        if any(
+            not anime.episodes or not anime.episodes.checked_at for anime in records
+        ):
+            reasons.append("unverified")
+        if any(
+            anime.episodes and anime.episodes.fetch_state != "ok" for anime in records
+        ):
+            reasons.append("previous_attempt_failed")
+        if not reasons:
+            continue
+        checked = [
+            anime.episodes.checked_at
+            for anime in records
+            if anime.episodes and anime.episodes.checked_at
+        ]
+        attempted = [
+            anime.episodes.attempted_at
+            for anime in records
+            if anime.episodes and anime.episodes.attempted_at
+        ]
+        targets = [next_refresh_at(anime, now, latest) for anime in records]
+        target = min(targets) if all(targets) else None
+        items.append(
+            {
+                "card_id": key[0],
+                "anime_name": key[1],
+                "original_name": key[2],
+                "subject_id": key[3],
+                "quarters": sorted({quarter for quarter, _ in entries}),
+                "priority": any(
+                    refresh_policy(anime, now, latest).priority for anime in records
+                ),
+                "reasons": reasons,
+                "checked_at": min(checked).isoformat() if checked else None,
+                "attempted_at": min(attempted).isoformat() if attempted else None,
+                "fetch_states": sorted(
+                    {
+                        anime.episodes.fetch_state if anime.episodes else "missing"
+                        for anime in records
+                    }
+                ),
+                "next_refresh_at": target.isoformat() if target else None,
+            }
+        )
+    checked = [item["checked_at"] for item in items if item["checked_at"]]
+    return {
+        "as_of": now.isoformat(),
+        "pending_count": len(items),
+        "priority_count": sum(item["priority"] for item in items),
+        "background_count": sum(not item["priority"] for item in items),
+        "oldest_checked_at": min(checked, key=datetime.fromisoformat)
+        if checked
+        else None,
+        "items": items,
+    }
