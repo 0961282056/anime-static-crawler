@@ -458,8 +458,8 @@
           "https://bgm.tv/subject/520559",
           "https://bgm.tv/subject/520559/ep"
         ],
-        "checked_at": "2026-10-17T17:53:57.983316+08:00",
-        "attempted_at": "2026-10-17T17:53:57.983316+08:00",
+        "checked_at": "2026-11-06T06:38:00.389744+08:00",
+        "attempted_at": "2026-11-06T06:38:00.389744+08:00",
         "end_date": "2025-06-18",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1966,7 +1966,7 @@
       }
     }
   ],
-  "generated_at": "2026-11-05T06:30:42.713989+08:00",
+  "generated_at": "2026-11-06T06:38:00.389744+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202504/",
   "quality": {
     "source_count": 65,
