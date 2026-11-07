@@ -2,6 +2,35 @@
   "schema_version": 1,
   "anime_list": [
     {
+      "bangumi_id": "anime-2396",
+      "anime_name": "入間同學入魔了！ if Episode of 魔手黨",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/768151172d19a6a6469308bb21f16cd783f7d7c69fe77fb10f9516e6057a2d91",
+      "premiere_date": "一",
+      "premiere_time": "23:00",
+      "story": "在一個理所當然地充斥著暴力與犯罪的貧民街長大的少年．入間。 有一天，他被黑手黨組織【巴比爾】的頭目．薩利班收養，而充滿波瀾的黑手黨生活也就此揭開序幕。",
+      "original_name": "魔入りました！入間くん if Episode of 魔フィア",
+      "external_ids": {
+        "bangumi": 625303,
+        "anilist": 207251
+      },
+      "episodes": {
+        "total_episodes": 12,
+        "aired_episodes": 0,
+        "airing_status": "not_yet_aired",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/625303",
+          "https://bgm.tv/subject/625303/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
       "bangumi_id": "anime-2316",
       "anime_name": "羅梅莉亞戰記",
       "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/e765cb215201c8d74f05aaaf7557fa35069a6dd0b3e4a42df60a892f25a2e7aa",
@@ -14,19 +43,19 @@
         "anilist": 180894
       },
       "episodes": {
-        "total_episodes": 24,
-        "aired_episodes": 4,
-        "airing_status": "unknown",
+        "total_episodes": 12,
+        "aired_episodes": 5,
+        "airing_status": "airing",
         "episode_count_status": "planned",
-        "fetch_state": "conflict",
+        "fetch_state": "ok",
         "source_urls": [
           "https://bgm.tv/subject/511936",
           "https://bgm.tv/subject/511936/ep"
         ],
-        "checked_at": "2026-10-31T05:25:37.525087+08:00",
-        "attempted_at": "2026-11-07T06:00:02.125150+08:00",
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
         "end_date": null,
-        "note": "來源話數、正篇集目、首播或結束日期不一致，總集數待確認。保留上次確認資料。",
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
       }
     },
@@ -52,8 +81,8 @@
           "https://bgm.tv/subject/624085",
           "https://bgm.tv/subject/624085/ep"
         ],
-        "checked_at": "2026-11-07T06:00:02.125150+08:00",
-        "attempted_at": "2026-11-07T06:00:02.125150+08:00",
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -81,8 +110,8 @@
           "https://bgm.tv/subject/541538",
           "https://bgm.tv/subject/541538/ep"
         ],
-        "checked_at": "2026-11-07T06:00:02.125150+08:00",
-        "attempted_at": "2026-11-07T06:00:02.125150+08:00",
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -110,8 +139,8 @@
           "https://bgm.tv/subject/502123",
           "https://bgm.tv/subject/502123/ep"
         ],
-        "checked_at": "2026-11-07T06:00:02.125150+08:00",
-        "attempted_at": "2026-11-07T06:00:02.125150+08:00",
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -123,17 +152,1603 @@
         "method": "bangumi_api",
         "source_snapshot_date": null
       }
+    },
+    {
+      "bangumi_id": "anime-2381",
+      "anime_name": "透過扭蛋增加同伴͏ 組成最強的美少女軍團",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8d7a0d583cb92da3d5c7dc4201202afb6f53f3997846c7fabef5edaa7e7f24f1",
+      "premiere_date": "四",
+      "premiere_time": "21:25",
+      "story": "沉迷社交遊戲的廢人大倉平八，在手機遊戲《Girls Corps》的轉蛋中，抽中了UR道具「通往異世界的邀請函」，就此穿越到了異世界。 在異世界裡，能夠依賴的只有手機，以及從轉蛋中召喚出來的美少女們。 等待著他的，是一場必須透過抽轉蛋將原本是遊戲角色的她們納為夥伴，並與魔物戰鬥到底的殘酷冒險。 究竟平八能否建立起最強的美少女軍團，並回到原來的世界呢？ 平八全新的轉蛋人生，現在開始！",
+      "original_name": "ガチャを回して仲間を増やす 最強の美少女軍団を作り上げろ",
+      "external_ids": {
+        "bangumi": 561171,
+        "anilist": 194030
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 0,
+        "airing_status": "not_yet_aired",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/561171",
+          "https://bgm.tv/subject/561171/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2376",
+      "anime_name": "Charisma",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/679e294a33b0627e31010332d34b1f845dffab9e66d41f4462db78fd3830add7",
+      "premiere_date": "四",
+      "premiere_time": "23:56",
+      "story": "ここはカリスマハウス。\r\n今日もカリスマな彼らは己の中のカリスマ性を見つめている。\r\n\r\nが、彼らはまだ『真のカリスマ』には辿り着けていないと言える。\r\n故にこうしてカリスマどうしで身を寄せあい、日々カリスマ性を育み、\r\nさらなる高みを目指すいわば仮住まいの状態。\r\n世間には嘲笑する者もいるだろう。\r\nが、カリスマな彼らにはノーダメージ。\r\nむしろそういった逆境を糧にさらなるカリスマを生成し、\r\n見事な『カリスマチャージ』を蓄積させていく。\r\nチャージの先にあるものとは......！？\r\n\r\n凡人にはよくわからないと思いますが、",
+      "original_name": "カリスマ",
+      "external_ids": {
+        "bangumi": 611884,
+        "anilist": 203116
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 0,
+        "airing_status": "not_yet_aired",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/611884",
+          "https://bgm.tv/subject/611884/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 611884,
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "bangumi_id": "anime-2353",
+      "anime_name": "你是地雷嗎？地原同學",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/95916b2f850fb817ac911474ff709a59a2033cd29535c4a456f35a6104ab29c5",
+      "premiere_date": "四",
+      "premiere_time": "24:26",
+      "story": "春天——新學期的日子。經歷了重新分班後，新學期的第一天。旁邊的座位，是傳聞中名喂那位地雷系的人。 宛如人偶般的肌膚，泛紅的眼角。異常紅潤的雙唇。總是帶著一抹憂鬱的表情。在外貌上，散發著滿滿所謂「地雷」氣場的女學生——地原舞。 升上高中二年級的低調平凡男生・黒木，坐在了說是危險人物的地原的旁邊。然而，近距離觀察下的地原，似乎是個和傳聞中有些不一樣的女孩……。 面對地原無法預測的言行舉止，黒木總是被搞得暈頭轉向。而在親眼目睹了地原令人意外的一面後，他對她的印象漸漸開始發生變化。 看似地雷系，意外地卻是個天然呆又笨手笨腳……？喜歡貓……？還是餃子迷們的教主……！？ 與「可愛地雷系？」比鄰而坐的心跳校園喜劇，就此展開！",
+      "original_name": "地雷なんですか？地原さん",
+      "external_ids": {
+        "bangumi": 617493,
+        "anilist": 204579
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/617493",
+          "https://bgm.tv/subject/617493/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2351",
+      "anime_name": "我在意的對象並不是男人",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ee0da649ab5af81856b03cfcb7a71600fddd99bd7c6102e2f9f5d9ecbeb94a42",
+      "premiere_date": "五",
+      "premiere_time": "23:00",
+      "story": "女高中生──綾對在唱片行打工的神祕「帥哥」在意得不得了。 然而，他其實是有如「空氣」般毫無存在感的同學──美月。 從意想不到的相遇迅速發展的愛情最終將會──？",
+      "original_name": "気になってる人が男じゃなかった",
+      "external_ids": {
+        "bangumi": 538296,
+        "anilist": 186822
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 0,
+        "airing_status": "not_yet_aired",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/538296",
+          "https://bgm.tv/subject/538296/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2400",
+      "anime_name": "BanG Dream! MyGO!!!!! // Ave Mujica",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/84bfcbce17e5b5f7b4a67fee06f2fe4ed89e8167ad05e12f9f525c00585fafe0",
+      "premiere_date": "五",
+      "premiere_time": "23:30",
+      "story": "暫無簡介",
+      "original_name": "BanG Dream! MyGO!!!!! // Ave Mujica",
+      "external_ids": {
+        "bangumi": 548133,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 0,
+        "airing_status": "not_yet_aired",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/548133",
+          "https://bgm.tv/subject/548133/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2395",
+      "anime_name": "真･武士傳 YAIBA 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/02b0f0aa197bf1849fbc004a72aa3ecd90adfd72abc97a660077cac6cc1edb98",
+      "premiere_date": "六",
+      "premiere_time": "17:30",
+      "story": "暫無簡介",
+      "original_name": "真･侍伝 YAIBA 第2期",
+      "external_ids": {
+        "bangumi": 589104,
+        "anilist": 199337
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 0,
+        "airing_status": "not_yet_aired",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/589104",
+          "https://bgm.tv/subject/589104/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2378",
+      "anime_name": "傷口與繃帶",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9450ecd89a44ee17133db91e6f69d653d899a839b560956f48cf4b34cd97d447",
+      "premiere_date": "六",
+      "premiere_time": "23:00",
+      "story": "在關東一帶占有一席之地的黑道組織「鷲巢組」的老大，指派少主──切谷負責照顧自己的女兒。 然而，這位大小姐──理世竟有著會因「脆弱」而感到興奮的性癖，也就是「戀弱癖」──！ 「讓我多看看你脆弱的一面。」這是關於任何人都擁有的「癖好」，以及傷與愛的故事。",
+      "original_name": "傷口と包帯",
+      "external_ids": {
+        "bangumi": 668211,
+        "anilist": 214049
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 0,
+        "airing_status": "not_yet_aired",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/668211",
+          "https://bgm.tv/subject/668211/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2383",
+      "anime_name": "殺手寓言 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/953706345b0bccace73a16dde926f7b06d1ed550d7c43cf78b12c26d3fa3a5be",
+      "premiere_date": "六",
+      "premiere_time": "24:55",
+      "story": "怪人、現る──…。幼少期から殺し屋としての英才教育を受けどんな敵も6秒以内に鮮やかに葬り去る最強の天才殺し屋“ファブル”こと佐藤明──「1年間誰も殺してはならない」というボスの指令のもと数々のトラブルに見舞われながらも、平和な日常を取り戻した矢先……新たな魔の手が忍び寄る──陰謀と策略が蠢く新章──。明は「誰も殺さない」という最大のミッションを遂行することはできるのか──？命を懸けた「死のドラマ」が幕を開ける──。",
+      "original_name": "ザ・ファブル 第2期",
+      "external_ids": {
+        "bangumi": 639020,
+        "anilist": 210199
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 0,
+        "airing_status": "not_yet_aired",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/639020",
+          "https://bgm.tv/subject/639020/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 639020,
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "bangumi_id": "anime-2350",
+      "anime_name": "香格里拉·開拓異境 第三季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/911a31d3e7e4ae0aac78b6fe826b0049626ef081919f40e453a2a2c13e5c1fca",
+      "premiere_date": "日",
+      "premiere_time": "17:00",
+      "story": "暫無簡介",
+      "original_name": "シャングリラ・フロンティア 3rd Season",
+      "external_ids": {
+        "bangumi": 548905,
+        "anilist": 189323
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
+    },
+    {
+      "bangumi_id": "anime-2380",
+      "anime_name": "Love Live! 蓮之空女學院學園偶像俱樂部",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bb43a9fc8f717e1b3c02e2e59f6615290f49e49074694281f5288f5b144f0279",
+      "premiere_date": "日",
+      "premiere_time": "22:30",
+      "story": "私立蓮ノ空女学院。\r\n石川県金沢市にある、歴史と伝統がいまも息づく学校。\r\n\r\n皆を花咲かせようと、夢を叶えようと、\r\n懸命に走る少女たちが集うその場所に。\r\n\r\nかつて「笑顔の天使」と呼ばれたひとりの少女が、\r\n桜とともにやって来た。\r\n\r\n降り積もる別れと出会いの中で、\r\n封じた過去は動き出す時間へと変わり、\r\n彼女たちの歩みを、あざやかに彩りはじめる。\r\n\r\nこれは、自分を変えたいと夢見る少女たちの\r\n「みんなで叶える物語」――",
+      "original_name": "ラブライブ！蓮ノ空女学院スクールアイドルクラブ",
+      "external_ids": {
+        "bangumi": 638773,
+        "anilist": 210157
+      },
+      "episodes": {
+        "total_episodes": 7,
+        "aired_episodes": 0,
+        "airing_status": "not_yet_aired",
+        "episode_count_status": "planned",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/638773",
+          "https://bgm.tv/subject/638773/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 638773,
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "bangumi_id": "anime-2348",
+      "anime_name": "ONE PUNCH MAN 一拳超人 第3季 第2季度",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/3c1dd7766c41bf1e2203001c9ff758a25c6c94155478e015e4b98bc3b5466677",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介",
+      "original_name": "ワンパンマン SEASON 3 第2クール",
+      "external_ids": {
+        "bangumi": 618527,
+        "anilist": 204747
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
+    },
+    {
+      "bangumi_id": "anime-2349",
+      "anime_name": "SAKAMOTO DAYS 坂本日常 第2季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f59d9f36169f6be3781c5ba354ebabb211988ba88e323b66d7a0a96b355b8bf1",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "彼は愛する家族との平和な日常を守る為、\r\n再び戦場へと足を踏み入れる！\r\n\r\n暗躍するＸ（スラー）の情報をゲットすべく、\r\n坂本は、シンと共にJCCへの潜入捜査をスタート。\r\n\r\n一方、京都任務に向かうORDERの南雲、神々廻、大佛は、\r\nそこで想定外の刺客に襲撃される……！\r\n\r\n様々な謀略が渦巻く中、\r\n若き日の坂本、南雲、リオン、そしてＸ（スラー）の因縁が今、明かされる――。",
+      "original_name": "SAKAMOTO DAYS 第2期",
+      "external_ids": {
+        "bangumi": 616760,
+        "anilist": 204363
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/616760",
+          "https://bgm.tv/subject/616760/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 616760,
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "bangumi_id": "anime-2352",
+      "anime_name": "結界師的一輪華",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4971ed74118ab1f11e1837760b8e64cdbcb9cb073965d07f423f392282da538b",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "自遠古以來，五大柱石保護日本不受外敵侵犯。十八歲的一瀨華，出生於守護柱石的術者旁系分家，但她總是被拿來與優秀的雙胞胎姊姊比較，遭到輕蔑與欺凌。某天，屬於她的強大力量突然覺醒，但希望過著寧靜生活的華選擇隱藏自己的力量，不料，這份力量被本家的年輕新任家主一之宮朔發現，朔強逼華與他結婚，成為有期限的契約新娘。 雖然遇到不少考驗，但在朔的身邊的華，也逐漸釋放出真正的自己……？",
+      "original_name": "結界師の一輪華",
+      "external_ids": {
+        "bangumi": 579425,
+        "anilist": 197619
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/579425",
+          "https://bgm.tv/subject/579425/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2354",
+      "anime_name": "要畫就要來真的",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/edf2f4261ea124128260a9ac54227e027b0dd87eed7377e67ff29e0eec7b1e5b",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "深愛著二次元的上原同學，懷抱著成為漫畫家的夢想！！ 當他帶著親手創作的戀愛喜劇漫畫前去投稿時，卻被評說「戀愛缺乏真實感」，使他打算放棄夢想… 就在此時，同班的辣妹・宮本同學無意間看見了他的原稿。原本毫無交集的兩人，竟因此展開了一場假想戀愛──！？ 為了漫畫而瞞著眾人！ 並將戀愛經驗活用在漫畫創作！",
+      "original_name": "描くなるうえは",
+      "external_ids": {
+        "bangumi": 609634,
+        "anilist": 202564
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/609634",
+          "https://bgm.tv/subject/609634/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2355",
+      "anime_name": "啟程的魔王城",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/05cbce97d1dd3976a293cffd903a1c44b56a7868edabf677070b3fd84f3c226b",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "勇者打倒魔王後，世界恢復和平。由於不再有冒險者需要冒險道具，道具店「酢橘屋」的店長「村人」也因此相當苦惱。 某日突然出現了一名少女，她的真實身份竟然是「魔王」。少女一心想要尋死，村人為了拯救少女而冒險跳下懸崖，卻導致自己不幸身亡。 為了救回村人的性命，少女「瑪歐」下了一個決定，將自己的血液分給村人。然而，這卻導致了意料之外的事情發生……。",
+      "original_name": "すだちの魔王城",
+      "external_ids": {
+        "bangumi": 663525,
+        "anilist": 213497
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/663525",
+          "https://bgm.tv/subject/663525/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2356",
+      "anime_name": "賢者大叔的異世界生活日記",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d8191b537e9f54d93bca2e6f14b00222e0ae2ac76a2a411b9fd47716d27ea566",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "無業大叔大迫聰（40歲）自從遭到裁員，便過著沉迷於遊戲中的日子。名副其實爬到頂尖玩家的他，因為登入中發生的事故，人生於是落下帷幕。 回過神來，那裡便是不曾見過的大深綠地帶。據女神所言，他似乎繼承了遊戲能力，但周圍卻有一堆危險魔物……期盼平穩生活的他，能受到異世界轉生的祝福嗎？ 賢者！魔法教師！原創的複合魔法！然後最重要的就是想娶老婆！塞滿異世界轉生趣味之大叔生活日記，終於拉開序幕！",
+      "original_name": "アラフォー賢者の異世界生活日記",
+      "external_ids": {
+        "bangumi": 643349,
+        "anilist": 211258
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/643349",
+          "https://bgm.tv/subject/643349/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2357",
+      "anime_name": "世界頂尖的暗殺者轉生為異世界貴族 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f593e7e5cef9a09b5161908b20b5f6b6d19991fc768119cac979aead94dda5ef",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "世界一の暗殺者が、暗殺貴族の長男に転生した。\r\n異世界で生まれ変わる条件として、彼が女神から請け負ったミッションは只一つ。\r\n\r\n【人類に厄災をもたらすと予言された《勇者》を殺すこと】\r\n\r\nそれこそが世界最高の暗殺者が、新たな人生で果たすべき使命であった。\r\n現代であらゆる暗殺を可能にした幅広い知識と経験、\r\nそして異世界最強と謳われた暗殺者一族の秘術と魔法。\r\nそのすべてが相乗効果をうみ、\r\n彼は史上並び立つものがいない暗殺者へと成長していく――。\r\n\r\n「面白い、まさか生まれ変わってもまた暗殺することになるとはね」\r\n\r\n転生した\"伝説の暗殺者\"が更なる高みへと駆け上がる!\r\n限界突破のアサシンズ・ファンタジー!!",
+      "original_name": "世界最高の暗殺者、異世界貴族に転生する Season2",
+      "external_ids": {
+        "bangumi": 456077,
+        "anilist": 169579
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/456077",
+          "https://bgm.tv/subject/456077/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 456077,
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "bangumi_id": "anime-2358",
+      "anime_name": "黑岩目高不把我的可愛放在眼裡 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ef4df05efb377874161c5fd5c2696e3f51e5adf55c2e5a7f070a80475a4734a1",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "川井モナ17歳。息をするようにモテる女。\r\n今まで自分になびかない男などいなかった彼女の前に、\r\n唯一オチない男・黒岩メダカが現れた。\r\n\r\n「アイツのことなんか好きじゃない！」\r\nそう言いながら、メダカを惚れさせようと奮闘するモナ。\r\nしかし、気づけば自分が恋にオチていた！\r\n\r\n自分の“好き”を自覚したモナが、次に目指すはメダカとのお付き合い。\r\nしかし、旭……そして新たなライバルの登場によって、\r\n恋模様はさらに波乱の展開へ――!?\r\n\r\n果たしてモナの想いは成就するのか？\r\nＴＶアニメ『黒岩メダカに私の可愛いが通じない』\r\n第２期、いよいよ開幕ですッ！",
+      "original_name": "黒岩メダカに私の可愛いが通じない Season2",
+      "external_ids": {
+        "bangumi": 547036,
+        "anilist": 188892
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/547036",
+          "https://bgm.tv/subject/547036/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 547036,
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "bangumi_id": "anime-2359",
+      "anime_name": "在異世界獲得超強能力的我，在現實世界照樣無敵 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/4d882dd3c992540740c8e04acd888408e42198079116bae9885b33b6ee606d50",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "伝説の創世竜・オーマや、ユティの中に潜む『邪』の化身・クロを仲間に迎え入れ『拳聖』を打ち破った優夜。\r\n新たに手に入れた『邪』の力を自分のものにするべく修行に明け暮れるその裏で、刻々と勢いを増す『邪』の勢力。\r\n一方、異世界のレガル国では、最強の聖『剣聖』と優夜の御前試合が執り行われることになっており……!?\r\n人生逆転ファンタジー第2章、堂々開演！",
+      "original_name": "異世界でチート能力を手にした俺は、現実世界をも無双する ～レベルアップは人生を変えた～ 2nd Season",
+      "external_ids": {
+        "bangumi": 638290,
+        "anilist": 209980
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/638290",
+          "https://bgm.tv/subject/638290/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 638290,
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "bangumi_id": "anime-2360",
+      "anime_name": "歷史之眼",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d67894e7034e2b50d88d4dafe0be687ad2798c4f6af21829d41f28443986350f",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "尤米尼斯，他親身處於留名於歷史的戰場上。他也參與了多場戰爭的策劃。 但是為什麼，他的名字沒有和國王與其他部將一起被紀錄下來？因為他正是「做紀錄」的那個人嗎？ 然而在某一天，他不再記錄了。這一名紀錄者成了「被紀錄的人」，踏上歷史的舞台。",
+      "original_name": "ヒストリエ",
+      "external_ids": {
+        "bangumi": 619074,
+        "anilist": 205130
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/619074",
+          "https://bgm.tv/subject/619074/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2361",
+      "anime_name": "末世孤雄",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/52f3e583d648c7ba699f0b987142da5b4747588960925358c2660db521c79b13",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "我──武村雄介（原上班族），應該被殭屍……咬了才對。 清醒後鎮上到處都是殭屍。但不知為何只有我沒被殭屍襲擊。 一時間我也搞不清狀況……如果世界已經崩壞了，不如照自己的想法過活更有趣。 就在此時，我發現了倖存的少女「深月」。「請救救我。」她向我懇求。 但我該無償救她嗎？作為救她的代價，我向她提出要求…… 「如果想得救，就必需做出犧牲──」 突如其來的殭屍危機。就用這個無人知曉的無敵體質，從後末日世界殺出重圍吧！",
+      "original_name": "ゾンビのあふれた世界で俺だけが襲われない",
+      "external_ids": {
+        "bangumi": 478555,
+        "anilist": 174427
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/478555",
+          "https://bgm.tv/subject/478555/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2362",
+      "anime_name": "公主騎士的小白臉",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0c0bb62a48169d52544ccc1e0ad1de5205a2caa3ff8fb9d6a69620305da2f97e",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "「馬修，你是我重要的保命繩。」 這裡是灰與混沌的迷宮都市。盯上無數財寶的害蟲聚集於此，公主騎士艾爾玟就像是一朵在此處綻放的深紅之花。 她是矢志復興王國，征服迷宮的急先鋒──而賴在她身邊的前冒險者馬修則是這個城市的眾多害蟲之一。 大家都批評他是個遊手好閒，打架又弱的軟腳蝦，還是個會跟女人拿零用錢浪費在喝酒與賭博上的小白臉。 可是，這座城市裡沒人知道他的真面目，連公主騎士殿下也不知道──",
+      "original_name": "姫騎士様のヒモ",
+      "external_ids": {
+        "bangumi": 537727,
+        "anilist": 186741
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/537727",
+          "https://bgm.tv/subject/537727/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2363",
+      "anime_name": "一式警花動了戀心。",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/bbd05917db2b70d7ac0d7a0ee3bcca928ec3d7a45fd2e2b48db04029ceec2644",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "17歲的菁英警官──一式凜奈，與不靈光的偵探──六反田明司，兩人竟私底下開始偷偷交往…!?",
+      "original_name": "一式さんは恋を知りたい。",
+      "external_ids": {
+        "bangumi": 598013,
+        "anilist": 200578
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/598013",
+          "https://bgm.tv/subject/598013/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2364",
+      "anime_name": "筆、手銬和事實婚",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b0fc0799579a805de0a4cabe018b11865b6d9c16111b9900963cbe74762c8934",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "中年刑警切鮫銳二（40），在某個案件現場遇見了完全不出聲說話的神秘女高中生梔子鶇。 切鮫看到鶇以畫得超爛的畫接二連三揭穿案件真相感到十分吃驚，但鶇這時突然向切鮫求婚。 這場賭上他刑警生涯卻又無法逃避的「事實婚」，最後到底會…？",
+      "original_name": "ペンと手錠と事実婚",
+      "external_ids": {
+        "bangumi": 642052,
+        "anilist": 211070
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/642052",
+          "https://bgm.tv/subject/642052/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2365",
+      "anime_name": "巨人大小姐",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/9e457f8341630f220bfa5e2ee8cb25a7836a6c99405e8c768b1799d9befebb4f",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "財閥千金・富士動機子讓她在四歲時收到的生日禮物「城市」蓬勃發展。 然而在某一天，有侵略者襲擊她所重視的城市！ 管家賽巴斯欽淡然地將巨大化飲料交給驚慌的大小姐…",
+      "original_name": "ジャイアントお嬢様",
+      "external_ids": {
+        "bangumi": 541410,
+        "anilist": 187303
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/541410",
+          "https://bgm.tv/subject/541410/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2366",
+      "anime_name": "游戲世界轉生〈地職〉",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/d49fb4eca5d5089045805f410cc88ea220e96c59898d0d17cb038bb33abd8810",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "擁有獨特的1021種職業、驚人的400種以上結局，越是深入鑽研，就越能獲得全新力量與道具的傳說級神作《地下城就活指南》，通稱《地職》。 遊玩《地職》超過8000小時、將其鑽研到極致的重度玩家（玩家名稱：ゼフィルス），轉生後的目的地……沒想到竟然就是《地職》的世界——！ 獲得職業、延攬夥伴、組成隊伍與公會，向地下城發起挑戰。 這是一名轉生到遊戲世界的玩家，一邊享受夢寐以求的真實版《地職》、一邊盡情遊玩的地下城攻略奇幻故事！",
+      "original_name": "ゲーム世界転生〈ダン活〉～ゲーマーは【ダンジョン就活のススメ】を〈はじめから〉プレイする～",
+      "external_ids": {
+        "bangumi": 634466,
+        "anilist": 209224
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/634466",
+          "https://bgm.tv/subject/634466/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2367",
+      "anime_name": "轉生精靈精通魔法後踏上旅程，因為長壽而成為活生生的傳說",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0cc4ebc86b497e6e17387e1b2575238f34a4659b64130d7be6aa8af11650cf8c",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "轉生成了精靈—— リース因一場突如其來的意外結束了平凡的人生，轉生為擁有1000年壽命的精靈。為了度過無悔的人生，並留下自己曾經活過的證明，リース踏上了旅程，並與自己曾經救過一命的少女再次相遇—— 這是一部描繪轉生為精靈的青年，經歷相遇與離別之旅的異世界奇幻故事！",
+      "original_name": "魔術を極めて旅に出た転生エルフ、持て余した寿命で生ける伝説となる",
+      "external_ids": {
+        "bangumi": 609035,
+        "anilist": 202503
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/609035",
+          "https://bgm.tv/subject/609035/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2368",
+      "anime_name": "悠久愚者·阿茲利的賢者之道",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0d85ac4d0b77344ba9d2cb47cd2c8092093da1dd167ed8c13f6d2e1243b1247e",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "從魔法大學落榜的落魄青年阿茲利，喝下自己偶然提煉出的「悠久靈水」後，獲得長生不老之軀。 他遠離俗世，閉門不出地研究魔法與魔術，不知不覺就過了5000年，回過神來已經變成古代魔法的偉人…！ 阿茲利，享受第二次的青春生活……！？",
+      "original_name": "悠久の愚者アズリーの、賢者のすゝめ",
+      "external_ids": {
+        "bangumi": 625669,
+        "anilist": 207328
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/625669",
+          "https://bgm.tv/subject/625669/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2369",
+      "anime_name": "我這個真正的聖女遭到放逐。所以這個國家要完蛋了",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/146baf422400505f25c5ead047ac05c5efed149989bee354d315699b45b718b5",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "「我們已經不需要妳這個冒牌聖女了！」 聖女エリアーヌ突然被未婚夫——第一王子クロード宣告解除婚約，甚至面臨了被驅逐出境的下場……。 早就對クロード的精神暴力與出軌感到厭煩的エリアーヌ，決定藉此機會踏上旅程！ 在這趟旅途中，她遇見了鄰國王子——ナイジェル。 作為幫他脫離險境的回禮，エリアーヌ住進了他的城堡，然後エリアーヌ開始在鄰國展露出她真正的力量…… 被驅逐聖女幸福滿滿的重新出發奇幻物語！",
+      "original_name": "真の聖女である私は追放されました。だからこの国はもう終わりです",
+      "external_ids": {
+        "bangumi": 677162,
+        "anilist": 214461
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/677162",
+          "https://bgm.tv/subject/677162/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2370",
+      "anime_name": "我是不才惡女~雛宮蝶鼠互換傳~ 第二季度",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/425b090c404c9806cb321ed1d4a8c124a5ec47c42b186ba368a58a57de80047e",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "玲琳と慧月の活躍により、後宮での呪いの騒動は収束。入れ替わりを通じて、玲琳と慧月は互いの人柄を知り、二人の間には友情が芽生え始めていた。\r\n季節は移り変わり、初秋。皇太子と雛女が豊作を願う儀式〈豊穣祭〉の開催地が、朱家の治める南領に決まった。後見の妃が不在の中、慧月は豊穣祭の主催として重圧を感じながらも懸命に準備を進めていく。一方、玲琳はそんな慧月を全力で支えながら、はじめての外遊に心を躍らせていた。\r\nしかし到着して早々に、予期せぬ事件が発生し儀式は中断。取り乱した慧月の術が暴走し、玲琳と慧月は再び入れ替わってしまう。さらに、混乱のさなか、入れ替わり後の玲琳が謎の人物に攫われてしまい――⁉\r\n過保護な玲琳の二人の兄・黄（こう）景行（けいこう）と黄（こう）景彰（けいしょう）も巻き込んで、事態は思わぬ方向へと進んでいく。慧月を陥れようと忍び寄る、新たな黒幕の正体とは……。\r\n正反対の少女が繰り広げる痛快“入れ替わり”逆転劇、第二幕「はじめての外遊」編、開幕！",
+      "original_name": "ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～ 第2クール",
+      "external_ids": {
+        "bangumi": 705345,
+        "anilist": 217070
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/705345",
+          "https://bgm.tv/subject/705345/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 705345,
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "bangumi_id": "anime-2371",
+      "anime_name": "茉莉花官吏傳",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/1b1e51d55671a7b3cd49d8a40fae4780bd6cbdb56c02eb85f994b580fd07890e",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "在白樓國後宮工作的女官——晧茉莉花，她的特長是「記性比一般人好」。 無論是放在倉庫裡的物品位置，還是書籍的名稱與內容等，她只要看過一次就能完美記住。 某次，茉莉花代替同事，被指派去擔任名門子弟相親的練習對象。 然而，當她前往指定地點時，不知為何，出現在那裡的竟是容貌端麗、文武雙全，完美的白樓國皇帝——珀陽。 珀陽對她那罕見的記憶力產生了興趣。受到珀陽青睞的茉莉花，開始頻繁地被召見…… 這是一個原本打算安分度過配角人生的少女，最終成長為國家希望的故事。",
+      "original_name": "茉莉花官吏伝",
+      "external_ids": {
+        "bangumi": 590392,
+        "anilist": 199590
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/590392",
+          "https://bgm.tv/subject/590392/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2372",
+      "anime_name": "被吊銷冒險者執照的大叔，與愛女一起歌頌悠閒人生",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/fbf2f767e50a80da91cbdb053ffd6fa15ff053d596a5549aad23de53131d3622",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "達克拉斯過去曾是傳說中的最強魔術師。可是，如今他到了被稱為大叔的年紀後，卻體能衰退、全身病痛。 當他變成只要被敵人打中一招，就會受到致命傷的狀況後，最終被公會吊銷了冒險者執照。 ──四處流浪的達克拉斯在旅途中，遇到了一位被詛咒的少女，並且救了她。在拯救少女的過程中，他再次找回最強大的力量。 為了請求達克拉斯協助，國王、騎士團與公會紛紛向他湧了過去，不過…… 「我現在忙著養小孩，你們去找其他人吧。」達克拉斯把只親近他的少女當成女兒，決定繼續踏上兩人的隨興之旅。 在星空下架好帳篷，喝著熱湯；在稻浪搖曳的道路上，緩緩漫步；在旅程途中為了幫助別人，一不小心用外掛開無雙──相親相愛的父女兩人，今天也在持續冒險中。",
+      "original_name": "冒険者ライセンスを剥奪されたおっさんだけど、愛娘ができたのでのんびり人生を謳歌する",
+      "external_ids": {
+        "bangumi": 619614,
+        "anilist": 205430
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/619614",
+          "https://bgm.tv/subject/619614/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2373",
+      "anime_name": "和我同居的劍聖女師父實在太可愛，每天都好幸福！",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ea6ee884e3d3ed9ada1cc95c971ec95025de31d7a2f8e73fdb427c32de10b892",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "想要變強的少年──尤金．道森與被譽為劍聖的最強劍士──莉莎．巴爾桑德拉住在一起修行。 與雖然實力強大，但私生活脫線又可愛的師父一起度過的日常非常地幸福… 本以為是如此，可是毫無防備的香豔肉體與毫無自覺的誘惑讓尤金根本顧不上修行…!? 為劍聖師父心猿意馬的同居戀愛喜劇開幕！",
+      "original_name": "同居している剣聖の女師匠が可愛すぎて毎日幸せです",
+      "external_ids": {
+        "bangumi": 622045,
+        "anilist": 206798
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/622045",
+          "https://bgm.tv/subject/622045/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2374",
+      "anime_name": "朱音落語 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/8e8715f9f73aa6bffa76da18f85bf792fab67ced57e8eb49f8cf2d9203d0b706",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "「これからお前が知るのは、\r\n　落語の歴史そのものだ」\r\n\r\n噺家の父の落語に魅せられ、\r\n落語界の最高位〝真打〟を目指す\r\n桜咲朱音。\r\n\r\n高校卒業とともに正式に志ぐま一門に弟子入り\r\nを果たし、\r\n〝阿良川あかね〟として落語家の第一歩を\r\n踏み出した朱音が訪れたのは、\r\n毎日のように落語が行われる\r\n伝統ある定席のひとつ――弥栄亭。\r\n\r\n〝真打〟たちがひしめく噺家の本拠地で、\r\nついに朱音の修業の日々が幕を開ける。\r\n\r\n話芸の極致で噺家たちが鎬を削る、\r\n本格落語ものがたり――前座修業篇 突入!!",
+      "original_name": "あかね噺 第2期",
+      "external_ids": {
+        "bangumi": 662388,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/662388",
+          "https://bgm.tv/subject/662388/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 662388,
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "bangumi_id": "anime-2375",
+      "anime_name": "轉生為胖惡女後，不知為何被最終BOSS王子大人迷戀",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/cbde6173f5ec3554d9bc098088be1ee97b591cd85be0c21aeeaba4452d85d772",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "因病過世後轉生而成的身分，竟是人氣小說中的反派千金——任性、胖胖又惹人厭的セリーヌ。照這樣下去，等待著她的將是如同原著劇情一般，被王子殺死的悲慘結局……！ 「這一世我想過上平穩的生活」，セリーヌ發誓改過自新，並為此拼盡全力奮鬥。 努力有了回報……但回過神來，卻發現自己被捲入了意料之外的溺愛與執著之中！？ 被病嬌愛得太過火啦♡胖胖惡女的轉生奇幻物語，就此開幕！",
+      "original_name": "おデブ悪女に転生したら、なぜかラスボス王子様に執着されています",
+      "external_ids": {
+        "bangumi": 627283,
+        "anilist": 207782
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/627283",
+          "https://bgm.tv/subject/627283/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2377",
+      "anime_name": "異世界轉生騷動記",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/34613b966dadc8e977202270fb03be1eb7c9402a6e64972bda498cc88f7bfe34",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "マウリシア王國的貴族，コルネリアス伯爵家的嫡子——バルド。在他的體內，竟然寄宿著侍奉上杉家的戰國武將・岡左内，以及熱愛獸耳的阿宅高中生・岡雅晴的靈魂！ 守財奴武將・左内的靈魂磨練了バルド的經商才能與武藝，身為現代人的雅晴則憑藉其知識，帶來了無數的發明與龐大的利益。 三個靈魂合而為一，讓バルド在領地經營與戰鬥中逐漸嶄露頭角。不久之後，他甚至成為了足以左右國家命運的存在……！？ 貴族×武將×阿宅——以三位一體之姿在異世界飛黃騰達吧！！",
+      "original_name": "異世界転生騒動記",
+      "external_ids": {
+        "bangumi": 635060,
+        "anilist": 209221
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/635060",
+          "https://bgm.tv/subject/635060/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2379",
+      "anime_name": "ARCANADEA 阿爾卡納蒂亞",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/ae2d8702d8390bfaa89de80b25705b3e56f54f4d3cecbe478191f59ff2ade628",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "因為發現次世代能源「アルカナ粒子」而達成飛速發展的近未來。 在毫無幹勁地度日的大學生・空閑翔吾面前，手掌大小的少女・ルミティア突然從天而降。從被她稱為「Master」的那一瞬間起，空閑的日常開始一點一點地產生變化。 改變世界平衡的『アルカナ粒子』；為世界帶來變化的『壊世ノ夜―カイセノヨル―』；在世界各地引發異變的『アルカナストーン』； 空閑那原本黯淡無色的日子，因為與ルミティア的相遇而迅速染上色彩。",
+      "original_name": "アルカナディア",
+      "external_ids": {
+        "bangumi": 529682,
+        "anilist": 185697
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/529682",
+          "https://bgm.tv/subject/529682/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2382",
+      "anime_name": "SSS級死而復生的獵人",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/5f79f47b4cadc60bc92024be4ffd3e6263f800e228c6e5d0f594756e9f46c491",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "某日，神祕的「塔」橫空出世，徹底改變了世界秩序。少數登塔者被賦予了強大的「技能」，吸引無數渴望力量的人湧入，展開激烈的狩獵。 在塔的底層，F級獵人「金孔子」，日復一日地掙扎求生。他仰望著排行榜頂端、光芒萬丈的「炎帝」，深知自己與成功遙不可及。這份嫉妒之心，使金孔子意外獲得了一項顛覆認知的S級技能！ 【獲得技能卡：想像你一樣】 能夠複製敵人技能的S級技能卡，足以讓任何獵人一步登天。但當他看見啟動條件時，所有的興奮瞬間化為冰冷。 ※但，必須死掉！ 生存與變強的渴望，竟成為一組無法共存的矛盾。為了竊取強者的技能，從塔底爬向頂峰，F級獵人金孔子的逆轉人生正式開始！",
+      "original_name": "死して生きるSSS級ハンター",
+      "external_ids": {
+        "bangumi": 700399,
+        "anilist": 216624
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/700399",
+          "https://bgm.tv/subject/700399/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2384",
+      "anime_name": "打雜賦予術師察覺到自己最強",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/90d773df978cbabcbc8e62154a094d451dd57845245d97281bbeed9c17eba718",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "賦予術師ヴィム＝シュトラウス，在隊伍中作為非戰鬥人員，一手包辦了所有支援與打雜工作，一直在戰鬥的幕後默默支撐著夥伴。 某天，他為了拯救陷入危機的隊友，挺身而出獨自擊敗了樓層主；然而隊長クロノス卻因覺得功勞被搶而大怒，將他逐出了隊伍。 失去容身之處、不知所措的ヴィム，在身為青梅竹馬兼「跟蹤狂」的ハイデマリー勸誘下，成為了最大型隊伍「夜蜻蛉（ナキリベラ）」的一員。 當對自身能力毫無自覺的「打雜工」察覺到自己真正的力量時，故事的齒輪也隨之大幅轉動——。",
+      "original_name": "雑用付与術師が自分の最強に気付くまで ～迷惑をかけないようにしてきましたが、追放されたので好きに生きることにしました～",
+      "external_ids": {
+        "bangumi": 636493,
+        "anilist": 209661
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
+    },
+    {
+      "bangumi_id": "anime-2385",
+      "anime_name": "祝福 BLESS",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/848e5b09eb3cb1c31b9523d034e6019fa6e14582f91eec1cd851a908424ddd10",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "自認沒有才能，將想做的事藏在心裡，一直迎合他人度日的男子高中生‧宇田川愛亞。 某天，他突然得和班上一個不起眼的女孩‧炭崎純攜手參加學園祭的比賽並負責化妝。 愛亞在炭崎身上感受到一股獨特的魅力，一股炭崎平常不曾在校園中顯露出來的魅力，他決定透過化妝將炭崎的魅力展現出來，向學園祭的舞台發起挑戰－－！",
+      "original_name": "ブレス",
+      "external_ids": {
+        "bangumi": 633697,
+        "anilist": 208766
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 0,
+        "airing_status": "not_yet_aired",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/633697",
+          "https://bgm.tv/subject/633697/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2386",
+      "anime_name": "怪物彈珠 至燃×至死 死神與我的異常之戀",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b4ee65b1bc9168b351d97e3f6711f0ea8193ae85ed09b6765f504c5d77a8ed25",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "故事圍繞住在十三坂商店街食堂「飯屋」的高中生「燎燃」，與渾身散發神祕氣息的謎樣美少女「瑟汀」展開。",
+      "original_name": "メラ×デス 死神と僕の異常な恋",
+      "external_ids": {
+        "bangumi": 708167,
+        "anilist": 217433
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 0,
+        "airing_status": "not_yet_aired",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/708167",
+          "https://bgm.tv/subject/708167/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2387",
+      "anime_name": "風之繼承者",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/20bf8ffdf45d5877acab79e241fe23cc88955815f26ae79e572039c16e9f1ad8",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "文久3年6月。\r\n京都・壬生浪士組屯所に\r\n記憶を失ったひとりの隊士が運び込まれる。\r\nそんな彼に手を差し伸べたのは\r\n壬生浪士組助勤・沖田総司。\r\n「あなたの名前は立川迅助ですよ」\r\nそして始まる記憶喪失の迅助の、\r\n隊士としての日々。\r\n図らずも幕末の混迷のなか\r\n壬生浪士組――\r\n新選組はその存在感を増していき、迅助、\r\nそして新選組は激動の波に呑まれていく。\r\nそして迅助がすべての記憶を\r\n取り戻したとき\r\n世界は大きな変貌を遂げる。",
+      "original_name": "風を継ぐもの",
+      "external_ids": {
+        "bangumi": 584910,
+        "anilist": 198728
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/584910",
+          "https://bgm.tv/subject/584910/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 584910,
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "bangumi_id": "anime-2388",
+      "anime_name": "殘月下的梅賽德斯",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/2d2d863efb24137cbf514fe6d28baf3aa29896f9f49d9806e739f6e67915fd98",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "從現代日本的上班族轉生為吸血鬼的少女・メルセデス。對於前世毫無目標、在空虛中走完一生，她懷抱著深深的懊悔。 以貧窮貴族吸血鬼的身分迎來第二次人生的メルセデス，祈願這一世一定要「無悔地活著，然後笑著死去」。 為了擺脫貧困的生活，憑自己的力量開闢道路，她決心成為探索者（Seeker）挑戰地下城。 然而，在經過不斷修行、實力日益精進的她面前，等待著她的卻是盤踞在地下城最深處的魔物…以及地下城背後的巨大謎團……！ 不能再帶著缺憾結束一生——向月亮起誓的吸血鬼少女，其攻略冒險奇幻故事，正式開幕！",
+      "original_name": "欠けた月のメルセデス",
+      "external_ids": {
+        "bangumi": 576533,
+        "anilist": 197095
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
+    },
+    {
+      "bangumi_id": "anime-2389",
+      "anime_name": "神探小紅帽",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/33339abf0160d5f3c5ea5401a5b3263ca5dce8fedc1049ac0a3259c197c48aa2",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "在城鎮的邊緣，住著一位名叫「小紅帽」的女孩。她為了某個目的不得不踏上旅程。 然而不可思議的是，她在旅途中卻屢次被捲入事件之中。小紅帽運用她天生的好奇心與聰明的頭腦，將事件一一解決。 「你的犯罪計畫，為什麼會這麼草率呢？」 這是一個眾所皆知的童話世界——。",
+      "original_name": "赤ずきん、旅の途中で死体と出会う。",
+      "external_ids": {
+        "bangumi": 694505,
+        "anilist": 214969
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/694505",
+          "https://bgm.tv/subject/694505/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2390",
+      "anime_name": "蝙蝠殺手",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/0393c528b1ba2e8b97e528c51f2edbcba77c191f9d04ee970cd4aa37db778080",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "為了對付蔓延橫行的凶惡犯罪者，這個世界採取了超越法規之上的措施，選擇了「公家」屠宰者‧紅守黑湖。還有她的監視者，熱愛交通工具的搭檔‧屠櫻雛子。",
+      "original_name": "MURCIÉLAGO-ムルシエラゴ-",
+      "external_ids": {
+        "bangumi": 665415,
+        "anilist": 213877
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/665415",
+          "https://bgm.tv/subject/665415/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2391",
+      "anime_name": "婚姻劇毒 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/00b4c092bf0915404aa277fb56639ac9dbbc5e2fa9a8cbe2312c3e2ddecb7f9d",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介",
+      "original_name": "マリッジトキシン 第2期",
+      "external_ids": {
+        "bangumi": 664921,
+        "anilist": 213752
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/664921",
+          "https://bgm.tv/subject/664921/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2392",
+      "anime_name": "愛情接合器",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/7f336bb36a0d6363feae4cae6a80df5836b5de95fc45b11806816f8c70deaebb",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "唯一的親哥哥死後，一直支持著照的是，哥哥給她的手機所收到的一個叫ＤＡＩＳＹ的謎樣人物傳來的簡訊。 有一天，照因為打破玻璃而被迫成為不良校工•黑崎的僕人、替他打雜。這個超差勁的男人的真面目究竟是…!?",
+      "original_name": "電撃デイジー",
+      "external_ids": {
+        "bangumi": 658909,
+        "anilist": 213052
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": 0,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/658909",
+          "https://bgm.tv/subject/658909/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2393",
+      "anime_name": "平屋慢生活",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/140226aa77be42378854f38f3e0e2c1704bb046ca6975dc7a92faf485ac923d3",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "生田弘人，29歲，打工族。 一位住在附近的熟識婆婆只因為他的好人品，就免費將一棟獨棟平屋轉讓給他。 於是，他便和搬到東京的18歲表妹夏美一起在這棟平屋裡生活。 雖然生活中充滿不安、迷惘以及生存的困難，但全都會轉變為療癒的慰藉，平屋慢生活，就此展開。",
+      "original_name": "ひらやすみ",
+      "external_ids": {
+        "bangumi": 572435,
+        "anilist": 196333
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/572435",
+          "https://bgm.tv/subject/572435/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2394",
+      "anime_name": "我與悠哥哥！",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/12dd301258d9f3dc14367d31931404ca0aa07ee2ae61a2803e7587da99185472",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "小學生．澤代椿和高中生．清水悠因為兩家是鄰居，而且父母們的交情也很好，所以悠從小就很照顧椿，一直視他為弟弟。 椿還很小的時候曾經用玩具打傷了悠，在悠的眉毛那邊留下了傷痕，悠在懂事後知道這件事覺得很後悔，於是決定要對悠負責，當他的男友。 雖然椿把悠當成了共度一生的對象，但是遲鈍的悠完全沒有察覺到椿的感情…",
+      "original_name": "俺と悠兄！",
+      "external_ids": {
+        "bangumi": 545967,
+        "anilist": 188546
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/545967",
+          "https://bgm.tv/subject/545967/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      }
+    },
+    {
+      "bangumi_id": "anime-2397",
+      "anime_name": "拉麵赤貓 第二季",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/f94c95b4cdd8c8151cd3118ccd58e8dd852eb1c88706e1a9bcaa00556166a810",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "猫だけで営むお店『ラーメン赤猫』、そこにバイトの面接で訪れた人間の珠子。\r\n正直に犬派と答えた彼女はあっさりと採用が決まり、任されたお仕事は猫たちのお世話係。\r\nブラッシングを通じて垣間見える猫模様に、様々なお客様が織りなす人間模様。\r\n身体も心も温まる『ラーメン赤猫』、愛しさ大盛り、召し上がれ。",
+      "original_name": "ラーメン赤猫 其の二",
+      "external_ids": {
+        "bangumi": 529756,
+        "anilist": 185699
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/529756",
+          "https://bgm.tv/subject/529756/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 529756,
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "bangumi_id": "anime-2398",
+      "anime_name": "KOMADORI MOFUMOFU PARADE",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/b610c42971561adff1245b88783195a44b0a0f67041060d0d2c74854465794c2",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "宇宙のどこかにある不思議な惑星にすむモフモフした存在。\r\nモフモフたちは個性的で好奇心旺盛。\r\nときには地球への侵入を試みることも。",
+      "original_name": "こまどり モフモフパレード",
+      "external_ids": {
+        "bangumi": 620916,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "ok",
+        "source_urls": [
+          "https://bgm.tv/subject/620916",
+          "https://bgm.tv/subject/620916/ep"
+        ],
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
+      },
+      "story_source": {
+        "provider": "bangumi",
+        "subject_id": 620916,
+        "checked_at": "2026-11-08T04:45:40.503937+08:00",
+        "method": "bangumi_api",
+        "source_snapshot_date": null
+      }
+    },
+    {
+      "bangumi_id": "anime-2399",
+      "anime_name": "Everyday Host 新作系列",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/62a2ec8c5a004154d15fde952bc49b697f0f27e3672dac52afa94163511e1baf",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "暫無簡介",
+      "original_name": "えぶりでいホスト 新シリーズ",
+      "external_ids": {
+        "bangumi": 611890,
+        "anilist": null
+      },
+      "episodes": {
+        "total_episodes": null,
+        "aired_episodes": null,
+        "airing_status": "unknown",
+        "episode_count_status": "unknown",
+        "fetch_state": "stale",
+        "source_urls": [],
+        "checked_at": null,
+        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "end_date": null,
+        "note": "尚未取得可靠集數，之後重新查詢。"
+      }
+    },
+    {
+      "bangumi_id": "anime-2401",
+      "anime_name": "Spirit circle-魂環-",
+      "anime_image_url": "https://res.cloudinary.com/dty5ffavi/image/upload/f_auto,q_auto:best/v1/anime_covers/62b0197cf413ecd1ac9227dcc9e378f583d6c1691f1ba4635c4e72f847720523",
+      "premiere_date": "無首播日期",
+      "premiere_time": "無首播時間",
+      "story": "桶屋風太是個14歲的國二學生，他本身能夠看到靈魂，過著爸爸所說的無敵國中生活。 某天一個叫做石神鑛子的美少女轉學來到班上，身旁還跟了一個靈體叫做伊斯特，當鑛子知道風太看得見伊斯特之後，態度就出現一百八十度大轉變，還說他是自己討厭的傢伙，甚至還說彼此已經認識很久了，最後還拿出一個叫做「魂環」的武器讓風太來到了前世。",
+      "original_name": "スピリットサークル",
+      "external_ids": {
+        "bangumi": null,
+        "anilist": null
+      },
+      "episodes": null
     }
   ],
-  "generated_at": "2026-11-07T06:00:02.125150+08:00",
+  "generated_at": "2026-11-08T04:45:40.503937+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202701/",
   "quality": {
-    "source_count": 4,
-    "record_count": 4,
+    "source_count": 58,
+    "record_count": 58,
     "parse_failure_count": 0,
     "fallback_id_count": 0,
-    "missing_story_count": 0,
-    "missing_date_count": 0,
-    "missing_time_count": 0
+    "missing_story_count": 6,
+    "missing_date_count": 43,
+    "missing_time_count": 43
   }
 }
