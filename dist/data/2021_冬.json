@@ -256,7 +256,7 @@
           "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=15"
         ],
         "checked_at": "2026-10-25T11:01:04.422937+08:00",
-        "attempted_at": "2026-11-08T04:45:40.503937+08:00",
+        "attempted_at": "2026-11-09T05:01:10.256771+08:00",
         "end_date": null,
         "note": "官方目錄本次查證未成功，保留上次已確認節目數與查證時間。",
         "source_kind": "official_catalogue"
@@ -2069,7 +2069,7 @@
       }
     }
   ],
-  "generated_at": "2026-11-08T04:45:40.503937+08:00",
+  "generated_at": "2026-11-09T05:01:10.256771+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202101/",
   "quality": {
     "source_count": 62,
