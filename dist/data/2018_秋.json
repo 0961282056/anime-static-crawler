@@ -2021,12 +2021,11 @@
           "https://bgm.tv/subject/234761",
           "https://bgm.tv/subject/234761/ep"
         ],
-        "checked_at": "2026-10-14T05:03:54+08:00",
-        "attempted_at": "2026-10-15T13:34:12.981777+08:00",
+        "checked_at": "2026-11-12T07:23:55.966371+08:00",
+        "attempted_at": "2026-11-12T07:23:55.966371+08:00",
         "end_date": "2018-12-23",
-        "note": "Bangumi 官方資料快照（截至 2026-10-14，非即時更新）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
-        "source_kind": "bangumi_archive",
-        "source_snapshot_date": "2026-10-14"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       },
       "story_source": {
         "provider": "bangumi",
@@ -2282,7 +2281,7 @@
       }
     }
   ],
-  "generated_at": "2026-11-11T06:14:26.604449+08:00",
+  "generated_at": "2026-11-12T07:23:55.966371+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201810/",
   "quality": {
     "source_count": 66,
