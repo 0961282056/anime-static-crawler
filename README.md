@@ -30,7 +30,7 @@ flowchart LR
 
 ## 本機只建置網站
 
-需要 Python 3.11；先依[開發手冊](docs/開發與測試.md)安裝鎖定依賴。在已啟用的虛擬環境執行：
+需要 Python 3.11.5 以上的 3.11 版本。請依[開發手冊](docs/開發與測試.md)安裝鎖定依賴，再於已啟用的虛擬環境執行下列命令。
 
 ```bash
 python generate_static.py

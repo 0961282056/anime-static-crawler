@@ -3,3 +3,5 @@
 
 beautifulsoup4>=4.15,<5
 lxml>=6.1.1,<7
+# Keep the canary on the same patched selector engine as the crawler.
+soupsieve>=4.0,<5
