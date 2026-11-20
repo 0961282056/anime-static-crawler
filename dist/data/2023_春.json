@@ -559,8 +559,8 @@
           "https://bgm.tv/subject/399820",
           "https://bgm.tv/subject/399820/ep"
         ],
-        "checked_at": "2026-10-17T17:46:09.378310+08:00",
-        "attempted_at": "2026-10-17T17:46:09.378310+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2023-06-22",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -646,8 +646,8 @@
           "https://bgm.tv/subject/375816",
           "https://bgm.tv/subject/375816/ep"
         ],
-        "checked_at": "2026-10-17T17:46:12.672896+08:00",
-        "attempted_at": "2026-10-17T17:46:12.672896+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2023-06-22",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -675,8 +675,8 @@
           "https://bgm.tv/subject/397025",
           "https://bgm.tv/subject/397025/ep"
         ],
-        "checked_at": "2026-10-17T17:46:13.224664+08:00",
-        "attempted_at": "2026-10-17T17:46:13.224664+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2023-06-29",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -856,8 +856,8 @@
           "https://bgm.tv/subject/389998",
           "https://bgm.tv/subject/389998/ep"
         ],
-        "checked_at": "2026-10-17T17:58:37.580326+08:00",
-        "attempted_at": "2026-10-17T17:58:37.580326+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2023-06-23",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1008,8 +1008,8 @@
           "https://bgm.tv/subject/422505",
           "https://bgm.tv/subject/422505/ep"
         ],
-        "checked_at": "2026-10-22T04:30:28.395506+08:00",
-        "attempted_at": "2026-10-22T04:30:28.395506+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1138,8 +1138,8 @@
           "https://bgm.tv/subject/373833",
           "https://bgm.tv/subject/373833/ep"
         ],
-        "checked_at": "2026-10-17T17:46:26.980087+08:00",
-        "attempted_at": "2026-10-17T17:46:26.980087+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2023-06-24",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1471,8 +1471,8 @@
           "https://bgm.tv/subject/408144",
           "https://bgm.tv/subject/408144/ep"
         ],
-        "checked_at": "2026-10-17T17:46:35.778256+08:00",
-        "attempted_at": "2026-10-17T17:46:35.778256+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": null,
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1616,15 +1616,15 @@
           "https://bgm.tv/subject/369794",
           "https://bgm.tv/subject/369794/ep"
         ],
-        "checked_at": "2026-10-17T17:46:40.175645+08:00",
-        "attempted_at": "2026-10-17T17:46:40.175645+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2023-06-04",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
       }
     }
   ],
-  "generated_at": "2026-11-13T06:40:15.379825+08:00",
+  "generated_at": "2026-11-20T19:12:58.974977+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202304/",
   "quality": {
     "source_count": 54,

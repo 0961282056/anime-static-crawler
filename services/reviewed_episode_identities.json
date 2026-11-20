@@ -3198,5 +3198,50 @@
     "summary_scope": "full_linked_subject",
     "summary_reviewed_on": "2026-10-18",
     "summary_review_basis": "完整書名、妹妹／哥哥副標相同，僅波浪線、空白寫法不同；快照2026-01-04對應既有同一首部動畫條目，不改主來源2026-01-06的平台播出日期。"
+  },
+  {
+    "card_id": "anime-2350",
+    "anime_name": "香格里拉·開拓異境 第三季",
+    "source_original_name": "シャングリラ・フロンティア 3rd Season",
+    "subject_id": 548905,
+    "subject_name": "シャングリラ・フロンティア～クソゲーハンター、神ゲーに挑まんとす～ 3rd Season",
+    "first_air_date": "2027-01-10",
+    "reviewed_on": "2026-11-20",
+    "basis": "季度卡片明示 Bangumi 548905。兩個名稱均包含 3rd Season，資料庫保留完整副標。季度卡片與條目首播皆為 2027-01-10。",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202701/",
+      "https://api.bgm.tv/v0/subjects/548905"
+    ],
+    "scope_note": "僅核對此精確動畫條目的正篇。未公告總數維持未知。"
+  },
+  {
+    "card_id": "anime-2384",
+    "anime_name": "打雜賦予術師察覺到自己最強",
+    "source_original_name": "雑用付与術師が自分の最強に気付くまで ～迷惑をかけないようにしてきましたが、追放されたので好きに生きることにしました～",
+    "subject_id": 636493,
+    "subject_name": "雑用付与術師が自分の最強に気付くまで",
+    "first_air_date": "2027-01-04",
+    "reviewed_on": "2026-11-20",
+    "basis": "季度卡片明示 Bangumi 636493。資料庫以同一作品的完整主標收錄，季度卡片另有小說副標。條目首播 2027-01-04 落在卡片收錄的 2027 冬季。",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202701/",
+      "https://api.bgm.tv/v0/subjects/636493"
+    ],
+    "scope_note": "僅核對此精確動畫條目的正篇。未公告總數維持未知。"
+  },
+  {
+    "card_id": "anime-2388",
+    "anime_name": "殘月下的梅賽德斯",
+    "source_original_name": "欠けた月のメルセデス",
+    "subject_id": 576533,
+    "subject_name": "欠けた月のメルセデス～吸血鬼の貴族に転生したけど捨てられそうなのでダンジョンを制覇する～",
+    "first_air_date": "2027-01-10",
+    "reviewed_on": "2026-11-20",
+    "basis": "季度卡片明示 Bangumi 576533。卡片採用與資料庫全名相同的主標，資料庫保留副標。條目首播 2027-01-10 落在卡片收錄的 2027 冬季。",
+    "source_urls": [
+      "https://acgsecrets.hk/bangumi/202701/",
+      "https://api.bgm.tv/v0/subjects/576533"
+    ],
+    "scope_note": "僅核對此精確動畫條目的正篇。未公告總數維持未知。"
   }
 ]
