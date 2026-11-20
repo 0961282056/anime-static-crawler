@@ -23,8 +23,8 @@
           "https://bgm.tv/subject/279059",
           "https://bgm.tv/subject/279059/ep"
         ],
-        "checked_at": "2026-10-17T17:37:51.632147+08:00",
-        "attempted_at": "2026-10-17T17:37:51.632147+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2020-12-28",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -154,8 +154,8 @@
           "https://bgm.tv/subject/301233",
           "https://bgm.tv/subject/301233/ep"
         ],
-        "checked_at": "2026-10-17T17:37:53.826900+08:00",
-        "attempted_at": "2026-10-17T17:37:53.826900+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2020-12-21",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -286,15 +286,15 @@
         "aired_episodes": 148,
         "airing_status": "unknown",
         "episode_count_status": "unknown",
-        "fetch_state": "stale",
+        "fetch_state": "ok",
         "source_urls": [
           "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list",
           "https://www.web.nhk/tv/an/zenitendo/pl/series-tep-4NX2MRW758/list?page=15"
         ],
-        "checked_at": "2026-10-25T11:01:04.422937+08:00",
-        "attempted_at": "2026-11-13T06:40:15.379825+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": null,
-        "note": "官方目錄本次查證未成功，保留上次已確認節目數與查證時間。",
+        "note": "已自動核對 NHK 全部 15 頁、148 個不同節目 URL；依首播日期確認已播 148 個，排除當日及未來節目。總數與終了未公告，不推測完結；每七天複查，失敗時保留舊資料。",
         "source_kind": "official_catalogue"
       }
     },
@@ -682,8 +682,8 @@
           "https://bgm.tv/subject/297969",
           "https://bgm.tv/subject/297969/ep"
         ],
-        "checked_at": "2026-10-17T17:38:09.226071+08:00",
-        "attempted_at": "2026-10-17T17:38:09.226071+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2021-03-18",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1383,8 +1383,8 @@
           "https://bgm.tv/subject/301369",
           "https://bgm.tv/subject/301369/ep"
         ],
-        "checked_at": "2026-10-17T17:38:29.574548+08:00",
-        "attempted_at": "2026-10-17T17:38:29.574548+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2020-12-26",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1455,11 +1455,11 @@
           "https://bgm.tv/subject/292233",
           "https://bgm.tv/subject/292233/ep"
         ],
-        "checked_at": "2026-10-13T22:03:38.359126+08:00",
-        "attempted_at": "2026-10-13T22:03:38.359126+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2020-12-26",
-        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
-        "source_kind": "bangumi_html"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -1585,8 +1585,8 @@
           "https://bgm.tv/subject/315773",
           "https://bgm.tv/subject/315773/ep"
         ],
-        "checked_at": "2026-10-22T04:30:28.395506+08:00",
-        "attempted_at": "2026-10-22T04:30:28.395506+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2020-12-27",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1787,8 +1787,8 @@
           "https://bgm.tv/subject/316103",
           "https://bgm.tv/subject/316103/ep"
         ],
-        "checked_at": "2026-10-22T04:30:28.395506+08:00",
-        "attempted_at": "2026-10-22T04:30:28.395506+08:00",
+        "checked_at": "2026-11-20T19:12:58.974977+08:00",
+        "attempted_at": "2026-11-20T19:12:58.974977+08:00",
         "end_date": "2020-12-20",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1897,7 +1897,7 @@
       }
     }
   ],
-  "generated_at": "2026-11-13T06:40:15.379825+08:00",
+  "generated_at": "2026-11-20T19:12:58.974977+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202010/",
   "quality": {
     "source_count": 58,
