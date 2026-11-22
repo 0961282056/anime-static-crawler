@@ -255,11 +255,11 @@
           "https://bgm.tv/subject/590353",
           "https://bgm.tv/subject/590353/ep"
         ],
-        "checked_at": "2026-10-13T20:52:04.176625+08:00",
-        "attempted_at": "2026-10-13T20:52:04.176625+08:00",
+        "checked_at": "2026-11-23T06:22:22.902508+08:00",
+        "attempted_at": "2026-11-23T06:22:22.902508+08:00",
         "end_date": "2026-06-30",
-        "note": "Bangumi 頁面備援（bangumi.tv）；依日本首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
-        "source_kind": "bangumi_html"
+        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "source_kind": "bangumi_api"
       }
     },
     {
@@ -1676,15 +1676,15 @@
         "aired_episodes": 28,
         "airing_status": "unknown",
         "episode_count_status": "unknown",
-        "fetch_state": "ok",
+        "fetch_state": "stale",
         "source_urls": [
           "https://bgm.tv/subject/607043",
           "https://bgm.tv/subject/607043/ep"
         ],
         "checked_at": "2026-10-25T03:22:36.252678+08:00",
-        "attempted_at": "2026-10-25T03:22:36.252678+08:00",
+        "attempted_at": "2026-11-23T06:22:22.902508+08:00",
         "end_date": null,
-        "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
+        "note": "來源資料不完整，保留上次確認資料。",
         "source_kind": "bangumi_api"
       },
       "story_source": {
@@ -2173,7 +2173,7 @@
       }
     }
   ],
-  "generated_at": "2026-11-22T06:06:15.374572+08:00",
+  "generated_at": "2026-11-23T06:22:22.902508+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/202604/",
   "quality": {
     "source_count": 71,

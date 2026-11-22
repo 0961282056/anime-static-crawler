@@ -637,8 +637,8 @@
           "https://bgm.tv/subject/195845",
           "https://bgm.tv/subject/195845/ep"
         ],
-        "checked_at": "2026-10-25T03:22:36.252678+08:00",
-        "attempted_at": "2026-10-25T03:22:36.252678+08:00",
+        "checked_at": "2026-11-23T06:22:22.902508+08:00",
+        "attempted_at": "2026-11-23T06:22:22.902508+08:00",
         "end_date": "2018-07-03",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -1721,8 +1721,8 @@
           "https://bgm.tv/subject/195843",
           "https://bgm.tv/subject/195843/ep"
         ],
-        "checked_at": "2026-10-17T17:29:50.385139+08:00",
-        "attempted_at": "2026-10-17T17:29:50.385139+08:00",
+        "checked_at": "2026-11-23T06:22:22.902508+08:00",
+        "attempted_at": "2026-11-23T06:22:22.902508+08:00",
         "end_date": "2018-06-22",
         "note": "依已連結條目的首播日期核對正篇；當日集目暫不計入，不代表平台上架進度。",
         "source_kind": "bangumi_api"
@@ -2750,7 +2750,7 @@
       }
     }
   ],
-  "generated_at": "2026-11-21T07:01:09.589933+08:00",
+  "generated_at": "2026-11-23T06:22:22.902508+08:00",
   "source_url": "https://acgsecrets.hk/bangumi/201804/",
   "quality": {
     "source_count": 83,
